@@ -1,3 +1,11 @@
+	#!/usr/bin/perl
+
+	## Author:					Quinn Fischer
+    ## Co-Developer/Advisor:	Huansheng Cao
+    ## Updated:					10/29/18
+    ## Description: 			Script in progress.
+
+	
 	use File::Basename;
 	##Variable Declaration
 	my $fileName = basename $_ .txt;
