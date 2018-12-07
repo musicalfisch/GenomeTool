@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173025_GCA_000317045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0086   13.0   0.0      0.073   10.0   0.0    2.1  2  AFY66505.1  periplasmic binding protein [Geitlerinema sp. PCC
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY66505.1  periplasmic binding protein [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   0.0   1.9e-05     0.073      99     119 ..      89     109 ..      16     177 .. 0.87
+   2 !    1.2   0.0    0.0089        34     223     279 ..     227     279 ..     192     289 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 1.9e-05
+        btuF  99 qsppnlekivalkpdlvigae 119
+                 +  pnle i  lkpdl++g +
+  AFY66505.1  89 RQEPNLETIARLKPDLILGVA 109
+                 4579**************976 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.0089
+        btuF 223 iagyvtlsaekvleanpeavvlitppqggsktevldsfkkesfwqklpatknnrvyv 279
+                   gy +l  e +  an +a  l            ++ ++++ +wqkl+   ++r y 
+  AFY66505.1 227 PYGYNSLGLEELTTANQNANFLYIAAAD----ANFEQIQRNPLWQKLDFVAQERTYS 279
+                 5677777777777777777666543333....3467788999******999999996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         3815  (1301653 residues searched)
+Passed MSV filter:                       113  (0.0296199); expected 76.3 (0.02)
+Passed bias filter:                      100  (0.0262123); expected 76.3 (0.02)
+Passed Vit filter:                        11  (0.00288336); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000262123); expected 0.0 (1e-05)
+Initial search space (Z):               3815  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9990.19
+//
+[ok]

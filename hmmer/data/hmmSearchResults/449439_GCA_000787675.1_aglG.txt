@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/449439_GCA_000787675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglG  [M=275]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    0.00059   17.1  13.0     0.0017   15.6  13.0    1.8  1  lcl|BBPA01000066.1_prot_GAL95028.1_1026  [locus_tag=N44_03883] [protein=s
+     0.0091   13.3  10.3      0.002   15.4   5.3    2.5  2  lcl|BBPA01000066.1_prot_GAL95027.1_1025  [locus_tag=N44_03882] [protein=s
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|BBPA01000066.1_prot_GAL95028.1_1026  [locus_tag=N44_03883] [protein=sulfate transport system permease protein Cys
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6  13.0   7.3e-07    0.0017      25     202 ..      19     208 ..      11     268 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 7.3e-07
+                                     aglG  25 ivllpllvvfltsfapagatlevllknnwslanyrdawqrgkfllafanstlvaiavtafqivtsalagy 94 
+                                              ++++ l+ + l  f pa+a    + +n +  + + +a     f+ a   + ++a+    ++ +    a +
+  lcl|BBPA01000066.1_prot_GAL95028.1_1026  19 LIIIALVYLALLLFIPAAAVFYYAFRNGF--QAFLEAAGTSDFIEAVKLTVIIALITVPLNTIFGLCAAW 86 
+                                              55666666667778888888888888876..5788999999***************99************ PP
+
+                                     aglG  95 alarlkfrgrqall.lvvlatlvipfqllvipiflvlkwghl...intygali...lptavngfgi.... 153
+                                               +ar +frg+  l+ l+ l   v p    ++ ++l  + g l   ++ +   i   lp  v    i    
+  lcl|BBPA01000066.1_prot_GAL95028.1_1026  87 VIARNQFRGKTLLIsLIDLPFAVSPVVAGLMIVLLYGRNGWLgpfLEFFDIKIlfaLPGMVLA-TIfvtm 155
+                                              **********97763455666666655444444444444433222555554441114544432.340111 PP
+
+                                     aglG 154 .fllrqy...fqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                                               f+ r+    ++ i +e eea    ga+  qi+wr+ lp  r  l+   l+t 
+  lcl|BBPA01000066.1_prot_GAL95028.1_1026 156 pFVAREVipvLEEIGLEQEEAGRTLGASDWQIFWRITLPNIRWGLMYGVLLTN 208
+                                              244454322246677899************************99998888775 PP
+
+>> lcl|BBPA01000066.1_prot_GAL95027.1_1025  [locus_tag=N44_03882] [protein=sulfate transport system permease protein Cys
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   5.3   8.5e-07     0.002     151     202 ..     158     209 ..      25     222 .. 0.81
+   2 ?   -2.4   0.0      0.22   5.2e+02     110     130 ..     219     239 ..     216     253 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 8.5e-07
+                                     aglG 151 fgifllrqyfqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                                              f +  l+  +q +  e+eeaa   ga+  qi+wrv++p   pa++t   + f
+  lcl|BBPA01000066.1_prot_GAL95027.1_1025 158 FVVRTLQPVLQEMEKEVEEAALSLGASSWQIFWRVIFPTILPAILTGVALGF 209
+                                              444456667889999*****************************99766655 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.22
+                                     aglG 110 vvlatlvipfqllvipiflvl 130
+                                              vv+ +  ipf+ l+ p+++  
+  lcl|BBPA01000066.1_prot_GAL95027.1_1025 219 VVIISSNIPFKDLIAPVLIFQ 239
+                                              566777899999999998754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (275 nodes)
+Target sequences:                         4790  (1244012 residues searched)
+Passed MSV filter:                       151  (0.031524); expected 95.8 (0.02)
+Passed bias filter:                       77  (0.0160752); expected 95.8 (0.02)
+Passed Vit filter:                        11  (0.00229645); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000417537); expected 0.0 (1e-05)
+Initial search space (Z):               4790  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 6842.07
+//
+[ok]

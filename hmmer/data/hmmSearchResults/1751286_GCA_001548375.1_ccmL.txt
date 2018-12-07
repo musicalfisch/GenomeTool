@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1751286_GCA_001548375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-60  199.6   0.7    2.8e-60  199.4   0.7    1.0  1  BAT56241.1  Ethanolamine utilization protein EutN/carboxysome
+  ------ inclusion threshold ------
+      0.012   14.5   0.0      0.029   13.2   0.0    1.6  1  BAT52560.1  hypothetical protein NOS3756_15000 [Nostoc sp. NI
+
+
+Domain annotation for each sequence (and alignments):
+>> BAT56241.1  Ethanolamine utilization protein EutN/carboxysome structural protein Ccml [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  199.4   0.7   9.4e-64   2.8e-60       1     100 []       1     101 []       1     101 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 199.4 bits;  conditional E-value: 9.4e-64
+        ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaad.svgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdq 98 
+                 mqiakvrgtvvstqkdpslrgvkllllqlvdeeg+ll+kyevaad svgagvdewvl+srgsaarqvlgneqrpldaavvaiidt++vedrliyskkdq
+  BAT56241.1   1 MQIAKVRGTVVSTQKDPSLRGVKLLLLQLVDEEGNLLQKYEVAADnSVGAGVDEWVLISRGSAARQVLGNEQRPLDAAVVAIIDTIHVEDRLIYSKKDQ 99 
+                 9*******************************************945**************************************************** PP
+
+        ccmL  99 yr 100
+                 yr
+  BAT56241.1 100 YR 101
+                 *8 PP
+
+>> BAT52560.1  hypothetical protein NOS3756_15000 [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.0   9.8e-06     0.029       5      46 ..     361     402 ..     358     413 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 9.8e-06
+        ccmL   5 kvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaads 46 
+                 k  g++ s q dp+l     ll qlv +e  + + y va d 
+  BAT52560.1 361 KTTGSILSCQFDPALPTLYCLLTQLVSKEQYIEQPYLVAIDL 402
+                 7889***********************************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         5954  (1912779 residues searched)
+Passed MSV filter:                       135  (0.0226738); expected 119.1 (0.02)
+Passed bias filter:                      118  (0.0198186); expected 119.1 (0.02)
+Passed Vit filter:                         9  (0.00151159); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335909); expected 0.1 (1e-05)
+Initial search space (Z):               5954  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6375.93
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/artQ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118168_GCA_000155555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       artQ  [M=331]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-05   23.8   6.4    1.7e-05   23.2   6.4    1.2  1  EDX71775.1  ABC transporter, permease protein [Coleofasciculu
+  ------ inclusion threshold ------
+       0.17   10.1  15.2       0.36    9.0  14.9    1.6  1  EDX71524.1  ABC transporter, permease protein, putative [Cole
+
+
+Domain annotation for each sequence (and alignments):
+>> EDX71775.1  ABC transporter, permease protein [Coleofasciculus chthonoplastes PCC 7420]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   6.4   4.1e-09   1.7e-05     133     283 ..     162     310 ..     104     314 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 4.1e-09
+        artQ 133 ltllvaiasmilsfplgvllalgrqselpairwlsigyiellrglpllgilfmaqvmlplilpagtrperviraiagftlfaaaylaenvrgglqaipk 231
+                 ++l + +  + +sfplg+++          i  + +  +e++  +p l +l+    +lp      t  +r +  +   +++  + la  +rg + +i +
+  EDX71775.1 162 ISLSIGLVGIAISFPLGLIIGGISGYFGGWIDAMLMRLVEVMMTIPTLYLLVALASVLPPG---LTSAQRFLLIVLITSFIGWSGLARVIRGQVLSIKE 257
+                 56777888999******88754444444567777788888888888887775544444433...345555554444444455678********999975 PP
+
+        artQ 232 .gqieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivgl 283
+                    ++a++a+g kp+++++  vlpq+   vi +    + s++   s+l+++gl
+  EDX71775.1 258 rEFVQASQAMGAKPLYIIVRHVLPQTATYVIISATLAVPSFIVAESVLSLIGL 310
+                 16689********************9999998888888888888999999987 PP
+
+>> EDX71524.1  ABC transporter, permease protein, putative [Coleofasciculus chthonoplastes PCC 7420]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.0  14.9   8.6e-05      0.36     131     284 ..      27     166 ..      19     196 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 8.6e-05
+        artQ 131 liltllvaiasmilsfplgvllalgrqselpairwlsigyiellrglpllgilfmaqvmlplilpagtrperviraiagftlfaaaylaenvrgglqai 229
+                 l+l l+    s++l +plg+l a  r +       + i  ++ lr +p l ilf+a   l l + +         a   +tl+a   +       ++ i
+  EDX71524.1  27 LLLVLVPLTISLVLGLPLGLLSARSRTAST-----VLINTVNGLRVIPSLAILFVAIPYLGLSFKS---------AAVALTLLALPPILISTDVAFRNI 111
+                 55556666789**********999998764.....45778999************98888876654.........445689999988888889999*** PP
+
+        artQ 230 pkgqieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivglv 284
+                     ieaak +g+ p  +l  i +p  l  +i  i    + ++  ++l a +g  
+  EDX71524.1 112 EPTIIEAAKGMGMSPRQILQQIEIPLVLPVIIAGIKTATVEVIASATLAAFIGAG 166
+                 *********************************************9999999864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (331 nodes)
+Target sequences:                         8294  (2339939 residues searched)
+Passed MSV filter:                       381  (0.0459368); expected 165.9 (0.02)
+Passed bias filter:                      141  (0.0170002); expected 165.9 (0.02)
+Passed Vit filter:                         9  (0.00108512); expected 8.3 (0.001)
+Passed Fwd filter:                         2  (0.000241138); expected 0.1 (1e-05)
+Initial search space (Z):               8294  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 11064.57
+//
+[ok]

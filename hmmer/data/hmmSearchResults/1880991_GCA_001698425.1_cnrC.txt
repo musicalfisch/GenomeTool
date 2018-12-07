@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880991_GCA_001698425.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      0.002   15.6  31.5      0.011   13.1  11.2    3.4  3  OCQ97869.1  transporter [Oscillatoriales cyanobacterium USR00
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ97869.1  transporter [Oscillatoriales cyanobacterium USR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.6   1.5    0.0034        17     156     204 ..     199     247 ..     186     264 .. 0.84
+   2 !   13.1  11.2   2.3e-06     0.011      82     216 ..     270     397 ..     253     416 .. 0.85
+   3 !    9.2   5.6   3.4e-05      0.17      82     192 ..     474     594 ..     431     628 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.0034
+        cnrC 156 tardqariasdalraasvrvqagraspleqqradvarinadanverqlr 204
+                  a d ar  s++l+ a +++q  +a+  eqq a    +  + ++ rql 
+  OCQ97869.1 199 QAIDLARRNSETLQIAELQLQQSKAALREQQAALYPDLSLQLDLTRQLS 247
+                 67899**************************999888888888888886 PP
+
+  == domain 2  score: 13.1 bits;  conditional E-value: 2.3e-06
+        cnrC  82 nvigsgpyrgvrsaestvgfaipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagra 180
+                 n++    + g    ++t+ ++  ++l g+r a +  a+ ql   e++   +a ++r +++  y +   ad +va ++   r a ++lr a    +ag  
+  OCQ97869.1 270 NIVDPRNFAGN-NVNTTLQLTYDVDLFGRRTANIRAAQEQLRFRELEVERVAEELRSDISTNYYNLQQADGQVAISQAAVRNAGQSLRDAEALERAGVG 367
+                 55555555553.4678999999**********************************************************************9999998 PP
+
+        cnrC 181 spleqqradvarinadanverqlrlaeaaranlarr 216
+                 + +   +a+v         + q rl ea r +l rr
+  OCQ97869.1 368 TRFAVLQAQVNLA------NEQQRLNEAKRDQLIRR 397
+                 8776666665443......35789999999999998 PP
+
+  == domain 3  score: 9.2 bits;  conditional E-value: 3.4e-05
+        cnrC  82 nvigsgpyrgvrsaes..tvgfaipiel......ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraas 172
+                 n++gs p +g   a    + g++    l      gg   ar    + +++ ae + a +  +vr +v q y e  ++   + ta      a +alr a 
+  OCQ97869.1 474 NILGSDPDQGDYFASRgwADGYSFGARLtwnffdGGAAQARAKQREFDVALAEARFAQLRNQVRREVEQAYFELESSFASIETAETGVVQAREALRLAR 572
+                 6666666555433322113333333333222233788888888888999999999999999************9999999999999999999******* PP
+
+        cnrC 173 vrvqagrasple..qqradvar 192
+                 +r qag  +  +  q  +d++r
+  OCQ97869.1 573 LRFQAGVGTQTDviQAETDLTR 594
+                 ****997665441144444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         4908  (1600603 residues searched)
+Passed MSV filter:                       153  (0.0311736); expected 98.2 (0.02)
+Passed bias filter:                       76  (0.0154849); expected 98.2 (0.02)
+Passed Vit filter:                         6  (0.00122249); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000203749); expected 0.0 (1e-05)
+Initial search space (Z):               4908  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.10
+# Mc/sec: 6802.56
+//
+[ok]

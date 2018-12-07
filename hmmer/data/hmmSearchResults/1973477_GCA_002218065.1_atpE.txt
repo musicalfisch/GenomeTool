@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1973477_GCA_002218065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.2e-80  264.5   2.7    5.8e-80  264.4   2.7    1.0  1  GAX36750.1  F0F1 ATP synthase subunit epsilon [Nodularia sp. 
+     0.0069   14.8   1.5     0.0069   14.8   1.5    2.4  2  GAX35419.1  carbamoyl-phosphate synthase L chain, ATP-binding
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX36750.1  F0F1 ATP synthase subunit epsilon [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  264.4   2.7   2.3e-83   5.8e-80       1     137 []       1     137 []       1     137 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 264.4 bits;  conditional E-value: 2.3e-83
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrv+spdktvwda+aeev+lpsttgqlgil+ghapl+taldtgvmrvr+sk qdwqaiallggfa++ee+evti+vngaergd+i+le+araa++
+  GAX36750.1   1 MTLTVRVVSPDKTVWDAAAEEVVLPSTTGQLGILTGHAPLFTALDTGVMRVRTSKGQDWQAIALLGGFAKIEENEVTIVVNGAERGDTIKLEDARAAYS 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +aqt+lnqv a+++qaqiqatqafkrarar+qaagg v
+  GAX36750.1 100 QAQTRLNQVPAGEKQAQIQATQAFKRARARLQAAGGSV 137
+                 ************************************87 PP
+
+>> GAX35419.1  carbamoyl-phosphate synthase L chain, ATP-binding protein [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   1.5   2.7e-06    0.0069      71     125 ..     100     153 ..      84     163 .. 0.83
+   2 ?   -0.6   1.6      0.15   3.8e+02      45      77 ..     202     239 ..     190     293 .. 0.45
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 2.7e-06
+        atpE  71 veedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkr 125
+                 v   ev  ++++ +r  + nl+ea+++ + a ++lnqvka+ +q +i a++a  r
+  GAX35419.1 100 VRAGEVIAILDNRDRL-QANLKEAQQQVQVAISRLNQVKAGAKQGEISAKEATVR 153
+                 6666776666666665.569******************************99876 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.15
+        atpE  45 dtgvmrvrasknqdwqaiallggf.....aeveedevt 77 
+                 dt  + vr+++++   a a lg       a+++e + t
+  GAX35419.1 202 DTRRLTVRTAQEELNGAKASLGRTqrtltAQIQEAKAT 239
+                 44444444444444444444443211111222222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5048  (1559691 residues searched)
+Passed MSV filter:                       157  (0.0311014); expected 101.0 (0.02)
+Passed bias filter:                      123  (0.0243661); expected 101.0 (0.02)
+Passed Vit filter:                         8  (0.00158479); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.000594295); expected 0.1 (1e-05)
+Initial search space (Z):               5048  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5341.94
+//
+[ok]

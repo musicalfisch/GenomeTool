@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/940191_GCA_001858125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      5e-24   80.3  35.0    2.3e-19   64.8   9.8    2.2  2  OHY34728.1  hypothetical protein BCV64_05160 [Cylindrospermop
+
+
+Domain annotation for each sequence (and alignments):
+>> OHY34728.1  hypothetical protein BCV64_05160 [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   64.8   9.8   7.5e-23   2.3e-19    2291    2350 ..       2      61 ..       1      62 [. 0.52
+   2 !   22.7  16.6   3.8e-10   1.2e-06    2574    2666 ..      62     155 ..      61     196 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 64.8 bits;  conditional E-value: 7.5e-23
+        appA 2291 gttntvtfaagsstatvtvdptadttvesdetviltlasgtgytvgtttavtgtitnddf 2350
+                  gt +tv+f+a ss atvtv+pt dt  e +etv ltlasg gytvgtt+avtgtitnddf
+  OHY34728.1    2 GTRKTVSFTANSSKATVTVNPTPDTRQEGNETVSLTLASGNGYTVGTTSAVTGTITNDDF 61  
+                  455555555555555555555555555555555555555555555555555555555555 PP
+
+  == domain 2  score: 22.7 bits;  conditional E-value: 3.8e-10
+        appA 2574 tgnsgnnilngsdgndtliggtgndtltggaggdqftfnnrnegi...dtitdflssqgdkiavsaagfggglaagvsitaaqfvlgttalnasnr 2666
+                   gn+ nn l g+ gnd + gg g+dtltggag d f f+  + g+   d i+df     dki + +   g g++   + t a     ++  n  n 
+  OHY34728.1   62 IGNASNNTLTGTAGNDHVNGGIGQDTLTGGAGNDVFVFQFGQSGVsgaDRISDFAI-GSDKIDLLSL-SGAGVSDPTAFTRASNSTASSLANMVNN 155 
+                  59***********************************9877665433399***964.3566654332.2445555555555555555444455444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         3057  (989589 residues searched)
+Passed MSV filter:                       112  (0.0366372); expected 61.1 (0.02)
+Passed bias filter:                       72  (0.0235525); expected 61.1 (0.02)
+Passed Vit filter:                         4  (0.00130847); expected 3.1 (0.001)
+Passed Fwd filter:                         1  (0.000327118); expected 0.0 (1e-05)
+Initial search space (Z):               3057  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.22u 0.01s 00:00:00.23 Elapsed: 00:00:00.23
+# Mc/sec: 11655.64
+//
+[ok]

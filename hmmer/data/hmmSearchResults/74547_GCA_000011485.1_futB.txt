@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74547_GCA_000011485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futB  [M=545]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-76  254.1   8.8    4.2e-70  234.3   3.0    2.4  2  CAE21462.1  putative iron ABC transporter [Prochlorococcus ma
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE21462.1  putative iron ABC transporter [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.6   0.3     2e-09   5.7e-06      73     110 ..      84     121 ..      70     128 .. 0.83
+   2 !  234.3   3.0   1.5e-73   4.2e-70     146     534 ..     137     512 ..     129     517 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 22.6 bits;  conditional E-value: 2e-09
+        futB  73 iigvgtawlitmcqfpgrqqfqwllllplaapayllay 110
+                 ++g    wl++ c+fpgr+ ++   llpla+payll+ 
+  CAE21462.1  84 LLGTANGWLLANCRFPGRRALRVAQLLPLATPAYLLSA 121
+                 5677888****************************975 PP
+
+  == domain 2  score: 234.3 bits;  conditional E-value: 1.5e-73
+        futB 146 lwggilmlilvlypyvyllarvgfleqsvctveasrslgcnpwrsfftvalpltrpaimaglalalmetlndfgtvqyfginafttgiyntwfgmgdri 244
+                 +  gil++ l  ypyv+ll+   f       +ea rslg+ pw sf  +alp++ pai ag+al  me +n++g+v  + i ++++gi +tw   g+  
+  CAE21462.1 137 MGWGILIMALTTYPYVFLLSTESFSICGRRQLEACRSLGVGPWNSFRRIALPMALPAIGAGIALMGMEVVNELGAVALLAIPSLSAGIVETWQMEGNPA 235
+                 55689*******************9999999******************************************************************** PP
+
+        futB 245 aagqlstvlmvfilvlvfleqssrrqar.yyemtnrfqsptkyelgfvrsflaliscfvlvflgfiapafylaylafnhaqetfnndffslslnsffla 342
+                  a  l+ + +++++ lv  e+  rr++r + e     +sp+ ++l  vr++ a   ++++  + +  p +  a l +++ ++ ++ d++ l+  s+ l 
+  CAE21462.1 236 GAIGLAMIALIIVMSLVGYERRLRRRSRrWTEGVAGGDSPA-WQLHGVRALCAQCLALIPPTITLGVPLL-WAILNLDQLEQGIDPDLIPLTERSLGLG 332
+                 *******************9998877651667777788886.89999******99999999999888876.5899************************ PP
+
+        futB 343 slsaiiavvlalilaygerlnpnktlkgsvriaaagyaipgiviavgvliplgkldnffnqglninlilsgtifclifayivrflavafstlesslski 441
+                   +a +avv  lila  +r    + + +   +a  gyaipg v+a+ + +p+           n+       i+ l++ y  rflava   l++++ ++
+  CAE21462.1 333 LAAASLAVVAGLILAIAKRWSSTRWMGNLSFVAGIGYAIPGAVMAIAL-MPF------NGAPWNLA-----WILLLLWGYSDRFLAVAKGGLDAAFERL 419
+                 **************************9999***************974.563......23334443.....467899********************** PP
+
+        futB 442 kpslddasrslgygtgatlikvhipllsgglltaamlvfvdvmkelpatlvlrpfnfdtlavrvyqyasderlveaaapalaivlvglipvif 534
+                  psld+a+  lg      l +vh+pll g l   a+lvfvd +kelp t+vlrpf+fdtl+vr+yqya+der+ e+  pal i+ +gli  + 
+  CAE21462.1 420 SPSLDEAATGLGCQWQEVLRRVHLPLLKGPLAVGALLVFVDTVKELPLTFVLRPFDFDTLSVRLYQYAADERMAESILPALIIIALGLIASLA 512
+                 *****************************************************************************************8765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (545 nodes)
+Target sequences:                         2850  (689451 residues searched)
+Passed MSV filter:                       135  (0.0473684); expected 57.0 (0.02)
+Passed bias filter:                       58  (0.0203509); expected 57.0 (0.02)
+Passed Vit filter:                         8  (0.00280702); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000350877); expected 0.0 (1e-05)
+Initial search space (Z):               2850  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7515.02
+//
+[ok]

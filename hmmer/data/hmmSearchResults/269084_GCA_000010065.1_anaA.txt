@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/269084_GCA_000010065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0014   15.0   0.5      0.014   11.7   0.1    2.1  2  BAD79863.1  hypothetical protein syc1673_c [Synechococcus elo
+
+
+Domain annotation for each sequence (and alignments):
+>> BAD79863.1  hypothetical protein syc1673_c [Synechococcus elongatus PCC 6301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   5.6e-06     0.014      32     112 ..      43     123 ..      34     131 .. 0.78
+   2 !    1.5   0.0    0.0077        19      12      63 ..     250     303 ..     241     306 .] 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 5.6e-06
+        anaA  32 agagslffrdwpatipdsinlwavrfpgrenrikepli...trwgdlieplvqeiypysqspfvffghslgsvvslevahqlgd 112
+                  gag   +rd   ++ +  +++a+ + g  +  k  l    + w +l+  + q+   +  s  v++g slgsvv++  ah++ +
+  BAD79863.1  43 FGAGWRHWRDNIPALAEERDVYAIDLVGFGDSEKGYLHygpAFWSELVRDFCQQ---FVGSAAVLIGNSLGSVVAMVTAHRFPE 123
+                 578888888877778888889998888887777776652225688888888876...567999*****************9866 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.0077
+        anaA  12 lvp..lgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenr 63 
+                 lvp  l k+ q+ +  l  +p   +g     d pa + +s+n w  +    + +
+  BAD79863.1 250 LVPfsLAKRCQQLNPQLDWLPMPATGHCPHDDRPAFVNQSLNNWLSQHDPGDVK 303
+                 666335677777777788888888999999**************8876555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         2525  (785792 residues searched)
+Passed MSV filter:                        61  (0.0241584); expected 50.5 (0.02)
+Passed bias filter:                       57  (0.0225743); expected 50.5 (0.02)
+Passed Vit filter:                         4  (0.00158416); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.00039604); expected 0.0 (1e-05)
+Initial search space (Z):               2525  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9940.27
+//
+[ok]

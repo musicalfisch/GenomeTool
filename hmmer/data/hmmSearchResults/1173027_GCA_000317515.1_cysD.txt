@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173027_GCA_000317515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-75  251.2   0.4    4.2e-75  250.9   0.4    1.0  1  AFZ17708.1  PAPS reductase/FAD synthetase family protein [Mic
+    4.2e-31  106.8   0.0    5.1e-31  106.6   0.0    1.0  1  AFZ20609.1  thioredoxin-dependent phosophoadenylyl-sulfate re
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ17708.1  PAPS reductase/FAD synthetase family protein [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  250.9   0.4   1.3e-78   4.2e-75       1     147 [.       1     149 [.       1     153 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 250.9 bits;  conditional E-value: 1.3e-78
+        cysD   1 mtastatrpqttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkh..pvpvifldtlyhfretlelvakakevynldl 97 
+                 mt s+++  q+++fdle+lnq+f+ta pr+ilaw +eni+ glvqtsafnvddl+itdily++lk    vpv+fldtl+hf etlelvakake+ynldl
+  AFZ17708.1   1 MTQSASALVQSPNFDLEELNQRFDTADPRDILAWCVENIPIGLVQTSAFNVDDLVITDILYRELKPviSVPVVFLDTLHHFLETLELVAKAKEIYNLDL 99 
+                 899*************************************************************963369***************************** PP
+
+        cysD  98 kvyktpdvdtreafaakygealwdkdiakfhevtkieplqrglaelntva 147
+                 ++y+ pd+dtr afaa+yg+alwdkdi +fh++tkieplqr laelntv+
+  AFZ17708.1 100 RTYRIPDIDTRAAFAARYGDALWDKDIQQFHHLTKIEPLQRSLAELNTVS 149
+                 ************************************************97 PP
+
+>> AFZ20609.1  thioredoxin-dependent phosophoadenylyl-sulfate reductase [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  106.6   0.0   1.6e-34   5.1e-31      10     241 .]       8     243 ..       2     243 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 106.6 bits;  conditional E-value: 1.6e-34
+        cysD  10 qttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkvyktpdvdtr 108
+                 +   +d+  l+ ++    p++il  +++         s    +d+++ d+  ++++  + v  ldt     et +++ + ++ y + +++   pd    
+  AFZ20609.1   8 NVVPLDIPTLETELSRQSPQKILERALNLFDNLA--ISFSGAEDVVLIDMA-HKINPDIKVFSLDTGRLHAETYQFIDRVRKHYGIAIEIM-YPDAAQI 102
+                 5556777888888888888888888876554433..344467899998876.56888999****************************986.69***** PP
+
+        cysD 109 eafaakyge.alwdkdiakfhevtkieplqrglaelntvawitgrrrdqa.vtranmpifeld......sknrikvnplanwtrkksweyvaehgviyn 199
+                 ea++   g  ++++    +  ++ k+ pl+r l+ l+  aw+tg+r+dq   tra +p++++d       ++ ik nplanw+  + w y+  + v yn
+  AFZ20609.1 103 EALVKAKGLfSFYEDGHKECCDIRKVAPLRRKLSTLD--AWVTGQRKDQNpSTRASVPVVQVDnafstdDHQLIKFNPLANWSSTDVWMYIRSYEVPYN 199
+                 **9977776156666677899*************998..8********97479*****977652221115788************************** PP
+
+        cysD 200 plhdqgypsigdepittkvgegederagrw..rgtgktecgihi 241
+                  lh++g+ sig ep t +v   + er grw    +gk ecg+h+
+  AFZ20609.1 200 ALHERGFISIGCEPCTRPVLPNQHEREGRWwwEDAGKKECGLHM 243
+                 *****************************733689*******96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         6441  (2166530 residues searched)
+Passed MSV filter:                       119  (0.0184754); expected 128.8 (0.02)
+Passed bias filter:                      108  (0.0167676); expected 128.8 (0.02)
+Passed Vit filter:                         8  (0.00124204); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000310511); expected 0.1 (1e-05)
+Initial search space (Z):               6441  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 10442.67
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56107_GCA_000317535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-98  325.5  10.7    3.1e-98  325.4  10.7    1.0  1  AFZ22866.1  ATP synthase F1 subcomplex delta subunit [Cylindr
+  ------ inclusion threshold ------
+      0.036   12.3   0.0      0.042   12.1   0.0    1.0  1  AFZ25048.1  hypothetical protein Cylst_2855 [Cylindrospermum 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ22866.1  ATP synthase F1 subcomplex delta subunit [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  325.4  10.7    1e-101   3.1e-98       1     183 [.       1     183 [.       1     184 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 325.4 bits;  conditional E-value: 1e-101
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m s++a a+vaq yaqallsiaqs+nltee+g+dartl sll+g+k+lqnf++npf+++enkk++l+q+lge++++ylrnfllllvd+rriafl+ ilq
+  AFZ22866.1   1 MISNIAIAKVAQSYAQALLSIAQSKNLTEEIGGDARTLQSLLSGNKDLQNFFSNPFIQSENKKALLRQILGESTSSYLRNFLLLLVDKRRIAFLDQILQ 99 
+                 789************************************************************************************************ PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qyl+llrqlnqtvlaevtsav+lteaqqq+++ekvialtkarqvel tkid dliggviikvgsqvidaslrgqlrrlslrls 
+  AFZ22866.1 100 QYLVLLRQLNQTVLAEVTSAVSLTEAQQQTIQEKVIALTKARQVELVTKIDGDLIGGVIIKVGSQVIDASLRGQLRRLSLRLSG 183
+                 **********************************************************************************95 PP
+
+>> AFZ25048.1  hypothetical protein Cylst_2855 [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   1.3e-05     0.042     138     175 ..      13      52 ..       2      57 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.3e-05
+        atpD 138 tkarqveletkidsdliggv..iikvgsqvidaslrgqlr 175
+                  ka +ve+++++ds+li  +  +    s+vi+ ++r  lr
+  AFZ25048.1  13 RKADKVEIAVRLDSELIEQIqhLTNDPSKVIEVAIRQWLR 52 
+                 5899*************98844567789*******99888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6229  (2019150 residues searched)
+Passed MSV filter:                       247  (0.0396532); expected 124.6 (0.02)
+Passed bias filter:                      165  (0.026489); expected 124.6 (0.02)
+Passed Vit filter:                        13  (0.00208701); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000321079); expected 0.1 (1e-05)
+Initial search space (Z):               6229  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9288.09
+//
+[ok]

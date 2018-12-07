@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/582515_GCA_000473895.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpB  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.4e-18   62.7  15.5    1.6e-17   61.4   9.6    2.1  2  ERN41118.1  ABC-type nitrate/sulfonate/bicarbonate transport 
+    2.6e-11   41.1  10.1    2.6e-11   41.1  10.1    1.6  2  ERN40111.1  ABC-type proline/glycine betaine transport system
+
+
+Domain annotation for each sequence (and alignments):
+>> ERN41118.1  ABC-type nitrate/sulfonate/bicarbonate transport system, permease component [Rubidibacter lacunae KORDI 5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.0   0.4    0.0015       2.5     197     219 ..      31      54 ..      25      65 .. 0.83
+   2 !   61.4   9.6   9.5e-21   1.6e-17      80     263 ..      83     265 ..      54     274 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.0015
+        cmpB 197 ipaalpyiftglriaigl.awlai 219
+                 ip al y+++gl ia+ + aw a+
+  ERN41118.1  31 IPKALSYVLAGLSIALPFaAWWAL 54 
+                 9**************987358776 PP
+
+  == domain 2  score: 61.4 bits;  conditional E-value: 9.5e-21
+        cmpB  80 glfwqilaslqrvaisytlaaivgialgiligvnktlskaldplfqllrtvpplawvpislaalrqnepaalfvifitaiwpilintavgvtqipqdyn 178
+                  l+ + las  rva ++ laa++ + lgi +g   ++   ++pl  llr +p  a+vp+ +  l   e   + +ifi +++  ++  +  v+ +p++  
+  ERN41118.1  83 HLLQDTLASCLRVAAGFGLAALLSVPLGITMGAFASIRALVEPLSGLLRYMPAPAFVPLLIIYLGVGEEPKIALIFIGTVFFNILMIMDAVKFVPKELI 181
+                 4677899**********************************************************99999999****9998888888899********* PP
+
+        cmpB 179 nvakvlqlsrkeyflnilipaalpyiftglriaiglawlaiiaaeivmsgivgigffiwdayqnnnvsevilalvyigvvgllld 263
+                 + a  l  sr + +l  + p  +p i+  +ri i  +w  ++ ae+v +   g+g  i  a +  n  e+  +l+ +g++g+ +d
+  ERN41118.1 182 ETAYTLGGSRLQVLLWAIAPYVVPNIIDTFRINIATSWSLVVVAELVAAE-QGLGKRILIAQKFLNTDEIFACLIVLGAIGVAID 265
+                 *********************************************99765.7999999999999999**************9998 PP
+
+>> ERN40111.1  ABC-type proline/glycine betaine transport system, permease component [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.5     0.087   1.5e+02     213     266 ..      65     116 ..      39     125 .. 0.56
+   2 !   41.1  10.1   1.5e-14   2.6e-11      87     237 ..     117     265 ..     107     300 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.087
+        cmpB 213 glawlaiiaaeivmsgivgigffiwdayqnnnvsevilalvyigvvgllldklm 266
+                 g+ w+ + a    ++ ++g+  + w+    n+    ++a+  +g++g   d +m
+  ERN40111.1  65 GIQWFFVDAVH-PLTLLMGLLTIAWQIAGRNTAIFSVVAMAVVGAIGAW-DDAM 116
+                 55555444433.2344455555556655555554555566666666654.3344 PP
+
+  == domain 2  score: 41.1 bits;  conditional E-value: 1.5e-14
+        cmpB  87 aslqrvaisytlaaivgialgiligvnktlskaldplfqllrtvpplaw.vpislaalrqnepaalfvifitaiwpilintavgvtqipqdynnvakvl 184
+                  +l  +  + +l+a+vgi lgi    nk   +a  p+++ ++t+p + + vp+ +  +   e    +v f+ a+ p++  t +g++ +p d  + ++ +
+  ERN40111.1 117 VTLSLILTAVILCAVVGIPLGIWTASNKHAERAARPVLDAMQTLPAFVYlVPVVM-LFGTGEVPGTIVTFVFAVPPLIRLTNIGIRGVPSDVVEASRAF 214
+                 566667778899**********************************988356655.566667777789******************************* PP
+
+        cmpB 185 qlsrkeyflnilipaalpyiftglriaiglawlaiiaaeivmsgivgigffiw 237
+                   + ++ + ++ +p a+p i++g+  ++ la   ++ a ++  g  g+g ++ 
+  ERN40111.1 215 GATPRQTLWQVQVPLAMPTILAGINQSLMLALSMVVIASLIAVG--GLGQMVN 265
+                 *******************************9877777766555..3333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (279 nodes)
+Target sequences:                         3457  (1058921 residues searched)
+Passed MSV filter:                       172  (0.0497541); expected 69.1 (0.02)
+Passed bias filter:                       93  (0.0269019); expected 69.1 (0.02)
+Passed Vit filter:                         8  (0.00231415); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000578536); expected 0.0 (1e-05)
+Initial search space (Z):               3457  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 7385.97
+//
+[ok]

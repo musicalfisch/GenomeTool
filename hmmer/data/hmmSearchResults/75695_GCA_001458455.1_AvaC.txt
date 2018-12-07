@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/75695_GCA_001458455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.3e-112  371.9   0.1   1.5e-112  371.8   0.1    1.0  1  CEJ47214.1  O-methyltransferase [Chrysosporum ovalisporum]
+    1.3e-34  116.9   0.0    1.9e-34  116.4   0.0    1.1  1  CEJ44559.1  Putative O-methyltransferase [Chrysosporum ovalis
+
+
+Domain annotation for each sequence (and alignments):
+>> CEJ47214.1  O-methyltransferase [Chrysosporum ovalisporum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  371.8   0.1    1e-115  1.5e-112       1     220 []       1     220 []       1     220 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 371.8 bits;  conditional E-value: 1e-115
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 manqtlg++ q+y+y  s+ lre+ il qlrqeta +p+a mqiapeqgqfma+lvq +gakk+le+gvftgysalvv+lalpp+g+++acdl+ e+t+
+  CEJ47214.1   1 MANQTLGMEPQLYNYLLSVSLREPEILYQLRQETAQHPMARMQIAPEQGQFMALLVQLMGAKKTLEVGVFTGYSALVVSLALPPHGRVVACDLNAEFTA 99 
+                 9************************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarrywqqagvadkidl i  a+etld+l+a+ge+++fdf fidadksnyd yyer+lqlvr gg+i idnv+wsgrva ++ +dnrt  ir+ln k++
+  CEJ47214.1 100 IARRYWQQAGVADKIDLHIGLAMETLDQLLATGEAETFDFAFIDADKSNYDGYYERSLQLVRPGGLIVIDNVLWSGRVADSQVQDNRTTTIRALNEKLH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamkk 220
+                 qd+r+n+s++pigdgltla kk
+  CEJ47214.1 199 QDQRINLSLVPIGDGLTLAQKK 220
+                 *******************998 PP
+
+>> CEJ44559.1  Putative O-methyltransferase [Chrysosporum ovalisporum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.4   0.0   1.3e-37   1.9e-34      45     217 ..     100     273 ..      85     275 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 116.4 bits;  conditional E-value: 1.3e-37
+        AvaC  45 apeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfdfvfid 143
+                    +gq + ++v+   ak +le+g+ftgysal +a alp +g+liac++    +  a+  + q+   +ki + +apaletl kl a  e  sfd++fid
+  CEJ44559.1 100 GHLEGQTLKMFVHMTKAKGILEVGMFTGYSALAMAEALPTDGRLIACEVDPYVAQFAQDCFSQSPHGEKIVVEVAPALETLRKLAAKKE--SFDLIFID 196
+                 55679**********************************************99*******************************98765..7******* PP
+
+        AvaC 144 adksnydayyeral..qlvrsggiiaidnvfwsgrva.aadstdnrtkiirslnakiqqdervnisiipigdgltla 217
+                 adk +y  y e  l  +l+ + g+i++dn ++ g+v   a+        i  +n  +  d rv+  ++p+ dg+tl 
+  CEJ44559.1 197 ADKKEYVEYLEIILaqNLLTANGLICVDNTLFQGQVYlPAEKRTANGEAIAEFNRVVATDPRVEQVLLPVRDGITLI 273
+                 ***********86533799****************962577777888999*************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2851  (968037 residues searched)
+Passed MSV filter:                        92  (0.0322694); expected 57.0 (0.02)
+Passed bias filter:                       77  (0.0270081); expected 57.0 (0.02)
+Passed Vit filter:                         5  (0.00175377); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000701508); expected 0.0 (1e-05)
+Initial search space (Z):               2851  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 7098.94
+//
+[ok]

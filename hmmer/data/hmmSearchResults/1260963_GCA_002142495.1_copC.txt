@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1260963_GCA_002142495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-84  280.6   0.2    1.5e-84  280.4   0.2    1.0  1  BAS65041.1  hypothetical protein LBDG_46590 [Leptolyngbya bor
+  ------ inclusion threshold ------
+      0.027   12.9   0.2      0.068   11.6   0.2    1.7  1  BAS62443.1  hypothetical protein LBDG_20060 [Leptolyngbya bor
+        0.1   11.0   4.0      0.091   11.2   2.8    1.5  1  BAS62885.1  conserved exported hypothetical protein [Leptolyn
+
+
+Domain annotation for each sequence (and alignments):
+>> BAS65041.1  hypothetical protein LBDG_46590 [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  280.4   0.2   7.3e-88   1.5e-84       1     165 []       1     165 []       1     165 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 280.4 bits;  conditional E-value: 7.3e-88
+        copC   1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylqkGdnh 99 
+                 m++++s++l+++++glll a+s++sntatn++as++ttt++tta++staa++ak+e+++k+++kGGq+ie+G+yhle++p++eangthldfylqkGdnh
+  BAS65041.1   1 MNIKQSITLTIVGLGLLLGACSNSSNTATNPSASPATTTPTTTASPSTAATTAKTESGGKHGGKGGQTIETGVYHLEFIPQPEANGTHLDFYLQKGDNH 99 
+                 99************************************************************************************************* PP
+
+        copC 100 eavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 eav+nakvtaqvqlPdG+qkald+kyd++dkhyaallpg+a+Geykvailtdi+GekvnGrfsfkk
+  BAS65041.1 100 EAVPNAKVTAQVQLPDGTQKALDMKYDPVDKHYAALLPGTAVGEYKVAILTDISGEKVNGRFSFKK 165
+                 ****************************************************************97 PP
+
+>> BAS62443.1  hypothetical protein LBDG_20060 [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.2   3.2e-05     0.068       3      44 ..       4      45 ..       2      57 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 3.2e-05
+        copC  3 slkssllvvlsigllllaassnsntatndeassktttaatta 44
+                 lk  +  + ++gl +l+a+s+++++++++a ++ttta++ a
+  BAS62443.1  4 QLKFLAYFLCALGLSVLIACSSQTANNTSSAPTTTTTASQPA 45
+                566677788999999*****9998887777777777776654 PP
+
+>> BAS62885.1  conserved exported hypothetical protein [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   2.8   4.3e-05     0.091       8      57 ..       2      49 ..       1      63 [. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 4.3e-05
+        copC  8 llvvlsigllllaassnsntatndeassktttaattavsstaaakakeee 57
+                +l ++si ll +aa+ +++++t ++a ++t+ + +  v+++++a++++++
+  BAS62885.1  2 TLALSSILLLGVAACESNSSKTSESAPNSTEKTGE--VPTNQTAQNNQND 49
+                56778888877788877777766666555444333..3332222222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         6348  (1955829 residues searched)
+Passed MSV filter:                       188  (0.0296156); expected 127.0 (0.02)
+Passed bias filter:                      151  (0.023787); expected 127.0 (0.02)
+Passed Vit filter:                        17  (0.00267801); expected 6.3 (0.001)
+Passed Fwd filter:                         3  (0.00047259); expected 0.1 (1e-05)
+Initial search space (Z):               6348  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8067.79
+//
+[ok]

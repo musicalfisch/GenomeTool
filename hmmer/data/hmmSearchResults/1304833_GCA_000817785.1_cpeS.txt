@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1304833_GCA_000817785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.9e-125  413.4   0.0   7.6e-125  413.2   0.0    1.0  1  KIF28849.1  chorismate-binding protein [Hassallia byssoidea V
+    2.2e-30  104.9   0.0    2.5e-30  104.8   0.0    1.0  1  KIF35946.1  chorismate mutase [Hassallia byssoidea VB512170]
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF28849.1  chorismate-binding protein [Hassallia byssoidea VB512170]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  413.2   0.0  1.5e-128  7.6e-125       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 413.2 bits;  conditional E-value: 1.5e-128
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnqeqafenppffahirvcmrplplellsgvs+fveqay+y+lndpyrlrvlkl++a++rieienytvk+e+kfygasr+l
+  KIF28849.1   1 MTHSTDIATLARWMAADFSNQEQAFENPPFFAHIRVCMRPLPLELLSGVSLFVEQAYNYTLNDPYRLRVLKLLNAGSRIEIENYTVKQEEKFYGASRNL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 + lk+l+++dleklpgcnmivewtgnsfkgkvepgk+c+v+r +k+tyldsefeid+ekfisldrgrdpetdehiwgsvagpf+fvrw+sfadevkv
+  KIF28849.1 100 QLLKELTINDLEKLPGCNMIVEWTGNSFKGKVEPGKGCMVFRYNKNTYLDSEFEIDTEKFISLDRGRDPETDEHIWGSVAGPFHFVRWDSFADEVKV 196
+                 ***********************************************************************************************97 PP
+
+>> KIF35946.1  chorismate mutase [Hassallia byssoidea VB512170]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  104.8   0.0   4.9e-34   2.5e-30       1     187 [.       1     193 [.       1     196 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 104.8 bits;  conditional E-value: 4.9e-34
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveae..drieienytvkeekkfygasr 97 
+                 m+ s ++++la ++a +f n++qa+ +p ++ h+r+  rp+ l   +  ++f eqa   +l++pyr r+++l +++  d i+++ y+ k+ + +  a +
+  KIF35946.1   1 MSFSPQLTALAEYLAGEFDNRAQALADPAWYVHLRMWQRPVALFSEDSFTLFAEQANVLKLDQPYRQRIMRLQQKGdaDAIQVQYYMPKDPDALKCAGQ 99 
+                 6778999**********************************99999999************************9872257999**************** PP
+
+        cpeS  98 dlerlktlkaddleklpgcnmiv...ewtgn..sfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrw 187
+                 +   l+tl+ d+l+ lpgc + v   e + n  +f  +  p   c  +  g++  +   fe  +++f s d+g dpe     wg++ gp+++ + 
+  KIF35946.1 100 NPALLNTLTPDQLNLLPGCIVSVtqqEISPNcyKFTATAPPDTRCCFTYSGNTIQVSLGFEATKDEFYSYDKGIDPEGK-ATWGAIMGPYRYTKQ 193
+                 *******************9988333344441156678889999********************************975.68********99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                        10181  (3132640 residues searched)
+Passed MSV filter:                       194  (0.0190551); expected 203.6 (0.02)
+Passed bias filter:                      172  (0.0168942); expected 203.6 (0.02)
+Passed Vit filter:                        14  (0.00137511); expected 10.2 (0.001)
+Passed Fwd filter:                         2  (0.000196444); expected 0.1 (1e-05)
+Initial search space (Z):              10181  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 8771.39
+//
+[ok]

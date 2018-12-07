@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusC  [M=456]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-10   37.8   9.7    7.1e-08   29.5   4.1    2.1  2  OKH18161.1  hypothetical protein NIES208_06450 [Limnothrix ro
+  ------ inclusion threshold ------
+       0.14    8.7   7.0       0.65    6.5   7.0    1.8  1  OKH15920.1  hypothetical protein NIES208_12535 [Limnothrix ro
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH18161.1  hypothetical protein NIES208_06450 [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.3   1.3e-05     0.024     287     364 ..     387     459 ..     354     487 .. 0.82
+   2 !   29.5   4.1     4e-11   7.1e-08     188     434 ..     488     736 ..     465     741 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.3e-05
+        cusC 287 vsleaaytgndts.pstsfnnkdviygqislkiplieggrrkaeideaksklkqsellykdlkstislevddayynlmt 364
+                   l+a   gnd s  sts+n +      + l   +  ggrr  +id a ++lk +el    +     l    +yy+l +
+  OKH18161.1 387 AELQAERIGNDESeASTSLNSR------LELSYDIYTGGRRSGQIDAASTQLKITELDVERIAKETRLIATTTYYDLQS 459
+                 5688999999988357888864......677788899********************9999999999999999999965 PP
+
+  == domain 2  score: 29.5 bits;  conditional E-value: 4e-11
+        cusC 188 geitktvvlraeaevsqaqsdviratnnlkmakanliklteiednftvretsfesidid..elaslkeq...avtnrtelksfdlqtqiakdqvrfvks 281
+                 g  tk  vlra+ ev++aq  + ra    +  + +l +l ++  n   r +  + id+      sl e    a+ +r el+   lq +i   q  +  +
+  OKH18161.1 488 GLGTKFDVLRAQVEVANAQQRLTRAYASQNTVRRQLAQLLNLPSNADPRAA--DEIDLAgrWELSLEESillALQQREELRQQLLQREIDGYQKEIALA 584
+                 5569999*******************9999999999999999999988865..55666511335777753447899*********************** PP
+
+        cusC 282 tylpdvsleaaytgndtspstsfnnkdviygqislkiplieggrrkaeideaksklkqsellykdlkstislevddayynlmtqqsvlgkiqdqlklak 380
+                    p+vs+ a y   +      ++  d       ++  l +gg  +a  d+       +e  + +    i l v+ ay+nl + +  +      + la 
+  OKH18161.1 585 NIRPQVSVFANYDLLEIYD-DDLDTADGFSVGARVRWNLFDGGAANARADQEEVDQAIAENRFLNRSDQIRLAVETAYFNLEASERNIQTASVAVDLAD 682
+                 ************9988765.568888888888999**************999999999999999999******************************** PP
+
+        cusC 381 dnyekiseqfkegfansidivdannflvsteqqlinaqydyqigililkratgv 434
+                 +       +f+ g+    d++ a+  l +++++l +a  dy+     lkr   v
+  OKH18161.1 683 ESLRLARLRFRAGVGTQTDVISAQTELTTAQNNLEQAITDYNRSYAQLKREVSV 736
+                 ****99************************************999999998765 PP
+
+>> OKH15920.1  hypothetical protein NIES208_12535 [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.5   7.0   0.00037      0.65     173     246 ..      99     174 ..      79     228 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.00037
+        cusC 173 rlekhkdvtklrlkvg..eitktvvlraeaevsqaqsdviratnnlkmakanliklteiednftvretsfesidid 246
+                 +l+  +d + lr  +   e +++  l aeae+s  +++ i a  +lk+ + +l+++ e+ d  ++ e  ++  + d
+  OKH15920.1  99 QLKAERDQASLRQAIAsvEASRAAKLSAEAELSAIRAEKIEAEADLKLRQQDLVRIKELVDTGALAERELDQSQRD 174
+                 6777788888887775226678999***********************************9988877776655444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (456 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                        93  (0.0262564); expected 70.8 (0.02)
+Passed bias filter:                       63  (0.0177866); expected 70.8 (0.02)
+Passed Vit filter:                         4  (0.00112931); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8511.76
+//
+[ok]

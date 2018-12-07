@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00085   17.7  19.6     0.0051   15.2  19.6    2.0  1  KYC42867.1  fatty acid desaturase [Scytonema hofmannii PCC 71
+    0.00097   17.5  10.6     0.0012   17.2   4.3    2.2  2  KYC43358.1  fatty acid desaturase [Scytonema hofmannii PCC 71
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC42867.1  fatty acid desaturase [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2  19.6     1e-06    0.0051      55     224 ..      60     214 ..      38     307 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1e-06
+        desD  55 lfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgd..gvv...rmtph 148
+                 +f p  w+l     +  g+ l+g  f ighd+ h  ++  +wvn l+g      +    + wr+ hny hht+tn l  d   h     v       p+
+  KYC42867.1  60 VFSP--WYLLPFAWFFTGTALTGF-FVIGHDCGHRSFAKSRWVNDLVGHVMMMPLIYPFHSWRIGHNY-HHTHTNKLDEDNAWHPIrtEVYeswGKVPQ 154
+                 4444..888888889999999996.99*********************9988888888899******9.99*******999888531122211134677 PP
+
+        desD 149 aehkwyhryqhlfipily..aiipiywsfsdvrsilfrhrfgeikipnpkaidlfvllsgkvvylfwfigipllvgys 224
+                   ++w+ r +  ++  ++  a+    ws           +f e   pn k       ls  vv lf  i  p+l+  +
+  KYC42867.1 155 GAFEWFMRLRLWWVGSIFhwAVTHFDWS-----------KFQEKDRPNVK-------LSVVVVVLFAAIAFPILIATT 214
+                 7777777777766665541123333333...........33333333322.......333344444444444444443 PP
+
+>> KYC43358.1  fatty acid desaturase [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   4.3   2.5e-07    0.0012      61     131 ..      70     138 ..      42     148 .. 0.71
+   2 !    4.2   0.4    0.0023        11     260     320 ..     253     312 ..     207     332 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 2.5e-07
+        desD  61 wwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvl 131
+                 w++  i   v+ + +    f +ghd+ h  +s kkw+n l+g      i +  + wr+ h   hh  t  l
+  KYC43358.1  70 WFFWPIFW-VMQGTMFWALFVVGHDCGHQSFSKKKWLNDLIGHLSHIPILVPYHGWRISHRT-HHLNTGHL 138
+                 33333332.44455556679**********************9999999999999***9975.66666555 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0023
+        desD 260 qpsaanqiedewaifqvr.ttvdfapkniflnwylgglnyqvvhhlfpqichihypkiapil 320
+                 +p      e+ew+ ++   +t+d      f+n     +  +v hh+f +i h    k++  +
+  KYC43358.1 253 EPDIPWYREEEWTFLKGAlSTID--RDYGFINHIHHDIGTHVAHHIFLNIPHYNLKKVTKAI 312
+                 45555567889987764314555..567899*********************9999887544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       341  (0.0347003); expected 196.5 (0.02)
+Passed bias filter:                      218  (0.0221838); expected 196.5 (0.02)
+Passed Vit filter:                        16  (0.00162817); expected 9.8 (0.001)
+Passed Fwd filter:                         2  (0.000203521); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.11
+# Mc/sec: 10517.84
+//
+[ok]

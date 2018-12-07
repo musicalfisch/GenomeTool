@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102125_GCA_000332055.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.2e-140  465.4   7.3   1.4e-140  465.2   7.3    1.0  1  ELS04696.1  F0F1-type ATP synthase, alpha subunit [Xenococcus
+    1.2e-33  114.9  12.1    3.2e-33  113.6  12.1    1.5  1  ELS00777.1  alternate F1F0 ATPase, F0 subunit A [Xenococcus s
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS04696.1  F0F1-type ATP synthase, alpha subunit [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  465.2   7.3  5.2e-144  1.4e-140       7     248 ..       9     250 ..       3     251 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 465.2 bits;  conditional E-value: 5.2e-144
+        atpI   7 afnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlflfifvs 105
+                  +ns+ +aelevg+hf+w++gn+ +hgqvfl swfvia+lv+aslaat n+qrip+giqn+mey+lefirdlak qlgek+yrpwvpfigtlflfifvs
+  ELS04696.1   9 LVNSYIFAELEVGEHFLWKIGNITVHGQVFLVSWFVIALLVIASLAATSNAQRIPRGIQNFMEYTLEFIRDLAKSQLGEKDYRPWVPFIGTLFLFIFVS 107
+                 6799*********************************************************************************************** PP
+
+        atpI 106 nwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvvavlvll 204
+                 nw galipw +i+lpsgelaaptndinttv+lalltslayfyag+sk+glgyf +y++p   llpi iledftkplslsfrlfgniladelvv+vlvll
+  ELS04696.1 108 NWGGALIPWGVIELPSGELAAPTNDINTTVSLALLTSLAYFYAGLSKKGLGYFGNYVQPVAFLLPIKILEDFTKPLSLSFRLFGNILADELVVGVLVLL 206
+                 *************************************************************************************************** PP
+
+        atpI 205 vplfvplpvmalglftsaiqalvfatlagayihealeghgeeeh 248
+                 vp+++plp+malgl+tsa+qalvfatlagayihea+e hgeeeh
+  ELS04696.1 207 VPVLIPLPIMALGLLTSAVQALVFATLAGAYIHEAIEEHGEEEH 250
+                 *******************************************9 PP
+
+>> ELS00777.1  alternate F1F0 ATPase, F0 subunit A [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  113.6  12.1   1.2e-36   3.2e-33      20     239 ..       7     218 ..       2     221 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 113.6 bits;  conditional E-value: 1.2e-36
+        atpI  20 hhfywqlgnlkihgqvfltswfviailvvaslaatrnv...qripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlflfifvsnwsgalipwk 115
+                 + ++wq g + i   +++ +w+++ +l+v s   tr +    +i +g qnl+e  +  i     +++ +++  p++pfigtlf+fi  sn    +ip  
+  ELS00777.1   7 QIIFWQRGIISINATLVF-TWLIMVLLIVGSWLITRRLstsTKISRG-QNLLEVLVLGIATQ-IEEVSQQKPEPYLPFIGTLFIFIACSNLLS-IIPG- 100
+                 5689********988765.5************999976222578777.99999876666544.4678889999****************9754.4442. PP
+
+        atpI 116 liklpsgelaaptndinttvalalltslayfyagfskrgl.gyfkky.ieptpvllpiailedftkplslsfrlfgniladelvvavlvllvplfvplp 212
+                            pt  + tt ala+   +a    g++k+gl gyfk+y ++ptp +lp  i+  f++ +sls+rlfgn+++  ++v++l+ + plf p+ 
+  ELS00777.1 101 --------YQPPTGSLSTTAALAICVFFAVPLYGIKKQGLwGYFKQYyLQPTPFMLPFNIIGRFSNTISLSVRLFGNVMSGTMIVGILLSIAPLFFPII 191
+                 ........457999999**********************989***8538************************************************** PP
+
+        atpI 213 vmalglftsaiqalvfatlagayihea 239
+                 + a+gl+t  iqa +fa la  +i  a
+  ELS00777.1 192 MQAMGLLTGLIQAYIFAILAMVFIAAA 218
+                 **********************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         5373  (1697783 residues searched)
+Passed MSV filter:                       201  (0.0374093); expected 107.5 (0.02)
+Passed bias filter:                      102  (0.0189838); expected 107.5 (0.02)
+Passed Vit filter:                         6  (0.00111669); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000372232); expected 0.1 (1e-05)
+Initial search space (Z):               5373  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 8522.87
+//
+[ok]

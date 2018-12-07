@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0089   12.4   0.2      0.052    9.8   0.0    2.2  2  BAC90965.1  molybdenum cofactor biosynthesis protein [Gloeoba
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC90965.1  molybdenum cofactor biosynthesis protein [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.1     0.047   2.1e+02      63      77 ..       9      23 ..       5      38 .. 0.84
+   2 !    9.8   0.0   1.2e-05     0.052     148     205 ..      88     144 ..      82     189 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.047
+        finB 63 vavapacniqcnycn 77
+                +++   cn +c yc 
+  BAC90965.1  9 ISLVDRCNFRCSYCM 23
+                667789********5 PP
+
+  == domain 2  score: 9.8 bits;  conditional E-value: 1.2e-05
+        finB 148 lclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegak 205
+                 + lstn  +l e  + +    +  v i+l+ +dp + a+i    h+  k + g+++a+
+  BAC90965.1  88 VSLSTNAYLLEELAEDLYAAGLRRVNISLDSLDPGVFARITGRDHWS-KVWAGIQAAH 144
+                 679*************************************9999885.7899999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                        75  (0.01693); expected 88.6 (0.02)
+Passed bias filter:                       73  (0.0164786); expected 88.6 (0.02)
+Passed Vit filter:                         8  (0.00180587); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000225734); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 13262.52
+//
+[ok]

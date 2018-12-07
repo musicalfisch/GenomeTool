@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copB  [M=406]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0009   14.8   0.0    0.00094   14.7   0.0    1.0  1  CCH65247.1  COG0845: Membrane-fusion protein [Richelia intrac
+     0.0018   13.8   0.1     0.0019   13.7   0.1    1.0  1  CCH65432.1  Secretion protein HlyD [Richelia intracellularis 
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH65247.1  COG0845: Membrane-fusion protein [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   1.1e-06   0.00094      33      95 ..      25      87 ..       6     101 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.1e-06
+        copB 33 artttvnvttaklatigrnldytgttrplkvvslrsqatgqllnlvvdvgdevqlgqilarvd 95
+                +++  ++++t ++  i++  d+  +  pl+ v l+++  g++  + v++g ++q g+ + +++
+  CCH65247.1 25 TKAKRIKISTVEVGMIEESNDFIASLEPLNSVILQTEVQGKVTHVFVKLGSKIQEGNAIIQLN 87
+                566778999***********************************************9877665 PP
+
+>> CCH65432.1  Secretion protein HlyD [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.1   2.3e-06    0.0019     312     387 ..      17      91 ..       3      93 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 2.3e-06
+        copB 312 likggllarvrfnnnsapqvivpetaivsqgessaifvlsesnsqvekrpvrlgqaldgqveiitglepgerfvvn 387
+                 li g  l    + ++  + + vp  aiv++   + ++v   +  q   r v +g  ++ q  i++gl+  +r+ +n
+  CCH65432.1  17 LISGLNLDLTLLGKQVDNALTVPTVAIVTEKGDTGVLVPDAK-NQPLFRSVTIGSQIEDQTHILSGLKGNDRIFMN 91 
+                 555555555556666777889********9988888886655.577789**********************99887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (406 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        47  (0.0280765); expected 33.5 (0.02)
+Passed bias filter:                       32  (0.0191159); expected 33.5 (0.02)
+Passed Vit filter:                         3  (0.00179211); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00119474); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 13396.94
+//
+[ok]

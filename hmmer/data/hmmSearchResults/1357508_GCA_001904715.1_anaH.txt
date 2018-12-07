@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1357508_GCA_001904715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaH  [M=149]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.1e-51  171.1   0.3    1.1e-50  170.0   0.3    1.5  1  OKH10856.1  IS4 family transposase [Nostoc calcicola FACHB-38
+    1.6e-27   94.9   0.8    1.7e-27   94.8   0.8    1.0  1  OKH15159.1  transposase [Nostoc calcicola FACHB-389]
+    4.3e-10   38.3   1.1    4.8e-10   38.2   1.1    1.1  1  OKH15206.1  hypothetical protein FACHB389_35625 [Nostoc calci
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH10856.1  IS4 family transposase [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  170.0   0.3   4.8e-54   1.1e-50      10     147 ..       5     142 ..       2     144 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 170.0 bits;  conditional E-value: 4.8e-54
+        anaH  10 teievknldhlglvagiideigiveiineqvsiergeivtagqvvkaiilnglgfvsralylfpqffedkatehllgegiepkqlnddkigrvmdklyq 108
+                  e+e++n+dhlg+vagiid ig+ve ine +  e+ge ++ g+vvka+ilnglgfvs+ ly+fp++fe  a ehl+  g++p  lnddk+grvmdkl+ 
+  OKH10856.1   5 EEMEIQNIDHLGIVAGIIDAIGLVETINELIGEEKGEKISPGHVVKAMILNGLGFVSKPLYMFPKYFETIACEHLIAPGVKPEYLNDDKLGRVMDKLFI 103
+                 699************************************************************************************************ PP
+
+        anaH 109 lnvsvifllislaavkkfgvatenshldstslskeikyk 147
+                   +  ifl i+l +vkkf ++   shlds+s+ ++++y 
+  OKH10856.1 104 KGLDTIFLKIALNTVKKFNLSLLSSHLDSSSMHVDGQYN 142
+                 ************************************996 PP
+
+>> OKH15159.1  transposase [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.8   0.8   7.3e-31   1.7e-27       8      76 ..       4      72 ..       1      76 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 94.8 bits;  conditional E-value: 7.3e-31
+        anaH  8 qsteievknldhlglvagiideigiveiineqvsiergeivtagqvvkaiilnglgfvsralylfpqff 76
+                q+ e e knldhlg+++giideigive ine  s +  e + +g+vvkaiilnglgfvs+ lylf qff
+  OKH15159.1  4 QTEEFESKNLDHLGIITGIIDEIGIVEKINEIFSQDSREKINTGEVVKAIILNGLGFVSKPLYLFSQFF 72
+                7889****************************************************************9 PP
+
+>> OKH15206.1  hypothetical protein FACHB389_35625 [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.2   1.1   2.1e-13   4.8e-10       9      40 ..      19      50 ..      11      63 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 38.2 bits;  conditional E-value: 2.1e-13
+        anaH  9 steievknldhlglvagiideigiveiineqv 40
+                + +ie++n+dhlg+vagiid ig+ve ine +
+  OKH15206.1 19 TKDIEIQNIDHLGIVAGIIDAIGLVETINELI 50
+                568***************************76 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (149 nodes)
+Target sequences:                         6978  (2322580 residues searched)
+Passed MSV filter:                       163  (0.0233591); expected 139.6 (0.02)
+Passed bias filter:                      134  (0.0192032); expected 139.6 (0.02)
+Passed Vit filter:                        20  (0.00286615); expected 7.0 (0.001)
+Passed Fwd filter:                         3  (0.000429923); expected 0.1 (1e-05)
+Initial search space (Z):               6978  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 6921.29
+//
+[ok]

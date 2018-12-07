@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272123_GCA_000317695.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      0.002   15.6   0.0     0.0032   14.9   0.0    1.2  1  AFZ60486.1  carbohydrate ABC transporter substrate-binding pr
+  ------ inclusion threshold ------
+      0.023   12.1   0.0      0.035   11.5   0.0    1.3  1  AFZ58589.1  extracellular solute-binding protein family 1 [An
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ60486.1  carbohydrate ABC transporter substrate-binding protein, CUT1 family [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   1.1e-06    0.0032     263     316 ..     303     359 ..     288     383 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.1e-06
+        futA 263 gahvnisgggl..iktapnre.saikfleylssneaqnffakgnqeypvvrgvaldp 316
+                      i gg l  +kt p+re +a+kfle++ s+e q  +a g    pv    a  p
+  AFZ60486.1 303 EKATVIGGGNLyvMKTKPEREkAALKFLEFVVSEEFQTEWAVGTGFLPVNLKSAQSP 359
+                 44555677765448******93579*****************999999876666555 PP
+
+>> AFZ58589.1  extracellular solute-binding protein family 1 [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.2e-05     0.035       5      65 ..       5      71 ..       1     101 [. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.2e-05
+        futA  5 itrrvflgagtatlavavgqlg.kinev......saqtkqlnlyssrhyntdrrlydnftrqtgikin 65
+                  rr fl    a  ++++   g k+ +v      s q++ l +y+  +y td  l   ft qtgik+ 
+  AFZ58589.1  5 TNRRQFLKNMVAVSSLSLSSCGwKLANVssnhtsSGQSDTLYIYTWTQY-TDSELLSTFTTQTGIKVL 71
+                4578888888887777776665555555111111468889999999888.89**************84 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         5838  (1879690 residues searched)
+Passed MSV filter:                       144  (0.024666); expected 116.8 (0.02)
+Passed bias filter:                      125  (0.0214114); expected 116.8 (0.02)
+Passed Vit filter:                         5  (0.000856458); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000342583); expected 0.1 (1e-05)
+Initial search space (Z):               5838  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 10996.19
+//
+[ok]

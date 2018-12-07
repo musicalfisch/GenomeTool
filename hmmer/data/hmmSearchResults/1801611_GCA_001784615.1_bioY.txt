@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801611_GCA_001784615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-06   23.5   9.0    4.6e-06   23.5   9.0    1.5  2  OGI22184.1  hypothetical protein A2255_06550 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI22184.1  hypothetical protein A2255_06550 [Candidatus Melainabacteria bacterium RIFOXYA2_FULL_32_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0      0.23   4.6e+02      30      49 ..      24      44 ..      22      52 .. 0.68
+   2 !   23.5   9.0   2.2e-09   4.6e-06      58     147 ..      76     165 ..      37     189 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.23
+        bioY 30 asLLlillaq.liiallflPv 49
+                +s L++l    lii + f+P 
+  OGI22184.1 24 GSFLVALFCTfLIIMATFTPL 44
+                667777765426777777774 PP
+
+  == domain 2  score: 23.5 bits;  conditional E-value: 2.2e-09
+        bioY  58 vllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRl.arkraasdllnlvLisllG 147
+                  l +  q++a L ++++l+++        y+  Gl + +v+  g+G  +  +  ++y+ G++v  + v+   + k         +L+ +  
+  OGI22184.1  76 YLYI-PQIPAVLFIAAMLGPRIGLFSIAVYIGAGLLGFPVFASGGGVQYATQLVFGYILGYFVGVYLVGNIlSAKANFASTFRATLVGVFA 165
+                 4444.49**************98888788************************************99997513444444444555554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         2045  (635410 residues searched)
+Passed MSV filter:                        55  (0.0268949); expected 40.9 (0.02)
+Passed bias filter:                       26  (0.0127139); expected 40.9 (0.02)
+Passed Vit filter:                         3  (0.00146699); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000488998); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6640.03
+//
+[ok]

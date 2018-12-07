@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710895_GCA_001672095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-51  171.4  13.4    2.2e-51  171.3  13.4    1.0  1  OBQ30541.1  ATP synthase F0F1 subunit B' [Aphanizomenon flos-
+    7.8e-17   59.3  16.1    8.4e-17   59.2  16.1    1.0  1  OBQ29505.1  ATP synthase F0F1 subunit B', partial [Aphanizome
+    0.00015   19.4   7.5    0.00026   18.7   7.5    1.4  1  OBQ29506.1  ATP synthase F0F1 subunit B [Aphanizomenon flos-a
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ30541.1  ATP synthase F0F1 subunit B' [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  171.3  13.4   1.6e-54   2.2e-51       1     142 [.       1     142 [.       1     143 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 171.3 bits;  conditional E-value: 1.6e-54
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf+lla +lna+fykp++kvld+ra+y+r  +  a+++lak+e+l +eye ql+sar+qsq  i  aq ea+k++++++a aq+ea
+  OBQ30541.1   1 MFDFDATLPLMALQFLLLAALLNAIFYKPMTKVLDDRANYVRTNNLDARDRLAKAESLTKEYEQQLASARRQSQVTIETAQNEAKKITAQKIAQAQQEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv 142
+                   ++e  a ei qqk+ a+ +le qv +ls qilekllg+ l 
+  OBQ30541.1 100 QVQREQAAKEIEQQKQAAMATLETQVDALSNQILEKLLGSALA 142
+                 ***************************************9875 PP
+
+>> OBQ29505.1  ATP synthase F0F1 subunit B', partial [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.2  16.1   6.4e-20   8.4e-17      67     142 ..       1      76 [.       1      77 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 59.2 bits;  conditional E-value: 6.4e-20
+        atpG  67 ssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv 142
+                 +sar+qsq  i  aq ea+k++++++a aq+ea  ++e  a ei qqk+ a+ +le qv +ls qilekllg+ l 
+  OBQ29505.1   1 ASARRQSQVTIETAQNEAKKITAQKIAQAQQEAQVQREQAAKEIEQQKQAAMATLETQVDALSNQILEKLLGSALA 76 
+                 59**********************************************************************9885 PP
+
+>> OBQ29506.1  ATP synthase F0F1 subunit B [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   7.5     2e-07   0.00026       8     133 ..      32     160 ..      26     169 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 2e-07
+        atpG   8 lpvmalqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiark 103
+                 l ++  ++i l +++  +fy   k l+++l+er   i      a  +l  +++ + + + ql+ a++++q i   a+ +aq      +a a+ +    k
+  OBQ29506.1  32 LDILETNLINLLILIGILFYfgrKVLTNILNERRSSIESVIQDAESRLQEAQTSLAKAQGQLTQAQQEAQRITQVAEQNAQAAKEAILAKANLDVERLK 130
+                 66677777888888888888676899************9999999999999999999999999999999999999999998766666777777777779 PP
+
+        atpG 104 eavaaeiaqqkeeafrslegqvaslsrqil 133
+                 e+ a+++  + ++a+  l  +v   + q +
+  OBQ29506.1 131 ETAASDLNAELDKAISQLRQKVVLKALQKV 160
+                 999999999999999999888876665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         3936  (1184914 residues searched)
+Passed MSV filter:                       145  (0.0368394); expected 78.7 (0.02)
+Passed bias filter:                       76  (0.0193089); expected 78.7 (0.02)
+Passed Vit filter:                         8  (0.00203252); expected 3.9 (0.001)
+Passed Fwd filter:                         3  (0.000762195); expected 0.0 (1e-05)
+Initial search space (Z):               3936  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5648.09
+//
+[ok]

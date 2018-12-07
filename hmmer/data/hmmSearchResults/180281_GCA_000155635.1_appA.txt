@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-08   28.8   7.0    1.5e-08   28.8   7.0    1.4  2  EDY37616.1  von Willebrand factor, type A [Cyanobium sp. PCC 
+    1.9e-06   21.8   0.2    2.4e-06   21.5   0.2    1.0  1  EDY39700.1  peptidyl-prolyl cis-trans isomerase, FKBP-type do
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY37616.1  von Willebrand factor, type A [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -7.6   4.2         1   1.4e+03    2114    2310 ..     404     427 ..     325     466 .. 0.51
+   2 !   28.8   7.0   1.1e-11   1.5e-08    1177    1248 ..     504     575 ..     490     586 .. 0.34
+
+  Alignments for each domain:
+  == domain 1  score: -7.6 bits;  conditional E-value: 1
+        appA 2114 tiknddvtlpsitlavspssvtedgttnlvytftrtgsttsaltanytvggtatlntdytrtgtnntvtfaansstatitvdptadttvepdetvtl 2210
+                  t   + vtlp  ++  s ss+t                                                                           
+  EDY37616.1  404 TDGTNPVTLPLDAVQASGSSLT--------------------------------------------------------------------------- 425 
+                  2222223333333333333322........................................................................... PP
+
+        appA 2211 tlasgtgytvgtttavtgtiknddvtlpsitlavspssvnedgttnlvytftrsgsttnaltvnytlggtatlntdytrtgttntvtfaagsstatv 2307
+                                                                                                                   
+  EDY37616.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2308 tvd 2310
+                   v+
+  EDY37616.1  426 -VN 427 
+                  .22 PP
+
+  == domain 2  score: 28.8 bits;  conditional E-value: 1.1e-11
+        appA 1177 igtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgldt 1248
+                  +    gnd + gg  +d + gg g+d++ g  gnd +  g g dv+  g+g d +   sg d++ gg+g dt
+  EDY37616.1  504 MTGSFGNDVLRGGRKKDRLFGGDGDDLLIGKKGNDRLYGGNGNDVLRGGAGPDWLRGGSGRDVLIGGSGKDT 575 
+                  222222222222222222222222222222222222222222222222222222222222222222222222 PP
+
+>> EDY39700.1  peptidyl-prolyl cis-trans isomerase, FKBP-type domain protein [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.2   1.7e-09   2.4e-06    2565    2636 ..     165     242 ..     139     255 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 1.7e-09
+        appA 2565 tgntlnnvitgnsgnnilngsdgndtliggtgndtltggaggdqftfnnrnegi......dtitdflssqgdkiavsa 2636
+                   g   ++ +tg    +++ g d nd lig  g d l gg   d+f ++n  + +      d i df + qgdk+ + a
+  EDY39700.1  165 IGYDTKDRMTGGPRVDLIIGLDKNDKLIGLQGADRLIGGKRKDRFIYKNVTDSLpgqgnrDVILDFSAKQGDKVDLRA 242 
+                  34445677899999999********************************9875444444599***********97655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                        68  (0.0245399); expected 55.4 (0.02)
+Passed bias filter:                       53  (0.0191267); expected 55.4 (0.02)
+Passed Vit filter:                         7  (0.00252616); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000721761); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.19u 0.01s 00:00:00.20 Elapsed: 00:00:00.21
+# Mc/sec: 10607.79
+//
+[ok]

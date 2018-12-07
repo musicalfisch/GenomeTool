@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/373994_GCA_000316665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-05   22.2   7.0    6.9e-05   21.9   7.0    1.4  1  AFY53646.1  Uncharacterized protein family UPF0546 [Rivularia
+  ------ inclusion threshold ------
+      0.043   12.9  18.2      0.052   12.6   0.7    4.4  4  AFY55677.1  putative efflux protein, MATE family [Rivularia s
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY53646.1  Uncharacterized protein family UPF0546 [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   7.0   2.1e-08   6.9e-05      31     102 ..      47     118 ..       4     122 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 2.1e-08
+        emrC  31 lipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 ++p +li + +yg++     l l ++++sva    a+l  v+   ig  +f+es+ l++l  ++li+ gvi +
+  AFY53646.1  47 TTPELLIgLACYGIGAVVYILLLTRVNLSVAGP-SASLVYVFSVLIGYFIFKESIPLMRLAGLSLIVCGVILV 118
+                 46888885679*******************976.5889999999**************************965 PP
+
+>> AFY55677.1  putative efflux protein, MATE family [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.7     9e-05       0.3      30      92 ..     160     229 ..     133     233 .. 0.62
+   2 ?   12.6   0.7   1.6e-05     0.052      52     103 ..     252     303 ..     240     306 .. 0.91
+   3 ?   -1.3   0.1      0.33   1.1e+03      53      97 ..     314     362 ..     310     377 .. 0.56
+   4 ?   -0.6   0.8       0.2   6.7e+02      20      64 ..     389     434 ..     356     439 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 9e-05
+        emrC  30 klipsvlifvfyglcltfltlal......kkievs.vaysvwaglgtvliavigliwfresltlvklisi 92 
+                  l+ps++++ +  + +++  l +       ++e+   a +   + gt+lia++ ++ fre +  +kl +i
+  AFY55677.1 160 TLTPSLIMIFAAAINIALDPLLIlgiggfPRLELQgAAIATVVSRGTTLIAALVVLHFREKMLYLKLPTI 229
+                 566665555555555554443321111113555532456667788*****************99998655 PP
+
+  == domain 2  score: 12.6 bits;  conditional E-value: 1.6e-05
+        emrC  52 lkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigin 103
+                 ++ i + v+ s+ ag+g+  +a+ g+    es++l+ +++++  i   +g n
+  AFY55677.1 252 INPISIGVVTSLLAGFGAEAVAAFGVASRIESFSLIAVVALSSSIAPFVGQN 303
+                 567999***********************************99999999887 PP
+
+  == domain 3  score: -1.3 bits;  conditional E-value: 0.33
+        emrC  53 kkievsvaysvwagl.gtvliavi..gli.wfresltlvklisialiii 97 
+                 k +++s+ +s++ gl  + ++a+   +li +f+    +v + s  l i+
+  AFY55677.1 314 KALQLSFLFSLFWGLmAAGVLAATapTLIaFFNPNPDIVAIASQYLWIV 362
+                 6677888888765551333333321133413444455555555555554 PP
+
+  == domain 4  score: -0.6 bits;  conditional E-value: 0.2
+        emrC  20 tcmklsegftklipsvli.fvfyglcltfltlalkkievsvaysvw 64 
+                 + m ++  f   ip  +     yg+   f + ++ ++ v +   vw
+  AFY55677.1 389 VIMTVTRMFVLYIPLAYFgGRLYGVNGIFAAACISNLIVGIGAYVW 434
+                 3444555555555533321345777777777777777777766666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         6644  (2270700 residues searched)
+Passed MSV filter:                       294  (0.0442505); expected 132.9 (0.02)
+Passed bias filter:                      109  (0.0164058); expected 132.9 (0.02)
+Passed Vit filter:                        12  (0.00180614); expected 6.6 (0.001)
+Passed Fwd filter:                         3  (0.000451535); expected 0.1 (1e-05)
+Initial search space (Z):               6644  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 3008.68
+//
+[ok]

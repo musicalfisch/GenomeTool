@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.4e-07   27.8   0.0    3.5e-07   27.2   0.0    1.1  1  ERT07712.1  glutamine synthetase, catalytic domain protein [L
+    2.7e-06   24.3   0.0    3.4e-06   24.0   0.0    1.1  1  ERT06875.1  glutamine synthetase, type I [Lyngbya aestuarii B
+  ------ inclusion threshold ------
+      0.038   10.6   0.0      0.059   10.0   0.0    1.2  1  ERT04043.1  methyltransferase domain protein, partial [Lyngby
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT07712.1  glutamine synthetase, catalytic domain protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.0   1.6e-10   3.5e-07     267     355 ..     163     251 ..     147     268 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 1.6e-10
+        glnN 267 vqvfmqeveerlyrlgipaktrhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsvgna 355
+                  q  ++e+ e l   gi     + e  pgq ei+ ++  a +a+d+q +    +k+ a+kh + + +  k f    gsg h+  s+ + 
+  ERT07712.1 163 QQQTIDEIAEALIAQGISVEQYYPESGPGQQEISILYTDAAIAADQQIIFRETVKAIARKHDLYASFLPKIFPNQAGSGAHLHLSLWQG 251
+                 56678999*************************************999999*******************************9998654 PP
+
+>> ERT06875.1  glutamine synthetase, type I [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.0   0.0   1.6e-09   3.4e-06     254     357 ..     177     282 ..     129     334 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 24.0 bits;  conditional E-value: 1.6e-09
+        glnN 254 qfddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnw 350
+                 ++ + yf   p + +q +  e+   +   g+p    h eva  gq e+   f +   a+d   +   ++k  akk+g  + +  kp    ngsg h   
+  ERT06875.1 177 RYKEGYFPVSPtDTMQDMRTEMLLTMAECGVPIEKHHHEVATgGQNELGFRFGTLIEAADNLMIYKYVIKNVAKKYGKTVTFMPKPVFNDNGSGMHCHQ 275
+                 5677788877734567777788889999************97369999999***999*****999********************************99 PP
+
+        glnN 351 svgnatq 357
+                 s+ +  q
+  ERT06875.1 276 SIWKDGQ 282
+                 9876544 PP
+
+>> ERT04043.1  methyltransferase domain protein, partial [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   2.7e-05     0.059     541     634 ..     630     728 ..     613     735 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 2.7e-05
+        glnN 541 yseewhkmaveerglanlrttadalpvlkadyieelfarlgvltpvelesrfdvyae.qy.llaieveaklv..vsmaktiiypaavry.lselslaia 634
+                   ++ +k+ v e g     tta  lp lk++ +e +f+ +  l + + e +f+ y+  +y ll ie e +l    s ++ ii  a v +  ++l +++a
+  ERT04043.1 630 NQPQTQKLKVLEIGAGTGGTTAYILPHLKTENLEYIFTDVSPLFTTKAEQKFKDYSCvRYqLLDIEKEPNLQgyKSESHQIIIAANVLHaTADLRQTLA 728
+                 56777899999*****************************************99974234388999999886224666677777766441456666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       149  (0.0229055); expected 130.1 (0.02)
+Passed bias filter:                      127  (0.0195234); expected 130.1 (0.02)
+Passed Vit filter:                        17  (0.00261337); expected 6.5 (0.001)
+Passed Fwd filter:                         3  (0.000461184); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.12
+# Mc/sec: 11610.71
+//
+[ok]

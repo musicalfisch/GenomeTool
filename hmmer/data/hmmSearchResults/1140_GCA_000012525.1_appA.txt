@@ -1,0 +1,118 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1140_GCA_000012525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-09   32.0  28.8    2.3e-05   18.2   9.0    3.1  2  ABB56932.1  conserved hypothetical protein [Synechococcus elo
+    2.1e-09   31.6  87.1      3e-07   24.4  26.1    5.8  3  ABB57317.1  VCBS [Synechococcus elongatus PCC 7942]
+    1.9e-08   28.4   4.1    2.3e-08   28.1   4.1    1.0  1  ABB57158.1  conserved hypothetical protein [Synechococcus elo
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB56932.1  conserved hypothetical protein [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   2.7   6.6e-08   5.9e-05    1618    1682 ..     128     192 ..     110     195 .. 0.45
+   2 !   18.2   9.0   2.6e-08   2.3e-05    1181    1220 ..     189     228 ..     178     258 .. 0.38
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 6.6e-08
+        appA 1618 ndtinggggndtiegglgndvisggdgndaiaagggsdviigvktgstepgknevdtltggegrd 1682
+                   dt+ g  gnd + gglg d + gg g+d++   g    +  v    t p   e + l ggeg d
+  ABB56932.1  128 GDTLYGEAGNDLLLGGLGRDYLYGGVGDDTLEGYGFKPQLSQVAVDDTFPFEIEGNFLDGGEGND 192 
+                  23444444444444444444444444444444444444444444444444444444444444444 PP
+
+  == domain 2  score: 18.2 bits;  conditional E-value: 2.6e-08
+        appA 1181 dgndtinggggndtiegglgndiinggdgndaiaagggsd 1220
+                  +gnd + g  gndt+ gg g+d++ng  g d i+ g gsd
+  ABB56932.1  189 EGNDVLLGSMGNDTLIGGTGDDVLNGRGGRDLITGGLGSD 228 
+                  1111111111111111111111111111111111111111 PP
+
+>> ABB57317.1  VCBS [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5  18.3     1e-08   8.9e-06    1171    1230 ..     225     284 ..     210     285 .. 0.36
+   2 !   24.4  26.1   3.4e-10     3e-07    1400    1472 ..     281     354 ..     280     368 .. 0.35
+   3 !   16.4  26.7     9e-08   7.9e-05     951    1470 ..     420     504 ..     412     515 .. 0.30
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 1e-08
+        appA 1171 tngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddt 1230
+                   +g d +   d +dti gg gndti    gn++i+g + nd+i  g  sd in g+g dt
+  ABB57317.1  225 FEGDDRLTGADQDDTILGGDGNDTIIEINGNNLIEGNNNNDSIVGGTDSDRINGGAGADT 284 
+                  222222222222222222222222222222222222222222222222222222222222 PP
+
+  == domain 2  score: 24.4 bits;  conditional E-value: 3.4e-10
+        appA 1400 gndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtva.nvsgddiidggtgldtisdlny 1472
+                  g dti gg g dti+gglgnd i g  gnd i   g s+ i  g+g+dt+   ++g + idgg   d i+++ +
+  ABB57317.1  281 GADTILGGDGADTIDGGLGNDSIFGDSGNDNIRGFGDSNTILGGSGNDTIEgTIAGSNSIDGGENDDVITEIGF 354 
+                  22333333333333333333333333333333333333333333333333212233333333333333333322 PP
+
+  == domain 3  score: 16.4 bits;  conditional E-value: 9e-08
+        appA  951 tgtngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgldtisdlnydssnsaiilne 1047
+                  +g+ng d i + +g + i+g   nd+i gg   d ingg g d+++ g gsd     +  d +a  sg++                           
+  ABB57317.1  420 SGSNGNDTIIAINGSNLIEGNNDNDSIVGGTDSDTINGGTGADTLTGGLGSDTFSFAATGDGIAATSGEN--------------------------- 489 
+                  2233333333333333333333333333333333333333333333333333222111111222222221........................... PP
+
+        appA 1048 lggaatllgtniknierfgsvilgsgndkiefssrfnnqeinsgqgndtingglgidiinggdgndlliidyssnqyagsnvhpagisyydgfsqsy 1144
+                                                                                                                   
+  ABB57317.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1145 tcyyddkdysydkvlfysieqfqitgtngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiid 1241
+                                                                                                                 + 
+  ABB57317.1  490 ---------------------------------------------------------------------------------------------GSVT 493 
+                  .............................................................................................1222 PP
+
+        appA 1242 ggtgldtisdlnydssnsaiilnelggaatllgtniknierfgsvilgsgndkiefssrfnnqeinsgqgndtingglgidiinggdgndlliidys 1338
+                   g g+d i+d                                                                                       
+  ABB57317.1  494 FGNGFDYITD--------------------------------------------------------------------------------------- 503 
+                  2333333322....................................................................................... PP
+
+        appA 1339 snqyagsnvhpagisyydgfsqsytcyyddkdysydkvlfysieqfqitgtngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagg 1435
+                                                                                                                   
+  ABB57317.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1436 gsdvinagtgddtvanvsgddiidggtgldtisdl 1470
+                                                    +
+  ABB57317.1  504 ----------------------------------F 504 
+                  ..................................2 PP
+
+>> ABB57158.1  conserved hypothetical protein [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.1   4.1   2.5e-11   2.3e-08    2572    2625 ..     217     274 ..     161     295 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 28.1 bits;  conditional E-value: 2.5e-11
+        appA 2572 vitgnsgnnilngsdgndtliggtgndtltggaggdqftfnn....rnegidtitdfl 2625
+                   + g  gn++l   +g+d lig  g dtltggag dqf +      +  g d itdf 
+  ABB57158.1  217 TLIGTNGNDLLTAGNGDDNLIGELGADTLTGGAGQDQFLYRAiadsQLSGFDQITDFQ 274 
+                  57799*********************************996511115679******96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         2661  (809802 residues searched)
+Passed MSV filter:                        83  (0.0311913); expected 53.2 (0.02)
+Passed bias filter:                       67  (0.0251785); expected 53.2 (0.02)
+Passed Vit filter:                         8  (0.00300639); expected 2.7 (0.001)
+Passed Fwd filter:                         3  (0.0011274); expected 0.0 (1e-05)
+Initial search space (Z):               2661  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.29u 0.02s 00:00:00.31 Elapsed: 00:00:00.31
+# Mc/sec: 7076.62
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111780_GCA_000317575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-34  116.8   0.1    3.1e-34  116.7   0.1    1.0  1  AFZ37669.1  Phosphoadenosine phosphosulfate reductase [Stanie
+  ------ inclusion threshold ------
+      0.039   11.6   0.0      0.039   11.6   0.0    1.1  1  AFZ38308.1  hypothetical protein Sta7437_4880 (plasmid) [Stan
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ37669.1  Phosphoadenosine phosphosulfate reductase [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.7   0.1   1.3e-37   3.1e-34      10     241 .]       7     237 ..       1     237 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 116.7 bits;  conditional E-value: 1.3e-37
+        cysD  10 qttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkvyktpdvdtr 108
+                 + +++dl  +nq++  a   e++ w+ +  s  lv +++f ++  ++ +++ +++   +pvi++dt y   et ++        nl+lkvy++    +r
+  AFZ37669.1   7 EQPQLDLVTINQQLANADATELIKWANQTFSDRLVMSTSFGIQAAVMLHLV-TQVIPDIPVIWVDTGYLPAETYKFAEELTTRLNLNLKVYQSSISPAR 104
+                 56889*******************************************976.567778**********************************9987777 PP
+
+        cysD 109 eafaakygealwdkdia...kfhevtkieplqrglaelntvawitgrrrdqavtranm.pifeldsknrikvnplanwtrkksweyvaehgviynplhd 203
+                   + a yg+   ++d+    ++  + k+ep+qr l+eln+ aw++g rr+q+  r  + pi   + +nr k+ p+ +w  ++ ++y++ h + y p  d
+  AFZ37669.1 105 --MEALYGKLWEQNDVEafnRYDYLRKVEPMQRALTELNAAAWLAGLRREQTKHRQHLaPIS--QQENRYKIYPILDWHSRDIYQYLTTHDLPYHPYFD 199
+                 ..456777643345665111556799*****************************9973554..5789******************************* PP
+
+        cysD 204 qgypsigdepittkvg.egederagrwrgtgktecgihi 241
+                  gy ++gd   + ++  +   er  r+rg  k ecg+h+
+  AFZ37669.1 200 LGYVTVGDWHSSRPLTtDDSHERDTRFRGL-KQECGLHL 237
+                 ********87777765156789*******6.88****96 PP
+
+>> AFZ38308.1  hypothetical protein Sta7437_4880 (plasmid) [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.6e-05     0.039      16      95 ..      18      93 ..       1     131 [. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.6e-05
+        cysD 16 leqlnq...kfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynl 95
+                l+q+n     f+  +p++ +aws+e+ +  + q   f     +i   lys+ k  vp  ++d ++hf+  l+     k+  nl
+  AFZ38308.1 18 LNQINFgpiAFKLMHPEDGIAWSLEQATEAIEQYRRF-----LILSYLYSE-KIVVPSKIIDRVWHFH-ILDTAKYRKDCQNL 93
+                56666433369999************99999998877.....677889998.788999999**99996.44444444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         4781  (1511376 residues searched)
+Passed MSV filter:                        93  (0.019452); expected 95.6 (0.02)
+Passed bias filter:                       72  (0.0150596); expected 95.6 (0.02)
+Passed Vit filter:                         6  (0.00125497); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000418323); expected 0.0 (1e-05)
+Initial search space (Z):               4781  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 9106.04
+//
+[ok]

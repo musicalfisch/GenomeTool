@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1921803_GCA_001904635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      9e-50  165.1   7.1    9.8e-50  165.0   7.1    1.0  1  OKH24109.1  ATP synthase F0 subunit C [Hydrococcus rivularis 
+    3.4e-19   67.2   1.9    3.7e-19   67.0   1.9    1.0  1  OKH21718.1  ATP synthase F0 subunit C [Hydrococcus rivularis 
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH24109.1  ATP synthase F0 subunit C [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.0   7.1   4.5e-53   9.8e-50       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 165.0 bits;  conditional E-value: 4.5e-53
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                m+p++a+asviaaalavGlaaiGpgigqGna+gqav+GiarqpeaeGkirgtlll+lafmesltiyGlv+alvllfanpfa
+  OKH24109.1  1 MNPILASASVIAAALAVGLAAIGPGIGQGNASGQAVSGIARQPEAEGKIRGTLLLTLAFMESLTIYGLVIALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> OKH21718.1  ATP synthase F0 subunit C [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.0   1.9   1.7e-22   3.7e-19       3      80 ..       5      82 ..       1      83 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 67.0 bits;  conditional E-value: 1.7e-22
+        atpH  3 plvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                +l+   s+++a+l++ ++++Gp++g+  a +qa+  +a+qp+    i  tl++ +af+e+  iy +v++l+l+fanpf
+  OKH21718.1  5 SLIGMVSIFTAGLTMAVGSVGPALGEARAVAQALISLAQQPDEANTITRTLFVGVAFIETTGIYCFVISLILIFANPF 82
+                578899***********************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         4392  (1417121 residues searched)
+Passed MSV filter:                       182  (0.041439); expected 87.8 (0.02)
+Passed bias filter:                       83  (0.018898); expected 87.8 (0.02)
+Passed Vit filter:                        10  (0.00227687); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455373); expected 0.0 (1e-05)
+Initial search space (Z):               4392  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5739.34
+//
+[ok]

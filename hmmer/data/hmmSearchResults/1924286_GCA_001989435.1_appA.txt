@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924286_GCA_001989435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-34  115.0  63.0      1e-34  115.0  63.0    2.1  2  AQL31714.1  hypothetical protein BS620_01470 [Prochlorococcus
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL31714.1  hypothetical protein BS620_01470 [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.0  63.0   5.6e-38     1e-34    2441    2613 ..     459     628 ..     365     710 .. 0.75
+   2 ?  -10.0   9.9         1   1.8e+03    2452    2638 ..     644     829 ..     629     836 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 115.0 bits;  conditional E-value: 5.6e-38
+        appA 2441 vnatltnnkgi.vtisdtltanvtttlpanvenltltgttni.ngtgntlnniitgnsgnnilngatgidtligglgndtyqvdtttdtitenanqg 2535
+                   natl n  g    is   t n+  t+  n      tg   i n tg + n+ + gn  nn+lng +g dtligg gndty vd+t+dt+ten+ +g
+  AQL31714.1  459 RNATLENSLGGgGFISRLGTQNIGYTIAFNS-----TGNCIIeNATGGSNNDSLVGNEYNNLLNGGAGDDTLIGGAGNDTYLVDSTSDTVTENSSEG 550 
+                  3556665544313455555666666655543.....3444333677888899999****************************************** PP
+
+        appA 2536 tdtvqssvtytlgnnlenltltgtaningtgntlnnvitgnsgnnilngsdgndtliggtgndtltggaggdqftfnn 2613
+                  td +qssvtyt  nn+enltltg++ni+ tgn+l+n +tgnsgnn l+g  gndtligg+g+dtltgg+g d   f  
+  AQL31714.1  551 TDLIQSSVTYTASNNVENLTLTGSSNIDATGNSLDNTLTGNSGNNTLDGGSGNDTLIGGSGDDTLTGGTGTDTAQFSA 628 
+                  ***********************************************************************9877754 PP
+
+  == domain 2  score: -10.0 bits;  conditional E-value: 1
+        appA 2452 vtisdtltanvtttlpanvenltltgttningtgntlnniitgnsgnnilngatgidtligglgndtyqvdttt..d.titenanqgtdtvq..ssv 2543
+                  + i+d  +    t   + +enlt+  tt    t   l n     s    l g++ i tl    g  ty  d+++  d t ++++  g d +   s  
+  AQL31714.1  644 IKITDNTSNRDGTDSLTTIENLTFNSTTY---TASNLRNGAFLSSDGYKLIGTSDIYTLKNSEG-GTYSDDSSSlwDvTAAKQTGSGFDVLFegSDG 736 
+                  34555544444555557799999999886...33444444444555566779999999998877.47887776522224455666677876422667 PP
+
+        appA 2544 tytlgnnlenltltgtaningtgn.tlnnvitgnsgnnilngsd.gndtliggtgndtltggaggdqftfnnrnegidtitdflssqgdkiavsaag 2638
+                  +y  g n    t +      g+g  t  +  +  sg +   g d  nd li g     l g    d +t++n + g  t +d  ss  d  a   +g
+  AQL31714.1  737 SYREGYNYIWSTNSSGVMTTGSGWlTDAQTASHASGYENKFGKDfNNDGLISGGSAYQLFGS--SDIYTLKNSEGG--TYSDDSSSLWDVTAAKQTG 829 
+                  88888888777777777777777524445566778988888888457999999999999886..589999887766..5667677766666655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         1795  (496009 residues searched)
+Passed MSV filter:                        69  (0.0384401); expected 35.9 (0.02)
+Passed bias filter:                       48  (0.0267409); expected 35.9 (0.02)
+Passed Vit filter:                         5  (0.00278552); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000557103); expected 0.0 (1e-05)
+Initial search space (Z):               1795  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.15u 0.02s 00:00:00.17 Elapsed: 00:00:00.17
+# Mc/sec: 7904.05
+//
+[ok]

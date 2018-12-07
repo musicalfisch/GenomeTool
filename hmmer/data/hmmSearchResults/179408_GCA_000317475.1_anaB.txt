@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/179408_GCA_000317475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaB  [M=394]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-06   25.5   0.0    2.6e-06   25.0   0.0    1.2  1  AFZ07280.1  acyl-CoA dehydrogenase domain-containing protein 
+  ------ inclusion threshold ------
+      0.042   11.1   0.0      0.064   10.5   0.0    1.2  1  AFZ06862.1  NAD-dependent epimerase/dehydratase [Oscillatoria
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ07280.1  acyl-CoA dehydrogenase domain-containing protein [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   0.0   8.1e-10   2.6e-06      17     178 ..      11     169 ..       2     224 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 8.1e-10
+        anaB  17 rafvdeeivpyaneydrkeltppelikklaqkgflgailpkeyggkamdlitygllneeigrgcsslrslltvhnmvahallkwgnksqkeywlpklas 115
+                  +++++ i p+a+ +d++  + +  +  l +++ l+  +p+++gg ++    +   +e   r   +l  l t h   +  l+   n++ k  +lp +a 
+  AFZ07280.1  11 ETYLQKCISPHAEIIDSDSEALKTAVAGLEDRSLLALRVPQKWGGAEIAPEIFYQYQELTARYSGALSFLQTQHHSATAMLANSDNEMLKSRYLPAIAQ 109
+                 5788999*****************************************9888888999999************************************** PP
+
+        anaB 116 geiiaafalsepnvgsdaksvettatlsgdayvlngqkkwitygqiadvflvfakcegkpsaf 178
+                  e+   + +s         +   tat ++  y+l g+  w+t   + + f+v a +    + f
+  AFZ07280.1 110 KELRLGIGFSHLRRSG-NPA--VTATPTKAGYLLSGKVPWVTGFALFQKFIVAAVLPDNRAVF 169
+                 *******999976433.334..577777888***********999999999988766555555 PP
+
+>> AFZ06862.1  NAD-dependent epimerase/dehydratase [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0     2e-05     0.064     290     350 ..      49     108 ..      37     124 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2e-05
+        anaB 290 arllcyqagylkdindpnsiietsiakyfastvatkiandavqihggngcsseysverylr 350
+                   +  yqa    + ++p s +     + +as+v++ki   ++ i gg+gc   + +e+ l 
+  AFZ06862.1  49 QLIAAYQADGQLE-SEPFSDVRGRTIHLYASAVSSKIKGKSILITGGEGCVGRFLIEKLLE 108
+                 4445688744333.688898999899999**************************999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (394 nodes)
+Target sequences:                         6360  (2131415 residues searched)
+Passed MSV filter:                       152  (0.0238994); expected 127.2 (0.02)
+Passed bias filter:                      124  (0.0194969); expected 127.2 (0.02)
+Passed Vit filter:                        10  (0.00157233); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000314465); expected 0.1 (1e-05)
+Initial search space (Z):               6360  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 11996.82
+//
+[ok]

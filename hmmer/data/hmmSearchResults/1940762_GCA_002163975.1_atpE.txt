@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1940762_GCA_002163975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-84  277.8   1.2    5.8e-84  277.6   1.2    1.0  1  ARV57645.1  F0F1 ATP synthase subunit epsilon [Nostocales cya
+  ------ inclusion threshold ------
+        3.5    6.3  18.3       0.96    8.1   1.2    3.2  3  ARV61176.1  HlyD family secretion protein [Nostocales cyanoba
+
+
+Domain annotation for each sequence (and alignments):
+>> ARV57645.1  F0F1 ATP synthase subunit epsilon [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  277.6   1.2   1.9e-87   5.8e-84       1     137 []       1     137 []       1     137 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 277.6 bits;  conditional E-value: 1.9e-87
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvispdktvwda+aeev+lpsttgqlgilsghaplltaldtgvmrvr+s+nqdw+aiallggfaeve++evtilvn+aergdkinl+earaafn
+  ARV57645.1   1 MTLTVRVISPDKTVWDASAEEVVLPSTTGQLGILSGHAPLLTALDTGVMRVRPSRNQDWVAIALLGGFAEVEQNEVTILVNSAERGDKINLDEARAAFN 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 ea+tklnqv a+drqaqiqa+qa+krararfqaagg+v
+  ARV57645.1 100 EAETKLNQVPAGDRQAQIQADQAYKRARARFQAAGGMV 137
+                 ************************************98 PP
+
+>> ARV61176.1  HlyD family secretion protein [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   1.2   0.00031      0.96      64     122 ..      87     144 ..      60     156 .. 0.73
+   2 ?    3.7   2.0    0.0073        23      89     130 ..     193     234 ..     184     238 .. 0.83
+   3 ?    2.9   7.1     0.013        40      93     133 ..     222     269 ..     212     273 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00031
+        atpE  64 llggfaeveedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqa 122
+                 l+     v+  +   ++++ +r ++ +le a+     aq+kl+qvka+ +  +i a++a
+  ARV61176.1  87 LVKRGDRVQAGQAIAILESRDRLQTSQLE-AQERIRVAQAKLAQVKAGAKSGEIAAQKA 144
+                 44455566666666677888888888885.7889999*****************99987 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.0073
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatqafkrararf 130
+                  nl++ r + ++a+++l++vka+ +++     + + rara +
+  ARV61176.1 193 SNLDQRRLTLETAEAQLKEVKANRNRTADTLRAQINRARATL 234
+                 589999**************9987777666777789999976 PP
+
+  == domain 3  score: 2.9 bits;  conditional E-value: 0.013
+        atpE  93 earaafneaqtklnqvka...ed...rqaqi.qatqafkrararfqaa 133
+                   ra+ n+a++ lnq+++    d    q+++ qa++a kra+a +q a
+  ARV61176.1 222 TLRAQINRARATLNQIAEvrpVDvqvAQTEVdQANAAAKRAKAELQEA 269
+                 557777777777777654222221113333358999********9977 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         6177  (2043057 residues searched)
+Passed MSV filter:                       224  (0.0362636); expected 123.5 (0.02)
+Passed bias filter:                      166  (0.0268739); expected 123.5 (0.02)
+Passed Vit filter:                        17  (0.00275215); expected 6.2 (0.001)
+Passed Fwd filter:                         4  (0.000647564); expected 0.1 (1e-05)
+Initial search space (Z):               6177  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 5597.98
+//
+[ok]

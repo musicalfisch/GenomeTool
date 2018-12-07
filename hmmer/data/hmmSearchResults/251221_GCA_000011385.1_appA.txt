@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-11   38.9  47.8    1.4e-08   29.6  14.7    2.1  2  BAC92081.1  glr4140 [Gloeobacter violaceus PCC 7421]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC92081.1  glr4140 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7  25.1   1.9e-10   8.2e-07    1412    1466 ..     148     202 ..      99     203 .. 0.35
+   2 !   29.6  14.7   3.1e-12   1.4e-08    1400    1454 ..     190     244 ..     188     261 .. 0.38
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 1.9e-10
+        appA 1412 tiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgldt 1466
+                  tie g g d i+ggdgn++i  g g d i+ g gddt+a   gdd+i gg g dt
+  BAC92081.1  148 TIEAGNGSDTIQGGDGNETIDGGRGDDTIDGGGGDDTIAGERGDDLIRGGLGNDT 202 
+                  2222222222222222222222222222222222222222222222222222222 PP
+
+  == domain 2  score: 29.6 bits;  conditional E-value: 3.1e-12
+        appA 1400 gndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsg 1454
+                  g+d i gg gndti+ g gnd i+ggdg+d ++ g g dv+ ag g dt+ +  g
+  BAC92081.1  190 GDDLIRGGLGNDTIDAGEGNDTIDGGDGDDKLTGGEGDDVLHAGHGRDTLEDTQG 244 
+                  2222222222222222222222222222222222222222222222222222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                       132  (0.0297968); expected 88.6 (0.02)
+Passed bias filter:                       82  (0.0185102); expected 88.6 (0.02)
+Passed Vit filter:                         8  (0.00180587); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000451467); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.26u 0.02s 00:00:00.28 Elapsed: 00:00:00.28
+# Mc/sec: 13394.04
+//
+[ok]

@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1604020_GCA_001007665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppC  [M=292]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-27   91.4  13.5    1.3e-26   90.2  12.9    1.7  1  KKZ11146.1  peptide ABC transporter [Candidatus Synechococcus
+    0.00039   16.3   1.6    0.00039   16.3   1.6    1.9  2  KKZ10462.1  ABC transporter permease [Candidatus Synechococcu
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ11146.1  peptide ABC transporter [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.2  12.9   1.5e-29   1.3e-26      55     284 ..      40     259 ..      32     265 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 90.2 bits;  conditional E-value: 1.5e-29
+        dppC  55 tappslkhlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpetg 153
+                  a psl h  gt+ lg+d   r + g  ++l v + a+ +al+ g  +g +sg+ gga+d ll+ l d + +lp l l +++ +l+  s+ + a     
+  KKZ11146.1  40 FAAPSLAHWCGTDRLGRDVCVRTMAGTGVALQVVVLALAMALVAGVPLGMVSGYMGGAVDRLLVLLMDTLYTLPLLLLAVVMAFLLGRSLVNAA----- 133
+                 589***********************************************************************99999999999999987655..... PP
+
+        dppC 154 ifilvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlfka 252
+                  + l v+ i         r+vr +    +   +++aa +lga p+ ++  +ll nv+  + v  tl   +a++    l flglg+p  vp wg  l +a
+  KKZ11146.1 134 -LALCVVYIP-----QYFRMVRNQTAGAKAELYVTAARSLGAGPLWILRRYLLRNVITSVPVLITLNAADAVLVLGGLGFLGLGLPETVPEWGSDLQQA 226
+                 .334444444.....34689999999999999****************************************************************999 PP
+
+        dppC 253 kdyltt.aphlvifpalaivitvlsinfigdgl 284
+                    +        ++p la+   vl + f+g+g+
+  KKZ11146.1 227 LVAVPIgIWWTALYPGLAMFGLVLGLSFLGEGV 259
+                 8777551456789******************97 PP
+
+>> KKZ10462.1  ABC transporter permease [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.1      0.14   1.2e+02      82     111 ..      98     127 ..      74     136 .. 0.60
+   2 !   16.3   1.6   4.6e-07   0.00039     172     275 ..     225     326 ..     207     337 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.14
+        dppC  82 rislavgiaamivalilgtaigaisgfygg 111
+                 r sl   i    + l++g+ +g   gf g 
+  KKZ10462.1  98 RASLPATIELGCMGLLVGALLGLAVGFSGA 127
+                 344444454445555555555555555554 PP
+
+  == domain 2  score: 16.3 bits;  conditional E-value: 4.6e-07
+        dppC 172 rlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatla....vgnaiitestlsflglgfppdvptwgqmlfkakdylttaphlvifp 266
+                 +++r n+ +    +++ aa + g   +r+i  h lpn l  ++    ++    +g a++ e t+s+ g      v    q  +  +dy      +v++ 
+  KKZ10462.1 225 KVLRLNLRRALRSDYVEAARSRGLGEWRIITRHALPNALLPVLTLGGITvaslIGGALLIEVTFSWPG------VALRLQQAISQRDYPVVQGVVVVVA 317
+                 56677887777889***********************8765554333330022677888888888755......555567778899**99999999999 PP
+
+        dppC 267 alaivitvl 275
+                 al + +tv+
+  KKZ10462.1 318 ALVVAVTVV 326
+                 999999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (292 nodes)
+Target sequences:                         1694  (457445 residues searched)
+Passed MSV filter:                        82  (0.0484061); expected 33.9 (0.02)
+Passed bias filter:                       44  (0.025974); expected 33.9 (0.02)
+Passed Vit filter:                         3  (0.00177096); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00118064); expected 0.0 (1e-05)
+Initial search space (Z):               1694  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6678.70
+//
+[ok]

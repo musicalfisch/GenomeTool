@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/927668_GCA_000332215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.4e-27   92.4   0.3    3.7e-27   92.2   0.3    1.0  1  ELS34251.1  CpcD phycobilisome linker domain protein [Pseudan
+  ------ inclusion threshold ------
+      0.011   13.8   0.2      0.029   12.5   0.1    1.7  2  ELS30216.1  CpcD phycobilisome linker domain protein [Pseudan
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS34251.1  CpcD phycobilisome linker domain protein [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.2   0.3   1.6e-30   3.7e-27       1      70 [.       1      70 [.       1      75 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 92.2 bits;  conditional E-value: 1.6e-30
+        cpcD  1 mqslssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                m s +s+ +nr+f+yev Gl qn++t+n  ++ir s  +f+ vpy rmn++mr itrlG  ivsi+pln 
+  ELS34251.1  1 MISSTSTTDNRFFIYEVSGLRQNQETENSSHAIRTSSNIFMQVPYNRMNEKMRTITRLGGTIVSIRPLNN 70
+                6688899*************************************************************96 PP
+
+>> ELS30216.1  CpcD phycobilisome linker domain protein [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   1.2e-05     0.029      39      65 ..      41      67 ..      29      75 .. 0.86
+   2 ?   -3.8   0.0       1.5   3.5e+03      62      72 ..     517     527 ..     514     527 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.2e-05
+        cpcD 39 vfltvpysrmnqemrritrlGarivsi 65
+                  +tvpys + q ++ i r G +i+ i
+  ELS30216.1 41 YKVTVPYSSLSQRLQAIHRSGGKIIKI 67
+                568*********************987 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 1.5
+        cpcD  62 ivsikplnaaa 72 
+                 + s+ pl+aaa
+  ELS30216.1 517 VESVSPLEAAA 527
+                 56899***997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4757  (1493366 residues searched)
+Passed MSV filter:                        84  (0.0176582); expected 95.1 (0.02)
+Passed bias filter:                       81  (0.0170275); expected 95.1 (0.02)
+Passed Vit filter:                        10  (0.00210217); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420433); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5525.45
+//
+[ok]

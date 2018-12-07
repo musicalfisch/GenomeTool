@@ -1,0 +1,51 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1304833_GCA_000817785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-09   34.3  33.8    2.6e-09   33.2  17.1    2.3  1  KIF28185.1  hypothetical protein PI95_56065 [Hassallia byssoi
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF28185.1  hypothetical protein PI95_56065 [Hassallia byssoidea VB512170]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2  17.1   2.6e-13   2.6e-09    1387    1485 ..     258     359 ..     248     378 .. 0.30
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 2.6e-13
+        appA 1387 tgtngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsg.ddiidggtgldtisdlnyassnsai..i 1480
+                  +g  g d i    g dti  g gn+ i gg   d i  g gnd+i a gg d in+g+g dt+         ++ g g dti +++  ss   i  +
+  KIF28185.1  258 SGGAGNDTIYGNGGFDTIYAGEGNNLIYGGSQADRIYAGAGNDTIFANGGGDFINSGAGLDTIFLGGKaTVTLEKGEGYDTINNFELGSSRFMIgsL 354 
+                  2222222222222222222222222222222222222222333333333333333333333322111101112233333333333333332222112 PP
+
+        appA 1481 lnelg 1485
+                  ln+l 
+  KIF28185.1  355 LNDLS 359 
+                  22222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                        10181  (3132640 residues searched)
+Passed MSV filter:                       382  (0.0375209); expected 203.6 (0.02)
+Passed bias filter:                      204  (0.0200373); expected 203.6 (0.02)
+Passed Vit filter:                        26  (0.00255378); expected 10.2 (0.001)
+Passed Fwd filter:                         2  (0.000196444); expected 0.1 (1e-05)
+Initial search space (Z):              10181  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.59u 0.02s 00:00:00.61 Elapsed: 00:00:00.61
+# Mc/sec: 13912.00
+//
+[ok]

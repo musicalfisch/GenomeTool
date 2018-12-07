@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805291_GCA_001873365.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-17   59.9   0.0    8.2e-17   57.6   0.0    1.7  2  OIP70482.1  ferredoxin-NADP reductase [Oscillatoriales cyanob
+    2.6e-07   26.1   0.0    3.8e-07   25.6   0.0    1.1  1  OIP70030.1  globin [Oscillatoriales cyanobacterium CG2_30_40_
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP70482.1  ferredoxin-NADP reductase [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0     0.012        24    1034    1072 ..     129     165 ..     121     171 .. 0.83
+   2 !   57.6   0.0   4.1e-20   8.2e-17    1208    1387 ..     175     365 ..     171     382 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.012
+        cysJ 1034 nqellqevvpgsrstrlivfdltdtdlqyetgdhvavyp 1072
+                  n el+ e   gs + r + fd++  dl+y  g+ + + p
+  OIP70482.1  129 NYELVGE--GGSGTVRHVTFDISGGDLRYVEGQSIGIVP 165 
+                  5555555..588899*****************9999887 PP
+
+  == domain 2  score: 57.6 bits;  conditional E-value: 4.1e-20
+        cysJ 1208 qkprlysisscp...llhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s      l  + + + v  l+    ++g+   g+cs yl+ l+ g+ v i   +   +  p d  a ++m+  gtg++p+ afl +  
+  OIP70482.1  175 HKLRLYSIASTRhgdKLDDQTVSLCVRQLEYKqPETGETVYGVCSTYLCNLELGADVAITGpVGKEMLLPDDEEATVVMMATGTGIAPFRAFLWRMF 271 
+                  588*****9985222577888888888887652689**********************985266788999***********************9887 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeql.qvwrdrnvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmad 1387
+                    q +     g a l+fg    ++++y+e+l q+ r+      l  a+sr  ++    k y+q+ ++++ +++wq++ + + h y+cg   m  
+  OIP70482.1  272 KEQHEDYKfKGLAWLFFGIPYTANILYKEELeQLQREFPDHFRLTYAISREQQNpeggKMYIQDRIKENADELWQLVQKDNTHTYICGLKGMEG 365 
+                  777766651699****************99856788888888999999997653334499****************************887765 PP
+
+>> OIP70030.1  globin [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.6   0.0   1.9e-10   3.8e-07     348     448 ..      20     119 ..       5     133 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 25.6 bits;  conditional E-value: 1.9e-10
+        cysJ 348 qqmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhs.fadvptcaypamsetlfvlferylp.nftpelr 444
+                 +++   fy+ lf+ +p v p+f ++dm     +l+++l ++v  lr      +   l+ lg  h  +  +p   y  + e+l++ fe+yl  ++tpe++
+  OIP70030.1  20 NEFAASFYENLFQAHPEVKPLFTKTDMKNQEKKLLNSLVLVVENLRNPE--ALSPVLKALGGRHVgYGAIPK-YYKPVGEALLMTFEQYLAeDWTPEVK 115
+                 566789****************************************864..456678999988862777776.577899***********7369***** PP
+
+        cysJ 445 qgwq 448
+                 + w 
+  OIP70030.1 116 KAWL 119
+                 ***5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         4018  (1322032 residues searched)
+Passed MSV filter:                        94  (0.0233947); expected 80.4 (0.02)
+Passed bias filter:                       70  (0.0174216); expected 80.4 (0.02)
+Passed Vit filter:                         4  (0.00099552); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.00049776); expected 0.0 (1e-05)
+Initial search space (Z):               4018  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.13u 0.01s 00:00:00.14 Elapsed: 00:00:00.14
+# Mc/sec: 13975.77
+//
+[ok]

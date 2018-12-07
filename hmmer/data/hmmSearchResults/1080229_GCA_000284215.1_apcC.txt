@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080229_GCA_000284215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.3e-50  164.1   0.7      9e-50  163.9   0.7    1.0  1  BAL32216.1  phycobilisome LC linker polypeptide [Synechocysti
+     0.0076   13.6   0.0      0.018   12.4   0.0    1.6  1  BAL32800.1  ferredoxin-NADP oxidoreductase [Synechocystis sp.
+  ------ inclusion threshold ------
+      0.016   12.6   0.0      0.023   12.1   0.0    1.3  1  BAL31570.1  phycocyanin associated linker protein [Synechocys
+
+
+Domain annotation for each sequence (and alignments):
+>> BAL32216.1  phycobilisome LC linker polypeptide [Synechocystis sp. PCC 6803 substr. PCC-N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.9   0.7   8.5e-53     9e-50       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 163.9 bits;  conditional E-value: 8.5e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmf+itacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatG+pgtn+Gl
+  BAL32216.1  1 MRMFRITACVPSQTRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIVKVELATGRPGTNAGL 66
+                9****************************************************************9 PP
+
+>> BAL32800.1  ferredoxin-NADP oxidoreductase [Synechocystis sp. PCC 6803 substr. PCC-N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   1.7e-05     0.018      31      54 ..      51      74 ..      42      82 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.7e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vp +   +e +ri +mGGkiv ++
+  BAL32800.1 51 VPLKRMNQEMRRITRMGGKIVSIK 74
+                88888999*************987 PP
+
+>> BAL31570.1  phycocyanin associated linker protein [Synechocystis sp. PCC 6803 substr. PCC-N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   2.2e-05     0.023      31      53 ..      50      72 ..      41      81 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 2.2e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkv 53
+                vpy     e +ri ++GG iv++
+  BAL31570.1 50 VPYARMNDEMRRISRLGGTIVNI 72
+                9********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         3169  (1030668 residues searched)
+Passed MSV filter:                        74  (0.0233512); expected 63.4 (0.02)
+Passed bias filter:                       70  (0.022089); expected 63.4 (0.02)
+Passed Vit filter:                         9  (0.00284001); expected 3.2 (0.001)
+Passed Fwd filter:                         3  (0.000946671); expected 0.0 (1e-05)
+Initial search space (Z):               3169  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 3452.74
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeR.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321332_GCA_000013225.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeR  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.017   12.6   0.1        1.2    6.6   0.0    2.7  3  ABD02005.1  radical SAM enzyme, Cfr family [Synechococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD02005.1  radical SAM enzyme, Cfr family [Synechococcus sp. JA-2-3B'a(2-13)]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0      0.22   6.2e+02       8      28 ..      31      51 ..      26      62 .. 0.75
+   2 ?    6.6   0.0   0.00043       1.2      26      72 ..      90     136 ..      79     149 .. 0.85
+   3 ?    2.7   0.0    0.0074        21      71      90 ..     209     228 ..     172     234 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.22
+        cpeR  8 kklqawirsrhlicsgnffif 28
+                ++l+awi ++ +   +++ +f
+  ABD02005.1 31 QQLHAWIYQKGIRSLEQVTVF 51
+                789999999888777777776 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.00043
+        cpeR  26 fifetldysaierfeecvkslggtlisvepkkkvwlgnhrqvilyqa 72 
+                  ++et+   + +r++ cv+s  g+ ++ +      +g  r++ l+++
+  ABD02005.1  90 QLIETVGIPTAKRLTVCVSSQVGCPMACDFCATGKMGYRRNLELHEI 136
+                 578**************************999999999999888765 PP
+
+  == domain 3  score: 2.7 bits;  conditional E-value: 0.0074
+        cpeR  71 qakaslhtphhelkqywlky 90 
+                     slh+p+ +l+q  +  
+  ABD02005.1 209 TLAVSLHAPNQDLRQRLIPS 228
+                 34579**********87755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (101 nodes)
+Target sequences:                         2862  (863919 residues searched)
+Passed MSV filter:                        58  (0.0202655); expected 57.2 (0.02)
+Passed bias filter:                       56  (0.0195667); expected 57.2 (0.02)
+Passed Vit filter:                        19  (0.00663871); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000349406); expected 0.0 (1e-05)
+Initial search space (Z):               2862  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4362.79
+//
+[ok]

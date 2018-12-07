@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188_GCA_000300115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.9e-201  667.0   5.4   2.1e-201  666.8   5.4    1.0  1  EKF02346.1  H(+)-transporting two-sector ATPase gamma subunit
+  ------ inclusion threshold ------
+       0.05   11.8   0.0      0.059   11.6   0.0    1.0  1  EKE97115.1  hypothetical protein FDUTEX481_06009 [Tolypothrix
+
+
+Domain annotation for each sequence (and alignments):
+>> EKF02346.1  H(+)-transporting two-sector ATPase gamma subunit [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  666.8   5.4  4.1e-205  2.1e-201       1     315 []       1     315 []       1     315 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 666.8 bits;  conditional E-value: 4.1e-205
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 m+nlkairdriqsvkntkkiteamrlvaaarvrraqeqv+atrpfad+laqvlyglqtrlrfe+++lpllkkrevk+vgllvi+gdrglcggynsnvir
+  EKF02346.1   1 MPNLKAIRDRIQSVKNTKKITEAMRLVAAARVRRAQEQVLATRPFADKLAQVLYGLQTRLRFEEANLPLLKKREVKTVGLLVIAGDRGLCGGYNSNVIR 99 
+                 99************************************************************************************************* PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgl 198
+                 raenrakel+aeg++ykfvlvgrk++qyfqrr+qpidatysgleqiptaaea+kiadellslflse+vdriel+yt+fvslvssrpvvqtllpld+qgl
+  EKF02346.1 100 RAENRAKELQAEGINYKFVLVGRKSIQYFQRRDQPIDATYSGLEQIPTAAEATKIADELLSLFLSESVDRIELIYTRFVSLVSSRPVVQTLLPLDPQGL 198
+                 *************************************************************************************************** PP
+
+        atpC 199 eaaddeifrlttrggqfeverekvtsevralprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkarq 297
+                 eaaddeifrlttrggqfever+kvt+e+r++prdmifeqdpvqildsllplyl nqllralqesaaselaarmtam+nasdna+eli++l+lsynkarq
+  EKF02346.1 199 EAADDEIFRLTTRGGQFEVERQKVTTEARPFPRDMIFEQDPVQILDSLLPLYLGNQLLRALQESAASELAARMTAMNNASDNAGELIRTLSLSYNKARQ 297
+                 *************************************************************************************************** PP
+
+        atpC 298 aaitqellevvggaealk 315
+                 aaitqellevvggaeal+
+  EKF02346.1 298 AAITQELLEVVGGAEALT 315
+                 ****************96 PP
+
+>> EKE97115.1  hypothetical protein FDUTEX481_06009 [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.2e-05     0.059     125     177 ..      16      68 ..      11      83 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.2e-05
+        atpC 125 tqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkf 177
+                 +qy qrr+q+i   y++  q+   + a+    +lls f  + + r   ++ k 
+  EKE97115.1  16 EQYEQRRSQKIIFYYATKYQMTKGTVAEMRDRKLLSKFHGKYLKRTVEIWEKK 68 
+                 79**************************999********99999865555443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         9972  (2716567 residues searched)
+Passed MSV filter:                       239  (0.0239671); expected 199.4 (0.02)
+Passed bias filter:                      143  (0.0143402); expected 199.4 (0.02)
+Passed Vit filter:                         6  (0.000601685); expected 10.0 (0.001)
+Passed Fwd filter:                         2  (0.000200562); expected 0.1 (1e-05)
+Initial search space (Z):               9972  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 12224.55
+//
+[ok]

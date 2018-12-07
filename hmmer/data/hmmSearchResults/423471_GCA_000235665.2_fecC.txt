@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423471_GCA_000235665.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecC  [M=343]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.011   13.3   7.4     0.0075   13.9   5.9    1.5  2  EHJ11591.1  sodium:alanine symporter, partial [Crocosphaera w
+       0.02   12.4   0.1      0.033   11.7   0.1    1.2  1  EHJ10057.1  hypothetical protein CWATWH0003_5189a4, partial [
+
+
+Domain annotation for each sequence (and alignments):
+>> EHJ11591.1  sodium:alanine symporter, partial [Crocosphaera watsonii WH 0003]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.5     0.059   1.8e+02      87     149 ..      24      87 ..      16      94 .. 0.59
+   2 ?   13.9   5.9   2.5e-06    0.0075     169     274 ..      72     178 ..      43     189 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.059
+        fecC  87 sgalmqgltrnpladpgilgiesgaalavvati..fvfgssslsvltivaflgagvtailvyllg 149
+                  g l+qg+ r  +++   lg  +  a av  t      g  s+    i +++ + vta+++   g
+  EHJ11591.1  24 IGILVQGIRRSAFSNGAGLGSAAI-AHAVAKTKepVQEGIVSILEPFIDTIIICNVTALVIITTG 87 
+                 688999999999988877775433.3344433311333444444445666666777777666655 PP
+
+  == domain 2  score: 13.9 bits;  conditional E-value: 2.5e-06
+        fecC 169 talisslttailivsqrtleeirfwlags.lagrdinillqalpfvvvglvvafalgrqittlslgedv.akglgqqtawvkivtaisvvllagssval 265
+                 t +i  +t+ ++i +    e +   ++gs la   +  +++ +pfv vg++  f ++  it    ge+  a  +gq ++ +  v  ++  ++ gs v+l
+  EHJ11591.1  72 TIIICNVTALVIITTGMYGESVGDNISGStLAAMAFGQVIDWFPFVLVGIICLFGFSTMITWCYYGEQCwAYVFGQPSSIIFKVIFLAC-IFIGSVVSL 169
+                 566777777777777888899999999986899**********************************9747889999888766666655.4679***** PP
+
+        fecC 266 agpigfigl 274
+                    + f  +
+  EHJ11591.1 170 GAVVDFSDM 178
+                 999988665 PP
+
+>> EHJ10057.1  hypothetical protein CWATWH0003_5189a4, partial [Crocosphaera watsonii WH 0003]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   1.1e-05     0.033     185     243 ..     138     196 ..     110     206 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.1e-05
+        fecC 185 rtleeirfwlagslagrdinillqalpfvvvglvvafalgrqittlslgedvakglgqq 243
+                 +    +rfw a sla   i++++++ p  ++g +v+      + ++  g d  kgl q 
+  EHJ10057.1 138 QVTSPVRFWEAVSLAQDKIDLFIEVGPGHILGRIVSSFSEVPVISMDSGGDSLKGLFQA 196
+                 445679*****************************999999999************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (343 nodes)
+Target sequences:                         6124  (1573874 residues searched)
+Passed MSV filter:                       174  (0.0284128); expected 122.5 (0.02)
+Passed bias filter:                       64  (0.0104507); expected 122.5 (0.02)
+Passed Vit filter:                         5  (0.00081646); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326584); expected 0.1 (1e-05)
+Initial search space (Z):               6124  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10796.78
+//
+[ok]

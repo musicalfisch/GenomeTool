@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1453429_GCA_000025125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-137  454.4   2.6   1.3e-137  454.3   2.6    1.0  1  ACJ53725.1  Fe-S cluster assembly protein NifU [Candidatus At
+    1.2e-11   40.6   0.0    1.2e-11   40.6   0.0    1.0  1  ADB95807.1  thioredoxin-like protein [Candidatus Atelocyanoba
+
+
+Domain annotation for each sequence (and alignments):
+>> ACJ53725.1  Fe-S cluster assembly protein NifU [Candidatus Atelocyanobacterium thalassa isolate ALOHA]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  454.3   2.6  2.1e-140  1.3e-137       1     297 [.       1     291 [.       1     294 [] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 454.3 bits;  conditional E-value: 2.1e-140
+        finU   1 mwdytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdia 99 
+                 mw+ytdkv+++f+np+nqGv+++ +e+G ++++GevGsiacGdal+lhlk++++s++i++arfqtfGc+saiass+al+el+ G+tldeal ++nk+ia
+  ACJ53725.1   1 MWEYTDKVMDFFHNPRNQGVIDE-KESGQAITTGEVGSIACGDALKLHLKIDEKSQTILEARFQTFGCASAIASSSALTELLVGKTLDEALSLTNKEIA 98 
+                 9********************76.69************************************************************************* PP
+
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkes 198
+                 dylGGlpe kmhcsvmGqealeaai+nyrGipl+ h+d deGal+c cfg++ t+irr+++en+lttaeqvtnyvkaGGGcGscl+ iddii dv +e 
+  ACJ53725.1  99 DYLGGLPEEKMHCSVMGQEALEAAIFNYRGIPLDNHED-DEGALICRCFGVTSTRIRRIVLENSLTTAEQVTNYVKAGGGCGSCLTDIDDIIVDVAEEG 196
+                 ************************************85.89*******************************************************998 PP
+
+        finU 199 aatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                  + +++  ++ +  el  k+    l++ +ki l+++v++ee+++ l++d++dv+l+d +++l+kv+lk+a+ss++s++ +lk a+e+rl++++  +l +
+  ACJ53725.1 197 FTLTEDLSSEANIPELEVKT----LTNLQKITLIQQVLEEEVKPALAKDGGDVELFDIEGNLIKVVLKGACSSCSSSTFTLKTAIEARLRERISKDLTV 291
+                 77766666555555555554....566666666677777777777777777777777777777777777777777777777777777777776665544 PP
+
+>> ADB95807.1  thioredoxin-like protein [Candidatus Atelocyanobacterium thalassa isolate ALOHA]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.6   0.0     2e-14   1.2e-11     234     296 ..       9      72 ..       2      76 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 40.6 bits;  conditional E-value: 2e-14
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl.vvelv 296
+                 e+v +elr+ li+d+++v+l + d+ ++k  l++a++s+ s++++lk+ +e rl++ +  v+ v
+  ADB95807.1   9 EQVLDELRPYLIADGGNVELVEIDGAIVKLRLQGACGSCPSSTMTLKMGIERRLKEMIpEVSEV 72 
+                 4556789***********************************************9987334445 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         1200  (386913 residues searched)
+Passed MSV filter:                        51  (0.0425); expected 24.0 (0.02)
+Passed bias filter:                       32  (0.0266667); expected 24.0 (0.02)
+Passed Vit filter:                         3  (0.0025); expected 1.2 (0.001)
+Passed Fwd filter:                         2  (0.00166667); expected 0.0 (1e-05)
+Initial search space (Z):               1200  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 11607.39
+//
+[ok]

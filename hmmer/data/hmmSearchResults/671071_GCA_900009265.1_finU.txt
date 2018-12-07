@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671071_GCA_900009265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-10   39.1   0.0    1.7e-10   39.0   0.0    1.0  1  CUR16394.1  conserved hypothetical protein [Planktothrix pauc
+     0.0034   14.9   3.2     0.0042   14.7   3.2    1.1  1  CUR08689.1  ATP synthase subunit b [Planktothrix paucivesicul
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR16394.1  conserved hypothetical protein [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.0   0.0   6.4e-14   1.7e-10     233     297 ..      12      75 ..       1      78 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 39.0 bits;  conditional E-value: 6.4e-14
+        finU 233 devvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                 +  v +elr+ l++d+++v+  + d+ +++  l++a++s+ s++++lk+ +e rl++++    ++
+  CUR16394.1  12 E-TVLDELRPYLMADGGNVEIVELDGPIVRLRLQGACGSCPSSTMTLKMGIERRLRERIPEIDLV 75 
+                 3.345689**************************************************9644333 PP
+
+>> CUR08689.1  ATP synthase subunit b [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   3.2   1.6e-06    0.0042     186     293 ..      56     167 ..      36     172 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.6e-06
+        finU 186 kiddiikdvk..kesaatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstasl..kvalk 280
+                 +i++ ik+ +  +e+a ++  +++++ ++ ++++++  +   ++ + + d ++ +    v        ++ d++++ + ++l+s+ +s a    ++ +k
+  CUR08689.1  56 AIEEAIKEAEqrQEQAQASLAKQQQKLSEAQTDAQRILAEAEARAKTVADLILTKATEDVERMRATASQELDSERERVIAQLRSVIASQAIEraEAQIK 154
+                 577777766511455666666666665555555555556666777788888888888888888889999999999999999999988887651155677 PP
+
+        finU 281 ialedrlskdlvv 293
+                  +l+dr++++l+ 
+  CUR08689.1 155 ERLDDRIQERLID 167
+                 7777777777754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5245  (1732571 residues searched)
+Passed MSV filter:                       168  (0.0320305); expected 104.9 (0.02)
+Passed bias filter:                      124  (0.0236416); expected 104.9 (0.02)
+Passed Vit filter:                        11  (0.00209724); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000381316); expected 0.1 (1e-05)
+Initial search space (Z):               5245  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 7425.30
+//
+[ok]

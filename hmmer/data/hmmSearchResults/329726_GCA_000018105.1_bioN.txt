@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   9.8e-109  362.0  22.7    4.7e-71  238.3   7.7    2.0  2  ABW30318.1  cobalt transport protein, putative [Acaryochloris
+     0.0047   15.1   0.8     0.0055   14.9   0.8    1.0  1  ABW28957.1  conserved hypothetical protein [Acaryochloris mar
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW30318.1  cobalt transport protein, putative [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  129.9   7.1   1.2e-41     5e-38       1     111 [.       1     111 [.       1     120 [. 0.97
+   2 !  238.3   7.7   1.1e-74   4.7e-71     107     289 ..     139     321 ..     126     323 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 129.9 bits;  conditional E-value: 1.2e-41
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslp+glyl+qp t lh+ld rvk+ wlm fl +plla+  wr+ lv  l+llt+ a ip rvwr+q+gwl++l+++v  it++ pdgl+vs qp
+  ABW30318.1   1 MDLLRSLPLGLYLEQPRTWLHRLDPRVKLAWLMMFLLTPLLADLPWRFGLVLGLILLTISATIPLRVWRKQIGWLLLLCLLVCSITTLMPDGLAVSYQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlppa 111
+                 rlpe+ l +  a
+  ABW30318.1 100 RLPEQELTFTQA 111
+                 *****9987654 PP
+
+  == domain 2  score: 238.3 bits;  conditional E-value: 1.1e-74
+        bioN 107 nlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlara 205
+                  lp  + yqyvl+ rg + +trrslel +r+ t +ftliy t l+llttapeeit  +e ll pl+r+ +p+te++ltltl+lrf+plvlee+qnl ra
+  ABW30318.1 139 PLPQPTTYQYVLFHRGPVRITRRSLELGLRLGTWLFTLIYGTTLYLLTTAPEEITVAIEVLLQPLKRWRIPITEVTLTLTLALRFMPLVLEEIQNLIRA 237
+                 4888999******************************************************************************************** PP
+
+        bioN 206 vrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 +rtrai+w+klg++ ++++wl + ++l++nl+lraeq+a am vrgftspn+hqvrwh+l++r  d +al+l++ +   r+  g
+  ABW30318.1 238 IRTRAINWKKLGVRGAFQLWLMLADRLIENLFLRAEQVASAMTVRGFTSPNNHQVRWHQLRIRLMDQLALVLVVLVCGLRIWVG 321
+                 ************************************************************************998888776555 PP
+
+>> ABW28957.1  conserved hypothetical protein [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.8   1.3e-06    0.0055      50     163 ..      27     139 ..       2     144 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 1.3e-06
+        bioN  50 lvgllll.ltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqprlpeeglnlppasdyqyvlwdrgrlfvtrrslelavristlvftli.y 146
+                 ++g+  + +++++ + p+ + q + wli+  +++ l+    p   +  +q  +  e l   pa +   v+++           +l++   t v+ +   
+  ABW28957.1  27 MMGISAFaVAVISLVVPQFYLQALIWLILSVLLIGLVRRFVPKRTARILQDEVEAETLTQIPAGQTGRVIYEGSSWRARCEDENLTIESKTKVYVVGrK 125
+                 3444433256777899******************************************************99776666666777889988988877514 PP
+
+        bioN 147 stnlfllttapeeiteg 163
+                  t lf++   p e  eg
+  ABW28957.1 126 GTTLFVI---PTEFGEG 139
+                 5777766...4455555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       290  (0.0345938); expected 167.7 (0.02)
+Passed bias filter:                      149  (0.0177741); expected 167.7 (0.02)
+Passed Vit filter:                         7  (0.000835023); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000238578); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11224.20
+//
+[ok]

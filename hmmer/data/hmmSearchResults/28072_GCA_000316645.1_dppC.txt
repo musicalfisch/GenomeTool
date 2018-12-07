@@ -1,0 +1,106 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/28072_GCA_000316645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppC  [M=292]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-51  171.7  14.6      7e-49  164.9  10.0    2.1  2  AFY46876.1  ABC-type dipeptide/oligopeptide/nickel transport 
+    1.1e-29  101.8  10.0    4.6e-29   99.8  10.0    1.8  1  AFY48804.1  ABC-type dipeptide/oligopeptide/nickel transport 
+    0.00064   17.3   0.7    0.00064   17.3   0.7    1.7  2  AFY48732.1  ABC-type dipeptide/oligopeptide/nickel transport 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY46876.1  ABC-type dipeptide/oligopeptide/nickel transport system, permease component [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.4   0.1   9.2e-05      0.17      11      37 ..       3      29 ..       1      38 [. 0.89
+   2 !  164.9  10.0   3.8e-52     7e-49      57     291 ..     137     368 ..     121     369 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 9.2e-05
+        dppC 11 twrrfyrdplavigaialiiiilavlf 37
+                 w+r+ ++pla  gai l+i  +av+ 
+  AFY46876.1  3 WWQRLQKNPLARFGAILLLIFYVAVIA 29
+                6********************999985 PP
+
+  == domain 2  score: 164.9 bits;  conditional E-value: 3.8e-52
+        dppC  57 ppslkhlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpetgif 155
+                   +  +l+gt++ g+dq++r+l ggrisl +gi  ++ ++ lg  ig isg++gg  d ++mr++++++++p + ll+ +  ++           +  f
+  AFY46876.1 137 GNAKLNLLGTDEQGRDQFSRLLYGGRISLFIGIVGVLFTFPLGLLIGGISGYFGGWTDSVIMRVAEVLMTFPSIYLLVTLSSVLPA-----GLTSSQRF 230
+                 4455689*****************************************************************99888776655544.....3456778* PP
+
+        dppC 156 ilvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlfkakd 254
+                 +lvvl+   + w  +ar++rg++l ++e ef+ aa a+g  p  +i  h+lp+    +i++atlav   i +e+ ls++glg+    p+wg+ml  a +
+  AFY46876.1 231 LLVVLITSVISWAGLARVIRGQVLSIKEREFVQAARAMGGKPIYIILRHVLPQTATYVIISATLAVPSFIGAEAVLSLIGLGIQQPDPSWGNMLSLASN 329
+                 ***********************************************************************************9999******988765 PP
+
+        dppC 255 ..ylttaphlvifpalaivitvlsinfigdglrdvfdpn 291
+                    l   p l+  pa+ i++tvl+ n++gdglrd +dp+
+  AFY46876.1 330 asILVLQPWLIWPPAVLIILTVLAFNVLGDGLRDALDPR 368
+                 227999*******************************96 PP
+
+>> AFY48804.1  ABC-type dipeptide/oligopeptide/nickel transport system, permease component [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   99.8  10.0   2.5e-32   4.6e-29      21     291 ..      25     289 ..      10     290 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 99.8 bits;  conditional E-value: 2.5e-32
+        dppC  21 avig.aialiiiilavlfgpifyrvp..idtidf.s.qttappslkhlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaid 114
+                   +g ai+l+ i    +f p f       +  +f s      ps kh fgt  lg+d ++r + g + +l v + a  +++i+g  +g +sg+ gg +d
+  AFY48804.1  25 MLVGlAITLFFIF-LAFFAPAFQAWGwlQNPKEFlSnPIQEAPSAKHWFGTSRLGHDVFSRTIFGAQAALQVVVLATALSMIVGVPLGMVSGYLGGRLD 122
+                 4555245555544.45688888654311233344121345679******************************************************** PP
+
+        dppC 115 gllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmi 213
+                  +l+ l d + +lp l l + + +++   i + a     i i +             r+vr   + ++   fi aa a+ga+ + ++  +l+ nv+  +
+  AFY48804.1 123 KVLLFLMDSIYTLPGLLLSVTLAFVVGRGILNAA-----IAISIA------YIPQYYRVVRNHTVSVKTEVFIEAAQAMGASTWIVLSRYLFFNVIQSV 210
+                 ********99888887666666665554443322.....222222......22356799**************************************** PP
+
+        dppC 214 ivaatlavgnaiitestlsflglgfppdvptwgqmlfkakdylttap.hlvifpalaivitvlsinfigdglrdvfdpn 291
+                  v  tl   +ai+    l flglg+p ++p wg  l +a + l t      +fp la+   v+ + ++g+gl + ++p+
+  AFY48804.1 211 PVLFTLNAADAILVLGGLGFLGLGLPEEIPEWGYDLKQALEALPTGVwWTTLFPGLAMTFMVVGLSLLGEGLNEFVNPR 289
+                 *****************************************99876516789*********************999986 PP
+
+>> AFY48732.1  ABC-type dipeptide/oligopeptide/nickel transport system, permease component [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.2      0.41   7.4e+02     229     243 ..     157     171 ..     115     195 .. 0.60
+   2 !   17.3   0.7   3.5e-07   0.00064     162     238 ..     219     299 ..     205     341 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.41
+        dppC 229 stlsflglgfppdvp 243
+                   +s+ g gfp  + 
+  AFY48732.1 157 QVISYTGQGFPSFIT 171
+                 455666666665544 PP
+
+  == domain 2  score: 17.3 bits;  conditional E-value: 3.5e-07
+        dppC 162 igglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiiva..atla..vgnaiitestlsflglgf 238
+                 +    +  + r++rg++l +   ++i +a a g    r+i+vh l n +  +i      la  +g a i+e  +++ glg 
+  AFY48732.1 219 LSITSFAGLQRIMRGELLDVLRQDYIQTARAKGLPENRVIYVHALRNAINPLITLlgFELAglLGGAFIAEQFFNWPGLGR 299
+                 4455667789*************************************9987665411345444799999999999998884 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (292 nodes)
+Target sequences:                         5449  (1828442 residues searched)
+Passed MSV filter:                       313  (0.0574417); expected 109.0 (0.02)
+Passed bias filter:                      139  (0.0255093); expected 109.0 (0.02)
+Passed Vit filter:                         9  (0.00165168); expected 5.4 (0.001)
+Passed Fwd filter:                         3  (0.00055056); expected 0.1 (1e-05)
+Initial search space (Z):               5449  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8898.42
+//
+[ok]

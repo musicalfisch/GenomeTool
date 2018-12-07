@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1503470_GCA_002213405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-69  230.0   6.2    3.3e-69  229.8   6.2    1.0  1  OWY67047.1  transcriptional regulator [cyanobacterium TDX16]
+    1.9e-32  111.4   0.5    2.1e-32  111.3   0.5    1.0  1  OWY60804.1  transcriptional regulator, partial [cyanobacteriu
+  ------ inclusion threshold ------
+       0.14   12.1   0.7       0.59   10.0   0.7    2.1  1  OWY70489.1  redox-sensing transcriptional repressor Rex [cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> OWY67047.1  transcriptional regulator [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  229.8   6.2   6.6e-73   3.3e-69       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 229.8 bits;  conditional E-value: 6.6e-73
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveiv+ed+qvd+vvdkiiaaartgeigdgkifispve+v
+  OWY67047.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVIEDAQVDMVVDKIIAAARTGEIGDGKIFISPVEEV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek+leav
+  OWY67047.1 100 VRIRTGEKNLEAV 112
+                 ***********97 PP
+
+>> OWY60804.1  transcriptional regulator, partial [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.3   0.5   4.2e-36   2.1e-32       1      83 [.       1      83 []       1      83 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 111.3 bits;  conditional E-value: 4.2e-36
+        glnB  1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaart 83
+                mk v aii+pfkldev+ al   g+ g+tvsev+gfgrqkgqte yrg+ey v fl k+k+eivv+d+qv+  ++ i +aa+t
+  OWY60804.1  1 MKLVSAIIKPFKLDEVRDALTGVGVSGLTVSEVKGFGRQKGQTEIYRGAEYLVSFLPKVKIEIVVDDTQVERAIEAIQKAAHT 83
+                899*****************************************************************************987 PP
+
+>> OWY70489.1  redox-sensing transcriptional repressor Rex [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.7   0.00012      0.59      17      39 ..      85     107 ..      72     179 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 0.00012
+        glnB  17 kialvnagivgmtvsevrgfgrq 39 
+                 ++ lv ag +gm++s  rgf r+
+  OWY70489.1  85 NVILVGAGNLGMALSAYRGFARK 107
+                 5789****************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                        15006  (4208708 residues searched)
+Passed MSV filter:                       362  (0.0241237); expected 300.1 (0.02)
+Passed bias filter:                      300  (0.019992); expected 300.1 (0.02)
+Passed Vit filter:                        28  (0.00186592); expected 15.0 (0.001)
+Passed Fwd filter:                         3  (0.00019992); expected 0.2 (1e-05)
+Initial search space (Z):              15006  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 6733.93
+//
+[ok]

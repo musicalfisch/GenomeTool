@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/corA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805291_GCA_001873365.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       corA  [M=385]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   8.6e-136  450.7   1.9   1.1e-135  450.3   1.9    1.0  1  OIP72439.1  magnesium and cobalt transport protein CorA [Osci
+  ------ inclusion threshold ------
+      0.012   12.4   0.0       0.02   11.7   0.0    1.2  1  OIP67075.1  FAD-linked oxidase [Oscillatoriales cyanobacteriu
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP72439.1  magnesium and cobalt transport protein CorA [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  450.3   1.9  5.6e-139  1.1e-135      16     376 ..      16     382 ..      11     390 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 450.3 bits;  conditional E-value: 5.6e-139
+        corA  16 tdgdeeedyfdyfydepgsepgtliiepdakpsriilidydednavrkvditpnacapyigtntvswmdiqglgsetvlkqvgeifnlhpllledvvnv 114
+                  d de+e  +dyfyd+pg+ pgtl +e d  p  ++lidy ++ a r    tp+ capy+ t +vsw+di glg++    ++ ++fnlhp+ ledvvnv
+  OIP72439.1  16 VDEDEDESNLDYFYDDPGTPPGTLDVEADDPPPEMVLIDYSDEMATRLTLKTPEECAPYLDTHSVSWLDILGLGNQDTWDRMAKVFNLHPIALEDVVNV 114
+                 589999********************************************************************************************* PP
+
+        corA 115 pqrpkledynnqllvisqmvrlkedesgfdteqvsfvlgkryllsfqeeelqdcfeivrdrirtsqgrvrksgadyltyllldtiidgyfpvvehyedr 213
+                 pqrpk+ +y+ ql++++ m+ +k  e  +  eqvs++lgk yll++qee   dc++ vrdrir +qg +rk gadyl+y +ld+iidg+fpv+e y d 
+  OIP72439.1 115 PQRPKVVEYDGQLVIVAWMIMIKPGEDPLHKEQVSIILGKNYLLTVQEEAEYDCLQPVRDRIRYNQGIIRKQGADYLAYAILDAIIDGFFPVLEEYGDI 213
+                 *************************************************************************************************** PP
+
+        corA 214 iealedmiisnpdrdtmqeiydvrrellalrrliwpmrnvlhllmrdhhgivsdevqiyfrdsydhviqileiieayrelaaslmdvymstmgnklnei 312
+                 +e led ++ np  + + +iy +rr+l++lrr iw  r+ + +l+rd   ++s ev++yfrd+ydh i +l+++e+yrel++ lm +ymstm nk+nei
+  OIP72439.1 214 LEDLEDKVVFNPVPKDLAKIYSIRRDLFTLRRAIWAQREAINVLIRDGSDLISPEVRVYFRDCYDHTILVLDMVESYRELSSDLMGIYMSTMSNKMNEI 312
+                 *************************************************************************************************** PP
+
+        corA 313 mkfltvistifipltfivgvygmnfe......nmpelkgewsyflvwlvmlavagglifyfwrkgwfkpi 376
+                 mk+ltvistifipltf+ gvygmnf+      nmpel+  w y +   +m+ +a gl f+fw++gwf+ +
+  OIP72439.1 313 MKLLTVISTIFIPLTFVAGVYGMNFNpenspwNMPELNWYWGYPVCLGMMFFIALGLFFFFWKRGWFNNL 382
+                 *************************76677778**********************************976 PP
+
+>> OIP67075.1  FAD-linked oxidase [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   9.9e-06      0.02     276     344 ..     356     425 ..     345     430 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 9.9e-06
+        corA 276 sydhviqileiieayrelaaslmdvymstmgnklneimkfltvi.stifipltfivgvygmnfenmpelk 344
+                   d v+q le +  + e+  + +++   t  ++lnei+++     + if p t+i+   gm++ n+ +l+
+  OIP67075.1 356 FGDEVMQHLEFLRLHGEMHPASLQLVRFTTEQRLNEIIRYHEERgAVIFNPHTYILEDGGMKMINLEQLQ 425
+                 4589**************9877788888899********987652789**************99998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (385 nodes)
+Target sequences:                         4018  (1322032 residues searched)
+Passed MSV filter:                       146  (0.0363365); expected 80.4 (0.02)
+Passed bias filter:                      105  (0.0261324); expected 80.4 (0.02)
+Passed Vit filter:                         8  (0.00199104); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.00049776); expected 0.0 (1e-05)
+Initial search space (Z):               4018  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.11
+# Mc/sec: 4627.11
+//
+[ok]

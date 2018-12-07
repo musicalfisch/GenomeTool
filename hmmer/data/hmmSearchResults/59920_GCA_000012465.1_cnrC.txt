@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-05   20.6   1.5     0.0071   12.6   0.2    2.2  2  AAZ58953.1  outer membrane efflux protein [Prochlorococcus ma
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ58953.1  outer membrane efflux protein [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.0   0.1   0.00016      0.35     114     192 ..     171     251 ..     152     271 .. 0.86
+   2 !   12.6   0.2   3.3e-06    0.0071     351     416 ..     425     490 ..     383     494 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.00016
+        cnrC 114 rvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagrasple..qqradvar 192
+                  +a a   + +++   aii  d++l+  + y +   a+  +  a+     ++  lr a +r ++g  + le  + r+++ar
+  AAZ58953.1 171 EIASARDSFEKSKYSYAIILRDLKLEAKKRYFNLQKANEEIEVAKKSIESSTIGLRDAEIRFESGIGTKLEvlEARTQLAR 251
+                 5677777888999999*************************************************9999993234555565 PP
+
+  == domain 2  score: 12.6 bits;  conditional E-value: 3.3e-06
+        cnrC 351 taraasgpalaaaqeaariarigyregkfgqlelldaertlaetrvaaidalanyqnaraqverlt 416
+                    +as   + +a+e+ r+a++ y+ g   q e+++ +r l+++ v  i +++ y+   a++ r t
+  AAZ58953.1 425 LNISASYTEVLSARESLRLAKLRYKSGITTQREVVNNQRDLTDSEVRYIISVTSYNTLLADLSRQT 490
+                 4556778888899******************************************99999888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        35  (0.0161812); expected 43.3 (0.02)
+Passed bias filter:                       23  (0.0106334); expected 43.3 (0.02)
+Passed Vit filter:                         4  (0.00184928); expected 2.2 (0.001)
+Passed Fwd filter:                         1  (0.000462321); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11389.45
+//
+[ok]

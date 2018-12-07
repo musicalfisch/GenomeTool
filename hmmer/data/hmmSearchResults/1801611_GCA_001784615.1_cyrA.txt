@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801611_GCA_001784615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrA  [M=372]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   11.6   0.0      0.048    9.6   0.0    1.9  2  OGI21105.1  hypothetical protein A2255_04505 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI21105.1  hypothetical protein A2255_04505 [Candidatus Melainabacteria bacterium RIFOXYA2_FULL_32_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.3   0.0     0.046        94     248     266 ..     178     196 ..     167     206 .. 0.86
+   2 ?    9.6   0.0   2.3e-05     0.048     309     361 ..     228     279 ..     222     281 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.3 bits;  conditional E-value: 0.046
+        cyrA 248 mhidssfmplapgkllvnp 266
+                  h+d++f pl+ g l+  p
+  OGI21105.1 178 YHLDTCFCPLTDGYLMYYP 196
+                 699**********999877 PP
+
+  == domain 2  score: 9.6 bits;  conditional E-value: 2.3e-05
+        cyrA 309 smnvlmldekrviiekhqetmirflkdhgfepipcpfmnyapfggsfhcatld 361
+                 s n + +d k +i+++  e +   l++ gfe     f ++   ggs +c tl 
+  OGI21105.1 228 SCNAVCID-KSIIMNHSTERLKDKLNEEGFETHEIDFSEFIKAGGSAKCLTLK 279
+                 66666665.78899999999*******************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (372 nodes)
+Target sequences:                         2045  (635410 residues searched)
+Passed MSV filter:                        55  (0.0268949); expected 40.9 (0.02)
+Passed bias filter:                       36  (0.0176039); expected 40.9 (0.02)
+Passed Vit filter:                         6  (0.00293399); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000488998); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 11818.63
+//
+[ok]

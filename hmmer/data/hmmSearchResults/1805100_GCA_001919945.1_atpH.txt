@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805100_GCA_001919945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.049   11.1   4.7       0.25    8.8   0.0    3.3  3  OLE96345.1  hypothetical protein AUG75_21615 [Cyanobacteria b
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE96345.1  hypothetical protein AUG75_21615 [Cyanobacteria bacterium 13_1_20CM_4_61_6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.3      0.19   3.7e+02      59      59 ..      47      47 ..       2      70 .. 0.57
+   2 ?    2.6   0.1     0.011        21       5      44 ..     113     153 ..     108     156 .. 0.80
+   3 ?    8.8   0.0   0.00013      0.25      15      36 ..     159     180 ..     157     201 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.19
+        atpH 59 f 59
+                +
+  OLE96345.1 47 M 47
+                1 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.011
+        atpH   5 vaaasviaaalavGlaa.iGpgigqGnaagqaveGiarqpe 44 
+                 +++a   aa  a Gl   iG g +  ++++++++ i   pe
+  OLE96345.1 113 ISSAVSYAAIAAFGLKIlIGTGGASTDSTQKTISAILDHPE 153
+                 67777778888999975389998889999999999999998 PP
+
+  == domain 3  score: 8.8 bits;  conditional E-value: 0.00013
+        atpH  15 lavGlaaiGpgigqGnaagqav 36 
+                 + +GlaaiG g+gq   a +av
+  OLE96345.1 159 VVIGLAAIGVGLGQFVEAYRAV 180
+                 679***********99888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         1953  (545415 residues searched)
+Passed MSV filter:                        99  (0.0506912); expected 39.1 (0.02)
+Passed bias filter:                       52  (0.0266257); expected 39.1 (0.02)
+Passed Vit filter:                         4  (0.00204813); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000512033); expected 0.0 (1e-05)
+Initial search space (Z):               1953  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4417.86
+//
+[ok]

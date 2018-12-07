@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913460_GCA_001917285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00038   16.6  10.9     0.0015   14.7   1.7    2.1  2  OLA94478.1  (Fe-S)-binding protein [Candidatus Melainabacteri
+    0.00056   16.1   4.0      0.055    9.7   0.1    2.2  2  OLA93929.1  hypothetical protein BHW64_05840 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OLA94478.1  (Fe-S)-binding protein [Candidatus Melainabacteria bacterium LEY3_CP_29_8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   1.7   2.8e-06    0.0015       3      27 ..      11      35 ..       9      47 .. 0.86
+   2 !    7.8   2.1    0.0004      0.21       7      21 ..      49      63 ..      42      65 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.8e-06
+        finN  3 ykitsqciscdlclsvcptnavkvi 27
+                +++ sqc  c  c++vc  na+ + 
+  OLA94478.1 11 FDMKSQCCGCAACAAVCKRNAIDME 35
+                6789*****************9875 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.0004
+        finN  7 sqciscdlclsvcpt 21
+                ++c+ c+ c+ vcp 
+  OLA94478.1 49 ARCVGCNSCIKVCPL 63
+                68************6 PP
+
+>> OLA93929.1  hypothetical protein BHW64_05840 [Candidatus Melainabacteria bacterium LEY3_CP_29_8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.7   0.1   0.00011     0.055       3      23 ..      23      43 ..      21      54 .. 0.89
+   2 !    7.7   0.7   0.00041      0.22       8      26 ..      69      87 ..      63      89 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 0.00011
+        finN  3 ykitsqciscdlclsvcptna 23
+                y  t  c  c lcl  cp+na
+  OLA93929.1 23 YLYTDLCKGCGLCLEKCPMNA 43
+                667899*************98 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.00041
+        finN  8 qciscdlclsvcptnavkv 26
+                 ci c  c+  cp +a++v
+  OLA93929.1 69 ICIGCGACALTCPDSAIRV 87
+                5****************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         1049  (249927 residues searched)
+Passed MSV filter:                        81  (0.0772164); expected 21.0 (0.02)
+Passed bias filter:                       43  (0.0409914); expected 21.0 (0.02)
+Passed Vit filter:                         5  (0.00476644); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00190658); expected 0.0 (1e-05)
+Initial search space (Z):               1049  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 2924.15
+//
+[ok]

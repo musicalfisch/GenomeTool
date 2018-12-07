@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1284629_GCA_001039635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-73  244.9   1.5    1.7e-73  244.8   1.5    1.0  1  CCQ67208.1  ATP synthase delta chain [Crocosphaera watsonii W
+  ------ inclusion threshold ------
+      0.022   13.0   0.1      0.033   12.5   0.1    1.2  1  CCQ69144.1  SAM-dependent methyltransferase [Crocosphaera wat
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ67208.1  ATP synthase delta chain [Crocosphaera watsonii WH 0402]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  244.8   1.5   5.3e-77   1.7e-73       1     182 [.       1     182 [.       1     184 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 244.8 bits;  conditional E-value: 5.3e-77
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mk    ++e+a+pyaqal+s+aqsq++t  vged+r++l++l +s++lq+f++ p +k+e+k++vl+qllg+ + +ylrnf++llvd+rri+fleai +
+  CCQ67208.1   1 MKGSLFSSEIAEPYAQALMSLAQSQDITRSVGEDCRSILEMLGQSADLQSFISSPVIKDEDKRAVLNQLLGDDIHQYLRNFIMLLVDKRRIVFLEAICE 99 
+                 67778899******************************************************************************************* PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrls 182
+                 qylallr+l++tvlaevt++  l++ q + v +k+ +lt a  vel+t  d +liggviikvgsqv daslrgqlrr+s+ l+
+  CCQ67208.1 100 QYLALLRKLTNTVLAEVTASTELSDGQRRDVIDKIKTLTGAESVELKTDNDPELIGGVIIKVGSQVFDASLRGQLRRISVSLA 182
+                 *******************************************************************************9986 PP
+
+>> CCQ69144.1  SAM-dependent methyltransferase [Crocosphaera watsonii WH 0402]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1     1e-05     0.033      55     124 ..     138     211 ..     127     234 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1e-05
+        atpD  55 pfvkpenkknvlkqllgegvnpyl.rnfl..lllvdr.rriafleailqqylallrqlnqtvlaevtsavplte 124
+                  f+k+enk n ++ +lg   n+ l +n +  +l+vd  +   + + i+++ ++ l+   q vlae     pl  
+  CCQ69144.1 138 DFLKEENKVNNIETILGTIKNTNLpKNSVdtVLMVDAyHEFEYPQEIMENIVSSLKSGGQVVLAEYRRENPLIP 211
+                 59*****************99998344433368888725688999********************987777754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6471  (1463547 residues searched)
+Passed MSV filter:                       198  (0.0305981); expected 129.4 (0.02)
+Passed bias filter:                      144  (0.0222531); expected 129.4 (0.02)
+Passed Vit filter:                        11  (0.00169989); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000309071); expected 0.1 (1e-05)
+Initial search space (Z):               6471  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6732.32
+//
+[ok]

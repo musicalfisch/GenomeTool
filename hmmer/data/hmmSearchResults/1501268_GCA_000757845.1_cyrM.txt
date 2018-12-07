@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501268_GCA_000757845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.6e-57  188.3   0.1    1.2e-56  188.0   0.1    1.0  1  AIQ94235.1  Adenylylsulfate kinase [Prochlorococcus sp. MIT 0
+     0.0059   13.0   0.0      0.055    9.8   0.0    2.2  2  AIQ94261.1  ABC transporter [Prochlorococcus sp. MIT 0604]
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ94235.1  Adenylylsulfate kinase [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  188.0   0.1   1.2e-59   1.2e-56       6     180 ..      30     206 ..      26     207 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 188.0 bits;  conditional E-value: 1.2e-59
+        cyrM   6 qrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgkigs 104
+                 ++g+ +w+tglsg+gkst+++al+  l  +g+s  vldgd +r  l k lgfs edr+enirrig v+nl+   g+i + + +sp+   r++vr  igs
+  AIQ94235.1  30 HKGMVIWFTGLSGSGKSTLANALNEVLHLDGFSTYVLDGDNIRHGLCKDLGFSDEDREENIRRIGEVANLFMNAGIITITAFVSPFISDRDKVRKIIGS 128
+                 5899*********************************************************************************************96 PP
+
+        cyrM 105 ..fvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihq 180
+                   f+ev+  a ++vce+rd kglyk+ar geik ftgi  pye p+npe+ + t    l++sv k+ n l++  ++++
+  AIQ94235.1 129 kdFIEVYCAADITVCENRDTKGLYKKARLGEIKEFTGISSPYEAPLNPEIVVETGSLDLNDSVEKIINYLKKENFLNK 206
+                 66********************************************************************99888776 PP
+
+>> AIQ94261.1  ABC transporter [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   0.0     0.049        51      13      43 ..      41      76 ..      34     108 .. 0.71
+   2 !    9.8   0.0   5.3e-05     0.055      10     104 ..     312     408 ..     307     427 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.049
+        cyrM 13 ltglsgagkstitea....lqakliaegy.sievld 43
+                + g sg+gk+t +++    l ak  ++gy si  +d
+  AIQ94261.1 41 IIGPSGCGKTTFAKTlvniLPAKATSKGYlSISNVD 76
+                67899***9987765111156677777775555555 PP
+
+  == domain 2  score: 9.8 bits;  conditional E-value: 5.3e-05
+        cyrM  10 tvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvs..nlltrhgv...ivlvsaispyreireevrgkig 103
+                 t+ + g sg+gkst+  al   l   g  i++ d +       k   f k+++ + i +  f s    +t + +   i ++  is  r+i +e+r  + 
+  AIQ94261.1 312 TLGIVGSSGSGKSTLCRALIGLLKVRGGEIKIYDKNHA---SKKNKSFKKNNKVQIIFQDPFSSlnPKMTIKSIledIFFIQKISDKRKIEKEIRLMLR 407
+                 566889****************************8754...4677889999999999988887632345655553336788999999999999997665 PP
+
+        cyrM 104 s 104
+                 +
+  AIQ94261.1 408 N 408
+                 5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2063  (521035 residues searched)
+Passed MSV filter:                        88  (0.0426563); expected 41.3 (0.02)
+Passed bias filter:                       69  (0.0334464); expected 41.3 (0.02)
+Passed Vit filter:                        13  (0.0063015); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000969462); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4793.52
+//
+[ok]

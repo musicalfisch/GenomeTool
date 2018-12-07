@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaC  [M=1590]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.8e-23   76.6   0.0    3.6e-11   38.3   0.0    2.9  3  BAC08439.1  acetyl-coenzyme A synthetase [Thermosynechococcus
+    1.6e-16   56.0   0.1    3.8e-10   34.9   0.1    2.6  2  BAC08853.1  long-chain-fatty-acid CoA ligase [Thermosynechoco
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC08439.1  acetyl-coenzyme A synthetase [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   6.9e-07   0.00085     556     636 ..     112     192 ..      84     197 .. 0.84
+   2 !   21.0   0.0   4.6e-09   5.7e-06     666     698 ..     253     285 ..     246     367 .. 0.82
+   3 !   38.3   0.0   2.9e-14   3.6e-11     905    1022 ..     506     628 ..     446     642 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 6.9e-07
+        anaC 556 eksltyeqlnqkanqlayylqnlgvktedlvgiciersvlmiigllgilkagaayipldpnypserlaymledsavsvllt 636
+                  ++lty ql +   q+a  l++lgvk+ d vgi +       i +l   + ga +  +   + +e l   l d+   +++t
+  BAC08439.1 112 SRTLTYAQLHREVCQFANVLKQLGVKKGDRVGIYMPMIPEAAIAMLACARIGAPHSVVFGGFSAEALRDRLIDAQAKLVVT 192
+                 378********************************9999999999999999999988888888888888887776666655 PP
+
+  == domain 2  score: 21.0 bits;  conditional E-value: 4.6e-09
+        anaC 666 qdnllhpmtsenlayviytsgstgkpkgvliqh 698
+                  d +  pm se+l +++ytsgstgkpkgv+   
+  BAC08439.1 253 ADCPAEPMDSEDLLFILYTSGSTGKPKGVVHTT 285
+                 577889**********************97543 PP
+
+  == domain 3  score: 38.3 bits;  conditional E-value: 2.9e-14
+        anaC  905 rlyktgdlvrygndgqiefvgriddqvkirgfrielgeietvlnqhpqvkeaiiiaredqpgvkrlcayviasqnltvsq.....lrlflqeklpqy 996 
+                   +y +gd  r  +dg   ++gr+dd +++ g r+   eie+ l  hp v ea ++ + d+     ++a+vi     t s+     l+  + + +   
+  BAC08439.1  506 YFYFAGDGARRDEDGYFWVMGRVDDVINVSGHRLGTMEIESALVSHPAVAEAAVVGKPDEVKGEEIVAFVILEGSATPSDalqqeLKQHVVNEIGAL 602 
+                  57999******************************************************************98888877421112555555666667 PP
+
+        anaC  997 mvpaffvlldafpltangkidrralp 1022
+                    pa + + da+p t  gki rr l 
+  BAC08439.1  603 ARPAEIRFTDALPKTRSGKIMRRLLR 628 
+                  7799999***************9886 PP
+
+>> BAC08853.1  long-chain-fatty-acid CoA ligase [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   0.1     3e-13   3.8e-10     557     706 ..      59     229 ..      17     251 .. 0.78
+   2 !   17.9   0.0     4e-08     5e-05     809     965 ..     402     547 ..     345     567 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 34.9 bits;  conditional E-value: 3e-13
+        anaC 557 ksltyeqlnqkanqlayylqnlgvktedlvgiciersvlmiigllgilkagaayipldpnypserlaymledsavsvllt.........qenlvdt... 643
+                   +ty +l q+ +++a  lq lgv + d v +  + s   +i   g + aga  +       ++ l y+l ds  ++ll          qe lvdt   
+  BAC08853.1  59 TRITYSELYQRIQRFAAGLQALGVAAGDRVALFPDNSPRWLIADQGSMMAGAINVVRSGTADAQELLYILRDSGATLLLIenlatlgklQEPLVDTgvk 157
+                 579**********************************************************************99998743333344447888887333 PP
+
+        anaC 644 ....l....pnylgtifcldqdgkildhhpqdn.llhpmtsenlayviytsgstgkpkgvliqhqsllnlvs 706
+                     l    p+  g  + l + g+++            +t +nla ++ytsg+tg+pkgv++ h  ll  + 
+  BAC08853.1 158 tvvlLsgesPELAGFPLRLLNFGQVFTEGQYGTvRAVAITPDNLATLMYTSGTTGQPKGVMVTHGGLLSQIV 229
+                 3332133335555666666777777765544331446799*************************9997654 PP
+
+  == domain 2  score: 17.9 bits;  conditional E-value: 4e-08
+        anaC 809 sipftlvnnygptentvvttsvkitpdlltekappigrpisntqvyild.qyqqpvpigipgelyiggsglakgylnrpeltdskfianplsqklsdrl 906
+                  i + ++  yg te +vv t+ +   +l        grpi +t + i+d + + p+  g  g +   g  + +gy n+pe t   + a        +  
+  BAC08853.1 402 VINLEVLVGYGLTETAVVLTARRSWANLR----GSAGRPIPDTAIKIVDpETKAPLEFGQKGLVMAKGPQVMRGYYNQPEATAKVLDA--------EGW 488
+                 577778889***********999888775....467*************45678**************************99765554........456 PP
+
+        anaC 907 yktgdlvrygndgqiefvgriddq.vkirgfrielgeietvlnqhpqvkeaiiiaredqp 965
+                 + tgdl     +g++ + gr  d  v   g  ie   ie    + p + + +++  +dq 
+  BAC08853.1 489 FDTGDLGYLTPNGDLVLTGRQKDTiVLSNGENIEPQPIEDACVRSPYIDQIMLVG-QDQK 547
+                 8999999999999999999986651556799999999999999999987765554.4554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1590 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                        66  (0.0266667); expected 49.5 (0.02)
+Passed bias filter:                       49  (0.019798); expected 49.5 (0.02)
+Passed Vit filter:                         6  (0.00242424); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808081); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.12u 0.02s 00:00:00.13 Elapsed: 00:00:00.13
+# Mc/sec: 9472.63
+//
+[ok]

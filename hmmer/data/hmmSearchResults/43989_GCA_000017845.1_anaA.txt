@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/43989_GCA_000017845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-52  177.1   0.0    1.3e-52  176.8   0.0    1.0  1  ACB50771.1  putative type II thioesterase [Cyanothece sp. ATC
+    2.6e-29  100.4   0.0    5.5e-29   99.3   0.0    1.4  1  ACB53109.1  polyketide synthase [Cyanothece sp. ATCC 51142]
+  ------ inclusion threshold ------
+      0.015   12.7   0.0      0.032   11.6   0.0    1.5  1  ACB49776.1  unknown [Cyanothece sp. ATCC 51142]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACB50771.1  putative type II thioesterase [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  176.8   0.0   7.2e-56   1.3e-52       7     242 ..       4     240 ..       2     247 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 176.8 bits;  conditional E-value: 7.2e-56
+        anaA   7 ttspwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvsle 105
+                 +t+pw+  l k   + k+ lfcfp ag g+ +fr wp  + d++++ a+r+pgre r+ e    +  +l+e l  ++ py + pf ffghs+g++v++e
+  ACB50771.1   4 STNPWI-YLPKPNTNAKIRLFCFPYAGGGTRIFRHWPNHLSDTLEVCAIRLPGREGRLLETPFFQLPNLLESLTPNLLPYLDKPFAFFGHSMGALVCFE 101
+                 588996.69999*************************************************************************************** PP
+
+        anaA 106 vahqlgdrfgcfpqclvvsgrkpphipc.dhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggead 203
+                 vahql   +g +p  l vsg+  p++p  d    q  + d+i+ ++   gtp+ vl++ elm +++p+ rad+ + e y y  +  l cpi a+gg  d
+  ACB50771.1 102 VAHQLIKNYGILPLHLFVSGHSAPQLPNlDPPIHQLPESDFIKAIHDLNGTPKEVLKNEELMQLLIPMLRADFSVLETYVYQPKPLLTCPITAFGGLND 200
+                 **************************95388899***************************************************************** PP
+
+        anaA 204 egvsleelrewekytqrgfklrsfpgghmylte.ekerfa 242
+                    +  el  w + t++ f+ + fpg h+++   e + f 
+  ACB50771.1 201 PETNETELAAWGQQTNQSFEQHMFPGDHFFIHSaESDIFL 240
+                 *****************************98641445554 PP
+
+>> ACB53109.1  polyketide synthase [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   99.3   0.0   3.1e-32   5.5e-29      23     241 ..    1053    1268 ..    1040    1278 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 99.3 bits;  conditional E-value: 3.1e-32
+        anaA   23 klslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgcfpq 119 
+                  +  lfc+   g  + +f+ w + +   +++  +++  + + i++    ++  lie + + + py + pf ++ghs+g+++++e+a++l +  g + q
+  ACB53109.1 1053 NYRLFCLHHLGGNASLFQKWSSELEPKVEVVPLQILRKSQNINQTNENQFHLLIEAMEKVLAPYLDKPFAIYGHSMGAIMAFELAQKLSQTQGKLLQ 1149
+                  5689*******99999********************************************************************************* PP
+
+        anaA  120 clvvsgr.kpphipcdhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleelrewe 215 
+                   l vs    p +i    +++q s e++          pe + q+  +m  i  i++ dlql + y y  +  l cpi ++gg+ d  +  e+l  w 
+  ACB53109.1 1150 HLFVSSSfSPQKINRVLKENQLSLEEI----LNVSEIPEEIRQDSSMMEEITSIFQVDLQLLKSYVYTKNSPLNCPISTFGGKGDPLIKQEDLLPWA 1242
+                  998876526778999999999986655....556789************************************************************ PP
+
+        anaA  216 kytqrgfklrsfpgghmylteekerf 241 
+                   +t+ gf++  fpg hm+l  +  ++
+  ACB53109.1 1243 DHTHIGFRFMMFPGNHMFLMGKSHKL 1268
+                  *******************8776655 PP
+
+>> ACB49776.1  unknown [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.8e-05     0.032      80     111 ..      61      93 ..      26     108 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.8e-05
+        anaA  80 vqei.ypysqspfvffghslgsvvslevahqlg 111
+                  +ei   y q+p+ ++ghs+g ++ lev hq  
+  ACB49776.1  61 AEEIsNKYPQTPWRIIGHSMGGLIWLEVLHQNP 93 
+                 345523699*********************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5304  (1574679 residues searched)
+Passed MSV filter:                       121  (0.022813); expected 106.1 (0.02)
+Passed bias filter:                      109  (0.0205505); expected 106.1 (0.02)
+Passed Vit filter:                         6  (0.00113122); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000565611); expected 0.1 (1e-05)
+Initial search space (Z):               5304  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7967.88
+//
+[ok]

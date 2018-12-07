@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1751286_GCA_001548375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.8e-122  404.7   0.0     2e-122  404.5   0.0    1.0  1  BAT52664.1  hypothetical protein NOS3756_16040 [Nostoc sp. NI
+    2.4e-33  113.9   0.0    2.7e-33  113.7   0.0    1.0  1  BAT55757.1  hypothetical protein NOS3756_47500 [Nostoc sp. NI
+
+
+Domain annotation for each sequence (and alignments):
+>> BAT52664.1  hypothetical protein NOS3756_16040 [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  404.5   0.0  6.8e-126    2e-122       1     196 []       1     196 [.       1     196 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 404.5 bits;  conditional E-value: 6.8e-126
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdi+tlar+maadfsnq+qafenppf+ahirvcmrplp e+lsgv+ffveqaydy ln+pyrlrvlkl++++dri+ienytvk+e++fy asr+l
+  BAT52664.1   1 MTHSTDITTLARWMAADFSNQAQAFENPPFYAHIRVCMRPLPWEVLSGVGFFVEQAYDYSLNEPYRLRVLKLMTVGDRIHIENYTVKQEENFYSASRNL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 + l+tl++++leklpgcnmivewtgnsfkgkvepgk+civ+rkg+ktyldsefei+eekfisldrgrd+etdehiwgsvagpf+fvrw+sfadevk+
+  BAT52664.1 100 NLLNTLTSESLEKLPGCNMIVEWTGNSFKGKVEPGKGCIVFRKGQKTYLDSEFEINEEKFISLDRGRDLETDEHIWGSVAGPFYFVRWQSFADEVKI 196
+                 ***********************************************************************************************97 PP
+
+>> BAT55757.1  hypothetical protein NOS3756_47500 [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  113.7   0.0     9e-37   2.7e-33       1     189 [.       1     197 [.       1     199 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 113.7 bits;  conditional E-value: 9e-37
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed...rieienytvkeekkfygas 96 
+                 m+ s d+ tl +++a +f n+eqa+ +p +f h+r+  rp+ l   + +++f eqa   +l+ pyr r+l+l+ + d    + ++ y+ k+   + ga 
+  BAT55757.1   1 MSFSPDLITLGKYLAGEFDNKEQAMSEPIWFVHLRLWQRPIDLFSDNSITLFAEQANIVNLDRPYRQRILRLMPNPDlgtGLYVQYYMPKNPSALIGAG 99 
+                 78899***********************************99999999*************************8765222689**************** PP
+
+        cpeS  97 rdlerlktlkaddleklpgcnmivew.....tgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwas 189
+                 r+ + lktl+ d+le lpgc + v       +  +f  k  p   c  +  g++  +   fe+ e ++ + d+g d et +  wg+++gp+++ +++ 
+  BAT55757.1 100 RNPDILKTLTLDQLELLPGCILSVSQqalapSSYQFTAKPLPDSRCTFTYLGNTVQVSLGFEVTEAQLQTYDKGIDSETGKATWGAITGPYRYTKREQ 197
+                 *********************99975222113445677777899************************************************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5954  (1912779 residues searched)
+Passed MSV filter:                       116  (0.0194827); expected 119.1 (0.02)
+Passed bias filter:                      104  (0.0174672); expected 119.1 (0.02)
+Passed Vit filter:                         8  (0.00134363); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335909); expected 0.1 (1e-05)
+Initial search space (Z):               5954  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9372.62
+//
+[ok]

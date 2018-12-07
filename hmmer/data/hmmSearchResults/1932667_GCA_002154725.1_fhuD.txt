@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fhuD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1932667_GCA_002154725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fhuD  [M=330]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-07   27.6   0.2      0.002   15.6   0.1    2.4  2  OUL27535.1  iron ABC transporter substrate-binding protein [N
+
+
+Domain annotation for each sequence (and alignments):
+>> OUL27535.1  iron ABC transporter substrate-binding protein [Nostoc sp. 106C]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.1     3e-07     0.002      58     123 ..      46     113 ..       2     132 .. 0.69
+   2 !    9.6   0.0     2e-05      0.13     269     303 ..     242     275 ..     176     293 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 3e-07
+        fhuD  58 eprrvvaldgatvgnllalgmm.pagva.snllpeitrlipnvprlgq.ssqinletlavlqpdliiga 123
+                   +rvval   +   +  l      g++ s+l+ + +rl  n+pr+ +  s  nle +  lqpdl+iga
+  OUL27535.1  46 SAKRVVALSSLSGDIIYQLDKTkLVGITgSKLFKDDSRL-TNIPRVSEgQSPPNLEKIIALQPDLVIGA 113
+                 467899988766555555654313455416777777776.79***97624678***************9 PP
+
+  == domain 2  score: 9.6 bits;  conditional E-value: 2e-05
+        fhuD 269 aaaeaqlerldtdplwqslgavqknrvysvghywg 303
+                  a    le l  + +wq l a ++n+vy+  +y g
+  OUL27535.1 242 NADPQLLESLKKQSFWQQLKATKNNHVYTFDYY-G 275
+                 223334899*******************98755.5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (330 nodes)
+Target sequences:                         6731  (2228194 residues searched)
+Passed MSV filter:                       231  (0.0343188); expected 134.6 (0.02)
+Passed bias filter:                      181  (0.0268905); expected 134.6 (0.02)
+Passed Vit filter:                         9  (0.0013371); expected 6.7 (0.001)
+Passed Fwd filter:                         1  (0.000148566); expected 0.1 (1e-05)
+Initial search space (Z):               6731  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 8170.04
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1497020_GCA_000775285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-47  154.6   0.9    6.8e-47  154.5   0.9    1.0  1  KGF73247.1  photosystem I reaction center subunit XII [Neosyn
+  ------ inclusion threshold ------
+      0.013   12.7   0.0      0.033   11.4   0.0    1.6  1  KGF72590.1  ferredoxin-NADP reductase [Neosynechococcus sphag
+
+
+Domain annotation for each sequence (and alignments):
+>> KGF73247.1  photosystem I reaction center subunit XII [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  154.5   0.9   4.9e-50   6.8e-47       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 154.5 bits;  conditional E-value: 4.9e-50
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfk+tacvPs trirtqrelqntyftklvp+ nWf eqqrimkmGGkivkvelatGk gtntG+l
+  KGF73247.1  1 MRMFKVTACVPSLTRIRTQRELQNTYFTKLVPFGNWFSEQQRIMKMGGKIVKVELATGKAGTNTGIL 67
+                9****************************************************************85 PP
+
+>> KGF72590.1  ferredoxin-NADP reductase [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   2.4e-05     0.033      26      54 ..      47      73 ..      41      84 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.4e-05
+        apcC 26 yftklvpydnWfreqqrimkmGGkivkve 54
+                +ft  vpy+   +  qri ++GGki+ ++
+  KGF72590.1 47 FFT--VPYNRMGEMVQRITRLGGKIIGIR 73
+                565..9****9999***********9886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         2731  (698048 residues searched)
+Passed MSV filter:                        43  (0.0157451); expected 54.6 (0.02)
+Passed bias filter:                       42  (0.015379); expected 54.6 (0.02)
+Passed Vit filter:                         6  (0.002197); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000732332); expected 0.0 (1e-05)
+Initial search space (Z):               2731  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 4676.92
+//
+[ok]

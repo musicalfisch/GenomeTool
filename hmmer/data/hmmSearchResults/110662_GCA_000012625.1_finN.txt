@@ -1,0 +1,114 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/110662_GCA_000012625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00025   18.5   4.0      0.021   12.3   0.4    2.3  2  ABB36143.1  NADH-plastoquinone oxidoreductase, I subunit [Syn
+      0.001   16.5   7.0      0.054   11.0   1.4    2.1  2  ABB33903.1  photosystem I iron-sulfur center subunit VII (Psa
+  ------ inclusion threshold ------
+      0.014   12.9   1.1       0.87    7.1   0.2    2.4  2  ABB33789.1  4Fe-4S cluster binding [Synechococcus sp. CC9605]
+       0.23    8.9  10.8      0.043   11.3   2.4    2.1  2  ABB35157.1  ferredoxin [Synechococcus sp. CC9605]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB36143.1  NADH-plastoquinone oxidoreductase, I subunit [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.4   3.1e-05     0.021       7      23 ..      62      78 ..      57      90 .. 0.83
+   2 !    7.3   0.2    0.0011      0.73       8      27 ..     103     122 ..      95     131 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 3.1e-05
+        finN  7 sqciscdlclsvcptna 23
+                 +ci+c++c+ vcp+n 
+  ABB36143.1 62 DKCIACEVCVRVCPINL 78
+                58************984 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.0011
+        finN   8 qciscdlclsvcptnavkvi 27 
+                  ci c  c+  cptn++ + 
+  ABB36143.1 103 VCIFCGNCVEYCPTNCLSMT 122
+                 6**************98765 PP
+
+>> ABB33903.1  photosystem I iron-sulfur center subunit VII (PsaC) [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   1.4   8.1e-05     0.054       2      27 ..      14      39 ..      13      51 .. 0.87
+   2 !    9.1   0.4   0.00032      0.21       6      25 ..      55      74 ..      50      83 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 8.1e-05
+        finN  2 aykitsqciscdlclsvcptnavkvi 27
+                a ki   ci c  c+  cp + + ++
+  ABB33903.1 14 AVKIYDTCIGCTQCVRACPLDVLEMV 39
+                679999**************999887 PP
+
+  == domain 2  score: 9.1 bits;  conditional E-value: 0.00032
+        finN  6 tsqciscdlclsvcptnavk 25
+                t +c+ c+ c + cpt+ + 
+  ABB33903.1 55 TEDCVGCKRCETACPTDFLS 74
+                789*************8654 PP
+
+>> ABB33789.1  4Fe-4S cluster binding [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.2    0.0013      0.87       7      30 ..     189     215 ..     186     228 .. 0.81
+   2 ?    4.0   0.1     0.012       7.6       7      22 ..     240     255 ..     235     266 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.0013
+        finN   7 sqciscdlclsvcptnavk...vidgn 30 
+                 s c  c  c+  cpt a++   v+d  
+  ABB33789.1 189 SLCGRCSACIDACPTHAIRepfVVDAR 215
+                 77999************9755566665 PP
+
+  == domain 2  score: 4.0 bits;  conditional E-value: 0.012
+        finN   7 sqciscdlclsvcptn 22 
+                 s +  cd+c  vcp n
+  ABB33789.1 240 SWVAGCDICQDVCPWN 255
+                 56678*********87 PP
+
+>> ABB35157.1  ferredoxin [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.8   1.3     0.029        19       5      25 ..       6      26 ..       1      38 [. 0.71
+   2 ?   11.3   2.4   6.6e-05     0.043       8      24 ..      45      61 ..      38      68 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 2.8 bits;  conditional E-value: 0.029
+        finN  5 itsqciscdlclsvcptnavk 25
+                +t  c     c+  cp++++ 
+  ABB35157.1  6 VTDVCEGIADCVDACPVACID 26
+                466788888999999998876 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 6.6e-05
+        finN  8 qciscdlclsvcptnav 24
+                 ci c +cl vcp++  
+  ABB35157.1 45 TCIDCGICLQVCPVEGA 61
+                7************9754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         2638  (722368 residues searched)
+Passed MSV filter:                        82  (0.0310842); expected 52.8 (0.02)
+Passed bias filter:                       73  (0.0276725); expected 52.8 (0.02)
+Passed Vit filter:                         5  (0.00189538); expected 2.6 (0.001)
+Passed Fwd filter:                         4  (0.0015163); expected 0.0 (1e-05)
+Initial search space (Z):               2638  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8451.71
+//
+[ok]

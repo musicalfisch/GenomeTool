@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/634502_GCA_000175415.3.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-06   25.5  19.8    5.4e-05   20.9  10.1    2.2  2  KDR55690.1  transporter [Arthrospira platensis str. Paraca]
+
+
+Domain annotation for each sequence (and alignments):
+>> KDR55690.1  transporter [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9  10.1     1e-08   5.4e-05      48     215 ..     294     460 ..     287     472 .. 0.91
+   2 !   10.1   2.1   1.8e-05     0.099     359     421 ..     618     680 ..     550     684 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 1e-08
+        cnrC  48 apaaeaataaidaaragrtvaglrpnpvvqgqvenvigsgpyrgvrsaestvgfaipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyve 146
+                    +e+a a+i +    r +   r +   +g+v+      p+ g  s + ++ +     l g rgar+  a+ ql  ae++   +  +  l+v+q y +
+  KDR55690.1 294 LTRSETAGATISTRAQNRRIRNQRRQAAARGEVDTTPFQIPF-GSTSFDNSLQIQYDFGLNGARGARIREAEQQLRAAELELERVIEESYLNVAQTYYN 391
+                 5568999999999999999***************99999998.7789999999999******************************************* PP
+
+        cnrC 147 avaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrlaeaaranlar 215
+                   aad  v   r   r a  +l  a    +ag  + +e  +a v+   ++ ++   +    ++r nla 
+  KDR55690.1 392 LQAADAEVEIQRAAVRNAQKSLEDAEALERAGVGTRFEVLQARVTLASTQQDLTNAISSQRTSRRNLAS 460
+                 ***********************************9999999998888888888888888888888875 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 1.8e-05
+        cnrC 359 alaaaqeaariarigyregkfgqlelldaertlaetrvaaidalanyqnaraqverltapapn 421
+                  +  a ea r+ar+ ++ g   q ++++ e +l+ ++   + a+  y+ a aq+ r+ +  p+
+  KDR55690.1 618 GVEEATEALRLARLRFQAGVGTQTDVINQETSLTRAQNQLLRAIIGYNRALAQLRRFVSNLPD 680
+                 456789**************************************************9988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         5439  (1620411 residues searched)
+Passed MSV filter:                       188  (0.0345652); expected 108.8 (0.02)
+Passed bias filter:                       99  (0.0182019); expected 108.8 (0.02)
+Passed Vit filter:                         5  (0.000919287); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000183857); expected 0.1 (1e-05)
+Initial search space (Z):               5439  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 13773.49
+//
+[ok]

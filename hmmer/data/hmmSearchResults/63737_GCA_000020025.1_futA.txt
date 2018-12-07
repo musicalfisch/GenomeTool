@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.031   11.9   0.0       0.05   11.2   0.0    1.2  1  ACC81098.1  extracellular solute-binding protein, family 1 [N
+      0.044   11.4   0.0       0.08   10.5   0.0    1.3  1  ACC83954.1  extracellular solute-binding protein, family 1 [N
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC81098.1  extracellular solute-binding protein, family 1 [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   1.5e-05      0.05     267     308 ..     321     364 ..     302     376 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.5e-05
+        futA 267 nisgg.gliktapnre.saikfleylssneaqnffakgnqeypv 308
+                   +g   l+k++p+re +a+kfley+ s+e q  ++ g    pv
+  ACC81098.1 321 TGTGNmYLMKSTPEREqAALKFLEYVLSEEFQTEWSIGTGFLPV 364
+                 333331489******93579************988888776666 PP
+
+>> ACC83954.1  extracellular solute-binding protein, family 1 [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   2.4e-05      0.08     255     308 ..     316     372 ..     304     382 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2.4e-05
+        futA 255 ifpdqagrgahvnisgggl..iktapnres.aikfleylssneaqnffakgnqeypv 308
+                 +fp  +g+     i g  l   kt+p+re  a kf+ey  s+e q  +a g    pv
+  ACC83954.1 316 VFPIPVGQKPATVIGGENLffFKTTPKREKaAFKFVEYALSEEFQTELALGTGYLPV 372
+                 6777888887778888876336******96268*************99999887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       173  (0.0258595); expected 133.8 (0.02)
+Passed bias filter:                      148  (0.0221226); expected 133.8 (0.02)
+Passed Vit filter:                        12  (0.00179372); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 13601.83
+//
+[ok]

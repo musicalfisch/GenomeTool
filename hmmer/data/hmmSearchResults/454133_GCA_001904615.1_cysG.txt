@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysG  [M=684]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-05   21.7   0.1    1.4e-05   21.3   0.1    1.1  1  OKH17358.1  uroporphyrinogen-III C-methyltransferase [Limnoth
+     0.0084   12.1   0.0      0.011   11.7   0.0    1.1  1  OKH13446.1  restriction endonuclease [Limnothrix rosea IAM M-
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH17358.1  uroporphyrinogen-III C-methyltransferase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.3   0.1   8.1e-09   1.4e-05     439     573 ..       8     143 ..       3     180 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 21.3 bits;  conditional E-value: 8.1e-09
+        cysG 439 pgqlylvgigpgslaqitpaakqaiakadaiigyglyidlikpllrpgqmietyaitkerqr........adravdlaqwglsvavissgdcgiygmag 529
+                  g++ylvg gpg     t   k  +  ad ++   l  + i  ++ p    e     k r r        +   ++ a+    v  +  gd  ++g  g
+  OKH17358.1   8 VGKVYLVGAGPGDPGLFTLKGKTLLEMADVVVYDALVSEAILLMINPNA--ERIHAGKRRGRhslkqeetTRILIEKAKEHAIVVRLKGGDPFVFGRGG 104
+                 599*****************************99999999988888864..2222233332211111110334567788888888899*********** PP
+
+        cysG 530 lvlealqardwdgntpdvevvpgitalqaaaarvgtplmhdfca 573
+                   +  lqa         vevvpgit+  aa a  g pl h   +
+  OKH17358.1 105 EEMADLQAAG-----IPVEVVPGITSGIAAPAYAGIPLTHRGYS 143
+                 9999999864.....46**********************97544 PP
+
+>> OKH13446.1  restriction endonuclease [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.0   6.3e-06     0.011     516     569 ..     188     246 ..     182     295 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 6.3e-06
+        cysG 516 vissgdcgiygma.....glvlealqardwdgntpdvevvpgitalqaaaarvgtplmh 569
+                 v  sgd gi g+      gl +  +qa+ wdgn    e+   + alq   ar g  +  
+  OKH13446.1 188 VGKSGDGGIDGIIkedrlGLDVIYIQAKRWDGNVGRPEIQKFVGALQGQRARKGIFITT 246
+                 5579999999985444347777889***************************9987653 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (684 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       122  (0.0344438); expected 70.8 (0.02)
+Passed bias filter:                       88  (0.0248447); expected 70.8 (0.02)
+Passed Vit filter:                         3  (0.000846979); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12767.64
+//
+[ok]

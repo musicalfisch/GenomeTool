@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1183438_GCA_000484535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-45  151.6   0.7    3.8e-45  151.5   0.7    1.0  1  AGY58691.1  ATP synthase CF1 epsilon subunit [Gloeobacter kil
+  ------ inclusion threshold ------
+       0.27    9.4   8.0      0.043   12.0   0.9    2.7  3  AGY59956.1  efflux pump membrane fusion protein [Gloeobacter 
+
+
+Domain annotation for each sequence (and alignments):
+>> AGY58691.1  ATP synthase CF1 epsilon subunit [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.5   0.7   1.7e-48   3.8e-45       1     134 [.       1     130 [.       1     132 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 151.5 bits;  conditional E-value: 1.7e-48
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m l+++v++pdk v+d + +evilps tgqlgil+ hapllt l  gvmrvr   +  +  ia+lggfaev+++ev++lvn+ae g +i++e ar+a +
+  AGY58691.1   1 MVLSIKVVAPDKVVYDEQVDEVILPSLTGQLGILTNHAPLLTGLGNGVMRVRK--QGTFIPIAVLGGFAEVDNNEVSVLVNAAELGSNIDVERARTALA 97 
+                 899************************************************95..6789**************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaag 134
+                 +a++ l+   ++d+ + +qa+ a  ra ar++aag
+  AGY58691.1  98 RAEQTLAT--SQDKSELLQAKTAQERANARLRAAG 130
+                 ****9975..67999*******************9 PP
+
+>> AGY59956.1  efflux pump membrane fusion protein [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   1.0      0.11   2.4e+02      95     133 ..     117     156 ..     100     162 .. 0.72
+   2 ?   12.0   0.9   1.9e-05     0.043      87     133 ..     180     227 ..     164     231 .. 0.86
+   3 ?    2.1   0.2     0.022        50      90     108 ..     216     234 ..     213     242 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.11
+        atpE  95 raafneaqtklnqvkaedrqaqi.qatqafkrararfqaa 133
+                 +aa + a++k  q +++ r ++i qa++ ++ ar  f+ a
+  AGY59956.1 117 KAAADLARAKYLQARNGFRTQEItQAEADMRSARVNFEIA 156
+                 5666667777777777777555537777788888888766 PP
+
+  == domain 2  score: 12.0 bits;  conditional E-value: 1.9e-05
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqa.fkrararfqaa 133
+                  +++l+ ar + + a++kln  k + r ++iqa++a +  a+a++  a
+  AGY59956.1 180 RRLDLDRARESLKGAEAKLNLYKVGTRYEEIQAAKAtLDEAQAQYANA 227
+                 5789****************************9887367888888765 PP
+
+  == domain 3  score: 2.1 bits;  conditional E-value: 0.022
+        atpE  90 nleearaafneaqtklnqv 108
+                  l+ea+a++++a+t+l+++
+  AGY59956.1 216 TLDEAQAQYANAKTRLADL 234
+                 79*************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4507  (1419478 residues searched)
+Passed MSV filter:                       166  (0.0368316); expected 90.1 (0.02)
+Passed bias filter:                      115  (0.0255159); expected 90.1 (0.02)
+Passed Vit filter:                         7  (0.00155314); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443754); expected 0.0 (1e-05)
+Initial search space (Z):               4507  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 4861.71
+//
+[ok]

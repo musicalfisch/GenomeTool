@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1183438_GCA_000484535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-45  153.3   0.0    1.8e-45  153.1   0.0    1.0  1  AGY59445.1  thioesterase [Gloeobacter kilaueensis JS1]
+  ------ inclusion threshold ------
+      0.039   11.1   0.0       0.92    6.6   0.0    2.1  2  AGY60687.1  hypothetical protein GKIL_4441 [Gloeobacter kilau
+
+
+Domain annotation for each sequence (and alignments):
+>> AGY59445.1  thioesterase [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  153.1   0.0   8.2e-49   1.8e-45       8     241 ..       6     238 ..       1     247 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 153.1 bits;  conditional E-value: 8.2e-49
+        anaA   8 tspwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslev 106
+                 +s wl  + k      l lfc+p ag   ++frdwpa +p si++ a+++pgr  r++e    r   l+e   q +  + + p+ +fghslg++ ++e+
+  AGY59445.1   6 ASRWL-QVPKSNPRAALRLFCLPYAGGSPIVFRDWPAFLPASIEVSALQLPGRGTRLQEAPFIRMEPLVEAAAQALLGFLDRPYALFGHSLGALTAFEL 103
+                 56676.3567778899*********************************************************************************** PP
+
+        anaA 107 ahqlgdrfgcfpqclvvsgrkpphipc.dhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeade 204
+                 a+q+      +p +l vs  + p++p  d    +  + +++ +lr   gtpea+l + elm ++lp  rad+ + + y y  +  l cpi  +ggead 
+  AGY59445.1 104 ARQFRKLNAPLPLVLFVSASRAPQLPRtDASTYNLPEPEFLAKLRRLNGTPEAILANAELMQLLLPALRADFTVLDTYTYNHQPPLGCPITVFGGEADT 202
+                 *************************96255566677889**********************************************************96 PP
+
+        anaA 205 gvsleelrewekytqrgfklrsfpgghmylteekerf 241
+                  +   el  w   t   fkl+ +pg h++l+ ++ r+
+  AGY59445.1 203 -IGEAELVAWRVQTTAEFKLHILPGDHFFLSTQHVRL 238
+                 .77889************************9888775 PP
+
+>> AGY60687.1  hypothetical protein GKIL_4441 [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.1   0.0    0.0099        22      72     110 ..     141     176 ..     129     186 .. 0.73
+   2 ?    6.6   0.0   0.00041      0.92     190     241 ..     302     355 ..     296     364 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 2.1 bits;  conditional E-value: 0.0099
+        anaA  72 wgdlieplvqeiypysqspfvffghslgsvvslevahql 110
+                  g+li  l  e   + +  + ++ghs gs + le a++ 
+  AGY60687.1 141 TGELITWLRTE---FGKKKIFLLGHSWGSFIGLEYARRY 176
+                 55555555554...456677889***********99865 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.00041
+        anaA 190 slpcpilalggeadegvsleelrewekytqrgfk..lrsfpgghmylteekerf 241
+                  l cp++ l g  d  vs e  +ew    +   k  +     gh  +tee  ++
+  AGY60687.1 302 RLGCPLILLEGRHDRTVSSEVAHEWFVRVRAPRKhfVWFEHSGHEVMTEEPGKV 355
+                 589**********************87665444410334467899999987654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4507  (1419478 residues searched)
+Passed MSV filter:                       107  (0.0237408); expected 90.1 (0.02)
+Passed bias filter:                      104  (0.0230752); expected 90.1 (0.02)
+Passed Vit filter:                         8  (0.00177502); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443754); expected 0.0 (1e-05)
+Initial search space (Z):               4507  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8978.20
+//
+[ok]

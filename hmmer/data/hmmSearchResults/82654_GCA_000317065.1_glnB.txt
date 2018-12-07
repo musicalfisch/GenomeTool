@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/82654_GCA_000317065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-68  225.6   5.2    1.9e-68  225.5   5.2    1.0  1  AFY71212.1  nitrogen regulatory protein P-II family [Pseudana
+    3.8e-37  124.7   0.9      5e-21   72.8   0.6    2.0  2  AFY70017.1  nitrogen regulatory protein P-II family [Pseudana
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY71212.1  nitrogen regulatory protein P-II family [Pseudanabaena sp. PCC 7367]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  225.5   5.2   9.7e-72   1.9e-68       1     112 []       1     112 []       1     112 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 225.5 bits;  conditional E-value: 9.7e-72
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkld+vkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vv+k+++aartgeigdgkifispv+++
+  AFY71212.1   1 MKKVEAIIRPFKLDDVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDNQVDMVVEKVLSAARTGEIGDGKIFISPVNEI 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgek leav
+  AFY71212.1 100 IRIRTGEKGLEAV 112
+                 ***********97 PP
+
+>> AFY70017.1  nitrogen regulatory protein P-II family [Pseudanabaena sp. PCC 7367]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.5   0.0   2.2e-17   4.2e-14       1      52 [.       1      52 [.       1      62 [. 0.95
+   2 !   72.8   0.6   2.6e-24     5e-21      50     111 ..      75     136 ..      71     137 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 50.5 bits;  conditional E-value: 2.2e-17
+        glnB  1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseyt 52
+                mk ++aii+  kld+vk al++ gi gmt s+v+gfg qkg+ +   gs+y 
+  AFY70017.1  1 MKEIKAIIQASKLDDVKTALIDVGIHGMTASDVQGFGHQKGHIKPNPGSDYD 52
+                99**********************************************9995 PP
+
+  == domain 2  score: 72.8 bits;  conditional E-value: 2.6e-24
+        glnB  50 eytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqvvrirtgekdlea 111
+                 +y+v++l k ++e+vved+qvd  v+ki+a a tgeigdgkifi++v++ +r+rtge+  ea
+  AFY70017.1  75 KYAVQLLPKTQIEVVVEDDQVDEAVKKILAVANTGEIGDGKIFITNVNETIRLRTGERGDEA 136
+                 79********************************************************9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         3854  (1262343 residues searched)
+Passed MSV filter:                       113  (0.0293202); expected 77.1 (0.02)
+Passed bias filter:                      105  (0.0272444); expected 77.1 (0.02)
+Passed Vit filter:                         8  (0.00207577); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000518941); expected 0.0 (1e-05)
+Initial search space (Z):               3854  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7069.12
+//
+[ok]

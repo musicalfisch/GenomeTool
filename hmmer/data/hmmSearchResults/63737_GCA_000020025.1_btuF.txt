@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.3e-159  528.9   4.7   1.4e-159  528.8   4.7    1.0  1  ACC84499.1  periplasmic binding protein [Nostoc punctiforme P
+     0.0018   16.1   0.0        0.2    9.3   0.0    2.2  2  ACC83101.1  putative iron transport system substrate-binding 
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC84499.1  periplasmic binding protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  528.8   4.7  4.2e-163  1.4e-159       1     306 [.       1     306 [.       1     307 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 528.8 bits;  conditional E-value: 4.2e-163
+        btuF   1 mlrrwilstlaillsiiltacnttntqqsqaqatqsitisntpsqelaklsakrvvtlsslttdiifqldktklvgisgsslfkndprfqdiprisegq 99 
+                 m rrw+ls+la+l+si+l ac+t++tqqsq ++t+ +++ n++sq+l++ s krvv+lssl++dii +l+ tk+vgi+gs lfknd +f+dipr+segq
+  ACC84499.1   1 MHRRWLLSALALLMSIVLAACTTATTQQSQIKVTNPTETINANSQQLPTGSVKRVVALSSLSADIISRLNSTKIVGITGSKLFKNDSKFKDIPRVSEGQ 99 
+                 78************************************************************************************************* PP
+
+        btuF 100 sppnlekivalkpdlvigaegfsnqviqrlqqlgiatlltqvntwksleeltaklaqlidvnpqslleryrsfladkvgtntstlvlvssqpilapnkn 198
+                 sppnlekivalkpdlvigaegfsn +iq+lqqlgi t+lt+vn+w+sleelt+ la+ id++p +ll+ry++fl++k+++  stl lvs qpilapnkn
+  ACC84499.1 100 SPPNLEKIVALKPDLVIGAEGFSNIPIQKLQQLGINTFLTKVNNWESLEELTKTLAKSIDADPLPLLNRYKTFLPEKPTQGFSTLALVSRQPILAPNKN 198
+                 *************************************************************************************************** PP
+
+        btuF 199 swagdllekfkvknlaaelqgkspiagyvtlsaekvleanpeavvlitppqggsktevldsfkkesfwqklpatknnrvyvfdyyglvnpgsidaieka 297
+                 swagdll kf+ kn+aa+lqgkspi gyvtlsaekvleanpe+++l+ ppqg s++ +lds+kke+fwq+l+atknnrvyvfdy+glvnpgsidaieka
+  ACC84499.1 199 SWAGDLLAKFQAKNIAADLQGKSPIGGYVTLSAEKVLEANPEVIILVNPPQGNSEAALLDSLKKEAFWQQLQATKNNRVYVFDYFGLVNPGSIDAIEKA 297
+                 *************************************************************************************************** PP
+
+        btuF 298 ceqlkkdll 306
+                 c+qlk+ l+
+  ACC84499.1 298 CQQLKQVLF 306
+                 *****9886 PP
+
+>> ACC83101.1  putative iron transport system substrate-binding protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.9   0.1    0.0013       4.4     127     164 ..      81     121 ..       3     131 .. 0.83
+   2 !    9.3   0.0   6.1e-05       0.2     232     302 ..     218     292 ..     207     297 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 4.9 bits;  conditional E-value: 0.0013
+        btuF 127 qrlqqlgiatlltqvn...twksleeltaklaqlidvnpqs 164
+                 + l+ql  + +ltq +      sl+e+ + +a lid +pq 
+  ACC83101.1  81 DVLEQLQPTHILTQDQcdvCAVSLDEVEKAVATLIDSKPQI 121
+                 45677777777776541113579****************96 PP
+
+  == domain 2  score: 9.3 bits;  conditional E-value: 6.1e-05
+        btuF 232 ekvleanpeavvlitppqggsktevlds.fkkesfwqklpatknnrvyvfd...yyglvnpgsidaiekaceqlk 302
+                 e +l ++p+++v++       +t   +  + +   w+kl+at+  rvy+ d   y+    p  +d++e   e l+
+  ACC83101.1 218 ETLLTTDPDVIVFMPCGFDLNRTRQEAKlLTQRPEWEKLHATQAGRVYITDgnsYFNRPGPRLVDSLEILAEILH 292
+                 67788889998888777777777655441567789**************98333444444566777776666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       272  (0.0406577); expected 133.8 (0.02)
+Passed bias filter:                      181  (0.0270553); expected 133.8 (0.02)
+Passed Vit filter:                        10  (0.00149477); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11896.76
+//
+[ok]

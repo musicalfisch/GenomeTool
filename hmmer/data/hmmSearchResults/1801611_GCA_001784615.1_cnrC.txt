@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801611_GCA_001784615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-09   34.2   0.0    1.5e-05   21.3   0.0    2.1  2  OGI20554.1  hypothetical protein A2255_02910 [Candidatus Mela
+     0.0035   13.5   0.0      0.032   10.3   0.0    2.1  1  OGI23174.1  hypothetical protein A2255_03745 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI20554.1  hypothetical protein A2255_02910 [Candidatus Melainabacteria bacterium RIFOXYA2_FULL_32_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.0     2e-05      0.02      33     220 ..      31     223 ..       7     234 .. 0.84
+   2 !   21.3   0.0   1.5e-08   1.5e-05     114     218 ..     366     470 ..     341     472 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 2e-05
+        cnrC  33 piytldqavsaaggsapaaeaa..taaidaaragrtvaglrpnpvvq.g..qvenvigsgpyrgvrsaestvgfaipielggkrgarvavanaqlsrae 126
+                  + tl++++  a    p  + a  t+ +  +r g+  +g  p+  +  g  +++ +   g  r   s   +vg    i   gk  ++v + + +l  ++
+  OGI20554.1  31 EVLTLERCIDIAISKNPNIDLAdsTTKVYESRVGQVKSGYLPQINLSsGynRLNSITNVGIDRDNNSYSGSVGVNQLIYDFGKTPTKVKIQDLNLGSSK 129
+                 5778999999999999988765336678889********99986654132256677788999****************************999986666 PP
+
+        cnrC 127 iqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrlaeaaranlarrigrp 220
+                  +       +   v q y +a++a        +      + lr a    + g    ++   a+v   na  n  +   l + a anl   +g p
+  OGI20554.1 130 YDLDDTVISIAYSVKQSYYNALTAKISKDIHTQSINQYEQHLRQAKAFFEVGTKPKIDVTTAEVNLSNAKLNYIKADNLYKNAIANLNNAMGMP 223
+                 5555555568899***********9888888888888899*************************************************99998 PP
+
+  == domain 2  score: 21.3 bits;  conditional E-value: 1.5e-08
+        cnrC 114 rvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrlaeaaran 212
+                 ++  a+a+l  a+    i+  ++ lqv q y++   a++r+  a      a + +  a  r + g    +e q a++   na+    + l   + ar+n
+  OGI20554.1 366 QIDEAKANLNVAKSSVEILKQNIYLQVKQAYINLTEAEKRIPVAEMTVDQAKEYFDLANGRYNVGVGNSIEMQDAEINYNNAQLSYVQALYDYNVARSN 464
+                 56678899999999999****************************9999999*********************************************** PP
+
+        cnrC 213 larrig 218
+                 l + +g
+  OGI20554.1 465 LEKAMG 470
+                 *99877 PP
+
+>> OGI23174.1  hypothetical protein A2255_03745 [Candidatus Melainabacteria bacterium RIFOXYA2_FULL_32_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.3   0.0   3.1e-05     0.032      99     184 ..     314     399 ..     300     418 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 3.1e-05
+        cnrC  99 vgfaipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagrasple 184
+                 + + ip+  gg+r a +  a+++l ++e+    + + + l+v + y + ++ +  +   +dq ++a d     s + + g a  ++
+  OGI23174.1 314 ISLKIPLIEGGRRKAEIDEAKSKLKQSELLYKDLKSTISLEVDDAYYNLMTQQSVLGKIQDQLKLAKDNYEKISEQFKEGFANSID 399
+                 67889*99**************************************************************9999999999888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         2045  (635410 residues searched)
+Passed MSV filter:                        42  (0.0205379); expected 40.9 (0.02)
+Passed bias filter:                       23  (0.0112469); expected 40.9 (0.02)
+Passed Vit filter:                         3  (0.00146699); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000977995); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9001.64
+//
+[ok]

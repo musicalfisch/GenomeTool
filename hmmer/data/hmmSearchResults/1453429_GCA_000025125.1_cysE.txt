@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1453429_GCA_000025125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.6e-115  380.9   0.2   1.9e-115  380.7   0.2    1.0  1  ADB95464.1  serine O-acetyltransferase [Candidatus Atelocyano
+    5.3e-09   31.9   0.3    1.4e-08   30.6   0.4    1.6  2  ADB94821.1  UDP-N-acetylglucosamine pyrophosphorylase /glucos
+
+
+Domain annotation for each sequence (and alignments):
+>> ADB95464.1  serine O-acetyltransferase [Candidatus Atelocyanobacterium thalassa isolate ALOHA]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  380.7   0.2  3.2e-118  1.9e-115       2     227 ..      16     241 ..      15     247 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 380.7 bits;  conditional E-value: 3.2e-118
+        cysE   2 lsilladfkiiferdpaarnwlevlfcypglqallchrfahwlyqigipfiprlishlarfltgieihpgaqigqgvfidhgmgvvigetaivgdyali 100
+                 ls++++df+iif+rdpaarnwlevlfcypglqa++ +rfahwl ++ i f+prlish+arf+tgieihp aqig gvfidhgmgvvigeta +gdy+li
+  ADB95464.1  16 LSTIVTDFRIIFDRDPAARNWLEVLFCYPGLQAIILYRFAHWLNKLNIRFLPRLISHFARFFTGIEIHPAAQIGTGVFIDHGMGVVIGETAKIGDYSLI 114
+                 89************************************************************************************************* PP
+
+        cysE 101 yqgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrliyragtrveplehgdlldseavairalvdrie 199
+                 yqgvtlggtgk sgkrhpt+g+nvv+gagakvlgn+ +gnnvr+gagsv+lrd+p++ctvvg+pg+++y++g rv+plehg+l+dsea  ir l+dri+
+  ADB95464.1 115 YQGVTLGGTGKGSGKRHPTIGKNVVIGAGAKVLGNLNIGNNVRIGAGSVLLRDVPSNCTVVGIPGKIVYQSGVRVNPLEHGNLPDSEAKVIRLLLDRID 213
+                 *************************************************************************************************** PP
+
+        cysE 200 qlekqvyelrlerskepdyrincpvlah 227
+                  lekq   l+ ++s+e ++  +   + h
+  ADB95464.1 214 LLEKQFQLLKSNKSEEWEFIKEPDEILH 241
+                 **************99888655555555 PP
+
+>> ADB94821.1  UDP-N-acetylglucosamine pyrophosphorylase /glucosamine-1-phosphate N-acetyltransferase [Candidatus Ateloc
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0      0.35   2.1e+02     115     149 ..     260     294 ..     244     301 .. 0.71
+   2 !   30.6   0.4   2.4e-11   1.4e-08      59     165 ..     325     438 ..     315     448 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.35
+        cysE 115 krhptlgenvvvgagakvlgniylgnnvrvgagsv 149
+                     +l  + v+   +++ g+ y+g + ++g g+ 
+  ADB94821.1 260 DDTVSLSPDTVIEPQTHLRGKTYIGSKSHIGPGTF 294
+                 55556677778888888889999999998888875 PP
+
+  == domain 2  score: 30.6 bits;  conditional E-value: 2.4e-11
+        cysE  59 larfltgieihpgaqigqgvfidhgm...gvvigetaivgdyaliyqgvtlggt...gkesgkrhptl.genvvvgagakvlgniylgnnvrvgagsvv 150
+                 +a++   ++ih  ++ig+ v i +        i   + +gd +l  q     gt     +  ++hpt+ g +   ga +  +  + lgnnv v agsvv
+  ADB94821.1 325 YAHIRKEVKIHESCRIGNFVEIKKSQvekNSNIAHLSYIGDASLGEQVNIGAGTitaNYDGVNKHPTIiGSQTKTGANSVFVAPVTLGNNVTVAAGSVV 423
+                 566677899**********9998864222567999999***99988855544542213455689**9549999************************** PP
+
+        cysE 151 lrdipadctvvgvpg 165
+                   d+p ++ v+    
+  ADB94821.1 424 TNDVPDNALVIARQQ 438
+                 ******999987655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         1200  (386913 residues searched)
+Passed MSV filter:                        41  (0.0341667); expected 24.0 (0.02)
+Passed bias filter:                       37  (0.0308333); expected 24.0 (0.02)
+Passed Vit filter:                         5  (0.00416667); expected 1.2 (0.001)
+Passed Fwd filter:                         2  (0.00166667); expected 0.0 (1e-05)
+Initial search space (Z):               1200  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9750.21
+//
+[ok]

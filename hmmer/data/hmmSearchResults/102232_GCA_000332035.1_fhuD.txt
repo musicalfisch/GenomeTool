@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fhuD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102232_GCA_000332035.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fhuD  [M=330]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0041   13.9   0.1      0.072    9.8   0.0    2.3  2  ELR98081.1  dephospho-CoA kinase [Gloeocapsa sp. PCC 73106]
+
+
+Domain annotation for each sequence (and alignments):
+>> ELR98081.1  dephospho-CoA kinase [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    1.3   0.0    0.0066        27      62     121 ..     354     418 ..     317     429 .. 0.72
+   2 !    9.8   0.0   1.8e-05     0.072     274     299 ..     432     457 ..     425     471 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 1.3 bits;  conditional E-value: 0.0066
+        fhuD  62 vvaldgatvgnllalgmm.pagvasnllpeitrlipnvprlgqssq....inletlavlqpdlii 121
+                   +l  + + ++lal  + p  v  n +pe+  l    p + q+ q    +n + +   qpd+i+
+  ELR98081.1 354 SQSLPSSQIPQVLALEWIdPLMVGGNWIPELIELAGGKPLFAQTGQpsryLNWQEVEDNQPDIIV 418
+                 55667777888999975538999**********99877766554442224789999999999987 PP
+
+  == domain 2  score: 9.8 bits;  conditional E-value: 1.8e-05
+        fhuD 274 qlerldtdplwqslgavqknrvysvg 299
+                 ++e l  +p wq l avq+nrv+ v 
+  ELR98081.1 432 EIEVLKPNPAWQNLVAVQQNRVFLVD 457
+                 5789999***************9884 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (330 nodes)
+Target sequences:                         4087  (1202650 residues searched)
+Passed MSV filter:                       131  (0.0320529); expected 81.7 (0.02)
+Passed bias filter:                      113  (0.0276486); expected 81.7 (0.02)
+Passed Vit filter:                         9  (0.0022021); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000244678); expected 0.0 (1e-05)
+Initial search space (Z):               4087  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9921.86
+//
+[ok]

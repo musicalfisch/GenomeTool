@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/corA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752063_GCA_001548455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       corA  [M=385]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.7e-141  467.8   0.5   8.7e-141  467.4   0.5    1.0  1  BAU05489.1  putative cation transporter [Fischerella sp. NIES
+  ------ inclusion threshold ------
+      0.014   12.5   0.3      0.022   11.8   0.3    1.3  1  BAU04191.1  inner-membrane translocator [Fischerella sp. NIES
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU05489.1  putative cation transporter [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  467.4   0.5  3.5e-144  8.7e-141      26     374 ..      18     372 ..       7     378 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 467.4 bits;  conditional E-value: 3.5e-144
+        corA  26 dyfydepgsepgtliiepdakpsriilidydednavrkvditpnacapyigtntvswmdiqglgsetvlkqvgeifnlhpllledvvnvpqrpkledyn 124
+                 + fy  pgs pgt+i++ +a p +i+lidy   +a+ k   tp+ c py+ t++vsw+d++glgse +l+++g++f+lhpl+led+vnvp+rpk+edy+
+  BAU05489.1  18 EDFYHLPGSIPGTIIVDANAPPPKIVLIDYSPIEAISKEVETPEDCIPYLDTESVSWVDVRGLGSEDILQRLGQVFELHPLVLEDIVNVPERPKVEDYE 116
+                 5699*********************************************************************************************** PP
+
+        corA 125 nqllvisqmvrlkedesgfdteqvsfvlgkryllsfqeeelqdcfeivrdrirtsqgrvrksgadyltyllldtiidgyfpvvehyedriealedmiis 223
+                 +ql++i++mv  k+   gf +eqvsfvlgk+yll++qee  +dcfe vr ri  ++g + k g dyl+y l+d+iidg+fpv+e+y +rie led +is
+  BAU05489.1 117 DQLVIIARMVMPKKKSHGFHSEQVSFVLGKHYLLTVQEEPKRDCFEAVRSRIFKNKGIICKKGPDYLAYALMDAIIDGFFPVLEKYGERIEDLEDEVIS 215
+                 *************************************************************************************************** PP
+
+        corA 224 npdrdtmqeiydvrrellalrrliwpmrnvlhllmrdhhgivsdevqiyfrdsydhviqileiieayrelaaslmdvymstmgnklneimkfltvisti 322
+                 +p  +t+++iy v+rell lrr iwp rn+lh l++d   ++s ev++y+rd+ydh +q+++++e+yrel++ lmdvy+s++ n++neimk+ltvis+i
+  BAU05489.1 216 QPTPKTLKKIYKVKRELLQLRRAIWPQRNLLHTLIQDENEMISHEVRVYLRDCYDHAVQVIDMVETYRELTSGLMDVYLSAVSNRMNEIMKLLTVISAI 314
+                 *************************************************************************************************** PP
+
+        corA 323 fipltfivgvygmnfe......nmpelkgewsyflvwlvmlavagglifyfwrkgwfk 374
+                 fipltfi gvygmnf+      nmpel+  w y     vm  +ag l++ fwrkgw++
+  BAU05489.1 315 FIPLTFIAGVYGMNFNtekspyNMPELNWYWGYPACLAVMAVIAGVLLYIFWRKGWLE 372
+                 ***************76667779*********************************87 PP
+
+>> BAU04191.1  inner-membrane translocator [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.3     9e-06     0.022     301     384 ..      86     170 ..      75     171 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 9e-06
+        corA 301 ymstmgnklneimkfltvistifipltfivgvygmnfenmpelkgewsyflvwlvmlav...agglifyfwrkgwfkpiyslkeeak 384
+                 y++ +   + e+++++     + +  t+i g +g++   +p ++ + + f+  l+m+av     g+ fy w   w++p y++k  +k
+  BAU04191.1  86 YLAIVTIGVGELVRLILNNQELPVGDTWISGAFGVQSYPIPLVNLQPNLFV-RLLMIAVltlVAGITFY-WLWRWIRPTYAVKRVSK 170
+                 566666666777777777777778889*********999998877766664.44454441115565555.6667********98766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (385 nodes)
+Target sequences:                         4939  (1543483 residues searched)
+Passed MSV filter:                       161  (0.0325977); expected 98.8 (0.02)
+Passed bias filter:                      135  (0.0273335); expected 98.8 (0.02)
+Passed Vit filter:                        18  (0.00364446); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.00040494); expected 0.0 (1e-05)
+Initial search space (Z):               4939  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9904.02
+//
+[ok]

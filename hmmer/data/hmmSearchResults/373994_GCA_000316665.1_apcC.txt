@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/373994_GCA_000316665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-48  160.6   2.6    2.3e-48  160.5   2.6    1.0  1  AFY56103.1  phycobilisome core linker protein [Rivularia sp. 
+    1.9e-05   23.0   0.0    2.6e-05   22.6   0.0    1.3  1  AFY56014.1  CpcD/allophycocyanin linker domain protein [Rivul
+     0.0063   14.9   0.0      0.014   13.8   0.0    1.5  1  AFY55328.1  FAD binding domain/Oxidoreductase FAD-binding dom
+  ------ inclusion threshold ------
+      0.025   13.0   0.0      0.059   11.8   0.0    1.6  1  AFY56015.1  Phycobilisome Linker polypeptide/CpcD/allophycocy
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY56103.1  phycobilisome core linker protein [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.5   2.6   1.4e-51   2.3e-48       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 160.5 bits;  conditional E-value: 1.4e-51
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmfk+tacvPsqtrirtqrelqntyftklvpy+nWfreqqri+kmGG+ivkvelatGk+g+ntGl
+  AFY56103.1  1 MRMFKVTACVPSQTRIRTQRELQNTYFTKLVPYENWFREQQRIQKMGGQIVKVELATGKQGMNTGL 66
+                9****************************************************************9 PP
+
+>> AFY56014.1  CpcD/allophycocyanin linker domain protein [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.6   0.0   1.5e-08   2.6e-05      30      59 ..      49      78 ..      35      82 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 22.6 bits;  conditional E-value: 1.5e-08
+        apcC 30 lvpydnWfreqqrimkmGGkivkvelatGk 59
+                 vpy+   +e +ri +mGGki+++e +t  
+  AFY56014.1 49 TVPYNRMNEEMRRITRMGGKIINIEQVTAE 78
+                49***********************99875 PP
+
+>> AFY55328.1  FAD binding domain/Oxidoreductase FAD-binding domain/CpcD/allophycocyanin linker domain/Oxidoreductase NA
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   8.2e-06     0.014      31      54 ..      50      73 ..      45      87 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 8.2e-06
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy+   +e +ri ++GGkiv ++
+  AFY55328.1 50 VPYNRMNQEMRRITRLGGKIVSIQ 73
+                9********************997 PP
+
+>> AFY56015.1  Phycobilisome Linker polypeptide/CpcD/allophycocyanin linker domain protein [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   3.6e-05     0.059      27      54 ..     302     329 ..     296     331 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 3.6e-05
+        apcC  27 ftklvpydnWfreqqrimkmGGkivkve 54 
+                 ++ +vpy+      q+i++ GGkiv v 
+  AFY56015.1 302 YAIVVPYERLSDKMQQILRQGGKIVSVT 329
+                 5668*********************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         6644  (2270700 residues searched)
+Passed MSV filter:                       165  (0.0248344); expected 132.9 (0.02)
+Passed bias filter:                      152  (0.0228778); expected 132.9 (0.02)
+Passed Vit filter:                        20  (0.00301023); expected 6.6 (0.001)
+Passed Fwd filter:                         4  (0.000602047); expected 0.1 (1e-05)
+Initial search space (Z):               6644  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 3803.42
+//
+[ok]

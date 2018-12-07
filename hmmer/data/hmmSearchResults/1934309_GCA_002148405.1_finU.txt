@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1934309_GCA_002148405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.2e-147  486.9   4.2   6.9e-147  486.8   4.2    1.0  1  OUC14062.1  Fe-S cluster assembly protein NifU [Alkalinema sp
+    3.8e-10   37.8   0.0    4.2e-10   37.7   0.0    1.0  1  OUC12653.1  hypothetical protein B0A82_21510 [Alkalinema sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> OUC14062.1  Fe-S cluster assembly protein NifU [Alkalinema sp. CACIAM 70d]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  486.8   4.2  2.6e-150  6.9e-147       1     300 []       1     294 []       1     294 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 486.8 bits;  conditional E-value: 2.6e-150
+        finU   1 mwdytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdia 99 
+                 mwdyt+kvl+lfynpknqG++  ++e+G++v++GevGsiacGdalrlhlk+e+  dki+darfqtfGctsaiass+al+elikGltldealk++n++ia
+  OUC14062.1   1 MWDYTEKVLDLFYNPKNQGAIAADNESGIAVVFGEVGSIACGDALRLHLKIEIAQDKILDARFQTFGCTSAIASSSALTELIKGLTLDEALKITNREIA 99 
+                 9************************************************************************************************** PP
+
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkes 198
+                 dylGGlpeakmhcsvmGqealeaaiy yrGi  + h+ ++eGalvc cfgise kirrvi+en+ltt eqv+ny+kaGGGcGscla i+d+i++++ e+
+  OUC14062.1 100 DYLGGLPEAKMHCSVMGQEALEAAIYKYRGIEVEHHE-EEEGALVCRCFGISEPKIRRVIIENDLTTVEQVSNYIKAGGGCGSCLAGIEDLIQAIQAEK 197
+                 *******************************987665.689********************************************************** PP
+
+        finU 199 aatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                 aat+      ++ +ela ++  r+l++ +ki+l+++v+ ee+r+vl +d++dv+lydv++d+++v+lk+a++s++s++ +lkia+e+rl++++ ++lv+
+  OUC14062.1 198 AATSA-----RVNAELAIAQDYRPLTTLQKINLIQQVLTEEVRPVLLADGGDVELYDVKDDVVQVILKGACGSCSSSTTTLKIAIESRLKERVLPSLVV 291
+                 *9865.....556788888999***************************************************************************** PP
+
+        finU 298 elv 300
+                 e+v
+  OUC14062.1 292 EAV 294
+                 987 PP
+
+>> OUC12653.1  hypothetical protein B0A82_21510 [Alkalinema sp. CACIAM 70d]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.7   0.0   1.6e-13   4.2e-10     234     292 ..      11      69 ..       2      77 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 37.7 bits;  conditional E-value: 1.6e-13
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 e v +e+r+ li+d+++v+l + d+ ++k  l++a++s+ s++++l++ +e rl++++ 
+  OUC12653.1  11 ETVLDEMRPYLISDGGNVELVEIDGPIVKLRLQGACGSCPSSTMTLRMGIERRLREQIP 69 
+                 3455789************************************************9984 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5216  (1707448 residues searched)
+Passed MSV filter:                       183  (0.0350844); expected 104.3 (0.02)
+Passed bias filter:                      151  (0.0289494); expected 104.3 (0.02)
+Passed Vit filter:                        16  (0.00306748); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000383436); expected 0.1 (1e-05)
+Initial search space (Z):               5216  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10244.69
+//
+[ok]

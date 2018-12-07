@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppA  [M=539]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-64  215.7   0.0    1.5e-64  215.3   0.0    1.0  1  KGG12208.1  Oligopeptide ABC transporter [Prochlorococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG12208.1  Oligopeptide ABC transporter [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  215.3   0.0     8e-68   1.5e-64      24     516 ..      26     511 ..       9     518 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 215.3 bits;  conditional E-value: 8e-68
+        dppA  24 cqstnsnlpqgdsdrliigttlkprsidpadsyelaglfiiynlgetlytyaegttnlkpllatelpqispdgltytipvrrgvifhdgtvfnaeamkf 122
+                 + s  s  p +dsdr+i+ +  k  s+dpa++ +l  + ++  lg+ ly   +    l p la++ p is dglt +ip+r  v+fhdgt fn+eam f
+  KGG12208.1  26 AFSQISCGPTRDSDRVIVASKGKIESLDPAQANKLLAIQLLSALGDPLYRINDE-GVLEPRLASDQPYISKDGLTVSIPLRENVLFHDGTSFNSEAMAF 123
+                 45677889*****************************************98754.469***************************************** PP
+
+        dppA 123 slerfiknggepsfllrdtidkitaskedeitikltrpfaafpallaypgacavspkfyqigegkfkpeefigtghyrlkavtsdsfsleafdrywgep 221
+                 s+ rf+  g    +++   i  i + +   i ikl+r  +++  ll+      +sp  y+  + kf  ++figtg y+l + + +   l  f  yw   
+  KGG12208.1 124 SIRRFMDIG-TLNYIIGGRIVDIETPNPFLIRIKLSRQSSSIKGLLTSINLTPISPTAYKNYQDKFLNKQFIGTGPYKLDSFSPERQRLIPFKGYWDGK 221
+                 *****9876.567899999999999***********************************************************************999 PP
+
+        dppA 222 aknkgvnvqiylsnpanlfngfqtgavdiayqsllppqvrklrteaaqgkwqaiessgaain..fmsvnlkseptdnilvrqaiaslvdrdllndrilq 318
+                   nkg++   y s    lf  ++tg +d+     l     +l       k + ie  g a++  +++ + +s p ++ l+rqa++  ++rdl+  ++  
+  KGG12208.1 222 PTNKGIDFISYTSS-ISLFSAMKTGQIDVLLSNSLEDGH-RLALHKLSKKGKIIEGVGPAMQieYIAFKSNSPPLNQKLIRQALSYSINRDLISKQVSY 318
+                 99*****9888775.78************9887776654.45666666677789999988661155555556799************************ PP
+
+        dppA 319 gqgiplfslipttfsesqpvfkerygnhnieqakqllktagyspekpaivevwhssgsitsssvaavmkalakrdldnmiqfepnsilgaaffrnisrg 417
+                 g   pl s++p  + + +   + ++  +n  +a++l   ag+  ++   + +   s   +   +a   ++  krd+ + i+++ n +  +++++++s g
+  KGG12208.1 319 GLREPLRSIVPPVLQKEK---QSKWPIYNPIKARKLYEKAGFCNQNILNIPLTFRSNVPADKLLALTWQSQIKRDFSDCIELKLNGVESTTVYKQLSEG 414
+                 ***********9987655...4678889999***************999999999999999999999******************************** PP
+
+        dppA 418 lyttalsnwypdfldadnyiypfldcakgspetgceeggsqsqgsffysqemnqliaqsrqesnpakrkqifgkiqeiladevpyiplwqtkeyafarh 516
+                  y + +  w  ++ d   y+ p+ldc k s ++ c+eg +   g+f+ s+e+++ ++q+       kr + +  i+ + +     +p+w  k  a+a+ 
+  KGG12208.1 415 SYNAVILGWTGEYPDPHAYLSPLLDCKKIS-DSICKEGEAVFGGTFWASNEIQKALDQTEIL-TGNKRDKKLSDIELLASKGGAILPIWLEKPRAWAQT 511
+                 **************************9988.578***********************98765.56788888899977666778889****999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (539 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        38  (0.0199161); expected 38.2 (0.02)
+Passed bias filter:                       30  (0.0157233); expected 38.2 (0.02)
+Passed Vit filter:                         3  (0.00157233); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000524109); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8957.52
+//
+[ok]

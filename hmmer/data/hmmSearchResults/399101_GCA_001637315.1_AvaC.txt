@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/399101_GCA_001637315.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-99  328.7   0.0    3.2e-99  328.6   0.0    1.0  1  OAB60146.1  SAM-dependent methyltransferase [Phormidium wille
+  ------ inclusion threshold ------
+      0.024   11.9   0.0      0.038   11.2   0.0    1.3  1  OAB59590.1  methyltransferase type 11 [Phormidium willei BDU 
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB60146.1  SAM-dependent methyltransferase [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  328.6   0.0  1.7e-102   3.2e-99       1     220 []       1     220 []       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 328.6 bits;  conditional E-value: 1.7e-102
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+ +tlg+  q+y y     lre+p+l qlrqeta  p a mqiapeqgqfma+lvq +ga+k+leig ftgysalvvalalppeg +++cd+ e  t+
+  OAB60146.1   1 MSPKTLGVSPQLYDYLLKTSLRETPVLQQLRQETAQLPAARMQIAPEQGQFMALLVQLLGARKTLEIGTFTGYSALVVALALPPEGTVVTCDIDETMTA 99 
+                 6779*********************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarrywq+a vadki+l +apal+tl++l+ +ge  sfdf fidadk ny  yye++lqlvrsgg+iaidnv+wsgrva    td+rt  ir +n +++
+  OAB60146.1 100 IARRYWQHADVADKIQLHLAPALDTLQQLLQSGEEGSFDFAFIDADKRNYPHYYEKCLQLVRSGGLIAIDNVLWSGRVADETVTDKRTEAIREFNRRLH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamkk 220
+                 +d+r+ +s++pi dgltla+k+
+  OAB60146.1 199 HDDRITLSLVPIADGLTLALKR 220
+                 *******************995 PP
+
+>> OAB59590.1  methyltransferase type 11 [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0     2e-05     0.038      63     115 ..      41      91 ..      28     114 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 2e-05
+        AvaC  63 kaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkid 115
+                 k+ +ig  tg s++v+a  l    ++ a+d+ +++  +  +  ++agva+ki 
+  OAB59590.1  41 KIADIGCGTGASTIVLAQLLN--AQVTAVDFLQDFLDVLAQRANKAGVAHKIS 91 
+                 7889*********99998886..56899*******99999999********96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3770  (1257126 residues searched)
+Passed MSV filter:                        98  (0.0259947); expected 75.4 (0.02)
+Passed bias filter:                       87  (0.0230769); expected 75.4 (0.02)
+Passed Vit filter:                        10  (0.00265252); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530504); expected 0.0 (1e-05)
+Initial search space (Z):               3770  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9218.92
+//
+[ok]

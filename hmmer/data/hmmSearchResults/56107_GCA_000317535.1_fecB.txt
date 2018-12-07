@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56107_GCA_000317535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-05   23.2   0.2    4.5e-05   21.2   0.2    2.0  1  AFZ25925.1  ABC-type Fe3+-hydroxamate transport system, perip
+  ------ inclusion threshold ------
+      0.044   11.4   0.0      0.061   10.9   0.0    1.2  1  AFZ22670.1  dienelactone hydrolase-like enzyme [Cylindrosperm
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ25925.1  ABC-type Fe3+-hydroxamate transport system, periplasmic component [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2   0.2   1.4e-08   4.5e-05      52     286 ..      51     278 ..      11     295 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 1.4e-08
+        fecB  52 epqrivvltneatdmvlalgvtpv.gav..kswsgdpyyeylakdmlgvpivgdemqpnlekivalqpdliigsrlrqgqiykslsaiaptvfseti.. 145
+                   +r+v l+  a+d++  l  t + g    + +  dp ++    d++ v     +  pnlekiv+l+pdl+ig+        + l  +  + f   +  
+  AFZ25925.1  51 SAKRVVALSSLAADIIYQLDQTKLiGITgsRLFNNDPRFQ----DIIRV--SEGQSPPNLEKIVSLKPDLVIGAAGFSDVPIQKLKQLGIATFLTQVkn 143
+                 4579999999999999999988641433114577788775....55444..455678****************97655544444555544444433311 PP
+
+        fecB 146 geswqdnlrlygqaldreaeaeqllndwdtrv.aqmrqklsakdltislvrfmprgariylqnsfpgqilqavglerpas..qanhgfaehvsfeqipq 241
+                  es +   +  gq +d +  ++ lln +   + a+  q ls    t+ lv   p  a    +ns+ g++l   g +  a+  q +  +  +v++     
+  AFZ25925.1 144 WESLEKLTQTLGQLIDVD--SQPLLNRYKNFLpAKPNQSLS----TLVLVSRQPILA--PNKNSWAGDLLAKFGAKNLAAelQGKSPIGGYVTLSAEKI 234
+                 466666666777777754..567888887654255666666....444554444444..3467777777777776665542244455555555555555 PP
+
+        fecB 242 meadalfyfiytgdsgdqtpgsitnpwlnhplwqqlevvqsgkay 286
+                 +ea+  + ++     g  +  ++ + + +  +wq+++  +  + y
+  AFZ25925.1 235 LEANPAVIILVNPPQGG-SEAALLESFKQESFWQKMQATKNNRIY 278
+                 66654433333333332.234455666666666666666655555 PP
+
+>> AFZ22670.1  dienelactone hydrolase-like enzyme [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   1.9e-05     0.061     133     211 ..      61     142 ..      36     158 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.9e-05
+        fecB 133 lsaiaptvfseti...geswqdnlrlygqaldreaeaeqllndwdtrvaqmrqklsakdltislvrfmprgariylqnsfpg 211
+                   aiapt+f  t       ++ +    g+    ++ ae++l d ++ +a +r     k  +i  + f   g  +yl  ++p 
+  AFZ22670.1  61 YVAIAPTLFQRTApgfEGGYNSEDVQLGRKYKEQTTAEEILSDVQAAIAYLRTLPNVKGEAIGSIGFCFGGHVVYLAATLPD 142
+                 679******999632223455555667999999*******************************************999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         6229  (2019150 residues searched)
+Passed MSV filter:                       167  (0.0268101); expected 124.6 (0.02)
+Passed bias filter:                      135  (0.0216728); expected 124.6 (0.02)
+Passed Vit filter:                        14  (0.00224755); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000321079); expected 0.1 (1e-05)
+Initial search space (Z):               6229  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 9086.17
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1497020_GCA_000775285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysG  [M=684]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.5e-12   42.1   0.7    6.9e-12   41.8   0.7    1.0  1  KGF73284.1  precorrin methylase [Neosynechococcus sphagnicola
+    2.3e-07   26.9   0.4    3.3e-07   26.3   0.4    1.4  1  KGF73123.1  uroporphyrin-III methyltransferase [Neosynechococ
+
+
+Domain annotation for each sequence (and alignments):
+>> KGF73284.1  precorrin methylase [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.7     5e-15   6.9e-12     442     655 ..       7     214 ..       3     242 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 41.8 bits;  conditional E-value: 5e-15
+        cysG 442 lylvgigpgslaqitpaakqaiakadaiigyglyi..dlikpllrpgqmietyaitkerqradravdlaqwglsvavissgdcgiygmaglvlealqar 538
+                 +ylvg gpg    +t  a++ +a+ad i+     +  ++++ +    ++i t   t e       v+  q g sv  + sgd  +y      ++alq+ 
+  KGF73284.1   7 VYLVGAGPGDPDLLTVKAQKILAQADVILVADSLVprQILQGVRSEAEIIPTANKTLEEI-LPFMVERVQSGKSVVRLQSGDPSLYSAIHEQMQALQSA 104
+                 8**************************976654442245566666678888888887764.6789*********************9988777777764 PP
+
+        cysG 539 dwdgntpdvevvpgitalqaaaarvgtplmhd..fcaislsdlltpievitkrlvaa.aqadfvialynprsqtrtkpmdmaldiflqhrdrtnpvalv 634
+                      +   evvpgi+a qaaaa +   l     + +i l+ +    ev  +  +a+ a  +  ++ly       ++ ++ a   +lqh     pval 
+  KGF73284.1 105 -----AIPFEVVPGISAYQAAAATLQVELTVPglVQTIILTRISGRTEVPDREALASlAAHQASLCLYLS-----ARHVQSAQTQLLQHYPADTPVALC 193
+                 .....4568**************99888765422567888888888888877655441333344566643.....34556677889************* PP
+
+        cysG 635 ksafrpteqvkltslgelkve 655
+                      p e++ l  lge+ v 
+  KGF73284.1 194 YRLGWPDEKIWLVPLGEMAVT 214
+                 *****************9884 PP
+
+>> KGF73123.1  uroporphyrin-III methyltransferase [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.4   2.4e-10   3.3e-07     437     577 ..       2     143 ..       1     224 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 2.4e-10
+        cysG 437 drpgqlylvgigpgslaqitpaakqaiakadaiigyglyidlikpllrpgqmietyaitkerqradravd....l....aqwglsvavissgdcgiygm 527
+                 +r g++ylvg gpg    +t   k  +  ad +i   l    i  ++ p  ++      k r r  r  d    l    a+    v  +  gd  ++g 
+  KGF73123.1   2 QRFGKVYLVGAGPGDPGLLTLKGKTLLESADVVIYDALVSPPILAMVNPHAVLIDA--GKRRGRHSRLQDqttqLliesAHTAAIVVRLKGGDPFVFGR 98 
+                 689*******************************9999999999999998765443..34444444433311113111144444555567899****** PP
+
+        cysG 528 aglvlealqardwdgntpdvevvpgitalqaaaarvgtplmhdfcaisls 577
+                  g  +  l a         vevvpg+ta  aa a  g pl h + + s++
+  KGF73123.1  99 GGEEMAELVAAG-----IPVEVVPGVTAGIAAPAYAGIPLTHRLYSSSVT 143
+                 999888887753.....46***********************99887764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (684 nodes)
+Target sequences:                         2731  (698048 residues searched)
+Passed MSV filter:                        92  (0.0336873); expected 54.6 (0.02)
+Passed bias filter:                       64  (0.0234346); expected 54.6 (0.02)
+Passed Vit filter:                         5  (0.00183083); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000732332); expected 0.0 (1e-05)
+Initial search space (Z):               2731  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9549.30
+//
+[ok]

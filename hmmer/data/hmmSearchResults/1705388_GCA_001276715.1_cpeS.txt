@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1705388_GCA_001276715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.9e-101  334.3   0.0   6.8e-101  334.1   0.0    1.0  1  KOR36965.1  chorismate-binding protein [Planktothricoides sp.
+    7.7e-36  121.8   0.0    9.1e-36  121.5   0.0    1.0  1  KOR38401.1  hypothetical protein AM228_02265 [Planktothricoid
+
+
+Domain annotation for each sequence (and alignments):
+>> KOR36965.1  chorismate-binding protein [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  334.1   0.0  2.7e-104  6.8e-101       1     194 [.       1     195 [.       1     197 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 334.1 bits;  conditional E-value: 2.7e-104
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdi tla++ma+dfsnq+qa+enppffahirvcmrplp ell+g+s+++eqayd++ln+pyr+rvlklv a d+i +eny v e ++fygasr+ 
+  KOR36965.1   1 MTHSTDIKTLAQWMASDFSNQAQALENPPFFAHIRVCMRPLPWELLDGMSLYLEQAYDFMLNQPYRVRVLKLVPATDHIVVENYEVAEVEEFYGASRQP 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtg.nsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                 erlk+l+ d+l k++gc+ i +wt  +sfkg+vepgk+civvrk+++ty+d efeid+ekfis+drg d+etd ++wg++agpf+fvr asfa ev
+  KOR36965.1 100 ERLKNLTKDRLTKMSGCSYITHWTDhHSFKGRVEPGKGCIVVRKNQTTYFDGEFEIDAEKFISHDRGMDLETDRQVWGAIAGPFQFVRVASFASEV 195
+                 ************************7369******************************************************************98 PP
+
+>> KOR38401.1  hypothetical protein AM228_02265 [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  121.5   0.0   3.6e-39   9.1e-36       1     190 [.       1     192 [.       1     194 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 121.5 bits;  conditional E-value: 3.6e-39
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed..rieienytvkeekkfygasr 97 
+                 mt+   ++ la+++  +f n +qa e+p +f hir+  r lp+++   +++f eqa   +l++pyr r+l l  +++  +   + y  k+ +kf ga  
+  KOR38401.1   1 MTQQNKLTILAQWLVGEFENVNQAKEQPNWFVHIRLWHRLLPIKIDGNLAIFAEQAPILKLDQPYRQRILVLKPSDNpaKFIGQYYGFKDPNKFRGAGT 99 
+                 899999**************************************************************9988776652155567889************ PP
+
+        cpeS  98 dlerlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasf 190
+                 + + l+++  +dl +lpgc + +    ++f  + epg  c     g+   +   +e+ e+ f s drg dpet + +wg++ gp+e+ + + f
+  KOR38401.1 100 NPHLLNQFLPEDLVNLPGCALTITEQEQKFIAQPEPGAKCFFEYDGQIRQVVLGLEVSEDSFKSFDRGVDPETGKGLWGALIGPYEYQKIQGF 192
+                 ***************************************************************************************999888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5049  (1535341 residues searched)
+Passed MSV filter:                       102  (0.020202); expected 101.0 (0.02)
+Passed bias filter:                       90  (0.0178253); expected 101.0 (0.02)
+Passed Vit filter:                         6  (0.00118835); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396118); expected 0.1 (1e-05)
+Initial search space (Z):               5049  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10030.89
+//
+[ok]

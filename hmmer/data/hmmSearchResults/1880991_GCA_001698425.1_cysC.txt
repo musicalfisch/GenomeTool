@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880991_GCA_001698425.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      5e-75  249.1   0.1    5.6e-75  249.0   0.1    1.0  1  OCR02593.1  adenylyl-sulfate kinase [Oscillatoriales cyanobac
+  ------ inclusion threshold ------
+      0.012   13.2   0.1      0.021   12.4   0.1    1.4  1  OCR02249.1  ATPase involved in chromosome partitioning [Oscil
+      0.017   12.7   0.3      0.029   12.0   0.3    1.6  1  OCR01379.1  shikimate kinase [Oscillatoriales cyanobacterium 
+
+
+Domain annotation for each sequence (and alignments):
+>> OCR02593.1  adenylyl-sulfate kinase [Oscillatoriales cyanobacterium USR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  249.0   0.1   3.4e-78   5.6e-75       4     178 ..       1     175 []       1     175 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 249.0 bits;  conditional E-value: 3.4e-78
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m ++g  +w+tglsgagk+ti++al+ +l a+g  +e+ldgdivrt l+kgl fskedrd nirrigfv+ ll+r gv+ + +aispy+ +r+e+r+  
+  OCR02593.1   1 MTNKGFILWFTGLSGAGKTTISQALEPQLRAKGCKVEILDGDIVRTHLSKGLTFSKEDRDTNIRRIGFVAHLLSRNGVVAITAAISPYKALRDEIRAME 99 
+                 6789*********************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                  +fve++++a l+ ce rdvkgly +arageik ftgiddpye p npe+ c t  et++esv k+  kl elgyi
+  OCR02593.1 100 PNFVEIYIKASLETCESRDVKGLYAKARAGEIKGFTGIDDPYEEPTNPEIICYTAEETVDESVVKIITKLEELGYI 175
+                 ***************************************************************************8 PP
+
+>> OCR02249.1  ATPase involved in chromosome partitioning [Oscillatoriales cyanobacterium USR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.1   1.3e-05     0.021      13      62 ..     109     158 ..      97     180 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.3e-05
+        cysC  13 ltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedr 62 
+                  +g  g gkst +  l a l  +g  + +ld d+   n+ + lg+ + d 
+  OCR02249.1 109 SSGKGGVGKSTTAVNLAAALKLQGAKVGLLDADVYGPNIPQMLGLGQADI 158
+                 56889************************************999988875 PP
+
+>> OCR01379.1  shikimate kinase [Oscillatoriales cyanobacterium USR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.3   1.8e-05     0.029       7      42 ..       5      40 ..       1     113 [. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1.8e-05
+        cysC  7 rgvtvwltglsgagkstitealqakliaegysievl 42
+                +gv v+l g+ gagk+t+ + l + l    +  ++l
+  OCR01379.1  5 KGVNVYLIGMMGAGKTTVGKWLASELGYRFFDTDIL 40
+                79****************999988775544443333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4908  (1600603 residues searched)
+Passed MSV filter:                       218  (0.0444173); expected 98.2 (0.02)
+Passed bias filter:                      194  (0.0395273); expected 98.2 (0.02)
+Passed Vit filter:                        30  (0.00611247); expected 4.9 (0.001)
+Passed Fwd filter:                         3  (0.000611247); expected 0.0 (1e-05)
+Initial search space (Z):               4908  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7362.77
+//
+[ok]

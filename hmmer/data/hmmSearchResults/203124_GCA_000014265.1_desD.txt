@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/203124_GCA_000014265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.5e-06   24.1   2.8    4.5e-06   24.1   2.8    2.0  2  ABG49637.1  fatty acid desaturase [Trichodesmium erythraeum I
+    0.00023   18.5   5.0    0.00023   18.5   5.0    2.1  2  ABG53478.1  Delta(12)-fatty acid dehydrogenase [Trichodesmium
+
+
+Domain annotation for each sequence (and alignments):
+>> ABG49637.1  fatty acid desaturase [Trichodesmium erythraeum IMS101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   2.8     2e-09   4.5e-06      42     134 ..      43     135 ..      14     139 .. 0.74
+   2 ?   -0.6   0.2     0.065   1.4e+02     295     318 ..     233     256 ..     189     282 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 2e-09
+        desD  42 tiltwviaawlfvlfgpdi..wwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 +++t  i   ++  +g  i  w+l  +  +  g+ l+g  f ighd+ h  +++++wvn l+g      +    + wr+ hn+ hh +tn +g d
+  ABG49637.1  43 AMVTTNIFMVILGYWGLIIapWFLLPLLWVFTGTALTGF-FVIGHDCGHRSFANRRWVNDLVGHLVFLPLIYPFHGWRIGHNH-HHKHTNKMGED 135
+                 333333333333333333322777666667777778775.89*********************8777767777889******7.8999**99987 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.065
+        desD 295 glnyqvvhhlfpqichihypkiap 318
+                    + +vhh +p+i +   p+   
+  ABG49637.1 233 MSTFTIVHHTVPEIPFTPVPEWNE 256
+                 235667777777777666666554 PP
+
+>> ABG53478.1  Delta(12)-fatty acid dehydrogenase [Trichodesmium erythraeum IMS101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   5.0     1e-07   0.00023      51     130 ..      55     132 ..      36     169 .. 0.79
+   2 ?   -1.4   1.9      0.11   2.5e+02     288     316 ..     275     303 ..     206     319 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1e-07
+        desD  51 wlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnv 130
+                    + +  d w++     l+ g+ +    f +ghd+ hg +s  kwvn+l+g      i +  + wr+ h    h+ t  
+  ABG53478.1  55 LYGIAYSLDSWFFFPFFWLMQGTMF-WALFVVGHDCGHGSFSKYKWVNNLVGHLCHTPILVPFHGWRISHRTH-HANTGN 132
+                 4445666677776666666555544.45699*********************99999999999*******865.554433 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.11
+        desD 288 flnwylgglnyqvvhhlfpqichihypki 316
+                 f+n     +  +v hh+f ++ h h    
+  ABG53478.1 275 FINSIHHDIGTHVAHHIFLNMPHYHLKTA 303
+                 66666677778899999999999887543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         4451  (1543737 residues searched)
+Passed MSV filter:                       205  (0.0460571); expected 89.0 (0.02)
+Passed bias filter:                      119  (0.0267356); expected 89.0 (0.02)
+Passed Vit filter:                         8  (0.00179735); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000449337); expected 0.0 (1e-05)
+Initial search space (Z):               4451  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9365.34
+//
+[ok]

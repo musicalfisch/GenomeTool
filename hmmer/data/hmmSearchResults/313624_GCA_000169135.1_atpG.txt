@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/313624_GCA_000169135.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-52  175.0  13.4    2.3e-52  174.8  13.4    1.0  1  EAW45516.1  ATP synthase subunit B [Nodularia spumigena CCY94
+  ------ inclusion threshold ------
+        1.3    7.0  15.9       0.16    9.9  10.8    2.0  2  EAW45278.1  H(+)-transporting ATP synthase, subunit B [Nodula
+
+
+Domain annotation for each sequence (and alignments):
+>> EAW45516.1  ATP synthase subunit B [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  174.8  13.4   9.4e-56   2.3e-52       1     142 [.      19     160 ..      19     161 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 174.8 bits;  conditional E-value: 9.4e-56
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp+ma+qf++la++lna +ykpl + +d r +yir  +  a+e+l+kte l +eye  l+ ar+q+q iia+aqaeaqk+a+e++aa qk+a
+  EAW45516.1  19 LFDLDATLPLMAIQFLVLALVLNATLYKPLGNAIDGRNDYIRSNQLEAQERLSKTEKLAEEYEQSLAGARRQAQTIIADAQAEAQKIAAEKIAAVQKQA 117
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv 142
+                  a ke  a+ei qqk+ af sle qv slsrqilekllg+++v
+  EAW45516.1 118 QAEKEKAASEIEQQKQAAFASLEQQVDSLSRQILEKLLGADIV 160
+                 ****************************************998 PP
+
+>> EAW45278.1  H(+)-transporting ATP synthase, subunit B [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9  10.8   6.6e-05      0.16      12     125 ..      12     125 ..       3     147 .. 0.59
+   2 ?   -1.1   0.3      0.17   4.2e+02      70      76 ..     186     192 ..     140     210 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 6.6e-05
+        atpG  12 alqfillavilnavfykplskvlderaeyi..rqteggakeqlaktealvqeyelqls...sarkqsqeiiaqaqaeaqklaservaaaqkeaiarkea 105
+                  ++f++l  +l   +ykp++k ++er   i  r  e+  k++ a      qe el         +q    i +a+++a+    + +  a++e  + +  
+  EAW45278.1  12 IINFLILVFLLWRFLYKPITKTMQERQRRItnRWEEAQVKQEEA-----AQEAELYRQkqqELDQQRATFINEAKTQAEEERKQLINQARQEVESMQTG 105
+                 57899*********************988722334444444444.....45544433300033445555666666666666666666666666665555 PP
+
+        atpG 106 vaaeiaqqkeeafrslegqv 125
+                     i ++++e + +l  +v
+  EAW45278.1 106 WREAIQREQDEFLATLRQRV 125
+                 55555555555555444433 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.17
+        atpG  70 rkqsqei 76 
+                 + q qei
+  EAW45278.1 186 QTQRQEI 192
+                 2233333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4860  (1442648 residues searched)
+Passed MSV filter:                       196  (0.0403292); expected 97.2 (0.02)
+Passed bias filter:                      106  (0.0218107); expected 97.2 (0.02)
+Passed Vit filter:                        18  (0.0037037); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000411523); expected 0.0 (1e-05)
+Initial search space (Z):               4860  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5157.47
+//
+[ok]

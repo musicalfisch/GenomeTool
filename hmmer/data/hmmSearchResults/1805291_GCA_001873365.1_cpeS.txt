@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805291_GCA_001873365.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.5e-104  343.8   0.0   6.2e-104  343.7   0.0    1.0  1  OIP73169.1  chorismate-binding protein [Oscillatoriales cyano
+    2.6e-34  116.5   0.0    3.1e-34  116.2   0.0    1.0  1  OIP73374.1  chorismate mutase [Oscillatoriales cyanobacterium
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP73169.1  chorismate-binding protein [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  343.7   0.0  3.1e-107  6.2e-104       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 343.7 bits;  conditional E-value: 3.1e-107
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstd   la+lmaadfsnq+qafenppffahirvcmrplp+ell+g+s+++eqayd +l++pyr+rvlklv++e++ieieny++++e++fygasr+ 
+  OIP73169.1   1 MTHSTDTVKLAKLMAADFSNQAQAFENPPFFAHIRVCMRPLPVELLDGISLYLEQAYDINLKQPYRVRVLKLVAVENHIEIENYVIENEQEFYGASREP 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 erl+ l+ ++l+k+  c++i +wtg++fkg+vepgk+c+v rkgk tyl sefeide++fis+drg+dpetde++wg++agpf+fvrw+sfadevk+
+  OIP73169.1 100 ERLQGLTKERLKKMEQCSFITHWTGKGFKGEVEPGKGCMVERKGKVTYLASEFEIDEHHFISHDRGHDPETDEQLWGALAGPFQFVRWTSFADEVKI 196
+                 ***********************************************************************************************97 PP
+
+>> OIP73374.1  chorismate mutase [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.2   0.0   1.5e-37   3.1e-34       1     190 [.       1     200 [.       1     203 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 116.2 bits;  conditional E-value: 1.5e-37
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvs..ffveqaydyllndpyrlrvlklvea...edrieienytvkeekkfyg 94 
+                 m  s ++ +la +ma +f nq qa+ +p ++ h+r+  rp+  + +   s  +f eqa   +ln+pyr r+++l ++   e+ +e + y  k+ k   g
+  OIP73374.1   1 MVISPELKALAEYMAGEFDNQPQALADPVWYVHLRLWHRPVSPSWFPETSlvLFAEQANIVNLNQPYRPRLIQLRHSpdgESSLEAQYYLPKDIKAVQG 99 
+                 56688999*********************************99998765522799*******************87622245788889999******** PP
+
+        cpeS  95 asrdlerlktlkaddleklpgcnmivewt..g.ns..fkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                 a +d erl+ l+a+ le lpgc++ + +   g n+  fk  + + + c    ++k+  ++  fe  +++f+s d+g dp+t + +wg++ gpf+f +++
+  OIP73374.1 100 AGQDPERLRYLNAEGLEFLPGCTLKITYEclGpNQyiFKAVLPANQVCCFSYQNKTYQVELGFEATADHFLSYDKGIDPDTGKGLWGALLGPFQFQKRR 198
+                 ***********************99987522332233777777777777666666666899*************************************9 PP
+
+        cpeS 189 sf 190
+                 sf
+  OIP73374.1 199 SF 200
+                 99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         4018  (1322032 residues searched)
+Passed MSV filter:                        84  (0.0209059); expected 80.4 (0.02)
+Passed bias filter:                       73  (0.0181682); expected 80.4 (0.02)
+Passed Vit filter:                         3  (0.00074664); expected 4.0 (0.001)
+Passed Fwd filter:                         2  (0.00049776); expected 0.0 (1e-05)
+Initial search space (Z):               4018  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8637.28
+//
+[ok]

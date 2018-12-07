@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1925591_GCA_001890975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-25   87.5   0.0    1.2e-24   84.3   0.1    2.1  2  OJJ14783.1  ferredoxin-NADP reductase [Roseofilum reptotaeniu
+
+
+Domain annotation for each sequence (and alignments):
+>> OJJ14783.1  ferredoxin-NADP reductase [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.3   0.1   2.4e-28   1.2e-24       7      71 ..      10      73 ..       4      76 .. 0.91
+   2 ?    0.5   0.0     0.034   1.7e+02      29      47 ..     265     283 ..     260     295 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 84.3 bits;  conditional E-value: 2.4e-28
+        cpcD  7 akenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaa 71
+                ++ nrlf +evvGl     t n++ s+r sGs+f+tvpysrmnqem+ri+rlG +iv i pln  
+  OJJ14783.1 10 TNSNRLFRFEVVGLNP-GSTGNMNGSVRYSGSIFITVPYSRMNQEMKRISRLGGKIVKIEPLNGE 73
+                578***********75.689*******************************************76 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.034
+        cpcD  29 ldysirksGsvfltvpysr 47 
+                  dy  r    +f+ +pys+
+  OJJ14783.1 265 EDYKFRGFAWLFFGIPYSQ 283
+                 5999999999*******97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4978  (1623265 residues searched)
+Passed MSV filter:                        95  (0.019084); expected 99.6 (0.02)
+Passed bias filter:                       89  (0.0178787); expected 99.6 (0.02)
+Passed Vit filter:                        13  (0.00261149); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000200884); expected 0.0 (1e-05)
+Initial search space (Z):               4978  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 4004.05
+//
+[ok]

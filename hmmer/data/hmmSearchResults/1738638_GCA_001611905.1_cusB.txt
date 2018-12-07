@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1738638_GCA_001611905.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.015   12.1   2.4      0.012   12.4   0.5    1.8  2  AMW30904.1  RND transporter [Arthrospira platensis YZ]
+
+
+Domain annotation for each sequence (and alignments):
+>> AMW30904.1  RND transporter [Arthrospira platensis YZ]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.5   2.3e-06     0.012      76     162 ..      78     162 ..      63     237 .. 0.67
+   2 ?   -2.1   0.0     0.055   2.9e+02     205     233 ..     357     385 ..     333     511 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.3e-06
+        cusB  76 tiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyleaksqfelskadyerqqqla.dqnvnsak 162
+                 t+ v     v p + v +s    g l +  + qg rv  gq iar+e  ++   + + l+a++++e ++a+  + +q +  + + sa+
+  AMW30904.1  78 TVIVRASGVVQPVRRVNLSPKTQGRLAQLYVEQGDRVEAGQIIARMESNEL---EAQRLQAQARLERAQANLAKLRQGSrPEAIASAR 162
+                 444444445789999*******************************98653...4455667777777766665544433133444444 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.055
+        cusB 205 nlyspidgyvtevnvnrgkfvnptdvlfe 233
+                 n+ +p  g +t+     g fv p+    +
+  AMW30904.1 357 NIRAPFAGIITQRYAIEGAFVTPATSASD 385
+                 55566666666666666666666543332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         5273  (1550833 residues searched)
+Passed MSV filter:                       133  (0.0252228); expected 105.5 (0.02)
+Passed bias filter:                      105  (0.0199128); expected 105.5 (0.02)
+Passed Vit filter:                         8  (0.00151716); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000189645); expected 0.1 (1e-05)
+Initial search space (Z):               5273  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 13120.05
+//
+[ok]

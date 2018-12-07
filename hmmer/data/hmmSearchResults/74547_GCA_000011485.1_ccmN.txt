@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74547_GCA_000011485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.015   12.0   0.6      0.022   11.5   0.6    1.2  1  CAE21522.1  DUF151 [Prochlorococcus marinus str. MIT 9313]
+          5    3.8  14.9       0.52    7.0   6.7    2.2  2  CAE20705.1  UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltr
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE21522.1  DUF151 [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.6   1.5e-05     0.022     120     176 ..      87     144 ..      73     157 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.5e-05
+        ccmN 120 tievsatrseperpplpepqpvvsqvspvpsvee.vvaetvaspwdgeemvaeaspae 176
+                  + + a++ epe    pe   ++ ++   ps    +   t +s w  ee+vaeas   
+  CAE21522.1  87 KLRLKASEEEPEEEKTPEESTLLLEIDARPSDAIaLAVRTKSSIWMLEEVVAEASIPV 144
+                 456789999********************9976514568999************9654 PP
+
+>> CAE20705.1  UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   1.1     0.016        22      42      83 ..     125     157 ..     106     192 .. 0.46
+   2 ?    7.0   6.7   0.00036      0.52      41      93 ..     243     292 ..     214     317 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 1.6 bits;  conditional E-value: 0.016
+        ccmN  42 iiigagaclgmgtiltayqgviaigagailgtgvlvvgrgei 83 
+                 i iga  ++g g+ + ay         +++  gv++     +
+  CAE20705.1 125 ISIGAHVVIGDGSRIGAY---------SVVHPGVVIYEDVVV 157
+                 333333333333333333.........333333333333333 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.00036
+        ccmN  41 qiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstt 93 
+                  + ig g + g g  l++      i  ga lg gv++ g+  + + a+ig  +
+  CAE20705.1 243 LVQIGHGVVTGQGCALASQV---GIAGGARLGEGVILAGQVGVANRAVIGDRA 292
+                 45678888888887776544...456677788888888887777777777643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2850  (689451 residues searched)
+Passed MSV filter:                       107  (0.0375439); expected 57.0 (0.02)
+Passed bias filter:                       79  (0.0277193); expected 57.0 (0.02)
+Passed Vit filter:                         8  (0.00280702); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000701754); expected 0.0 (1e-05)
+Initial search space (Z):               2850  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7583.96
+//
+[ok]

@@ -1,0 +1,102 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395961_GCA_000022045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.4e-114  380.5  19.1      3e-74  248.1   2.5    2.0  2  ACL43608.1  cobalt transport protein [Cyanothece sp. PCC 7425
+    8.2e-07   26.8   4.3    1.3e-06   26.2   4.3    1.5  1  ACL47526.1  cobalt transport protein [Cyanothece sp. PCC 7425
+  ------ inclusion threshold ------
+      0.011   13.2   2.9      0.012   13.2   0.4    1.8  2  ACL42630.1  Vitamin K epoxide reductase [Cyanothece sp. PCC 7
+
+
+Domain annotation for each sequence (and alignments):
+>> ACL43608.1  cobalt transport protein [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  138.7   8.8   3.8e-44   6.8e-41       1     110 [.       1     110 [.       1     137 [. 0.93
+   2 !  248.1   2.5   1.7e-77     3e-74     107     290 ..     137     320 ..     127     321 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 138.7 bits;  conditional E-value: 3.8e-44
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslp+glyl++pit lh+ld rvk+  lm+fl +p+la + wrl+lvgll+l+t+ a ip rvwrqqmgwl++l+ +++++ta+ pdgl++s qp
+  ACL43608.1   1 MDLLRSLPLGLYLEHPITWLHRLDPRVKLAGLMTFLLTPVLAGSIWRLCLVGLLILITFTARIPLRVWRQQMGWLLLLCSLILVLTAVMPDGLAISTQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlpp 110
+                 rlp++gl l  
+  ACL43608.1 100 RLPQNGLGLAQ 110
+                 *******8864 PP
+
+  == domain 2  score: 248.1 bits;  conditional E-value: 1.7e-77
+        bioN 107 nlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlara 205
+                  lp  + y+yvl+++g + vtrrslel +r+stl+ftl+y tnl+llttapeeit glenl+ plrr+ +pvte +ltltl+lrfiplvlee+qnl+ra
+  ACL43608.1 137 ALPQPTGYRYVLFEQGPVRVTRRSLELGIRLSTLLFTLLYGTNLYLLTTAPEEITAGLENLMQPLRRLGLPVTEFALTLTLALRFIPLVLEEIQNLSRA 235
+                 6899999******************************************************************************************** PP
+
+        bioN 206 vrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwgg 290
+                 vrtrai+w+++g++ ++++w+ + ++ll+nl+lraeqia am+vrgft p++++  w++l+lr  d++ l  l  +w+ rl wgg
+  ACL43608.1 236 VRTRAINWKRIGVRGAIKIWFMLADRLLENLFLRAEQIASAMQVRGFTGPDRYRNPWYQLQLRRGDWLVLAGLGLLWSLRLSWGG 320
+                 ************************************************************************************9 PP
+
+>> ACL47526.1  cobalt transport protein [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2   4.3   7.1e-10   1.3e-06     148     287 ..     136     266 ..       6     272 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 7.1e-10
+        bioN 148 tnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaia 246
+                   l ++tt  +++t g+        + ++p  ++ + ++ +lrf+pl++ evq +  a r r +d  ++g  r  +v+  +   l+ n + +++q+ + 
+  ACL47526.1 136 IPLSIFTTDVNQMTVGMV-------QAKIPY-KVVFIFSSTLRFVPLLFSEVQSILEAQRLRGMDVSRMGWLRRGQVYAKLAVPLILNAMAKSQQLEVV 226
+                 333344455555555444.......444444.3455677889********************************************************* PP
+
+        bioN 247 mevrgftspnqhqvrwhelklrwadfialfllipfwaarlv 287
+                 ++ + f+     +   he +l   d+  ++ li ++ + +v
+  ACL47526.1 227 LQSKAFSGSS-ERTYLHESRLTGIDYGMMIGLIGLFIVAIV 266
+                 ******7655.567899999999999988888887766555 PP
+
+>> ACL42630.1  Vitamin K epoxide reductase [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.2     0.063   1.1e+02      48      79 ..      72     109 ..      64     119 .. 0.58
+   2 ?   13.2   0.4   6.6e-06     0.012      31     100 ..     120     187 ..     111     203 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 0.063
+        bioN  48 lalvglllll...tllapipprvwrqqm...gwlifla 79 
+                 la vg+ +l     ll p+  +  rq++    wl+++a
+  ACL42630.1  72 LAYVGMAVLAlapLLLNPVEKKELRQKLenlTWLLLFA 109
+                 56666544421224778888888888761114554433 PP
+
+  == domain 2  score: 13.2 bits;  conditional E-value: 6.6e-06
+        bioN  31 wlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqpr 100
+                 +lm +la+ +     + +a   + + l l+  i  r w +  g l f+ai+v +it i   gl  s +p 
+  ACL42630.1 120 YLMFLLATEIQQTCPYCIASACFTV-LMLVLTIVGRDWTD-RGNLFFIAIVVGMITLIGTLGLYASSNPN 187
+                 6777788888877778888766554.556667999***86.599*******************9999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         5327  (1638061 residues searched)
+Passed MSV filter:                       255  (0.0478693); expected 106.5 (0.02)
+Passed bias filter:                      123  (0.0230899); expected 106.5 (0.02)
+Passed Vit filter:                         8  (0.00150178); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000563169); expected 0.1 (1e-05)
+Initial search space (Z):               5327  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 7944.60
+//
+[ok]

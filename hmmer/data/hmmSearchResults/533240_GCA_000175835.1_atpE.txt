@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533240_GCA_000175835.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-81  268.6   1.8    2.2e-81  268.4   1.8    1.0  1  EFA70517.1  H+-transporting two-sector ATPase, delta/epsilon 
+  ------ inclusion threshold ------
+        2.5    5.9  10.1       0.22    9.4   0.6    2.8  2  EFA68872.1  Secretion protein HlyD [Cylindrospermopsis racibo
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA70517.1  H+-transporting two-sector ATPase, delta/epsilon subunit [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  268.4   1.8   1.3e-84   2.2e-81       1     137 []       1     137 []       1     137 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 268.4 bits;  conditional E-value: 1.3e-84
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtlt+rvispdktvwd+ a+evilpsttgqlg+lsghap+ltaldtgvmrvra+kn++wq+iallggfaeveedevtilvnga+rgd+inleear++fn
+  EFA70517.1   1 MTLTIRVISPDKTVWDGPADEVILPSTTGQLGVLSGHAPMLTALDTGVMRVRAEKNASWQSIALLGGFAEVEEDEVTILVNGAQRGDTINLEEARSEFN 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +aq+k+nqv a++rqaqiqat+a+krararfqaagg+v
+  EFA70517.1 100 AAQSKINQVVAGHRQAQIQATAALKRARARFQAAGGMV 137
+                 ************************************98 PP
+
+>> EFA68872.1  Secretion protein HlyD [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.6   0.00013      0.22      90     131 ..     117     155 ..     109     162 .. 0.84
+   2 ?   -0.1   3.0      0.11   1.8e+02      91     115 ..     214     237 ..     191     270 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 0.00013
+        atpE  90 nleearaafneaqtklnqvkaedrqaqiqatqafkrararfq 131
+                  le+a+ + + a+++l++v+a+ +q +i a++a+    ar+q
+  EFA68872.1 117 ALEKAKRQVEVAKANLEKVEAGAKQGDIYAQKAII---ARLQ 155
+                 5899**************************99863...4444 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.11
+        atpE  91 leearaafneaqtklnqvkaedrqa 115
+                 ++ea+aa n++q+ l++   ++ qa
+  EFA68872.1 214 INEAKAALNRTQQTLQKQ-LNEAQA 237
+                 444444444444444332.222222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         3449  (1092535 residues searched)
+Passed MSV filter:                       106  (0.0307335); expected 69.0 (0.02)
+Passed bias filter:                       85  (0.0246448); expected 69.0 (0.02)
+Passed Vit filter:                         8  (0.00231951); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000579878); expected 0.0 (1e-05)
+Initial search space (Z):               3449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 4989.24
+//
+[ok]

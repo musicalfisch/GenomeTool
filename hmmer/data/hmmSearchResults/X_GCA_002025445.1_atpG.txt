@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_002025445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    9.8e-93  305.9  14.3    1.1e-92  305.7  14.3    1.0  1  lcl|MVGR01000003.1_prot_OPF18634.1_773   [locus_tag=B1L04_03875] [protein
+  ------ inclusion threshold ------
+      0.062   11.5   1.7      0.079   11.2   0.2    1.9  2  lcl|MVGR01000003.1_prot_OPF19399.1_1732  [locus_tag=B1L04_08710] [protein
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|MVGR01000003.1_prot_OPF18634.1_773  [locus_tag=B1L04_03875] [protein=ATP synthase subunit b'] [protein_id=OPF1863
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  305.7  14.3   3.7e-96   1.1e-92       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 305.7 bits;  conditional E-value: 3.7e-96
+                                    atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssark 71 
+                                             mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqte+gakeqlaktealvqeyelqlssark
+  lcl|MVGR01000003.1_prot_OPF18634.1_773   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTESGAKEQLAKTEALVQEYELQLSSARK 71 
+                                             9********************************************************************** PP
+
+                                    atpG  72 qsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv 142
+                                             qsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv
+  lcl|MVGR01000003.1_prot_OPF18634.1_773  72 QSQEIIAQAQAEAQKLASERVAAAQKEAIARKEAVAAEIAQQKEEAFRSLEGQVASLSRQILEKLLGPELV 142
+                                             *********************************************************************** PP
+
+                                    atpG 143 r 143
+                                             r
+  lcl|MVGR01000003.1_prot_OPF18634.1_773 143 R 143
+                                             8 PP
+
+>> lcl|MVGR01000003.1_prot_OPF19399.1_1732  [locus_tag=B1L04_08710] [protein=hypothetical protein] [protein_id=OPF19399.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.1      0.16   4.6e+02     103     103 ..      98      98 ..      37     157 .. 0.65
+   2 ?   11.2   0.2   2.7e-05     0.079      84     109 ..     172     197 ..     166     218 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.16
+                                     atpG 103 k 103
+                                               
+  lcl|MVGR01000003.1_prot_OPF19399.1_1732  98 D 98 
+                                              1 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 2.7e-05
+                                     atpG  84 aqklaservaaaqkeaiarkeavaae 109
+                                               +kl  e vaaa k+a ar ea+a+ 
+  lcl|MVGR01000003.1_prot_OPF19399.1_1732 172 LDKLRVEMVAAATKDARARAEAIASS 197
+                                              57999******************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5795  (1601949 residues searched)
+Passed MSV filter:                       253  (0.0436583); expected 115.9 (0.02)
+Passed bias filter:                      166  (0.0286454); expected 115.9 (0.02)
+Passed Vit filter:                        13  (0.00224331); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345125); expected 0.1 (1e-05)
+Initial search space (Z):               5795  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 5726.97
+//
+[ok]

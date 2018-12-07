@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1140_GCA_000012525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.021   10.8   0.0      0.084    8.8   0.0    1.8  2  ABB56600.1  cytosine deaminase [Synechococcus elongatus PCC 7
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB56600.1  cytosine deaminase [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.0   3.1e-05     0.084      18      61 ..      41      86 ..      34      95 .. 0.81
+   2 ?   -1.4   0.0     0.039     1e+02     369     393 ..     383     408 ..     375     420 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 3.1e-05
+        cyrH 18 tvdvqvvdgkiaaiapelevvgt..aidgenklllpgfvnahthss 61
+                 +d+++  gki+aiap     g+  ++d + + l pgfv+ hth  
+  ABB56600.1 41 LIDLEIDRGKICAIAPTQSSAGNvaSLDLQGRQLWPGFVDIHTHID 86
+                689999***********999996225788999************64 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.039
+        cyrH 369 lgsltvgkkadlvlydltnls.llpr 393
+                  g +++g +ad+v+++  +++ ll r
+  ABB56600.1 383 QGRIAIGARADFVIFNARSFTeLLAR 408
+                 5899***********97665424544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         2661  (809802 residues searched)
+Passed MSV filter:                        48  (0.0180383); expected 53.2 (0.02)
+Passed bias filter:                       40  (0.0150319); expected 53.2 (0.02)
+Passed Vit filter:                         3  (0.0011274); expected 2.7 (0.001)
+Passed Fwd filter:                         1  (0.000375799); expected 0.0 (1e-05)
+Initial search space (Z):               2661  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 12551.93
+//
+[ok]

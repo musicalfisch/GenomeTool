@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165094_GCA_000350105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0032   13.2   0.0      0.014   11.2   0.0    1.9  2  CCH66487.1  Carbamoyl-phosphate synthase large chain [Richeli
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH66487.1  Carbamoyl-phosphate synthase large chain [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0     0.055   1.2e+02     206     229 ..     572     595 ..     568     599 .. 0.87
+   2 !   11.2   0.0     6e-06     0.014     304     350 ..     817     866 ..     801     881 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 0.055
+        AvaB 206 qvidfdfskakrpyilksipydsv 229
+                 q i+fd+  ++  y lks  y+++
+  CCH66487.1 572 QGIEFDYCCCHASYALKSAGYETI 595
+                 779999999999*****9999876 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 6e-06
+        AvaB 304 eierwilafvkglnltgqvsfdfi..qa.addgqvyaiecnprthsaitm 350
+                 +i +w + + k ln+ g ++++f   +a +++ qvy +e+npr+  +i +
+  CCH66487.1 817 QIRQWTIELAKSLNVIGLINIQFAamNAqSNNPQVYILEANPRASRTIPF 866
+                 6999*************9988885214425678**********9988865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         2278  (598795 residues searched)
+Passed MSV filter:                        75  (0.0329236); expected 45.6 (0.02)
+Passed bias filter:                       62  (0.0272169); expected 45.6 (0.02)
+Passed Vit filter:                         3  (0.00131694); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000438982); expected 0.0 (1e-05)
+Initial search space (Z):               2278  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 9201.48
+//
+[ok]

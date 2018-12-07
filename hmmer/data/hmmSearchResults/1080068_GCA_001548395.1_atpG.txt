@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080068_GCA_001548395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-26   89.3  13.6    5.9e-26   89.1  13.6    1.0  1  BAU41009.1  ATP synthase subunit b [Leptolyngbya sp. O-77]
+     0.0044   15.0   3.9      0.015   13.3   0.3    2.2  2  BAU44426.1  hypothetical protein O77CONTIG1_04265 [Leptolyngb
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU41009.1  ATP synthase subunit b [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   89.1  13.6   2.4e-29   5.9e-26      11     115 ..       1     105 [.       1     114 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 89.1 bits;  conditional E-value: 2.4e-29
+        atpG  11 malqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaae 109
+                 malqf+ll  +ln  fykpl k ld+r  yir  ++ ake+lak+eal ++ye + +  r+qs  i++ a+a+aqk+a++++a aq+ a a++e    +
+  BAU41009.1   1 MALQFMLLVAVLNVTFYKPLGKALDDREGYIRANQSEAKERLAKAEALAKQYETEAAEVRRQSIAIVSAAEADAQKIAAQKIAEAQQVAQAQREQAQKD 99 
+                 9*********************************************************************************************99999 PP
+
+        atpG 110 iaqqke 115
+                 +  qk 
+  BAU41009.1 100 LDAQKG 105
+                 988885 PP
+
+>> BAU44426.1  hypothetical protein O77CONTIG1_04265 [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.9   0.3    0.0099        24      73     107 ..      67     101 ..      58     109 .. 0.85
+   2 !   13.3   0.3   6.3e-06     0.015      82     128 ..     169     214 ..     147     222 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.0099
+        atpG  73 sqeiiaqaqaeaqklaservaaaqkeaiarkeava 107
+                 sq+  aqa  +  k  +erv a  ke     ea++
+  BAU44426.1  67 SQQPTAQAAYQDLKRQTERVQAYLKENQVPAEAIT 101
+                 7888899999999999**********988888875 PP
+
+  == domain 2  score: 13.3 bits;  conditional E-value: 6.3e-06
+        atpG  82 aeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvasl 128
+                 +e  kl  e va a k+a ar ea+a    + +  a rs e  v  +
+  BAU44426.1 169 TELSKLRIEMVAEATKDAKARAEAIAQSAGN-QVGAVRSAETGVFQI 214
+                 57889********************877555.567999999877554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4865  (1484008 residues searched)
+Passed MSV filter:                       205  (0.0421377); expected 97.3 (0.02)
+Passed bias filter:                      101  (0.0207605); expected 97.3 (0.02)
+Passed Vit filter:                         6  (0.0012333); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.0004111); expected 0.0 (1e-05)
+Initial search space (Z):               4865  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 7073.77
+//
+[ok]

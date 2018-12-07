@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1925591_GCA_001890975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.7e-142  469.4   6.7   7.5e-142  469.3   6.7    1.0  1  OJJ25332.1  F0F1 ATP synthase subunit A [Roseofilum reptotaen
+  ------ inclusion threshold ------
+      0.022   12.4   0.1      0.035   11.8   0.1    1.2  1  OJJ14562.1  hypothetical protein BI308_24935 [Roseofilum rept
+
+
+Domain annotation for each sequence (and alignments):
+>> OJJ25332.1  F0F1 ATP synthase subunit A [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  469.3   6.7    3e-145  7.5e-142       1     248 [.       1     250 [.       1     251 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 469.3 bits;  conditional E-value: 3e-145
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 ml++l+a++slp+aelevg+h+yw++gnlkihgqv++tswfvi++lv+as+aatrnvqr+p+g+qn+meyalefirdlakn +gekeyrpwvpf+gtlf
+  OJJ25332.1   1 MLNFLDAYHSLPFAELEVGKHLYWEIGNLKIHGQVMITSWFVIGLLVIASIAATRNVQRVPSGMQNFMEYALEFIRDLAKNAMGEKEYRPWVPFVGTLF 99 
+                 89************************************************************************************************* PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsgal+pwk+i+lp+gelaapt dinttvalalltslayfyag++k glgyf +y+ep p +lp  ++edftkplslsfrlfgniladelvv
+  OJJ25332.1 100 LFIFVSNWSGALVPWKIIHLPEGELAAPTSDINTTVALALLTSLAYFYAGLKKLGLGYFAHYVEPVPFMLPFKVIEDFTKPLSLSFRLFGNILADELVV 198
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeg..hgeeeh 248
+                 +vlvllvplf+plpvmalg+f saiqal+fatla++yi eale   hgeeeh
+  OJJ25332.1 199 GVLVLLVPLFIPLPVMALGIFLSAIQALIFATLAATYIGEALEDphHGEEEH 250
+                 ******************************************9555999999 PP
+
+>> OJJ14562.1  hypothetical protein BI308_24935 [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.1   1.4e-05     0.035     197     245 ..     131     177 ..     124     183 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.4e-05
+        atpI 197 vvavlvllvplfvplpvmalglftsaiqalvfatlagayihealeghge 245
+                  ++vl ll+ l+v +pvma+ lf   i+  v+  l    ih  leg  +
+  OJJ14562.1 131 TITVLNLLMVLIVSMPVMAMALFC-FIRGWVVQDLV-KLIHSQLEGFSD 177
+                 689********************7.58888888886.579999999877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         4978  (1623265 residues searched)
+Passed MSV filter:                       149  (0.0299317); expected 99.6 (0.02)
+Passed bias filter:                       82  (0.0164725); expected 99.6 (0.02)
+Passed Vit filter:                        10  (0.00200884); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000401768); expected 0.0 (1e-05)
+Initial search space (Z):               4978  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10185.99
+//
+[ok]

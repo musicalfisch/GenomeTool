@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.7e-56  188.1   0.1    1.1e-55  187.8   0.1    1.0  1  EKU96347.1  ABC-type Fe3+-hydroxamate transport system, perip
+  ------ inclusion threshold ------
+      0.019   12.9   0.0      0.025   12.5   0.0    1.2  1  EKU99078.1  hypothetical protein Lepto7375DRAFT_8429 [Leptoly
+
+
+Domain annotation for each sequence (and alignments):
+>> EKU96347.1  ABC-type Fe3+-hydroxamate transport system, periplasmic component [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  187.8   0.1   2.9e-59   1.1e-55      37     313 ..      39     312 ..      21     314 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 187.8 bits;  conditional E-value: 2.9e-59
+        fecB  37 qrtiahamgvtavpnepqrivvltneatdmvlalgvtpvgavkswsgdp.......yyeylakdmlgvpivgdemqpnlekivalqpdliigsrlrqgq 128
+                  r++  a+g   vp+ pqr+vvl+++a d  lalg+ p+ +  s    p       +  yla +  g+  +g   qpn+e i+ l+pdli+     +  
+  EKU96347.1  39 GRAVETALGEVIVPQSPQRVVVLSQNALDNSLALGIKPIASTYSG--FPqrsnygnFASYLADESDGIVNIGHSSQPNFEAILELKPDLILSNVEDHRT 135
+                 589999*********************************987553..221122111568*********************************999999* PP
+
+        fecB 129 iykslsaiaptvfsetigeswqdnlrlygqaldreaeaeqllndwdtrvaqmrqklsakdlt..islvrfmprgariylqnsfpgqilqavglerpasq 225
+                  y++ls iaptv+ et      d +  y  al +  + + l++d+++rv ++rq++  +  t  +s++rf p   r+y++nsf g il+ vgl rp sq
+  EKU96347.1 136 FYNTLSQIAPTVLVETR----ADAITTYATALGKPEQGQALIQDFQARVQDFRQQMGDRLETteVSVLRFRPDQVRLYMRNSFCGYILEQVGLPRPPSQ 230
+                 ************99986....68899******************************9874432499********************************* PP
+
+        fecB 226 anhgfaehvsfeqipqmeadalfyfiytgdsgdqtpgsitnpwlnhplwqqlevvqsgkayavsdvvwttaggiqaahlllddlerhl 313
+                 a+  f e vs+e ip m+ d +fyf       d+   s+++    hplwqql  vq  k y vs   w    gi aa  llddl ++l
+  EKU96347.1 231 AKAKFYETVSLEAIPAMDGDVIFYFQ------DNPQNSMAQKVTRHPLWQQLGAVQQEKVYPVSFDTWFLGNGILAANALLDDLFKYL 312
+                 ************************94......66778999999*****************************************8876 PP
+
+>> EKU99078.1  hypothetical protein Lepto7375DRAFT_8429 [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   6.5e-06     0.025     122     188 ..      43     110 ..      22     122 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 6.5e-06
+        fecB 122 srlrqgqiykslsaiaptvfsetigeswqdnlrlygqaldreaea.eqllndwdtrvaqmrqklsakd 188
+                 + + qg++   l  +ap ++seti es +    +y + +++  e   +++n+ dt      q +s k+
+  EKU99078.1  43 AVIDQGDVNGVLEFMAPFIISETITESANGFESVYIEGIEQHREMlTDVFNEVDTEENLNVQEISQKE 110
+                 56789************************999999999988877536799*****9999999999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       238  (0.0304037); expected 156.6 (0.02)
+Passed bias filter:                      187  (0.0238886); expected 156.6 (0.02)
+Passed Vit filter:                        11  (0.00140521); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 11346.91
+//
+[ok]

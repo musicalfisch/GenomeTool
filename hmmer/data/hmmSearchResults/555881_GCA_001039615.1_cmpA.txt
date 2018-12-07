@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/555881_GCA_001039615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpA  [M=440]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0049   13.8   1.5      0.019   11.9   0.8    1.8  2  CCQ60199.1  Ferric iron ABC transporter, iron-binding protein
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ60199.1  Ferric iron ABC transporter, iron-binding protein [Crocosphaera watsonii WH 0401]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.8   3.8e-06     0.019       1      49 [.       1      52 [.       1      58 [. 0.62
+   2 !    0.8   0.0    0.0087        43     144     196 ..      63     115 ..      52     122 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 3.8e-06
+        cmpA  1 msklsrrrfiftaga.tavgta.ilhgcatpnntatsps.pagspaaspaas 49
+                m klsrr f+  + a t vg + ++  c   nn    +s   +sp a+p+++
+  CCQ60199.1  1 MNKLSRRIFLSGSTAvTVVGVSqLVTSCGNNNNNNNNASdNPSSPPATPTTG 52
+                89*****888765542667876245678776665544441335666777654 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.0087
+        cmpA 144 ntngqaisvaneyldlkvaldsgvlkeslakaksagkevkaavtfpggthdlf 196
+                 nt+ +      +   +kv+l  g+  e + + ks g + +a v +      l+
+  CCQ60199.1  63 NTDTELYNGFTKETGIKVNLVEGKADELIERIKSEGENTQADVFMTVDVARLW 115
+                 5555555555566789**********************999987766555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (440 nodes)
+Target sequences:                         4997  (1180112 residues searched)
+Passed MSV filter:                        91  (0.0182109); expected 99.9 (0.02)
+Passed bias filter:                       78  (0.0156094); expected 99.9 (0.02)
+Passed Vit filter:                         4  (0.00080048); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.00020012); expected 0.0 (1e-05)
+Initial search space (Z):               4997  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 12981.23
+//
+[ok]

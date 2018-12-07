@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.8e-09   34.3   0.0    3.9e-09   34.2   0.0    1.0  1  BAC90818.1  gsl2877 [Gloeobacter violaceus PCC 7421]
+      2e-06   25.3   0.0    3.2e-06   24.7   0.0    1.2  1  BAC89315.1  glr1374 [Gloeobacter violaceus PCC 7421]
+    0.00058   17.3   0.0    0.00067   17.1   0.0    1.1  1  BAC92324.1  gsl4383 [Gloeobacter violaceus PCC 7421]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC90818.1  gsl2877 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.2   0.0   2.7e-12   3.9e-09     235     294 ..      19      78 ..       7      85 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 34.2 bits;  conditional E-value: 2.7e-12
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvve 294
+                  v +elr+ l++d+++v+l + ++ ++k  l++a++s+ s++ +lk+ +e r+++ + + 
+  BAC90818.1  19 LVLDELRPYLMSDGGNVELVEIEGPIVKLRLQGACGSCPSSTYTLKLGIERRMRELIPAV 78 
+                 466899***********************************************9977543 PP
+
+>> BAC89315.1  glr1374 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.7   0.0   2.2e-09   3.2e-06       4      89 ..       9      86 ..       6      92 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 24.7 bits;  conditional E-value: 2.2e-09
+        finU  4 ytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltlde 89
+                y + +l+ +  p+n G+le  +         e     cGd + ++l+ve     + d rfq  Gc+ + as++ +++ +kG++++e
+  BAC89315.1  9 YQEVILDHYKRPRNFGLLEAANRE------AEGHNPLCGDQVTIYLQVEDG--IVKDIRFQGAGCAISTASASLMTDALKGKSVQE 86
+                667788888899999999876643......3556678*****999998754..56699************************9987 PP
+
+>> BAC92324.1  gsl4383 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0   4.5e-07   0.00067     100     129 ..      12      41 ..       2      48 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 4.5e-07
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrG 129
+                 + l  lp  k+hcsv  ++a+ aa+ +y+ 
+  BAC92324.1  12 NNLLSLPPVKIHCSVPAEDAMRAAVADYQA 41 
+                 34779*********************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                        92  (0.0207675); expected 88.6 (0.02)
+Passed bias filter:                       83  (0.0187359); expected 88.6 (0.02)
+Passed Vit filter:                        12  (0.0027088); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.000677201); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 10382.98
+//
+[ok]

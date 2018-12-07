@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671068_GCA_900010725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaD  [M=366]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-166  552.6   0.1   1.4e-166  552.3   0.1    1.0  1  CUR10123.1  3-dehydroquinate synthase [Planktothrix serta PCC
+  ------ inclusion threshold ------
+      0.012   12.9   0.4        0.2    8.9   0.0    2.3  3  CUR23665.1  glycerol dehydrogenase, NAD [Planktothrix serta P
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR10123.1  3-dehydroquinate synthase [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  552.3   0.1  4.8e-170  1.4e-166       3     360 ..       3     361 ..       1     366 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 552.3 bits;  conditional E-value: 4.8e-170
+        AvaD   3 icipvnlpdrsyniliekgslanlgaemsrlslgkkvllvsnpeifdyygqiavnslekagfvvfthlipagenyktldsiaqvydsalahrlersstm 101
+                   i vnl   syni i  g l  lg  ++ l+lgkk+llvsnpeif+yyg+ +  sle+agf v    +page+ykt +++  +yd+al +rlersstm
+  CUR10123.1   3 SMIRVNLGSLSYNIAIGAGHLDRLGELITPLKLGKKILLVSNPEIFNYYGERTRISLEQAGFDVAICTLPAGEEYKTPETLQMIYDAALKYRLERSSTM 101
+                 5799*********************************************************************************************** PP
+
+        AvaD 102 valgggvigdmtgfaaatwlrgvnfvqvpttllamvdasiggktgvnhpqgknligafyqpklvlidpdvlkslpvrefragmaevikygviwdaelfq 200
+                 valggg+igdmtgfaaatwlrg+n+vqvpt+llamvdasiggktgvnhpqgknligaf+qpklvlidpdvl++lp refrag+aevikygviwd elf 
+  CUR10123.1 102 VALGGGIIGDMTGFAAATWLRGINVVQVPTSLLAMVDASIGGKTGVNHPQGKNLIGAFHQPKLVLIDPDVLQTLPEREFRAGIAEVIKYGVIWDQELFV 200
+                 *************************************************************************************************** PP
+
+        AvaD 201 qledsdnlasfsqidgellqtiitkscqakadvvskdekeaglrailnyghtiahgiesltgytsvnhgeavalgmvaagaiavklgmwtagenqrqtd 299
+                 +le+s+ l  +  +d  llq i+t+scq+kadvvs+deke+glrailnyghti h +esltgyt v hgeav +gmvaa  iavklg+w +  ++rq  
+  CUR10123.1 201 KLEQSQGLDNIQALDSGLLQEILTRSCQSKADVVSQDEKESGLRAILNYGHTIGHAVESLTGYTVVIHGEAVGIGMVAASQIAVKLGLWDEDSDRRQFA 299
+                 *************************************************************************************************** PP
+
+        AvaD 300 liekaaletripp.lnademvnaltadkkvkdgkvrfilptaigqvtisdrvtptlvrevls 360
+                 +ieka l t++pp ln ++++++l +dkkvk gkvrf+lpt ig+  ++d+vt  ++r+vl 
+  CUR10123.1 300 IIEKAGLPTQLPPgLNINDILDSLQTDKKVKAGKVRFVLPTRIGEAIVTDQVTSDIIRQVLE 361
+                 ***********9989*********************************************96 PP
+
+>> CUR23665.1  glycerol dehydrogenase, NAD [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0      0.26   7.3e+02      25      49 ..      20      42 ..      15      58 .. 0.80
+   2 ?    8.9   0.0   7.1e-05       0.2     100     188 ..      86     172 ..      68     189 .. 0.74
+   3 ?    1.4   0.1     0.014        38     248     279 ..     250     281 ..     243     286 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.26
+        AvaD 25 nlgaemsrlslgkkvllvsnpeifd 49
+                 lg e+sr  lg+k l++  p if 
+  CUR23665.1 20 FLGEELSR--LGHKALVMMGPVIFP 42
+                58888887..589999999999985 PP
+
+  == domain 2  score: 8.9 bits;  conditional E-value: 7.1e-05
+        AvaD 100 tmvalgggvigdmtgfaaatwlrgvnfvqvpttllamvdasiggktgvnhpqg..knligafyqpklvlidpdvlkslpvrefragmaevi 188
+                  +v +ggg   d +  a+a     + +  vpt  +a  da     + +  p+g     +    +p lvl+d +++   pvr + agm + +
+  CUR23665.1  86 LIVGIGGGKTIDTA-KATAYH-LHLPVAIVPT--IASTDAPCSALSVIYTPEGvwERYLVLPRNPDLVLVDTHIIAQAPVRFLVAGMGDAL 172
+                 56677777666643.333333.3455566676..577888888888888888843345566679***********************9865 PP
+
+  == domain 3  score: 1.4 bits;  conditional E-value: 0.014
+        AvaD 248 nyghtiahgiesltgytsvnhgeavalgmvaa 279
+                    h+i  g   l    +  hge va+g++a 
+  CUR23665.1 250 AAAHAIHNGFTVLEETQKFWHGEKVAFGVLAM 281
+                 56799999********************9885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (366 nodes)
+Target sequences:                         5638  (1760186 residues searched)
+Passed MSV filter:                       125  (0.022171); expected 112.8 (0.02)
+Passed bias filter:                      101  (0.0179142); expected 112.8 (0.02)
+Passed Vit filter:                         9  (0.00159631); expected 5.6 (0.001)
+Passed Fwd filter:                         2  (0.000354736); expected 0.1 (1e-05)
+Initial search space (Z):               5638  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 10737.13
+//
+[ok]

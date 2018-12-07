@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74546_GCA_000012645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0067   12.8   0.0     0.0096   12.2   0.0    1.2  1  ABB50221.1  hypothetical protein PMT9312_1162 [Prochlorococcu
+       0.01   12.2   0.1      0.028   10.7   0.0    1.5  2  ABB50839.1  spermidine synthase [Prochlorococcus marinus str.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB50221.1  hypothetical protein PMT9312_1162 [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   9.8e-06    0.0096      55     176 ..      33     160 ..      20     191 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 9.8e-06
+        AvaC  55 lvqaigakkaleigvftgysalvvalalppegkliacdlseey....tsiarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadks.n 148
+                 lv+    k+  eig + g++ + v   lp + k+   d+++++    t i++   ++     +    +     tl k i + +   +d+vf+d  ++  
+  ABB50221.1  33 LVKEFQPKNYCEIGFYKGHTLIEVLKILPENSKIDLYDFKDKFeplkTKISQDDLKRITFFGNTYKYLDSYNTTLFKNIVSKNPPQYDYVFLDGAHTfP 131
+                 7888889999**********999999**************9983334566666667777777777788888899*******************665426 PP
+
+        AvaC 149 yday.yeralqlvrsggiiaidnvfwsgr 176
+                  d+  +    + ++ g ii  d+  ws  
+  ABB50221.1 132 IDCLtFFLIEKCLKVGSIIDFDDNDWSMA 160
+                 89862344456788999*****9999964 PP
+
+>> ABB50839.1  spermidine synthase [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0      0.29   2.8e+02     199     215 ..      74      90 ..      69      95 .. 0.86
+   2 !   10.7   0.0   2.9e-05     0.028      85     168 ..     100     190 ..      92     194 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.29
+        AvaC 199 qdervnisiipigdglt 215
+                  de+ n+ ii  gdg t
+  ABB50839.1  74 IDEKSNVLIIGGGDGGT 90 
+                 59999******999976 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 2.9e-05
+        AvaC  85 egkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfdfvfida.dk...sny...dayyeralqlvrsggiiai 168
+                   k+  +++ ee   i++++ ++ g  +  d r+   ++   + +     n +d++fid+ d    sn    d++y ++ +++ + gi+a 
+  ABB50839.1 100 ISKIDLVEIDEEVIKISKKFLKEIGGEAWSDKRLKIHIDDGVQWVKKTRDNFYDVIFIDCsDPselSNLlfsDSFYRECKRILTKNGILAT 190
+                 4566677899*************************************************63332225534448999999999999999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         1962  (514473 residues searched)
+Passed MSV filter:                        42  (0.0214067); expected 39.2 (0.02)
+Passed bias filter:                       37  (0.0188583); expected 39.2 (0.02)
+Passed Vit filter:                         3  (0.00152905); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00101937); expected 0.0 (1e-05)
+Initial search space (Z):               1962  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5659.20
+//
+[ok]

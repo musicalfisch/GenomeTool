@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/864702_GCA_000309945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.024   12.2   0.0      0.047   11.2   0.0    1.4  1  EKQ70332.1  transposase, IS605 OrfB family, central region [O
+      0.036   11.6   0.1      0.072   10.6   0.1    1.4  1  EKQ70273.1  ATPase involved in chromosome partitioning [Oscil
+
+
+Domain annotation for each sequence (and alignments):
+>> EKQ70332.1  transposase, IS605 OrfB family, central region [Oscillatoriales cyanobacterium JSC-12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0     2e-05     0.047       7      39 ..     222     254 ..     219     280 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 2e-05
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysi 39 
+                 +g t wltg+s  gks i +  + k + +gy  
+  EKQ70332.1 222 HGGTNWLTGVSTRGKSLIIDGRKLKSMNQGYCR 254
+                 68899*************************975 PP
+
+>> EKQ70273.1  ATPase involved in chromosome partitioning [Oscillatoriales cyanobacterium JSC-12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.1     3e-05     0.072      15      58 ..       9      51 ..       2      57 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3e-05
+        cysC 15 glsgagkstitealqakliaegysievldgdivrtnltkglgfs 58
+                   g  k+t t +l a l   gys  v+d d  ++n t  lg++
+  EKQ70273.1  9 AKGGVAKTTTTVSLGAALAIAGYSTLVIDTDF-QANATTSLGIT 51
+                567899*************************7.67888888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4780  (1548170 residues searched)
+Passed MSV filter:                       199  (0.0416318); expected 95.6 (0.02)
+Passed bias filter:                      178  (0.0372385); expected 95.6 (0.02)
+Passed Vit filter:                        26  (0.00543933); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.00041841); expected 0.0 (1e-05)
+Initial search space (Z):               4780  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7121.58
+//
+[ok]

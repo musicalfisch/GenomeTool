@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671072_GCA_900009145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.2e-30  101.1   0.3    9.8e-30  100.8   0.3    1.0  1  CUR32020.1  Phycobilisome 8.9 kDa linker polypeptide, phycocy
+    5.4e-26   88.8   0.0      2e-25   87.0   0.0    1.9  2  CUR30523.1  Ferredoxin--NADP reductase [Planktothrix tepida P
+  ------ inclusion threshold ------
+      0.038   12.4   0.1      0.088   11.3   0.1    1.6  1  CUR32018.1  Phycobilisome 30.8 kDa linker polypeptide, phycoc
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR32020.1  Phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.8   0.3   4.9e-33   9.8e-30       2      70 ..       9      77 ..       8      79 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 100.8 bits;  conditional E-value: 4.9e-33
+        cpcD  2 qslssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                qs ss   nr+f yevvGl q ++td  +y ir s s f+tvpy rmnqem+r+tr+Ga+ivsi+pl +
+  CUR32020.1  9 QSSSSPSGNRFFRYEVVGLRQSNETDKTEYQIRSSSSQFITVPYNRMNQEMQRLTRMGAKIVSIQPLTS 77
+                899***************************************************************975 PP
+
+>> CUR30523.1  Ferredoxin--NADP reductase [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.0   0.0     1e-28     2e-25       9      68 ..      16      75 ..      10      82 .. 0.94
+   2 ?   -2.0   0.0      0.63   1.2e+03      29      46 ..     276     293 ..     272     299 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 87.0 bits;  conditional E-value: 1e-28
+        cpcD  9 enrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpl 68
+                + r+f++ev G+ q ++td l++ ir+sG+v+ltvpy rmnqemrri+r+G +ivsi+p 
+  CUR30523.1 16 NSRVFIFEVEGMRQGENTDKLNFPIRRSGAVYLTVPYDRMNQEMRRISRMGGKIVSIRPA 75
+                67********************************************************96 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 0.63
+        cpcD  29 ldysirksGsvfltvpys 46 
+                  dy  r    +f+ +py+
+  CUR30523.1 276 QDYKFRGLAWLFFGIPYT 293
+                 69999999999*****97 PP
+
+>> CUR32018.1  Phycobilisome 30.8 kDa linker polypeptide, phycocyanin-associated, rod [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   4.4e-05     0.088      41      65 ..     244     268 ..     228     270 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 4.4e-05
+        cpcD  41 ltvpysrmnqemrritrlGarivsi 65 
+                  tvpy ++  +++ri r G r++ i
+  CUR32018.1 244 YTVPYDQLSTQLQRIHRAGGRVMRI 268
+                 69*******************9877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5948  (1891724 residues searched)
+Passed MSV filter:                       109  (0.0183255); expected 119.0 (0.02)
+Passed bias filter:                       99  (0.0166443); expected 119.0 (0.02)
+Passed Vit filter:                         8  (0.00134499); expected 5.9 (0.001)
+Passed Fwd filter:                         3  (0.000504371); expected 0.1 (1e-05)
+Initial search space (Z):               5948  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4666.25
+//
+[ok]

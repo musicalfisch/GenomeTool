@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/457944_GCA_001712795.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.8e-08   29.4   0.0    1.1e-07   29.1   0.0    1.1  1  ODG96416.1  type I glutamate--ammonia ligase [Nostoc sp. KVJ2
+  ------ inclusion threshold ------
+      0.043   10.6   0.0      0.043   10.6   0.0    1.0  1  ODH01320.1  hypothetical protein A4S05_29380 [Nostoc sp. KVJ2
+
+
+Domain annotation for each sequence (and alignments):
+>> ODG96416.1  type I glutamate--ammonia ligase [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.1   0.0     3e-11   1.1e-07     254     366 ..     178     290 ..     128     337 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 29.1 bits;  conditional E-value: 3e-11
+        glnN 254 qfddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnw 350
+                 +f + yf   p +  q +  e+   +  lg+p    h eva  gq e+   f     a+d   +   ++k  akk+g  + +  kp+ g ngsg h   
+  ODG96416.1 178 RFKEGYFPVAPtDSFQDIRTEMLLTMAELGVPIEKHHHEVATgGQCELGFRFGKLIEAADWLMIYKYVIKNVAKKYGKTVTFMPKPIFGDNGSGMHCHQ 276
+                 5888899877735678899999999***************97369*****9****9*****************************************99 PP
+
+        glnN 351 svgnatqgnlldpgdt 366
+                 s+ +  +g+ l  gd 
+  ODG96416.1 277 SIWK--DGKPLFAGDK 290
+                 9865..4555555554 PP
+
+>> ODH01320.1  hypothetical protein A4S05_29380 [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   1.2e-05     0.043     676     709 ..      18      51 ..       5      64 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 1.2e-05
+        glnN 676 sieehmqysaqtirplmdkvreyadtlegevadn 709
+                  ie+  qy+a+t rp+ d +re   +l+ e  + 
+  ODH01320.1  18 EIEKLSQYCAKTGRPFNDVIRELLRSLKVESEEA 51 
+                 689999****************999886554433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         7210  (2327490 residues searched)
+Passed MSV filter:                       202  (0.0280166); expected 144.2 (0.02)
+Passed bias filter:                      167  (0.0231623); expected 144.2 (0.02)
+Passed Vit filter:                        13  (0.00180305); expected 7.2 (0.001)
+Passed Fwd filter:                         2  (0.000277393); expected 0.1 (1e-05)
+Initial search space (Z):               7210  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.11
+# Mc/sec: 15297.96
+//
+[ok]

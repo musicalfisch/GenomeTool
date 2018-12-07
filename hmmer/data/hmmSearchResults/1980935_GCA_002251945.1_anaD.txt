@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1980935_GCA_002251945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.31    9.8   4.3       0.15   10.9   0.2    2.6  3  OYQ64632.1  hypothetical protein B9G53_10690 [Pseudanabaena s
+
+
+Domain annotation for each sequence (and alignments):
+>> OYQ64632.1  hypothetical protein B9G53_10690 [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.2   2.9e-05      0.15      10      46 ..      25      61 ..      19      83 .. 0.90
+   2 ?   -1.8   0.0      0.26   1.3e+03      47      74 ..     100     127 ..      85     145 .. 0.78
+   3 ?   -4.4   0.1         1     5e+03      27      35 ..     205     213 ..     204     214 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.9e-05
+        anaD 10 lkefiiqelaydqtnlvltnnlkiieqrvidsmdifr 46
+                l e + qe+   ++nl + + l + +qr+i s+di++
+  OYQ64632.1 25 LAEQVFQEIQKSDANLSILESLYLENQRLISSLDIYK 61
+                678899*****************************97 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.26
+        anaD  47 lvrfveeevgifwepeelvlknfetidh 74 
+                 +vrf+  e    +e  +  + +f  id+
+  OYQ64632.1 100 IVRFICHETKFRFESGDTEFLQFTGIDN 127
+                 7888888888888887777777777776 PP
+
+  == domain 3  score: -4.4 bits;  conditional E-value: 1
+        anaD  27 ltnnlkiie 35 
+                 l nnlki++
+  OYQ64632.1 205 LKNNLKILD 213
+                 789999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         5037  (1609668 residues searched)
+Passed MSV filter:                       127  (0.0252134); expected 100.7 (0.02)
+Passed bias filter:                      103  (0.0204487); expected 100.7 (0.02)
+Passed Vit filter:                         9  (0.00178678); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000198531); expected 0.1 (1e-05)
+Initial search space (Z):               5037  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4668.04
+//
+[ok]

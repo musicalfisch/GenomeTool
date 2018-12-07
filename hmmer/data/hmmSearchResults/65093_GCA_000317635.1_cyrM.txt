@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-97  321.3   0.2    2.9e-97  321.2   0.2    1.0  1  AFZ43342.1  adenylylsulfate kinase [Halothece sp. PCC 7418]
+     0.0013   16.0   0.1      0.009   13.2   0.0    2.0  2  AFZ44807.1  cobyrinic acid ac-diamide synthase [Halothece sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ43342.1  adenylylsulfate kinase [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  321.2   0.2  1.6e-100   2.9e-97       4     179 ..       1     177 [.       1     178 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 321.2 bits;  conditional E-value: 1.6e-100
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliae.gysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgk 101
+                 mk+rgvt+wltglsgagk+tit+al+  l +     +evldgdivr nltkglgfskedrd nirrigfvs lltr gvivlvsaispyre+reevr +
+  AFZ43342.1   1 MKHRGVTIWLTGLSGAGKTTITKALEQELRSRnCEKLEVLDGDIVRQNLTKGLGFSKEDRDTNIRRIGFVSHLLTRNGVIVLVSAISPYREVREEVREQ 99 
+                 9****************************8761578*************************************************************** PP
+
+        cyrM 102 igsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                 ig+f+evfvnapl+vceerdvkglyk+aragei  ftgiddpyepp npevecrtdle+leesv kv  kl elgyi 
+  AFZ43342.1 100 IGDFLEVFVNAPLNVCEERDVKGLYKKARAGEIEKFTGIDDPYEPPTNPEVECRTDLESLEESVGKVLGKLEELGYIS 177
+                 ****************************************************************************96 PP
+
+>> AFZ44807.1  cobyrinic acid ac-diamide synthase [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   4.9e-06     0.009      17      64 ..      12      59 ..       4      68 .. 0.91
+   2 ?    0.2   0.0     0.048        90      22      43 ..      99     119 ..      87     130 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 4.9e-06
+        cyrM 17 sgagkstitealqakliaegysievldgdivrtnltkglgfskedrde 64
+                 g+gks +t  l a l   g  + v+d di    +   +gf  ed + 
+  AFZ44807.1 12 GGTGKSNVTANLSAVLAKSGKRVAVVDTDIQSPGIHVLFGFDDEDIQT 59
+                599*********************************99***9999765 PP
+
+  == domain 2  score: 0.2 bits;  conditional E-value: 0.048
+        cyrM  22 stitealqakliaegysievld 43 
+                 st te + a+++ egy ie l 
+  AFZ44807.1  99 STSTEDI-ARVLREGYDIEYLS 119
+                 6777776.78999******986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                       177  (0.0477346); expected 74.2 (0.02)
+Passed bias filter:                      164  (0.0442287); expected 74.2 (0.02)
+Passed Vit filter:                        29  (0.00782093); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000539374); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5432.87
+//
+[ok]

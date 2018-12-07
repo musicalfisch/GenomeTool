@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.9e-63  209.7  16.2    4.3e-63  209.5  16.2    1.0  1  CCQ51065.1  ATP synthase B' chain [Crocosphaera watsonii WH 8
+    7.4e-05   20.8  17.6    8.6e-05   20.6  16.6    1.6  2  CCQ51064.1  ATP synthase B chain [Crocosphaera watsonii WH 85
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ51065.1  ATP synthase B' chain [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  209.5  16.2   1.7e-66   4.3e-63       1     143 []       1     143 []       1     143 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 209.5 bits;  conditional E-value: 1.7e-66
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqfilla+ilna+fykpl k ldera+yirq ++g +++la ++ l  +ye ql+ arkqsqei+aqaq+ea++lase va aq+ea
+  CCQ51065.1   1 MFDFDATLPLMALQFILLAIILNAIFYKPLNKALDERADYIRQKQSGGQKELAEAKELAAQYEQQLAEARKQSQEIVAQAQSEAKQLASEAVAEAQREA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                 ia+kea a ei qq++ea+++le qv +lsrqilekllgpelv+
+  CCQ51065.1 100 IAKKEAAAQEIEQQRQEALKTLEQQVDTLSRQILEKLLGPELVK 143
+                 ******************************************96 PP
+
+>> CCQ51064.1  ATP synthase B chain [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.6  16.6   3.4e-08   8.6e-05      16     127 ..      32     146 ..      22     160 .. 0.80
+   2 ?   -1.3   0.1      0.19   4.7e+02      79      96 ..     149     165 ..     146     175 .. 0.45
+
+  Alignments for each domain:
+  == domain 1  score: 20.6 bits;  conditional E-value: 3.4e-08
+        atpG  16 illavilnavfy...kplskvlderaeyirqteggake.qlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaei 110
+                 + la+++  +f+   k + ++l er + i q+   a + q + + al +e e +l+ a+kq+++i+  a   a+ +++e  a ++++    ke+ aa++
+  CCQ51064.1  32 LNLAILVGVLFFygrKVVGNILTERRNQITQAIQEAEDkQRTAAAALAKEQE-NLAQAKKQAEDIVKAASERAKTITAEIKAQCERDIARLKETAAADL 129
+                 34555555555435588999***********988876515566677888877.89***********9999999999999888888877677******** PP
+
+        atpG 111 aqqkeeafrslegqvas 127
+                 + ++e ++  l+ q+a 
+  CCQ51064.1 130 SSEQERVMAQLKKQIAE 146
+                 **************996 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.19
+        atpG  79 qaqaeaqklaservaaaq 96 
+                  aqae+q  a      aq
+  CCQ51064.1 149 IAQAESQLKAQVD-NNAQ 165
+                 3455555333322.2333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       161  (0.032427); expected 99.3 (0.02)
+Passed bias filter:                       98  (0.0197382); expected 99.3 (0.02)
+Passed Vit filter:                         7  (0.00140987); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040282); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5665.79
+//
+[ok]

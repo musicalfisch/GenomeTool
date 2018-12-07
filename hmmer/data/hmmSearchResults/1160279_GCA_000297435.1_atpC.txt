@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160279_GCA_000297435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   9.4e-173  571.5   9.3   1.1e-172  571.4   9.3    1.0  1  CCI34474.1  ATP synthase gamma chain [Microcystis sp. T1-4]
+  ------ inclusion threshold ------
+       0.05   10.6   0.0      0.062   10.3   0.0    1.1  1  CCI30496.1  2-C-methyl-D-erythritol 4-phosphate cytidylyltran
+
+
+Domain annotation for each sequence (and alignments):
+>> CCI34474.1  ATP synthase gamma chain [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  571.4   9.3  4.8e-176  1.1e-172       1     314 [.       1     315 []       1     315 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 571.4 bits;  conditional E-value: 4.8e-176
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 m+nlkaird+iqsvkntkkiteamrlvaaa+vrraqeqv++trpfad laqvly+lq rl f dv+lpll +revk+v+llv++gdrglcggyn+nvir
+  CCI34474.1   1 MPNLKAIRDQIQSVKNTKKITEAMRLVAAAKVRRAQEQVLCTRPFADALAQVLYNLQGRLAFSDVNLPLLAQREVKTVALLVVTGDRGLCGGYNTNVIR 99 
+                 99************************************************************************************************* PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgl 198
+                 rae+r++elk +g++y++v+ grka+qyf+rr+ pi a++ +leqipta+ea +i dellslflse+vdr+el+yt+f+sl+s+ pv+qtllpl +qgl
+  CCI34474.1 100 RAEQRMNELKEQGIKYQLVVAGRKAAQYFERRNAPIAAKFINLEQIPTADEAGTIGDELLSLFLSETVDRVELIYTRFISLISATPVIQTLLPLTTQGL 198
+                 *************************************************************************************************** PP
+
+        atpC 199 eaaddeifrlttrggqfeverekvtse.vralprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkar 296
+                  ++ddeifrl t+ g+f+v+rek++s+ ++ +p+dmifeq+pvqildsllplyl+nqllralqesaaselaarmtamsnas+na+eli +l+ +ynkar
+  CCI34474.1 199 AVQDDEIFRLVTKEGKFKVQREKMASQpAQVFPQDMIFEQNPVQILDSLLPLYLNNQLLRALQESAASELAARMTAMSNASENASELIGTLSRTYNKAR 297
+                 ************************99747899******************************************************************* PP
+
+        atpC 297 qaaitqellevvggaeal 314
+                 qaaitqellevv+ga+al
+  CCI34474.1 298 QAAITQELLEVVAGANAL 315
+                 ****************97 PP
+
+>> CCI30496.1  2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   2.8e-05     0.062     122     200 ..      69     147 ..      56     182 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.8e-05
+        atpC 122 rkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqglea 200
+                  k +q +q  e + +++y gl+ +p  ae+  i d    l   e  dr     +    ++++ pv +t+  +d++g   
+  CCI30496.1  69 LKPVQIIQGGETRQKSVYNGLQALPEGAETVLIHDGARCLATPELFDRCAAALATCQGFIAAIPVKDTIKIVDSKGWIE 147
+                 57789999999999************************************************************99643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         4434  (1223634 residues searched)
+Passed MSV filter:                       108  (0.0243572); expected 88.7 (0.02)
+Passed bias filter:                       75  (0.0169147); expected 88.7 (0.02)
+Passed Vit filter:                         6  (0.00135318); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045106); expected 0.0 (1e-05)
+Initial search space (Z):               4434  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9636.12
+//
+[ok]

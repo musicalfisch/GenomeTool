@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/313612_GCA_000169095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-23   81.2   0.1    2.9e-23   80.1   0.1    1.4  1  EAW38611.1  ferredoxin-NADP oxidoreductase [Lyngbya sp. PCC 8
+    5.5e-17   60.0   0.2    7.2e-17   59.6   0.2    1.1  1  EAW39101.1  phycocyanin-associated 7.8kDa rod linker protein 
+     0.0098   14.4   1.1      0.026   13.0   0.4    2.0  2  EAW39100.1  phycocyanin-associated rod linker protein [Lyngby
+
+
+Domain annotation for each sequence (and alignments):
+>> EAW38611.1  ferredoxin-NADP oxidoreductase [Lyngbya sp. PCC 8106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.1   0.1   1.4e-26   2.9e-23       9      70 ..      16      77 ..      10      81 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 80.1 bits;  conditional E-value: 1.4e-26
+        cpcD  9 enrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                + r+fv+ev G+ q  ++d + y ir+sG v +tvpy rmnqemrri+rlG riv i+p n 
+  EAW38611.1 16 NSRVFVFEVEGMRQGGDSDKFTYPIRRSGRVSITVPYERMNQEMRRISRLGGRIVNIRPCNG 77
+                67*********************************************************996 PP
+
+>> EAW39101.1  phycocyanin-associated 7.8kDa rod linker protein [Lyngbya sp. PCC 8106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.6   0.2   3.5e-20   7.2e-17       8      69 ..      16      77 ..      10      82 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 59.6 bits;  conditional E-value: 3.5e-20
+        cpcD  8 kenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                +  r++  ev  + qn + d + y irks   ++tvpysrm ++++ri r+G +i+si pl 
+  EAW39101.1 16 NGSRMYRIEVEAMRQNVDPDTISYPIRKSSKTYITVPYSRMSEQLKRINRMGGKILSIEPLT 77
+                5679999*****************************************************96 PP
+
+>> EAW39100.1  phycocyanin-associated rod linker protein [Lyngbya sp. PCC 8106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0       0.4   8.2e+02      42      53 ..     167     178 ..     163     182 .. 0.84
+   2 !   13.0   0.4   1.3e-05     0.026      30      66 ..     252     287 ..     233     289 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.4
+        cpcD  42 tvpysrmnqemr 53 
+                 tv +srm q  r
+  EAW39100.1 167 TVGFSRMFQLYR 178
+                 899****99766 PP
+
+  == domain 2  score: 13.0 bits;  conditional E-value: 1.3e-05
+        cpcD  30 dysirksGsvfltvpysrmnqemrritrlGarivsik 66 
+                 d  +r+s   +l vpy  +   +++i r Ga+i+s++
+  EAW39100.1 252 DTNVRRSNKAYL-VPYEELSSRIQQILRSGAKIISVR 287
+                 778999999998.9*********************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         6142  (1966150 residues searched)
+Passed MSV filter:                       111  (0.0180723); expected 122.8 (0.02)
+Passed bias filter:                      104  (0.0169326); expected 122.8 (0.02)
+Passed Vit filter:                         9  (0.00146532); expected 6.1 (0.001)
+Passed Fwd filter:                         3  (0.00048844); expected 0.1 (1e-05)
+Initial search space (Z):               6142  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 4849.84
+//
+[ok]

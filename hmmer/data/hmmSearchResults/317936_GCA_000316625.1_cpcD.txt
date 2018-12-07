@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317936_GCA_000316625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.7e-29   98.8   0.1    7.6e-29   97.8   0.1    1.5  1  AFY41631.1  Ferredoxin--NADP(+) reductase [Nostoc sp. PCC 710
+    1.5e-28   96.8   0.3    1.9e-28   96.5   0.3    1.1  1  AFY43732.1  CpcD phycobilisome linker domain protein [Nostoc 
+     0.0016   16.7   0.1      0.004   15.4   0.1    1.7  1  AFY43733.1  Phycobilisome linker polypeptide [Nostoc sp. PCC 
+  ------ inclusion threshold ------
+      0.039   12.2   0.1       0.14   10.4   0.1    2.1  1  AFY43739.1  Phycobilisome linker polypeptide [Nostoc sp. PCC 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY41631.1  Ferredoxin--NADP(+) reductase [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.8   0.1   5.8e-32   7.6e-29      10      68 ..      17      75 ..      10      79 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 97.8 bits;  conditional E-value: 5.8e-32
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpl 68
+                 r+fvyevvGl qn++td+ +y irksGsvf+ vpy rmn+emrritrlG  ivsi+p 
+  AFY41631.1 17 SRIFVYEVVGLRQNEETDQTNYPIRKSGSVFIRVPYNRMNEEMRRITRLGGTIVSIQPA 75
+                69*******************************************************95 PP
+
+>> AFY43732.1  CpcD phycobilisome linker domain protein [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.5   0.3   1.5e-31   1.9e-28       5      70 ..      12      77 ..       8      79 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 96.5 bits;  conditional E-value: 1.5e-31
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                 s+   r+f yevvGl qn +td   y ir sGsvf+tvpysrmn+e +ritrlG +i+ i pl a
+  AFY43732.1 12 VSSSASRVFRYEVVGLRQNSETDRNKYNIRNSGSVFITVPYSRMNEEYQRITRLGGKIIKIEPLTA 77
+                345678**********************************************************88 PP
+
+>> AFY43733.1  Phycobilisome linker polypeptide [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.1     3e-06     0.004      32      67 ..     251     285 ..     230     286 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 3e-06
+        cpcD  32 sirksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 sir+s + f+ vpy r+  ++++i + G +i s+ p
+  AFY43733.1 251 SIRRSSTAFI-VPYERLSDKIQQIHKQGGKIASVTP 285
+                 9****99986.9*********************998 PP
+
+>> AFY43739.1  Phycobilisome linker polypeptide [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.1   0.00011      0.14      32      66 ..     243     276 ..     217     278 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 0.00011
+        cpcD  32 sirksGsvfltvpysrmnqemrritrlGarivsik 66 
+                 ++r+s     tvpy r+    + i + G +ivsi 
+  AFY43739.1 243 AVRRSRQT-YTVPYERLSAIYQEIHKRGGKIVSIS 276
+                 56777665.59**********************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5237  (1703644 residues searched)
+Passed MSV filter:                       105  (0.0200496); expected 104.7 (0.02)
+Passed bias filter:                      101  (0.0192859); expected 104.7 (0.02)
+Passed Vit filter:                        11  (0.00210044); expected 5.2 (0.001)
+Passed Fwd filter:                         4  (0.000763796); expected 0.1 (1e-05)
+Initial search space (Z):               5237  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6303.48
+//
+[ok]

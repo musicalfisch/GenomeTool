@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/chrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272123_GCA_000317695.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       chrA  [M=385]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.6e-141  468.6  34.4   6.3e-141  468.5  34.4    1.0  1  AFZ58599.1  chromate transporter, chromate ion transporter (C
+  ------ inclusion threshold ------
+      0.015   12.9   0.0      0.022   12.4   0.0    1.2  1  AFZ57862.1  hypothetical protein Anacy_2410 [Anabaena cylindr
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ58599.1  chromate transporter, chromate ion transporter (CHR) family [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  468.5  34.4  2.1e-144  6.3e-141       8     381 ..       8     390 ..       1     394 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 468.5 bits;  conditional E-value: 2.1e-144
+        chrA   8 nlsqlallflkigiigfggpaahialmeeevvkrrgwmtkerfldlvgatnlipgpnstemaihigyifgglagliitgvcfitpavlitgflawiytt 106
+                  ls++a lf+++g+igfggp ahia++e+evvkrr w+t+e+fldl+gatnlipgpnstemaihigyi+ g  gli++gvcfi pavlitg++aw+y  
+  AFZ58599.1   8 RLSEVAKLFFQLGVIGFGGPVAHIAMIEDEVVKRRQWLTQEHFLDLLGATNLIPGPNSTEMAIHIGYIYAGWLGLIVAGVCFILPAVLITGIFAWVYVN 106
+                 699************************************************************************************************ PP
+
+        chrA 107 ygtlpdvapifagikpvviavifqalwrlgkkalktrqllfiglgv.igllilglneiialllggiigmfilkkfa.......tfplivagig..gata 195
+                 ygtlp+++p++ gikp v+avif+alwrl kka+k+rqll+i + v +  l+  + e+ialllgg++gm+ l++            l++ag+    ++ 
+  AFZ58599.1 107 YGTLPQISPLLYGIKPAVLAVIFNALWRLAKKAVKSRQLLLIAVAVgVVTLVAKVSEVIALLLGGLLGMVWLNRGNqnnppgnQTNLLIAGLSisVTSQ 205
+                 *****************************************98766334567899*****************986411111113568999865214455 PP
+
+        chrA 196 vatpsnipptltglglfflkvgsvlfgsgyvlvafleadlvqgkgwltqqqlldaiavgqftpgpvlstatfigyqilgvsgaivatlaiffpsfifvl 294
+                 + +   +   l  lg fflkvgsvlfg gy+lvafl++ lv+  gwltqqqlldaia+gqftpgpvlstatfigy i g+ ga+vatl if+psf fv 
+  AFZ58599.1 206 IISVNAVSVPLWQLGWFFLKVGSVLFGGGYLLVAFLQGGLVEEYGWLTQQQLLDAIAIGQFTPGPVLSTATFIGYVIAGIPGAVVATLGIFLPSFFFVA 304
+                 6667778899***************************************************************************************** PP
+
+        chrA 295 llnplipklresawagafldainasavalmvavifnlalatwlqpygnlpf.nllaiilslisailllrfqvnstwlilagaliglll 381
+                  lnplip+lr s+w+ aflda+n savalmv   ++l +at      ++p+ +l+ + ++l sail +r+ +n++wl+l g+lig + 
+  AFZ58599.1 305 ALNPLIPRLRASSWTRAFLDAVNVSAVALMVVTTLQLGVATLT--LSQFPYvDLFGLAIALTSAILAIRYSINAAWLVLGGSLIGWFA 390
+                 ****************************************974..4566753688899999************************875 PP
+
+>> AFZ57862.1  hypothetical protein Anacy_2410 [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   7.4e-06     0.022     226     263 ..     251     288 ..     244     325 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 7.4e-06
+        chrA 226 vlvafleadlvqgkgwltqqqlldaiavgqftpgpvls 263
+                  l+af+  ++ + kg + +q+ ldaia g+f+ gp + 
+  AFZ57862.1 251 SLIAFMFENIQDIKGHVRHQKWLDAIAQGKFSFGPAII 288
+                 699********************************864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (385 nodes)
+Target sequences:                         5838  (1879690 residues searched)
+Passed MSV filter:                       319  (0.054642); expected 116.8 (0.02)
+Passed bias filter:                      104  (0.0178143); expected 116.8 (0.02)
+Passed Vit filter:                        14  (0.00239808); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000342583); expected 0.1 (1e-05)
+Initial search space (Z):               5838  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12061.34
+//
+[ok]

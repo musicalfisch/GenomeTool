@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880902_GCA_001698445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkN  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.024   11.4   0.0       0.18    8.5   0.1    1.9  2  OCQ89536.1  peptidase M42 [Limnothrix sp. P13C2]
+      0.028   11.2   0.0      0.031   11.0   0.0    1.1  1  OCQ91768.1  hypothetical protein BCR12_01250 [Limnothrix sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ89536.1  peptidase M42 [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.0     0.032        58      38      84 ..      23      72 ..      20      86 .. 0.71
+   2 ?    8.5   0.1   9.9e-05      0.18      91     138 ..     187     235 ..     177     247 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 0.032
+        ahkN 38 qelgnw..gkveshffsfqgkvyenlildlpnnsq.kppiligahydtvp 84
+                qe+ +w   + e+  ++++     nli+ +p   +   pi i ah d + 
+  OCQ89536.1 23 QEVDRWliARAEALGLTWNQDEAGNLIFVIPGRDRtAKPIAITAHKDEIG 72
+                5566662234444555666677789*****986651679******99875 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 9.9e-05
+        ahkN  91 dnatglavllela.rffgenqanypirliafdleeygllgsiayaeklk 138
+                 dn + +a+ll+la r++ ++     + l+a   ee g lg++ +a++ k
+  OCQ89536.1 187 DNKASVAILLDLAeRLLAQEPPAMDLYLVASAKEEVGALGAMYFAQQQK 235
+                 89999*******9789999999********************9998765 PP
+
+>> OCQ91768.1  hypothetical protein BCR12_01250 [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   1.7e-05     0.031     183     213 ..      29      59 ..      22      60 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.7e-05
+        ahkN 183 ignlktrkdlnflsrvlrenqtpcewlpvif 213
+                 i nl +    ++  r l  nqt  ewl vif
+  OCQ91768.1  29 ITNLPSASKTQIKGRSLTSNQTETEWLMVIF 59 
+                 7889999999999*****************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (282 nodes)
+Target sequences:                         3672  (1209182 residues searched)
+Passed MSV filter:                        61  (0.0166122); expected 73.4 (0.02)
+Passed bias filter:                       59  (0.0160675); expected 73.4 (0.02)
+Passed Vit filter:                         5  (0.00136166); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000544662); expected 0.0 (1e-05)
+Initial search space (Z):               3672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 8524.73
+//
+[ok]

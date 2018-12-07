@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102125_GCA_000332055.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      9e-91  300.6   0.2    9.9e-91  300.4   0.2    1.0  1  ELS02113.1  adenylylsulfate kinase ApsK [Xenococcus sp. PCC 7
+    0.00096   16.9   0.0     0.0019   15.9   0.0    1.5  2  ELS05084.1  shikimate kinase [Xenococcus sp. PCC 7305]
+  ------ inclusion threshold ------
+      0.049   11.3   0.0       0.13   10.0   0.0    1.6  2  ELS03615.1  Xaa-Pro aminopeptidase [Xenococcus sp. PCC 7305]
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS02113.1  adenylylsulfate kinase ApsK [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  300.4   0.2   5.5e-94   9.9e-91       4     178 ..       1     175 [.       1     176 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 300.4 bits;  conditional E-value: 5.5e-94
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mkqrgv+vw+tg+sgagksti++al   l  +gy+ievldgd +r nltkglgfskedrd nirrigfv++ll+r  v+vlv  ispyr iree+r +i
+  ELS02113.1   1 MKQRGVAVWFTGFSGAGKSTIADALTKELKDKGYAIEVLDGDEIRENLTKGLGFSKEDRDTNIRRIGFVAKLLARNNVVVLVPVISPYRAIREEMREQI 99 
+                 9************************************************************************************************** PP
+
+        cyrM 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 gsfvevfvnap++vce+rdvkglyk+ ragei  ftgi dpyepp npe+ecrtdle l+esvak+ nkl +lgy+
+  ELS02113.1 100 GSFVEVFVNAPIEVCEKRDVKGLYKKVRAGEIGQFTGISDPYEPPTNPEIECRTDLEELDESVAKIMNKLIDLGYL 175
+                 ***************************************************************************7 PP
+
+>> ELS05084.1  shikimate kinase [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.0   1.1e-06    0.0019       7      46 ..      19      58 ..      15      93 .. 0.88
+   2 ?   -2.7   0.0      0.55   9.8e+02     156     170 ..     120     134 ..     111     144 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1.1e-06
+        cyrM  7 rgvtvwltglsgagkstitealqakliaegysievldgdi 46
+                +gv v+l g+ g+gksti + l  kl    +  +vl   +
+  ELS05084.1 19 KGVNVYLIGMMGSGKSTIGKILAQKLNYRFFDTDVLIEKV 58
+                79***********************998888888876655 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.55
+        cyrM 156 tdletleesvakvwn 170
+                 +dl+ l e vak  n
+  ELS05084.1 120 ADLDVLLERVAKDTN 134
+                 566666666666544 PP
+
+>> ELS03615.1  Xaa-Pro aminopeptidase [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   7.2e-05      0.13      89     143 ..       6      57 ..       3      72 .. 0.81
+   2 ?   -3.3   0.0      0.87   1.6e+03      32      50 ..     256     274 ..     253     280 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 7.2e-05
+        cyrM  89 spyreireevrgkigsfvevfvnaplsvceerdvkglykrarageiksftgiddp 143
+                 s y++ re++ +k+g+   +f  ap++v    dv  +y++    +   +tg ++p
+  ELS03615.1   6 SEYQQRREQLMAKVGNGTAIFHSAPMAVMH-NDVEYVYRQD--SDFYYLTGFNEP 57 
+                 7899***********************986.6999999864..466667777666 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.87
+        cyrM  32 liaegysievldgdivrtn 50 
+                 li  g s    +gdi rt 
+  ELS03615.1 256 LIDAGCSYGYYNGDITRTF 274
+                 78889999999*****996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5373  (1697783 residues searched)
+Passed MSV filter:                       254  (0.0472734); expected 107.5 (0.02)
+Passed bias filter:                      227  (0.0422483); expected 107.5 (0.02)
+Passed Vit filter:                        31  (0.00576959); expected 5.4 (0.001)
+Passed Fwd filter:                         3  (0.000558347); expected 0.1 (1e-05)
+Initial search space (Z):               5373  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 6247.84
+//
+[ok]

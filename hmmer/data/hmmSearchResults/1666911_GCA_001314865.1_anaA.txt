@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1666911_GCA_001314865.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-36  122.8   0.0    4.1e-36  122.6   0.0    1.0  1  KPQ36590.1  oleoyl-[acyl-carrier-protein] hydrolase [Phormide
+     0.0073   13.6   0.0      0.019   12.2   0.0    1.6  2  KPQ31912.1  Non-ribosomal peptide synthetase module [Phormide
+
+
+Domain annotation for each sequence (and alignments):
+>> KPQ36590.1  oleoyl-[acyl-carrier-protein] hydrolase [Phormidesmis priestleyi Ana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  122.6   0.0   1.7e-39   4.1e-36       9     234 ..       2     226 ..       1     230 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 122.6 bits;  conditional E-value: 1.7e-39
+        anaA   9 spwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvsleva 107
+                 s wlv    ++   kl lfcf  ag  + +fr w   +p  i++ a+ +pgr +r+ ep + +   +i+ l  e+ py + pf ffghs+g+++++e++
+  KPQ36590.1   2 SSWLVCPQ-RQLRAKLRLFCFAYAGGSAWVFRPWAKQLPSDIEVCAIELPGRGQRLAEPALNHLPTVIQALGPELLPYMDLPFAFFGHSMGALIAFELC 99 
+                 67888654.45678************************************************************************************* PP
+
+        anaA 108 hqlgdrfgcfpqclvvsgrkpphipcdhrd.sqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadeg 205
+                 + l   +   p  + vs  + ph+ ++        d  +i+ l+   gtp +vl++ elm+++lp  rad+ l e y y  +  +   +  + g+ d+ 
+  KPQ36590.1 100 RWLRRSVQLSPVHVWVSAARAPHLLVEPPLmHTLPDSAFIQRLQHYQGTPLSVLNNEELMNLMLPTLRADFTLLETYRYQPDAPFDFAMTGMWGQQDNI 198
+                 ************************9987651556899************************************************************** PP
+
+        anaA 206 vsleelrewekytqrgfklrsfpgghmyl 234
+                 vs  ++  w+ y+   f l ++ g h+++
+  KPQ36590.1 199 VSQADVAAWQVYAG-QFSLAAIAGDHFFM 226
+                 ************86.59*********987 PP
+
+>> KPQ31912.1  Non-ribosomal peptide synthetase module [Phormidesmis priestleyi Ana]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   7.8e-06     0.019      31     111 ..     727     806 ..     706     820 .. 0.76
+   2 ?   -3.5   0.0      0.51   1.2e+03     208     237 ..     928     957 ..     911     967 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 7.8e-06
+        anaA  31 pagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypys.qspfvffghslgsvvslevahqlg 111
+                   g   l +++    + d   ++a++  g  nr + pl+ +   +    +q+i     + p+ f ghs+g ++++e+ahql 
+  KPQ31912.1 727 AVGPSILNYQNLLPYLDDDQPVYALQAKGI-NR-ERPLLEHMEKMAAEYIQDIKSIQpHGPYHFAGHSFGGLMAFEMAHQLI 806
+                 555555666666666666666777766664.33.56999999999999999998764278********************95 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 0.51
+        anaA 208 leelrewekytqrgfklrsfpgghmyltee 237
+                  ++l  w   ++ g+++  +pg h+ l  e
+  KPQ31912.1 928 HDDLLGWRYLAEGGIEIYDVPGHHLSLMLE 957
+                 5678889999999999*******9998766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4863  (1652793 residues searched)
+Passed MSV filter:                       114  (0.0234423); expected 97.3 (0.02)
+Passed bias filter:                      109  (0.0224141); expected 97.3 (0.02)
+Passed Vit filter:                        10  (0.00205634); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000411269); expected 0.0 (1e-05)
+Initial search space (Z):               4863  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8363.13
+//
+[ok]

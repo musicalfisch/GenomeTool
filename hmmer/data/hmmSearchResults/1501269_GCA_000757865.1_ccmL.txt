@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501269_GCA_000757865.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-08   31.7   0.1    2.2e-08   31.5   0.1    1.1  1  AIQ96742.1  putative carboxysome peptide A [Prochlorococcus s
+    0.00054   17.4   0.1     0.0023   15.4   0.0    2.1  2  AIQ96493.1  Bilin biosynthesis protein MpeU [Prochlorococcus 
+     0.0014   16.1   0.0     0.0014   16.1   0.0    1.1  1  AIQ96743.1  putative carboxysome peptide B [Prochlorococcus s
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ96742.1  putative carboxysome peptide A [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.5   0.1   2.9e-11   2.2e-08      40      85 ..      10      55 ..       4      65 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 31.5 bits;  conditional E-value: 2.9e-11
+        ccmL 40 yevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtv 85
+                 +va d+vg+  d+wv+    saar+  g++  p d ++v iid  
+  AIQ96742.1 10 KKVAVDAVGCKPDDWVICVGSSAAREAAGSKSYPSDLTIVGIIDHW 55
+                579*****************************************75 PP
+
+>> AIQ96493.1  Bilin biosynthesis protein MpeU [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0     3e-06    0.0023      11      50 ..      25      64 ..      16      88 .. 0.84
+   2 ?   -2.7   0.0       1.4   1.1e+03      14      29 ..     237     253 ..     235     264 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 3e-06
+        ccmL 11 vstqkdpslrgvkllllqlvdeegkllpkyevaadsvgag 50
+                + ++k+ s + +kll+  l de+g ++ +y +a  +vg+ 
+  AIQ96493.1 25 IMSKKKSSQKDIKLLIKGLSDENGLVRRNYAIALAEVGSA 64
+                55688999*************************9999964 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 1.4
+        ccmL  14 qkdpslrgvkll.llql 29 
+                 +k+p +r + +l l+ql
+  AIQ96493.1 237 HKNPDIRKASILsLIQL 253
+                 68999998877635565 PP
+
+>> AIQ96743.1  putative carboxysome peptide B [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   0.0   1.8e-06    0.0014      39      84 ..      12      57 ..       3      62 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 1.8e-06
+        ccmL 39 kyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidt 84
+                k  va d vga   +wv+ ++g+aar    + +   d ++  iid 
+  AIQ96743.1 12 KRLVAVDPVGAREGNWVFTATGTAARWGCPDPNVQTDLTIGGIIDH 57
+                5569**********************88888777788888778775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         2287  (554079 residues searched)
+Passed MSV filter:                        38  (0.0166157); expected 45.7 (0.02)
+Passed bias filter:                       33  (0.0144294); expected 45.7 (0.02)
+Passed Vit filter:                         4  (0.00174902); expected 2.3 (0.001)
+Passed Fwd filter:                         3  (0.00131176); expected 0.0 (1e-05)
+Initial search space (Z):               2287  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5540.79
+//
+[ok]

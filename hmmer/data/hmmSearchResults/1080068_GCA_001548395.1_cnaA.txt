@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080068_GCA_001548395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnaA  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.2e-119  397.0   0.0   2.5e-119  396.8   0.0    1.0  1  BAU43054.1  Anthranilate phosphoribosyltransferase [Leptolyng
+    1.7e-07   29.0   0.1    1.1e-06   26.3   0.1    2.0  1  BAU44243.1  Anthranilate phosphoribosyltransferase 2 [Leptoly
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU43054.1  Anthranilate phosphoribosyltransferase [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  396.8   0.0    1e-122  2.5e-119       1     345 [.       1     341 [.       1     347 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 396.8 bits;  conditional E-value: 1e-122
+        cnaA   1 msdtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrt 99 
+                 ms +fr ll+ +gsg ht +nltr eaa at+mml qeatpaqigafmiahrikrpt  elagmlday elgp++  +s   + p+ i+  pydgr rt
+  BAU43054.1   1 MSHAFRALLRKVGSGPHTSQNLTREEAAAATRMMLLQEATPAQIGAFMIAHRIKRPTGVELAGMLDAYDELGPKL--QSI-GDRPVFILNAPYDGRDRT 96 
+                 899**********************************************************************96..444.479*************** PP
+
+        cnaA 100 apvtpittlilglagvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwsp 198
+                  p++ +t+lil +ag pv+ hggd mptk g+ l  +w  lg d+s+lsl+ v+  l +tg+ f+y+p hfpl q +v yr+qigkrpp+at+el+wsp
+  BAU43054.1  97 LPLSLVTALILIAAGQPVIQHGGDIMPTKEGVPLVTLWAGLGVDWSRLSLSQVQSILESTGMGFVYMPIHFPLAQALVEYRDQIGKRPPFATLELIWSP 195
+                 *************************************************************************************************** PP
+
+        cnaA 199 fvgnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllage 297
+                 + g  h + gfvhppte   + +falr  s +ttvkglegscdl  +rtaiig+   + p +++r+ l p dyg+   + pl s       +  +l g+
+  BAU43054.1 196 YAGPGHVVVGFVHPPTEGMAQAAFALRGTSLYTTVKGLEGSCDLPRERTAIIGFST-ASPDTLERLHLHPYDYGMGGKNVPLLSPAAAVEEMLQVLQGK 293
+                 *****************************************************975.57899************************************* PP
+
+        cnaA 298 nneltdaaifnggfylwrcgiapdiptgfqqaqqslqsgkalakleqi 345
+                   el ++ ++n gfylwrcg a  +  ++  a q l+ g a   l ++
+  BAU43054.1 294 PSELRESVLWNAGFYLWRCGKAATLTEAIALAGQLLDQGSAWQALTHL 341
+                 **************************************9987766655 PP
+
+>> BAU44243.1  Anthranilate phosphoribosyltransferase 2 [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.1   4.6e-10   1.1e-06      19     349 ..      36     370 ..      32     372 .] 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 4.6e-10
+        cnaA  19 gknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrtapvtpittlilglagvpv 117
+                 g+ l   +aa   +  l++  +pa  ga++ a + k  ++delagm           t+++      i   g   dg s    ++   +++ ++agv v
+  BAU44243.1  36 GRSLDADQAADLMQGWLSESIAPALSGAILAAIQAKGVSADELAGMARVLQAQSLGKTVDADLPTPLIDTCGTGGDGASTF-NISTCVAFVAAAAGVAV 133
+                 67777777888888889999**************************9988777777788777667778999******9855.5666678999******* PP
+
+        cnaA 118 vlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwspfvgnihqisgfvhppted 216
+                   hg     ++ g    ++ + lg ++       ++ +l   g+tf++ p   p ++ +   r+ +  r  +  +  l  p+     q+ g+  p   +
+  BAU44243.1 134 AKHGNRAASSRVGS--ADVLEGLGVNLGAP-PERIRAALREVGITFLFAPGWHPAMKSVAPIRKTLKVRTVFNLLGPLVNPLQ-PTGQVMGVFSPQLVE 228
+                 ***99888888775..57888888887654.45688889999*****************999988877755544444444432.234555655555544 PP
+
+        cnaA 217 rfretfalrnishf..ttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcps.......dypleslelltaklkgllagennel.t.da 304
+                    +  al+++       ++g e    l     a            ++   +np   g+ p+           e le+l   l+g  +  ++++ + +a
+  BAU44243.1 229 TAAQ--ALQQLGRAeaIVLHGREK---LDEAGLADWTDVAVLSGGKVRSHAINPEALGLSPAptsalrgGEVAENLEILRNVLQGKGTAAQQDVvAlNA 322
+                 4333..344444330033344433...222111111111111222334455666666666541111111334567777777666543333222201122 PP
+
+        cnaA 305 a.ifnggfylwrcgiapd....iptgfqqaqqslqsgkalakleqianyl 349
+                 a  ++ g  +  +g + d    +  g+ qa++ l sg a ak+e ++++l
+  BAU44243.1 323 AlALKVGNAI--AGATDDldqtLRLGIVQAKDILSSGAAWAKVEALVDFL 370
+                 2023333333..34444411113456778888888888888888887777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         4865  (1484008 residues searched)
+Passed MSV filter:                       123  (0.0252826); expected 97.3 (0.02)
+Passed bias filter:                      106  (0.0217883); expected 97.3 (0.02)
+Passed Vit filter:                        10  (0.0020555); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.0004111); expected 0.0 (1e-05)
+Initial search space (Z):               4865  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8730.91
+//
+[ok]

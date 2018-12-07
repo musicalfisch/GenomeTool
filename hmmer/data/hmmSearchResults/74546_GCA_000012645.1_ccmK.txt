@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74546_GCA_000012645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-26   88.5   2.7    3.4e-26   88.3   2.7    1.0  1  ABB49610.1  carboxysome shell protein CsoS1 [Prochlorococcus 
+     0.0088   13.1   0.6      0.025   11.6   0.6    1.7  1  ABB49608.1  conserved hypothetical protein [Prochlorococcus m
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB49610.1  carboxysome shell protein CsoS1 [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.3   2.7   3.5e-29   3.4e-26       1      87 [.       6      91 ..       6      95 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 88.3 bits;  conditional E-value: 3.5e-29
+        ccmK  1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenley 87
+                m ia+gmiet+g+   +eaadam kaa v l+g e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e 
+  ABB49610.1  6 MGIALGMIETRGLVPAIEAADAMTKAAEVRLIGREFVGGGYVTVLVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHREVEP 91
+                89***********999***************************************************8875.679*******99986 PP
+
+>> ABB49608.1  conserved hypothetical protein [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.6   2.5e-05     0.025       7      63 ..     194     252 ..     187     255 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.5e-05
+        ccmK   7 mietlgfpavveaadamvkaarvtlvgyekigs.grvtvivr.gdvsevqasvaagves 63 
+                 ++et+    v++aa+   ka+ +t+v  + +g+ gr+t+  + gdv e  a+    +e+
+  ABB49608.1 194 ILETEPAGYVLKAANEAEKASNITVVDVKAVGAfGRLTLAGKeGDVEEAAAAAIRAIEE 252
+                 678888888***********************879**9875439999988877666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         1962  (514473 residues searched)
+Passed MSV filter:                        38  (0.019368); expected 39.2 (0.02)
+Passed bias filter:                       33  (0.0168196); expected 39.2 (0.02)
+Passed Vit filter:                         2  (0.00101937); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00101937); expected 0.0 (1e-05)
+Initial search space (Z):               1962  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5299.07
+//
+[ok]

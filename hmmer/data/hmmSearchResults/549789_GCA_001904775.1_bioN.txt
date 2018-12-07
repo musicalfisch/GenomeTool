@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/549789_GCA_001904775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.2e-122  404.8  21.4   7.7e-122  404.3  21.4    1.2  1  OKH45877.1  hypothetical protein NIES30_18540 [Phormidium ten
+  ------ inclusion threshold ------
+      0.031   11.7   0.1      0.077   10.4   0.1    1.6  1  OKH50975.1  hypothetical protein NIES30_02570 [Phormidium ten
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH45877.1  hypothetical protein NIES30_18540 [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  404.3  21.4  3.1e-125  7.7e-122       1     290 [.       1     302 [.       1     303 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 404.3 bits;  conditional E-value: 3.1e-125
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qp+t lh+ld rvk+ wlm++l +p+lan++wr+ lv ll+lltl+a ip rvwrqqmgwl++l+  v+l+t + pdgl v+  p
+  OKH45877.1   1 MDLLRSLPIGLYLEQPVTWLHRLDPRVKMAWLMSILVTPILANAYWRFGLVALLVLLTLVALIPLRVWRQQMGWLVVLSGFVMLLTFVMPDGLQVAQTP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeg....l........nlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltlt 186
+                 rlp       l        +lp  + y+yv++d g + vtrrsl+l +ri tl+ftliy tnl+llttapeeit  le l++plr f +pvtei+lt+t
+  OKH45877.1 100 RLPTPAdmitLenppevlpELPQPTAYRYVVFDWGPVKVTRRSLDLGIRIGTLLFTLIYGTNLYLLTTAPEEITVALEALMAPLRWFRLPVTEIALTVT 198
+                 **863211113111111134677799************************************************************************* PP
+
+        bioN 187 lslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaar 285
+                 lslrfiplvleevqnl r+v+trai+w+klg + s +vwl+v+e+ll+nlllraeqia amevrgft pn+h+vrw+++ lr  d+ al lli fw ar
+  OKH45877.1 199 LSLRFIPLVLEEVQNLVRSVQTRAINWKKLGFRGSAQVWLSVMERLLQNLLLRAEQIAAAMEVRGFTGPNEHRVRWYQMVLRSWDWFALGLLIVFWWAR 297
+                 *************************************************************************************************** PP
+
+        bioN 286 lvwgg 290
+                  vwgg
+  OKH45877.1 298 WVWGG 302
+                 ****9 PP
+
+>> OKH50975.1  hypothetical protein NIES30_02570 [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.1   3.1e-05     0.077     143     207 ..     312     376 ..     297     382 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 3.1e-05
+        bioN 143 tliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlaravr 207
+                 +l   +  +ll+t pe +t+ l++l+   r++  p t ++++l+        v  +v nl +a+ 
+  OKH50975.1 312 ALQLPSRPVLLATDPERLTKVLKELVNNARKYSTPKTVVTFALADNQAQNGRVTLQVSNLGQAIE 376
+                 5555566789*******************************999988888888888888888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         5000  (1597938 residues searched)
+Passed MSV filter:                       256  (0.0512); expected 100.0 (0.02)
+Passed bias filter:                      129  (0.0258); expected 100.0 (0.02)
+Passed Vit filter:                        12  (0.0024); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.0004); expected 0.1 (1e-05)
+Initial search space (Z):               5000  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 9300.00
+//
+[ok]

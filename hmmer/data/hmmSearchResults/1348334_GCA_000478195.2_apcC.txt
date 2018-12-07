@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-49  164.4   1.1    1.4e-49  164.3   1.1    1.0  1  ERT07104.1  phycobilisome 7.8 kDa linker polypeptide, allophy
+    0.00022   19.6   0.0     0.0003   19.1   0.0    1.3  1  ERT07033.1  phycobilisome 8.9 kDa linker polypeptide, phycocy
+  ------ inclusion threshold ------
+      0.054   11.9   0.7       0.11   11.0   0.0    1.9  2  ERT07017.1  phycobilisome 32.1 kDa linker polypeptide, phycoc
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT07104.1  phycobilisome 7.8 kDa linker polypeptide, allophycocyanin-associated, core [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.3   1.1   6.6e-53   1.4e-49       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.3 bits;  conditional E-value: 6.6e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfk+tacvPsqtrirtqrelqntyftklvpyd+WfreqqrimkmGGkivkvelatGkpg+ntGl+
+  ERT07104.1  1 MRMFKVTACVPSQTRIRTQRELQNTYFTKLVPYDSWFREQQRIMKMGGKIVKVELATGKPGMNTGLM 67
+                9****************************************************************95 PP
+
+>> ERT07033.1  phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod domain protein [Lyngbya aestuarii B
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.0   1.4e-07    0.0003      16      56 ..      41      76 ..      19      86 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 1.4e-07
+        apcC 16 irtqrelqntyftklvpydnWfreqqrimkmGGkivkvela 56
+                ir     + ty t  vpy+   ++ +ri +mGGki+ +e  
+  ERT07033.1 41 IRS---TRKTYIT--VPYNRMSEQLKRINRMGGKILSIEPL 76
+                444...4579998..9**9998888***********99855 PP
+
+>> ERT07017.1  phycobilisome 32.1 kDa linker polypeptide, phycocyanin-associated, rod [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.1       0.9   1.9e+03      21      33 ..      89     101 ..      82     106 .. 0.68
+   2 ?   11.0   0.0   4.9e-05      0.11      28      54 ..     207     233 ..     181     235 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.9
+        apcC  21 elqntyftklvpy 33 
+                 e  n +   +vpy
+  ERT07017.1  89 EYENKFGDNIVPY 101
+                 5567777777777 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 4.9e-05
+        apcC  28 tklvpydnWfreqqrimkmGGkivkve 54 
+                 + lvpy++     q+i++ G kiv v+
+  ERT07017.1 207 AYLVPYEELSSRIQQILRSGAKIVSVR 233
+                 449*********************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       158  (0.024289); expected 130.1 (0.02)
+Passed bias filter:                      146  (0.0224443); expected 130.1 (0.02)
+Passed Vit filter:                        13  (0.00199846); expected 6.5 (0.001)
+Passed Fwd filter:                         3  (0.000461184); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4303.83
+//
+[ok]

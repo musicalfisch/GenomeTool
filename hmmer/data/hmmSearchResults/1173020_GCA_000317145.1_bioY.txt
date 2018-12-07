@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173020_GCA_000317145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-16   57.5  15.6    6.2e-16   57.2  15.6    1.1  1  AFY91633.1  hypothetical protein Cha6605_0333 [Chamaesiphon m
+     0.0085   14.3   0.8      0.018   13.3   0.0    1.9  2  AFY95685.1  ABC-type multidrug transport system, ATPase and p
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY91633.1  hypothetical protein Cha6605_0333 [Chamaesiphon minutus PCC 6605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   57.2  15.6   2.1e-19   6.2e-16      51     205 ..      39     195 ..      10     197 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 57.2 bits;  conditional E-value: 2.1e-19
+        bioY  51 itGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisllGlv 149
+                 ++G +  +l    qvga Ll+  l +    +L  ++yl lGl  L  ++ g+G  +L  P ++yL  f++ aWv + la +ra  +l  l L  l Gl+
+  AFY91633.1  39 SGGISAYPLGFKCQVGAVLLVSCLGGKTAGVLTQVTYLLLGLLWLKIFNDGGGIEYLQKPAFGYLLAFIPGAWVCGQLAFRRA-PQLEYLGLSCLCGLI 136
+                 788899999999********************************************************************997.5799*********** PP
+
+        bioY 150 vlqvclaenllltsllavltdGvlPl...lmtdlLkplLaalLLptavatlaliladlk 205
+                  +   +   l +  l+     G + l   + t+++ plL++++L ++   +a +l++l 
+  AFY91633.1 137 TIHTIGIIYLIIFQLINWQKLGGFQLlnsIATYSVYPLLSQIVLGCTATLIAFVLRRLM 195
+                 ***************99888898887333579************************985 PP
+
+>> AFY95685.1  ABC-type multidrug transport system, ATPase and permease component [Chamaesiphon minutus PCC 6605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.3      0.54   1.6e+03     118     132 ..      38      52 ..      21      82 .. 0.52
+   2 !   13.3   0.0   6.1e-06     0.018     104     158 ..     165     219 ..     161     223 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.54
+        bioY 118 flveaWvvdRlarkr 132
+                 + ++aW  +  ++  
+  AFY95685.1  38 WPIQAWLAGQISKYV 52 
+                 333344444443333 PP
+
+  == domain 2  score: 13.3 bits;  conditional E-value: 6.1e-06
+        bioY 104 aalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisllGlvvlqvclaen 158
+                 a +L+ P +a L+G++ e+   + l  +  + dl++lv   l G+ ++q + ae+
+  AFY95685.1 165 AVFLIAPVIAVLVGWFGEKLQKQSLKSQNQIADLSSLVTEDLGGIRMIQAFAAED 219
+                 789**********************************************998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         5945  (1793467 residues searched)
+Passed MSV filter:                       305  (0.0513036); expected 118.9 (0.02)
+Passed bias filter:                      110  (0.0185029); expected 118.9 (0.02)
+Passed Vit filter:                         6  (0.00100925); expected 5.9 (0.001)
+Passed Fwd filter:                         2  (0.000336417); expected 0.1 (1e-05)
+Initial search space (Z):               5945  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9370.87
+//
+[ok]

@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395961_GCA_000022045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.3e-67  222.2   1.8    7.1e-67  222.1   1.8    1.0  1  ACL47314.1  ATP synthase F1, epsilon subunit [Cyanothece sp. 
+  ------ inclusion threshold ------
+        1.5    7.3  12.8        1.9    6.9   4.7    2.6  2  ACL44357.1  efflux transporter, RND family, MFP subunit [Cyan
+          2    6.9  16.3         20    3.6  16.1    2.3  1  ACL44409.1  efflux transporter, RND family, MFP subunit [Cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> ACL47314.1  ATP synthase F1, epsilon subunit [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  222.1   1.8     4e-70   7.1e-67       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 222.1 bits;  conditional E-value: 4e-70
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pdktvwd+ aeevilpsttgqlgilsghaplltal+tgvmrvr+ k  +w  ial+ggfaeve++evtilvn+aergd+i+  +a a+++
+  ACL47314.1   1 MTLTVRVIAPDKTVWDSPAEEVILPSTTGQLGILSGHAPLLTALETGVMRVRSGK--EWLPIALMGGFAEVENNEVTILVNAAERGDRIDRAQAEASYA 97 
+                 9***************************************************875..8***************************************** PP
+
+        atpE 100 eaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                 +aqtkl+q ++ ++rqa+iqa q +krarar+qaagg+v
+  ACL47314.1  98 AAQTKLSQAEQsDSRQAKIQAVQELKRARARVQAAGGVV 136
+                 ********9762669**********************97 PP
+
+>> ACL44357.1  efflux transporter, RND family, MFP subunit [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   4.7    0.0011       1.9      92     131 ..     159     198 ..     138     203 .. 0.88
+   2 ?    4.6   1.1    0.0058        10      89     127 ..     226     264 ..     209     271 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.0011
+        atpE  92 eearaafneaqtklnqvkaedrqaqiqatqafkrararfq 131
+                  ea aa ++aq+ l+q +++ rq+q  at  +++ar+++ 
+  ACL44357.1 159 AEAIAAIQQAQADLQQAQENYRQQQKIATTDIQQARTQLS 198
+                 58999*******************************9875 PP
+
+  == domain 2  score: 4.6 bits;  conditional E-value: 0.0058
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatqafkrar 127
+                  +l  araa ++a ++l+  +a  + ++ qa+  + r+r
+  ACL44357.1 226 TQLAAARAALAKASSRLQVTEAAAQLKRAQANVDVARSR 264
+                 57899***********98887777777777776665555 PP
+
+>> ACL44409.1  efflux transporter, RND family, MFP subunit [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.6  16.1     0.011        20      21     123 ..     122     225 ..     119     242 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.011
+        atpE  21 evilpsttgqlgilsghaplltaldtgvmrvrasknqdw.qaiallgg..faeveedevtilvn.gaergdkinleearaafneaqtklnqvkaedrqa 115
+                 e++  ++  q g+    a l  a ++gv + +a  nq+  q + +l    +a +e++ ++ l+  ga      +l+ a +a ++aq+kl+qv a+ rqa
+  ACL44409.1 122 EMVAQTSQAQAGVAQAQANLAQA-QAGVAQAQAGLNQQLaQRLDVLSAlkLARIEQKRMADLLKeGAVSQ--QQLDLANTALEQAQAKLAQVDANIRQA 217
+                 56666777899999999987766.78999999999988624566666422799***99986665155544..4677799*******************9 PP
+
+        atpE 116 qiqatqaf 123
+                 q   +q+ 
+  ACL44409.1 218 QATINQSQ 225
+                 98777653 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5327  (1638061 residues searched)
+Passed MSV filter:                       195  (0.036606); expected 106.5 (0.02)
+Passed bias filter:                      141  (0.0264689); expected 106.5 (0.02)
+Passed Vit filter:                        14  (0.00262812); expected 5.3 (0.001)
+Passed Fwd filter:                         5  (0.000938615); expected 0.1 (1e-05)
+Initial search space (Z):               5327  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 5610.36
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/940191_GCA_001858125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusC  [M=456]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-10   37.8   8.4    2.1e-10   37.6   7.5    1.5  1  OHY31453.1  transporter [Cylindrospermopsis raciborskii MVCC1
+     0.0041   13.6   0.0      0.005   13.3   0.0    1.1  1  OHY33176.1  (2Fe-2S)-binding protein [Cylindrospermopsis raci
+
+
+Domain annotation for each sequence (and alignments):
+>> OHY31453.1  transporter [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.6   7.5   1.4e-13   2.1e-10     106     430 ..     252     578 ..     206     585 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 37.6 bits;  conditional E-value: 1.4e-13
+        cusC 106 twgakleqslslggrefialnmskkkieksktdfktvnenyllnvasayynilktqktlkiaqenlnrle.khkdvtklrlkvgeitktvvlraeaevs 203
+                    a l   l   gr   a++ +  ++   + ++    e+  lnva+ yy + +++ +++ia+  ++  +   +d   l  + g  tk  vlr++ +++
+  OHY31453.1 252 DSQAELRYDLYTSGRRTAAIKEAEEQVRLQQFEVERQSEEIRLNVATEYYGLQQSDESVRIARSAVENSQaSLRDAQAL-ERAGVGTKFDVLRSQVNLA 349
+                 4567888899999**************************************************9986665156777666.477888************* PP
+
+        cusC 204 qaqsdviratnnlkmakanliklteiednftvretsfesididelaslkeqav...tnrtelksfdlqtqiakdqvrfvkstylpdvsleaaytgndts 299
+                 ++q ++  a  +  +a+  l    ++ + +++  + +  +     +sl +  v    nr+el+    + +i  +q +   +t  p++s+ a y   d  
+  OHY31453.1 350 NSQQELTDALSQQAIARRRLALRLNLPQSVSITASDLVQLAGLWKSSLEDSIVlayQNRAELQQKLAERNIREQQRKQALATLGPQISFIARYDLLDEF 448
+                 ******************998888888877766665555555555788876543337******99999999999999****************998876 PP
+
+        cusC 300 pstsfnnkdviygqislkiplieggrrkaeideaksklkqsellykdlkstislevddayynlmtqqsvlgkiqdqlklakdnyekiseqfkegfansi 398
+                       n     g +   + l +gg  +a    ak+ +  +e  + + +  + ++v++ay   +++   +      l  ak+       +f+ g+    
+  OHY31453.1 449 NDGVAINDGYSVG-LRASMNLYDGGASRARAARAKTEIAIAEAEFAERRNQVRFQVEEAYSSHLANLENVQTAATALDQAKESLRLARLRFQAGVGTQT 546
+                 6554444333333.5556789*****************************************9999999999999************************ PP
+
+        cusC 399 divdannflvsteqqlinaqydyqigililkr 430
+                 d+++a+  l  +e + + a  +y++ +  l+r
+  OHY31453.1 547 DVINAQSELTRSEANRVRAILNYNLALTRLQR 578
+                 ************************99988887 PP
+
+>> OHY33176.1  (2Fe-2S)-binding protein [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   3.3e-06     0.005      16      52 ..      26      61 ..      17      73 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 3.3e-06
+        cusC 16 fifclsidkqiyavenvcpeysladlyeaaiekseii 52
+                 i++l  d+q yaven cp   +  +  a ie+s ii
+  OHY33176.1 26 NILVLNHDNQYYAVENSCPHLKV-PMKSAKIENSTII 61
+                588999*************9876.688999****998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (456 nodes)
+Target sequences:                         3057  (989589 residues searched)
+Passed MSV filter:                        91  (0.0297677); expected 61.1 (0.02)
+Passed bias filter:                       51  (0.016683); expected 61.1 (0.02)
+Passed Vit filter:                         8  (0.00261694); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000654236); expected 0.0 (1e-05)
+Initial search space (Z):               3057  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9025.05
+//
+[ok]

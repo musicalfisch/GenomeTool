@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.011   12.1   0.2      0.018   11.4   0.2    1.2  1  AAZ59006.1  putative sugar-phosphate nucleotidyl transferase 
+       0.63    6.3  21.2       0.32    7.3   4.8    2.3  2  AAZ57687.1  UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltr
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ59006.1  putative sugar-phosphate nucleotidyl transferase [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.2   1.6e-05     0.018      60     109 ..     280     329 ..     258     336 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.6e-05
+        ccmN  60 qgviaigagailgtgvlvvgrgeigenacigstttifnasvaamslvpsg 109
+                 +g i +g  + +  gv +vg   ig  +ci   +ti n+ +   sl+  g
+  AAZ59006.1 280 KGPIYVGGMTRIEDGVTIVGPSMIGPSCCICEGATIDNSIIFDYSLIGPG 329
+                 6788899999999**************************99999998766 PP
+
+>> AAZ57687.1  UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   4.8    0.0003      0.32      43     100 ..     117     177 ..     105     194 .. 0.69
+   2 ?    4.7   8.5    0.0018       1.9      39      97 ..     244     305 ..     208     319 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.0003
+        ccmN  43 iigagaclgmgtil..tayqgv.iaigagailgtgvlvvgrgeigenacigstttifnasv 100
+                 +ig    +g+g  +   ay g    igag+i+ +gv++  +  ig +  i + + i   s 
+  AAZ57687.1 117 VIGQNVKIGLGVSIgaNAYIGDnTEIGAGTIIHAGVVLYRNVRIGSKNLIHANSVIHSGSK 177
+                 5666666666665511467774257999999999999999999999888888888877664 PP
+
+  == domain 2  score: 4.7 bits;  conditional E-value: 0.0018
+        ccmN  39 nsqiiigagaclgmgtiltayqgvi...aigagailgtgvlvvgrgeigenacigstttifn 97 
+                 +  + ig g   g g  ++a  g+     ig g il   v +  r +ig+     s t i  
+  AAZ57687.1 244 DNLVQIGHGVTTGKGCAMAAQVGIAggaQIGDGVILAGQVGISNRVKIGDGVIASSKTGIVS 305
+                 44567899999999999888766532214666666666666666666666655555555543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        61  (0.0282016); expected 43.3 (0.02)
+Passed bias filter:                       50  (0.023116); expected 43.3 (0.02)
+Passed Vit filter:                         6  (0.00277393); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.000924642); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5895.71
+//
+[ok]

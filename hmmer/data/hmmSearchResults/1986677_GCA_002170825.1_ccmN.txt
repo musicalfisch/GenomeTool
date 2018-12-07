@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986677_GCA_002170825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.41    6.3   7.5       0.42    6.3   5.0    2.0  2  OUW28743.1  UDP-N-acetylglucosamine diphosphorylase/glucosami
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW28743.1  UDP-N-acetylglucosamine diphosphorylase/glucosamine-1-phosphate N-acetyltransferase, partial [Cyanobacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.3   0.3     0.005         7      64     124 ..     258     318 ..     250     319 .. 0.86
+   2 ?    6.3   5.0    0.0003      0.42      37      97 ..     304     368 ..     283     390 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 2.3 bits;  conditional E-value: 0.005
+        ccmN  64 aigagailgtgvlvvgrgeigenacigstttifnasvaamslvpsgsligdtsrqitievs 124
+                 ++g g  +g    +    +i + + ig    + ++ + a s v   s igd+s    ++v 
+  OUW28743.1 258 TVGNGVAIGPFAHLRPAADIADGCRIGNFVEVKKSQIGAGSKVNHLSYIGDASLGTNVNVG 318
+                 5677777777777888899999999***************************988887775 PP
+
+  == domain 2  score: 6.3 bits;  conditional E-value: 0.0003
+        ccmN  37 apnsqiiigagaclgmgtiltayqgv....iaigagailgtgvlvvgrgeigenacigstttifn 97 
+                 +   +  +g+   +g gti + y+gv      ig g+  g+  ++v    +g +  ig+ +ti +
+  OUW28743.1 304 SYIGDASLGTNVNVGAGTITANYDGVrkhrTVIGDGSKTGANSVLVAPVTLGAKVTIGAGSTITK 368
+                 5555666899999************95544579*************************9999864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         1406  (396538 residues searched)
+Passed MSV filter:                        49  (0.0348506); expected 28.1 (0.02)
+Passed bias filter:                       40  (0.0284495); expected 28.1 (0.02)
+Passed Vit filter:                         7  (0.00497866); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000711238); expected 0.0 (1e-05)
+Initial search space (Z):               1406  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 8723.84
+//
+[ok]

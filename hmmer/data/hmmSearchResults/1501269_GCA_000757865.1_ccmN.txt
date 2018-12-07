@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501269_GCA_000757865.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0049   13.3   4.0       0.19    8.1   0.2    2.2  2  AIQ97911.1  Acyl-(acyl-carrier-protein)--UDP-N- acetylglucosa
+  ------ inclusion threshold ------
+      0.012   12.0   0.2      0.019   11.4   0.2    1.2  1  AIQ96331.1  Glucose-1-phosphate adenylyltransferase [Prochlor
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ97911.1  Acyl-(acyl-carrier-protein)--UDP-N- acetylglucosamine O-acyltransferase [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.1   0.2   0.00017      0.19      43      89 ..      29      72 ..       6      83 .. 0.74
+   2 !    6.5   0.4    0.0005      0.57      66     113 ..     115     163 ..      93     175 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00017
+        ccmN 43 iigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenaci 89
+                 +g g c+g g+++      + +g  + +g+ v++ g+ +ig n  i
+  AIQ97911.1 29 ELGRGVCVGSGSVIGP---DVIVGPNTWIGANVIIEGKVKIGSNNKI 72
+                5799999999999875...3457888888888888888888888654 PP
+
+  == domain 2  score: 6.5 bits;  conditional E-value: 0.0005
+        ccmN  66 gagailgtgvlvvgrgeigenacigstttifnas.vaamslvpsgslig 113
+                 g  +i+g   l++    +g n+ igs+  i n+  +a   +v   ++ig
+  AIQ97911.1 115 GEKTIVGNQNLLMAYSHLGHNCDIGSSVVIANSVqIAGHVVVDDRAVIG 163
+                 566899999999999999***99**999999975155566666667776 PP
+
+>> AIQ96331.1  Glucose-1-phosphate adenylyltransferase [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.2   1.6e-05     0.019      60     109 ..     280     329 ..     258     336 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.6e-05
+        ccmN  60 qgviaigagailgtgvlvvgrgeigenacigstttifnasvaamslvpsg 109
+                 +g i +g  + +  gv +vg   ig  +ci   +ti n+ +   sl+  g
+  AIQ96331.1 280 KGPIYVGGMTRIEDGVTIVGPSMIGPSCCICEGATIDNSIIFDYSLIGPG 329
+                 6788899999999**************************99999998766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2287  (554079 residues searched)
+Passed MSV filter:                        51  (0.0223); expected 45.7 (0.02)
+Passed bias filter:                       43  (0.0188019); expected 45.7 (0.02)
+Passed Vit filter:                         5  (0.00218627); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000874508); expected 0.0 (1e-05)
+Initial search space (Z):               2287  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6094.87
+//
+[ok]

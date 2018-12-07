@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801611_GCA_001784615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-11   40.4   2.8    2.1e-05   21.3   0.0    3.4  3  OGI17603.1  hypothetical protein A2255_08495 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI17603.1  hypothetical protein A2255_08495 [Candidatus Melainabacteria bacterium RIFOXYA2_FULL_32_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.3     5e-07     0.001      66     123 ..      47     105 ..       5     109 .. 0.69
+   2 !   21.3   0.0     1e-08   2.1e-05      39     123 ..     114     197 ..     107     199 .. 0.88
+   3 !    4.5   0.1    0.0014       2.8       9     117 ..     176     224 ..     170     241 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 5e-07
+        cpcF  66 avpyllanl.dgynygarawatralagigdvrgldllleaavsdfsfsvrrgaarglgn 123
+                 av  l+  l +  n   r +a+ral  +gd+     l+e+   d    vr  aar lg 
+  OGI17603.1  47 AVEPLIDVLkNDKNGSVRLYAARALGELGDISSTMHLIESLREDRNVDVRVRAARALGR 105
+                 34444444414556677999999999999999999999999999999999999999986 PP
+
+  == domain 2  score: 21.3 bits;  conditional E-value: 1e-08
+        cpcF  39 tltdvlrynnpgasvaavdgliaigkaavpyllanldgynygarawatralagigdvrgldllleaavsdfsfsvrrgaarglgn 123
+                  l + l  +n    ++a d li ig  av  l+  l   +   r+ atral  +g ++ ++ ++ a ++d    vr  a   lg+
+  OGI17603.1 114 PLVEALSDENSQVCITATDALIEIGDFAVDALIESLRHEKVNVRCDATRALGELGSMKAVEPII-AMLTDEWVNVRIYAVTSLGK 197
+                 5778899999*************************************************99877.56777778888888777775 PP
+
+  == domain 3  score: 4.5 bits;  conditional E-value: 0.0014
+        cpcF   9 iiavekadsanelltavenlaaakseaaiptltdvlrynnpgasvaavdgliaigkaavpyllanldgynygarawatralagigdvrgldllleaavs 107
+                 iia+   +  n  + av  l       a+p+l dvl+ ++                                                           
+  OGI17603.1 176 IIAMLTDEWVNVRIYAVTSLGKLGDTQAVPALIDVLKNEQENE-------------------------------------------------------- 218
+                 4444445555555666666666666666666666665443322........................................................ PP
+
+        cpcF 108 dfsfsvrrga 117
+                      vr ga
+  OGI17603.1 219 ----LVRAGA 224
+                 ....233333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         2045  (635410 residues searched)
+Passed MSV filter:                        59  (0.0288509); expected 40.9 (0.02)
+Passed bias filter:                       41  (0.0200489); expected 40.9 (0.02)
+Passed Vit filter:                         4  (0.00195599); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000488998); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6576.49
+//
+[ok]

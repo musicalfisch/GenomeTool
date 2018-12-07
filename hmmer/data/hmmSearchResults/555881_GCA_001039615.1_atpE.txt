@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/555881_GCA_001039615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.7e-62  206.4   0.3    5.2e-62  206.2   0.3    1.0  1  CCQ61022.1  ATP synthase epsilon chain [Crocosphaera watsonii
+  ------ inclusion threshold ------
+      0.046   12.1   2.0        0.1   11.0   2.0    1.6  1  CCQ62335.1  similar to Multidrug resistance efflux pump [Croc
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ61022.1  ATP synthase epsilon chain [Crocosphaera watsonii WH 0401]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  206.2   0.3   2.1e-65   5.2e-62       1     137 []       1     136 []       1     136 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 206.2 bits;  conditional E-value: 2.1e-65
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m ltvrvi+pdktvwd+  ee+ilpst+gqlgil ghaplltaldtgv+rvr++k  dw++ia++ggfaeve+de+ +lvn+ae gd i+ e a+a+++
+  CCQ61022.1   1 MPLTVRVITPDKTVWDGDVEEIILPSTSGQLGILGGHAPLLTALDTGVIRVRPDK--DWKSIAVMGGFAEVEQDEIKVLVNSAEAGDDIDKETAKADYS 97 
+                 89***************************************************87..8***************************************** PP
+
+        atpE 100 eaqtklnqv.kaedrqaqiqatqafkrararfqaagglv 137
+                 +aq++l++  k+++  +q++at afkrarar+qaagglv
+  CCQ61022.1  98 AAQSRLEEAnKTGEASEQMKATSAFKRARARLQAAGGLV 136
+                 ******9872568999*********************97 PP
+
+>> CCQ62335.1  similar to Multidrug resistance efflux pump [Crocosphaera watsonii WH 0401]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   2.0   4.1e-05       0.1      74     132 ..      10      68 ..       5      73 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 4.1e-05
+        atpE  74 devtilvngaergdkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqa 132
+                 d +  l+n a+  + i l++ +a+f+eaq +l++++a+ r++ i qa + +  a+a++q 
+  CCQ62335.1  10 DRLDELLNDAQIKQGI-LQQFKASFQEAQEQLSKLEAGPRKEVIaQAVAELAEAKAQYQI 68 
+                 5556677888777776.8999*******************998868899999****9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4997  (1180112 residues searched)
+Passed MSV filter:                       146  (0.0292175); expected 99.9 (0.02)
+Passed bias filter:                      126  (0.0252151); expected 99.9 (0.02)
+Passed Vit filter:                        12  (0.00240144); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040024); expected 0.0 (1e-05)
+Initial search space (Z):               4997  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8083.77
+//
+[ok]

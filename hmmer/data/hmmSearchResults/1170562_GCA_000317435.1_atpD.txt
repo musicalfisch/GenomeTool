@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170562_GCA_000317435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-90  298.4   4.1      6e-90  298.2   4.1    1.0  1  AFZ00623.1  ATP synthase F1 subcomplex delta subunit [Calothr
+  ------ inclusion threshold ------
+      0.016   13.3   4.0        4.1    5.4   0.0    4.6  5  AFZ01857.1  NB-ARC domain protein [Calothrix sp. PCC 6303]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ00623.1  ATP synthase F1 subcomplex delta subunit [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  298.2   4.1   2.2e-93     6e-90       1     183 [.       1     183 []       1     183 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 298.2 bits;  conditional E-value: 2.2e-93
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mksd+at+e+aqpya+al+++aqs+nlte++g+dar+l++ll++s++l++f+dnpf+ penkk+++ ++lg+ +n+++r fl+llvd++ri+ l ai +
+  AFZ00623.1   1 MKSDIATSEIAQPYAEALMTVAQSNNLTEAFGNDARSLVTLLNDSQQLRDFFDNPFILPENKKALIGRVLGDDTNAFFRSFLMLLVDKKRISVLSAICK 99 
+                 9************************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qyla+lrqlnqtvlaev savpl e+q qavkekv+a+t+ar+vele k+d++liggviikvgsqvidaslrgqlrrlslrlss
+  AFZ00623.1 100 QYLAILRQLNQTVLAEVVSAVPLNETQEQAVKEKVMAMTNAREVELEKKVDTELIGGVIIKVGSQVIDASLRGQLRRLSLRLSS 183
+                 **********************************************************************************98 PP
+
+>> AFZ01857.1  NB-ARC domain protein [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.1     0.051   1.4e+02       3      45 ..     405     449 ..     403     461 .. 0.76
+   2 ?    0.6   0.0     0.044   1.2e+02      64     108 ..     533     580 ..     482     584 .. 0.83
+   3 ?    0.3   0.1     0.053   1.5e+02      65     108 ..     618     664 ..     609     682 .. 0.86
+   4 ?    0.9   0.0     0.035        96      65     109 ..     702     749 ..     697     765 .. 0.83
+   5 ?    5.4   0.0    0.0015       4.1      64     109 ..     785     833 ..     777     849 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.051
+        atpD   3 sdaataevaqpyaqallsiaqs..qnlteevgedartllsllkgs 45 
+                 +d ++ e+ q ++++++ iaq+  q  t e+ +  +t +  l++ 
+  AFZ01857.1 405 ADGESKEIKQAFTNTFMEIAQTipQSPTLEFINSVKTAIPHLTEI 449
+                 677889**************9755777888999999888766653 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.044
+        atpD  64 nvlkqllgeg...vnpylrnfllllvdrrriafleailqqylallrql 108
+                 ++ kqllge+   v++ l n+  l   + r    e++  q l l +q+
+  AFZ01857.1 533 ELYKQLLGENhpdVATSLNNLAALYDSQGRYEAAEPLYIQALELYKQM 580
+                 578999999633367788888888888999999999999999998886 PP
+
+  == domain 3  score: 0.3 bits;  conditional E-value: 0.053
+        atpD  65 vlkqllgeg...vnpylrnfllllvdrrriafleailqqylallrql 108
+                 + kqllge+   v++ l n+  l   + r    e++  q l l +ql
+  AFZ01857.1 618 LRKQLLGENhphVAQSLNNLAALYRSQGRYEAAEPLYIQALELRKQL 664
+                 6699***9744478899999999999**********99999999987 PP
+
+  == domain 4  score: 0.9 bits;  conditional E-value: 0.035
+        atpD  65 vlkqllgeg...vnpylrnfllllvdrrriafleailqqylallrqln 109
+                 + kqllge+   v++ l  + +l v + r    e++  q + l +ql 
+  AFZ01857.1 702 LYKQLLGENhphVATSLSGLAVLYVSQGRYEAAEPMCLQAFELYKQLL 749
+                 789****9733367789999999*************999999999985 PP
+
+  == domain 5  score: 5.4 bits;  conditional E-value: 0.0015
+        atpD  64 nvlkqllgeg...vnpylrnfllllvdrrriafleailqqylallrqln 109
+                 ++ kqllge+   v++ l n+ ll v + r    e++  q + l +ql 
+  AFZ01857.1 785 ELYKQLLGENhpnVATSLDNLALLYVSQGRYEAAEPMCLQAFELYKQLL 833
+                 5789****963336789********************999999999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5535  (1829740 residues searched)
+Passed MSV filter:                       181  (0.032701); expected 110.7 (0.02)
+Passed bias filter:                      117  (0.0211382); expected 110.7 (0.02)
+Passed Vit filter:                        15  (0.00271003); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000361337); expected 0.1 (1e-05)
+Initial search space (Z):               5535  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 6733.44
+//
+[ok]

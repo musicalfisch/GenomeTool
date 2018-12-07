@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.015   11.8   0.0       0.62    6.5   0.0    2.2  2  ABI45460.1  Predicted hydrolase [Synechococcus sp. CC9311]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI45460.1  Predicted hydrolase [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.5   0.0   0.00022      0.62      87     114 ..      97     124 ..      71     136 .. 0.83
+   2 ?    3.2   0.0    0.0022       6.5     189     218 ..     232     262 ..     215     281 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.00022
+        anaA  87 sqspfvffghslgsvvslevahqlgdrf 114
+                  + p+v++g s+g vv+l  a+ lg+  
+  ABI45460.1  97 IDRPVVLVGNSIGGVVALRAAQLLGEEH 124
+                 4679*****************9999864 PP
+
+  == domain 2  score: 3.2 bits;  conditional E-value: 0.0022
+        anaA 189 kslpcpilalggeadegvsleelrew.ekyt 218
+                 k+l  p+  + gead    ++e +ew eky 
+  ABI45460.1 232 KNLSIPVHMIWGEADPWEPVKEAKEWkEKYE 262
+                 78999*********************55664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        73  (0.025242); expected 57.8 (0.02)
+Passed bias filter:                       71  (0.0245505); expected 57.8 (0.02)
+Passed Vit filter:                         5  (0.00172891); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000345781); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9543.56
+//
+[ok]

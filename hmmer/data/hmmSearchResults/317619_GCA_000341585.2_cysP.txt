@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317619_GCA_000341585.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysP  [M=347]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0023   14.8   0.0     0.0034   14.2   0.0    1.2  1  KKJ00360.1  ABC transporter substrate-binding protein [Prochl
+  ------ inclusion threshold ------
+      0.019   11.8   0.0        1.9    5.2   0.0    2.3  2  KKJ00650.1  hypothetical protein PROH_04940 [Prochlorothrix h
+
+
+Domain annotation for each sequence (and alignments):
+>> KKJ00360.1  ABC transporter substrate-binding protein [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   1.8e-06    0.0034     266     300 ..     289     323 ..     260     332 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 1.8e-06
+        cysP 266 kgtrkvaeafvqflftpaaqrefaqvgfrpveptv 300
+                  g r+ a+af++fl  p+ q  f   gfrp++p++
+  KKJ00360.1 289 GGQRRSAQAFLRFLGEPEQQAVFVAYGFRPLDPAL 323
+                 5899****************************986 PP
+
+>> KKJ00650.1  hypothetical protein PROH_04940 [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   0.0    0.0019       3.5      67     128 ..      54     115 ..       4     136 .. 0.72
+   2 ?    5.2   0.0     0.001       1.9     258     296 ..     220     258 ..     207     261 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.0019
+        cysP  67 ktgqkvtfeqsyggsgsqtravidgleadvvalalaldtkkieqagliqpgwekeapndsiv 128
+                 + g++  +  ++ggsg+  r + +g   d+   a  +    +e+ gl+  g  ++   +s+v
+  KKJ00650.1  54 QPGDRPPLRYTFGGSGTLQRQIEQGAPVDLFLAAAPFPLDALERQGLLWAGSRRNLLGNSLV 115
+                 456667777889*****************998888899999999999999988776666655 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.001
+        cysP 258 vvdanvdkkgtrkvaeafvqflftpaaqrefaqvgfrpv 296
+                    a ++  g r+ a af++fl  p aq  f + gf  v
+  KKJ00650.1 220 YPGAVLQASGQRQQALAFLDFLGQPPAQSVFRRYGFGIV 258
+                 44566677899************************9755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (347 nodes)
+Target sequences:                         3737  (1137027 residues searched)
+Passed MSV filter:                        71  (0.0189992); expected 74.7 (0.02)
+Passed bias filter:                       64  (0.017126); expected 74.7 (0.02)
+Passed Vit filter:                         7  (0.00187316); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000535189); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9863.71
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173020_GCA_000317145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrN  [M=518]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.028   11.2   0.0       0.11    9.2   0.0    1.7  2  AFY91778.1  hypothetical protein Cha6605_0489 [Chamaesiphon m
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY91778.1  hypothetical protein Cha6605_0489 [Chamaesiphon minutus PCC 6605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.2   0.0   1.9e-05      0.11      32      69 ..     152     188 ..     139     222 .. 0.83
+   2 ?   -0.8   0.0     0.019   1.2e+02     198     260 ..     314     371 ..     309     406 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 1.9e-05
+        cyrN  32 ieqesyfvlhaprqtgkttamlalakqltdtgnyaavl 69 
+                  + ++ + l+aprq gkt+ ml l +q  ++g+ + v 
+  AFY91778.1 152 AKPHALIRLKAPRQMGKTSLMLRLLRQAESQGDRT-VY 188
+                 566777889******************98887754.44 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.019
+        cyrN 198 spfnikvasltlrnfnlaevgelyqqhtaatgqiftpeaietafdltqgqpwlvnalakeive 260
+                 spfn+ + s+ l +f  + v+ l  +h  +  qi     i+  + +  g p+lv     ei  
+  AFY91778.1 314 SPFNVGI-SIELGEFTSDRVTLLAAKHQLNWTQI----DIDNLMSVIGGHPFLVRLAMFEIAS 371
+                 8999986.89999999999999999999887777....5677778888999998876666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (518 nodes)
+Target sequences:                         5945  (1793467 residues searched)
+Passed MSV filter:                       169  (0.0284272); expected 118.9 (0.02)
+Passed bias filter:                      122  (0.0205214); expected 118.9 (0.02)
+Passed Vit filter:                        10  (0.00168209); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000168209); expected 0.1 (1e-05)
+Initial search space (Z):               5945  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 13271.66
+//
+[ok]

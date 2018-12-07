@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-15   53.3   0.1    2.4e-15   53.2   0.1    1.0  1  CCH64489.1  O-methyltransferase [Richelia intracellularis HM0
+  ------ inclusion threshold ------
+      0.017   11.2   0.0      0.054    9.6   0.0    1.8  2  CCH66024.1  WD-40 repeat protein [Richelia intracellularis HM
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH64489.1  O-methyltransferase [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.2   0.1   2.9e-18   2.4e-15       1      54 [.       1      54 []       1      54 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 53.2 bits;  conditional E-value: 2.9e-18
+        AvaC  1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaf 54
+                m+n+tlgl  q+y y  s+ l+es  l +lr+eta  p+  mqi+peqgq++af
+  CCH64489.1  1 MTNKTLGLSPQLYDYLLSVSLKESASLIKLREETAMLPMRRMQISPEQGQLIAF 54
+                89**************************************************98 PP
+
+>> CCH66024.1  WD-40 repeat protein [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   0.0   6.5e-05     0.054      60      94 ..     105     139 ..      82     147 .. 0.86
+   2 ?   -2.1   0.0      0.23     2e+02      67      91 ..     196     220 ..     188     226 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 6.5e-05
+        AvaC  60 gakkaleigvftgysalvvalalppegkliacdls 94 
+                 + k+ +e+  ++g+s+ v  +a+ p+gkl+a   s
+  CCH66024.1 105 NIKNKIEVACLSGHSSSVNDIAICPHGKLLASGSS 139
+                 578899************************98655 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.23
+        AvaC  67 igvftgysalvvalalppegkliac 91 
+                 i  +tg+++ +  l++ p g ++a 
+  CCH66024.1 196 INTLTGHTSGIKHLTFSPSGDILAS 220
+                 6778999999999999999999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        41  (0.0244922); expected 33.5 (0.02)
+Passed bias filter:                       31  (0.0185185); expected 33.5 (0.02)
+Passed Vit filter:                         4  (0.00238949); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00119474); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 3629.71
+//
+[ok]

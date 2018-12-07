@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752064_GCA_001548435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.4e-10   36.8   0.0    9.7e-10   36.8   0.0    1.0  1  BAU09667.1  unnamed protein product [Leptolyngbya sp. NIES-37
+    3.5e-07   28.4   2.4    2.3e-06   25.7   1.1    2.2  2  BAU11179.1  nitrite reductase [NAD(P)H], large subunit [Lepto
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU09667.1  unnamed protein product [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.8   0.0   2.9e-13   9.7e-10     235     293 ..      12      70 ..       4      78 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 36.8 bits;  conditional E-value: 2.9e-13
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                  v +elr+ li+d+++v+l + d+ ++k  l++a++s+ s++++l++ +e rl++ +  
+  BAU09667.1  12 TVLDELRPYLISDGGNVELVELDGPIVKLRLQGACGSCPSSTMTLRMGIERRLREMIPE 70 
+                 566799***********************************************997743 PP
+
+>> BAU11179.1  nitrite reductase [NAD(P)H], large subunit [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.7   1.1   6.8e-10   2.3e-06     140     211 ..     418     489 ..     408     513 .. 0.84
+   2 !    3.9   0.0    0.0031        10     144     196 ..     484     536 ..     479     562 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 25.7 bits;  conditional E-value: 6.8e-10
+        finU 140 eGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaatvrnslkknta 211
+                 + a +c+c  ++++ i   i ++ lt+   + +  kaG GcG c+  + d++k+  k++ + v+n+l ++ a
+  BAU11179.1 418 DTAQICSCNNVTKAAICDAIQNQGLTDIGSLKQCTKAGTGCGGCVPLVTDLLKSELKKAGIEVKNHLCEHFA 489
+                 5689**************************************************999999999998776654 PP
+
+  == domain 2  score: 3.9 bits;  conditional E-value: 0.0031
+        finU 144 vctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkk 196
+                 +c  f+ s + +  ++  +n+ t +q+ +   +G Gc  c  +i  i+++  +
+  BAU11179.1 484 LCEHFAYSRQELYHLVRSQNIHTFDQLLQQHGTGQGCEICKPAIGSILASAWN 536
+                 7999******************************************9998655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         6635  (2004652 residues searched)
+Passed MSV filter:                       262  (0.0394876); expected 132.7 (0.02)
+Passed bias filter:                      207  (0.0311982); expected 132.7 (0.02)
+Passed Vit filter:                        14  (0.00211002); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301432); expected 0.1 (1e-05)
+Initial search space (Z):               6635  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10023.26
+//
+[ok]

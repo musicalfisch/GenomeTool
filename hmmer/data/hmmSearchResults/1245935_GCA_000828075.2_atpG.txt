@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245935_GCA_000828075.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-51  173.1  14.8    1.3e-51  172.9  14.8    1.0  1  KIJ77839.1  ATP synthase F0F1 subunit B' [Tolypothrix campylo
+    0.00054   18.5  15.3    0.00071   18.1  15.3    1.1  1  KIJ77624.1  ATP synthase F0F1 subunit B [Tolypothrix campylon
+
+
+Domain annotation for each sequence (and alignments):
+>> KIJ77839.1  ATP synthase F0F1 subunit B' [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  172.9  14.8   3.6e-55   1.3e-51       1     142 [.      19     160 ..      19     161 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 172.9 bits;  conditional E-value: 3.6e-55
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp+ma+qf+lla+ilna+fykpl k +d+r ey+r+ +  a+e+l+k+e l q+ye +l+ ar+q+q +ia+aqa+aqk+a+e+ a aq+ea
+  KIJ77839.1  19 LFDLDATLPLMAIQFLLLAIILNAIFYKPLGKAIDDRNEYVRNNQLEAQERLSKAEKLAQQYEQELAGARRQAQTVIADAQAQAQKIAAEKTADAQREA 117
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv 142
+                  a++e  a+ei qqk++a+ sle +v  lsrqilekllg++lv
+  KIJ77839.1 118 QAQREQAASEIEQQKQQALASLEQEVDGLSRQILEKLLGADLV 160
+                 *****************************************98 PP
+
+>> KIJ77624.1  ATP synthase F0F1 subunit B [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.1  15.3   2.1e-07   0.00071      11     136 ..      34     162 ..      27     168 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 18.1 bits;  conditional E-value: 2.1e-07
+        atpG  11 malqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeav 106
+                 +  ++i la+i+  +f    + l + l+er e i  +   a ++   + a + e + +l+ a+ ++++i   aq +aqk     +a +  e    +e+ 
+  KIJ77624.1  34 LETNLINLAIIISVLFIfgrRVLGNTLQERRERIATAIKTAEQRAKDAAAALAEQQQKLAQAQAEAEKIKKAAQENAQKAREAILAQTAVEIERLRETA 132
+                 55678999*999998853447899**********98777765555556678899999*********************966655666666666669999 PP
+
+        atpG 107 aaeiaqqkeeafrslegqvaslsrqilekl 136
+                 a+++  ++e+a+  l  +v +l+ q +e  
+  KIJ77624.1 133 ASDLNTEREKAIAQLRQRVVALALQKVESE 162
+                 ***********************9998865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         6936  (2144437 residues searched)
+Passed MSV filter:                       312  (0.0449827); expected 138.7 (0.02)
+Passed bias filter:                      155  (0.0223472); expected 138.7 (0.02)
+Passed Vit filter:                        16  (0.00230681); expected 6.9 (0.001)
+Passed Fwd filter:                         2  (0.000288351); expected 0.1 (1e-05)
+Initial search space (Z):               6936  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 3407.27
+//
+[ok]

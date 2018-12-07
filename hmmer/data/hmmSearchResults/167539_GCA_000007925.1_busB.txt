@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/busB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/167539_GCA_000007925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       busB  [M=678]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-08   28.7   9.0    5.5e-08   28.3   9.0    1.1  1  AAP99466.1  ABC-type peptide transporter permease component [
+  ------ inclusion threshold ------
+       0.02   10.0  17.9        4.4    2.2  17.9    2.0  1  AAP99643.1  ABC-type phosphate transport system permease comp
+
+
+Domain annotation for each sequence (and alignments):
+>> AAP99466.1  ABC-type peptide transporter permease component [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   9.0   5.8e-11   5.5e-08     120     231 ..      86     196 ..      79     234 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 5.8e-11
+        busB 120 ttlalvvtavvfcvligislgiacas.sdrvekflrplldamqtlpsfvylvpvvmlfgigavpgviatlvfavpplirltnlgirqvstev.veaaia 216
+                  +l +v+ av f+vlig+ +gi  a     v++++  +++++ t+p ++  v + +l+g g +   ia  v+ +p   r+      qv te+ +eaa +
+  AAP99466.1  86 VALQVVLLAVGFAVLIGVPIGILSAYmGGFVDRIMVLIMETLYTVPVLLLSVVIAFLLGRGILNAAIALCVVYIPQYFRVVRNQTMQVKTELyIEAARS 184
+                 46788999**************999725689************************************************************758***** PP
+
+        busB 217 fgstprqmlwevqip 231
+                 +g+ p  +   ++  
+  AAP99466.1 185 MGAGPLWI---MRRY 196
+                 ***99433...3322 PP
+
+>> AAP99643.1  ABC-type phosphate transport system permease component [Prochlorococcus marinus subsp. marinus str. CCMP1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2  17.9    0.0047       4.4     149     258 ..     142     250 ..       6     258 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.0047
+        busB 149 vekflrplldamqtlpsfvylvpvvmlfgigavpgviatlvfavpplirltnlgirqvstevveaaiafgstprqmlwevqiplamptilagvnqaill 247
+                 +e f+rp+l+ +  +  ++ ++     +g g  p ++  +v+ +p +  ++   ++qv +++ eaa  +g+t    +++v +p a+  i  gv   +  
+  AAP99643.1 142 MEPFIRPFLNLLYKMFGWIPFLST-QPIGPGIAPAILILVVMILPIITSISRDSLKQVPAKLREAAYGIGATRWTAMFNVILPAAISGITGGVLLGLGR 239
+                 578889988888777776655543.34688899999999999999999999*************************************99999888877 PP
+
+        busB 248 alsmsvvtsmi 258
+                 a+  ++  +mi
+  AAP99643.1 240 AMGETMAVTMI 250
+                 77665544443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (678 nodes)
+Target sequences:                         1882  (516756 residues searched)
+Passed MSV filter:                        83  (0.044102); expected 37.6 (0.02)
+Passed bias filter:                       49  (0.0260361); expected 37.6 (0.02)
+Passed Vit filter:                         3  (0.00159405); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.0010627); expected 0.0 (1e-05)
+Initial search space (Z):               1882  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 8759.01
+//
+[ok]

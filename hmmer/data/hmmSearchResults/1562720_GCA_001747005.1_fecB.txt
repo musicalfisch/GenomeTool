@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1562720_GCA_001747005.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-06   25.5   0.2    8.1e-05   19.3   0.0    2.3  2  OEJ79353.1  iron ABC transporter substrate-binding protein [C
+
+
+Domain annotation for each sequence (and alignments):
+>> OEJ79353.1  iron ABC transporter substrate-binding protein [Cyanobacterium sp. IPPAS B-1200]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   2.8e-08   8.1e-05      50     133 ..      44     124 ..      32     138 .. 0.71
+   2 !    3.6   0.0    0.0016       4.7      55     121 ..     167     239 ..     140     255 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 2.8e-08
+        fecB  50 pnepqrivvltneatdmvlalgvtpvgavksws...gdpyyeylakdmlgvpivgd.emqpnlekivalqpdliigsrlrqgqiyksl 133
+                  n+pqri+ lt  ++d++  l    +  +   s    dp +          p v + +  p+lekival+pdl+ig+     q    l
+  OEJ79353.1  44 VNQPQRIIALTSLSADIIYQLNPEKLVGIPGSSltrNDPRF-------ADYPTVSEgNAPPDLEKIVALEPDLVIGAEGFSDQTLAKL 124
+                 599***************99987654444333311134443.......3456666526779***************987666665555 PP
+
+  == domain 2  score: 3.6 bits;  conditional E-value: 0.0016
+        fecB  55 rivvltneatdmvlalgvtpvga..vkswsgdpy....yeylakdmlgvpivgdemqpnlekivalqpdliig 121
+                  i    n  t +v+ +   p+ a   +sw+gd      ++ +  d+ g    g  +    eki+  +p++ii 
+  OEJ79353.1 167 WIPAQVNSDTSVVVLVSRQPILApnKNSWAGDLLnqfqFNNVVADLQGSSQFGGYVTLSPEKILETDPEIIIL 239
+                 4556678889999999999997733579***9752212556789999**********************9995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         2934  (912232 residues searched)
+Passed MSV filter:                       102  (0.0347648); expected 58.7 (0.02)
+Passed bias filter:                       79  (0.0269257); expected 58.7 (0.02)
+Passed Vit filter:                         6  (0.00204499); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000340832); expected 0.0 (1e-05)
+Initial search space (Z):               2934  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9578.44
+//
+[ok]

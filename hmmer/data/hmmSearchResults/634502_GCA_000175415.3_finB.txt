@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/634502_GCA_000175415.3.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00071   16.3   0.0     0.0029   14.3   0.0    2.0  1  KDR58845.1  molybdenum cofactor biosynthesis protein MoeA [Ar
+  ------ inclusion threshold ------
+      0.049   10.2   0.0       0.26    7.8   0.0    1.8  2  KDR54096.1  cobalt-precorrin-6A synthase [Arthrospira platens
+
+
+Domain annotation for each sequence (and alignments):
+>> KDR58845.1  molybdenum cofactor biosynthesis protein MoeA [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.0   1.1e-06    0.0029     123     246 ..      65     176 ..       5     199 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 1.1e-06
+        finB 123 gdplanpektfrtfeliadkapdiklclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalkea 221
+                 g+pl  p  t      ia       l ++tng++l+   + + q  +  + i+l+ + pei  qi    +  r r+r v           +g+q+    
+  KDR58845.1  65 GEPLLRPGVTE-LVSKIAGFPETEDLSMTTNGFLLSPMAESLYQAGLRRINISLDSLVPEIFNQIIG--NRGRDRWRQVW----------DGIQSAYRV 150
+                 67777777663.344566655566899**************************************87..56788888763..........556544333 PP
+
+        finB 222 d.ilckvnsvmipgindkhlvevnka 246
+                      k+n v+ipg+nd+ ++++  +
+  KDR58845.1 151 GfNPLKLNVVVIPGVNDDEILDLAGL 176
+                 303468999********999887655 PP
+
+>> KDR54096.1  cobalt-precorrin-6A synthase [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0     0.027        73      81     129 ..      27      77 ..      12      93 .. 0.74
+   2 ?    7.8   0.0   9.5e-05      0.26     109     161 ..     163     218 ..     148     233 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.027
+        finB  81 dcanesrpgvvselltpeeaahkvlviagkipqmtvlgva..gpgdplanp 129
+                 d + + +  v  +l+ p e+a   +    +i + + lg++   pgd l   
+  KDR54096.1  27 DQSPNDKNTVTVDLIDPPETAEIAIEQVARISDHAALGITrsDPGDNLDIT 77 
+                 555566778888999999999999888999999999998533688877654 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 9.5e-05
+        finB 109 gkipqmtvlgvagpgdplanpektfrtfeliadkapdik...lclstnglmlteyv 161
+                 g i  +++lg +g  +pl+ pe+     e +  ka d +   +c+  ngl l+ ++
+  KDR54096.1 163 GVIQGLSLLGTTGISQPLSVPEQLEVYRETLEAKAADFQtlvFCIGENGLDLATHL 218
+                 6788899***************987777777777777543328*********9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         5439  (1620411 residues searched)
+Passed MSV filter:                       148  (0.0272109); expected 108.8 (0.02)
+Passed bias filter:                      127  (0.0233499); expected 108.8 (0.02)
+Passed Vit filter:                        11  (0.00202243); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000367715); expected 0.1 (1e-05)
+Initial search space (Z):               5439  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 11088.24
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.3e-06   24.1   0.0      0.003   14.8   0.0    2.0  2  BAC88521.1  hemin-binding periplasmic protein [Gloeobacter vi
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC88521.1  hemin-binding periplasmic protein [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.0   6.7e-07     0.003      49     120 ..      29      98 ..      21     129 .. 0.82
+   2 !    7.5   0.0   0.00011      0.48     211     287 ..     196     270 ..     174     289 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 6.7e-07
+        btuF  49 klsakrvvtlsslttdiifqldk.tklvgisgsslfkndprfqdiprisegqsppnlekivalkpdlvigaeg 120
+                 k sa r+v+l    t+i++ ld  ++lvg+  ss +        +p++   q     e +++lkp l++ +e 
+  BAC88521.1  29 KPSASRIVALGGSITEIVYALDAgAQLVGVDASSTYPAA--AARLPQVGY-QRQVSAEGVLSLKPTLILATEE 98 
+                 6689******************7469********99765..456888865.66778899*******9998764 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00011
+        btuF 211 knlaaelqgkspiagyvtlsaekvleanpeavvlitppqggsktevldsfkkesfwqklpatknnrvyvfdyyglvn 287
+                  nla   ++     gy  l+ae  + a p++v++  p  g +    +d + +       pa kn+rv  +d   l+ 
+  BAC88521.1 196 LNLAGATNAVDGYEGYKPLTAEAAVAAAPDVVLV--PAAGLASVGGIDGLAQLPGLALTPALKNKRVVAMDDLYLLG 270
+                 57888888888889****************8765..88999999999999999999999999999999887655543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                        96  (0.0216704); expected 88.6 (0.02)
+Passed bias filter:                       90  (0.020316); expected 88.6 (0.02)
+Passed Vit filter:                         4  (0.000902935); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000225734); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10625.25
+//
+[ok]

@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924285_GCA_001989415.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00014   17.8   0.0       0.12    8.2   0.0    2.2  2  AQL30133.1  alpha/beta hydrolase [Prochlorococcus sp. RS50]
+  ------ inclusion threshold ------
+      0.011   11.5   0.0      0.019   10.8   0.0    1.3  1  AQL29722.1  alpha/beta hydrolase [Prochlorococcus sp. RS50]
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL30133.1  alpha/beta hydrolase [Prochlorococcus sp. RS50]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.5   0.0   0.00022       0.2      58     113 ..      80     131 ..      74     143 .. 0.84
+   2 !    8.2   0.0   0.00013      0.12     190     240 ..     240     291 ..     208     301 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.00022
+        anaA  58 pgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdr 113
+                 p +en ik  +   w + i  +  e+    +sp+ ++g s+g v++l+ a  l d 
+  AQL30133.1  80 PEKENSIKYSF-DLWANQISTFCAEVI---KSPVYLVGNSIGGVIALKAAESLKDN 131
+                 67888888764.679999999999885...79*******************99986 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.00013
+        anaA 190 slpcpilalggeadegvsleelrewekytqrgfklrsfpg.ghmylteeker 240
+                  +  pi  + ge d   sl+e rew+k  +   +l  + g gh    ee e+
+  AQL30133.1 240 KVDSPIQLIWGEDDPWESLNEAREWKKQFRNIKRLDIINGaGHCPHDEEPEQ 291
+                 5678999*******************99877777777765467766666665 PP
+
+>> AQL29722.1  alpha/beta hydrolase [Prochlorococcus sp. RS50]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   2.1e-05     0.019      72     115 ..      89     133 ..      73     145 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.1e-05
+        anaA  72 wgdliepl.vqeiypysqspfvffghslgsvvslevahqlgdrfg 115
+                 w d ++ +  q i p +   ++++g slgs+v+l  a  l d++ 
+  AQL29722.1  89 WCDQVKDFiTQVIRPKNSGKVILIGNSLGSLVALTCAVSLEDQIA 133
+                 88888765158899999999********************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         1790  (495199 residues searched)
+Passed MSV filter:                        38  (0.0212291); expected 35.8 (0.02)
+Passed bias filter:                       34  (0.0189944); expected 35.8 (0.02)
+Passed Vit filter:                         2  (0.00111732); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111732); expected 0.0 (1e-05)
+Initial search space (Z):               1790  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12528.53
+//
+[ok]

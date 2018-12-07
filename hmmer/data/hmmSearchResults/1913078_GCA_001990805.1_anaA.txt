@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-47  160.2   0.0    1.5e-47  159.9   0.0    1.0  1  ONN60911.1  putative thioesterase [Mastigocladus laminosus 74
+  ------ inclusion threshold ------
+      0.013   12.7   0.0       0.11    9.6   0.0    2.0  2  ONN62324.1  alpha/beta hydrolase [Mastigocladus laminosus 74]
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN60911.1  putative thioesterase [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  159.9   0.0   6.9e-51   1.5e-47      11     235 ..      10     234 ..       2     244 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 159.9 bits;  conditional E-value: 6.9e-51
+        anaA  11 wlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahq 109
+                 w+v   k   e k+ lfcfp ag  + +fr w   +p  +++ a+ +pgr  rik p  t+   l+  l     p  + pf ffghs+g +vs+e+a+ 
+  ONN60911.1  10 WFVC-PKPNPEAKIRLFCFPYAGGSANIFRSWSNHLPADVEICAIELPGRGMRIKLPSFTQLEPLVTELASVFKPNLDKPFAFFGHSMGGLVSFELARL 107
+                 5543.477889**************************************************************************************** PP
+
+        anaA 110 lgdrfgcfpqclvvsgrkpphipcdhr.dsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvs 207
+                 l  ++g+ p  l +s r+ p++   +    +  + ++ieelr   gtpea+l++ +lm + +pi rad+ + e y y  e  l cpi a+gg  d+   
+  ONN60911.1 108 LRKQYGVKPSHLFISARRAPQLVDPKSpIHDLPEAEFIEELRRLNGTPEALLNNEQLMQLFMPILRADFAVLETYIYSQETPLDCPITAFGGLQDQEAR 206
+                 ******************999864444145567889*************************************************************** PP
+
+        anaA 208 leelrewekytqrgfklrsfpgghmylt 235
+                  ++++ w++ t   f l+ +pg h++l 
+  ONN60911.1 207 HDQIKAWQEQTSASFSLHMLPGNHFFLH 234
+                 *************************996 PP
+
+>> ONN62324.1  alpha/beta hydrolase [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   0.0   4.9e-05      0.11      31     114 ..      44     127 ..      27     138 .. 0.82
+   2 ?    0.4   0.0     0.033        73     189     210 ..     247     268 ..     238     289 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 4.9e-05
+        anaA  31 pagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlie.plvqeiypysqspfvffghslgsvvslevahqlgdrf 114
+                   ga +  +r   a +    ++wa+ + g   r  +p +   gdl    l + i        v++g slg   sl va q  d +
+  ONN62324.1  44 GFGASTDHWRKNIAELQHDFEVWAIDLLGFG-RSAKPKLQYSGDLWRdQLYDFITEVIGQKAVLVGNSLGGYASLCVAAQRCDAV 127
+                 568888889999999999*********9986.556688888899875156666777778889******************99875 PP
+
+  == domain 2  score: 0.4 bits;  conditional E-value: 0.033
+        anaA 189 kslpcpilalggeadegvslee 210
+                 k l c +l l gead  ++  e
+  ONN62324.1 247 KQLTCQLLLLWGEADPWINARE 268
+                 889************9887655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       109  (0.0248235); expected 87.8 (0.02)
+Passed bias filter:                      108  (0.0245958); expected 87.8 (0.02)
+Passed Vit filter:                         9  (0.00204965); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455477); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8435.43
+//
+[ok]

@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102232_GCA_000332035.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-51  171.5   0.9      1e-50  169.8   0.4    1.8  2  ELR98941.1  hypothetical protein GLO73106DRAFT_00027840 [Gloe
+
+
+Domain annotation for each sequence (and alignments):
+>> ELR98941.1  hypothetical protein GLO73106DRAFT_00027840 [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.0     0.017        68       1      25 [.       1      25 [.       1      32 [. 0.83
+   2 !  169.8   0.4   2.5e-54     1e-50      54     165 .]      27     138 .]      20     138 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.017
+        copC  1 mkslkssllvvlsigllllaassns 25
+                mk  k+ l+v +s gll+l   s++
+  ELR98941.1  1 MKFFKLLLIVFGSFGLLFLNPYSTK 25
+                8899999**********99866655 PP
+
+  == domain 2  score: 169.8 bits;  conditional E-value: 2.5e-54
+        copC  54 keeekekeeskGGqviesGayhlelvpekeangthldfylqkGdnheavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdi 152
+                 ++  +++e s+GGqv+e Gayhlelv++ke+ gthldfylq+Gd he +++a v aq+qlPdG+ k+ldl+yd ++ hy+ l+p++a+Gey v+++++i
+  ELR98941.1  27 ETIISDAETSQGGQVVEVGAYHLELVTKKEDAGTHLDFYLQRGDTHEPIADASVSAQIQLPDGTEKQLDLEYDVNGGHYTILFPETATGEYLVKMTANI 125
+                 444567899****************************************************************************************** PP
+
+        copC 153 dGekvnGrfsfkk 165
+                 +Ge vnGrfsf++
+  ELR98941.1 126 NGEIVNGRFSFNQ 138
+                 ***********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4087  (1202650 residues searched)
+Passed MSV filter:                       102  (0.0249572); expected 81.7 (0.02)
+Passed bias filter:                       90  (0.022021); expected 81.7 (0.02)
+Passed Vit filter:                        12  (0.00293614); expected 4.1 (0.001)
+Passed Fwd filter:                         1  (0.000244678); expected 0.0 (1e-05)
+Initial search space (Z):               4087  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6614.57
+//
+[ok]

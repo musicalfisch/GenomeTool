@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-21   73.3   4.7    3.5e-21   73.1   4.7    1.0  1  ABI46248.1  possible drug resistance protein [Synechococcus s
+  ------ inclusion threshold ------
+        0.2    9.5   7.1       0.31    9.0   1.6    2.7  2  ABI46857.1  NADH dehydrogenase I chain 4 (or M) [Synechococcu
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI46248.1  possible drug resistance protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   73.1   4.7   2.4e-24   3.5e-21       2     104 ..       2     104 ..       1     106 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 73.1 bits;  conditional E-value: 2.4e-24
+        emrC   2 liswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvi 100
+                    wi l+ ai  ev gt c+klsegf++ ip+++++ +y  ++ +l+  +++i + ++y++w+g+g + i  +gl+ +++  +  +l+ ia i  gvi
+  ABI46248.1   2 PAPWILLMLAIGSEVIGTSCLKLSEGFSRPIPTLVVLAAYSTSMLLLSRVVQTIPLGITYALWSGIGIIAIVLVGLLAYKQVPSPGQLVGIATITAGVI 100
+                 567************************************************************************************************ PP
+
+        emrC 101 gins 104
+                  +n 
+  ABI46248.1 101 IVNL 104
+                 9996 PP
+
+>> ABI46857.1  NADH dehydrogenase I chain 4 (or M) [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.5   0.3     0.021        31      35      90 ..     148     203 ..     144     212 .. 0.78
+   2 ?    9.0   1.6   0.00021      0.31       7      95 ..     269     363 ..     264     372 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 2.5 bits;  conditional E-value: 0.021
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvkli 90 
+                 + +f +  + l fl+  l+ + v +  ++w g      a+  +++   s  ++ l 
+  ABI46857.1 148 IAVFAVQDMLLFFLAWELELLPVYLLLAIWGGKKRQYAATKFILYTAGSSLFILLA 203
+                 7789999999*********************9888877776666655555555444 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 0.00021
+        emrC   7 yllaailfevsgttcmklsegf.....tklipsvlifvfyglcl.tfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                 +lla il+++ g + m++  ++     ++  p ++++ +  + + ++ ++a ++++  +ays  + +g vli + +   +  s +++++is  li
+  ABI46857.1 269 MLLAGILLKMGGYALMRFNAEIlpvahAQFAPLLVVLGVVNIIYaALTSFAQRNLKRKIAYSSISHMGFVLIGIGSFSELGTSGAMLQMISHGLI 363
+                 5778888888888888887765121114556666665444444415667999*******************999888888889999999998777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        95  (0.0328492); expected 57.8 (0.02)
+Passed bias filter:                       35  (0.0121024); expected 57.8 (0.02)
+Passed Vit filter:                         5  (0.00172891); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000691563); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7996.98
+//
+[ok]

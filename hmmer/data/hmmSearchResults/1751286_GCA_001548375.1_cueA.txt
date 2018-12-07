@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1751286_GCA_001548375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.6e-14   49.4   0.7    1.8e-11   41.7   0.1    2.1  2  BAT52238.1  Multicopper oxidase, types 2 and 3 [Nostoc sp. NI
+     0.0084   13.1   0.0        0.2    8.6   0.0    1.9  2  BAT53333.1  plastocyanin [Nostoc sp. NIES-3756]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAT52238.1  Multicopper oxidase, types 2 and 3 [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.7   0.1   6.2e-15   1.8e-11      50     169 ..      82     194 ..      71     209 .. 0.85
+   2 !    6.2   0.1   0.00035         1     425     494 ..     260     327 ..     244     330 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 41.7 bits;  conditional E-value: 6.2e-15
+        cueA  50 letalearpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyy 147
+                  e  l a   +i+l      n+   ng+ipgp l ak gd +++ f n+  ++  lh+hg+h     + d i   v    +  yef      p g   y
+  BAT52238.1  82 REFQLRAGTSVIQLNSAvSYNIWDLNGRIPGPTLRAKQGDRIRVLFHNQAGHSHSLHFHGVHPA---EMDGI-RPVSNNSATIYEFD---AEPYGVHLY 173
+                 56677788888998765256999***************************************65...45666.4678888999***6...68******* PP
+
+        cueA 148 hphlhelvaeqvfgglggifvv 169
+                 h h+ e v+ ++  gl g+f++
+  BAT52238.1 174 HCHI-EPVTRHIAKGLYGMFII 194
+                 ***9.678999*********98 PP
+
+  == domain 2  score: 6.2 bits;  conditional E-value: 0.00035
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                  +fhlh+n f+v  r g         d l +   e   +   fr + gk ++h h     + g mg   v
+  BAT52238.1 260 VTFHLHANFFDV-NRYGMSMKNSEKTDVLTMGIAERHILEFAFR-YPGKYMFHPHQDAIAENGCMGQFEV 327
+                 57******9986.899**999999*******************9.89********999999999986554 PP
+
+>> BAT53333.1  plastocyanin [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.6   0.0    0.0044        13      42      92 ..      20      65 ..       4      77 .. 0.72
+   2 !    8.6   0.0   6.8e-05       0.2     265     311 ..      87     133 ..      79     139 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.0044
+        cueA 42 lttssnglletalearpglirlgqqqgnlltyngqipgprleakpgdtvki 92
+                l  ss  ++  +  a    i+lg ++g l+ ++      +l  kpgdtv  
+  BAT53333.1 20 LVVSSFAVFTPSAAADTHQIKLGSDKGLLV-FE----PAKLTIKPGDTVEF 65
+                456777777778888889999999998554.43....46899******974 PP
+
+  == domain 2  score: 8.6 bits;  conditional E-value: 6.8e-05
+        cueA 265 gsiakpvelrelllspgeraevlvqgkrppgryrllslpydrggamg 311
+                   +ak +  ++ll+spg+        + p g y +   p+   g +g
+  BAT53333.1  87 ADLAKSLSHKQLLMSPGQNVTTTFPADAPAGDYTFYCEPHRGAGMVG 133
+                 6789********************************99986555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5954  (1912779 residues searched)
+Passed MSV filter:                       162  (0.0272086); expected 119.1 (0.02)
+Passed bias filter:                      139  (0.0233456); expected 119.1 (0.02)
+Passed Vit filter:                         4  (0.000671817); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335909); expected 0.1 (1e-05)
+Initial search space (Z):               5954  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 13553.41
+//
+[ok]

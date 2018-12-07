@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1617448_GCA_001548115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.5e-05   19.4   0.0     0.0023   14.5   0.0    2.1  2  BAQ64748.1  cytosine deaminase [Geminocystis sp. NIES-3709]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ64748.1  cytosine deaminase [Geminocystis sp. NIES-3709]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.0   5.9e-07    0.0023      11      60 ..      27      75 ..      19      84 .. 0.84
+   2 !    2.8   0.0    0.0021       8.4     270     352 ..     267     362 ..     244     403 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 5.9e-07
+        cyrG 11 aveddyatvdvqvvdgkiaaiap.elevvgtaidgenklllpgfvnahths 60
+                 ++++ +  d+q+ +gk+++i p +++++g  id ++ +llp fv+ hth 
+  BAQ64748.1 27 QTRENLSLCDIQIHKGKVTQIIPsHVDTIG--IDLQKSILLPCFVDIHTHL 75
+                567888999**********98652789988..777899************5 PP
+
+  == domain 2  score: 2.8 bits;  conditional E-value: 0.0021
+        cyrG 270 kdiailaetkstvvhnplsnlrlgs..........giapilkyrqagvnvtfgcdgas....sndsqdlleaikigsilhnvtdldyqhwitprqav 352
+                 k i+++ e++  +v  p+ nl l            gi+ +   ++agv+++f  d +     +    d+le  +  s+     d+ y  wi++   +
+  BAQ64748.1 267 KTINLVREANINIVSLPMCNLYLQDrqenitptwrGITRVKELKEAGVKIAFASDNCRdpffAFGDHDMLEVFNQ-SVRIAHLDTPYGDWIASVSRI 362
+                 56677777777777777777776422222222222788888999********99987522224567899998764.555555688899999865544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         3937  (1232454 residues searched)
+Passed MSV filter:                       100  (0.0254001); expected 78.7 (0.02)
+Passed bias filter:                       80  (0.02032); expected 78.7 (0.02)
+Passed Vit filter:                         8  (0.002032); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000254001); expected 0.0 (1e-05)
+Initial search space (Z):               3937  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 11461.82
+//
+[ok]

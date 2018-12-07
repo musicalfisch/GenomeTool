@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        3.4    3.2  22.2       0.11    8.1  10.1    2.3  2  CCH65889.1  Beta-carotene hydroxylase [Richelia intracellular
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH65889.1  Beta-carotene hydroxylase [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1  10.1   6.5e-05      0.11      42     131 ..      31     116 ..      23     166 .. 0.72
+   2 ?   -3.1   8.8      0.16   2.7e+02     205     301 ..     169     254 ..     123     274 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 6.5e-05
+        desA  42 wfgvitnilaviagyamlvyspwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktnm 131
+                 +fg ++ ++  ++gy +  +  w  +         al     + hd+ h+s      vn ++gh   l l + f ++  +h +hh + n 
+  CCH65889.1  31 FFGAVVIVMLSVCGYWVWQWPDWVCFTCNV----LALHISGTVIHDACHQSAHRNHRVNIVLGHSSALMLAFAFPVFTRVHLQHHGNVND 116
+                 677777777777777777777775544332....3444444688*********99******************************98874 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.16
+        desA 205 ffptlifytgvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvh 301
+                 ++   i y  +  +++fw vp +v  +   t+ l +   p   f+  + w++a       v++s    ++il    n h+ hh+  +ip y  +  +
+  CCH65889.1 169 IVLVSIHYCFLSYILNFWFVPSLVVGI---TLGLFFDYLPHRPFMERNRWKNAR------VYAS--PILNILILGQNYHLIHHLWPSIPWYSYQSTY 254
+                 223345566666666777777776654...566677778888899999998774......4444..3578888889999999999999999877654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        78  (0.046595); expected 33.5 (0.02)
+Passed bias filter:                       50  (0.0298686); expected 33.5 (0.02)
+Passed Vit filter:                         8  (0.00477897); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000597372); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5708.55
+//
+[ok]

@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880902_GCA_001698445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.4e-63  210.1   0.9    2.6e-63  210.0   0.9    1.0  1  OCQ93611.1  F0F1 ATP synthase subunit epsilon [Limnothrix sp.
+     0.0041   15.1   5.3     0.0041   15.1   5.3    2.3  2  OCQ95928.1  hypothetical protein BCR12_16990 [Limnothrix sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ93611.1  F0F1 ATP synthase subunit epsilon [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  210.0   0.9   1.4e-66   2.6e-63       1     137 []       1     133 []       1     133 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 210.0 bits;  conditional E-value: 1.4e-66
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m+ltvrvispdktvwd++aeevilpsttgqlgil ghaplltal tgvmrvr sk  dw  ial+ggfae+e++evt+lvngaergd+i+   a+a+++
+  OCQ93611.1   1 MSLTVRVISPDKTVWDNQAEEVILPSTTGQLGILPGHAPLLTALGTGVMRVRVSK--DWLPIALMGGFAEIEDNEVTVLVNGAERGDSIDRSAAQAEYT 97 
+                 89**************************************************986..8***************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +a+++++   a++ q++i+atqa+krarar+qaagg+v
+  OCQ93611.1  98 DAEARVAA--ANSPQEKIKATQALKRARARVQAAGGTV 133
+                 *****975..677899********************87 PP
+
+>> OCQ95928.1  hypothetical protein BCR12_16990 [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.7   1.8      0.16     3e+02      90     130 ..     151     192 ..     140     203 .. 0.66
+   2 !   15.1   5.3   2.2e-06    0.0041      82     131 ..     228     278 ..     198     281 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.7 bits;  conditional E-value: 0.16
+        atpE  90 nleearaafneaqtklnqvkaedrqaqi.qatqafkrararf 130
+                 +l +ara+  e ++ l++++++ r ++i qa +a ++a a +
+  OCQ95928.1 151 QLGQARAQALEEEAALAKLRSGFRPEEIaQAREAARQAAAGV 192
+                 566777777777777777777766665535555555554433 PP
+
+  == domain 2  score: 15.1 bits;  conditional E-value: 2.2e-06
+        atpE  82 gaergdkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfq 131
+                 +  rgd+  le+a+a f+e+q++  q+++++r+++i qa++ f +ar r++
+  OCQ95928.1 228 TRARGDEAALEQAQARFAETQQRYRQLATGNRREDItQAEARFLQARGRVR 278
+                 4579***************************99998688899999999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         3672  (1209182 residues searched)
+Passed MSV filter:                       126  (0.0343137); expected 73.4 (0.02)
+Passed bias filter:                       84  (0.0228758); expected 73.4 (0.02)
+Passed Vit filter:                        10  (0.00272331); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000544662); expected 0.0 (1e-05)
+Initial search space (Z):               3672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5521.93
+//
+[ok]

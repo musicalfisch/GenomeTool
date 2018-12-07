@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/210994_GCA_001904645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.014   13.4   0.6      0.021   12.8   0.3    1.5  1  OKH12796.1  transporter [Fischerella major NIES-592]
+      0.033   12.2   1.0       0.05   11.6   1.0    1.3  1  OKH11858.1  peptidylprolyl isomerase [Fischerella major NIES-
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH12796.1  transporter [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.3   9.5e-06     0.021      11      60 ..       8      55 ..       1      68 [. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 9.5e-06
+        copC 11 vlsigllllaassnsntatndeassktttaattavsstaaakakeeekek 60
+                + s gll+++a++n+  a ++++++ +t + +t++++++++++++e+ ++
+  OKH12796.1  8 LIS-GLLIFTAACNN-GARTSQTAPVNTEVVQTQTPEPEETQEAQEDAQS 55
+                333.44555555554.4566778888888888888888888777766554 PP
+
+>> OKH11858.1  peptidylprolyl isomerase [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   1.0   2.2e-05      0.05       9      58 ..      12      59 ..       1      72 [. 0.46
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.2e-05
+        copC  9 lvvlsigllllaassnsntatndeassktttaattavsstaaakakeeek 58
+                +v+  +++ll++ +s+++ ++++++ s t t a+t++++ ++++++++ k
+  OKH11858.1 12 FVI--VSVLLVGGCSTQQLSSETSSPSPTATEASTNATTHETTETTTDAK 59
+                333..344555555555555544444444443333333333333333322 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4512  (1463608 residues searched)
+Passed MSV filter:                       163  (0.0361259); expected 90.2 (0.02)
+Passed bias filter:                      129  (0.0285904); expected 90.2 (0.02)
+Passed Vit filter:                        22  (0.00487589); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443262); expected 0.0 (1e-05)
+Initial search space (Z):               4512  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6037.38
+//
+[ok]

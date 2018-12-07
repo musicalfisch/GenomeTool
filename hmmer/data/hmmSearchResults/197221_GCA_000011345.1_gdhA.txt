@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.3e-09   31.8   0.4    8.3e-07   25.4   0.4    2.4  2  BAC08992.1  malic enzyme [Thermosynechococcus elongatus BP-1]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC08992.1  malic enzyme [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.8   0.0    0.0012       2.9     409     424 ..     113     128 ..      96     131 .. 0.85
+   2 !   25.4   0.4   3.3e-10   8.3e-07     206     276 ..     246     315 ..     236     353 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 3.8 bits;  conditional E-value: 0.0012
+        gdhA 409 aaytlgvgrvaqalsd 424
+                  ayt gvgrv+qa++d
+  BAC08992.1 113 MAYTPGVGRVSQAIAD 128
+                 69***********998 PP
+
+  == domain 2  score: 25.4 bits;  conditional E-value: 3.3e-10
+        gdhA 206 vmiivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldipalkayaae 276
+                 ++  +++al+  gksl+ vr+vi+g g  g a a ll kagak + + +  g + s +    pa k++a  
+  BAC08992.1 246 TLAALKNALQFVGKSLETVRIVINGAGAAGIAVARLLRKAGAKDLILCNRRG-ILSLQTDLTPAQKEFAVT 315
+                 45567899999********************************998887665.444444445777777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                        86  (0.0347475); expected 49.5 (0.02)
+Passed bias filter:                       66  (0.0266667); expected 49.5 (0.02)
+Passed Vit filter:                         5  (0.0020202); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.00040404); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 11075.24
+//
+[ok]

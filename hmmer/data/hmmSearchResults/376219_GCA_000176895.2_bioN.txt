@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/376219_GCA_000176895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.9e-122  405.2  23.8    1.3e-80  269.2   6.9    2.0  2  CCE19006.1  putative ABC-type cobalt transport system, permea
+
+
+Domain annotation for each sequence (and alignments):
+>> CCE19006.1  putative ABC-type cobalt transport system, permease component, CbiQ-like [Arthrospira sp. PCC 8005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  142.0   8.9   1.2e-45   7.3e-42       1     109 [.       1     109 [.       1     114 [. 0.97
+   2 !  269.2   6.9   2.2e-84   1.3e-80     105     289 ..     133     317 ..     120     318 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 142.0 bits;  conditional E-value: 1.2e-45
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qpit lh+ld+r+k++wlm+fl ap+l+n+ wrl lv ll+++tl+a ip rvw++qmgwl+ ++ ++++++ai pdgl+vs qp
+  CCE19006.1   1 MDLLRSLPIGLYLEQPITWLHRLDSRIKLVWLMSFLIAPILSNALWRLGLVVLLMVITLVAAIPFRVWKRQMGWLLTFCSLLLIVSAILPDGLSVSHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlp 109
+                 rlp + + l 
+  CCE19006.1 100 RLPRDEIALE 109
+                 ***9988775 PP
+
+  == domain 2  score: 269.2 bits;  conditional E-value: 2.2e-84
+        bioN 105 glnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnla 203
+                    lp  + y y+l   g l +tr sl+l vristl+ftl+ystnl+lltta eei+ g+e l+ plrr+++pvtei+ltltlslrf plvlee+qnl 
+  CCE19006.1 133 TEGLPQPTAYSYILLAAGPLTITRYSLDLGVRISTLLFTLVYSTNLYLLTTASEEIAVGIESLMKPLRRLKIPVTEIALTLTLSLRFFPLVLEEIQNLY 231
+                 445777788****************************************************************************************** PP
+
+        bioN 204 ravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 r+vrtraidw+klg +r+ ++wl v e+ll+nlllraeqia am+vrgftspnqh+v wh+l++ w d++al+ l  fw  rlvwg
+  CCE19006.1 232 RSVRTRAIDWKKLGWRRATQIWLLVAERLLENLLLRAEQIANAMKVRGFTSPNQHRVEWHQLQINWWDWVALLALTIFWGMRLVWG 317
+                 *************************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         5951  (1636729 residues searched)
+Passed MSV filter:                       238  (0.0399933); expected 119.0 (0.02)
+Passed bias filter:                      129  (0.021677); expected 119.0 (0.02)
+Passed Vit filter:                         6  (0.00100823); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000168039); expected 0.1 (1e-05)
+Initial search space (Z):               5951  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9525.76
+//
+[ok]

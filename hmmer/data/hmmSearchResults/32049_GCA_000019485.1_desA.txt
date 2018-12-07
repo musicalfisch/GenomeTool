@@ -1,0 +1,110 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/32049_GCA_000019485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.2e-137  456.2  18.4   1.3e-137  456.0  18.4    1.0  1  ACB00730.1  phosphatidylcholine desaturase [Synechococcus sp.
+    3.4e-41  139.0  12.7    4.6e-41  138.5  12.7    1.0  1  ACA98173.1  omega-3 acyl-lipid desaturase [Synechococcus sp. 
+  ------ inclusion threshold ------
+       0.54    6.8  19.6      0.012   12.2   8.3    2.3  2  ACA98919.1  beta-carotene oxygenase CrtR [Synechococcus sp. P
+
+
+Domain annotation for each sequence (and alignments):
+>> ACB00730.1  phosphatidylcholine desaturase [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  456.0  18.4  1.3e-140  1.3e-137      10     343 ..      10     343 ..       1     346 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 456.0 bits;  conditional E-value: 1.3e-140
+        desA  10 gelitsiepdfklkdiiksipkeyfqkdpvkawfgvitnilaviagyamlvyspwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifl 108
+                    +    p+++l+di++++p+  ++ +p+kaw  v+  + av+  ya+l  +pwyll   w +tgt+ltgffvi hdcghrsfs ++wvn+lvgh+ +
+  ACB00730.1  10 ATTLLEKHPNLRLRDILDTLPRSVYEINPLKAWSRVLLSVAAVVGCYALLAIAPWYLLLPVWFLTGTTLTGFFVIGHDCGHRSFSRKNWVNNLVGHLAF 108
+                 555566789*************************************************99*************************************** PP
+
+        desA 109 lpliypfhcwrflhdrhhaktnmvtidnawdpweleafnsanplvrlfyrgirgrfwwlgsiahwailhfnieqfkenerekarfsmivvlvfaaiffp 207
+                 lpliypfh wr+lh++hh  tn +  dnaw p+  e ++ +  +++ +yr irg++wwl s+ h   lhfn   f+ ++re+ rfs + v++  ai fp
+  ACB00730.1 109 LPLIYPFHSWRILHNHHHRYTNNMDEDNAWAPFTPELYDDSPAFIKAVYRAIRGKLWWLASVIHQLKLHFNWFAFEGKQREQVRFSALFVIIAGAIAFP 207
+                 *************************************************************************************************** PP
+
+        desA 208 tlifytgvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvhaslke 306
+                  + +  gvwg+vkfw++pw+ yhfwmstftlvhht p+i fsy ++wn+a+aql gtvhc yp+wve+lchdinvh+phh+st ipsynlrk +as+k+
+  ACB00730.1 208 VMFYTLGVWGVVKFWLMPWLGYHFWMSTFTLVHHTVPEIPFSYRDKWNEAIAQLSGTVHCDYPKWVEVLCHDINVHVPHHLSTGIPSYNLRKAYASIKQ 306
+                 999999********************************************************************************************* PP
+
+        desA 307 nwgshlketefswalmkrivdychifdsetayktfke 343
+                 nwg +l et+fsw lmk i + ch++d+e  y +f +
+  ACB00730.1 307 NWGEYLYETKFSWELMKAITEQCHLYDAEHNYISFAQ 343
+                 ********************************99975 PP
+
+>> ACA98173.1  omega-3 acyl-lipid desaturase [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  138.5  12.7   4.3e-44   4.6e-41      19     331 ..      19     336 ..      11     347 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 138.5 bits;  conditional E-value: 4.3e-44
+        desA  19 dfklkdiiksipkeyfqkdpvkawfgvitnilaviagyamlvy.spwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfh 116
+                  f lkd+  +ip   fq    ++      +i  +   ya+  y   w++ p+ w   gt +  +fv+ hdcgh sfs  +++ndl+gh+   p++ pfh
+  ACA98173.1  19 PFTLKDVKAAIPDYCFQPSVFRSLAYFFLDIGIIAGLYAIAAYlDSWFFYPIFWFAQGTMFWALFVVGHDCGHGSFSRSKFLNDLIGHLSHTPILVPFH 117
+                 489**************99999877777777655555999988468***************************************************** PP
+
+        desA 117 cwrflhdrhhaktnmvtidnawdpw...eleafnsanplvrlfyrgirgrfw.wlgsiahwailhfnieq..fkenerekarfsmivvlvfaaiffptl 209
+                  wr+ h  hh++t  +  d++w p    + + +  a+ lvr++   i   ++ +  s  +    hf  +   fk  er+   +s   ++ +   f+  +
+  ACA98173.1 118 GWRISHRTHHSNTGNIDTDESWYPIpesKYDQMGFAEKLVRFYAPLIAYPIYlFKRSPGRGPGSHFSPKSplFKPAERNDIILSTAAIIAMV-GFLGWF 215
+                 ***********************9732245666789*****9888888766614567788889999865333********999988776554.466667 PP
+
+        desA 210 ifytgvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvhaslkenw 308
+                  +  g+  +vkf+ vp++++ +w+  +t +hht+ di ++  +dw      l  t+   y  + ei  h+i  h+ hhi  +ip y l+    ++k   
+  ACA98173.1 216 TVQFGLLAFVKFYFVPYVIFVIWLDLVTYLHHTEADIPWYRGDDWYYLKGAL-STIDRDYGIFNEI-HHNIGTHVAHHIFHTIPHYHLKDATEAIKPLL 312
+                 777899***************************************9876666.799*******998.6***********************99999999 PP
+
+        desA 309 gshlketef.swalmkrivdychi 331
+                 g + + ++   w  + r    ch 
+  ACA98173.1 313 GDYYRVSHApIWRSFFRSQKACHY 336
+                 988876654257777777777775 PP
+
+>> ACA98919.1  beta-carotene oxygenase CrtR [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   8.3   1.1e-05     0.012      57     130 ..      37     113 ..      13     157 .. 0.75
+   2 ?   -2.4   6.2       0.3   3.2e+02     206     297 ..     163     248 ..     127     258 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.1e-05
+        desA  57 amlvyspwyllplawi.ftg..taltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktn 130
+                 a  v   w+     wi f     al     + hd+ hr+    + vn ++gh   l l + f ++  +h +hha+ n
+  ACA98919.1  37 ATSVGGYWFWGWYDWIcFLEnvLALHLAGTVIHDASHRAAHSNRAVNTILGHASALMLGFAFPVFTRVHLQHHAHVN 113
+                 33344456666666663333003444445689******9888889*****************************988 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.3
+        desA 206 fptlifytgv.wglvkfwvvpwfvyhfwms.tftlvhhtdpdiqfsypedwnqalaqlegtvhcsyp.rwveilchdinvhiphhistaipsynl 297
+                 f  +i+y g+ +g++ + +  wfv  + +  ++ l +   p   f   + w++a       v   yp + +++l    n h+ hh+  +ip y+ 
+  ACA98919.1 163 FLGVIVYLGIqYGFIGYIMNFWFVPALVVGiALGLFFDYLPHRPFEERDRWKNAR------V---YPsKLLNLLILGQNYHLVHHLWPSIPWYKY 248
+                 3444555554356555555555555544431345556666777777777777653......2...331456777777788888888888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         3186  (990621 residues searched)
+Passed MSV filter:                       132  (0.0414313); expected 63.7 (0.02)
+Passed bias filter:                       95  (0.029818); expected 63.7 (0.02)
+Passed Vit filter:                        11  (0.00345261); expected 3.2 (0.001)
+Passed Fwd filter:                         3  (0.00094162); expected 0.0 (1e-05)
+Initial search space (Z):               3186  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 8568.87
+//
+[ok]

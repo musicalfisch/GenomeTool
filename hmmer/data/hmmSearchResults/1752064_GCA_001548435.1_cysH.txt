@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752064_GCA_001548435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysH  [M=273]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-17   62.6   0.0    1.3e-17   62.4   0.0    1.1  1  BAU14046.1  adenylylsulfate reductase, thioredoxin dependent 
+  ------ inclusion threshold ------
+      0.031   12.0   0.1      0.089   10.5   0.0    1.7  2  BAU15001.1  isoleucyl-tRNA synthetase [Leptolyngbya sp. NIES-
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU14046.1  adenylylsulfate reductase, thioredoxin dependent [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   62.4   0.0   4.1e-21   1.3e-17      33     258 ..      11     241 ..       4     248 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 62.4 bits;  conditional E-value: 4.1e-21
+        cysH  33 dlarinqrfdsanaaeivawaaatfgeglvmstsf.giqaavmlhlvtaiipdipiiwidtgylppetyqfaedlsqrlhlnlkvyqsplsparmeaih 130
+                 d+ +++  + +    +i+a a   f +   +s sf g +  v++ +   +   + +  +dtg l  etyqf e++ ++  + + +        +     
+  BAU14046.1  11 DIPSLDAELSTQSPQKILARALDQFDN---ISISFsGAEDVVLIDMAHRLGKKVQVFSLDTGRLHAETYQFIEQVRKHYGISIDILFPDTEKVQKLVSE 106
+                 555555566666666667766666654...5666647788899999999999***********************999999999987766666555555 PP
+
+        cysH 131 gklwsnndldslnlydkirkvepmqralkelkatawlaglrrdqtd.hrktlqwvnqq.....ger..ykilpildwnaktiydyltkydlpyhpyfdl 221
+                   l+s    d  n    irkvep++r l  l   aw++g r+dq    r t+  v+ +      +r   k  p+ +w +  ++ y+  +++py p  + 
+  BAU14046.1 107 KGLFSFY-EDGHNECCGIRKVEPLRRKLGTLD--AWITGQRKDQNPsTRATVPVVQVDtafssDDRplIKFNPLANWSSADVWLYIRGFEVPYNPLHEK 202
+                 5577765.589999**************9996..7*********8615777666543311111344336889*************************** PP
+
+        cysH 222 gyvsvgdwhssrpltaddsnerdtrf...kglkqecglhl 258
+                 g+vs+g    ++ +      er+ r+      k+ecglh 
+  BAU14046.1 203 GFVSIGCEPCTKAVLP-GQHEREGRWwweDATKKECGLHA 241
+                 ******9988887655.457888887444689*******5 PP
+
+>> BAU15001.1  isoleucyl-tRNA synthetase [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0      0.26   8.6e+02     167     190 ..     436     459 ..     416     470 .. 0.71
+   2 ?   10.5   0.0   2.7e-05     0.089     191     247 ..     779     834 ..     750     843 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.26
+        cysH 167 laglrrdqtdhrktlqwvnqqger 190
+                 + g+r +  +    +qw+  qge 
+  BAU15001.1 436 VEGFRDQALEAISGVQWIPAQGEN 459
+                 335555555778899*****9995 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 2.7e-05
+        cysH 191 ykilpildwnaktiydyltkydlpyhpyfdlgyvsvgdwhssrpltaddsnerdtrf 247
+                   i p+l   a  i++yl  y+ py+  f+ g+v + d      l+ +  + rd r 
+  BAU15001.1 779 KSIAPVLSHMAEDIWQYLP-YKTPYKSVFEAGWVKLEDQWRNPELAQKWEKLRDIRA 834
+                 5699*************95.9***************998777777777777777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (273 nodes)
+Target sequences:                         6635  (2004652 residues searched)
+Passed MSV filter:                       235  (0.0354182); expected 132.7 (0.02)
+Passed bias filter:                      207  (0.0311982); expected 132.7 (0.02)
+Passed Vit filter:                        18  (0.00271289); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301432); expected 0.1 (1e-05)
+Initial search space (Z):               6635  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9121.17
+//
+[ok]

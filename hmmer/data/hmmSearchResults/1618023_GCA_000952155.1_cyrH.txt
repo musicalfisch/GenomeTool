@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1618023_GCA_000952155.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.025   11.3   0.0        2.3    4.8   0.0    2.2  2  KJH72801.1  dihydroorotase [Aliterella atlantica CENA595]
+
+
+Domain annotation for each sequence (and alignments):
+>> KJH72801.1  dihydroorotase [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.0   0.0   0.00092         4      13      60 ..      18      67 ..       6      71 .. 0.78
+   2 ?    4.8   0.0   0.00053       2.3     346     389 ..     344     386 ..     335     395 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 4.0 bits;  conditional E-value: 0.00092
+        cyrH 13 eddyatvdvqvvdgkiaaiapelevvg..taidgenklllpgfvnahths 60
+                + ++   dv v d +ia++ape+ + +    id++   llpg ++ + h 
+  KJH72801.1 18 NGEFLVGDVLVSDRQIAQVAPEIPIPSgvREIDATGLTLLPGAIDPQVHF 67
+                4567788****************99652257999999*****99988886 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.00053
+        cyrH 346 itprqavemaslggakglnladklgsltvgkkadlvlydltnls 389
+                  t  q v+  s   ak   +a+k g+++ g  adlvl dl n  
+  KJH72801.1 344 CTVAQVVNWMSTAVAKAYGIANK-GAIAPGYDADLVLVDLNNYR 386
+                 67889999999999***999987.9***************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4367  (1296044 residues searched)
+Passed MSV filter:                        90  (0.0206091); expected 87.3 (0.02)
+Passed bias filter:                       80  (0.0183192); expected 87.3 (0.02)
+Passed Vit filter:                         7  (0.00160293); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.00022899); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 15066.51
+//
+[ok]

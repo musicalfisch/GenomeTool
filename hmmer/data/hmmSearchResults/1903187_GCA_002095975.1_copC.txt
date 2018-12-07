@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1903187_GCA_002095975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0002   19.6   0.1    0.00022   19.5   0.1    1.0  1  ARI80672.1  hypothetical protein BH695_1391 [Microcystis aeru
+  ------ inclusion threshold ------
+      0.038   12.2   0.9       0.11   10.7   0.9    1.8  1  ARI80117.1  hypothetical protein BH695_0836 [Microcystis aeru
+
+
+Domain annotation for each sequence (and alignments):
+>> ARI80672.1  hypothetical protein BH695_1391 [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   0.1   8.3e-08   0.00022       1      62 [.       1      61 [.       1      67 [. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 8.3e-08
+        copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekee 62
+                mk++ ++ll++l+++  +l+a+ + ++a+++++ ++t  + +t++++ ++++++++++++++
+  ARI80672.1  1 MKIKSLVLLILLTLTT-VLGACQGAKQAEEPKNVPTTVESPQTDADDDEDGEKQQKDDDNQR 61
+                7888888888888765.568999999******999987766666666665555554444433 PP
+
+>> ARI80117.1  hypothetical protein BH695_0836 [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.9   4.2e-05      0.11       8      76 ..      52     120 ..      46     131 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 4.2e-05
+        copC   8 llvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGayhl 76 
+                  l v +++l++ aas+n +t++ +e+ +  +t +t ++ s+ + + +++ ++k+es     +  G+yh 
+  ARI80117.1  52 ILDVKGVSLTIAAASANRETQSRQETIQVAETEKTVSSASAGSLNLSDQASAKDESDLFEFLTRGQYHR 120
+                 567899***************************999999999999999999999999999999999995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5364  (1399560 residues searched)
+Passed MSV filter:                       116  (0.0216257); expected 107.3 (0.02)
+Passed bias filter:                       99  (0.0184564); expected 107.3 (0.02)
+Passed Vit filter:                        15  (0.00279642); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000372856); expected 0.1 (1e-05)
+Initial search space (Z):               5364  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7697.58
+//
+[ok]

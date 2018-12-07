@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986678_GCA_002172015.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysN  [M=409]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-52  175.7   0.9    1.1e-52  175.6   0.9    1.0  1  OUW57618.1  elongation factor Tu, partial [Cyanobacteria bact
+    1.1e-11   40.6   2.1    1.1e-11   40.6   2.1    2.8  3  OUW53763.1  translation initiation factor IF-2 [Cyanobacteria
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW57618.1  elongation factor Tu, partial [Cyanobacteria bacterium TMED188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  175.6   0.9   1.5e-55   1.1e-52     319     409 .]       1      91 []       1      91 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 175.6 bits;  conditional E-value: 1.5e-55
+        cysN 319 vyvlkkeeggrktpffkgyrpqfyvrttdvtgtikaftaddgseaemvmpgdrikmtvelinpiaieqgmrfaireggrtigagvvskilk 409
+                 vyvlkkeeggr+tpff+gyrpqfy+rttdvtg+i+afta+dgs++emvmpgd+i+mt eli+p+aieqgmrfaireggrtigagvvski++
+  OUW57618.1   1 VYVLKKEEGGRHTPFFAGYRPQFYIRTTDVTGQITAFTAEDGSNVEMVMPGDNIQMTGELICPVAIEQGMRFAIREGGRTIGAGVVSKIIE 91 
+                 8****************************************************************************************95 PP
+
+>> OUW53763.1  translation initiation factor IF-2 [Cyanobacteria bacterium TMED188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0       0.1        74     131     205 ..     559     633 ..     549     643 .. 0.68
+   2 !   40.6   2.1   1.5e-14   1.1e-11      15     167 ..     646     784 ..     633     808 .. 0.78
+   3 ?   -2.5   0.1      0.18   1.3e+02     184     248 ..    1015    1081 ..     967    1095 .. 0.50
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.1
+        cysN 131 lvvflnkkdlvddeellelvelevrellssydfdgddipivagsalkalealtan...pktkkgenewvdkiyelmda 205
+                 +vv    +d +  +el +l+ +e  e++ s  f+g    + +   + ++e+++++   p  +   +e   k  e++++
+  OUW53763.1 559 IVV---PEDNLTVQELADLLSVESSEIIKSLFFKGIIATVTQTLDMPTIEKVAEEfgvPVLQDDVEEAAKKTVEMIEE 633
+                 333...57889999*****************9*998888888888888888877622233344444445555555555 PP
+
+  == domain 2  score: 40.6 bits;  conditional E-value: 1.5e-14
+        cysN  15 igtighvdhgkttltaaitmtlaalgkakakkydeidaapeekargitintahveyeteerhyahvdcpghadyvknmitgaaqmdgailvvsaadgpm 113
+                 +  +ghvdhgkt+l  ai  +  a+g+a   + +            i      ++++ e r+ + +d pgh  +      g+   d a+lvv+a dg  
+  OUW53763.1 646 VTVMGHVDHGKTSLLDAIREARVAAGEAGGIT-Q-----------HIGAYQVEIKHNDEPRKLTFLDTPGHEAFTAMRARGTKVTDVAVLVVAADDGVR 732
+                 4569**********************997643.2...........344445566778899****************99********************* PP
+
+        cysN 114 pqtrehillakqvgvpslvvflnkkdlvddeellelvelevrellssydfdgdd 167
+                 pqt e i  a+   vp +vv +nk d+   +      el  ++ll++ d+ gd 
+  OUW53763.1 733 PQTLEAISHARAAEVP-IVVAINKIDKEGASPDRVKQELSDQNLLAE-DWGGDV 784
+                 ***************9.788999999866555444556666666654.555543 PP
+
+  == domain 3  score: -2.5 bits;  conditional E-value: 0.18
+        cysN  184 anpktkkgenewvdkiyelmdavdsyip...tperdvdkpfl.mavedvfsitgrgtvatgriergkvk 248 
+                  + ++++  +    d iy+l+++++  +    +pe  v++ +    v  vf+i g+ +va   +  gk++
+  OUW53763.1 1015 KAADATGVDVRDYDVIYKLLEDIQLAMEgllEPEL-VEEALGeAEVRAVFTI-GKSAVAGCYVTTGKLH 1081
+                  22222333444567899999998866542114443.3444431457788887.5666665555555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (409 nodes)
+Target sequences:                         1474  (409408 residues searched)
+Passed MSV filter:                        32  (0.0217096); expected 29.5 (0.02)
+Passed bias filter:                       27  (0.0183175); expected 29.5 (0.02)
+Passed Vit filter:                         6  (0.00407056); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00135685); expected 0.0 (1e-05)
+Initial search space (Z):               1474  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5581.60
+//
+[ok]

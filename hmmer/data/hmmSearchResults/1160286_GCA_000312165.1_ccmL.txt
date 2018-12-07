@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160286_GCA_000312165.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+    4.1e-44  147.2   0.1    4.6e-44  147.1   0.1    1.0  1  lcl|HE972699.1_prot_CCH96980.1_1857  [protein=Carbon dioxide concentr
+  ------ inclusion threshold ------
+       0.05   12.2   0.0       0.21   10.2   0.0    2.0  2  lcl|HE972686.1_prot_CCH96258.1_1187  [protein=putative cytochrome P45
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|HE972699.1_prot_CCH96980.1_1857  [protein=Carbon dioxide concentrating mechanism protein CcmL] [protein_id=CCH969
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  147.1   0.1   1.9e-47   4.6e-44       1     100 []       1     100 [.       1     100 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 147.1 bits;  conditional E-value: 1.9e-47
+                                 ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpl 74 
+                                          mqiakv gtvvs+ k  s+ gvkllllq++d +g+llpkyeva d vgag++ewvlvsrg aar   g+++rpl
+  lcl|HE972699.1_prot_CCH96980.1_1857   1 MQIAKVCGTVVSSLKPRSMTGVKLLLLQFIDAQGQLLPKYEVAGDIVGAGINEWVLVSRGGAARIEDGQNNRPL 74 
+                                          9************************************************************************* PP
+
+                                 ccmL  75 daavvaiidtvkvedrliyskkdqyr 100
+                                          da+vv iidt++ve+r +ysk+d++r
+  lcl|HE972699.1_prot_CCH96980.1_1857  75 DAMVVGIIDTITVENRTLYSKRDEFR 100
+                                          ***********************987 PP
+
+>> lcl|HE972686.1_prot_CCH96258.1_1187  [protein=putative cytochrome P450 110] [protein_id=CCH96258.1] [location=complem
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   8.8e-05      0.21      40      76 ..      34      70 ..       8      97 .. 0.85
+   2 ?   -2.2   0.0      0.61   1.5e+03      19      42 ..     229     252 ..     220     257 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 8.8e-05
+                                 ccmL 40 yevaadsvgagvdewvlvsrgsaarqvlgneqrplda 76
+                                          ++ + +vg  vd++++vs  sa +q+l n+++   a
+  lcl|HE972686.1_prot_CCH96258.1_1187 34 GDIFSTKVGLTVDNFIFVSSPSALQQILTNDRKQFSA 70
+                                         5677889***********************9987765 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.61
+                                 ccmL  19 lrgvkllllqlvdeegkllpkyev 42 
+                                             +  ll+   deeg+ + + e+
+  lcl|HE972686.1_prot_CCH96258.1_1187 229 RTDILSLLMSARDEEGNPMSDKEL 252
+                                          5555668888999***99887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         4845  (1316197 residues searched)
+Passed MSV filter:                       105  (0.0216718); expected 96.9 (0.02)
+Passed bias filter:                       90  (0.0185759); expected 96.9 (0.02)
+Passed Vit filter:                         4  (0.000825593); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000412797); expected 0.0 (1e-05)
+Initial search space (Z):               4845  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4387.32
+//
+[ok]

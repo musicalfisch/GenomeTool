@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.7e-17   58.9   0.0    5.6e-17   58.3   0.0    1.2  1  BAC90236.1  ferredoxin--NADP+ reductase [Gloeobacter violaceu
+    9.9e-08   27.6   0.0    1.1e-07   27.5   0.0    1.0  1  BAC89513.1  glr1572 [Gloeobacter violaceus PCC 7421]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC90236.1  ferredoxin--NADP+ reductase [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   58.3   0.0   2.5e-20   5.6e-17    1208    1396 ..      75     270 ..      53     280 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 58.3 bits;  conditional E-value: 2.5e-20
+        cysJ 1208 qkprlysisscpllhprr...iqitvg.vlqvttdagkvrqglcsnylaglqpgssvrievlt.stfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s  +   +    + + v  v+    ++g++ +g++sn+++ l pg  v i   t  tf  p d  + ++++  gtg++p+ afl++  
+  BAC90236.1   75 HKLRLYSIASSRIGDNKDgktVSLCVKrVVYKHPETGEIVRGVASNFICDLAPGDDVSITGPTgKTFLLPEDPSTNLVLIATGTGIAPFRAFLRRIY 171 
+                  578*******99977654111444443244456789***********************9877369***************************7544 PP
+
+        cysJ 1300 alqnqgislgeahlyfgcrnpsdfiyqeqlqvwrdrnvltglevafsrlgeqkq....yvqnlmeqqpekiwqilshpqchyyvcgdakmaddvfav 1392
+                    + +    g+  l+fg +n   ++yq++l  +  +  +  +e a+sr  ++ q    yvq  + ++   +w+++s  + + y+cg   m d +   
+  BAC90236.1  172 D-EMDTPWQGKVWLFFGMQNSNSYLYQDELAGYTAKGDFEIVE-AISREQKNAQggrmYVQHRIAEHAAALWELISGGNTYTYICGLKGMEDGIDDA 266 
+                  3.4455678**********************999887776665.55655443323333*****************************9998766544 PP
+
+        cysJ 1393 mmai 1396
+                  + a 
+  BAC90236.1  267 FTAA 270 
+                  4443 PP
+
+>> BAC89513.1  glr1572 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   0.0     5e-11   1.1e-07     340     448 ..      19     126 ..       5     136 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 5e-11
+        cysJ 340 weifsqnkqqmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhsfadvptcaypamsetlfvlferylpn 438
+                 +e +  n + +   fy+ lf  +p    +f ++dm+    +l+ +l ++v  lr      +   l+ lg+ h+   +    yp +  +l+  fe yl +
+  BAC89513.1  19 FEGVKPNAHAFAASFYDNLFSDFPQTQALFAHSDMQAQQQKLLASLVLVVENLRQPQ--VLSTALQDLGNRHAGYGIVPEHYPMVGTSLLKTFETYLGD 115
+                 56666788888999****************************************865..456678889****987777789****************75 PP
+
+        cysJ 439 .ftpelrqgwq 448
+                  +tpe++q w 
+  BAC89513.1 116 aWTPEVKQAWV 126
+                 39********5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                        87  (0.0196388); expected 88.6 (0.02)
+Passed bias filter:                       85  (0.0191874); expected 88.6 (0.02)
+Passed Vit filter:                         9  (0.0020316); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000451467); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.14u 0.01s 00:00:00.15 Elapsed: 00:00:00.14
+# Mc/sec: 14635.05
+//
+[ok]

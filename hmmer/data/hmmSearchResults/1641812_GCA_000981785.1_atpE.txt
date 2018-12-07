@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641812_GCA_000981785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.4e-62  205.7   0.3    7.1e-62  205.6   0.3    1.0  1  AKE66599.1  ATP synthase epsilon chain [Microcystis aeruginos
+  ------ inclusion threshold ------
+        1.8    6.7  14.1       0.59    8.3   1.0    3.5  3  AKE66564.1  heterocyst specific ABC-transporter, membrane fus
+
+
+Domain annotation for each sequence (and alignments):
+>> AKE66599.1  ATP synthase epsilon chain [Microcystis aeruginosa NIES-2549]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  205.6   0.3   3.3e-65   7.1e-62       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 205.6 bits;  conditional E-value: 3.3e-65
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m++tvrvi+pd+ vwd+ aeevilps+tgqlgilsghaplltal++gvmr+r+ k  dw+ ia+lggfaeve++e+ +lvngae g ki+ e+ara+++
+  AKE66599.1   1 MSITVRVITPDRIVWDNVAEEVILPSSTGQLGILSGHAPLLTALNIGVMRIRPGK--DWENIAVLGGFAEVENNEIKVLVNGAELGSKIDKEKARAEYE 97 
+                 89**************************************************976..8***************************************** PP
+
+        atpE 100 eaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                 +aqt+l++v++ +dr++ iqa+q++++arar+qaagglv
+  AKE66599.1  98 KAQTRLDEVSKgDDRRKTIQAQQSWRKARARYQAAGGLV 136
+                 *********87257999********************97 PP
+
+>> AKE66564.1  heterocyst specific ABC-transporter, membrane fusion protein DevB -like protein [Microcystis aeruginosa N
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.3   1.0   0.00028      0.59      76     125 ..      97     145 ..      81     155 .. 0.81
+   2 ?    3.1   0.2     0.011        24      87     126 ..     214     253 ..     203     259 .. 0.84
+   3 ?    2.1   2.8     0.022        48      79     130 ..     250     300 ..     242     307 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 8.3 bits;  conditional E-value: 0.00028
+        atpE  76 vtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkr 125
+                 +  ++++ er +  nl +a+ + + a +kl+qvka+ +  +i+a++a  r
+  AKE66564.1  97 IIAILESQERLE-DNLRQAQEQVKVAAAKLEQVKAGAKVGEIDANAANVR 145
+                 445555666654.48999***************************98765 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.011
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqafkra 126
+                 +++nle + ++ +ea+  l+++++  +q+  +a+ ++ r 
+  AKE66564.1 214 KRLNLETSNQQLTEAKVTLERIESTGKQEIQEAKTTLVRI 253
+                 6799***********************9988888877765 PP
+
+  == domain 3  score: 2.1 bits;  conditional E-value: 0.022
+        atpE  79 lvngaergdkinleearaafneaqtklnqvkaedrqaqiqat.qafkrararf 130
+                 lv     g + +l+ear++ n+  +++  v  +  qa+++a+  a+k+a++ +
+  AKE66564.1 250 LVRIESTG-QQQLKEARSTLNQV-SEVRGVDVQAAQAEVNAAlVAVKKAQTEL 300
+                 44444444.44788888888876.45667777777777776525677777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4282  (1181467 residues searched)
+Passed MSV filter:                       138  (0.0322279); expected 85.6 (0.02)
+Passed bias filter:                      109  (0.0254554); expected 85.6 (0.02)
+Passed Vit filter:                         7  (0.00163475); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000467071); expected 0.0 (1e-05)
+Initial search space (Z):               4282  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 5395.37
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1454205_GCA_001854205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.011   14.8   2.0      0.013   14.5   2.0    1.1  1  AOY82288.1  EamA-like transporter family protein [Moorea prod
+       0.79    8.8  11.2      0.038   13.0   2.0    3.1  3  AOY78756.1  hypothetical protein BJP36_01465 [Moorea producen
+
+
+Domain annotation for each sequence (and alignments):
+>> AOY82288.1  EamA-like transporter family protein [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   2.0     4e-06     0.013      38     101 ..      45     107 ..      26     112 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 4e-06
+        emrC  38 fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvig 101
+                 + +ygl+     l l ++++sva     +l  v+   +g  +f+e++ + + + + lii gv+ 
+  AOY82288.1  45 LSCYGLGALAYILLLTRVNLSVAGPS-VSLTYVFSVLMGYFFFKETIPVSRAVGLGLIICGVML 107
+                 569***99999999********9764.46888888999***********************985 PP
+
+>> AOY78756.1  hypothetical protein BJP36_01465 [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   2.0   1.1e-05     0.038      41     103 ..      83     148 ..      66     151 .. 0.67
+   2 ?   -1.4   0.0      0.35   1.1e+03      68      83 ..     170     185 ..     166     197 .. 0.82
+   3 ?   -0.1   0.3      0.14   4.4e+02      10      40 ..     258     286 ..     247     303 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 1.1e-05
+        emrC  41 yglclt..fltlalkkievsvaysvwaglgt.vliavigliwfresltlvklisialiiigvigin 103
+                  g+cl+  f t        s+a s      t + +a ++ +wf+e lt + ++ i++  +g + i 
+  AOY78756.1  83 AGICLAlhFVTWITSLSFTSIAASTTLVTTTpIWVALVSWLWFKEKLTRLTVLGISVAFVGAVLIS 148
+                 46776511444333333356666654433332679**************************98776 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.35
+        emrC  68 gtvliavigliwfres 83 
+                  +++ia++ ++w re+
+  AOY78756.1 170 LAAVIASLYVLWGREA 185
+                 5678999999999987 PP
+
+  == domain 3  score: -0.1 bits;  conditional E-value: 0.14
+        emrC  10 aailfevsgttcmklsegftklipsvlifvf 40 
+                  ailfe +g+    l   + + +p vl++v 
+  AOY78756.1 258 LAILFEPVGACF--LGYLIFQEVPGVLVLVG 286
+                 466666666533..23333344555555543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         6559  (2174889 residues searched)
+Passed MSV filter:                       248  (0.0378106); expected 131.2 (0.02)
+Passed bias filter:                       97  (0.0147888); expected 131.2 (0.02)
+Passed Vit filter:                         9  (0.00137216); expected 6.6 (0.001)
+Passed Fwd filter:                         3  (0.000457387); expected 0.1 (1e-05)
+Initial search space (Z):               6559  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 5763.46
+//
+[ok]

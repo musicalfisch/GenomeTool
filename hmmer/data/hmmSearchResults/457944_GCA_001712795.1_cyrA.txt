@@ -1,0 +1,52 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/457944_GCA_001712795.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrA  [M=372]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.016   12.9   0.0      0.038   11.7   0.0    1.5  1  ODH01731.1  LOR/SDH bifunctional protein [Nostoc sp. KVJ20]
+
+
+Domain annotation for each sequence (and alignments):
+>> ODH01731.1  LOR/SDH bifunctional protein [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   5.3e-06     0.038     248     362 ..     167     269 ..     162     275 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 5.3e-06
+        cyrA 248 mhidssfmplapgkllvnpdyidvakipdifkswdiliapkpdivtggffnanasmcslwismnvlmldekrviiekhqetmirflkdhgfepipcpfm 346
+                  h+d++f pla g ll  p   d        +  ++ +ap+  i       a+a    +  + n + +d   vi++k  e++   l d gf+ +  p+ 
+  ODH01731.1 167 YHLDTCFCPLANGYLLYYPGAFDSYSN----RLIEMRVAPEKRIALAE---ADA----VNFACNAVNVD-SIVIMNKASEALKTRLADLGFQVLETPLT 253
+                 699999999999999999999887653....44578889988886433...333....33455666666.4699************************* PP
+
+        cyrA 347 nyapfggsfhcatldi 362
+                 ++   gg+ +c tl +
+  ODH01731.1 254 EFLKAGGAAKCLTLRV 269
+                 *************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (372 nodes)
+Target sequences:                         7210  (2327490 residues searched)
+Passed MSV filter:                       180  (0.0249653); expected 144.2 (0.02)
+Passed bias filter:                      170  (0.0235784); expected 144.2 (0.02)
+Passed Vit filter:                        16  (0.00221914); expected 7.2 (0.001)
+Passed Fwd filter:                         1  (0.000138696); expected 0.1 (1e-05)
+Initial search space (Z):               7210  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.08
+# Mc/sec: 10822.83
+//
+[ok]

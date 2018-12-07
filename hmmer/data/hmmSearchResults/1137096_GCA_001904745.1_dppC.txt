@@ -1,0 +1,106 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1137096_GCA_001904745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppC  [M=292]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-49  168.1  11.2    1.1e-46  158.3   9.6    2.1  2  OKH52026.1  ABC transporter substrate-binding protein [Caloth
+    3.6e-30  104.0  12.0    1.5e-29  102.0  12.0    1.8  1  OKH55472.1  peptide ABC transporter permease [Calothrix sp. H
+    0.00075   17.6   1.0    0.00075   17.6   1.0    2.3  2  OKH55572.1  ABC transporter permease [Calothrix sp. HK-06]
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH52026.1  ABC transporter substrate-binding protein [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.5   0.0   8.3e-05      0.23      11      40 ..       3      32 ..       1      51 [. 0.85
+   2 !  158.3   9.6     4e-50   1.1e-46      62     291 ..     141     367 ..     130     368 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 8.3e-05
+        dppC 11 twrrfyrdplavigaialiiiilavlfgpi 40
+                 w+r+ ++pla  gai lii  ++v+    
+  OKH52026.1  3 WWQRLKKNPLARFGAILLIIFYVSVIGADF 32
+                6***************99998888765444 PP
+
+  == domain 2  score: 158.3 bits;  conditional E-value: 4e-50
+        dppC  62 hlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvl 160
+                 +l+gt+d g+dq++r+l ggrisl +gi  + +++ +g  +g isg++ g  d  +mr+ ++++++p   ll+ +  ++   +       t  f+l+++
+  OKH52026.1 141 NLLGTDDQGRDQFSRLLHGGRISLFIGIVGVAISFPIGMLVGGISGYFAGWTDSTIMRFVEVLMTIPTTYLLIALAAVLPPGL-----SSTERFLLIIV 234
+                 799*****************************************************************999998888777665.....46788999999 PP
+
+        dppC 161 vigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlfkakd..ylt 257
+                 +   + w  +ar++rg++l ++e ef+ aa a+g  p  +i  h+lp+    ii+aatl++   i +es ls++glg+     +wg+ml  a +   + 
+  OKH52026.1 235 ITSFVRWAGLARVIRGQVLSIKEREFVQAARAMGGKPIYIILRHILPQTATYIIIAATLSIPSFIEAESVLSLIGLGIQQPDASWGNMLSLASNasIIV 333
+                 9999**************************************************************************988899****99887522678 PP
+
+        dppC 258 taphlvifpalaivitvlsinfigdglrdvfdpn 291
+                   p l+i pal i++tvl+ n++gdglrd +dp+
+  OKH52026.1 334 LQPWLIIPPALLIILTVLAFNLLGDGLRDALDPR 367
+                 89******************************96 PP
+
+>> OKH55472.1  peptide ABC transporter permease [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  102.0  12.0   5.6e-33   1.5e-29      20     291 ..      24     289 ..      19     290 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 102.0 bits;  conditional E-value: 5.6e-33
+        dppC  20 lavigaialiiiilavlfgpifyrvpi..dtidf.sq.ttappslkhlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaid 114
+                 l  +g +  +  i+  +f p++  v i  +  +f s+     ps k+ fgt  lg d ++r + g + +l v i a  +++++g  +g +sg+ gg +d
+  OKH55472.1  24 LMYVGLVFTLFFIFLAFFAPVLQAVGIlqNPTEFlSNpMHEAPSPKYWFGTSRLGYDVFSRTMFGAQAALQVVIVATALSMVIGVPLGMLSGYMGGKLD 122
+                 66788888888999999******99984434555233245679******************************************************** PP
+
+        dppC 115 gllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmi 213
+                  +l+ + d + +lp l l + + +++   i + a     i i +             r+vr   + ++   fi aa a+ga  ++++  +l+ nv+  +
+  OKH55472.1 123 KILLFIMDSIYTLPGLLLSVTLAFVVGRGILNAA-----IAISIA------YIPQYYRVVRNHTVSVKTEVFIEAAQAMGANTWQVLSKYLFFNVIQSV 210
+                 ********99888877666666665554443322.....222222......22356799**************************************** PP
+
+        dppC 214 ivaatlavgnaiitestlsflglgfppdvptwgqmlfkakdylttap.hlvifpalaivitvlsinfigdglrdvfdpn 291
+                  v  tl   +ai+    l flglg+p +vp wg+ l +a + l t      +fp la+ + v+ + + g+gl d+++p+
+  OKH55472.1 211 PVLFTLNAADAILVLGGLGFLGLGLPDEVPEWGHDLKQALEALPTGIwWTTLFPGLALTLMVVGLSLFGEGLNDLVNPR 289
+                 *****************************************99876516789***********************9996 PP
+
+>> OKH55572.1  ABC transporter permease [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.4   1.4     0.012        33      88     121 ..     110     143 ..      98     171 .. 0.64
+   2 !   17.6   1.0   2.8e-07   0.00075     168     238 ..     223     297 ..     198     337 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 0.012
+        dppC  88 giaamivalilgtaigaisgfyggaidgllmrlt 121
+                  + ++ival++g a+g++s    g+   +  rl 
+  OKH55572.1 110 AVFSIIVALLVGIAVGTLSASRPGTSLDIGGRLF 143
+                 46689*************9987765333333333 PP
+
+  == domain 2  score: 17.6 bits;  conditional E-value: 2.8e-07
+        dppC 168 msvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaa..tla..vgnaiitestlsflglgf 238
+                     r+vr n+ +  + +++ aa a g +  ++++ h l n l  +i     t+a  +g a++te t+s+ gl  
+  OKH55572.1 223 GIFERIVRVNLKQTLQSDYVEAARARGIAENKILFSHALKNALIPVITVLglTFAslLGGAVLTEVTFSWPGLAN 297
+                 45679************************************9976665441144444799*********999863 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (292 nodes)
+Target sequences:                         8148  (2613279 residues searched)
+Passed MSV filter:                       459  (0.0563328); expected 163.0 (0.02)
+Passed bias filter:                      184  (0.0225822); expected 163.0 (0.02)
+Passed Vit filter:                        17  (0.0020864); expected 8.1 (0.001)
+Passed Fwd filter:                         3  (0.000368189); expected 0.1 (1e-05)
+Initial search space (Z):               8148  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.08
+# Mc/sec: 9538.47
+//
+[ok]

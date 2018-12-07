@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/czcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/373994_GCA_000316665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       czcD  [M=308]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     3e-142  472.0   8.0   3.4e-142  471.9   8.0    1.0  1  AFY56643.1  cation diffusion facilitator family transporter [
+    0.00074   17.5   0.1    0.00074   17.5   0.1    1.5  2  AFY54803.1  Co/Zn/Cd efflux system component [Rivularia sp. P
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY56643.1  cation diffusion facilitator family transporter [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  471.9   8.0    1e-145  3.4e-142       6     304 ..       2     293 .]       1     293 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 471.9 bits;  conditional E-value: 1e-145
+        czcD   6 dnratvqkvlwitlllnilvmaikagvglrisslslqadalhsvtdsannvlglvamrfsspypdrdhpyghlkyeaigalaiaaflgiacfeilqgai 104
+                 dnra+v++vl itllln++vm +k  vg+  +slsl adalhsvtdsannvlgl++ r ssp pdr+hpygh k+ea+gal ia fl iacfeilq ai
+  AFY56643.1   2 DNRAAVKRVLIITLLLNVFVMVLKVSVGVVTGSLSLIADALHSVTDSANNVLGLITNRCSSPLPDRQHPYGHQKFEAVGALGIAGFLAIACFEILQSAI 100
+                 9************************************************************************************************** PP
+
+        czcD 105 mriikggkpveiagpelwlliivlgvnifvtyyersvgqrvgsailiadarhtmsdvwvtitvllglvgvwvgntanipqlqwldvilsfpvaflvfss 203
+                  rii+ggkpv i+ p+lwll++vlgvnifv++yer vg+rv s iliada+htmsd+wvti+v+lgl+ v +g        qwld++l+fpva++vf s
+  AFY56643.1 101 ERIIQGGKPVTISVPQLWLLLLVLGVNIFVAFYERRVGKRVDSPILIADAHHTMSDIWVTISVILGLIAVRLG-------YQWLDLVLAFPVALMVFFS 192
+                 ***********************************************************************99.......59***************** PP
+
+        czcD 204 gwkvlkenlpllvdemaiapevihqivlevpgvlnchaiasrgvvgrqvfiemhlivsaqdvetahaiteavearlsqqfspvrilihveppdyhsdki 302
+                 gw v+kenlp lvdemaiape i +i l+vpgv+nch iasrgv+grqvfiemhliv+a+dv+tah ite ve+ l ++f pvrilihvepp+y+s++i
+  AFY56643.1 193 GWTVIKENLPWLVDEMAIAPETINDIALKVPGVINCHDIASRGVIGRQVFIEMHLIVAARDVKTAHQITEEVESCLEEKFNPVRILIHVEPPNYKSNQI 291
+                 *************************************************************************************************** PP
+
+        czcD 303 tf 304
+                 +f
+  AFY56643.1 292 SF 293
+                 98 PP
+
+>> AFY54803.1  Co/Zn/Cd efflux system component [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.1   2.2e-07   0.00074      12      53 ..      21      62 ..      13     104 .. 0.88
+   2 ?   -2.8   0.1      0.33   1.1e+03      38      46 ..     140     148 ..     111     175 .. 0.50
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 2.2e-07
+        czcD 12 qkvlwitlllnilvmaikagvglrisslslqadalhsvtdsa 53
+                 +vlw+ l++n++++ +  g g+r  s+sl  d+l  + d+ 
+  AFY54803.1 21 ANVLWVVLFINLVMFFVEFGAGIRADSISLTGDSLDMLGDTL 62
+                479********************************9988865 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.33
+        czcD  38 slslqadal 46 
+                 +l + +  l
+  AFY54803.1 140 NLNMSSVWL 148
+                 333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (308 nodes)
+Target sequences:                         6644  (2270700 residues searched)
+Passed MSV filter:                       230  (0.0346177); expected 132.9 (0.02)
+Passed bias filter:                      139  (0.0209211); expected 132.9 (0.02)
+Passed Vit filter:                        14  (0.00210716); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301023); expected 0.1 (1e-05)
+Initial search space (Z):               6644  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11656.26
+//
+[ok]

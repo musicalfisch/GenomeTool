@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1980935_GCA_002251945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-22   76.9   0.1    2.6e-22   76.8   0.1    1.0  1  OYQ63323.1  photosystem I reaction center subunit XII [Pseuda
+  ------ inclusion threshold ------
+      0.022   13.0   0.0      0.042   12.1   0.0    1.4  1  OYQ66553.1  hypothetical protein B9G53_03635 [Pseudanabaena s
+      0.025   12.8   0.0      0.061   11.5   0.0    1.6  1  OYQ62791.1  hypothetical protein B9G53_20375 [Pseudanabaena s
+
+
+Domain annotation for each sequence (and alignments):
+>> OYQ63323.1  photosystem I reaction center subunit XII [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.8   0.1   1.6e-25   2.6e-22       5      70 ..       5      70 ..       1      74 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 76.8 bits;  conditional E-value: 1.6e-25
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                +s+ + r+fvyev Gl q  +  n++ys+r    vf+ vpy rmn++mr i+r+G  iv i+pln 
+  OYQ63323.1  5 TSSTDTRFFVYEVSGLNQYKQPTNFNYSMRPMDNVFIQVPYNRMNEQMRSIARMGGTIVNIRPLNE 70
+                577899**********************************************************96 PP
+
+>> OYQ66553.1  hypothetical protein B9G53_03635 [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   2.5e-05     0.042      34      65 ..      33      64 ..      29      71 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 2.5e-05
+        cpcD 34 rksGsvfltvpysrmnqemrritrlGarivsi 65
+                r  G+  +tvpys + + ++ i r+G +i  i
+  OYQ66553.1 33 RMQGTNTVTVPYSSLSKRVQAIHRFGGKITNI 64
+                56788899********************9765 PP
+
+>> OYQ62791.1  hypothetical protein B9G53_20375 [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   3.6e-05     0.061      46      70 ..     122     147 ..     101     150 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 3.6e-05
+        cpcD  46 srm.nqemrritrlGarivsikplna 70 
+                 sr+  qem+r  +lG ++v i p n+
+  OYQ62791.1 122 SRLfFQEMQRCLKLGGKVVMIEPANT 147
+                 66426******************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5037  (1609668 residues searched)
+Passed MSV filter:                        86  (0.0170737); expected 100.7 (0.02)
+Passed bias filter:                       79  (0.0156839); expected 100.7 (0.02)
+Passed Vit filter:                        16  (0.00317649); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.000595593); expected 0.1 (1e-05)
+Initial search space (Z):               5037  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5955.77
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccbP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1304833_GCA_000817785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccbP  [M=126]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.8e-71  236.2   5.6    5.3e-71  236.0   5.6    1.0  1  KIF32980.1  calcium binding protein from Anabaena CcbP [Hassa
+  ------ inclusion threshold ------
+      0.028   13.9   0.0      0.034   13.6   0.0    1.1  1  KIF29367.1  hypothetical protein PI95_51475 [Hassallia byssoi
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF32980.1  calcium binding protein from Anabaena CcbP [Hassallia byssoidea VB512170]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  236.0   5.6     1e-74   5.3e-71       1     126 []       1     126 []       1     126 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 236.0 bits;  conditional E-value: 1e-74
+        ccbP   1 masverdetrehrieteiivdaedkedramgwyyylddtlnfpflakwkkksrktstieekevevlgmapddeclkdmyvevadingkdddvysaklse 99 
+                 m+sve+d++re+rieteii+daedke+ramgwyyylddtln+pf akwkkk+rk++t+eek+vevlgmap+dec +dm++ev++++gkd+dv++aklse
+  KIF32980.1   1 MPSVEKDQSREDRIETEIIADAEDKEERAMGWYYYLDDTLNVPFNAKWKKKTRKSATVEEKTVEVLGMAPEDECERDMLLEVVYVGGKDEDVFTAKLSE 99 
+                 99************************************************************************************************* PP
+
+        ccbP 100 ieaidadeetqeaiadwlywlargykf 126
+                 ieaidad+et+eaiadw+ywlargykf
+  KIF32980.1 100 IEAIDADSETTEAIADWHYWLARGYKF 126
+                 **************************9 PP
+
+>> KIF29367.1  hypothetical protein PI95_51475 [Hassallia byssoidea VB512170]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0   6.8e-06     0.034      84     116 ..       8      40 ..       2      46 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 6.8e-06
+        ccbP  84 dingkdddvysaklseieaidadeetqeaiadw 116
+                  i  k++d+y a+  e+ ++d  e  +ea+a+ 
+  KIF29367.1   8 AIVYKEEDIYVAECPEVGTVDQGETIEEALANL 40 
+                 56789*************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (126 nodes)
+Target sequences:                        10181  (3132640 residues searched)
+Passed MSV filter:                       236  (0.0231804); expected 203.6 (0.02)
+Passed bias filter:                      181  (0.0177782); expected 203.6 (0.02)
+Passed Vit filter:                        12  (0.00117867); expected 10.2 (0.001)
+Passed Fwd filter:                         2  (0.000196444); expected 0.1 (1e-05)
+Initial search space (Z):              10181  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7894.25
+//
+[ok]

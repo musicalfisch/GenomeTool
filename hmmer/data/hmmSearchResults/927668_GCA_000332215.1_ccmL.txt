@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/927668_GCA_000332215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-45  152.2   0.1    1.3e-45  152.1   0.1    1.0  1  ELS34097.1  Ethanolamine utilization protein EutN/carboxysome
+    0.00024   19.6   0.1    0.00043   18.8   0.1    1.5  1  ELS32890.1  microcompartments protein [Pseudanabaena biceps P
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS34097.1  Ethanolamine utilization protein EutN/carboxysome structural protein Ccml [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.1   0.1   5.3e-49   1.3e-45       1      98 [.       1      98 [.       1     100 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 152.1 bits;  conditional E-value: 5.3e-49
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdq 98
+                mqiakv gtvvst k+ +l g+k+lllqlvd +g+ll +yeva+d+vgagvdewvl++rgs arqvl +e+rp+daav+aiidtv++ dr +yskk  
+  ELS34097.1  1 MQIAKVCGTVVSTYKESNLSGTKFLLLQLVDLQGQLLSDYEVATDTVGAGVDEWVLFTRGSGARQVLNSENRPIDAAVIAIIDTVSLSDRTLYSKKYS 98
+                9**********************************************************************************************965 PP
+
+>> ELS32890.1  microcompartments protein [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.1   1.8e-07   0.00043      48      96 ..     161     210 ..     129     213 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 1.8e-07
+        ccmL  48 gagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvk.vedrliyskk 96 
+                  a ++   +v+ gs  r  lg e+r + aa va+++t++ v  r +ys  
+  ELS32890.1 161 AASINILEIVAVGSFGRLYLGGEERDIMAASVAVLNTINnVRGRDVYSND 210
+                 5677778899***************************954999****974 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         4757  (1493366 residues searched)
+Passed MSV filter:                       106  (0.022283); expected 95.1 (0.02)
+Passed bias filter:                       86  (0.0180786); expected 95.1 (0.02)
+Passed Vit filter:                         5  (0.00105108); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420433); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4977.89
+//
+[ok]

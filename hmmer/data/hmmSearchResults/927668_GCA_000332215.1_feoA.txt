@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/927668_GCA_000332215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0038   14.8   0.0     0.0088   13.6   0.0    1.6  1  ELS30153.1  hypothetical protein Pse7429DRAFT_4727 [Pseudanab
+  ------ inclusion threshold ------
+      0.029   12.0   0.0       0.07   10.7   0.0    1.6  2  ELS33613.1  DNA-(apurinic or apyrimidinic site) lyase [Pseuda
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS30153.1  hypothetical protein Pse7429DRAFT_4727 [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.0   3.7e-06    0.0088      42     117 ..       4      80 ..       2      92 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 3.7e-06
+        feoA  42 laatyplaqvemgktvwlvgfqgtgg..inrllgmglnpgiqlqvissqprgsvliaiqdnrigigaemaekilvsds 117
+                 l  +y l+qv++g+   l  f    g  +n  +gm +n g +++    qp  s+l  +  n i      a+  l +d 
+  ELS30153.1   4 LKESYRLTQVQIGQIAGLSVFLSRFGseVNGYIGMSINSGYEFNAECQQPYSSLLHVV-RNAISAKLTTAQENLERDR 80 
+                 5678**********999999977644349****************9999998877555.5666666666666666655 PP
+
+>> ELS33613.1  DNA-(apurinic or apyrimidinic site) lyase [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0     3e-05      0.07      77     145 ..      45     111 ..      38     126 .. 0.88
+   2 ?   -2.3   0.0      0.27   6.5e+02      98     127 ..     180     210 ..     153     252 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 3e-05
+        feoA  77 npgiqlqvissqprgsvlia..iqdnrigigaemaekilvsdsqpkklepkkdlpevrtflreipigkagk 145
+                 n  +  + i  q rg  lia   q n++g+   m+  +l  d      ep  + + vr f++e   gk gk
+  ELS33613.1  45 NTLVGAEFIEWQRRGKYLIAklSQGNQLGVHLRMTGSLLWCDR----HEPAGKHTRVRLFVKEKGKGKQGK 111
+                 55566678999********944599**************9985....69********************98 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.27
+        feoA  98 qdnrigigaema.ekilvsdsqpkklepkkd 127
+                 q+   gig   a e +++  + p+k     +
+  ELS33613.1 180 QETVAGIGNIYAdESLFLGKIHPQKAANSLN 210
+                 4445566655551234445555555544444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         4757  (1493366 residues searched)
+Passed MSV filter:                       116  (0.0243851); expected 95.1 (0.02)
+Passed bias filter:                       94  (0.0197604); expected 95.1 (0.02)
+Passed Vit filter:                         5  (0.00105108); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420433); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 7877.51
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1637645_GCA_000972705.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.1e-60  200.8   0.1    4.9e-60  200.5   0.1    1.1  1  KKD35095.1  hypothetical protein WN50_27210 [Limnoraphis robu
+  ------ inclusion threshold ------
+      0.023   13.0   1.1      0.032   12.5   0.3    1.7  2  KKD36423.1  hypothetical protein WN50_19885 [Limnoraphis robu
+
+
+Domain annotation for each sequence (and alignments):
+>> KKD35095.1  hypothetical protein WN50_27210 [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  200.5   0.1   1.8e-63   4.9e-60       1     165 []       1     158 []       1     158 [] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 200.5 bits;  conditional E-value: 1.8e-63
+        copC   1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylqkGdnh 99 
+                 mk   s l++ +sigl++laa++ s+t +n+  + + t+++t  +      ++   ++++  +kGGqv+e+Gayhle+v+ +e+ gthldfylq Gd h
+  KKD35095.1   1 MKRFLSKLVISSSIGLIFLAACTPSQTTQNTTETLAPTSVETAPT------ET-VAKDHSAPQKGGQVVEAGAYHLEFVALPESGGTHLDFYLQSGDTH 92 
+                 666667777777888888888887766665544444444433222......22.233445689************************************ PP
+
+        copC 100 eavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 eav+ akv aqvq P+Geq+ ldl+yd+a+khya ++pg+  Geykvail+di+GekvnGrf+f +
+  KKD35095.1  93 EAVPGAKVMAQVQFPNGEQEVLDLEYDEAGKHYAVFFPGEQQGEYKVAILSDINGEKVNGRFNFTR 158
+                 ****************************************************************75 PP
+
+>> KKD36423.1  hypothetical protein WN50_19885 [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.3   1.2e-05     0.032       2      69 ..       3      68 ..       1      86 [. 0.69
+   2 ?   -2.5   0.0      0.48   1.3e+03     117     132 ..     179     194 ..     149     209 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.2e-05
+        copC  2 kslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqvi 69
+                kslks+ l +++   + l+a+s+ +t tn+ ++++++++++t + +  +    e  ++ e+++GG   
+  KKD36423.1  3 KSLKSVELFLATGLAVSLVACSSPSTTTNETTTEQSNPSHETVHGEGGE--GGEGGEGGEGGEGGEGG 68
+                6889999999999999999999999988888887777766665554433..33334444444444444 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.48
+        copC 117 eqkaldlkydaadkhy 132
+                   k ++    +a   y
+  KKD36423.1 179 VMKVINQLLATASEEY 194
+                 3333333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5458  (1735477 residues searched)
+Passed MSV filter:                       172  (0.0315134); expected 109.2 (0.02)
+Passed bias filter:                      128  (0.0234518); expected 109.2 (0.02)
+Passed Vit filter:                         9  (0.00164896); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000366435); expected 0.1 (1e-05)
+Initial search space (Z):               5458  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 9545.12
+//
+[ok]

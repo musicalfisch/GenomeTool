@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805291_GCA_001873365.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-66  218.8   2.5      6e-66  218.7   2.5    1.0  1  OIP70838.1  F0F1 ATP synthase subunit epsilon [Oscillatoriale
+  ------ inclusion threshold ------
+          4    5.5  24.3      0.013   13.5   3.0    3.8  4  OIP66984.1  HlyD family secretion protein [Oscillatoriales cy
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP70838.1  F0F1 ATP synthase subunit epsilon [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  218.7   2.5     3e-69     6e-66       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 218.7 bits;  conditional E-value: 3e-69
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pd+tvwd +aeevilps tgqlgil+ghap+ltaldtgvmrvr +  ++w+ ia++ggfaeve +ev ilvngaergd+inle ar+a++
+  OIP70838.1   1 MTLTVRVIAPDRTVWDEQAEEVILPSITGQLGILTGHAPMLTALDTGVMRVRLK--NKWTPIAVMGGFAEVEANEVIILVNGAERGDSINLEAARTAYA 97 
+                 9***************************************************85..58***************************************** PP
+
+        atpE 100 eaqtklnqvkaed.rqaqiqatqafkrararfqaagglv 137
+                 +a++ l+  +++d ++a+i+at+a+krarar+qaagg+v
+  OIP70838.1  98 QAKADLEATETGDsKKAKIKATKAIKRARARLQAAGGVV 136
+                 *******9998764899********************97 PP
+
+>> OIP66984.1  HlyD family secretion protein [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   3.0   6.7e-06     0.013      88     122 ..     114     148 ..      95     162 .. 0.82
+   2 ?   -2.0   2.4      0.41   8.2e+02      87     109 ..     182     204 ..     150     237 .. 0.54
+   3 ?    1.0   4.2     0.048        96      87     127 ..     220     260 ..     210     272 .. 0.73
+   4 ?    2.4   0.6     0.018        36      89     121 ..     283     315 ..     265     326 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 6.7e-06
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqiqatqa 122
+                 +  le+a+++ + a ++l+qv+a+ +q +iqa++a
+  OIP66984.1 114 QAALEQAKTEVEVAVARLEQVQAGAKQGDIQAQKA 148
+                 4579****************************987 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 0.41
+        atpE  87 dkinleearaafneaqtklnqvk 109
+                 +k  l+  +a+ n+a+t+ ++  
+  OIP66984.1 182 QKATLDRIQAELNNAETNCQRYD 204
+                 44555555666666665544322 PP
+
+  == domain 3  score: 1.0 bits;  conditional E-value: 0.048
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqa.fkrar 127
+                 + ++ e +r   +eaq++ln+   ++r +qi+ +qa + r+ 
+  OIP66984.1 220 QCLQAETSRKRLQEAQANLNETI-NSRAEQIREAQAnLNRTI 260
+                 45788999************976.567888876555256655 PP
+
+  == domain 4  score: 2.4 bits;  conditional E-value: 0.018
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatq 121
+                 ++++ a+++ ++aq++++q +a+  qa +++ q
+  OIP66984.1 283 VDIQLAKSELTKAQASVKQAEANLEQAYVRSPQ 315
+                 667778888888888888888888888777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4018  (1322032 residues searched)
+Passed MSV filter:                       136  (0.0338477); expected 80.4 (0.02)
+Passed bias filter:                      108  (0.026879); expected 80.4 (0.02)
+Passed Vit filter:                        10  (0.0024888); expected 4.0 (0.001)
+Passed Fwd filter:                         3  (0.00074664); expected 0.0 (1e-05)
+Initial search space (Z):               4018  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 3622.37
+//
+[ok]

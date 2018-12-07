@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272129_GCA_000180455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00029   18.6  28.4    0.00057   17.6   9.7    3.3  3  CBN55193.1  exported hypothetical protein [[Oscillatoria] sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> CBN55193.1  exported hypothetical protein [[Oscillatoria] sp. PCC 6506]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    1.7   3.2    0.0065        38     156     206 ..     258     308 ..     250     334 .. 0.74
+   2 !   17.6   9.7   9.8e-08   0.00057      78     216 ..     325     458 ..     314     466 .. 0.87
+   3 !    9.3   2.4   3.3e-05      0.19     108     192 ..     569     655 ..     497     684 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 1.7 bits;  conditional E-value: 0.0065
+        cnrC 156 tardqariasdalraasvrvqagraspleqqradvarinadanverqlrla 206
+                  a d ar  s++l+ a ++++  +a   eqq a    +n + +++rq+   
+  CBN55193.1 258 QAIDLARRNSQTLQIAQLQLEQSQAVVREQQAALYPDLNVQVDLNRQISAG 308
+                 578999999************************999999999999998643 PP
+
+  == domain 2  score: 17.6 bits;  conditional E-value: 9.8e-08
+        cnrC  78 gqvenvigsgpyr.gvrsaestvgfaipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrv 175
+                  q + v g+ p   g  + ++t+ ++  ++l g r a +  a+ q    e++   ia ++r++v+  y +   ad rva +    r a ++lr a    
+  CBN55193.1 325 SQGQPVGGAAPQNfGSNTVNTTLQLSYNVDLFGARTANIRAAEEQNRFRELEVERIAEELRFDVSTNYYNLQDADGRVAISEAAVRNAQQSLRDAEALE 423
+                 56667778888644889999*****************************************************************************99 PP
+
+        cnrC 176 qagraspleqqradvarinadanverqlrlaeaaranlarr 216
+                 +ag  + +   +a+v         + q rl ea r +l rr
+  CBN55193.1 424 RAGVGTRFAVLQAQVNLA------NEQQRLNEARRDQLVRR 458
+                 999988776666665443......35789999999999998 PP
+
+  == domain 3  score: 9.3 bits;  conditional E-value: 3.3e-05
+        cnrC 108 ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagrasple..qqradvar 192
+                 gg   ar    + +++ ae +   +  +vr +v q y e  ++   + ta      a +alr a +r qag  +  +  q  +d++r
+  CBN55193.1 569 GGAAQARTQQREFDIAIAETRFDQLRNQVRREVEQGYFELESSFASIETAETGVLQAREALRLARLRFQAGVGTQTDviQAETDLTR 655
+                 777778888888888888888888888888888888888888888888888888888888888888888886554331144444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         5822  (1812051 residues searched)
+Passed MSV filter:                       193  (0.0331501); expected 116.4 (0.02)
+Passed bias filter:                       89  (0.0152868); expected 116.4 (0.02)
+Passed Vit filter:                         7  (0.00120234); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000171762); expected 0.1 (1e-05)
+Initial search space (Z):               5822  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 11001.74
+//
+[ok]

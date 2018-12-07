@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1454205_GCA_001854205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-23   80.3   0.0    3.1e-23   80.1   0.0    1.0  1  AOY80572.1  photosystem I reaction center subunit XII [Moorea
+    2.3e-20   70.9   0.2    6.3e-20   69.5   0.2    1.7  1  AOY81133.1  ferredoxin-NADP reductase [Moorea producens JHB]
+  ------ inclusion threshold ------
+      0.013   14.0   0.1      0.023   13.3   0.1    1.4  1  AOY83651.1  photosystem I reaction center subunit XII [Moorea
+
+
+Domain annotation for each sequence (and alignments):
+>> AOY80572.1  photosystem I reaction center subunit XII [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.1   0.0   1.4e-26   3.1e-23       6      68 ..      13      75 ..       9      79 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 80.1 bits;  conditional E-value: 1.4e-26
+        cpcD  6 sakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpl 68
+                s  e r fvyev Gl   ++     y +rks s+f+ vpys+mn+em+ritr+G +ivsi+p+
+  AOY80572.1 13 SPSESRTFVYEVTGLWHKEENTKNSYPLRKSSSIFIQVPYSQMNEEMQRITRMGGKIVSIRPV 75
+                6789***********8877666669*************************************7 PP
+
+>> AOY81133.1  ferredoxin-NADP reductase [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.5   0.2   2.9e-23   6.3e-20       7      73 ..      15      74 ..       9      75 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 69.5 bits;  conditional E-value: 2.9e-23
+        cpcD  7 akenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                    r ++yevvGl qn         ir+sG+v+ltvpy rm qem+ri+r+G +ivsikpl ++aa
+  AOY81133.1 15 EFGSRTYLYEVVGLRQNG-------PIRQSGTVLLTVPYNRMKQEMQRIARMGGKIVSIKPLSSSAA 74
+                455799**********97.......69************************************9998 PP
+
+>> AOY83651.1  photosystem I reaction center subunit XII [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.1   1.1e-05     0.023      30      66 ..     252     287 ..     227     289 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 1.1e-05
+        cpcD  30 dysirksGsvfltvpysrmnqemrritrlGarivsik 66 
+                     r+s  v+l vpy ++ +e +ri + G  i si 
+  AOY83651.1 252 VSKFRRSNQVYL-VPYDQLSKEYQRIHKQGGVIASIT 287
+                 446899****99.9*******************9995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         6559  (2174889 residues searched)
+Passed MSV filter:                       132  (0.020125); expected 131.2 (0.02)
+Passed bias filter:                      123  (0.0187529); expected 131.2 (0.02)
+Passed Vit filter:                        13  (0.00198201); expected 6.6 (0.001)
+Passed Fwd filter:                         3  (0.000457387); expected 0.1 (1e-05)
+Initial search space (Z):               6559  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 4023.54
+//
+[ok]

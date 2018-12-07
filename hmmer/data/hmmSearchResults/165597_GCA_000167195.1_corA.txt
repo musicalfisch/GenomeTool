@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/corA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       corA  [M=385]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.4e-127  423.4   2.7   2.8e-127  423.2   2.7    1.0  1  EAM48675.1  Magnesium and cobalt transport protein CorA [Croc
+    3.8e-41  139.7   0.1    3.8e-41  139.7   0.1    1.0  1  EAM48674.1  hypothetical protein CwatDRAFT_1824 [Crocosphaera
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM48675.1  Magnesium and cobalt transport protein CorA [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  423.2   2.7  9.5e-131  2.8e-127     111     376 ..       1     266 [.       1     270 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 423.2 bits;  conditional E-value: 9.5e-131
+        corA 111 vvnvpqrpkledynnqllvisqmvrlkedesgfdteqvsfvlgkryllsfqeeelqdcfeivrdrirtsqgrvrksgadyltyllldtiidgyfpvveh 209
+                 +vnvpqrpkledyn+ql++i qmvr k++e gf++eqvsfvlg ryll+fqeee++dcf+ivr+ri+++qg+vr+  adyl yllld+iidgyfpv+e 
+  EAM48675.1   1 MVNVPQRPKLEDYNEQLVLIVQMVRPKDNEEGFESEQVSFVLGTRYLLTFQEEEIEDCFDIVRERIKANQGKVRQQKADYLMYLLLDSIIDGYFPVLED 99 
+                 59************************************************************************************************* PP
+
+        corA 210 yedriealedmiisnpdrdtmqeiydvrrellalrrliwpmrnvlhllmrdhhgivsdevqiyfrdsydhviqileiieayrelaaslmdvymstmgnk 308
+                 y drie +ed +   p+ + ++eiy +rrellalrr iwp+rnv  +l+r    ++s e qiyfrd+ydh iqil+i+e+yrela+slmd y+s+m nk
+  EAM48675.1 100 YGDRIEDIEDELAIRPNTNQLKEIYLIRRELLALRRAIWPLRNVSNMLVRGESSLISSEAQIYFRDCYDHFIQILDIVETYRELASSLMDAYLSSMSNK 198
+                 *************************************************************************************************** PP
+
+        corA 309 lneimkfltvistifipltfivgvygmnfenmpelkgewsyflvwlvmlavagglifyfwrkgwfkpi 376
+                 +ne+m++ltv+stifipltfi gvygmnfe mpelk  w y++    m a+aggl+++fwr+gwf+p 
+  EAM48675.1 199 MNEVMQVLTVVSTIFIPLTFIAGVYGMNFEYMPELKTRWGYIICLGFMGAIAGGLVLFFWRRGWFEPF 266
+                 *****************************************************************996 PP
+
+>> EAM48674.1  hypothetical protein CwatDRAFT_1824 [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  139.7   0.1   1.3e-44   3.8e-41      14      95 ..      15      96 .]       1      96 [] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 139.7 bits;  conditional E-value: 1.3e-44
+        corA 14 pdtdgdeeedyfdyfydepgsepgtliiepdakpsriilidydednavrkvditpnacapyigtntvswmdiqglgsetvlk 95
+                 + + +ee dyfdyf+depgsepg l iepdakpsri+lidyd+  a+rkvd+tpna  py+gtnt+swmdiqglgse vlk
+  EAM48674.1 15 EELEKEEESDYFDYFFDEPGSEPGKLNIEPDAKPSRIVLIDYDQSHAIRKVDVTPNALIPYLGTNTISWMDIQGLGSERVLK 96
+                4668899*************************************************************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (385 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       316  (0.0530379); expected 119.2 (0.02)
+Passed bias filter:                      268  (0.0449815); expected 119.2 (0.02)
+Passed Vit filter:                        13  (0.00218194); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335683); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 8976.32
+//
+[ok]

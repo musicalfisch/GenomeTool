@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805100_GCA_001919945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglF  [M=293]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00086   15.5   2.2     0.0035   13.5   0.0    2.1  2  OLE97047.1  hypothetical protein AUG75_12885 [Cyanobacteria b
+     0.0015   14.7   6.2     0.0024   14.1   6.2    1.4  1  OLE96520.1  glycine/betaine ABC transporter [Cyanobacteria ba
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE97047.1  hypothetical protein AUG75_12885 [Cyanobacteria bacterium 13_1_20CM_4_61_6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   3.6e-06    0.0035      58     103 ..     113     158 ..      95     187 .. 0.74
+   2 ?    0.4   1.7     0.036        35     154     231 ..     187     263 ..     163     280 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 3.6e-06
+        aglF  58 glknylrlllnpdfwqvlgntiyftvatvipslviplglavlldks 103
+                   +n++  l+ pdfw++ g+ + ++ a++  s+ + + l v+  k 
+  OLE97047.1 113 ARRNFWGALFGPDFWRLTGEHLLLVFASLAGSIAVGVPLGVIAAKL 158
+                 468******************************9988887765553 PP
+
+  == domain 2  score: 0.4 bits;  conditional E-value: 0.036
+        aglF 154 lgdtvwampvlivlsiwkqlgfnmvvflaglqaippsryeaaeldganawqqfwyvtlpglrptlifaivttaiftlr 231
+                 l+ t+   p li l ++  l +      +gl  i     +aa   g    +++w + +p   p+++  i t+a++ + 
+  OLE97047.1 187 LTGTIGMWPALIALFLYALLPIVR-NTCTGLTGIVRGMRQAAMALGLAPRDRLWLIEVPLALPSILAGIKTSAVINVG 263
+                 556666667777777777665533.34577877777777777777888888888888888888888877777777665 PP
+
+>> OLE96520.1  glycine/betaine ABC transporter [Cyanobacteria bacterium 13_1_20CM_4_61_6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   6.2   2.5e-06    0.0024     125     241 ..      52     162 ..      18     200 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 2.5e-06
+        aglF 125 aglgfrwlfqtdgpvnalldllgiapipwlgdtv..wampvlivlsiwkqlgfnmvvflaglqaippsryeaaeldganawqqfwyvtlpglrptlifa 221
+                   lg+  +fqt      +  l    pip++g      a+  li+ ++   l  n      gl  i p+  eaae  g    q +w v lp  r+ ++  
+  OLE96520.1  52 IALGIASVFQTIPSLALFGFL---IPIPFIGGIGrrTAIVALILYALLPILR-N---TYVGLTGIEPAVLEAAEAMGMTQSQILWRVRLPLARAVILAG 143
+                 567777778875443333333...4555555443002444455544444433.3...345888999************************888877777 PP
+
+        aglF 222 ivttaiftlrsfeqvyvitg 241
+                 i t++i+t+        i g
+  OLE96520.1 144 IRTATIITIGVATIAAAI-G 162
+                 777788887654444443.3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (293 nodes)
+Target sequences:                         1953  (545415 residues searched)
+Passed MSV filter:                        70  (0.0358423); expected 39.1 (0.02)
+Passed bias filter:                       28  (0.0143369); expected 39.1 (0.02)
+Passed Vit filter:                         5  (0.00256016); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00102407); expected 0.0 (1e-05)
+Initial search space (Z):               1953  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5326.89
+//
+[ok]

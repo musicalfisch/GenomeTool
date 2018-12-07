@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641812_GCA_000981785.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                           -----------
+    1.9e-50  166.6   1.0      2e-50  166.4   1.0    1.0  1  lcl|CP011304.1_prot_AKE62975.1_611  [locus_tag=MYAER_0615] [db_xref=
+     0.0042   14.9   0.0       0.01   13.6   0.0    1.7  1  lcl|CP011304.1_prot_AKE63194.1_830  [locus_tag=MYAER_0834] [db_xref=
+  ------ inclusion threshold ------
+      0.027   12.3   0.0      0.035   11.9   0.0    1.2  1  lcl|CP011304.1_prot_AKE63193.1_829  [locus_tag=MYAER_0833] [db_xref=
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|CP011304.1_prot_AKE62975.1_611  [locus_tag=MYAER_0615] [db_xref=SEED:fig|1126.17.peg.615] [protein=Phycobilisome 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  166.4   1.0   1.4e-53     2e-50       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 166.4 bits;  conditional E-value: 1.4e-53
+                                apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                                        mrmfkitacvPsq+rirtqrelqntyftklvpydnWfreqqrimkmGGkivkv+latGkpgtntGll
+  lcl|CP011304.1_prot_AKE62975.1_611  1 MRMFKITACVPSQSRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIVKVQLATGKPGTNTGLL 67
+                                        9****************************************************************96 PP
+
+>> lcl|CP011304.1_prot_AKE63194.1_830  [locus_tag=MYAER_0834] [db_xref=GO:0004324,SEED:fig|1126.17.peg.834] [protein=Fer
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.0   7.3e-06      0.01      26      57 ..      40      69 ..      32      77 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 7.3e-06
+                                apcC 26 yftklvpydnWfreqqrimkmGGkivkvelat 57
+                                        +ft  vpy    +e +ri ++GG+iv ++   
+  lcl|CP011304.1_prot_AKE63194.1_830 40 FFT--VPYSRMNQEMRRITRLGGRIVSIKPLN 69
+                                        666..9********************997655 PP
+
+>> lcl|CP011304.1_prot_AKE63193.1_829  [locus_tag=MYAER_0833] [db_xref=SEED:fig|1126.17.peg.833] [protein=Phycobilisome 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   2.5e-05     0.035      31      54 ..      43      66 ..      34      72 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 2.5e-05
+                                apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                                        vpy    +e +ri ++G +iv ++
+  lcl|CP011304.1_prot_AKE63193.1_829 43 VPYSRMNQEMRRITRLGARIVSIK 66
+                                        9********************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         4290  (1183376 residues searched)
+Passed MSV filter:                       101  (0.0235431); expected 85.8 (0.02)
+Passed bias filter:                       95  (0.0221445); expected 85.8 (0.02)
+Passed Vit filter:                         8  (0.0018648); expected 4.3 (0.001)
+Passed Fwd filter:                         3  (0.000699301); expected 0.0 (1e-05)
+Initial search space (Z):               4290  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 3964.31
+//
+[ok]

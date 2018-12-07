@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173026_GCA_000317555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-58  192.6   0.4    3.4e-58  192.5   0.4    1.0  1  AFZ29259.1  Ethanolamine utilization protein EutN/carboxysome
+  ------ inclusion threshold ------
+      0.025   13.2   0.0        0.1   11.3   0.0    1.9  2  AFZ31407.1  Peptidoglycan glycosyltransferase [Gloeocapsa sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ29259.1  Ethanolamine utilization protein EutN/carboxysome structural protein Ccml [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  192.5   0.4   1.4e-61   3.4e-58       1     100 []       1     100 []       1     100 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 192.5 bits;  conditional E-value: 1.4e-61
+        ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdqy 99 
+                 mqiakvrg+vvstqk+pslrg+kllllqlvdeeg+ lpkyevaad+vgagvdewvlvs+gsaar v+gneqrplda+vvaiid+v++edrliyskkdqy
+  AFZ29259.1   1 MQIAKVRGNVVSTQKEPSLRGAKLLLLQLVDEEGQPLPKYEVAADNVGAGVDEWVLVSCGSAARIVQGNEQRPLDAVVVAIIDSVRIEDRLIYSKKDQY 99 
+                 9************************************************************************************************** PP
+
+        ccmL 100 r 100
+                 r
+  AFZ29259.1 100 R 100
+                 8 PP
+
+>> AFZ31407.1  Peptidoglycan glycosyltransferase [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0     4e-05       0.1      14      48 ..     172     206 ..     160     212 .. 0.86
+   2 ?   -2.4   0.0       0.7   1.8e+03      23      52 ..     569     598 ..     552     612 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 4e-05
+        ccmL  14 qkdpslrgvkllllqlvdeegkllpkyevaadsvg 48 
+                 +    l+g k   l+lv+e  +l p+ +vaad vg
+  AFZ31407.1 172 EVADKLKGLKANGLDLVQESSRLYPQEKVAADVVG 206
+                 455689****************************9 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.7
+        ccmL  23 kllllqlvdeegkllpkyevaadsvgagvd 52 
+                 ++++l +vde   +     vaa  v + ++
+  AFZ31407.1 569 RYVVLAIVDEPKGIAYGSTVAAPIVKSVME 598
+                 567888888888888888888887766555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         5011  (1616692 residues searched)
+Passed MSV filter:                       114  (0.02275); expected 100.2 (0.02)
+Passed bias filter:                       96  (0.0191579); expected 100.2 (0.02)
+Passed Vit filter:                        12  (0.00239473); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000399122); expected 0.1 (1e-05)
+Initial search space (Z):               5011  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 5388.97
+//
+[ok]

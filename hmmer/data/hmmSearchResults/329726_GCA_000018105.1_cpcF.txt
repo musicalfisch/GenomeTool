@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-52  177.6   0.1    1.3e-52  177.5   0.1    1.0  1  ABW32202.1  phycocyanin alpha phycocyanobilin lyase; CpcF (pl
+    0.00039   19.2   0.1     0.0035   16.0   0.1    2.4  2  ABW25131.1  PBS lyase HEAT repeat NblB-like protein [Acaryoch
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW32202.1  phycocyanin alpha phycocyanobilin lyase; CpcF (plasmid) [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  177.5   0.1   3.2e-56   1.3e-52       4     167 ..       4     167 ..       1     210 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 177.5 bits;  conditional E-value: 3.2e-56
+        cpcF   4 tvetliiavekadsanelltavenlaaakseaaiptltdvlrynnpgasvaavdgliaigkaavpyllanldgynygarawatralagigdvrgldlll 102
+                 ++  li  vekads+ +ll+av  l+ a s+ +iptl  vl ynnpga+vaav gl+ igk +vp l+ +++  ny a+awa ralagigd r +d+ll
+  ABW32202.1   4 SISDLINDVEKADSSIKLLVAVSSLSKACSDESIPTLISVLSYNNPGAAVAAVKGLVKIGKESVPALMEEINNQNYTAKAWAIRALAGIGDPRSVDVLL 102
+                 6778999******************************************************************************************** PP
+
+        cpcF 103 eaavsdfsfsvrrgaarglgniiwsdleesrvseaqkavfaalekllqgdpewvvryaaivgleg 167
+                 +aa +dfs svrr aa+glg+i w    +  +   +  v+ +l  +++ d ew vry+aivgl+ 
+  ABW32202.1 103 KAATTDFSPSVRRTAAKGLGEIQWPIKPKNSLDPRELEVLETLLSISEKDEEWAVRYSAIVGLQL 167
+                 **************************************************************974 PP
+
+>> ABW25131.1  PBS lyase HEAT repeat NblB-like protein [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.1   8.4e-07    0.0035      14     124 ..      14     125 ..       4     161 .. 0.83
+   2 ?    0.2   0.0     0.059   2.5e+02      87     123 ..     148     186 ..     126     189 .. 0.52
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 8.4e-07
+        cpcF  14 kadsanelltavenlaaakseaaiptltdvlrynnpgasvaavdgliaigka.avpyllanldgynygarawatralagigdvrgldllleaavsdfsf 111
+                 k++ a + l a+  l +  s  + p +  +l  +       a+  li    a +v  l+  ld  ny  ra a+ al  +gd   ++ l    + d  +
+  ABW25131.1  14 KSENASDRLLALVALRSLPSAETFPLIKPMLFDDYLPVRSMAIRSLIHHPSAeSVSLLVQLLDDPNYEIRAGAAGALGHVGDHDIVQALSRVFLEDTEW 112
+                 55666677777777778888888888888887776666667888999887763677777889************************************* PP
+
+        cpcF 112 svrrgaarglgni 124
+                  v   aa  lgn+
+  ABW25131.1 113 LVCFSAAVSLGNL 125
+                 **********997 PP
+
+  == domain 2  score: 0.2 bits;  conditional E-value: 0.059
+        cpcF  87 ralagigdvrgldll..leaavsdfsfsvrrgaarglgn 123
+                  a+a +g+++ +d l  l   v    + +r+  a  lgn
+  ABW25131.1 148 AAIAALGEIKAFDALesLLPFVQAEDWMIRKSLATTLGN 186
+                 344444444444443112223444455566666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       226  (0.0269593); expected 167.7 (0.02)
+Passed bias filter:                      181  (0.0215913); expected 167.7 (0.02)
+Passed Vit filter:                        14  (0.00167005); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000238578); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 7984.23
+//
+[ok]

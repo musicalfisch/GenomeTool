@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/449439_GCA_000787675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    5.5e-06   23.5   0.1      0.019   11.8   0.0    2.3  2  lcl|BBPA01000019.1_prot_GAL92143.1_3780  [locus_tag=N44_00431] [protein=D
+  ------ inclusion threshold ------
+      0.028   11.3   0.0      0.059   10.2   0.0    1.5  1  lcl|BBPA01000053.1_prot_GAL94221.1_1676  [locus_tag=N44_02801] [protein=c
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|BBPA01000019.1_prot_GAL92143.1_3780  [locus_tag=N44_00431] [protein=D-aminoacylase] [protein_id=GAL92143.1] [loca
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   7.8e-06     0.019      16      60 ..      19      64 ..       2      69 .. 0.78
+   2 !    9.4   0.0   4.4e-05       0.1     368     428 ..     486     555 ..     461     567 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 7.8e-06
+                                     cyrG 16 yatvdvqvvdgkiaaiapelevvg.taidgenklllpgfvnahths 60
+                                              +  d+ +++gki aiap l++ + +++d++   + pgf++ hth 
+  lcl|BBPA01000019.1_prot_GAL92143.1_3780 19 AMVGDIGIQEGKIVAIAPGLNIPAlEVVDATGLWVTPGFIDIHTHY 64
+                                             4556999***************87256788888899*********5 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 4.4e-05
+                                     cyrG 368 klgsltvgkkadlvlydltnls..llpr...tdpi...gllvlgrpt.nvvdsawvngkqivadgkvtti 428
+                                              + g l+vg kad+vl +  +l   + p+   +dpi    l ++ r + ++v+ +++ng  +v+ gkv+ i
+  lcl|BBPA01000019.1_prot_GAL92143.1_3780 486 DTGILKVGAKADIVLLEPHSLHqhISPQveiSDPIldgELRMVKRGSeEIVQAVYINGVPVVSGGKVKDI 555
+                                              5799************9988852245553337999773366777765279*****************987 PP
+
+>> lcl|BBPA01000053.1_prot_GAL94221.1_1676  [locus_tag=N44_02801] [protein=cytosine deaminase] [protein_id=GAL94221.1] [
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   2.5e-05     0.059      12      61 ..      29      80 ..      22      90 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 2.5e-05
+                                     cyrG 12 veddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss 61
+                                             + ++ + v++++ dg+i+ i++ +  e    +id ++k+++p f++ hth  
+  lcl|BBPA01000053.1_prot_GAL94221.1_1676 29 TAEGLTLVNLEINDGNINRITSTIppEDNIPVIDLKKKIVFPCFIDMHTHLD 80
+                                             5688899**************99944344568******************64 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4790  (1244012 residues searched)
+Passed MSV filter:                       106  (0.0221294); expected 95.8 (0.02)
+Passed bias filter:                       87  (0.0181628); expected 95.8 (0.02)
+Passed Vit filter:                        10  (0.00208768); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000417537); expected 0.0 (1e-05)
+Initial search space (Z):               4790  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 11569.31
+//
+[ok]

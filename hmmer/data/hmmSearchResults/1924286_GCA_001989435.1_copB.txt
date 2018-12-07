@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924286_GCA_001989435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copB  [M=406]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-11   39.6   3.6    1.4e-09   34.0   0.7    2.2  2  AQL31663.1  efflux transporter periplasmic adaptor subunit [P
+     0.0087   11.6   0.0      0.013   11.0   0.0    1.1  1  AQL31747.1  hypothetical protein BS620_01655 [Prochlorococcus
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL31663.1  efflux transporter periplasmic adaptor subunit [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.9   0.1   0.00054      0.48      50      97 ..      53     100 ..      13     104 .. 0.85
+   2 !   34.0   0.7   1.6e-12   1.4e-09     213     386 ..     160     343 ..     147     347 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 5.9 bits;  conditional E-value: 0.00054
+        copB  50 rnldytgttrplkvvslrsqatgqllnlvvdvgdevqlgqilarvddr 97 
+                   ++ +g  + ++   +  +  g + ++ vd gd v+  q+la +dd 
+  AQL31663.1  53 DSINTSGEVKAIRTSNIGPRKQGVIKEIKVDEGDLVKKDQVLASLDDE 100
+                 55666777888888888889999***********************95 PP
+
+  == domain 2  score: 34.0 bits;  conditional E-value: 1.6e-12
+        copB 213 yailkspatgivieklkepgdlvsigdevl...kigdf.....qqvkvvvllseldlktinlgqtvnvsldafgernfsgritrifplsqgtarripve 303
+                 + ++k+p  g +  k  e g  v+   ++    k  +f     + + +v  + e d+  i++gq+  v ++a+  +++s  +++i   +         e
+  AQL31663.1 160 FYLIKAPYGGKITAKYAEIGSYVTPSTNLSsdpKTKNFifelsEGLEIVAKVPESDIGRIKIGQEASVRIEAYPSKKYSAIVKKIATRAVKDNNVTSFE 258
+                 55666777777777777777666544333211122222112123468899999*********************************9999999999999 PP
+
+        copB 304 itlpngd..glikggllarvrfnnns.apqvivpetaivsqgessaifvlsesnsqvekrpvrlgqaldgqveiitglepgerfvv 386
+                 +tl   d    ik g+ a + f  +    +++vp  +iv++     i+ + ++ns  +   + +g +   +  +i glepge++ +
+  AQL31663.1 259 VTLNFKDisEEIKIGMTADLEFRVEGnEEKILVPTVSIVTEKGEKGILKVDKNNSP-KFEKIEIGISSGNKTSVINGLEPGEQIFI 343
+                 99987773367*********998765156899*******98777788887777774.44558899999999***********9765 PP
+
+>> AQL31747.1  hypothetical protein BS620_01655 [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.0   1.5e-05     0.013      98     160 ..      81     140 ..      72     151 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.5e-05
+        copB  98 llatvvrqekaalsaleaelararievsnaeieverlqlqyqqakndgerlqklalegaiplq 160
+                 lla ++r+e+    al++  a  +ie sna+i+ + l + y+  k  ge +  l ++ ai lq
+  AQL31747.1  81 LLAEILRKENKVNDALKTLYAAKKIEKSNADIDYN-LSISYKTIKSFGEAI--LYIDSAIKLQ 140
+                 89******************************975.99********99986..6778888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (406 nodes)
+Target sequences:                         1795  (496009 residues searched)
+Passed MSV filter:                        42  (0.0233983); expected 35.9 (0.02)
+Passed bias filter:                       30  (0.0167131); expected 35.9 (0.02)
+Passed Vit filter:                         5  (0.00278552); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111421); expected 0.0 (1e-05)
+Initial search space (Z):               1795  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6712.66
+//
+[ok]

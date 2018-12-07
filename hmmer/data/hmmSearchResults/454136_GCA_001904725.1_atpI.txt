@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454136_GCA_001904725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.5e-154  510.0   6.7   3.9e-154  509.8   6.7    1.0  1  OKH37512.1  F0F1 ATP synthase subunit A [Phormidium ambiguum 
+    1.9e-34  117.8   9.4    3.6e-34  116.9   9.4    1.4  1  OKH40046.1  F0F1 ATP synthase subunit A [Phormidium ambiguum 
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH37512.1  F0F1 ATP synthase subunit A [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  509.8   6.7  1.3e-157  3.9e-154       1     251 []       1     252 [.       1     252 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 509.8 bits;  conditional E-value: 1.3e-157
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 mls ln +    la+levg+hfywq+gnlk+hgqvfltswfvia+l+vas+ at+n+qrip g+qn+mey lefi+ laknqlgekeyrpwvpfigtlf
+  OKH37512.1   1 MLSDLNYLTFTHLASLEVGQHFYWQVGNLKLHGQVFLTSWFVIALLLVASFLATKNIQRIPGGMQNFMEYVLEFIQGLAKNQLGEKEYRPWVPFIGTLF 99 
+                 788899999999*************************************************************************************** PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsgalipw+liklp+gelaaptndinttvalalltslayfyagfskrglgyf+kyieptpvllpiailedftkplslsfrlfgniladelvv
+  OKH37512.1 100 LFIFVSNWSGALIPWRLIKLPEGELAAPTNDINTTVALALLTSLAYFYAGFSKRGLGYFRKYIEPTPVLLPIAILEDFTKPLSLSFRLFGNILADELVV 198
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgeeeh.eeh 251
+                 +vlvllvplfvplp+malglftsaiqalvfatla+ayihea+eghg+eeh eeh
+  OKH37512.1 199 GVLVLLVPLFVPLPIMALGLFTSAIQALVFATLAAAYIHEAMEGHGGEEHhEEH 252
+                 *********************************************988761565 PP
+
+>> OKH40046.1  F0F1 ATP synthase subunit A [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  116.9   9.4   1.2e-37   3.6e-34      30     245 ..      17     223 .]       4     223 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 116.9 bits;  conditional E-value: 1.2e-37
+        atpI  30 kihgqvfltswfviailvvaslaatrnvqripk..giqnlmeyalefirdlaknqlgekeyrpwvpfigtlflfifvsnwsgalipwkliklpsgelaa 126
+                  +    +l +w+v+a l+  s   t+ +   p+    qn++e  +  ird  ++  g+ +  p++pf+gtlflfi  +n         li +p      
+  OKH40046.1  17 TLNA-TILYTWLVMAFLICGSWWVTQRLSTTPQmsRWQNFLEALIVGIRDQIQEASGQ-NPEPYLPFVGTLFLFIATANL--------LIIIPG--YHP 103
+                 4444.45778********************9972257**************9999886.679*************99985........555664..568 PP
+
+        atpI 127 ptndinttvalalltslayfyagfskrgl.gyfkkyieptpvllpiailedftkplslsfrlfgniladelvvavlvllvplfvplpvmalglftsaiq 224
+                 pt  i tt ala+   +a    g+ + g+  yf++y++p+p +lp  i+ ++++ l+l++rlfgn+++d l+ a+l+ + plf p+ +  lgl+t  iq
+  OKH40046.1 104 PTGSISTTAALAICVFFAVPIYGIRQEGIfRYFQHYLQPSPFMLPFHIIGELSRTLALAIRLFGNVMSDGLIAAILLSIAPLFFPIIMQMLGLLTGLIQ 202
+                 9******************999*****9747******************************************************************** PP
+
+        atpI 225 alvfatlagayihealeghge 245
+                 a +fa la  yi  a + hg+
+  OKH40046.1 203 AYIFAILAIVYIASATQAHGN 223
+                 *******************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         6149  (2062819 residues searched)
+Passed MSV filter:                       224  (0.0364287); expected 123.0 (0.02)
+Passed bias filter:                      114  (0.0185396); expected 123.0 (0.02)
+Passed Vit filter:                         9  (0.00146365); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000325256); expected 0.1 (1e-05)
+Initial search space (Z):               6149  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 10355.35
+//
+[ok]

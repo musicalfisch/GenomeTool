@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1705388_GCA_001276715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.022   12.9   2.6        1.5    6.9   0.1    2.2  2  KOR34336.1  phosphate ABC transporter substrate-binding prote
+
+
+Domain annotation for each sequence (and alignments):
+>> KOR34336.1  phosphate ABC transporter substrate-binding protein [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.4   0.00072       3.6       9      48 ..      12      52 ..       6      61 .. 0.54
+   2 ?    6.9   0.1    0.0003       1.5     104     140 ..     231     267 ..     227     274 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.00072
+        copC  9 lvvlsigllllaassnsntatndeass.ktttaattavsst 48
+                l+v  ++l l+++++++ ++tn+++++ + +t++tt+++++
+  KOR34336.1 12 LLVPLMALSLTVSACQQRENTNTSTTPpEANTPNTTQTNNQ 52
+                44444455555555666666666665513445555544433 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.0003
+        copC 104 nakvtaqvqlPdGeqkaldlkydaadkhyaallpgka 140
+                 n  vtaq+q  +G    ++++y + +    a l +ka
+  KOR34336.1 231 NEGVTAQIQQTQGAIGYVEFSYAKLQNLQMATLENKA 267
+                 778********************99999999998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5049  (1535341 residues searched)
+Passed MSV filter:                       146  (0.0289166); expected 101.0 (0.02)
+Passed bias filter:                      108  (0.0213904); expected 101.0 (0.02)
+Passed Vit filter:                        15  (0.00297089); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396118); expected 0.1 (1e-05)
+Initial search space (Z):               5049  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6333.28
+//
+[ok]

@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_000332585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+     5e-153  505.0   1.1   5.6e-153  504.9   1.1    1.0  1  lcl|AOCI01000164.1_prot_ELS46753.1_3428  [gene=mdmC] [locus_tag=C789_3428
+    1.1e-35  121.5   0.0    1.9e-35  120.6   0.0    1.5  1  lcl|AOCI01000016.1_prot_ELS49747.1_466   [gene=mdmC] [locus_tag=C789_466]
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|AOCI01000164.1_prot_ELS46753.1_3428  [gene=mdmC] [locus_tag=C789_3428] [protein=O-methyltransferase family protei
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  504.9   1.1    2e-156  5.6e-153       1     220 []       1     220 []       1     220 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 504.9 bits;  conditional E-value: 2e-156
+                                     AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvf 70 
+                                              manqtlgldrqfysyyqsiclre+pilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvf
+  lcl|AOCI01000164.1_prot_ELS46753.1_3428   1 MANQTLGLDRQFYSYYQSICLREPPILAQLRQETASQPLAVMQIAPEQGQFMAFLVQAIGAKKALEIGVF 70 
+                                              9********************************************************************* PP
+
+                                     AvaC  71 tgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfdfv 140
+                                              tgysalvvalalpp+gkliacdl+eeytsiarrywqqagvadkidlriapaletld+liaggesnsfdfv
+  lcl|AOCI01000164.1_prot_ELS46753.1_3428  71 TGYSALVVALALPPQGKLIACDLREEYTSIARRYWQQAGVADKIDLRIAPALETLDQLIAGGESNSFDFV 140
+                                              ********************************************************************** PP
+
+                                     AvaC 141 fidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiqqdervnisiipi 210
+                                              fidadksnyd+yye+alqlvrsggiiaidnvfwsgrva+ads+dnrtkiirslnakiqqdervnisiipi
+  lcl|AOCI01000164.1_prot_ELS46753.1_3428 141 FIDADKSNYDCYYEQALQLVRSGGIIAIDNVFWSGRVATADSNDNRTKIIRSLNAKIQQDERVNISIIPI 210
+                                              ********************************************************************** PP
+
+                                     AvaC 211 gdgltlamkk 220
+                                              gdgltlamkk
+  lcl|AOCI01000164.1_prot_ELS46753.1_3428 211 GDGLTLAMKK 220
+                                              *********8 PP
+
+>> lcl|AOCI01000016.1_prot_ELS49747.1_466  [gene=mdmC] [locus_tag=C789_466] [protein=O-methyltransferase family protein]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.6   0.0   6.9e-39   1.9e-35      41     217 ..      88     264 ..      35     267 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 120.6 bits;  conditional E-value: 6.9e-39
+                                    AvaC  41 vmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagva 111
+                                              m     +gq++ flv+   a+++leig+ftgysal +a alp +g+++ac++    +  ar+ ++++   
+  lcl|AOCI01000016.1_prot_ELS49747.1_466  88 EMLSGHVEGQMLKFLVHLTQAQRVLEIGLFTGYSALAMAEALPSDGQVVACEVDAYVAEFARQCFNESTAG 158
+                                             34444558*************************************************************** PP
+
+                                    AvaC 112 dkidlriapaletldkliaggesnsfdfvfidadksnydayyeral..qlvrsggiiaidnvfwsgrvaaa 180
+                                             +ki +++apaletl +l  +ge   fd+vfidadk+ y  y +  l   l+   g+i+ dn +  g+   +
+  lcl|AOCI01000016.1_prot_ELS49747.1_466 159 HKIVVKVAPALETLKQLAEAGE--VFDLVFIDADKAGYIDYLNLLLttSLLAPNGLICADNTLMQGQPYLS 227
+                                             *******************998..6****************998763368999****************** PP
+
+                                    AvaC 181 dstdnrtkiirslnakiqqdervnisiipigdgltla 217
+                                             ++     k i  +n  + +d rv+  ++p+ dgltl 
+  lcl|AOCI01000016.1_prot_ELS49747.1_466 228 ETPTPNGKAIAQFNQTLSHDPRVEQVLLPLRDGLTLI 264
+                                             *99999*****************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         5571  (1335648 residues searched)
+Passed MSV filter:                       172  (0.0308742); expected 111.4 (0.02)
+Passed bias filter:                      138  (0.0247711); expected 111.4 (0.02)
+Passed Vit filter:                        10  (0.00179501); expected 5.6 (0.001)
+Passed Fwd filter:                         2  (0.000359002); expected 0.1 (1e-05)
+Initial search space (Z):               5571  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 7346.06
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-34  115.9   0.0    4.2e-33  111.8   0.0    2.0  1  BAC09291.1  ferrous iron transport protein A [Thermosynechoco
+    0.00075   16.2   0.0     0.0008   16.1   0.0    1.0  1  BAC08756.1  ferrous iron transport protein A [Thermosynechoco
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC09291.1  ferrous iron transport protein A [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.8   0.0   3.4e-36   4.2e-33      47     204 ..      33     177 ..      27     180 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 111.8 bits;  conditional E-value: 3.4e-36
+        feoA  47 plaqvemgktvwlvgfqgtgginrllgmglnpgiqlqvissqprgsvliaiqdnrigigaemaekilvsdsqpkklepkkdlpevrtflreipigkagk 145
+                  la  e gk   ++ +  t     ll mgl pg+ + ++  ++ g+v+ia++d+r  i   +a++il++ +            ev   lr  pig   +
+  BAC09291.1  33 SLAAAEPGKLYMIARLACTNP-RELLAMGLRPGVTVTILQKNNHGAVMIALRDQRFCINHALAQHILLAAVTG----------EV--DLRTAPIGARLR 118
+                 577778888777777776654.679******************************************997653..........33..47999******* PP
+
+        feoA 146 vvgydralrgykgkllsmgltpgteftvirvaplgdpveirvrgfhlslrkqeadaliv 204
+                 + gy  +   yk kll+mgltpgte+ +ir aplgdp ei+vrgfhlslrk+eadal v
+  BAC09291.1 119 ISGYAPTAPSYKRKLLAMGLTPGTELEIIRHAPLGDPTEIKVRGFHLSLRKEEADALEV 177
+                 ********************************************************977 PP
+
+>> BAC08756.1  ferrous iron transport protein A [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   0.0   6.5e-07    0.0008     135     207 ..       7      79 ..       3      82 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 6.5e-07
+        feoA 135 lreipigkagkvvgydralrgykgkllsmgltpgteftvirvaplgdpveirvrgf.hlslrkqeadaliveei 207
+                 l ++p+g   ++   + +   ++ +l ++g++ g   t++r ap  + + irv  + ++++r  +a +++ve +
+  BAC08756.1   7 LSDLPLGTPARITAIEGT-AAWQRRLAAVGFSVGQTVTLLRRAPSSQTLAIRVGALtDVAIRATDASTILVELL 79 
+                 677788888777776654.578899****************************9873699***********966 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                        60  (0.0242424); expected 49.5 (0.02)
+Passed bias filter:                       56  (0.0226263); expected 49.5 (0.02)
+Passed Vit filter:                         6  (0.00242424); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808081); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8170.89
+//
+[ok]

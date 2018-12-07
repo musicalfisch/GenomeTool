@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cutC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1940762_GCA_002163975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cutC  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   12.6   0.0      0.083   11.0   0.0    1.8  2  ARV60555.1  homocitrate synthase [Nostocales cyanobacterium H
+
+
+Domain annotation for each sequence (and alignments):
+>> ARV60555.1  homocitrate synthase [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0      0.14   8.5e+02     184     219 ..      32      66 ..      20      70 .. 0.74
+   2 ?   11.0   0.0   1.3e-05     0.083       9      53 ..     148     192 ..     144     206 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.14
+        cutC 184 vvelvsktgvkeihfsasamkdsemqfqnkaiaglg 219
+                 +  l+   gv+e+ +   am + e +   k+ia lg
+  ARV60555.1  32 IATLLDMMGVQELEVGIPAMGQDEAE-SIKTIAHLG 66 
+                 55678888999999999999888876.456777776 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 1.3e-05
+        cutC   9 nidsafraqeggadrielcdspgdggntpsygvvealrphitmdi 53 
+                  +d a++aqe ga r  +cd+ g      +y  v  l  h+++ +
+  ARV60555.1 148 LLDVALKAQESGAFRFRFCDTVGVLDPISTYNKVCHLVSHLSIPV 192
+                 6899********************999999*99999999988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (244 nodes)
+Target sequences:                         6177  (2043057 residues searched)
+Passed MSV filter:                       112  (0.0181318); expected 123.5 (0.02)
+Passed bias filter:                      100  (0.0161891); expected 123.5 (0.02)
+Passed Vit filter:                         8  (0.00129513); expected 6.2 (0.001)
+Passed Fwd filter:                         1  (0.000161891); expected 0.1 (1e-05)
+Initial search space (Z):               6177  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 12462.65
+//
+[ok]

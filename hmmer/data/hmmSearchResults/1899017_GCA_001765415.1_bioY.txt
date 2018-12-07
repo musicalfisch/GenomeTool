@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1899017_GCA_001765415.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00064   16.3   4.9    0.00064   16.3   4.9    2.4  3  AOR38693.1  hypothetical protein BHV42_05480 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> AOR38693.1  hypothetical protein BHV42_05480 [Candidatus Melainabacteria bacterium MEL.A1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.6     0.015        27      61      96 ..      20      53 ..      17      61 .. 0.78
+   2 !   16.3   4.9   3.6e-07   0.00064      64     154 ..      76     167 ..      63     175 .. 0.85
+   3 ?    1.2   0.1     0.015        27      30      75 ..     156     201 ..     147     209 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.015
+        bioY 61 vtlqvgalLltlllllylleiLlalaylslGlsqLs 96
+                + l +g+lLl  +l+   l iL++ + ++   + L+
+  AOR38693.1 20 IRLSFGSLLL--ILCCTFLLILATFTQFNVTHFILP 53
+                5678888876..567777889999999999988887 PP
+
+  == domain 2  score: 16.3 bits;  conditional E-value: 3.6e-07
+        bioY  64 qvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRlark.raasdllnlvLisllGlvvlqvc 154
+                 qv+  + + + l+ +  i   l y+ lGl+ ++v+  g+G  ++    ++y+  ++++ +  +   +   +  ++l  vL+ +l + ++++ 
+  AOR38693.1  76 QVPVVMFIGAFLGRKFGITSVLLYILLGLFVIPVFALGGGPKYIFEYSFGYILAYIPAIFFAGSILKSgFSNRNILHAVLVGVLTIHIIGIL 167
+                 788888999999999999999**************************************999876543134457888999998888888875 PP
+
+  == domain 3  score: 1.2 bits;  conditional E-value: 0.015
+        bioY  30 asLLlillaqliiallflPvaitGqaltvllvtlqvgalLltllll 75 
+                  ++L i + ++   l        G+++    +  q ga++ + l+ 
+  AOR38693.1 156 VGVLTIHIIGILYMLFIAGLKHDGWTFMSGWICSQSGAKIIYDLVF 201
+                 4566666777777788888899999999999999999999887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         1772  (542038 residues searched)
+Passed MSV filter:                        29  (0.0163657); expected 35.4 (0.02)
+Passed bias filter:                       18  (0.010158); expected 35.4 (0.02)
+Passed Vit filter:                         2  (0.00112867); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000564334); expected 0.0 (1e-05)
+Initial search space (Z):               1772  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5664.30
+//
+[ok]

@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395961_GCA_000022045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.8e-102  339.7   0.1     2e-102  339.6   0.1    1.0  1  ACL46212.1  O-methyltransferase family 3 [Cyanothece sp. PCC 
+    0.00086   17.1   0.1      0.002   15.9   0.1    1.6  1  ACL44623.1  Methyltransferase type 11 [Cyanothece sp. PCC 742
+  ------ inclusion threshold ------
+      0.045   11.5   0.0      0.098   10.4   0.0    1.6  1  ACL46963.1  Methyltransferase type 11 [Cyanothece sp. PCC 742
+
+
+Domain annotation for each sequence (and alignments):
+>> ACL46212.1  O-methyltransferase family 3 [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  339.6   0.1  1.1e-105    2e-102       1     220 []       1     220 []       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 339.6 bits;  conditional E-value: 1.1e-105
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+n+tlgld ++  y  ++ lre+ il qlrqetas+p   mqiapeqgqfmaflvq +g k+aleigvftgys+  valalppeg+liacdls +yt+
+  ACL46212.1   1 MSNKTLGLDDRLQDYLLAVSLREPEILQQLRQETASHPQVNMQIAPEQGQFMAFLVQLLGVKQALEIGVFTGYSSTAVALALPPEGQLIACDLSADYTA 99 
+                 89************************************************************************************************* PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarrywq agva+kidlr+apaletld+l+a+g s++fdfvfidadk ny  yyer+lql+r+gg+i +dnv+w g va   +++  t  ir++n ki+
+  ACL46212.1 100 IARRYWQLAGVANKIDLRLAPALETLDQLLAAGRSETFDFVFIDADKENYLNYYERSLQLLRRGGLIVVDNVLWGGSVADPANQESSTVAIRAFNQKIH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamkk 220
+                  d+rv +s++pi dgltla+k+
+  ACL46212.1 199 ADDRVSLSLVPIADGLTLALKR 220
+                 *******************995 PP
+
+>> ACL44623.1  Methyltransferase type 11 [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.1   1.1e-06     0.002      63     111 ..      48      96 ..      35     158 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1.1e-06
+        AvaC  63 kaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagva 111
+                 ++l++   tg sa+  a+++ p g+++  dl+e    +ar+  qq g+ 
+  ACL44623.1  48 RVLDVCCGTGASAIPAAVCVGPTGQVLGIDLAESLLQLARQKAQQQGLE 96 
+                 68999999*************************************9975 PP
+
+>> ACL46963.1  Methyltransferase type 11 [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   5.5e-05     0.098      57     125 ..     399     463 ..     379     536 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 5.5e-05
+        AvaC  57 qaigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletl 125
+                 q  + + +leig   g   l +a a+ pegk+  +d s+    ia     + g  ++i+l +apa + l
+  ACL46963.1 399 QLRSGEAVLEIGCGVGGDLLTLAHAVGPEGKVTGVDSSQT--MIAEA-QSRLGEHSNIELVVAPA-DVL 463
+                 45556789**************************998875..55543.46789999999*99998.334 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         5327  (1638061 residues searched)
+Passed MSV filter:                       173  (0.0324761); expected 106.5 (0.02)
+Passed bias filter:                      147  (0.0275953); expected 106.5 (0.02)
+Passed Vit filter:                        13  (0.0024404); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000563169); expected 0.1 (1e-05)
+Initial search space (Z):               5327  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 9009.34
+//
+[ok]

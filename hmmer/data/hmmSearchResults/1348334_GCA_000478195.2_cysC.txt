@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-98  325.3   0.4    3.1e-98  325.1   0.4    1.0  1  ERT07473.1  adenylylsulfate kinase [Lyngbya aestuarii BL J]
+  ------ inclusion threshold ------
+      0.029   12.4   0.0       0.04   11.9   0.0    1.3  1  ERT04954.1  carbohydrate kinase, thermoresistant glucokinase 
+      0.051   11.6   0.0      0.088   10.8   0.0    1.4  2  ERT06201.1  shikimate kinase family protein [Lyngbya aestuari
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT07473.1  adenylylsulfate kinase [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  325.1   0.4  1.4e-101   3.1e-98       4     184 .]       1     181 []       1     181 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 325.1 bits;  conditional E-value: 1.4e-101
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m++rgvtvw+tglsgagk+tit a+   l a+   +e+ldgdivr nltkglgfskedrd nirrigfv+ lltr gvivlvsaispyre+reevr  +
+  ERT07473.1   1 MQRRGVTVWFTGLSGAGKTTITRAIAEELRAKECQLEILDGDIVRENLTKGLGFSKEDRDINIRRIGFVAHLLTRNGVIVLVSAISPYREVREEVRKTV 99 
+                 889************************************************************************************************ PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqavav 184
+                 g+fvevfvnapl  ceerdvkglykrarageik ftgiddpyepp+npevecrtdle l esvakv nkl elgyi   vav
+  ERT07473.1 100 GDFVEVFVNAPLGTCEERDVKGLYKRARAGEIKQFTGIDDPYEPPLNPEVECRTDLEELSESVAKVMNKLEELGYISAKVAV 181
+                 *****************************************************************************99997 PP
+
+>> ERT04954.1  carbohydrate kinase, thermoresistant glucokinase family protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   1.9e-05      0.04      11      97 ..       3      92 ..       1     138 [. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.9e-05
+        cysC 11 vwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigf.vsnllt.rhgvivlvsais.pyreiree 97
+                + + g+sg+gk+ti e l   l  +    + +  d    ++++ + ++ edr+  + r+   + + l   + v++  sa+   yr+i   
+  ERT04954.1  3 ILVMGVSGSGKTTIGEKLAESLNFQFRDADEFHPDENIKKMANNIPLTDEDRQPWLERMQTtIDQWLQdNQNVVLTCSALKeKYRQILWR 92
+                5678**************9999999999999999999999999***********999986514555551455666677775257777543 PP
+
+>> ERT06201.1  shikimate kinase family protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   4.1e-05     0.088       7      52 ..       6      46 ..       1      83 [. 0.80
+   2 ?   -3.4   0.0      0.92     2e+03      78      86 ..      98     106 ..      96     121 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 4.1e-05
+        cysC  7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnlt 52
+                rg+ ++l g+ gagk+t+      kl+a+ +    +d d v t+++
+  ERT06201.1  6 RGINLYLIGMMGAGKTTVG-----KLLAKEFNYRFIDTDEVITQVA 46
+                9****************95.....7888888888888888887764 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.92
+        cysC  78 rhgvivlvs 86 
+                 rhg+iv + 
+  ERT06201.1  98 RHGLIVWLD 106
+                 788887643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       268  (0.0411991); expected 130.1 (0.02)
+Passed bias filter:                      246  (0.0378171); expected 130.1 (0.02)
+Passed Vit filter:                        42  (0.00645657); expected 6.5 (0.001)
+Passed Fwd filter:                         3  (0.000461184); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 5909.74
+//
+[ok]

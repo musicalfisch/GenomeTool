@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59512_GCA_900009275.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.8e-11   40.0   0.0      8e-11   40.0   0.0    1.0  1  CUR28724.1  Similar to tr|Q8YXA6|Q8YXA6 [Planktothrix rubesce
+  ------ inclusion threshold ------
+      0.019   12.5   1.0      0.028   11.9   1.0    1.2  1  CUR25462.1  putative RuBisCO transcriptional regulator [Plank
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR28724.1  Similar to tr|Q8YXA6|Q8YXA6 [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.0   0.0   3.2e-14     8e-11     229     292 ..       8      70 ..       1      78 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 40.0 bits;  conditional E-value: 3.2e-14
+        finU 229 iklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                  k ++ v+ +elr+ l++d+++v+  + d+ +++v l++a++s+ s++++lk+ +e rl++++ 
+  CUR28724.1   8 EKNVETVL-DELRPYLMSDGGNVEIVELDGPIVRVRLQGACGSCPSSTMTLKMGIERRLRERIP 70 
+                 44454444.579*************************************************984 PP
+
+>> CUR25462.1  putative RuBisCO transcriptional regulator [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   1.0   1.1e-05     0.028     224     294 ..     204     276 ..     184     282 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.1e-05
+        finU 224 kivlkiklldevv.deelravliddeldvvlydvdkdllkvalksassstaslkvalkialedr.lskdlvve 294
+                  +  + k++d+v+ + e+ +   ++e++    ++ k+ +++ l++a  st++ +  l++++ +r + +d+vv+
+  CUR25462.1 204 SQSTIRKVIDQVLtRAEIDPRCLKVEMELNSIEAIKNTVQAGLGAAFVSTSAIEKELEMKVLHRmVIEDIVVK 276
+                 55678999*99984578999*********************************99999998887245777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5076  (1601503 residues searched)
+Passed MSV filter:                       178  (0.035067); expected 101.5 (0.02)
+Passed bias filter:                      137  (0.0269898); expected 101.5 (0.02)
+Passed Vit filter:                         9  (0.00177305); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000394011); expected 0.1 (1e-05)
+Initial search space (Z):               5076  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9609.02
+//
+[ok]

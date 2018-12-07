@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160280_GCA_000307995.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.2e-16   54.5   0.0    9.9e-16   54.2   0.0    1.1  1  CCH93977.1  Ferredoxin--NADP reductase [Microcystis aeruginos
+  ------ inclusion threshold ------
+      0.048    8.9   0.0      0.061    8.5   0.0    1.1  1  CCH93603.1  conserved hypothetical protein [Microcystis aerug
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH93977.1  Ferredoxin--NADP reductase [Microcystis aeruginosa PCC 9432]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.2   0.0   4.2e-19   9.9e-16    1208    1401 ..     174     378 ..     160     399 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 54.2 bits;  conditional E-value: 4.2e-19
+        cysJ 1208 qkprlysisscp...llhprriqitvgvlqvtt.dagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s      l  + + + v  l+    ++ +   g+cs +l+ +  g  v i   +   +  p d  a i+m+  gtg++p+ afl +  
+  CCH93977.1  174 HKLRLYSIASTRhgdKLDDKTVSLCVRQLEYQHpETKETVYGVCSTHLCNIGVGDDVAITGpVGKEMLLPGDEDATIIMMATGTGIAPFRAFLWRMF 270 
+                  5789****997522268889999999988877614555779*****************98526678899************************9887 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeqlqvw.rdrnvltglevafsrlgeqkq....yvqnlmeqqpekiwqilshpqchyyvcgdakmaddvf 1390
+                    q +     g a l fg+ + ++++yqe+l+    +      l  a+sr  ++ q    y+q  + ++ ++iw++l  p+ h y+cg   m d + 
+  CCH93977.1  271 KEQHEDYKfKGLAWLIFGVPKTANILYQEELEKIaAEFPDNFRLTYAISREQQNPQggrmYIQHRVAEHADEIWNLLQSPKTHAYMCGLKGMEDGID 367 
+                  777766651699******************975414555566788888887665433344********************************99987 PP
+
+        cysJ 1391 avmmaiakqqg 1401
+                    +   a ++g
+  CCH93977.1  368 DAISGAAAKNG 378 
+                  55554444444 PP
+
+>> CCH93603.1  conserved hypothetical protein [Microcystis aeruginosa PCC 9432]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   0.0   2.6e-05     0.061     153     275 ..      19     144 ..      10     163 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 2.6e-05
+        cysJ 153 vekvevelpqatsltpqdeviikdvwnklrawkelqmekflkrllleepeleylfgeaidsisdffyel..fdcaihqlqpet...qvivgeplmgvpp 246
+                  e +++ + +  sl  q+e+ii+  +++l  w + q  ++++ +lle p  + +  e  d + +++  l  +   i+ ++ +      i ge l  +  
+  CCH93603.1  19 TESIDLSFGEIISLYSQNELIIQPEYQRLFRWSNQQKSRLIESILLELPIPQIFTIENSDGVLELIDGLqrLSSVIQFIDANVlnfTDIDGEKLKSLKL 117
+                 577888888999************************************987777777766665554443112222322222221112233444444444 PP
+
+        cysJ 247 egehgfktvaeygnl.fadaglrpehwika 275
+                 e   g   ++e  nl f d  lr +  ik 
+  CCH93603.1 118 E---GCDQISELNNLtFEDLSLRLKLRIKR 144
+                 3...34455666665466666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         4760  (1306691 residues searched)
+Passed MSV filter:                       110  (0.0231092); expected 95.2 (0.02)
+Passed bias filter:                       90  (0.0189076); expected 95.2 (0.02)
+Passed Vit filter:                         9  (0.00189076); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420168); expected 0.0 (1e-05)
+Initial search space (Z):               4760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.12u 0.02s 00:00:00.13 Elapsed: 00:00:00.14
+# Mc/sec: 13813.59
+//
+[ok]

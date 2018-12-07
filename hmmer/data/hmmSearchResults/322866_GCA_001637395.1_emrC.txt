@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-20   72.0   5.1    1.6e-20   71.9   5.1    1.0  1  OAB56508.1  hypothetical protein AY599_26585 [Leptolyngbya va
+    1.5e-05   23.7   2.3      2e-05   23.3   2.1    1.3  1  OAB62578.1  hypothetical protein AY599_26370 [Leptolyngbya va
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB56508.1  hypothetical protein AY599_26585 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.9   5.1   5.7e-24   1.6e-20       5     102 ..       3     100 ..       1     104 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 71.9 bits;  conditional E-value: 5.7e-24
+        emrC   5 wiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 ++ ll ai+ ev+ t ++k s g+t+l p++l++v y +++ +l l+lk++ v +ay++waglg +    +gl +f e+l+  +   iali+ gvi +
+  OAB56508.1   3 YLLLLGAIVSEVAATSALKASYGLTRLQPTLLMIVGYCIAFVLLGLSLKTLPVGLAYAIWAGLGVIGAVLVGLFVFGETLSWPQYGGIALIVFGVILL 100
+                 78999******************************************************************************************976 PP
+
+>> OAB62578.1  hypothetical protein AY599_26370 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.3   2.1   7.3e-09     2e-05      32     102 ..      48     118 ..      30     122 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 23.3 bits;  conditional E-value: 7.3e-09
+        emrC  32 ipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 +p +l  +v+ygl+     l l ++++sva    ++l  v    ig  +f+esl l +l+ iali+ gv+ +
+  OAB62578.1  48 TPELLTgLVCYGLGAMAYILLLTRVHLSVAGPA-TALAYVTAVLIGHFVFKESLPLDRLFGIALIVCGVLIV 118
+                 566654479*****9999***********9875.5688888889************************9866 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       171  (0.0316667); expected 108.0 (0.02)
+Passed bias filter:                       62  (0.0114815); expected 108.0 (0.02)
+Passed Vit filter:                         7  (0.0012963); expected 5.4 (0.001)
+Passed Fwd filter:                         4  (0.000740741); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 2525.37
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/corA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1921803_GCA_001904635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       corA  [M=385]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.1e-189  625.7   2.4   7.3e-189  625.5   2.4    1.0  1  OKH23443.1  magnesium and cobalt transport protein CorA [Hydr
+  ------ inclusion threshold ------
+      0.081    9.8   1.9       0.14    9.0   1.9    1.3  1  OKH21322.1  abortive phage infection protein [Hydrococcus riv
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH23443.1  magnesium and cobalt transport protein CorA [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  625.5   2.4  3.3e-192  7.3e-189      20     380 ..      21     381 ..       5     382 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 625.5 bits;  conditional E-value: 3.3e-192
+        corA  20 eeedyfdyfydepgsepgtliiepdakpsriilidydednavrkvditpnacapyigtntvswmdiqglgsetvlkqvgeifnlhpllledvvnvpqrp 118
+                 +eedyfdy ydepgsepgtl iepda+psriilidyd   a+r+vd+ p+a  py+gtntvswmd+qglgse vlkqvgei++lhpllledvvnvpqrp
+  OKH23443.1  21 KEEDYFDYHYDEPGSEPGTLSIEPDANPSRIILIDYDAKHAIRRVDLMPKALIPYLGTNTVSWMDVQGLGSERVLKQVGEILKLHPLLLEDVVNVPQRP 119
+                 69************************************************************************************************* PP
+
+        corA 119 kledynnqllvisqmvrlkedesgfdteqvsfvlgkryllsfqeeelqdcfeivrdrirtsqgrvrksgadyltyllldtiidgyfpvvehyedrieal 217
+                 k+edyn+qll+i++mvr + de gf++eqvsfvlgk yll++qeeel+dcf+ vrdrirt qgrvr+sgadyltyllld +idgyfpv+e y +rie l
+  OKH23443.1 120 KVEDYNQQLLIIAHMVRPRPDEDGFEAEQVSFVLGKNYLLTIQEEELEDCFDPVRDRIRTHQGRVRESGADYLTYLLLDVLIDGYFPVLEDYGERIEEL 218
+                 *************************************************************************************************** PP
+
+        corA 218 edmiisnpdrdtmqeiydvrrellalrrliwpmrnvlhllmrdhhgivsdevqiyfrdsydhviqileiieayrelaaslmdvymstmgnklneimkfl 316
+                 ed i+  p ++t++eiy vrrellalrrliwp+r+v+ +l+r    +vs +vqiy+rd+ydhviq+l+i e+yrela+slm++y+s+m nk+ne+mkfl
+  OKH23443.1 219 EDKILRSPTQNTLEEIYSVRRELLALRRLIWPLRDVMNILIRSSNKLVSADVQIYLRDCYDHVIQLLDITETYRELASSLMEIYLSSMSNKMNEVMKFL 317
+                 *************************************************************************************************** PP
+
+        corA 317 tvistifipltfivgvygmnfenmpelkgewsyflvwlvmlavagglifyfwrkgwfkpiyslk 380
+                 tvistifipltfi gvygmnf+ mpel+  w y+l  ++m+a+a gli++fwr+gwf+  ys k
+  OKH23443.1 318 TVISTIFIPLTFIAGVYGMNFKYMPELEWRWGYWLCLFLMVAIACGLIYFFWRRGWFRNFYSTK 381
+                 **************************************************************88 PP
+
+>> OKH21322.1  abortive phage infection protein [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.0   1.9   6.4e-05      0.14     316     373 ..     296     353 ..     285     359 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 6.4e-05
+        corA 316 ltvistifipltfi.vgvygmnfenmpelkgewsyflvwlvmlavagglifyfwrkgwf 373
+                 +  is i  pl f+ +g+  + + nm  lk    y+lv  +++a +  l++yf  k +f
+  OKH21322.1 296 FFFISQIAFPLIFLgIGLSPIAMSNMSLLKK-AIYVLVDYILIAASELLVLYFSVKSFF 353
+                 5579********9878***********9996.579*******************99998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (385 nodes)
+Target sequences:                         4392  (1417121 residues searched)
+Passed MSV filter:                       151  (0.0343807); expected 87.8 (0.02)
+Passed bias filter:                      124  (0.0282332); expected 87.8 (0.02)
+Passed Vit filter:                        10  (0.00227687); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455373); expected 0.0 (1e-05)
+Initial search space (Z):               4392  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 9093.19
+//
+[ok]

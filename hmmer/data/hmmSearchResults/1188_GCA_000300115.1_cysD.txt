@@ -1,0 +1,98 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188_GCA_000300115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   7.3e-156  516.0   0.1   8.1e-156  515.8   0.1    1.0  1  EKF00530.1  phosphoadenosine phosphosulfate reductase [Tolypo
+  ------ inclusion threshold ------
+        7.8    5.1  11.6        6.8    5.3   0.1    4.1  5  EKF04940.1  hypothetical protein FDUTEX481_01104 [Tolypothrix
+
+
+Domain annotation for each sequence (and alignments):
+>> EKF00530.1  phosphoadenosine phosphosulfate reductase [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  515.8   0.1  1.6e-159  8.1e-156       1     241 []       1     241 []       1     241 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 515.8 bits;  conditional E-value: 1.6e-159
+        cysD   1 mtastatrpqttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkv 99 
+                 mt+st + +qt efdleqlnq+fetatp++ilaws+eni+tglvqtsafnvdd+iit+ilys+lkhpvpvifldtl+hf+++lelvak+ke+ynldl++
+  EKF00530.1   1 MTVSTVSPNQTKEFDLEQLNQQFETATPKDILAWSVENIATGLVQTSAFNVDDMIITHILYSELKHPVPVIFLDTLFHFPQSLELVAKSKEIYNLDLQT 99 
+                 9************************************************************************************************** PP
+
+        cysD 100 yktpdvdtreafaakygealwdkdiakfhevtkieplqrglaelntvawitgrrrdqavtranmpifeldsknrikvnplanwtrkksweyvaehgviy 198
+                 yktpdvd+reaf akyg+alwd+di+kfh++tkieplqrgl+elntvawitgrrrdqavtranmp+feld+++r+kvnpla wtr++sw yvaehgviy
+  EKF00530.1 100 YKTPDVDSREAFNAKYGDALWDRDITKFHHITKIEPLQRGLDELNTVAWITGRRRDQAVTRANMPVFELDGQGRLKVNPLAAWTRQQSWVYVAEHGVIY 198
+                 *************************************************************************************************** PP
+
+        cysD 199 nplhdqgypsigdepittkvgegederagrwrgtgktecgihi 241
+                 nplhdqgypsigdepittkvgegederagrwrgtgktecgihi
+  EKF00530.1 199 NPLHDQGYPSIGDEPITTKVGEGEDERAGRWRGTGKTECGIHI 241
+                 ******************************************8 PP
+
+>> EKF04940.1  hypothetical protein FDUTEX481_01104 [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.5   0.1    0.0046        23       6      55 ..     194     246 ..     190     257 .. 0.76
+   2 ?   -3.4   0.0      0.62   3.1e+03      27      54 ..     393     420 ..     386     423 .. 0.84
+   3 ?    5.3   0.1    0.0014       6.8      27      55 ..     565     593 ..     540     600 .. 0.85
+   4 ?   -1.9   0.1       0.2     1e+03      24      57 ..     731     764 ..     714     769 .. 0.83
+   5 ?    1.1   0.5     0.025   1.2e+02       6      60 ..     878     935 ..     873     947 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0046
+        cysD   6 atrpqttefdleql...nqkfetatpreilawsienistglvqtsafnvddli 55 
+                 a+ p+t+ +   ql   n+  ++ t  + l+w +   +tg v+ s f++ d +
+  EKF04940.1 194 AATPNTSGYKSVQLttdNDSTNSVTSGDKLTWRVTYANTGSVDISNFQITDAL 246
+                 555666655555552226777788999*********************99865 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.62
+        cysD  27 tpreilawsienistglvqtsafnvddl 54 
+                  p + ++w++   +tg v+   f++ d 
+  EKF04940.1 393 DPGDTVTWTVIYKNTGTVDVPNFQITDT 420
+                 5788999999999999999999998875 PP
+
+  == domain 3  score: 5.3 bits;  conditional E-value: 0.0014
+        cysD  27 tpreilawsienistglvqtsafnvddli 55 
+                 t  + ++w++  i+tg v+ s f++ d++
+  EKF04940.1 565 TTGDTVTWTVTYINTGTVDVSNFQITDIL 593
+                 5568899******************9996 PP
+
+  == domain 4  score: -1.9 bits;  conditional E-value: 0.2
+        cysD  24 etatpreilawsienistglvqtsafnvddliit 57 
+                 ++ tp + ++w+i   ++g   +s f++ d + t
+  EKF04940.1 731 NSVTPGDTVTWTIIYKNSGTASASNFQIADALPT 764
+                 667999*********************9997765 PP
+
+  == domain 5  score: 1.1 bits;  conditional E-value: 0.025
+        cysD   6 atrpqttefdleqlnqkfet...atpreilawsienistglvqtsafnvddliitdil 60 
+                  ++p+ + f   +l ++++t    t ++ l+w+i   +t  v  s f++ d++ t++ 
+  EKF04940.1 878 ISIPEVQGFKSVKLTNDVDTnnvVTANDELTWTIVYKNTSNVPISNFQITDFLDTNVT 935
+                 56777777777777777766222468999**********************9998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         9972  (2716567 residues searched)
+Passed MSV filter:                       156  (0.0156438); expected 199.4 (0.02)
+Passed bias filter:                      142  (0.0142399); expected 199.4 (0.02)
+Passed Vit filter:                         7  (0.000701966); expected 10.0 (0.001)
+Passed Fwd filter:                         2  (0.000200562); expected 0.1 (1e-05)
+Initial search space (Z):               9972  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10911.54
+//
+[ok]

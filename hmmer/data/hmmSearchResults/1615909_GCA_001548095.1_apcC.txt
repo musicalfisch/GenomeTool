@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1615909_GCA_001548095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-47  155.9   0.7    3.5e-47  155.8   0.7    1.0  1  BAQ62254.1  phycobilisome small core linker polypeptide [Gemi
+      0.005   14.4   0.0       0.01   13.4   0.0    1.5  1  BAQ61359.1  ferredoxin-NADP(+) reductase [Geminocystis sp. NI
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ62254.1  phycobilisome small core linker polypeptide [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  155.8   0.7     2e-50   3.5e-47       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 155.8 bits;  conditional E-value: 2e-50
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmf++tacvPsq+rirtqrelqntyftklvpydnWf+eqqri+kmGG ivkv+l+tG+pg+ntGll
+  BAQ62254.1  1 MRMFQVTACVPSQSRIRTQRELQNTYFTKLVPYDNWFKEQQRIQKMGGSIVKVKLVTGRPGANTGLL 67
+                9****************************************************************96 PP
+
+>> BAQ61359.1  ferredoxin-NADP(+) reductase [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   5.7e-06      0.01      31      53 ..      49      71 ..      44      78 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 5.7e-06
+        apcC 31 vpydnWfreqqrimkmGGkivkv 53
+                vpy    +e  ri ++GGki+k+
+  BAQ61359.1 49 VPYSRMNQEMNRINRLGGKIIKI 71
+                9*********************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         3639  (1135445 residues searched)
+Passed MSV filter:                       105  (0.0288541); expected 72.8 (0.02)
+Passed bias filter:                       90  (0.0247321); expected 72.8 (0.02)
+Passed Vit filter:                        10  (0.00274801); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000549602); expected 0.0 (1e-05)
+Initial search space (Z):               3639  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 3803.74
+//
+[ok]

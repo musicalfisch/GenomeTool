@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752064_GCA_001548435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.5e-121  401.1   0.0   2.8e-121  401.0   0.0    1.0  1  BAU14475.1  hypothetical protein LEP3755_50220 [Leptolyngbya 
+    1.9e-31  107.8   0.0    2.2e-31  107.6   0.0    1.0  1  BAU11145.1  hypothetical protein LEP3755_16380 [Leptolyngbya 
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU14475.1  hypothetical protein LEP3755_50220 [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  401.0   0.0  8.4e-125  2.8e-121       1     195 [.       1     195 [.       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 401.0 bits;  conditional E-value: 8.4e-125
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnq+qafenpp+fahirvcmrplp+e+l gvsff+eqaydy+lndpyrlrvlklv+++drieieny+v++ekkfygasrdl
+  BAU14475.1   1 MTHSTDIATLARWMAADFSNQQQAFENPPMFAHIRVCMRPLPKEVLGGVSFFIEQAYDYMLNDPYRLRVLKLVQNGDRIEIENYQVRDEKKFYGASRDL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevk 195
+                 +rlk+l+a++leklpgcnm+v wtgnsfkg+vepgkac+v+rkg++tyldsefei+ e f sldrgrdpetde++wgsvagpfefvrwasfadev+
+  BAU14475.1 100 NRLKELTANQLEKLPGCNMVVAWTGNSFKGEVEPGKACMVTRKGQETYLDSEFEINGEWFTSLDRGRDPETDEQVWGSVAGPFEFVRWASFADEVQ 195
+                 **********************************************************************************************97 PP
+
+>> BAU11145.1  hypothetical protein LEP3755_16380 [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.6   0.0   6.7e-35   2.2e-31       7     186 ..       4     185 ..       2     188 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 107.6 bits;  conditional E-value: 6.7e-35
+        cpeS   7 iatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdlerlktl 105
+                 ++ la +m+ +f nq qa e p +f h+r+  r +  +l++  ++f eq+   +l++pyr r+l+l e+ed ++++ y+ k+     ga +  e l++l
+  BAU11145.1   4 VSVLADYMTGEFENQSQARESPTWFVHLRLWQRSI--QLFEDPTIFAEQSNVLKLDQPYRQRLLRLQETEDGLKVQYYQFKDPSCVKGAGQRPELLDRL 100
+                 5789***************************9975..89************************************************************ PP
+
+        cpeS 106 kaddleklpgcnmivew....tgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvr 186
+                 + +++e lpgc++ v       g  f  +  p   c+   +g +  +   fe  +e+f+s d+g d+et++ iwg++ g +ef +
+  BAU11145.1 101 THEEIELLPGCTLDVTVksiaQGYHFVASPPPDSCCVFSLQGSTIQVALGFEAMSERFLSYDKGIDLETQQPIWGALMGAYEFQK 185
+                 ***********9876541122456666666677777777889999999**********************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         6635  (2004652 residues searched)
+Passed MSV filter:                        97  (0.0146194); expected 132.7 (0.02)
+Passed bias filter:                       92  (0.0138659); expected 132.7 (0.02)
+Passed Vit filter:                         9  (0.00135644); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301432); expected 0.1 (1e-05)
+Initial search space (Z):               6635  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7858.24
+//
+[ok]

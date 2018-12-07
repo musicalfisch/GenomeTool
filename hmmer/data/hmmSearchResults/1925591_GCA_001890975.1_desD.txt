@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1925591_GCA_001890975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-06   25.7   3.2    1.6e-06   25.7   3.2    1.5  2  OJJ26566.1  fatty acid desaturase [Roseofilum reptotaenium AO
+    2.1e-05   22.1  10.3      4e-05   21.1  10.3    1.7  1  OJJ26565.1  fatty acid desaturase [Roseofilum reptotaenium AO
+
+
+Domain annotation for each sequence (and alignments):
+>> OJJ26566.1  fatty acid desaturase [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.7   3.2   6.3e-10   1.6e-06      43     134 ..      52     139 ..      29     147 .. 0.79
+   2 ?   -3.7   0.2      0.55   1.4e+03     289     310 ..     278     299 ..     271     311 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 25.7 bits;  conditional E-value: 6.3e-10
+        desD  43 iltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                  +  v   w  + + p  w+l  +  l  g+g+ g+ f i hd+ h  +++kkwvn+l+g           + wr++hn +hh ytn +  d
+  OJJ26566.1  52 NVVLVSLGWWGIAIAP--WYLLPLLWLFTGTGFFGL-FVIAHDCGHRSFANKKWVNNLVGHIALTPCIYPFHPWRIQHN-IHHKYTNHIDRD 139
+                 4555555565555555..888888899999999998.99*********************7665555566789*****9.79*****88766 PP
+
+  == domain 2  score: -3.7 bits;  conditional E-value: 0.55
+        desD 289 lnwylgglnyqvvhhlfpqich 310
+                 ++w    +n +v hhl   i  
+  OJJ26566.1 278 FEWICHDINVHVPHHLTTAIPW 299
+                 6788889999999999877755 PP
+
+>> OJJ26565.1  fatty acid desaturase [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.1  10.3   1.6e-08     4e-05      69     137 ..      76     142 ..      43     299 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 21.1 bits;  conditional E-value: 1.6e-08
+        desD  69 lvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydlei 137
+                 l  g+ ++g+ f ighd+ h  ++++kw+n+l+g           + wr++hn +hh ytn l  d   
+  OJJ26565.1  76 LFTGSAFTGL-FVIGHDCGHRSFANRKWINNLIGHLVFIPCIYPFHGWRIKHN-IHHKYTNCLEIDNAW 142
+                 3334444444.89*********************7654334445667*****9.79*******988655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         4978  (1623265 residues searched)
+Passed MSV filter:                       179  (0.0359582); expected 99.6 (0.02)
+Passed bias filter:                      120  (0.0241061); expected 99.6 (0.02)
+Passed Vit filter:                        11  (0.00220972); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000401768); expected 0.0 (1e-05)
+Initial search space (Z):               4978  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9847.81
+//
+[ok]

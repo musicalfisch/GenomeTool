@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1594576_GCA_000934435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-29   99.8   0.2    4.4e-29   98.7   0.2    1.5  1  KIY10890.1  ferredoxin-NADP reductase [Mastigocladus laminosu
+  ------ inclusion threshold ------
+      0.014   13.9   0.1      0.034   12.6   0.1    1.7  1  KIY14149.1  photosystem I reaction center subunit XII [Mastig
+
+
+Domain annotation for each sequence (and alignments):
+>> KIY10890.1  ferredoxin-NADP reductase [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.7   0.2   1.5e-32   4.4e-29      10      69 ..      17      76 ..      10      79 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 98.7 bits;  conditional E-value: 1.5e-32
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                 r+fvyevvGl q ++td+ ++ ir sGsvf+ vpysrmnqemrritrlG rivsi+p+ 
+  KIY10890.1 17 SRVFVYEVVGLRQSEETDQTNHQIRNSGSVFIKVPYSRMNQEMRRITRLGGRIVSIQPVS 76
+                69********************************************************85 PP
+
+>> KIY14149.1  photosystem I reaction center subunit XII [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.1   1.1e-05     0.034      29      67 ..     240     277 ..     223     279 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.1e-05
+        cpcD  29 ldysirksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                    ++r+s  v+ tvpy r+    + i + G +i+ i p
+  KIY14149.1 240 TKVAVRRSRQVY-TVPYDRLSATYQEIHKRGGKIIKISP 277
+                 456899999997.9***********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5950  (1718357 residues searched)
+Passed MSV filter:                       125  (0.0210084); expected 119.0 (0.02)
+Passed bias filter:                      118  (0.0198319); expected 119.0 (0.02)
+Passed Vit filter:                        10  (0.00168067); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6357.92
+//
+[ok]

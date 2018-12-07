@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1233231_GCA_000828085.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglE  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0012   16.0   0.0     0.0019   15.3   0.0    1.2  1  KIJ83609.1  sugar transporter [Scytonema tolypothrichoides VB
+  ------ inclusion threshold ------
+      0.013   12.6   0.1      0.019   12.0   0.1    1.1  1  KIJ85102.1  ABC transporter substrate-binding protein [Scyton
+
+
+Domain annotation for each sequence (and alignments):
+>> KIJ83609.1  sugar transporter [Scytonema tolypothrichoides VB-61278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.0   6.7e-07    0.0019      59     176 ..      63     180 ..      27     188 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 6.7e-07
+        aglE  59 gievvyegv.dtfattlpirvdsgrapdlamfpqpglmadf.aregklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefa 155
+                  i+v +e + d +   +  r+    apd+  f    l a f   +  l pl   +tp+     ++++ l+       +yg     s  +l ++n + fa
+  KIJ83609.1  63 NIKVRHEVInDQYMDVIKTRLVGEAAPDV--FYLDALEAPFfMSQNVLEPLDAYITPDFDLADFEETLLNSFKYAKHIYGFPKDYSTLAL-FYNKKAFA 158
+                 57777776546788888899999999996..555677776515677889*********99999*****************9988887776.789***** PP
+
+        aglE 156 angyevp.gtweemmalsqrli 176
+                 a g   p  tw+e+ a s++l 
+  KIJ83609.1 159 AAGLSTPpTTWNELRAYSKKLT 180
+                 ***9875279********9984 PP
+
+>> KIJ85102.1  ABC transporter substrate-binding protein [Scytonema tolypothrichoides VB-61278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   6.8e-06     0.019      96     184 ..     102     188 ..      91     205 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 6.8e-06
+        aglE  96 adfaregklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaangyevpgtweemmalsqrlidkgktpwc 184
+                 + fa  g l+ l + lt +e++ a+    ++    +g +y +  r+ v   +++  + +   g++ p t+ +++ +s+ l ++gk  w 
+  KIJ85102.1 102 SKFAAAGWLLDLSDRLTKQELA-AFSPKDVEAGRYEGKLYRIPVRSDVGV-LYYREDLLKGAGFQPPETFADLLKISKSLKEQGKVNWG 188
+                 579999************9996.788888899999999999999999865.5778889999***************************6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (421 nodes)
+Target sequences:                         5685  (1736153 residues searched)
+Passed MSV filter:                       143  (0.0251539); expected 113.7 (0.02)
+Passed bias filter:                      119  (0.0209323); expected 113.7 (0.02)
+Passed Vit filter:                         8  (0.00140721); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000351803); expected 0.1 (1e-05)
+Initial search space (Z):               5685  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12182.01
+//
+[ok]

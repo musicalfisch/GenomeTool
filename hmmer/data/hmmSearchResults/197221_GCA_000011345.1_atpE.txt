@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.8e-69  227.0   3.8    1.1e-68  226.9   3.8    1.0  1  BAC08078.1  ATP synthase epsilon subunit [Thermosynechococcus
+  ------ inclusion threshold ------
+        8.3    3.8  19.0       0.98    6.8   4.8    2.4  2  BAC09295.1  tlr1743 [Thermosynechococcus elongatus BP-1]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC08078.1  ATP synthase epsilon subunit [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  226.9   3.8   8.8e-72   1.1e-68       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 226.9 bits;  conditional E-value: 8.8e-72
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m +tvrvi+pdktvwda aeevilpsttgqlgils haplltal+tgvmrvr +  ++w+aial+ggfaeve++evtilvngaergd+i+le+a+a+f+
+  BAC08078.1   1 MVMTVRVIAPDKTVWDAPAEEVILPSTTGQLGILSNHAPLLTALETGVMRVRQD--REWVAIALMGGFAEVENNEVTILVNGAERGDTIDLEKAKAEFA 97 
+                 889*************************************************76..68***************************************** PP
+
+        atpE 100 eaqtklnqvkaed.rqaqiqatqafkrararfqaagglv 137
+                 +aq+ l+q ++++ +qa+iqatqaf+rarar+qaagg+v
+  BAC08078.1  98 AAQAALAQAEQGEsKQAKIQATQAFRRARARLQAAGGVV 136
+                 ********9886439**********************97 PP
+
+>> BAC09295.1  tlr1743 [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.4   6.3     0.019        23      78     133 ..     100     156 ..      86     159 .. 0.81
+   2 ?    6.8   4.8   0.00079      0.98      90     134 ..     183     228 ..     177     231 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 0.019
+        atpE  78 ilvngaergdkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqaa 133
+                 i+     r ++ +l +a+a+ ++a ++ +++ a++r ++i qa++ ++ a +r q a
+  BAC09295.1 100 IIARMDSRDEQAQLAQAQANLADAIARRDRIVAGNRAEEIaQAEAQVRAATSRAQLA 156
+                 555666789999************************999935555556667777765 PP
+
+  == domain 2  score: 6.8 bits;  conditional E-value: 0.00079
+        atpE  90 nleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqaag 134
+                 n ++a a+ neaq +l+ ++ ++r ++i qa++ +  a+a++qaa 
+  BAC09295.1 183 NRDSAIANLNEAQKRLQLLQRGSRSEDIrQADAMVAAAQAQVQAAR 228
+                 6788999********************945666677899*****95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                       121  (0.0488889); expected 49.5 (0.02)
+Passed bias filter:                       82  (0.0331313); expected 49.5 (0.02)
+Passed Vit filter:                         8  (0.00323232); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808081); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5305.27
+//
+[ok]

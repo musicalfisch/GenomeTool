@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cutC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752063_GCA_001548455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cutC  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.025   12.4   0.0        2.7    5.7   0.0    2.3  2  BAU07558.1  homocitrate synthase [Fischerella sp. NIES-3754]
+       0.05   11.4   0.0      0.077   10.8   0.0    1.2  1  BAU08228.1  ABC transporter [Fischerella sp. NIES-3754]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU07558.1  homocitrate synthase [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   0.0    0.0029       7.1     184     239 ..      30      80 ..      13      85 .. 0.74
+   2 ?    5.7   0.0    0.0011       2.7      10      45 ..     147     182 ..     143     195 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.0029
+        cutC 184 vvelvsktgvkeihfsasamkdsemqfqnkaiaglgsepgaeyklrtvnvqmikni 239
+                 + +++   gv+ei +   am +sem+    aia + se g   kl   n  +i +i
+  BAU07558.1  30 IAKFLDAIGVHEIEVGIPAMGESEMR----AIAAI-SELGLSAKLLGWNRAVISDI 80 
+                 55677889*****************6....55554.56666666666666666655 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.0011
+        cutC  10 idsafraqeggadrielcdspgdggntpsygvveal 45 
+                  d a  aqe ga r  +cd+ g      +y  v+ l
+  BAU07558.1 147 FDVAHYAQEWGASRFRFCDTVGVLDPFSTYTKVNRL 182
+                 68999***************9988777777777665 PP
+
+>> BAU08228.1  ABC transporter [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   3.1e-05     0.077      70     149 ..       9      91 ..       3     106 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 3.1e-05
+        cutC  70 eyyamkrdilafqklsvd...gvvlgilnpdgtidkkrcktlidmarplkvtihr.afdmtrdpfqaledciavgfdriltsgq 149
+                 + y +  ++l +++ls d   g ++g+l p+g+      + l  +++p +  +    +d+ r+ +q  ++ci v +++i   g+
+  BAU08228.1   9 NVYKIYNQVLVVDNLSFDiaaGEMFGLLGPNGAGKSTTIRMLTTLTKPTQGNVEVcGYDVIRQRMQV-KQCIGVVLQQISVDGD 91 
+                 467888899999999988666889*************************99987527*******995.79******99988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (244 nodes)
+Target sequences:                         4939  (1543483 residues searched)
+Passed MSV filter:                       115  (0.0232841); expected 98.8 (0.02)
+Passed bias filter:                       99  (0.0200445); expected 98.8 (0.02)
+Passed Vit filter:                        11  (0.00222717); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.00040494); expected 0.0 (1e-05)
+Initial search space (Z):               4939  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9415.25
+//
+[ok]

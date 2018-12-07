@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cutC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cutC  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.02   13.0   0.0       0.12   10.4   0.0    2.2  3  BAB73364.1  homocitrate synthase [Nostoc sp. PCC 7120]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB73364.1  homocitrate synthase [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0      0.16     1e+03     186     219 ..      32      64 ..      25      84 .. 0.72
+   2 ?   -1.6   0.0     0.093   5.7e+02     126     143 ..     110     127 ..      90     134 .. 0.78
+   3 ?   10.4   0.0     2e-05      0.12       9      52 ..     146     189 ..     142     201 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.16
+        cutC 186 elvsktgvkeihfsasamkdsemqfqnkaiaglg 219
+                 +++   gv e+ +   am + em+    ai+ lg
+  BAB73364.1  32 KFLDTIGVPELEVGIPAMGEEEMRAI-CAISNLG 64 
+                 56667899999999999999999753.4565555 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.093
+        cutC 126 trdpfqaledciavgfdr 143
+                  r  +q l+dci+  +d+
+  BAB73364.1 110 WRVSLQRLKDCISFAVDQ 127
+                 4778999*****999887 PP
+
+  == domain 3  score: 10.4 bits;  conditional E-value: 2e-05
+        cutC   9 nidsafraqeggadrielcdspgdggntpsygvvealrphitmd 52 
+                  +d a+ aqe ga r  +cd+ g      +yg v+ l   +t+ 
+  BAB73364.1 146 LLDVALYAQEWGASRFRFCDTVGVLDPFTTYGKVKLLVSALTIP 189
+                 5799******************************9999888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (244 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       125  (0.0203849); expected 122.6 (0.02)
+Passed bias filter:                      112  (0.0182648); expected 122.6 (0.02)
+Passed Vit filter:                        11  (0.00179387); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000163079); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 5339.86
+//
+[ok]

@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/czcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       czcD  [M=308]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.1e-136  452.3   4.3   3.8e-136  452.0   4.3    1.0  1  ERT09013.1  cation diffusion facilitator transporter family p
+    2.4e-41  140.6   1.2    2.7e-41  140.4   1.2    1.0  1  ERT03518.1  cation efflux family protein, partial [Lyngbya ae
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT09013.1  cation diffusion facilitator transporter family protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  452.0   4.3  1.2e-139  3.8e-136       5     305 ..       3     303 ..       1     305 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 452.0 bits;  conditional E-value: 1.2e-139
+        czcD   5 kdnratvqkvlwitlllnilvmaikagvglrisslslqadalhsvtdsannvlglvamrfsspypdrdhpyghlkyeaigalaiaaflgiacfeilqga 103
+                  dnr  ++kvl +tl+ln++vm+ika +gl  +slsl adalhsvtd ann++glva +f+sp pdr++pygh k++a+gala++ fl ia feil ga
+  ERT09013.1   3 IDNRPKIRKVLILTLILNVVVMGIKATLGLLTGSLSLLADALHSVTDGANNIIGLVANQFASPEPDREYPYGHQKFDALGALAVTVFLCIASFEILTGA 101
+                 69************************************************************************************************* PP
+
+        czcD 104 imriikggkpveiagpelwlliivlgvnifvtyyersvgqrvgsailiadarhtmsdvwvtitvllglvgvwvgntanipqlqwldvilsfpvaflvfs 202
+                 i ri  gg+ ++i+  +lw+l+ivlg+nifv+yyer +gqr+gsa+l+ada+htmsd+w t+ v+ gl+gvw+g + n pql+ ldv+++fpva+lvf 
+  ERT09013.1 102 IERIFGGGNTINISSVQLWILLIVLGINIFVAYYERYMGQRLGSALLVADAKHTMSDIWTTLMVIAGLIGVWLGRKWNFPQLEALDVVMAFPVAVLVFH 200
+                 *************************************************************************************************** PP
+
+        czcD 203 sgwkvlkenlpllvdemaiapevihqivlevpgvlnchaiasrgvvgrqvfiemhlivsaqdvetahaiteavearlsqqfspvrilihveppdyhsdk 301
+                 s w +lkenlp l d +ai pe i  + + vpgv+nch iasrgv+grq+fiemh+iv a+dv+ ah ite vea+l ++fspvr +ihvepp y+sd+
+  ERT09013.1 201 SAWEILKENLPWLTDRVAIPPEKIRALAMRVPGVVNCHDIASRGVIGRQIFIEMHMIVEADDVKNAHQITEQVEAQLEKHFSPVRTVIHVEPPSYKSDR 299
+                 *************************************************************************************************** PP
+
+        czcD 302 itfd 305
+                 it++
+  ERT09013.1 300 ITYE 303
+                 **98 PP
+
+>> ERT03518.1  cation efflux family protein, partial [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  140.4   1.2   8.2e-45   2.7e-41     150     253 ..       1     104 []       1     104 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 140.4 bits;  conditional E-value: 8.2e-45
+        czcD 150 liadarhtmsdvwvtitvllglvgvwvgntanipqlqwldvilsfpvaflvfssgwkvlkenlpllvdemaiapevihqivlevpgvlnchaiasrgvv 248
+                 ++ada+htmsd+w t+ v+ gl+gvw+g + n pql+ ldv+++fpva++vf s w +++enlp l d +ai pe i  + + vpgv+nch iasrgv+
+  ERT03518.1   1 MVADAKHTMSDIWTTLMVIAGLIGVWLGRKWNFPQLEALDVVMAFPVAVFVFYSAWGIFQENLPWLTDRVAIPPEKIRALAMRVPGVVNCHDIASRGVI 99 
+                 58************************************************************************************************* PP
+
+        czcD 249 grqvf 253
+                 grq+f
+  ERT03518.1 100 GRQIF 104
+                 ***98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (308 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       174  (0.0267487); expected 130.1 (0.02)
+Passed bias filter:                      102  (0.0156802); expected 130.1 (0.02)
+Passed Vit filter:                        12  (0.00184473); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000307456); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 9892.39
+//
+[ok]

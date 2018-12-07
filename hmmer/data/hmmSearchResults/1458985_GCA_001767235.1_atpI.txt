@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1458985_GCA_001767235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.1e-147  487.9   9.4   2.4e-147  487.7   9.4    1.0  1  AOW99648.1  F0F1 ATP synthase subunit A [Moorea producens PAL
+     0.0096   14.0   0.1       0.01   14.0   0.1    1.1  1  AOX00116.1  hypothetical protein BJP34_12250 [Moorea producen
+
+
+Domain annotation for each sequence (and alignments):
+>> AOW99648.1  F0F1 ATP synthase subunit A [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  487.7   9.4  7.1e-151  2.4e-147       1     246 [.       3     248 ..       3     249 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 487.7 bits;  conditional E-value: 7.1e-151
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 m++ ln++nslpla+levg+hfyw++gnl +hgqvfltsw+viailvvaslaatrnvq +p giqnlmeyalef+rdlaknqlgekeyrpwvpfigtlf
+  AOW99648.1   3 MINALNVLNSLPLASLEVGEHFYWRIGNLTLHGQVFLTSWVVIAILVVASLAATRNVQMVPGGIQNLMEYALEFLRDLAKNQLGEKEYRPWVPFIGTLF 101
+                 8999*********************************************************************************************** PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsgalipw +i+lpsgelaaptndinttvalalltslayfyag+sk+glgyf  yi+p p+llpi iledftkplslsfrlfgniladelvv
+  AOW99648.1 102 LFIFVSNWSGALIPWGIIELPSGELAAPTNDINTTVALALLTSLAYFYAGLSKKGLGYFAGYIQPIPILLPIKILEDFTKPLSLSFRLFGNILADELVV 200
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgee 246
+                 avlvllvplf+plp+malglftsaiqalvfatla+ayihea+e  gee
+  AOW99648.1 201 AVLVLLVPLFIPLPIMALGLFTSAIQALVFATLAAAYIHEAIEVEGEE 248
+                 *********************************************998 PP
+
+>> AOX00116.1  hypothetical protein BJP34_12250 [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.1     3e-06      0.01      54     109 ..      36      92 ..      18      94 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 3e-06
+        atpI  54 trn.vqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlflfifvsnwsg 109
+                  rn  + +p+ iq l++  +   ++ + ++l ++    w  +ig l+l +f++ w+g
+  AOX00116.1  36 IRNdFRSLPNQIQTLVDPGVVQSQQKTIKKLNKQIRMIWSTMIGILILCLFIATWAG 92 
+                 44426789**********99999999999999988899*****************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         6706  (2323265 residues searched)
+Passed MSV filter:                       203  (0.0302714); expected 134.1 (0.02)
+Passed bias filter:                      117  (0.0174471); expected 134.1 (0.02)
+Passed Vit filter:                         8  (0.00119296); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.00029824); expected 0.1 (1e-05)
+Initial search space (Z):               6706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 11662.79
+//
+[ok]

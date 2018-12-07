@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56110_GCA_000317105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-49  163.1   1.0    3.1e-49  163.0   1.0    1.0  1  AFY80577.1  phycobilisome core linker protein [Oscillatoria a
+    0.00015   19.9   0.0    0.00023   19.3   0.0    1.3  1  AFY80953.1  CpcD/allophycocyanin linker domain protein [Oscil
+    0.00089   17.5   0.0     0.0021   16.3   0.0    1.6  1  AFY79903.1  Oxidoreductase FAD-binding domain/Oxidoreductase 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY80577.1  phycobilisome core linker protein [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.0   1.0   1.6e-52   3.1e-49       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 163.0 bits;  conditional E-value: 1.6e-52
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmfk+tacvPsq+rirtqrelqntyftklvpydnWf+eqqrimkmGGki+kv+latGkpg+ntG+
+  AFY80577.1  1 MRMFKVTACVPSQSRIRTQRELQNTYFTKLVPYDNWFKEQQRIMKMGGKIIKVQLATGKPGMNTGI 66
+                9****************************************************************7 PP
+
+>> AFY80953.1  CpcD/allophycocyanin linker domain protein [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.0   1.2e-07   0.00023      31      54 ..      50      73 ..      41      81 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 1.2e-07
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy+   +e qri ++GGkiv ++
+  AFY80953.1 50 VPYNRMNEEMQRITRLGGKIVSIH 73
+                9********************985 PP
+
+>> AFY79903.1  Oxidoreductase FAD-binding domain/Oxidoreductase NAD-binding domain/CpcD/allophycocyanin linker domain pr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0   1.1e-06    0.0021      25      63 ..      46      81 ..      35      85 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 1.1e-06
+        apcC 25 tyftklvpydnWfreqqrimkmGGkivkvelatGkpgtn 63
+                t+ t  vpy+   +e +ri +mGG+iv ++   G +gt 
+  AFY79903.1 46 TFIT--VPYNRMNQEMRRITRMGGQIVSIRP-LGEEGTS 81
+                5555..9********************9973.4555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         5796  (2068426 residues searched)
+Passed MSV filter:                       133  (0.0229469); expected 115.9 (0.02)
+Passed bias filter:                      127  (0.0219117); expected 115.9 (0.02)
+Passed Vit filter:                        12  (0.00207039); expected 5.8 (0.001)
+Passed Fwd filter:                         3  (0.000517598); expected 0.1 (1e-05)
+Initial search space (Z):               5796  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4619.48
+//
+[ok]

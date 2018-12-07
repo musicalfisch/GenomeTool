@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-41  138.3  16.3    2.3e-41  138.2  16.3    1.0  1  BAC07984.1  H+-transporting ATP synthase chain b' [Thermosyne
+  ------ inclusion threshold ------
+        9.4    3.3  27.9    9.3e+02   -3.2  27.9    2.1  1  BAC07985.1  H+-transporting ATP synthase chain b [Thermosynec
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC07984.1  H+-transporting ATP synthase chain b' [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  138.2  16.3   1.8e-44   2.3e-41       1     137 [.       1     137 [.       1     138 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 138.2 bits;  conditional E-value: 1.8e-44
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+ma+qf++l+vilna++ykpl + ld+r eyir     ake+l ++  l q+ye +l+s+r+q+q +i +a+ eaqk+a+  +a aq+  
+  BAC07984.1   1 MFDFDATLPLMAVQFLILTVILNALLYKPLGQALDNRDEYIRTNLQQAKERLQQATELAQQYEQELASTRRQAQALIEEARVEAQKIATAEIAEAQQAV 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekll 137
+                  a    + aei qqk+ ++++legqvasls q+l kl+
+  BAC07984.1 100 QAELLKIQAEIDQQKQATLQALEGQVASLSEQLLAKLM 137
+                 ************************************97 PP
+
+>> BAC07985.1  H+-transporting ATP synthase chain b [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2  27.9      0.75   9.3e+02      42     124 ..      75     160 ..      27     178 .. 0.49
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 0.75
+        atpG  42 rqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqkl...aservaaaqkeaiar.keavaaeiaqqkeeafrslegq 124
+                 r +e+  k   ak ea  +  e  l+ a+   +eiiaqa+ e ++l   as+  +aa   aia  +e +aa    + e+ +++   q
+  BAC07985.1  75 RLAEAQQKLTQAKQEAQ-RIREDALTRAKAVKEEIIAQAKREIERLqetASQDTSAATERAIAEiRERIAAMALAEAENQLKARLSQ 160
+                 33333333334444442.223444555555555666666555433322255555555555555424555555444555555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                       112  (0.0452525); expected 49.5 (0.02)
+Passed bias filter:                       56  (0.0226263); expected 49.5 (0.02)
+Passed Vit filter:                         6  (0.00242424); expected 2.5 (0.001)
+Passed Fwd filter:                         3  (0.00121212); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 3691.75
+//
+[ok]

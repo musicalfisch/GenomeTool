@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160284_GCA_000312245.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglG  [M=275]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+     0.0002   18.7  14.6    0.00041   17.7  14.5    1.6  1  lcl|HE973601.1_prot_CCI27058.1_4403  [protein=sulfate/thiosulfate per
+    0.00092   16.5   3.9    0.00092   16.5   3.9    2.4  2  lcl|HE973601.1_prot_CCI27056.1_4402  [protein=sulfate/thiosulfate tra
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|HE973601.1_prot_CCI27058.1_4403  [protein=sulfate/thiosulfate permease W protein (ABC superfamily, membrane)] [pr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7  14.5   1.7e-07   0.00041      25     202 ..      19     208 ..       7     266 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 1.7e-07
+                                 aglG  25 ivllpllvvfltsfapagatlevllknnwslanyrdawqrgkfllafanstlvaiavtafqivtsalagyalar 98 
+                                          ++++ l+ + l  f pa+a    + +n +  + + +a     f+ a   + ++a+    ++ +    a + +ar
+  lcl|HE973601.1_prot_CCI27058.1_4403  19 LIIIALVYLALLLFIPAAAVFYYAFRNGF--QAFLEAAGTSDFIEAVRLTVIIALITVPLNTIFGLCAAWVIAR 90 
+                                          55666666667778888888888888876..5788999999***************99**************** PP
+
+                                 aglG  99 lkfrgrqall.lvvlatlvipfqllvipiflvlk..w.ghlintygalil...ptavngfgi.....fllrqy. 159
+                                           +frg+  l+ l+ l   v p    ++ ++l  +  w g +i+ +   il   p  v    i     f+ r+  
+  lcl|HE973601.1_prot_CCI27058.1_4403  91 NQFRGKTLLIsLIDLPFAVSPVVAGLMIVLLYGRngWlGSFIEFFDIKILfalPGMVLA-TIfvtmpFVAREVi 163
+                                          ******98763455666666654433333343331133567888877665111544432.45011124445432 PP
+
+                                 aglG 160 ..fqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                                            ++ i +e eea    gan  qi+wrv lp  r  l+   l+t 
+  lcl|HE973601.1_prot_CCI27058.1_4403 164 pvLEEIGLEQEEAGRTLGANDWQIFWRVTLPNIRWGLMYGVLLTN 208
+                                          2245677899************************99998888775 PP
+
+>> lcl|HE973601.1_prot_CCI27056.1_4402  [protein=sulfate/thiosulfate transport protein (ABC superfamily, membrane)] [pro
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   3.9   3.8e-07   0.00092     153     202 ..     160     209 ..      48     223 .. 0.78
+   2 ?   -1.1   0.1     0.093   2.3e+02     111     132 ..     220     241 ..     204     273 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 3.8e-07
+                                 aglG 153 ifllrqyfqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                                          +  l+  +q +  e+eeaa   ga+  qi+wrv++p   pa++t   + f
+  lcl|HE973601.1_prot_CCI27056.1_4402 160 VRTLQPVLQEMEKEVEEAALSLGASSWQIFWRVIFPTILPAILTGVALGF 209
+                                          3445567888999*****************************99766655 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.093
+                                 aglG 111 vlatlvipfqllvipiflvlkw 132
+                                          v+ +  ipf+ l+ p+++  + 
+  lcl|HE973601.1_prot_CCI27056.1_4402 220 VIISSNIPFKDLIAPVLIFQRL 241
+                                          5555667777777777655443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (275 nodes)
+Target sequences:                         4850  (1313351 residues searched)
+Passed MSV filter:                       176  (0.0362887); expected 97.0 (0.02)
+Passed bias filter:                       91  (0.0187629); expected 97.0 (0.02)
+Passed Vit filter:                        10  (0.00206186); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000412371); expected 0.0 (1e-05)
+Initial search space (Z):               4850  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 6019.53
+//
+[ok]

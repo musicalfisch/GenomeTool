@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/940191_GCA_001858125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.71    6.5  29.5     0.0084   12.8   7.9    2.5  3  OHY31453.1  transporter [Cylindrospermopsis raciborskii MVCC1
+
+
+Domain annotation for each sequence (and alignments):
+>> OHY31453.1  transporter [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.2      0.25   7.6e+02     159     185 ..     179     205 ..     162     228 .. 0.52
+   2 ?    4.2   8.5    0.0012       3.6     107     228 ..     263     384 ..     247     431 .. 0.91
+   3 ?   12.8   7.9   2.7e-06    0.0084     104     204 ..     465     567 ..     448     586 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.25
+        cnrC 159 dqariasdalraasvrvqagraspleq 185
+                 d a+   + l+ a +++q  ++s  e 
+  OHY31453.1 179 DLAKQNNNDLQVAVLQLQRSQSSLKEA 205
+                 333333333444444444444444343 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0012
+        cnrC 107 lggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrl 205
+                   g+r a +  a+ q+   + +    + ++rl+v+  y     +d  v  ar     +  +lr a    +ag  + ++  r++v   n++ ++   l  
+  OHY31453.1 263 TSGRRTAAIKEAEEQVRLQQFEVERQSEEIRLNVATEYYGLQQSDESVRIARSAVENSQASLRDAQALERAGVGTKFDVLRSQVNLANSQQELTDALSQ 361
+                 579999999999999999999999999************************************************************************ PP
+
+        cnrC 206 aeaaranlarrigrpidgalddt 228
+                    ar  la r+  p   ++  +
+  OHY31453.1 362 QAIARRRLALRLNLPQSVSITAS 384
+                 ***********998876666555 PP
+
+  == domain 3  score: 12.8 bits;  conditional E-value: 2.7e-06
+        cnrC 104 piel..ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanve 200
+                  ++l  gg   ar a a+++++ ae + a    +vr+qv + y   +a    v ta      a ++lr a +r qag  +  +   a+     ++an  
+  OHY31453.1 465 SMNLydGGASRARAARAKTEIAIAEAEFAERRNQVRFQVEEAYSSHLANLENVQTAATALDQAKESLRLARLRFQAGVGTQTDVINAQSELTRSEANRV 563
+                 444433899999**********************************9999999999888888999***********99887777766666666666665 PP
+
+        cnrC 201 rqlr 204
+                 r + 
+  OHY31453.1 564 RAIL 567
+                 5554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         3057  (989589 residues searched)
+Passed MSV filter:                        65  (0.0212627); expected 61.1 (0.02)
+Passed bias filter:                       44  (0.0143932); expected 61.1 (0.02)
+Passed Vit filter:                         3  (0.000981354); expected 3.1 (0.001)
+Passed Fwd filter:                         1  (0.000327118); expected 0.0 (1e-05)
+Initial search space (Z):               3057  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10514.38
+//
+[ok]

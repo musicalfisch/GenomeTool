@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/927668_GCA_000332215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0017   15.9   0.2     0.0034   15.0   0.0    1.5  2  ELS33467.1  ATPase-like, ParA/MinD [Pseudanabaena biceps PCC 
+  ------ inclusion threshold ------
+      0.031   11.8   0.1      0.037   11.6   0.1    1.4  1  ELS30595.1  shikimate kinase [Pseudanabaena biceps PCC 7429]
+      0.032   11.8   0.0      0.051   11.1   0.0    1.4  1  ELS33659.1  Polynucleotide 5'-hydroxyl-kinase [Pseudanabaena 
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS33467.1  ATPase-like, ParA/MinD [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.1   0.0      0.76   1.2e+03      65     105 ..      36      77 ..      28      79 .. 0.63
+   2 !   15.0   0.0   2.1e-06    0.0034      11      71 ..      98     160 ..      88     178 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: -3.1 bits;  conditional E-value: 0.76
+        cysC  65 nirrigfvsnlltrhgvivl.vsaispyreireevrgkigsf 105
+                 +i  +g+v nl      + l +   s   e++e+v + + +f
+  ELS33467.1  36 DIVSLGMVRNLRIVDDYVYLrLYVGSHQLELKEQVIATLSNF 77 
+                 566777777776655544441344455667777777776666 PP
+
+  == domain 2  score: 15.0 bits;  conditional E-value: 2.1e-06
+        cysC  11 vwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrd..enirrigf 71 
+                    +g  g gkst++  l a l   g  + +ld d+   n+ + lg+ + d +  e i    f
+  ELS33467.1  98 AVSSGKGGVGKSTVAVNLAAALSLTGAKVGLLDADVYGPNVPQMLGLGHSDIQviETINGQRF 160
+                 4567999*********************************99877766665431155554444 PP
+
+>> ELS30595.1  shikimate kinase [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.1   2.3e-05     0.037       8      34 ..       4      30 ..       1     112 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.3e-05
+        cysC  8 gvtvwltglsgagkstitealqaklia 34
+                g  ++l g+ gagksti + l  kl  
+  ELS30595.1  4 GTNIFLVGMMGAGKSTIGKLLAQKLSY 30
+                7889*************9998888754 PP
+
+>> ELS33659.1  Polynucleotide 5'-hydroxyl-kinase [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   3.2e-05     0.051      10     125 ..       3     119 ..       1     149 [. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 3.2e-05
+        cysC  10 tvwlt.glsgagkstitealqakliaegysievldgdivrtnltkglgfs.kedrdenirrigfvsnlltrhgvivlvsaispyre..ireevrgkigs 104
+                 tv++t gl  +gkst ++    k+     si+ ++ d +r+ l +      +e    +i+   + + l   + viv  + +sp +e  ire ++g    
+  ELS33659.1   3 TVYFTiGLPASGKSTWAK---NKVDKAPNSIKRVNKDELRAMLDNSYHSKgNEKFVLDIQDQIIRAALENGKHVIVDNTHLSPKHEarIRELIKGLAVL 98 
+                 666655899999998865...46666778999999999999888766433133344566666666778888899*********9984467888876665 PP
+
+        cysC 105 fvevfvnaplsvceerdvkgl 125
+                  +  f   pl+ c erd+k +
+  ELS33659.1  99 EIVDFRHVPLETCIERDLKRF 119
+                 566699***********9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4757  (1493366 residues searched)
+Passed MSV filter:                       210  (0.0441455); expected 95.1 (0.02)
+Passed bias filter:                      195  (0.0409922); expected 95.1 (0.02)
+Passed Vit filter:                        29  (0.00609628); expected 4.8 (0.001)
+Passed Fwd filter:                         3  (0.00063065); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 5495.59
+//
+[ok]

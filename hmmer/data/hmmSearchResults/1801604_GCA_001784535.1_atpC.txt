@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801604_GCA_001784535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.1e-80  264.7   9.9    3.5e-50  167.5   1.3    2.1  2  OGH98325.1  ATP synthase F1 subunit gamma [Candidatus Melaina
+
+
+Domain annotation for each sequence (and alignments):
+>> OGH98325.1  ATP synthase F1 subunit gamma [Candidatus Melainabacteria bacterium GWA2_34_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  167.5   1.3     2e-53   3.5e-50       1     193 [.       1     204 [.       1     218 [. 0.90
+   2 !  102.3   2.1   1.5e-33   2.5e-30     224     314 ..     214     304 ..     206     305 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 167.5 bits;  conditional E-value: 2e-53
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqt...rlrfedv.......dlp.llkkrevksvgllvisgdrg 88 
+                 m+nlk i++ri+svknt+kit+am++vaaa+v++a++qv a+rpf++ la+ +  l +    +  e+v       + p llk+r+++++gl+v++ d+g
+  OGH98325.1   1 MPNLKHIKNRIKSVKNTQKITQAMKMVAAAKVKKAENQVKASRPFSNELARSFTKLIAskpEIDKEKVtstnpldNYPeLLKQRKLQTIGLMVVTSDKG 99 
+                 99************************************************998877541114555554222222233458******************* PP
+
+        atpC  89 lcggynsnvirraenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvv 187
+                 l g+yn+nv+rra  r++e+  egl++k+ ++g k +q +++ +++   ty+ l  ipt    + ia++l   ++ +++d+ie++ t+f s +s +  +
+  OGH98325.1 100 LAGAYNANVVRRAVVRVREILREGLNVKLFILGTKGVQSLKKYNFKTLKTYTKLPAIPTPGGCAVIAEDLAESYINKEIDKIEIITTHFKSTLSYQVQL 198
+                 ***********************************************************************************************9999 PP
+
+        atpC 188 qtllpl 193
+                   llp+
+  OGH98325.1 199 WQLLPV 204
+                 999996 PP
+
+  == domain 2  score: 102.3 bits;  conditional E-value: 1.5e-33
+        atpC 224 sevralprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkarqaaitqellevvggaeal 314
+                  + +++  +m+fe +   +l+ ++ply++n++++a+ e++aselaarm ams a++na+++ik lt+ ynkarqa+itqellevv+ga+al
+  OGH98325.1 214 GQEQKIEPEMLFEPNIETVLQKIVPLYFTNRIFQAMTEASASELAARMQAMSAATNNARDMIKILTIDYNKARQASITQELLEVVSGAQAL 304
+                 56678899**********************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         1714  (500993 residues searched)
+Passed MSV filter:                        54  (0.0315053); expected 34.3 (0.02)
+Passed bias filter:                       35  (0.0204201); expected 34.3 (0.02)
+Passed Vit filter:                         4  (0.00233372); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000583431); expected 0.0 (1e-05)
+Initial search space (Z):               1714  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7890.64
+//
+[ok]

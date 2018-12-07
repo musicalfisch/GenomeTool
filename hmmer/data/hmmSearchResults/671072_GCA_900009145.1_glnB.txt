@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671072_GCA_900009145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-69  228.5   5.4    3.7e-69  228.4   5.4    1.0  1  CUR30503.1  Nitrogen regulatory protein P-II [Planktothrix te
+  ------ inclusion threshold ------
+      0.019   13.6   0.2      0.024   13.3   0.2    1.2  1  CUR34866.1  Nitrogen regulatory protein P-II [Planktothrix te
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR30503.1  Nitrogen regulatory protein P-II [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  228.4   5.4   1.2e-72   3.7e-69       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 228.4 bits;  conditional E-value: 1.2e-72
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkk+eaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+v++k+iaaartgeigdgkifispve++
+  CUR30503.1   1 MKKIEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDSQVDMVLEKVIAAARTGEIGDGKIFISPVEEI 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgek+lea+
+  CUR30503.1 100 IRIRTGEKNLEAI 112
+                 ***********97 PP
+
+>> CUR34866.1  Nitrogen regulatory protein P-II [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.2   7.9e-06     0.024       1      77 [.       4      76 ..       4      88 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 7.9e-06
+        glnB  1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdki 77
+                +kkve ii  + ++ev   l +a + g tv +      ++g ++   gs ++  ++    + +  +++q++ +v ++
+  CUR34866.1  4 VKKVEIIISTLEIQEVLEVLDEAKVTGYTVIKNASGKGDRGLSNDDLGSVFSNAYI----MTVCTNEKQLEQIVSNV 76
+                59***************************987766566789999999998777665....45566677777766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5948  (1891724 residues searched)
+Passed MSV filter:                       160  (0.0268998); expected 119.0 (0.02)
+Passed bias filter:                      132  (0.0221923); expected 119.0 (0.02)
+Passed Vit filter:                        10  (0.00168124); expected 5.9 (0.001)
+Passed Fwd filter:                         2  (0.000336247); expected 0.1 (1e-05)
+Initial search space (Z):               5948  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5296.83
+//
+[ok]

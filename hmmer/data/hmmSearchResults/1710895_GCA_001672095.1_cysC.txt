@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710895_GCA_001672095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-73  242.1   0.2    6.9e-73  241.8   0.2    1.0  1  OBQ28933.1  adenylylsulfate kinase [Aphanizomenon flos-aquae 
+  ------ inclusion threshold ------
+      0.034   11.4   0.1      0.057   10.7   0.1    1.3  1  OBQ29519.1  sodium:proton antiporter [Aphanizomenon flos-aqua
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ28933.1  adenylylsulfate kinase [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  241.8   0.2   3.5e-76   6.9e-73       4     178 ..       1     175 [.       1     179 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 241.8 bits;  conditional E-value: 3.5e-76
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mk  g+t+w+tglsgagk+t+++ ++  l      +evldgd+vrt l++glgfskedrd n++rigfv+ ll+r+ vi +vsaispyre re+vr   
+  OBQ28933.1   1 MKYSGLTLWFTGLSGAGKTTVSQGVELELKKRCCRVEVLDGDVVRTHLSQGLGFSKEDRDINVHRIGFVASLLSRYQVIAIVSAISPYRETREKVRQMT 99 
+                 8999*********************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                  +fvev+v+a l+ ce+rdvkgly +ar+g+ik ftgiddpye p+npe+ c t+ e+++esv kv + l ++gyi
+  OBQ28933.1 100 ENFVEVYVKASLETCEDRDVKGLYAKARSGKIKGFTGIDDPYEEPINPEIICNTEQESIDESVVKVIHYLEKMGYI 175
+                 ***************************************************************************9 PP
+
+>> OBQ29519.1  sodium:proton antiporter [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.1   2.9e-05     0.057      13      65 ..     106     158 ..      98     181 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.9e-05
+        cysC  13 ltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrden 65 
+                  +g  g gkst++  +   l   g  + +ld di   n    lg+s+ + +  
+  OBQ29519.1 106 SSGKGGVGKSTVAVNIAVALAQTGAKVGLLDADIYGPNDPTMLGLSNAEINVR 158
+                 56889**********************************999**998765444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3936  (1184914 residues searched)
+Passed MSV filter:                       177  (0.0449695); expected 78.7 (0.02)
+Passed bias filter:                      151  (0.0383638); expected 78.7 (0.02)
+Passed Vit filter:                        22  (0.00558943); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.00050813); expected 0.0 (1e-05)
+Initial search space (Z):               3936  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7267.47
+//
+[ok]

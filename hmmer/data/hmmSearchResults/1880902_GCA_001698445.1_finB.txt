@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880902_GCA_001698445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.4e-05   19.2   0.0    9.5e-05   18.6   0.0    1.1  1  OCQ97537.1  hypothetical protein BCR12_04665 [Limnothrix sp. 
+  ------ inclusion threshold ------
+      0.017   11.2   0.1      0.054    9.5   0.1    1.9  1  OCQ94982.1  cyclic pyranopterin phosphate synthase MoaA [Limn
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ97537.1  hypothetical protein BCR12_04665 [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.6   0.0   5.2e-08   9.5e-05     112     186 ..      19      90 ..      15      96 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 5.2e-08
+        finB 112 pqmtvlgvagpgdplanpektfrtfeliadkapdiklclstnglmlteyvdrikqlnidhvtitlntidpeigaq 186
+                 p++  l + g g+pl np+  f+  +l   +   i + + tng +l  y+++i + +i  + ++l+t dpe   +
+  OCQ97537.1  19 PEIQHLELQGEGEPLINPD-FFKMVDLANRR--RIYISFITNGSFLHAYIQQILDSQIRSIRVSLETADPEKFQR 90 
+                 77888999**********7.68888886554..6888999******************************96655 PP
+
+>> OCQ94982.1  cyclic pyranopterin phosphate synthase MoaA [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.5   0.1     3e-05     0.054     123     241 ..      66     172 ..       5     193 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 3e-05
+        finB 123 gdplanpektfrtfeliadkapdiklclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalkea 221
+                 g+pl  p       + ia+    + l l+tn ++l +  + + +  +  + i+l+ + pe    i    +  r r++ v           +g+qa +  
+  OCQ94982.1  66 GEPLLRPGVV-EITQAIAQFPETLDLSLTTNAFLLKDLAQPLYDAGLRRINISLDSLIPETFDVIIG--NRGRSRWQQV----------WDGIQAAHRV 151
+                 6666666543.44466777777888999999999999999999999999999999999987666654..3445566544..........5788888777 PP
+
+        finB 222 dil.ckvnsvmipgindkhlv 241
+                      k+n v+ipgind+ + 
+  OCQ94982.1 152 GFDpLKLNVVVIPGINDQEVE 172
+                 653269***********9764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         3672  (1209182 residues searched)
+Passed MSV filter:                        54  (0.0147059); expected 73.4 (0.02)
+Passed bias filter:                       49  (0.0133442); expected 73.4 (0.02)
+Passed Vit filter:                         6  (0.00163399); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000544662); expected 0.0 (1e-05)
+Initial search space (Z):               3672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 11583.96
+//
+[ok]

@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986678_GCA_002172015.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0064   12.3   0.4      0.011   11.6   0.4    1.3  1  OUW56622.1  N-acetylglucosamine kinase [Cyanobacteria bacteri
+  ------ inclusion threshold ------
+      0.017   10.9   1.6      0.036    9.8   1.6    1.6  1  OUW54634.1  hypothetical protein CBD48_04675 [Cyanobacteria b
+        1.3    4.7  20.1      0.095    8.5   2.9    2.3  2  OUW53983.1  UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltra
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW56622.1  N-acetylglucosamine kinase [Cyanobacteria bacterium TMED188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.4   2.2e-05     0.011      43      89 ..      98     146 ..      59     167 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.2e-05
+        ccmN  43 iigagaclgmgtiltayqgviaigagail..gtgvlvvgrgeigenaci 89 
+                  +   a+l  g   ta +g i+ gag il  gtg++ +g+   g++   
+  OUW56622.1  98 KLDRRAVLTTGDERTALRGAISEGAGIILisGTGMICLGKNGKGQEHRC 146
+                 4556789999999*************99877999999998776654433 PP
+
+>> OUW54634.1  hypothetical protein CBD48_04675 [Cyanobacteria bacterium TMED188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   1.6   7.3e-05     0.036     106     153 ..       2      48 ..       1      64 [] 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 7.3e-05
+        ccmN 106 vpsgsligdtsrqitievsatrseperpplpepqpvvsqvspvpsvee 153
+                 + sgs+  d+ +q   e s  r   +r p+p+p     q+    +  e
+  OUW54634.1   2 ISSGSINTDARKQRKYEKSHQRD-DQRTPIPQPASANQQINAEAASTE 48 
+                 789**************998775.6899******99999987665554 PP
+
+>> OUW53983.1  UDP-3-O-(3-hydroxymyristoyl)glucosamine N-acyltransferase [Cyanobacteria bacterium TMED188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   2.9   0.00019     0.095      20      92 ..     113     190 ..      96     210 .. 0.69
+   2 ?    1.9   9.1     0.019       9.4      42      93 ..     244     292 ..     220     316 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00019
+        ccmN  20 vtidesaivapgvilraapnsqiiigagaclgmgtil....tayqgviaigagailgtg.vlv....vgrge.igenacigst 92 
+                   ide a+v pg     a   ++ igag+ lg g i+      y+ v+ +g g+ l +  vl     +grg  +  na+igs 
+  OUW53983.1 113 AVIDERAVVGPGS----AIGPRVCIGAGSRLGAGCIVhpgvVIYDDVM-VGDGCELHANaVLHpgsrLGRGCvVNSNAVIGSE 190
+                 579********96....4567899***********9733224677765.5555444433033222225677514678888886 PP
+
+  == domain 2  score: 1.9 bits;  conditional E-value: 0.019
+        ccmN  42 iiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstt 93 
+                 + ig g   g g  +++    + i  ga +g gv++ g+  + + a++g  +
+  OUW53983.1 244 VQIGHGVSTGRGCAFAS---QVGIAGGAKIGHGVILAGQVGVANRAVVGDRA 292
+                 56888888888875554...44555566666666666666666666555433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         1474  (409408 residues searched)
+Passed MSV filter:                        53  (0.0359566); expected 29.5 (0.02)
+Passed bias filter:                       40  (0.027137); expected 29.5 (0.02)
+Passed Vit filter:                         4  (0.0027137); expected 1.5 (0.001)
+Passed Fwd filter:                         3  (0.00203528); expected 0.0 (1e-05)
+Initial search space (Z):               1474  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 3002.33
+//
+[ok]

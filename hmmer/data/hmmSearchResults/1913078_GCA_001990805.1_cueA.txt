@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.5e-16   55.4   0.3      2e-13   47.7   0.0    2.2  2  ONN61033.1  copper oxidase [Mastigocladus laminosus 74]
+  ------ inclusion threshold ------
+      0.027   11.0   0.0      0.036   10.6   0.0    1.3  1  ONN60810.1  plastocyanin [Mastigocladus laminosus 74]
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN61033.1  copper oxidase [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.7   0.0   8.9e-17     2e-13      51     170 ..      84     196 ..      41     219 .. 0.82
+   2 !    5.8   0.0   0.00047         1     425     494 ..     261     328 ..     246     330 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 47.7 bits;  conditional E-value: 8.9e-17
+        cueA  51 etalearpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyh 148
+                 e  l a    i+l      n+   ng+ipgp l ak gd v+i f nk  ++  lh+hg+h  +    d +   v  g++  yef      p g   yh
+  ONN61033.1  84 EFRLTAGTSEIQLNSAvSYNIWDLNGRIPGPTLRAKQGDRVRILFLNKAGHSHSLHFHGIHPAEM---DGV-RPVSNGKATIYEFD---AEPFGVHLYH 175
+                 555666666677665415689999*************************************6654...444.5799*********6...68******** PP
+
+        cueA 149 phlhelvaeqvfgglggifvvr 170
+                  h+ e v+ ++  gl g+f++ 
+  ONN61033.1 176 CHI-EPVTRHIAKGLYGMFIID 196
+                 **9.678999*********983 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.00047
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                  +fhlh+n f+v        p q   d + +   e   +   fr + gk ++h h     + g mg+  v
+  ONN61033.1 261 VTFHLHANFFNVYPTGMTLTPSQK-SDVVTMGVAERHILEFAFR-YPGKYMFHPHQDAIAENGCMGLFEV 328
+                 57***********99999999886.789999999999999***9.89********999999999998776 PP
+
+>> ONN60810.1  plastocyanin [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   1.7e-05     0.036      80     151 ..      53     125 ..      14     134 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 1.7e-05
+        cueA  80 prleakpgdtvkihftnklsqatnlhyhglh.....ipqtgnadniflsvppgetqtyeftlpknhpsg..tfyyhphl 151
+                  +l  kpgdt+k  + nk+    n+ +   +     + ++    ++f+   pg  q ye t+p + p g  tfy  ph 
+  ONN60810.1  53 AKLTVKPGDTIKW-VNNKVP-PHNVVFDPAQsksadLAKAWTHKQLFM--SPG--QEYETTIPADAPKGdyTFYCDPHR 125
+                 4677788888773.345544.344444433300000233333333333..354..678888888888775567777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       125  (0.0284673); expected 87.8 (0.02)
+Passed bias filter:                      104  (0.0236848); expected 87.8 (0.02)
+Passed Vit filter:                        11  (0.00250512); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455477); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11024.96
+//
+[ok]

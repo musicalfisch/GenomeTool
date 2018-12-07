@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-34  117.3   0.0    2.3e-34  117.1   0.0    1.0  1  ABA24880.1  FeoA (plasmid) [Anabaena variabilis ATCC 29413]
+    1.3e-20   72.1   0.1    1.5e-20   72.0   0.1    1.0  1  ABA24879.1  FeoA (plasmid) [Anabaena variabilis ATCC 29413]
+  ------ inclusion threshold ------
+      0.013   13.4   0.1      0.021   12.6   0.1    1.4  1  ABA21772.1  histidine kinase [Anabaena variabilis ATCC 29413]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA24880.1  FeoA (plasmid) [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.1   0.0   1.2e-37   2.3e-34     133     207 ..      34     108 ..      26     110 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 117.1 bits;  conditional E-value: 1.2e-37
+        feoA 133 tflreipigkagkvvgydralrgykgkllsmgltpgteftvirvaplgdpveirvrgfhlslrkqeadaliveei 207
+                   lr++ +g  g+vvgy++a r ykgkll+mgltpgteftv r aplgdpvei+vrgf+lslrk+ea+al vee+
+  ABA24880.1  34 RQLRDLAVGSMGRVVGYEKAARSYKGKLLAMGLTPGTEFTVTRHAPLGDPVEIQVRGFKLSLRKDEANALFVEEV 108
+                 359**********************************************************************98 PP
+
+>> ABA24879.1  FeoA (plasmid) [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.0   0.1   7.7e-24   1.5e-20       2     116 ..       3     118 ..       1     122 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 72.0 bits;  conditional E-value: 7.7e-24
+        feoA   2 ddkirpnepekpekspnkaqfskwggkeaeldnvtptgndlaat...yplaqvemgktvwlvgfqgtgg.inrllgmglnpgiqlqvissqprgsvlia 96 
+                 d k   n+p+kp+ +    qf+    k  el++ tp+   +  t   +pla   +g  + ++ ++gt g + rl+gmgl pg +lqvis  + gsv+ia
+  ABA24879.1   3 DSKNNYNQPQKPKGWG--FQFFGETPKTPELEEKTPKSGSFVNTgksFPLAIASVGERLAIAKLKGTEGtVRRLIGMGLVPGTELQVISI-ANGSVIIA 98 
+                 5677789999998885..69999999**********988876654449******************9553899***************85.78****** PP
+
+        feoA  97 iqdnrigigaemaekilvsd 116
+                 + dnrig+g  ma+kil ++
+  ABA24879.1  99 LGDNRIGLGVGMAQKILCTN 118
+                 ****************9875 PP
+
+>> ABA21772.1  histidine kinase [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.1   1.1e-05     0.021      81     114 ..     259     292 ..     253     321 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.1e-05
+        feoA  81 qlqvissqprgsvliaiqdnrigigaemaekilv 114
+                 q+ +i+s    s+li +qdn  gi  e+  ki+ 
+  ABA21772.1 259 QITIITSLFANSILIQVQDNGFGISNELKSKIFE 292
+                 8899***************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       158  (0.0276902); expected 114.1 (0.02)
+Passed bias filter:                      130  (0.022783); expected 114.1 (0.02)
+Passed Vit filter:                        19  (0.00332983); expected 5.7 (0.001)
+Passed Fwd filter:                         3  (0.000525762); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8179.72
+//
+[ok]

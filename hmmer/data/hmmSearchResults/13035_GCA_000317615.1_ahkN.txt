@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/13035_GCA_000317615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkN  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.6e-109  362.9   0.0   1.9e-109  362.6   0.0    1.0  1  AFZ50317.1  putative aminopeptidase [Dactylococcopsis salina 
+    4.6e-06   23.4   0.0    7.3e-06   22.8   0.0    1.2  1  AFZ49182.1  amidase, hydantoinase/carbamoylase family [Dactyl
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ50317.1  putative aminopeptidase [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  362.6   0.0  1.2e-112  1.9e-109       5     278 ..       3     278 ..       1     281 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 362.6 bits;  conditional E-value: 1.2e-112
+        ahkN   5 lsdrlsqhleqivrernpffssqghfyvreylrqelgnwgkveshffsfqgkvyenlildlpnn..sqkppiligahydtvpgspgaddnatglavlle 101
+                 l  rl  hleqivr+r p+fss ghfyv++yl +++ +wgk+e+h fsf+g++++n i++l  +  +++ppi++ ahyd vpg+ gaddnatg+avlle
+  AFZ50317.1   3 LKARLKGHLEQIVRDRHPYFSSGGHFYVQQYLCEQFQQWGKLETHEFSFNGETHKNYIFNLSADraTDHPPIILAAHYDGVPGTAGADDNATGVAVLLE 101
+                 5689********************************************************986522789****************************** PP
+
+        ahkN 102 larffgenqanypirliafdleeygllgsiayaeklkqtkqdlrlmlslemlgycdknphsqkypafleyfypntgdfialignlktrkdlnflsrvlr 200
+                 l r f +n    p+r+iafdleeyg++gs  yae+lk+ ++ + lm+slemlgyc ++p sq yp ++e fypntg+fia++gnl t k+ +f++  +r
+  AFZ50317.1 102 LIREFVDNPLPIPLRFIAFDLEEYGMIGSEIYAEELKEKREKVSLMFSLEMLGYCSQEPNSQVYPPLIENFYPNTGNFIAFVGNLGTTKEARFFAGEMR 200
+                 *************************************************************************************************** PP
+
+        ahkN 201 enqtpcewlpvifggyivpdtrrsdhspfwdrgysaimvtdtanmrnpyyhssrdtiatldlnfltrvcqglcfglqs 278
+                 +  tp ewl v ++g ++p+tr sdhspfwd+gy a+mvtdt+ +rnp yh   d+i tldl+flt vc+gl  gl+ 
+  AFZ50317.1 201 KSGTPSEWLSVPLSGNLLPETRLSDHSPFWDQGYKAMMVTDTSFLRNPNYHQPSDSIETLDLDFLTGVCEGLIAGLRV 278
+                 ***************************************************************************975 PP
+
+>> AFZ49182.1  amidase, hydantoinase/carbamoylase family [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.8   0.0   4.4e-09   7.3e-06      38     134 ..      44     140 ..      33     153 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 22.8 bits;  conditional E-value: 4.4e-09
+        ahkN  38 qelgnwgkveshffsfqgkvyenlildlpnnsqkppil.igahydtvpgspgaddnatglavllelarffgenq..anypirliafdleeygllgsiay 133
+                 q++  w  +e   ++++  +  nli   p ++++ p l  g+h dtvp   g  d a g+   le+ r++ e +   n+p+ +i f  ee  ++gs a 
+  AFZ49182.1  44 QQVKSW--MEQAGMTVRVDTAGNLIGRYPGKADNAPALaTGSHIDTVPR-GGRYDGAYGVLAGLEMVRVLQERNlyLNHPLEVIVFTDEEGSMIGSKAI 139
+                 555555..344455667777899******998876655279*******7.5889999***99********99863369******************987 PP
+
+        ahkN 134 a 134
+                 +
+  AFZ49182.1 140 S 140
+                 6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (282 nodes)
+Target sequences:                         3337  (1011999 residues searched)
+Passed MSV filter:                        75  (0.0224753); expected 66.7 (0.02)
+Passed bias filter:                       59  (0.0176806); expected 66.7 (0.02)
+Passed Vit filter:                         5  (0.00149835); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000599341); expected 0.0 (1e-05)
+Initial search space (Z):               3337  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9512.79
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1527444_GCA_000737945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.2e-115  379.6   0.3     5e-115  379.3   0.3    1.0  1  KFF41125.1  serine O-acetyltransferase [Candidatus Atelocyano
+    3.3e-07   26.1   2.3    7.1e-07   25.0   2.0    1.7  1  KFF40956.1  UDP-N-acetylglucosamine pyrophosphorylase [Candid
+
+
+Domain annotation for each sequence (and alignments):
+>> KFF41125.1  serine O-acetyltransferase [Candidatus Atelocyanobacterium thalassa isolate SIO64986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  379.3   0.3    8e-118    5e-115       1     228 [.       1     228 [.       1     233 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 379.3 bits;  conditional E-value: 8e-118
+        cysE   1 mlsilladfkiiferdpaarnwlevlfcypglqallchrfahwlyqigipfiprlishlarfltgieihpgaqigqgvfidhgmgvvigetaivgdyal 99 
+                 mls++++df+iif+rdpaarnwlevlfcypglqa++ +rfahwl ++ i f+prlish+arf+tgieihp aqig gvfidhgmgvvigeta +gdy+l
+  KFF41125.1   1 MLSTIVTDFRIIFDRDPAARNWLEVLFCYPGLQAIILYRFAHWLDKLNILFLPRLISHFARFFTGIEIHPAAQIGVGVFIDHGMGVVIGETAKIGDYSL 99 
+                 9************************************************************************************************** PP
+
+        cysE 100 iyqgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrliyragtrveplehgdlldseavairalvdri 198
+                 iyqgvtlggtgk sgkrhpt+g+nvv+gagakvlgn+ +g+nvr+gagsv+lrd+p+dctvvg+pg+++y++g rv+plehg+l+dsea  ir l+dri
+  KFF41125.1 100 IYQGVTLGGTGKGSGKRHPTIGKNVVIGAGAKVLGNLNIGDNVRIGAGSVLLRDVPSDCTVVGIPGKIVYQSGVRVNPLEHGNLPDSEAKVIRLLLDRI 198
+                 *************************************************************************************************** PP
+
+        cysE 199 eqlekqvyelrlerskepdyrincpvlahl 228
+                 + lekq   l+ e+ ++ ++  +   + hl
+  KFF41125.1 199 DLLEKQFQALKSEKLEQWEFVDESNKILHL 228
+                 ***********9998877776665555555 PP
+
+>> KFF40956.1  UDP-N-acetylglucosamine pyrophosphorylase [Candidatus Atelocyanobacterium thalassa isolate SIO64986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   2.0   1.1e-09   7.1e-07      88     167 ..     357     440 ..     322     449 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 1.1e-09
+        cysE  88 igetaivgdyaliyqgvtlggt..gkesg..krhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrl 167
+                 i   + +gd +l  q     gt   +  g  k++  +g++   ga +  +  + lgnnv v agsvv  d+p d+ v+    + 
+  KFF40956.1 357 IAHLSYIGDATLGEQVNIGAGTitANYDGidKHQTVIGNQTKTGANSVFVAPVTLGNNVTVAAGSVVTNDVPDDALVIARQQQR 440
+                 556667777777666433334311222222145556799999*********************************999765544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         1246  (387508 residues searched)
+Passed MSV filter:                        37  (0.029695); expected 24.9 (0.02)
+Passed bias filter:                       33  (0.0264848); expected 24.9 (0.02)
+Passed Vit filter:                         3  (0.0024077); expected 1.2 (0.001)
+Passed Fwd filter:                         2  (0.00160514); expected 0.0 (1e-05)
+Initial search space (Z):               1246  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4882.60
+//
+[ok]

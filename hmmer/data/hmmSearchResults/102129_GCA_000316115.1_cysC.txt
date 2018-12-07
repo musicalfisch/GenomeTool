@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.4e-92  304.8   0.2    7.1e-92  304.7   0.2    1.0  1  EKV01061.1  adenylylsulfate kinase ApsK [Leptolyngbya sp. PCC
+  ------ inclusion threshold ------
+      0.014   13.6   0.0      0.029   12.6   0.0    1.4  1  EKV03386.1  ATPase involved in chromosome partitioning [Lepto
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV01061.1  adenylylsulfate kinase ApsK [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  304.7   0.2   1.8e-95   7.1e-92       4     179 ..       1     176 [.       1     180 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 304.7 bits;  conditional E-value: 1.8e-95
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m++rgvtvw+tglsg+gk+ti++al+ kl a g  +evldgdivrtnltkglgfskedrden+rrigfvs lltr gvivlvsaispyre+r++vr +i
+  EKV01061.1   1 MQHRGVTVWFTGLSGSGKTTISQALEKKLRAAGAKLEVLDGDIVRTNLTKGLGFSKEDRDENVRRIGFVSHLLTRNGVIVLVSAISPYREVRDQVRQRI 99 
+                 889************************************************************************************************ PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                 g+fvev+ n+p++vce+rdvkglyk+ar+geik ftgi dpye p+npev+c t  etleesv kv  kl elgy+ 
+  EKV01061.1 100 GDFVEVYANTPVEVCEQRDVKGLYKKARSGEIKNFTGISDPYEEPLNPEVNCETVNETLEESVNKVMAKLEELGYLS 176
+                 ***************************************************************************86 PP
+
+>> EKV03386.1  ATPase involved in chromosome partitioning [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   7.4e-06     0.029      14      60 ..     112     158 ..     101     185 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 7.4e-06
+        cysC  14 tglsgagkstitealqakliaegysievldgdivrtnltkglgfske 60 
+                 +g  g gkst +  l a l   g  + +ld di   n+ + lg+++ 
+  EKV03386.1 112 SGKGGVGKSTTAVNLAAALTKTGAKVGLLDADIYGPNVPQMLGLAQT 158
+                 68899***********************************9999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       294  (0.0375575); expected 156.6 (0.02)
+Passed bias filter:                      271  (0.0346193); expected 156.6 (0.02)
+Passed Vit filter:                        44  (0.00562085); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 7732.71
+//
+[ok]

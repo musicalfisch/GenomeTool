@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrA  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.5e-08   29.4   0.0    2.9e-05   20.4   0.0    2.1  2  AAZ58715.1  possible transporter component [Prochlorococcus m
+    0.00035   16.9   0.5      0.058    9.5   0.0    2.7  3  AAZ58238.1  Secretion protein HlyD [Prochlorococcus marinus s
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ58715.1  possible transporter component [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.0   0.0   0.00031      0.34      63     124 ..     103     167 ..      93     185 .. 0.79
+   2 !   20.4   0.0   2.7e-08   2.9e-05     285     425 ..     195     330 ..     177     355 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.00031
+        emrA  63 gfgynwwqyasthqstdnatvtgnihsigsrv......sgtvdqvlvddnqdvkagqplirlddrdfq 124
+                  f   w  +a t    + a v gn+  ig  v       g   ++l ++   vk g+ lirld    +
+  AAZ58715.1 103 AFSIGWLAFAKTE---EIAIVMGNLEPIGGVVdvqmplQGIAREILTEEGSRVKKGDVLIRLDTEITK 167
+                 6777888888775...5689999999999877333333588999*******************86555 PP
+
+  == domain 2  score: 20.4 bits;  conditional E-value: 2.7e-08
+        emrA 285 qvsqsdyqtaqaainqsqvalknakqqlayvtitapvsgrvgr.knvqtgqqvqagtpllaivddqywvt.anfketqlekmhpgqkveikldsfphhe 381
+                  vs+ +y   + ++++    +k  + q+ y  i ap+sg v   k    g   q+  p+l iv  +  ++  ++    +  ++ g+  +i +d+fp  +
+  AAZ58715.1 195 AVSELQYLEQKISVEELMSEIKANQVQFKYQEIKAPISGTVFDlKPKSPGFVAQTSEPVLKIVPANNLIAkVEIDSRSIGYIKIGKAADISIDTFPSTD 293
+                 5777788888888888889999999***************9652778889999**********8877665268888999******************** PP
+
+        emrA 382 ftgriesvspasgaqfallppdnatgnftkvvqripvkvvfdre 425
+                 f g i+    + g++   lppd + g+      r p k+ +d +
+  AAZ58715.1 294 F-GVIKGTVTSIGSD--ALPPDPSQGKGY----RFPAKIKLDEQ 330
+                 9.6677666666664..589999999754....55555555544 PP
+
+>> AAZ58238.1  Secretion protein HlyD [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.1   0.1    0.0024       2.6      92     135 ..      71     114 ..      56     127 .. 0.83
+   2 ?    1.8   0.0     0.012        13     197     232 ..     109     144 ..     105     158 .. 0.83
+   3 !    9.5   0.0   5.3e-05     0.058     352     393 ..     210     251 ..     181     259 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 4.1 bits;  conditional E-value: 0.0024
+        emrA  92 srvsgtvdqvlvddnqdvkagqplirlddrdfqiklqqaqadla 135
+                  +  g +d+++v++ ++vk g+ + ++d  d++ ++++ +a+  
+  AAZ58238.1  71 PKRQGILDEIFVEEGDQVKKGDLIAKMDFGDLEFRIDEIKANYE 114
+                 456799**********************9999988888887754 PP
+
+  == domain 2  score: 1.8 bits;  conditional E-value: 0.012
+        emrA 197 tnanlakaqadynrfnqlfssgavsrreldtarqay 232
+                  +an    +a ++r + lf  ga+s  e +  ++ +
+  AAZ58238.1 109 IKANYETQKASFKRREMLFNEGAISAEEYEEYKNKF 144
+                 578999999*****************9998776665 PP
+
+  == domain 3  score: 9.5 bits;  conditional E-value: 5.3e-05
+        emrA 352 vtanfketqlekmhpgqkveikldsfphheftgriesvspas 393
+                 + a+  e+++ +++ gq   i++d+fp + f   +  +sp++
+  AAZ58238.1 210 IVAKVPESDIGRIKTGQDASIRVDAFPDKRFKAVVSKISPSA 251
+                 67888999*******************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (448 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        46  (0.0212668); expected 43.3 (0.02)
+Passed bias filter:                       32  (0.0147943); expected 43.3 (0.02)
+Passed Vit filter:                         5  (0.0023116); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.000924642); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6002.91
+//
+[ok]

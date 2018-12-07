@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1183438_GCA_000484535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.8e-05   21.6   0.1    0.00029   18.8   0.1    1.9  1  AGY60547.1  CpcD/allophycocyanin linker domain protein [Gloeo
+     0.0015   16.6   0.0     0.0016   16.4   0.0    1.1  1  AGY60548.1  phycoerythrin-associated linker protein [Gloeobac
+  ------ inclusion threshold ------
+      0.027   12.5   0.0      0.051   11.6   0.0    1.4  1  AGY57827.1  phycobilisome linker polypeptide [Gloeobacter kil
+
+
+Domain annotation for each sequence (and alignments):
+>> AGY60547.1  CpcD/allophycocyanin linker domain protein [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.1   1.9e-07   0.00029      18      64 ..      25      62 ..       9      69 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 1.9e-07
+        cpcD 18 vGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivs 64
+                 Gl q          +r s s  + vpysr+ q +++++rlG ++  
+  AGY60547.1 25 TGLQQS--------WLRTSNST-VKVPYSRLSQTIQQLSRLGGKVAK 62
+                555443........35666664.78*****************99865 PP
+
+>> AGY60548.1  phycoerythrin-associated linker protein [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   0.0   1.1e-06    0.0016      18      68 ..      18      68 ..       4      70 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 1.1e-06
+        cpcD 18 vGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpl 68
+                v ++q   +d ld          +tvp +r+   m+ i   G ++vs+ p+
+  AGY60548.1 18 VSVAQFPAADSLDTDNLSQSNYSVTVPLARLLPTMQAIRNKGGKVVSVEPV 68
+                456777778888877666667779*************************97 PP
+
+>> AGY57827.1  phycobilisome linker polypeptide [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   3.4e-05     0.051      38      72 ..      42      76 ..      32      78 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 3.4e-05
+        cpcD 38 svfltvpysrmnqemrritrlGarivsikplnaaa 72
+                s  l vp  r+  em +i   G riv i   + aa
+  AGY57827.1 42 SYSLLVPLDRLLSEMTQIKNKGGRIVEIVAADVAA 76
+                66789***********************9888877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4507  (1419478 residues searched)
+Passed MSV filter:                        97  (0.0215221); expected 90.1 (0.02)
+Passed bias filter:                       90  (0.0199689); expected 90.1 (0.02)
+Passed Vit filter:                         7  (0.00155314); expected 4.5 (0.001)
+Passed Fwd filter:                         3  (0.000665631); expected 0.0 (1e-05)
+Initial search space (Z):               4507  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5252.07
+//
+[ok]

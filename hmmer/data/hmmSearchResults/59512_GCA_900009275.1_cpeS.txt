@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59512_GCA_900009275.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-102  340.0   0.0   1.2e-102  339.8   0.0    1.0  1  CUR26920.1  Chromophore lyase CpcT/CpeT 2 [Planktothrix rubes
+    6.5e-58  193.8   0.0    7.7e-58  193.6   0.0    1.0  1  CUR27160.1  putative phycoerythrobilin lyase CpeT [Planktothr
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR26920.1  Chromophore lyase CpcT/CpeT 2 [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  339.8   0.0  4.7e-106  1.2e-102       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 339.8 bits;  conditional E-value: 4.7e-106
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 m+hstd   la+lmaadfsnq+qafenppffahirvcmrplp+ell+gvs+++eqayd +l++pyr+rvlklv++e++ieieny++++e +f+gasr+ 
+  CUR26920.1   1 MSHSTDTIKLAQLMAADFSNQAQAFENPPFFAHIRVCMRPLPTELLDGVSLYLEQAYDINLKQPYRVRVLKLVAVENHIEIENYVIENEAEFHGASREP 99 
+                 89************************************************************************************************* PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 erl+ l+ ++l+k+  c++i +wtg+sfkg+vepgk+c+v rkg+ tyl sefeide++fis+drgrdpetde++wg++agpf+fvrw+sfadevk+
+  CUR26920.1 100 ERLQGLTKERLKKMEKCSFITHWTGHSFKGEVEPGKGCMVERKGNVTYLASEFEIDEHHFISHDRGRDPETDEQLWGALAGPFQFVRWTSFADEVKI 196
+                 ***********************************************************************************************97 PP
+
+>> CUR27160.1  putative phycoerythrobilin lyase CpeT [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  193.6   0.0     3e-61   7.7e-58       8     194 ..       5     190 ..       2     192 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 193.6 bits;  conditional E-value: 3e-61
+        cpeS   8 atlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdlerlktlk 106
+                   ++r +a dfsn +q++ +p  fahir+++rplp e+++g++f+ eq+ydy l +pyr  + +lve++d+i ieny +k+   + ga  +l+ l+tl+
+  CUR27160.1   5 PRFSRCIAGDFSNAKQTIADPKNFAHIRIFFRPLPWEFFQGIGFYSEQTYDYDLWSPYRQGLHRLVEQNDEIYIENYGIKDAYLYAGAGHNLDILRTLT 103
+                 567899********************************************************************************************* PP
+
+        cpeS 107 addleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                     e+   c+mi + + n+f+g+ve g+ c++ r+g++tyl s+ e+ e +++sldrg d +tde++wgsv gp++f +++sfade+
+  CUR27160.1 104 PIVTERRYHCSMIFQPCENGFQGRVE-GNQCLIERNGRQTYLVSDVELTETTWVSLDRGMDINTDEQVWGSVHGPLRFEKRQSFADEL 190
+                 *************************8.899********************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5076  (1601503 residues searched)
+Passed MSV filter:                        96  (0.0189125); expected 101.5 (0.02)
+Passed bias filter:                       82  (0.0161545); expected 101.5 (0.02)
+Passed Vit filter:                         7  (0.00137904); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000394011); expected 0.1 (1e-05)
+Initial search space (Z):               5076  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10463.15
+//
+[ok]

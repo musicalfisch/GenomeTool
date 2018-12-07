@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/431041_GCA_900047545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.7e-52  173.1   1.4    6.9e-52  172.8   1.4    1.0  1  CZB22659.1  Phycocyanobilin lyase beta subunit [Candidatus Sy
+     0.0024   14.2   0.1      0.058    9.7   0.0    2.7  2  CZB18035.1  COG1413: FOG: HEAT repeat [Candidatus Synechococc
+
+
+Domain annotation for each sequence (and alignments):
+>> CZB22659.1  Phycocyanobilin lyase beta subunit [Candidatus Synechococcus spongiarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  172.8   1.4   8.3e-55   6.9e-52       5     206 ..      11     216 ..       8     217 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 172.8 bits;  conditional E-value: 8.3e-55
+        cpcF   5 vetliiavekadsanelltavenlaaakseaaiptltdvlrynnpgasvaavdgliaigkaavpyllanldgynygarawatralagigdvrgldllle 103
+                 v++l+ av+ a++a++l  ave+l+a+    aip l +vl +nnpga+vaavdgl+aig +avp +lanld ynygaraw+ ralagigd+rgl ll  
+  CZB22659.1  11 VQALVDAVQAAQTADDLTGAVEDLSACAHPMAIPCLIQVLGFNNPGAAVAAVDGLVAIGTTAVPAILANLDEYNYGARAWSVRALAGIGDLRGLPLLER 109
+                 8899*********************************************************************************************** PP
+
+        cpcF 104 aavsdfsfsvrrgaarglgniiwsdleesrvseaqkavfaalekllqgdpewvvryaaivgleglgt...aaaafrgairellaqireteaei..vvrl 197
+                 a   d+  svrr aarg+g +    +   + +e  + ++  l+  +  d ew+vrya  vgleg+       aa r+ + + l  + +   e+  vv l
+  CZB22659.1 110 ALAQDIGPSVRRAAARGMGGLQPHGFTAQQRQELAERILPQLK-AACADEEWIVRYAVAVGLEGMDHwwqPPAAQRQRLLDTLQPLADPRQEVapVVWL 207
+                 ************************9999999999999999885.5778****************98522267999999999999998876665448999 PP
+
+        cpcF 198 radqalehl 206
+                 ra  al  l
+  CZB22659.1 208 RARLALHRL 216
+                 999999876 PP
+
+>> CZB18035.1  COG1413: FOG: HEAT repeat [Candidatus Synechococcus spongiarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.7   0.0     7e-05     0.058      65     175 ..      37     135 ..       5     155 .. 0.75
+   2 ?   -0.2   0.0     0.077        64     100     124 ..     171     195 ..     159     223 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 7e-05
+        cpcF  65 aavpyllanldgynygarawatralagigdvrgldllleaavsdfsfsvrrgaarglgniiwsdleesrvseaqkavfaalekllqgdpewvvryaaiv 163
+                  a p lla l+   +  r++a   l       g++ lle a  d    vr  aa  l    w  +e+           + l +l   d  w+vr + i 
+  CZB18035.1  37 DAEPILLAALESDAFIIRSFACMGLGQKRTEAGFQALLERARHDKDPNVRAEAASALS---WFGFERCT---------SLLLRLFSQDDHWLVRQSIIA 123
+                 47899****************99999999999******************99998875...66665432.........345556666666777777777 PP
+
+        cpcF 164 gleglgtaaaaf 175
+                  l   g   + +
+  CZB18035.1 124 ALSECGNPGSQL 135
+                 666666655555 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.077
+        cpcF 100 llleaavsdfsfsvrrgaarglgni 124
+                  ll aa  d    +rr a+r +gn 
+  CZB18035.1 171 TLLLAASHDENPWIRRIATRTMGNF 195
+                 5677888888899999999999995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         1661  (429182 residues searched)
+Passed MSV filter:                        51  (0.0307044); expected 33.2 (0.02)
+Passed bias filter:                       32  (0.0192655); expected 33.2 (0.02)
+Passed Vit filter:                         3  (0.00180614); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00120409); expected 0.0 (1e-05)
+Initial search space (Z):               1661  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4442.03
+//
+[ok]

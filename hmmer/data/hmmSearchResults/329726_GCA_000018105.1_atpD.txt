@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-66  221.8   4.5    2.8e-66  221.7   4.5    1.0  1  ABW25937.1  ATP synthase F1, delta subunit [Acaryochloris mar
+  ------ inclusion threshold ------
+      0.069   11.8   0.7        0.2   10.2   0.1    2.0  2  ABW26848.1  sulfate transporter, sulfate permease family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW25937.1  ATP synthase F1, delta subunit [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  221.7   4.5   6.7e-70   2.8e-66       4     183 ..       4     183 ..       1     184 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 221.7 bits;  conditional E-value: 6.7e-70
+        atpD   4 daataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailqqyl 102
+                  + ++ + +pya+al+s+aqs+nlt+++ged   +lsll++s++l++fl np+  ++ +k+vl+ql    v++ + nfllll+drrri fle i + y 
+  ABW25937.1   4 STVSSTIVEPYAEALMSVAQSNNLTNQIGEDVSFVLSLLQTSDDLKDFLVNPLTPADAQKAVLRQLAESRVQKQFFNFLLLLIDRRRIIFLEGICKYYQ 102
+                 55677899******************************************************************************************* PP
+
+        atpD 103 allrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 allr+ln+tvlaevts+v lt++q +a+++kv  +++a qv+let id dliggviik+gsqv+das+rgqlrr+   ++s
+  ABW25937.1 103 ALLRKLNNTVLAEVTSTVELTDEQRHAITDKVKHMSQAAQVDLETSIDPDLIGGVIIKIGSQVLDASIRGQLRRMNSSITS 183
+                 **************************************************************************9877766 PP
+
+>> ABW26848.1  sulfate transporter, sulfate permease family protein [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.1   4.9e-05       0.2     147     180 ..     348     381 ..     328     385 .. 0.81
+   2 ?   -1.4   0.1      0.18   7.5e+02      77     131 ..     387     426 ..     382     449 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 4.9e-05
+        atpD 147 tkidsdliggviikvgsqvidaslrgqlrrlslr 180
+                   i + ++ g++ikvg ++id s+  +  rlsl+
+  ABW26848.1 348 EPIPNAVLAGILIKVGIDIIDWSFLKRAHRLSLK 381
+                 557778899***********************97 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.18
+        atpD  77 ylrnfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavk 131
+                 yl  fl ++vd    + + a l               a++ +  +lt+ q+q+++
+  ABW26848.1 387 YLVMFLTVFVDLVTAVAVGAFL---------------ANLLTIKSLTDLQVQTMR 426
+                 4444555555544444444444...............444444455555555443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       261  (0.0311344); expected 167.7 (0.02)
+Passed bias filter:                      174  (0.0207563); expected 167.7 (0.02)
+Passed Vit filter:                        13  (0.00155076); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000238578); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 7097.09
+//
+[ok]

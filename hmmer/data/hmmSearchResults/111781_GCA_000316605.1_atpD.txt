@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111781_GCA_000316605.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-58  195.9   0.3    1.3e-58  195.7   0.3    1.0  1  AFY40492.1  ATP synthase F1 subcomplex delta subunit [Leptoly
+  ------ inclusion threshold ------
+      0.039   11.6   0.4       0.12   10.1   0.0    1.9  2  AFY36617.1  sulfate transporter [Leptolyngbya sp. PCC 7376]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY40492.1  ATP synthase F1 subcomplex delta subunit [Leptolyngbya sp. PCC 7376]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  195.7   0.3   6.1e-62   1.3e-58       1     181 [.       1     181 [.       1     184 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 195.7 bits;  conditional E-value: 6.1e-62
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mk  a +a++ +pya+al+s+a+     +++++ +r++l+ +k+s+e++ f++np++++e++k vlk + g+ +++y+ nfl+llvdrrriaf ea+++
+  AFY40492.1   1 MKGSAMSAQLVEPYAEALMSLAKDTGKVDDFADYSRSFLTAFKESEEFRFFIANPLLDAEEQKGVLKSICGKDIDAYFLNFLFLLVDRRRIAFSEALFE 99 
+                 89999********************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrl 181
+                 +++al r+l++ vla++t a +l+ +q +a+ e+v ++t + ++ele+ +d+ liggviikvgsqv daslrgq+rr+s+ l
+  AFY40492.1 100 RFIALQRELKNIVLAQITCATALSREQEDAIAEQVKSITGSNNIELEITTDTSLIGGVIIKVGSQVFDASLRGQIRRISMGL 181
+                 *******************************************************************************976 PP
+
+>> AFY36617.1  sulfate transporter [Leptolyngbya sp. PCC 7376]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   5.6e-05      0.12     146     180 ..     349     383 ..     328     386 .. 0.85
+   2 ?   -1.7   0.1      0.22   4.7e+02      92     124 ..     472     504 ..     467     519 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 5.6e-05
+        atpD 146 etkidsdliggviikvgsqvidaslrgqlrrlslr 180
+                    i   ++ g++ikvg ++id s+  +  rlsl+
+  AFY36617.1 349 TSPIPHAVLAGILIKVGIDIIDWSFLKRAHRLSLK 383
+                 5566778899***********************97 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.22
+        atpD  92 afleailqqylallrqlnqtvlaevtsavplte 124
+                 +   +i++qy +l+ +l +  l  vt+++++  
+  AFY36617.1 472 SQRMSIVEQYDVLILDLLEVPLMGVTATLAVET 504
+                 5556899******99999999999998887654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4228  (1410186 residues searched)
+Passed MSV filter:                       141  (0.0333491); expected 84.6 (0.02)
+Passed bias filter:                       96  (0.0227058); expected 84.6 (0.02)
+Passed Vit filter:                         9  (0.00212867); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000473037); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6486.86
+//
+[ok]

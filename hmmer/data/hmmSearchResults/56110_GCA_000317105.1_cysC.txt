@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56110_GCA_000317105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.8e-92  304.1   0.2    8.6e-92  304.0   0.2    1.0  1  AFY81050.1  adenylylsulfate kinase ApsK [Oscillatoria acumina
+    0.00073   17.4   0.3       0.67    7.7   0.0    2.2  2  AFY80211.1  ribosome small subunit-dependent GTPase A [Oscill
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY81050.1  adenylylsulfate kinase ApsK [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  304.0   0.2     3e-95   8.6e-92       4     180 ..       1     177 [.       1     178 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 304.0 bits;  conditional E-value: 3e-95
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m+qrgvtvw+tglsgagk+ti++ ++  l + gy +evldgdivr nltkglgfskedrdenirrigfvs lltr gvivlvsai+pyreireevr +i
+  AFY81050.1   1 MQQRGVTVWFTGLSGAGKTTISQGVEKELRSLGYQLEVLDGDIVRQNLTKGLGFSKEDRDENIRRIGFVSHLLTRNGVIVLVSAIAPYREIREEVRHRI 99 
+                 89************************************************************************************************* PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihq 180
+                 g+fv+v+vnapl+vceerdvkglyk+arageik ftgiddpye p+np++ec t  e+  es+akv + l++ gyi q
+  AFY81050.1 100 GDFVQVYVNAPLEVCEERDVKGLYKKARAGEIKNFTGIDDPYEAPLNPDIECSTKDESEAESIAKVLQYLKDKGYITQ 177
+                 ****************************************************************************98 PP
+
+>> AFY80211.1  ribosome small subunit-dependent GTPase A [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.0   0.00023      0.68      30      70 ..      92     131 ..      66     151 .. 0.74
+   2 !    7.7   0.0   0.00023      0.67       6      28 ..     192     214 ..     187     230 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.00023
+        cysC  30 akliaegysievldgdivrtnltkglgfskedrdenirrig 70 
+                 +k+  +g  ++    +iv tn+   l +s  drd n+rri 
+  AFY80211.1  92 TKFSRKGTGVKTR-EQIVATNIDTVLLMSGMDRDFNLRRIE 131
+                 4555556665544.57***********************96 PP
+
+  == domain 2  score: 7.7 bits;  conditional E-value: 0.00023
+        cysC   6 qrgvtvwltglsgagkstiteal 28 
+                 q g tv l g sg gkst+t+ l
+  AFY80211.1 192 QPGNTVALLGSSGVGKSTLTNQL 214
+                 7899****************987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5796  (2068426 residues searched)
+Passed MSV filter:                       218  (0.0376121); expected 115.9 (0.02)
+Passed bias filter:                      206  (0.0355418); expected 115.9 (0.02)
+Passed Vit filter:                        29  (0.00500345); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345066); expected 0.1 (1e-05)
+Initial search space (Z):               5796  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 6343.17
+//
+[ok]

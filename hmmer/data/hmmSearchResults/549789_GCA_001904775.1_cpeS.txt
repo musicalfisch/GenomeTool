@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/549789_GCA_001904775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   7.2e-106  350.3   0.0     8e-106  350.1   0.0    1.0  1  OKH49491.1  chorismate-binding protein [Phormidium tenue NIES
+    1.5e-29  101.3   0.0    1.9e-29  100.9   0.0    1.1  1  OKH49609.1  hypothetical protein NIES30_07180 [Phormidium ten
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH49491.1  chorismate-binding protein [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  350.1   0.0  3.2e-109    8e-106       1     195 [.       1     195 [.       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 350.1 bits;  conditional E-value: 3.2e-109
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mth tdi tlar+maadfsnq+qafenpp+fahirvcmrplp+e l g++f++eqayd+++++pyr r +kl+ ++d+i ienyt+k+ + fygasr+l
+  OKH49491.1   1 MTHVTDIHTLARWMAADFSNQQQAFENPPLFAHIRVCMRPLPTETLGGLGFYIEQAYDFMIQQPYRARGMKLIPQGDHILIENYTLKDAEAFYGASRNL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevk 195
+                 ++l++l+ad++ek pgc+miv+wtg+sfkg vepgkac+v r+gk+tyldsefeid+++f+s drgrdpet eh+wgs+agpfef r+asfadevk
+  OKH49491.1 100 DQLSKLTADHFEKTPGCDMIVHWTGHSFKGAVEPGKACMVERNGKTTYLDSEFEIDADQFVSWDRGRDPETHEHLWGSLAGPFEFKRRASFADEVK 195
+                 ***********************************************************************************************8 PP
+
+>> OKH49609.1  hypothetical protein NIES30_07180 [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.9   0.0   7.7e-33   1.9e-29       7     191 ..       6     201 ..       1     202 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 100.9 bits;  conditional E-value: 7.7e-33
+        cpeS   7 iatlarlmaadfsnqeqafenppffahirvcmrplplell.sgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdlerlkt 104
+                 +  la  ma +f n++q++ +p +f h+r+  rplp  ll +g sff+eq      + pyr r+l+l ++++++  + y++ +   + ga+ + +rl +
+  OKH49609.1   6 LNQLATQMAGEFDNRQQSLADPTWFLHLRLWQRPLPSALLgEGYSFFIEQISVASGKPPYRQRILHLTSRDSHLWGQYYALPDPIAYSGAATQPDRLTS 104
+                 5679**********************************99569******************************************************** PP
+
+        cpeS 105 lkaddleklpgcnmivew..tgnsfkgkvepgkacivvrkgkktyldsefeideekfis........ldrgrdpetdehiwgsvagpfefvrwasfa 191
+                 l+ +dl  lp c + +e+  + ++f  ++     c  + +g ++y+  +f++  e  +          drg dp+t +  wg + gpf++v+ ++fa
+  OKH49609.1 105 LTREDLIALPTCGVAIEYrpASQTFSARLPGDSLCSFTANGITAYVRLKFDLGPESPVPnsplvlylEDRGVDPDTGKPTWGPLMGPFQLVKQSAFA 201
+                 *****************94446779999888888*****************98776442112222226**************************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5000  (1597938 residues searched)
+Passed MSV filter:                        86  (0.0172); expected 100.0 (0.02)
+Passed bias filter:                       81  (0.0162); expected 100.0 (0.02)
+Passed Vit filter:                        10  (0.002); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.0004); expected 0.1 (1e-05)
+Initial search space (Z):               5000  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10439.86
+//
+[ok]

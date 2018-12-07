@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710896_GCA_001672105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-46  154.6   0.0    7.9e-46  154.5   0.0    1.0  1  OBQ43104.1  gramicidin dehydrogenase [Aphanizomenon flos-aqua
+  ------ inclusion threshold ------
+       0.03   11.7   0.0      0.097   10.0   0.0    1.7  2  OBQ41291.1  hypothetical protein AN484_21325 [Aphanizomenon f
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ43104.1  gramicidin dehydrogenase [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  154.5   0.0     3e-49   7.9e-46       4     248 ..       2     249 ..       1     252 [] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 154.5 bits;  conditional E-value: 3e-49
+        anaA   4 tsqttspwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvv 102
+                 ts+tt    +   k   + k+ lfcfp +g  + +fr w   +pdsi+l  + +pgr  +ik    t+   li+    +i py + p+ ffg+s+g+++
+  OBQ43104.1   2 TSNTTFTSWITCPKPNPKAKIRLFCFPYSGGSATIFRTWTNDLPDSIELCPIEIPGRGRQIKLSPYTKIEPLIQATATNIIPYLNKPYAFFGYSMGALI 100
+                 88888777778899999********************************************************************************** PP
+
+        anaA 103 slevahqlgdrfgcfpqclvvsgrkpphipcdhr.dsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalgg 200
+                 s+e+++ l   +   p  l ++  + p++p +     q +d d+++e+    gtp+ v ++pel+   lp+ rad+ + + y y  +  l cpi a+gg
+  OBQ43104.1 101 SFELTRLLRSDYNSHPLHLFIAAYHAPQLPSETSlMYQLTDTDFLNEIYQLNGTPKVVQENPELIKFFLPVIRADFTVLDTYVYSHQSPLNCPITAFGG 199
+                 *******************************9762679************************************************************* PP
+
+        anaA 201 eadegvsleelrewekytqrgfklrsfpgghmylteekerf..avikslv 248
+                   d  vs + l  wek t   f l+ + g h+++   k+ +   vi+sl 
+  OBQ43104.1 200 LQDSRVSYNALSAWEKQTTAPFLLHEIDGNHFFINTAKNTLlnLVIQSLQ 249
+                 **********************************9999876224777775 PP
+
+>> OBQ41291.1  hypothetical protein AN484_21325 [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   3.7e-05     0.097      22     110 ..      33     121 ..      23     130 .. 0.82
+   2 ?   -1.2   0.0       0.1   2.7e+02     190     243 ..     220     272 ..     187     281 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 3.7e-05
+        anaA  22 nklslfcfppagagslffrdwpatipdsinlwavrfpgrenrike..pl.itrwgdlieplvqeiypysqspfvffghslgsvvslevahql 110
+                 + l+++c+   g g+  f+   + +  +  + ++ fp + n   +  p+ + r+ d++  +v+++     + f+f+g s+g  v+l+ ++  
+  OBQ41291.1  33 EGLTIICLHALGHGAADFQKLETNLVHNYRVITIDFPSHGNSDDDyqPVsLQRYTDVLTLFVEQL---KLAKFIFIGNSIGGSVALQYTFLY 121
+                 56899********************************9888654322543789999999888876...5689************99877655 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.1
+        anaA 190 slpcpilalggeadegvslee.lrewekytqrgfklrsfpgghmylteekerfav 243
+                 s+ cp+l      d+   l   l   +++ +    l+ f  gh    e  e fa+
+  OBQ41291.1 220 SIKCPVLFAWASQDKITQLGRcLPTIKQFPNM--TLKLFSCGHSPHLETPEEFAI 272
+                 67777777776667666665413344444444..455567777777777777664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5296  (1424099 residues searched)
+Passed MSV filter:                       132  (0.0249245); expected 105.9 (0.02)
+Passed bias filter:                      131  (0.0247356); expected 105.9 (0.02)
+Passed Vit filter:                         5  (0.000944109); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000377644); expected 0.1 (1e-05)
+Initial search space (Z):               5296  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 7205.94
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/82654_GCA_000317065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.8e-135  448.0   7.3     2e-135  447.9   7.3    1.0  1  AFY70561.1  ATP synthase subunit a [Pseudanabaena sp. PCC 736
+     0.0064   13.8   0.6      0.015   12.6   0.0    1.9  2  AFY70236.1  heat shock protein DnaJ domain protein [Pseudanab
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY70561.1  ATP synthase subunit a [Pseudanabaena sp. PCC 7367]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  447.9   7.3    1e-138    2e-135      11     250 ..      12     251 ..       1     252 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 447.9 bits;  conditional E-value: 1e-138
+        atpI  11 lplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlflfifvsnwsg 109
+                   +a levg+h+yw +gnl +h q+++ sw+v+++l +a++ atrn+qr+p g qn+meyalef++d+aknq+gekeyrpwvpf+gt+flfifv nw g
+  AFY70561.1  12 TDFAALEVGKHLYWSVGNLELHAQILIVSWIVMGVLAIATFLATRNIQRVPGGFQNFMEYALEFVQDIAKNQIGEKEYRPWVPFVGTFFLFIFVCNWLG 110
+                 4689*********************************************************************************************** PP
+
+        atpI 110 alipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvvavlvllvplf 208
+                 al+pwkl++lpsgelaapt dinttvalall s+ yf+ag+s rglgyfk+yieptp+llpi iledftkplslsfrlfgniladelvv+vlvllvplf
+  AFY70561.1 111 ALVPWKLVELPSGELAAPTSDINTTVALALLVSVLYFWAGISARGLGYFKRYIEPTPILLPINILEDFTKPLSLSFRLFGNILADELVVGVLVLLVPLF 209
+                 *************************************************************************************************** PP
+
+        atpI 209 vplpvmalglftsaiqalvfatlagayihealeghgeeehee 250
+                 vplpvmalglftsaiqal+fatla+ayi ea+eghgeeehe+
+  AFY70561.1 210 VPLPVMALGLFTSAIQALIFATLAAAYIGEAIEGHGEEEHEH 251
+                 ****************************************95 PP
+
+>> AFY70236.1  heat shock protein DnaJ domain protein [Pseudanabaena sp. PCC 7367]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.0   7.9e-06     0.015     103     164 ..     117     178 ..     103     189 .. 0.91
+   2 ?   -2.0   0.3      0.22   4.3e+02     228     235 ..     396     403 ..     339     438 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 7.9e-06
+        atpI 103 fvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyiep 164
+                 + sn++ a +   + +  +g+ aa   d+n ++ l      ay+  g+++  lgy +  ie 
+  AFY70236.1 117 YFSNFAEAYLKRAVAHYRNGNAAAAVTDLNRAIELKPQLNEAYYQRGLARSRLGYDQSAIED 178
+                 789****************************************************9998885 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 0.22
+        atpI 228 fatlagay 235
+                 +a ++g+y
+  AFY70236.1 396 IALICGCY 403
+                 33333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         3854  (1262343 residues searched)
+Passed MSV filter:                       120  (0.0311365); expected 77.1 (0.02)
+Passed bias filter:                       58  (0.0150493); expected 77.1 (0.02)
+Passed Vit filter:                         5  (0.00129735); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000518941); expected 0.0 (1e-05)
+Initial search space (Z):               3854  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10561.60
+//
+[ok]

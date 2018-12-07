@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574475_GCA_000817745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.9e-45  151.3  15.0    6.6e-45  151.2  15.0    1.0  1  KIF14001.1  ATP synthase F0F1 subunit B' [Aphanocapsa montana
+    8.5e-06   24.4   6.5    1.1e-05   24.1   6.5    1.1  1  KIF14002.1  ATP synthase F0F1 subunit B [Aphanocapsa montana 
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF14001.1  ATP synthase F0F1 subunit B' [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.2  15.0   1.8e-48   6.6e-45       1     138 [.      15     152 ..      15     154 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 151.2 bits;  conditional E-value: 1.8e-48
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd++atlp+ma+qf++lav+ln vfykpl   +d r  y+  +   ake+lak+e++ q+ye +l+ +r+q+q iia+aq ea+k+as+++aaaq+ea
+  KIF14001.1  15 LFDINATLPLMAIQFLVLAVVLNKVFYKPLGDAIDSRDGYVNSSIVDAKEKLAKAETIAQQYEQELAESRRQAQAIIAEAQIEAEKVASQQIAAAQQEA 113
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllg 138
+                  arke v  ei  +k  af  legqva+l++q+l+kll 
+  KIF14001.1 114 QARKEQVQKEIDAEKASAFEVLEGQVAALTKQMLDKLLS 152
+                 *************************************97 PP
+
+>> KIF14002.1  ATP synthase F0F1 subunit B [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   6.5   2.9e-09   1.1e-05      11     132 ..      21     145 ..      13     156 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 2.9e-09
+        atpG  11 malqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeav 106
+                 +  ++i la+i   +fy   k l   l  r   i ++   a  +   ++  + + + +l  a+ +++ei+a a+ +a k++ + +a a+ e    + a 
+  KIF14002.1  21 LETNLINLAIIWGVLFYfgsKFLGGTLSTRRATIEEAIRDAERRQQEAKQALSNQQANLEQAQSKAKEIVATARENATKVSEDILAQAKAEVEKMQAAA 119
+                 5567899******9999777778888988887777766666544444444455667789999*****************99998888888888888888 PP
+
+        atpG 107 aaeiaqqkeeafrslegqvaslsrqi 132
+                   +++ q+e+++r l  ++a ++ + 
+  KIF14002.1 120 DQDVTFQQEKVMRELRQRIAEIALER 145
+                 899***************99887554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         7295  (2153977 residues searched)
+Passed MSV filter:                       251  (0.0344071); expected 145.9 (0.02)
+Passed bias filter:                      125  (0.017135); expected 145.9 (0.02)
+Passed Vit filter:                         8  (0.00109664); expected 7.3 (0.001)
+Passed Fwd filter:                         2  (0.00027416); expected 0.1 (1e-05)
+Initial search space (Z):               7295  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 7700.47
+//
+[ok]

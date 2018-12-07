@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1704290_GCA_001275395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-70  231.4   5.6    4.6e-70  231.3   5.6    1.0  1  KOP27462.1  transcriptional regulator [Hapalosiphon sp. MRB22
+     0.0092   14.6   0.2       0.23   10.0   0.0    2.3  2  KOP27531.1  hypothetical protein AMR41_04430 [Hapalosiphon sp
+
+
+Domain annotation for each sequence (and alignments):
+>> KOP27462.1  transcriptional regulator [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  231.3   5.6   1.6e-73   4.6e-70       1     112 []       1     112 []       1     112 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 231.3 bits;  conditional E-value: 1.6e-73
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 m+kveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklk+eivved+qvd+vvdkiiaaartgeigdgkifispveqv
+  KOP27462.1   1 MRKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKLEIVVEDNQVDMVVDKIIAAARTGEIGDGKIFISPVEQV 99 
+                 99************************************************************************************************* PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek++eav
+  KOP27462.1 100 VRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> KOP27531.1  hypothetical protein AMR41_04430 [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   0.0   7.9e-05      0.23      47      91 ..      55      99 ..      44     125 .. 0.84
+   2 ?    2.0   0.1     0.025        73      47      90 ..     165     208 ..     155     222 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 7.9e-05
+        glnB 47 rgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgki 91
+                r s y   + + lk e +v + q++     ++ +  tgei d k+
+  KOP27531.1 55 RDSRYLERLEKLLKAEALVTNVQINSTAASVVVTYNTGEITDEKM 99
+                6677765555668*****************************997 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.025
+        glnB  47 rgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgk 90 
+                 r  +y   +++ lk e +v + q+++    i+   ++g + d  
+  KOP27531.1 165 RDEKYQERLVKLLKAEALVTKVQINITAASIVVIYKSGVMSDYE 208
+                 5566777788889******************9999999988865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5845  (1865779 residues searched)
+Passed MSV filter:                       194  (0.0331908); expected 116.9 (0.02)
+Passed bias filter:                      166  (0.0284003); expected 116.9 (0.02)
+Passed Vit filter:                        14  (0.00239521); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000342173); expected 0.1 (1e-05)
+Initial search space (Z):               5845  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6965.57
+//
+[ok]

@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1922337_GCA_001939115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.5e-75  248.6   2.3      5e-75  248.4   2.3    1.0  1  OLP17310.1  F0F1 ATP synthase subunit epsilon [Leptolyngbya s
+  ------ inclusion threshold ------
+        1.4    7.3  13.3      0.064   11.7   1.6    2.9  2  OLP16232.1  hypothetical protein BST81_21755 [Leptolyngbya sp
+        3.7    6.0  16.8        1.2    7.6   3.6    2.8  2  OLP16168.1  efflux transporter periplasmic adaptor subunit [L
+
+
+Domain annotation for each sequence (and alignments):
+>> OLP17310.1  F0F1 ATP synthase subunit epsilon [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  248.4   2.3   2.9e-78     5e-75       1     137 []       1     137 [.       1     137 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 248.4 bits;  conditional E-value: 2.9e-78
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pd+tvwda+a+evilpsttgqlg+l+ghapll+aldtgvmrvr + ++dw+aial+ggfaeve+devtilvngaergd+i leea+a+f+
+  OLP17310.1   1 MTLTVRVIAPDRTVWDAKADEVILPSTTGQLGVLTGHAPLLSALDTGVMRVRVTGSRDWTAIALMGGFAEVENDEVTILVNGAERGDAISLEEAKANFA 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +a+++l+qv  +dr++qiqatqafkrarar+qaagg+v
+  OLP17310.1 100 QAEARLSQVPVGDREEQIQATQAFKRARARLQAAGGVV 137
+                 ************************************97 PP
+
+>> OLP16232.1  hypothetical protein BST81_21755 [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   1.6   3.7e-05     0.064      84     123 ..     105     144 ..      67     155 .. 0.79
+   2 ?   -0.5   4.3      0.21   3.6e+02      94     106 ..     222     234 ..     187     270 .. 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 3.7e-05
+        atpE  84 ergdkinleearaafneaqtklnqvkaedrqaqiqatqaf 123
+                  +    +l +a a+ +ea+++l+qv a+ +q +i a+qa 
+  OLP16232.1 105 YQTRLAELAQAEAQVEEARSRLAQVLAGAKQGDITAQQAT 144
+                 4556678999***************************985 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.21
+        atpE  94 araafneaqtkln 106
+                 ar + ++aq  l+
+  OLP16232.1 222 AREQLKQAQGTLE 234
+                 2333333333322 PP
+
+>> OLP16168.1  efflux transporter periplasmic adaptor subunit [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.4   5.2     0.013        22      88     133 ..     110     156 ..      89     161 .. 0.84
+   2 ?    7.6   3.6   0.00067       1.2      88     133 ..     195     241 ..     170     244 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 3.4 bits;  conditional E-value: 0.013
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqaa 133
+                 + +l++ ra+ ++aq++l+ ++++ r +++ qa+ a+ +a a+++ a
+  OLP16168.1 110 EAQLNQLRATVDRAQARLQLLQNGARVEEVaQAESAVNQAEAQVEQA 156
+                 5689999*****************99877659999999999988655 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.00067
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqaa 133
+                 +  le+a++  ne +++l+q+++++r ++i qa++ +  a+ r+qa 
+  OLP16168.1 195 QGSLEQAQSRVNELRQRLQQLRNGNRPEEIaQAEADVAEAQGRLQAV 241
+                 4579**********************998868888899*******96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5141  (1682713 residues searched)
+Passed MSV filter:                       178  (0.0346236); expected 102.8 (0.02)
+Passed bias filter:                      139  (0.0270375); expected 102.8 (0.02)
+Passed Vit filter:                        14  (0.00272321); expected 5.1 (0.001)
+Passed Fwd filter:                         4  (0.000778059); expected 0.1 (1e-05)
+Initial search space (Z):               5141  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 4610.63
+//
+[ok]

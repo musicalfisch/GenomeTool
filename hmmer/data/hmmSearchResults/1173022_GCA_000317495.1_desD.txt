@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-05   22.4   0.9    1.6e-05   22.4   0.9    1.5  2  AFZ13233.1  Delta-12 acyl-phospholipid desaturase [Crinalium 
+  ------ inclusion threshold ------
+      0.041   11.2  20.8       0.35    8.1  20.8    2.0  1  AFZ13008.1  Delta-15 acyl-phospholipid desaturase [Crinalium 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ13233.1  Delta-12 acyl-phospholipid desaturase [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.4   0.9   6.8e-09   1.6e-05      71     134 ..      74     137 ..      40     141 .. 0.75
+   2 ?   -2.7   0.2      0.29   6.8e+02     299     307 ..     239     247 ..     193     301 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 22.4 bits;  conditional E-value: 6.8e-09
+        desD  71 lgaglagig.fsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 + +g a  g f i hd+ h  ++ ++wvn l+g  +   +    + wr+ hn+ hh +tn l  d
+  AFZ13233.1  74 ILTGTAITGfFVIAHDCGHRSFAKRRWVNDLVGHVFLLPLIYPFHGWRILHNF-HHKHTNQLDID 137
+                 3344444441789***********************999999999*******7.88999998776 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.29
+        desD 299 qvvhhlfpq 307
+                  +vhh  p+
+  AFZ13233.1 239 TIVHHTAPD 247
+                 233333332 PP
+
+>> AFZ13008.1  Delta-15 acyl-phospholipid desaturase [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1  20.8   0.00015      0.35      59     313 ..      62     301 ..      28     337 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.00015
+        desD  59 diwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrmtphaehkwyhry 157
+                 d w++  i  l+ g+ +    f +ghd+ hg +s kkw+n+l+g      i +  + wr+ h   hh  t  +  d   +    v  + + +  w+ ++
+  AFZ13008.1  62 DSWYFWPIFWLMQGTMF-WALFVVGHDCGHGSFSKKKWLNNLIGHLSHTPILVPFHGWRISHRT-HHNNTGNIDTDESWY---PVTESKYNQMAWWEKF 155
+                 55555555555555544.45699*********************99999999999******986.565565555554443...3555667777888888 PP
+
+        desD 158 qhlfipilyaiipiy.wsfsdvrsilfrhrfgeikipnpkaidlfvllsgkvvylfwfigipllvgyspleiaigflivfmtygvlachvfmlahvlep 255
+                  ++ i +l+a  p+y +  s  r    +    +   p  ++ + + +    +   +w+  + +l+g+ +     gfl  +  y v     ++    +  
+  AFZ13008.1 156 LRFGIALLFAY-PLYlFKRSPGREAASH-FNPN--SPLFRPSEKWDV----ITSTIWWTSMVVLLGFLT--YQWGFLWLLKNYLVPYIIFVVWLDFVTF 244
+                 88888888875.5551334444433222.1112..222222222222....223346666666666533..3456666666665533322222233334 PP
+
+        desD 256 aefiqpsaanqiedewaifqvr.ttvdfapkniflnwylgglnyqvvhhlfpqichihy 313
+                     +p        +w  f+   +t+d      f+n     +  +v hh+f ++ h h 
+  AFZ13008.1 245 LHHTDPDIPWYRGKDWYFFKGAlSTIDH--DYGFINNIHHNIGTHVAHHIFLNMPHYHL 301
+                 4455555555566666666533144544..34566666666666666666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                       184  (0.0387205); expected 95.0 (0.02)
+Passed bias filter:                      108  (0.0227273); expected 95.0 (0.02)
+Passed Vit filter:                        10  (0.00210438); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420875); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 11031.16
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1618023_GCA_000952155.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   12.0   0.0      0.059   10.8   0.0    1.5  1  KJH70352.1  lipopolysaccharide biosynthesis protein [Aliterel
+      0.042   11.3   0.0      0.097   10.1   0.0    1.6  1  KJH71275.1  adenylylsulfate kinase [Aliterella atlantica CENA
+
+
+Domain annotation for each sequence (and alignments):
+>> KJH70352.1  lipopolysaccharide biosynthesis protein [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   2.7e-05     0.059      14      57 ..     506     549 ..     494     561 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.7e-05
+        cysC  14 tglsgagkstitealqakliaegysievldgdivrtnltkglgf 57 
+                 +  +g gk+t+t  l   l+  g+ + ++dgd+ ++++++ lg 
+  KJH70352.1 506 SSTAGEGKTTVTLGLALALVNFGFRVLIVDGDLRQAEMSRRLGH 549
+                 456899********************************999996 PP
+
+>> KJH71275.1  adenylylsulfate kinase [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   4.4e-05     0.097       7     152 ..     341     495 ..     336     504 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 4.4e-05
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglg.........fskedrdenirrigfvsnlltrhgvivlvsaispyreire 96 
+                 +g  + ++glsg+gkst ++ l  kl a      v+  d vr  l  g+          ++ e  ++   r+  +  +l+ +g  v++ a     ++r 
+  KJH71275.1 341 QGRLILMSGLSGSGKSTTAKHLARKLDAI-----VIRSDAVRKHLG-GIAlserggdelYTPEMTQKTYDRLLQLGVMLASQGFTVILDAKYDRTDLRM 433
+                 5777899**********999998888664.....444444444442.3330000001114555555566677777777777777777777777777776 PP
+
+        cysC  97 evrgkigsfve.....vfvnaplsvceer..dvkglykrarageiksftgiddpyeppfnpev 152
+                 +    + +f +     +  nap++v +er  + +g    a a  + s     d + p  +p v
+  KJH71275.1 434 NAI-DMADFQQiplqiIHCNAPIEVLKERlqQRRGDIADATADLLESQIAASDAFTPAEQPYV 495
+                 543.33444331111146678888877773344566677777777777777777777666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4367  (1296044 residues searched)
+Passed MSV filter:                       182  (0.0416762); expected 87.3 (0.02)
+Passed bias filter:                      172  (0.0393863); expected 87.3 (0.02)
+Passed Vit filter:                        33  (0.00755668); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045798); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 4769.44
+//
+[ok]

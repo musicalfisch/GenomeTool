@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-05   20.8   8.6    3.7e-05   19.8   6.0    2.0  2  CCH65444.1  hypothetical protein RINTHM_9830 [Richelia intrac
+    4.4e-05   19.6   5.2    0.00031   16.8   2.1    2.2  2  CCH65122.1  N-acetylglucosamine-1-phosphate uridyltransferase
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH65444.1  hypothetical protein RINTHM_9830 [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.5   0.1    0.0088       7.3      77     127 ..      49      97 ..      22     119 .. 0.71
+   2 !   19.8   6.0   4.4e-08   3.7e-05      62     169 ..     104     219 ..      94     227 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 2.5 bits;  conditional E-value: 0.0088
+        cysE  77 gvfidhgmgvvigetaivgdyaliyqgvtlggtgkesgkrhptlgenvvvg 127
+                  +fi+h +      +  +g+   i++g  l   g+ + +    lg++v + 
+  CCH65444.1  49 KIFIEHNVDFFGTHSIEIGNGVYIFKGARLDARGHRNNR--LCLGDKVAIE 97 
+                 578888888877777778888888888888888876543..4566666554 PP
+
+  == domain 2  score: 19.8 bits;  conditional E-value: 4.4e-08
+        cysE  62 fltgieihpg..aqigqgvfidhgmgvvigetaivgdyali....yqgvtlggtgkesgk.rh.ptlgenvvvgagakvlgniylgnnvrvgagsvvlr 152
+                 fl   +ih g  + ig  v i     + ige +++  ++ i    ++   l  + k+ g  r    + ++  +g g  vl  + +g    +gag+vv +
+  CCH65444.1 104 FLDNTNIHIGqeTFIGPNVCIGGPGDIKIGERCLIAAHTGIiannHKFDNLSIAIKDQGVtREgIVIEDDCWLGHGVTVLDGVTIGRGSIIGAGAVVTK 202
+                 565566666521568999999988889999999887766541111233456777788775133145677899*************************** PP
+
+        cysE 153 dipadctvvgvpgrliy 169
+                  +pa    vgvp ++i 
+  CCH65444.1 203 SVPAFSIAVGVPAKVIK 219
+                 **************995 PP
+
+>> CCH65122.1  N-acetylglucosamine-1-phosphate uridyltransferase [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.0   0.7    0.0031       2.6      71     149 ..     297     379 ..     281     384 .. 0.73
+   2 !   16.8   2.1   3.7e-07   0.00031     111     174 ..     384     446 ..     364     449 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 4.0 bits;  conditional E-value: 0.0031
+        cysE  71 gaqigqgvfidhgm..gvvigetaivgdyaliyqgvtlggtgk...esgkrhptlgenvvvgagakvlgniylgnnvrvgagsv 149
+                  +qig+ v +++ +     + + + +g ya +   v +g   +       +   lg+   v a    lg+   g+++ +gag++
+  CCH65122.1 297 NSQIGKNVTVQYSVitDSSVSDCTRIGPYAHLRSCVNVGKNCRvgnFVELKNTQLGNYSNV-AHLSYLGDTVAGDQINIGAGTI 379
+                 46999999999876224578899999******99999998655110444566667755554.6788999999999999999987 PP
+
+  == domain 2  score: 16.8 bits;  conditional E-value: 3.7e-07
+        cysE 111 kesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrliyragtr 174
+                     k++  +g+ +  g+ + ++  + lg++v v ags v  d+p d  v+    r i + g r
+  CCH65122.1 384 DGVNKHKTIIGNRIKTGSNSVLVAPVRLGDDVYVAAGSTVTEDVPNDSLVIAR-ARQIIKPGWR 446
+                 33445556679999999999999************************999875.5556666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        49  (0.0292712); expected 33.5 (0.02)
+Passed bias filter:                       44  (0.0262843); expected 33.5 (0.02)
+Passed Vit filter:                         5  (0.00298686); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00119474); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 2771.78
+//
+[ok]

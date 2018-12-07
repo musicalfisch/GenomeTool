@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173025_GCA_000317045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkK  [M=298]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.6e-85  283.6   3.5    4.1e-85  283.4   3.5    1.0  1  AFY66144.1  protein of unknown function DUF2382 [Geitlerinema
+      5e-06   23.7   0.1    7.8e-06   23.1   0.1    1.2  1  AFY66143.1  protein of unknown function DUF2382 [Geitlerinema
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY66144.1  protein of unknown function DUF2382 [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  283.4   3.5   2.2e-88   4.1e-85       1     297 [.       1     304 [.       1     305 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 283.4 bits;  conditional E-value: 2.2e-88
+        ahkK   1 msllkikefdpnyresfagkdi...kgmgvyasvdekigtvsdilvddkghfryfvvdlglwifgkkvllpvgrsridntlervytvgmtkqqaenlpe 96 
+                 m+l k k+f p+y+e f   +i       vyas ++++g+v d lvd+ g fry+vvd g+wifgkkvllp+g +r d t ervy  g+tk++ e lp+
+  AFY66144.1   1 MTLYKFKDFYPDYKEKFGDTEIlnlDSYSVYASEENRVGSVDDALVDESGRFRYLVVDTGFWIFGKKVLLPLGLARFDYTNERVYVDGLTKDEVEALPN 99 
+                 89***************9998822245689********************************************************************9 PP
+
+        ahkK  97 fsehkeidynyeeqvrgvyrseaflegpap.v.gmlgsgtagatmvapia.ppiksgngn...gydykqepalyglndq.dhqtfklyqerliankira 188
+                 ++  ke    yeeq r  y   a      + +    +s+t   + v p + + + sg+ n   gydy+ +p +yg+ +  +h+ ++ly+erliank r 
+  AFY66144.1 100 LE--KEDYEAYEEQTRQAYTPLAQRRHHQSyLhTSETSETNAPASVNPGSrQSVASGDRNqarGYDYNSNPRFYGMSEAgNHNPLRLYEERLIANKQRD 196
+                 86..554557*********999987665541313456777777777775525677887655559************986489***************** PP
+
+        ahkK 189 ktgevivgkhtetekarvsvpidkervviervtptgagesvtlgadsfgtsevthidiyeetadihkeaflreevrvnkvvdhetieaeetlrreeldi 287
+                 + g v vgk  et+ a vsvp++kervv+ r tp+++  +vt g   f   ev+ +++yeetadi k+af+reev v k v+h+ti a+e +rreeldi
+  AFY66144.1 197 RVGAVQVGKRVETQEAEVSVPVEKERVVVSRRTPSET-RAVTPGEANFQEGEVARMEVYEETADINKQAFVREEVEVRKEVEHDTISAKEKVRREELDI 294
+                 **********************************975.79*********************************************************** PP
+
+        ahkK 288 ntqehpnver 297
+                 nt+  pnv+r
+  AFY66144.1 295 NTDGRPNVQR 304
+                 ********98 PP
+
+>> AFY66143.1  protein of unknown function DUF2382 [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.1   0.1   4.1e-09   7.8e-06     165     223 ..      41      97 ..      20     103 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 23.1 bits;  conditional E-value: 4.1e-09
+        ahkK 165 glndqdhqtfklyqerliankiraktgevivgkhtetekarvsvpidkervviervtpt 223
+                 +++ q++  + l +erl  n+ r k gev++ +  et    + vp+ +e+++ie+v+p 
+  AFY66143.1  41 SVETQEKMVIPLLEERLQINRRRQKIGEVVLRREVETR--VIEVPVRREKLIIEQVSPE 97 
+                 56789999999********************9877775..6789************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (298 nodes)
+Target sequences:                         3815  (1301653 residues searched)
+Passed MSV filter:                        64  (0.0167759); expected 76.3 (0.02)
+Passed bias filter:                       61  (0.0159895); expected 76.3 (0.02)
+Passed Vit filter:                         8  (0.00209699); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000524246); expected 0.0 (1e-05)
+Initial search space (Z):               3815  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9697.31
+//
+[ok]

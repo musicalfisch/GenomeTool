@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292564_GCA_000316515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desB  [M=345]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.7e-09   32.3   6.9    1.8e-05   21.6   0.5    2.5  3  AFY27320.1  fatty acid desaturase [Cyanobium gracile PCC 6307
+  ------ inclusion threshold ------
+      0.025   11.2   5.6      0.093    9.3   4.9    2.2  1  AFY29814.1  fatty acid desaturase [Cyanobium gracile PCC 6307
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY27320.1  fatty acid desaturase [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.6   0.5   1.1e-08   1.8e-05      52     131 ..      37     118 ..      17     137 .. 0.80
+   2 ?   -1.8   0.5      0.14   2.3e+02      62      93 ..     222     252 ..     198     270 .. 0.67
+   3 !   13.8   0.2   2.5e-06     0.004     255     316 ..     270     333 ..     234     347 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 21.6 bits;  conditional E-value: 1.1e-08
+        desB  52 lywit.yqinqawffplfwfmq.gtmfwalfvvghdcghgsfsryrwlnnlighlshtpilvpfhgwrishrthhantgnid 131
+                 l+w++ + ++qa ++ +  ++    ++  +f + hdcgh s+ r r  n++ g+l  +   +p + w   h  hh   g+ +
+  AFY27320.1  37 LWWVAdWSLKQAPLLLIPTMVVmVLLLARIFSLMHDCGHDSLFRSRRANQVFGFLLGVLSAIPQYPWSRGHAYHHRHNGDWE 118
+                 6666436777776544433333034556799********************************************9998765 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.14
+        desB  62 awffplfwfmqgtmfwalfvvghdcghgsfsr 93 
+                 +w++   w+  g +fw+++     c+ + f  
+  AFY27320.1 222 SWWLMAHWLGAG-VFWSIYAPVMACAAAIFIC 252
+                 566666665544.6888887777777766654 PP
+
+  == domain 3  score: 13.8 bits;  conditional E-value: 2.5e-06
+        desB 255 dwyflkgals.tidrdy.gifnpihhqigthvahhifitiphyhlqeateairpvlgdyyrvsk 316
+                  w  + g l  t d +   ifn    +ig h  hh+   ip y+l+ + e    +l +  r+s 
+  AFY27320.1 270 GWSEMTGVLEgTSDLELpPIFNWFSADIGCHAIHHLSSKIPNYRLRACHERNAHLLSNVRRLSL 333
+                 56666666642556665359****************************9999999999888875 PP
+
+>> AFY29814.1  fatty acid desaturase [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   4.9   5.7e-05     0.093      57     102 ..      57     103 ..      34     327 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 5.7e-05
+        desB  57 yqinqawffplfwfmqgtmfwal.fvvghdcghgsfsryrwlnnlig 102
+                 ++ n+a    l+  + g  + a+ f + hd ghg++sr rw+n   +
+  AFY29814.1  57 FRANNAPAAILLSAVLGLAIAAIgFNIQHDGGHGAYSRRRWINRAAA 103
+                 455555555555556666555554899***************97543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (345 nodes)
+Target sequences:                         3280  (992729 residues searched)
+Passed MSV filter:                        71  (0.0216463); expected 65.6 (0.02)
+Passed bias filter:                       57  (0.017378); expected 65.6 (0.02)
+Passed Vit filter:                         4  (0.00121951); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000609756); expected 0.0 (1e-05)
+Initial search space (Z):               3280  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8562.29
+//
+[ok]

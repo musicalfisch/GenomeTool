@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1496688_GCA_000708525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00034   17.2   0.6    0.00034   17.2   0.6    1.7  2  KEF42260.1  fatty acid desaturase [Cyanobium sp. CACIAM 14]
+     0.0006   16.4   1.7    0.00065   16.2   0.4    1.6  2  KEF41261.1  hypothetical protein ER33_12540 [Cyanobium sp. CA
+
+
+Domain annotation for each sequence (and alignments):
+>> KEF42260.1  fatty acid desaturase [Cyanobium sp. CACIAM 14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.6   2.3e-07   0.00034      68     229 ..      19     181 ..       4     197 .. 0.70
+   2 ?   -1.2   0.1      0.09   1.3e+02     278     304 ..     220     246 ..     213     252 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 2.3e-07
+        desA  68 plawiftgtaltgf.....fviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktnmvtidnawdpweleafnsanplvrlfyrgir 161
+                 p+a  +tg  l g+     f   h+cghr+    + +nd v     +   y    +r  h+ hh  t         dp   ea  s+   +  +   + 
+  KEF42260.1  19 PVALRLTGVLLLGWglafgFCAMHECGHRTAFASKGLNDAVAWWAGVLSFYNADFYRRYHQWHHRYTHQPG----LDPELEEAPPSS---LGAYLLELS 110
+                 55666666666554333348899******9999999*******9999999**************9887655....566444444443...344556788 PP
+
+        desA 162 grfwwlgsi.ahwailh..fnieqfkenerek..arfsmivvlvfaaiffptlifytgvwglvkfwvvpwfvy 229
+                 g  wwlg i +h a l+  f    +   e e+  +r   +   v+ ++++ +l    g   l+ fw++p  v 
+  KEF42260.1 111 GLPWWLGKIrSHLAGLRgdFGARPYIPAEAEEtvTRSIRLQFAVYGVLLLASLWHANG--ALLWFWLLPLAVG 181
+                 999****995688988633666677655555411444445556777777777766655..5788888887765 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.09
+        desA 278 hdinvhiphhistaipsynlrkvhasl 304
+                  ++  h+ hh+  ++p + l + h+ l
+  KEF42260.1 220 WQMPFHVEHHLYPSLPFHALAEAHTHL 246
+                 566789999999999999999988876 PP
+
+>> KEF41261.1  hypothetical protein ER33_12540 [Cyanobium sp. CACIAM 14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   0.4   4.4e-07   0.00065      42     127 ..      21     112 ..      16     116 .. 0.73
+   2 ?   -2.1   0.0      0.17   2.5e+02     277     293 ..     227     243 ..     170     258 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 4.4e-07
+        desA  42 wfgvitnilavia..gyamlvyspw.yllplawiftgtal.tgffviahdcghrsfs.nrpwvndlvghifllpl.iypfhcwrflhdrhha 127
+                 w+g+++ +  +i+  g  ++  + w  llpl  +   t l tg+f++ hd+ hr++   r+ +nd +g++ l      p+   r  h rhh 
+  KEF41261.1  21 WLGMLIFLGWLISllGLLLVDLARWpPLLPLLAVALRTFLqTGLFIVGHDAMHRTLVpGRRDLNDRLGRLALQCYaALPYGPCRRHHLRHHR 112
+                 666655543333300444445567734899877766666549************98537999*******99987526899999999999995 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.17
+        desA 277 chdinvhiphhistaip 293
+                 c+    h  hh   ++p
+  KEF41261.1 227 CYHFGYHREHHAYPSVP 243
+                 44444444444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         2935  (883562 residues searched)
+Passed MSV filter:                        84  (0.0286201); expected 58.7 (0.02)
+Passed bias filter:                       72  (0.0245315); expected 58.7 (0.02)
+Passed Vit filter:                         9  (0.00306644); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000681431); expected 0.0 (1e-05)
+Initial search space (Z):               2935  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10190.42
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160279_GCA_000297435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-44  149.0   0.1    1.2e-44  148.8   0.1    1.0  1  CCI32805.1  Carbon dioxide concentrating mechanism protein Cc
+  ------ inclusion threshold ------
+      0.031   12.7   0.0        0.2   10.1   0.0    2.2  2  CCI32546.1  putative cytochrome P450 110 [Microcystis sp. T1-
+
+
+Domain annotation for each sequence (and alignments):
+>> CCI32805.1  Carbon dioxide concentrating mechanism protein CcmL [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  148.8   0.1   5.6e-48   1.2e-44       1     100 []       1     100 [.       1     100 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 148.8 bits;  conditional E-value: 5.6e-48
+        ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdqy 99 
+                 mqiakv gtvvst k  s+ gvkllllq++d +g+llpkyeva d vgag++ewvlvsrg aar   g+++rplda+vv iidt++ve+r +ysk+d++
+  CCI32805.1   1 MQIAKVCGTVVSTLKPRSMTGVKLLLLQFIDAQGQLLPKYEVAGDIVGAGLNEWVLVSRGGAARIEDGQNNRPLDAMVVGIIDTITVENRTLYSKRDEF 99 
+                 9************************************************************************************************98 PP
+
+        ccmL 100 r 100
+                 r
+  CCI32805.1 100 R 100
+                 7 PP
+
+>> CCI32546.1  putative cytochrome P450 110 [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0     9e-05       0.2      39      76 ..      48      85 ..      22     112 .. 0.85
+   2 ?   -1.0   0.0      0.27     6e+02      16      42 ..     241     267 ..     233     276 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 9e-05
+        ccmL 39 kyevaadsvgagvdewvlvsrgsaarqvlgneqrplda 76
+                + ++ + +vg  vd++++vs  sa +q+l n+++   a
+  CCI32546.1 48 HGDIFSTKVGLTVDNFIFVSSPSALQQILTNDRKQFSA 85
+                55677889***********************9987765 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.27
+        ccmL  16 dpslrgvkllllqlvdeegkllpkyev 42 
+                 +p+   v  ll+   deeg+ + + e+
+  CCI32546.1 241 NPNRTDVLSLLMSAQDEEGNPMSDKEL 267
+                 566667778999999****99888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         4434  (1223634 residues searched)
+Passed MSV filter:                        94  (0.0211998); expected 88.7 (0.02)
+Passed bias filter:                       72  (0.0162382); expected 88.7 (0.02)
+Passed Vit filter:                         4  (0.00090212); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045106); expected 0.0 (1e-05)
+Initial search space (Z):               4434  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6118.17
+//
+[ok]

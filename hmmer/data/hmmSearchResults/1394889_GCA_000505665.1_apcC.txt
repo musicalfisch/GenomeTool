@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1394889_GCA_000505665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.6e-49  160.7   1.2    7.1e-49  160.6   1.2    1.0  1  AHB89509.1  phycobilisome small core linker polypeptide ApcC 
+      1e-05   22.3   0.0    1.8e-05   21.5   0.0    1.4  1  AHB88603.1  phycocyanin-associated rod-terminating linker pro
+  ------ inclusion threshold ------
+      0.016   12.1   0.0      0.033   11.1   0.0    1.4  1  AHB88104.1  ferredoxin--NADP+ reductase PetH [Thermosynechoco
+
+
+Domain annotation for each sequence (and alignments):
+>> AHB89509.1  phycobilisome small core linker polypeptide ApcC [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.6   1.2   9.6e-52   7.1e-49       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 160.6 bits;  conditional E-value: 9.6e-52
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmfkitacvPsqtrirtqrelqntyftklvpy+nWfreqqri+kmGGkivkvel tGkpg+ntGl
+  AHB89509.1  1 MRMFKITACVPSQTRIRTQRELQNTYFTKLVPYENWFREQQRIQKMGGKIVKVELFTGKPGVNTGL 66
+                9****************************************************************9 PP
+
+>> AHB88603.1  phycocyanin-associated rod-terminating linker protein CpcD [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.0   2.4e-08   1.8e-05      25      53 ..      46      72 ..      40      77 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 2.4e-08
+        apcC 25 tyftklvpydnWfreqqrimkmGGkivkv 53
+                t+ t  vpy    +e qri +mGGkiv +
+  AHB88603.1 46 TFIT--VPYSRMNEEMQRITRMGGKIVSI 72
+                5555..9********************87 PP
+
+>> AHB88104.1  ferredoxin--NADP+ reductase PetH [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   4.4e-05     0.033      31      58 ..      32      59 ..      20      67 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 4.4e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkvelatG 58
+                vpyd   +  q+i + GGkiv ++   G
+  AHB88104.1 32 VPYDRMNQFMQQITRWGGKIVSIQPLNG 59
+                9*********************996666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         2233  (713131 residues searched)
+Passed MSV filter:                        55  (0.0246305); expected 44.7 (0.02)
+Passed bias filter:                       48  (0.0214957); expected 44.7 (0.02)
+Passed Vit filter:                         8  (0.00358262); expected 2.2 (0.001)
+Passed Fwd filter:                         3  (0.00134348); expected 0.0 (1e-05)
+Initial search space (Z):               2233  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4777.98
+//
+[ok]

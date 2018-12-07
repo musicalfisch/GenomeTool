@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671072_GCA_900009145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-45  152.2  12.7      2e-45  152.1  12.7    1.0  1  CUR31139.1  Uncharacterized membrane protein YvaE [Planktothr
+    5.8e-11   41.2   4.2    6.5e-11   41.1   4.2    1.0  1  CUR34476.1  Multidrug resistance protein YkkD [Planktothrix t
+    2.6e-09   35.9   5.3    3.8e-09   35.4   5.3    1.5  1  CUR34260.1  conserved membrane hypothetical protein [Planktot
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR31139.1  Uncharacterized membrane protein YvaE [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.1  12.7     1e-48     2e-45       4     106 .]       2     104 .]       1     104 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 152.1 bits;  conditional E-value: 1e-48
+        emrC   4 swiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 s iyl+  i+fev+gttcmkls+gft++ ps+ if+fygl++t lt+ lkkievs+aysvw+g+gt+lia ig+ +fres+t +k+isialiiigvig+
+  CUR31139.1   2 SGIYLILGIVFEVMGTTCMKLSQGFTRIWPSIGIFIFYGLSFTCLTIVLKKIEVSLAYSVWSGVGTTLIALIGIGFFRESITPIKFISIALIIIGVIGL 100
+                 679************************************************************************************************ PP
+
+        emrC 103 nsak 106
+                 ns+k
+  CUR31139.1 101 NSGK 104
+                 *987 PP
+
+>> CUR34476.1  Multidrug resistance protein YkkD [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.1   4.2   3.3e-14   6.5e-11      33     104 ..      14      86 ..       2      88 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 41.1 bits;  conditional E-value: 3.3e-14
+        emrC  33 psvlifvfyg.lcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigins 104
+                  ++l f+ +g l++ fl+ a+++i +  ay+vw+g+g++   ++g+++f++ ++l +l+ ++l++i +ig+ +
+  CUR34476.1  14 GTILAFIGFGvLSVWFLSKAMQTIPLGTAYAVWTGIGALGTIILGILIFKDPVSLGRLFFLSLLVISLIGLKA 86 
+                 6799*****945899*******************************************************987 PP
+
+>> CUR34260.1  conserved membrane hypothetical protein [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.4   5.3   1.9e-12   3.8e-09      37     101 ..      53     117 ..       8     120 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 35.4 bits;  conditional E-value: 1.9e-12
+        emrC  37 ifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvig 101
+                  +++yg+ l   + al ++ vs+ay v+a++g  l+a +g +++ e + + ++i ++li+ g++ 
+  CUR34260.1  53 AILVYGINLIVFAKALDRLPVSIAYPVFAAIGFSLVAFMGSLFLGERFGINQMIGLSLIVAGIVI 117
+                 4578**********************************************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         5948  (1891724 residues searched)
+Passed MSV filter:                       212  (0.0356422); expected 119.0 (0.02)
+Passed bias filter:                       84  (0.0141224); expected 119.0 (0.02)
+Passed Vit filter:                        10  (0.00168124); expected 5.9 (0.001)
+Passed Fwd filter:                         3  (0.000504371); expected 0.1 (1e-05)
+Initial search space (Z):               5948  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6684.09
+//
+[ok]

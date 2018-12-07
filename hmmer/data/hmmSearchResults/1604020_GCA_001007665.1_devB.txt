@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/devB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1604020_GCA_001007665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       devB  [M=399]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-43  146.2   2.8    9.9e-29   97.2   0.0    3.0  3  KKZ10802.1  hypothetical protein TE42_09510 [Candidatus Synec
+  ------ inclusion threshold ------
+       0.02   10.5   4.8       0.24    7.0   0.1    2.9  3  KKZ12303.1  hypothetical protein TE42_05135 [Candidatus Synec
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ10802.1  hypothetical protein TE42_09510 [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.7   0.0   6.5e-14   5.5e-11      53     110 ..      45     102 ..      39     104 .. 0.94
+   2 !   10.4   0.2   2.6e-05     0.022     151     206 ..     103     154 ..     101     162 .. 0.83
+   3 !   97.2   0.0   1.2e-31   9.9e-29     256     398 ..     161     304 ..     156     305 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 38.7 bits;  conditional E-value: 6.5e-14
+        devB  53 spspiitgvaalgrlepqgeiirlsapnslgggiriakllvkkgdkirqgqliallds 110
+                 ++ p++  vaalg +ep+ge+ rl+ p   g   r+a+llvk gd++ +gq + l+ds
+  KKZ10802.1  45 TSLPVARHVAALGYIEPRGEVRRLAGPSDGGATARVARLLVKEGDQVVRGQELVLFDS 102
+                 567999**********************9999*******************9999997 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 2.6e-05
+        devB 151 iarleaelrgetsaqkaiiarlqaelnnaqrenqryedlyengaisasnaeskrlr 206
+                 i rl+ae r e ++q   +ar   +l+ ++ e++ry dl   ga+s    + +r  
+  KKZ10802.1 103 IPRLQAE-RHELQTQVGSLAR---QLEVSRSEEKRYGDLVASGAVSHDSLDQRRRA 154
+                 7899998.7899999888887...57778999**************9988888755 PP
+
+  == domain 3  score: 97.2 bits;  conditional E-value: 1.2e-31
+        devB 256 dlasakasvkqaqaeldlsiirspidgqvlkinawpgeiissqgiaelgrtqqmyvvaevyetdvkkvklgqsvditad..afsgkiqgtvtdiglqvn 352
+                 d a + a +k ++ +l  +++r+p+ g +l i +  ge  ++ g+ elg+t+ m vvaevyetd+ +++ gq + it++   f+g + g v +i  qvn
+  KKZ10802.1 161 DHAQTTAELKVVDVDLRNATLRAPMAGTILNILTHEGERPGNSGVLELGQTDFMEVVAEVYETDISRIRPGQRARITSEhgGFTGELSGQVREISRQVN 259
+                 6677889999999****************************************************************98446***************** PP
+
+        devB 353 kqnifnnkpgadtdnkivdvkirinnpkdnqrvadltnlqvqvlin 398
+                 ++++f  +p    d ++v v+i ++ p   qrv +lt +qv v i+
+  KKZ10802.1 260 RRDVFSSDPKDAVDARVVAVRIALDPP-ASQRVRNLTRMQVLVRID 304
+                 ************************977.57***********99885 PP
+
+>> KKZ12303.1  hypothetical protein TE42_05135 [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.1   0.00028      0.24      82     115 ..      63      95 ..      17     108 .. 0.77
+   2 ?    0.6   3.0     0.024        20     165     232 ..     100     164 ..      96     182 .. 0.75
+   3 ?    2.0   0.2    0.0091       7.7     307     347 ..     210     250 ..     144     264 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.00028
+        devB  82 lgggiriakllvkkgdkirqgqlialldsyslnl 115
+                 l  g+ +a + v+ g+++r gq++a++d  +l +
+  KKZ12303.1  63 LQPGV-VATMNVEEGEQVRAGQVLAVMDGGDLPI 95 
+                 44454.78999*****************877655 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.024
+        devB 165 qkaiiarlqaelnnaqrenqryedlyengaisasnaeskrlrrdtlqqqineakaalnrtqetlqkql 232
+                 ++a++a+ + el   + e  r + l e ga+s         r  + +    +  a+ +r qe lq q 
+  KKZ12303.1 100 RQALLAQAEEELALREEEFLRQKGLVETGALSQLALSQLESRYRAQR---SQVTASQQRLQELLQEQK 164
+                 57899999***********************9765555444444434...445677788888888774 PP
+
+  == domain 3  score: 2.0 bits;  conditional E-value: 0.0091
+        devB 307 qqmyvvaevyetdvkkvklgqsvditadafsgkiqgtvtdi 347
+                     vva + + ++ +++l q + +  daf+ +   t  di
+  KKZ12303.1 210 TGYQVVAALPDNEIGRLQLNQEAMVVLDAFPNQPLETHVDI 250
+                 3346999999********************99877777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (399 nodes)
+Target sequences:                         1694  (457445 residues searched)
+Passed MSV filter:                        61  (0.0360094); expected 33.9 (0.02)
+Passed bias filter:                       43  (0.0253837); expected 33.9 (0.02)
+Passed Vit filter:                         4  (0.00236128); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00118064); expected 0.0 (1e-05)
+Initial search space (Z):               1694  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 4563.01
+//
+[ok]

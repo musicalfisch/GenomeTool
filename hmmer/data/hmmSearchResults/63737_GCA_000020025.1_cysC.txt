@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.5e-83  275.0   0.2    8.8e-83  274.8   0.2    1.0  1  ACC83034.1  adenylylsulfate kinase [Nostoc punctiforme PCC 73
+  ------ inclusion threshold ------
+      0.024   12.7   0.0      0.045   11.8   0.0    1.4  1  ACC80955.1  protein of unknown function DUF59 [Nostoc punctif
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC83034.1  adenylylsulfate kinase [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  274.8   0.2   2.6e-86   8.8e-83       6     178 ..      11     183 .]       6     183 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 274.8 bits;  conditional E-value: 2.6e-86
+        cysC   6 qrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgkigs 104
+                 + gvtvw+tglsgagk+ti + ++  l  +gy +evldgd vr nl kgl fskedr+enirrigfv+ ll+r  vivlvs+ispyr++reevr +i s
+  ACC83034.1  11 EPGVTVWFTGLSGAGKTTICQFVEKELRIQGYRVEVLDGDAVRQNLCKGLSFSKEDREENIRRIGFVAHLLARNNVIVLVSTISPYRKVREEVRQNIPS 109
+                 459************************************************************************************************ PP
+
+        cysC 105 fvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 f+ev+vna l+vce+rdvkglyk+ar geik ftgiddpye p+ pevec+t+ etl +s +kv +kl elgyi
+  ACC83034.1 110 FIEVYVNASLEVCEQRDVKGLYKKARMGEIKNFTGIDDPYEIPLRPEVECKTNQETLYQSATKVLEKLEELGYI 183
+                 *************************************************************************8 PP
+
+>> ACC80955.1  protein of unknown function DUF59 [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   1.3e-05     0.045      14      61 ..     111     158 ..     100     185 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.3e-05
+        cysC  14 tglsgagkstitealqakliaegysievldgdivrtnltkglgfsked 61 
+                 +g  g gkst +  l a l   g  + +ld d+   n+ + lg+ k +
+  ACC80955.1 111 SGKGGVGKSTTAVNLAAALQLAGAKVGLLDADVYGPNVPQMLGLGKSE 158
+                 68899***********************************99999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       264  (0.0394619); expected 133.8 (0.02)
+Passed bias filter:                      241  (0.0360239); expected 133.8 (0.02)
+Passed Vit filter:                        37  (0.00553064); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 7130.31
+//
+[ok]

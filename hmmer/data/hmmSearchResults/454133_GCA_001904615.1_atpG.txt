@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-42  140.3   9.3    9.2e-42  139.9   9.3    1.0  1  OKH18313.1  F0F1 ATP synthase subunit B' [Limnothrix rosea IA
+     0.0012   16.4   9.7     0.0016   15.9   9.7    1.1  1  OKH18314.1  ATP synthase F0 subunit B [Limnothrix rosea IAM M
+  ------ inclusion threshold ------
+       0.32    8.5  11.9       0.48    8.0   4.7    2.3  2  OKH12958.1  primosomal protein [Limnothrix rosea IAM M-220]
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH18313.1  F0F1 ATP synthase subunit B' [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  139.9   9.3   7.8e-45   9.2e-42       1     139 [.      21     159 ..      21     160 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 139.9 bits;  conditional E-value: 7.8e-45
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fdfdatlp+ma+q+++la +ln +fykp+  v+der++yir    gake+  k+e+l  +ye +l   r+++qe+ia aqa+aqk+ ++ +  aq +a
+  OKH18313.1  21 LFDFDATLPLMAIQILVLAAVLNKLFYKPIGEVIDERSDYIRTNLLGAKERQEKAESLAIQYEQELRDVRREAQEVIAAAQADAQKVVAKEMKLAQEQA 119
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgp 139
+                 +a +e va ei  q++ af sle +v  l+ qi+ekl+g+
+  OKH18313.1 120 LAEREKVALEIEAQRKSAFESLERDVDGLTSQIVEKLIGA 159
+                 **************************************96 PP
+
+>> OKH18314.1  ATP synthase F0 subunit B [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   9.7   1.4e-06    0.0016      16     134 ..      27     148 ..      15     155 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1.4e-06
+        atpG  16 illavilnavf...ykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeia 111
+                 + l +il  +f    k +s++l+er   i      a  ++  ++a + + + +l  a++q+q i  +aq  a+k  s+ +a  + e    k     e+ 
+  OKH18314.1  27 VNLGIILVLLFvygRKFISNLLNERKAKIVADLEDAETRMNSAKAALTKAQKDLEQAQQQAQVIREEAQVSAEKAKSNVLAQGREEIEKLKANAVKELD 125
+                 444444444442125899*******9999999999999*******99***************************9988777666665555666667999 PP
+
+        atpG 112 qqkeeafrslegqvaslsrqile 134
+                 +++ +++  l+ ++a l+ + +e
+  OKH18314.1 126 NEQAKVIADLKQRIAQLALERVE 148
+                 99999999999999999876665 PP
+
+>> OKH12958.1  primosomal protein [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.9   0.7    0.0035       4.2      57     120 ..      68     130 ..      61     147 .. 0.83
+   2 ?    8.0   4.7   0.00041      0.48      50     108 ..     187     245 ..     149     252 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 4.9 bits;  conditional E-value: 0.0035
+        atpG  57 alvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrs 120
+                   vq++e+   s+ k+ q++ a+      +l    v + ++   + ++ va  ia q +eaf+ 
+  OKH12958.1  68 VTVQKFEVPAQSSTKDLQDLSARFA-INFRLDPVEVVTIRRTQGTLQNIVAKIIAPQTQEAFKI 130
+                 5699999999999999999998865.5567777778888888889999999999*999999975 PP
+
+  == domain 2  score: 8.0 bits;  conditional E-value: 0.00041
+        atpG  50 eqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaa 108
+                 +q+a   a    y  q +  + q++   a+ +aeaq+l +e + a   e + +kea+ a
+  OKH12958.1 187 KQIAEQRAQRAIYVAQEAEQQAQADINRAKGKAEAQRLLAETLKAQGGELVLQKEAIEA 245
+                 56666666666677666665566666667889************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       142  (0.0400903); expected 70.8 (0.02)
+Passed bias filter:                       73  (0.0206098); expected 70.8 (0.02)
+Passed Vit filter:                         6  (0.00169396); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000846979); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 5338.51
+//
+[ok]

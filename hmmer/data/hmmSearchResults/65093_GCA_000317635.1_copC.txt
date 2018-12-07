@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.057   11.1   4.9       0.11   10.2   0.4    2.2  2  AFZ44082.1  plastocyanin [Halothece sp. PCC 7418]
+        1.7    6.3   7.7       0.76    7.4   0.0    2.8  3  AFZ44602.1  hypothetical protein PCC7418_2455 [Halothece sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ44082.1  plastocyanin [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.4   5.8e-05      0.11       2      56 ..       2      57 ..       1      66 [. 0.50
+   2 ?    3.7   2.3     0.006        11      28      81 ..      55     114 ..      51     143 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 5.8e-05
+        copC  2 kslkssllvvlsigllllaassnsntat.ndeassktttaattavsstaaakakee 56
+                k ++++l + l+++lll +++ +s++++ + +++++++ta +++++++ ++++   
+  AFZ44082.1  2 KPIQTVLTLFLAVTLLLGGCAGSSEAKSpDAQTAPTEETAPSEQTTEPVEEETPAT 57
+                55555555666677777666555444431445666666666665555444333222 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.006
+        copC  28 atndeassktttaa..ttavsstaaakakeeekekeeskGGqv....iesGayhlelvpe 81 
+                  +++e+++ ++ta+  + a+ +t++++ + + +e+ ++ GG++    + s +  l++vp 
+  AFZ44082.1  55 PATEETAQMEETAEpeEMAAAETESTEIAADVEEDASATGGKTyqvkMGSDTGQLQYVPS 114
+                 455666666666541145556677777777888888888887622122233445666665 PP
+
+>> AFZ44602.1  hypothetical protein PCC7418_2455 [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.4   0.0   0.00041      0.76       7      46 ..      10      49 ..       1      75 [. 0.55
+   2 ?   -2.5   0.0      0.46   8.5e+02      65      79 ..     100     114 ..      87     123 .. 0.68
+   3 ?    0.3   3.0     0.066   1.2e+02      13      57 ..     220     266 ..     209     280 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 7.4 bits;  conditional E-value: 0.00041
+        copC  7 sllvvlsigllllaassnsntatndeassktttaattavs 46
+                ++++v+s++ + +a+  n+ ++  ++a ++tt  ++++ +
+  AFZ44602.1 10 ITIMVVSLTWTTVACGGNQPQQRSEQAINNTTNNTQRSLP 49
+                4455555555555555555555555555555554444433 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.46
+        copC  65 GGqviesGayhlelv 79 
+                     +e G+y l l 
+  AFZ44602.1 100 SYLLVENGEYSLHLA 114
+                 445789999998875 PP
+
+  == domain 3  score: 0.3 bits;  conditional E-value: 0.066
+        copC  13 sigllllaassnsntatndeassktt..taattavsstaaakakeee 57 
+                 + g +    s+n nt t +++s ++t   + t+  +s++++k+++ +
+  AFZ44602.1 220 TTGNINRSPSTNTNTRTRTNNSGRSTgsGVGTNTLRSNDSGKSSKTR 266
+                 55555555666666666555554444114555666665555444333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                       170  (0.0458468); expected 74.2 (0.02)
+Passed bias filter:                      126  (0.0339806); expected 74.2 (0.02)
+Passed Vit filter:                        15  (0.00404531); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000539374); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 4871.86
+//
+[ok]

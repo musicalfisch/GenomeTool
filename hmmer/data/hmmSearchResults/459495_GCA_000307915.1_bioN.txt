@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/459495_GCA_000307915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.6e-122  405.3  23.7    1.2e-80  269.3   6.8    2.0  2  EKD09344.1  cobalt transport protein [Arthrospira platensis C
+  ------ inclusion threshold ------
+        2.2    5.9   9.1      0.089   10.5   2.6    1.8  2  EKD11065.1  hypothetical protein SPLC1_S040620 [Arthrospira p
+
+
+Domain annotation for each sequence (and alignments):
+>> EKD09344.1  cobalt transport protein [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  142.0   8.9   2.5e-45   7.5e-42       1     109 [.       1     109 [.       1     114 [. 0.97
+   2 !  269.3   6.8     4e-84   1.2e-80     105     289 ..     133     317 ..     120     318 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 142.0 bits;  conditional E-value: 2.5e-45
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qpit lh+ld+r+k++wlm+fl ap+l+n+ wrl lv ll+++tl+a ip rvw++qmgwl+ ++ ++++++ai pdgl+vs qp
+  EKD09344.1   1 MDLLRSLPIGLYLEQPITWLHRLDSRIKLVWLMSFLIAPILSNALWRLGLVVLLMVITLVAAIPFRVWKRQMGWLLTFCSLLLIVSAILPDGLSVSHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlp 109
+                 rlp + + l 
+  EKD09344.1 100 RLPRDEIALE 109
+                 ***9988775 PP
+
+  == domain 2  score: 269.3 bits;  conditional E-value: 4e-84
+        bioN 105 glnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnla 203
+                    lp  + y y+l   g l +tr sl+l vristl+ftl+ystnl+lltta eei+ g+e l+ plrr+++pvtei+ltltlslrf plvlee+qnl 
+  EKD09344.1 133 TEGLPQPTAYSYILLAAGPLTITRYSLDLGVRISTLLFTLVYSTNLYLLTTASEEIAVGIESLMKPLRRLKIPVTEIALTLTLSLRFFPLVLEEIQNLY 231
+                 445777788****************************************************************************************** PP
+
+        bioN 204 ravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 r+vrtraidw+klg +r+ ++wl v e+ll+nlllraeqia am+vrgftspnqh+v wh+l++ w d++al+ l  fw  rlvwg
+  EKD09344.1 232 RSVRTRAIDWKKLGWRRATQIWLLVAERLLENLLLRAEQIANAMKVRGFTSPNQHRVEWHQLQINWWDWVALLALTIFWGMRLVWG 317
+                 *************************************************************************************9 PP
+
+>> EKD11065.1  hypothetical protein SPLC1_S040620 [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   2.6   2.9e-05     0.089      29      87 ..      17      79 ..       2      96 .. 0.70
+   2 ?   -1.5   0.5      0.13   4.1e+02      32      59 ..     147     174 ..     140     181 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2.9e-05
+        bioN 29 fiwlmaflaa..pllanpwwrlalvgllllltllap.i.pprvwrqqmgwliflaiivflita 87
+                f+ ++ ++ a   +   pw  lal g   +l ll   i p + w qq+ w   + +  fli  
+  EKD11065.1 17 FLVVLGLMVAynNFTIGPWVYLALHGTYGILWLLKSrIyPDKQWEQQIPWWQGVGVFTFLILY 79
+                33333333331145678*********9988888864343889**********99999999964 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.13
+        bioN  32 lmaflaapllanpwwrlalvgllllltl 59 
+                 l+ +l+  +la+ w  + ++gl+ +  +
+  EKD11065.1 147 LLIYLSFAMLAQHWLPFLILGLFAIAIF 174
+                 5678888888888888888888766544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         6108  (1647000 residues searched)
+Passed MSV filter:                       240  (0.0392927); expected 122.2 (0.02)
+Passed bias filter:                      140  (0.0229208); expected 122.2 (0.02)
+Passed Vit filter:                         8  (0.00130976); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000327439); expected 0.1 (1e-05)
+Initial search space (Z):               6108  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 11981.92
+//
+[ok]

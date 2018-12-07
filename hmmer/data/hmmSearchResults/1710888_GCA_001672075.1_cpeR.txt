@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeR.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710888_GCA_001672075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeR  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.023   12.8   0.1        7.1    4.9   0.0    3.0  3  OBQ32240.1  hypothetical protein AN487_22755, partial [Anabae
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ32240.1  hypothetical protein AN487_22755, partial [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.0     0.022     1e+02      32      53 ..       4      25 ..       1      31 [. 0.82
+   2 ?    2.8   0.0    0.0066        31      28      60 ..     103     135 ..      95     151 .. 0.82
+   3 ?    4.9   0.0    0.0015       7.1      22      53 ..     217     248 ..     209     252 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.022
+        cpeR 32 dysaierfeecvkslggtlisv 53
+                 y+ ierf+++ +  g  +i +
+  OBQ32240.1  4 TYTNIERFTNATTGSGNDIINL 25
+                699*******999888877765 PP
+
+  == domain 2  score: 2.8 bits;  conditional E-value: 0.0066
+        cpeR  28 fetldysaierfeecvkslggtlisvepkkkvw 60 
+                 ++ + +s ierf+ + +s +  +++ +  + + 
+  OBQ32240.1 103 YDQVSFSNIERFQITATSANDNIVTGDGNDTIN 135
+                 67899*********9999999988877666665 PP
+
+  == domain 3  score: 4.9 bits;  conditional E-value: 0.0015
+        cpeR  22 sgnffifetldysaierfeecvkslggtlisv 53 
+                 + nf + +   y+ ierf+++ +  g  +i +
+  OBQ32240.1 217 TKNFTLADGTTYTNIERFTNATTGSGNDIINL 248
+                 5789999999**********999888877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (101 nodes)
+Target sequences:                         4638  (1261469 residues searched)
+Passed MSV filter:                        92  (0.0198361); expected 92.8 (0.02)
+Passed bias filter:                       80  (0.0172488); expected 92.8 (0.02)
+Passed Vit filter:                         7  (0.00150927); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.00021561); expected 0.0 (1e-05)
+Initial search space (Z):               4638  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6370.42
+//
+[ok]

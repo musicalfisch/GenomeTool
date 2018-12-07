@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986678_GCA_002172015.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrB  [M=528]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00071   14.7   1.0    0.00071   14.7   1.0    2.2  2  OUW54745.1  MFS transporter [Cyanobacteria bacterium TMED188]
+    0.00074   14.6   1.6    0.00081   14.5   1.6    1.1  1  OUW57810.1  MFS transporter, partial [Cyanobacteria bacterium
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW54745.1  MFS transporter [Cyanobacteria bacterium TMED188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.0   1.5    0.0033       2.4     292     337 ..      34      78 ..      30     106 .. 0.85
+   2 !   14.7   1.0   9.6e-07   0.00071      84     195 ..     297     408 ..     267     419 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 3.0 bits;  conditional E-value: 0.0033
+        emrB 292 mGlyGalfavPifaqsvlhytatqtGllllPGalasavtmlllGki 337
+                 +G  G +f  P+   + + +ta q G  l+  al  +v+ ll G +
+  OUW54745.1  34 IGAGGVMFMTPLIFHA-IDFTASQVGSGLAVSALIGTVVRLLSGAL 78 
+                 5667999****98765.69********************9998864 PP
+
+  == domain 2  score: 14.7 bits;  conditional E-value: 9.6e-07
+        emrB  84 fgkktyvvfslvgfilssllcgfainlpllvvsrilqglgGGgllakaqailfetfPaeqqglaqavfgvgviagaaigpllGglltdslgrriifiin 182
+                 fg    +++  +g  l ++ ++f +  +l++++ +   ++   +l  a   + e  P+e++gla a+f+     +a+++pl Gg l d+    +++   
+  OUW54745.1 297 FGLSLSLISFSIGCALIAISSLFESGTALVLAALLPMAFAQAAFLPTATEAVIEETPPEHRGLAMALFSQCFAISAIVAPLAGGALLDLQNNGLMLWLL 395
+                 44455567777888888899999999******9999999988888777777777778899999********999*******999998888777777777 PP
+
+        emrB 183 lpvgiaavlmalf 195
+                 + ++ +avl  l 
+  OUW54745.1 396 MGGACLAVLPTLR 408
+                 7777777776665 PP
+
+>> OUW57810.1  MFS transporter, partial [Cyanobacteria bacterium TMED188]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   1.6   1.1e-06   0.00081      46     146 ..      37     136 ..      18     137 .] 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.1e-06
+        emrB  46 telqsvlgalveevglvvtgyalanvvlil....laalledffgkktyvvfslvgfilssllcgfainlpllvvsrilqglgGGgllakaqailfetfP 140
+                 t++++ lg +v +   + t ++ ++ + i+    + +ll++f g +  + + lv+  +  ll  +a   + lvv+r+l  ++G g++   ++ + e fP
+  OUW57810.1  37 TTVKADLGLTVGQ---IRTVAICNVALTIParvlIGMLLDKF-GPRITYSSILVFSAIPCLLFASAQDFNQLVVARLLLSIVGAGFVIGIRM-VAEWFP 130
+                 4444555555544...44555555555554111034445555.5555556889999999999999999999999999999999999987765.578888 PP
+
+        emrB 141 aeqqgl 146
+                 +++ gl
+  OUW57810.1 131 PKEIGL 136
+                 887766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (528 nodes)
+Target sequences:                         1474  (409408 residues searched)
+Passed MSV filter:                        50  (0.0339213); expected 29.5 (0.02)
+Passed bias filter:                       24  (0.0162822); expected 29.5 (0.02)
+Passed Vit filter:                         3  (0.00203528); expected 1.5 (0.001)
+Passed Fwd filter:                         2  (0.00135685); expected 0.0 (1e-05)
+Initial search space (Z):               1474  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10808.37
+//
+[ok]

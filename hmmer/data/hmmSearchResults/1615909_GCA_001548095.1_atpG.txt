@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1615909_GCA_001548095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-40  135.5  12.8    2.6e-40  135.3  12.8    1.0  1  BAQ62948.1  ATP synthase B' chain [Geminocystis sp. NIES-3708
+     0.0024   15.4   8.4     0.0031   15.1   8.4    1.1  1  BAQ62947.1  ATP synthase F0 sector subunit b [Geminocystis sp
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ62948.1  ATP synthase B' chain [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.3  12.8   1.4e-43   2.6e-40       1     143 []      16     158 .]      16     158 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 135.3 bits;  conditional E-value: 1.4e-43
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd++atlp+ma+qf+lla iln +fykpl k +d+ra+y++     ak+q   + al q+ye +l   rkqsq iia aq+eaqk+ s++v  aq+e 
+  BAQ62948.1  16 LFDINATLPLMAIQFLLLATILNILFYKPLGKAIDDRANYVQGQLDQAKKQKQEAIALAQKYEQELKEVRKQSQGIIATAQSEAQKIVSDQVQQAQQEV 114
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                 i  ++  + +i  ++  a+ sle +v++l+rqilek++g e+v+
+  BAQ62948.1 115 IVERQKASDQIEAERVAALSSLEQEVTTLTRQILEKVVGLEFVK 158
+                 *****************************************985 PP
+
+>> BAQ62947.1  ATP synthase F0 sector subunit b [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   8.4   1.7e-06    0.0031      18     135 ..      31     150 ..      17     160 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.7e-06
+        atpG  18 lavilnavfy..kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqk 114
+                 + vi   v y  k + ++l er++ i +    a ++ + +   + e + +l+ a+ ++q+i ++a++ a+kl +e +a  qk+    + +   e+  ++
+  BAQ62947.1  31 IIVIGLLVVYggKIVGNILTERSNRIAEEIQEAENRASVAAKALAEGKENLNQAQVKAQKIKSDAESTAEKLRAEILAQGQKDIERMRATAVQELDSER 129
+                 33443444454488999*******99998888887777666666778889*******************************985544444556899999 PP
+
+        atpG 115 eeafrslegqvaslsrqilek 135
+                  ++   l+ ++a l+ +  e+
+  BAQ62947.1 130 AKVVAGLKKRIAVLALEKAEQ 150
+                 999999999999987665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         3639  (1135445 residues searched)
+Passed MSV filter:                       127  (0.0348997); expected 72.8 (0.02)
+Passed bias filter:                       78  (0.0214345); expected 72.8 (0.02)
+Passed Vit filter:                        10  (0.00274801); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000549602); expected 0.0 (1e-05)
+Initial search space (Z):               3639  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5412.29
+//
+[ok]

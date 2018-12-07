@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641812_GCA_000981785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglG  [M=275]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00026   18.2  14.6    0.00059   17.0  14.5    1.7  1  AKE63230.1  Sulfate transport system permease protein CysW [M
+  ------ inclusion threshold ------
+      0.012   12.7  11.1     0.0018   15.4   5.5    2.6  2  AKE63231.1  Sulfate transport system permease protein CysT [M
+
+
+Domain annotation for each sequence (and alignments):
+>> AKE63230.1  Sulfate transport system permease protein CysW [Microcystis aeruginosa NIES-2549]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0  14.5   2.8e-07   0.00059      25     202 ..      19     208 ..      10     268 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 2.8e-07
+        aglG  25 ivllpllvvfltsfapagatlevllknnwslanyrdawqrgkfllafanstlvaiavtafqivtsalagyalarlkfrgrqall.lvvlatlvipfqll 122
+                 ++++ l+ + l  f pa+a    + +n +  + + +a     f+ a   + ++a+    ++ +    a + +ar +frg+  l+ l+ l   v p    
+  AKE63230.1  19 LIIIALVYLALLLFIPAAAVFYYAFRNGF--QAFLEAAGTSDFIEAVRLTVIIALITVPLNTIFGLCAAWVIARNQFRGKTLLIsLIDLPFAVSPVVAG 115
+                 55666666667778888888888888876..5788999999***************99**********************9876345566666665443 PP
+
+        aglG 123 vipiflvlkw...ghlintygalil...ptavngfgi.....fllrqy...fqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                 ++ ++l  +    g +++ ++  il   p  v    i     f+ r+    ++ i +e eea    gan  qi+wrv lp  r  l+   l+t 
+  AKE63230.1 116 LMIVLLYGRNgwlGSFLELFSIKILfalPGMVLA-TIfvtmpFVAREVipvLEEIGLEQEEAGRTLGANDWQIFWRVTLPNIRWGLMYGVLLTN 208
+                 3333333333112445666655554111444432.340111244454312246677899************************99998888775 PP
+
+>> AKE63231.1  Sulfate transport system permease protein CysT [Microcystis aeruginosa NIES-2549]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.4   5.5   8.5e-07    0.0018     153     202 ..     160     209 ..      22     225 .. 0.74
+   2 ?   -2.4   0.1      0.22   4.8e+02     110     130 ..     219     239 ..     218     257 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 8.5e-07
+        aglG 153 ifllrqyfqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                 +  l+  +q +  e+eeaa   ga+  qi+wrv++p   pa++t   + f
+  AKE63231.1 160 VRTLQPVLQEMEKEVEEAALSLGASSWQIFWRVIFPTILPAILTGVALGF 209
+                 3345556888999*****************************99766655 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.22
+        aglG 110 vvlatlvipfqllvipiflvl 130
+                 vv+ +  ipf+ l+ p+++  
+  AKE63231.1 219 VVIISSNIPFKDLIAPVLIFQ 239
+                 566677899999999987755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (275 nodes)
+Target sequences:                         4282  (1181467 residues searched)
+Passed MSV filter:                       152  (0.0354974); expected 85.6 (0.02)
+Passed bias filter:                       83  (0.0193835); expected 85.6 (0.02)
+Passed Vit filter:                         7  (0.00163475); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000467071); expected 0.0 (1e-05)
+Initial search space (Z):               4282  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 6498.07
+//
+[ok]

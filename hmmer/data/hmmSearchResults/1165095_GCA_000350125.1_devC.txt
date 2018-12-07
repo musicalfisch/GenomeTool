@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/devC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       devC  [M=390]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-38  130.0   6.6    1.1e-38  129.9   6.6    1.0  1  CCH64529.1  heterocyst specific ABC-transporter, membrane spa
+    3.7e-12   42.6   0.9      4e-12   42.5   0.9    1.0  1  CCH65636.1  ABC transporter, permease protein, putative [Rich
+    1.7e-05   20.7   0.0    1.7e-05   20.7   0.0    1.0  1  CCH65465.1  hypothetical protein RINTHM_10040 [Richelia intra
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH64529.1  heterocyst specific ABC-transporter, membrane spanning subunit [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  129.9   6.6     2e-41   1.1e-38     277     390 .]       1     114 []       1     114 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 129.9 bits;  conditional E-value: 2e-41
+        devC 277 mgfvvgvivvyqilysnisshliefatlkamgfknkyllrvvfqqalilaglgyipgfaislglydiaknatqlpivmdgdkafivfisavvmcltsgf 375
+                 mgf+vg+++vyqily++++ hl e+atlka+g+ +kyll v++q+alila lgyipg+  sl ly+ a+nat lpi m   +af v+i +++mc+ sg 
+  CCH64529.1   1 MGFIVGIVIVYQILYTEVADHLTEYATLKAIGYTQKYLLIVILQEALILALLGYIPGVIFSLFLYEGARNATLLPIFMSFIRAFTVLILTIIMCFFSGS 99 
+                 9************************************************************************************************** PP
+
+        devC 376 fstnklrkldpadif 390
+                 ++  kl+  dpadif
+  CCH64529.1 100 IAIRKLKYADPADIF 114
+                 **************9 PP
+
+>> CCH65636.1  ABC transporter, permease protein, putative [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.5   0.9   7.2e-15     4e-12     307     390 .]       1      84 [.       1      84 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 42.5 bits;  conditional E-value: 7.2e-15
+        devC 307 mgfknkyllrvvfqqalilaglgyipgfaislglydiaknatqlpivmdgdkafivfisavvmcltsgffstnklrkldpadif 390
+                 mg  n  + +++f+qal +ag+gyipg+    gl   +  +  + i++    a+ vf  ++ mcl+s +f+ +k+  +dpa +f
+  CCH65636.1   1 MGASNYVIYSIIFEQALWMAGIGYIPGILACWGLGTWTSATQGIVILITPITAVGVFGITLFMCLSSAIFAIQKVNLVDPAIVF 84 
+                 788899999*************************99887777789999999******************************887 PP
+
+>> CCH65465.1  hypothetical protein RINTHM_10040 [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.7   0.0     3e-08   1.7e-05      39      81 ..       1      42 [.       1      47 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 20.7 bits;  conditional E-value: 3e-08
+        devC 39 fqdalyasatqlhkniegdlflisaqyksltsnqsfprsrlyq 81
+                +qdal+ sat lh+ ++ d ++is+q   l  + sfp  ++y 
+  CCH65465.1  1 MQDALFKSATGLHNLLKADAIIISTQVSCLI-DMSFPMQKIYI 42
+                59************************98886.68****99994 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (390 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        64  (0.0382318); expected 33.5 (0.02)
+Passed bias filter:                       40  (0.0238949); expected 33.5 (0.02)
+Passed Vit filter:                         4  (0.00238949); expected 1.7 (0.001)
+Passed Fwd filter:                         3  (0.00179211); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 12868.99
+//
+[ok]

@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1671698_GCA_002260545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00097   16.5   0.0     0.0051   14.1   0.0    1.9  2  OZH54410.1  ABC transporter substrate-binding protein [Hydroc
+     0.0096   13.2   0.0      0.011   13.1   0.0    1.0  1  OZH53048.1  hypothetical protein AFK68_20330 [Hydrocoleum sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> OZH54410.1  ABC transporter substrate-binding protein [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0     0.045   1.1e+02      55     102 ..       8      54 ..       5     133 .. 0.62
+   2 !   14.1   0.0   2.1e-06    0.0051     229     305 ..     215     295 ..     182     297 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.045
+        btuF  55 vvtlsslttdiifqldktkl.vgisgsslfkndprfqdiprisegqspp 102
+                 +v+l   +t+ii  l  tk  vg   s      p +q++p  ++ +  p
+  OZH54410.1   8 IVSLIPSATEIIAALGLTKAiVGR--SHECDYPPEIQNLPVCTQPKFNP 54 
+                 677777889999999888841343..34445567888888777665555 PP
+
+  == domain 2  score: 14.1 bits;  conditional E-value: 2.1e-06
+        btuF 229 lsaekvleanpeavvlitppqggskt..evldsfkkesfwqklpatknnrvyvfd...yyglvnpgsidaiekaceqlkkdl 305
+                 l  e +l+anp++++++       +t  + l+ + k+s wq l   k  +vy+ d   y+    p  +d++e   e l+ +l
+  OZH54410.1 215 LKWEELLNANPDVIIFMPCGFDLERTrqDTLE-LIKSSEWQDLSVVKSGKVYITDgnsYFNRPGPRLVDSLEILAEILHPEL 295
+                 556899*******9998776665555114555.567899**************98333555555667888887777777665 PP
+
+>> OZH53048.1  hypothetical protein AFK68_20330 [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.0   4.3e-06     0.011      36      86 ..       5      55 ..       1      62 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 4.3e-06
+        btuF 36 sitisntpsqelaklsakrvvtlsslttdiifqldktklvgisgsslfknd 86
+                +++i+  +++ l k  ak+ +++  l+++i+ +  + klvg+   s fk++
+  OZH53048.1  5 NVNITPQAQELLIKAAAKKQISVEELASEILNEAIQNKLVGVVNISEFKQE 55
+                555555555567899*******************************99975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         4935  (1360323 residues searched)
+Passed MSV filter:                       194  (0.039311); expected 98.7 (0.02)
+Passed bias filter:                      109  (0.0220871); expected 98.7 (0.02)
+Passed Vit filter:                         7  (0.00141844); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000405268); expected 0.0 (1e-05)
+Initial search space (Z):               4935  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8352.38
+//
+[ok]

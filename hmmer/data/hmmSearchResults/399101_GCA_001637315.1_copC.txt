@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/399101_GCA_001637315.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0072   14.1   0.8      0.014   13.1   0.8    1.5  1  OAB56543.1  hypothetical protein AY600_04955 [Phormidium will
+  ------ inclusion threshold ------
+      0.024   12.4   0.1      0.026   12.2   0.1    1.0  1  OAB56346.1  hypothetical protein AY600_10335 [Phormidium will
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB56543.1  hypothetical protein AY600_04955 [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.8   7.3e-06     0.014       1      59 [.       1      59 [.       1      69 [. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 7.3e-06
+        copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeeke 59
+                m s+  +ll+ l++ l l+++s ++++ +++ +s++t+t+++ ++ +t++++++++++ 
+  OAB56543.1  1 MTSKFFALLLALTVPLSLVGCSGDDTATEETPTSETTETPTNGSTADTSPTSEDTSDGS 59
+                56666677888899999999999998888888998888888777666666655555443 PP
+
+>> OAB56346.1  hypothetical protein AY600_10335 [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.1   1.4e-05     0.026       2      73 ..       2      71 ..       1      81 [. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.4e-05
+        copC  2 kslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGa 73
+                 ++ +sl  +l+++l l a++ +  t+t +e ++ ++ a t++  +t+++++  + +e+   + G   e Ga
+  OAB56346.1  2 TTKLLSLTALLGLSLFLGACADTAPTDTAPEEAPMEEEAPTEEGAETEGTETMPDGEES--MEEGDAAEDGA 71
+                55556666777888777777777889999999999998888888888877776554443..33455555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         3770  (1257126 residues searched)
+Passed MSV filter:                        91  (0.0241379); expected 75.4 (0.02)
+Passed bias filter:                       80  (0.0212202); expected 75.4 (0.02)
+Passed Vit filter:                         7  (0.00185676); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530504); expected 0.0 (1e-05)
+Initial search space (Z):               3770  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 10371.29
+//
+[ok]

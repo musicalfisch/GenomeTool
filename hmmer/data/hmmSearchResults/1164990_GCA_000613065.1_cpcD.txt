@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1164990_GCA_000613065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.2e-30  101.4   0.1    9.4e-30  101.3   0.1    1.0  1  CDN12262.1  Ferredoxin-NADP(+) reductase [Richelia intracellu
+     0.0014   17.4   0.1     0.0028   16.4   0.1    1.5  1  CDN12549.1  Phycobilisome phycoerythrin-associated linker pol
+
+
+Domain annotation for each sequence (and alignments):
+>> CDN12262.1  Ferredoxin-NADP(+) reductase [Richelia intracellularis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.3   0.1   2.4e-33   9.4e-30      10      71 ..      17      78 ..      10      81 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 101.3 bits;  conditional E-value: 2.4e-33
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaa 71
+                 r+fvyevvGl q ++t +++y ir sGsvf+ vpy rmnqem ritrlG  ivsikp+na 
+  CDN12262.1 17 SRIFVYEVVGLRQSEETAQINYPIRTSGSVFIRVPYDRMNQEMGRITRLGGTIVSIKPMNAI 78
+                79**********************************************************96 PP
+
+>> CDN12549.1  Phycobilisome phycoerythrin-associated linker polypeptide [Richelia intracellularis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   0.1   7.2e-07    0.0028       7      69 ..     228     287 .]     224     287 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 7.2e-07
+        cpcD   7 akenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69 
+                 + e ++f  ev G   n  + n     r+s  v+l vp+ ++ ++ +ri + G  i si p+n
+  CDN12549.1 228 TSEGKVFRIEVTGYRSN--AVNRVSKFRRSNQVYL-VPFDKLSEQYQRIHKQGGVIASITPVN 287
+                 56889999999998766..55777789*******9.9************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         7768  (1173029 residues searched)
+Passed MSV filter:                       106  (0.0136457); expected 155.4 (0.02)
+Passed bias filter:                       98  (0.0126159); expected 155.4 (0.02)
+Passed Vit filter:                        10  (0.00128733); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000257467); expected 0.1 (1e-05)
+Initial search space (Z):               7768  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4340.21
+//
+[ok]

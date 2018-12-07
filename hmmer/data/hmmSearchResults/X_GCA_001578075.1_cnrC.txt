@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_001578075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    1.2e-05   22.7  29.9    0.00065   17.0   0.5    3.2  3  lcl|JXYX01000002.1_prot_KXS92022.1_2546  [locus_tag=OA58_08610] [protein=
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|JXYX01000002.1_prot_KXS92022.1_2546  [locus_tag=OA58_08610] [protein=transporter] [protein_id=KXS92022.1] [locati
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.9   3.9    0.0029        13     164     230 ..     104     170 ..      90     180 .. 0.85
+   2 !   13.2  11.6   2.2e-06    0.0098     102     221 ..     177     298 ..     168     310 .. 0.89
+   3 !   17.0   0.5   1.4e-07   0.00065     108     182 ..     390     464 ..     377     504 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.0029
+                                     cnrC 164 asdalraasvrvqagraspleqqradvarinadanverqlrlaeaaranlarrigrpidgalddtll 230
+                                                ++l++a v ++  ra   eqq a +   +a++ + ++   a   + nlar+ g p     d t l
+  lcl|JXYX01000002.1_prot_KXS92022.1_2546 104 NNQTLQTARVDLEIARAQLKEQQAALLPTAQAETSLTQDQSAAAQRQNNLARQQGIPAVTPEDSTNL 170
+                                              5678999****************************99988888888899******998877777765 PP
+
+  == domain 2  score: 13.2 bits;  conditional E-value: 2.2e-06
+                                     cnrC 102 aipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraa 171
+                                                 +  gg r a++  a+  + + e++   ++ + r++ t+ y e    d +va a+     as++lr a
+  lcl|JXYX01000002.1_prot_KXS92022.1_2546 177 VYGVYTGGERAAQIKRAEKVIRQRELEVERVSEQTRFDATDAYYELQRGDAQVAIAQASIEDASQSLRDA 246
+                                              556778**************************************************************** PP
+
+                                     cnrC 172 svrvqagraspleqqradvarinadanverqlrlaeaaranlar..rigrpi 221
+                                               +  qag  + +   +a+v   na+ ++ r +     +r  la+   +g+ i
+  lcl|JXYX01000002.1_prot_KXS92022.1_2546 247 QLLEQAGLGTRFAVLQAEVDLANANQDLTRAISTQRISRRRLAQilSVGQHI 298
+                                              ********************************99999999999722345555 PP
+
+  == domain 3  score: 17.0 bits;  conditional E-value: 1.4e-07
+                                     cnrC 108 ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqa 177
+                                              gg+  ar   a+ ++ ra+ + ++   ++rlqv + y   ++ +  + t++     a+++lr a +r qa
+  lcl|JXYX01000002.1_prot_KXS92022.1_2546 390 GGRAFARARQAERNIDRADTEFSLRRNEIRLQVEESYYSLISNQENIKTSQKSIESATESLRLARLRFQA 459
+                                              888999999************************************************************* PP
+
+                                     cnrC 178 grasp 182
+                                              g  + 
+  lcl|JXYX01000002.1_prot_KXS92022.1_2546 460 GVGTQ 464
+                                              97543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         4504  (1259947 residues searched)
+Passed MSV filter:                       132  (0.0293073); expected 90.1 (0.02)
+Passed bias filter:                       75  (0.0166519); expected 90.1 (0.02)
+Passed Vit filter:                         7  (0.00155417); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000222025); expected 0.0 (1e-05)
+Initial search space (Z):               4504  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10709.55
+//
+[ok]

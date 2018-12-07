@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533247_GCA_000175855.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.9e-109  361.0   3.6   2.1e-109  360.8   3.6    1.0  1  EFA71628.1  H+-transporting two-sector ATPase, delta (OSCP) s
+     0.0046   14.2   0.5     0.0081   13.4   0.0    1.6  2  EFA73382.1  L-threonine-O-3-phosphate decarboxylase [Raphidio
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA71628.1  H+-transporting two-sector ATPase, delta (OSCP) subunit [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  360.8   3.6  1.4e-112  2.1e-109       1     184 []       1     184 []       1     184 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 360.8 bits;  conditional E-value: 1.4e-112
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mks+aataevaqpyaqalls+a+++nltee+g+dartl+sl++gs elqnfldnpf++penkkn+lkqllge+vnpylrnf+lllvdrrri+fle+ilq
+  EFA71628.1   1 MKSNAATAEVAQPYAQALLSVAKANNLTEEFGTDARTLISLISGSGELQNFLDNPFIQPENKKNLLKQLLGESVNPYLRNFILLLVDRRRISFLEPILQ 99 
+                 9************************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlssn 184
+                 qy++llr+l+qtvlaev+sa+plt++q+q+v+ekvi++tkar+ve+etkid+dliggv+ikvgsqvidaslrgqlrrlslrl+s+
+  EFA71628.1 100 QYISLLRELTQTVLAEVSSAIPLTDEQIQTVREKVISITKAREVEIETKIDTDLIGGVVIKVGSQVIDASLRGQLRRLSLRLTSG 184
+                 ***********************************************************************************95 PP
+
+>> EFA73382.1  L-threonine-O-3-phosphate decarboxylase [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   5.4e-06    0.0081      39     112 ..     138     206 ..     133     217 .. 0.75
+   2 ?   -2.6   0.1      0.43   6.4e+02      75     101 ..     330     357 ..     307     358 .] 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 5.4e-06
+        atpD  39 lsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailqqyl.allrqlnqtv 112
+                 ls ++gs e   +l+np  +p       k +l e + pyl++f l+lvd   + fl +  +q l  l+r+  + v
+  EFA73382.1 138 LSSVSGSGEYGLLLNNPH-NPTG-----KLFLREEILPYLQDFALVLVDEAFMDFLTPAQEQSLiGLVREYRNLV 206
+                 566666666666666665.2322.....346778899*********************99997526888876655 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.43
+        atpD  75 npylrnfllllvdrrr.iafleailqqy 101
+                 ++y+r  +  + d++r i+ le+i+q++
+  EFA73382.1 330 DRYFRVAVRSIPDNQRlITALESIMQNH 357
+                 5666666666666555378899999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3007  (904229 residues searched)
+Passed MSV filter:                       112  (0.0372464); expected 60.1 (0.02)
+Passed bias filter:                       71  (0.0236116); expected 60.1 (0.02)
+Passed Vit filter:                         7  (0.0023279); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000665115); expected 0.0 (1e-05)
+Initial search space (Z):               3007  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 8318.91
+//
+[ok]

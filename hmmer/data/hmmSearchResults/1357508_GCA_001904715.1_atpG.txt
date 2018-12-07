@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1357508_GCA_001904715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.7e-54  181.1  11.6    4.1e-54  180.9  11.6    1.0  1  OKH37468.1  F0F1 ATP synthase subunit B' [Nostoc calcicola FA
+    2.7e-06   25.9  12.4    4.1e-06   25.3  12.4    1.2  1  OKH37467.1  ATP synthase F0 subunit B [Nostoc calcicola FACHB
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH37468.1  F0F1 ATP synthase subunit B' [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  180.9  11.6   1.2e-57   4.1e-54       1     143 []       1     143 []       1     143 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 180.9 bits;  conditional E-value: 1.2e-57
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp malqf+lla +ln +fykp++kvld+r +yir     ake lak+e l  eye ql+ ar+qsq  +  aq ea+k+++e++a aqkea
+  OKH37468.1   1 MFDFDATLPFMALQFLLLAALLNVIFYKPMTKVLDDRDNYIRTNTLEAKESLAKAERLAAEYEQQLADARRQSQATVEAAQVEAKKITAEKIAEAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                  +++e  a ei qqk+ea+r+le qv +lsrqilekllgp  vr
+  OKH37468.1 100 QSQREQAAVEIEQQKQEALRTLEQQVDALSRQILEKLLGPTPVR 143
+                 ****************************************9886 PP
+
+>> OKH37467.1  ATP synthase F0 subunit B [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3  12.4   1.2e-09   4.1e-06       8     137 ..      34     166 ..      29     171 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 1.2e-09
+        atpG   8 lpvmalqfillavilnavfy...kplskvlderaeyirqt..eggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaia 101
+                 l ++  ++i la+++  +fy   k ls++l+er   i  +  e+ a+ + ak  al q  e ql+ ++ ++q i   a+ +aqk     +a a ++   
+  OKH37467.1  34 LDLFETNLINLAILVGILFYfgrKVLSNILNERQSNIATAiqEAEARSKEAKI-ALSQAQE-QLTQSQAEAQRIRKSAEENAQKAKEALLAKAAQDVER 130
+                 55666788999*9999999988899********99998752255566666664.6777665.9*********************999999999999989 PP
+
+        atpG 102 rkeavaaeiaqqkeeafrslegqvaslsrqilekll 137
+                  k++ aa++  + e a+  l  +va+l+ q +e  l
+  OKH37467.1 131 LKQTAAADLNTETERAIAQLRQRVATLALQKVESQL 166
+                 9***************************99998755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         6978  (2322580 residues searched)
+Passed MSV filter:                       295  (0.0422757); expected 139.6 (0.02)
+Passed bias filter:                      138  (0.0197764); expected 139.6 (0.02)
+Passed Vit filter:                        10  (0.00143308); expected 7.0 (0.001)
+Passed Fwd filter:                         2  (0.000286615); expected 0.1 (1e-05)
+Initial search space (Z):               6978  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 5535.48
+//
+[ok]

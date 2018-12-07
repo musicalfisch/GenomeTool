@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/devB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986677_GCA_002170825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       devB  [M=399]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.3e-05   18.5   2.3     0.0027   13.1   0.6    2.2  2  OUW27625.1  efflux transporter periplasmic adaptor subunit [C
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW27625.1  efflux transporter periplasmic adaptor subunit [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.6   1.9e-06    0.0027      75     147 ..      60     127 ..       8     136 .. 0.72
+   2 !    5.3   0.1   0.00047      0.66     259     352 ..     138     233 ..     126     251 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.9e-06
+        devB  75 rlsapnslgggiriakllvkkgdkirqgqlialldsyslnlaalekakrqvevakanlekveagakqgdiyaq 147
+                  l+a        ri  l +++gd ++ gq + +ld+ ++  a l   k + e ak+n+++    ak g    q
+  OUW27625.1  60 ELAAQA----SGRILELKIRQGDLVQPGQXLMVLDQAQQ-QARLAEDKAKAETAKSNFDRYTYLAKTGAASQQ 127
+                 333333....34999********************9765.68899999999**********999999976665 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.00047
+        devB 259 sakasvkqaqaeldlsiirspidgqvlkinawpgeiiss.qgiaelgrtqqmyvvaevyetdvkkvklgqsvditadafsgkiq.gtvtdiglqvn 352
+                 +a   vk ++a l +  +rsp  g v  +    g++i +    + l + +++     v      ++ lgq v ++a      i+ g v  i  q+n
+  OUW27625.1 138 AAVEKVKSTEATLSYNNLRSPSSGMVADVTVXVGDVIQQgTPFTSLVQNDRLEARVXVPAVFXNRLALGQPVLLSAPGXDTVINtGKVDAINPQIN 233
+                 5667789999**************************964133555655555555555556666778888888888776666664255555665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (399 nodes)
+Target sequences:                         1406  (396538 residues searched)
+Passed MSV filter:                        31  (0.0220484); expected 28.1 (0.02)
+Passed bias filter:                       24  (0.0170697); expected 28.1 (0.02)
+Passed Vit filter:                         5  (0.00355619); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000711238); expected 0.0 (1e-05)
+Initial search space (Z):               1406  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7910.93
+//
+[ok]

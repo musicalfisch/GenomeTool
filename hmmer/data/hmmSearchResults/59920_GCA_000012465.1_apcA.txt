@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcA  [M=161]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-21   74.1   2.5    4.3e-19   66.0   0.5    2.0  2  AAZ59159.1  phycoerythrin class III beta chain CpeB [Prochlor
+    4.6e-16   56.2   0.1    1.1e-15   54.9   0.1    1.5  1  AAZ59160.1  phycoerythrin class III alpha chain CpeA [Prochlo
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ59159.1  phycoerythrin class III beta chain CpeB [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.0   0.5     4e-22   4.3e-19       5     146 ..       6     147 ..       2     153 .. 0.96
+   2 !    8.6   0.1   0.00018       0.2     139     160 ..     160     181 ..     146     182 .] 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 66.0 bits;  conditional E-value: 4e-22
+        apcA   5 tksivnadaearylspgeldriksfvtsgekrlriaqvltesrerivkqagdqlfqkrpdvvspggnaygeeltatclrdldyylrlvtygvvagdvtp 103
+                 ++++v+ada+   +   +l  ++ +v+  +kr+  +  +t++   i  +a   +  +   +  pgg +y     a+clrd +  lr v+y ++agd + 
+  AAZ59159.1   6 SRTVVSADAKGAAIGSEDLADLRKYVADANKRIDATLAITQNVSCIAADAVAGMVCENTGLTQPGGHCYPTRRMAACLRDGEIILRYVSYALLAGDPSV 104
+                 6899*********************************************************************************************** PP
+
+        apcA 104 ieeiglvgvremykslgtpieavaegvralkevatsllsaeda 146
+                 +e+  l g +e y +lg+p +   ++v+ +k ++ ++++  ++
+  AAZ59159.1 105 LEDRCLNGLKETYLALGVPTSNAIRAVEIMKIATVAIMTETNT 147
+                 *******************************999999987665 PP
+
+  == domain 2  score: 8.6 bits;  conditional E-value: 0.00018
+        apcA 139 sllsaedaaeagsyfdyvigal 160
+                 +   ++ a+ea+syfd vi al
+  AAZ59159.1 160 GAQCQDIASEAASYFDLVIEAL 181
+                 45567889***********997 PP
+
+>> AAZ59160.1  phycoerythrin class III alpha chain CpeA [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.9   0.1     1e-18   1.1e-15       2     160 ..       3     154 ..       2     155 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 54.9 bits;  conditional E-value: 1e-18
+        apcA   2 sivtksivnadaearylspgeldriksfvtsgekrlriaqvltesrerivkqagdqlfqkrpdvvspggnaygeeltatclrdldyylrlvtygvvagd 100
+                 s vt  +  ada  r+ s ++++ +k      ++rl  a+ l++  ++  + a d ++q+          +y +     c+rd+ +ylrl+ y +v+g 
+  AAZ59160.1   3 SAVTTVVSAADAAGRFPSMSDFESVKGSFDRAKARLEAAEKLASCLDKFTNLAVDAVYQN---------GSYEQANKDKCVRDIHHYLRLINYCLVTGG 92 
+                 67999999************************************************9996.........47999999********************** PP
+
+        apcA 101 vtpieeiglvgvremykslgtpieavaegvralke.v.atsllsaedaaeagsyfdyvigal 160
+                   p++e g+ g+re+ +    p  a  e+   +++ +    ++ ++  +e    +dy+i al
+  AAZ59160.1  93 TGPLDEWGISGMREIIRIQLLPTAAYIEAFIFIRDeIkINDVMGQQAETEFKGLLDYLINAL 154
+                 *****************999999999999887775231357888888999999*****9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (161 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        46  (0.0212668); expected 43.3 (0.02)
+Passed bias filter:                       37  (0.0171059); expected 43.3 (0.02)
+Passed Vit filter:                         4  (0.00184928); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.000924642); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4314.59
+//
+[ok]

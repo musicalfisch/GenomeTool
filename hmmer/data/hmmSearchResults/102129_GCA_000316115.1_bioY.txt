@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.2e-15   54.6  17.0    7.7e-15   54.1  17.0    1.3  1  EKV03503.1  hypothetical protein Lepto7375DRAFT_5801 [Leptoly
+  ------ inclusion threshold ------
+      0.023   13.3   0.0      0.036   12.7   0.0    1.2  1  EKU97667.1  DNA-binding domain-containing protein, AraC-type 
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV03503.1  hypothetical protein Lepto7375DRAFT_5801 [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.1  17.0     2e-18   7.7e-15      53     203 ..      37     194 ..       3     197 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 54.1 bits;  conditional E-value: 2e-18
+        bioY  53 GqaltvllvtlqvgalLltlllllylleiLlalaylslGls.....qLsvltGgtGaalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisll 146
+                 G  +  l v+ qvga Ll+  l +   + L  +aylslGl+     +L v+t g+G  +L  P ++yL Gf+++aWv + la   +  +l +l L  l 
+  EKV03503.1  37 GVEVFSLGVSFQVGAVLLIGCLGGQNAAALSQVAYLSLGLFlfqafDLQVFTQGGGLSYLREPSFGYLLGFIPAAWVCGYLAFWETL-KLETLALSCLG 134
+                 5555568899*****************************853333389**********************************98776.6999******* PP
+
+        bioY 147 Glvvlqvclaenllltsllavltd...GvlPllmtdlLkplLaalLLptavatlalilad 203
+                 Gl  +  ++   l l+ +l    d     +  + t++++p   +l+L +av  la  +++
+  EKV03503.1 135 GLLTIHAVGLVYLPLAYVLQWTGDnapSLIEAIFTYSIAPFPGQLILVCAVSVLAYGMRQ 194
+                 ********99999999888655441113455678*******************9987776 PP
+
+>> EKU97667.1  DNA-binding domain-containing protein, AraC-type [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.0   9.1e-06     0.036      74     136 ..     180     246 ..     172     283 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 9.1e-06
+        bioY  74 lllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflve....aWvvdRlarkraasd 136
+                  ll +l  L+ +  l +    Ls    +tG a L dP ++ +  ++ +     W+v  la++ ++s 
+  EKU97667.1 180 CLLNRLVELMFVEILRGHMQSLSSQEQATGLAALNDPMIGQVLEWFHAeparNWTVPELAKRVGMSR 246
+                 567888889999999999****************************7533336************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       390  (0.0498212); expected 156.6 (0.02)
+Passed bias filter:                      154  (0.019673); expected 156.6 (0.02)
+Passed Vit filter:                         6  (0.000766479); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 7528.59
+//
+[ok]

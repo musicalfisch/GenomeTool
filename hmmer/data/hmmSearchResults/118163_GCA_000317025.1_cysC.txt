@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118163_GCA_000317025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.6e-106  350.9   0.1   2.9e-106  350.8   0.1    1.0  1  AFY75500.1  adenylylsulfate kinase ApsK [Pleurocapsa sp. PCC 
+  ------ inclusion threshold ------
+      0.013   12.9   0.0      0.038   11.4   0.0    1.7  1  AFY76852.1  capsular exopolysaccharide biosynthesis protein [
+      0.024   12.0   0.0      0.081   10.3   0.0    1.8  2  AFY77876.1  Xaa-Pro aminopeptidase [Pleurocapsa sp. PCC 7327]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY75500.1  adenylylsulfate kinase ApsK [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  350.8   0.1    2e-109  2.9e-106       4     184 .]       1     181 []       1     181 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 350.8 bits;  conditional E-value: 2e-109
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mkqrgvt+w+tglsgagk+tit al+ kl  + y +e+ldgd+vr nltkglgfskedrdenirrigfv+nlltrhgvivlvsaispyreireev+ +i
+  AFY75500.1   1 MKQRGVTIWFTGLSGAGKTTITRALEQKLREQDYPVEILDGDVVRENLTKGLGFSKEDRDENIRRIGFVANLLTRHGVIVLVSAISPYREIREEVKQRI 99 
+                 9************************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqavav 184
+                 g+fvevfvnapl+vce+rdvkglykrar geiksftgiddpyepp+npevecrtd et+ees+akvw+kl e+gy+++av+v
+  AFY75500.1 100 GDFVEVFVNAPLAVCEDRDVKGLYKRARNGEIKSFTGIDDPYEPPLNPEVECRTDQETIEESLAKVWQKLEEMGYLRKAVTV 181
+                 *******************************************************************************987 PP
+
+>> AFY76852.1  capsular exopolysaccharide biosynthesis protein [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   2.7e-05     0.038      15      66 ..     588     639 ..     580     650 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.7e-05
+        cysC  15 glsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdeni 66 
+                   +g gkst++  l     a g  + v+d d+ r ++ k lg++++    n+
+  AFY76852.1 588 AQAGDGKSTVSTNLAQAAAAMGQRVLVIDADLRRPQVHKRLGIANDRGLSNV 639
+                 56899**********99*************************9987655666 PP
+
+>> AFY77876.1  Xaa-Pro aminopeptidase [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   5.7e-05     0.081      89     129 ..       6      45 ..       3      69 .. 0.83
+   2 ?   -2.1   0.0      0.35     5e+02      32      54 ..     256     278 ..     250     286 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 5.7e-05
+        cysC  89 spyreireevrgkigsfvevfvnaplsvceerdvkglykra 129
+                 s yr+ re++  kig+   +f  ap +v    dv  +y++ 
+  AFY77876.1   6 SEYRQRREQLMEKIGNGTAIFRSAPTAVMH-NDVEYIYRQD 45 
+                 78************************9986.6999999764 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.35
+        cysC  32 liaegysievldgdivrtnltkg 54 
+                 li  g s    +gdi rt   +g
+  AFY77876.1 256 LIDAGCSYGYYNGDITRTFPVNG 278
+                 78889999999******987766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4268  (1345719 residues searched)
+Passed MSV filter:                       184  (0.0431115); expected 85.4 (0.02)
+Passed bias filter:                      168  (0.0393627); expected 85.4 (0.02)
+Passed Vit filter:                        31  (0.00726336); expected 4.3 (0.001)
+Passed Fwd filter:                         3  (0.000702905); expected 0.0 (1e-05)
+Initial search space (Z):               4268  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6190.31
+//
+[ok]

@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/82654_GCA_000317065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0095   12.1   0.3      0.082    9.0   0.0    2.3  2  AFY71613.1  cyclic pyranopterin monophosphate synthase subuni
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY71613.1  cyclic pyranopterin monophosphate synthase subunit MoaA [Pseudanabaena sp. PCC 7367]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.5   0.1     0.064   2.5e+02      63      77 ..       9      23 ..       6      36 .. 0.81
+   2 !    9.0   0.0   2.1e-05     0.082     136     253 ..      76     179 ..      61     223 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -2.5 bits;  conditional E-value: 0.064
+        finB 63 vavapacniqcnycn 77
+                +++   cn +c yc 
+  AFY71613.1  9 ISLIDRCNFRCTYCM 23
+                556678*******95 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 2.1e-05
+        finB 136 feliadkapdiklclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalkeadilckvnsvmipg 234
+                  e ia+      l ++tng +l+   + + +  +  + i+l+ +d  i  qi    +++ + ++g+ +a         g++ l       k+n v+ipg
+  AFY71613.1  76 VESIANLPGLQDLSMTTNGYLLPTMAQPLYDAGLRRINISLDSLDAGIFKQITGRDRWQ-QVWQGILAAY------AVGFDPL-------KLNVVVIPG 160
+                 56666655556789999999999999999999999999999999999999998755554.3456655554......3455555.......689999999 PP
+
+        finB 235 indkhlvevnkairergaf 253
+                 +nd+ ++++  +  +r   
+  AFY71613.1 161 VNDREVLDLAALSIDRAWH 179
+                 9999998887766665544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         3854  (1262343 residues searched)
+Passed MSV filter:                        86  (0.0223145); expected 77.1 (0.02)
+Passed bias filter:                       72  (0.0186819); expected 77.1 (0.02)
+Passed Vit filter:                         8  (0.00207577); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000259471); expected 0.0 (1e-05)
+Initial search space (Z):               3854  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 12093.25
+//
+[ok]

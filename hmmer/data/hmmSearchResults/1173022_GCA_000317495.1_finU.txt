@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.5e-09   33.8   0.0    5.5e-09   33.8   0.0    1.0  1  AFZ11908.1  nitrogen-fixing NifU domain-containing protein [C
+    6.3e-09   33.7   0.0      7e-09   33.5   0.0    1.2  1  AFZ15284.1  Modular FeS cluster scaffolding protein NifU [Cri
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ11908.1  nitrogen-fixing NifU domain-containing protein [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.8   0.0   2.3e-12   5.5e-09     224     291 ..       6      72 ..       1      81 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 33.8 bits;  conditional E-value: 2.3e-12
+        finU 224 kivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl 291
+                 ++ l  + +++v+d  lr+ l++d+++v+l + ++ ++k  l++a++s+ s+ ++lk+ +e rl + +
+  AFZ11908.1   6 TMELTTENVEKVLD-DLRPYLMSDGGNVELVEIEGPIVKLRLQGACGSCPSSAMTLKMGIERRLMEFI 72 
+                 44445555555554.689*********************************************98755 PP
+
+>> AFZ15284.1  Modular FeS cluster scaffolding protein NifU [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.5   0.0     3e-12     7e-09      40      95 ..      40      95 ..      12     118 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 33.5 bits;  conditional E-value: 3e-12
+        finU 40 acGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsn 95
+                +cGd++ l l+++  +++i d +f+  Gc+ aias++ +++ ++G++++eal++ +
+  AFZ15284.1 40 SCGDTIELTLQLNDAANRIEDVKFEGEGCAIAIASADLMADTLRGKSVEEALEMVQ 95
+                6***************************************************9865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                       168  (0.0353535); expected 95.0 (0.02)
+Passed bias filter:                      125  (0.0263047); expected 95.0 (0.02)
+Passed Vit filter:                         9  (0.00189394); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420875); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 11364.52
+//
+[ok]

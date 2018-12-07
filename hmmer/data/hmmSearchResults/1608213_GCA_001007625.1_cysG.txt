@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1608213_GCA_001007625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysG  [M=684]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-05   19.8   1.3    2.9e-05   19.5   1.3    1.2  1  KKZ14809.1  precorrin methylase [Candidatus Synechococcus spo
+     0.0029   12.9   0.2     0.0035   12.6   0.2    1.1  1  KKZ11172.1  precorrin-2 C20-methyltransferase, partial [Candi
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ14809.1  precorrin methylase [Candidatus Synechococcus spongiarum 142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   1.3   2.8e-08   2.9e-05     438     571 ..       8     138 ..       2     233 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 2.8e-08
+        cysG 438 rpgqlylvgigpgslaqitpaakqaiakadaiigyglyidlikpllrpgq..mietyaitkerqradravdlaqwglsvavissgdcgiygmaglvlea 534
+                  pg + +vg gpg+   +t  a+q i  a+ +i     +      l p +   i t ++t e    +  ++ a+    v  +  gd  +yg      e 
+  KKZ14809.1   8 PPGSVAIVGAGPGAPDLLTIRAHQRIREAQVLIWADSLVSPAIAALAPADcaRISTRSLTLEAV-MEVMLEGARADRRVVRLHDGDPCLYGALH---EQ 102
+                 69*****************************998877777666667776522699999999975.57889999*****************9643...33 PP
+
+        cysG 535 lqardwdgntpdvevvpgitalqaaaarvgtplm.hdf 571
+                 +           vevvpg++a qa+aa +g  l   d+
+  KKZ14809.1 103 ICR--LAEAGVTVEVVPGVSAYQATAAALGQALTiPDL 138
+                 332..33345569*****************98741344 PP
+
+>> KKZ11172.1  precorrin-2 C20-methyltransferase, partial [Candidatus Synechococcus spongiarum 142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.2   3.5e-06    0.0035     511     568 ..      48     103 ..      28     126 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 3.5e-06
+        cysG 511 glsvavissgdcgiygmaglvlealqardwdgntpdvevvpgitalqaaaarvgtplm 568
+                   +v ++  gd+ +y  a +v  alq +        v ++pg+ta+ aaaa    pl 
+  KKZ11172.1  48 HPAVVLLCEGDVSLYASASFV--ALQLQGMPSSQLRVRLIPGVTAMAAAAAAAHWPLA 103
+                 45788999********99988..78888899999*****************9988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (684 nodes)
+Target sequences:                         2010  (525874 residues searched)
+Passed MSV filter:                        72  (0.0358209); expected 40.2 (0.02)
+Passed bias filter:                       53  (0.0263682); expected 40.2 (0.02)
+Passed Vit filter:                         4  (0.00199005); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000995025); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11989.93
+//
+[ok]

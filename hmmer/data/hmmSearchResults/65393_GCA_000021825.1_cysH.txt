@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65393_GCA_000021825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysH  [M=273]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-132  439.7   0.3   1.4e-132  439.3   0.3    1.0  1  ACK72906.1  phosphoadenosine phosphosulfate reductase [Cyanot
+  ------ inclusion threshold ------
+      0.023   12.2   0.0      0.031   11.8   0.0    1.1  1  ACK70641.1  hypothetical protein PCC7424_2219 [Cyanothece sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK72906.1  phosphoadenosine phosphosulfate reductase [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  439.3   0.3  4.7e-136  1.4e-132      31     273 .]      51     293 .]      41     293 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 439.3 bits;  conditional E-value: 4.7e-136
+        cysH  31 sldlarinqrfdsanaaeivawaaatfgeglvmstsfgiqaavmlhlvtaiipdipiiwidtgylppetyqfaedlsqrlhlnlkvyqsplsparmeai 129
+                  ldl+ +n+++  a a ++v wa+ tfg+glvmstsfgiqaavmlhlvt +ip+ip+iw+dtgylppety+fae+l++rlhlnl+vyqs++sparmea+
+  ACK72906.1  51 HLDLQAVNEQLHQASAEQVVQWANQTFGDGLVMSTSFGIQAAVMLHLVTQVIPNIPVIWVDTGYLPPETYRFAEQLTERLHLNLHVYQSSISPARMEAL 149
+                 69************************************************************************************************* PP
+
+        cysH 130 hgklwsnndldslnlydkirkvepmqralkelkatawlaglrrdqtdhrktlqwvnqqgerykilpildwnaktiydyltkydlpyhpyfdlgyvsvgd 228
+                 +g+lw ++d+++ln ydkirkvepmqral++lkatawlaglr+dqtdhrktlq v +q + yk  pil wn++ +y+ylt +dlpyhp+fdlgyv+vgd
+  ACK72906.1 150 YGRLWDQKDVEALNRYDKIRKVEPMQRALQDLKATAWLAGLRQDQTDHRKTLQRVTRQNQYYKAHPILSWNSRDVYQYLTAHDLPYHPFFDLGYVTVGD 248
+                 *************************************************************************************************** PP
+
+        cysH 229 whssrpltaddsnerdtrfkglkqecglhlpltpgeaqsldassl 273
+                 whssrplta+d nerdtrf+glkqecg+hl +tp+eaqsld+s+l
+  ACK72906.1 249 WHSSRPLTAEDDNERDTRFHGLKQECGIHLSMTPAEAQSLDSSTL 293
+                 ******************************************986 PP
+
+>> ACK70641.1  hypothetical protein PCC7424_2219 [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   1.1e-05     0.031     143     196 ..     121     172 ..     110     184 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.1e-05
+        cysH 143 nlydkirkvepmqralkelkatawlaglrrdqtdhrktlqwvnqqgerykilpi 196
+                  l  ++r +ep+  a  +++ t   agl +dq + +k +q + +qg   +i+p+
+  ACK70641.1 121 SLLSQVREIEPF--AYFQINGTGIYAGLFQDQQEAQKRVQQLINQGLSARIVPV 172
+                 577889999997..67899*********************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (273 nodes)
+Target sequences:                         5710  (1769808 residues searched)
+Passed MSV filter:                       165  (0.0288967); expected 114.2 (0.02)
+Passed bias filter:                      144  (0.0252189); expected 114.2 (0.02)
+Passed Vit filter:                        12  (0.00210158); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350263); expected 0.1 (1e-05)
+Initial search space (Z):               5710  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9663.15
+//
+[ok]

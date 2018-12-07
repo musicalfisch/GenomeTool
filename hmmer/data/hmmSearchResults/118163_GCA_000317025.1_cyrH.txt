@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118163_GCA_000317025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.024   11.3   0.0      0.095    9.3   0.0    1.9  3  AFY76402.1  cytosine deaminase-like metal-dependent hydrolase
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY76402.1  cytosine deaminase-like metal-dependent hydrolase [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   0.0   2.2e-05     0.095      11      66 ..      28      87 ..      19      91 .. 0.78
+   2 ?   -1.9   0.0     0.055   2.4e+02     276     293 ..     278     295 ..     238     349 .. 0.54
+   3 ?   -3.8   0.0      0.22   9.3e+02     368     393 ..     377     403 ..     375     414 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 2.2e-05
+        cyrH 11 aveddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss..emwqr 66
+                 ++++   vd+++ +gki++i p    +   + +d ++ +++pgfv+ hth     +w+r
+  AFY76402.1 28 QTREGLCLVDLEIAEGKISQIIPASgnNPEVAFVDLRKGIVFPGFVDMHTHLDkgHIWER 87
+                57789999************97754114455679999**************641156776 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.055
+        cyrH 276 aetkstvvhnplsnlrlg 293
+                   ++  vv  p+ nl l 
+  AFY76402.1 278 KAANVGVVSLPMCNLYLQ 295
+                 222233444455554443 PP
+
+  == domain 3  score: -3.8 bits;  conditional E-value: 0.22
+        cyrH 368 klgsltvgkkadlvlydltnls.llpr 393
+                 +lg + +g  adl+l+    +s ll r
+  AFY76402.1 377 NLGRIGIGLPADLILFKARYFSeLLSR 403
+                 5899999999****9998877634555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4268  (1345719 residues searched)
+Passed MSV filter:                        99  (0.0231959); expected 85.4 (0.02)
+Passed bias filter:                       86  (0.02015); expected 85.4 (0.02)
+Passed Vit filter:                         8  (0.00187441); expected 4.3 (0.001)
+Passed Fwd filter:                         1  (0.000234302); expected 0.0 (1e-05)
+Initial search space (Z):               4268  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 12515.19
+//
+[ok]

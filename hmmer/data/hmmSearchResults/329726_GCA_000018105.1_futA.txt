@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.3e-115  385.1   1.5   1.5e-115  384.9   1.5    1.0  1  ABW25159.1  iron deficiency induced protein A [Acaryochloris 
+  ------ inclusion threshold ------
+      0.054   11.4   0.0       0.12   10.2   0.0    1.5  2  ABW27954.1  sugar ABC transporter, solute-binding protein, pu
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW25159.1  iron deficiency induced protein A [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  384.9   1.5  3.5e-119  1.5e-115      18     351 .]      17     350 .]       5     350 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 384.9 bits;  conditional E-value: 3.5e-119
+        futA  18 lavavgqlgkinevsaqtkqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlwradqqgifapvnsrilt 116
+                 +++av       +   + k + +ys+rhy+td+ ly++ft+qtgi ++l+e + + l+erik e +n  ad+l+tvdagrlwra+q  ++  + s+ l 
+  ABW25159.1  17 FSIAVASGCTNTQTDGEGKIVRVYSARHYDTDQALYQDFTKQTGIEVKLLESKDNELLERIKNEASNPQADVLITVDAGRLWRAEQANLLQSISSNQLK 115
+                 556666555556677888999****************************************************************************** PP
+
+        futA 117 qripanlrhpkghwfgfskrlrvimynkdrvnpreidsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcrglvanfarspqgndkaq 215
+                 ++ip nlrhp g wfg+++r+r+++ynk +v+p e+ +y  l++p wkg+v  rss niy qs+   +i+ +ge+ +e+w++ lvanfar+p+g d  q
+  ABW25159.1 116 DKIPENLRHPDGLWFGLTRRVRMLVYNKAKVKPEELSTYEALAEPAWKGRVCVRSSNNIYNQSLLGSFIESKGETETEQWAKNLVANFARPPKGGDVDQ 214
+                 *************************************************************************************************** PP
+
+        futA 216 ieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqnffakgnqeypvvrgval 314
+                 i+avaag +d+a+ n yy+a  a+ k+  +rai ++vgv fp+q  rg+hvnisg g++  apn+e ai f+eyl+s eaq++fa  n+eyp v gv  
+  ABW25159.1 215 IKAVAAGQCDVAIVNHYYVARLAQSKNSKNRAITEKVGVFFPNQDDRGTHVNISGAGVVANAPNKENAIAFMEYLTSPEAQKVFAEANNEYPAVIGVEE 313
+                 *************************************************************************************************** PP
+
+        futA 315 dpvlaklgrgkedtvsvanygpnlakavqvmnragwk 351
+                  p l   g  k dt+ v+ yg n  +a ++ +ragw+
+  ABW25159.1 314 SPALKEYGEFKSDTINVSAYGRNNPEATKIADRAGWQ 350
+                 ************************************6 PP
+
+>> ABW27954.1  sugar ABC transporter, solute-binding protein, putative [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.4   0.0       0.4   1.7e+03      53      70 ..     106     124 ..     103     136 .. 0.71
+   2 ?   10.2   0.0     3e-05      0.12     261     320 ..     357     416 ..     338     432 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -3.4 bits;  conditional E-value: 0.4
+        futA  53 ydnftrqt.gikinlvege 70 
+                  d+f  q   iki+l+eg 
+  ABW27954.1 106 VDDFEAQNpDIKIDLIEGP 124
+                 5777666427*******95 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 3e-05
+        futA 261 grgahvnisgggliktapnresaikfleylssneaqnffakgnqeypvvrgvaldpvlak 320
+                 g ga     g g+ kt+   + a + +ey+ss eaq  f       p  + +  dp l k
+  ABW27954.1 357 GSGACQGGWGVGISKTTRHADEAWRAVEYFSSTEAQRKFILASGFVPSRKALFTDPTLVK 416
+                 5566666678899**************************999999999999999999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       158  (0.0188477); expected 167.7 (0.02)
+Passed bias filter:                      146  (0.0174162); expected 167.7 (0.02)
+Passed Vit filter:                         8  (0.000954312); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000238578); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 13538.47
+//
+[ok]

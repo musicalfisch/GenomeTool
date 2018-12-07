@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801606_GCA_001784565.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrA  [M=372]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0051   13.0   0.0      0.013   11.7   0.0    1.7  2  OGI00538.1  amidinotransferase [Candidatus Melainabacteria ba
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI00538.1  amidinotransferase [Candidatus Melainabacteria bacterium GWF2_37_15]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   0.0      0.24   5.5e+02     248     263 ..     164     179 ..     153     185 .. 0.80
+   2 !   11.7   0.0   5.4e-06     0.013     317     363 ..     221     267 ..     207     271 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 0.24
+        cyrA 248 mhidssfmplapgkll 263
+                  h+d++f pl+ g ++
+  OGI00538.1 164 YHLDTCFCPLTDGYVM 179
+                 6999999999998765 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 5.4e-06
+        cyrA 317 ekrviiekhqetmirflkdhgfepipcpfmnyapfggsfhcatldir 363
+                  k vi++k  + + ++l d+gf+   + + ++   ggs +c tl + 
+  OGI00538.1 221 SKSVIMNKTTDRLKKVLADKGFNTYEVDLSEFMKAGGSAKCLTLKLN 267
+                 589****************************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (372 nodes)
+Target sequences:                         2319  (664370 residues searched)
+Passed MSV filter:                        55  (0.0237171); expected 46.4 (0.02)
+Passed bias filter:                       33  (0.0142303); expected 46.4 (0.02)
+Passed Vit filter:                         2  (0.000862441); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.00043122); expected 0.0 (1e-05)
+Initial search space (Z):               2319  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 12357.28
+//
+[ok]

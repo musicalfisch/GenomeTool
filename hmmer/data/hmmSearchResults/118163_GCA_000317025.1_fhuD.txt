@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fhuD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118163_GCA_000317025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fhuD  [M=330]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-05   22.5   0.0      0.021   11.6   0.0    2.2  2  AFY78554.1  ABC-type Fe3+-hydroxamate transport system, perip
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY78554.1  ABC-type Fe3+-hydroxamate transport system, periplasmic component [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.0     5e-06     0.021      60     136 ..      44     122 ..      32     178 .. 0.79
+   2 !    9.0   0.0     3e-05      0.13     274     304 ..     243     272 ..     220     284 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 5e-06
+        fhuD  60 rrvvaldgatvgnllalgmm.pagvasnllpeitrlipnvprlgqs.sqinletlavlqpdliigavwemkgiynklsa 136
+                  rvval   t   +  l      g+a   l + +    n+p + +  +  nle +  l+pdl+iga        nkl  
+  AFY78554.1  44 ERVVALTSLTADIIERLDKNkLVGIAGSSLLKSSDRFTNIPIVSEGqTPPNLEKIVALKPDLVIGAKGFSDQTLNKLKE 122
+                 68999998887777766653146777655555556678999886651457****************9888888888865 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 3e-05
+        fhuD 274 qlerldtdplwqslgavqknrvysvghywga 304
+                  le + ++p+w  l a q++rvy    y+g 
+  AFY78554.1 243 LLEEFKAQPFWSQLKATQRDRVYVFD-YYGL 272
+                 589999*****************665.5565 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (330 nodes)
+Target sequences:                         4268  (1345719 residues searched)
+Passed MSV filter:                       156  (0.0365511); expected 85.4 (0.02)
+Passed bias filter:                      126  (0.029522); expected 85.4 (0.02)
+Passed Vit filter:                         5  (0.00117151); expected 4.3 (0.001)
+Passed Fwd filter:                         1  (0.000234302); expected 0.0 (1e-05)
+Initial search space (Z):               4268  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 11102.18
+//
+[ok]

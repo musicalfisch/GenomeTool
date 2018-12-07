@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805292_GCA_001873375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0083   13.1   0.0      0.015   12.2   0.0    1.3  1  OIP77161.1  phosphoglycolate phosphatase [Oscillatoriales cya
+  ------ inclusion threshold ------
+      0.019   11.9   0.1       0.14    9.0   0.1    2.4  2  OIP76196.1  cell division ATP-binding protein FtsE [Oscillato
+      0.023   11.6   0.3        2.7    4.8   0.1    2.3  2  OIP76199.1  sodium:proton antiporter [Oscillatoriales cyanoba
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP77161.1  phosphoglycolate phosphatase [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   1.5e-05     0.015      11      44 ..     258     291 ..     252     306 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.5e-05
+        cyrM  11 vwltglsgagkstitealqakliaegysievldg 44 
+                 + l+g+sg gkst++  l  ++i +gy + ++d 
+  OIP77161.1 258 ILLAGISGGGKSTLATGLIERFIDKGYQVCIIDP 291
+                 689**************************99984 PP
+
+>> OIP76196.1  cell division ATP-binding protein FtsE [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0      0.39   3.9e+02      84     103 ..      13      32 ..       4      41 .. 0.79
+   2 ?    9.0   0.1   0.00014      0.14       9      47 ..      65     110 ..      59     156 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.39
+        cyrM  84 lvsaispyreireevrgkig 103
+                  v a sp  e + ev g i 
+  OIP76196.1  13 HVPASSPTTETKSEVNGAIP 32 
+                 67899999999999999885 PP
+
+  == domain 2  score: 9.0 bits;  conditional E-value: 0.00014
+        cyrM   9 vtvwltglsgagkstiteal.......qakliaegysievldgdiv 47 
+                    ++tg sg+gkst+ + l       +  +i +g+ ++vl g+ +
+  OIP76196.1  65 DFKFITGHSGSGKSTLLKLLygaekasDGEVIVNGFNLNVLKGNDL 110
+                 55689**********975442222111668999*******999643 PP
+
+>> OIP76199.1  sodium:proton antiporter [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   0.0    0.0032       3.2     130     173 ..      38      82 ..      22      89 .. 0.81
+   2 ?    4.8   0.1    0.0027       2.7      13      57 ..     111     155 ..     101     181 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.0032
+        cyrM 130 rageiksftgiddpyeppfnpev..ecrtdletleesvakvwnklt 173
+                 +a  + sft + d  +  +  e+  ec+t + ++ e va vw k+ 
+  OIP76199.1  38 KANGVVSFTLLMDNPNSSYRDELiqECKTAIRAIAE-VADVWVKVV 82 
+                 67788999998888888888885569*******987.99***9975 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.0027
+        cyrM  13 ltglsgagkstitealqakliaegysievldgdivrtnltkglgf 57 
+                  +g  g gk++++  +   l   g  + +ld di   n+   lg+
+  OIP76199.1 111 SSGKGGVGKTSVSVNVAVALADMGAKVGILDADIYGPNVPVMLGM 155
+                 4688899***************************99999888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3046  (947245 residues searched)
+Passed MSV filter:                       135  (0.0443204); expected 60.9 (0.02)
+Passed bias filter:                      122  (0.0400525); expected 60.9 (0.02)
+Passed Vit filter:                        21  (0.00689429); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.000984898); expected 0.0 (1e-05)
+Initial search space (Z):               3046  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5809.77
+//
+[ok]

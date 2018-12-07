@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1183438_GCA_000484535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-23   82.0   0.0    1.1e-23   81.8   0.0    1.1  1  AGY59615.1  O-methyltransferase [Gloeobacter kilaueensis JS1]
+  ------ inclusion threshold ------
+      0.043   11.3   0.0      0.064   10.7   0.0    1.2  1  AGY58790.1  alcohol dehydrogenase [Gloeobacter kilaueensis JS
+
+
+Domain annotation for each sequence (and alignments):
+>> AGY59615.1  O-methyltransferase [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.8   0.0     5e-27   1.1e-23      40     216 ..      46     221 ..      21     225 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 81.8 bits;  conditional E-value: 5e-27
+        AvaC  40 avmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfd 138
+                   +qi+p +g ++ +l+q i+ak+++e g ++gys l +  al  +g+l +c+ s  ++ +ar  +++ag  +++ +      e+l kl a      fd
+  AGY59615.1  46 PRIQISPTDGSILRLLLQMIRAKRVVEFGTLSGYSGLWMLRALGVDGHLWTCEYSSRHAEVARGVFERAGYGSQVTILEGDGRESLKKLEAH---APFD 141
+                 568**************************************************************************************886...58** PP
+
+        AvaC 139 fvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaa..dstdnrtkiirslnakiqqdervnisiipigdgltl 216
+                  vfidadks y  y   a++ +r gg+i  dn +  g +a    d + ++  i    + ++        + +p  dgl++
+  AGY59615.1 142 AVFIDADKSGYPLYARWAFDHLRPGGLIVADNTYLFGYLAGRapDRNLDQRSIEAMQEFHVFLTSHCVAACLPTPDGLSV 221
+                 **********************************9999986511333223333333334444455555556666666655 PP
+
+>> AGY58790.1  alcohol dehydrogenase [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   2.8e-05     0.064     105     161 ..     225     282 ..     202     300 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.8e-05
+        AvaC 105 wqqagvadkidlriapaletldkliag.gesnsfdfvfidadksnydayyeralqlvr 161
+                   +ag a+ i    a a e l++l ag g    +d v ++a     da y++ +q vr
+  AGY58790.1 225 LARAGGAEVIHYEQADAGEVLNELTAGrGPDSCIDAVGLEAHGLGLDALYDQVMQAVR 282
+                 4689**********************94566679**********************99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         4507  (1419478 residues searched)
+Passed MSV filter:                       155  (0.0343909); expected 90.1 (0.02)
+Passed bias filter:                      141  (0.0312847); expected 90.1 (0.02)
+Passed Vit filter:                        17  (0.00377191); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443754); expected 0.0 (1e-05)
+Initial search space (Z):               4507  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7807.13
+//
+[ok]

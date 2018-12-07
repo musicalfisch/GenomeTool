@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.4e-49  163.9   2.0      4e-49  163.6   2.0    1.0  1  ABC99707.1  ATP synthase F1, epsilon subunit [Synechococcus s
+     0.0025   15.4   0.1     0.0048   14.4   0.1    1.4  1  ABD00897.1  chloroplast envelope protein translocase (CEPT or
+
+
+Domain annotation for each sequence (and alignments):
+>> ABC99707.1  ATP synthase F1, epsilon subunit [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.6   2.0   2.9e-52     4e-49       1     133 [.       1     129 [.       1     132 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 163.6 bits;  conditional E-value: 2.9e-52
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtl vrvi+pd+tvwda aeevilp+t+gqlgil+ hapllta+  gvmrv+a    +w aia++ggfaeve++evt+lvn aerg+k++   a+a  +
+  ABC99707.1   1 MTLMVRVITPDRTVWDAPAEEVILPATSGQLGILTNHAPLLTAIGNGVMRVKAG--GKWSAIAVMGGFAEVENNEVTVLVNRAERGEKVDKAAAQALLD 97 
+                 9**************************************************985..68***************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaa 133
+                 +a + ln   ++d+q+++qa+   +rara +qaa
+  ABC99707.1  98 KASQVLNT--SSDKQERLQAKLDQQRARALIQAA 129
+                 ******96..679********************9 PP
+
+>> ABD00897.1  chloroplast envelope protein translocase (CEPT or Tic-Toc) family protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.1   3.5e-06    0.0048      46     119 ..      59     132 ..      30     136 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 3.5e-06
+        atpE  46 tgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqa 119
+                 t  +    s+++  + + l+  fa v ++   ++ n  + g +i++ +   + n+aq+ l+qvka++ +   qa
+  ABD00897.1  59 TQAVAAPMSRQEVAERLNLVPVFAIVSQNGTPVVANVEREGRTIQVASFWLDQNQAQQALDQVKAKNPEVGQQA 132
+                 555555556666677889999*******************************************9986655555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                        92  (0.0333333); expected 55.2 (0.02)
+Passed bias filter:                       62  (0.0224638); expected 55.2 (0.02)
+Passed Vit filter:                         8  (0.00289855); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000724638); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5660.28
+//
+[ok]

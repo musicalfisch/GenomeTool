@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.5e-68  225.8   1.3    8.3e-68  225.6   1.3    1.0  1  EKV01890.1  ATP synthase, F1 epsilon subunit [Leptolyngbya sp
+    1.5e-05   24.0   0.0    1.9e-05   23.7   0.0    1.2  1  EKU96318.1  alternate F1F0 ATPase, F1 subunit epsilon [Leptol
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV01890.1  ATP synthase, F1 epsilon subunit [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  225.6   1.3   2.1e-71   8.3e-68       1     137 []       1     135 []       1     135 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 225.6 bits;  conditional E-value: 2.1e-71
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m+l+vrv++pdktvwdaeaeev+lpsttgqlgilsghaplltald+gv+rvra+k  dw+aial+ggfaeve++evtilvngaerg+ i+l ea a+++
+  EKV01890.1   1 MSLAVRVVAPDKTVWDAEAEEVVLPSTTGQLGILSGHAPLLTALDIGVLRVRADK--DWVAIALMGGFAEVENNEVTILVNGAERGEGIDLSEAEAEYT 97 
+                 89**************************************************986..8***************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +a++k + ++++d+qa iqa +++krarar+qaagg +
+  EKV01890.1  98 SAKSKADSISSDDKQAVIQARKSLKRARARVQAAGGSI 135
+                 ************************************75 PP
+
+>> EKU96318.1  alternate F1F0 ATPase, F1 subunit epsilon [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7   0.0   4.9e-09   1.9e-05       5      95 ..       3      91 ..       1     123 [. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 4.9e-09
+        atpE  5 vrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleear 95
+                ++++ p+k + d    +++  +  g++ +l  h  +ltal  g++  +a+ ++ +  +a+ gg+      ev +   +a  gd++++ +  
+  EKU96318.1  3 LKILLPNKVLIDQYVTKIVAEAVNGNFCLLPRHIDMLTALAPGILTFQADGDETF--LAVEGGILIKCGSEVLVSTRNAFCGDSLEVLKQE 91
+                67899********************************************999887..567899999999999999999999*998763322 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       234  (0.0298927); expected 156.6 (0.02)
+Passed bias filter:                      163  (0.0208227); expected 156.6 (0.02)
+Passed Vit filter:                        19  (0.00242718); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 6909.01
+//
+[ok]

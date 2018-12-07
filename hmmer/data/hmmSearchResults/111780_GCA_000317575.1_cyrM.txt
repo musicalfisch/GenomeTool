@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111780_GCA_000317575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.8e-95  314.3   0.1    5.4e-95  314.2   0.1    1.0  1  AFZ34256.1  Adenylyl-sulfate kinase [Stanieria cyanosphaera P
+     0.0082   13.7   0.0       0.17    9.4   0.0    2.2  2  AFZ37461.1  adenosylcobyric acid synthase (glutamine-hydrolys
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ34256.1  Adenylyl-sulfate kinase [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  314.2   0.1   2.2e-98   5.4e-95       4     178 ..       1     175 [.       1     176 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 314.2 bits;  conditional E-value: 2.2e-98
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mkqrgvtvw+tg+sgagk+tit+al   l  + + ievldgdi+r nltk lgfskedrd nirrigfv++lltrhgvivlv  ispyr +ree+r ki
+  AFZ34256.1   1 MKQRGVTVWFTGFSGAGKTTITNALVEELKNQQFDIEVLDGDIIRENLTKDLGFSKEDRDTNIRRIGFVAQLLTRHGVIVLVPVISPYRALREEMRKKI 99 
+                 9************************************************************************************************** PP
+
+        cyrM 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 g+fvevfvnapl+vce+rdvkglyk+arageik ftgiddpyepp+np++ecrtd e + e vakv nkl+elgyi
+  AFZ34256.1 100 GDFVEVFVNAPLAVCEDRDVKGLYKKARAGEIKQFTGIDDPYEPPLNPDIECRTDKEDVAECVAKVMNKLQELGYI 175
+                 ***************************************************************************9 PP
+
+>> AFZ37461.1  adenosylcobyric acid synthase (glutamine-hydrolysing) [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.7   0.0     0.017        40      15      45 ..       9      39 ..       2      51 .. 0.82
+   2 !    9.4   0.0   7.3e-05      0.17      71     111 ..     448     488 ..     439     493 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 1.7 bits;  conditional E-value: 0.017
+        cyrM 15 glsgagkstitealqakliaegysievldgd 45
+                  s agks +t al   l+ +g+ +  + g+
+  AFZ37461.1  9 TTSHAGKSFLTAALCRILVRQGWRVAPFKGQ 39
+                4689******************998877765 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 7.3e-05
+        cyrM  71 fvsnlltrhgvivlvsaispyreireevrgkigsfvevfvn 111
+                 ++  l  + g+  l + is yre re v   + ++ve  +n
+  AFZ37461.1 448 WLNHLRKQRGMASLPTGISNYREQREAVLNDLTNLVEANIN 488
+                 5667778899999************************9888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4781  (1511376 residues searched)
+Passed MSV filter:                       219  (0.0458063); expected 95.6 (0.02)
+Passed bias filter:                      199  (0.0416231); expected 95.6 (0.02)
+Passed Vit filter:                        38  (0.00794813); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000418323); expected 0.0 (1e-05)
+Initial search space (Z):               4781  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 3476.16
+//
+[ok]

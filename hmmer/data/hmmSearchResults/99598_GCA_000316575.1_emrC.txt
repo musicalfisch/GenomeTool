@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.2e-55  182.2  12.5      9e-55  182.1  12.5    1.0  1  AFY33091.1  small multidrug resistance protein [Calothrix sp.
+    0.00066   18.6  10.8     0.0023   16.8  10.8    1.8  1  AFY33337.1  protein of unknown function DUF6 transmembrane [C
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY33091.1  small multidrug resistance protein [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  182.1  12.5     3e-58     9e-55       1     106 []       1     106 []       1     106 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 182.1 bits;  conditional E-value: 3e-58
+        emrC   1 mliswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigv 99 
+                 m+ sw+yl+aai+fevsg+tcmkls+gftk++ps+l+f++yglc++fltl++kk++vsvaysvwaglgt+liavig+iwfres+t +klisi+liiigv
+  AFY33091.1   1 MSLSWLYLFAAIIFEVSGITCMKLSQGFTKITPSILVFISYGLCVAFLTLCIKKLDVSVAYSVWAGLGTTLIAVIGMIWFRESATPIKLISISLIIIGV 99 
+                 899************************************************************************************************ PP
+
+        emrC 100 iginsak 106
+                 ig+ns+k
+  AFY33091.1 100 IGLNSGK 106
+                 ****987 PP
+
+>> AFY33337.1  protein of unknown function DUF6 transmembrane [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8  10.8   7.7e-07    0.0023      25     102 ..      40     118 ..       3     122 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 7.7e-07
+        emrC  25 segftk.lipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 s+ f+  +ip +li +++y l+     l l ++++sva     ++g ++   +g  +++es++lv+l+ ++li+ gvi +
+  AFY33337.1  40 SHIFSMmTIPELLIgLTCYALGAVAYILLLTRVNLSVAAPA-VSIGYIFSVLLGYWILQESISLVRLLGLSLIVTGVILV 118
+                 555654168999996689****9999***********9765.579********************************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       200  (0.0336134); expected 119.0 (0.02)
+Passed bias filter:                       81  (0.0136134); expected 119.0 (0.02)
+Passed Vit filter:                         6  (0.0010084); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 4912.40
+//
+[ok]

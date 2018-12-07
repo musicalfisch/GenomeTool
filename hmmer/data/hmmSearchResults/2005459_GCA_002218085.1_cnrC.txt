@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/2005459_GCA_002218085.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.61    7.9  36.8      0.019   12.9  30.0    1.9  2  GAX40445.1  outer membrane efflux protein [Tolypothrix sp. NI
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX40445.1  outer membrane efflux protein [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.1   0.5      0.39   2.8e+03     266     285 ..     328     347 ..     300     362 .. 0.44
+   2 ?   12.9  30.0   2.6e-06     0.019     108     415 ..     391     706 ..     376     711 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -4.1 bits;  conditional E-value: 0.39
+        cnrC 266 gvrlaranrvpdlnvgpair 285
+                  vr a+a  +p+++v  ++ 
+  GAX40445.1 328 AVREAQAALLPNFDVNASVT 347
+                 23333333333333333322 PP
+
+  == domain 2  score: 12.9 bits;  conditional E-value: 2.6e-06
+        cnrC 108 ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrla 206
+                  g r a +  a+ q+   e++    +  +rl+v+  y +   ad  v         a  +lr a    qag  + +   +++v   na+ ++   +   
+  GAX40445.1 391 SGSRQAVIRQAEEQVRFQELDVERQSEVIRLNVSTDYYNLQQADESVRINTAAVTNAQASLRDAQALEQAGVGTRFSVLQSQVNLANAQQDLTNSISQQ 489
+                 6888899999999999999999999999*****************99999999999999******************999******************* PP
+
+        cnrC 207 eaaranlarrigrp..idg.alddtlldrlpganvygpvapvnttgtlalaaanadfsiaeagvrlaranrvpdlnvgpairrleatndmaav...ftv 299
+                 + ar +l  r+     ++  a d   l  l    +      +       l    a+  i e   r a a+  p++ +  +   l+  nd ++v   ++v
+  GAX40445.1 490 QIARRQLVTRLSLSqsVNVvAADPVRLAGLWNQTLEQS-IILAFQNRPELQQQLAQRNIFEQQRRGALAQIGPQVGLVASYNLLDQFNDNTSVtdgYSV 587
+                 *********98755114431334444444444444433.3344556667888889999*******************************9998333344 PP
+
+        cnrC 300 sipip.vfnngraaiaqataqr.......tqadaqrrvtaldieqaitdaqaqaanaattaraasgpalaaaqeaariarigyregkfgqlelldaert 390
+                  +     + +g aa a+a  qr       tq   qr  t +++eqa ++ q++  n  t++      al  a+e+ r+ar+ ++ g   q e++dae +
+  GAX40445.1 588 GVQANwRLFDGGAARARANQQRsniaiaeTQFAQQRDQTRFEVEQAFSNLQSNLQNVNTAT-----GALEQARESLRLARLRFQAGVGTQTEVIDAETA 681
+                 44332224467789999999984444444566778999**************999987643.....4899***************************** PP
+
+        cnrC 391 laetrvaaidalanyqnaraqverl 415
+                 l+ +    ++a+ +y+ a a ++r 
+  GAX40445.1 682 LTRAEGNRVQAILDYNRALASLQRS 706
+                 ******************9999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         7372  (2211063 residues searched)
+Passed MSV filter:                       244  (0.0330982); expected 147.4 (0.02)
+Passed bias filter:                      128  (0.017363); expected 147.4 (0.02)
+Passed Vit filter:                        10  (0.00135648); expected 7.4 (0.001)
+Passed Fwd filter:                         1  (0.000135648); expected 0.1 (1e-05)
+Initial search space (Z):               7372  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.08
+# Mc/sec: 11746.27
+//
+[ok]

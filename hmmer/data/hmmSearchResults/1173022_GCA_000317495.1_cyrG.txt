@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0019   15.1   0.0     0.0022   14.9   0.0    1.0  1  AFZ13069.1  dihydroorotase [Crinalium epipsammum PCC 9333]
+     0.0027   14.6   0.1      0.078    9.8   0.0    2.2  2  AFZ15238.1  Amidohydrolase 3 [Crinalium epipsammum PCC 9333]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ13069.1  dihydroorotase [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   9.1e-07    0.0022      14      61 ..      12      61 ..       2      66 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 9.1e-07
+        cyrG 14 ddyatvdvqvvdgkiaaiapelevvgt..aidgenklllpgfvnahthss 61
+                 ++   dvq+ d +i ++ape+ v  t  +id+en  llpg ++ + h  
+  AFZ13069.1 12 GEFLQGDVQIRDLEIIQVAPEIPVSDTdkVIDAENLTLLPGVIDPQVHFR 61
+                457788****************99765338*************9999865 PP
+
+>> AFZ15238.1  Amidohydrolase 3 [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.4   0.0    0.0056        13       5      60 ..       6      67 ..       2      72 .. 0.65
+   2 !    9.8   0.0   3.3e-05     0.078     368     426 ..     489     556 ..     464     565 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 0.0056
+        cyrG  5 iqnvliaveddyatv..dvqvvdgkiaai...apelevvg.taidgenklllpgfvnahths 60
+                iqn li    + a v  d+ +++gki a+      + v + +++d+++  + pgf++ hth 
+  AFZ15238.1  6 IQNGLIFDGLGSAPVrgDIGIQNGKIVALpglGKAISVDAhQVVDASQLWVTPGFIDIHTHY 67
+                6666665444444333388899999988722134555544246788888899*********5 PP
+
+  == domain 2  score: 9.8 bits;  conditional E-value: 3.3e-05
+        cyrG 368 klgsltvgkkadlvlydltnls..llprtdpigllvlgrp.......tnvvdsawvngkqivadgkvt 426
+                 + g l+vg kadlvl d ++l   + p  +    l+ g p        ++v+ +++ng ++v +g+v 
+  AFZ15238.1 489 DTGVLKVGAKADLVLLDPSALNqpISPPVEISDPLLDGEPrmvkrgsDDIVQAVYINGIKVVNQGQVC 556
+                 5799*************9988622344333223345554411111114789**************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                       105  (0.022096); expected 95.0 (0.02)
+Passed bias filter:                       78  (0.0164141); expected 95.0 (0.02)
+Passed Vit filter:                        10  (0.00210438); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420875); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14092.00
+//
+[ok]

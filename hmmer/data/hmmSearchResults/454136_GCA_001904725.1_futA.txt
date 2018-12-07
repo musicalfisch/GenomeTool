@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454136_GCA_001904725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0019   15.8   0.0     0.0029   15.1   0.0    1.2  1  OKH38185.1  ABC transporter substrate-binding protein [Phormi
+  ------ inclusion threshold ------
+       0.02   12.4   0.1      0.033   11.7   0.1    1.4  1  OKH40943.1  tRNA uridine-5-carboxymethylaminomethyl(34) synth
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH38185.1  ABC transporter substrate-binding protein [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   9.5e-07    0.0029     261     309 ..     308     357 ..     293     373 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 9.5e-07
+        futA 261 grgahvnisgggliktapnre.saikfleylssneaqnffakgnqeypvv 309
+                  r +        l+kt+p+re +a+kfley+ s++ q  f+ g    pv 
+  OKH38185.1 308 TRATVAGTGNLFLMKTTPEREqAALKFLEYILSEQFQTEFSIGTGFLPVN 357
+                 34333333334489******93579***************9999888875 PP
+
+>> OKH40943.1  tRNA uridine-5-carboxymethylaminomethyl(34) synthesis GTPase MnmE [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   1.1e-05     0.033      70     116 ..     285     335 ..     217     345 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.1e-05
+        futA  70 eadplieriksegrnspad....illtvdagrlwradqqgifapvnsrilt 116
+                 e+  ++e+i  e +   ad    illt+da   w a +q i+  v+sr ++
+  OKH40943.1 285 ETSDIVEKIGVERSRRAADaadlILLTIDAQIGWTAAEQEIYQQVKSRPVI 335
+                 6677899998887766655445789**********************9554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         6149  (2062819 residues searched)
+Passed MSV filter:                       137  (0.02228); expected 123.0 (0.02)
+Passed bias filter:                      114  (0.0185396); expected 123.0 (0.02)
+Passed Vit filter:                         4  (0.000650512); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000325256); expected 0.1 (1e-05)
+Initial search space (Z):               6149  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12067.49
+//
+[ok]

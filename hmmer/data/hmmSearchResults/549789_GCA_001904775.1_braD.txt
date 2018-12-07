@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/549789_GCA_001904775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-19   67.8  28.0      3e-13   48.0   9.4    3.0  3  OKH49027.1  urea ABC transporter permease subunit UrtB [Phorm
+    3.8e-05   21.5   5.8    5.3e-05   21.0   5.8    1.3  1  OKH46858.1  ABC transporter permease [Phormidium tenue NIES-3
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH49027.1  urea ABC transporter permease subunit UrtB [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.9   6.5   1.6e-10     4e-07       8      59 ..       8      59 ..       1      92 [. 0.89
+   2 !   48.0   9.4   1.2e-16     3e-13     136     252 ..     211     327 ..     204     337 .. 0.96
+   3 ?   -0.8   0.0     0.093   2.3e+02     265     284 ..     362     381 ..     349     384 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 27.9 bits;  conditional E-value: 1.6e-10
+        braD  8 livngiavgsiialaavgltltygilrlsnfahgdfltlgayltllvnslgv 59
+                 + ngi++g+++ + a+gl++++g++ + n+ahg+++ +gay t++v++++ 
+  OKH49027.1  8 GLFNGISIGAVLLIVALGLAIVFGLMGVINLAHGELMMFGAYTTFVVQNVAK 59
+                578*******************************************998764 PP
+
+  == domain 2  score: 48.0 bits;  conditional E-value: 1.2e-16
+        braD 136 lkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglitavrpnmgwflilplfasvilgg 234
+                 l+ p  +l+++vl++l+++a++++l+ t  g  +r+v+++  ++   gi   +v   t+ +   l+ ++g+   l+ +v pn+g   i+  f  v++gg
+  OKH49027.1 211 LQFPSARLFIIVLTILCLVAVYWFLNGTAWGLRIRSVTQNRGMSACLGIPTGQVDAITFALGSGLAGIAGCAVTLLGSVGPNLGANYIVDAFMVVVVGG 309
+                 78899********************************************************************************************** PP
+
+        braD 235 ignpygaiaaafiigiaq 252
+                 +g+  g+i+aa++igi+ 
+  OKH49027.1 310 VGKLVGSIVAALVIGITT 327
+                 ***************985 PP
+
+  == domain 3  score: -0.8 bits;  conditional E-value: 0.093
+        braD 265 qgvallimilvllirpkglf 284
+                 + + + ++i  l +rp glf
+  OKH49027.1 362 KVMVFALIIAFLQVRPAGLF 381
+                 4445567788899*****99 PP
+
+>> OKH46858.1  ABC transporter permease [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   5.8   2.1e-08   5.3e-05      43     212 ..      49     216 ..      13     299 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 2.1e-08
+        braD  43 fltlgayltllvnslgvniwlsmvlaavgtvaamllsekllwsrmrsiratsttliiisiglalflrngiillwggknknynlpvtqaldilglk..vp 139
+                  l +ga  ++ v  l+   wl +++a v+ +   l+   l      +  a   ++ii   gla+fl +  i       +   l ++  ++i  l+  ++
+  OKH46858.1  49 TLLMGAMSAYAVSYLTGSPWLGVIVAGVAGMFLGLIHGWLAQQPRVNDVAVGIAMIIFGSGLAFFLGKPFI--QPSAPQLPTLSLAGWTQIPQLEsaLS 145
+                 5678999999999999999************9999999887776666778999*************87765..55555555566666666655541155 PP
+
+        braD 140 qnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglit 212
+                  + l++l +a+     ++++++ ++ g  +rav d  d a+  gi + +v + + v    l+ +gg+ + l  
+  OKH46858.1 146 ISPLFILGVAIAP--LMQWFFRSSRWGLLIRAVGDSPDAAKAMGISIFKVRMASIVAGSFLAGIGGASLSLFY 216
+                 6666666666655..568899****************************998775555556789998877754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         5000  (1597938 residues searched)
+Passed MSV filter:                       201  (0.0402); expected 100.0 (0.02)
+Passed bias filter:                       71  (0.0142); expected 100.0 (0.02)
+Passed Vit filter:                         6  (0.0012); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.0004); expected 0.1 (1e-05)
+Initial search space (Z):               5000  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9204.12
+//
+[ok]

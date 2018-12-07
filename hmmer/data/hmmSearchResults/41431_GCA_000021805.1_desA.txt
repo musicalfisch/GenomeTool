@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/41431_GCA_000021805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.1e-143  474.0  20.6   6.9e-143  473.9  20.6    1.0  1  ACK66805.1  fatty acid desaturase [Cyanothece sp. PCC 8801]
+    1.5e-06   25.5  11.4    0.00096   16.3   1.7    2.2  2  ACK67463.1  fatty acid desaturase [Cyanothece sp. PCC 8801]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK66805.1  fatty acid desaturase [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  473.9  20.6  3.2e-146  6.9e-143      13     343 ..      13     343 ..       1     346 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 473.9 bits;  conditional E-value: 3.2e-146
+        desA  13 itsiepdfklkdiiksipkeyfqkdpvkawfgvitnilaviagyamlvyspwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpl 111
+                  + ++ +++l+di++++p e f k++ kawf v+  i  v  gy +l   pwyllp+ wiftgt ltgffv+ hdcghrsfsnr+wvn+lvgh+++lp+
+  ACK66805.1  13 SSQLDSQVRLRDILNTLPPEVFVKNAGKAWFKVLFSICMVSLGYVLLAVVPWYLLPFVWIFTGTGLTGFFVLGHDCGHRSFSNRTWVNNLVGHLLFLPI 111
+                 45678899******************************************************************************************* PP
+
+        desA 112 iypfhcwrflhdrhhaktnmvtidnawdpweleafnsanplvrlfyrgirgrfwwlgsiahwailhfnieqfkenerekarfsmivvlvfaaiffptli 210
+                 iypfh wr+lhd hh +tn + +dnawdp+  + ++s  p+ +  yr +rgr+ww+ s+ hwa +hf+   f+ ++re+ rfs++vvl+ a+i fp l 
+  ACK66805.1 112 IYPFHSWRILHDYHHKHTNKLEVDNAWDPFTPKFYDSFSPFAKWGYRQLRGRLWWFASVVHWAKIHFDWTTFEGKQREQVRFSVLVVLIGAVIGFPILF 210
+                 *************************************************************************************************** PP
+
+        desA 211 fytgvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvhaslkenwg 309
+                 +  gvwg+vkfw++pw+v+hfwmstftlvhht p+i f   ++wn+a aql gtvhc yprwveilchdinvh+phh+st ipsynlr+ + slk+nwg
+  ACK66805.1 211 MTLGVWGFVKFWLLPWLVFHFWMSTFTLVHHTVPQIAFKTADQWNEAQAQLSGTVHCDYPRWVEILCHDINVHVPHHVSTGIPSYNLRQAYQSLKDNWG 309
+                 *************************************************************************************************** PP
+
+        desA 310 shlketefswalmkrivdychifdsetayktfke 343
+                 s+l e +fsw+lm+ i   ch++  e  y++f +
+  ACK66805.1 310 SYLCERRFSWSLMQEITTQCHLYHPENNYQSFTQ 343
+                 ******************************9975 PP
+
+>> ACK67463.1  fatty acid desaturase [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   1.7   4.4e-07   0.00096      61     127 ..      47     112 ..       5     117 .. 0.73
+   2 !   14.5   2.5   1.5e-06    0.0034     230     303 ..     244     320 ..     167     340 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 4.4e-07
+        desA  61 yspwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhha 127
+                  s w llp   i+        f + hdcgh s+ + +  n++vg+++ +    p + w   h  hh 
+  ACK67463.1  47 ISFW-LLPPILILMTLFSVRCFSLMHDCGHYSLFKSKKANQIVGFLLGVINAIPQYPWSRGHVYHHK 112
+                 3445.55555566555666678899*******************88887778899999999999986 PP
+
+  == domain 2  score: 14.5 bits;  conditional E-value: 1.5e-06
+        desA 230 hfwmstftlvhhtdpdiq...fsypedwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvhas 303
+                  f    f  v++ + + +    +  e w+     +eg+ +   p  ++ +  di  h  hh+s  ip+y l   h +
+  ACK67463.1 244 TFSAVIFIYVFFVQHNFEgsyAHKTEGWDYLRGAIEGSSYLELPPILKWFSADIGYHNIHHLSEKIPNYHLEACHQA 320
+                 233333444444444444100345789********************************************999965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         4367  (1346913 residues searched)
+Passed MSV filter:                       191  (0.0437371); expected 87.3 (0.02)
+Passed bias filter:                      118  (0.0270208); expected 87.3 (0.02)
+Passed Vit filter:                        15  (0.00343485); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045798); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 9320.64
+//
+[ok]

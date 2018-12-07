@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/399101_GCA_001637315.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-81  269.5   0.0    3.6e-81  269.3   0.0    1.1  1  OAB57189.1  chorismate-binding protein [Phormidium willei BDU
+    1.6e-27   94.2   0.0    1.8e-27   94.0   0.0    1.0  1  OAB59047.1  hypothetical protein AY600_16070 [Phormidium will
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB57189.1  chorismate-binding protein [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  269.3   0.0   1.9e-84   3.6e-81       1     195 [.       1     203 [.       1     204 [] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 269.3 bits;  conditional E-value: 1.9e-84
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlkl.......ve.aedrieienytvkeekk 91 
+                 mt s diatlar+maadfsnq+qaf+npp+fah+r c+rpl l  l+g+sf++eqay+y ln pyr rvl++       ve + + + ieny++++ ++
+  OAB57189.1   1 MTVSDDIATLARWMAADFSNQQQAFDNPPLFAHVRACLRPLSLAELDGISFYLEQAYQYDLNRPYRTRVLRIkpeseteVEgNAKSLIIENYAIEQAEE 99 
+                 899*******************************************************************983332222221335689*********** PP
+
+        cpeS  92 fygasrdlerlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasf 190
+                 f+gasrd +rl+tl+ ++le+l gcn++v    + f+g vepg++c v r+g++tylds fei e++f +ldrgr+++t e++wgsvag fef r +sf
+  OAB57189.1 100 FFGASRDPQRLSTLTPERLERLCGCNFVVVRRDHHFEGVVEPGNNCRVERNGQSTYLDSRFEISEHHFRTLDRGRNLDTGERVWGSVAGAFEFERVTSF 198
+                 *************************************************************************************************** PP
+
+        cpeS 191 adevk 195
+                 a+e++
+  OAB57189.1 199 AHELH 203
+                 **985 PP
+
+>> OAB59047.1  hypothetical protein AY600_16070 [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   94.0   0.0   9.6e-31   1.8e-27       6     190 ..       6     191 ..       1     193 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 94.0 bits;  conditional E-value: 9.6e-31
+        cpeS   6 diatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklve.aedrieienytvkeekkfygasrdlerlk 103
+                  i +l + +a  f nq+qa e p +f   r+   pl +++    ++fveqa   + ++pyr r++ l   ++  +ei   + ++   + ga++  +rl 
+  OAB59047.1   6 PIKALGQSLAGIFDNQRQAQETPTWFVPTRLWQYPLVQQIDGYYAMFVEQAPLLTPEQPYRQRLMLLSClNDGDLEIIYRAFRDPAAIAGAAQTPQRLA 104
+                 5889999*********************************999*******************9887754155679999999****************** PP
+
+        cpeS 104 tlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasf 190
+                 +++++dl +lpgc + v+  g+ f  +   g  c    +gk+  ++  f++  + + s+drg dp++ + +wg++ gp+++ + ++f
+  OAB59047.1 105 SMTSEDLLELPGCRLQVQHQGDRFIANPPEGAKCCFDYQGKTRQVELGFDLTPDCLYSRDRGVDPDSGQGLWGALMGPYTYDKQTAF 191
+                 *******************************************************************************99887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         3770  (1257126 residues searched)
+Passed MSV filter:                        51  (0.0135279); expected 75.4 (0.02)
+Passed bias filter:                       50  (0.0132626); expected 75.4 (0.02)
+Passed Vit filter:                         9  (0.00238727); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530504); expected 0.0 (1e-05)
+Initial search space (Z):               3770  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 8213.22
+//
+[ok]

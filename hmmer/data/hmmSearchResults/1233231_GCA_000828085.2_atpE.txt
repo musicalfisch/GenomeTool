@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1233231_GCA_000828085.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-83  275.8   2.1    2.2e-83  275.6   2.1    1.0  1  KIJ82097.1  ATP synthase F0F1 subunit epsilon [Scytonema toly
+  ------ inclusion threshold ------
+       0.35    9.4  17.7          1    7.9   2.1    3.2  3  KIJ80569.1  ABC transporter permease [Scytonema tolypothricho
+
+
+Domain annotation for each sequence (and alignments):
+>> KIJ82097.1  ATP synthase F0F1 subunit epsilon [Scytonema tolypothrichoides VB-61278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  275.6   2.1   7.7e-87   2.2e-83       1     137 []       1     137 []       1     137 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 275.6 bits;  conditional E-value: 7.7e-87
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvispdktvwda aeevilpsttgqlgilsghaplltaldtgvmrvra+knq w+aiallggfaeve+devtilvn+aergd+in+eearaafn
+  KIJ82097.1   1 MTLTVRVISPDKTVWDAPAEEVILPSTTGQLGILSGHAPLLTALDTGVMRVRANKNQGWTAIALLGGFAEVEQDEVTILVNSAERGDTINIEEARAAFN 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 ea+t+lnqv++++rqaqiqa+qa+krararfqaagg+v
+  KIJ82097.1 100 EAETRLNQVQSGERQAQIQANQAYKRARARFQAAGGTV 137
+                 ************************************87 PP
+
+>> KIJ80569.1  ABC transporter permease [Scytonema tolypothrichoides VB-61278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   2.1   0.00036         1      48     122 ..      63     138 ..      53     150 .. 0.70
+   2 ?    3.5   1.1    0.0081        23      89     129 ..     187     227 ..     180     229 .. 0.79
+   3 ?    7.2   4.0   0.00061       1.7      93     134 ..     216     264 ..     211     267 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.00036
+        atpE  48 vmrvrask..nqdwqaiallggfaeveed.evtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqa 122
+                 v+rv a+   n+d +a  l+     v+ + e++il ++ +r ++  l ea+    +aq+kl qvka+ +  +i a++a
+  KIJ80569.1  63 VVRVAAATtlNNDRVAKLLVKRGDRVKANqEIAIL-ESRNRLQT-ALLEAQERVRAAQAKLLQVKAGAKSGEIAAQKA 138
+                 66666554114444444455544555544156655.56666655.56689999********************99987 PP
+
+  == domain 2  score: 3.5 bits;  conditional E-value: 0.0081
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatqafkrarar 129
+                  nl++ r + ++aq++l++vka+ +++     + + ra+a 
+  KIJ80569.1 187 SNLDQKRLTLETAQAQLSEVKANRNRTADTLRAQINRAKAT 227
+                 589999**************998766655556667777775 PP
+
+  == domain 3  score: 7.2 bits;  conditional E-value: 0.00061
+        atpE  93 earaafneaqtklnqvka...ed.rqaqi...qatqafkrararfqaag 134
+                   ra+ n+a++ lnq+++    d + aq    qa +a+kra+a +q ag
+  KIJ80569.1 216 TLRAQINRAKATLNQIAEvrpVDvQVAQTevdQAIAAVKRAKAELQEAG 264
+                 56899999999999987522223133443224778899********998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5685  (1736153 residues searched)
+Passed MSV filter:                       215  (0.0378188); expected 113.7 (0.02)
+Passed bias filter:                      150  (0.0263852); expected 113.7 (0.02)
+Passed Vit filter:                        12  (0.00211082); expected 5.7 (0.001)
+Passed Fwd filter:                         5  (0.000879507); expected 0.1 (1e-05)
+Initial search space (Z):               5685  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 3964.22
+//
+[ok]

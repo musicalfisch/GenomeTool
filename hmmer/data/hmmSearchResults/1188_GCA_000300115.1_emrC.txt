@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188_GCA_000300115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-50  169.0  13.6      2e-50  168.8  13.6    1.0  1  EKF00993.1  putative multidrug transporter EmrE [Tolypothrix 
+    6.1e-20   70.8   5.3    6.5e-20   70.7   5.3    1.0  1  EKF01394.1  multidrug resistance protein, SMR family [Tolypot
+
+
+Domain annotation for each sequence (and alignments):
+>> EKF00993.1  putative multidrug transporter EmrE [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  168.8  13.6   4.1e-54     2e-50       1     106 []       1     106 []       1     106 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 168.8 bits;  conditional E-value: 4.1e-54
+        emrC   1 mliswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigv 99 
+                 m+isw yl+ a++fev gttcmkls+gft+++psv if+fyglc+t +tl+l+ki+vsvay++waglgt+lia ig+i+fres++ +kl+sialiiigv
+  EKF00993.1   1 MSISWFYLIGAVIFEVLGTTCMKLSQGFTNIVPSVSIFIFYGLCFTCMTLCLQKIDVSVAYAFWAGLGTTLIALIGIIFFRESASSIKLMSIALIIIGV 99 
+                 89************************************************************************************************* PP
+
+        emrC 100 iginsak 106
+                 ig+nsak
+  EKF00993.1 100 IGLNSAK 106
+                 *****97 PP
+
+>> EKF01394.1  multidrug resistance protein, SMR family [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.7   5.3   1.3e-23   6.5e-20       4     103 ..       2     101 ..       1     104 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 70.7 bits;  conditional E-value: 1.3e-23
+        emrC   4 swiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 +wiyll+a l+e+  ++ +k ++gftkl psv+   +  l++ +l+ al+++ v  ay++w+g+g+v  a +g++ f e + + +++ i li+ g++g+
+  EKF01394.1   2 AWIYLLIAGLLEMGWAIGLKYTQGFTKLAPSVVTVACMILSFVLLSKALRTLPVGTAYAIWTGIGAVGTALLGVVLFGEPAEMKRFFCIGLIVAGLLGL 100
+                 7*************************************************************************************************8 PP
+
+        emrC 103 n 103
+                  
+  EKF01394.1 101 R 101
+                 6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         9972  (2716567 residues searched)
+Passed MSV filter:                       341  (0.0341957); expected 199.4 (0.02)
+Passed bias filter:                      156  (0.0156438); expected 199.4 (0.02)
+Passed Vit filter:                        13  (0.00130365); expected 10.0 (0.001)
+Passed Fwd filter:                         2  (0.000200562); expected 0.1 (1e-05)
+Initial search space (Z):               9972  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 5759.12
+//
+[ok]

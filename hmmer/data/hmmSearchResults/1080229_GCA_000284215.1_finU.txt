@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080229_GCA_000284215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-10   37.3   0.0    3.4e-10   37.2   0.0    1.0  1  BAL33876.1  NifU protein [Synechocystis sp. PCC 6803 substr. 
+     0.0018   15.2   1.1     0.0018   15.2   1.1    1.0  1  BAL31866.1  glycoprotein 64 [Synechocystis sp. PCC 6803 subst
+
+
+Domain annotation for each sequence (and alignments):
+>> BAL33876.1  NifU protein [Synechocystis sp. PCC 6803 substr. PCC-N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.2   0.0   2.2e-13   3.4e-10     234     292 ..       9      67 ..       3      76 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 37.2 bits;  conditional E-value: 2.2e-13
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 e v +elr+ l++d+++v+  + d+ ++kv l++a++s+ s++++lk+ +e +l++ + 
+  BAL33876.1   9 ETVLDELRPYLMADGGNVEVVELDGPIVKVRLQGACGSCPSSTMTLKMGIERKLREMIP 67 
+                 4566789***********************************************98774 PP
+
+>> BAL31866.1  glycoprotein 64 [Synechocystis sp. PCC 6803 substr. PCC-N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   1.1   1.1e-06    0.0018     143     196 ..       2      54 ..       1      58 [] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.1e-06
+        finU 143 lvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkk 196
+                  +c c gis+++i     ++ +t+ e++++ +  G  cG c  +  ++++++ +
+  BAL31866.1   2 YICVCRGISDKQIEAA-AQQGITSLEELSESMGVGADCGVCQGHACQVLEAIAR 54 
+                 59***********875.6789********************9988888887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         3169  (1030668 residues searched)
+Passed MSV filter:                       100  (0.0315557); expected 63.4 (0.02)
+Passed bias filter:                       82  (0.0258757); expected 63.4 (0.02)
+Passed Vit filter:                         5  (0.00157778); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000631114); expected 0.0 (1e-05)
+Initial search space (Z):               3169  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10306.68
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59919_GCA_000011465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpB  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.5e-59  196.6  19.1    7.1e-59  196.3  19.1    1.0  1  CAE18830.1  putative cyanate ABC transporter [Prochlorococcus
+    0.00035   16.8   5.2    0.00035   16.8   5.2    2.2  2  CAE19182.1  putative phosphate ABC transporter [Prochlorococc
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE18830.1  putative cyanate ABC transporter [Prochlorococcus marinus subsp. pastoris str. CCMP1986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  196.3  19.1   7.2e-62   7.1e-59      28     272 ..      11     255 ..       2     258 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 196.3 bits;  conditional E-value: 7.2e-62
+        cmpB  28 lippaiaiaiflvlwqlfswlp..gatlpgpiqviqdtwililypfydkggidkglfwqilaslqrvaisytlaaivgialgiligvnktlskaldplf 124
+                 ++  + +++if+++wq+++        +pg  + i+     +  pf+d+g  d g+ +++l sl+rv i+y+la +v i lg+l+g++k  + +l+p +
+  CAE18830.1  11 FVVTIFSLLIFIIIWQIIAQQGllVKNFPGSFKTINALIWWVSDPFFDNGPNDLGIGFNLLISLRRVLIGYSLAVLVAIPLGVLMGMSKLAQSSLNPYV 109
+                 56678899**********9864225789********99889999******************************************************* PP
+
+        cmpB 125 qllrtvpplawvpislaalrqnepaalfvifitaiwpilintavgvtqipqdynnvakvlqlsrkeyflnilipaalpyiftglriaiglawlaiiaae 223
+                 qll+ v plaw+p+ l  +r+ e + +fvifit+iwp linta gv  i  dy  v+k l  s+   +  +++pa +p i++g+ri++g awl i+aae
+  CAE18830.1 110 QLLKPVSPLAWLPVGLFVFRNSEITGIFVIFITSIWPTLINTAFGVASINPDYLRVSKSLGASKSITIRRVILPAIMPNILAGMRISMGTAWLVIVAAE 208
+                 *************************************************************************************************** PP
+
+        cmpB 224 ivmsgivgigffiwdayqnnnvsevilalvyigvvgllldklmawlqnk 272
+                 +++    gig+fiw+ ++n ++ ++ +a++ ig  g++ld+++ +lq k
+  CAE18830.1 209 MLLG--TGIGYFIWNEWNNLSLENIFVAIIIIGFTGFILDQFFGFLQDK 255
+                 9997..6**************************************9986 PP
+
+>> CAE19182.1  putative phosphate ABC transporter [Prochlorococcus marinus subsp. pastoris str. CCMP1986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.3     0.092        90     150     171 ..      79     100 ..      70     140 .. 0.58
+   2 !   16.8   5.2   3.6e-07   0.00035     134     226 ..     157     250 ..     117     310 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 0.092
+        cmpB 150 alfvifitaiwpilintavgvt 171
+                 a++  ++t+i+ +li   +gv 
+  CAE19182.1  79 AIYGTLVTSIFSLLITIPLGVG 100
+                 4455556666666665555553 PP
+
+  == domain 2  score: 16.8 bits;  conditional E-value: 3.6e-07
+        cmpB 134 awvpislaalrqnepaalfvifitaiwpilintav.gvtqipqdynnvakvlqlsrkeyflnilipaalpyiftglriaiglawlaiiaaeivm 226
+                  w+p+  +     +    ++i++  + pi+   a   ++q+p+   n a  +  sr + ++ +++paal  i++g+ +a+g a    +a  +++
+  CAE19182.1 157 GWIPLFSSEPAGRNSLLAIIILVVMLLPIVTSIARdSLNQVPKKLRNAAYGIGASRWKTIFSVILPAALSGIMAGILLALGRAMGETMAVTMII 250
+                 566654333333233333567778889999887752689*******************************************998888877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (279 nodes)
+Target sequences:                         1948  (498304 residues searched)
+Passed MSV filter:                        72  (0.036961); expected 39.0 (0.02)
+Passed bias filter:                       31  (0.0159138); expected 39.0 (0.02)
+Passed Vit filter:                         5  (0.00256674); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00102669); expected 0.0 (1e-05)
+Initial search space (Z):               1948  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6951.34
+//
+[ok]

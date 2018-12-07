@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.8e-154  511.4   7.0     2e-154  511.3   7.0    1.0  1  ONN60693.1  Fe-S cluster assembly protein NifU, partial [Mast
+    0.00026   18.4   0.0    0.00034   18.0   0.0    1.1  1  ONN60643.1  hypothetical protein BLD44_17710 [Mastigocladus l
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN60693.1  Fe-S cluster assembly protein NifU, partial [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  511.3   7.0  9.3e-158    2e-154       3     300 .]       1     304 []       1     304 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 511.3 bits;  conditional E-value: 9.3e-158
+        finU   3 dytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdiady 101
+                 dytdkvlelfynp+ qG++ed++e+G+kvavG+vGsiacGdalrlhlkve++++ki++arfqtfGctsaiassealvelikG+tldealkv+nk+ia+y
+  ONN60693.1   1 DYTDKVLELFYNPQHQGAIEDKGEAGIKVAVGDVGSIACGDALRLHLKVEENTEKILEARFQTFGCTSAIASSEALVELIKGKTLDEALKVTNKEIANY 99 
+                 9************************************************************************************************** PP
+
+        finU 102 lGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaa 200
+                 lGGlpeakmhcsvmGqealeaaiynyrGipl++h+dddeG+l+ctcfgis++kirrvivennlttae+vtnyvkaGGGcGscla+iddii +v+ke+a+
+  ONN60693.1 100 LGGLPEAKMHCSVMGQEALEAAIYNYRGIPLDTHEDDDEGTLICTCFGISDAKIRRVIVENNLTTAEEVTNYVKAGGGCGSCLANIDDIIVSVQKEKAS 198
+                 ************************************************************************************************998 PP
+
+        finU 201 tvrnslkk.ntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvd.....kdllkvalksassstaslkvalkialedrlskdlvv 293
+                 ++  s++  +t  + a k+l++v+ki+l++++lde+v+++l+a+++d+el +v++ ++        +kv+lk+a++s++s++++lkia+e+rl++++  
+  ONN60693.1 199 ATAVSNSLsQTNGKSAVKPLTPVQKIALIQRVLDEEVRPVLIADGGDVELFDVEGVSEpgresILRVKVILKGACGSCSSSTATLKIAIESRLRDRVSK 297
+                 766655540455677889999999999999999999999999999999999888754322111234677777777777777777777777777777777 PP
+
+        finU 294 elveelv 300
+                 +l++e+v
+  ONN60693.1 298 DLIVEAV 304
+                 7777765 PP
+
+>> ONN60643.1  hypothetical protein BLD44_17710 [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.0   0.0   1.6e-07   0.00034     189     287 ..      46     144 ..      40     155 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 18.0 bits;  conditional E-value: 1.6e-07
+        finU 189 diikdvkkesaatvrnslkkntasela.ekklkrvlkivlkiklld..evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkiale 284
+                  +ik+vk+es ++ rn  + +++  +   ++l +  +  lk++l +  e+v++ l++  +d+el  ++     d ++v l +++s + +++++l   +e
+  ONN60643.1  46 RLIKSVKQESISALRNAVQDEVVYGVLlYHELVKSPTPPLKQRLQQalEEVRPGLKSHNGDVELVAIKA---PDTVEVRLIGTCSNCPASTLTLSQGIE 141
+                 6899******99999999998876543133444444445555543311556666666666666655443...456666666666666666666666666 PP
+
+        finU 285 drl 287
+                 + +
+  ONN60643.1 142 QTI 144
+                 554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       153  (0.034844); expected 87.8 (0.02)
+Passed bias filter:                      117  (0.0266454); expected 87.8 (0.02)
+Passed Vit filter:                        13  (0.0029606); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.000683216); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8001.99
+//
+[ok]

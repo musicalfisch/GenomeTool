@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.8e-82  270.1   2.4    1.1e-81  270.0   2.4    1.0  1  AKG23321.1  ATP synthase F0F1 subunit epsilon [Calothrix sp. 
+  ------ inclusion threshold ------
+       0.34    9.3   7.5       0.15   10.4   3.5    2.3  2  AKG22277.1  methyltransferase [Calothrix sp. 336/3]
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG23321.1  ATP synthase F0F1 subunit epsilon [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  270.0   2.4   4.3e-85   1.1e-81       1     137 []       1     137 []       1     137 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 270.0 bits;  conditional E-value: 4.3e-85
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvisp kt+wda+aeev+lpsttgqlgil+ghapll+ald+gvmrvra kn++w+aial+ggfaevee+evtilvn+aergd+inleear++fn
+  AKG23321.1   1 MTLTVRVISPGKTIWDAAAEEVVLPSTTGQLGILTGHAPLLSALDAGVMRVRAGKNEKWVAIALMGGFAEVEENEVTILVNAAERGDSINLEEARTEFN 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +aqtklnqv+++drqaqiqatqafkrararfqaagg+v
+  AKG23321.1 100 QAQTKLNQVAPGDRQAQIQATQAFKRARARFQAAGGMV 137
+                 ************************************98 PP
+
+>> AKG22277.1  methyltransferase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.4      0.12   3.1e+02      90     122 ..     254     288 ..     241     290 .. 0.77
+   2 ?   10.4   3.5   6.1e-05      0.15      84     121 ..     290     329 ..     275     346 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.12
+        atpE  90 nleearaafneaqtklnq..vkaedrqaqiqatqa 122
+                 +le+  +++++++++l++  ++ e+ q+q+q + a
+  AKG22277.1 254 QLENYYQQYQQSNQELEKsnIRLENTQQQLQENSA 288
+                 57778888999988887522677899999998876 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 6.1e-05
+        atpE  84 ergdkinleearaafneaqtklnqvkae..drqaqiqatq 121
+                  +g+ i+leear++ ++++++l q+++e    q+q+q+ q
+  AKG22277.1 290 LQGNIIQLEEARSQLESTHAQLHQMQSEieRSQQQLQTLQ 329
+                 489********************99986214466777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       179  (0.0354947); expected 100.9 (0.02)
+Passed bias filter:                      129  (0.02558); expected 100.9 (0.02)
+Passed Vit filter:                        11  (0.00218124); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7358.58
+//
+[ok]

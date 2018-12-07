@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1921803_GCA_001904635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.5e-70  230.9   4.6    4.9e-70  230.8   4.6    1.0  1  OKH20517.1  transcriptional regulator [Hydrococcus rivularis 
+    2.2e-17   61.2   0.8    7.3e-12   43.5   0.1    2.0  2  OKH25204.1  P-II family nitrogen regulator [Hydrococcus rivul
+    4.8e-16   56.9   0.1    6.5e-16   56.5   0.1    1.2  1  OKH25205.1  nitrogen fixation protein NifHD [Hydrococcus rivu
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH20517.1  transcriptional regulator [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  230.8   4.6   3.4e-73   4.9e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 230.8 bits;  conditional E-value: 3.4e-73
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkk+eaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklk+eivved+qvdlvvdk+i+aartgeigdgkifispveq+
+  OKH20517.1   1 MKKIEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKIEIVVEDNQVDLVVDKLISAARTGEIGDGKIFISPVEQI 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgekdlea+
+  OKH20517.1 100 IRIRTGEKDLEAI 112
+                 ***********97 PP
+
+>> OKH25204.1  P-II family nitrogen regulator [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.1     1e-06    0.0015       1      40 [.       1      40 [.       1      46 [. 0.94
+   2 !   43.5   0.1     5e-15   7.3e-12      55     107 ..      69     121 ..      64     126 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 1e-06
+        glnB  1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqk 40
+                mk v a+irp k+   k alv ag   +   +v g g+q 
+  OKH25204.1  1 MKEVMAVIRPNKITPTKEALVAAGFPAFNAIKVVGRGKQA 40
+                99**************************999999999985 PP
+
+  == domain 2  score: 43.5 bits;  conditional E-value: 5e-15
+        glnB  55 flqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqvvrirtgek 107
+                 +l k  + +vv d++v  vv+ +iaa +tg+ gdgkif+ pve+ vr+  g  
+  OKH25204.1  69 LLAKRLISVVVPDDKVAKVVETLIAANQTGNPGDGKIFVLPVEEAVRVSNGVT 121
+                 6788899*****************************************98865 PP
+
+>> OKH25205.1  nitrogen fixation protein NifHD [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.5   0.1   4.4e-19   6.5e-16       4     109 ..       5     109 ..       2     112 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 56.5 bits;  conditional E-value: 4.4e-19
+        glnB   4 veaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeig...dgkifispveqv 99 
+                 v aiirp k  ev  al++ag   +t  +v g g+q g        +   + l k+ + +vv +++   v++ i+a+artg+ig   dgkif++pve+v
+  OKH25205.1   5 VRAIIRPEKCAEVMQALLDAGYPAVTKIDVYGRGKQGGLK----IGNVVYDELPKVCLMVVVPNSEKRFVIQTILASARTGNIGapgDGKIFVTPVEEV 99 
+                 89*****************************999999964....456677889******************************55559*********** PP
+
+        glnB 100 vrirtgekdl 109
+                   + +g+++ 
+  OKH25205.1 100 YTVSSGKQEY 109
+                 ***9999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         4392  (1417121 residues searched)
+Passed MSV filter:                       123  (0.0280055); expected 87.8 (0.02)
+Passed bias filter:                      108  (0.0245902); expected 87.8 (0.02)
+Passed Vit filter:                         5  (0.00113843); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.00068306); expected 0.0 (1e-05)
+Initial search space (Z):               4392  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7935.88
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/82654_GCA_000317065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.017   12.1   0.0      0.062   10.2   0.0    1.8  2  AFY68770.1  alpha/beta hydrolase fold protein [Pseudanabaena 
+      0.028   11.4   0.0      0.068   10.1   0.0    1.6  2  AFY69097.1  alpha/beta hydrolase fold protein [Pseudanabaena 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY68770.1  alpha/beta hydrolase fold protein [Pseudanabaena sp. PCC 7367]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   3.2e-05     0.062      75     117 ..      57      97 ..       2     112 .. 0.75
+   2 ?   -0.6   0.0     0.066   1.3e+02     118     134 ..     199     215 ..     147     222 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 3.2e-05
+        anaA  75 lieplvqeiypysqspfvffghslgsvvslevahqlgdrfgcf 117
+                 l + ++q    y++  f+++g slg +++le+a ++ dr+  +
+  AFY68770.1  57 LSNLIMQP--EYCHHRFILLGWSLGGILALELALKFPDRIAGM 97 
+                 44444443..477889***********************8754 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.066
+        anaA 118 pqclvvsgrkpphipcd 134
+                   clv++g +  hi + 
+  AFY68770.1 199 QPCLVIAGAQDRHITAA 215
+                 34999999999999765 PP
+
+>> AFY69097.1  alpha/beta hydrolase fold protein [Pseudanabaena sp. PCC 7367]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   3.6e-05     0.068      31     110 ..      50     129 ..      33     138 .. 0.85
+   2 ?   -3.0   0.0      0.34   6.5e+02     189     204 ..     242     257 ..     231     269 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 3.6e-05
+        anaA  31 pagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdli.eplvqeiypysqspfvffghslgsvvslevahql 110
+                   ga +  +r   a + +  ++wa+ + g   r  +p  t  g+l  e l + i    q p v+ g slg   +l va + 
+  AFY69097.1  50 GFGASTDHWRKNIAELSQEFEVWAIDLLGFG-RSAKPNCTYSGELWrEQLHDFINQIIQRPAVLAGNSLGGYACLCVAAEY 129
+                 5688888999999999************985.6677999*****9737788889999*****************9999765 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 0.34
+        anaA 189 kslpcpilalggeade 204
+                 k+  cp+l + ge d 
+  AFY69097.1 242 KTTTCPLLMIWGEGDP 257
+                 6678999999999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         3854  (1262343 residues searched)
+Passed MSV filter:                        86  (0.0223145); expected 77.1 (0.02)
+Passed bias filter:                       86  (0.0223145); expected 77.1 (0.02)
+Passed Vit filter:                        10  (0.00259471); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000518941); expected 0.0 (1e-05)
+Initial search space (Z):               3854  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10645.76
+//
+[ok]

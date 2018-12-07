@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170768_GCA_002027345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-35  118.3   0.0    6.3e-35  118.0   0.0    1.0  1  OPH09051.1  putative thioesterase [Cylindrospermopsis racibor
+     0.0074   12.9   0.0      0.024   11.2   0.0    1.7  2  OPH10509.1  acyl-CoA synthetase [Cylindrospermopsis raciborsk
+
+
+Domain annotation for each sequence (and alignments):
+>> OPH09051.1  putative thioesterase [Cylindrospermopsis raciborskii CENA302]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  118.0   0.0   4.1e-38   6.3e-35      18     239 ..      16     240 ..      10     248 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 118.0 bits;  conditional E-value: 4.1e-38
+        anaA  18 hhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgc 116
+                  h e +l lfc+p aga + +f +w   +p ++++  v +pgr  r+k p   +   l+  + + i p  + pf +fghs+g +v +e+a+ l   +  
+  OPH09051.1  16 PHSEPQLRLFCLPYAGARASVFYQWSKNLPSTVEVRGVELPGR-GRVKYPPCRKMELLVRAIAEHILPLLDRPFAIFGHSMGGLVGFELARLLRSEYAL 113
+                 5999**************************************9.59************************************************99986 PP
+
+        anaA 117 ...fpqclvvsgrkpphip.cdhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleel 211
+                     p  l +s r+ p+    d    +  d +++e++    gtp+ +l++pe+  + lpi rad+++ + y y  e  +  pi  +gg  d  v+ ++l
+  OPH09051.1 114 eyrTPLHLFISARNAPQNHsRDEGIYHLPDGEFLEKIAKYNGTPDEILKNPEMRELFLPILRADFEVLDTYIYKVEPPFDFPITVFGGSEDPMVNHDDL 212
+                 3336899******9887541566677889********************************************************************** PP
+
+        anaA 212 rewekytqrgfklrsfpgghmylteeke 239
+                   w+++t+r f   ++pg h+++   +e
+  OPH09051.1 213 VGWKEHTNRDFSCYTLPGNHFFIRSHQE 240
+                 **********************988777 PP
+
+>> OPH10509.1  acyl-CoA synthetase [Cylindrospermopsis raciborskii CENA302]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.0     0.026        39      71     132 ..     623     687 ..     609     691 .. 0.75
+   2 !   11.2   0.0   1.6e-05     0.024      65     112 ..     681     729 ..     644     743 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.026
+        anaA  71 rwgdlieplvqeiypysqspfvffghslgs..vvslevahqlgdrfgcfp.qclvvsgrkpphip 132
+                 +   l+   +  i p    p +f+ hslg   +    +a +lg    ++  qc  + g +pp + 
+  OPH10509.1 623 QNQGLVHSSLVAIQPQGSQPPLFLIHSLGGelLCYRHLAIHLGTEQPVYGlQCQGLDGEEPPLVR 687
+                 4555777777789999999999******9722334578889998888774499999999999775 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 1.6e-05
+        anaA  65 keplitrwgdlieplvqeiypy.sqspfvffghslgsvvslevahqlgd 112
+                 +ep + r  d+    +qei     q p+ + g+s+g vv+ e+a+ql  
+  OPH10509.1 681 EEPPLVRVEDMAAHYLQEIRTVqPQGPYFLGGYSFGGVVAYEMARQLEK 729
+                 588899*************875269*********************964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         3033  (982850 residues searched)
+Passed MSV filter:                        69  (0.0227498); expected 60.7 (0.02)
+Passed bias filter:                       66  (0.0217606); expected 60.7 (0.02)
+Passed Vit filter:                         8  (0.00263765); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000659413); expected 0.0 (1e-05)
+Initial search space (Z):               3033  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6216.53
+//
+[ok]

@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/179408_GCA_000317475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.3e-08   30.1   0.1     0.0038   14.5   0.0    2.2  2  AFZ07228.1  Cytosine deaminase [Oscillatoria nigro-viridis PC
+  ------ inclusion threshold ------
+      0.034   11.4   0.0       0.48    7.6   0.0    2.3  3  AFZ05313.1  dihydroorotase, multifunctional complex type [Osc
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ07228.1  Cytosine deaminase [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.0   1.2e-06    0.0038       9      60 ..      15      67 ..       8      75 .. 0.88
+   2 !   13.6   0.1   2.3e-06    0.0073     281     385 ..     274     386 ..     203     406 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.2e-06
+        cyrH  9 liaveddyatvdvqvvdgkiaaiapelevvgt.aidgenklllpgfvnahths 60
+                l+   dd  tvd+ +  +kiaa++p++  +g+  id   kl+ p fv++h h 
+  AFZ07228.1 15 LLGAGDDSETVDIAIDGDKIAAVSPHIPELGEsEIDVGGKLVSPPFVESHIHL 67
+                66778999*******************9988627*****************96 PP
+
+  == domain 2  score: 13.6 bits;  conditional E-value: 2.3e-06
+        cyrH 281 tvvhnplsnlrlg.........sgiapilkyrqagvnvtfgcdgassndsqdlleaikigsilhnvtdldyqhwit.prqavemaslggakglnladkl 369
+                   + npl n+ l           g++ +    q g+nv+fg d    +d    l + ++  + h   ++     ++    + +m ++ gak lnl ++ 
+  AFZ07228.1 274 NFIANPLINITLQgradtypkrRGVTRVKELWQQGLNVSFGGDCM--QDPWYSLGTGNMLDVAHMAVHVCQMTGMAeIAACFNMVTVNGAKTLNLGNEN 370
+                 55556666665531222222224888888999*********9875..444444444444445554444433333330345789**************** PP
+
+        cyrH 370 gsltvgkkadlvlydl 385
+                   ++ gk a+l++ d 
+  AFZ07228.1 371 YGIDAGKPANLIVLDA 386
+                 ************9986 PP
+
+>> AFZ05313.1  dihydroorotase, multifunctional complex type [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.0   0.00015      0.48      13      61 ..      18      67 ..       6      71 .. 0.79
+   2 ?   -2.7   0.0       0.2   6.3e+02     190     240 ..     194     247 ..     176     256 .. 0.64
+   3 ?    0.6   0.0     0.019        61     359     392 ..     356     388 ..     341     396 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.00015
+        cyrH 13 eddyatvdvqvvdgkiaaiapelevvg.taidgenklllpgfvnahthss 61
+                + ++   dvq+ d +i ++a+e+   g   id++   llpg ++ + h  
+  AFZ05313.1 18 NGEFLVGDVQICDRQIVKVAAEIVESGdREIDAKGLTLLPGVIDPQVHFR 67
+                4567788*************9986655268*************9998865 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.2
+        cyrH 190 egvsilvaptgiqlcsdalfeg..cielsdkynlcrhs.hlletkaqeklaqek 240
+                  g+s +   + iq    al+      +ls+ky+   h  hl      e l qek
+  AFZ05313.1 194 AGISDVAVHSQIQDNQAALLATqlALKLSKKYQRRLHIlHLSTGDEAELLRQEK 247
+                 466666666677777777765522457788888777752444444556666776 PP
+
+  == domain 3  score: 0.6 bits;  conditional E-value: 0.019
+        cyrH 359 gakglnladklgsltvgkkadlvlydltnlsllp 392
+                  ak  ++  k g+++ g  adlvl dl n   + 
+  AFZ05313.1 356 VAKAYKIP-KKGAIAPGFDADLVLVDLENYRPVV 388
+                 55555554.5699**************9976555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         6360  (2131415 residues searched)
+Passed MSV filter:                       125  (0.0196541); expected 127.2 (0.02)
+Passed bias filter:                      107  (0.0168239); expected 127.2 (0.02)
+Passed Vit filter:                         9  (0.00141509); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000314465); expected 0.1 (1e-05)
+Initial search space (Z):               6360  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 14158.69
+//
+[ok]

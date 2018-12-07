@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080068_GCA_001548395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.016   12.5   0.0      0.039   11.2   0.0    1.6  2  BAU41353.1  2-hydroxy-6-oxo-6-(2'-aminophenyl)hexa-2, 4-dieno
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU41353.1  2-hydroxy-6-oxo-6-(2'-aminophenyl)hexa-2, 4-dienoic acid hydrolase [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   8.1e-06     0.039      31     109 ..      58     136 ..      43     147 .. 0.85
+   2 ?   -3.0   0.0      0.18   8.6e+02     190     203 ..     249     262 ..     241     266 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 8.1e-06
+        anaA  31 pagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdliep.lvqeiypysqspfvffghslgsvvslevahq 109
+                   ga +  +r   a +    ++wa+ + g   r ++p i   gdl    l + i    + p+v+ g slg   sl v  q
+  BAU41353.1  58 GFGASTDHWRKNVAGLSADFEVWAIDLLGF-GRSQKPDIVYSGDLWRDqLHDFITDVIRRPVVLAGNSLGGYASLCVVAQ 136
+                 56888889999999999***********97.57888999******8651666788999*****************99877 PP
+
+  == domain 2  score: -3.0 bits;  conditional E-value: 0.18
+        anaA 190 slpcpilalggead 203
+                  + cp+l l ge d
+  BAU41353.1 249 QMRCPLLMLWGEGD 262
+                 57899999999988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4865  (1484008 residues searched)
+Passed MSV filter:                       146  (0.0300103); expected 97.3 (0.02)
+Passed bias filter:                      141  (0.0289825); expected 97.3 (0.02)
+Passed Vit filter:                        17  (0.00349435); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.00020555); expected 0.0 (1e-05)
+Initial search space (Z):               4865  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9386.35
+//
+[ok]

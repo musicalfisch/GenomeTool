@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752063_GCA_001548455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusC  [M=456]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.7e-15   52.6   4.5    9.7e-15   52.6   4.5    1.9  2  BAU08782.1  outer membrane efflux protein [Fischerella sp. NI
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU08782.1  outer membrane efflux protein [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.1      0.05   2.4e+02     254     297 ..     319     362 ..     311     370 .. 0.69
+   2 !   52.6   4.5     2e-18   9.7e-15     101     431 ..     392     724 ..     386     732 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.05
+        cusC 254 qavtnrtelksfdlqtqiakdqvrfvkstylpdvsleaaytgnd 297
+                  a  n t+l+   l+ + ak  +r  +++ +p v l a  t ++
+  BAU08782.1 319 LAQRNNTQLQIALLELERAKAALREAQAALFPTVDLSAGITRQQ 362
+                 45567777777777777777777777777777777777777655 PP
+
+  == domain 2  score: 52.6 bits;  conditional E-value: 2e-18
+        cusC 101 penaytwgakleqslslggrefialnmskkkieksktdfktvnenyllnvasayynilktqktlkiaqenlnrlekh.kdvtklrlkvgeitktvvlra 198
+                 p  +++  a+l   +   gr    +  +  ++     ++    e+  lnva  yyn+  ++  ++i q  +   e   +d   l  + g  t+  vlra
+  BAU08782.1 392 PSTSFSGQAQLIYNIYTSGRRSANIGAAEEQLRFQELNVANQSEEIRLNVAQNYYNLQEADENVRIRQSAVRNAEVTlRDAQAL-ERAGVGTQFDVLRA 489
+                 666666677777777778888888888888888888888888999*************************99998762555555.5788889******* PP
+
+        cusC 199 eaevsqaqsdviratnnlkmakanliklteiednftvretsfesididelasl..ke...qavtnrtelksfdlqtqiakdqvrfvkstylpdvsleaa 292
+                 +  +++aq ++ +a  + ++a+++l    +i d ++v  +    + +  l  l   +    a  nr el+    q +++ ++ r+  +   p++sl a+
+  BAU08782.1 490 QVTLANAQQQLSQALSQQRIARSQLATTLNIPDALSVNAAD--PVRLAGLWNLplEDtivLAYQNRPELQQQLAQRNLSEQRRRLALADLGPQISLVAS 586
+                 ***********************************998664..333444333311331114668********9************************** PP
+
+        cusC 293 ytgndts.pstsfnnkdviygqislkiplieggrrkaeideaksklkqsellykdlkstislevddayynlmtqqsvlgkiqdqlklakdnyekiseqf 390
+                 y   d    s s+ +   +   +   + l +gg  +a  d+ +++++ +e  ++d +  i ++v++ay +l ++   +   +  l  a++       +f
+  BAU08782.1 587 YNLLDQFdDSISVTDGYSL--GVQATLNLYDGGAARARADQQRANIRIAETQFNDTRNQIRFQVEQAYSELRANLDRVNTANIALEQARESLRLARLRF 683
+                 *998865145555555444..455667899**********************************************99********************* PP
+
+        cusC 391 kegfansidivdannflvsteqqlinaqydyqigililkra 431
+                 + g+    d++ a++ l  +e +++ a   y+  +  l+r+
+  BAU08782.1 684 QAGVGTQTDVIAAEDDLTEAEGNVVSAILSYNRALASLQRS 724
+                 *******************************9998888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (456 nodes)
+Target sequences:                         4939  (1543483 residues searched)
+Passed MSV filter:                       125  (0.0253088); expected 98.8 (0.02)
+Passed bias filter:                       70  (0.0141729); expected 98.8 (0.02)
+Passed Vit filter:                         4  (0.000809881); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.00020247); expected 0.0 (1e-05)
+Initial search space (Z):               4939  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14076.56
+//
+[ok]

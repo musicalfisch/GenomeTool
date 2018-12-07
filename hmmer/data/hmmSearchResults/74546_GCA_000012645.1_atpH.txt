@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74546_GCA_000012645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.4e-48  159.0   5.3    3.7e-48  158.8   5.3    1.0  1  ABB50608.1  ATP synthase F0 subcomplex C subunit [Prochloroco
+     0.0068   13.8   3.4      0.042   11.3   0.7    2.1  2  ABB49631.1  NADH dehydrogenase subunit NdhL (ndhL) [Prochloro
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB50608.1  ATP synthase F0 subcomplex C subunit [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  158.8   5.3   3.8e-51   3.7e-48       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 158.8 bits;  conditional E-value: 3.8e-51
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                md++++aasv+aa+lavGl+aiGpg+gqGnaa+ aveGiarqpeaeGkirgtllls+afmesltiyGlvvalvllfanpf+
+  ABB50608.1  1 MDSITSAASVVAAGLAVGLGAIGPGLGQGNAAQGAVEGIARQPEAEGKIRGTLLLSFAFMESLTIYGLVVALVLLFANPFS 81
+                9*******************************************************************************7 PP
+
+>> ABB49631.1  NADH dehydrogenase subunit NdhL (ndhL) [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   0.7   4.3e-05     0.042      57      76 ..      13      32 ..       5      36 .. 0.87
+   2 ?    3.4   0.1     0.012        12      60      71 ..      44      55 ..      39      67 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 4.3e-05
+        atpH 57 lafmesltiyGlvvalvllf 76
+                +a+m  +tiy lv+ l+l++
+  ABB49631.1 13 IAYMGVITIYLLVIPLLLFY 32
+                79**************9876 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.012
+        atpH 60 mesltiyGlvva 71
+                 e l iyGlv  
+  ABB49631.1 44 YERLGIYGLVFL 55
+                5899*****974 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         1962  (514473 residues searched)
+Passed MSV filter:                        46  (0.0234455); expected 39.2 (0.02)
+Passed bias filter:                       30  (0.0152905); expected 39.2 (0.02)
+Passed Vit filter:                         4  (0.00203874); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00101937); expected 0.0 (1e-05)
+Initial search space (Z):               1962  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4167.23
+//
+[ok]

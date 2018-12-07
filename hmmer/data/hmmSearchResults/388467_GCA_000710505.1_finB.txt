@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/388467_GCA_000710505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00037   16.9   0.5      0.001   15.4   0.0    1.8  2  KEI66255.1  MoaA [Planktothrix agardhii NIVA-CYA 126/8]
+
+
+Domain annotation for each sequence (and alignments):
+>> KEI66255.1  MoaA [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.1     0.056   2.4e+02      63      77 ..       9      23 ..       6      39 .. 0.85
+   2 !   15.4   0.0   2.4e-07     0.001     148     253 ..      88     182 ..      66     194 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 0.056
+        finB 63 vavapacniqcnycn 77
+                +++   cn +c+yc 
+  KEI66255.1  9 ISLIDRCNFRCQYCM 23
+                566778********5 PP
+
+  == domain 2  score: 15.4 bits;  conditional E-value: 2.4e-07
+        finB 148 lclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalkeadi.lckvnsvmipgindkhlvevnk 245
+                 ++++tng++l+e  + + +  +  + i+l+ +d +i  qi    +  r r++ v            g+qa  +      k+n v+ipg+nd+ ++++ k
+  KEI66255.1  88 VAMTTNGFLLAEMAEDLYNAGLRRINISLDSLDADIFDQIIG--NRGRSRWQQVW----------AGIQAAYQVGFnPLKLNVVVIPGVNDHEVLDLAK 174
+                 6799*******************************9999986..46788888775..........3566555444413589****************99 PP
+
+        finB 246 airergaf 253
+                 +  er   
+  KEI66255.1 175 LTIERQWH 182
+                 98877654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         4191  (1395461 residues searched)
+Passed MSV filter:                        82  (0.0195657); expected 83.8 (0.02)
+Passed bias filter:                       77  (0.0183727); expected 83.8 (0.02)
+Passed Vit filter:                         6  (0.00143164); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000238607); expected 0.0 (1e-05)
+Initial search space (Z):               4191  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 13368.52
+//
+[ok]

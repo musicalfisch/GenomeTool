@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aapJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805101_GCA_001919235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aapJ  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-11   41.5   0.1    5.6e-05   20.1   0.0    2.2  2  OLE57012.1  ABC transporter substrate-binding protein, partia
+    6.1e-05   20.0   0.0    7.5e-05   19.7   0.0    1.1  1  OLE35909.1  hypothetical protein AUI36_27215, partial [Cyanob
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE57012.1  ABC transporter substrate-binding protein, partial [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.0   5.7e-08   0.00012     106     259 ..     255     401 ..     242     413 .. 0.85
+   2 !   20.1   0.0   2.7e-08   5.6e-05      35      83 ..     456     505 ..     434     515 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 5.7e-08
+        aapJ 106 qtgevdilsrnttwtinrdtalgmefitpvfydgqgimatkasnikkledlsgksicvlsgttteqnladamakaavqgykpivsddvealytayqagr 204
+                 + g+vd++   +t t+ r+ a  ++f    +   q ++    s  k  +dl gk+++v+  +++e ++   +  a+ +    +v    +al    ++gr
+  OLE57012.1 255 EHGQVDVVV--ATLTMTRERAEQIDFSEAYYAAFQRLLVRADSPTKEPQDLRGKAVAVVKSSASEVDIVTLLPEACAR----VVGTYADALQ-ELDTGR 346
+                 678899886..688899999******99999999***********************************999988765....6666677775.4688** PP
+
+        aapJ 205 cqavtsdrsqlvarrsvfprpqdhqllevviskep..lapavadgdpawsnavrsiv 259
+                 + av +d + l+    +  +p  ++ll+  ++ ep   a ava g+p   +av   v
+  OLE57012.1 347 AAAVLADDTILLGL--IQQHPGRYRLLDKQLTTEPelYAAAVAKGNPELLEAVDGAV 401
+                 ********999875..667788999999999999855699*******9999987655 PP
+
+  == domain 2  score: 20.1 bits;  conditional E-value: 2.7e-08
+        aapJ  35 psadrlqtvknrgklicgingevpgfsfvnek.geysgldvqicraiaaa 83 
+                      l+ +k rg li+ ++ +vpgf + + k ge sgl+++++ra+a  
+  OLE57012.1 456 KRKTVLERIKARGYLIVAVKENVPGFGYRDPKtGELSGLEIDLARAMAQD 505
+                 334568899*******************986559************9975 PP
+
+>> OLE35909.1  hypothetical protein AUI36_27215, partial [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   0.0   3.5e-08   7.5e-05      32     201 ..      39     203 ..      22     251 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 3.5e-08
+        aapJ  32 anspsadrlqtvknrgklicgingevpgfsfvnekgeysgldvqicraiaaalfddpskveyrk..lspqerftavqtgevdilsrnttwtinrdtalg 128
+                   s     l+ +k+rg +i+  + + p f fv + g+  g d ++      a++   + ve r+  l  q  +  v +g+ d+    +  t +r     
+  OLE35909.1  39 VGSARGASLEDIKKRGYMIVATEDDYPPFEFVVD-GKPMGYDHELL-----AVLRKSAGVEVRQeiLPWQGILPGVASGKYDVALSAAVITDER--VKS 129
+                 5566778899**********************75.8999***9875.....4556677777775437779999*********988777666665..556 PP
+
+        aapJ 129 mefitpvfydgqgimatka.snikkledlsgksicvlsgttteqnladamakaavqgykpivsddvealytayq 201
+                 ++f  p+       +  k  + ik l+dlsgk++ v  g ++ q l +  a     g k     +  a+  ayq
+  OLE35909.1 130 LDFTMPISESTMAYVKRKGdTSIKGLKDLSGKTLGVQQGGASFQVLPELEAELKKTGGKLGNIVQYGAFSEAYQ 203
+                 799*****99999988886268********************99998887777666666444444455555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         4209  (1128809 residues searched)
+Passed MSV filter:                        78  (0.0185317); expected 84.2 (0.02)
+Passed bias filter:                       76  (0.0180565); expected 84.2 (0.02)
+Passed Vit filter:                         4  (0.000950344); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000475172); expected 0.0 (1e-05)
+Initial search space (Z):               4209  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.09
+# Mc/sec: 4402.36
+//
+[ok]

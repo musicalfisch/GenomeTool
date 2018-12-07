@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111781_GCA_000316605.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-50  164.9   0.8    6.7e-50  164.7   0.8    1.0  1  AFY38807.1  CpcD phycobilisome linker domain protein [Leptoly
+    0.00031   18.5   0.0    0.00078   17.2   0.0    1.6  1  AFY37733.1  Ferredoxin--NADP(+) reductase [Leptolyngbya sp. P
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY38807.1  CpcD phycobilisome linker domain protein [Leptolyngbya sp. PCC 7376]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.7   0.8   3.2e-53   6.7e-50       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.7 bits;  conditional E-value: 3.2e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGki+kvelatGkpg+ntGl
+  AFY38807.1  1 MRMFKITACVPSQTRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIMKVELATGKPGANTGL 66
+                9****************************************************************9 PP
+
+>> AFY37733.1  Ferredoxin--NADP(+) reductase [Leptolyngbya sp. PCC 7376]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   0.0   3.7e-07   0.00078      26      56 ..      41      69 ..      34      76 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 3.7e-07
+        apcC 26 yftklvpydnWfreqqrimkmGGkivkvela 56
+                +ft  vpy    +e +rim mGGki+ ++ a
+  AFY37733.1 41 FFT--VPYSRMNQEMKRIMSMGGKILSIRPA 69
+                666..9*******************998755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         4228  (1410186 residues searched)
+Passed MSV filter:                       105  (0.0248344); expected 84.6 (0.02)
+Passed bias filter:                       94  (0.0222327); expected 84.6 (0.02)
+Passed Vit filter:                         8  (0.00189215); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000473037); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4724.12
+//
+[ok]

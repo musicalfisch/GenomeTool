@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1925591_GCA_001890975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.6e-16   55.1   0.0    7.5e-16   54.7   0.0    1.2  1  OJJ14783.1  ferredoxin-NADP reductase [Roseofilum reptotaeniu
+    1.5e-08   30.6   0.0    1.6e-08   30.4   0.0    1.0  1  OJJ20693.1  flavohemoprotein [Roseofilum reptotaenium AO1-A]
+
+
+Domain annotation for each sequence (and alignments):
+>> OJJ14783.1  ferredoxin-NADP reductase [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.7   0.0     3e-19   7.5e-16    1208    1387 ..     164     354 ..     125     384 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 54.7 bits;  conditional E-value: 3e-19
+        cysJ 1208 qkprlysisscpllh...prriqitvgvlqv.ttdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s         + + + v  l+    ++g+   g+cs yl+ l+ g+ v i   +   +  p d  + ++m+g gtg++p+ a+l +  
+  OJJ14783.1  164 HKLRLYSIASTRHGDdeeDKTVSLCVRQLEYkQPETGETVYGVCSTYLCNLEAGADVAITGpVGKEMLLPDDEESTVIMMGTGTGIAPFRAYLWRMF 260 
+                  57899***9997654111455566666565424589**********************985266788999***********************9887 PP
+
+        cysJ 1300 alqnqgisl.geahlyfgcrnpsdfiyqeqlqvwrdr.nvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmad 1387
+                    q +   + g a l+fg     +++y+e+l+  ++       l  a+sr  ++    k y+q+ ++++ +++w+++ +p+ h y+cg   m  
+  OJJ14783.1  261 KEQHEDYKFrGFAWLFFGIPYSQNILYREELEKMQQEfPDNFRLTYAISREQKNpeggKMYIQDRIKENADELWELVQKPNTHIYMCGLKGMEP 354 
+                  777776654399******************986654413445666777775543333489****************************887765 PP
+
+>> OJJ20693.1  flavohemoprotein [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.4   0.0   6.3e-12   1.6e-08     349     450 ..      21     121 ..       2     132 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 30.4 bits;  conditional E-value: 6.3e-12
+        cysJ 349 qmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhsfadvptcaypamsetlfvlferylp.nftpelrqg 446
+                 ++   fy  lf   p   p+f ++dm      l+q+l f v  l+    +e+ + l+ lg  h       + yp +  +l+  fe+yl  ++tpe++q 
+  OJJ20693.1  21 EFVESFYTYLFTDNPDAKPLFEHTDMKKQKQMLLQSLVFTVENLKK--PEELSNALKGLGARHVKYGALPAHYPLVGGALLKTFEQYLGdDWTPEVKQA 117
+                 55567**************************************986..689************877777789****************6369******* PP
+
+        cysJ 447 wqil 450
+                 w   
+  OJJ20693.1 118 WIDA 121
+                 *654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         4978  (1623265 residues searched)
+Passed MSV filter:                       127  (0.0255123); expected 99.6 (0.02)
+Passed bias filter:                      101  (0.0202893); expected 99.6 (0.02)
+Passed Vit filter:                         8  (0.00160707); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000401768); expected 0.0 (1e-05)
+Initial search space (Z):               4978  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.15
+# Mc/sec: 16016.21
+//
+[ok]

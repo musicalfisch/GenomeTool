@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710896_GCA_001672105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.7e-145  482.2   4.5   1.9e-145  482.1   4.5    1.0  1  OBQ37171.1  ATP synthase F0F1 subunit gamma, partial [Aphaniz
+   4.4e-111  369.2   4.0   4.9e-111  369.0   4.0    1.0  1  OBQ34520.1  ATP synthase F0F1 subunit gamma, partial [Aphaniz
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ37171.1  ATP synthase F0F1 subunit gamma, partial [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  482.1   4.5  7.2e-149  1.9e-145       1     232 [.       1     232 []       1     232 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 482.1 bits;  conditional E-value: 7.2e-149
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 manlk+irdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvl++lqtrlrfedv+lpllkkrevk+vgllvisgdrglcggynsnvir
+  OBQ37171.1   1 MANLKSIRDRIQSVKNTKKITEAMRLVAAARVRRAQEQVIATRPFADRLAQVLFSLQTRLRFEDVNLPLLKKREVKTVGLLVISGDRGLCGGYNSNVIR 99 
+                 9************************************************************************************************** PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgl 198
+                 raenrakel++eg++y++vlvgrkatqyfqrr+qpidatysgleqiptaaea++iadellslfl+ekvdrielvytkfvslvssrpv+qtllpld+qgl
+  OBQ37171.1 100 RAENRAKELQSEGVNYTYVLVGRKATQYFQRRNQPIDATYSGLEQIPTAAEATNIADELLSLFLAEKVDRIELVYTKFVSLVSSRPVIQTLLPLDTQGL 198
+                 *************************************************************************************************** PP
+
+        atpC 199 eaaddeifrlttrggqfeverekvtsevralprd 232
+                 eaadde+frlttrggqf+verekv+s+v+alp+d
+  OBQ37171.1 199 EAADDEVFRLTTRGGQFQVEREKVASTVTALPSD 232
+                 ********************************98 PP
+
+>> OBQ34520.1  ATP synthase F0F1 subunit gamma, partial [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  369.0   4.0  1.8e-114  4.9e-111     134     315 .]       1     182 []       1     182 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 369.0 bits;  conditional E-value: 1.8e-114
+        atpC 134 pidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgleaaddeifrlttrggqfeverekvtsevralprd 232
+                 pidatysgleqiptaaea++iadellslfl+ekvdrielvytkfvslvssrpv+qtllpld+qgleaadde+frlttrggqf+verekv+s+v+alp+d
+  OBQ34520.1   1 PIDATYSGLEQIPTAAEATNIADELLSLFLAEKVDRIELVYTKFVSLVSSRPVIQTLLPLDTQGLEAADDEVFRLTTRGGQFQVEREKVASTVTALPSD 99 
+                 79************************************************************************************************* PP
+
+        atpC 233 mifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkarqaaitqellevvggaealk 315
+                 mifeqdpvqildsllplylsnqllralqesaaselaarmtamsnas+na+eliksl+lsynkarqaaitqellevvggaeal+
+  OBQ34520.1 100 MIFEQDPVQILDSLLPLYLSNQLLRALQESAASELAARMTAMSNASENAGELIKSLSLSYNKARQAAITQELLEVVGGAEALT 182
+                 *********************************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         5296  (1424099 residues searched)
+Passed MSV filter:                       140  (0.026435); expected 105.9 (0.02)
+Passed bias filter:                       93  (0.0175604); expected 105.9 (0.02)
+Passed Vit filter:                         6  (0.00113293); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000377644); expected 0.1 (1e-05)
+Initial search space (Z):               5296  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 11214.78
+//
+[ok]

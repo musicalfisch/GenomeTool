@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1655601_GCA_001438415.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrB  [M=528]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00014   17.1   2.4    0.00014   17.1   2.4    2.8  3  KRO92864.1  MFS transporter [cyanobacterium BACL30 MAG-120619
+
+
+Domain annotation for each sequence (and alignments):
+>> KRO92864.1  MFS transporter [cyanobacterium BACL30 MAG-120619-bin27]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   2.4   8.5e-08   0.00014     106     200 ..     107     200 ..      42     220 .. 0.78
+   2 !    5.4   1.8    0.0003      0.49     134     192 ..     253     311 ..     226     336 .. 0.79
+   3 ?   -1.7   0.0     0.044        73     467     512 ..     353     402 ..     338     416 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 8.5e-08
+        emrB 106 fainlpllvvsrilqglgGGgllakaqailfetfPaeqqglaqavfgvgviagaaigpllGglltdslgrriifiinlpvgiaavlmalflladd 200
+                 +++ l+ll  +r+ +g+ GG  +a a+a+l ++ P+e++  a  + gv+   g + gp lGgll +      +++ +   ++  vl++ +l+  +
+  KRO92864.1 107 AGLPLALLFGARLIDGVSGGT-AATASAVLADISPPEKRAKAFGLIGVAFGLGFILGPALGGLLGQINVTLPLLVAVAIAVLNLVLVLTVLPETH 200
+                 56678899999*****99886.78899************99999999999999**********99988777777666666666666555555444 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.0003
+        emrB 134 ilfetfPaeqqglaqavfgvgviagaaigpllGglltdslgrriifiinlpvgiaavlm 192
+                  + + f    +++a a+ +vgv+a+ + g l G l++  + +r+ +    +v++   l+
+  KRO92864.1 253 YFKQAFNWGPGLAASAFLVVGVVATVVQGGLIGPLVKRFGEWRLTLAGLGFVIAGCLLI 311
+                 45566777788999**************************9999877666666655554 PP
+
+  == domain 3  score: -1.7 bits;  conditional E-value: 0.044
+        emrB 467 Gedaatahqqalasldqlvnlqasilsfadi.....fwvvGvvflvslPll 512
+                 G+ aa    q l+sl   +    + l+++ +     fw +G+++lv + ll
+  KRO92864.1 353 GQGAALGSLQGLQSLGSFLGPPLAGLAYETTgrqspFW-LGIALLVGVALL 402
+                 55555555555555555555555555555442222233.355555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (528 nodes)
+Target sequences:                         1670  (428081 residues searched)
+Passed MSV filter:                        91  (0.054491); expected 33.4 (0.02)
+Passed bias filter:                       33  (0.0197605); expected 33.4 (0.02)
+Passed Vit filter:                         3  (0.00179641); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000598802); expected 0.0 (1e-05)
+Initial search space (Z):               1670  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5650.67
+//
+[ok]

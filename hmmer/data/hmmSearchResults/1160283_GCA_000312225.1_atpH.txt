@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160283_GCA_000312225.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+    2.7e-49  163.7   7.6      3e-49  163.6   7.6    1.0  1  lcl|HE973368.1_prot_CCI19704.1_4241  [protein=ATP synthase subunit c]
+    9.8e-23   78.6   3.6    1.1e-22   78.5   3.6    1.0  1  lcl|HE973365.1_prot_CCI18956.1_3574  [protein=ATP synthase subunit c 
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|HE973368.1_prot_CCI19704.1_4241  [protein=ATP synthase subunit c] [protein_id=CCI19704.1] [location=112361..11260
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.6   7.6   1.2e-52     3e-49       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 163.6 bits;  conditional E-value: 1.2e-52
+                                 atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllf 76
+                                         m+p+vaaasviaaalavGlaaiGpg+gqG+a+g+av+GiarqpeaeG+irgtlllslafmesltiyGlv+alvllf
+  lcl|HE973368.1_prot_CCI19704.1_4241  1 MNPTVAAASVIAAALAVGLAAIGPGVGQGTASGEAVSGIARQPEAEGRIRGTLLLSLAFMESLTIYGLVIALVLLF 76
+                                         9*************************************************************************** PP
+
+                                 atpH 77 anpfa 81
+                                         anpfa
+  lcl|HE973368.1_prot_CCI19704.1_4241 77 ANPFA 81
+                                         ****7 PP
+
+>> lcl|HE973365.1_prot_CCI18956.1_3574  [protein=ATP synthase subunit c 2] [protein_id=CCI18956.1] [location=complement(
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   78.5   3.6   4.5e-26   1.1e-22       4      80 ..       6      82 ..       1      83 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 78.5 bits;  conditional E-value: 4.5e-26
+                                 atpH  4 lvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanp 79
+                                         l+a  s++aa+l++ +++iGp++g+G a +qa+  +a+qp+    i  tl++ laf+es++iy +v++l+l+fanp
+  lcl|HE973365.1_prot_CCI18956.1_3574  6 LTAMISILAAGLTMAIGSIGPALGEGRAIAQALTALAQQPDEANTITRTLFVGLAFIESVAIYCFVISLILIFANP 81
+                                         57889*********************************************************************** PP
+
+                                 atpH 80 f 80
+                                         f
+  lcl|HE973365.1_prot_CCI18956.1_3574 82 F 82
+                                         9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         4793  (1312914 residues searched)
+Passed MSV filter:                       178  (0.0371375); expected 95.9 (0.02)
+Passed bias filter:                       97  (0.0202378); expected 95.9 (0.02)
+Passed Vit filter:                        11  (0.00229501); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000417275); expected 0.0 (1e-05)
+Initial search space (Z):               4793  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5317.30
+//
+[ok]

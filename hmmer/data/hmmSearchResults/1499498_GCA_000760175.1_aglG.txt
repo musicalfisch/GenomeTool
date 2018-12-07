@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglG  [M=275]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      0.002   14.1   2.4      0.014   11.4   0.0    2.6  3  KGG12903.1  Ferric iron ABC transporter [Prochlorococcus sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG12903.1  Ferric iron ABC transporter [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.1      0.15   2.9e+02     109     127 ..      14      31 ..       3      43 .. 0.50
+   2 !    1.9   0.1    0.0057        11      90     125 ..      75     110 ..      57     192 .. 0.79
+   3 !   11.4   0.0   7.2e-06     0.014     160     219 ..     404     461 ..     394     497 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.15
+        aglG 109 lvvlatlvipfqllvipif 127
+                 l+ l ++v+ f l++ pif
+  KGG12903.1  14 LLNLLAIVLAF-LILWPIF 31 
+                 33333333333.2223444 PP
+
+  == domain 2  score: 1.9 bits;  conditional E-value: 0.0057
+        aglG  90 alagyalarlkfrgrqalllvvlatlvipfqllvip 125
+                 ++ g+ la  +f+gr+ l +  l  l  p  ll   
+  KGG12903.1  75 TINGWLLANCRFNGRKFLRIAQLLPLATPAYLLSAT 110
+                 578999***********9999999999998888654 PP
+
+  == domain 3  score: 11.4 bits;  conditional E-value: 7.2e-06
+        aglG 160 fqtipveleeaaaidganrlqilwrvllplarpalvtlflftfigewndlfkplvfttrp 219
+                 f+ i  +++eaa+  g++  +il ++ lpl +  +   fl+ f+   ++l  pl f  rp
+  KGG12903.1 404 FERINPNIDEAATSLGSQWKEILNKIHLPLLKGPIAVGFLLIFVDTLKEL--PLTFVLRP 461
+                 7888899**************************9**********999998..88888888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (275 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        74  (0.0387841); expected 38.2 (0.02)
+Passed bias filter:                       37  (0.019392); expected 38.2 (0.02)
+Passed Vit filter:                         1  (0.000524109); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000524109); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6855.24
+//
+[ok]

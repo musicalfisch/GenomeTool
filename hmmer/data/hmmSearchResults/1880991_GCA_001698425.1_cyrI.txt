@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880991_GCA_001698425.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrI  [M=276]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   13.3   0.3       0.98    7.0   0.0    2.3  2  OCQ99623.1  chemotaxis protein [Oscillatoriales cyanobacteriu
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ99623.1  chemotaxis protein [Oscillatoriales cyanobacterium USR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.2   0.1    0.0014         7      84     179 ..     179     272 ..     150     297 .. 0.72
+   2 ?    7.0   0.0    0.0002      0.98      90     141 ..     318     369 ..     305     383 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 4.2 bits;  conditional E-value: 0.0014
+        cyrI  84 eeekedaklledayaeikrmRrlvrntisPilrlivkldvileeicslakllekklfagivveikrdfedafeldvmadvllrdikDkpsiillla 179
+                  + ke+   +++  a  ++m  +v++ i    +  vk  +++e+  ++++++     + ++   k +   +   +      l  i Dk++ i+ + 
+  OCQ99623.1 179 ASGKELEATMNEQTASTNEMAATVKE-IAATSSQLVKTMDEVEYTSQATAQGTADSQKDLIHMEKTMRLLSDATNNISS-KLGTISDKANSINSIV 272
+                 46688888888899999*******97.56677888999999*****999999888877777665555544444443333.3456677777777665 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.0002
+        cyrI  90 aklledayaeikrmRrlvrntisPilrlivkldvileeicslakllekklfa 141
+                 a+   d  + +k+m   v   ++ +++   +++ ++e++ +++++le + ++
+  OCQ99623.1 318 AVATLDIETMVKDMQSSVSTGVMEMDKFTKEVERVVEDVRNIGAKLESIIGQ 369
+                 555568899**************************************99875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (276 nodes)
+Target sequences:                         4908  (1600603 residues searched)
+Passed MSV filter:                       139  (0.0283211); expected 98.2 (0.02)
+Passed bias filter:                      111  (0.0226161); expected 98.2 (0.02)
+Passed Vit filter:                         5  (0.00101874); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000203749); expected 0.0 (1e-05)
+Initial search space (Z):               4908  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 11044.16
+//
+[ok]

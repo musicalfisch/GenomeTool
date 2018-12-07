@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-57  193.0  13.0    1.2e-57  192.9  13.0    1.0  1  KYC37116.1  ATP synthase F0F1 subunit B' [Scytonema hofmannii
+  ------ inclusion threshold ------
+      0.014   14.3  15.9      0.039   12.9  15.9    1.8  1  KYC37115.1  ATP synthase F0F1 subunit B [Scytonema hofmannii 
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC37116.1  ATP synthase F0F1 subunit B' [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  192.9  13.0   2.4e-61   1.2e-57       1     139 [.       1     139 [.       1     141 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 192.9 bits;  conditional E-value: 2.4e-61
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlpvmalqf+lla +ln +fykpl+k ld+r +yir  +  ake+lak+e l ++yelql+ ar+q+q ++aqaqaeaqk+++e+va a+kea
+  KYC37116.1   1 MFDFDATLPVMALQFLLLAALLNVIFYKPLTKALDDRENYIRTNNLEAKERLAKAERLTKDYELQLADARRQAQSVVAQAQAEAQKITAEKVAEAEKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgp 139
+                  a++e va ei qqk+ea+rsle qv +lsrqil+kll p
+  KYC37116.1 100 QAQREQVAQEIDQQKQEALRSLEQQVDALSRQILDKLLEP 139
+                 **************************************98 PP
+
+>> KYC37115.1  ATP synthase F0F1 subunit B [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9  15.9   7.9e-06     0.039      15     134 ..      35     157 ..      24     165 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 7.9e-06
+        atpG  15 fillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaei 110
+                 +i la+++  +fy   + ls+ l+er   i  t   a  +   + + + e + +l+ a+ ++q+i+  ++ +a+      +a a k+    ke+ + ++
+  KYC37115.1  35 IINLAILVGVLFYfgrNVLSNTLNERRSNIEATIQEAEARAKEAASALFEVQQRLTQAQAEAQKILKASEENARASREAILAEAAKDVQRLKETASRDL 133
+                 566666666666643335666777776666666555544444444444455555666666666655444444444333344555555555566666666 PP
+
+        atpG 111 aqqkeeafrslegqvaslsrqile 134
+                   ++++a+  +  qv +++ q +e
+  KYC37115.1 134 DAERDKAIAFVRAQVVAMALQKVE 157
+                 666666666666666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       380  (0.038669); expected 196.5 (0.02)
+Passed bias filter:                      175  (0.0178081); expected 196.5 (0.02)
+Passed Vit filter:                        13  (0.00132289); expected 9.8 (0.001)
+Passed Fwd filter:                         2  (0.000203521); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.10
+# Mc/sec: 4545.21
+//
+[ok]

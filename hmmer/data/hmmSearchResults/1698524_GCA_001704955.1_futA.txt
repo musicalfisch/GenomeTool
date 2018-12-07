@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1698524_GCA_001704955.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.5e-251  830.5   2.2   2.8e-251  830.3   2.2    1.0  1  AOC51996.1  Ferric iron ABC transporter, iron-binding protein
+  ------ inclusion threshold ------
+      0.033   11.2   0.1      0.051   10.5   0.1    1.2  1  AOC52113.1  NAD(P)H-quinone oxidoreductase chain 5 [Microcyst
+
+
+Domain annotation for each sequence (and alignments):
+>> AOC51996.1  Ferric iron ABC transporter, iron-binding protein [Microcystis aeruginosa NIES-2481]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  830.3   2.2  1.3e-254  2.8e-251       1     351 []       1     351 []       1     351 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 830.3 bits;  conditional E-value: 1.3e-254
+        futA   1 mndkitrrvflgagtatlavavgqlgkinevsaqtkqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlw 99 
+                 mndkitrrvflgagtatlavavgqlgkinevsaqt+qlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlw
+  AOC51996.1   1 MNDKITRRVFLGAGTATLAVAVGQLGKINEVSAQTNQLNLYSSRHYNTDRRLYDNFTRQTGIKINLVEGEADPLIERIKSEGRNSPADILLTVDAGRLW 99 
+                 9************************************************************************************************** PP
+
+        futA 100 radqqgifapvnsriltqripanlrhpkghwfgfskrlrvimynkdrvnpreidsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcr 198
+                 radqqgifapvnsriltqripanlrhpkghwfgfskrlrvimynkdrvnpreidsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcr
+  AOC51996.1 100 RADQQGIFAPVNSRILTQRIPANLRHPKGHWFGFSKRLRVIMYNKDRVNPREIDSYADLTNPKWKGKVVTRSSSNIYSQSFTAWLIDIQGEAAAEKWCR 198
+                 *************************************************************************************************** PP
+
+        futA 199 glvanfarspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqn 297
+                 glvanfarspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdq+grgahvnisgggliktapnresaikfleylssneaqn
+  AOC51996.1 199 GLVANFARSPQGNDKAQIEAVAAGIADLALANTYYLAGYAEEKDPAKRAIYDQVGVIFPDQTGRGAHVNISGGGLIKTAPNRESAIKFLEYLSSNEAQN 297
+                 *************************************************************************************************** PP
+
+        futA 298 ffakgnqeypvvrgvaldpvlaklgrgkedtvsvanygpnlakavqvmnragwk 351
+                 ffakgnqeypvvrgvaldpvlaklgrgkedtvsvanygpnlakavqvmnragwk
+  AOC51996.1 298 FFAKGNQEYPVVRGVALDPVLAKLGRGKEDTVSVANYGPNLAKAVQVMNRAGWK 351
+                 *****************************************************8 PP
+
+>> AOC52113.1  NAD(P)H-quinone oxidoreductase chain 5 [Microcystis aeruginosa NIES-2481]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.1   2.4e-05     0.051     201     260 ..     262     320 ..     244     361 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2.4e-05
+        futA 201 vanfarspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqa 260
+                 +a +  s  gn  +  +a+a gi+   +a t   a +ae  d  k ai   vg if   +
+  AOC52113.1 262 IALIYASAYGNTATLAQAIAMGITKAGVAVTAINAEFAE-PDEIKTAIEKSVGFIFGSPT 320
+                 5566678899*9999**********************97.6899************8655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         4292  (1171098 residues searched)
+Passed MSV filter:                       103  (0.0239981); expected 85.8 (0.02)
+Passed bias filter:                       86  (0.0200373); expected 85.8 (0.02)
+Passed Vit filter:                        11  (0.00256291); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000465983); expected 0.0 (1e-05)
+Initial search space (Z):               4292  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 10276.38
+//
+[ok]

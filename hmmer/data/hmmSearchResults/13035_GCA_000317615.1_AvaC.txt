@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/13035_GCA_000317615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-31  106.8   0.0    2.4e-31  106.5   0.0    1.2  1  AFZ49860.1  putative O-methyltransferase [Dactylococcopsis sa
+  ------ inclusion threshold ------
+       0.02   12.0   0.0      0.052   10.6   0.0    1.6  2  AFZ50778.1  ubiquinone/menaquinone biosynthesis methyltransfe
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ49860.1  putative O-methyltransferase [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  106.5   0.0   1.4e-34   2.4e-31      47     218 ..     105     277 ..      59     279 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 106.5 bits;  conditional E-value: 1.4e-34
+        AvaC  47 eqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfdfvfidad 145
+                  +gq + ++v+   ak++leig+ftgysal +a alp +gk+iac++    +   r  ++ +   +ki + + pale++ kl + ge  +f++ fidad
+  AFZ49860.1 105 IEGQTLKMFVHMTKAKRILEIGMFTGYSALAMAEALPEDGKIIACEVDPYTAQFGRDCFDVSPHGNKITILVDPALESMKKLASEGE--TFQLAFIDAD 201
+                 4799******************************************98877789999*************************88776..699******* PP
+
+        AvaC 146 ksnydayyeralq..lvrsggiiaidnvfwsgrvaaad.stdnrtkiirslnakiqqdervnisiipigdgltlam 218
+                 k+ y  yy   ++  l+ sgg i +dn +  g+        ++    i  +n  i +d rv+  ++p+ dglt+  
+  AFZ49860.1 202 KTGYKDYYRLLMDegLLESGGYIFVDNTLLQGQAYLPPqQRNENGEAIAQFNQMIADDPRVEQVLLPLRDGLTMIR 277
+                 ********98775459**************99987654044455789999***********************975 PP
+
+>> AFZ50778.1  ubiquinone/menaquinone biosynthesis methyltransferase [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   3.1e-05     0.052      64     122 ..      52     110 ..      39     116 .. 0.88
+   2 ?   -3.6   0.0      0.67   1.1e+03      49      87 ..     165     203 ..     161     208 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3.1e-05
+        AvaC  64 aleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapal 122
+                 al++   +g  a+++a ++  +gk+i +d+s +   iar+  q+ g    i+   a al
+  AFZ50778.1  52 ALDLCCGSGDLAFILAKSIGKKGKVIGADFSPQQLEIARQRHQKQGQVYPIEWVEADAL 110
+                 6777778899999********************************99888887777776 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 0.67
+        AvaC  49 gqfmaflvqaigakkaleigvftgysalvvalalppegk 87 
+                 gqf  + ++ +    a ++g+   y+ +  +l   p+gk
+  AFZ50778.1 165 GQFQQWYLDNLVVSTAENLGLKEDYAYINPSLERFPQGK 203
+                 777777777777777777777777777777777777766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3337  (1011999 residues searched)
+Passed MSV filter:                       103  (0.030866); expected 66.7 (0.02)
+Passed bias filter:                       85  (0.025472); expected 66.7 (0.02)
+Passed Vit filter:                         7  (0.00209769); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000599341); expected 0.0 (1e-05)
+Initial search space (Z):               3337  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7421.33
+//
+[ok]

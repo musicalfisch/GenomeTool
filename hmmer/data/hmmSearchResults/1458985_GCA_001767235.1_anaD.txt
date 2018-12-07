@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1458985_GCA_001767235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.6e-56  185.1   4.8    9.5e-56  184.9   4.8    1.0  1  AOX04599.1  acyl carrier protein [Moorea producens PAL-8-15-0
+  ------ inclusion threshold ------
+      0.024   13.8   0.5      0.028   13.6   0.5    1.1  1  AOW99787.1  acyl carrier protein [Moorea producens PAL-8-15-0
+
+
+Domain annotation for each sequence (and alignments):
+>> AOX04599.1  acyl carrier protein [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  184.9   4.8   2.8e-59   9.5e-56       1      87 []       1      87 []       1      87 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 184.9 bits;  conditional E-value: 2.8e-59
+        anaD  1 mteekveqmlkefiiqelaydqtnlvltnnlkiieqrvidsmdifrlvrfveeevgifwepeelvlknfetidhikayilrklasev 87
+                mteek+eqmlkefi+qelaydq++lvltn+lkiieqrvidsmdifrlvrfveeevgifwepee+vl+nfetidhikay+lr+las+v
+  AOX04599.1  1 MTEEKLEQMLKEFITQELAYDQPDLVLTNDLKIIEQRVIDSMDIFRLVRFVEEEVGIFWEPEEFVLQNFETIDHIKAYVLRELASSV 87
+                9***********************************************************************************997 PP
+
+>> AOW99787.1  acyl carrier protein [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.5   8.2e-06     0.028       4      82 ..       3      82 ..       1      86 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 8.2e-06
+        anaD  4 ekveqmlkefiiqelaydqtnlvltnnlkiieqrv.idsmdifrlvrfveeevgifwepeelvlknfetidhikayilrk 82
+                e v + lk++i+qel  +     + +n  + e+ + ids+ +  l+ ++ee +   +   ++  + f +++ +   ++ k
+  AOW99787.1  3 ETVANKLKKLIVQELYVNLKLENIDDNAPLFEDGLgIDSLALVELITLIEEHFKFEFADSDIRAETFVSLNSLANLVVSK 82
+                678899*********887777778889999999876*****************998888888888888887777777666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         6706  (2323265 residues searched)
+Passed MSV filter:                       148  (0.0220698); expected 134.1 (0.02)
+Passed bias filter:                      123  (0.0183418); expected 134.1 (0.02)
+Passed Vit filter:                        13  (0.00193856); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.00029824); expected 0.1 (1e-05)
+Initial search space (Z):               6706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5053.10
+//
+[ok]

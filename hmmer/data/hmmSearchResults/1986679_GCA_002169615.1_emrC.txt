@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986679_GCA_002169615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-22   76.5   3.6    1.6e-22   76.4   3.6    1.0  1  OUW99104.1  ligand-binding protein SH3 [Cyanobacteria bacteri
+  ------ inclusion threshold ------
+      0.072   10.0   7.2       0.12    9.2   0.8    2.9  2  OUW99356.1  NAD(P)H-quinone oxidoreductase subunit 4 [Cyanoba
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW99104.1  ligand-binding protein SH3 [Cyanobacteria bacterium TMED229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.4   3.6   2.3e-25   1.6e-22       4     105 ..      10     111 ..       7     112 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 76.4 bits;  conditional E-value: 2.3e-25
+        emrC   4 swiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                  w  l+ ai  ev gt c++lseg+tk +p+vl+f++y +++++l+  +  i + ++y++w+g+gt+ i  +g   + + l+  +l+ i li  gv+ +
+  OUW99104.1  10 PWTLLFLAITAEVLGTSCLRLSEGMTKPLPTVLVFLAYAIAMALLSKVVLSIPLGLTYALWSGIGTIAIVLVGRFAYSQLLSPAQLVGIGLITAGVVLV 108
+                 5999**********************************************************************************************9 PP
+
+        emrC 103 nsa 105
+                 n +
+  OUW99104.1 109 NLG 111
+                 986 PP
+
+>> OUW99356.1  NAD(P)H-quinone oxidoreductase subunit 4 [Cyanobacteria bacterium TMED229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   0.8     0.016        11      35      89 ..     140     194 ..     137     203 .. 0.77
+   2 ?    9.2   0.8   0.00018      0.12      24      95 ..     283     355 ..     258     365 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.016
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvkl 89 
+                 + +f +  + l fl+  l+ i v +  ++w g      a+  +++   s  ++ l
+  OUW99356.1 140 IAVFAVQDMLLFFLAWELELIPVYLLLAIWGGKKRQYAATKFILYTAGSSLFILL 194
+                 7789999999*********************988887777666665555554444 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 0.00018
+        emrC  24 lsegftklipsvlifvfyglcl.tfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                 l    ++  p ++++ +  + + ++ ++a ++++  +ays  + +g vli + +   +  s +++++is  li
+  OUW99356.1 283 LPAAHSQFAPLLIVLGVVNIIYaALTSFAQRNLKRKIAYSSXSHMGFVLIGIGSFSALGTSGAMLQMISHGLI 355
+                 555566777777766555555415667999*********************9999999999999999998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         1375  (402758 residues searched)
+Passed MSV filter:                        48  (0.0349091); expected 27.5 (0.02)
+Passed bias filter:                       21  (0.0152727); expected 27.5 (0.02)
+Passed Vit filter:                         3  (0.00218182); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00145455); expected 0.0 (1e-05)
+Initial search space (Z):               1375  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4269.23
+//
+[ok]

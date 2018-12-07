@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.3e-07   25.8   0.0    9.9e-07   25.4   0.0    1.1  1  AKG24225.1  glutamine synthetase [Calothrix sp. 336/3]
+  ------ inclusion threshold ------
+       0.01   12.1   0.0      0.013   11.7   0.0    1.1  1  AKG22610.1  glutamine synthetase [Calothrix sp. 336/3]
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG24225.1  glutamine synthetase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.4   0.0   3.9e-10   9.9e-07     255     365 ..     176     286 ..     163     335 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 25.4 bits;  conditional E-value: 3.9e-10
+        glnN 255 fddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnws 351
+                 f + yf   p +  q +  e+   + + g+p   +h eva  gq e+   f     a+d       ++k  akk+g  + +  kp+ g ngsg h   s
+  AKG24225.1 176 FKEGYFPVPPtDTFQDIRTEMLLTMAQCGVPIEKQHHEVATgGQCELGFRFGKLIEAADWLMTYKYVIKNVAKKYGKTVTFMPKPIFGDNGSGMHCHQS 274
+                 66777776663456777788888999*************97369****99*99999****999999******************************999 PP
+
+        glnN 352 vgnatqgnlldpgd 365
+                 + +  q   l  gd
+  AKG24225.1 275 IWKGGQP--LFAGD 286
+                 9876553..44455 PP
+
+>> AKG22610.1  glutamine synthetase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   5.3e-06     0.013     271     363 ..     172     264 ..     155     299 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 5.3e-06
+        glnN 271 mqeveerlyrlgipaktrhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsvgnatqgnlldp 363
+                 ++++ + l   gip    + e   gq ei+  +  a  a+d q      +++ a++h + + +  k f    gsg h+  s+    q  l +p
+  AKG22610.1 172 INDIADALVAQGIPVEQYYPESGAGQQEISMRYTDALQAADWQIAFRETVHAVAQHHNLQASFLPKIFPEGAGSGCHLHLSLWRDGQNILPEP 264
+                 57888899999********************************************************************99988888766666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       124  (0.0245885); expected 100.9 (0.02)
+Passed bias filter:                      105  (0.0208209); expected 100.9 (0.02)
+Passed Vit filter:                         6  (0.00118977); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.08
+# Mc/sec: 14562.73
+//
+[ok]

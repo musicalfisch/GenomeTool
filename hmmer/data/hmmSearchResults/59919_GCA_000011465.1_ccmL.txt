@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59919_GCA_000011465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.8e-08   30.2   0.1    7.9e-08   29.5   0.1    1.4  1  CAE19013.1  putative carboxysome peptide A [Prochlorococcus m
+    3.5e-05   21.1   0.0    3.7e-05   21.0   0.0    1.1  1  CAE19014.1  putative carboxysome peptide B [Prochlorococcus m
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE19013.1  putative carboxysome peptide A [Prochlorococcus marinus subsp. pastoris str. CCMP1986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.5   0.1   8.1e-11   7.9e-08       1      84 [.       1      77 [.       1      82 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 29.5 bits;  conditional E-value: 8.1e-11
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidt 84
+                m i+kv   +vst++ p +   +   lq+v + g    + +va d+vg+   +wv+    saar+  g++  p d ++v iid 
+  CAE19013.1  1 MLICKVLKPLVSTNRIPGFEHKH---LQVVLD-G---SSNKVAVDAVGCKPGDWVICVGSSAAREAAGSKSYPSDLTIVGIIDH 77
+                56778888888888877666544...455433.3...3457*****************************************96 PP
+
+>> CAE19014.1  putative carboxysome peptide B [Prochlorococcus marinus subsp. pastoris str. CCMP1986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   0.0   3.8e-08   3.7e-05      38      83 ..      23      68 ..       2      72 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 3.8e-08
+        ccmL 38 pkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiid 83
+                 k  va d vga   +wv+ + gsaar    n +   d ++  iid
+  CAE19014.1 23 GKKVVAVDPVGAREGNWVFTASGSAARFACPNPEVQTDLTIGGIID 68
+                45679*************************9999999999999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         1948  (498304 residues searched)
+Passed MSV filter:                        39  (0.0200205); expected 39.0 (0.02)
+Passed bias filter:                       36  (0.0184805); expected 39.0 (0.02)
+Passed Vit filter:                         2  (0.00102669); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00102669); expected 0.0 (1e-05)
+Initial search space (Z):               1948  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.00u 0.00s 00:00:00.00 Elapsed: 00:00:00.01
+# Mc/sec: 4983.04
+//
+[ok]

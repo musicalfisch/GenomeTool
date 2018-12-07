@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/399101_GCA_001637315.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0018   15.2   0.0     0.0031   14.5   0.0    1.3  1  OAB58812.1  alpha/beta hydrolase [Phormidium willei BDU 13079
+  ------ inclusion threshold ------
+      0.028   11.3   0.0      0.054   10.4   0.0    1.4  1  OAB56616.1  acyl-CoA synthetase [Phormidium willei BDU 130791
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB58812.1  alpha/beta hydrolase [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.0   1.6e-06    0.0031      28     110 ..      42     124 ..      22     132 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.6e-06
+        anaA  28 cfppagagslffrdwpatipdsinlwavrfpgrenrikepli...trwgdlieplvqeiypysqspfvffghslgsvvslevahql 110
+                  +   ga +  +r     + d  ++wa+ + g     k pl      w d +  ++qe+      p+v+ g slg  v+l va q 
+  OAB58812.1  42 LVHGFGASTDHWRKTIEGLQDEFEIWAIDLLGFGRSGKPPLAysgQLWRDQLHDFIQEVI---GQPVVLAGNSLGGYVCLSVAAQK 124
+                 55566777788888888899*************999999997332459999999999986...47******************985 PP
+
+>> OAB56616.1  acyl-CoA synthetase [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   2.9e-05     0.054      74     178 ..     746     849 ..     737     909 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 2.9e-05
+        anaA  74 dlieplvqeiypy.sqspfvffghslgsvvslevahqlgdrfgcfpqclvvsgrk..pphipcdhrdsqasdedlieelradggtpeavlqepelmsii 169
+                  ++e  +qei     q p+++ g+++g  ++le+a+ql +r     q+l+v+      p i +++++ q +  + + + r      +  l  p l+  i
+  OAB56616.1 746 PMVEHYIQEIQTVqPQGPYLLGGRCIGGNIALEMAQQLTQRGE---QVLLVAMLDspNPLITAEQKNQQWTRWQSLAKERKREKFQKQGL-SPHLIENI 840
+                 5789999***875269***********************9954...55555543311456777777777655443333333333333322.46666666 PP
+
+        anaA 170 lpiyradlq 178
+                 l +  a+ q
+  OAB56616.1 841 LKVSEANWQ 849
+                 666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         3770  (1257126 residues searched)
+Passed MSV filter:                       103  (0.027321); expected 75.4 (0.02)
+Passed bias filter:                       99  (0.0262599); expected 75.4 (0.02)
+Passed Vit filter:                         9  (0.00238727); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530504); expected 0.0 (1e-05)
+Initial search space (Z):               3770  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7951.32
+//
+[ok]

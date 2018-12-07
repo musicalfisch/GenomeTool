@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.8e-38  128.4   2.4    5.3e-38  128.3   2.4    1.0  1  BAC90509.1  ATP synthase epsilon subunit [Gloeobacter violace
+     0.0052   15.0   0.0     0.0054   14.9   0.0    1.1  1  BAC89766.1  gsl1825 [Gloeobacter violaceus PCC 7421]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC90509.1  ATP synthase epsilon subunit [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.3   2.4   2.4e-41   5.3e-38       1     135 [.       1     131 [.       1     132 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 128.3 bits;  conditional E-value: 2.4e-41
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m+l +++++p+k v+d + +ev+lps +gqlgil+ hapl+t l  gvmrvr   +  +  ia+l g aev+++ev+++  +ae g  i+++ araa +
+  BAC90509.1   1 MALQIKIVAPNKVVFDDQVDEVVLPSVSGQLGILTNHAPLITGLSNGVMRVRK--QGTFIPIAVLTGVAEVDNNEVSVVAMAAELGSGIDVDRARAALA 97 
+                 89*************************************************95..6789**************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagg 135
+                 +a++ l+   ++++ + +qa+ a+ ra ar++aag 
+  BAC90509.1  98 RAEQTLAT--SQNKTELLQAQTALERANARLRAAGA 131
+                 ****9986..5678899*****************96 PP
+
+>> BAC89766.1  gsl1825 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   2.4e-06    0.0054      27      82 ..       2      57 ..       1      80 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 2.4e-06
+        atpE 27 ttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvng 82
+                tt +  +++ h p+l a ++ ++  r ++++ w     l  f+e ee+   + ++g
+  BAC89766.1  2 TTPETRVMTAHVPILLADQVDLLAARLERSRGWIVKQALSAFVEQEEHRYRLTLEG 57
+                6778889*************************************999877665554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                       174  (0.0392777); expected 88.6 (0.02)
+Passed bias filter:                      116  (0.0261851); expected 88.6 (0.02)
+Passed Vit filter:                        14  (0.00316027); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000451467); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6322.08
+//
+[ok]

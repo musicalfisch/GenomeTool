@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/582515_GCA_000473895.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braC  [M=471]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-11   40.9   2.8    2.5e-11   40.6   2.8    1.1  1  ERN40083.1  ABC-type branched-chain amino acid transporter (p
+    0.00085   15.8   0.0     0.0013   15.2   0.0    1.2  1  ERN39988.1  ABC-type phosphate transport system, periplasmic 
+
+
+Domain annotation for each sequence (and alignments):
+>> ERN40083.1  ABC-type branched-chain amino acid transporter (periplasmic) [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.6   2.8   1.4e-14   2.5e-11     149     363 ..      93     316 ..      79     388 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 40.6 bits;  conditional E-value: 1.4e-14
+        braC 149 qnqinqaggingiplkvliaddadnpeiaaqiaqklaadnsilgvvghtssdtslaaaaiyqkaglvmispistsvkls......nfgdyifrsvpsdf 241
+                  + in +gg+ng  + ++  d   +p+  a    kl   + + gvvg  +s  s aa     +  +++isp sts  +s      +f  y  r+ p d 
+  ERN40083.1  93 VKTINACGGVNGQEVILIQEDSQTDPNAGAAAMSKLVEVDKVAGVVGAFASSVSSAAVDTAVRNEVLFISPGSTSPVFSqraeagEFNGYWARTAPPDT 191
+                 5789*********997777777789***9*********************************************977663333336999********** PP
+
+        braC 242 vaaralaesslqkipnvkavvffnsqsnysqslksefitalglgggqvvs.....efdlssltftpskslqqaqqeganliallgdsgtldkalqvvqi 335
+                   a ala+ + ++  +  a v +n   +y   +   f+ ++   gg+vv       +d  + tf    +    +   a l  l  ++g+l       q 
+  ERN40083.1 192 YQAAALAKLASERGFETAATVAINN--DYGVGFEQVFVESFQEAGGEVVNsdspvRYDPKATTFDTEAAAAFGEAPEAVLGVLYAETGSLLLKSAFEQG 288
+                 *********9999999999999986..6888999999999999999999523333589999999999999999999999999999*9999877788888 PP
+
+        braC 336 ngqklpivagddvyspktldvggknalg 363
+                   + + ++  d vysp  +   gk a g
+  ERN40083.1 289 LTKDITVLLTDGVYSPDFVKSVGKGAGG 316
+                 899999***********99999998865 PP
+
+>> ERN39988.1  ABC-type phosphate transport system, periplasmic component [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.0   7.3e-07    0.0013       3      33 ..       4      34 ..       1      48 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 7.3e-07
+        braC  3 qkndtvtlllallitliffgagswwlynrfq 33
+                + n+t+ ll+al++t   +g g+wwl ++ +
+  ERN39988.1  4 RTNETIPLLVALVVTAACLGGGGWWLLQQQK 34
+                579**********************976543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (471 nodes)
+Target sequences:                         3457  (1058921 residues searched)
+Passed MSV filter:                       104  (0.0300839); expected 69.1 (0.02)
+Passed bias filter:                       84  (0.0242985); expected 69.1 (0.02)
+Passed Vit filter:                         9  (0.00260341); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000578536); expected 0.0 (1e-05)
+Initial search space (Z):               3457  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9975.04
+//
+[ok]

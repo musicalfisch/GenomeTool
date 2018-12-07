@@ -1,0 +1,105 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.3e-115  384.0  17.9     6e-115  382.6  17.9    1.6  1  KYC39090.1  hypothetical protein WA1_34465 [Scytonema hofmann
+    1.2e-06   27.1   9.1    2.8e-06   25.9   9.1    1.6  1  KYC42716.1  cobalt transporter [Scytonema hofmannii PCC 7110]
+  ------ inclusion threshold ------
+      0.069   11.5  14.6        0.1   11.0   0.0    2.2  2  KYC43701.1  hypothetical protein WA1_00595 [Scytonema hofmann
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC39090.1  hypothetical protein WA1_34465 [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  382.6  17.9  1.8e-118    6e-115       1     289 [.       1     304 [.       1     306 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 382.6 bits;  conditional E-value: 1.8e-118
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qp t +h+ld rvkf wlm+fl++ l an+ wr+ lv +l+l tl+a ip rvw qqmgwl+ l+  v++i +++pdg g+  +p
+  KYC39090.1   1 MDLLRSLPIGLYLEQPQTWMHKLDPRVKFFWLMSFLTTYLYANNLWRVLLVVILILATLIARIPRRVWGQQMGWLLALCFFVLVILSVSPDGYGINYHP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnl...p.pas...........dyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisl 183
+                 rlp +   +   p p+s           +y+yvl+d+g +  tr+s++la+r+st+vftliystnl+llttapeeit  +enl+ pl+rf++pvtei+l
+  KYC39090.1 100 RLPTKQQAVaaqPtPSSaiaplpgstpqEYKYVLFDKGLVRATRHSVDLAIRVSTMVFTLIYSTNLYLLTTAPEEITAAIENLMQPLQRFKIPVTEITL 198
+                 ***87543311211221222222223448********************************************************************** PP
+
+        bioN 184 tltlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfw 282
+                 tltlslrfiplvlee+qnl r++ trai+w+klg+k +++vw+ v e+ll+nlllraeq+a am vrgftsp +h+v+wh+l+l   d++a+ +li fw
+  KYC39090.1 199 TLTLSLRFIPLVLEEIQNLVRSIMTRAINWKKLGLKGAVKVWMLVAERLLENLLLRAEQMANAMMVRGFTSPSEHRVQWHNLRLGRRDWLAIAFLIVFW 297
+                 *************************************************************************************************** PP
+
+        bioN 283 aarlvwg 289
+                  +rl  g
+  KYC39090.1 298 GVRLAIG 304
+                 ****987 PP
+
+>> KYC42716.1  cobalt transporter [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.9   9.1   8.5e-10   2.8e-06      40     282 ..      32     264 ..       7     274 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 25.9 bits;  conditional E-value: 8.5e-10
+        bioN  40 llanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqprlpeeglnlppasdyqyvlwdrgrlfvtrrslelavris 138
+                 l+a  w      gll l   +a +   v  + +g l+ + i  f i  +   g+    q +l     +l p        w  g   ++   +   + + 
+  KYC42716.1  32 LIAFIWESPITGGLLTLSVTIACLVAGVKLNYLGTLLKIMI-PFYIFLLLSMGFFNVSQVKLLTHKEELTPLLTVPSSWWLVGGAKMSVEGILYGINVM 129
+                 44444444444555555556666666666666666654433.344444444444444456666666666666666655565554333333333333222 PP
+
+        bioN 139 tlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnll 237
+                    +t++    l +        t  +++++  + + ++p  +i + ++ +lrf p+++ee+q +  a r r + ++k+g  +   v+ tv   l+ n +
+  KYC42716.1 130 FKTLTMVLVIPLGI-------FTTDVNQMIVSMVKAKIPY-KIVFIFSSTLRFFPVLFEEIQAIIEAQRLRGLAFEKMGWLQRTRVYATVAVPLILNAM 220
+                 22223333333333.......3555667777788889996.57888999************************************************** PP
+
+        bioN 238 lraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfw 282
+                  +++ + + ++ + f+   q+    he  l+ +d+  +   + ++
+  KYC42716.1 221 TKSQTLEVVLQSKAFSGSSQR-TYLHESILKTTDYFIIGSCVGLF 264
+                 ***************998886.56899999999987665555433 PP
+
+>> KYC43701.1  hypothetical protein WA1_00595 [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4  11.8     0.025        83      16      82 ..      12      77 ..       2      98 .. 0.71
+   2 ?   11.0   0.0   3.1e-05       0.1     161     253 ..     123     214 ..      96     233 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.025
+        bioN 16 pitrlhqldarvkfiwlmaflaapllanpw.wrlalvgllllltllapipprvwrqqmgwliflaiiv 82
+                  t +h+ d rvk++ l+ ++   +la +w w l lv l l+ + +a  p + w   + w i +   +
+  KYC43701.1 12 RNTFVHRRDPRVKILLLILLFFFLFLAGSWqWMLVLVILGLIQAAIARTPWK-WMA-VLWAIHIPTFL 77
+                45889*********99999999999999998888888887777777766544.433.34555433322 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 3.1e-05
+        bioN 161 teglenllsplrrfnvpvteisltltlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgft 253
+                 t   e+l   +r + +p   ++l++ ls r++   l e   +a a+r + +d +     r +   l +   ll  ++ ra  +  a+++rgf 
+  KYC43701.1 123 TMDAEDLTKGIRGLHLPP-VVALAFGLSYRLLYTTLGEAFRIADAMRIKGVDLDPKHFFRFIWNSLRISLPLLFAVVRRAPTLMSALQMRGFR 214
+                 445566777777777774.478999*****************************9999999999999999*********************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       394  (0.0400936); expected 196.5 (0.02)
+Passed bias filter:                      200  (0.0203521); expected 196.5 (0.02)
+Passed Vit filter:                        10  (0.0010176); expected 9.8 (0.001)
+Passed Fwd filter:                         3  (0.000305281); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.10
+# Mc/sec: 9249.34
+//
+[ok]

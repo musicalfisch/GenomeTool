@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671071_GCA_900009265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.9e-23   80.0   0.6    9.3e-11   39.2   0.0    4.1  3  CUR18379.1  Multicopper oxidase type 2 [Planktothrix paucives
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR18379.1  Multicopper oxidase type 2 [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.1   1.5e-05     0.076     133     177 ..     193     238 ..     121     258 .. 0.76
+   2 !   39.2   0.0   1.8e-14   9.3e-11     213     307 ..     321     413 ..     307     446 .. 0.87
+   3 !   21.1   0.0   5.2e-09   2.7e-05     404     490 ..     533     639 ..     526     646 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 1.5e-05
+        cueA 133 eftlpknhpsgtfyyhphlhelvaeqvfgglggifvvrgeldd.ip 177
+                  +t  +++ + t++yh h   +   +v+ gl g +++r + d  ip
+  CUR18379.1 193 PYTYNNDQEAATLWYHDHALGITRLNVYAGLAGFYILRDNYDTgIP 238
+                 4688889999****************************99984355 PP
+
+  == domain 2  score: 39.2 bits;  conditional E-value: 1.8e-14
+        cueA 213 egailtvngqvnptftipsggllrfrivnasssrfyrlsle.dhpfyliatdggsiakpvelrelllspgeraevlvqgkrppgryrllslpydrg 307
+                  g ++ vngq  p + +      rfr++n s srfy + l  +  f  i td g +  pv+l +l l+pg+ra+++++     g+     l  d g
+  CUR18379.1 321 SGNVILVNGQAWPVMDVEP-RKYRFRLLNGSDSRFYNFKLPgNLKFTQIGTDDGLLNAPVQLNNLQLAPGQRADIVIDFAGSQGKQL--ILDNDAG 413
+                 688999*********9976.568*****************7256899*****************************99877777654..4445555 PP
+
+  == domain 3  score: 21.1 bits;  conditional E-value: 5.2e-09
+        cueA 404 avklgtiedwelvnvdpdgmehsfhlhtnpfqvisr...................ngkpdpyqawe....dtlriranetvriripfrdftgktvyhch 479
+                  ++lg  e we+ n   d   h +hlh  pfq++ r                   +g p p  a e    dt+ +   e vri   f d+ g   +hch
+  CUR18379.1 533 KIQLGQTEVWEVYNTTADA--HPVHLHQIPFQLLDRqkfsatqasptapltniklKGSPTPAAANEagllDTVIVNPGEVVRIAAKF-DLPGEYAWHCH 628
+                 5788888999998888885..888888888888766333333333333333222258899999988666688899999999999998.9********** PP
+
+        cueA 480 vldhedlgmmg 490
+                 +l hed  mm 
+  CUR18379.1 629 ILSHEDNEMMR 639
+                 *********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5245  (1732571 residues searched)
+Passed MSV filter:                       128  (0.0244042); expected 104.9 (0.02)
+Passed bias filter:                      109  (0.0207817); expected 104.9 (0.02)
+Passed Vit filter:                        12  (0.00228789); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000190658); expected 0.1 (1e-05)
+Initial search space (Z):               5245  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 12276.50
+//
+[ok]

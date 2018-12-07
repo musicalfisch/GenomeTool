@@ -1,0 +1,104 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986677_GCA_002170825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysK  [M=320]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.9e-150  496.1   0.3   3.4e-150  495.9   0.3    1.0  1  OUW29823.1  cysteine synthase A [Cyanobacteria bacterium TMED
+    6.4e-11   38.2   0.4      2e-10   36.6   0.1    1.7  2  OUW29215.1  threonine synthase [Cyanobacteria bacterium TMED1
+    3.3e-09   32.6   0.1    4.5e-09   32.1   0.1    1.2  1  OUW30065.1  threonine ammonia-lyase, biosynthetic [Cyanobacte
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW29823.1  cysteine synthase A [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  495.9   0.3  7.2e-153  3.4e-150       1     310 [.       1     310 [.       1     318 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 495.9 bits;  conditional E-value: 7.2e-153
+        cysK   1 mriaknitelvgrtplvqlnripqaegcvakivvklesmnpaasvkdrigvsminaaekegliapgktvlveptsgntgialamvaaakgykliltmpe 99 
+                 m ia++i+ l+g tplv+lnr+p + gc a+++ kles+np+asvkdri  +m+ aae+eg+i+pg+tvlveptsgntgialamvaaa+gy+liltmp+
+  OUW29823.1   1 MPIASDISSLIGGTPLVRLNRLPGQLGCGAELIAKLESFNPSASVKDRIASAMVLAAEEEGTIQPGRTVLVEPTSGNTGIALAMVAAARGYRLILTMPD 99 
+                 789************************************************************************************************ PP
+
+        cysK 100 tmsaerramlraygaeleltpgiegmsgairraqeivetlpnaymlqqfrnpanakihrettaeeiwedtdgqvdllvagvgtggtitgvaevikarkp 198
+                 tms+erramlraygael+lt g+egm gai  a+e+v+++++ay+lqqf  pan+ +h++tta+eiw+d  g++d +vagvgtggtitg a  +k+++p
+  OUW29823.1 100 TMSTERRAMLRAYGAELQLTDGAEGMAGAIALARELVSEIDDAYLLQQFDXPANPAVHQHTTAQEIWRDXXGRIDAFVAGVGTGGTITGCARFLKQHNP 198
+                 *************************************************************************************************** PP
+
+        cysK 199 sfkaiavepanspvlsggkpgphkiqgigagfvpevlkvelidevitvtdeeaiaygrrlareegllsgissgaalaaaikvakrpenegklivliqps 297
+                 ++  +avepa s vlsg  pg+h+iqgigagfvp vl+++lidev+tv deea+  grrlar+egll gissgaa+aaa+++++r e +g+ iv++  s
+  OUW29823.1 199 RLLVVAVEPAGSAVLSGXPPGAHRIQGIGAGFVPAVLDLDLIDEVLTVEDEEAMDVGRRLARDEGLLCGISSGAAVAAALRLGQRXEWRGRRIVVMLAS 297
+                 *************************************************************************************************** PP
+
+        cysK 298 fgerylstplfqd 310
+                 +gerylstp+f  
+  OUW29823.1 298 YGERYLSTPMFSR 310
+                 ***********76 PP
+
+>> OUW29215.1  threonine synthase [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.6   0.1   4.3e-13     2e-10      11     188 ..      28     196 ..      21     206 .. 0.82
+   2 ?   -1.0   0.0      0.12        55     244     279 ..     266     301 ..     262     317 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 36.6 bits;  conditional E-value: 4.3e-13
+        cysK  11 vgrtplvqlnripqaegcvakivvklesmnpaasvkdrigvsminaaekegliapgktvlveptsgntgialamvaaakgykliltmpetm.saerram 108
+                  g tpl+ +  i++  g   k+ vk +++np+ s kdr     i++a+++g     ++ ++  ++gnt  a a  a   g +  + +p+   ++ + a 
+  OUW29215.1  28 EGATPLIPVPSIAERIGKGVKVXVKYDGLNPTGSFKDRGMTMAISKAKEAGC----EA-VICASTGNTSAAAAAYARRGGMRAFVLIPDGYvAQGKLAQ 121
+                 599***********************************55555777777664....34.455678********999999*********98615566788 PP
+
+        cysK 109 lraygaeleltpgiegmsgairraqeivetlpnaymlqqfrnpana.kih.rettaeeiwedtdgqvdllvagvgtggtitg 188
+                    ygae+        ++g   ra +iv +  +ay +   +   n+ ++  ++t+a ei +      d l   +g  g it 
+  OUW29215.1 122 ALVYGAEV------LAIRGNFDRALDIVREAAKAYPVTLVN-SVNPyRLQgQKTAAFEIVDALGDAPDWLCIPMGNAGNITA 196
+                 88999986......468899***************987654.4444144426788899999888889999999999999995 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.12
+        cysK 244 itvtdeeaiaygrrlareegllsgissgaalaaaik 279
+                 + vtd e i   + l  eeg++   +s a++a  +k
+  OUW29215.1 266 LDVTDAEIIDAYKLLGGEEGIFCEPASAASVAGLLK 301
+                 56999999999999*******999888887766554 PP
+
+>> OUW30065.1  threonine ammonia-lyase, biosynthetic [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.1   0.1   9.7e-12   4.5e-09      29     215 ..      33     211 ..      11     263 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 32.1 bits;  conditional E-value: 9.7e-12
+        cysK  29 vakivvklesmnpaasvkdrigvsminaaekegliapgktvlveptsgntgialamvaaakgykliltmpetmsaerramlraygaeleltpgiegmsg 127
+                   ++++k e ++p  s k r   + + +  ++ l    k v +  ++gn    +a+ a   g k ++ mp t  + +   +ra g e+ l    e  + 
+  OUW30065.1  33 QNRVLLKREDLQPVFSFKLRGAYNRMAQLSQAEL---DKGV-IASSAGNHAQGVALSARRLGCKAVIVMPRTTPEVKVRAVRALGGEVVLHG--ETYDE 125
+                 5688999999999999999988887766655544...4555.55789***************************999999******999875..67788 PP
+
+        cysK 128 airraqeivetlpnaymlqqfrnpanakihrettaeeiwedtdgqvdllvagvgtggtitgvaevikarkpsfkaiavepanspvlsg 215
+                 +   aq+     + ++ +  f +p      + t + ei +++d   + +   vg gg i+g+a  +ka  p ++ i vep+++  ++ 
+  OUW30065.1 126 CCAEAQRRCTAEELTF-IHPFDDPEV-IAGQGTIGMEIMRQADQPPEAIYVAVGGGGLIAGIAAYVKALWPLIEVIGVEPIDAAAMTR 211
+                 9999999887666665.688999965.4578899**********************************************99877655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (320 nodes)
+Target sequences:                         1406  (396538 residues searched)
+Passed MSV filter:                        36  (0.0256046); expected 28.1 (0.02)
+Passed bias filter:                       26  (0.0184922); expected 28.1 (0.02)
+Passed Vit filter:                         3  (0.00213371); expected 1.4 (0.001)
+Passed Fwd filter:                         3  (0.00213371); expected 0.0 (1e-05)
+Initial search space (Z):               1406  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6344.61
+//
+[ok]

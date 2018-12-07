@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1922337_GCA_001939115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00013   19.4   2.8    0.00013   19.4   2.8    1.7  2  OLP17993.1  fatty acid desaturase [Leptolyngbya sp. 'hensonii
+     0.0014   16.1   4.5     0.0014   16.1   4.5    2.4  2  OLP18120.1  fatty acid desaturase [Leptolyngbya sp. 'hensonii
+
+
+Domain annotation for each sequence (and alignments):
+>> OLP17993.1  fatty acid desaturase [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.4   2.8   5.2e-08   0.00013      42     134 ..      44     135 ..      38     143 .. 0.84
+   2 ?   -3.4   1.0      0.45   1.1e+03     116     143 ..     232     259 ..     227     313 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 19.4 bits;  conditional E-value: 5.2e-08
+        desD  42 tiltwviaawl.fvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 t+l  v+a  l ++ +    w+l     +  g+ l+g  f i hd+ h  ++ ++wvn  +g      +    + wr++h++ hh +tn l  d
+  OLP17993.1  44 TVLLSVLAVCLgYIGIAAAPWFLLPFAWIFAGTALTGF-FVIAHDCGHRSFAKQRWVNDWVGHILMLPLIYPFHCWRLKHDH-HHIHTNKLHVD 135
+                 45555666555356667778999999999999999996.99*********************999999999999******96.89999998776 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.45
+        desD 116 wrfrhnylhhtytnvlgydleihgdgvv 143
+                 w   +  +hht t+v    +e   +   
+  OLP17993.1 232 WMSTFTLVHHTDTQVQFRPVETWNEFEA 259
+                 5556666677777766666665544333 PP
+
+>> OLP18120.1  fatty acid desaturase [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.1   4.5   5.4e-07    0.0014      60     131 ..      62     130 ..      35     166 .. 0.72
+   2 ?    0.6   2.6     0.028        72     288     347 ..     272     329 ..     202     343 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 16.1 bits;  conditional E-value: 5.4e-07
+        desD  60 iwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvl 131
+                  w++ +   l + + l    f +ghd+ hg +s  +w+n+l+g      i +  + wr+ h   hh+ t  +
+  OLP18120.1  62 AWFFPLF-WL-MQGTLFWALFVVGHDCGHGSFSRYRWLNNLIGHLSHAPILVPYHGWRISHRT-HHANTGNI 130
+                 3444433.23.3456777789**********************9998889999999*****86.55555444 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 0.028
+        desD 288 flnwylgglnyqvvhhlfpqichihypkiapilaevcqefgvnyavyptlwgalaynyrw 347
+                 f++     +  +v hh+f  i h h  + ++ +  v  e+ ++      +w al   yr 
+  OLP18120.1 272 FIDPIHHNIGTHVAHHIFITIPHYHLLEATAAIKPVLGEYYLES--KEPIWKALWQGYRN 329
+                 55555566777899***********9988888888877776543..34456666655555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5141  (1682713 residues searched)
+Passed MSV filter:                       175  (0.0340401); expected 102.8 (0.02)
+Passed bias filter:                      115  (0.0223692); expected 102.8 (0.02)
+Passed Vit filter:                        14  (0.00272321); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000389029); expected 0.1 (1e-05)
+Initial search space (Z):               5141  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10208.46
+//
+[ok]

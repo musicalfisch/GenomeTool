@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.5e-92  304.7   0.6    1.1e-91  304.5   0.6    1.0  1  CCH65561.1  NAD-specific glutamate dehydrogenase [Richelia in
+    1.1e-06   24.4   1.7    5.8e-06   22.0   0.3    2.5  3  CCH65074.1  NADP-dependent malic enzyme [Richelia intracellul
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH65561.1  NAD-specific glutamate dehydrogenase [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  304.5   0.6   1.3e-94   1.1e-91     245     428 ..       2     184 ..       1     185 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 304.5 bits;  conditional E-value: 1.3e-94
+        gdhA 245 agakiiavstgaggvfseegldipalkayaaenrksvvgfpqavpisnaelltlpcdvlipaalenqiteenvnqvqakivaeaangpvtleankvlea 343
+                 +gaki+avs ++ggvf+e+gld++alkaya +n++s++gfpqa+pisnae+ltlpcdvl+ aa+enqiteen++++qa+i+aeaangp+tl+a+k+le 
+  CCH65561.1   2 SGAKIVAVSRSSGGVFAENGLDVSALKAYA-DNNRSLAGFPQAKPISNAEILTLPCDVLVLAAMENQITEENAHEIQANIIAEAANGPITLSASKILED 99 
+                 69***************************8.5778**************************************************************** PP
+
+        gdhA 344 rgvtvlpdilanaggvvvsylewvqglsylfwdeervnreleklmvqayrkviqqskarqiplrlaaytlgvgrvaqalsdrgly 428
+                  g tvlpdilanaggvvvsylewvqglsylfwdee+vn+ele+++v+ayrkvi+ sk+r i+lrla+ytlg+ rva+al drgly
+  CCH65561.1 100 GGATVLPDILANAGGVVVSYLEWVQGLSYLFWDEEKVNQELERIIVNAYRKVIHLSKERGISLRLASYTLGIDRVAKALVDRGLY 184
+                 ************************************************************************************9 PP
+
+>> CCH65074.1  NADP-dependent malic enzyme [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   0.0     0.028        23     404     423 ..     110     129 ..      92     133 .. 0.82
+   2 ?   -3.3   0.1      0.33   2.8e+02     227     244 ..     153     170 ..     145     176 .. 0.79
+   3 !   22.0   0.3   6.9e-09   5.8e-06     209     262 ..     251     304 ..     238     329 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 0.028
+        gdhA 404 iplrlaaytlgvgrvaqals 423
+                 ++    ayt gvgrv+ a++
+  CCH65074.1 110 VSELAMAYTPGVGRVCSAIA 129
+                 5555679********99986 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.33
+        gdhA 227 viqgfgnvggaaaellhk 244
+                 ++ g+gn+g aaa+ + +
+  CCH65074.1 153 AVLGLGNLGPAAALPVME 170
+                 6789*******9986655 PP
+
+  == domain 3  score: 22.0 bits;  conditional E-value: 6.9e-09
+        gdhA 209 ivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfse 262
+                  + +al+   ks++ vr+vi+g g  g a a ll kag+k i++  ++g +  +
+  CCH65074.1 251 ALLNALKLVRKSIEKVRIVINGAGSAGIAVARLLRKAGSKNICICDSQGIISIN 304
+                 4456778889**********************************9998876554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        53  (0.0316607); expected 33.5 (0.02)
+Passed bias filter:                       43  (0.025687); expected 33.5 (0.02)
+Passed Vit filter:                         7  (0.0041816); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00119474); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7077.94
+//
+[ok]

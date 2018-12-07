@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0016   14.3   0.0      0.037    9.8   0.0    2.1  2  ABD00025.1  transporter, membrane fusion protein (MFP) family
+  ------ inclusion threshold ------
+      0.014   11.2   0.3      0.053    9.3   0.1    1.7  1  ABC98654.1  efflux transporter, RND family, MFP subunit [Syne
+          1    5.1   6.5       0.88    5.3   1.3    2.3  2  ABC99780.1  efflux transporter, RND family, MFP subunit [Syne
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD00025.1  transporter, membrane fusion protein (MFP) family [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.0     4e-05     0.037      86     163 ..      56     131 ..      47     146 .. 0.84
+   2 !    2.5   0.0    0.0067       6.2     206     262 ..     256     312 ..     164     347 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 4e-05
+        cusB  86 ppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyleaksqfelskadyerqqqladqnvnsakt 163
+                 p  ++v ++ p g  l +  + +g rvr gq +ar+e       +++y  a  q++ ++a  e + ++ + +v+ a+t
+  ABD00025.1  56 PEGEVVRVAGPPGERLGELLVAEGERVRAGQVLARLESYRERLAEREYAAA--QLQEARARLEAETRFGQAQVEEART 131
+                 5567899999999999999999****************9988889998655..6667788888888888888887776 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.0067
+        cusB 206 lyspidgyvtevnvnrgkfvnptdvlfeivdtehlhaelivfekdvrklkigqkvrf 262
+                 + +p  g v ++    g ++     ++e+ +t+++     v+e d+ +++ gq+  +
+  ABD00025.1 256 IRAPRAGQVLKIRTRPGEVIAADTGILELGNTDQMMVVAEVYETDILRVRPGQRATI 312
+                 457899999999999999999999999********99999******99999997643 PP
+
+>> ABC98654.1  efflux transporter, RND family, MFP subunit [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.3   0.1   5.8e-05     0.053     205     261 ..     215     271 ..     125     278 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 5.8e-05
+        cusB 205 nlyspidgyvtevnvnrgkfvnptdvlfeivdtehlhaelivfekdvrklkigqkvr 261
+                 ++ +p  g v +v v +g +v p  vl  + +t+ l  +l +  +   +l+ig  v+
+  ABC98654.1 215 QVTAPFAGIVGDVLVRQGDYVTPQTVLTTLTQTQALELNLNIPLQRAPQLRIGTPVQ 271
+                 56789**********************************999999999999998776 PP
+
+>> ABC99780.1  efflux transporter, RND family, MFP subunit [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.3    0.0083       7.6      81     127 ..      85     129 ..      52     161 .. 0.79
+   2 ?    5.3   1.3   0.00096      0.88     135     185 ..     167     217 ..     152     278 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.0083
+        cusB  81 gvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfi 127
+                 g  +v p + v +s    g l +  + qg  v  gq +ar++  d+ 
+  ABC99780.1  85 G--QVQPIRQVNVSPRESGRLAELLVDQGDEVVAGQVLARMDYGDLA 129
+                 3..5788999999*999****999999*************9988864 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.00096
+        cusB 135 eaksqfelskadyerqqqladqnvnsaktlqqskatyttwqakysglaekl 185
+                  a+sq+ l+  + er q l +q v +   l+q  a     qa +    + l
+  ABC99780.1 167 AARSQVRLAERELERIQTLVQQGVVARSELDQRLARLEQAQADWQAAQQEL 217
+                 579************************9**999998877777766555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                        51  (0.0184783); expected 55.2 (0.02)
+Passed bias filter:                       41  (0.0148551); expected 55.2 (0.02)
+Passed Vit filter:                         6  (0.00217391); expected 2.8 (0.001)
+Passed Fwd filter:                         3  (0.00108696); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8738.31
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.3e-102  338.1   6.7   4.7e-102  337.9   6.7    1.0  1  ACC83209.1  ATP synthase F1, delta subunit [Nostoc punctiform
+  ------ inclusion threshold ------
+      0.038   12.3   0.0      0.043   12.1   0.0    1.1  1  ACC80240.1  conserved hypothetical protein [Nostoc punctiform
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC83209.1  ATP synthase F1, delta subunit [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  337.9   6.7  1.4e-105  4.7e-102       1     183 [.       1     183 [.       1     184 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 337.9 bits;  conditional E-value: 1.4e-105
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m+s++a+aevaqpyaqallsiaqs+nltee+gedart+l+ll+++k+l+nf++npf+++enkk+++kq+lgeg+npylrnfll+lvd+rriafle+i+q
+  ACC83209.1   1 MTSQVAAAEVAQPYAQALLSIAQSKNLTEEFGEDARTFLGLLRADKQLHNFFSNPFIQAENKKALIKQILGEGSNPYLRNFLLILVDKRRIAFLESIFQ 99 
+                 89************************************************************************************************* PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qylallrqlnqtvlaev savplteaqqqa+ +kvia+++arqveletk+ds+liggviikvgsqvidas+rgqlrrlslrl+ 
+  ACC83209.1 100 QYLALLRQLNQTVLAEVISAVPLTEAQQQAIIQKVIAISNARQVELETKVDSELIGGVIIKVGSQVIDASIRGQLRRLSLRLTN 183
+                 **********************************************************************************96 PP
+
+>> ACC80240.1  conserved hypothetical protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   1.3e-05     0.043     138     180 ..      13      57 ..       2      60 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.3e-05
+        atpD 138 tkarqveletkidsdliggv..iikvgsqvidaslrgqlrrlslr 180
+                 t+a +ve+++++ds+l+  +  +    s+vi+ ++r  lr   lr
+  ACC80240.1  13 TRADKVEIAVRLDSELLEQIqhLTNDPSKVIEVAIRQWLRGEILR 57 
+                 8999*************9874456778*********999976665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       238  (0.0355755); expected 133.8 (0.02)
+Passed bias filter:                      146  (0.0218236); expected 133.8 (0.02)
+Passed Vit filter:                        11  (0.00164425); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8556.37
+//
+[ok]

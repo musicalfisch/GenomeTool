@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-82  272.2   2.2    2.5e-82  272.1   2.2    1.0  1  ALF54136.1  ATP synthase F0F1 subunit epsilon [Nostoc piscina
+  ------ inclusion threshold ------
+       0.76    8.2   7.9      0.055   11.8   1.7    2.3  2  ALF53672.1  hypothetical protein ACX27_13810 [Nostoc piscinal
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF54136.1  ATP synthase F0F1 subunit epsilon [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  272.1   2.2   9.8e-86   2.5e-82       1     137 []       1     137 []       1     137 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 272.1 bits;  conditional E-value: 9.8e-86
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m+ltvrvispdkt+wdaeaeevilpsttgqlgilsghaplltaldtgvmrvraskn++wqaiallggfaeve devtilvngaergd+i++++ar+a+n
+  ALF54136.1   1 MALTVRVISPDKTIWDAEAEEVILPSTTGQLGILSGHAPLLTALDTGVMRVRASKNTNWQAIALLGGFAEVEADEVTILVNGAERGDTIDVDSARTAYN 99 
+                 89************************************************************************************************* PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 eaqt+l+qv a+drqaqiqa+qa+krararfqaagglv
+  ALF54136.1 100 EAQTRLAQVPAGDRQAQIQANQAYKRARARFQAAGGLV 137
+                 ************************************97 PP
+
+>> ALF53672.1  hypothetical protein ACX27_13810 [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   1.7   2.2e-05     0.055      71     121 ..      96     145 ..      70     158 .. 0.76
+   2 ?   -1.6   0.3      0.32   8.1e+02      90     105 ..     203     218 ..     164     242 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 2.2e-05
+        atpE  71 veedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatq 121
+                 v  d++  ++++ +   +  +e+ara+   a+++l+qv+a++   qi+a++
+  ALF53672.1  96 VSADQIIAVMDNLN-QYQASVENARAKVYVARSRLAQVQAGEESGQIEAQR 145
+                 55555544443333.345689***************************975 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.32
+        atpE  90 nleearaafneaqtkl 105
+                 ++e  +++ +ea++ l
+  ALF53672.1 203 QVEIEKQKLQEAKATL 218
+                 2222222333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       192  (0.0382318); expected 100.4 (0.02)
+Passed bias filter:                      138  (0.0274791); expected 100.4 (0.02)
+Passed Vit filter:                        10  (0.00199124); expected 5.0 (0.001)
+Passed Fwd filter:                         5  (0.000995619); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 4086.86
+//
+[ok]

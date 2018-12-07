@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710888_GCA_001672075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.021   12.9   1.2      0.024   12.7   0.3    1.5  2  OBQ38206.1  transporter [Anabaena sp. CRKS33]
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ38206.1  transporter [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.3   5.1e-06     0.024       5      53 ..       3      53 ..       1      67 [. 0.51
+   2 ?   -2.5   0.0      0.23   1.1e+03      11      21 ..     106     116 ..      81     128 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 5.1e-06
+        copC  5 kssllvvlsigllllaassnsntatndeasskttt...aattavsstaaaka 53
+                k + lv++si ll ++a+ n+++ + +   s+++t   ++++ v+s+++ +a
+  OBQ38206.1  3 KIMPLVLSSILLLGIVACDNQAKTSSSAPNSTEETgevPTSKTVESNQK-DA 53
+                5567888888888888887776655444444443311122222222222.22 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.23
+        copC  11 vlsigllllaa 21 
+                 v+s  + +++a
+  OBQ38206.1 106 VTSKNGEVVVA 116
+                 33333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4638  (1261469 residues searched)
+Passed MSV filter:                       142  (0.0306166); expected 92.8 (0.02)
+Passed bias filter:                      108  (0.0232859); expected 92.8 (0.02)
+Passed Vit filter:                        10  (0.0021561); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.00021561); expected 0.0 (1e-05)
+Initial search space (Z):               4638  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10407.12
+//
+[ok]

@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpA  [M=440]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0083   13.3   1.5       0.03   11.5   0.8    1.8  2  EAM50272.1  Twin-arginine translocation pathway signal [Croco
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM50272.1  Twin-arginine translocation pathway signal [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.8     5e-06      0.03       1      49 [.       1      52 [.       1      57 [. 0.63
+   2 !    0.9   0.0    0.0079        47     142     196 ..      61     115 ..      50     122 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 5e-06
+        cmpA  1 msklsrrrfiftaga.tavgta.ilhgcatpnntatsps.pagspaaspaas 49
+                m klsrr f+  + a t vg + ++  c   nn    +s   +sp a+p+++
+  EAM50272.1  1 MNKLSRRIFLSGSTAvTVVGVSqLVTSCGNNNNNNNNASdNPSSPPATPTTG 52
+                89*****888765542667876255678776665544441335677777654 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.0079
+        cmpA 142 rlntngqaisvaneyldlkvaldsgvlkeslakaksagkevkaavtfpggthdlf 196
+                 + nt+ +      +   +kv+l  g+  e + + ks g + +a v +      l+
+  EAM50272.1  61 HYNTDTELHNGFTKETGIKVNLVEGKADELIERIKSEGENTQADVFMTVDVARLW 115
+                 555555555555566789**********************999987766555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (440 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       110  (0.0184626); expected 119.2 (0.02)
+Passed bias filter:                       95  (0.0159449); expected 119.2 (0.02)
+Passed Vit filter:                         8  (0.00134273); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000167842); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14362.12
+//
+[ok]

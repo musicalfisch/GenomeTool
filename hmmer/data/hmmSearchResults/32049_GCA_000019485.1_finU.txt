@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/32049_GCA_000019485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.1e-10   36.0   0.0    8.8e-10   35.9   0.0    1.0  1  ACA99404.1  NifU like protein [Synechococcus sp. PCC 7002]
+    0.00011   19.2   0.6    0.00012   19.1   0.6    1.0  1  ACB00639.1  glycoprotein 64 [Synechococcus sp. PCC 7002]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACA99404.1  NifU like protein [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.9   0.0   5.6e-13   8.8e-10     238     293 ..      15      70 ..       2      77 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 35.9 bits;  conditional E-value: 5.6e-13
+        finU 238 eelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                 +elr+ l +d+++v+l + d+ ++k  l++a++s+ s++++l++ +e rl++++  
+  ACA99404.1  15 DELRPYLKADGGNVELVEIDGPVVKLRLQGACGSCPSSTMTLRMGIERRLRENIPE 70 
+                 579999*********************************************99854 PP
+
+>> ACB00639.1  glycoprotein 64 [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.6   7.2e-08   0.00012     143     200 ..       2      58 ..       1      66 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 7.2e-08
+        finU 143 lvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaa 200
+                  vc c gi+e++ir+   e++ ++ +++++ +  G  cG+cl    ++++d +++  +
+  ACB00639.1   2 YVCLCRGITEKQIRQA-AEQQSCSMKELSSVMGVGMDCGTCLEYAAQLLQDHHEQGCV 58 
+                 59***********997.57777888999*****************9999999887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         3186  (990621 residues searched)
+Passed MSV filter:                        99  (0.0310734); expected 63.7 (0.02)
+Passed bias filter:                       71  (0.022285); expected 63.7 (0.02)
+Passed Vit filter:                         6  (0.00188324); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000627746); expected 0.0 (1e-05)
+Initial search space (Z):               3186  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 14859.32
+//
+[ok]

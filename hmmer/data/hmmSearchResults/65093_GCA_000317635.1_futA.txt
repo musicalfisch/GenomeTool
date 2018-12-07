@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-145  482.8   0.1   1.2e-145  482.7   0.1    1.0  1  AFZ45368.1  extracellular solute-binding protein family 1 [Ha
+  ------ inclusion threshold ------
+      0.038   10.7   0.0       0.06   10.1   0.0    1.2  1  AFZ43211.1  MCP methyltransferase, CheR-type [Halothece sp. P
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ45368.1  extracellular solute-binding protein family 1 [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  482.7   0.1  6.6e-149  1.2e-145       4     350 ..       2     348 ..       1     349 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 482.7 bits;  conditional E-value: 6.6e-149
+        futA   4 kitrrvflgagtatlavavgqlgkinevsaqtkqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlwrad 102
+                 k trr f+gagtat a +v ql + +   aq+ ++nlyssrhy+td  ly nft qtgi++n++eg+ad li rik egrnspad+l+tvda rlwra+
+  AFZ45368.1   2 KFTRRFFIGAGTATAAATVSQLAQTKPSYAQSGEINLYSSRHYDTDELLYKNFTDQTGIRVNILEGNADELISRIKNEGRNSPADLLITVDAARLWRAE 100
+                 79************************************************************************************************* PP
+
+        futA 103 qqgifapvnsriltqripanlrhpkghwfgfskrlrvimynkdrvnpreidsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcrglv 201
+                 + gif+pv s+il   ip nlrhp g wf ++kr rvi+ynk +v+p e+ +y dl+ pkw+ +v  rss n+y qs+ a li   ge a+e+wcrglv
+  AFZ45368.1 101 EAGIFSPVSSEILEGSIPPNLRHPEGLWFSLTKRARVILYNKSQVDPSELSTYEDLASPKWRDRVAIRSSNNVYNQSLVASLIANLGEEATENWCRGLV 199
+                 *************************************************************************************************** PP
+
+        futA 202 anfarspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqnffa 300
+                  n+ar+p+g d  qi+a a+giadla+antyy+a +a  +  ++ ai++++gv fp+q grg+hvn+sggg+iktapnre ai+fleyl s  aq +fa
+  AFZ45368.1 200 QNLARPPRGGDMDQIKAAASGIADLAVANTYYFARFAPGRSASNPAIFNRIGVFFPNQNGRGTHVNVSGGGVIKTAPNREGAIRFLEYLVSPPAQAIFA 298
+                 *************************************************************************************************** PP
+
+        futA 301 kgnqeypvvrgvaldpvlaklgrgkedtvsvanygpnlakavqvmnragw 350
+                 + n eypvv+ v ldpv+a++g  ked v v++ g n   av+vm+ragw
+  AFZ45368.1 299 QSNSEYPVVPNVPLDPVIARFGDFKEDQVNVSQLGKNNPLAVKVMDRAGW 348
+                 ************************************************** PP
+
+>> AFZ43211.1  MCP methyltransferase, CheR-type [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   3.3e-05      0.06     204     287 ..     380     468 ..     360     476 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 3.3e-05
+        futA 204 farspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisg.....ggliktapnresaikfl 287
+                 +a   q  +  q    a  i ++a+a  y la  aee d   +a      +i+ dq    a++++s      g   +    + saik+l
+  AFZ43211.1 380 YANVGQYAEAKQCCQEALTIQEFAIAPYYILAKIAEEEDDLEQAKQLYKRIIYLDQNSFTAYLELSHiyhlqGDQTRREKMKASAIKLL 468
+                 5666777777888888999*********************99998888889******99999888861111133444444455677766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                        89  (0.0240022); expected 74.2 (0.02)
+Passed bias filter:                       72  (0.0194175); expected 74.2 (0.02)
+Passed Vit filter:                         4  (0.00107875); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000539374); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 13818.38
+//
+[ok]

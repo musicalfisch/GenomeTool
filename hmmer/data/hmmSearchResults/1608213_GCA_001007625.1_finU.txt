@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1608213_GCA_001007625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.5e-11   38.7   0.0    7.5e-11   38.7   0.0    1.0  1  KKZ13796.1  nitrogen fixation protein NifU [Candidatus Synech
+  ------ inclusion threshold ------
+      0.016   11.4   0.0      0.024   10.8   0.0    1.2  1  KKZ14972.1  ATPase [Candidatus Synechococcus spongiarum 142]
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ13796.1  nitrogen fixation protein NifU [Candidatus Synechococcus spongiarum 142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.7   0.0   7.5e-14   7.5e-11     224     291 ..       5      71 ..       1      81 [] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 38.7 bits;  conditional E-value: 7.5e-14
+        finU 224 kivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl 291
+                 +++l +  +++v+d e+r+ l +d+++v+  + d+ ++kv l++a++s+ s++++lk+ +e +l++ +
+  KKZ13796.1   5 TMALTKDNVEKVLD-EVRPFLLADGGNVEVVELDGPIVKVRLQGACGSCPSSTMTLKMGIERKLREMI 71 
+                 55666666777665.68***********************************************9877 PP
+
+>> KKZ14972.1  ATPase [Candidatus Synechococcus spongiarum 142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   2.4e-05     0.024     150     222 ..     341     419 ..     332     474 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.4e-05
+        finU 150 isetkirrviv..ennlttaeqvtnyvkaGGGcGsclakiddii...kdvkkesaatvrnslk.kntaselaekklkrv 222
+                 +s+ +i+rvi    n++t  + + +y+ a    Gsc++ id  +   + v+  +a+ +r + +  +  ++l +k+l +v
+  KKZ14972.1 341 LSDPRIKRVIDspTNDITLYQWLMDYIGAAASAGSCVSVIDLSLvptEVVHVVTAVIARMTFEaLQRYAKLNNKTLPTV 419
+                 6999******73369*************************954412223444455444433330333444444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         2010  (525874 residues searched)
+Passed MSV filter:                        51  (0.0253731); expected 40.2 (0.02)
+Passed bias filter:                       44  (0.0218905); expected 40.2 (0.02)
+Passed Vit filter:                         3  (0.00149254); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000995025); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7888.11
+//
+[ok]

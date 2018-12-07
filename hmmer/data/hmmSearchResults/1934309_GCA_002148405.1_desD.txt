@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1934309_GCA_002148405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-06   26.3   9.2    7.9e-06   23.5   2.9    2.2  2  OUC14284.1  fatty acid desaturase [Alkalinema sp. CACIAM 70d]
+    2.6e-06   25.1   1.5    2.6e-06   25.1   1.5    1.7  2  OUC13608.1  fatty acid desaturase [Alkalinema sp. CACIAM 70d]
+
+
+Domain annotation for each sequence (and alignments):
+>> OUC14284.1  fatty acid desaturase [Alkalinema sp. CACIAM 70d]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.5   2.9     3e-09   7.9e-06      47     129 ..      54     135 ..      28     145 .. 0.82
+   2 !    6.6   0.4   0.00042       1.1     280     315 ..     272     305 ..     202     333 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 23.5 bits;  conditional E-value: 3e-09
+        desD  47 viaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytn 129
+                 viaa        d ww+  i  l  g+ +    f +ghd+ hg +s  kw+n+l+g      i +  + wr+ h   h    n
+  OUC14284.1  54 VIAALCAAAATIDSWWFFPIFWLAQGTMFWA-LFVVGHDCGHGSFSKYKWLNNLIGHLAHSPILVPFHGWRISHRTHHSNTGN 135
+                 889999999999*****99999998877665.59**********************999999999999******875554444 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.00042
+        desD 280 vdfapkniflnwylgglnyqvvhhlfpqichihypk 315
+                 +d      f+nw    +  +v hh+f ++ h h   
+  OUC14284.1 272 ID--RDYGFINWIHHDIGTHVAHHIFSNMPHYHLKT 305
+                 33..45679**********************99765 PP
+
+>> OUC13608.1  fatty acid desaturase [Alkalinema sp. CACIAM 70d]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.1   1.5   9.9e-10   2.6e-06      49     134 ..      54     137 ..      37     141 .. 0.80
+   2 ?   -1.6   0.2      0.13   3.4e+02     215     257 ..     206     249 ..     178     302 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 25.1 bits;  conditional E-value: 9.9e-10
+        desD  49 aawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                  a  +  +    w+l  +  +  g+ l+g  f ighd+ h  ++ ++wvn l+g      +    + wr+ h+ +hh ytn +  d
+  OUC13608.1  54 VALGYCAIALSPWYLLPLAWIFTGTALTGF-FVIGHDCGHRSFAKRRWVNDLVGHLVFLPLIYPFHSWRLLHD-VHHRYTNKMDVD 137
+                 444455555566999999999999999997.99*********************8777666677889*****8.79*****88766 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.13
+        desD 215 igipllvgys.pleiaigflivfmtygvlachvfmlahvlepae 257
+                 ig+ ll+ ++ p  +   +l+ +m y        ++ h l    
+  OUC13608.1 206 IGLSLLLAFTgPWGLVKFWLMPWMVYHFWMSTFTIVHHTLPGIP 249
+                 44444444331233333344555555555554444445544444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5216  (1707448 residues searched)
+Passed MSV filter:                       181  (0.0347009); expected 104.3 (0.02)
+Passed bias filter:                      127  (0.0243482); expected 104.3 (0.02)
+Passed Vit filter:                         6  (0.00115031); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000383436); expected 0.1 (1e-05)
+Initial search space (Z):               5216  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 10358.52
+//
+[ok]

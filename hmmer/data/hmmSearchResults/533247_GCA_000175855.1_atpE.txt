@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533247_GCA_000175855.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.9e-82  270.7   1.9    4.3e-82  270.6   1.9    1.0  1  EFA73375.1  H+-transporting two-sector ATPase, delta/epsilon 
+  ------ inclusion threshold ------
+        2.3    5.9  14.7          2    6.1   4.3    3.1  2  EFA73457.1  Secretion protein HlyD [Raphidiopsis brookii D9]
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA73375.1  H+-transporting two-sector ATPase, delta/epsilon subunit [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  270.6   1.9   2.8e-85   4.3e-82       1     137 []       1     137 []       1     137 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 270.6 bits;  conditional E-value: 2.8e-85
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtlt+rv+spdktvwd+ a+evilpsttgqlg+lsghap+ltald+gvmrvra+kn++wq+iallggfaeveedevtilvnga+rgd+inleear++fn
+  EFA73375.1   1 MTLTIRVVSPDKTVWDGPADEVILPSTTGQLGVLSGHAPMLTALDIGVMRVRAEKNANWQSIALLGGFAEVEEDEVTILVNGAQRGDTINLEEARSEFN 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +aqtklnqv+ +drqaqiqat+a+krararfqaagg+v
+  EFA73375.1 100 AAQTKLNQVAGGDRQAQIQATAALKRARARFQAAGGMV 137
+                 ************************************98 PP
+
+>> EFA73457.1  Secretion protein HlyD [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.1   4.3    0.0013         2      82     130 ..     136     186 ..     118     193 .. 0.80
+   2 ?    5.2   1.4    0.0024       3.7      87     123 ..     211     249 ..     199     254 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 6.1 bits;  conditional E-value: 0.0013
+        atpE  82 gaergdki.nleearaafneaqtklnqvkaedrqaqi.qatqafkrararf 130
+                  a+ g ++ ++ +a+a  n+a+++l+ +++++r ++i qa++++  ar+++
+  EFA73457.1 136 DAQAGSRVeDIAQAKARVNQAKAQLEIISSGSRSQEIeQAKASVEGARSQL 186
+                 5677777636899********************999856777788888765 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.0024
+        atpE  87 dkinleearaafn..eaqtklnqvkaedrqaqiqatqaf 123
+                 d+   e+ ra+fn  ea+ +l+  +a++rq++i+ +qa+
+  EFA73457.1 211 DQYSTENKRAKFNlqEAEKRLSLQEAGNRQQEIRKQQAV 249
+                 5666788888887558999***************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         3007  (904229 residues searched)
+Passed MSV filter:                        94  (0.0312604); expected 60.1 (0.02)
+Passed bias filter:                       80  (0.0266046); expected 60.1 (0.02)
+Passed Vit filter:                        10  (0.00332557); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.000997672); expected 0.0 (1e-05)
+Initial search space (Z):               3007  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4129.31
+//
+[ok]

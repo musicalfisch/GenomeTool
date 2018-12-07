@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aapQ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1453429_GCA_000025125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aapQ  [M=378]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   11.0   0.2       0.04    9.2   0.1    1.8  2  ADB94769.1  lactoylglutathione lyase [Candidatus Atelocyanoba
+
+
+Domain annotation for each sequence (and alignments):
+>> ADB94769.1  lactoylglutathione lyase [Candidatus Atelocyanobacterium thalassa isolate ALOHA]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0     0.023        28     144     164 ..       4      24 ..       1      39 [. 0.85
+   2 ?    9.2   0.1   3.3e-05      0.04     320     340 ..      72      92 ..      39      98 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.023
+        aapQ 144 favflklpkieesleffgrvf 164
+                 +  +l++ ++eesl+f+  ++
+  ADB94769.1   4 LHTMLRVNNLEESLNFYCDIL 24 
+                 56789999********98875 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 3.3e-05
+        aapQ 320 slaiaigyndiyaisstianq 340
+                    iaig ndiy+i  ti ++
+  ADB94769.1  72 YGHIAIGVNDIYTICNTIKQK 92 
+                 4579*************9754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (378 nodes)
+Target sequences:                         1200  (386913 residues searched)
+Passed MSV filter:                        92  (0.0766667); expected 24.0 (0.02)
+Passed bias filter:                       16  (0.0133333); expected 24.0 (0.02)
+Passed Vit filter:                         1  (0.000833333); expected 1.2 (0.001)
+Passed Fwd filter:                         1  (0.000833333); expected 0.0 (1e-05)
+Initial search space (Z):               1200  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7312.66
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.9e-50  167.1  14.3    6.7e-50  166.9  14.3    1.0  1  OAB62335.1  ATP synthase F0F1 subunit B' [Leptolyngbya valder
+     0.0097   14.0   2.7      0.023   12.8   2.7    1.6  1  OAB63675.1  hypothetical protein AY599_21900 [Leptolyngbya va
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB62335.1  ATP synthase F0F1 subunit B' [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  166.9  14.3   2.5e-53   6.7e-50       1     143 []      17     159 ..      17     159 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 166.9 bits;  conditional E-value: 2.5e-53
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +f fdatlp+ma+qf++l  ilnavfykpls+ lder +yir t+  a+e+lak++ l ++y+ +l+s+rkq+q+ ia a+ +a+k+a   +a aq+ea
+  OAB62335.1  17 LFAFDATLPLMAVQFLILVAILNAVFYKPLSNALDERDDYIRSTDRNARERLAKAKQLAEQYDKELASTRKQAQDTIAAAREDARKIANAEIADAQQEA 115
+                 699************************************************************************************************ PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                 i  ke  aaei qqk+ a+  le qv +lsrqilekllg+elv+
+  OAB62335.1 116 IRAKEKAAAEIEQQKQAAMAELEQQVEALSRQILEKLLGSELVK 159
+                 ******************************************96 PP
+
+>> OAB63675.1  hypothetical protein AY599_21900 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   2.7   8.6e-06     0.023       7     141 ..       7     145 ..       3     147 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 8.6e-06
+        atpG   7 tlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqkla.servaaaq..keaiar 102
+                 t+ v  ++f++l  +l+ v+y+p+ + ++ r + i q    a +q   +    + y  q        qe  a+  aea++ a  er   +q  k+ + r
+  OAB63675.1   7 TVGVQLFNFLFLVWLLQRVLYRPILQTIERRQQRIDQWYRDAEQQREEARQNAERYRRQCRE----LQEFKAKHLAEAKQQArREREILTQqaKQDVDR 101
+                 66788899******************************999999988887777777777654....455555555555444312332222211333333 PP
+
+        atpG 103 .....keavaaeiaqqkeeafrslegqvaslsrqilekllgpel 141
+                      k a+    aq  +   r     +a ++r+ le + g++l
+  OAB63675.1 102 lhrqwKTALRRRQAQFFDRLQRDTSHHLALMTRRALEDVAGAKL 145
+                 22233667777777777888888888888888888888888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       230  (0.0425926); expected 108.0 (0.02)
+Passed bias filter:                      120  (0.0222222); expected 108.0 (0.02)
+Passed Vit filter:                         8  (0.00148148); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00037037); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6813.74
+//
+[ok]

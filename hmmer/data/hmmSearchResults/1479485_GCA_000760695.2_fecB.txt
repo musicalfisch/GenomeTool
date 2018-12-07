@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1479485_GCA_000760695.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-05   23.4   0.0    7.1e-05   20.8   0.0    1.9  2  KIE11109.1  iron ABC transporter substrate-binding protein [T
+     0.0021   16.0   0.0      0.005   14.8   0.0    1.6  1  KIE13039.1  ABC transporter substrate-binding protein [Tolypo
+
+
+Domain annotation for each sequence (and alignments):
+>> KIE11109.1  iron ABC transporter substrate-binding protein [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.0   1.8e-08   7.1e-05      45     134 ..      36     126 ..      20     168 .. 0.69
+   2 ?   -0.1   0.0     0.043   1.7e+02      78     121 ..     193     240 ..     149     263 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 1.8e-08
+        fecB  45 gvtavpnepqr....ivvltneatdmvlalgvtpvgavkswsgdpyyeylakdmlgvpivgd.emqpnlekivalqpdliigsrlrqgqiyksls 134
+                   tav ++p+r    +v lt  +td++  l    +      sg   ++     +  +p v + +  pnleki+al+pdl+ig+     q  + l 
+  KIE11109.1  36 NTTAVTQQPERsvekVVTLTSLSTDIISRLDSKKIV---GMSGSNLFKNDP-RFKDIPRVSEgQAPPNLEKILALKPDLVIGAEGFSNQTTNKLK 126
+                 45666666654333378999******9999876543...345555444332.233466666515679***************9877776666555 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.043
+        fecB  78 vkswsgdpyyey....lakdmlgvpivgdemqpnlekivalqpdliig 121
+                  ksw+g+   ++    la d+ g   +   +    eki+  +p+++i 
+  KIE11109.1 193 KKSWAGNLLDKFqvtnLAEDLQGKAPIPGYITLSAEKILEANPEVLII 240
+                 689999754433222389999997666667888899999999987653 PP
+
+>> KIE13039.1  ABC transporter substrate-binding protein [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.0   1.3e-06     0.005     269     288 ..     249     268 ..     227     287 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 1.3e-06
+        fecB 269 lnhplwqqlevvqsgkayav 288
+                  nhp wqql  vqsg+ay  
+  KIE13039.1 249 SNHPQWQQLHAVQSGRAYIT 268
+                 59****************76 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         7776  (2427444 residues searched)
+Passed MSV filter:                       231  (0.0297068); expected 155.5 (0.02)
+Passed bias filter:                      184  (0.0236626); expected 155.5 (0.02)
+Passed Vit filter:                        16  (0.00205761); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000257202); expected 0.1 (1e-05)
+Initial search space (Z):               7776  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 10923.50
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cutC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cutC  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.019   13.0   0.0       0.11   10.4   0.0    2.2  3  ABA23561.1  Pyruvate carboxyltransferase [Anabaena variabilis
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA23561.1  Pyruvate carboxyltransferase [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.4   0.0      0.16   9.3e+02     186     219 ..      32      64 ..      25      84 .. 0.72
+   2 ?   -1.6   0.0     0.093   5.3e+02     126     143 ..     110     127 ..      90     134 .. 0.78
+   3 ?   10.4   0.0     2e-05      0.11       9      53 ..     146     190 ..     142     202 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -2.4 bits;  conditional E-value: 0.16
+        cutC 186 elvsktgvkeihfsasamkdsemqfqnkaiaglg 219
+                 +++   gv e+ +   am + em+    ai+ lg
+  ABA23561.1  32 KFLDTIGVPELEVGIPAMGEEEMRAI-CAISNLG 64 
+                 56667899999999999999999753.4565555 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.093
+        cutC 126 trdpfqaledciavgfdr 143
+                  r  +q l+dci+  +d+
+  ABA23561.1 110 WRVSLQRLKDCISFAVDQ 127
+                 4778999*****999887 PP
+
+  == domain 3  score: 10.4 bits;  conditional E-value: 2e-05
+        cutC   9 nidsafraqeggadrielcdspgdggntpsygvvealrphitmdi 53 
+                  +d a+ aqe ga r  +cd+ g      +yg v+ l   +t+ +
+  ABA23561.1 146 LLDVALYAQEWGASRFRFCDTVGVLDPFTTYGKVKLLVSALTIPV 190
+                 5799******************************99998888755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (244 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       115  (0.0201542); expected 114.1 (0.02)
+Passed bias filter:                       96  (0.0168244); expected 114.1 (0.02)
+Passed Vit filter:                        11  (0.0019278); expected 5.7 (0.001)
+Passed Fwd filter:                         1  (0.000175254); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 11823.76
+//
+[ok]

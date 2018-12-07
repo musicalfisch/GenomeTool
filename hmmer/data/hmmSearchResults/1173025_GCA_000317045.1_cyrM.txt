@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173025_GCA_000317045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.014   12.6   0.0      0.034   11.4   0.0    1.6  1  AFY64740.1  hypothetical protein GEI7407_0235 [Geitlerinema s
+      0.016   12.5   0.2      0.024   11.9   0.1    1.5  2  AFY67736.1  shikimate kinase [Geitlerinema sp. PCC 7407]
+      0.029   11.6   0.0      0.077   10.2   0.0    1.6  2  AFY64569.1  dephospho-CoA kinase [Geitlerinema sp. PCC 7407]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY64740.1  hypothetical protein GEI7407_0235 [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   2.6e-05     0.034       7      34 ..     341     368 ..     336     381 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.6e-05
+        cyrM   7 rgvtvwltglsgagkstitealqaklia 34 
+                 +g  + ++glsgagkst++++l  kl a
+  AFY64740.1 341 QGRLILMSGLSGAGKSTVAKSLAGKLGA 368
+                 5777899****************99976 PP
+
+>> AFY67736.1  shikimate kinase [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   1.9e-05     0.024       6      34 ..       7      35 ..       2      91 .. 0.82
+   2 ?   -3.3   0.0      0.82     1e+03      78      85 ..     100     107 ..      97     119 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.9e-05
+        cyrM  6 qrgvtvwltglsgagkstitealqaklia 34
+                 +gv ++l g+ gagkst+   l ++l  
+  AFY67736.1  7 LKGVNLYLIGMMGAGKSTVGRLLASRLGY 35
+                68*****************9999888744 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.82
+        cyrM  78 rhgvivlv 85 
+                 rhgv+v +
+  AFY67736.1 100 RHGVVVWL 107
+                 55555543 PP
+
+>> AFY64569.1  dephospho-CoA kinase [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   6.1e-05     0.077       4      47 ..       1      37 [.       1      47 [. 0.84
+   2 ?   -2.0   0.0      0.35   4.4e+02     127     168 ..      68     112 ..      63     117 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 6.1e-05
+        cyrM  4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdiv 47
+                mkqr +   ltg  g+gkst+     a+ +ae y + vld di 
+  AFY64569.1  1 MKQRRI--GLTGGIGTGKSTV-----ARYLAERYGLPVLDADIY 37
+                677764..69**********8.....6788************96 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 0.35
+        cyrM 127 krarageiksftgiddp.yeppfnpevecr..tdletleesvakv 168
+                  r r gei      +    e  ++p v  r    letl e  a v
+  AFY64569.1  68 DRRRIGEIVFHDPAERRwLEQQIHPYVRQRfhQALETLPEDAATV 112
+                 566777776555554431466777777766224688888877766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3815  (1301653 residues searched)
+Passed MSV filter:                       144  (0.0377457); expected 76.3 (0.02)
+Passed bias filter:                      138  (0.036173); expected 76.3 (0.02)
+Passed Vit filter:                        24  (0.00629096); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.00078637); expected 0.0 (1e-05)
+Initial search space (Z):               3815  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 5987.60
+//
+[ok]

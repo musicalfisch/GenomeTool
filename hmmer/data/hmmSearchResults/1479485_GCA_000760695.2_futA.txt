@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1479485_GCA_000760695.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0011   16.9   0.0       0.06   11.1   0.0    2.1  2  KIE11706.1  ABC transporter substrate-binding protein [Tolypo
+
+
+Domain annotation for each sequence (and alignments):
+>> KIE11706.1  ABC transporter substrate-binding protein [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.7   0.0    0.0014        11      52      81 ..      63      94 ..      47     140 .. 0.72
+   2 !   11.1   0.0   7.7e-06      0.06     253     320 ..     307     374 ..     282     400 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 3.7 bits;  conditional E-value: 0.0014
+        futA 52 lydnf.trqtgikinlveg.eadplierikse 81
+                l  nf +++ gi+inlveg +a  l+e + + 
+  KIE11706.1 63 LIKNFeAKNPGIRINLVEGpNATNLLEDLYTS 94
+                5667734678********95688898887655 PP
+
+  == domain 2  score: 11.1 bits;  conditional E-value: 7.7e-06
+        futA 253 gvifpdqagrgahvnisgggliktapnresaikfleylssneaqnffakgnqeypvvrgvaldp.vlak 320
+                  v  p  +g ga +   g g+ k++  ++ a k ++y++s+eaq  fa  +   p  r +  dp ++ak
+  KIE11706.1 307 MVHAPGSTG-GACLGGWGLGIAKSSRHQQQAWKAIQYFTSEEAQRQFALSESYVPSRRALFTDPeIVAK 374
+                 455555555.666777788999******************************99**9999999934455 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         7776  (2427444 residues searched)
+Passed MSV filter:                       181  (0.0232767); expected 155.5 (0.02)
+Passed bias filter:                      143  (0.0183899); expected 155.5 (0.02)
+Passed Vit filter:                        17  (0.00218621); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000128601); expected 0.1 (1e-05)
+Initial search space (Z):               7776  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 12171.90
+//
+[ok]

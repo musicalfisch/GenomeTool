@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.1e-21   72.8  28.3    1.1e-13   48.3   9.0    2.9  3  ABB27207.1  putative urea ABC transporter [Synechococcus sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB27207.1  putative urea ABC transporter [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.9   4.6   6.1e-13   1.4e-09       7      56 ..       6      55 ..       1      59 [. 0.91
+   2 !   48.3   9.0     5e-17   1.1e-13     131     253 ..     202     324 ..     157     330 .. 0.94
+   3 ?   -1.6   0.0      0.08   1.8e+02     264     284 ..     355     375 ..     341     378 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 34.9 bits;  conditional E-value: 6.1e-13
+        braD  7 qlivngiavgsiialaavgltltygilrlsnfahgdfltlgayltllvns 56
+                + + ng+a+gs++ +aa+gl++++g++ + n+ahg+++ lgay t++v+ 
+  ABB27207.1  6 ESLFNGVAIGSVLMMAALGLAIVFGLMGVINLAHGELIMLGAYTTYVVQM 55
+                5678******************************************9975 PP
+
+  == domain 2  score: 48.3 bits;  conditional E-value: 5e-17
+        braD 131 ldilglkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglitavrpnmgwflilplfas 229
+                 ++ + +  p  +l+++v+++la+l + ++l+ +  g  +rav+++  ++   gi  d v + t+ i   l+ ++g    l+ +v pn+g   i+  f  
+  ABB27207.1 202 IEWMDITFPVPRLVIIVMTILAVLGVTWFLNRSVWGMRIRAVTQNRSMSDCLGIPTDTVDVLTFGIGSGLAGVAGVAVSLLGSVGPNVGGSYIVGCFMV 300
+                 56788999999**************************************************************************************** PP
+
+        braD 230 vilggignpygaiaaafiigiaqe 253
+                 v+lgg+gn  g++ a+f ig+  +
+  ABB27207.1 301 VVLGGVGNLLGTVLASFAIGLLTD 324
+                 ********************9765 PP
+
+  == domain 3  score: -1.6 bits;  conditional E-value: 0.08
+        braD 264 kqgvallimilvllirpkglf 284
+                  q + + ++++ l  rp glf
+  ABB27207.1 355 AQVLVFALIVVFLQFRPAGLF 375
+                 444555556666778999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                        92  (0.0399306); expected 46.1 (0.02)
+Passed bias filter:                       31  (0.0134549); expected 46.1 (0.02)
+Passed Vit filter:                         2  (0.000868056); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000434028); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6392.02
+//
+[ok]

@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      4e-05   20.1   0.0      0.071    9.5   0.0    3.1  3  CCH64845.1  Phycocyanin alpha phycocyanobilin lyase related p
+     0.0024   14.3   0.4      0.005   13.2   0.3    1.6  1  CCH64753.1  Phycocyanin alpha phycocyanobilin lyase related p
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH64845.1  Phycocyanin alpha phycocyanobilin lyase related protein NblB [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.9   0.0    0.0011      0.89     145     171 ..      57      83 ..      43     120 .. 0.85
+   2 !    9.5   0.0   8.5e-05     0.071     141     173 ..     120     152 ..     113     173 .. 0.85
+   3 ?    1.1   0.0      0.03        25     147     173 ..     188     214 ..     167     238 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 5.9 bits;  conditional E-value: 0.0011
+        cpcF 145 lekllqgdpewvvryaaivgleglgta 171
+                 l +++ gd +  vry+ai  l+ lg  
+  CCH64845.1  57 LIQIAIGDTNTRVRYSAISQLDTLGNQ 83 
+                 567889******************976 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 8.5e-05
+        cpcF 141 vfaalekllqgdpewvvryaaivgleglgtaaa 173
+                  f  l+k+ +   ew+v ++ iv l  lg   a
+  CCH64845.1 120 AFPDLQKIYETTNEWIVEFSIIVALGELGDNRA 152
+                 58889***********************97644 PP
+
+  == domain 3  score: 1.1 bits;  conditional E-value: 0.03
+        cpcF 147 kllqgdpewvvryaaivgleglgtaaa 173
+                 k    +p+w  r+  +  l+ lg + a
+  CCH64845.1 188 KRYTNNPDWQFRFRLVQALNNLGGSEA 214
+                 556678999999999999999997655 PP
+
+>> CCH64753.1  Phycocyanin alpha phycocyanobilin lyase related protein NblB [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.3   5.9e-06     0.005      77     131 ..      79     133 ..      22     164 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 5.9e-06
+        cpcF  77 ynygarawatralagigdvrgldllleaavsdfsfsvrrgaarglgniiwsdlee 131
+                  +y  ra a  al  +gdvr ++ l      d  + +r   a  lgn+ +    +
+  CCH64753.1  79 KDYNIRADAIGALGYLGDVRAFEPLSRIFYEDTNWLIRFSVAVSLGNLQYPRAHD 133
+                 57999******************************************98754333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        48  (0.0286738); expected 33.5 (0.02)
+Passed bias filter:                       34  (0.0203106); expected 33.5 (0.02)
+Passed Vit filter:                         3  (0.00179211); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00119474); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 3415.23
+//
+[ok]

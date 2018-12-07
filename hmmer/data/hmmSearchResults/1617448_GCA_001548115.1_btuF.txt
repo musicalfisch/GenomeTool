@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1617448_GCA_001548115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0021   15.1   0.3       0.23    8.4   0.1    2.3  2  BAQ65417.1  Iron(III) dicitrate transport system [Geminocysti
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ65417.1  Iron(III) dicitrate transport system [Geminocystis sp. NIES-3709]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.4   0.1   5.9e-05      0.23     100     137 ..      95     132 ..      85     216 .. 0.64
+   2 !    4.7   0.0   0.00074       2.9     254     283 ..     270     299 ..     263     322 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 5.9e-05
+        btuF 100 sppnlekivalkpdlvigaegfsnqviqrlqqlgiatl 137
+                   pn+e i+ +kpdl++g +    +  + l ++  + +
+  BAQ65417.1  95 NTPNIEAILKVKPDLILGIKDNNGNQYETLSKIAPTIM 132
+                 469***************98877666677776654444 PP
+
+  == domain 2  score: 4.7 bits;  conditional E-value: 0.00074
+        btuF 254 tevldsfkkesfwqklpatknnrvyvfdyy 283
+                 t++ +++ k+++ q l+a+k+ rvy +  y
+  BAQ65417.1 270 TKLQQAWEKNAIAQSLEASKEGRVYYIPAY 299
+                 66778999****************987665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         3937  (1232454 residues searched)
+Passed MSV filter:                       173  (0.0439421); expected 78.7 (0.02)
+Passed bias filter:                      102  (0.0259081); expected 78.7 (0.02)
+Passed Vit filter:                         8  (0.002032); expected 3.9 (0.001)
+Passed Fwd filter:                         1  (0.000254001); expected 0.0 (1e-05)
+Initial search space (Z):               3937  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9459.08
+//
+[ok]

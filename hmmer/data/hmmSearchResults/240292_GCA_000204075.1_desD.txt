@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-05   22.3  14.4    7.1e-05   20.5  14.3    1.8  1  ABA23810.1  Fatty acid desaturase [Anabaena variabilis ATCC 2
+     0.0012   16.5   6.2     0.0012   16.5   6.2    1.9  2  ABA23809.1  Fatty acid desaturase [Anabaena variabilis ATCC 2
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA23810.1  Fatty acid desaturase [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.5  14.3   2.5e-08   7.1e-05      53     224 ..      56     214 ..      38     294 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 20.5 bits;  conditional E-value: 2.5e-08
+        desD  53 fvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrmtphaeh 151
+                 +  +    w+l  i  +  g+ l+g  f ighd+ h  ++ ++wvn l+g  +   +    + wr++hn+ hh +tn l  d   h      + p    
+  ABA23810.1  56 YWSLAIAPWFLLPIAWIFTGTALTGF-FVIGHDCGHRSFAKRRWVNDLVGHIFMMPLIYPFHSWRIKHNH-HHKHTNKLDEDNAWHP-----IRPEVFA 147
+                 44444455788888888899999986.89************************999999999*******7.8999****99988774.....4566666 PP
+
+        desD 152 kwyhryqhlfipilyaiipiywsfsdvrsilfrhrfgeikipnpkaidlfvllsgkvvylfwfigipllvgys 224
+                  w +  q  f   +     ++w  s  +  +++  + + k+ +       v ls  vv lf  +  p l+  +
+  ABA23810.1 148 SWGKTRQSAFKLFM--RQRLWWVGSIGHWAVVHFDWRKFKVKDQAD----VKLSVAVVVLFAAVAFPTLIATT 214
+                 67777776665333..344555544444444444444555544433....34555666677666666666555 PP
+
+>> ABA23809.1  Fatty acid desaturase [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   6.2   4.2e-07    0.0012      53     129 ..      62     137 ..      45     144 .. 0.77
+   2 ?   -0.8   0.1     0.072   2.1e+02     289     321 ..     281     313 ..     238     328 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 4.2e-07
+        desD  53 fvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytn 129
+                  v    d w++  i  l+ g+ +    f +ghd+ h  +s +kw+n l+g      i +  + wr+ h   h+   n
+  ABA23809.1  62 AVAHYLDSWYFWPIFWLMQGTMFW-ALFVVGHDCGHQSFSKHKWLNDLVGHLTHTFILVPYHGWRISHRTHHKNTGN 137
+                 345567888888888887776655.559**********************8777777788899*****987766555 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.072
+        desD 289 lnwylgglnyqvvhhlfpqichihypkiapila 321
+                 +n     +  +v hh+f +i h    k +  + 
+  ABA23809.1 281 VNHIHHDIGTHVAHHIFLNIPHYNLLKATEAIK 313
+                 455566677788999999999887776655555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       240  (0.042061); expected 114.1 (0.02)
+Passed bias filter:                      142  (0.0248861); expected 114.1 (0.02)
+Passed Vit filter:                         8  (0.00140203); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350508); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 10079.27
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0023   13.5   0.3      0.031    9.8   0.3    2.1  1  BAC08915.1  molybdenum cofactor biosynthesis protein A [Therm
+  ------ inclusion threshold ------
+      0.028    9.9   0.0       0.04    9.4   0.0    1.2  1  BAC08318.1  cobalamin biosynthesis protein D [Thermosynechoco
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC08915.1  molybdenum cofactor biosynthesis protein A [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.3   2.5e-05     0.031      61     192 ..      34     155 ..      25     217 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 2.5e-05
+        finB  61 mhvavapacniqcnycnrkydcanesrpgvvselltpeeaahkvlviagkipqmtvlgva.gpgdplanpektfrtfeliadkapdiklclstnglmlt 158
+                 + ++++  cn++c yc    d+a    p      ltp e a  v      + ++ +  v    g+pl   e +     l+a   p+  l l+tng+ l 
+  BAC08915.1  34 LRLSITDRCNLRCMYCMP-VDAAFMP-P---QTYLTPTEYATIVA----ELVELGIESVRlTGGEPLLRAEFAEIVAALVAAGVPQ--LSLTTNGIRLV 121
+                 667788899999999964.5666432.3...46799999886543....3444444444314589**9999999999999999996..7889******* PP
+
+        finB 159 eyvdrikqlnidhvtitlntidpeigaqiyswvh 192
+                  ++  + +  +  + i+l+ +dp+  a i    h
+  BAC08915.1 122 PFLPLLAHYGVRRLNISLDSLDPQTFAAISHGHH 155
+                 ***********************99888865444 PP
+
+>> BAC08318.1  cobalamin biosynthesis protein D [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.0   3.2e-05      0.04     109     161 ..     153     208 ..     125     216 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 3.2e-05
+        finB 109 gkipqmtvlgvagpgdplanpektfrtfeliadkapd...iklclstnglmlteyv 161
+                 g +  +++lg +g  +pl+ pe+  r  e +a+ka +   + +c+  ngl +++ +
+  BAC08318.1 153 GIVEGLSLLGTTGIAQPLTAPEQLDRYREDLAEKAAQsstLVFCIGENGLQVAQQL 208
+                 56677899**************************975333678*******998766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                        56  (0.0226263); expected 49.5 (0.02)
+Passed bias filter:                       52  (0.0210101); expected 49.5 (0.02)
+Passed Vit filter:                         3  (0.00121212); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808081); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 9274.54
+//
+[ok]

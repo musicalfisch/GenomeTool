@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-59  196.7   0.4    2.1e-59  196.6   0.4    1.0  1  ABA24068.1  Ethanolamine utilization protein EutN/carboxysome
+     0.0099   14.7   0.0      0.024   13.5   0.0    1.6  1  ABA22818.1  conserved hypothetical protein [Anabaena variabil
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA24068.1  Ethanolamine utilization protein EutN/carboxysome structural protein Ccml [Anabaena variabilis ATCC 29413
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  196.6   0.4   7.3e-63   2.1e-59       1     100 []       1     101 []       1     101 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 196.6 bits;  conditional E-value: 7.3e-63
+        ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaad.svgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdq 98 
+                 mqiakvrgtvvstqkdpslrgvkllllqlvdeeg+ll+kyevaad svgag+dewvl+srgsaarq+lgneqrp+daavvaiidt++vedrliyskkdq
+  ABA24068.1   1 MQIAKVRGTVVSTQKDPSLRGVKLLLLQLVDEEGNLLQKYEVAADnSVGAGFDEWVLISRGSAARQLLGNEQRPVDAAVVAIIDTIHVEDRLIYSKKDQ 99 
+                 9*******************************************945**************************************************** PP
+
+        ccmL  99 yr 100
+                 yr
+  ABA24068.1 100 YR 101
+                 *8 PP
+
+>> ABA22818.1  conserved hypothetical protein [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   8.3e-06     0.024       5      46 ..     362     403 ..     359     414 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 8.3e-06
+        ccmL   5 kvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaads 46 
+                 k  g++ s q dp+l     ll qlv +e  + + y va d 
+  ABA22818.1 362 KTTGSILSCQFDPALPTLYCLLTQLVSQEQYIEQPYLVAIDL 403
+                 7889***********************************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       106  (0.0185769); expected 114.1 (0.02)
+Passed bias filter:                       96  (0.0168244); expected 114.1 (0.02)
+Passed Vit filter:                         8  (0.00140203); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350508); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6461.07
+//
+[ok]

@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/43989_GCA_000017845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0004   18.6   4.2    0.00079   17.7   4.2    1.5  1  ACB51057.1  unknown [Cyanothece sp. ATCC 51142]
+     0.0038   15.4   0.1     0.0042   15.3   0.1    1.0  1  ACB53017.1  hypothetical protein cce_3669 [Cyanothece sp. ATC
+  ------ inclusion threshold ------
+      0.011   13.9   0.6      0.019   13.1   0.6    1.3  1  ACB51980.1  iron transport protein [Cyanothece sp. ATCC 51142
+
+
+Domain annotation for each sequence (and alignments):
+>> ACB51057.1  unknown [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7   4.2   4.4e-07   0.00079       2      59 ..      26      84 ..      25      90 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 4.4e-07
+        copC  2 kslkssllvvlsigllllaassnsn.tatndeassktttaattavsstaaakakeeeke 59
+                k++k++  ++l i+ll++a+ss s+ t+t++e++++t+t+at+++++t++++++  ++e
+  ACB51057.1 26 KIMKKIITLILPISLLMIACSSPSTdTQTQSETAPETETTATEESTETTTETETMATEE 84
+                56777888888999999999886542777888888888887777766655554444333 PP
+
+>> ACB53017.1  hypothetical protein cce_3669 [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.1   2.4e-06    0.0042       1      66 [.       6      70 ..       6      72 .] 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 2.4e-06
+        copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGG 66
+                m+s+  +ll+ l+++ +l a+  +  t+t+  + s+ t  +t++ ++ +++ ++e e++ e+++GG
+  ACB53017.1  6 MNSKAVQLLITLGLVTTLGACGGG-GTDTTAPTDSAPTEETTEEPTEVEPEATTEGEEGGEGGEGG 70
+                788888888888888877665544.44444444444444444444444444444555555555665 PP
+
+>> ACB51980.1  iron transport protein [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.6   1.1e-05     0.019       6      48 ..      30      72 ..      27     109 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.1e-05
+        copC  6 ssllvvlsigllllaassnsntatndeassktttaattavsst 48
+                s++l+v++++ l++ + +n+n+++ +e++s+  +++tt   + 
+  ACB51980.1 30 STALTVVGVSQLMTSCGNNNNSNNAPENTSSPSATETTGEVNL 72
+                5789**************9999998887776554444433222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5304  (1574679 residues searched)
+Passed MSV filter:                       166  (0.0312971); expected 106.1 (0.02)
+Passed bias filter:                      119  (0.0224359); expected 106.1 (0.02)
+Passed Vit filter:                         7  (0.00131976); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000565611); expected 0.1 (1e-05)
+Initial search space (Z):               5304  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8660.73
+//
+[ok]

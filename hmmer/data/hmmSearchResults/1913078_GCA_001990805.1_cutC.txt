@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cutC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cutC  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.019   12.6   0.3      0.034   11.8   0.3    1.4  1  ONN62503.1  chemotaxis protein [Mastigocladus laminosus 74]
+      0.032   11.8   0.0        1.5    6.4   0.0    2.3  2  ONN60171.1  homocitrate synthase [Mastigocladus laminosus 74]
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN62503.1  chemotaxis protein [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.3   1.5e-05     0.034     134     193 ..     681     745 ..     622     767 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.5e-05
+        cutC 134 edciavgfd...riltsgqka..kafeavdliaelvkradgrisimpgsgvnesnvvelvsktgv 193
+                  d + v +d   + ltsg++a  +++ea++ i e v ++  +i  +  s  n s+vv l+s+   
+  ONN62503.1 681 ADLVQVAVDqanQTLTSGDRAmnQTVEAIQAIRETVAQTGRKIQRLSESSHNISKVVSLISNFAT 745
+                 46677776622257*****9844679**********************************97554 PP
+
+>> ONN60171.1  homocitrate synthase [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   0.0    0.0077        17     184     220 ..      30      65 ..      14      83 .. 0.80
+   2 ?    6.4   0.0   0.00069       1.5      10      45 ..     147     182 ..     143     195 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.0077
+        cutC 184 vvelvsktgvkeihfsasamkdsemqfqnkaiaglgs 220
+                 + +++   gv+ei +   am +se q    aia lg 
+  ONN60171.1  30 IAKFLDAIGVHEIEVGIPAMGESEKQAI-AAIADLGL 65 
+                 55667789****************9964.58888874 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.00069
+        cutC  10 idsafraqeggadrielcdspgdggntpsygvveal 45 
+                  d a  aqe ga r  +cd+ g      +y  v+ l
+  ONN60171.1 147 FDVAHYAQEWGASRFRFCDTVGVLDSFSTYTKVNRL 182
+                 68999****************998888888887766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (244 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                        97  (0.0220906); expected 87.8 (0.02)
+Passed bias filter:                       85  (0.0193578); expected 87.8 (0.02)
+Passed Vit filter:                         9  (0.00204965); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455477); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 10847.14
+//
+[ok]

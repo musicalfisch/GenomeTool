@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251229_GCA_000317125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrN  [M=518]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-06   25.2   0.1      0.015   12.0   0.1    2.2  2  AFY88732.1  WD-40 repeat-containing protein [Chroococcidiopsi
+  ------ inclusion threshold ------
+      0.019   11.6   0.0      0.029   11.0   0.0    1.2  1  AFY86744.1  Amidase [Chroococcidiopsis thermalis PCC 7203]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY88732.1  WD-40 repeat-containing protein [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.0     1e-05     0.029      92     260 ..      83     256 ..      23     267 .. 0.64
+   2 !   12.0   0.1   5.3e-06     0.015     289     364 ..     322     401 ..     305     418 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1e-05
+        cyrN  92 awyntieirlpkel....qpavkqwqqeepg....srikaflsdw..akalnrplvlfideidslqdqtl..isvlrqlrdgfpnrpen...fpssvgl 175
+                  wy+ + + l + +    + + k w qe       +r   f++d    +  n ++ +f+deids+    +     +  +r  + +r en      +  l
+  AFY88732.1  83 QWYKGVMVDLLRGFnlfgKINFKAWWQEREDlsllQRFSQFIEDIllVQINNEKIFIFVDEIDSVLGLNFptEDFFALIRACYNQRAENpeyNRLTWAL 181
+                 466666666655441111234566666544322336888888885225667899**********86544311334555555565555551105556666 PP
+
+        cyrN 176 iglrdvrdykvasggsdrlntsspfnikvasltlrnfnlaevgelyqqhtaatgqiftpeaietafdltqgqpwlvnalakeive 260
+                  g+    d       +dr    +pfni   s+ l+ f+l+ev+ l         + +    ++ +   t+gqp+l + l++ +++
+  AFY88732.1 182 FGVATPSDL-----IADRHR--TPFNIG-KSIDLHGFDLSEVQPLASGLEDKVANPI--SVLKEILAWTDGQPFLTQKLCQIVIH 256
+                 666666554.....357765..59***6.69*************9877665544432..3456778899******9999987664 PP
+
+  == domain 2  score: 12.0 bits;  conditional E-value: 5.3e-06
+        cyrN 289 hldslaekl..rekrvka...iiepilaglelgdiladdrqylidlgl..lkrdplgglvianpiyrevlprvlvvgtqdslp 364
+                 hl ++ ++l   e+r  a   i + il g    +i+ dd q  i+l l  l  + +g l + n iyrev+ +  v  + + l 
+  AFY88732.1 322 HLKTIRDRLlrNEQRASAllgIYQQILQGV---EIPVDDSQEQIELLLsgLVVKHQGQLQVKNRIYREVFNQTWVEKQLAKLR 401
+                 777777775333566665111445555555...67788888888774422345679**************9999988877764 PP
+
+>> AFY86744.1  Amidase [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0     1e-05     0.029      99     146 ..     326     374 ..     311     381 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1e-05
+        cyrN  99 irlpkelqpavkqwqqeepgsrikaflsdwa..kalnrplvlfideidsl 146
+                   lpke+  +++qw  e++gs   ++l++ a  + + r++v f d +d+l
+  AFY86744.1 326 AGLPKEILQPMNQWLLEQSGSA-GDYLRAVAqvQVIARQIVAFFDSVDAL 374
+                 469***************9986.5788877722579************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (518 nodes)
+Target sequences:                         5752  (1839647 residues searched)
+Passed MSV filter:                       167  (0.0290334); expected 115.0 (0.02)
+Passed bias filter:                      120  (0.0208623); expected 115.0 (0.02)
+Passed Vit filter:                         6  (0.00104312); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000347705); expected 0.1 (1e-05)
+Initial search space (Z):               5752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 13613.39
+//
+[ok]

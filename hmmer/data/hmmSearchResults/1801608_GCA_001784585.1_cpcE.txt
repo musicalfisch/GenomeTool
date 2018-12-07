@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801608_GCA_001784585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcE  [M=270]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-05   20.5   0.1     0.0005   16.3   0.0    1.9  2  OGI14017.1  hypothetical protein A3I68_08545 [Candidatus Mela
+    4.5e-05   19.7   0.3    0.00011   18.5   0.3    1.6  2  OGI13911.1  hypothetical protein A3I68_08950 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI14017.1  hypothetical protein A3I68_08545 [Candidatus Melainabacteria bacterium RIFCSPLOWO2_02_FULL_35_15]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.0   5.7e-07    0.0005       5     125 ..      23     138 ..      19     142 .. 0.87
+   2 !    8.7   0.0   0.00012       0.1      61     113 ..     103     157 ..      82     158 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 5.7e-07
+        cpcE   5 ysaavdnpaytveqaianiqqredlgaryyaawwlgrfrvrqpeaisaliaaledesdrtpdggyplrrnaasalgklddlscvpaliacldcedyyvr 103
+                  s+++d     + +a+ n   + d+g    aa  lg    +   ++ +li+al+ es+   +g          al k+ +  + pal  +l+   y v+
+  OGI14017.1  23 VSNSIDLQVQELSKALENASIKRDIGGIRSAARELGNVGDKASASVPTLISALKHESEMITQGE------IVDALVKIGEK-AAPALSEALHYGCYRVQ 114
+                 6788899999999**********************************************99985......57899999886.57*************** PP
+
+        cpcE 104 esaaqalemlkdrs..aiaplkkl 125
+                   a  ale l++++  a+  l k+
+  OGI14017.1 115 RQALWALERLEEKAlpAVPGLVKV 138
+                 **********98863345555555 PP
+
+  == domain 2  score: 8.7 bits;  conditional E-value: 0.00012
+        cpcE  61 sdrtpdggyplrrnaasalgkldd..lscvpaliacldcedyyvresaaqaleml 113
+                 s+    g y ++r+a  al +l++  l +vp l+ +l + d   r +a + le l
+  OGI14017.1 103 SEALHYGCYRVQRQALWALERLEEkaLPAVPGLVKVLSARDKEPRTTAKNILEKL 157
+                 56667799**************8744789*************9999999999865 PP
+
+>> OGI13911.1  hypothetical protein A3I68_08950 [Candidatus Melainabacteria bacterium RIFCSPLOWO2_02_FULL_35_15]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.3   1.2e-07   0.00011      72     194 ..      54     175 ..      28     185 .. 0.82
+   2 ?   -3.4   0.0      0.56     5e+02     118     136 ..     247     265 ..     236     268 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1.2e-07
+        cpcE  72 rrnaasalgklddls..cvpaliacldcedyyvresaaqalemlkdr..saiaplkklleggievavlvagkphlvqpyeaiiealgtlqateaiplie 166
+                 r  aa  lgkl + +  +vp +i +l+ ++  +re aa+al  l      a+  l kll    +  +    k  +   +   +e +g l  +e i li 
+  OGI13911.1  54 RSYAARELGKLGEAAkeVVPMFIEALKSKNAVIRENAADALGELGSVaiDAVPVLAKLLGDRFDKDL--NKKVRISAAF--ALERIG-LAKREDIKLIS 147
+                 6679999****9864338***********************99976412688899****98888765..4455544444..467777.77899****** PP
+
+        cpcE 167 pflkhfvekvryaaaralyqltanpdyg 194
+                   +++    vry a ral ++  n    
+  OGI13911.1 148 NAVRYDTAIVRYHAKRALEEIKDNDSAA 175
+                 ******************9999887655 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.56
+        cpcE 118 aiaplkklleggievavlv 136
+                 a   ++++leg i  av v
+  OGI13911.1 247 AFPEVEQFLEGNIRFAVEV 265
+                 5566788888888888866 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (270 nodes)
+Target sequences:                         1759  (571868 residues searched)
+Passed MSV filter:                        49  (0.0278567); expected 35.2 (0.02)
+Passed bias filter:                       43  (0.0244457); expected 35.2 (0.02)
+Passed Vit filter:                         6  (0.00341103); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00113701); expected 0.0 (1e-05)
+Initial search space (Z):               1759  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7720.22
+//
+[ok]

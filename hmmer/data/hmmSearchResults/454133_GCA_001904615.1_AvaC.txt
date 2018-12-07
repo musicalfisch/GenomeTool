@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-89  295.0   0.1    6.4e-89  294.8   0.1    1.0  1  OKH12134.1  SAM-dependent methyltransferase [Limnothrix rosea
+    0.00036   17.7   0.2     0.0011   16.2   0.1    1.7  2  OKH15248.1  SAM-dependent methyltransferase [Limnothrix rosea
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH12134.1  SAM-dependent methyltransferase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  294.8   0.1   3.6e-92   6.4e-89       3     219 ..       2     218 ..       1     219 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 294.8 bits;  conditional E-value: 3.6e-92
+        AvaC   3 nqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsia 101
+                 n+ l l  ++y y     lre p+l++lrq ta+q  a mqi+p+qgqfm +l+q igakk+l+igvftgysalv ala+p +g++iacd + + t ia
+  OKH12134.1   2 NKILNLTPELYQYVLDNSLREHPVLTELRQFTATQRAANMQISPDQGQFMGWLLQLIGAKKTLDIGVFTGYSALVAALAIPDDGQVIACDRNPDCTKIA 100
+                 78899999******************************************************************************************* PP
+
+        AvaC 102 rrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiqqd 200
+                 ++ywq+agva kidlr+a aletldkl+a+ge+ +fdf fidadk ny  y+e++l l+r+gg+iaidnv+wsgrva  + +d+rt +ir++n  +++d
+  OKH12134.1 101 QQYWQKAGVAYKIDLRLADALETLDKLLANGEASTFDFSFIDADKRNYINYFEKSLMLLRQGGVIAIDNVLWSGRVADPNDDDKRTPVIRAFNETLHND 199
+                 *************************************************************************************************** PP
+
+        AvaC 201 ervnisiipigdgltlamk 219
+                 erv++s++ i dgltla k
+  OKH12134.1 200 ERVDLSLLAIADGLTLARK 218
+                 ****************976 PP
+
+>> OKH15248.1  SAM-dependent methyltransferase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   0.1     6e-07    0.0011      42     121 ..      24     104 ..      11     165 .. 0.76
+   2 ?   -0.2   0.0     0.062   1.1e+02     102     138 ..     137     173 ..     132     196 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 6e-07
+        AvaC  42 mqiapeqgqfmaflvqaigak..kaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapa 121
+                 m+ +  + +f  ++vq+ g +  k+l++g  t    + va    p+ ++ia dl+    ++ ++  + a v+ +i+l++a +
+  OKH15248.1  24 MDFSDVNQDFANLVVQTYGGEtaKVLDLGTGTARIPIFVAQ-QRPQWQIIATDLAPSMLAVGQKNIEAANVTGQIQLQLADS 104
+                 66666677899999***997522677777777776777765.4689********************************9975 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.062
+        AvaC 102 rrywqqagvadkidlriapaletldkliaggesnsfd 138
+                 rr  +  gv    dl    ++  +d++iag +   fd
+  OKH15248.1 137 RRLLKPQGVIILRDLFRPTSVAKIDDIIAGVDDADFD 173
+                 5555556666666666666677777777777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       116  (0.0327499); expected 70.8 (0.02)
+Passed bias filter:                       93  (0.0262564); expected 70.8 (0.02)
+Passed Vit filter:                        14  (0.00395257); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 8213.10
+//
+[ok]

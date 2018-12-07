@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292564_GCA_000316515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.6e-37  123.0   0.5      6e-37  122.9   0.5    1.0  1  AFY30154.1  phycobilisome core linker protein [Cyanobium grac
+  ------ inclusion threshold ------
+      0.013   12.9   0.1      0.017   12.5   0.1    1.4  1  AFY28788.1  CpcD/allophycocyanin linker domain protein [Cyano
+      0.015   12.8   0.0      0.034   11.6   0.0    1.6  1  AFY28828.1  Phycobilisome Linker polypeptide/CpcD/allophycocy
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY30154.1  phycobilisome core linker protein [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  122.9   0.5   5.5e-40     6e-37       1      65 [.       1      65 [.       1      66 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 122.9 bits;  conditional E-value: 5.5e-40
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntG 65
+                mr+fkitac+P   ++r qrelqntyftk vpy +Wf eqqrimk GG+i+kvelatG++ +n G
+  AFY30154.1  1 MRLFKITACIPCPEKVRSQRELQNTYFTKWVPYHSWFAEQQRIMKQGGRILKVELATGRRQQNCG 65
+                9**************************************************************98 PP
+
+>> AFY28788.1  CpcD/allophycocyanin linker domain protein [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.1   1.6e-05     0.017      36      63 ..      45      72 ..      20      75 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.6e-05
+        apcC 36 WfreqqrimkmGGkivkvelatGkpgtn 63
+                  +  + +  mGGkiv v ++ G +g +
+  AFY28788.1 45 MNETMRLVHAMGGKIVSVSVTGGGTGSE 72
+                4333444678**********99988875 PP
+
+>> AFY28828.1  Phycobilisome Linker polypeptide/CpcD/allophycocyanin linker domain protein [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   3.1e-05     0.034      30      54 ..     285     309 ..     277     311 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 3.1e-05
+        apcC  30 lvpydnWfreqqrimkmGGkivkve 54 
+                  vpy    +  qr++++GG++v+v 
+  AFY28828.1 285 RVPYSRMNEALQRVQRLGGRVVRVS 309
+                 599*999999*************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         3280  (992729 residues searched)
+Passed MSV filter:                        57  (0.017378); expected 65.6 (0.02)
+Passed bias filter:                       55  (0.0167683); expected 65.6 (0.02)
+Passed Vit filter:                         8  (0.00243902); expected 3.3 (0.001)
+Passed Fwd filter:                         3  (0.000914634); expected 0.0 (1e-05)
+Initial search space (Z):               3280  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 3325.64
+//
+[ok]

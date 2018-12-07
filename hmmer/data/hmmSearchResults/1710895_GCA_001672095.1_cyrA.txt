@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710895_GCA_001672095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrA  [M=372]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.017   12.0   0.1      0.022   11.7   0.1    1.1  1  OBQ30242.1  hypothetical protein AN483_06055 [Aphanizomenon f
+      0.037   10.9   0.0      0.077    9.8   0.0    1.4  1  OBQ29766.1  LOR/SDH bifunctional protein [Aphanizomenon flos-
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ30242.1  hypothetical protein AN483_06055 [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.1   1.1e-05     0.022     229     304 ..      44     120 ..      31     137 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.1e-05
+        cyrA 229 rhvgdkfnihr..veskcrqpmhidssfmplapgkllvnpdyidvakipdifkswdiliapkpdivtggffnanasmc 304
+                 r + d fni r  +e k++q ++++s +  ++   ll+   yi    +p+ f+  + ++a +  +    +f  na+  
+  OBQ30242.1  44 RSMRDLFNIDRflLEKKVKQSVQLNSFIATFTDIVLLIFAGYIVNITMPEAFNHDN-VLAFRVVVFMNTIFFLNATGY 120
+                 778899***995569***********999***********************8655.556677676666666666544 PP
+
+>> OBQ29766.1  LOR/SDH bifunctional protein [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.0   3.9e-05     0.077     248     362 ..     167     269 ..     156     273 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 3.9e-05
+        cyrA 248 mhidssfmplapgkllvnpdyidvakipdifkswdiliapkpdivtggffnanasmcslwismnvlmldekrviiekhqetmirflkdhgfepipcpfm 346
+                  h+d++f pla g ll  p   d        +  ++ +ap+  i    +++a+a       + n + +d   vi++k  + +   l + gf+ i  p+ 
+  OBQ29766.1 167 YHLDTCFCPLANGYLLYYPGAFDSYSN----RVIEMRVAPEKRIA---IMEADAV----NFACNAVNVD-SIVIMNKTSDGLKSRLAEVGFQVIETPLT 253
+                 699999999999999999999997654....55678899998885...4556553....3345555555.4699************************* PP
+
+        cyrA 347 nyapfggsfhcatldi 362
+                 ++   gg+ +c tl +
+  OBQ29766.1 254 EFLKAGGAAKCLTLRV 269
+                 *************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (372 nodes)
+Target sequences:                         3936  (1184914 residues searched)
+Passed MSV filter:                       120  (0.0304878); expected 78.7 (0.02)
+Passed bias filter:                      105  (0.0266768); expected 78.7 (0.02)
+Passed Vit filter:                         5  (0.00127033); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.00050813); expected 0.0 (1e-05)
+Initial search space (Z):               3936  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8815.76
+//
+[ok]

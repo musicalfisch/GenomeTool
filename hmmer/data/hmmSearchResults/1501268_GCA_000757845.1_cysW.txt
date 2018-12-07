@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysW.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501268_GCA_000757845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysW  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.4e-06   22.3  16.6    1.7e-05   21.3  16.6    1.7  1  AIQ94822.1  Phosphate transport system permease protein PstC 
+    9.5e-06   22.1   0.8    9.5e-06   22.1   0.8    3.4  2  AIQ94557.1  Ferric iron ABC transporter [Prochlorococcus sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ94822.1  Phosphate transport system permease protein PstC [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.3  16.6   1.6e-08   1.7e-05      63     224 ..      80     252 ..      10     314 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 21.3 bits;  conditional E-value: 1.6e-08
+        cysW  63 vrltviialitvplntifglcaawviarnqfrgk...tllislidlpfavspvvaglmivllyg..rngwlgsflelfdikilfal.p.g..mvlat.i 151
+                 +  t++ +++++ +   +g+ +a  i+ + f  k    ++ s+++l  a+  vv gl  +++       ++  + ++f    lf+  p g   +la  i
+  AIQ94822.1  80 IYGTLVTSFLSLLITIPLGVGTAIFITED-FVPKvvrEIIGSFVELLAAIPSVVLGLWAIFVMEpfFRAFFVFLHNFFGWIPLFSSePtGrnSLLAIlI 177
+                 33444444444444444577777777654.44441114677999************9876665411234444445677766677642422322344314 PP
+
+        cysW 152 fvtm..pfvarevipvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvlltnaramgefgavsvvsgs 224
+                 +v m  p+v+      l+++  +  +a   +ga+ w+ ++ v lp    g+m gvll+  ramge  av+++ g 
+  AIQ94822.1 178 LVVMllPIVTSIARDSLNQVPKKLRNAAYGIGASRWKTIFSVILPAALSGIMAGVLLALGRAMGETMAVTMIIGN 252
+                 4444339999999999*****************************************************998764 PP
+
+>> AIQ94557.1  Ferric iron ABC transporter [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.1   0.8   9.2e-09   9.5e-06     147     274 ..     132     253 ..     108     259 .. 0.80
+   2 ?   -2.6   8.7      0.31   3.2e+02     151     206 ..     391     447 ..     229     505 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 22.1 bits;  conditional E-value: 9.2e-09
+        cysW 147 vlatifvtmpfvarevipvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvlltnaramgefgavsvvsgsilgrtatlpifveqayknylt 245
+                 vl   + t p+v       +++ g++q +a r lg   w+ f++++lp     l+ g+ l     m e+g+ +++    +    +   ++e   k    
+  AIQ94557.1 132 VLILSISTYPYVFILANESFNKFGVNQINASRGLGVGPWRSFFKIALPMALPALITGISLMCMEVMNELGTFALLNIPSISTGIAENWIIEGNPK---- 226
+                 445556788999888888999**************************************************999875544444444445555444.... PP
+
+        cysW 246 paafsaaailallagvtliikeilerkta 274
+                   +    +++all   tlii e l r+ +
+  AIQ94557.1 227 --SAIGLSLVALLMIFTLIIFEKLSRRKS 253
+                 ..334456778888889999888888765 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.31
+        cysW 151 ifvtmpfvarevi.pvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvll 206
+                  +v +  +++  i   le i  + +ea   lg n   i+ r+ lp ++  ++ g ll
+  AIQ94557.1 391 YLVRFLTISKGSIdSSLERISPNLDEAALGLGENWLGIIKRIHLPLLQGPIFVGSLL 447
+                 222222222322213456666666666666666666666666666666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (280 nodes)
+Target sequences:                         2063  (521035 residues searched)
+Passed MSV filter:                        60  (0.0290839); expected 41.3 (0.02)
+Passed bias filter:                       29  (0.0140572); expected 41.3 (0.02)
+Passed Vit filter:                         3  (0.00145419); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000969462); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4862.99
+//
+[ok]

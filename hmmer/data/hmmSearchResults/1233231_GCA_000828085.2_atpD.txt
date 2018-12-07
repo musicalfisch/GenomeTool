@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1233231_GCA_000828085.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.2e-93  308.2   5.1    5.7e-93  308.1   5.1    1.0  1  KIJ83988.1  ATP synthase F0F1 subunit delta [Scytonema tolypo
+  ------ inclusion threshold ------
+      0.031   12.4   0.0      0.061   11.4   0.0    1.4  1  KIJ83020.1  glycine cleavage system protein T [Scytonema toly
+
+
+Domain annotation for each sequence (and alignments):
+>> KIJ83988.1  ATP synthase F0F1 subunit delta [Scytonema tolypothrichoides VB-61278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  308.1   5.1     2e-96   5.7e-93       1     183 [.       1     183 [.       1     184 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 308.1 bits;  conditional E-value: 2e-96
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mks++a ae++qpya+al+siaqs+nlt+++ged r+llsll++s++l++fl+npfv  ++kk+v++++lgeg+n+y+rnfllllvdrrri++le++lq
+  KIJ83988.1   1 MKSNIAMAEISQPYAEALMSIAQSKNLTDQLGEDVRSLLSLLSESEQLRSFLENPFVGLDDKKAVINRILGEGANAYFRNFLLLLVDRRRISLLEPVLQ 99 
+                 9************************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qyl+llrql+q  laev savplte+qqqav++kvialtkar+vel+tkid +liggviikvgsqvidaslrgqlrr+slrls 
+  KIJ83988.1 100 QYLTLLRQLKQIALAEVISAVPLTEEQQQAVRNKVIALTKAREVELDTKIDPELIGGVIIKVGSQVIDASLRGQLRRISLRLSG 183
+                 **********************************************************************************95 PP
+
+>> KIJ83020.1  glycine cleavage system protein T [Scytonema tolypothrichoides VB-61278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   2.1e-05     0.061      74     139 ..      76     141 ..      66     167 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.1e-05
+        atpD  74 vnpylrnfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekvialtk 139
+                 ++ +l + +lllv   r  fl   l++y+ +  +++ t +++ t+++++   + +av ek+ a t 
+  KIJ83020.1  76 TAYILEDAVLLLVSPNRREFLMQWLDRYIFFADKVQLTDVTDETATISVIGPKSDAVVEKLGAETI 141
+                 556788999**************************************************9876655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5685  (1736153 residues searched)
+Passed MSV filter:                       191  (0.0335972); expected 113.7 (0.02)
+Passed bias filter:                      131  (0.0230431); expected 113.7 (0.02)
+Passed Vit filter:                        14  (0.00246262); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000351803); expected 0.1 (1e-05)
+Initial search space (Z):               5685  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 7986.30
+//
+[ok]

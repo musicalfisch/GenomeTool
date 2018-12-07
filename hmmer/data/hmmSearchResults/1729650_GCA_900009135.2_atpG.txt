@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1729650_GCA_900009135.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-52  173.8  15.1    5.6e-52  173.6  15.1    1.0  1  SKB11879.1  ATP synthase subunit b' [Planktothrix sp. PCC 112
+     0.0045   15.1   9.8      0.006   14.6   9.8    1.1  1  SKB11880.1  ATP synthase subunit b [Planktothrix sp. PCC 1120
+
+
+Domain annotation for each sequence (and alignments):
+>> SKB11879.1  ATP synthase subunit b' [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.6  15.1   2.2e-55   5.6e-52       1     143 []      18     160 .]      18     160 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 173.6 bits;  conditional E-value: 2.2e-55
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp+ma+qf++laviln vfykpl k +der++yir+ e+gake+lak+e l ++yel+l+ +rk++q  i +aqaeaqk ase+va a +e+
+  SKB11879.1  18 LFDLDATLPLMAVQFLVLAVILNQVFYKPLGKAIDERSDYIRERESGAKERLAKAEKLARQYELELAETRKKAQATIVKAQAEAQKNASEKVAEAMQES 116
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                    +e  a ei q+k++a+++le qv  lsrqilekllg+elv+
+  SKB11879.1 117 QKVREKAAQEIEQEKQQALQALEQQVEPLSRQILEKLLGAELVK 160
+                 ******************************************96 PP
+
+>> SKB11880.1  ATP synthase subunit b [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   9.8   2.3e-06     0.006      14     130 ..      27     146 ..      17     158 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 2.3e-06
+        atpG  14 qfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeava.a 108
+                 ++i la+++  + y     l k+l er   i ++   a ++  +++  + e + +ls a+ ++q i+a+a+  a  +a   ++ a  e + r  a a  
+  SKB11880.1  27 NLINLAILIVVLVYfgrGFLGKILSERRSTIEEAIKEAEQRQEQAQVSLAEQQQKLSDAQTEAQRILAEAEERATTVANLILTKAT-EDVERMRATAsQ 124
+                 56666665554444222469**************9999999999999999*************************99988777665.667777776626 PP
+
+        atpG 109 eiaqqkeeafrslegqvaslsr 130
+                 e+  ++e ++  l   +as + 
+  SKB11880.1 125 ELDSERERVISQLRSVIASQAI 146
+                 8999999999999999998665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5144  (1714313 residues searched)
+Passed MSV filter:                       190  (0.0369362); expected 102.9 (0.02)
+Passed bias filter:                      108  (0.0209953); expected 102.9 (0.02)
+Passed Vit filter:                        10  (0.00194401); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000388802); expected 0.1 (1e-05)
+Initial search space (Z):               5144  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6128.67
+//
+[ok]

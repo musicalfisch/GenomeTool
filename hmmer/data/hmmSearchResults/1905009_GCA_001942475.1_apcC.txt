@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1905009_GCA_001942475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.2e-46  152.8   1.8    5.7e-46  152.7   1.8    1.0  1  OLT67443.1  photosystem I reaction center subunit XII [Moorea
+     0.0019   16.5   0.2     0.0046   15.2   0.0    1.7  2  OLT68304.1  photosystem I reaction center subunit XII [Moorea
+     0.0052   15.1   0.0     0.0095   14.2   0.0    1.4  1  OLT64138.1  hypothetical protein BI334_03055 [Moorea producen
+
+
+Domain annotation for each sequence (and alignments):
+>> OLT67443.1  photosystem I reaction center subunit XII [Moorea producens PAL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.7   1.8   2.8e-49   5.7e-46       1      66 [.       1      66 []       1      66 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 152.7 bits;  conditional E-value: 2.8e-49
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mr f itacvPsq+rirtqrelqnt+ftklv+ydnWfreqqri+kmGGki+kv+latGk+gtntGl
+  OLT67443.1  1 MRTFEITACVPSQSRIRTQRELQNTFFTKLVSYDNWFREQQRIQKMGGKIIKVKLATGKQGTNTGL 66
+                9****************************************************************8 PP
+
+>> OLT68304.1  photosystem I reaction center subunit XII [Moorea producens PAL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0      0.94   1.9e+03      22      46 ..     138     161 ..     136     175 .. 0.62
+   2 !   15.2   0.0   2.3e-06    0.0046      29      53 ..     262     286 ..     251     289 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.94
+        apcC  22 lqntyftklvpydnWfreqqrimkm 46 
+                  q+ y    vp+   ++ q   +km
+  OLT68304.1 138 YQEVYGEDTVPFYRGYKTQT-GKKM 161
+                 56667777777776666554.3444 PP
+
+  == domain 2  score: 15.2 bits;  conditional E-value: 2.3e-06
+        apcC  29 klvpydnWfreqqrimkmGGkivkv 53 
+                  lvp+d+  +e qri k GG i  +
+  OLT68304.1 262 YLVPFDQLSKEYQRIHKQGGVIASI 286
+                 59******************99776 PP
+
+>> OLT64138.1  hypothetical protein BI334_03055 [Moorea producens PAL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   4.6e-06    0.0095      29      56 ..     139     166 ..     131     174 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 4.6e-06
+        apcC  29 klvpydnWfreqqrimkmGGkivkvela 56 
+                  l+p++ W++ q ++ k  G  +kv+l+
+  OLT64138.1 139 PLIPFETWLKKQEKLEKFFGPGIKVDLT 166
+                 69************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         6114  (1950617 residues searched)
+Passed MSV filter:                       141  (0.0230618); expected 122.3 (0.02)
+Passed bias filter:                      129  (0.0210991); expected 122.3 (0.02)
+Passed Vit filter:                        18  (0.00294406); expected 6.1 (0.001)
+Passed Fwd filter:                         3  (0.000490677); expected 0.1 (1e-05)
+Initial search space (Z):               6114  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4356.38
+//
+[ok]

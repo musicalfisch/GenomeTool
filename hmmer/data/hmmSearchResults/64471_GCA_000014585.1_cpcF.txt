@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-37  126.4   1.1    2.4e-37  126.1   1.1    1.0  1  ABI45480.1  phycocyanin alpha subunit phycocyanobilin lyase, 
+  ------ inclusion threshold ------
+      0.016   12.4   0.0      0.032   11.4   0.0    1.5  1  ABI46590.1  CpeY protein [Synechococcus sp. CC9311]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI45480.1  phycocyanin alpha subunit phycocyanobilin lyase, CpcF subunit [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  126.1   1.1   1.7e-40   2.4e-37       6     206 ..       8     206 ..       4     207 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 126.1 bits;  conditional E-value: 1.7e-40
+        cpcF   6 etliiavekadsanelltavenlaaakseaaiptltdvlrynnpgasvaavdgliaigkaavpyllanldgynygarawatralagigdvrgldlllea 104
+                 e  i  ++ a ++ el+ a +nl+  ++  ai tl +vl +nnp  +  a  gli +g  avp ll  ld  nyg+raw  rala i d r ldll +a
+  ABI45480.1   8 EGAIADLQAAKTTPELIRATKNLCNLRTIEAISTLIEVLGFNNPAVASVATAGLIELGSQAVPSLLVSLDEKNYGSRAWVVRALASIRDPRSLDLLEHA 106
+                 55667778899999*******************************999999************************************************ PP
+
+        cpcF 105 avsdfsfsvrrgaarglgniiwsdlee.srvseaqkavfaalekllqgdpewvvryaaivgle.glgtaaaafrgairellaqir.eteaeivvrlrad 200
+                   +d++ svrr aargl ++     e+ s+++ +  a++aa+      d ewvvry+ai g+e  l    +++++     l q++ ++e+  v+rlra 
+  ABI45480.1 107 LATDIAPSVRRSAARGLAELNLIYPEDsSKLNRCLLALLAAI-----KDDEWVVRYSAIFGIElHLLKYNSTYKNLCILGLKQLSsNSESIKVIRLRAT 200
+                 *****************9765554454055555555555555.....489***********994466677788876666677765167777799***** PP
+
+        cpcF 201 qalehl 206
+                  al+ l
+  ABI45480.1 201 LALQRL 206
+                 **9987 PP
+
+>> ABI46590.1  CpeY protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   2.2e-05     0.032      24      69 ..      63     108 ..      38     144 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.2e-05
+        cpcF  24 avenlaaakseaaiptltdvlrynnpgasvaavdgliaigkaavpy 69 
+                 ++e l   k   aiptl  vl   +  a + a+  l+ ig   +p 
+  ABI46590.1  63 SIEALGRRKDMRAIPTLVGVLNCTDTEAVINAISSLVRIGWEPLPK 108
+                 68999999********************************877764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        94  (0.0325035); expected 57.8 (0.02)
+Passed bias filter:                       65  (0.0224758); expected 57.8 (0.02)
+Passed Vit filter:                         6  (0.00207469); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000691563); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7808.37
+//
+[ok]

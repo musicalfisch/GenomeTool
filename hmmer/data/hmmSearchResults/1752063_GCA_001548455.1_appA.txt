@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752063_GCA_001548455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-05   20.1   5.0    1.6e-05   19.6   5.0    1.1  1  BAU07271.1  cellulose-binding domain-containing protein [Fisc
+  ------ inclusion threshold ------
+       0.06    7.7  11.5      0.062    7.7  11.5    1.0  1  BAU09037.1  similar to hlyA [Fischerella sp. NIES-3754]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU07271.1  cellulose-binding domain-containing protein [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   5.0   6.4e-09   1.6e-05    2539    2628 ..     514     604 ..     487     620 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 6.4e-09
+        appA 2539 vqssvtytlgnnlenltlt.gtaningtg.ntlnnvitgnsgnnilngsdgndtliggtgndtltggaggdqftfnnrnegidtitdflssq 2628
+                    + vt t  n  + l      ++++g   +   +++ g s n+ l g  g+d+l    g+d ltggag d+f +++ +   dtitdf   q
+  BAU07271.1  514 SATPVTQTASNGSDTLNNGqSQTEVKGYMhDRGVDILMGSSNNDELSGGKGQDAL-NSLGEDELTGGAGRDRFIYQDVQSQGDTITDFDHNQ 604 
+                  3445667766666665532123344443313345678888888899999999887.5689999*************************8776 PP
+
+>> BAU09037.1  similar to hlyA [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.7  11.5   2.5e-05     0.062    2252    2325 ..      23      89 ..      10      91 .] 0.49
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 2.5e-05
+        appA 2252 dgttnlvytftrsgsttnaltvnytlggtatlntdytrtgttntvtfaagsstatvtvdptadttvesdetvil 2325
+                  +gt   + t+tr+gst+naltv  +         d t +    tv + ag ++at  v    d+  +s +tv +
+  BAU09037.1   23 NGTGAAIGTVTRTGSTANALTVSLAS-------NDTTEATVPTTVEIPAGQTSATFDVAAVDDAIADSTQTVTF 89  
+                  34444455555555555555554321.......23333334444555555555555555555555555555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         4939  (1543483 residues searched)
+Passed MSV filter:                       175  (0.0354323); expected 98.8 (0.02)
+Passed bias filter:                      108  (0.0218668); expected 98.8 (0.02)
+Passed Vit filter:                        11  (0.00222717); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.00040494); expected 0.0 (1e-05)
+Initial search space (Z):               4939  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.29u 0.01s 00:00:00.30 Elapsed: 00:00:00.30
+# Mc/sec: 13937.65
+//
+[ok]

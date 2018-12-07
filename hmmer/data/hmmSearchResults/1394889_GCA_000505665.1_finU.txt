@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1394889_GCA_000505665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-09   34.4   0.0    1.9e-09   34.3   0.0    1.0  1  AHB88004.1  iron-sulfur cluster assembly scaffold protein Nif
+     0.0001   18.8   0.0    0.00014   18.3   0.0    1.1  1  AHB87705.1  iron-sulfur cluster assembly scaffold protein Suf
+
+
+Domain annotation for each sequence (and alignments):
+>> AHB88004.1  iron-sulfur cluster assembly scaffold protein NifU [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.3   0.0   1.7e-12   1.9e-09     230     292 ..      10      71 ..       2      79 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 34.3 bits;  conditional E-value: 1.7e-12
+        finU 230 klldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 + +++v+ +elr+ l++d+++v+l + ++ +++  l++a++s+ s++++l++ +e +l++ + 
+  AHB88004.1  10 ENVEKVL-DELRPYLMADGGNVELVEIEGPVVRLRLQGACGSCPSSTMTLRMGIERKLKESIP 71 
+                 4455555.579***********************************************99874 PP
+
+>> AHB87705.1  iron-sulfur cluster assembly scaffold protein SufE2 [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.3   0.0   1.3e-07   0.00014      40      95 ..      40      98 ..      35     109 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 18.3 bits;  conditional E-value: 1.3e-07
+        finU 40 acGdalrlhl..kvevesdkiv.darfqtfGctsaiassealvelikGltldealkvsn 95
+                +cGd++ l +  + +++ ++i+ d +f+  Gc+ a+as++ +++ ++G+ +  al++ +
+  AHB87705.1 40 SCGDTIDLTValQTNEQGETIIkDIQFEGEGCAIAMASADLMADALRGQPVSRALQMVE 98
+                6***988876115567778877488******************************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         2233  (713131 residues searched)
+Passed MSV filter:                        59  (0.0264219); expected 44.7 (0.02)
+Passed bias filter:                       51  (0.0228392); expected 44.7 (0.02)
+Passed Vit filter:                         4  (0.00179131); expected 2.2 (0.001)
+Passed Fwd filter:                         2  (0.000895656); expected 0.0 (1e-05)
+Initial search space (Z):               2233  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10696.97
+//
+[ok]

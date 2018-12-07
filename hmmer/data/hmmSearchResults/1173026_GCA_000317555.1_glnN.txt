@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173026_GCA_000317555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-06   25.0   0.0      2e-06   24.4   0.0    1.2  1  AFZ31554.1  L-glutamine synthetase [Gloeocapsa sp. PCC 7428]
+    1.8e-05   21.2   0.0    2.2e-05   21.0   0.0    1.1  1  AFZ30985.1  L-glutamine synthetase [Gloeocapsa sp. PCC 7428]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ31554.1  L-glutamine synthetase [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.4   0.0   7.9e-10     2e-06     287     389 ..     184     282 ..     167     308 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 24.4 bits;  conditional E-value: 7.9e-10
+        glnN 287 trhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsvgnatqgnlldpgd.tphanlqfllfcgavirgv 384
+                     e a gqfei   +  a  + d   +   ++k+ a ++g+ + +  kpf+ + g g h+  s+ n  q  + d  +    +n+ + +++g     v
+  AFZ31554.1 184 QCDHEDANGQFEINWTYSDALTTCDRHVFFKYMVKTLAEQQGLTATFMPKPFSQLTGNGAHIHMSLWNDGQNIFADATEeMGLSNIAYEFLAG-----V 277
+                 4456789****************************************************************9998876513445655555444.....4 PP
+
+        glnN 385 hkyga 389
+                   +g 
+  AFZ31554.1 278 LAHGR 282
+                 44444 PP
+
+>> AFZ30985.1  L-glutamine synthetase [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   0.0   8.7e-09   2.2e-05     254     373 ..     179     298 ..     114     339 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 8.7e-09
+        glnN 254 qfddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnw 350
+                 ++ + yf   p + +q +  e+   + + g+     h eva  gq e+   f     a+d       ++k  akk+g  + +  kp+   ngsg h   
+  AFZ30985.1 179 RYKEGYFPVSPtDSLQDMRSEMLLTMAKCGVVIEKHHHEVATgGQCELGFKFAPLIKAADDLMTYKYVIKNVAKKYGKTVTFMPKPIFNDNGSGMHTHQ 277
+                 6778888888735678888899999***************97369999888888888888888888999*****************************9 PP
+
+        glnN 351 svgnatqgnlldpgdtphanlqf 373
+                 s+ +  q   l  gd      q+
+  AFZ30985.1 278 SIWKEGQ--PLFAGDRYAGLSQM 298
+                 9976544..45566655444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         5011  (1616692 residues searched)
+Passed MSV filter:                       142  (0.0283377); expected 100.2 (0.02)
+Passed bias filter:                      125  (0.0249451); expected 100.2 (0.02)
+Passed Vit filter:                         5  (0.000997805); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000399122); expected 0.1 (1e-05)
+Initial search space (Z):               5011  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.08
+# Mc/sec: 14610.85
+//
+[ok]

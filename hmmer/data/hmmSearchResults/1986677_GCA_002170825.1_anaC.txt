@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986677_GCA_002170825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaC  [M=1590]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-17   58.1   0.0    1.6e-10   35.3   0.0    2.2  2  OUW30161.1  acetate--CoA ligase [Cyanobacteria bacterium TMED
+    3.7e-09   30.8   0.0    5.5e-09   30.2   0.0    1.2  1  OUW28888.1  long-chain fatty acid--CoA ligase, partial [Cyano
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW30161.1  acetate--CoA ligase [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.5   0.0   6.4e-09   4.5e-06     662     704 ..     252     293 ..     237     370 .. 0.81
+   2 !   35.3   0.0   2.3e-13   1.6e-10     905    1022 ..     509     631 ..     501     645 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 20.5 bits;  conditional E-value: 6.4e-09
+        anaC 662 dhhpqdnllhpmtsenlayviytsgstgkpkgvliqhqsllnl 704
+                 + +  d +  pm+se+  +v+ytsgstgkpkgv+    +  nl
+  OUW30161.1 252 EGQSSDCPAVPMASEDRLFVLYTSGSTGKPKGVVHTT-AGYNL 293
+                 5567789999**********************97543.33444 PP
+
+  == domain 2  score: 35.3 bits;  conditional E-value: 2.3e-13
+        anaC  905 rlyktgdlvrygndgqiefvgriddqvkirgfrielgeietvlnqhpqvkeaiiiaredqpgvkrlcayvi.....asqnltvsqlrlflqeklpqy 996 
+                   ly +gd  r   dg   ++gr+dd +++ g r+   eie+ l  hp v ea ++ r d+     ++a+v       + +  v++lr  + + +   
+  OUW30161.1  509 YLYFAGDGARRDADGYFWVMGRVDDVINVSGHRLGTMEIESALVSHPAVAEAAVVGRPDDLKGEGIVAFVTlesgrDATDALVAELRAHVGQEIGPI 605 
+                  5899*******************************************************99999999999632211234566999999999999999 PP
+
+        anaC  997 mvpaffvlldafpltangkidrralp 1022
+                    p  +   da+p t  gki rr l 
+  OUW30161.1  606 ARPDEIRCSDALPKTRSGKIMRRILR 631 
+                  99********************9886 PP
+
+>> OUW28888.1  long-chain fatty acid--CoA ligase, partial [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.2   0.0   7.8e-12   5.5e-09     561     706 ..      57     218 ..      41     225 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 30.2 bits;  conditional E-value: 7.8e-12
+        anaC 561 yeqlnqkanqlayylqnlgvktedlvgiciersvlmiigllgilkagaayipldpnypserlaymledsavsvlltqe.nlvdtl...p.nylgtifcl 654
+                 + +l q+    a  ++  gv++ d+v +  e s   ++   g++++gaa        p e l y+led   + l+ q+ +l + l   p +  g  f+l
+  OUW28888.1  57 FGELAQRIALAAAAFRLQGVQQGDVVALFAENSPRWLVADQGLMRSGAADAVRGASAPVEELRYILEDCGATALVVQNaELWQRLalsPqQRSGLRFVL 155
+                 667788887777777888***************************************************999998886246565533342457888999 PP
+
+        anaC 655 dqdgk..........il.dhhpqdnllhpmtsenlayviytsgstgkpkgvliqhqsllnlvs 706
+                 + +g            l     q +++     + +a v+ytsg+tg+pkgv + h  ll  +s
+  OUW28888.1 156 QLEGEpaegalgwdaFLaSGAGQAEVVPSGGRDAIATVLYTSGTTGRPKGVPLSHANLLHQMS 218
+                 8887622222211112202334555565667789************************98765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1590 nodes)
+Target sequences:                         1406  (396538 residues searched)
+Passed MSV filter:                        28  (0.0199147); expected 28.1 (0.02)
+Passed bias filter:                       28  (0.0199147); expected 28.1 (0.02)
+Passed Vit filter:                         4  (0.00284495); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00142248); expected 0.0 (1e-05)
+Initial search space (Z):               1406  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 9007.08
+//
+[ok]

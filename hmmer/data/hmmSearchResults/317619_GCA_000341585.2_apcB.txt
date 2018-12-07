@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317619_GCA_000341585.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcB  [M=161]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-65  216.2   2.9    5.8e-65  216.0   2.9    1.0  1  KKI99000.1  allophycocyanin [Prochlorothrix hollandica PCC 90
+    3.5e-05   21.7   0.2    6.6e-05   20.8   0.2    1.5  1  KKJ00991.1  hypothetical protein PROH_00695 [Prochlorothrix h
+
+
+Domain annotation for each sequence (and alignments):
+>> KKI99000.1  allophycocyanin [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  216.0   2.9   3.1e-68   5.8e-65       1     160 [.       1     158 [.       1     159 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 216.0 bits;  conditional E-value: 3.1e-68
+        apcB   1 mqdaitsvinssdvqgkyldasaleklkayfatgelrvraasvisanaaaivkeavaksllysdvtrpggnmyttrryaacirdldyylryatyamlag 99 
+                 mqd+it+vi++sd +g+yld++a+++l+ yfa+g+ r+ aa+++++ aa+iv++av++s+  s++ + gg+   +rryaacirdldy+lryatyam+ag
+  KKI99000.1   1 MQDTITAVIQASDERGQYLDDAAISQLQCYFASGQRRMDAAATLCTHAATIVQDAVSQSMPASEMLQAGGK--GSRRYAACIRDLDYFLRYATYAMVAG 97 
+                 9*********************************************************************7..79************************ PP
+
+        apcB 100 dpsildervlnglketynslgvpigatvqaiqalkevtaslvgadagkemgvyfdyissgl 160
+                  psildervl+glkety +lgv i at++aiqa+k+vt  ++g d g+em+ yfdyi+ gl
+  KKI99000.1  98 SPSILDERVLDGLKETYLALGVKIEATIEAIQAMKQVTFRVLGDDIGQEMAQYFDYICDGL 158
+                 ************************************************************9 PP
+
+>> KKJ00991.1  hypothetical protein PROH_00695 [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.2   3.5e-08   6.6e-05      10     155 ..       8     145 ..       1     150 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 3.5e-08
+        apcB  10 nssdvqgkyldasaleklkayfatgelrvraasvisanaaaivkeavak.sllysdvtrpggnmyttrryaacirdldyylryatyamlagdpsilder 107
+                 n + v+ +yl+++ l  l+ y+++  lr+++ + i + a ++v +++ k + +y+ + +  g+         c rd+   +ry + ++l  d   + e 
+  KKJ00991.1   8 NLTAVDDRYLNDQELRSLEEYMQSHALRLKTYQLIQTHADEVVLKTLRKmTAVYAKMLQQHGQ--------ICKRDITDIMRYISLCILKHDEHAFYEE 98 
+                 6678999*********************************99988887734577777776665........5999999999999999999988766555 PP
+
+        apcB 108 vlnglketynslgvpigatvqaiqalkevtaslvgadagkemgvyfdy 155
+                  +  +    +++     a+  a   l+ v      ad+ + + vy+d 
+  KKJ00991.1  99 FVLWMDTMMKAF-KRKDAAHAAYTHLRGVVEETFPADSARMINVYVDQ 145
+                 444444433333.34455566677777777777777777777777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (161 nodes)
+Target sequences:                         3737  (1137027 residues searched)
+Passed MSV filter:                        72  (0.0192668); expected 74.7 (0.02)
+Passed bias filter:                       62  (0.0165908); expected 74.7 (0.02)
+Passed Vit filter:                         5  (0.00133797); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000535189); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6102.04
+//
+[ok]

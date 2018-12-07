@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1781255_GCA_001746915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.7e-49  162.3   1.4    5.1e-49  162.2   1.4    1.0  1  OEJ75786.1  photosystem I reaction center subunit XII [Desert
+    2.1e-05   22.5   0.0    2.6e-05   22.2   0.0    1.3  1  OEJ73092.1  phycobilisome linker polypeptide [Desertifilum sp
+     0.0011   16.9   0.0     0.0026   15.7   0.0    1.6  1  OEJ75491.1  ferredoxin-NADP reductase [Desertifilum sp. IPPAS
+
+
+Domain annotation for each sequence (and alignments):
+>> OEJ75786.1  photosystem I reaction center subunit XII [Desertifilum sp. IPPAS B-1220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  162.2   1.4   3.1e-52   5.1e-49       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 162.2 bits;  conditional E-value: 3.1e-52
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfk+tacvPsqtrirtqrelqntyftklvpy+nWfreqqrimkmGGki+kvelatGk gtntGll
+  OEJ75786.1  1 MRMFKVTACVPSQTRIRTQRELQNTYFTKLVPYENWFREQQRIMKMGGKILKVELATGKVGTNTGLL 67
+                9****************************************************************96 PP
+
+>> OEJ73092.1  phycobilisome linker polypeptide [Desertifilum sp. IPPAS B-1220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.2   0.0   1.6e-08   2.6e-05      30      58 ..      49      77 ..      18      83 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 22.2 bits;  conditional E-value: 1.6e-08
+        apcC 30 lvpydnWfreqqrimkmGGkivkvelatG 58
+                 vpyd    e qri ++GG+iv++e  t 
+  OEJ73092.1 49 TVPYDRMNDEMQRISRLGGRIVNIEPMTA 77
+                49**********************98776 PP
+
+>> OEJ75491.1  ferredoxin-NADP reductase [Desertifilum sp. IPPAS B-1220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.7   0.0   1.6e-06    0.0026      31      54 ..      49      72 ..      35      83 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 1.6e-06
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy    +e qri ++GG+iv+++
+  OEJ75491.1 49 VPYSRMNQEMQRIARLGGRIVNIQ 72
+                9********************997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         4964  (1712571 residues searched)
+Passed MSV filter:                       106  (0.0213537); expected 99.3 (0.02)
+Passed bias filter:                       98  (0.0197421); expected 99.3 (0.02)
+Passed Vit filter:                        10  (0.0020145); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.000604351); expected 0.0 (1e-05)
+Initial search space (Z):               4964  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5737.11
+//
+[ok]

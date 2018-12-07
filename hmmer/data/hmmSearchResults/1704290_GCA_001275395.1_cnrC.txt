@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1704290_GCA_001275395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      7e-08   30.5  24.5      7e-08   30.5  24.5    2.1  2  KOP23310.1  transporter [Hapalosiphon sp. MRB220]
+
+
+Domain annotation for each sequence (and alignments):
+>> KOP23310.1  transporter [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.2     0.058   3.4e+02     299     332 ..      30      64 ..      19     146 .. 0.80
+   2 !   30.5  24.5   1.2e-11     7e-08      99     415 ..     428     752 ..     421     758 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.058
+        cnrC 299 vsipipvfnngraaiaqataqrtqada.qrrvtal 332
+                 v   i + n+gr  +a+ t ++  a   +r vt l
+  KOP23310.1  30 VNPSISISNEGRNLVADNTKNQISAAVnNRFVTNL 64 
+                 45567788999999998887666555415556665 PP
+
+  == domain 2  score: 30.5 bits;  conditional E-value: 1.2e-11
+        cnrC  99 vgfaipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinada 197
+                 v +   i   g+r a +  a+ ql   e++a   a ++rl+v+q y +   ad  v  a+   r a  +lr a    +ag  + ++  ra+v+  na+ 
+  KOP23310.1 428 VQLIYNIFTSGRRSANINAAEEQLRFQELDAMRQAEEIRLNVAQNYYDLQEADENVRIAQSSVRNAEVTLRDAQALERAGVGTQFDVLRAQVTLANAQQ 526
+                 5566678889***************************************************************************************** PP
+
+        cnrC 198 nverqlrlaeaaranlarrigrpidgalddtlldrlpganvygpvapvnttgtla......laaanadfsiaeagvrlaranrvpdlnvgpairrleat 290
+                 ++ + l      r++la  +  p   ++  +   rl g   +    p++ t  la      l    a+  i e   rla ++  p++ +  +   l+  
+  KOP23310.1 527 DLSQALSQQRIRRSQLATTLNVPDALTVSAADPVRLAGL--WN--LPLEDTVVLAyqnrpeLQQQLAQRNINEQQRRLALSELGPQISLVASYNLLDRF 621
+                 *******************99885544444444455554..32..3444444444111122667789999******************99999999988 PP
+
+        cnrC 291 ndmaav...ftvsip..ipvfnngraaiaqataqrtq...adaqrrvtaldieqaitdaqaqaanaattaraasgpalaaaqeaariarigyregkfgq 381
+                 +d  +v   ++v +   + +f+ g aa a+a  q+++   a++q   t  +i   + +a ++        ++ +  al  a+e+ r+ar+ ++ g   q
+  KOP23310.1 622 DDSISVtdgYSVGLQatLNLFD-GGAARARADQQKANiriAETQFNDTRNQIRFQVEQAYSELKSNLDQVQT-ANIALEQARESLRLARLRFQAGVGTQ 718
+                 8877773335565541144555.5566666665554322256665555555555555554444333333333.35689********************* PP
+
+        cnrC 382 lelldaertlaetrvaaidalanyqnaraqverl 415
+                  +++ ae  l+ +   ++ a+  y+ a a ++r 
+  KOP23310.1 719 TDVIAAENDLTRAEGNSVSAILSYNRALATLQRS 752
+                 ***************************9999884 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         5845  (1865779 residues searched)
+Passed MSV filter:                       206  (0.0352438); expected 116.9 (0.02)
+Passed bias filter:                       96  (0.0164243); expected 116.9 (0.02)
+Passed Vit filter:                         7  (0.0011976); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000171086); expected 0.1 (1e-05)
+Initial search space (Z):               5845  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 11327.94
+//
+[ok]

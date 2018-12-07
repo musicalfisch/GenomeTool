@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/203124_GCA_000014265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-50  165.3   1.2      5e-50  165.2   1.2    1.0  1  ABG52712.1  CpcD phycobilisome linker-like [Trichodesmium ery
+     0.0058   14.5   0.1      0.021   12.7   0.0    2.0  2  ABG53112.1  Phycobilisome linker polypeptide [Trichodesmium e
+      0.007   14.2   0.0      0.017   13.0   0.0    1.6  1  ABG52720.1  oxidoreductase FAD/NAD(P)-binding [Trichodesmium 
+
+
+Domain annotation for each sequence (and alignments):
+>> ABG52712.1  CpcD phycobilisome linker-like [Trichodesmium erythraeum IMS101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.2   1.2   3.4e-53     5e-50       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 165.2 bits;  conditional E-value: 3.4e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfkitacvPsqtrirtqrelqntyftklvpydnWf+eqqrimkmGGkivkvelatGk+g+ntGll
+  ABG52712.1  1 MRMFKITACVPSQTRIRTQRELQNTYFTKLVPYDNWFKEQQRIMKMGGKIVKVELATGKQGANTGLL 67
+                9****************************************************************96 PP
+
+>> ABG53112.1  Phycobilisome linker polypeptide [Trichodesmium erythraeum IMS101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0      0.47     7e+02      25      46 ..     141     161 ..     136     176 .. 0.68
+   2 !   12.7   0.0   1.4e-05     0.021      30      52 ..     262     284 ..     233     287 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.47
+        apcC  25 tyftklvpydnWfreqqrimkm 46 
+                 +y   +vpy   ++ q   +km
+  ABG53112.1 141 AYGENIVPYYRGYKTQTG-KKM 161
+                 566778899888887653.444 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 1.4e-05
+        apcC  30 lvpydnWfreqqrimkmGGkivk 52 
+                 lvp+d+  +e qri + GG i  
+  ABG53112.1 262 LVPFDQLSKEYQRIHRQGGVIAS 284
+                 9******************9965 PP
+
+>> ABG52720.1  oxidoreductase FAD/NAD(P)-binding [Trichodesmium erythraeum IMS101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   1.2e-05     0.017      31      56 ..      56      81 ..      38      91 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 1.2e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkvela 56
+                vpy    +e +ri  mGGki+ ++  
+  ABG52720.1 56 VPYSRMNQEMRRITGMGGKILSIKTL 81
+                9********************99765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         4451  (1543737 residues searched)
+Passed MSV filter:                       134  (0.0301056); expected 89.0 (0.02)
+Passed bias filter:                      118  (0.0265109); expected 89.0 (0.02)
+Passed Vit filter:                        10  (0.00224669); expected 4.5 (0.001)
+Passed Fwd filter:                         3  (0.000674006); expected 0.0 (1e-05)
+Initial search space (Z):               4451  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 3447.68
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641165_GCA_002075285.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.9e-21   71.5   0.0    8.2e-21   71.2   0.0    1.1  1  ASC72435.1  Ferredoxin--NADP reductase [Halomicronema hongdec
+    7.1e-07   25.0   0.0    8.7e-07   24.7   0.0    1.0  1  ASC71494.1  Bacterial hemoglobin [Halomicronema hongdechloris
+
+
+Domain annotation for each sequence (and alignments):
+>> ASC72435.1  Ferredoxin--NADP reductase [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   71.2   0.0   3.1e-24   8.2e-21    1208    1402 ..     177     386 ..     159     406 .] 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 71.2 bits;  conditional E-value: 3.1e-24
+        cysJ 1208 qkprlysissc...pllhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqh.. 1297
+                  +k rlysi+s     l+  + + + v  l+    ++g+   g+cs yl+gl+ g+ v++   +   +  p d  a i+m+  gtg++p+ a+lq+  
+  ASC72435.1  177 HKLRLYSIASTrhgDLMDDKTVSLCVRQLEYNhPETGEKVYGVCSSYLCGLEKGAEVQVTGpVGKEMLLPDDEDATIIMMATGTGIAPFRAYLQRmf 273 
+                  578*****997333699999****9999987625899999******************975266788999***********************9633 PP
+
+        cysJ 1298 ..realqnqgis.lgeahlyfgcrnpsdfiyqeqlqvwrdr.nvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakma 1386
+                    +e   n      g a l fg     +++y+e+l+  + +      l  a+sr  ++    k y+qn + +q +++w+++  p+ h y+cg   m 
+  ASC72435.1  274 deKERQANPDYQfRGFAWLIFGIPVTPNILYKEELESVQAQyPDNFRLTYALSREQKNaeggKMYIQNRVAEQADELWKLIQEPKTHTYICGLKGME 370 
+                  2245555555442699*****************9986554413445677777775432222389********************************* PP
+
+        cysJ 1387 ddvfavmmaiakqqgk 1402
+                  d + a + a a+++g 
+  ASC72435.1  371 DGIDAALAAAAEKNGV 386 
+                  *******999998884 PP
+
+>> ASC71494.1  Bacterial hemoglobin [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.7   0.0   3.3e-10   8.7e-07     325     448 ..      11     130 ..       4     142 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 24.7 bits;  conditional E-value: 3.3e-10
+        cysJ 325 eaalppellqemaacweifsqnkqqmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhsfadvptcaypa 423
+                 e+al  ell++  a   +  q  +++   fy+ lf  yp   p+f +++m     +l+ +l f++  lr     e+   l+ lg  h         yp 
+  ASC71494.1  11 ETALQIELLEQSFAK--VKPQ-ANEFVASFYDNLFTDYPAAKPLFAHTNMAEQGQKLLMSLVFVIENLRQP--GELTAALQGLGARHVKYGALPEHYPL 104
+                 555666665544332..2233.3445679****************************************75..689999999***99866666678*** PP
+
+        cysJ 424 msetlfvlferyl.pnftpelrqgwq 448
+                 + ++l+  fe+yl  ++tp+ +  w 
+  ASC71494.1 105 VGNSLLKTFEQYLgADWTPDTKAAWV 130
+                 *************4479*****9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         5269  (1545500 residues searched)
+Passed MSV filter:                       118  (0.0223951); expected 105.4 (0.02)
+Passed bias filter:                       90  (0.017081); expected 105.4 (0.02)
+Passed Vit filter:                         8  (0.00151831); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000379579); expected 0.1 (1e-05)
+Initial search space (Z):               5269  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.13u 0.02s 00:00:00.15 Elapsed: 00:00:00.15
+# Mc/sec: 15248.93
+//
+[ok]

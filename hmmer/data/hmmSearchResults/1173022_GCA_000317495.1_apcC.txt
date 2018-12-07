@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.7e-50  165.1   1.9    6.2e-50  165.0   1.9    1.0  1  AFZ12815.1  phycobilisome core linker protein [Crinalium epip
+    0.00013   19.9   0.0    0.00022   19.1   0.0    1.4  1  AFZ12698.1  CpcD phycobilisome linker domain protein [Crinali
+    0.00052   17.9   0.0     0.0012   16.7   0.0    1.6  1  AFZ12910.1  Ferredoxin--NADP(+) reductase [Crinalium epipsamm
+     0.0062   14.5   0.0      0.015   13.3   0.0    1.7  1  AFZ12697.1  Phycobilisome linker polypeptide [Crinalium epips
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ12815.1  phycobilisome core linker protein [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.0   1.9   5.3e-53   6.2e-50       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 165.0 bits;  conditional E-value: 5.3e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfk+tacvPsqtrirtqrelqntyftklvpy+nWfreqqrimkmGGkivkvelatGk+gtntGll
+  AFZ12815.1  1 MRMFKVTACVPSQTRIRTQRELQNTYFTKLVPYENWFREQQRIMKMGGKIVKVELATGKQGTNTGLL 67
+                9****************************************************************96 PP
+
+>> AFZ12698.1  CpcD phycobilisome linker domain protein [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.1   0.0   1.9e-07   0.00022      26      56 ..      47      75 ..      40      84 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 19.1 bits;  conditional E-value: 1.9e-07
+        apcC 26 yftklvpydnWfreqqrimkmGGkivkvela 56
+                + t  vpy+    e qri ++GG+iv ++  
+  AFZ12698.1 47 FIT--VPYNRMNDEMQRINRLGGQIVSIQPL 75
+                554..9********************99855 PP
+
+>> AFZ12910.1  Ferredoxin--NADP(+) reductase [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.0   1.1e-06    0.0012      31      58 ..      50      77 ..      44      85 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 1.1e-06
+        apcC 31 vpydnWfreqqrimkmGGkivkvelatG 58
+                vpy    +e qri ++GGkiv ++  t 
+  AFZ12910.1 50 VPYSRMNQEMQRITRLGGKIVSIRPLTA 77
+                9********************9975554 PP
+
+>> AFZ12697.1  Phycobilisome linker polypeptide [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   1.2e-05     0.015      27      54 ..     265     290 ..     257     292 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 1.2e-05
+        apcC  27 ftklvpydnWfreqqrimkmGGkivkve 54 
+                 f  lvp ++ +   q i+++GGkiv+v 
+  AFZ12697.1 265 F--LVPVEQMLSKMQEIQRVGGKIVNVT 290
+                 3..9*********************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                       128  (0.026936); expected 95.0 (0.02)
+Passed bias filter:                      116  (0.0244108); expected 95.0 (0.02)
+Passed Vit filter:                        17  (0.00357744); expected 4.8 (0.001)
+Passed Fwd filter:                         4  (0.000841751); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 3384.10
+//
+[ok]

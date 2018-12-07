@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251229_GCA_000317125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.8e-119  393.0   0.0   7.5e-119  392.8   0.0    1.0  1  AFY86593.1  protein of unknown function DUF1001 [Chroococcidi
+    1.6e-35  120.9   0.0    1.8e-35  120.7   0.0    1.0  1  AFY90584.1  protein of unknown function DUF1001 [Chroococcidi
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY86593.1  protein of unknown function DUF1001 [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  392.8   0.0  2.6e-122  7.5e-119       1     196 []       1     196 [.       1     196 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 392.8 bits;  conditional E-value: 2.6e-122
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdi tlar+maadfsnq+qafenppffahirvcmrplpl+llsgvsf+veqaydy+l +pyr+rvlkl++a+drieienyt+k+e++f+gasrdl
+  AFY86593.1   1 MTHSTDIETLARWMAADFSNQAQAFENPPFFAHIRVCMRPLPLNLLSGVSFYVEQAYDYMLGNPYRVRVLKLLQAGDRIEIENYTIKQEEEFHGASRDL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 +rl++l++d+leklpgcnmiv+w  n+fkg+vepgk c+vvrkgk+tyldsefeid +kfis+drgrdpetdeh+wgsvagpf+fvrw+s+adevk+
+  AFY86593.1 100 KRLQALSSDRLEKLPGCNMIVQWVDNGFKGTVEPGKCCMVVRKGKTTYLDSEFEIDGDKFISRDRGRDPETDEHVWGSVAGPFYFVRWHSYADEVKI 196
+                 ***********************************************************************************************97 PP
+
+>> AFY90584.1  protein of unknown function DUF1001 [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.7   0.0   6.3e-39   1.8e-35       5     185 ..       4     190 ..       1     192 [] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 120.7 bits;  conditional E-value: 6.3e-39
+        cpeS   5 tdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed.rieienytvkeekkfygasrdlerl 102
+                 t++ +la +ma +f n++qa+ +p +f h+r+  +p+pl   + +++f eqa    l++pyr r++++ ++ed +i+++ y+ k+ +   ga  + erl
+  AFY90584.1   4 TELIALADYMAGEFENKAQAIADPAWFVHLRLWQKPVPLFQEDSITLFAEQANALYLDKPYRPRLMRMQAREDgKIQVQYYIPKDFTAVRGAGANSERL 102
+                 78999**************************************************************98765439************************ PP
+
+        cpeS 103 ktlkaddleklpgcnmivewtg.....nsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefv 185
+                 ++++ dd+e lpgc +iv w         fk  + p   c  + +g++  ++  fe   e+f+s d+g d++t    wg++ g ++f 
+  AFY90584.1 103 QQFTPDDFELLPGCLLIVTWQQlgfnsYHFKAAIPPDAKCCFTYQGNTQQVNLGFEAAPEEFLSYDKGIDMNTGAAKWGAIMGAYRFR 190
+                 ********************7522311458999****************************************************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5752  (1839647 residues searched)
+Passed MSV filter:                        77  (0.0133866); expected 115.0 (0.02)
+Passed bias filter:                       68  (0.011822); expected 115.0 (0.02)
+Passed Vit filter:                         7  (0.00121697); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000347705); expected 0.1 (1e-05)
+Initial search space (Z):               5752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 4006.34
+//
+[ok]

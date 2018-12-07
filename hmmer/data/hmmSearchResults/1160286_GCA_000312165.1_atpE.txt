@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160286_GCA_000312165.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+    4.8e-62  206.3   0.3    5.4e-62  206.1   0.3    1.0  1  lcl|HE972714.1_prot_CCH97783.1_2563  [protein=ATP synthase epsilon ch
+  ------ inclusion threshold ------
+        9.2    4.6  14.4       0.72    8.2   1.1    3.5  3  lcl|HE972764.1_prot_CCH99861.1_4357  [protein=Similar to r|Q8YR11|Q8Y
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|HE972714.1_prot_CCH97783.1_2563  [protein=ATP synthase epsilon chain] [protein_id=CCH97783.1] [location=9126..954
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  206.1   0.3   2.2e-65   5.4e-62       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 206.1 bits;  conditional E-value: 2.2e-65
+                                 atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveed 74 
+                                          m++tvrvi+pd+ vwd+ aeevilps+tgqlgilsghaplltal++gvmr+r+ k  dw+ ia+lggfaeve++
+  lcl|HE972714.1_prot_CCH97783.1_2563   1 MSITVRVITPDRIVWDNVAEEVILPSSTGQLGILSGHAPLLTALNIGVMRIRPGK--DWENIAVLGGFAEVENN 72 
+                                          89**************************************************976..8**************** PP
+
+                                 atpE  75 evtilvngaergdkinleearaafneaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                                          e+ +lvngae g ki+ e+ara++++aqt+l++v++ +dr++ iqa+q++++arar+qaagglv
+  lcl|HE972714.1_prot_CCH97783.1_2563  73 EIKVLVNGAELGSKIDKEKARAEYEQAQTRLDEVSKgDDRRKTIQAQQSWRKARARYQAAGGLV 136
+                                          **********************************87257999********************97 PP
+
+>> lcl|HE972764.1_prot_CCH99861.1_4357  [protein=Similar to r|Q8YR11|Q8YR11] [protein_id=CCH99861.1] [location=complemen
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.2   1.1    0.0003      0.72      76     125 ..      97     145 ..      81     156 .. 0.81
+   2 ?    2.7   0.4     0.015        36      87     126 ..     214     253 ..     198     261 .. 0.84
+   3 ?    1.0   1.6      0.05   1.2e+02      92     128 ..     262     298 ..     242     312 .. 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.0003
+                                 atpE  76 vtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkr 125
+                                          +  ++++ er +  nl +a+ + + a +kl+qvka+ +  +i+a++a  r
+  lcl|HE972764.1_prot_CCH99861.1_4357  97 IIAILESQERLE-DNLRQAQEQVKVAAAKLEQVKAGAKVGEIDANAANVR 145
+                                          445555666654.48999***************************98765 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.015
+                                 atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqafkra 126
+                                          +++nle + ++ +ea+  l++++   +q+  +a+ ++ r 
+  lcl|HE972764.1_prot_CCH99861.1_4357 214 KRLNLETSNQQLTEAKVTLERIERTGKQEIEEAKTTLARI 253
+                                          578999999**************99999988888887775 PP
+
+  == domain 3  score: 1.0 bits;  conditional E-value: 0.05
+                                 atpE  92 eearaafneaqtklnqvkaedrqaqiqat.qafkrara 128
+                                          +ear++ n+   ++  v  +  +a+++a+  a+k+a++
+  lcl|HE972764.1_prot_CCH99861.1_4357 262 KEARSTLNQVS-EVRGVDVQAAEAEVNAAlVAVKKAQT 298
+                                          44444444432.22223333333333322123333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4845  (1316197 residues searched)
+Passed MSV filter:                       149  (0.0307534); expected 96.9 (0.02)
+Passed bias filter:                      119  (0.0245614); expected 96.9 (0.02)
+Passed Vit filter:                         7  (0.00144479); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000412797); expected 0.0 (1e-05)
+Initial search space (Z):               4845  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6010.63
+//
+[ok]

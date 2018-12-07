@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/28072_GCA_000316645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-70  232.9   6.3    1.5e-70  232.8   6.3    1.0  1  AFY51023.1  nitrogen regulatory protein PII [Nostoc sp. PCC 7
+  ------ inclusion threshold ------
+      0.034   12.6   0.3      0.098   11.1   0.0    1.9  2  AFY49481.1  diguanylate cyclase (GGDEF) domain-containing pro
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY51023.1  nitrogen regulatory protein PII [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  232.8   6.3   5.5e-74   1.5e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 232.8 bits;  conditional E-value: 5.5e-74
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vvdkii+aartgeigdgkifispveqv
+  AFY51023.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDNQVDMVVDKIISAARTGEIGDGKIFISPVEQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek++eav
+  AFY51023.1 100 VRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> AFY49481.1  diguanylate cyclase (GGDEF) domain-containing protein [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.0   0.1       1.8     5e+03      56      72 ..       6      22 ..       4      32 .. 0.73
+   2 ?   11.1   0.0   3.6e-05     0.098       4     104 ..     108     205 ..     105     213 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -4.0 bits;  conditional E-value: 1.8
+        glnB 56 lqklkveivvedeqvdl 72
+                l++ k +i++ d+ vd 
+  AFY49481.1  6 LEQYKTDILIIDDMVDN 22
+                56778888888888885 PP
+
+  == domain 2  score: 11.1 bits;  conditional E-value: 3.6e-05
+        glnB   4 veaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqvvri 102
+                 v+ i +pf l+ev + + n   +  +  e+  +  q  q  + r  e     lqkl+ ei v ++    ++d  +  + tg + +  +fi+ +e+ + i
+  AFY49481.1 108 VDYISKPFELEEVLVRVQNQITLRTAQLEIITLNSQLEQRVKQRTWELET-TLQKLQREISVRQSLQSKLLDLALHDSLTG-LPNRVLFIKRLEKAL-I 203
+                 78899**********9999999999999**********999999998765.69************9999999999999998.677788888888764.4 PP
+
+        glnB 103 rt 104
+                 rt
+  AFY49481.1 204 RT 205
+                 54 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5449  (1828442 residues searched)
+Passed MSV filter:                       159  (0.0291797); expected 109.0 (0.02)
+Passed bias filter:                      137  (0.0251422); expected 109.0 (0.02)
+Passed Vit filter:                         9  (0.00165168); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00036704); expected 0.1 (1e-05)
+Initial search space (Z):               5449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6826.18
+//
+[ok]

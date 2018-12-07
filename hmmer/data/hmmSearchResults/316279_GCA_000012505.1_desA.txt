@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-05   20.4   7.2     0.0002   17.6   7.2    1.9  1  ABB25116.1  fatty acid desaturase [Synechococcus sp. CC9902]
+  ------ inclusion threshold ------
+      0.077    9.1  13.7       0.49    6.4  13.8    2.2  1  ABB27016.1  beta-carotene hydroxylase [Synechococcus sp. CC99
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB25116.1  fatty acid desaturase [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6   7.2   1.8e-07    0.0002      64     304 ..      49     297 ..      26     306 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 1.8e-07
+        desA  64 wyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhak.tnmvtidnawdpweleafnsanplvrlfyrgir 161
+                 w   p+  +++  +l   f + hdcgh s+ + + +n + g+++ +    p   w + h  hh    +        d   l+ f+      + +y   +
+  ABB25116.1  49 WLTPPFLIVLSLFSLRS-FSLMHDCGHGSLFETARLNRIFGFLLGVVNAIPQLSWSIDHAYHHKTnGDWERYRGVADFLSLDEFQKLSRKEQRIYETTH 146
+                 55555555555555555.6788*******************999999999*********998843144667788999999*999988777666666544 PP
+
+        desA 162 grfwwl.gsiahwai...lhfnieqfkenerekarfsmivvlvfaaiffptlifytgvw.glvkfwvvpwfvyhfwmstftlvhhtdpdiqfsy..p.e 252
+                   +  + g   + ai   l + +  +  ++r       +  l ++ +f    ++  g w g+  f  +  +v  +  s++  v++ +   + sy  p e
+  ABB25116.1 147 HPLMAIpGGFYYLAIkprLDLLVGLISPKNRMWGSREELNDLCLSNLFSLITVVCLGWWiGFGLFLSLYSIVLCLTASSLIYVFYVQHIFENSYanPsE 245
+                 444333233434443222445555555666666655666777777777777777777775566677777778888888888877777665555422337 PP
+
+        desA 253 dwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvhasl 304
+                  w      leg+     p  ++ +   i  h  hh++  ip+ynl   h   
+  ABB25116.1 246 GWSPIRGALEGSSLLVLPPLLQWFTASIGFHNIHHLCERIPNYNLEACHQQN 297
+                 8********************************************9999765 PP
+
+>> ABB27016.1  beta-carotene hydroxylase [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.4  13.8   0.00043      0.49      28     130 ..      47     150 ..      42     293 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.00043
+        desA  28 sipkeyfqkdpvkawfgvitnilaviagyamlvyspwyllplawiftgtaltgff......viahdcghrsfsnrpwvndlvghifllpliypfhcwrf 120
+                 s+p+e++  dp  aw   +        gya+   + w  +   w +     tgf+       + hd+ h +    +w+n+l+gh   l l + f ++  
+  ABB27016.1  47 SVPREFV--DPPSAWNPTVGL---FFGGYALAALTIWGWFQGGWPLPLLLCTGFLalhlegTVIHDACHNAAHPNRWINQLMGHGSALLLGFSFPVFTR 140
+                 5666654..566666655543...3567777777766666555555555555554111122578*********99************************ PP
+
+        desA 121 lhdrhhaktn 130
+                 +h  hh++ n
+  ABB27016.1 141 VHLEHHSHVN 150
+                 ******9988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                        70  (0.0303819); expected 46.1 (0.02)
+Passed bias filter:                       55  (0.0238715); expected 46.1 (0.02)
+Passed Vit filter:                         6  (0.00260417); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000868056); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5759.47
+//
+[ok]

@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-13   47.5   0.2    4.8e-12   43.2   0.0    2.0  2  BAC91231.1  gll3290 [Gloeobacter violaceus PCC 7421]
+     0.0017   14.9   0.0     0.0034   14.0   0.0    1.4  2  BAC90217.1  plastocyanin [Gloeobacter violaceus PCC 7421]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC91231.1  gll3290 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.2   0.0   2.2e-15   4.8e-12      49     170 ..      72     186 ..      56     210 .. 0.87
+   2 !    2.3   0.0    0.0051        11     425     490 ..     251     314 ..     238     319 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 43.2 bits;  conditional E-value: 2.2e-15
+        cueA  49 lletalearpglirlgqqqgnl.ltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfy 146
+                 + e  +ear   i+l      +   +ng++pgp l  k g+ v++ f n+  +a  +h+hg+h        + +  v  g +  yef      p g   
+  BAC91231.1  72 VREFRIEARTNAIQLNPAVSFVsWNFNGRVPGPTLRVKAGERVRVLFVNRGGHAHSMHFHGIHASA----MDGVRPVRNGAATIYEFD---AEPFGVHL 163
+                 55778899999999988776552689*************************************754....34457899*********6...68****** PP
+
+        cueA 147 yhphlhelvaeqvfgglggifvvr 170
+                 yh h+   va +v  gl g+f+v 
+  BAC91231.1 164 YHCHVS-PVARHVSKGLYGLFIVD 186
+                 ****97.589************95 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 0.0051
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmg 490
+                  +fhlh+n f+++ r g+    +   d + + + e   +   +rd  g  ++h h     + g mg
+  BAC91231.1 251 VTFHLHANFFKLL-RSGRALAADEEADVVTMGTAERHILEFAYRD-PGTYMFHPHQDAIAENGCMG 314
+                 5799999999875.8899988888889999999999999999999.57788888887777777777 PP
+
+>> BAC90217.1  plastocyanin [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0       0.1   2.3e+02      24      90 ..      29      91 ..      13     109 .. 0.52
+   2 !   14.0   0.0   1.5e-06    0.0034     266     313 ..     113     160 ..     101     163 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 0.1
+        cueA 24 cshnttsvssiqpanltalttssnglletalea.rpgl.irlgqqqgnlltyngqipgprleakpgdtv 90
+                 + +tt  ++   a + a  t+s    e a+ a   gl +++g + g+l+      p  +l  kpgd +
+  BAC90217.1 29 TTTETTPAPTEPSATAPAEPTASAP-AEPAVPApGEGLvVKMGSDTGQLVFV----P-AKLTVKPGDKI 91
+                4444444444444444444444433.34444331233314566666665532....2.35666666654 PP
+
+  == domain 2  score: 14.0 bits;  conditional E-value: 1.5e-06
+        cueA 266 siakpvelrelllspgeraevlvqgkrppgryrllslpydrggamgmm 313
+                 + ak + l +ll  pg++ ev v  +  pg y +   p+   g +g++
+  BAC90217.1 113 AAAKAMALTKLLNKPGDKLEVTVPANAKPGDYAFNCTPHKSAGMVGVL 160
+                 56999***********************************99999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                       134  (0.0302483); expected 88.6 (0.02)
+Passed bias filter:                      123  (0.0277652); expected 88.6 (0.02)
+Passed Vit filter:                         8  (0.00180587); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000451467); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11444.35
+//
+[ok]

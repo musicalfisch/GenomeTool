@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_000981785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+    6.4e-62  205.7   0.3    7.1e-62  205.6   0.3    1.0  1  lcl|CP011304.1_prot_AKE66599.1_4235  [locus_tag=MYAER_4277] [db_xref=
+  ------ inclusion threshold ------
+        1.8    6.7  14.1       0.59    8.3   1.0    3.5  3  lcl|CP011304.1_prot_AKE66564.1_4200  [locus_tag=MYAER_4242] [db_xref=
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|CP011304.1_prot_AKE66599.1_4235  [locus_tag=MYAER_4277] [db_xref=GO:0046933,GO:0046961,SEED:fig|1126.17.peg.4278]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  205.6   0.3   3.3e-65   7.1e-62       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 205.6 bits;  conditional E-value: 3.3e-65
+                                 atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveed 74 
+                                          m++tvrvi+pd+ vwd+ aeevilps+tgqlgilsghaplltal++gvmr+r+ k  dw+ ia+lggfaeve++
+  lcl|CP011304.1_prot_AKE66599.1_4235   1 MSITVRVITPDRIVWDNVAEEVILPSSTGQLGILSGHAPLLTALNIGVMRIRPGK--DWENIAVLGGFAEVENN 72 
+                                          89**************************************************976..8**************** PP
+
+                                 atpE  75 evtilvngaergdkinleearaafneaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                                          e+ +lvngae g ki+ e+ara++++aqt+l++v++ +dr++ iqa+q++++arar+qaagglv
+  lcl|CP011304.1_prot_AKE66599.1_4235  73 EIKVLVNGAELGSKIDKEKARAEYEKAQTRLDEVSKgDDRRKTIQAQQSWRKARARYQAAGGLV 136
+                                          **********************************87257999********************97 PP
+
+>> lcl|CP011304.1_prot_AKE66564.1_4200  [locus_tag=MYAER_4242] [db_xref=SEED:fig|1126.17.peg.4243] [protein=heterocyst s
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.3   1.0   0.00028      0.59      76     125 ..      97     145 ..      81     155 .. 0.81
+   2 ?    3.1   0.2     0.011        24      87     126 ..     214     253 ..     203     259 .. 0.84
+   3 ?    2.1   2.8     0.022        48      79     130 ..     250     300 ..     242     307 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 8.3 bits;  conditional E-value: 0.00028
+                                 atpE  76 vtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkr 125
+                                          +  ++++ er +  nl +a+ + + a +kl+qvka+ +  +i+a++a  r
+  lcl|CP011304.1_prot_AKE66564.1_4200  97 IIAILESQERLE-DNLRQAQEQVKVAAAKLEQVKAGAKVGEIDANAANVR 145
+                                          445555666654.48999***************************98765 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.011
+                                 atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqafkra 126
+                                          +++nle + ++ +ea+  l+++++  +q+  +a+ ++ r 
+  lcl|CP011304.1_prot_AKE66564.1_4200 214 KRLNLETSNQQLTEAKVTLERIESTGKQEIQEAKTTLVRI 253
+                                          6799***********************9988888877765 PP
+
+  == domain 3  score: 2.1 bits;  conditional E-value: 0.022
+                                 atpE  79 lvngaergdkinleearaafneaqtklnqvkaedrqaqiqat.qafkrararf 130
+                                          lv     g + +l+ear++ n+  +++  v  +  qa+++a+  a+k+a++ +
+  lcl|CP011304.1_prot_AKE66564.1_4200 250 LVRIESTG-QQQLKEARSTLNQV-SEVRGVDVQAAQAEVNAAlVAVKKAQTEL 300
+                                          44444444.44788888888876.45667777777777776525677777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4282  (1181467 residues searched)
+Passed MSV filter:                       138  (0.0322279); expected 85.6 (0.02)
+Passed bias filter:                      109  (0.0254554); expected 85.6 (0.02)
+Passed Vit filter:                         7  (0.00163475); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000467071); expected 0.0 (1e-05)
+Initial search space (Z):               4282  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5395.37
+//
+[ok]

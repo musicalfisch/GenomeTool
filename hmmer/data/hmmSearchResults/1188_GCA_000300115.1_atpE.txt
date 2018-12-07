@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188_GCA_000300115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-83  277.3   2.7    1.3e-83  277.1   2.7    1.0  1  EKF00181.1  H(+)-transporting ATPase F [Tolypothrix sp. PCC 7
+  ------ inclusion threshold ------
+        9.3    5.6  20.5       0.15   11.4   2.4    3.2  3  EKF02399.1  ABC exporter membrane fusion protein, DevB family
+
+
+Domain annotation for each sequence (and alignments):
+>> EKF00181.1  H(+)-transporting ATPase F [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  277.1   2.7   2.7e-87   1.3e-83       1     137 []      15     151 .]      15     151 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 277.1 bits;  conditional E-value: 2.7e-87
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvra+knqdwqaiallggfae+ee+evtilvngae g++inleear+a+n
+  EKF00181.1  15 MTLTVRVISPDKTVWDAEAEEVILPSTTGQLGILSGHAPLLTALDTGVMRVRANKNQDWQAIALLGGFAEIEENEVTILVNGAESGNAINLEEARTAYN 113
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +aqtklnqv+a+drqaqiqatqafkrararfqaagglv
+  EKF00181.1 114 QAQTKLNQVTAGDRQAQIQATQAFKRARARFQAAGGLV 151
+                 ************************************97 PP
+
+>> EKF02399.1  ABC exporter membrane fusion protein, DevB family [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   2.4     3e-05      0.15      88     123 ..     116     151 ..      94     163 .. 0.79
+   2 ?   -1.2   0.2      0.24   1.2e+03     114     122 ..     181     189 ..     153     219 .. 0.57
+   3 ?    3.4   4.6    0.0086        43      80     122 ..     276     318 ..     242     331 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 3e-05
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqiqatqaf 123
+                 +  l+ea+ + + a+++l+qvka+ +q +i a qa 
+  EKF02399.1 116 QASLDEAQRQVEVAKSRLAQVKAGAKQGEIAARQAT 151
+                 4579****************************9985 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.24
+        atpE 114 qaqiqatqa 122
+                 q+ +qat a
+  EKF02399.1 181 QQSLQATVA 189
+                 222333322 PP
+
+  == domain 3  score: 3.4 bits;  conditional E-value: 0.0086
+        atpE  80 vngaergdkinleearaafneaqtklnqvkaedrqaqiqatqa 122
+                 +n +      ++ +a+a+ n+aq+ +++++a+ +qa i+a +a
+  EKF02399.1 276 LNQTAEVRPTDVANAQAEVNSAQAAVEKIRAQLNQAYIRAPKA 318
+                 4555555667889999999999999999999999999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         9972  (2716567 residues searched)
+Passed MSV filter:                       294  (0.0294826); expected 199.4 (0.02)
+Passed bias filter:                      220  (0.0220618); expected 199.4 (0.02)
+Passed Vit filter:                        15  (0.00150421); expected 10.0 (0.001)
+Passed Fwd filter:                         4  (0.000401123); expected 0.1 (1e-05)
+Initial search space (Z):               9972  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 5316.71
+//
+[ok]

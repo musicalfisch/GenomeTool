@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.4e-70  232.4   6.1    2.7e-70  232.2   6.1    1.0  1  ACC82833.1  nitrogen regulatory protein P-II, GlnB [Nostoc pu
+  ------ inclusion threshold ------
+      0.011   14.5   0.1      0.029   13.1   0.1    1.7  1  ACC80134.1  Mammalian cell entry related domain protein [Nost
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC82833.1  nitrogen regulatory protein P-II, GlnB [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  232.2   6.1     8e-74   2.7e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 232.2 bits;  conditional E-value: 8e-74
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivv+d+qvd+vvdkiiaaartgeigdgkifispveqv
+  ACC82833.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVDDNQVDMVVDKIIAAARTGEIGDGKIFISPVEQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgek++eav
+  ACC82833.1 100 IRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> ACC80134.1  Mammalian cell entry related domain protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.1   8.7e-06     0.029      28      95 ..      50     122 ..      42     133 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 8.7e-06
+        glnB  28 mtvsevrgfgrqkgqteryrgsey.tv.eflqkl.kveivvedeqvdlvv..dkiiaaartgeigdgkifisp 95 
+                 m v      g qkg   ryrg +  t+ + l k   ++i +e +q dl++  d +++a ++g i +  i i+p
+  ACC80134.1  50 MIVEFANAGGMQKGAIVRYRGVKVgTIsQVLPKAnAIDIEIEIAQTDLIIprDVVVEANQSGLISESVIDITP 122
+                 55555667799**********98634326777752699999999999998557799*********99999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       195  (0.029148); expected 133.8 (0.02)
+Passed bias filter:                      155  (0.0231689); expected 133.8 (0.02)
+Passed Vit filter:                        13  (0.0019432); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6510.28
+//
+[ok]

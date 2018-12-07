@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/179408_GCA_000317475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-55  184.5  14.2    3.4e-55  184.3  14.2    1.0  1  AFZ06326.1  ATP synthase F0 subcomplex B' subunit [Oscillator
+     0.0093   14.3  10.7      0.012   14.0  10.7    1.1  1  AFZ06327.1  ATP synthase subunit b [Oscillatoria nigro-viridi
+  ------ inclusion threshold ------
+       0.47    8.8  14.7          2    6.7   0.2    2.4  2  AFZ09199.1  SPFH domain, Band 7 family protein [Oscillatoria 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ06326.1  ATP synthase F0 subcomplex B' subunit [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  184.3  14.2   1.6e-58   3.4e-55       1     143 []      13     155 .]      13     155 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 184.3 bits;  conditional E-value: 1.6e-58
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fdfdatlp malqf++l v+lnavfykpl+k+lder eyir t+  a+e+lak++ l qeye +l  +rkqsq +ia aqa+aqk as +va aqkea
+  AFZ06326.1  13 VFDFDATLPFMALQFLVLMVVLNAVFYKPLTKMLDERDEYIRTTQLSAQERLAKAQKLAQEYEQKLGETRKQSQAVIAAAQADAQKTASAKVAEAQKEA 111
+                 59************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                    +e    ei qqk+ea+rsle +v  lsrqilekllg+ lv+
+  AFZ06326.1 112 QEAREKAGQEIEQQKQEAMRSLEQEVDVLSRQILEKLLGTALVK 155
+                 ****************************************9996 PP
+
+>> AFZ06327.1  ATP synthase subunit b [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0  10.7   5.7e-06     0.012      10     135 ..      23     151 ..      16     158 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 5.7e-06
+        atpG  10 vmalqfillavilnavfykp...lskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkea 105
+                 ++  ++i l v++  +fy     l ++l er   i ++   a  +   + a + e + +l+ a+ +++ i + a+ +a+k     +a a +e    k +
+  AFZ06327.1  23 ILETNLINLIVVIGLLFYFGrgfLGNILSERRSAIEEAIKEAETRQKDAAASLAEQQQKLTQAQAEAERIRSAAEENAKKAKEAILAQAAQEVERMKAT 121
+                 5667789999999999996433499**********9999999999999999999*********999988888777777665555555566665555555 PP
+
+        atpG 106 vaaeiaqqkeeafrslegqvaslsrqilek 135
+                    e+  ++e a+  l   v s++ + +e 
+  AFZ06327.1 122 AGQELEAERERAIAQLRSAVVSMALERVEG 151
+                 667999**************9998766665 PP
+
+>> AFZ09199.1  SPFH domain, Band 7 family protein [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.2   0.00096         2      57     120 ..      70     132 ..      63     151 .. 0.88
+   2 ?    4.4   9.7    0.0049        10      33     108 ..     168     247 ..     153     252 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.00096
+        atpG  57 alvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrs 120
+                   vq++e+   sa k+ q++ a   a   +l   r+   ++   +  + v+  ia q +eaf++
+  AFZ09199.1  70 VTVQKFEVPAQSATKDLQDLNAS-FAINFRLDPARIVDVRRTQGTLENIVSKIIAPQTQEAFKT 132
+                 679****************9886.577789***********9999999**************96 PP
+
+  == domain 2  score: 4.4 bits;  conditional E-value: 0.0049
+        atpG  33 vlderaeyirqteggak....eqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaa 108
+                 vld     ir +   ak    +q+a   a    y  q +  + q++   aq +aeaq+l +e + a   + + +kea+ a
+  AFZ09199.1 168 VLDTSVVNIRFSTDFAKaveeKQVAEQRAQRAVYVAQEAEQQAQADINRAQGRAEAQRLLAETLKAQGGNLVLQKEAIEA 247
+                 67777777776665555222246666666666677766666666666668888*************99999999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         6360  (2131415 residues searched)
+Passed MSV filter:                       306  (0.0481132); expected 127.2 (0.02)
+Passed bias filter:                      131  (0.0205975); expected 127.2 (0.02)
+Passed Vit filter:                        14  (0.00220126); expected 6.4 (0.001)
+Passed Fwd filter:                         3  (0.000471698); expected 0.1 (1e-05)
+Initial search space (Z):               6360  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 7619.81
+//
+[ok]

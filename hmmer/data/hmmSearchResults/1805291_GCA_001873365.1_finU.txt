@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805291_GCA_001873365.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-10   38.3   0.0    2.4e-10   38.1   0.0    1.0  1  OIP68981.1  hypothetical protein AUK43_14210 [Oscillatoriales
+     0.0018   15.5   3.7     0.0022   15.2   3.7    1.0  1  OIP68510.1  ATP synthase F0 subunit B [Oscillatoriales cyanob
+  ------ inclusion threshold ------
+      0.049   10.8   0.9      0.071   10.2   0.9    1.1  1  OIP68500.1  LysR family transcriptional regulator [Oscillator
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP68981.1  hypothetical protein AUK43_14210 [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.1   0.0   1.8e-13   2.4e-10     234     297 ..      12      75 ..       3      78 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 38.1 bits;  conditional E-value: 1.8e-13
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                 e+v +elr+ l++d+++v+  + d+ +++  l++a++s+ s++++lk+ +e rl++++    ++
+  OIP68981.1  12 EIVLDELRPYLMADGGNVEIVELDGPIVRLRLQGACGSCPSSTMTLKMGIERRLRERIPEIDLV 75 
+                 4567899**************************************************9644333 PP
+
+>> OIP68510.1  ATP synthase F0 subunit B [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   3.7   1.6e-06    0.0022     186     292 ..      56     166 ..      30     171 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.6e-06
+        finU 186 kiddiikdvk..kesaatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslk..valk 280
+                 +i++ ik+ +  +e+a ++  +++++ +  ++++++      ++ + + d v+++    v   +    ++ d++++ + ++l+s+ +s a  +  + +k
+  OIP68510.1  56 AIEEAIKEAEqrQEQAQASLAEQQQKLSDAQTDAQRILSEAEARAKTVADLVLSKAAEDVERMKATASQELDSERERVIAQLRSVIASQAIERaeAQIK 154
+                 5777777664115667777777777777666666666677778888899999999999999999999999*************9999888765114566 PP
+
+        finU 281 ialedrlskdlv 292
+                  +l+dr++++l+
+  OIP68510.1 155 DRLDDRIQERLI 166
+                 666666666654 PP
+
+>> OIP68500.1  LysR family transcriptional regulator [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.9   5.3e-05     0.071     224     294 ..     204     276 ..     184     282 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 5.3e-05
+        finU 224 kivlkiklldevv.deelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrl.skdlvve 294
+                  +  + k++d+v+ + e+ +   ++e++    ++ k+ +++ l++a  s ++ +  l++++ +r+  +d+vv+
+  OIP68500.1 204 SQSTIRKVIDQVLtRSEIDPRCLKVEMELNSIEAIKNTVQAGLGAAFVSISAIEKELEMKVLHRIlIEDVVVK 276
+                 55678999*9998457999********************************9999999999888624566665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4018  (1322032 residues searched)
+Passed MSV filter:                       136  (0.0338477); expected 80.4 (0.02)
+Passed bias filter:                      101  (0.0251369); expected 80.4 (0.02)
+Passed Vit filter:                         8  (0.00199104); expected 4.0 (0.001)
+Passed Fwd filter:                         3  (0.00074664); expected 0.0 (1e-05)
+Initial search space (Z):               4018  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9915.24
+//
+[ok]

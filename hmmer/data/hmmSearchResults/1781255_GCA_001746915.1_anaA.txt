@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1781255_GCA_001746915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-48  162.8   0.0    2.5e-48  162.6   0.0    1.0  1  OEJ76695.1  putative thioesterase [Desertifilum sp. IPPAS B-1
+     0.0031   14.8   0.0      0.051   10.9   0.0    2.2  2  OEJ74556.1  alpha/beta hydrolase [Desertifilum sp. IPPAS B-12
+
+
+Domain annotation for each sequence (and alignments):
+>> OEJ76695.1  putative thioesterase [Desertifilum sp. IPPAS B-1220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  162.6   0.0     1e-51   2.5e-48      20     237 ..      16     234 ..       1     246 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 162.6 bits;  conditional E-value: 1e-51
+        anaA  20 qenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgcfp 118
+                    kl lfcf  ag g++ fr+w  ++p  +++  + +pgr  r+ e   t+   lie l   + p++  pf f+ghs+g++v +e+a+ l  +   +p
+  OEJ76695.1  16 PRAKLRLFCFHYAGGGAVSFRNWSDALPSEVEVCPIELPGRGARLFEQPFTQLQPLIEALAVALVPHCTKPFAFLGHSMGALVGFELARSLRRKGDRLP 114
+                 5689***************************************************************************************999999** PP
+
+        anaA 119 qclvvsgrkpphipc.dhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleelrewek 216
+                   l++sg++ p++p  d       d +l++elr   gtpeavlq+ elm ++lp  rad+ + e y y  e  l cpi+a+gg  d  v  e+l  w++
+  OEJ76695.1 115 LYLLLSGHRAPQLPDlDPPLHALPDAELLQELRRYNGTPEAVLQNAELMQLLLPTLRADFSVVETYRYQPEPPLDCPIFAFGGLQDWKVKPEDLEPWQQ 213
+                 *************96255566678*************************************************************************** PP
+
+        anaA 217 ytqrgfklrsfpgghmyltee 237
+                  t + f l+ fpg h++l   
+  OEJ76695.1 214 QTTQAFTLQMFPGDHFFLHAH 234
+                 *****************9765 PP
+
+>> OEJ74556.1  alpha/beta hydrolase [Desertifilum sp. IPPAS B-1220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   2.1e-05     0.051      25     113 ..      37     125 ..      21     136 .. 0.80
+   2 ?    1.4   0.0     0.016        39     189     207 ..     233     251 ..     224     274 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.1e-05
+        anaA  25 slfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdliep.lvqeiypysqspfvffghslgsvvslevahqlgdr 113
+                  l+ +   ga +  +r   a + +  ++wa+ + g   r  +p ++  gdl    l + +    + p v+ g slg   sl  a q  d 
+  OEJ74556.1  37 PLLLVHGFGASTDHWRKNLAGLCQDFEVWAIDLLGFG-RSAKPQLAYSGDLWRDqLSDFVTQVIRQPAVLAGNSLGGYASLCAAAQSPDT 125
+                 45555677999999999*****************986.566788899999986515566777889*****************99998775 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.016
+        anaA 189 kslpcpilalggeadegvs 207
+                   l cp+l l gead  ++
+  OEJ74556.1 233 SQLACPLLLLWGEADPWIN 251
+                 5699**********97665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4964  (1712571 residues searched)
+Passed MSV filter:                       149  (0.0300161); expected 99.3 (0.02)
+Passed bias filter:                      144  (0.0290089); expected 99.3 (0.02)
+Passed Vit filter:                        11  (0.00221595); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000402901); expected 0.0 (1e-05)
+Initial search space (Z):               4964  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8665.61
+//
+[ok]

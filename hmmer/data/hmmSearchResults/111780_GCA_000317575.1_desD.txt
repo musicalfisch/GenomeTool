@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111780_GCA_000317575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.5e-07   27.2   1.4    5.5e-07   27.2   1.4    1.7  2  AFZ35707.1  Delta-12 acyl-phospholipid desaturase [Stanieria 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ35707.1  Delta-12 acyl-phospholipid desaturase [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   1.4   1.1e-10   5.5e-07      61     134 ..      64     135 ..      25     160 .. 0.83
+   2 ?   -1.7   0.3     0.068   3.2e+02     296     328 ..     234     266 ..     208     292 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 1.1e-10
+        desD  61 wwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 w++     + +g+gl+g  f ighd+ h  +s+++wvn l+g      +    + wr+ hn+ hh +tn l  d
+  AFZ35707.1  64 WFVLPFLWIFVGTGLTGF-FVIGHDCGHRSFSNRNWVNDLVGHLLFLPLIYPYHAWRILHNH-HHKHTNKLKVD 135
+                 444444556789***997.99*********************9887777778899******7.88899988776 PP
+
+  == domain 2  score: -1.7 bits;  conditional E-value: 0.068
+        desD 296 lnyqvvhhlfpqichihypkiapilaevcqefg 328
+                   + +vhh +p+i +    +     a++c  + 
+  AFZ35707.1 234 STFTIVHHTMPEIPFQSESEWHEASAQLCGTVH 266
+                 356778888888876666666666666665544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         4781  (1511376 residues searched)
+Passed MSV filter:                       215  (0.0449697); expected 95.6 (0.02)
+Passed bias filter:                      111  (0.0232169); expected 95.6 (0.02)
+Passed Vit filter:                        11  (0.00230077); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000209161); expected 0.0 (1e-05)
+Initial search space (Z):               4781  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 11002.82
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272123_GCA_000317695.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrJ  [M=236]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.049   11.5   0.2      0.097   10.5   0.1    1.5  2  AFZ59586.1  CRISPR-associated protein, Csx7 family [Anabaena 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ59586.1  CRISPR-associated protein, Csx7 family [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.8   0.0      0.19   1.1e+03     179     208 ..     117     145 ..      88     154 .. 0.61
+   2 ?   10.5   0.1   1.7e-05     0.097     150     189 ..     227     266 ..     215     281 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -2.8 bits;  conditional E-value: 0.19
+        cyrJ 179 kgnptddiwskyqwyd.tvrnstgfhpykpk 208
+                  g p   i sk+q  d tv   t f  y+ +
+  AFZ59586.1 117 FGSP--WIASKFQVRDlTVVPDTWFGQYQER 145
+                 3444..4677888777567777777777665 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 1.7e-05
+        cyrJ 150 dlqenprhtlsllceaveveftdamlswskgnptddiwsk 189
+                 d+++np++ l+ l e v+  + d + s+ +g+   diw++
+  AFZ59586.1 227 DVNNNPKKLLTYLTELVNSRIGDKLPSYQEGKNFKDIWTQ 266
+                 899***********************************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (236 nodes)
+Target sequences:                         5838  (1879690 residues searched)
+Passed MSV filter:                       178  (0.0304899); expected 116.8 (0.02)
+Passed bias filter:                      142  (0.0243234); expected 116.8 (0.02)
+Passed Vit filter:                        11  (0.00188421); expected 5.8 (0.001)
+Passed Fwd filter:                         1  (0.000171292); expected 0.1 (1e-05)
+Initial search space (Z):               5838  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 5545.09
+//
+[ok]

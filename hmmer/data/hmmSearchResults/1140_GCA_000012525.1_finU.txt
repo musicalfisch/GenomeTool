@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1140_GCA_000012525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-09   34.8   0.0    1.7e-09   34.7   0.0    1.0  1  ABB56482.1  putative NifU-like protein [Synechococcus elongat
+      1e-06   25.5   0.0    1.5e-06   25.0   0.0    1.2  1  ABB57817.1  SUF system FeS assembly protein [Synechococcus el
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB56482.1  putative NifU-like protein [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.7   0.0   1.3e-12   1.7e-09     234     292 ..      14      72 ..       2      80 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 34.7 bits;  conditional E-value: 1.3e-12
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 e v +elr+ li+d+++v+l + d+ ++k  l++a++s+ s++++l++ +e +l++ + 
+  ABB56482.1  14 ETVLDELRPYLIADGGNVELVELDGPIVKLRLNGACGSCPSSTMTLRMGIERKLRESIP 72 
+                 3455789************************************************9984 PP
+
+>> ABB57817.1  SUF system FeS assembly protein [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   0.0   1.1e-09   1.5e-06      40      94 ..      40      94 ..      34     106 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 1.1e-09
+        finU 40 acGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvs 94
+                +cGd++ l l +++  d+i   +f+  Gc+ a+as++ ++  + G+t+ eal++ 
+  ABB57817.1 40 SCGDTIELTLSLDEAGDRIAAVKFEGEGCAIAMASADLMAGALVGRTVPEALEMV 94
+                6***************************************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         2661  (809802 residues searched)
+Passed MSV filter:                        80  (0.0300639); expected 53.2 (0.02)
+Passed bias filter:                       69  (0.0259301); expected 53.2 (0.02)
+Passed Vit filter:                         7  (0.00263059); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000751597); expected 0.0 (1e-05)
+Initial search space (Z):               2661  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 4858.81
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1751286_GCA_001548375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.7e-100  332.0   8.8     3e-100  331.9   8.8    1.0  1  BAT52178.1  F0F1 ATP synthase subunit delta [Nostoc sp. NIES-
+  ------ inclusion threshold ------
+      0.055   11.6   0.0       0.14   10.3   0.0    1.6  1  BAT55425.1  Glycine cleavage T protein [Nostoc sp. NIES-3756]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAT52178.1  F0F1 ATP synthase subunit delta [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  331.9   8.8    1e-103    3e-100       1     183 [.       1     183 [.       1     184 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 331.9 bits;  conditional E-value: 1e-103
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m+s++a +evaqpyaqallsiaqs+nltee+gedartll+ll ++++l+nf+dnpf+ +enkk++++q+lgeg++pylrnfllllvd+rri+fle il+
+  BAT52178.1   1 MTSNVANTEVAQPYAQALLSIAQSKNLTEEFGEDARTLLNLLAENQQLRNFIDNPFIAAENKKALITQVLGEGASPYLRNFLLLLVDKRRIFFLEQILK 99 
+                 89************************************************************************************************* PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qylallrqlnqtvlaevtsav lt++qqqavkekv+a+tkarqveletk+ds+liggviikvgsqvid+s+rgqlrrlslrls 
+  BAT52178.1 100 QYLALLRQLNQTVLAEVTSAVELTQEQQQAVKEKVLAITKARQVELETKVDSELIGGVIIKVGSQVIDSSIRGQLRRLSLRLSN 183
+                 **********************************************************************************96 PP
+
+>> BAT55425.1  Glycine cleavage T protein [Nostoc sp. NIES-3756]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   4.7e-05      0.14      78     164 ..      80     163 ..      72     168 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 4.7e-05
+        atpD  78 lrnfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsq 164
+                 l + +lllv   r  fl   l++y+ +  +++ t +++ t++ ++     +av ek+ a +    v  +      l ggvi+ vgs 
+  BAT55425.1  80 LDDAVLLLVSPNRREFLLQWLDRYIFFADKVQLTDITDETASFSIIGPGSDAVVEKLGASA---IVGQAYGNHITLDGGVIVAVGSG 163
+                 677899*************************************************976544...44455555667889*****9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5954  (1912779 residues searched)
+Passed MSV filter:                       206  (0.0345986); expected 119.1 (0.02)
+Passed bias filter:                      134  (0.0225059); expected 119.1 (0.02)
+Passed Vit filter:                         7  (0.00117568); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335909); expected 0.1 (1e-05)
+Initial search space (Z):               5954  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8798.78
+//
+[ok]

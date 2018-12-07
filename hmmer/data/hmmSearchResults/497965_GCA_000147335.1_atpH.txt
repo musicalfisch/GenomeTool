@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/497965_GCA_000147335.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.1e-50  166.5   7.3    5.6e-50  166.4   7.3    1.0  1  ADN17380.1  ATP synthase F0, C subunit [Cyanothece sp. PCC 78
+  ------ inclusion threshold ------
+      0.098   11.8   0.0       0.14   11.3   0.0    1.2  1  ADN17963.1  hypothetical protein Cyan7822_6130 (plasmid) [Cya
+
+
+Domain annotation for each sequence (and alignments):
+>> ADN17380.1  ATP synthase F0, C subunit [Cyanothece sp. PCC 7822]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  166.4   7.3   1.7e-53   5.6e-50       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 166.4 bits;  conditional E-value: 1.7e-53
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                m+p++aaasviaaalavGlaaiGpgigqGna+gqav+GiarqpeaeGkirgtlll+lafmesltiyGlv++lvllfanpfa
+  ADN17380.1  1 MNPIIAAASVIAAALAVGLAAIGPGIGQGNASGQAVSGIARQPEAEGKIRGTLLLTLAFMESLTIYGLVISLVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> ADN17963.1  hypothetical protein Cyan7822_6130 (plasmid) [Cyanothece sp. PCC 7822]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   4.3e-05      0.14      32      77 ..      19      64 ..       8      67 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 4.3e-05
+        atpH 32 agqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfa 77
+                + qa+e i rqpe   k  +t    +a  e++ti G  + + +l+a
+  ADN17963.1 19 SRQALEQILRQPEKIVKEPATPSHPIATPETVTINGHTIDIPVLYA 64
+                789************************************9999998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         6642  (2154807 residues searched)
+Passed MSV filter:                       200  (0.0301114); expected 132.8 (0.02)
+Passed bias filter:                      135  (0.0203252); expected 132.8 (0.02)
+Passed Vit filter:                         7  (0.0010539); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301114); expected 0.1 (1e-05)
+Initial search space (Z):               6642  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 4363.48
+//
+[ok]

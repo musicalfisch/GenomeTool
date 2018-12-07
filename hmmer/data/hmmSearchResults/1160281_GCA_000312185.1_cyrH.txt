@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160281_GCA_000312185.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+    0.00022   18.2   0.0      0.064   10.1   0.0    2.2  2  lcl|HE972988.1_prot_CCI02793.1_2665  [protein=conserved hypothetical 
+     0.0054   13.6   0.0      0.013   12.4   0.0    1.5  2  lcl|HE973011.1_prot_CCI04589.1_4270  [protein=Similar to tr|Q4BYC4|Q4
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|HE972988.1_prot_CCI02793.1_2665  [protein=conserved hypothetical protein] [protein_id=CCI02793.1] [location=15342
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.1   0.0   2.7e-05     0.064      18      88 ..      29     102 ..      21     109 .. 0.78
+   2 !    5.8   0.0   0.00052       1.2     343     381 ..     350     387 ..     343     394 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 2.7e-05
+                                 cyrH  18 tvdvqvvdgkiaaiapelevvg.taidgenklllpgfvnahthssemwqrgilsllp..lelwlaelydfapld 88 
+                                          + +++v +g+i+aia+ ++    + i+ + + + pgf+++h h +       ++  p  + + l  ly + pl+
+  lcl|HE972988.1_prot_CCI02793.1_2665  29 AAEIRVENGTITAIATTVDHSNaQIIELKGHTVTPGFIDCHVHITFCEGDPTIPENPymVTVPLMTLYSLNPLK 102
+                                          56899*************9876156789999************9877777777655511455677788777775 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.00052
+                                 cyrH 343 qhwitprqavemaslggakglnladklgsltvgkkadlv 381
+                                          q+ itp +a++ a+   a  l ++ ++g+l+vgk ad++
+  lcl|HE972988.1_prot_CCI02793.1_2665 350 QNGITPLRALKAATTV-AAELLMQPNIGALAVGKFADII 387
+                                          7889******977765.667889**************97 PP
+
+>> lcl|HE973011.1_prot_CCI04589.1_4270  [protein=Similar to tr|Q4BYC4|Q4BYC4_CROWT Amidohydrolase] [protein_id=CCI04589.
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   5.4e-06     0.013      12      66 ..      29      87 ..      23      92 .. 0.83
+   2 ?   -3.5   0.0      0.34     8e+02     301     315 ..     313     327 ..     304     360 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 5.4e-06
+                                 cyrH 12 veddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss..emwqr 66
+                                         ++++ + v++++ dg+i+ i++ +  e    +id ++k+++p f++ hth      wqr
+  lcl|HE973011.1_prot_CCI04589.1_4270 29 TSEGLTLVNLEINDGHINRITSTIppEDNIPVIDLKKKIIFPCFIDMHTHLDkgHSWQR 87
+                                         6788999**************99944344568******************641268998 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 0.34
+                                 cyrH 301 kyrqagvnvtfgcdg 315
+                                            ++ag+ v+f  d 
+  lcl|HE973011.1_prot_CCI04589.1_4270 313 EMKKAGIPVAFASDN 327
+                                          444444444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4787  (1312390 residues searched)
+Passed MSV filter:                       100  (0.0208899); expected 95.7 (0.02)
+Passed bias filter:                       82  (0.0171297); expected 95.7 (0.02)
+Passed Vit filter:                         9  (0.00188009); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000417798); expected 0.0 (1e-05)
+Initial search space (Z):               4787  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 12205.23
+//
+[ok]

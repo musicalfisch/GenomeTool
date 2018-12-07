@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/457944_GCA_001712795.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-07   29.5   0.5    3.6e-07   29.4   0.5    1.1  1  ODG98562.1  D-alanyl carrier protein [Nostoc sp. KVJ20]
+    0.00062   19.0   0.3     0.0007   18.8   0.3    1.1  1  ODG97019.1  acyl carrier protein [Nostoc sp. KVJ20]
+
+
+Domain annotation for each sequence (and alignments):
+>> ODG98562.1  D-alanyl carrier protein [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.4   0.5   9.9e-11   3.6e-07      33      84 ..      27      78 ..       9      81 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 29.4 bits;  conditional E-value: 9.9e-11
+        anaD 33 iieqrvidsmdifrlvrfveeevgifwepeelvlknfetidhikayilrkla 84
+                i     ++sm  ++lv fve+e+ i  e e+l ++nf ti+ i   i rk a
+  ODG98562.1 27 IFALGFVNSMFAMQLVLFVEQEFQIAIENEDLEFENFRTINSIVNLIERKTA 78
+                5666789************************************999999866 PP
+
+>> ODG97019.1  acyl carrier protein [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.3   1.9e-07    0.0007       5      76 ..       5      77 ..       1      83 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 1.9e-07
+        anaD  5 kveqmlkefiiqelaydqtnlvltnnlkiieqrvidsmdifrlvrfveeevgifw..epeelvlknfetidhik 76
+                ++ + +k++++++l+ d ++ v t + k +e+   ds+d   lv  +eee+ i    e  e +    +++d i+
+  ODG97019.1  5 ELFEKVKKIVVEQLSVDPPDKV-TPQSKFMEDLGADSLDTVELVMALEEEFDIEIpdEAAEQITSVQDAVDYIN 77
+                55667899************87.7889***********************987541145555655666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         7210  (2327490 residues searched)
+Passed MSV filter:                       162  (0.0224688); expected 144.2 (0.02)
+Passed bias filter:                      121  (0.0167822); expected 144.2 (0.02)
+Passed Vit filter:                         7  (0.000970874); expected 7.2 (0.001)
+Passed Fwd filter:                         2  (0.000277393); expected 0.1 (1e-05)
+Initial search space (Z):               7210  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5062.29
+//
+[ok]

@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1698524_GCA_001704955.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.2e-55  181.3   0.4    5.7e-55  181.2   0.4    1.0  1  AOC51585.1  Phycobilisome small rod capping linker polypeptid
+    1.6e-09   35.6   1.1    1.8e-08   32.2   0.6    2.4  2  AOC53229.1  Hypothetical protein amyaer_2518 [Microcystis aer
+     0.0017   16.3   0.0     0.0041   15.1   0.0    1.7  1  AOC54984.1  Phycobilisome rod linker polypeptide, phycocyanin
+
+
+Domain annotation for each sequence (and alignments):
+>> AOC51585.1  Phycobilisome small rod capping linker polypeptide, phycocyanin-associated [Microcystis aeruginosa NIES-2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  181.2   0.4     4e-58   5.7e-55       1      74 []       1      74 []       1      74 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 181.2 bits;  conditional E-value: 4e-58
+        cpcD  1 mqslssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaae 74
+                mqslssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaae
+  AOC51585.1  1 MQSLSSAKENRLFVYEVVGLSQNDKTDNLDYSIRKSGSVFLTVPYSRMNQEMRRITRLGARIVSIKPLNAAAAE 74
+                9***********************************************************************97 PP
+
+>> AOC53229.1  Hypothetical protein amyaer_2518 [Microcystis aeruginosa NIES-2481]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.6   1.3e-11   1.8e-08       8      69 ..       8      63 ..       1      68 [. 0.77
+   2 ?   -2.6   0.0      0.92   1.3e+03      62      68 ..      66      72 ..      64      73 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 32.2 bits;  conditional E-value: 1.3e-11
+        cpcD  8 kenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                 en++f+yevv          l    r s +  l +p srm qe +r+ r Ga+i+sikpl+
+  AOC53229.1  8 GENQIFLYEVVFSGSS---GSL--PQRFSRT-VLRIPKSRMSQETQRLLRQGAKILSIKPLD 63
+                5899999999854332...333..3355554.589*************************97 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.92
+        cpcD 62 ivsikpl 68
+                 vsikp+
+  AOC53229.1 66 TVSIKPI 72
+                59***97 PP
+
+>> AOC54984.1  Phycobilisome rod linker polypeptide, phycocyanin-associated [Microcystis aeruginosa NIES-2481]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   2.9e-06    0.0041      35      68 ..     257     289 ..     251     292 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 2.9e-06
+        cpcD  35 ksGsvfltvpysrmnqemrritrlGarivsikpl 68 
+                 +s s  + vp+ ++n+ +++i rlG ++ si p 
+  AOC54984.1 257 RS-SKAIIVPFEQLNNTLQQINRLGGKVASITPA 289
+                 44.55678***********************994 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4292  (1171098 residues searched)
+Passed MSV filter:                        71  (0.0165424); expected 85.8 (0.02)
+Passed bias filter:                       65  (0.0151445); expected 85.8 (0.02)
+Passed Vit filter:                         4  (0.000931966); expected 4.3 (0.001)
+Passed Fwd filter:                         3  (0.000698975); expected 0.0 (1e-05)
+Initial search space (Z):               4292  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 4333.06
+//
+[ok]

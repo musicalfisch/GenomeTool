@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56107_GCA_000317535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-54  181.4   5.0    1.2e-54  181.3   5.0    1.0  1  AFZ28185.1  hypothetical protein Cylst_6225 [Cylindrospermum 
+    1.6e-05   23.9   0.6    1.8e-05   23.7   0.6    1.2  1  AFZ28254.1  phosphopantetheine-containing protein (plasmid) [
+  ------ inclusion threshold ------
+      0.032   13.3   2.8       0.06   12.4   2.8    1.6  1  AFZ24049.1  acyl carrier protein [Cylindrospermum stagnale PC
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ28185.1  hypothetical protein Cylst_6225 [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  181.3   5.0   5.9e-58   1.2e-54       1      86 [.       5      90 ..       5      91 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 181.3 bits;  conditional E-value: 5.9e-58
+        anaD  1 mteekveqmlkefiiqelaydqtnlvltnnlkiieqrvidsmdifrlvrfveeevgifwepeelvlknfetidhikayilrklase 86
+                mteek+eqmlkefi+qelaydq+nlvltnnlkiieqr++dsmd+frlvrfveee+gifwepeelv+knfetidhikayilrkl+s+
+  AFZ28185.1  5 MTEEKIEQMLKEFITQELAYDQPNLVLTNNLKIIEQRIVDSMDLFRLVRFVEEEMGIFWEPEELVFKNFETIDHIKAYILRKLVSQ 90
+                9***********************************************************************************97 PP
+
+>> AFZ28254.1  phosphopantetheine-containing protein (plasmid) [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7   0.6   8.6e-09   1.8e-05      30      83 ..      24      77 ..       2      81 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 8.6e-09
+        anaD 30 nlkiieqrvidsmdifrlvrfveeevgifwepeelvlknfetidhikayilrkl 83
+                +  i     ++sm  ++lv f+e+e+ i  e e+l ++nf +i+ + +++ +k+
+  AFZ28254.1 24 DEDIFSLGFVNSMFAMQLVLFLEKEFQITIENEDLEFENFRSINAMSSFLEKKM 77
+                5567777789***********************************999987775 PP
+
+>> AFZ24049.1  acyl carrier protein [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   2.8   2.9e-05      0.06      39      78 ..      37      78 ..       1      82 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.9e-05
+        anaD 39 idsmdifrlvrfveeevgif..wepeelvlknfetidhikay 78
+                 ds+di  lv  +eee+ i    e  e +l   e +d i+  
+  AFZ24049.1 37 ADSLDIVELVMALEEEFEIEipDEAAEKILTVQEVVDYINHN 78
+                69*************987651157778899999999888754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         6229  (2019150 residues searched)
+Passed MSV filter:                       134  (0.0215123); expected 124.6 (0.02)
+Passed bias filter:                       92  (0.0147696); expected 124.6 (0.02)
+Passed Vit filter:                         5  (0.000802697); expected 6.2 (0.001)
+Passed Fwd filter:                         3  (0.000481618); expected 0.1 (1e-05)
+Initial search space (Z):               6229  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5855.53
+//
+[ok]

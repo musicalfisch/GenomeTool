@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/arhQ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/32049_GCA_000019485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       arhQ  [M=503]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-08   31.2   0.0    5.7e-05   19.8   0.0    2.2  2  ACA98348.1  periplasmic substrate binding protein [Synechococ
+    2.6e-05   20.9   0.0    2.9e-05   20.8   0.0    1.0  1  ACB00160.1  glutamine-binding protein [Synechococcus sp. PCC 
+
+
+Domain annotation for each sequence (and alignments):
+>> ACA98348.1  periplasmic substrate binding protein [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.4   0.0   4.9e-05     0.078      98     132 ..     116     150 ..      24     157 .. 0.89
+   2 !   19.8   0.0   3.6e-08   5.7e-05     133     231 ..     265     362 ..     247     388 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 4.9e-05
+        arhQ  98 eaaisgmtitaeraqaisfsrpyfraglaiavred 132
+                 +  +  ++itaer +a+ f++p+f +gl + + e+
+  ACA98348.1 116 DLLVGPFSITAERLEAVDFTQPFFISGLGVLLPEE 150
+                 55566789********************9987776 PP
+
+  == domain 2  score: 19.8 bits;  conditional E-value: 3.6e-08
+        arhQ 133 nktiknfedlkgkriavqigttgaleatkipgavvsqfd.saalalqelingrveavvndkpvtlyaikeaglrgvkvvgellteefygialpknspyl 230
+                 + +i++  dl+g r+av  gttg   a+     vv +    aa+al e    + + v+ d+p   y + +     ++v    l  e  g  lp +sp  
+  ACA98348.1 265 EDAIRDPGDLRGTRMAVVQGTTGEAFAAEYRAKVVQRPSlEAAIALME--ADKADGVIFDRPTLEYYLSQNPDLPLRVADFNLNTENLGFVLPYDSPLA 361
+                 5689999****************9999999877776543246677766..6899*****************9999****99999999*********975 PP
+
+        arhQ 231 q 231
+                  
+  ACA98348.1 362 L 362
+                 4 PP
+
+>> ACB00160.1  glutamine-binding protein [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.0   1.8e-08   2.9e-05      40     197 ..      39     199 ..      18     252 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 1.8e-08
+        arhQ  40 frvateatfppfefq.qggqltgfdidlmraigkea..d.lnidfrnlpfdgiipalqartveaaisgmtitaeraqaisfsrpyfraglaiavrednk 134
+                 +rva +  + p+ f+ + g+l g++i++ + +  e   d   +++  l  +  + a+ +  v+  i+ + + a r + + fs  y+  g+    r+  +
+  ACB00160.1  39 LRVAVKENVRPLGFRdEAGNLQGLEIEIAHQLAAELlgDrQAVELIPLTNQERLDAVLTGEVDLVIAQLGLNASRQRLVNFSPYYYLDGIGFVTRD--R 135
+                 79************73589*********99999885223146788888889999***********************************9998885..6 PP
+
+        arhQ 135 tiknfedlkgkriavqigttgaleatk..ipgavvsqfdsaalalqelingrveavvndkpvtly 197
+                  i+ ++++  +ri v  g+  a+ a++   pg ++  ++s   al+ l n        d+ v   
+  ACB00160.1 136 EIQSLNQISDQRIVVLEGSE-AIAAVRayFPGVTLVGVNSYQEALNYLENNETAFFAGDHSVLTG 199
+                 79***********9988865.444443228***********999999999888777777776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (503 nodes)
+Target sequences:                         3186  (990621 residues searched)
+Passed MSV filter:                       112  (0.0351538); expected 63.7 (0.02)
+Passed bias filter:                       67  (0.0210295); expected 63.7 (0.02)
+Passed Vit filter:                         5  (0.00156937); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000627746); expected 0.0 (1e-05)
+Initial search space (Z):               3186  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 12457.06
+//
+[ok]

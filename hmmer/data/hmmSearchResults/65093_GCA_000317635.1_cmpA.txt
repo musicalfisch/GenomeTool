@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpA  [M=440]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.048   10.1   0.0       0.14    8.6   0.0    1.7  2  AFZ44684.1  ABC transporter substrate-binding protein [Haloth
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ44684.1  ABC transporter substrate-binding protein [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.0   3.7e-05      0.14     186     248 ..     140     203 ..     129     221 .. 0.89
+   2 ?   -2.2   0.0     0.069   2.6e+02     272     285 ..     260     273 ..     237     287 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 3.7e-05
+        cmpA 186 vtfpggthdlfmrywlaaggidpnkdlslivvppaqmvanm.kvgtmqafcvgepwnaqlvkkk 248
+                 + f g   ++ +r+  + +g++p++dl+++     q  a++  vg  +a +  ep  + +v k+
+  AFZ44684.1 140 IPFQGSMPEMIFRFLATQAGLNPDEDLTIVSTQDFQSTAQLlLVGQGEAGVFAEPRASAVVAKG 203
+                 678999999***************************99986269************99999886 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.069
+        cmpA 272 adwvdknpkaakal 285
+                  dw++ np aa  l
+  AFZ44684.1 260 LDWIQENPTAAAEL 273
+                 59******999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (440 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                        71  (0.0191478); expected 74.2 (0.02)
+Passed bias filter:                       66  (0.0177994); expected 74.2 (0.02)
+Passed Vit filter:                         6  (0.00161812); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000269687); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 10393.31
+//
+[ok]

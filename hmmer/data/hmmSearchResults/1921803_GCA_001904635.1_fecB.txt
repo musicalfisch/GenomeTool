@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1921803_GCA_001904635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.7e-40  135.9   0.1    4.3e-40  135.7   0.1    1.0  1  OKH20878.1  iron siderophore-binding protein [Hydrococcus riv
+    5.3e-06   23.7   0.1    1.3e-05   22.4   0.1    1.9  1  OKH20971.1  iron ABC transporter substrate-binding protein [H
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH20878.1  iron siderophore-binding protein [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.7   0.1     2e-43   4.3e-40      37     313 ..      46     324 ..      10     326 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 135.7 bits;  conditional E-value: 2e-43
+        fecB  37 qrtiahamgvtavpnepqrivvltneatdmvlalgvtpvgavkswsgdpyyeylakd.mlgvpi.vgdemqpnlekivalqpdliigsrlrqgqiyksl 133
+                  + i h++g t++p +pqr++v      d v+alg+ p+ a  s +      yl +   l  pi +g e   n+ekiv lqpdli+g  +   q y+ l
+  OKH20878.1  46 CKKIRHSLGETCIPTKPQRLIVTDAAILDAVVALGIQPIAAAESNAVGNIQSYLVRSsKLKEPIsLGKESLLNFEKIVQLQPDLILGFSIN-AQDYHIL 143
+                 4789*******************999********************99999**9975279999956*********************9985.799**** PP
+
+        fecB 134 saiaptvfsetigeswqdnlrlygqaldreaeaeqllndwdtrvaqmrqklsak..dltislvrfmp..rgariylqnsfpgqilqavglerpasq... 225
+                 s iaptv       +w+dnlr  g  l +  ea+ +l +++ rva +r  ++ k     +s+ rf    + +    + sf g +l+ vg+ rpa q   
+  OKH20878.1 144 SQIAPTVSLPYSPIAWKDNLRQVGTILGKSEEAKLVLRQYQKRVATLRSVIAQKpkKTEVSVSRFYAgwQTTEFQTKYSFSGSVLEDVGVTRPAVQlrl 242
+                 ********99999************************************998752267899****9822455666778****************99333 PP
+
+        fecB 226 an.hgfaehvsfeqipqmeadalfyfiytgdsgdqtpgsitnpwlnhplwqqlevvqsgkayavsdvvwttaggiqaahlllddlerhl 313
+                 an       vs+e++  ++ad +f  +  g           + + n  lwq l+vv+  + y v    w  +g + +a  +lddl ++l
+  OKH20878.1 243 ANpNEQYVTVSLERLDLLDADVMFVALDPGSE------ESFKQYQNSQLWQLLDVVKNNRVYRVDSAYWI-SGNVLSANAILDDLYKYL 324
+                 3312233469************9987755432......2346799*******************999996.689999999*****9887 PP
+
+>> OKH20971.1  iron ABC transporter substrate-binding protein [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.4   0.1   6.1e-09   1.3e-05      95     182 ..      81     169 ..      25     280 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 22.4 bits;  conditional E-value: 6.1e-09
+        fecB  95 lgvpivgd.emqpnlekivalqpdliigsrlrqgqiykslsaiaptvfsetigeswqdnlrlygqaldre..aeaeqllndwdtrvaqmrq 182
+                   +p v + +  pnlekival+pdl+ig++    q  + l  +  + ++  i   w+  l    q l ++  a+   ll+ ++t ++++ q
+  OKH20971.1  81 TNIPTVSEgQTPPNLEKIVALKPDLVIGAKGFSDQTLNKLKELGIATLATDIN-NWN-ALTEITQDLAQKigADPTPLLERYQTFLTDIPQ 169
+                 5678777624568*****************99999999999888887777764.465.455555555554114445677777777776644 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         4392  (1417121 residues searched)
+Passed MSV filter:                       133  (0.0302823); expected 87.8 (0.02)
+Passed bias filter:                      109  (0.0248179); expected 87.8 (0.02)
+Passed Vit filter:                         6  (0.00136612); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455373); expected 0.0 (1e-05)
+Initial search space (Z):               4392  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8927.86
+//
+[ok]

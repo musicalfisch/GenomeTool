@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_002897275.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+   4.2e-126  415.6   0.2   4.6e-126  415.4   0.2    1.0  1  lcl|BEIU01000004.1_prot_GBE97041.1_1291  [locus_tag=NIES298_12900] [prote
+  ------ inclusion threshold ------
+      0.018   12.6   0.0      0.032   11.8   0.0    1.4  1  lcl|BEIU01000006.1_prot_GBE97657.1_1907  [locus_tag=NIES298_19050] [prote
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|BEIU01000004.1_prot_GBE97041.1_1291  [locus_tag=NIES298_12900] [protein=Adenylyl-sulfate kinase] [protein_id=GBE9
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  415.4   0.2  1.9e-129  4.6e-126       4     184 .]       1     181 []       1     181 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 415.4 bits;  conditional E-value: 1.9e-129
+                                     cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvs 73 
+                                              mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvs
+  lcl|BEIU01000004.1_prot_GBE97041.1_1291   1 MKQRGVTVWLTGLSGAGKSTITEALQAKLIAEGYSIEVLDGDIVRTNLTKGLGFSKEDRDENIRRIGFVS 70 
+                                              9********************************************************************* PP
+
+                                     cysC  74 nlltrhgvivlvsaispyreireevrgkigsfvevfvnaplsvceerdvkglykrarageiksftgiddp 143
+                                              nlltrhgvivlvsaispyreireevrgkigsfvevfvnaplsvce+rdvkglykrarageiksftgiddp
+  lcl|BEIU01000004.1_prot_GBE97041.1_1291  71 NLLTRHGVIVLVSAISPYREIREEVRGKIGSFVEVFVNAPLSVCEDRDVKGLYKRARAGEIKSFTGIDDP 140
+                                              ********************************************************************** PP
+
+                                     cysC 144 yeppfnpevecrtdletleesvakvwnkltelgyihqavav 184
+                                              yeppfnpevecrtdletleesvakvwnkltelgyihqavav
+  lcl|BEIU01000004.1_prot_GBE97041.1_1291 141 YEPPFNPEVECRTDLETLEESVAKVWNKLTELGYIHQAVAV 181
+                                              ***************************************98 PP
+
+>> lcl|BEIU01000006.1_prot_GBE97657.1_1907  [locus_tag=NIES298_19050] [protein=shikimate kinase] [protein_id=GBE97657.1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   1.3e-05     0.032       7      40 ..      11      44 ..       8      64 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.3e-05
+                                     cysC  7 rgvtvwltglsgagkstitealqakliaegysie 40
+                                             rg++v+l g+ g+gkst+ e l  +l    +  +
+  lcl|BEIU01000006.1_prot_GBE97657.1_1907 11 RGLSVFLLGMMGSGKSTLGELLSRRLQYRFFDTD 44
+                                             9*******************99988866555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4749  (1309166 residues searched)
+Passed MSV filter:                       186  (0.0391661); expected 95.0 (0.02)
+Passed bias filter:                      162  (0.0341124); expected 95.0 (0.02)
+Passed Vit filter:                        26  (0.00547484); expected 4.7 (0.001)
+Passed Fwd filter:                         2  (0.000421141); expected 0.0 (1e-05)
+Initial search space (Z):               4749  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6022.16
+//
+[ok]

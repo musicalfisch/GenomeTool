@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/13035_GCA_000317615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00098   15.9   0.0     0.0023   14.7   0.0    1.6  1  AFZ51978.1  amino acid adenylation enzyme/thioester reductase
+  ------ inclusion threshold ------
+      0.012   12.4   0.0      0.027   11.2   0.0    1.6  1  AFZ51551.1  protein with phosphotransacetylase BioD-like N-te
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ51978.1  amino acid adenylation enzyme/thioester reductase family protein [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   1.4e-06    0.0023      24     113 ..    1465    1553 ..    1447    1568 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.4e-06
+        anaA   24 lslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypy.sqspfvffghslgsvvslevahqlgdr 113 
+                    +fc+ pag   l + d    + ++  ++ ++ pg ++   e ++ r  d+    ++ i  + ++ p+ + g s+g vv+ e+a+ql  r
+  AFZ51978.1 1465 PPFFCVHPAGGHVLCYTDLAKYLGNNQPVYGLQAPGFNE--GEKILDRVEDMAHFYIETIKEFqAEGPYKIGGWSFGGVVAYEMAQQLLKR 1553
+                  468*********************************987..5889***************9983578********************9776 PP
+
+>> AFZ51551.1  protein with phosphotransacetylase BioD-like N-terminal domain [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   1.6e-05     0.027      14      88 ..      23      99 ..      13     122 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.6e-05
+        anaA 14 plgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiyp..ysq 88
+                 lg  hq +k  l        g++f      ti d ++l a  +   +++ik pl++     ie  ++  yp  ysq
+  AFZ51551.1 23 ILGVAHQLKKKGLTLSYGKPVGNFFHEKETETIEDDVQLIAEALQLSQEQIKTPLVSLSHAAIEERIKSDYPcdYSQ 99
+                5889999999999888888899999999*****************************************99944555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         3337  (1011999 residues searched)
+Passed MSV filter:                        75  (0.0224753); expected 66.7 (0.02)
+Passed bias filter:                       73  (0.0218759); expected 66.7 (0.02)
+Passed Vit filter:                         6  (0.00179802); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000599341); expected 0.0 (1e-05)
+Initial search space (Z):               3337  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8534.52
+//
+[ok]

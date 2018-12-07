@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bztB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080230_GCA_000284455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bztB  [M=378]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-32  110.0   8.7    3.4e-28   96.5   0.2    2.3  2  BAL35095.1  ABC-type transporter protein [Synechocystis sp. P
+    0.00022   18.1   3.8     0.0035   14.1   0.4    2.2  2  BAL36889.1  phospho-N-acetylmuramoyl-pentapeptide-transferase
+
+
+Domain annotation for each sequence (and alignments):
+>> BAL35095.1  ABC-type transporter protein [Synechocystis sp. PCC 6803 substr. PCC-P]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   3.8     5e-07   0.00079      78     145 ..     305     372 ..     295     380 .. 0.90
+   2 !   96.5   0.2   2.1e-31   3.4e-28     236     369 ..     379     511 ..     372     516 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 5e-07
+        bztB  78 tyfrallvglvnslrimitgiflaislgiviglgrlsdnwlirqlatiyvetirntplllqlffwyfa 145
+                 t fr l+ g + ++ +    +f+ +  g  + +  +sd   ++ +  iyve  r tp+l+qlf+ yf 
+  BAL35095.1 305 TLFRNLFKGSILTVLLTAFSVFFGLIGGTGVAIALISDIKPLQLIFRIYVEFFRGTPMLVQLFIIYFG 372
+                 7899999999988888888999999999999999********************************96 PP
+
+  == domain 2  score: 96.5 bits;  conditional E-value: 2.1e-31
+        bztB 236 nidfglhlssefatlligltvytaafiaetvrggiqsvnrgqweaakalglkpllvmrlvifpqalpviippltneclnlvknsslaiaigyndiyais 334
+                 +i +g+ +   f + +i l++  aa++ae +rggiqs+++gqwea+++lg+ p   m+ vifpqa+  i+ppl ne + l+k++sl+  ig+++++   
+  BAL35095.1 379 EIGLGITI-DRFPAAIIALSLNVAAYLAEIIRGGIQSIDQGQWEACESLGMSPWQTMKEVIFPQAFRRILPPLGNEFITLIKDTSLTAVIGFQELFREG 476
+                 55556555.4689999*********************************************************************************** PP
+
+        bztB 335 stianqtgkavemlivvmatylffnlvislamnql 369
+                   i   t +a e+ i v   yl++  + s++++ l
+  BAL35095.1 477 QLIVATTYRAFEVYIAVALVYLLLTTISSFVFKWL 511
+                 ***********************999988877665 PP
+
+>> BAL36889.1  phospho-N-acetylmuramoyl-pentapeptide-transferase [Synechocystis sp. PCC 6803 substr. PCC-P]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.4   2.2e-06    0.0035      16      65 ..     154     201 ..     148     216 .. 0.85
+   2 !    4.8   0.2    0.0015       2.3      52     111 ..     253     311 ..     226     316 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 2.2e-06
+        bztB  16 qkiflqviillivclifwffgrnlvinfqrlrlsfgfgflfdtdrpasfa 65 
+                 qk+flqv i +i c  ++f+g   + +++ +++ + +gflf     a+fa
+  BAL36889.1 154 QKLFLQVAIAVIFCTWLFFYGPTEITDIRIMQFVLPLGFLFWL--VATFA 201
+                 9**************************************9964..45555 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.0015
+        bztB  52 fgflfdtdrpasfaigdspiaysptdtyfrallvglvnslrimitgiflaislgiviglg 111
+                 +gf+  +  pa + +gd+             ++ g +  l ++i+gifla sl ++  +g
+  BAL36889.1 253 IGFVHHNHNPARVFMGDTGSLALGGSLAAVGIMTGNLWGL-LLISGIFLAESLSVIAQVG 311
+                 6899999999999999986554445555556677777776.689**********998877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (378 nodes)
+Target sequences:                         3169  (1031404 residues searched)
+Passed MSV filter:                       160  (0.0504891); expected 63.4 (0.02)
+Passed bias filter:                       63  (0.0198801); expected 63.4 (0.02)
+Passed Vit filter:                         8  (0.00252446); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000631114); expected 0.0 (1e-05)
+Initial search space (Z):               3169  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9746.77
+//
+[ok]

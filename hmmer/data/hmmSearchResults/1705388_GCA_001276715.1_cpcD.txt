@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1705388_GCA_001276715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-30  102.6   0.3    4.5e-30  101.7   0.3    1.4  1  KOR33955.1  ferredoxin-NADP reductase [Planktothricoides sp. 
+    9.8e-29   97.4   0.1    1.2e-28   97.1   0.1    1.1  1  KOR36433.1  photosystem I reaction center subunit XII [Plankt
+  ------ inclusion threshold ------
+       0.05   11.8   0.0       0.06   11.6   0.0    1.2  1  KOR35176.1  photosystem I reaction center subunit XII [Plankt
+
+
+Domain annotation for each sequence (and alignments):
+>> KOR33955.1  ferredoxin-NADP reductase [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.7   0.3   2.7e-33   4.5e-30       8      67 ..      15      74 ..       9      80 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 101.7 bits;  conditional E-value: 2.7e-33
+        cpcD  8 kenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikp 67
+                 +nrlfvyevvGl q dk+dn +ysir+sGs f+tvpy rmnqem+ri r+G +ivsi+p
+  KOR33955.1 15 SDNRLFVYEVVGLGQSDKADNPNYSIRRSGSTFITVPYNRMNQEMQRIMRMGGQIVSIRP 74
+                58*********************************************************9 PP
+
+>> KOR36433.1  photosystem I reaction center subunit XII [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.1   0.1     7e-32   1.2e-28       9      70 ..      16      77 ..      11      83 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 97.1 bits;  conditional E-value: 7e-32
+        cpcD  9 enrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                 nrlf yev Gl qnd+td  +++ir+  svf+tvpysrmn emrritrlG  ivsi p+ +
+  KOR36433.1 16 ANRLFRYEVTGLRQNDQTDLQNHAIRQGSSVFITVPYSRMNDEMRRITRLGGTIVSIHPVTS 77
+                59*********************************************************864 PP
+
+>> KOR35176.1  photosystem I reaction center subunit XII [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   3.6e-05      0.06      42      67 ..      28      53 ..      16      58 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 3.6e-05
+        cpcD 42 tvpysrmnqemrritrlGarivsikp 67
+                 vpy     e +ri ++G +i+ +k 
+  KOR35176.1 28 LVPYDNWFSEQQRIMKMGGKIIKVKL 53
+                49********************9995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5049  (1535341 residues searched)
+Passed MSV filter:                        97  (0.0192117); expected 101.0 (0.02)
+Passed bias filter:                       90  (0.0178253); expected 101.0 (0.02)
+Passed Vit filter:                         7  (0.00138641); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.000594177); expected 0.1 (1e-05)
+Initial search space (Z):               5049  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5680.76
+//
+[ok]

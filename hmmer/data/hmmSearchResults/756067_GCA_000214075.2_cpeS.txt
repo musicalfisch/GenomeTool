@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/756067_GCA_000214075.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.8e-108  357.7   0.0   4.3e-108  357.6   0.0    1.0  1  EGK86748.1  protein of unknown function DUF1001 [Microcoleus 
+    1.8e-39  133.6   0.0      2e-39  133.5   0.0    1.0  1  EGK90416.1  protein of unknown function DUF1001 [Microcoleus 
+
+
+Domain annotation for each sequence (and alignments):
+>> EGK86748.1  protein of unknown function DUF1001 [Microcoleus vaginatus FGP-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  357.6   0.0  1.7e-111  4.3e-108       1     195 [.       1     195 [.       1     196 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 357.6 bits;  conditional E-value: 1.7e-111
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdi tlar+maadfsnq+qafenppffahirvcmrplp+e+l+g+s+++eqayd  ln pyr+rvlklv ++drieieny++++e++fygasrd 
+  EGK86748.1   1 MTHSTDIVTLARWMAADFSNQAQAFENPPFFAHIRVCMRPLPVEVLDGLSLYLEQAYDIELNVPYRVRVLKLVPVDDRIEIENYAIENEEQFYGASRDP 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevk 195
+                 +rl+++k  +l  lpgc++i +wtgnsfkg vepgk+c+vvrkgkktyldsefeid++kfis+drgrdpetd h+wg++agpfef r+asfade+ 
+  EGK86748.1 100 QRLQEIKKAQLTLLPGCTFITQWTGNSFKGFVEPGKGCMVVRKGKKTYLDSEFEIDQDKFISHDRGRDPETDAHVWGALAGPFEFTRRASFADEIP 195
+                 **********************************************************************************************96 PP
+
+>> EGK90416.1  protein of unknown function DUF1001 [Microcoleus vaginatus FGP-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.5   0.0   7.9e-43     2e-39       1     195 [.       1     205 [.       1     206 [] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 133.5 bits;  conditional E-value: 7.9e-43
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplells..gvsffveqaydyllndpyrlrvlklveae...drieienytvkeekkfyg 94 
+                 mt s ++ +la++ma +f n+eqa+ +p ++ h+r+  rplp+ l+s   +++f eqa    l++pyr r+l+l +++     ie + y+ k+     g
+  EGK90416.1   1 MTISPELIALAQYMAGEFDNREQALAEPAWYVHLRLWQRPLPVPLFSepSIALFAEQANILELDKPYRPRILQLRHSQiapGLIEAQYYMFKDIAAVKG 99 
+                 89999*****************************************9445889*********************87652226799999*********** PP
+
+        cpeS  95 asrdlerlktlkaddleklpgcnmiv.....ewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                 a  + + l +l+ ++++ lpgc++ v        g  f+ ++  g  c     g++  +d  fe   e+f+s d+g  p t + iwg++ gpf+fv+++
+  EGK90416.1 100 AGCNPDLLGKLTNEQIQLLPGCTLSVvvqnlASNGYRFRASLPEGTRCGFAYGGQNYQVDLGFEAAGEEFLSYDKGISPTTGKAIWGALMGPFRFVKRQ 198
+                 **********************98652232224688899************************************************************ PP
+
+        cpeS 189 sfadevk 195
+                  fa e+ 
+  EGK90416.1 199 DFAAEIL 205
+                 ****986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5134  (1775860 residues searched)
+Passed MSV filter:                        93  (0.0181145); expected 102.7 (0.02)
+Passed bias filter:                       90  (0.0175302); expected 102.7 (0.02)
+Passed Vit filter:                         9  (0.00175302); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.00038956); expected 0.1 (1e-05)
+Initial search space (Z):               5134  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 6961.37
+//
+[ok]

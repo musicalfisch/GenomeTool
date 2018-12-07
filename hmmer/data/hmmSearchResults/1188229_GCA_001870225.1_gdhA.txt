@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188229_GCA_001870225.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.3e-06   22.4   0.5      2e-05   21.1   0.2    1.8  2  APB32671.1  malic enzyme, NAD-binding [Gloeomargarita lithoph
+  ------ inclusion threshold ------
+      0.019   11.3   0.3        1.4    5.1   0.0    2.4  2  APB33221.1  UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthet
+
+
+Domain annotation for each sequence (and alignments):
+>> APB32671.1  malic enzyme, NAD-binding [Gloeomargarita lithophora Alchichica-D10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0       0.2   3.1e+02     409     421 ..     113     125 ..      99     129 .. 0.76
+   2 !   21.1   0.2   1.3e-08     2e-05     207     261 ..     247     301 ..     228     349 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.2
+        gdhA 409 aaytlgvgrvaqa 421
+                  ayt gvgrv+  
+  APB32671.1 113 MAYTPGVGRVCTE 125
+                 59*******9865 PP
+
+  == domain 2  score: 21.1 bits;  conditional E-value: 1.3e-08
+        gdhA 207 miivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfs 261
+                 +  + +al   gksl+ vrvvi+g g  g a a ll++aga+ + +  ++g v +
+  APB32671.1 247 LAALLNALRWVGKSLERVRVVINGAGAAGLAVAGLLQRAGAQGLVLCDSQGIVST 301
+                 44566889999*******************************9988887776544 PP
+
+>> APB33221.1  UDP-N-acetylmuramoyl-L-alanyl-D-glutamate synthetase [Gloeomargarita lithophora Alchichica-D10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.0   0.00092       1.4     228     261 ..       6      40 ..       2      50 .. 0.76
+   2 ?    3.6   0.0    0.0027       4.1     204     255 ..     370     422 ..     361     429 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.00092
+        gdhA 228 iqgfgnvggaaaellhkagaki.iavstgaggvfs 261
+                 + g+g+ g aaa llh++g ++ +  s ++ g+ +
+  APB33221.1   6 VLGLGKSGMAAARLLHRQGWQVqVQDSYTSPGLVA 40 
+                 679****************9983344555666555 PP
+
+  == domain 2  score: 3.6 bits;  conditional E-value: 0.0027
+        gdhA 204 rgvmiivrealadkgkslagv.rvviqgfgnvggaaaellhkagakiiavstg 255
+                      +  e++a++  s++ +  ++++ +g+   aa +l +++gak+i +s +
+  APB33221.1 370 VVLFGVAAESFAQRLTSINYTpLITVENLGEAVPAAQKLAQETGAKVILLSPA 422
+                 4444567788888888887662578999********************99876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         3034  (879391 residues searched)
+Passed MSV filter:                        86  (0.0283454); expected 60.7 (0.02)
+Passed bias filter:                       65  (0.0214239); expected 60.7 (0.02)
+Passed Vit filter:                         6  (0.00197759); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000659196); expected 0.0 (1e-05)
+Initial search space (Z):               3034  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 12575.29
+//
+[ok]

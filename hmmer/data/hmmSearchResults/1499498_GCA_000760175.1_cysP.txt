@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysP  [M=347]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.01   11.7   0.2        1.1    5.1   0.2    2.7  3  KGG12651.1  Phosphate ABC transporter [Prochlorococcus sp. MI
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG12651.1  Phosphate ABC transporter [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0     0.026        50      55      91 ..      11      45 ..       5     127 .. 0.67
+   2 ?    5.1   0.2   0.00056       1.1      46      85 ..     125     164 ..      89     172 .. 0.79
+   3 ?    3.1   0.0    0.0022       4.3     269     303 ..     254     287 ..     234     296 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.026
+        cysP 55 kiipkfveewqqktgqkvtfeqsyggsgsqtravidg 91
+                ki  ++  +  +  g kv ++    gsgs  +a id 
+  KGG12651.1 11 KIYTRWFADLAKSGGPKVNYQA--VGSGSGRKAFIDE 45
+                6666666677777777887754..4666667777774 PP
+
+  == domain 2  score: 5.1 bits;  conditional E-value: 0.00056
+        cysP  46 yavtqsayekiipkfveewqqktgqkvtfeqsyggsgsqt 85 
+                  + t  a+ + +  f eew   tg+ v +    gg g   
+  KGG12651.1 125 GSGTTKAFTNSMEAFSEEWTLGTGKSVKWPSGIGGKGNAG 164
+                 4568889999999**********************99765 PP
+
+  == domain 3  score: 3.1 bits;  conditional E-value: 0.0022
+        cysP 269 rkvaeafvqflftpaaqrefaqvgfrpveptvvke 303
+                 + + +  +++l+t +aq + +++gf p++ +++ +
+  KGG12651.1 254 KAI-KESLNYLLTDEAQSKASELGFVPLKGSILSK 287
+                 333.345689*****************99988755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (347 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        40  (0.0209644); expected 38.2 (0.02)
+Passed bias filter:                       37  (0.019392); expected 38.2 (0.02)
+Passed Vit filter:                         4  (0.00209644); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000524109); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8650.07
+//
+[ok]

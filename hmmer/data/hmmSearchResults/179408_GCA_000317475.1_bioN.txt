@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/179408_GCA_000317475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.4e-122  405.8  20.2      4e-80  267.7   4.5    2.0  2  AFZ09242.1  cobalt transport protein [Oscillatoria nigro-viri
+  ------ inclusion threshold ------
+       0.22    9.3   5.6       0.26    9.0   5.6    1.1  1  AFZ05041.1  hypothetical protein Osc7112_0433 [Oscillatoria n
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ09242.1  cobalt transport protein [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  144.0   7.7   5.9e-46   1.9e-42       1     108 [.       1     108 [.       1     114 [. 0.97
+   2 !  267.7   4.5   1.3e-83     4e-80     107     289 ..     146     328 ..     134     329 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 144.0 bits;  conditional E-value: 5.9e-46
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qpit lh+ld+rvk+ wlm+fl ap+lanp wrl lvg+l++ltl a ip rvw+qqmg l++++i+vf ++ai+pdgl    qp
+  AFZ09242.1   1 MDLLRSLPIGLYLEQPITWLHRLDSRVKLAWLMTFLIAPILANPIWRLMLVGMLIVLTLTAAIPLRVWKQQMGLLLLFCILVFCLSAIAPDGLPSEHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnl 108
+                 r+p + l +
+  AFZ09242.1 100 RIPADELTF 108
+                 ***998865 PP
+
+  == domain 2  score: 267.7 bits;  conditional E-value: 1.3e-83
+        bioN 107 nlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlara 205
+                 +lp  ++y+yvl+ +g + +tr+sl+la+ +stl ft+iystnl+lltta eeit  lenl+ plrr+n pvtei+ltltlslrfiplvlee+qnl r+
+  AFZ09242.1 146 QLPQPTNYRYVLFKQGPIKITRKSLDLALNVSTLFFTVIYSTNLYLLTTASEEITSALENLMQPLRRLNWPVTEIALTLTLSLRFIPLVLEEIQNLVRS 244
+                 68999********************************************************************************************** PP
+
+        bioN 206 vrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 v trai+w+klg +r+ +vwl + e+ll+nlllraeqia am+vrgftsp++h+v wh l+l+  d+ial  l+ +w+arlvwg
+  AFZ09242.1 245 VSTRAINWKKLGFRRAAQVWLMIAERLLENLLLRAEQIASAMKVRGFTSPDRHRVEWHPLQLKIRDWIALGCLLFLWSARLVWG 328
+                 ***********************************************************************************9 PP
+
+>> AFZ05041.1  hypothetical protein Osc7112_0433 [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.0   5.6     8e-05      0.26      31      77 ..      25      75 ..      18     105 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 8e-05
+        bioN 31 wlmaflaapllan...pwwrlalvgllllltllapip.prvwrqqmgwlif 77
+                 ++  la pll     pww  a+ g+l+ll+l+ap     v++  m + ++
+  AFZ05041.1 25 AVLFGLAVPLLRRhslPWWPWAIGGVLVLLALVAPKSlNPVYHAWMRFGLI 75
+                45556899999543349*****************97523366655554333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         6360  (2131415 residues searched)
+Passed MSV filter:                       252  (0.0396226); expected 127.2 (0.02)
+Passed bias filter:                      160  (0.0251572); expected 127.2 (0.02)
+Passed Vit filter:                        22  (0.00345912); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000314465); expected 0.1 (1e-05)
+Initial search space (Z):               6360  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10337.36
+//
+[ok]

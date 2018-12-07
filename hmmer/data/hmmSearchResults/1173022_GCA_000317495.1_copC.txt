@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0049   14.9   0.5     0.0095   14.0   0.3    1.6  1  AFZ11072.1  transport-associated protein [Crinalium epipsammu
+  ------ inclusion threshold ------
+      0.064   11.3   1.0       0.13   10.3   0.5    1.8  2  AFZ14120.1  ABC-type metal ion transporter, periplasmic subun
+       0.12   10.4   4.8       0.12   10.4   2.9    1.9  2  AFZ11020.1  hypothetical protein Cri9333_0015 [Crinalium epip
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ11072.1  transport-associated protein [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.3     6e-06    0.0095       4      58 ..       2      56 ..       1      66 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 6e-06
+        copC  4 lkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeek 58
+                +k ++l+++s+ l+ ++a+ n ++++ d  s+ +++++  +v+s++++k++ +++
+  AFZ11072.1  2 KKIITLLISSLLLVSTTACENPAKNSADAPSNVQESPKAPDVKSADDTKKDAQSE 56
+                57789999*************************************9999887765 PP
+
+>> AFZ14120.1  ABC-type metal ion transporter, periplasmic subunit [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.5   8.1e-05      0.13       9      49 ..       6      46 ..       1      53 [. 0.69
+   2 ?   -2.8   0.0      0.88   1.4e+03      84     107 ..     183     206 ..     172     209 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 8.1e-05
+        copC  9 lvvlsigllllaassnsntatndeassktttaattavssta 49
+                 +vl+i+ll++a+ +++nt + ++ s ++t+++t + +s++
+  AFZ14120.1  6 ALVLTISLLIVACGAGNNTTAPSNPSVTSTATKTGDRQSQD 46
+                35678999999999999887766666666666665555544 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.88
+        copC  84 angthldfylqkGdnheavsnakv 107
+                   +t l  y q+ d+ ++v+ a v
+  AFZ14120.1 183 YYATNLKNYQQRLDELDKVTRAVV 206
+                 457888889999999999988876 PP
+
+>> AFZ11020.1  hypothetical protein Cri9333_0015 [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   2.9   7.7e-05      0.12       1      50 [.       2      52 ..       2      63 .. 0.61
+   2 ?   -2.6   0.0      0.75   1.2e+03     100     114 ..     249     263 ..     242     267 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 7.7e-05
+        copC  1 mkslkssllvvlsigllllaassnsntatnde.assktttaattavsstaa 50
+                m+  +s  l ++ ++l+ ++a++n+++++ ++  +s+ t  ++t ++s ++
+  AFZ11020.1  2 MSFFRSWSLAIAILSLITITACTNDTANNSNSqVTSSATNNTETTAHSGHS 52
+                566778889999999999999999987655441333333333333333332 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.75
+        copC 100 eavsnakvtaqvqlP 114
+                  av+n kv a +   
+  AFZ11020.1 249 AAVANGKVSAAIEYQ 263
+                 689999999998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                       192  (0.040404); expected 95.0 (0.02)
+Passed bias filter:                      165  (0.0347222); expected 95.0 (0.02)
+Passed Vit filter:                        25  (0.00526094); expected 4.8 (0.001)
+Passed Fwd filter:                         3  (0.000631313); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6250.48
+//
+[ok]

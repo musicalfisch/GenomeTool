@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1454205_GCA_001854205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00071   17.3   6.7    0.00071   17.3   6.7    2.2  2  AOY78881.1  beta-carotene hydroxylase [Moorea producens JHB]
+  ------ inclusion threshold ------
+      0.063   10.9   9.4       0.39    8.3   0.2    2.4  2  AOY82440.1  hypothetical protein BJP36_23565 [Moorea producen
+
+
+Domain annotation for each sequence (and alignments):
+>> AOY78881.1  beta-carotene hydroxylase [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.3   6.7   2.2e-07   0.00071      28     131 ..       9     113 ..       3     157 .. 0.71
+   2 ?   -0.5   7.7     0.053   1.7e+02     200     301 ..     157     251 ..     123     282 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 17.3 bits;  conditional E-value: 2.2e-07
+        desA  28 sipkeyfqkdpvkawfgvitnilaviagyaml.vyspwyllplawiftgtaltgffv..iahdcghrsfsnrpwvndlvghifllpliypfhcwrflhd 123
+                 ++pke++   p k  + +++ + a+i   +    y  w  lp a  f+   l+  +v  + hd+ h+   + ++vn l+gh   l l + f ++  +h 
+  AOY78881.1   9 TVPKEFLG-APDKFNLTLLMFVAAIILVVCSTsGYWLW-DLPNACCFSINVLALHMVgtVIHDASHHVAHKNRYVNALMGHGSALMLGFTFPVFTRVHM 105
+                 56777654.45555555555555555443332033333.4799999988776666554489*******9999*************************** PP
+
+        desA 124 rhhaktnm 131
+                 +hha+ n 
+  AOY78881.1 106 QHHANVND 113
+                 ****9884 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 0.053
+        desA 200 vfaaiffptlifytgvwglvkfwvvpwfvyhfwms.tftlvhhtdpdiqfsypedwnqalaqlegtvhcsypr.wveilchdinvhiphhistaipsyn 296
+                  f+ +f+  +i+    +g++ + +  wfv  + +  ++ l +   p   f   + w++a           yp   +++l    n h+ hh+  +ip y+
+  AOY78881.1 157 FFSRLFIAIIIYLGCQYGFLDYIMNYWFVPALVVGiALGLFFDYLPHRPFKERDRWKNARV---------YPSpIINLLIMGQNYHLIHHLWPTIPWYK 246
+                 57778888888878889*9999999999998887625778888999999999999998753.........44315789999999999999999999998 PP
+
+        desA 297 lrkvh 301
+                  +  +
+  AOY78881.1 247 YQPAY 251
+                 76555 PP
+
+>> AOY82440.1  hypothetical protein BJP36_23565 [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.5   4.1   0.00081       2.7      62     131 ..      51     123 ..      12     147 .. 0.81
+   2 ?    8.3   0.2   0.00012      0.39     275     307 ..     252     284 ..     174     300 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 5.5 bits;  conditional E-value: 0.00081
+        desA  62 spwyllp...lawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktnm 131
+                 + w+ +p   l+ +++g ++  f    hd+ h s+ + ++   +vg  +     +p   + + h  hh  tn 
+  AOY82440.1  51 TLWFKVPivsLCVVLAGHSFHMFGWFGHDGVHISLLKNKYTSLIVGMFIAAASFFPTIGYGITHWNHHRYTNQ 123
+                 45776662225678899999999999********************999999****************99985 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.00012
+        desA 275 ilchdinvhiphhistaipsynlrkvhaslken 307
+                  l +  n h+ hh+   +p+y+l  vh  lke+
+  AOY82440.1 252 FLLFGNNFHLEHHLYPKVPAYKLPLVHKYLKEQ 284
+                 5566779**********************9985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         6559  (2174889 residues searched)
+Passed MSV filter:                       278  (0.0423845); expected 131.2 (0.02)
+Passed bias filter:                      184  (0.0280531); expected 131.2 (0.02)
+Passed Vit filter:                        15  (0.00228693); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000304925); expected 0.1 (1e-05)
+Initial search space (Z):               6559  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 9406.39
+//
+[ok]

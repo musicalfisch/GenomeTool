@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317936_GCA_000316625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-05   22.0  14.3      4e-05   21.2  14.3    1.4  1  AFY41289.1  Delta-12 acyl-phospholipid desaturase [Nostoc sp.
+     0.0031   15.0   5.2     0.0031   15.0   5.2    1.9  2  AFY41288.1  Delta-15 acyl-phospholipid desaturase [Nostoc sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY41289.1  Delta-12 acyl-phospholipid desaturase [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.2  14.3   1.5e-08     4e-05      60     266 ..      63     257 ..      40     305 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 21.2 bits;  conditional E-value: 1.5e-08
+        desD  60 iwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrmtphaehkwyhryq 158
+                  w+l  i  +  g+ l+g  f ighd+ h  ++ ++wvn l+g  +   +    + wr++hn+ hh +tn l  d   h      + p     w +  q
+  AFY41289.1  63 PWFLLPIAWIFTGTALTGF-FVIGHDCGHRSFAKRRWVNDLVGHIFMMPLIYPFHSWRIKHNH-HHKHTNKLDEDNAWHP-----IRPEVFVSWDKTRQ 154
+                 4999999999999999997.99************************999999999*******7.899*****99988885.....67888889999999 PP
+
+        desD 159 hlfipilyaiipiywsfsdvrsilfrhrfgeikipnpkaidlfvllsgkvvylfwfigipllvgyspleiaigf.livfmtygvlachvfmlahvlepa 256
+                   f   l+    ++w  s  +  +++  + + k+ +  +i l    s  vv +f  +  p l+  + +   + f l+ ++ y        ++ h +   
+  AFY41289.1 155 SAFQ--LFMKKRLWWVGSIGHWAVVHFDWRNFKVKDQGSIKL----SVAVVAIFAAVVFPTLIATTGIWGFVKFwLVPWLVYHFWMSTFTIVHHTFPDV 247
+                 9886..445556777777666666777777888888877764....66788999999999998888776666652566888888877777777777778 PP
+
+        desD 257 efiqpsaanq 266
+                  f q s+ n+
+  AFY41289.1 248 PFKQASKWNE 257
+                 8888887664 PP
+
+>> AFY41288.1  Delta-15 acyl-phospholipid desaturase [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   5.2   1.2e-06    0.0031      52     131 ..      61     138 ..      45     147 .. 0.78
+   2 ?   -0.4   0.2     0.057   1.5e+02     288     320 ..     280     312 ..     208     328 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 1.2e-06
+        desD  52 lfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvl 131
+                   v    d w++  i  l+ g+ +    f +ghd+ h  +s +kw+n l+g      i +  + wr+ h   hh  t  l
+  AFY41288.1  61 YAVAHYLDSWYFWPIFWLMQGTMFW-ALFVVGHDCGHQSFSKHKWLNDLIGHLSHTPILVPYHGWRISHRT-HHKNTGHL 138
+                 3455566888888888777776555.559**********************9999889999999****986.66666555 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.057
+        desD 288 flnwylgglnyqvvhhlfpqichihypkiapil 320
+                 ++n     +  +v hh+f +i h    k +  +
+  AFY41288.1 280 LVNHIHHDIGTHVAHHIFLNIPHYNLLKATEAI 312
+                 455566667778888888888887776655555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5237  (1703644 residues searched)
+Passed MSV filter:                       229  (0.0437273); expected 104.7 (0.02)
+Passed bias filter:                      123  (0.0234867); expected 104.7 (0.02)
+Passed Vit filter:                         9  (0.00171854); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000381898); expected 0.1 (1e-05)
+Initial search space (Z):               5237  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10335.44
+//
+[ok]

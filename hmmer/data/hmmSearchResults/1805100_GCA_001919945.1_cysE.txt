@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805100_GCA_001919945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-06   23.6   6.2    5.9e-06   22.7   1.2    2.4  2  OLE97971.1  hypothetical protein AUG75_01940 [Cyanobacteria b
+  ------ inclusion threshold ------
+       0.01   12.1   4.6     0.0082   12.4   0.9    2.1  2  OLE97555.1  N-acetyltransferase, partial [Cyanobacteria bacte
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE97971.1  hypothetical protein AUG75_01940 [Cyanobacteria bacterium 13_1_20CM_4_61_6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.3   0.3     0.005       4.8      80     102 ..      75      96 ..      34     107 .. 0.50
+   2 !   22.7   1.2     6e-09   5.9e-06     116     168 ..     135     187 ..     128     193 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 3.3 bits;  conditional E-value: 0.005
+        cysE  80 idhgmgvvigetaivgdyaliyq 102
+                 +  g  ++      +gdyali  
+  OLE97971.1  75 V-NGALILCDSEVTIGDYALIGW 96 
+                 1.222222333344555555555 PP
+
+  == domain 2  score: 22.7 bits;  conditional E-value: 6e-09
+        cysE 116 rhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrli 168
+                 r   +  nv +g ga vl  + +g+   vga svv  d+p  + v g p r++
+  OLE97971.1 135 RSIRIARNVWIGFGACVLPGVRIGEGAVVGARSVVTEDVPPGAVVAGNPARVV 187
+                 5556789********************************************97 PP
+
+>> OLE97555.1  N-acetyltransferase, partial [Cyanobacteria bacterium 13_1_20CM_4_61_6]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.9   8.4e-06    0.0082      63     129 ..      10      78 ..       3      85 .. 0.75
+   2 ?    0.7   0.1     0.031        30      73      95 ..     116     136 ..     105     142 .] 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 8.4e-06
+        cysE  63 ltgieihpgaqigqgvfidhgmgvvigetaivgdyaliyqgvtlggtgkesgkrh....ptlgenvvvgag 129
+                  +g++i pg+ + + v i hg    ig+ +i+g+ + +   v +g   k +   +     t+ + v+v ag
+  OLE97555.1  10 EAGVQIGPGSSVWDNVHIRHGA--QIGDECIIGEKSYVAYDVKIGNRVKINAFVYictaVTIEDGVMVSAG 78 
+                 579*****************85..69************999999998886654321111455555666655 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.031
+        cysE  73 qigqgvfidhgmgvvigetaivg 95 
+                  ig    i  g  +vig  a+vg
+  OLE97555.1 116 TIGAHCTI--GNDLVIGRFAMVG 136
+                 33333222..3334444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         1953  (545415 residues searched)
+Passed MSV filter:                        89  (0.0455709); expected 39.1 (0.02)
+Passed bias filter:                       79  (0.0404506); expected 39.1 (0.02)
+Passed Vit filter:                         6  (0.0030722); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00102407); expected 0.0 (1e-05)
+Initial search space (Z):               1953  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4581.49
+//
+[ok]

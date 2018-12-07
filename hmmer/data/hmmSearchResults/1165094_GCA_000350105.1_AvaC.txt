@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165094_GCA_000350105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     7e-103  339.8   0.1   8.2e-103  339.6   0.1    1.0  1  CCH68301.1  O-methyltransferase [Richelia intracellularis HH0
+    0.00032   17.3   0.0     0.0058   13.2   0.0    2.5  3  CCH66713.1  WD-40 repeat protein [Richelia intracellularis HH
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH68301.1  O-methyltransferase [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  339.6   0.1  7.2e-106  8.2e-103       1     219 [.       1     219 [.       1     220 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 339.6 bits;  conditional E-value: 7.2e-106
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+n+tlgl  q+y y  s+ lres  l +lr+eta +p+  mqi+peqgq++aflvq i+a+k+l+igvftgys+lvvalalp +gk++acd+seeyt+
+  CCH68301.1   1 MTNKTLGLSPQLYEYLLSVSLRESASLIKLREETAMHPMRRMQISPEQGQLIAFLVQLIAARKTLDIGVFTGYSTLVVALALPEDGKVVACDISEEYTN 99 
+                 89************************************************************************************************* PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iar ywq+ag ++kidl +apa++tl+kli  ge nsfdf fidadksnyd yye+ lqlvr gg+iaidnv+w g+va  + +dnrt  ir+ln k+ 
+  CCH68301.1 100 IARNYWQKAGASHKIDLHVAPAIKTLEKLIVEGEVNSFDFAFIDADKSNYDIYYEQVLQLVRPGGLIAIDNVLWHGQVADPEIKDNRTERIRTLNQKLY 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 +d+r+n+s++pi dgltlamk
+  CCH68301.1 199 KDKRINLSLVPIADGLTLAMK 219
+                 ********************9 PP
+
+>> CCH66713.1  WD-40 repeat protein [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   5.1e-06    0.0058      33      90 ..     397     457 ..     388     468 .. 0.86
+   2 ?   -3.9   0.0      0.83   9.5e+02      66      90 ..     475     499 ..     472     501 .. 0.88
+   3 ?    0.6   0.0     0.036        41      65      91 ..     600     626 ..     590     634 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 5.1e-06
+        AvaC  33 etasqplavmqiapeqgqfmaflvqaig...akkaleigvftgysalvvalalppegklia 90 
+                 e   qp+a +  +p+   + +   qai     k   ei ++ g+s lv +la+ p+gk + 
+  CCH66713.1 397 EDKNQPIACFAFSPDGTTIASASNQAIKlwsGKTGQEISILEGHSELVNTLAISPDGKTLV 457
+                 5678***********999999999999633268889*********************9765 PP
+
+  == domain 2  score: -3.9 bits;  conditional E-value: 0.83
+        AvaC  66 eigvftgysalvvalalppegklia 90 
+                 e+  f+g+ + v  la+  +g+++a
+  CCH66713.1 475 EVRTFSGHKSGVNVLAFSNDGHILA 499
+                 788999***********99999886 PP
+
+  == domain 3  score: 0.6 bits;  conditional E-value: 0.036
+        AvaC  65 leigvftgysalvvalalppegkliac 91 
+                  ++  f g+   v al + p gk++a 
+  CCH66713.1 600 KQVSTFRGHVGKVNALVVAPSGKILAS 626
+                 568899******************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2278  (598795 residues searched)
+Passed MSV filter:                        64  (0.0280948); expected 45.6 (0.02)
+Passed bias filter:                       49  (0.0215101); expected 45.6 (0.02)
+Passed Vit filter:                         6  (0.00263389); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000877963); expected 0.0 (1e-05)
+Initial search space (Z):               2278  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6586.74
+//
+[ok]

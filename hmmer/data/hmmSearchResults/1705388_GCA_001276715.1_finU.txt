@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1705388_GCA_001276715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-09   34.8   0.0    3.1e-09   34.7   0.0    1.0  1  KOR37104.1  nitrogen fixation protein NifU [Planktothricoides
+      7e-08   30.3   0.0    7.9e-08   30.1   0.0    1.2  1  KOR36886.1  nitrogen fixation protein NifU [Planktothricoides
+  ------ inclusion threshold ------
+      0.016   12.7   0.2      0.025   12.1   0.2    1.2  1  KOR38402.1  ribosomal protein L11 methyltransferase [Planktot
+
+
+Domain annotation for each sequence (and alignments):
+>> KOR37104.1  nitrogen fixation protein NifU [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.7   0.0   1.9e-12   3.1e-09     235     293 ..      12      70 ..       3      78 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 34.7 bits;  conditional E-value: 1.9e-12
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                  v +elr+ l++d+++v+l + d+ ++k  l++a++s+ s++++l++ +e +l++ +  
+  KOR37104.1  12 TVLDELRPYLMSDGGNVELVEIDGPIVKLRLQGACGSCPSSTMTLRMGIERKLRESIPE 70 
+                 566789************************************************99854 PP
+
+>> KOR36886.1  nitrogen fixation protein NifU [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.1   0.0   4.7e-11   7.9e-08      40      95 ..      40      95 ..      12     121 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 30.1 bits;  conditional E-value: 4.7e-11
+        finU 40 acGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsn 95
+                +cGd++ + +++++  d+i d +f+  Gc+ ++as++ ++e ++G+t+ eal++  
+  KOR36886.1 40 SCGDTIEITVQLNQAGDRIEDVKFEGEGCAISMASADLMAEALQGKTISEALEMVK 95
+                6***************************************************9865 PP
+
+>> KOR38402.1  ribosomal protein L11 methyltransferase [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.2   1.5e-05     0.025     161     248 ..     147     240 ..     132     249 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.5e-05
+        finU 161 ennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaa.....tvrnslkkntaselaekklkrvlkiv.lkiklldevvdeelravlidde 248
+                 e  l +  +  n v a  GcGs + +i  i+   ++  a+     +vr  +++++ +++a+++ +  +  v ++++l+d+ v+  +   l+++ 
+  KOR38402.1 147 EMRLGDDSEQQNAVIADIGCGSGILSIGAILLGAHRAIAVdtdplAVRAARENRELNKIAKEQITIQQGSVlQVKELIDQPVNGIVCNILAEVI 240
+                 556667777789999****************99998887633322678888899999999999998887762556799**99999988887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5049  (1535341 residues searched)
+Passed MSV filter:                       155  (0.0306991); expected 101.0 (0.02)
+Passed bias filter:                      115  (0.0227768); expected 101.0 (0.02)
+Passed Vit filter:                         9  (0.00178253); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.000594177); expected 0.1 (1e-05)
+Initial search space (Z):               5049  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9212.05
+//
+[ok]

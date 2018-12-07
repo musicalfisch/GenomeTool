@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1647413_GCA_001277295.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.3e-112  371.9   4.4   1.4e-112  371.8   4.4    1.0  1  ALB43037.1  ATP synthase F0F1 subunit delta [Anabaena sp. WA1
+  ------ inclusion threshold ------
+      0.014   13.2   0.1      0.035   11.9   0.1    1.5  1  ALB39086.1  glycine cleavage system protein T [Anabaena sp. W
+
+
+Domain annotation for each sequence (and alignments):
+>> ALB43037.1  ATP synthase F0F1 subunit delta [Anabaena sp. WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  371.8   4.4    6e-116  1.4e-112       1     184 []       1     184 []       1     184 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 371.8 bits;  conditional E-value: 6e-116
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mksdaatae++qpyaqallsiaqsqnlteevg+dart+lsll+gs+el++fl+npfvkpenkknvl+qllgegvnp+lrnfllllvdrrriafle+ilq
+  ALB43037.1   1 MKSDAATAEISQPYAQALLSIAQSQNLTEEVGGDARTFLSLLTGSQELTGFLSNPFVKPENKKNVLRQLLGEGVNPCLRNFLLLLVDRRRIAFLEPILQ 99 
+                 9************************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlssn 184
+                 qylallrqlnqtvlae+tsavplte+qqqa++ekvi+ltkarqvel+tkidsdliggviikvgsqvidaslrgqlrrlslrlssn
+  ALB43037.1 100 QYLALLRQLNQTVLAEITSAVPLTETQQQAITEKVITLTKARQVELATKIDSDLIGGVIIKVGSQVIDASLRGQLRRLSLRLSSN 184
+                 ***********************************************************************************97 PP
+
+>> ALB39086.1  glycine cleavage system protein T [Anabaena sp. WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   1.5e-05     0.035      77     164 ..      79     162 ..      73     166 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.5e-05
+        atpD  77 ylrnfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsq 164
+                 +l + +lllv   r   l   l++y+    q++ t ++e t+ ++l   q +av ek+ a     ++  +   +  l+ggvi+ vgs 
+  ALB39086.1  79 VLNDAVLLLVSPNRRQELMKWLDRYIFPADQVKLTDVTEETAILSLIGPQSHAVIEKLGA----GDLIGQPNGNHILVGGVIVAVGSG 162
+                 57788999**999999999*************************************9754....444445566778999999999995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4742  (1395220 residues searched)
+Passed MSV filter:                       177  (0.037326); expected 94.8 (0.02)
+Passed bias filter:                      109  (0.0229861); expected 94.8 (0.02)
+Passed Vit filter:                         8  (0.00168705); expected 4.7 (0.001)
+Passed Fwd filter:                         2  (0.000421763); expected 0.0 (1e-05)
+Initial search space (Z):               4742  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 8557.35
+//
+[ok]

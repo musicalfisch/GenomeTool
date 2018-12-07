@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/376219_GCA_000973065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-18   63.1   0.0    2.7e-17   59.7   0.0    1.9  2  CDM96977.1  Ferredoxin--NADP reductase (FNR) [Arthrospira sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> CDM96977.1  Ferredoxin--NADP reductase (FNR) [Arthrospira sp. PCC 8005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    1.2   0.0    0.0021        12    1030    1072 ..     126     166 ..      88     173 .. 0.73
+   2 !   59.7   0.0   4.6e-21   2.7e-17    1208    1394 ..     176     373 ..     169     382 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.0021
+        cysJ 1030 plvanqellqevvpgsrstrlivfdltdtdlqyetgdhvavyp 1072
+                    ++n+el++e   g+ + r ++fd++  dl+y  g+ + + p
+  CDM96977.1  126 KCLSNEELVREG--GTGTVRHLIFDISGGDLRYLEGQSIGIIP 166 
+                  456899999985..666799****************9999887 PP
+
+  == domain 2  score: 59.7 bits;  conditional E-value: 4.6e-21
+        cysJ 1208 qkprlysisscpl...lhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s      +  + + + v  l+    ++g+   g+cs yl+ l+ g+ v i   +   +  p d  a i+m+  gtg++p+ afl +  
+  CDM96977.1  176 HKLRLYSIASTRHgdhVDDKTVSLCVRQLEYKhPETGETVYGVCSTYLCNLEAGADVAITGpVGKEMLLPEDEDATIIMMATGTGIAPFRAFLWRMF 272 
+                  5789****9986421144556666666665442589**********************98526678899************************9887 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeqlqvwrdr.nvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmaddvf 1390
+                    q +     g a l+fg     +++yq++l+  +++      l +a+sr  ++    k y+q+ ++++ +++w+++ +p+ h y+cg   m   + 
+  CDM96977.1  273 KEQHEDYKfKGLAWLFFGIPYSPNILYQQELEELQQQfPENFRLTLAISREQQNpeggKMYIQDRIKENADQLWELIQKPNTHTYICGLKGMEGGID 369 
+                  777766651699****************88876655413345677788876543333499****************************988876665 PP
+
+        cysJ 1391 avmm 1394
+                    m 
+  CDM96977.1  370 EGMS 373 
+                  5555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         5900  (1669094 residues searched)
+Passed MSV filter:                       129  (0.0218644); expected 118.0 (0.02)
+Passed bias filter:                      105  (0.0177966); expected 118.0 (0.02)
+Passed Vit filter:                         5  (0.000847458); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000169492); expected 0.1 (1e-05)
+Initial search space (Z):               5900  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.15u 0.02s 00:00:00.17 Elapsed: 00:00:00.16
+# Mc/sec: 15439.12
+//
+[ok]

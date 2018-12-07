@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaH  [M=149]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-47  159.1   0.2    3.5e-47  158.4   0.2    1.3  1  ABA20307.1  transposase, IS4 family [Anabaena variabilis ATCC
+  ------ inclusion threshold ------
+      0.037   12.3   0.0      0.088   11.1   0.0    1.6  1  ABA23133.1  histidine kinase [Anabaena variabilis ATCC 29413]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA20307.1  transposase, IS4 family [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  158.4   0.2   1.2e-50   3.5e-47      10     148 ..       6     144 ..       2     145 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 158.4 bits;  conditional E-value: 1.2e-50
+        anaH  10 teievknldhlglvagiideigiveiineqvsiergeivtagqvvkaiilnglgfvsralylfpqffedkatehllgegiepkqlnddkigrvmdklyq 108
+                 +ei v+++dh g+vagiid++ +ve in+ +   + eiv+ gq +ka+ilnglg++s  lylf +ff  katehllgegi+  +lndd++grv+dkly+
+  ABA20307.1   6 SEIRVQDIDHCGIVAGIIDQMCLVEQINQILGTHQQEIVSPGQAIKAMILNGLGLLSAPLYLFEKFFVGKATEHLLGEGIKAEHLNDDRLGRVLDKLYE 104
+                 79************************************************************************************************* PP
+
+        anaH 109 lnvsvifllislaavkkfgvatenshldstslskeikyky 148
+                   ++ +f+ ++laa  kfgv  e  hlds+s+ ++++y  
+  ABA20307.1 105 AGLTQVFVTVALAAAEKFGVKHESLHLDSSSFHVHGEYAN 144
+                 *************************************976 PP
+
+>> ABA23133.1  histidine kinase [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   3.1e-05     0.088      41     110 ..     369     440 ..     343     452 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 3.1e-05
+        anaH  41 siergeivtagqvvkaiilnglgfvsral.ylfpqffedkatehllgegie.pkqlnddkigrvmdklyqln 110
+                  i r ei+   qvv  i  ng+g+   a   lf  ff  k   +  g g+   +q+  +k g  md +  l 
+  ABA23133.1 369 IIIRTEIIGDQQVVIRIADNGIGIPEEAKqRLFDPFFTTKPVGKGTGLGLSiCHQIIVEKHGGQMDCVSSLG 440
+                 4779********************99986269*********9999999986368999999999999877665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (149 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       137  (0.0240098); expected 114.1 (0.02)
+Passed bias filter:                      106  (0.0185769); expected 114.1 (0.02)
+Passed Vit filter:                         8  (0.00140203); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350508); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 9627.00
+//
+[ok]

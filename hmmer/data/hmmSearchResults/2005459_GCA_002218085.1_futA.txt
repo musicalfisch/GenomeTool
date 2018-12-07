@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/2005459_GCA_002218085.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   13.3   0.0      0.076   10.7   0.0    1.9  2  GAX39944.1  extracellular solute-binding protein [Tolypothrix
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX39944.1  extracellular solute-binding protein [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0     0.022   1.7e+02      91     111 ..     212     232 ..     205     240 .. 0.87
+   2 ?   10.7   0.0     1e-05     0.076     255     308 ..     328     384 ..     321     390 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.022
+        futA  91 ltvdagrlwradqqgifapvn 111
+                 ltvd     r dq+gif p+ 
+  GAX39944.1 212 LTVDKNGDGRIDQHGIFLPLG 232
+                 899999999********9975 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 1e-05
+        futA 255 ifpdqagrgahvnisgggl..iktapnre.saikfleylssneaqnffakgnqeypv 308
+                 +fp  +g+     i g  l   kt+p++e +a kf+ey+ s+e q  +a g    pv
+  GAX39944.1 328 VFPIPVGQRPATGIGGESLfvFKTTPEQEkAAFKFIEYVLSEEFQTEWAIGTGYLPV 384
+                 57777888888888888763369***9983579*************99999887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         7372  (2211063 residues searched)
+Passed MSV filter:                       147  (0.0199403); expected 147.4 (0.02)
+Passed bias filter:                      112  (0.0151926); expected 147.4 (0.02)
+Passed Vit filter:                         7  (0.000949539); expected 7.4 (0.001)
+Passed Fwd filter:                         1  (0.000135648); expected 0.1 (1e-05)
+Initial search space (Z):               7372  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 15521.66
+//
+[ok]

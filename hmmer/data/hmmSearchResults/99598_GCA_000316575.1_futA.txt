@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.024   12.1   0.0       0.04   11.3   0.0    1.3  1  AFY35246.1  carbohydrate ABC transporter substrate-binding pr
+      0.031   11.7   0.0      0.051   11.0   0.0    1.3  1  AFY31701.1  extracellular solute-binding protein family 1 [Ca
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY35246.1  carbohydrate ABC transporter substrate-binding protein, CUT1 family [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.4e-05      0.04     263     308 ..     316     363 ..     302     371 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.4e-05
+        futA 263 gahvnisggg.liktapnre.saikfleylssneaqnffakgnqeypv 308
+                  a v  +g   ++kt+p re +a+kfley+ s e q  ++ g    pv
+  AFY35246.1 316 PATVTGTGNLfVMKTTPAREkAALKFLEYVLSAEFQTEWSIGTGFLPV 363
+                 4555444443258******93579**********99988877766665 PP
+
+>> AFY31701.1  extracellular solute-binding protein family 1 [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   1.7e-05     0.051      25      65 ..      29      68 ..       2      94 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.7e-05
+        futA 25 lgkinevsaqtkqlnlyssrhyntdrrlydnftrqtgikin 65
+                +    + s+q +q+ ly+  +y td++l   f+ qtg+k+ 
+  AFY31701.1 29 VRANAKSSSQRDQISLYTWAQY-TDKQLLKTFSAQTGMKVL 68
+                3333467899********9998.8***************84 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       125  (0.0210084); expected 119.0 (0.02)
+Passed bias filter:                      100  (0.0168067); expected 119.0 (0.02)
+Passed Vit filter:                         6  (0.0010084); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 13013.21
+//
+[ok]

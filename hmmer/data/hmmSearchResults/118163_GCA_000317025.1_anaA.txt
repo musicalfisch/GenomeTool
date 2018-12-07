@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118163_GCA_000317025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0069   13.5   0.0      0.013   12.6   0.0    1.4  1  AFY79160.1  poly(R)-hydroxyalkanoic acid synthase, class III,
+  ------ inclusion threshold ------
+      0.013   12.6   0.0      0.074   10.1   0.0    1.9  2  AFY75938.1  putative hydrolase or acyltransferase of alpha/be
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY79160.1  poly(R)-hydroxyalkanoic acid synthase, class III, PhaC subunit [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.0   5.9e-06     0.013     186     235 ..     315     367 ..     293     379 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 5.9e-06
+        anaA 186 vsekslpcpilalggeadegvsleelrewekytq.rgfklrsfpggh..mylt 235
+                 v  k++  p+l l  e d  v  e  +  eky     + +rsfp gh  my++
+  AFY79160.1 315 VDLKNVRMPVLNLYAEKDHLVDPESSKALEKYVGtDDYTVRSFPVGHigMYVS 367
+                 66789999************************862689*********555655 PP
+
+>> AFY75938.1  putative hydrolase or acyltransferase of alpha/beta superfamily [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   3.5e-05     0.074      13     109 ..      27     122 ..      18     131 .. 0.77
+   2 ?   -0.1   0.0     0.045        96     189     209 ..     230     250 ..     220     288 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 3.5e-05
+        anaA  13 vplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdl.ieplvqeiypysqspfvffghslgsvvslevahq 109
+                 v  g  +q  + sl+ +   ga +  +r   a +    ++wa+ + g     k  l    g+l  + l + i      p v+ g slg   sl va q
+  AFY75938.1  27 VKAGA-KQAGRPSLLLVHGFGASTDHWRKNLAELQRDFEVWAIDLLGFGRSAKPNL-QYSGNLwCDQLHDFITEVIGQPAVLAGNSLGGYASLCVAAQ 122
+                 55553.57778899999999**************************9876666555.444544234444555556678*****************998 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.045
+        anaA 189 kslpcpilalggeadegvsle 209
+                 k + cp+l++ ge d  +   
+  AFY75938.1 230 KQMTCPLLTIWGEGDPWIKAR 250
+                 778999999999998766544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4268  (1345719 residues searched)
+Passed MSV filter:                       101  (0.0236645); expected 85.4 (0.02)
+Passed bias filter:                       98  (0.0229616); expected 85.4 (0.02)
+Passed Vit filter:                        10  (0.00234302); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000468604); expected 0.0 (1e-05)
+Initial search space (Z):               4268  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8511.67
+//
+[ok]

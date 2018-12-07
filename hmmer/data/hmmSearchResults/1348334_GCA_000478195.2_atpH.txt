@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-50  167.3   7.3      3e-50  167.2   7.3    1.0  1  ERT05616.1  ATP synthase F0, C subunit [Lyngbya aestuarii BL 
+    1.3e-21   75.5   1.8    1.4e-21   75.4   1.8    1.0  1  ERT09688.1  ATP synthase F0, C subunit [Lyngbya aestuarii BL 
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT05616.1  ATP synthase F0, C subunit [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  167.2   7.3   9.2e-54     3e-50       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 167.2 bits;  conditional E-value: 9.2e-54
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdpl+aaasviaaalavGl+aiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvv+lvllfanpfa
+  ERT05616.1  1 MDPLIAAASVIAAALAVGLGAIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVSLVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> ERT09688.1  ATP synthase F0, C subunit [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   75.4   1.8   4.2e-25   1.4e-21       4      80 ..       6      82 ..       1      83 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 75.4 bits;  conditional E-value: 4.2e-25
+        atpH  4 lvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                lv   s+++a+l++Gl+aiGp+ig+G a ++a+  +a+qp+    i  tl++ +a++es +iy +vv+++l+fanpf
+  ERT09688.1  6 LVGMVSIFTAGLCIGLGAIGPAIGEGLALANAMRALAQQPDKTNTITRTLFVGMALIESTAIYCFVVSMILIFANPF 82
+                68889***********************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       211  (0.0324366); expected 130.1 (0.02)
+Passed bias filter:                      121  (0.0186011); expected 130.1 (0.02)
+Passed Vit filter:                         6  (0.000922367); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000307456); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5203.14
+//
+[ok]

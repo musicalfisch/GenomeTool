@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74547_GCA_000011485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braE  [M=371]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-11   41.3  20.3    8.3e-07   26.1  11.6    2.6  2  CAE22401.1  Putative membrane protein of ABC transport system
+    1.1e-05   22.4  20.2    8.1e-05   19.5   4.6    2.6  2  CAE22402.1  putative urea ABC transporter [Prochlorococcus ma
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE22401.1  Putative membrane protein of ABC transport system [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.0   1.3   4.1e-08   5.8e-05      16      49 ..      45      78 ..      16      87 .. 0.91
+   2 !   26.1  11.6   5.8e-10   8.3e-07     206     345 ..     194     330 ..     114     347 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 20.0 bits;  conditional E-value: 4.1e-08
+        braE 16 aifalglnlqwgftglinfghvafatlgayatvl 49
+                +i+alg++l wgftgl+ +g+  f +lg ya+ +
+  CAE22401.1 45 SIVALGIDLIWGFTGLLSLGQGIFFALGGYAAAM 78
+                699***************************9765 PP
+
+  == domain 2  score: 26.1 bits;  conditional E-value: 5.8e-10
+        braE 206 glmvvvlvllalvytglelllrspwgrilkairedeeipralgknvfwyklqslmlggaiaglagaflawqlttiyptnfeplltfnawiiiilggsgs 304
+                 g++ +  v++ l +  +  ++r  +g +l air+de   r  g n   +k   + + g +ag+ ga+ + q   + p  +   ++++  i + +gg g+
+  CAE22401.1 194 GFFWLTAVMVILAWLAVRWVVRGRFGEVLIAIRDDEPRLRFAGYNPTLFKTIVFAMAGGLAGIGGALYTVQSGIVSPQYMTVPFSIDMVIWVAVGGRGT 292
+                 555666778888899999**************************************************************9999*************** PP
+
+        braE 305 nagtllgavifwaydsltrfilpqldifndsqlgalrimii 345
+                   g++lga+++    s    + p+  +f    lg l i+++
+  CAE22401.1 293 LIGAILGALVINLARSQISTVWPEGWLFI---LGGLFILVV 330
+                 ********998877777777777766663...555555555 PP
+
+>> CAE22402.1  putative urea ABC transporter [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.1   6.7   8.3e-05      0.12      14      52 ..      17      55 ..       5     118 .. 0.83
+   2 !   19.5   4.6   5.7e-08   8.1e-05     194     317 ..     200     321 ..     194     382 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 8.3e-05
+        braE 14 iyaifalglnlqwgftglinfghvafatlgayatvlltl 52
+                +  + algl + +g+ g+in+ h  +  lgay+t ++ l
+  CAE22402.1 17 VLLVAALGLAIVFGLMGVINLAHGELIMLGAYTTYVVQL 55
+                566889***************************987665 PP
+
+  == domain 2  score: 19.5 bits;  conditional E-value: 5.7e-08
+        braE 194 gvialndynykaglmvvvlvllalvytglelllrspwgrilkairedeeipralgknvfwyklqslmlggaiaglagaflawqlttiyptnfeplltfn 292
+                 g i l    +    +v++++ +  v     +l rs wg  ++a+ ++  +  +lg       + ++ +g  +ag+ag  ++  l      n+     + 
+  CAE22402.1 200 GGIELSGMTFPVPRLVIIVITILAVLGITWFLNRSVWGMRIRAVTQNRSMSDCLGISTDTVDVLTFGIGSGLAGIAGVAVS--LLGSVGPNVGTSYIVG 296
+                 556666666665555554444444444445788********************************************7554..555555588888999* PP
+
+        braE 293 awiiiilggsgsnagtllgavifwa 317
+                 ++++++lgg g+  gt+l +  +  
+  CAE22402.1 297 CFMVVVLGGVGNLFGTVLASFAIGV 321
+                 *****************99865443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (371 nodes)
+Target sequences:                         2850  (689451 residues searched)
+Passed MSV filter:                       152  (0.0533333); expected 57.0 (0.02)
+Passed bias filter:                       51  (0.0178947); expected 57.0 (0.02)
+Passed Vit filter:                         5  (0.00175439); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000701754); expected 0.0 (1e-05)
+Initial search space (Z):               2850  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 6394.66
+//
+[ok]

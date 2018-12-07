@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/269084_GCA_000010065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-49  163.6   7.6    1.7e-49  163.4   7.6    1.0  1  BAD79371.1  H+-transporting two-sector ATPase [Synechococcus 
+     0.0078   14.0   2.2      0.016   13.0   0.2    2.4  2  BAD80592.1  sulfate transport system permease protein [Synech
+
+
+Domain annotation for each sequence (and alignments):
+>> BAD79371.1  H+-transporting two-sector ATPase [Synechococcus elongatus PCC 6301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.4   7.6   1.4e-52   1.7e-49       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 163.4 bits;  conditional E-value: 1.4e-52
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                md+l++aasv+aaalavGlaaiGpgigqG+aagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvvalvllfanpfa
+  BAD79371.1  1 MDSLTSAASVLAAALAVGLAAIGPGIGQGSAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> BAD80592.1  sulfate transport system permease protein [Synechococcus elongatus PCC 6301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.2      0.33   4.2e+02      55      71 ..      25      41 ..      17      46 .. 0.79
+   2 !   13.0   0.2   1.3e-05     0.016      39      75 ..      57      92 ..      47      96 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.33
+        atpH 55 lslafmesltiyGlvva 71
+                + laf+ ++ +  lvv 
+  BAD80592.1 25 IGLAFLTAIVLLPLVVV 41
+                46899999999988885 PP
+
+  == domain 2  score: 13.0 bits;  conditional E-value: 1.3e-05
+        atpH 39 iarqpeaeGkirgtlllslafmesltiyGlvvalvll 75
+                i +qpea   ir tll++   +   t++G+ +a vl+
+  BAD80592.1 57 I-QQPEALHAIRLTLLITAVAIPLNTLFGVAIAWVLV 92
+                4.79***************99*************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         2525  (785792 residues searched)
+Passed MSV filter:                       141  (0.0558416); expected 50.5 (0.02)
+Passed bias filter:                       63  (0.0249505); expected 50.5 (0.02)
+Passed Vit filter:                         6  (0.00237624); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000792079); expected 0.0 (1e-05)
+Initial search space (Z):               2525  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6364.92
+//
+[ok]

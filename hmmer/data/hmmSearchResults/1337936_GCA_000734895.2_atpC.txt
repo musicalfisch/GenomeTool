@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.2e-200  662.5   8.0   2.5e-200  662.3   8.0    1.0  1  AKG23936.1  ATP synthase F0F1 subunit gamma [Calothrix sp. 33
+  ------ inclusion threshold ------
+      0.034   11.4   0.0      0.034   11.4   0.0    1.1  1  AKG24155.1  rhodanese-related sulfurtransferase [Calothrix sp
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG23936.1  ATP synthase F0F1 subunit gamma [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  662.3   8.0  9.9e-204  2.5e-200       1     315 []       1     315 []       1     315 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 662.3 bits;  conditional E-value: 9.9e-204
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 manlk+irdriqsvkntkkiteamrlvaaarvrraqeqvi+trpfadrlaqvlyglqtrlrfed+dlpllkkr vksvgllvisgdrglcggyn+n+i+
+  AKG23936.1   1 MANLKVIRDRIQSVKNTKKITEAMRLVAAARVRRAQEQVISTRPFADRLAQVLYGLQTRLRFEDADLPLLKKRAVKSVGLLVISGDRGLCGGYNNNIIK 99 
+                 9************************************************************************************************** PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgl 198
+                 rae rakelkaeg+dykfvlvgrkatqyfqrr+qpidatysgleqiptaaea++ia+ellslflse+vdrielvytkfvslvssrpv+qtllpld+qgl
+  AKG23936.1 100 RAEARAKELKAEGVDYKFVLVGRKATQYFQRRDQPIDATYSGLEQIPTAAEATNIANELLSLFLSESVDRIELVYTKFVSLVSSRPVIQTLLPLDSQGL 198
+                 *************************************************************************************************** PP
+
+        atpC 199 eaaddeifrlttrggqfeverekvtsevralprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkarq 297
+                 eaaddeifrlttrgg+f+ver+k+ +evr+lprdmifeqdpvqildsllplyl+nqllralqesaaselaarmtamsnasdna++li++ltlsynkarq
+  AKG23936.1 199 EAADDEIFRLTTRGGDFQVERQKIVTEVRPLPRDMIFEQDPVQILDSLLPLYLTNQLLRALQESAASELAARMTAMSNASDNATQLISTLTLSYNKARQ 297
+                 *************************************************************************************************** PP
+
+        atpC 298 aaitqellevvggaealk 315
+                 aaitqellevvggaeal+
+  AKG23936.1 298 AAITQELLEVVGGAEALT 315
+                 ****************96 PP
+
+>> AKG24155.1  rhodanese-related sulfurtransferase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   1.4e-05     0.034      41      88 ..       2      50 ..       1      98 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.4e-05
+        atpC 41 atrpfadrlaqv.lyglqtrlrfedvdlpllkkrevksvgllvisgdrg 88
+                +  pf++ laqv +  lq+rl   d  + l+  re + v++  i g   
+  AKG24155.1  2 SGTPFTQPLAQVsVQELQQRLSAGDRSIQLIDVREPQEVAIASIDGFLN 50
+                567********95578*************************99998655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       144  (0.0285544); expected 100.9 (0.02)
+Passed bias filter:                       88  (0.0174499); expected 100.9 (0.02)
+Passed Vit filter:                         8  (0.00158636); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 12689.52
+//
+[ok]

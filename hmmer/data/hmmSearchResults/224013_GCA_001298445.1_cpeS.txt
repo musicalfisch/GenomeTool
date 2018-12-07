@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.3e-126  417.2   0.0   2.6e-126  417.0   0.0    1.0  1  ALF53449.1  chorismate-binding protein [Nostoc piscinale CENA
+    2.4e-31  107.1   0.0    2.9e-31  106.8   0.0    1.0  1  ALF53084.1  chorismate mutase [Nostoc piscinale CENA21]
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF53449.1  chorismate-binding protein [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  417.0   0.0    1e-129  2.6e-126       1     195 [.       1     195 [.       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 417.0 bits;  conditional E-value: 1e-129
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mt+stdiatlar+maadfsnq+qafenppf+ahirvcmrplpl+llsgvsffveqaydy+lndpyrlrvl+l++a+dri+ienytvk+e+kfygasrdl
+  ALF53449.1   1 MTSSTDIATLARWMAADFSNQAQAFENPPFYAHIRVCMRPLPLDLLSGVSFFVEQAYDYMLNDPYRLRVLNLLNAGDRIHIENYTVKQEEKFYGASRDL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevk 195
+                 erlktl+addleklpgcnm+vewtgnsfkg vepgk+civ+rkg+ktyldsefeid+ekfisldrgrd+etdehiwgsvagpf+fvrwasfadevk
+  ALF53449.1 100 ERLKTLTADDLEKLPGCNMLVEWTGNSFKGYVEPGKGCIVFRKGQKTYLDSEFEIDDEKFISLDRGRDLETDEHIWGSVAGPFYFVRWASFADEVK 195
+                 ***********************************************************************************************9 PP
+
+>> ALF53084.1  chorismate mutase [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  106.8   0.0   1.1e-34   2.9e-31       4     190 ..       4     198 ..       1     202 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 106.8 bits;  conditional E-value: 1.1e-34
+        cpeS   4 stdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed...rieienytvkeekkfygasrdl 99 
+                 s  + tl  ++a +f n+eqa+ +p ++ h+r+  rp+ l   + +++f eqa   +l+ pyr r+++l + ++    ++++ y++k+   + ga r+ 
+  ALF53084.1   4 SPLLITLGNYIAGEFDNREQALAEPAWYVHLRMWQRPVNLFTQDSITLFAEQANIVNLDRPYRQRIMRLRAGKNwdaPLQLQYYMLKDPSALSGAGRNP 102
+                 666789**************************************************************986544212799******************* PP
+
+        cpeS 100 erlktlkaddleklpgcnmiv...ewtgnsfkgk.vepg.kacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasf 190
+                   lktl++++l+ lpgc + +   e t +++k    +p    c    +g++  +   f   + +f s d+g d et +  wg++ gp+++ +++ +
+  ALF53084.1 103 ALLKTLTVEQLDLLPGCVLTLtqeELTPKNYKFIaTQPTeTRCCFNYQGNNIQVSLGFTATAAEFYSYDKGIDSETGKATWGAILGPYRYTKREQY 198
+                 *****************9876344789999886414554156999999******************************************998766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                        95  (0.0189168); expected 100.4 (0.02)
+Passed bias filter:                       85  (0.0169255); expected 100.4 (0.02)
+Passed Vit filter:                         3  (0.000597372); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398248); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7308.61
+//
+[ok]

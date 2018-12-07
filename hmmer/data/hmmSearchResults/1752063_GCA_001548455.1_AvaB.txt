@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752063_GCA_001548455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.05   10.4   0.0       0.22    8.3   0.0    1.9  2  BAU07902.1  carbamoyl phosphate synthetase large chain [Fisch
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU07902.1  carbamoyl phosphate synthetase large chain [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0     0.034   1.7e+02     319     345 ..     280     306 ..     267     317 .. 0.82
+   2 ?    8.3   0.0   4.5e-05      0.22     303     350 ..     827     877 ..     811     893 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.034
+        AvaB 319 tgqvsfdfiqaaddgqvyaiecnprth 345
+                 tg  +++f     dg+v  ie npr  
+  BAU07902.1 280 TGGSNIQFAVNPVDGEVVVIEMNPRVS 306
+                 6677788888899************75 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 4.5e-05
+        AvaB 303 seierwilafvkglnltgqvsfdfiqa...addgqvyaiecnprthsaitm 350
+                 ++i +w + + + ln+ g ++++f  a   ++  qvy +e+npr+  ++ +
+  BAU07902.1 827 NQIRQWTVQLAQALNVVGLMNIQFAVAgsqTESPQVYILEANPRASRTVPF 877
+                 57999******************99872224567**********9877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         4939  (1543483 residues searched)
+Passed MSV filter:                       130  (0.0263211); expected 98.8 (0.02)
+Passed bias filter:                      107  (0.0216643); expected 98.8 (0.02)
+Passed Vit filter:                        10  (0.0020247); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.00020247); expected 0.0 (1e-05)
+Initial search space (Z):               4939  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11859.09
+//
+[ok]

@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173027_GCA_000317515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-71  236.5   0.5    3.3e-71  236.4   0.5    1.0  1  AFZ18532.1  ATP synthase, F1 epsilon subunit [Microcoleus sp.
+  ------ inclusion threshold ------
+       0.24   10.1  19.1      0.031   13.0   1.2    3.6  4  AFZ21058.1  ABC exporter membrane fusion protein, DevB family
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ18532.1  ATP synthase, F1 epsilon subunit [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  236.4   0.5     1e-74   3.3e-71       1     137 []       1     136 []       1     136 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 236.4 bits;  conditional E-value: 1e-74
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvispdktvwd+eaeevilpsttgqlgilsghaplltald+gvmrvr+ k  dw  ial+ggfaeve++evtilvngaergd+i+   a  a++
+  AFZ18532.1   1 MTLTVRVISPDKTVWDSEAEEVILPSTTGQLGILSGHAPLLTALDVGVMRVRPGK--DWLPIALMGGFAEVENNEVTILVNGAERGDAIDKAVALEAYT 97 
+                 9***************************************************976..8***************************************** PP
+
+        atpE 100 eaqtklnqvk.aedrqaqiqatqafkrararfqaagglv 137
+                 +a+ +lnqv+ +e+rq+qiqatqafkrarar+qaagglv
+  AFZ18532.1  98 KAEERLNQVQgTENRQEQIQATQAFKRARARYQAAGGLV 136
+                 *********94578***********************97 PP
+
+>> AFZ21058.1  ABC exporter membrane fusion protein, DevB family [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   1.2   9.8e-06     0.031      67     122 ..      90     144 ..      68     157 .. 0.80
+   2 ?   -1.1   0.0      0.22     7e+02      89     102 ..     169     182 ..     159     193 .. 0.79
+   3 ?    5.0   3.7    0.0029       9.2      88     130 ..     192     234 ..     185     241 .. 0.87
+   4 ?    0.8   0.2     0.058   1.9e+02      98     124 ..     245     271 ..     235     278 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 9.8e-06
+        atpE  67 gfaeveedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqa 122
+                    +v++ +v  ++++ +r ++  le+a+++   aq++l+qvk++ +  +i a++a
+  AFZ21058.1  90 QGDQVQQGQVIAILDSRDRLQS-ALEQAKQQVRVAQSRLAQVKSGAKTGKITAQKA 144
+                 5567888888888888888765.7*****************************987 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.22
+        atpE  89 inleearaafneaq 102
+                  +l++ara++n+ q
+  AFZ21058.1 169 AELNNARAEYNRFQ 182
+                 57899999999876 PP
+
+  == domain 3  score: 5.0 bits;  conditional E-value: 0.0029
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqiqatqafkrararf 130
+                 + nl++ r + ++aq+++nq +a ++++    ++ +k+a+a +
+  AFZ21058.1 192 ASNLDNKRLTLETAQAQVNQATATQKRTAETLQEQLKQAKATL 234
+                 45899******************99999999999999999976 PP
+
+  == domain 4  score: 0.8 bits;  conditional E-value: 0.058
+        atpE  98 fneaqtklnqvkaedrqaqiqatqafk 124
+                  ++aqt+++q  +e ++aq + + a+ 
+  AFZ21058.1 245 VQAAQTEVDQAVTEVKRAQTELNLAYI 271
+                 456777777777777777777766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         6441  (2166530 residues searched)
+Passed MSV filter:                       232  (0.0360193); expected 128.8 (0.02)
+Passed bias filter:                      171  (0.0265487); expected 128.8 (0.02)
+Passed Vit filter:                        19  (0.00294985); expected 6.4 (0.001)
+Passed Fwd filter:                         6  (0.000931532); expected 0.1 (1e-05)
+Initial search space (Z):               6441  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 4946.91
+//
+[ok]

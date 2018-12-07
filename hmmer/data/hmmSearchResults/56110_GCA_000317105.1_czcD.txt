@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/czcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56110_GCA_000317105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       czcD  [M=308]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.6e-141  468.8   3.0   2.9e-141  468.6   3.0    1.0  1  AFY80287.1  cation diffusion facilitator family transporter [
+    0.00082   17.2   0.2     0.0011   16.7   0.2    1.1  1  AFY79826.1  hypothetical protein Oscil6304_0067 [Oscillatoria
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY80287.1  cation diffusion facilitator family transporter [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  468.6   3.0  9.9e-145  2.9e-141       5     305 ..       3     302 ..       1     305 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 468.6 bits;  conditional E-value: 9.9e-145
+        czcD   5 kdnratvqkvlwitlllnilvmaikagvglrisslslqadalhsvtdsannvlglvamrfsspypdrdhpyghlkyeaigalaiaaflgiacfeilqga 103
+                  dnr  v++vl itl ln++vm+ ka vg   +slsl adalhsvtd ann+lglv+ +f+sp+pdr+hpygh k++a+gal iaaflg+acfeil  a
+  AFY80287.1   3 TDNRVEVRRVLLITLGLNLVVMGTKALVGTLTGSLSLLADALHSVTDGANNILGLVTNHFASPHPDREHPYGHQKFDALGALGIAAFLGVACFEILSSA 101
+                 69************************************************************************************************* PP
+
+        czcD 104 imri.ikggkpveiagpelwlliivlgvnifvtyyersvgqrvgsailiadarhtmsdvwvtitvllglvgvwvgntanipqlqwldvilsfpvaflvf 201
+                 i ri i gg pve++  elw+l+ vlg+nifv++yer vg+r+gs+iliad++htm dvwvti v+ gl+ v    ++  p lqw+dvil+fpva+lvf
+  AFY80287.1 102 IERIfIGGGTPVEVSSRELWILLGVLGINIFVAFYERRVGRRIGSSILIADSKHTMGDVWVTIMVMAGLIAVTF--ASRWPWLQWVDVILAFPVALLVF 198
+                 ***9567899***********************************************************99866..5679******************* PP
+
+        czcD 202 ssgwkvlkenlpllvdemaiapevihqivlevpgvlnchaiasrgvvgrqvfiemhlivsaqdvetahaiteavearlsqqfspvrilihveppdyhsd 300
+                  sgw vl +nlp lvd+maiape ih+i ++vpgvlnch iasrgvvgrqvfiemhliv aqdvetahaite vearl  +fsp rilih+epp y+s 
+  AFY80287.1 199 KSGWEVLADNLPWLVDKMAIAPEAIHEITMQVPGVLNCHDIASRGVVGRQVFIEMHLIVDAQDVETAHAITEEVEARLQGRFSPARILIHIEPPSYQSP 297
+                 *************************************************************************************************** PP
+
+        czcD 301 kitfd 305
+                 +i++ 
+  AFY80287.1 298 EISYA 302
+                 *9986 PP
+
+>> AFY79826.1  hypothetical protein Oscil6304_0067 [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.2   3.8e-07    0.0011     162     262 ..       6     103 ..       2     124 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 3.8e-07
+        czcD 162 wvtitvllglvgvwvgntanipqlqwldvilsfpvaflvfssgwkvlkenlpllvdemaiapevih.qivlevpgvlnchaiasrgvvgrqvfiemhli 259
+                 w+ i+  + l gv vg        q +   + + v++ +     + ++   p+ v+em iape ++  iv e+  v+     a r +  r v +e  l+
+  AFY79826.1   6 WLNIAEYVSLAGVVVGSVLAAISGQVIYAAVPVTVSLGLNLVNRRRVMRRSPVGVEEMKIAPEAMKaTIVQEMEPVVA----ALRQLRSRSVELEQSLV 100
+                 999999**********98666566666666666666666666677888999************997257888866553....34455555555555555 PP
+
+        czcD 260 vsa 262
+                 v  
+  AFY79826.1 101 VLK 103
+                 544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (308 nodes)
+Target sequences:                         5796  (2068426 residues searched)
+Passed MSV filter:                       172  (0.0296756); expected 115.9 (0.02)
+Passed bias filter:                      117  (0.0201863); expected 115.9 (0.02)
+Passed Vit filter:                         7  (0.00120773); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345066); expected 0.1 (1e-05)
+Initial search space (Z):               5796  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10617.92
+//
+[ok]

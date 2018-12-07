@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/376219_GCA_000973065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.047   11.2   0.1       0.91    7.0   0.0    2.2  2  CDM97294.1  putative Epoxide hydrolase [Arthrospira sp. PCC 8
+
+
+Domain annotation for each sequence (and alignments):
+>> CDM97294.1  putative Epoxide hydrolase [Arthrospira sp. PCC 8005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.0   0.00015      0.91      92     115 ..      99     122 ..      87     129 .. 0.85
+   2 ?    2.1   0.1    0.0049        29     228     245 ..     129     146 ..     124     153 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.00015
+        anaA  92 vffghslgsvvslevahqlgdrfg 115
+                  ++ghslg  ++l  a+ql dr+ 
+  CDM97294.1  99 WLVGHSLGGTIALLAAQQLSDRIA 122
+                 578*******************86 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.0049
+        anaA 228 pgghmylteekerfavik 245
+                  gg +yl ee erf v  
+  CDM97294.1 129 AGGGIYLKEEFERFRVTG 146
+                 6999**********9964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5900  (1669094 residues searched)
+Passed MSV filter:                       147  (0.0249153); expected 118.0 (0.02)
+Passed bias filter:                      143  (0.0242373); expected 118.0 (0.02)
+Passed Vit filter:                         9  (0.00152542); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000169492); expected 0.1 (1e-05)
+Initial search space (Z):               5900  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8445.62
+//
+[ok]

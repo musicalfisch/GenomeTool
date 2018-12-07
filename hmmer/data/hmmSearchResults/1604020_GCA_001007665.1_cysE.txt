@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1604020_GCA_001007665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.6e-99  326.6   1.9    1.1e-98  326.2   1.9    1.0  1  KKZ13346.1  serine acetyltransferase [Candidatus Synechococcu
+     0.0025   13.9   5.6     0.0068   12.4   2.0    2.1  2  KKZ13106.1  UDP-N-acetylglucosamine acyltransferase [Candidat
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ13346.1  serine acetyltransferase [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  326.2   1.9  1.3e-101   1.1e-98       3     208 ..       4     209 ..       2     217 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 326.2 bits;  conditional E-value: 1.3e-101
+        cysE   3 silladfkiiferdpaarnwlevlfcypglqallchrfahwlyqigipfiprlishlarfltgieihpgaqigqgvfidhgmgvvigetaivgdyaliy 101
+                  +lladf++i erdpaarnwle l+cypg++al+ hrf+h l+++g+p++prlishl r+ltg+eihpga+i  gvfidhgmgvviget+ +g+ + +y
+  KKZ13346.1   4 RTLLADFRMIRERDPAARNWLESLICYPGFHALVLHRFSHKLWHLGLPLLPRLISHLGRLLTGVEIHPGARIAAGVFIDHGMGVVIGETTEIGEGCTLY 102
+                 68************************************************************************************************* PP
+
+        cysE 102 qgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrliyragtrveplehgdlldseavairalvdrieq 200
+                 qgvtlggtgke+gkrhptl  nvvvgagakvlg i +g n rvgagsvv++d+p  ctvvg+pgr+i+r+g rv+pl h +l+d+ea  ir l+dri+ 
+  KKZ13346.1 103 QGVTLGGTGKETGKRHPTLDRNVVVGAGAKVLGAITIGANTRVGAGSVVVKDVPRHCTVVGIPGRVIHRSGVRVDPLAHSQLPDAEARIIRNLMDRIDA 201
+                 *************************************************************************************************** PP
+
+        cysE 201 lekqvyel 208
+                 le +v  l
+  KKZ13346.1 202 LEGEVIAL 209
+                 **999876 PP
+
+>> KKZ13106.1  UDP-N-acetylglucosamine acyltransferase [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.7   0.1    0.0075       6.4      93     109 ..      27      43 ..      10      88 .. 0.61
+   2 !   12.4   2.0     8e-06    0.0068      81     167 ..     111     195 ..      98     213 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 2.7 bits;  conditional E-value: 0.0075
+        cysE  93 ivgdyaliyqgvtlggt 109
+                 +vg ya+i  gvt+g  
+  KKZ13106.1  27 MVGPYAVIGAGVTIGPN 43 
+                 44444444444444432 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 8e-06
+        cysE  81 dhgmgvvigetaivgdyaliyqgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrl 167
+                 + g g ++   + +   +++ +g+ +  + + +g  h ++ +  v+g    +   + +g    vg  s v rdip  c v g p r+
+  KKZ13106.1 111 QMGDGNLLMAYCHIAHNCILGNGIIMSNAVQVAG--HVSIHDSAVIGGALGIHQFVQIGSLAMVGGMSRVDRDIPPYCMVEGHPARV 195
+                 4444444444444445555555555555555544..8899999****999999*******************************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         1694  (457445 residues searched)
+Passed MSV filter:                        54  (0.0318772); expected 33.9 (0.02)
+Passed bias filter:                       46  (0.0271547); expected 33.9 (0.02)
+Passed Vit filter:                         5  (0.00295159); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00118064); expected 0.0 (1e-05)
+Initial search space (Z):               1694  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 5763.81
+//
+[ok]

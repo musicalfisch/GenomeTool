@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.2e-120  396.7   0.0   4.6e-120  396.5   0.0    1.0  1  AFZ12068.1  protein of unknown function DUF1001 [Crinalium ep
+    3.3e-32  109.8   0.0    3.7e-32  109.7   0.0    1.0  1  AFZ11853.1  protein of unknown function DUF1001 [Crinalium ep
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ12068.1  protein of unknown function DUF1001 [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  396.5   0.0    2e-123  4.6e-120       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 396.5 bits;  conditional E-value: 2e-123
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnq+qafenppffahirv+mrplp e+lsgvs+fveqaydy+lndpyrlrvlkl+ ++d+ieieny+v++e++fygasr+ 
+  AFZ12068.1   1 MTHSTDIATLARWMAADFSNQAQAFENPPFFAHIRVAMRPLPPEFLSGVSLFVEQAYDYTLNDPYRLRVLKLIVVDDHIEIENYSVNQEQQFYGASRKP 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 e lk+l++++leklpgcnmivewtgnsfkg v+pgkacivvrkg++tylds+feide+kfisldrgrdp+tdehiwgs+ gpf+fvrwasfa+evkv
+  AFZ12068.1 100 ELLKALTVEHLEKLPGCNMIVEWTGNSFKGYVQPGKACIVVRKGHTTYLDSTFEIDEHKFISLDRGRDPDTDEHIWGSFGGPFHFVRWASFAEEVKV 196
+                 ***********************************************************************************************97 PP
+
+>> AFZ11853.1  protein of unknown function DUF1001 [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  109.7   0.0   1.6e-35   3.7e-32       1     194 [.       1     202 [.       1     204 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 109.7 bits;  conditional E-value: 1.6e-35
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveae...drieienytvkeekkfygas 96 
+                 mt st++ tl +++a +f n++qa+ +p ++ h+ +  rp+pl   + +++f eqa   +l++pyr r+l+l +++     i+++ y+ k+ + + ga 
+  AFZ11853.1   1 MTLSTQLITLGHYLAGEFDNRAQALAEPAWYVHLHLWQRPVPLFTEDSITLFAEQANIVNLDHPYRPRILRLRDSNtpsGSIHVQYYMFKNLEAIKGAG 99 
+                 899*********************************************************************987622258****************** PP
+
+        cpeS  97 rdlerlktlkaddleklpgcnmive...wtgnsfkgkvepg..kacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasf 190
+                 r+ e lktl++ d+e lp c++ ++    t ++++    p     c    +g++  +   f   +++  s d+g +p+t + iwg++ g +++++++ f
+  AFZ11853.1 100 RKPELLKTLTTSDIELLPSCTLTINpqqITTDTWEFATSPTsdVPCCFNYQGQTYQVFLGFTARKNESHSYDKGIEPQTGKAIWGALMGSYRYIKRQDF 198
+                 **********************98633367777666666551156888888888778899*************************************** PP
+
+        cpeS 191 adev 194
+                 a e+
+  AFZ11853.1 199 AAEL 202
+                 *997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                        78  (0.0164141); expected 95.0 (0.02)
+Passed bias filter:                       64  (0.013468); expected 95.0 (0.02)
+Passed Vit filter:                         5  (0.00105219); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420875); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9899.76
+//
+[ok]

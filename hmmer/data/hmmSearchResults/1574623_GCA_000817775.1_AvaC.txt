@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574623_GCA_000817775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.1e-104  345.0   0.5   5.6e-104  344.8   0.5    1.0  1  KIF40206.1  SAM-dependent methyltransferase [Lyngbya confervo
+  ------ inclusion threshold ------
+      0.015   13.2   0.0      0.023   12.6   0.0    1.4  1  KIF38780.1  methyltransferase type 11 [Lyngbya confervoides B
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF40206.1  SAM-dependent methyltransferase [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  344.8   0.5  1.9e-107  5.6e-104       1     219 [.       1     219 [.       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 344.8 bits;  conditional E-value: 1.9e-107
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+nq++gl+  +y y   + lre p+l++lrq ta + +  mqiapeqgqfma+lvq +g ++ale+gvftgysal valalp  g+liacd+seeyt+
+  KIF40206.1   1 MTNQSIGLEPGLYDYLLQVSLREHPVLTELRQVTAQHAMGQMQIAPEQGQFMALLVQLMGVRRALEVGVFTGYSALAVALALPNGGQLIACDVSEEYTA 99 
+                 89************************************************************************************************* PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 ia++ywq+agva+kidlr+apa etl++li +g+sn+fdf fidadksnyd+yye+alqlvr+gg+iaidnv+w grva a  +dnrt  ir+ln k++
+  KIF40206.1 100 IAQQYWQKAGVANKIDLRLAPATETLQHLIDAGQSNTFDFAFIDADKSNYDTYYEQALQLVRAGGVIAIDNVLWYGRVADATVNDNRTEKIRALNQKLH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 qd+r+++s++pigdg+tla k
+  KIF40206.1 199 QDDRIDLSLLPIGDGVTLARK 219
+                 *******************88 PP
+
+>> KIF38780.1  methyltransferase type 11 [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   7.6e-06     0.023      39     124 ..      77     161 ..      49     204 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 7.6e-06
+        AvaC  39 lavmqiapeqgqfmaflvqaiga..kkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapalet 124
+                 ++   + p +  +   lv+ai    +++l++g  tg ++l++   + p+ k++  dls +   +a+r  q ag+   i +r   a++t
+  KIF38780.1  77 ITQYVLPPSETWVRESLVHAIQGspRRILDLGCGTGTTTLMLKRRF-PQAKVVGLDLSPQMLIMAQRKAQAAGLD--ITFRHGDAMQT 161
+                 555555666666777899999643389*************998766.799**********************984..66666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         6092  (1743458 residues searched)
+Passed MSV filter:                       159  (0.0260998); expected 121.8 (0.02)
+Passed bias filter:                      132  (0.0216678); expected 121.8 (0.02)
+Passed Vit filter:                        13  (0.00213395); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000328299); expected 0.1 (1e-05)
+Initial search space (Z):               6092  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9589.02
+//
+[ok]

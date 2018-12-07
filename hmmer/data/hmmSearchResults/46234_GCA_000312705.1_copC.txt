@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/46234_GCA_000312705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0028   15.6   0.3     0.0037   15.2   0.3    1.3  1  AFW94170.1  hypothetical protein ANA_C11392 [Anabaena sp. 90]
+  ------ inclusion threshold ------
+      0.018   13.0   0.2      0.028   12.4   0.2    1.3  1  AFW95151.1  cyclophilin type peptidyl-prolyl cis-trans isomer
+
+
+Domain annotation for each sequence (and alignments):
+>> AFW94170.1  hypothetical protein ANA_C11392 [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.3   1.7e-06    0.0037       7      51 ..       6      49 ..       1      81 [. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.7e-06
+        copC  7 sllvvlsigllllaassnsntatndeassktttaattavsstaaa 51
+                 +l+++si+ll l+ ++n ++a+ +e++++tt+ +t++v+ ++++
+  AFW94170.1  6 PMLIIASISLLTLVGCNNPEQAA-TETTPATTSNSTEKVPGQKST 49
+                46899999999988888776665.567778888777776655443 PP
+
+>> AFW95151.1  cyclophilin type peptidyl-prolyl cis-trans isomerase [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.2   1.3e-05     0.028       8      50 ..       9      51 ..       3      72 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.3e-05
+        copC  8 llvvlsigllllaassnsntatndeassktttaattavsstaa 50
+                 +v+l ig l l+ +++s+t++n++ + +tt+a+t+a++ +++
+  AFW95151.1  9 FVVLLMIGSLTLGGCTGSTTSSNSSPTATTTSATTSAQTVSET 51
+                57899999*************9999998888888777655544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4511  (1408436 residues searched)
+Passed MSV filter:                       136  (0.0301485); expected 90.2 (0.02)
+Passed bias filter:                      108  (0.0239415); expected 90.2 (0.02)
+Passed Vit filter:                        10  (0.0022168); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443361); expected 0.0 (1e-05)
+Initial search space (Z):               4511  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7746.40
+//
+[ok]

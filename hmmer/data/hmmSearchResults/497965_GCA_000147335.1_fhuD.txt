@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fhuD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/497965_GCA_000147335.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fhuD  [M=330]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0042   14.5   0.3       0.88    6.9   0.0    2.2  2  ADN14627.1  multi-sensor signal transduction histidine kinase
+
+
+Domain annotation for each sequence (and alignments):
+>> ADN14627.1  multi-sensor signal transduction histidine kinase [Cyanothece sp. PCC 7822]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.9   0.0   0.00013      0.88     273     317 ..     401     446 ..     384     453 .. 0.87
+   2 !    5.3   0.2   0.00042       2.8     163     213 ..     913     961 ..     858     969 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.00013
+        fhuD 273 aqlerldtdplwqslg.avqknrvysvghywgagnsplaadwvldd 317
+                 a  e +d   + q lg av+ nrvy +  y  a ++ ++ +w  + 
+  ADN14627.1 401 ATYENVDLKRILQILGiAVNANRVYLLRFYHNATQASMTHEWCNNS 446
+                 778999*********9789***********************8765 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.00042
+        fhuD 163 gletqaekvleqyqmrvnklraqvsdsplqislvriraesgqmslylkncf 213
+                  l+++aek ++q    vn++r q+ d  l  s v  r+++ q+   l+ c+
+  ADN14627.1 913 QLDAKAEKYINQMLTSVNRMRQQIDD-LLAYSRVGTRTKTFQLV-DLNWCL 961
+                 4899*******************976.68889888888887763.455555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (330 nodes)
+Target sequences:                         6642  (2154807 residues searched)
+Passed MSV filter:                       177  (0.0266486); expected 132.8 (0.02)
+Passed bias filter:                      137  (0.0206263); expected 132.8 (0.02)
+Passed Vit filter:                        11  (0.00165613); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.000150557); expected 0.1 (1e-05)
+Initial search space (Z):               6642  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 11851.44
+//
+[ok]

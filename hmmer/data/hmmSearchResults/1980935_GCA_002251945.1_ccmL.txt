@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1980935_GCA_002251945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-46  154.8   0.1      2e-46  154.7   0.1    1.0  1  OYQ64588.1  carbon dioxide concentrating mechanism protein Cc
+     0.0071   15.0   0.1      0.013   14.1   0.1    1.5  1  OYQ64101.1  hypothetical protein B9G53_13450 [Pseudanabaena s
+
+
+Domain annotation for each sequence (and alignments):
+>> OYQ64588.1  carbon dioxide concentrating mechanism protein CcmL [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  154.7   0.1   8.1e-50     2e-46       1      98 [.       1      98 [.       1     100 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 154.7 bits;  conditional E-value: 8.1e-50
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdq 98
+                mqiakv gtvvst k+ +l g+k+lllq++d +g+llp+yevaad+vgagvdewvl++rgs arqv+ +e+rp+daav+aiidtv++ dr +yskk  
+  OYQ64588.1  1 MQIAKVCGTVVSTYKESNLSGTKFLLLQVIDLQGQLLPEYEVAADTVGAGVDEWVLFTRGSGARQVTNSENRPIDAAVIAIIDTVSLSDRTLYSKKYS 98
+                9**********************************************************************************************965 PP
+
+>> OYQ64101.1  hypothetical protein B9G53_13450 [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.1   5.2e-06     0.013      48      96 ..     161     210 ..     129     212 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 5.2e-06
+        ccmL  48 gagvdewvlvsrgsaarqvlgneqrpldaavvaiidtv.kvedrliyskk 96 
+                  a ++   +v+ gs  r  lg e+r + aa  a++ t+ +v+ r i+s +
+  OYQ64101.1 161 AASINILEIVAVGSFGRLYLGGEERDIMAAAAAVLTTIaNVKGRDIWSDR 210
+                 5677778899***************************9569999999976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         5037  (1609668 residues searched)
+Passed MSV filter:                       100  (0.0198531); expected 100.7 (0.02)
+Passed bias filter:                       87  (0.0172722); expected 100.7 (0.02)
+Passed Vit filter:                         7  (0.00138972); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000397062); expected 0.1 (1e-05)
+Initial search space (Z):               5037  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8048.34
+//
+[ok]

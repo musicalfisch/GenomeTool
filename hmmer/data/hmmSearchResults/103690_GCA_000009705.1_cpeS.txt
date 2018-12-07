@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.3e-121  400.6   0.0   3.7e-121  400.5   0.0    1.0  1  BAB77038.1  all5339 [Nostoc sp. PCC 7120]
+    2.1e-29  101.1   0.0    2.3e-29  100.9   0.0    1.0  1  BAB72605.1  alr0647 [Nostoc sp. PCC 7120]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB77038.1  all5339 [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  400.5   0.0  1.2e-124  3.7e-121       1     196 []       1     196 [.       1     196 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 400.5 bits;  conditional E-value: 1.2e-124
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnq+qafenppf+ahirvcmrplp e+lsgv+ffveqaydy+lndpyrlrvlkl+ ++dri+ienytvk+e++fygasrdl
+  BAB77038.1   1 MTHSTDIATLARWMAADFSNQAQAFENPPFYAHIRVCMRPLPWEVLSGVGFFVEQAYDYMLNDPYRLRVLKLMIVGDRIHIENYTVKQEENFYGASRDL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 +rl+tl++++leklpgcnmivewtgnsfkg+vepgk+civvrkg+ktyldsefei+eekfisldrgrd+etd hiwgsvagpf+fvr + fadevk+
+  BAB77038.1 100 NRLQTLTSESLEKLPGCNMIVEWTGNSFKGTVEPGKGCIVVRKGQKTYLDSEFEINEEKFISLDRGRDLETDAHIWGSVAGPFYFVRLHNFADEVKI 196
+                 ***********************************************************************************************97 PP
+
+>> BAB72605.1  alr0647 [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.9   0.0   7.4e-33   2.3e-29       1     188 [.       1     196 [.       1     198 [] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 100.9 bits;  conditional E-value: 7.4e-33
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedr...ieienytvkeekkfygas 96 
+                 m+ s ++  l  ++a +f n+eqa+ +p +f h+r+  rp+ l   + +++f eqa   +l+ pyr r+l+l+ a d    + ++ y+ k+   + ga 
+  BAB72605.1   1 MSFSPQLVNLGNYLAGEFDNREQALGEPIWFVHLRLWQRPVDLFSDDSITLFAEQANIVNLDRPYRQRILRLMPAPDSetgLYVQYYMPKNPSALIGAG 99 
+                 677888999*******************************99999999*************************87654223889*************** PP
+
+        cpeS  97 rdlerlktlkaddleklpgcnmivew...tgnsfkgkvep.gkacivvrk.gkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                 r+ + lktl+ ++le lpgc + v     + ns++ +  p  ++c  +   +++  +   f + e ++ + d+g d+et +  wg++ gp+++ +++
+  BAB72605.1 100 RHPDLLKTLTPQQLELLPGCVLSVSQqtvAPNSYQFTASPlPNTCCTFSYlENTVQVSLGFAVTETELHTYDKGIDQETGKATWGAIVGPYRYTKRE 196
+                 *********************999642225688887777633456566550555567779********************************98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       105  (0.0171233); expected 122.6 (0.02)
+Passed bias filter:                       92  (0.0150033); expected 122.6 (0.02)
+Passed Vit filter:                         8  (0.00130463); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326158); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7720.91
+//
+[ok]

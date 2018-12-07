@@ -1,0 +1,301 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/41431_GCA_000021805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.9e-91  302.4  88.8    1.5e-41  138.9  37.0    3.1  3  ACK65756.1  Hemolysin-type calcium-binding region [Cyanothece
+    8.5e-76  252.6 151.8    2.9e-18   61.7  56.4    6.1  6  ACK68289.1  Na-Ca exchanger/integrin-beta4 [Cyanothece sp. PC
+      2e-30  102.0  75.2    2.9e-19   65.0  39.3    3.2  2  ACK65765.1  Hemolysin-type calcium-binding region [Cyanothece
+    1.8e-08   29.2  18.4    3.8e-05   18.2   9.9    2.1  2  ACK64465.1  Hemolysin-type calcium-binding region [Cyanothece
+    0.00019   15.9  12.7    0.00022   15.6  12.7    1.1  1  ACK67487.1  Hemolysin-type calcium-binding region [Cyanothece
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK65756.1  Hemolysin-type calcium-binding region [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.1  16.9   3.4e-32     3e-29    2510    2599 ..       1      90 [.       1      91 [. 0.99
+   2 !   92.9  18.9   1.3e-30   1.2e-27    2506    2603 ..      78     176 ..      77     177 .. 0.97
+   3 !  138.9  37.0   1.7e-44   1.5e-41    2501    2705 ..     164     389 ..     164     391 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 98.1 bits;  conditional E-value: 3.4e-32
+        appA 2510 ligglgndtyqvdtttdtitenanqgtdtvqssvtytlgnnlenltltgtaningtgntlnnvitgnsgnnilngsdgndtliggtgndt 2599
+                  +igg g+d+y v    d ++enan+g d v ssv+ytl  nlenltltg++ni+gtgn +nn itgnsgnnil+g  gndtl+gg+gndt
+  ACK65756.1    1 MIGGAGDDSYYVYEVGDIVSENANEGIDLVYSSVSYTLSGNLENLTLTGSSNIDGTGNNFNNYITGNSGNNILDGQSGNDTLVGGAGNDT 90  
+                  69***************************************************************************************9 PP
+
+  == domain 2  score: 92.9 bits;  conditional E-value: 1.3e-30
+        appA 2506 gidtligglgndtyqvdtttdtitenanqgtdtvqssvtytlg.nnlenltltgtaningtgntlnnvitgnsgnnilngsdgndtliggtgndtlt 2601
+                  g dtl+gg gndty +d+  d i e  nqg dtv +svtyt+    lenl ltgt  ingtgn   n++ gnsgnnil+gs gndtl gg g dtl 
+  ACK65756.1   78 GNDTLVGGAGNDTYIIDSLGDVIIELRNQGIDTVMASVTYTMNsSTLENLILTGTNSINGTGNFSSNLLIGNSGNNILDGSYGNDTLDGGLGMDTLK 174 
+                  78***************************************97257*************************************************** PP
+
+        appA 2602 gg 2603
+                  gg
+  ACK65756.1  175 GG 176 
+                  98 PP
+
+  == domain 3  score: 138.9 bits;  conditional E-value: 1.7e-44
+        appA 2501 lngatgidtligglgndtyqvdtttdtitenanqgtdtvqssvtytlgnnlenltltgtaningtgntlnnvitgnsgnnilngsdgndtliggt.. 2595
+                  l+g  g+dtl gg+ ndty vdt  d i en  +gtdtv++s +ytlg nlenltltgt n+ngtgn+lnnvitgnsgnnil g  gndtl+gg   
+  ACK65756.1  164 LDGGLGMDTLKGGFDNDTYMVDTVDDVIIENLGEGTDTVNASFSYTLGSNLENLTLTGTNNLNGTGNSLNNVITGNSGNNILRGNAGNDTLLGGNgt 260 
+                  67999*************************************************************************************9976412 PP
+
+        appA 2596 .......gndtltggaggdqftf....nnrnegidtitdflssqgdkiavsaagfggglaagvsitaaqfvlgt....t....alnasnrliyntit 2673
+                         gnd+ltgg g d f f    n  + g+d+++df s   d i +s + f   l+    i a++f   t    t    a  +s  l+ynt t
+  ACK65756.1  261 delwggqGNDSLTGGEGRDYFIFggvaNFGELGVDSVADF-SKGTDLILLSHTVFN-ALTMSNNIVASEFTTITadssTelslAGGSSAFLVYNTTT 355 
+                  22222227999**********994443334569******9.556788888888886.688888888888876552222322113457899******* PP
+
+        appA 2674 gglffdgdgt..gtlaaiqiatlsskptltasdi 2705
+                  g lf++ dg+  g     q a l  kp l   d+
+  ACK65756.1  356 GNLFYNSDGAiaGLGNGGQFAILNNKPLLDVNDL 389 
+                  *****9999633666789*********9998885 PP
+
+>> ACK68289.1  Na-Ca exchanger/integrin-beta4 [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   61.7  56.4   3.3e-21   2.9e-18    2039    2456 ..     269     690 ..     242     693 .. 0.77
+   2 !   54.2  13.3   5.9e-19   5.2e-16    2344    2456 ..     687     800 ..     687     804 .. 0.88
+   3 !   49.6  14.0   1.5e-17   1.3e-14    2344    2457 ..     797     911 ..     797     915 .. 0.87
+   4 !   46.6  12.9   1.2e-16     1e-13    2346    2457 ..     910    1021 ..     908    1025 .. 0.89
+   5 !   46.7  17.0   1.1e-16   9.7e-14    2351    2468 ..    1026    1149 ..    1019    1166 .. 0.77
+   6 !   27.7   5.3   5.6e-11   4.9e-08    1669    1772 ..    1169    1269 .]    1152    1269 .] 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 61.7 bits;  conditional E-value: 3.3e-21
+        appA 2039 saltanytvggtatlntdytrtgtnntvtfaansstatitvdptadttvepdetvtltlasgtgytvgtttav..tgtiknddvtlpsit.lavsps 2132
+                  +al + y  g  at  t+ t   tn    f+ n   +  + +   +t v+     tl ++    y+ g    +  +g+i ++d  l +   +     
+  ACK68289.1  269 AALQSLY--GAKATNTTNDTYRFTNRIDQFTINGQPSVTSSNNIKQTIVDTGGIDTLDFSQLVSYSAGYRIDLngSGSITKQDAYLNTNYsVNGVTY 363 
+                  3344444..556666677777889999999999999999999999**************99999999988766225789999998875430332333 PP
+
+        appA 2133 svtedgttnlvytftrtgsttsaltanytvggtatlntdytrt.gtnntvtfaansstatitvdptadttvepdetvtltlasgtgytvgtttavtg 2228
+                    t  g t l y         s+      +  +a + + y+ t  t n v + a s    + +d  a      +      l  gt  ++        
+  ACK68289.1  364 KSTSSG-TFLSYDTVIENVVNSSSKDSIYLNSSANIISGYSSTkATSNDVIYNATSQ-DLLKLDYNAAQITSTQSGNDRLLRLGTNGSITLKNYYLN 458 
+                  344444.56777666666666666666667777888888877636899999999765.567788777666666666666666777777776666666 PP
+
+        appA 2229 tiknddvt.lpsitlavspssvne..dgttnlvytftrsgsttnaltvny.tlggtatlntdytrtgttntvtfaagsstatvtvdptadttvesde 2321
+                  t ++ +++ l s+ +++s + + e   g  nlv+t++   +  + lt+ y t  gtat   dy  + + +++tf ag +  t++v    d  +e +e
+  ACK68289.1  459 TANQIQISyLDSVNVSISDAQILEgnSGIQNLVFTVSLGSAINQNLTLYYsTADGTATGGVDYVSA-SNQSLTFLAGETQRTISVGVNGDWEIENNE 554 
+                  66666654389********99976336999******998888889***995678*********976.56789************************* PP
+
+        appA 2322 tviltlasgtgytvgtttavtgtitndd.fsqlsinnitvvegqdsnailtvtvnnpnpqpisvnyttapvnatanvdytsktgtltiaantstati 2417
+                  t  + l               gti ndd + qlsi ++tv e     a + v++       +svny+ a   a a+ dy + tgtlt aa  +t +i
+  ACK68289.1  555 TFFVNLINTPSNVTLVDGQAMGTILNDDtLPQLSIGDVTVNEN--GIATVNVSLSSSSNSTVSVNYSMADGTAIADQDYIAETGTLTFAAGVTTQSI 649 
+                  *****99887776667777889999998468*********874..4566667777888999******************************999999 PP
+
+        appA 2418 si.pilndnlne.anetfainlsnpvnatltnnkgivtisd 2456
+                   +  i+nd   e  netf +nls  vna + + +givti d
+  ACK68289.1  650 VLnNIINDSSYEgNNETFFVNLSSAVNADIQDGQGIVTIVD 690 
+                  873699**98772579***********************98 PP
+
+  == domain 2  score: 54.2 bits;  conditional E-value: 5.9e-19
+        appA 2344 titndd.fsqlsinnitvvegqdsnailtvtvnnpnpqpisvnyttapvnatanvdytsktgtltiaantstatisi.pilndnlnean.etfainl 2437
+                  ti +dd + qlsi ++tv e     a + v++ np    isvny+ +   a a  dy + tgtlt aa  +t +i +  i+nd   ean etf +nl
+  ACK68289.1  687 TIVDDDiLPQLSIGDVTVNEN--GIATVNVSLSNPSNSTISVNYSMSDGTAIAGQDYIAETGTLTFAAGVTTQSIILnNIINDSSYEANdETFFVNL 781 
+                  577777358*********874..556777888999999******************************999887765379*******9868****** PP
+
+        appA 2438 snpvnatltnnkgivtisd 2456
+                  sn vna + + +givti d
+  ACK68289.1  782 SNAVNADIQDGQGIVTIVD 800 
+                  *****************98 PP
+
+  == domain 3  score: 49.6 bits;  conditional E-value: 1.5e-17
+        appA 2344 titndd.fsqlsinnitvvegqdsnailtvtvnnpnpqpisvnyttapvnatanvdytsktgtltiaantstatisi.pilndnlnean.etfainl 2437
+                  ti +dd + qlsi ++tv e     a + v +       +svny+ a   a a  dy + tgtlt aa  +t +i +  i+nd   ean etf +nl
+  ACK68289.1  797 TIVDDDiLPQLSIGDVTVNEN--GTATVNVNLSSSSNSTVSVNYSMADGTAIAGQDYIAETGTLTFAAGVTTQSIILnNIINDSSYEANdETFFVNL 891 
+                  577777358*********884..5677778888889999*****************************999887765379*******9868****** PP
+
+        appA 2438 snpvnatltnnkgivtisdt 2457
+                  sn vna + + +givti d 
+  ACK68289.1  892 SNAVNADIQDGQGIVTIVDD 911 
+                  *****************985 PP
+
+  == domain 4  score: 46.6 bits;  conditional E-value: 1.2e-16
+        appA 2346 tnddfsqlsinnitvvegqdsnailtvtvnnpnpqpisvnyttapvnatanvdytsktgtltiaantstatisi.pilndnlne.anetfainlsnp 2440
+                   +d + qlsi ++tv e     a + v++       +svny+ a   a a  dy + tgtlt aa  +t +i +  i+nd   e  netf +nlsn 
+  ACK68289.1  910 DDDTLPQLSIGDVTVNEN--GTATVNVSLSSSSNSTVSVNYSMADGTAIAGQDYIAETGTLTFAAGVTTQSIVLnNIINDSSYEgNNETFFVNLSNA 1004
+                  457789*********885..67889999999999********************************999999873699**98772579********* PP
+
+        appA 2441 vnatltnnkgivtisdt 2457
+                  vna + + +g+vti d 
+  ACK68289.1 1005 VNADIQDGQGMVTIIDN 1021
+                  **************885 PP
+
+  == domain 5  score: 46.7 bits;  conditional E-value: 1.1e-16
+        appA 2351 sqlsinnitvveg....qdsnailtvtvn..npnpqpisvnyttapvnatanvdytsktgtltiaantstatisipilndnlneanetfainlsnpv 2441
+                    lsi +++++eg    + s++ ++ tvn  +   + i++ny+ta   ata  dy sk+gtlt  a t++  is+ +  d   eanetf +nl+n +
+  ACK68289.1 1026 PTLSISDVSLIEGnvqgKTSKTTFSFTVNlsQASNETITLNYATANGTATAGSDYVSKSGTLTFNAGTTSQKISVTVNRDSTVEANETFFVNLTNAL 1122
+                  4688888888775222167888887888722556789************************************************************ PP
+
+        appA 2442 natltnnkgivtisdtltanvtttlpa 2468
+                  natl++ +g   i +  ++ +++t  +
+  ACK68289.1 1123 NATLADSQGQGVIMNDDSSSISSTKSS 1149
+                  *****9998766655555555444433 PP
+
+  == domain 6  score: 27.7 bits;  conditional E-value: 5.6e-11
+        appA 1669 knevdtltggegrdtfilgdatsifyddgnttnagtsdyaiiadfnptddiiqirrsssdylltvs..gsntnlyinkpgsepdeliavinnqtals 1763
+                   ++vd ltg +g+dtfilgd    fy     t+ g  d+aii++fn  +d+iq++  +s y       gs     i +     ++l+a+++   ++ 
+  ACK68289.1 1169 TDKVDILTGTNGKDTFILGDNNRSFY-----TEFGLDDFAIISEFNSNNDVIQLQGNASLYRSESYgiGSLQGTAIFQTNNGSNDLVAILEGVNSVD 1260
+                  578**********************9.....679***********************9999876541145555556666666678999999888888 PP
+
+        appA 1764 ltasyfsyv 1772
+                  + +  fs+v
+  ACK68289.1 1261 FETKAFSFV 1269
+                  888888876 PP
+
+>> ACK65765.1  Hemolysin-type calcium-binding region [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.0  11.3   1.2e-08   1.1e-05    1401    1448 ..      55     102 ..      52     119 .. 0.37
+   2 !   65.0  39.3   3.3e-22   2.9e-19    2491    2656 ..     120     297 ..     106     314 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 20.0 bits;  conditional E-value: 1.2e-08
+        appA 1401 ndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddt 1448
+                   d++ gg gndt++gg+g d + gg  nd +    g d +n g+g dt
+  ACK65765.1   55 SDSLYGGSGNDTLDGGVGSDFLSGGADNDLLYGSRGNDTLNGGSGTDT 102 
+                  222222222222222222222222222222222222222222222222 PP
+
+  == domain 2  score: 65.0 bits;  conditional E-value: 3.3e-22
+        appA 2491 iitgnsgnnilngatgidtligglgndtyqvdtttdtitenanqgtdtvqs.sv..tytlgnnlenl.tltgtaningt.gntlnnvitgnsgnnil 2582
+                  i  g  g +il+g   i   ig    +t +  t+t + + nan  ++++    v    +l   +en+  +tgtan +   gn+ nnv++gn+gn+il
+  ACK65765.1  120 IQKGSLGTDILQGVEIIRGAIGY--TNTINAATATGSTSINANLASNSLVVnNVpgIGALNFTVENFvNVTGTANADTIfGNSQNNVLSGNAGNDIL 214 
+                  56788899999988777777764..468889999999999999988775440441134566678996269*****99755***************** PP
+
+        appA 2583 ngsdgndtl.........iggtgndtltggaggdqftfnnrnegidtitdflssqgdkiavsaagfggglaagvsitaaqfvl 2656
+                  ng  gnd+l          gg gndtltgg+ggd+f fn   eg+d i+df s  gdki +sa+gfg   +   s +   f  
+  ACK65765.1  215 NGGGGNDSLnggsendilTGGLGNDTLTGGTGGDKFVFNSLAEGLDVISDFSSIAGDKIQISASGFGATSTNQFSFSYNAFSQ 297 
+                  *9999876511111111167789********************************************9998888887766653 PP
+
+>> ACK64465.1  Hemolysin-type calcium-binding region [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   9.9   4.3e-08   3.8e-05    1192    2624 ..     234     295 ..     206     315 .. 0.43
+   2 !   16.3   1.3   1.6e-07   0.00014    1603    1661 ..     561     621 ..     512     653 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 4.3e-08
+        appA 1192 ndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgldtisdlnydssnsaiilnelggaatllgtniknierfgsvil 1288
+                   d                                                                                               
+  ACK64465.1  234 ADQ---------------------------------------------------------------------------------------------- 236 
+                  222.............................................................................................. PP
+
+        appA 1289 gsgndkiefssrfnnqeinsgqgndtingglgidiinggdgndlliidyssnqyagsnvhpagisyydgfsqsytcyyddkdysydkvlfysieqfq 1385
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1386 itgtngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgldtisdlnyassnsaiiln 1482
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1483 elggaatllgtniknierfgsvilgsgndkiefssrfnnqeinsgqgndtinaglgidiinggdgndlliidyssnlfagstnyqggifyefggyye 1579
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1580 rytcsysnenfdqirfsdieqfqitgtngsdhivtrdgndtinggggndtiegglgndvisggdgndaiaagggsdviigvktgstepgknevdtlt 1676
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1677 ggegrdtfilgdatsifyddgnttnagtsdyaiiadfnptddiiqirrsssdylltvsgsntnlyinkpgsepdeliavinnqtalsltasyfsyvs 1773
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1774 sptlpsitlavspssvtedgttnlvytftrtgsttsaltanytvggtatlntdytrtgtnntvtfaansstatitvdptadttvepdetvtltlasg 1870
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1871 tgytvgtttavtgtiknddvtlpsitlavspssvnedgttnlvytftrsgsttnaltvnytlggtatlntdytrtgttntvtfaagsstatvtvdpt 1967
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1968 adttvesdetviltlasgtgytigtttpvtgtiknddvtlpsitlavspssvtedgttnlvytftrtgsttsaltanytvggtatlntdytrtgtnn 2064
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2065 tvtfaansstatitvdptadttvepdetvtltlasgtgytvgtttavtgtiknddvtlpsitlavspssvtedgttnlvytftrtgsttsaltanyt 2161
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2162 vggtatlntdytrtgtnntvtfaansstatitvdptadttvepdetvtltlasgtgytvgtttavtgtiknddvtlpsitlavspssvnedgttnlv 2258
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2259 ytftrsgsttnaltvnytlggtatlntdytrtgttntvtfaagsstatvtvdptadttvesdetviltlasgtgytvgtttavtgtitnddfsqlsi 2355
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2356 nnitvvegqdsnailtvtvnnpnpqpisvnyttapvnatanvdytsktgtltiaantstatisipilndnlneanetfainlsnpvnatltnnkgiv 2452
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2453 tisdtltanvtttlpanvenltltgttningtgntlnniitgnsgnnilngatgidtligglgndtyqvdtttdtitenanqgtdtvqssvtytlgn 2549
+                                                                                                                   
+  ACK64465.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2550 nlenltltgtaningtgntlnnvitgnsgnnilngsdgndtliggtgndtltggaggdqftfnnr.......negidtitdf 2624
+                                         + g sgn+ l g +gndtl g  g + ltggag d f +          ++g dtitdf
+  ACK64465.1  237 -----------------------LWGGSGNDTLLGDNGNDTLYGNIGSNHLTGGAGSDTFVLASDvgiakpgDQGFDTITDF 295 
+                  .......................22233333333333333333333333333333333333221111111112233333333 PP
+
+  == domain 2  score: 16.3 bits;  conditional E-value: 1.6e-07
+        appA 1603 itgtngsdhivtrdgndtinggggndtiegglgndvisggdgnda..iaagggsdviigvk 1661
+                  i gt   + ++  d  d i g  g+dt+eg  g+dv+ gg+g d   +a   g+d i+   
+  ACK64465.1  561 IFGTRVGETLIGSDRIDHIYGYQGDDTLEGKGGQDVLYGGQGSDRfiLAVKEGTDTIMDFT 621 
+                  3444444444444555555555555555555555555555554431134444444444433 PP
+
+>> ACK67487.1  Hemolysin-type calcium-binding region [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6  12.7   2.5e-07   0.00022    1604    1688 ..      26     125 ..       5     167 .. 0.42
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 2.5e-07
+        appA 1604 tgtngsdhivtrdgndtinggggndtiegglgndvisggd..........gndaiaagggsdviig......vktgstepgknevdtltggegrdtf 1684
+                   g ng d + +  gnd + gg  +d +  glgnd +sg d          gnd +  g gsdv+ig      v +g      n +d+l      +t 
+  ACK67487.1   26 RGRNGNDIVEALGGNDQLLGGKNDDQLFAGLGNDTLSGDDdltlgdasdkGNDFLIGGSGSDVLIGwgddilVGSGPNTYNANFIDSLKND-PFQTT 121 
+                  3444444444444444444444444444444444444432222222333344444444444444442222111222222223333333221.12222 PP
+
+        appA 1685 ilgd 1688
+                  i+gd
+  ACK67487.1  122 IIGD 125 
+                  2222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         4367  (1346913 residues searched)
+Passed MSV filter:                       141  (0.0322876); expected 87.3 (0.02)
+Passed bias filter:                      103  (0.023586); expected 87.3 (0.02)
+Passed Vit filter:                        16  (0.00366384); expected 4.4 (0.001)
+Passed Fwd filter:                         5  (0.00114495); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.53u 0.02s 00:00:00.55 Elapsed: 00:00:00.56
+# Mc/sec: 6515.69
+//
+[ok]

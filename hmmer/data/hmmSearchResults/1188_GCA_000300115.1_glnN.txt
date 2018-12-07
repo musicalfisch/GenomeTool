@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188_GCA_000300115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.9e-07   26.5   0.0    1.1e-06   26.2   0.0    1.1  1  EKE97637.1  glutamine synthetase, type I [Tolypothrix sp. PCC
+  ------ inclusion threshold ------
+      0.077   10.2   0.0       0.11    9.7   0.0    1.2  1  EKF00672.1  glutamine synthetase, catalytic domain protein [T
+
+
+Domain annotation for each sequence (and alignments):
+>> EKE97637.1  glutamine synthetase, type I [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2   0.0   2.2e-10   1.1e-06     250     354 ..     171     277 ..     123     333 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 2.2e-10
+        glnN 250 akgqqfddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgk 346
+                 a   +f + yf   p +  q +  e+   +   g+p   +h eva  gq e+   f     a+d       ++k  akk+g  + +  kp+ g ngsg 
+  EKE97637.1 171 AYKPRFKEGYFPVAPtDTFQDMRTEMLLTMAACGVPIEKQHHEVATgGQCELGFRFGKLIEAADWLMTYKYVIKNVAKKYGRTVTFMPKPIFGDNGSGM 269
+                 45567999999988835678888899999***************97369****99*99999****999999**************************** PP
+
+        glnN 347 hvnwsvgn 354
+                 h   s+ +
+  EKE97637.1 270 HCHQSIWK 277
+                 *9988754 PP
+
+>> EKF00672.1  glutamine synthetase, catalytic domain protein [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.0   2.2e-05      0.11     276     352 ..     177     253 ..     164     299 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 2.2e-05
+        glnN 276 erlyrlgipaktrhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsv 352
+                 + l    ip    + e  pgq ei+  +  a  a+++q +    +++ a++h + + +  k f     sg h+  s+
+  EKF00672.1 177 DALIAQKIPVEQYYPESGPGQQEISMRYTDALRAANYQIVFRETVRAIARQHNLTASFLPKIFPEAASSGCHIHLSL 253
+                 5566677999999***********************************************************99886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         9972  (2716567 residues searched)
+Passed MSV filter:                       222  (0.0222623); expected 199.4 (0.02)
+Passed bias filter:                      182  (0.0182511); expected 199.4 (0.02)
+Passed Vit filter:                         7  (0.000701966); expected 10.0 (0.001)
+Passed Fwd filter:                         2  (0.000200562); expected 0.1 (1e-05)
+Initial search space (Z):               9972  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.12
+# Mc/sec: 16367.32
+//
+[ok]

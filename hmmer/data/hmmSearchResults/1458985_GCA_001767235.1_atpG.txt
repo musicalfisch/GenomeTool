@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1458985_GCA_001767235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.3e-54  180.3  13.6      7e-54  180.1  13.6    1.0  1  AOW99650.1  F0F1 ATP synthase subunit B' [Moorea producens PA
+  ------ inclusion threshold ------
+        1.1    7.7  18.9        1.7    7.1   0.2    2.4  2  AOX01400.1  primosomal protein [Moorea producens PAL-8-15-08-
+
+
+Domain annotation for each sequence (and alignments):
+>> AOW99650.1  F0F1 ATP synthase subunit B' [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  180.1  13.6   2.1e-57     7e-54       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 180.1 bits;  conditional E-value: 2.1e-57
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf++l+v+lna+fykpl+k lder eyir+ e+ ake+l+k+e + +eye ql  arkqsq +ia aq +a+k+a++ va aq+ea
+  AOW99650.1   1 MFDFDATLPLMALQFLVLTVVLNAIFYKPLTKTLDERDEYIRNQESDAKERLSKAEKMAKEYEEQLGQARKQSQAVIAAAQEDARKMAAQAVAEAQQEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                  a +     ei qqk++a+ sle qv  ls qilekllgp lvr
+  AOW99650.1 100 QAERSKAQEEIDQQKQQAMASLEQQVDELSGQILEKLLGPALVR 143
+                 *******************************************8 PP
+
+>> AOX01400.1  primosomal protein [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.2   0.00051       1.7      57     120 ..      70     132 ..      65     163 .. 0.85
+   2 ?    3.4  13.5    0.0067        22      49     108 ..     188     247 ..     166     254 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.00051
+        atpG  57 alvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrs 120
+                   vq++e+   s+ k+ q++ a+  a   +l   +v + +++  + ++ va+ ia q +e+f+ 
+  AOX01400.1  70 VTVQKFEVPAQSSTKDLQDLTARF-AINFRLDPTKVVSIRRKQGTLQNLVATIIAPQTQESFKI 132
+                 579*****************9986.566789999999999999999**************9974 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.0067
+        atpG  49 keqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaa 108
+                  +q+a  +a    y  q +    q++   aq +aeaq+l +e + a   e + +kea+aa
+  AOX01400.1 188 EKQVAEQQAQRAVYIAQQAEQEAQAEINRAQGKAEAQRLLAETLKAQGGELVLQKEAIAA 247
+                 45788888888888888888888888888999**************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         6706  (2323265 residues searched)
+Passed MSV filter:                       241  (0.035938); expected 134.1 (0.02)
+Passed bias filter:                      120  (0.0178944); expected 134.1 (0.02)
+Passed Vit filter:                         7  (0.00104384); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.00029824); expected 0.1 (1e-05)
+Initial search space (Z):               6706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 6644.54
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/482300_GCA_000412595.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    2.8e-93  307.5  13.6    3.1e-93  307.3  13.6    1.0  1  lcl|ASZQ01000275.1_prot_EPF17161.1_4957  [locus_tag=MAESPC_05004] [protei
+     0.0041   15.2   7.9     0.0053   14.8   7.9    1.1  1  lcl|ASZQ01000275.1_prot_EPF17160.1_4956  [locus_tag=MAESPC_05003] [protei
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|ASZQ01000275.1_prot_EPF17161.1_4957  [locus_tag=MAESPC_05004] [protein=F-type ATPase subunit b] [protein_id=EPF17
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  307.3  13.6   1.2e-96   3.1e-93       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 307.3 bits;  conditional E-value: 1.2e-96
+                                     atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssar 70 
+                                              mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelql+sar
+  lcl|ASZQ01000275.1_prot_EPF17161.1_4957   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTEGGAKEQLAKTEALVQEYELQLTSAR 70 
+                                              9********************************************************************* PP
+
+                                     atpG  71 kqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe 140
+                                              kqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe
+  lcl|ASZQ01000275.1_prot_EPF17161.1_4957  71 KQSQEIIAQAQAEAQKLASERVAAAQKEAIARKEAVAAEIAQQKEEAFRSLEGQVASLSRQILEKLLGPE 140
+                                              ********************************************************************** PP
+
+                                     atpG 141 lvr 143
+                                              lvr
+  lcl|ASZQ01000275.1_prot_EPF17161.1_4957 141 LVR 143
+                                              **8 PP
+
+>> lcl|ASZQ01000275.1_prot_EPF17160.1_4956  [locus_tag=MAESPC_05003] [protein=F-type ATPase subunit b] [protein_id=EPF17
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   7.9     2e-06    0.0053      17     137 ..      34     157 ..      21     163 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 2e-06
+                                     atpG  17 llavilna.vfy..kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqae 83 
+                                               l+++l   +fy  k l ++l er   i ++ + a ++   +   + e + +l+ a++++++ii +a++ 
+  lcl|ASZQ01000275.1_prot_EPF17160.1_4956  34 NLSILLGLvIFYgrKVLGQILGERQSKIAEALAEAENRKNIAANALAEEQKKLALAKQEAEKIINNARSR 103
+                                              4566665415666689************999888877766555555566789****************** PP
+
+                                     atpG  84 aqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekll 137
+                                              a+ ++++  a a+ +    +e+ a +++ +++ ++  l  ++++l+   +e  l
+  lcl|ASZQ01000275.1_prot_EPF17160.1_4956 104 AKTVTADIAAQAELDIQRMRESAAKDLSAEQDRVLVELRQRITALALANVESQL 157
+                                              ***99998888888877789999999*999999999999999999877777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5241  (1467090 residues searched)
+Passed MSV filter:                       206  (0.0393055); expected 104.8 (0.02)
+Passed bias filter:                      118  (0.0225148); expected 104.8 (0.02)
+Passed Vit filter:                        12  (0.00228964); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000381607); expected 0.1 (1e-05)
+Initial search space (Z):               5241  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6993.13
+//
+[ok]

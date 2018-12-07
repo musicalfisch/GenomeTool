@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1638788_GCA_001264245.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00036   19.0   0.1    0.00041   18.8   0.1    1.0  1  AKV66842.1  hypothetical protein VL20_1690 [Microcystis panni
+  ------ inclusion threshold ------
+      0.031   12.7   0.1      0.031   12.7   0.1    1.0  1  AKV65998.1  Branched-chain amino acid ABC transporter amino a
+
+
+Domain annotation for each sequence (and alignments):
+>> AKV66842.1  hypothetical protein VL20_1690 [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.1   1.4e-07   0.00041       1      63 [.       1      62 [.       1      66 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 1.4e-07
+        copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekees 63
+                mk++ ++ll++l+++  +l+a+ + ++a+++++ ++t  + +t+ +s +++++++++++++++
+  AKV66842.1  1 MKIKSLVLLILLTLTT-VLGACQGAKEAEEPKNVPTTVESPQTDEDSDKDGENRQKDDDNDQN 62
+                7888888888888776.5689999999999999999988777777777777776666555544 PP
+
+>> AKV65998.1  Branched-chain amino acid ABC transporter amino acid-binding protein [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.1     1e-05     0.031       9      40 ..      11      43 ..       3      47 .] 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1e-05
+        copC  9 lvvl.sigllllaassnsntatndeasskttta 40
+                l+++ s+   +l+a++n +t +n+ +s++tt++
+  AKV65998.1 11 LTLSiSVLANFLTACNNAQTPNNNASSPTTTAP 43
+                444414445567777776666666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5974  (1430872 residues searched)
+Passed MSV filter:                       137  (0.0229327); expected 119.5 (0.02)
+Passed bias filter:                      100  (0.0167392); expected 119.5 (0.02)
+Passed Vit filter:                        12  (0.0020087); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000334784); expected 0.1 (1e-05)
+Initial search space (Z):               5974  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7869.80
+//
+[ok]

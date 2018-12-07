@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165094_GCA_000350105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-47  155.4   1.1    3.4e-47  155.2   1.1    1.0  1  CCH68398.1  Phycobilisome small core linker polypeptide [Rich
+    0.00087   16.2   0.0      0.002   15.1   0.0    1.5  1  CCH68057.1  Ferredoxin-NADP(+) reductase [Richelia intracellu
+  ------ inclusion threshold ------
+      0.011   12.6   0.1      0.057   10.4   0.0    2.2  2  CCH66626.1  Phycobilisome phycoerythrin-associated linker pol
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH68398.1  Phycobilisome small core linker polypeptide [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  155.2   1.1   4.4e-50   3.4e-47       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 155.2 bits;  conditional E-value: 4.4e-50
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmfk+tacvPsq+rirtqrelqntyftklvpy+nWf eqqri+kmGG+iv v+latGk+gtntGl
+  CCH68398.1  1 MRMFKVTACVPSQSRIRTQRELQNTYFTKLVPYENWFGEQQRIQKMGGRIVSVHLATGKQGTNTGL 66
+                9****************************************************************9 PP
+
+>> CCH68057.1  Ferredoxin-NADP(+) reductase [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   2.6e-06     0.002      31      54 ..      79     102 ..      74     117 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 2.6e-06
+        apcC  31 vpydnWfreqqrimkmGGkivkve 54 
+                 vpyd   +e +ri  +GGkiv+++
+  CCH68057.1  79 VPYDCMNKEMRRINSLGGKIVNIQ 102
+                 9********************997 PP
+
+>> CCH66626.1  Phycobilisome phycoerythrin-associated linker polypeptide [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0      0.28   2.1e+02      23      35 ..     139     151 ..     135     172 .. 0.56
+   2 ?   10.4   0.0   7.5e-05     0.057      29      52 ..     259     282 ..     231     285 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.28
+        apcC  23 qntyftklvpydn 35 
+                 qn +    vpy  
+  CCH66626.1 139 QNIFGENCVPYIR 151
+                 5555555555533 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 7.5e-05
+        apcC  29 klvpydnWfreqqrimkmGGkivk 52 
+                  lvp+d   +e +ri k GG i  
+  CCH66626.1 259 YLVPFDRLSEEYKRIHKQGGVIAS 282
+                 59******************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         2278  (598795 residues searched)
+Passed MSV filter:                        56  (0.024583); expected 45.6 (0.02)
+Passed bias filter:                       53  (0.023266); expected 45.6 (0.02)
+Passed Vit filter:                        11  (0.0048288); expected 2.3 (0.001)
+Passed Fwd filter:                         3  (0.00131694); expected 0.0 (1e-05)
+Initial search space (Z):               2278  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4011.93
+//
+[ok]

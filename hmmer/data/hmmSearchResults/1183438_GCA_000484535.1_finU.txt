@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1183438_GCA_000484535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.8e-09   33.3   0.0      8e-09   33.2   0.0    1.0  1  AGY56331.1  Fe/S biogenesis protein NfuA [Gloeobacter kilauee
+     0.0018   15.6   0.0     0.0029   15.0   0.0    1.3  1  AGY58180.1  SUF system FeS assembly protein, NifU family [Glo
+
+
+Domain annotation for each sequence (and alignments):
+>> AGY56331.1  Fe/S biogenesis protein NfuA [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.0   3.6e-12     8e-09     235     292 ..      19      76 ..       7      85 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 3.6e-12
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                  v +e+r+ l++d+++v+l + ++ ++k  l++a++s+ s++ +lk+ +e r+++ + 
+  AGY56331.1  19 LVLDEMRPYLMSDGGNVELVEIEGPIVKLRLQGACGSCPSSTYTLKLGIERRMRELIP 76 
+                 4567899**********************************************98764 PP
+
+>> AGY58180.1  SUF system FeS assembly protein, NifU family [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.0   1.3e-06    0.0029      38      92 ..      36      88 ..       7      94 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 1.3e-06
+        finU 38 siacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealk 92
+                   cGd + ++l+++     i d  f+  Gc+ + as++ ++e +kG+++ +a +
+  AGY58180.1 36 NPLCGDQVTIYLQLQD--GLIQDIHFEGAGCAISTASASLMTEALKGKSVAQAAH 88
+                456***9999988765..6799***************************999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4507  (1419478 residues searched)
+Passed MSV filter:                        91  (0.0201908); expected 90.1 (0.02)
+Passed bias filter:                       83  (0.0184158); expected 90.1 (0.02)
+Passed Vit filter:                         7  (0.00155314); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443754); expected 0.0 (1e-05)
+Initial search space (Z):               4507  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.08
+# Mc/sec: 5323.04
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglE  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0072   13.4   0.0     0.0096   13.0   0.0    1.1  1  OAB60750.1  sugar ABC transporter substrate-binding protein [
+  ------ inclusion threshold ------
+      0.014   12.5   0.1      0.022   11.8   0.1    1.3  1  OAB57042.1  ABC transporter substrate-binding protein [Leptol
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB60750.1  sugar ABC transporter substrate-binding protein [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   3.5e-06    0.0096      79     176 ..      88     185 ..       9     193 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 3.5e-06
+        aglE  79 dsgrapdlamfpqpglmadfaregklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaang.yevpgtweemmalsqrli 176
+                   g ap   ++  p +  ++   g l p+ + ++  +     d + ld  ++dg ++ +   a+   l ++ p  + a g  e+p twee+  ++++l 
+  OAB60750.1  88 VVGDAPPNLLWFGPSITGQLVELGALRPIEDWFANSQAKAKLDPSLLDGMTLDGRIWSIPMAANNVGL-FYRPSLLEAAGvTELPDTWEELRRVAEQLT 185
+                 45778777788889999999999************999999******************998887776.56777666555279********99888775 PP
+
+>> OAB57042.1  ABC transporter substrate-binding protein [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.1   8.3e-06     0.022      97     185 ..     101     187 ..      85     203 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 8.3e-06
+        aglE  97 dfaregklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaangyevpgtweemmalsqrlidkgktpwcl 185
+                  fa  g l  l + ++ ee++e  d   ++    +  +y + +r+    ++++  + + a+g+e p t e++  +sq l+++ +  w  
+  OAB57042.1 101 KFAAAGWLTDLSDRISDEELSEFLDGD-VNGGRYNDKLYRIPFRSDA-GMLYYRTDLLEAEGFEPPETVEDLNRISQALMENDRVEWGY 187
+                 6999999999***9******9998865.5566677788999998765.6789999****************************999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (421 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       116  (0.0214815); expected 108.0 (0.02)
+Passed bias filter:                       88  (0.0162963); expected 108.0 (0.02)
+Passed Vit filter:                         6  (0.00111111); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00037037); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.06
+# Mc/sec: 13373.36
+//
+[ok]

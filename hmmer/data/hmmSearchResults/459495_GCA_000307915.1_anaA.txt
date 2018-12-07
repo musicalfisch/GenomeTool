@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/459495_GCA_000307915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.048   11.2   0.1       0.94    7.0   0.0    2.2  2  EKD08436.1  alpha/beta hydrolase fold protein [Arthrospira pl
+
+
+Domain annotation for each sequence (and alignments):
+>> EKD08436.1  alpha/beta hydrolase fold protein [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.0   0.00015      0.94      92     115 ..      99     122 ..      87     129 .. 0.85
+   2 ?    2.1   0.1    0.0049        30     228     245 ..     129     146 ..     124     153 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.00015
+        anaA  92 vffghslgsvvslevahqlgdrfg 115
+                  ++ghslg  ++l  a+ql dr+ 
+  EKD08436.1  99 WLVGHSLGGTIALLAAQQLSDRIA 122
+                 578*******************86 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.0049
+        anaA 228 pgghmylteekerfavik 245
+                  gg +yl ee erf v  
+  EKD08436.1 129 AGGGIYLKEEFERFRVTG 146
+                 6999**********9964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         6108  (1647000 residues searched)
+Passed MSV filter:                       146  (0.0239031); expected 122.2 (0.02)
+Passed bias filter:                      143  (0.0234119); expected 122.2 (0.02)
+Passed Vit filter:                        11  (0.00180092); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.00016372); expected 0.1 (1e-05)
+Initial search space (Z):               6108  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10417.27
+//
+[ok]

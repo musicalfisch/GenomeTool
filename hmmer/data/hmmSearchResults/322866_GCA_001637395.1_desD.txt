@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-05   21.9  11.9    0.00011   19.8  11.9    2.0  1  OAB63498.1  fatty acid desaturase [Leptolyngbya valderiana BD
+    6.6e-05   20.5   0.2       0.06   10.8   0.0    2.2  2  OAB60846.1  hypothetical protein AY599_21550 [Leptolyngbya va
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB63498.1  fatty acid desaturase [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8  11.9   4.1e-08   0.00011      60     134 ..      63     135 ..      41     292 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 4.1e-08
+        desD  60 iwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                  w+l     +  g+ l+g  f +ghda h  +s++kwvn l+g      +    + wr++hny hh +tn l  d
+  OAB63498.1  63 PWYLLPFLWVFQGTVLTG-WFVLGHDAGHRSFSNRKWVNDLVGHIMFLPLIYPFHGWRIQHNY-HHKHTNKLEVD 135
+                 466655555566666766.599*********************8887777778899******9.78899988776 PP
+
+>> OAB60846.1  hypothetical protein AY599_21550 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.8   0.0   2.2e-05      0.06      38     126 ..      33     119 ..      13     128 .. 0.82
+   2 !    7.6   0.0   0.00021      0.56     289     343 ..     257     308 ..     240     320 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 2.2e-05
+        desD  38 lktitiltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsll.gmtydyiigassylwrfrhnylhht 126
+                 l t ++ + +  aw   l gp   wl  +  lvl a + g+ +   h+a h    + +  n l   + +   ig s+  +r +hn  h  
+  OAB60846.1  33 LATAVLWAQLALAWAAALAGP--LWLLPLCFLVLTAAVQGMLL-WTHEASHSTLFAARRRNDLWcDLFFSGPIGMSAAAYRAKHNTHHAH 119
+                 5555666667789*99**999..57777889*********965.68*****998888888887526889999*************87754 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.00021
+        desD 289 lnw..ylgglnyqvvhhlfpqichihypkiapilaevcqefgvnyavyptlwgalay 343
+                  +w  y   +ny+v hhlfp++ +    ++   l     + g  ya yp +  a  +
+  OAB60846.1 257 EKWllYQANFNYHVEHHLFPRVPQHNLGDLHEHL-----KAGGFYARYPEMLQASGF 308
+                 3442267899***********9776555544333.....234556666666666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       207  (0.0383333); expected 108.0 (0.02)
+Passed bias filter:                      146  (0.027037); expected 108.0 (0.02)
+Passed Vit filter:                        11  (0.00203704); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00037037); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11562.71
+//
+[ok]

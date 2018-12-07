@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrN  [M=518]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0022   14.6   0.0      0.011   12.2   0.0    1.9  2  CCQ53422.1  FIG00568368: hypothetical protein [Crocosphaera w
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ53422.1  FIG00568368: hypothetical protein [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   2.2e-06     0.011     231     262 ..      96     127 ..      73     154 .. 0.80
+   2 ?   -0.1   0.0     0.012        60     304     334 ..     205     236 ..     191     245 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 2.2e-06
+        cyrN 231 iftpeaietafdltqgqpwlvnalakeivekm 262
+                  +t+ea+e +++l++gqp+lvn +   ++ ++
+  CCQ53422.1  96 QYTKEALEEIYYLSNGQPYLVNLIGFYLIRRF 127
+                 589*******************9887776665 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 0.012
+        cyrN 304 aiiepilaglelgdil.addrqylidlgllkr 334
+                 + iepi+  l+  d++ + d +y+i + l ++
+  CCQ53422.1 205 SEIEPIIESLKRHDVIeEKDNKYVITVELFRQ 236
+                 5699999999999976156999***9999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (518 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       160  (0.0322256); expected 99.3 (0.02)
+Passed bias filter:                      116  (0.0233635); expected 99.3 (0.02)
+Passed Vit filter:                         6  (0.00120846); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.00020141); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 15392.72
+//
+[ok]

@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1925591_GCA_001890975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-14   50.0   0.0      1e-12   45.7   0.0    2.0  2  OJJ24155.1  guanine deaminase [Roseofilum reptotaenium AO1-A]
+
+
+Domain annotation for each sequence (and alignments):
+>> OJJ24155.1  guanine deaminase [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.2   0.0    0.0033        16      44      62 ..      67      85 ..      60     164 .. 0.72
+   2 !   45.7   0.0     2e-16     1e-12     210     383 ..     218     390 ..     161     401 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.0033
+        cyrH 44 genklllpgfvnahthsse 62
+                 + kl+lpgf++ h h  +
+  OJJ24155.1 67 YSGKLILPGFIDLHLHCPQ 85
+                5679***********9753 PP
+
+  == domain 2  score: 45.7 bits;  conditional E-value: 2e-16
+        cyrH 210 egcielsdkynlcrhshlletkaqeklaqekygcta..vehlkrigylddrtslahcvhltdkdiailaetkstvvhnplsnlrlgsgiapilkyrqag 306
+                 e   ++s+  +l  h+hl e   +    +e +  ++  ++  ++ g + +r+ +ah +hl+d++++ l+e +s++   p snl lgsg+  + + +   
+  OJJ24155.1 218 ELAGSFSEYPDLYIHTHLSENIKEIAWIKELFPQASdyLNVYEEFGLVTERSIFAHGIHLSDSELQRLSERQSAIAFCPTSNLFLGSGLFNLNQTQIQS 316
+                 555567888899999999999888888888886433225667899********************************************9987765544 PP
+
+        cyrH 307 ..vnvtfgcdgassndsqdlleaikigsilhnvtdldyqhwitprqavemaslggakglnladklgsltvgkkadlvly 383
+                   + v +  d   +  s  ll+++  g   ++v +l+ q  ++p qa  +++lg ak l l+dk+g ++ gk+ad+++ 
+  OJJ24155.1 317 ppIPVGLATDV-GAGTSFSLLKTM--GD-AYKVMQLQGQA-LSPFQAFYLSTLGAAKALHLEDKIGNFEPGKEADFIII 390
+                 11566666664.345678888764..55.56788888775.89********************************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4978  (1623265 residues searched)
+Passed MSV filter:                       133  (0.0267176); expected 99.6 (0.02)
+Passed bias filter:                      111  (0.0222981); expected 99.6 (0.02)
+Passed Vit filter:                        13  (0.00261149); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000200884); expected 0.0 (1e-05)
+Initial search space (Z):               4978  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 10783.12
+//
+[ok]

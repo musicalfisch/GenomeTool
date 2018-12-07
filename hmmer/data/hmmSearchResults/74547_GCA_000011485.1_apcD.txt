@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74547_GCA_000011485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcD  [M=161]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.7e-22   75.4   0.1    6.3e-21   72.1   0.0    1.9  2  CAE21858.1  Phycobilisome protein (phycoerythrin beta-subunit
+    1.1e-19   68.0   0.1    3.7e-19   66.3   0.1    1.7  1  CAE21857.1  Phycobilisome protein (phycoerythrin, alpha-subun
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE21858.1  Phycobilisome protein (phycoerythrin beta-subunit) [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.1   0.0   4.4e-24   6.3e-21       5     146 ..       6     147 ..       2     153 .. 0.95
+   2 ?    1.5   0.0     0.022        32     146     161 .]     166     181 .]     161     181 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 72.1 bits;  conditional E-value: 4.4e-24
+        apcD   5 sqvilkaddelrypssgelksikeflktgeqrvriaetlaenekkivdeaskqlfkkrpdfiapggnaygerqralclrdygwylrlitygvlagdkep 103
+                 s+ ++ ad +     s +l s+++++   + r+  ++++a+    i  +a   +  ++  +  pggn+y  r+ a clrd    lr ++y +lagd + 
+  CAE21858.1   6 SRAVVGADAKGACLGSADLASLRQHVADANIRIDATNAIAQHISCIAADAVSGMVCENTGMTQPGGNCYPTRRMAACLRDGEIILRYVSYALLAGDASV 104
+                 67778888888888999********************************************************************************** PP
+
+        apcD 104 iekigligvkemynslgvpvpgmveairclkeasldllseeda 146
+                 +++  l g+ke y++lgvp+   v a++ +k a+++++++ ++
+  CAE21858.1 105 LDDRCLNGLKETYDALGVPIKNAVRAVEIMKAATVAIITNTNS 147
+                 *************************************998765 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.022
+        apcD 146 aaeaapyfdyiiqams 161
+                 aaeaa yfd +i ++s
+  CAE21858.1 166 AAEAASYFDRVISSLS 181
+                 899********98876 PP
+
+>> CAE21857.1  Phycobilisome protein (phycoerythrin, alpha-subunit) [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.3   0.1   2.6e-22   3.7e-19       2     161 .]       3     155 .]       2     155 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 66.3 bits;  conditional E-value: 2.6e-22
+        apcD   2 svvsqvilkaddelrypssgelksikeflktgeqrvriaetlaenekkivdeaskqlfkkrpdfiapggnaygerqralclrdygwylrlitygvlagd 100
+                 s v+ vi  ad   r+p   +lk++k  ++  + r+  ae la   +++  +a k ++         g   y    r +c rd + ylrli y ++ag+
+  CAE21857.1   3 SAVTTVITAADAAGRFPDISDLKAVKVSFDRAAARMEAAEKLASGIDNVTADALKAVYSD-------G--KYDLATRDKCARDINHYLRLINYCLIAGS 92 
+                 57899************************************************9999853.......3..466667889******************** PP
+
+        apcD 101 kepiekigligvkemynslgvpvpgmveairclkeasl..dllseedaaeaapyfdyiiqams 161
+                 + p+++ g+ gv+e++ +lg+p +  +ea + ++e       ++++ a+e +  ++y+i+a+s
+  CAE21857.1  93 TGPLDEWGIAGVREVFRTLGIPTSAYIEAFSYIRERVCvpRDMDQQAANEFKDLLNYLINALS 155
+                 ********************************9987542246788888899999999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (161 nodes)
+Target sequences:                         2850  (689451 residues searched)
+Passed MSV filter:                        49  (0.017193); expected 57.0 (0.02)
+Passed bias filter:                       49  (0.017193); expected 57.0 (0.02)
+Passed Vit filter:                         5  (0.00175439); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000701754); expected 0.0 (1e-05)
+Initial search space (Z):               2850  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5550.08
+//
+[ok]

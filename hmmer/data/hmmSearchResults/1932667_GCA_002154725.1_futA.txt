@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1932667_GCA_002154725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0017   16.0   0.0      0.004   14.8   0.0    1.6  2  OUL20668.1  ABC transporter substrate-binding protein [Nostoc
+  ------ inclusion threshold ------
+      0.026   12.1   0.0      0.035   11.7   0.0    1.2  1  OUL35352.1  polyamine ABC transporter substrate-binding prote
+
+
+Domain annotation for each sequence (and alignments):
+>> OUL20668.1  ABC transporter substrate-binding protein [Nostoc sp. 106C]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0      0.24     8e+02      50      90 ..      70     113 ..      63     115 .. 0.71
+   2 !   14.8   0.0   1.2e-06     0.004     255     309 ..     308     365 ..     299     411 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.24
+        futA  50 rrlydnftr.qtgikin.lvegeadplieriks.egrnspadil 90 
+                 ++l d+f + +t i+++ +  ge d  + +i +    nsp dil
+  OUL20668.1  70 QKLVDKFNQaHTDIQVEsIFAGELDQQLPKILTaVIGNSPPDIL 113
+                 57788887535888886256899998888876514579999987 PP
+
+  == domain 2  score: 14.8 bits;  conditional E-value: 1.2e-06
+        futA 255 ifpdqagrgahvnisgggl..iktapnre.saikfleylssneaqnffakgnqeypvv 309
+                 +fp  a  g    i gg l  +kt+ +re +a+kfley+ s+e q  ++ g    pv 
+  OUL20668.1 308 VFPIPANVGQATVIGGGNLyvMKTTAEREkAALKFLEYVLSEEFQTEWSIGTGFLPVN 365
+                 688888888888899998644799888873579************9999998888874 PP
+
+>> OUL35352.1  polyamine ABC transporter substrate-binding protein [Nostoc sp. 106C]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0     1e-05     0.035       7      82 ..       4      86 ..       1     101 [. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1e-05
+        futA  7 rrvflgagtatlavavgqlg.ki......nevsaqtkqlnlyssrhyntdrrlydnftrqtgiki.nlvegeadplierikseg 82
+                rr fl   ta  ++++   g ++       + s q +ql +y+  +y td +l   f+ qtg+k+   v    d ++ ++++ g
+  OUL35352.1  4 RRKFLQGITALSSLSLAGCGwRLadvranTKTSGQRDQLYIYTWTQY-TDNQLLKTFSTQTGMKVlADVYDSNDVMLAKLQAGG 86
+                677777666655554443332330001113457778899***99988.899*************82456777777777777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         6731  (2228194 residues searched)
+Passed MSV filter:                       160  (0.0237706); expected 134.6 (0.02)
+Passed bias filter:                      128  (0.0190165); expected 134.6 (0.02)
+Passed Vit filter:                        14  (0.00207993); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000297133); expected 0.1 (1e-05)
+Initial search space (Z):               6731  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 11172.80
+//
+[ok]

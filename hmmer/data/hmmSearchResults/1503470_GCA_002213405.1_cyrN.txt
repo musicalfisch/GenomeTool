@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1503470_GCA_002213405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrN  [M=518]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-05   22.5   0.1       0.06   11.4   0.0    2.2  2  OWY68109.1  hypothetical protein B7486_27650 [cyanobacterium 
+  ------ inclusion threshold ------
+      0.048   11.7   0.0      0.072   11.1   0.0    1.2  1  OWY65480.1  amidase [cyanobacterium TDX16]
+
+
+Domain annotation for each sequence (and alignments):
+>> OWY68109.1  hypothetical protein B7486_27650 [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.9   0.0   4.6e-05      0.35     108     262 ..     103     259 ..      27     268 .. 0.64
+   2 !   11.4   0.0   7.9e-06      0.06     289     363 ..     322     400 ..     305     411 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 4.6e-05
+        cyrN 108 avkqwqqeepg....srikaflsdw..akalnrplvlfideidslqdqtl..isvlrqlrdgfpnrpen...fpssvgliglrdvrdykvasggsdrln 195
+                 + k w qe       +r   f++d    +  + ++ +fideids+    +     +  +r  + +r en      +  l g+    d       +dr  
+  OWY68109.1 103 NFKAWWQEREDlsllQRFSQFIEDIllVQIQSEKIFIFIDEIDSVLGLNFptEDFFALIRACYNQRAENpeyNRLTWALFGVATPSDL-----IADRHR 196
+                 4466655543322226777888875224666789**********86544311334555555555555551105556666666665554.....357765 PP
+
+        cyrN 196 tsspfnikvasltlrnfnlaevgelyqqhtaatgqiftpeaietafdltqgqpwlvnalake.ivekm 262
+                   +pfni   s+ l+ f+l+ev+ l         +      ++ +   t+gqp+l + l++  i e+m
+  OWY68109.1 197 --TPFNIG-KSIDLHGFDLSEVQPLAAGLEDKVANP--ISVLKDILAWTDGQPFLTQKLCQIaIQERM 259
+                 ..59**96.699**********99987655544432..234667788999999999988874144555 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 7.9e-06
+        cyrN 289 hldslaekl..rekrvka...iiepilaglelgdiladdrqylidlgl..lkrdplgglvianpiyrevlprvlvvgtqdsl 363
+                 hl ++ ++l   e+r  a   i + il g    +i+ dd q  i+l l  l  + +g l + n iyrev+ +  v  + + l
+  OWY68109.1 322 HLKTIRDRLlrNEQRASAllgIYQQILQGV---EIPVDDSQEQIELLLsgLVVKHQGQLQVKNRIYREVFNQTWVEKQLAKL 400
+                 777777775333566665111445555555...67788888888774422345679**************999888776665 PP
+
+>> OWY65480.1  amidase [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   9.7e-06     0.072      99     146 ..     326     374 ..     306     381 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 9.7e-06
+        cyrN  99 irlpkelqpavkqwqqeepgsrikaflsdwa..kalnrplvlfideidsl 146
+                   lpke+  +++qw  e++gs   ++l++ a  + + r++v f d +d+l
+  OWY65480.1 326 AGLPKEILQPMNQWLLEQSGSA-GDYLRAVAqvQVIARRIVAFFDSVDAL 374
+                 469***************9986.5788877722579************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (518 nodes)
+Target sequences:                        15006  (4208708 residues searched)
+Passed MSV filter:                       389  (0.025923); expected 300.1 (0.02)
+Passed bias filter:                      335  (0.0223244); expected 300.1 (0.02)
+Passed Vit filter:                        22  (0.00146608); expected 15.0 (0.001)
+Passed Fwd filter:                         2  (0.00013328); expected 0.2 (1e-05)
+Initial search space (Z):              15006  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.16
+# Mc/sec: 13625.69
+//
+[ok]

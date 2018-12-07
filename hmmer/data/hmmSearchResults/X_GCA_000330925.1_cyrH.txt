@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_000330925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    0.00019   18.5   0.0      0.058   10.4   0.0    2.2  2  lcl|ANKQ01000003.1_prot_ELP52877.1_4609  [locus_tag=O53_4605] [protein=am
+  ------ inclusion threshold ------
+      0.038   11.0   0.0      0.092    9.7   0.0    1.5  2  lcl|ANKQ01000002.1_prot_ELP55341.1_3698  [gene=codAc1] [locus_tag=O53_417
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|ANKQ01000003.1_prot_ELP52877.1_4609  [locus_tag=O53_4605] [protein=amidohydrolase family protein] [protein_id=ELP
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.4   0.0   2.2e-05     0.058      18      88 ..      29     102 ..      21     112 .. 0.78
+   2 !    5.9   0.0   0.00049       1.3     343     381 ..     350     387 ..     343     394 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 2.2e-05
+                                     cyrH  18 tvdvqvvdgkiaaiapelevvg.taidgenklllpgfvnahthssemwqrgilsllp..lelwlaelydf 84 
+                                              +++++v +g+i+aia+ ++    + i+ + + + pgf+++h h +       ++  p  + + l  ly +
+  lcl|ANKQ01000003.1_prot_ELP52877.1_4609  29 ATEIRVENGNITAIATTVDHSNaQIIELKGHTVTPGFIDCHVHITFCEGDPTIPENPymVTVPLMTLYSL 98 
+                                              67899*************9876156789999************987777777765551145567777777 PP
+
+                                     cyrH  85 apld 88 
+                                               pl+
+  lcl|ANKQ01000003.1_prot_ELP52877.1_4609  99 NPLK 102
+                                              7775 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.00049
+                                     cyrH 343 qhwitprqavemaslggakglnladklgsltvgkkadlv 381
+                                              q+ itp +a++ a+   a  l ++ ++g+l+vgk ad++
+  lcl|ANKQ01000003.1_prot_ELP52877.1_4609 350 QNGITPLRALKAATTV-AAELLMQPNIGALAVGKFADII 387
+                                              7889******977765.667889**************97 PP
+
+>> lcl|ANKQ01000002.1_prot_ELP55341.1_3698  [gene=codAc1] [locus_tag=O53_4172] [protein=amidohydrolase family protein] [
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.0   3.4e-05     0.092      14      61 ..      31      80 ..      23      91 .. 0.81
+   2 ?   -3.5   0.0      0.34     9e+02     301     315 ..     313     327 ..     304     360 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 3.4e-05
+                                     cyrH 14 ddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss 61
+                                             ++ + v++++ dg+i+ i++ +  e    +id ++k+++p fv+ hth  
+  lcl|ANKQ01000002.1_prot_ELP55341.1_3698 31 EGLTLVNLEINDGNINRITSTIppEDNIPVIDLKKKIVFPCFVDMHTHLD 80
+                                             677899*************99944344568******************64 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 0.34
+                                     cyrH 301 kyrqagvnvtfgcdg 315
+                                                ++ag+ v+f  d 
+  lcl|ANKQ01000002.1_prot_ELP55341.1_3698 313 EMKKAGIPVAFASDN 327
+                                              444444444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5356  (1339031 residues searched)
+Passed MSV filter:                       118  (0.0220314); expected 107.1 (0.02)
+Passed bias filter:                      103  (0.0192308); expected 107.1 (0.02)
+Passed Vit filter:                        18  (0.00336072); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000373413); expected 0.1 (1e-05)
+Initial search space (Z):               5356  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 8894.99
+//
+[ok]

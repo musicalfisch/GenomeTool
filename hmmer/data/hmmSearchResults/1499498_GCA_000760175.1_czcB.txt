@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/czcB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       czcB  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.2e-107  356.5   1.5   1.5e-107  356.2   1.5    1.0  1  KGG12135.1  putative membrane fusion protein [Prochlorococcus
+    0.00037   16.2   1.5      0.001   14.7   1.5    1.8  1  KGG12329.1  putative ABC transporter component [Prochlorococc
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG12135.1  putative membrane fusion protein [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  356.2   1.5  1.6e-110  1.5e-107      32     352 ..      47     368 ..      23     369 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 356.2 bits;  conditional E-value: 1.6e-110
+        czcB  32 kknkskdisdfvvqvekgilsdsintsgevkairtsnigprkqgvikeikvdegdlvkkdqvlaslddedfiykieelelnvekqkseflrreylyqeg 130
+                   ++s+di+ + +  e+g+ls  in+sge+ ai+  ni p +qg+i+ei ++egd vk +qv+a + d+ + ++++el+ + e++ks + rr+ l+ eg
+  KGG12135.1  47 GEENSRDITSYTMTAEQGMLSSVINASGELGAIKRININPDRQGLIEEIYIEEGDSVKMGQVIAKIVDKGLPFRLNELNAEFENKKSAYDRRKKLFTEG 145
+                 5678*********************************************************************************************** PP
+
+        czcB 131 avskedyesyknnynissaklndakaeksfylikapyggkitakyaeigsyvtpstnlssd.sktknfifelsegleivakvpesdigrikigqeasvr 228
+                 a+s e y+ ++ +y +s+a+l++ k ek+  likap++g ita+yae gsyv+p ++ s++ s +k  + e+s gl+++akvpesdigri  gq+a++r
+  KGG12135.1 146 AISAEKYNEFQRDYLTSKARLDQIKVEKEQLLIKAPFSGVITARYAEPGSYVSPNSQASTNqSSSKRSVVEISYGLQVIAKVPESDIGRISKGQQATIR 244
+                 ******************************************************9999976267899******************************** PP
+
+        czcB 229 ieaypskkysaivkkiatravkdnnvtsfevtlnfkdiseeikigmtadlefrvegneekilvptvsivtekgekgilkvdknnspkfekieigissgn 327
+                 +ea+p + + ++v++i+ ra+kdnnvtsfev l + +  +++ igmtad+ef+   +e k lvptv+ivt +ge g+l v  ++ p f+k+e+g ssg 
+  KGG12135.1 245 VEAFPDEIFDSVVENISPRAIKDNNVTSFEVKLSLVEPPQKLLIGMTADVEFQAGKSEIKTLVPTVAIVTRQGEPGLLLVGEKQQPLFQKVELGYSSGS 343
+                 *************************************************************************************************** PP
+
+        czcB 328 ktsvieglepgeqifidippwakkr 352
+                 kt++i+g+ pgeq fid+ppwak++
+  KGG12135.1 344 KTAIIKGILPGEQFFIDLPPWAKRK 368
+                 **********************976 PP
+
+>> KGG12329.1  putative ABC transporter component [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   1.5   1.1e-06     0.001      76     159 ..      71     162 ..      10     259 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.1e-06
+        czcB  76 vikeikvdegdlvkkdqvlaslddedfi........ykieelelnvekqkseflrreylyqegavskedyesyknnynissaklndakaeks 159
+                  i e+ v+egd +k +q+la +d+   +         +++ ++ n+  q  e  r +   qega s    es  +  +i   k ++  ae +
+  KGG12329.1  71 RIAELYVEEGDPIKEGQILAIFDNRYRLladleisrVQLQTINSNILFQEREVARYKKTSQEGASSESLSESKEDTLQILLGKKQQIVAEIK 162
+                 4889*****************99864321111111134455666777888888888889999999999999999998888777776666643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        63  (0.0330189); expected 38.2 (0.02)
+Passed bias filter:                       38  (0.0199161); expected 38.2 (0.02)
+Passed Vit filter:                         4  (0.00209644); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00104822); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8799.64
+//
+[ok]

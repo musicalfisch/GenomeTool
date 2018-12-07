@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1228987_GCA_000829235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0062   12.6   8.9       0.12    8.4   0.6    2.3  2  BAP18162.1  bifunctional N-acetylglucosamine-1-phosphate urid
+  ------ inclusion threshold ------
+        1.6    4.7   8.8        4.5    3.2   8.7    1.7  1  BAP18573.1  serine O-acetyltransferase [cyanobacterium endosy
+
+
+Domain annotation for each sequence (and alignments):
+>> BAP18162.1  bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.4   0.6   0.00014      0.12      19     115 ..     256     366 ..     250     368 .. 0.69
+   2 !    7.8   3.2    0.0002      0.17      42      95 ..     366     423 ..     344     442 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.00014
+        ccmN  19 dvtidesaivapgvilraapn..sqiiigagaclgmgtiltayq...gvi.........aigagailgtgvlvvgrgeigenacigstttifnasvaam 103
+                  +tid++  + p v++ a      + iig g+ +g gt++   +    vi          +  g+ +g    + g+  +ge + ig    i ++ +   
+  BAP18162.1 256 SITIDDTVKLQPDVVIEAQSHlrGDTIIGKGSIIGPGTLIENSKvgkNVIvlysviidsQVADGCRVGPYTHLRGQARVGESSRIGNFVEIKKSIIGQK 354
+                 589999999*****999987522689***********98754321113331111111222455777777778889999999999999888888877777 PP
+
+        ccmN 104 slvpsgsligdt 115
+                 + v   s +gd+
+  BAP18162.1 355 TNVAHLSYLGDA 366
+                 777777777775 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.0002
+        ccmN  42 iiigagaclgmgtiltayqgv....iaigagailgtgvlvvgrgeigenacigsttti 95 
+                   +g g  +g gti + y+gv      ig g+  g+  + v    +gen  + + + +
+  BAP18162.1 366 ATLGEGVNVGAGTITANYDGVqkhpTIIGDGTKTGANSVFVAPVTLGENVTVAAGSVV 423
+                 56899****************4444469*********************988765544 PP
+
+>> BAP18573.1  serine O-acetyltransferase [cyanobacterium endosymbiont of Epithemia turgida isolate EtSB Lake Yunoko]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.2   8.7    0.0052       4.5      21     116 ..      67     165 ..      53     209 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.0052
+        ccmN  21 tidesaivapgvilraapnsqiiigagaclgmgtiltayqgviaigagailgt.....g.vlvvgrg.eigenacigstttifnasvaamslvpsg.sl 111
+                  i+  a +a gv +       ++ig  a++g  ++   yqgv   g+g + g      g  +vvg g +i  n  ig    i   sv     vps  ++
+  BAP18573.1  67 EIHPGAKIAQGVFIDHG--MGVVIGETAVVGDNSL--IYQGVTLGGTGKVTGKrhptlGkNVVVGAGaKILGNLTIGNNVRIGAGSVVLRD-VPSDcTV 160
+                 57777777888777544..5678888888887766..488888888887766411111112344444256666666666666666665433.4444134 PP
+
+        ccmN 112 igdts 116
+                 +g   
+  BAP18573.1 161 VGIPG 165
+                 44444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         1720  (507178 residues searched)
+Passed MSV filter:                        62  (0.0360465); expected 34.4 (0.02)
+Passed bias filter:                       45  (0.0261628); expected 34.4 (0.02)
+Passed Vit filter:                         5  (0.00290698); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00116279); expected 0.0 (1e-05)
+Initial search space (Z):               1720  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 5578.96
+//
+[ok]

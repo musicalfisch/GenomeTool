@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-05   22.6  12.2    4.3e-05   21.0  12.1    1.7  1  ALF55586.1  fatty acid desaturase [Nostoc piscinale CENA21]
+  ------ inclusion threshold ------
+       0.03   11.7  11.6     0.0037   14.7   5.7    2.0  2  ALF55587.1  fatty acid desaturase [Nostoc piscinale CENA21]
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF55586.1  fatty acid desaturase [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0  12.1   1.7e-08   4.3e-05      61     263 ..      64     254 ..      43     291 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 1.7e-08
+        desD  61 wwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrmtphaehkwyhryqh 159
+                 w+l  +  +  g+ l+g  f ighd+ h  ++ ++wvn l+g  +   +    + wr++hn+ hh +tn l  d   h      + p    +w +  q 
+  ALF55586.1  64 WFLLPLAWIFTGTALTGF-FVIGHDCGHRSFAKRRWVNDLVGHIFMMPLIYPFHSWRIKHNH-HHKHTNKLDEDNAWHP-----IRPEVFANWGKTRQS 155
+                 788888888899999996.99************************999999999*******7.899*****99988885.....567777888888888 PP
+
+        desD 160 lfipilyaiipiywsfsdvrsilfrhrfgeikipnpkaidlfvllsgkvvylfwfigipllvgyspleiaigf.livfmtygvlachvfmlahvlepae 257
+                  f   l+    ++w  s  +  +++  + + k+ +  +i l    s  vv +f  +  p l+  + +   i f +i +m y        ++ h +    
+  ALF55586.1 156 AFE--LFMKRRLWWVGSIGHWAVVHFDWRNFKVKDQGSIKL----SVAVVAIFAAVVFPTLIATTGIWGFIKFwFIPWMVYHFWMSTFTIVHHTFPDVP 248
+                 886..444556677666666666666677777777777654....557888888888888888887776666635678888777766666666666666 PP
+
+        desD 258 fiqpsa 263
+                 f + s+
+  ALF55586.1 249 FDKASK 254
+                 655555 PP
+
+>> ALF55587.1  fatty acid desaturase [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.7   5.7   1.5e-06    0.0037      53     130 ..      62     138 ..      44     145 .. 0.79
+   2 ?    0.2   0.3     0.036        90     286     323 ..     278     315 ..     204     333 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.5e-06
+        desD  53 fvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnv 130
+                  v    d w++  i  l+ g+ +    f +ghd+ h  +s +kw+n l+g      i +  + wr+ h   h+   n+
+  ALF55587.1  62 AVAHYLDSWYFWPIFWLMQGTMFW-ALFVVGHDCGHQSFSKHKWLNDLIGHLSHTPILVPYHGWRISHRTHHKNTGNI 138
+                 455566788888887777776555.4599*********************9999999999999*****9877665554 PP
+
+  == domain 2  score: 0.2 bits;  conditional E-value: 0.036
+        desD 286 niflnwylgglnyqvvhhlfpqichihypkiapilaev 323
+                   ++n     +  +v hh+f +i h    k +  +  v
+  ALF55587.1 278 YGLVNHIHHDIGTHVAHHIFLNIPHYNLLKATEAIKPV 315
+                 34567777778888999999999998877766555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       210  (0.041816); expected 100.4 (0.02)
+Passed bias filter:                      118  (0.0234966); expected 100.4 (0.02)
+Passed Vit filter:                         9  (0.00179211); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398248); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 9048.75
+//
+[ok]

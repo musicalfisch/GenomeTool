@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-08   32.0   0.0    1.6e-08   31.9   0.0    1.0  1  OKH11105.1  hypothetical protein NIES208_17770 [Limnothrix ro
+    3.4e-07   27.5   2.2    3.4e-07   27.5   2.2    1.0  1  OKH19510.1  glycoprotein [Limnothrix rosea IAM M-220]
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH11105.1  hypothetical protein NIES208_17770 [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.9   0.0   8.9e-12   1.6e-08     238     291 ..      15      68 ..       2      77 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 31.9 bits;  conditional E-value: 8.9e-12
+        finU 238 eelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl 291
+                 +elr+ l++d+++v+l + d+ ++k  l++a++s+ s+ ++l++ +e +l++ +
+  OKH11105.1  15 DELRPYLMADGGNVELVEIDGPIVKLRLQGACGSCPSSAMTLRMGIERKLREVI 68 
+                 579**********************************************99765 PP
+
+>> OKH19510.1  glycoprotein [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   2.2   1.9e-10   3.4e-07     143     204 ..       2      62 ..       1      67 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 1.9e-10
+        finU 143 lvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaatvrn 204
+                  vc c gi+e++ir+ + ++n +  +++t  +  G  cG+c+a   ++++++ ++sa+t   
+  OKH19510.1   2 YVCICRGITEKQIRQTVSQQNCSP-QELTATIGVGADCGTCMAYACELLETLGNNSASTGSC 62 
+                 59***************9999775.679****************************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       124  (0.0350085); expected 70.8 (0.02)
+Passed bias filter:                       94  (0.0265387); expected 70.8 (0.02)
+Passed Vit filter:                        10  (0.00282326); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11199.68
+//
+[ok]

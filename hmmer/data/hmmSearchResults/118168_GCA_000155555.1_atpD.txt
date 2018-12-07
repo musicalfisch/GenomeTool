@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118168_GCA_000155555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.5e-74  246.3   4.7    8.6e-74  246.1   4.7    1.0  1  EDX74689.1  ATP synthase F1, delta subunit [Coleofasciculus c
+  ------ inclusion threshold ------
+        1.8    7.1   5.1       0.25    9.9   0.4    1.9  2  EDX72015.1  glucose-1-phosphate thymidylyltransferase [Coleof
+
+
+Domain annotation for each sequence (and alignments):
+>> EDX74689.1  ATP synthase F1, delta subunit [Coleofasciculus chthonoplastes PCC 7420]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  246.1   4.7   2.1e-77   8.6e-74       1     182 [.       1     182 [.       1     184 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 246.1 bits;  conditional E-value: 2.1e-77
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mk  + +aev +pya+al+s+aq +nl +++ged  +ll+ lk+s+elq+fldnp++k+e+kk+vl+q+ g+ + py+ nfl +lv+rrri f+  i +
+  EDX74689.1   1 MKGSSFSAEVVEPYAEALMSVAQEHNLVDKFGEDVAALLDTLKESEELQQFLDNPIIKAEDKKAVLQQISGDQIHPYMVNFLKILVERRRILFMGEICK 99 
+                 7888899******************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrls 182
+                 qy allr+l+qtvlaev sav l ++q+qav++kv+++t+a++vel+t+id+dl+ggviikv sqv+daslrgqlrr+ + ls
+  EDX74689.1 100 QYQALLRELKQTVLAEVVSAVELNDDQKQAVRQKVLSMTNAQDVELDTQIDADLLGGVIIKVESQVVDASLRGQLRRIGVSLS 182
+                 ******************************************************************************99987 PP
+
+>> EDX72015.1  glucose-1-phosphate thymidylyltransferase [Coleofasciculus chthonoplastes PCC 7420]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.4   6.1e-05      0.25     141     173 ..     240     274 ..     222     279 .. 0.80
+   2 ?   -1.8   0.6      0.24     1e+03     149     178 ..     301     335 ..     294     337 .. 0.48
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 6.1e-05
+        atpD 141 rqveletkid..sdliggviikvgsqvidaslrgq 173
+                  + +++ k+d  s++ig v i  gsqv++ ++rg 
+  EDX72015.1 240 LETDVQGKVDenSQVIGRVKIGQGSQVVNCTIRGP 274
+                 566777888744689******************96 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.24
+        atpD 149 idsdli......ggviikvgsqvidaslrgqlrrls 178
+                 +d+dl       g  +i v  +++d s+ gq  +ls
+  EDX72015.1 301 VDTDLEhsvilqGAKVIGVQQRIVD-SVIGQRAQLS 335
+                 4555440000114445555555555.5556666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         8294  (2339939 residues searched)
+Passed MSV filter:                       280  (0.0337593); expected 165.9 (0.02)
+Passed bias filter:                      176  (0.0212202); expected 165.9 (0.02)
+Passed Vit filter:                        12  (0.00144683); expected 8.3 (0.001)
+Passed Fwd filter:                         2  (0.000241138); expected 0.1 (1e-05)
+Initial search space (Z):               8294  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 7175.81
+//
+[ok]

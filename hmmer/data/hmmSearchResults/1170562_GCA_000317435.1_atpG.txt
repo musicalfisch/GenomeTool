@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170562_GCA_000317435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-52  175.3  11.1    1.9e-52  175.2  11.1    1.0  1  AFZ00621.1  ATP synthase F0 subcomplex B' subunit [Calothrix 
+  ------ inclusion threshold ------
+       0.46    8.6  23.7          1    7.5  23.3    2.0  1  AFZ00622.1  ATP synthase subunit b [Calothrix sp. PCC 6303]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ00621.1  ATP synthase F0 subcomplex B' subunit [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  175.2  11.1     7e-56   1.9e-52       1     142 [.       1     142 []       1     142 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 175.2 bits;  conditional E-value: 7e-56
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdf+atlpvmalqf+lla +lna+fykpl+kvlder +yi+  +  a+e+l k+e l +eye ql+ arkqsq ++a a  eaqk+ + +va aqkea
+  AFZ00621.1   1 MFDFNATLPVMALQFLLLAALLNAIFYKPLTKVLDERDNYIQGNKLSARERLDKAERLTKEYEQQLADARKQSQAVMASATEEAQKIYASQVAEAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv 142
+                   ++e  + ei qqk+e++ sle qv sls+qil+kllg++lv
+  AFZ00621.1 100 QGQREQASKEIEQQKQEVMHSLEQQVDSLSQQILDKLLGANLV 142
+                 ****************************************997 PP
+
+>> AFZ00622.1  ATP synthase subunit b [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.5  23.3   0.00037         1      50     134 ..      65     163 ..      30     172 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.00037
+        atpG  50 eqlaktealvqeyelq...lssarkqsqeiiaqaqaeaqkl..aservaaaqkeaiar.........keavaaeiaqqkeeafrslegqvaslsrqile 134
+                 e+ a   a +qe e +    +sa  q qe ++qaqaeaq++  ase  a   keai           ke+ aa++  ++++a+  l  +v +++ q  e
+  AFZ00622.1  65 ERRAAIAAAIQEAEQRaqeAASALSQVQEKLTQAQAEAQRIrqASEESAKNAKEAILAkavvdvqrlKESAAADLNTERDKAIAQLRSRVVAMALQKAE 163
+                 555666777777775411256888999999999999999765589999999999986511222222357778888888888888888888877777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5535  (1829740 residues searched)
+Passed MSV filter:                       218  (0.0393857); expected 110.7 (0.02)
+Passed bias filter:                      119  (0.0214995); expected 110.7 (0.02)
+Passed Vit filter:                        10  (0.00180668); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000361337); expected 0.1 (1e-05)
+Initial search space (Z):               5535  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 6541.32
+//
+[ok]

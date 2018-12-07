@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501268_GCA_000757845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.019   11.0   0.0       0.38    6.7   0.0    2.1  2  AIQ95993.1  putative alpha/beta hydrolase [Prochlorococcus sp
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ95993.1  putative alpha/beta hydrolase [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.0   0.00019      0.38      58     113 ..      80     131 ..      73     144 .. 0.84
+   2 ?    2.1   0.0    0.0048        10     190     240 ..     240     291 ..     208     301 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.00019
+        anaA  58 pgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdr 113
+                 p +en ik  +   w + i  +  e+    +sp+ ++g s+g v++l+ a  l d 
+  AIQ95993.1  80 PYKENSIKYSF-NLWANQISTFCAEVI---KSPVYLVGNSIGGVIALKAAEILKDN 131
+                 66788888764.679999999999885...79******************999886 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.0048
+        anaA 190 slpcpilalggeadegvsleelrewekytqrgfklrsfpg.ghmylteeker 240
+                  + +pi  + ge d   sl+e + w+   +   +l  + g gh    ee e+
+  AIQ95993.1 240 KVDAPIQMIWGEKDPWESLNEAKGWKTKFRNIKRLDIINGaGHCPHDEEPEK 291
+                 57899********************876665556666655367666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         2063  (521035 residues searched)
+Passed MSV filter:                        41  (0.019874); expected 41.3 (0.02)
+Passed bias filter:                       38  (0.0184198); expected 41.3 (0.02)
+Passed Vit filter:                         2  (0.000969462); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000484731); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6591.09
+//
+[ok]

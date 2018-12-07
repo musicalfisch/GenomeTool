@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-09   33.9   0.5    4.6e-09   33.9   0.5    2.1  2  BAC88112.1  gll0171 [Gloeobacter violaceus PCC 7421]
+      2e-05   21.9   1.0      2e-05   21.9   1.0    1.7  2  BAC90564.1  delta 12 acyl-lipid desaturase [Gloeobacter viola
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC88112.1  gll0171 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.9   0.5   2.1e-12   4.6e-09      44     131 ..      60     149 ..      30     154 .. 0.78
+   2 ?   -3.3   4.7      0.44   9.7e+02      41      72 ..     223     255 ..     209     321 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 33.9 bits;  conditional E-value: 2.1e-12
+        desD  44 ltwviaawlfvlfgp...diwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvl 131
+                 +++  a +l+ + g      ww k i  + lg  +a + f +ghda hg  +++  +n  lg      +  +  lw   hn lhh ytn  
+  BAC88112.1  60 FAFCFAVYLLAFTGFlllPWWWAKAICSIALGLAIAQL-FHVGHDAGHGVLTTNSTLNVWLGRVAFLPLLHAFNLWDANHNQLHHIYTNFA 149
+                 444445555444443111369*************9987.99*********************988887888899***************75 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.44
+        desD  41 itiltwviaawlfvlfgpdi..wwlkiigclvlg 72 
+                 i +l wv   wl  + g  +  ww+ i+g lv+ 
+  BAC88112.1 223 ILLLIWV-PNWLADVTGWPVmpWWVSILGGLVVP 255
+                 5566776.578888877554469******99874 PP
+
+>> BAC90564.1  delta 12 acyl-lipid desaturase [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   1.0   9.3e-09     2e-05      60     134 ..      70     142 ..      45     153 .. 0.77
+   2 ?   -2.2   0.6       0.2   4.5e+02     297     338 ..     242     280 ..     225     289 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 9.3e-09
+        desD  60 iwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                  wwl     +  g+ l+g  f i hd+ h  +s+++ +n ++g      +    + wr++hn  hht+tn +  d
+  BAC90564.1  70 WWWLLPALWIFTGTALTGF-FVIAHDCGHRSFSTRRRINDIVGHVMLLPLLYPFHGWRIKHNQ-HHTFTNQIEMD 142
+                 4666555556666667665.799********************999999999999******96.9*****98877 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.2
+        desD 297 nyqvvhhlfpqichihypkiapilaevcqefgvnyavyptlw 338
+                  + +vhh  p+i +  yp  a+      q f   ++vyp+  
+  BAC90564.1 242 TFTLVHHTHPDIPF--YPA-ATWTPVTGQLFSTIHCVYPAWV 280
+                 56778888888864..443.3334445566777777777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                       124  (0.027991); expected 88.6 (0.02)
+Passed bias filter:                       96  (0.0216704); expected 88.6 (0.02)
+Passed Vit filter:                         9  (0.0020316); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000451467); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 10078.41
+//
+[ok]

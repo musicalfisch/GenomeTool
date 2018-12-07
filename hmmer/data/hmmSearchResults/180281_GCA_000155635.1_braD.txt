@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.9e-21   71.8  30.4      7e-12   42.7  15.1    2.8  3  EDY39226.1  urea ABC transporter, permease protein UrtB [Cyan
+    3.6e-05   20.7   3.5    3.6e-05   20.7   3.5    1.9  2  EDY38020.1  urea ABC transporter, permease protein UrtC [Cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY39226.1  urea ABC transporter, permease protein UrtB [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.2   6.6     1e-12   1.4e-09       8      60 ..       7      59 ..       1     121 [. 0.83
+   2 !   42.7  15.1     5e-15     7e-12     120     253 ..     190     325 ..      71     335 .. 0.85
+   3 ?   -2.0   0.1      0.21   2.9e+02     265     284 ..     357     376 ..     342     379 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 35.2 bits;  conditional E-value: 1e-12
+        braD  8 livngiavgsiialaavgltltygilrlsnfahgdfltlgayltllvnslgvn 60
+                 + ng+a+gs++ laa+gl++++g++ + n+ahg+++ lgay t++v++l  n
+  EDY39226.1  7 TLFNGLAIGSVLVLAALGLAVVFGLMGVINMAHGELMMLGAYTTFVVQNLFKN 59
+                678*******************************************9876544 PP
+
+  == domain 2  score: 42.7 bits;  conditional E-value: 5e-15
+        braD 120 nknynlpv..tqaldilglkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglitavrp 216
+                 n +   pv    +l++ +l +p  +l++++l+++++ a+ ++lq++  g  +rav+++  ++   gi  + v   t+++   l+ ++g    l+ +v p
+  EDY39226.1 190 NIDVTAPVwlRGSLQVGALTMPVARLFIIALTIVSLAAVTWFLQKSVWGIRIRAVTQNRPMSDCLGIPTETVDALTFLVGSGLAGVAGVAVTLLGSVGP 288
+                 555555552245789999********************************************************************************* PP
+
+        braD 217 nmgwflilplfasvilggignpygaiaaafiigiaqe 253
+                 n+g   i+  f  v+lgg+g+  g+++aa+ ig+   
+  EDY39226.1 289 NLGGNYIVDCFMVVVLGGVGKLLGTVVAALGIGVLSY 325
+                 *********************************9765 PP
+
+  == domain 3  score: -2.0 bits;  conditional E-value: 0.21
+        braD 265 qgvallimilvllirpkglf 284
+                 + + + ++++ l  rp glf
+  EDY39226.1 357 KVLVFAVIVVFLQFRPAGLF 376
+                 33444455566778999999 PP
+
+>> EDY38020.1  urea ABC transporter, permease protein UrtC [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   1.0      0.11   1.5e+02      21      50 ..      40      69 ..      31      77 .. 0.82
+   2 !   20.7   3.5   2.6e-08   3.6e-05     145     262 ..     190     309 ..     155     330 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.11
+        braD 21 laavgltltygilrlsnfahgdfltlgayl 50
+                + a+g+ l++g   +  + +g f++lg y 
+  EDY38020.1 40 IVALGIDLIWGFTGMLSLGQGIFFALGGYA 69
+                46789999999999999999***9999995 PP
+
+  == domain 2  score: 20.7 bits;  conditional E-value: 2.6e-08
+        braD 145 vlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglitav.rpn.mgwflilplfasvilggignpyga 241
+                 v +l v+a   l   l   + g a+ a+ dd    r +g n        + iag+l+ ++g++y + + +  p+ m   + + +   v +gg g   ga
+  EDY38020.1 190 VTLLLVVASWLLCRWLTRGRFGDALIAIRDDEPRLRFTGYNPTAYKTVVFAIAGALAGVSGALYTVQSGIiSPQfMAVPFSIEMVIWVAVGGRGTLIGA 288
+                 5566777778888889999**********************999999999***************998762565367777788999999********** PP
+
+        braD 242 iaaafiigiaqevstpllgsq 262
+                 + +a++i  a+ + +  l   
+  EDY38020.1 289 VLGAVLINYAKSLVSEQLPET 309
+                 *******99998776666544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                       104  (0.0375316); expected 55.4 (0.02)
+Passed bias filter:                       34  (0.0122699); expected 55.4 (0.02)
+Passed Vit filter:                         2  (0.000721761); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000721761); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7894.17
+//
+[ok]

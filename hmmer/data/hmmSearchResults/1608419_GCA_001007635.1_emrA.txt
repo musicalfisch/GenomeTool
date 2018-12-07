@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1608419_GCA_001007635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrA  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0016   14.5   2.4      0.058    9.3   0.1    2.1  2  KKZ14101.1  hypothetical protein TQ37_02145 [Candidatus Synec
+     0.0028   13.7   1.7      0.051    9.5   0.0    2.2  2  KKZ13867.1  hypothetical protein TQ37_03025 [Candidatus Synec
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ14101.1  hypothetical protein TQ37_02145 [Candidatus Synechococcus spongiarum 15L]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.3   0.1   6.1e-05     0.058      96     139 ..      84     127 ..      67     136 .. 0.90
+   2 !    7.8   0.8   0.00018      0.17     248     396 ..     117     276 ..     115     291 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 6.1e-05
+        emrA  96 gtvdqvlvddnqdvkagqplirlddrdfqiklqqaqadlaaaqq 139
+                 g v  + v++ ++v+agq l  +d  d+ i++++ qa l+ a++
+  KKZ14101.1  84 GIVAAINVEEGEQVRAGQVLAVMDGGDLSIRIKERQALLTQAEE 127
+                 8899999******************************9998865 PP
+
+  == domain 2  score: 7.8 bits;  conditional E-value: 0.00018
+        emrA 248 qaqakvaqaeqgvataqaglessqgelqqaqaqnvqtqvsqsdyqtaqaainqsqvalknakqqlayvtitapvsgrvgrknvq...........tgqq 335
+                 + qa ++qae+ +a  +  l   qg ++      +     +s +++ q+ +  s+  l++  q+   +++ ap  g v  +  +           +g  
+  KKZ14101.1 117 ERQALLTQAEEELALRNEELVRHQGLVEAGALSPLALSQLESHHRAQQSQVMASRQRLQEVLQEQKELAVQAPFDGLVMERFAEprsyitpagsaAGAT 215
+                 678889999999999999999999988777667777666778899999999999999999999999999999999988654332111111111112333 PP
+
+        emrA 336 vqag.tpllaivddqywvtanfketqlekmhpgqkveikldsfphheftgriesvspasgaq 396
+                   a  t ll+ +   y + a + + ++ +++  q  e+ ld++p + ++ +++ ++p s  +
+  KKZ14101.1 216 NGASkTSLLT-IGTGYQLVAALPDNEVGRLQFNQEAEVVLDALPNQPLAAQVNIIAPRSQVN 276
+                 3333245555.5678999999************************************99766 PP
+
+>> KKZ13867.1  hypothetical protein TQ37_03025 [Candidatus Synechococcus spongiarum 15L]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.6   1.0    0.0067       6.3     191     233 ..     122     164 ..      98     181 .. 0.75
+   2 !    9.5   0.0   5.5e-05     0.051     315     386 ..     187     255 ..     168     291 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.0067
+        emrA 191 qadlaqtnanlakaqadynrfnqlfssgavsrreldtarqaye 233
+                 qa +     +l   +++ +r+  l ++gavs   ld  r++ e
+  KKZ13867.1 122 QAKMDSLARQLEVVRSEEKRYAALVATGAVSYDSLDQRRRSTE 164
+                 4444444556666789999*****************9998766 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 5.5e-05
+        emrA 315 vtitapvsgrvgrknvqtgqqvqagtpllaivddqywvtanfketqlekmhpgqkveikldsfphheftgri 386
+                   + ap++g v +   + g+q      l     d   v a+  et++ ++ pgq+v i  +   h  ftg +
+  KKZ13867.1 187 GVLRAPMAGTVLKILTREGEQPSNSVVLELGQTDFMEVVAEVYETDISRIRPGQRVRITSE---HGGFTGEL 255
+                 5678999999999999999999988888778889999********************9865...44444433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (448 nodes)
+Target sequences:                         1878  (530212 residues searched)
+Passed MSV filter:                        72  (0.0383387); expected 37.6 (0.02)
+Passed bias filter:                       42  (0.0223642); expected 37.6 (0.02)
+Passed Vit filter:                         4  (0.00212993); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00106496); expected 0.0 (1e-05)
+Initial search space (Z):               1878  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 7917.83
+//
+[ok]

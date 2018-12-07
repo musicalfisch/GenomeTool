@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245923_GCA_000817735.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-50  170.1   0.1    2.2e-50  169.9   0.1    1.0  1  ODN58900.1  hypothetical protein QH73_025530 [Scytonema mille
+    3.3e-06   24.4   2.6    9.5e-06   22.9   0.4    2.4  3  ODN58859.1  malate dehydrogenase [Scytonema millei VB511283]
+
+
+Domain annotation for each sequence (and alignments):
+>> ODN58900.1  hypothetical protein QH73_025530 [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  169.9   0.1   8.9e-54   2.2e-50       1      88 [.       1      88 [.       1      92 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 169.9 bits;  conditional E-value: 8.9e-54
+        gdhA  1 mvstsllsleaaspahicpfdqacsyleaaakelkldqglleilshprkvvtvsipvkldngeirvlaghrvqhsdilgpykggiryh 88
+                m+s+sl +lea++pa+icp+dqacsyle+aakelkldqglleilshprkvvtvsipvk+d+ge++vlaghrvqh+dilgpykggiry 
+  ODN58900.1  1 MLSSSLSQLEAPTPAYICPYDQACSYLEQAAKELKLDQGLLEILSHPRKVVTVSIPVKRDDGEVQVLAGHRVQHCDILGPYKGGIRYX 88
+                8899***********************************************************************************7 PP
+
+>> ODN58859.1  malate dehydrogenase [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0     0.025        63     402     423 ..     106     127 ..      94     131 .. 0.76
+   2 ?   -2.8   0.1      0.23   5.8e+02     227     244 ..     151     168 ..     138     174 .. 0.75
+   3 !   22.9   0.4   3.8e-09   9.5e-06     209     283 ..     249     323 ..     236     341 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.025
+        gdhA 402 rqiplrlaaytlgvgrvaqals 423
+                 r ++    ayt gvgr++ a++
+  ODN58859.1 106 RSVSDLAMAYTPGVGRICTAIA 127
+                 555555679********99986 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.23
+        gdhA 227 viqgfgnvggaaaellhk 244
+                 ++ g+gn+g aaa+ + +
+  ODN58859.1 151 AVLGLGNLGPAAALPVME 168
+                 6889*******9986655 PP
+
+  == domain 3  score: 22.9 bits;  conditional E-value: 3.8e-09
+        gdhA 209 ivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldipalk.ayaaenrksvvg 283
+                  + +al+   ks+a++r+vi+g g  g a a ll+kaga+ i +  +  g+ s +  d+++ k ++a + + +++g
+  ODN58859.1 249 ALFNALKLVHKSMADIRIVINGAGAAGIAVARLLQKAGAEKIWMCDS-KGILSTSRTDLTEEKrEFAVKAQGTLAG 323
+                 4557788889******************************9998775.5788888888876542577666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         4957  (1458912 residues searched)
+Passed MSV filter:                       173  (0.0349001); expected 99.1 (0.02)
+Passed bias filter:                      131  (0.0264273); expected 99.1 (0.02)
+Passed Vit filter:                        10  (0.00201735); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040347); expected 0.0 (1e-05)
+Initial search space (Z):               4957  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10431.22
+//
+[ok]

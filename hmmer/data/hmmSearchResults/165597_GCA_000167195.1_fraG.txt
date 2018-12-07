@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fraG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fraG  [M=329]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-05   23.0  20.0      1e-05   23.0  20.0    2.1  2  EAM50587.1  Protein of unknown function DUF6 [Crocosphaera wa
+  ------ inclusion threshold ------
+      0.046   11.0   0.0      0.047   11.0   0.0    1.1  1  EAM50523.1  Protein of unknown function DUF497 [Crocosphaera 
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM50587.1  Protein of unknown function DUF6 [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.0  20.0   3.4e-09     1e-05      46     267 ..      25     247 ..       8     251 .. 0.78
+   2 !    5.1   2.3   0.00099         3     122     168 ..     250     295 ..     248     299 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 23.0 bits;  conditional E-value: 3.4e-09
+        fraG  46 gfvtptlshsflllllrmlwvvplmalisqrlygntwreinqlkqpvnrpviweamgcgflmflylvllyisisfiptgiaitlfftypiftallawrl 144
+                  f+  +l  s  l l   l++     +i+  +   +w+++   k  v     + a+ +gf + l++v    s+sf     + tl+ t pi+ a+l+w  
+  EAM50587.1  25 IFIRLALQASEKLGLEFSLFLAASRLIIASLVLLPAWQKVVTNK--VTIKAYYYAIAAGFSLSLHFVCWITSLSFTSITASTTLVTTNPIWVAILSWFW 121
+                 56666666666666666666666666666666777788776655..55567899********************************************* PP
+
+        fraG 145 fndvpsllrwlvigltligtfltipyayggeq..qtlvlgvstgiasgivyagytvfaqrsfqr.lhpvpftwisfattlilsilcliiwqphegnlpw 240
+                 f++ p  l  l i ++l+g +l    +   ++   + +lg +  +      + y +f + + q+ l+   ++ i ++t+ +l      i+     n p 
+  EAM50587.1 122 FKEKPKKLTILGIIIALVGGILIAWGSSDSNNsySSPMLGNTLALMGAFFVSFYLIFGKIAQQQgLKISSYSVIVYTTAAMLLFPLPFIFGDGYTNYPN 220
+                 *******************9986554444333114668999999999999999****9987654388999*******9999888888889999999998 PP
+
+        fraG 241 laitigsllsalftlaghvlnnwgihl 267
+                        l++ +  l gh   nw ++ 
+  EAM50587.1 221 SVYLYVILMAIFSQLIGHTSINWSVRW 247
+                 665555555555579********9875 PP
+
+  == domain 2  score: 5.1 bits;  conditional E-value: 0.00099
+        fraG 122 ptgiaitlfftypiftallawrlfndvpsllrwlvigltligtflti 168
+                 pt ++++++f  pi +++l + lf+++ps+l  +   + lig ++++
+  EAM50587.1 250 PTLVTLAILF-EPIGASFLGFVLFQEIPSILVLIGAVIILIGVIIAV 295
+                 6666666666.59******************9999999999998765 PP
+
+>> EAM50523.1  Protein of unknown function DUF497 [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   1.6e-05     0.047     142     180 ..      35      73 ..      25      87 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.6e-05
+        fraG 142 wrlfndvpsllrwlvigltligtfltipyayggeqqtlv 180
+                    +++ p   r++ ig++ ig +l++ y+y g+   ++
+  EAM50523.1  35 ITTLDEHPEEERYVTIGMSAIGQLLAVVYTYRGNSIRII 73 
+                 55667889999*********************9876655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (329 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       254  (0.0426318); expected 119.2 (0.02)
+Passed bias filter:                       95  (0.0159449); expected 119.2 (0.02)
+Passed Vit filter:                         8  (0.00134273); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335683); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10738.95
+//
+[ok]

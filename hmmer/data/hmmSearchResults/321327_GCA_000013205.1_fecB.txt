@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-05   22.2   0.1    2.6e-05   20.8   0.1    1.7  1  ABD00169.1  iron chelate ABC transporter (FeCT) family, subst
+    0.00026   17.5   0.0    0.00048   16.6   0.0    1.4  1  ABD00006.1  metal chelate ABC transporter, metal chelate-bind
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD00169.1  iron chelate ABC transporter (FeCT) family, substrate-binding protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.8   0.1   1.9e-08   2.6e-05      96     287 ..      77     261 ..      32     286 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 20.8 bits;  conditional E-value: 1.9e-08
+        fecB  96 gvpivgdemqpnlekivalqpdliigsrlrqgqiykslsaia.ptvfsetigeswqd.nlrlygqaldreaeaeqllndwdtrvaqmrqklsakdltis 192
+                 g+  +g   qpnle+ivalqpd ++g+   +  +   l a+  pt ++    +sw   +  +   a    a+ + ll ++ + + q   ++  k l   
+  ABD00169.1  77 GITRLGLGNQPNLEQIVALQPDWVVGASGFHTALAERLQALGiPTYLT--QVDSWAAlEATIATLAAALGADPDPLLREYGSLLPQELPRVRPKTL--L 171
+                 677788889******************999999999999996256554..4578865245566667777788888999998888888777777655..4 PP
+
+        fecB 193 lvrfmprgariylqnsfpgqilqavgler..pasqanhgfaehvsfeqipqmeadalfyfiytgdsgdqtpgsitnpwlnhplwqqlevvqsgkaya 287
+                 lv   p  +    ++s+ g++l+  g +    a q++  f  +v++     +ea+  + ++   ++ d         +   p+w+ql+ vq+ + y 
+  ABD00169.1 172 LVGTQPILS--PNRQSWAGDLLERFGADNltAALQSQGQFRGYVTLAAERILEANPEVLLVVNPEAADPL-----AFFRSRPFWNQLQAVQTQRVYG 261
+                 555555433..34578888888888887522566777888888888888888888888888888877743.....3466788888888888888886 PP
+
+>> ABD00006.1  metal chelate ABC transporter, metal chelate-binding protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   0.0   3.5e-07   0.00048      50     133 ..       9      87 ..       4     137 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 3.5e-07
+        fecB  50 pnepqrivvltneatdmvlalgvtpvgavkswsgdpyyeylakdmlgvpivgdemqpnlekivalqpdliigsrlrqgqiyksl 133
+                 p  p+riv lt+e+++ + alg   +  v   sg         +    p v   ++ n+e+i+alqpd+++     q +i   l
+  ABD00006.1   9 PRLPERIVCLTEETAETLYALGAGDL--VVGISGFTVRP---PEARKKPKVSTLLDANIERILALQPDVVLAWSDLQANICAEL 87 
+                 6789*****************98764..44555544443...4445579999999***************98777777776655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                        96  (0.0347826); expected 55.2 (0.02)
+Passed bias filter:                       82  (0.0297101); expected 55.2 (0.02)
+Passed Vit filter:                         9  (0.00326087); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000724638); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 8676.34
+//
+[ok]

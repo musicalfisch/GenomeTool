@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/755178_GCA_000317675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-05   21.6   0.0    3.2e-05   21.1   0.0    1.3  1  AFZ54802.1  FeoA family protein [Cyanobacterium aponinum PCC 
+  ------ inclusion threshold ------
+       0.02   12.0   0.0      0.021   11.9   0.0    1.0  1  AFZ55149.1  FeoA family protein [Cyanobacterium aponinum PCC 
+      0.025   11.7   0.0      0.035   11.2   0.0    1.2  1  AFZ54553.1  neutral amino acid ABC transporter ATP-binding pr
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ54802.1  FeoA family protein [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.1   0.0   2.8e-08   3.2e-05     158     206 ..      35      84 ..       5      88 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 21.1 bits;  conditional E-value: 2.8e-08
+        feoA 158 gkllsmgltpgteftvirvaplgdpveirvrg.fhlslrkqeadalivee 206
+                  ++ s+gl  g +  vir + lg  + ++v     ++lr qead ++v++
+  AFZ54802.1  35 TRFQSLGLVSGKKVKVIRKSWLGGTLHVKVGStTAIALRSQEADLVLVNN 84 
+                 34569*************************762679********999976 PP
+
+>> AFZ55149.1  FeoA family protein [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   1.8e-05     0.021      45     116 ..       4      75 ..       1      76 [] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.8e-05
+        feoA  45 typlaqvemgktvwlvgf..qgtgginrllgmglnpgiqlqvissqprgsvliaiqdnrigigaemaekilvsd 116
+                  +pl+++++g    ++ +  q  g i  l+ mg+  g+++ + s  p  s ++++   r  +  e a  i vs+
+  AFZ55149.1   4 YFPLSDLKVGSQAIVAKLetQDEGIIRHLMAMGVIQGVNISLESKFP--SYVLSVGKSRTALDKETASIIYVSQ 75 
+                 6899999999877666542288899999**********999888766..7788999999999999999999985 PP
+
+>> AFZ54553.1  neutral amino acid ABC transporter ATP-binding protein [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0     3e-05     0.035      98     205 ..     102     213 ..      87     217 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 3e-05
+        feoA  98 qdnrigigaemaekilvsdsqpkklepkkdlpevrtflreipigkagkvvgydralrgykgkllsmgltpgteftvirv...aplgdpvei.rvrgfhl 192
+                 ++  +g   ++ e+++    qpkk+  +   ++ +++     +g a k   y  al g + kll m  t  t+  +i +   a   +p  i ++    l
+  AFZ54553.1 102 ENMLLGTQNQIGEHLFSVLLQPKKIRKQERESKEKAMNILESVGLAEKAYDYAGALSGGQRKLLEMARTLMTNPKLILLdepAAGVNPTLInQICEHIL 200
+                 44557888889999999999*****887766666666666689************************99998877765421122234444423444445 PP
+
+        feoA 193 slrkqeadalive 205
+                 s  +q    li+e
+  AFZ54553.1 201 SWNQQGISFLIIE 213
+                 6666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         3431  (1113123 residues searched)
+Passed MSV filter:                        75  (0.0218595); expected 68.6 (0.02)
+Passed bias filter:                       58  (0.0169047); expected 68.6 (0.02)
+Passed Vit filter:                        10  (0.0029146); expected 3.4 (0.001)
+Passed Fwd filter:                         3  (0.000874381); expected 0.0 (1e-05)
+Initial search space (Z):               3431  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7828.97
+//
+[ok]

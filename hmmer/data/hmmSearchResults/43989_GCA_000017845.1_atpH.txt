@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/43989_GCA_000017845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-49  165.0   6.5    1.3e-49  164.8   6.5    1.0  1  ACB53832.1  ATP synthase F0, C subunit [Cyanothece sp. ATCC 5
+    7.5e-19   66.3   2.8    8.1e-19   66.2   2.8    1.0  1  ACB50857.1  putative ATP synthase F0, C subunit [Cyanothece s
+
+
+Domain annotation for each sequence (and alignments):
+>> ACB53832.1  ATP synthase F0, C subunit [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.8   6.5     5e-53   1.3e-49       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.8 bits;  conditional E-value: 5e-53
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                m+p+vaaasviaaalavGl++iGpg+gqGna+gqav+GiarqpeaeGkirgtlll+lafmesltiyGlv+alvllfanpfa
+  ACB53832.1  1 MNPTVAAASVIAAALAVGLGSIGPGLGQGNASGQAVSGIARQPEAEGKIRGTLLLTLAFMESLTIYGLVIALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> ACB50857.1  putative ATP synthase F0, C subunit [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.2   2.8   3.1e-22   8.1e-19       5      80 ..       7      82 ..       1      83 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 66.2 bits;  conditional E-value: 3.1e-22
+        atpH  5 vaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                +   s+i+a+l++ ++++ p+ig+G a ++a+  +a+qp+    i  tl++ la++es +iy +vv+++l+fanpf
+  ACB50857.1  7 TGIVSIITAGLTIAIGSVAPAIGEGLALANALRALAQQPDKANTITRTLFVGLALVESTAIYCFVVSMILIFANPF 82
+                55689**********************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         5304  (1574679 residues searched)
+Passed MSV filter:                       175  (0.032994); expected 106.1 (0.02)
+Passed bias filter:                      110  (0.0207391); expected 106.1 (0.02)
+Passed Vit filter:                        10  (0.00188537); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000377074); expected 0.1 (1e-05)
+Initial search space (Z):               5304  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4251.63
+//
+[ok]

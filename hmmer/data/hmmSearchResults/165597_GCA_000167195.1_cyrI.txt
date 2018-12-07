@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrI  [M=276]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   12.4   1.1       0.09   10.6   0.5    2.0  2  EAM52208.1  unknown protein [Crocosphaera watsonii WH 8501]
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM52208.1  unknown protein [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0     0.045   2.7e+02      24      53 ..      43      74 ..      28      94 .. 0.72
+   2 ?   10.6   0.5   1.5e-05      0.09      34      99 ..     156     221 ..     127     273 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.045
+        cyrI 24 llerqdlv..dLvqskdivlvvnyylekelme 53
+                l+er++    +L++++  v+ v ++l+ +  +
+  EAM52208.1 43 LEERENFRdwLLNRGINSVILVINFLNLWEPQ 74
+                4556665411599************9988655 PP
+
+  == domain 2  score: 10.6 bits;  conditional E-value: 1.5e-05
+        cyrI  34 vqskdivlvvnyylekelmeilekikkkkyesaryirasvvrlqreliefeeekedaklledayae 99 
+                  q k i+l   + l k+l +i ++i k+k    +  +  + + qr l +f++ + ++kll+++  e
+  EAM52208.1 156 FQVKEIALNQRNNLIKQLKNIEQRIDKEKEIKQKAQQVINQGFQRALSDFYSWLYLPKLLNQYQNE 221
+                 47899*********************************************************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (276 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       341  (0.057234); expected 119.2 (0.02)
+Passed bias filter:                      180  (0.0302115); expected 119.2 (0.02)
+Passed Vit filter:                        19  (0.00318899); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000167842); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 11261.21
+//
+[ok]

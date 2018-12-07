@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-14   51.9   0.2    2.7e-14   51.5   0.2    1.1  1  ERT07033.1  phycobilisome 8.9 kDa linker polypeptide, phycocy
+     0.0058   15.2   1.1      0.019   13.5   0.5    2.1  2  ERT07017.1  phycobilisome 32.1 kDa linker polypeptide, phycoc
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT07033.1  phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod domain protein [Lyngbya aestuarii B
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.5   0.2   8.2e-18   2.7e-14       8      69 ..      16      77 ..      10      82 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 51.5 bits;  conditional E-value: 8.2e-18
+        cpcD  8 kenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                +  r++  ev  + qn + d + y ir +   ++tvpy rm ++++ri r+G +i+si pl 
+  ERT07033.1 16 NGSRMYRIEVEAMGQNVDPDTISYRIRSTRKTYITVPYNRMSEQLKRINRMGGKILSIEPLT 77
+                5679999*****************************************************97 PP
+
+>> ERT07017.1  phycobilisome 32.1 kDa linker polypeptide, phycocyanin-associated, rod [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0       0.2   6.7e+02      42      53 ..     113     124 ..     109     128 .. 0.84
+   2 !   13.5   0.5   5.8e-06     0.019      32      66 ..     200     233 ..     180     235 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.2
+        cpcD  42 tvpysrmnqemr 53 
+                 tv +srm q  r
+  ERT07017.1 113 TVGFSRMFQLYR 124
+                 899****99766 PP
+
+  == domain 2  score: 13.5 bits;  conditional E-value: 5.8e-06
+        cpcD  32 sirksGsvfltvpysrmnqemrritrlGarivsik 66 
+                  +r+s   +l vpy  +   +++i r Ga+ivs++
+  ERT07017.1 200 NVRRSNKAYL-VPYEELSSRIQQILRSGAKIVSVR 233
+                 5788888887.9*********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       135  (0.0207533); expected 130.1 (0.02)
+Passed bias filter:                      127  (0.0195234); expected 130.1 (0.02)
+Passed Vit filter:                        12  (0.00184473); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000307456); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4753.48
+//
+[ok]

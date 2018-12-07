@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/549789_GCA_001904775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0008   16.0   0.8      0.019   11.5   0.0    2.7  2  OKH43883.1  cyclic pyranopterin phosphate synthase MoaA [Phor
+     0.0019   14.8   0.0     0.0028   14.2   0.0    1.1  1  OKH46085.1  hypothetical protein NIES30_17435 [Phormidium ten
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH43883.1  cyclic pyranopterin phosphate synthase MoaA [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.1     0.017        44      63      77 ..       9      23 ..       4      27 .. 0.82
+   2 !   11.5   0.0   7.4e-06     0.019     139     246 ..      79     175 ..      61     193 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.017
+        finB 63 vavapacniqcnycn 77
+                +++   cn qc+yc 
+  OKH43883.1  9 ISLVDRCNFQCQYCM 23
+                667789********5 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 7.4e-06
+        finB 139 iadkapdiklclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalkeadi.lckvnsvmipgin 236
+                 ia+      l l+tn ++l++  +++ +  +  v i+l+ +dp i  qi       + r+              +g+q+ +       k+n v+ipg+n
+  OKH43883.1  79 IAELPGTKDLSLTTNAFLLSDLAQNLWDAGLRRVNISLDSLDPVIFDQIVGGRG--KSRWPQ----------VWDGIQTAHRVGFsPLKLNVVVIPGVN 165
+                 55555556799**********************************999986533..334433..........345565555544413589999999999 PP
+
+        finB 237 dkhlvevnka 246
+                 d+ ++++  +
+  OKH43883.1 166 DHEVLDLAAL 175
+                 9988877655 PP
+
+>> OKH46085.1  hypothetical protein NIES30_17435 [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   1.1e-06    0.0028      62     167 ..      17     128 ..       6     137 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 1.1e-06
+        finB  62 hvavapacniqcnycn..rkydcanesrpgvvselltpeeaahkvlviagkipqmtvlgvagpgdplanpektfrtfeliadk....apdiklclstng 154
+                  + v+  cn++c yc    k d +   rp v+s+ +  + a  ++   + +  q tv      g+pl   ++ f +f    +k       + + l tng
+  OKH46085.1  17 IIKVTSRCNLNCSYCYvyNKGDTSWIKRPHVMSNEVF-DAAVERIRRHCLRSGQQTVRVTLHGGEPLLIGKERFAAFCRTIQKelkeVCPVEISLQTNG 114
+                 5779999********6337999999********8764.678888999999999****999999********9998887655542222566899****** PP
+
+        finB 155 lmlt.eyvdrikql 167
+                 +++  e+ d i q 
+  OKH46085.1 115 VLVDeEWADLISQY 128
+                 98861567777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         5000  (1597938 residues searched)
+Passed MSV filter:                       102  (0.0204); expected 100.0 (0.02)
+Passed bias filter:                       93  (0.0186); expected 100.0 (0.02)
+Passed Vit filter:                        14  (0.0028); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.0004); expected 0.1 (1e-05)
+Initial search space (Z):               5000  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 10934.46
+//
+[ok]

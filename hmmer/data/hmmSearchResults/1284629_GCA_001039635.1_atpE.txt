@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1284629_GCA_001039635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.1e-62  206.4   0.3    6.8e-62  206.2   0.3    1.0  1  CCQ65448.1  ATP synthase epsilon chain [Crocosphaera watsonii
+  ------ inclusion threshold ------
+        2.4    6.9  17.9       0.13   11.0   3.2    2.4  2  CCQ69938.1  Predicted membrane fusion protein (MFP) component
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ65448.1  ATP synthase epsilon chain [Crocosphaera watsonii WH 0402]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  206.2   0.3   2.1e-65   6.8e-62       1     137 []       1     136 []       1     136 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 206.2 bits;  conditional E-value: 2.1e-65
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m ltvrvi+pdktvwd+  ee+ilpst+gqlgil ghaplltaldtgv+rvr++k  dw++ia++ggfaeve+de+ +lvn+ae gd i+ e a+a+++
+  CCQ65448.1   1 MPLTVRVITPDKTVWDGDVEEIILPSTSGQLGILGGHAPLLTALDTGVIRVRPDK--DWKSIAVMGGFAEVEQDEIKVLVNSAEAGDDIDKETAKADYS 97 
+                 89***************************************************87..8***************************************** PP
+
+        atpE 100 eaqtklnqv.kaedrqaqiqatqafkrararfqaagglv 137
+                 +aq++l++  k+++  +q++at afkrarar+qaagglv
+  CCQ65448.1  98 AAQSRLEEAnKTGEASEQMKATSAFKRARARLQAAGGLV 136
+                 ******9872568999*********************97 PP
+
+>> CCQ69938.1  Predicted membrane fusion protein (MFP) component of efflux pump, membrane anchor protein YbhG [Crocospha
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.9   6.3     0.026        83      87     131 ..      28      73 ..      18      80 .. 0.80
+   2 ?   11.0   3.2     4e-05      0.13      73     132 ..     100     159 ..      93     164 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 1.9 bits;  conditional E-value: 0.026
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfq 131
+                 ++ +l++a+a+ ++ +++l++++a++r ++i qa +++++ +a++ 
+  CCQ69938.1  28 ESAQLQQAQATIAQREARLAELRAGNRVEEIaQARASVQQIQAQIT 73 
+                 6778999********************9988567777787777764 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 4e-05
+        atpE  73 edevtilvngaergdkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqa 132
+                 +d +  l+n a+  ++i l++ +a+f+eaq +l++++a+ r++ i qa + +  a+a++q 
+  CCQ69938.1 100 RDRLDELLNDAQIKQAI-LQQFKASFQEAQEQLSKLEAGPRKEVIaQAVAELAEAKAQYQI 159
+                 56666788999888877.8999*******************998868899999****9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         6471  (1463547 residues searched)
+Passed MSV filter:                       174  (0.0268892); expected 129.4 (0.02)
+Passed bias filter:                      148  (0.0228713); expected 129.4 (0.02)
+Passed Vit filter:                        12  (0.00185443); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000309071); expected 0.1 (1e-05)
+Initial search space (Z):               6471  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6683.53
+//
+[ok]

@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      4e-71  236.9   1.4    4.7e-71  236.7   1.4    1.0  1  ABB26960.1  putative iron ABC transporter, substrate binding 
+     0.0039   13.3   0.0     0.0056   12.8   0.0    1.2  1  ABB26042.1  ABC transporter, likely sugar solute binding prot
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB26960.1  putative iron ABC transporter, substrate binding protein [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  236.7   1.4   4.1e-74   4.7e-71      29     351 .]      14     332 .]       3     332 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 236.7 bits;  conditional E-value: 4.1e-74
+        futA  29 nevsaqtkqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlwradqqgifapvnsriltqripanlrhpk 127
+                 n +   +k++ +ys rhyntdr+++  f+ +tgik+ l+e     lier+k eg+ns ad++l vd+ r+  a ++g++ap++s+ + + +pa+ r p 
+  ABB26960.1  14 NTLPGFAKEVRVYSGRHYNTDRQVFKTFSENTGIKVRLIEATGITLIERLKREGNNSNADVILLVDSARINNAAKEGLLAPIQSEQIKKNVPARYRDPS 112
+                 5556678999***************************************************************************************** PP
+
+        futA 128 ghwfgfskrlrvimynkdrvnpreidsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcrglvanfarspqgndkaqieavaagiadl 226
+                   wfg+++r+r i+ n   v+p  i +yadl++p+ kgk+  r   n+y qs+ a  i ++gea+a +w++ +v n+ ++  g d + i av  g + +
+  ABB26960.1 113 NRWFGLTRRVRAIIVNPKLVDPNSIKTYADLAKPNLKGKLCLRKRKNVYNQSLVADQIVLKGEASATNWVKSMVRNVNQPFFGGDTSLIRAVGQGKCAV 211
+                 *************************************************************************************************** PP
+
+        futA 227 alantyylagy.aeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqnffakgnqeypvvrgvaldpvlaklgrg 324
+                  + n yyla   a       + + + + +i+p+     ahvnis  g+ k+a n++ ai ++ yl+s +    +a    eyp+ +g      l ++gr 
+  ABB26960.1 212 GVVNHYYLARMqAGASGQNDQQLTQSIKLIMPN----PAHVNISAAGMAKSAKNKKEAIALITYLTSPKGSASIAGPTYEYPL-NGFGTASQLKNFGRF 305
+                 *********862556667788999999****98....58*******************************************6.799999********* PP
+
+        futA 325 kedtvsvanygpnlakavqvmnragwk 351
+                 + d vs+++ g    +a+q+m  +gw+
+  ABB26960.1 306 NPDNVSISQLGETQKRAIQIMANSGWR 332
+                 **************************6 PP
+
+>> ABB26042.1  ABC transporter, likely sugar solute binding protein [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   4.9e-06    0.0056     186     302 ..     218     338 ..     211     368 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 4.9e-06
+        futA 186 diqgeaaaekwcrglvanfarspqgndkaqieavaagia.dlalantyylagyaeekdpa...kraiydqvgvifpdqagrgahvnisgggliktapnr 280
+                 d    a a  w + l++  a +    + ++ e++ a  a d a+    +   +ae + p    +  +   + v  pdq+   a v   g  l+k +p +
+  ABB26042.1 218 DATSAARAAAWMQSLITTGASPKAVINYSESESLQAFKAgDAAFMRN-WPYAWAELQKPEsnvRGNVGIALMVAEPDQSP-AATVGSWGLSLLKQSPHQ 314
+                 55566777888888888887766665556555555444313333322.23345555555400033444444566688876.567899999********* PP
+
+        futA 281 esaikfleylssneaqn..ffakg 302
+                 e+a+  + yl+s+ aq   f+ +g
+  ABB26042.1 315 EAAVEAIRYLTSEAAQRerFLNQG 338
+                 *************99962244444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                        37  (0.016059); expected 46.1 (0.02)
+Passed bias filter:                       32  (0.0138889); expected 46.1 (0.02)
+Passed Vit filter:                         2  (0.000868056); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000868056); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7790.27
+//
+[ok]

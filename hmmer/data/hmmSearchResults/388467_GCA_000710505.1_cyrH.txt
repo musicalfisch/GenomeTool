@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/388467_GCA_000710505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-17   60.8   0.0    9.9e-17   58.7   0.0    1.8  2  KEI65742.1  GuaD [Planktothrix agardhii NIVA-CYA 126/8]
+     0.0016   15.2   0.0       0.28    7.7   0.0    2.2  2  KEI66314.1  dihydroorotase [Planktothrix agardhii NIVA-CYA 12
+
+
+Domain annotation for each sequence (and alignments):
+>> KEI65742.1  GuaD [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0     0.051   1.1e+02      47      60 ..      67      80 ..      57     101 .. 0.82
+   2 !   58.7   0.0   4.7e-20   9.9e-17     251     390 ..     259     395 ..     252     401 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.051
+        cyrH 47 klllpgfvnahths 60
+                 l+lpgf+++h h 
+  KEI65742.1 67 LLILPGFIDTHIHF 80
+                589********995 PP
+
+  == domain 2  score: 58.7 bits;  conditional E-value: 4.7e-20
+        cyrH 251 rigylddrtslahcvhltdkdiailaetkstvvhnplsnlrlgsgiapil..kyrqagvnvtfgcdgassndsqdlleaikigsilhnvtdldyqhwit 347
+                 + g +++r+ +ah +hlt ++ + l+e+ks++   p snl lgsg+  +   k +   +nv +g d  +   s  ll++ +     ++v++l+ q  ++
+  KEI65742.1 259 QAGLVGERSIFAHSIHLTPDEFKRLSEAKSAIAFCPTSNLFLGSGLFKLHqaKSKTHPINVGLGSDIGA-GTSFSLLQTAN---EAYKVAQLQNQ-TLS 352
+                 568899****************************************987522667788*******9543.34556665543...45667777765.489 PP
+
+        cyrH 348 prqavemaslggakglnladklgsltvgkkadlvlydltnlsl 390
+                 p qa+ +a+lggak l+l+dk+g +++gk+ad+++ d  +  l
+  KEI65742.1 353 PFQALFLATLGGAKALKLEDKIGNFDIGKEADFIVLDYNSTPL 395
+                 **********************************999877655 PP
+
+>> KEI66314.1  dihydroorotase [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.7   0.0   0.00014      0.28      13      60 ..      18      71 ..       6      75 .. 0.77
+   2 !    5.0   0.0    0.0009       1.9     350     389 ..     352     390 ..     342     399 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 0.00014
+        cyrH 13 eddyatvdvqvvdgkiaaiapele..vvg....taidgenklllpgfvnahths 60
+                + d+   dv +vdgki +iape++   +g    + id+e   llpg ++ + h 
+  KEI66314.1 18 NGDFLLGDVAIVDGKILEIAPEIDhhAIGeddwEIIDAEGLTLLPGVIDPQVHF 71
+                5678889***************98435773333479***********9998886 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.0009
+        cyrH 350 qavemaslggakglnladklgsltvgkkadlvlydltnls 389
+                 q  +  s   ak  ++ +k g ++vg  adlvl dl n  
+  KEI66314.1 352 QVSNWMSTAVAKAYKIPNK-GKIEVGYDADLVLVDLNNYR 390
+                 5555566677777777665.9***************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4191  (1395461 residues searched)
+Passed MSV filter:                        85  (0.0202816); expected 83.8 (0.02)
+Passed bias filter:                       76  (0.0181341); expected 83.8 (0.02)
+Passed Vit filter:                         4  (0.000954426); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000477213); expected 0.0 (1e-05)
+Initial search space (Z):               4191  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 12977.79
+//
+[ok]

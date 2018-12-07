@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/acsA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1228987_GCA_000829235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       acsA  [M=656]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.1e-06   21.6   0.1    0.00063   14.7   0.1    2.9  2  BAP17565.1  long-chain-fatty-acid CoA ligase [cyanobacterium 
+     0.0016   13.4   0.0     0.0017   13.3   0.0    1.0  1  BAP18293.1  hypothetical protein ETSB_1565 [cyanobacterium en
+
+
+Domain annotation for each sequence (and alignments):
+>> BAP17565.1  long-chain-fatty-acid CoA ligase [cyanobacterium endosymbiont of Epithemia turgida isolate EtSB Lake Yuno
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.1   7.4e-07   0.00063     112     282 ..      38     197 ..      17     208 .. 0.71
+   2 !    1.2   0.0    0.0093         8     441     572 ..     409     533 ..     385     555 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 7.4e-07
+        acsA 112 srtltyaqlhrevcqlanvlkelgvkkgdrvgiylpmipeaaiamlacarigaphsvvfggfsaealrdrlndaeaklvitadggfrkdaivalkeqvd 210
+                   ++ty +l++++ ++a  l++lg+k + +v +     p   ia       ga+  v       + l   l d+++ ++i  +    ++++  l+++++
+  BAP17565.1  38 NVSITYGELYQNIKDFAAGLQSLGIKSSSQVALVADNSPRWFIADQGSMMAGAANVVRSAQADKDELLYILSDSNSSILIVEN----QQTLAKLRSDLN 132
+                 5689*****************************************99999999998887777777788888888888877654....455555665554 PP
+
+        acsA 211 kaladnavpsvekvlvv...krtkqeiemeagrdhwwhdlqkevs.adcpaepmdsedllfilytsgstgkpkgvv 282
+                 +         +e ++++   +r++++i     +   +++l +  s ++ +      e l  ++ytsg+tg+pkgv+
+  BAP17565.1 133 RL-------PIELIILLsdeQRSADDII----KILNFQELMELGShSTLKPVHQTKETLATLIYTSGTTGRPKGVM 197
+                 43.......3343333301144444443....3333455544433033444455678888999***********97 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.0093
+        acsA 441 pgsatlpfpgiladvvdle.gnsvedneggylvvkhpwpgmlrtvygdpdrfrrtywehiapkdgqylyfagdgarkdedgyfwvmgrvddvlnvs.gh 537
+                  gs+ + +p     +vd + g++v++ e g ++++     +++  y++p+   ++        + +  + +gd     + g + + gr  d + +s g 
+  BAP17565.1 409 RGSSGQCIPETEVCIVDPDsGQPVPQGERGLVLIRG--TQVMQGYYKNPEATAKAI-------NDDNWFNSGDLGWLTDMGDLVITGRDKDTIVLSnGE 498
+                 578888888888888987658999999999999986..578999999999876653.......334456678888888889999999988877765488 PP
+
+        acsA 538 rlgtmeiesalvshpavaeaavvgkpdelkgeevv 572
+                  +    ie a    p + +  +vg+ ++  g  +v
+  BAP17565.1 499 NIEPQAIEEACTRSPYIDQIILVGQDQKALGALIV 533
+                 99999999999999999999999998887777665 PP
+
+>> BAP18293.1  hypothetical protein ETSB_1565 [cyanobacterium endosymbiont of Epithemia turgida isolate EtSB Lake Yunoko
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0     2e-06    0.0017     567     592 ..       5      30 .]       3      30 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 2e-06
+        acsA 567 kgeevvafvtlegeaeaseelakelk 592
+                 kge++++f+t+e++++as++lak++k
+  BAP18293.1   5 KGENIYTFITFEDNRSASDQLAKKFK 30 
+                 8*********************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (656 nodes)
+Target sequences:                         1720  (507178 residues searched)
+Passed MSV filter:                        47  (0.0273256); expected 34.4 (0.02)
+Passed bias filter:                       45  (0.0261628); expected 34.4 (0.02)
+Passed Vit filter:                         6  (0.00348837); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00116279); expected 0.0 (1e-05)
+Initial search space (Z):               1720  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.05
+# Mc/sec: 6654.18
+//
+[ok]

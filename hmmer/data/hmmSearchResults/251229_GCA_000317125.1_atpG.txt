@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251229_GCA_000317125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      4e-52  174.2  15.1    4.6e-52  174.0  15.1    1.0  1  AFY89698.1  ATP synthase F0 subcomplex B' subunit [Chroococci
+     0.0015   16.8  10.5      0.002   16.4  10.5    1.2  1  AFY89697.1  ATP synthase F0, B subunit [Chroococcidiopsis the
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY89698.1  ATP synthase F0 subcomplex B' subunit [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  174.0  15.1   1.6e-55   4.6e-52       1     139 [.       1     139 [.       1     141 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 174.0 bits;  conditional E-value: 1.6e-55
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf+lla +ln +fykpl+k ld+r +y+r  +  ake+lak+e l +eye q++ ar+qsq+++a+aqa+aq++a+e++a aqkea
+  AFY89698.1   1 MFDFDATLPLMALQFLLLASVLNVIFYKPLTKALDDRDNYVRTNNVEAKERLAKAERLAKEYEQQIADARRQSQKVVADAQADAQRIAAEKIAEAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgp 139
+                  a++e  a ei qq++ a+ sl+ qv +lsrqi+ekllg+
+  AFY89698.1 100 QAQREQAAQEIEQQRQAAMASLQQQVDALSRQIVEKLLGT 139
+                 **************************************96 PP
+
+>> AFY89697.1  ATP synthase F0, B subunit [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4  10.5   6.9e-07     0.002      10     138 ..      35     166 ..      28     171 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 6.9e-07
+        atpG  10 vmalqfillavilnavfy...kplskvlderaeyirqteggakeqlak.tealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiar.k 103
+                 ++  ++i la+++  + y   k + k l +r e i  te  a e+ ak + a +q+ + +l+ a+ +++ i   a ++aq+ a e++ a     i r k
+  AFY89697.1  35 ILETNLINLAILVGVLVYfgsKVVGKTLSDRRERIE-TEIVAAENRAKeAAAALQKQQQRLTEAQAEAERIRQSATTNAQQ-AKEQILAQVGIDIQRlK 131
+                 5566778888888776665668899*********96.7777778777724567899999*******999999999999997.66777666666666659 PP
+
+        atpG 104 eavaaeiaqqkeeafrslegqvaslsrqilekllg 138
+                 e+ + ++   +e a+  l   v +++ q +e  l 
+  AFY89697.1 132 ETATQDLNTARERAIAQLRASVVAMALQKVESQLE 166
+                 99999********************9999987765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5752  (1839647 residues searched)
+Passed MSV filter:                       257  (0.0446801); expected 115.0 (0.02)
+Passed bias filter:                      127  (0.0220793); expected 115.0 (0.02)
+Passed Vit filter:                         8  (0.00139082); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000347705); expected 0.1 (1e-05)
+Initial search space (Z):               5752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8768.98
+//
+[ok]

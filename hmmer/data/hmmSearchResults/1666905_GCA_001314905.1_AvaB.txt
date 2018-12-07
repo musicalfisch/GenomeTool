@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1666905_GCA_001314905.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.024   11.2   0.0        0.2    8.2   0.0    2.0  2  KPQ31855.1  Histidine kinase-, DNA gyrase B-, and HSP90-like 
+
+
+Domain annotation for each sequence (and alignments):
+>> KPQ31855.1  Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase [Phormidium sp. OSCR]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.0      0.01        43     165     244 ..     400     485 ..     392     504 .. 0.63
+   2 ?    8.2   0.0   4.7e-05       0.2       5      97 ..     645     736 ..     641     743 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.01
+        AvaB 165 ctvmhvdverlkqlddk.yafaia....agtlglsvpkshr.ithpqqvidfdfskakrpyilksipydsvrrldltqlplrdaee 244
+                 +t +  d  rl+q+  + +  a++    +gt+gl v + h+ +++        +  a +p+i++  p ds  r+        d  e
+  KPQ31855.1 400 ATEVWADQTRLQQILVHlFLNAVSttpdSGTIGLRVERWHHwLAFLVWDTGAGIEVAAQPWIFQGYPMDSSSRVAQMSSFTADVRE 485
+                 5666666777776543313334432222699999999877614444444445678899***********99887544443444333 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 4.7e-05
+        AvaB   5 apvkllsepavsagsigvrsrlktlatltllllalpfnltlvsiallrslvlrparsttvnpqtvl..is..ggkmtkalqlarsfhkaghrvilve 97 
+                  pv ll+ep v a +i  r     + +ltl +    f+       l r l  +   s    p t+l  +s   g++  +l l r fh+  +rvi v+
+  KPQ31855.1 645 LPVVLLAEPDVGAEAIAQRGLETVVDSLTLPVDRHQFQQV-----LTRLLAHQGQASRVQRPLTLLwlVSphRGEVNPSLSLERVFHHYHYRVIEVD 736
+                 69***************99876667777766666666555.....5555555555555556666542244226999******************886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         4158  (1357320 residues searched)
+Passed MSV filter:                       116  (0.027898); expected 83.2 (0.02)
+Passed bias filter:                      102  (0.024531); expected 83.2 (0.02)
+Passed Vit filter:                         7  (0.0016835); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.0002405); expected 0.0 (1e-05)
+Initial search space (Z):               4158  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 12514.49
+//
+[ok]

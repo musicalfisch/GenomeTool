@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-05   23.0   1.4    2.6e-05   21.7   1.4    1.6  1  CCQ49541.1  Omega-6 fatty acid desaturase, chloroplast precur
+    9.8e-05   19.8   0.4    9.8e-05   19.8   0.4    2.1  2  CCQ49578.1  omega-3 fatty acid desaturase [Crocosphaera watso
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ49541.1  Omega-6 fatty acid desaturase, chloroplast precursor [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.7   1.4     1e-08   2.6e-05      39     134 ..      44     135 ..      31     159 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 21.7 bits;  conditional E-value: 1e-08
+        desD  39 ktitiltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 k i  ++ v   w  + +    w+l  i     g+ ++g+ f ighd+ h  +s+++ vn ++g +    +    + wr+ hny hh +tn l  d
+  CCQ49541.1  44 KVILTVSMVALGWAALAV--SPWYLLPILWAFTGTAMTGL-FVIGHDCGHRSFSNNNKVNDFVGHAIFLPLFYPFHGWRILHNY-HHKHTNKLDVD 135
+                 555445555555555544..55999888888899999997.99***********************9999999999*******9.88899988766 PP
+
+>> CCQ49578.1  omega-3 fatty acid desaturase [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   0.4     4e-08   9.8e-05      80     132 ..      10      61 ..       2     104 .. 0.82
+   2 ?   -0.7   3.0     0.067   1.7e+02     279     325 ..     195     239 ..     119     258 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 4e-08
+        desD  80 fsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlg 132
+                 f +ghd+ hg +s  kw+n+l+g      i +  + wr+ h   hh  t  l 
+  CCQ49578.1  10 FVVGHDCGHGSFSRYKWLNNLMGHLSHTPILVPFHGWRISHRT-HHKNTGNLD 61 
+                 89*********************999999999999******86.555555554 PP
+
+  == domain 2  score: -0.7 bits;  conditional E-value: 0.067
+        desD 279 tvdfapkniflnwylgglnyqvvhhlfpqichihypkiapilaevcq 325
+                 tvd      f+n     +  +v hh+f  + h h    +  +  v  
+  CCQ49578.1 195 TVDH--DYGFINNIHHNIGTHVAHHIFLTMPHYHLKTATEAIKPVLG 239
+                 4554..34578888888889999999999999998765554444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       197  (0.0396777); expected 99.3 (0.02)
+Passed bias filter:                      115  (0.0231621); expected 99.3 (0.02)
+Passed Vit filter:                        12  (0.00241692); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040282); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 10816.51
+//
+[ok]

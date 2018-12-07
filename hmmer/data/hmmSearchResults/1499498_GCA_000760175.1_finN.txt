@@ -1,0 +1,94 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0001   19.3   3.2      0.014   12.4   0.4    2.3  2  KGG13214.1  NAD(P)H-quinone oxidoreductase chain I [Prochloro
+  ------ inclusion threshold ------
+      0.059   10.4   9.9      0.022   11.8   2.2    2.4  2  KGG12034.1  Light dependent period modulator LdpA [Prochloroc
+      0.083    9.9   9.2      0.011   12.7   1.8    2.1  2  KGG12484.1  Ferredoxin [Prochlorococcus sp. MIT 0601]
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG13214.1  NAD(P)H-quinone oxidoreductase chain I [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.4   2.2e-05     0.014       7      23 ..      62      78 ..      57      90 .. 0.83
+   2 !    7.5   0.2   0.00075      0.48       8      27 ..     103     122 ..      95     135 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.2e-05
+        finN  7 sqciscdlclsvcptna 23
+                 +ci+c++c+ vcp+n 
+  KGG13214.1 62 DKCIACEVCVRVCPINL 78
+                58************984 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00075
+        finN   8 qciscdlclsvcptnavkvi 27 
+                  ci c  c+  cptn++ + 
+  KGG13214.1 103 VCIFCGNCVEYCPTNCLSMT 122
+                 6**************98765 PP
+
+>> KGG12034.1  Light dependent period modulator LdpA [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   2.2   3.4e-05     0.022       5      24 ..      99     118 ..      96     124 .. 0.93
+   2 ?    2.6   1.0     0.024        15       8      22 ..     128     142 ..     122     165 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 3.4e-05
+        finN   5 itsqciscdlclsvcptnav 24 
+                 it +ci c+ c+  cptna+
+  KGG12034.1  99 ITNDCIRCNSCIPACPTNAI 118
+                 89*****************8 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.024
+        finN   8 qciscdlclsvcptn 22 
+                  ci c  c s cp +
+  KGG12034.1 128 LCIGCGNCESACPPS 142
+                 5***********954 PP
+
+>> KGG12484.1  Ferredoxin [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.9     0.033        21       9      26 ..      10      27 ..       1      37 [. 0.75
+   2 ?   12.7   1.8   1.7e-05     0.011       7      24 ..      44      61 ..      37      71 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.033
+        finN  9 ciscdlclsvcptnavkv 26
+                c     c+  cp++++k 
+  KGG12484.1 10 CEGEGTCVNACPVACIKQ 27
+                455567999999999985 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 1.7e-05
+        finN  7 sqciscdlclsvcptnav 24
+                s ci c +cl vcp++  
+  KGG12484.1 44 STCIDCGVCLEVCPVKDA 61
+                89************9754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        71  (0.0372117); expected 38.2 (0.02)
+Passed bias filter:                       64  (0.033543); expected 38.2 (0.02)
+Passed Vit filter:                         7  (0.00366876); expected 1.9 (0.001)
+Passed Fwd filter:                         3  (0.00157233); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 2916.59
+//
+[ok]

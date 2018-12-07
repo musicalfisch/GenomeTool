@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/755178_GCA_000317675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-39  132.5   9.1    3.4e-38  128.8   9.1    2.0  1  AFZ52956.1  carbon dioxide concentrating mechanism protein [C
+    7.8e-07   26.3   0.3    1.6e-06   25.3   0.3    1.5  1  AFZ52957.1  Carbonate dehydratase [Cyanobacterium aponinum PC
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ52956.1  carbon dioxide concentrating mechanism protein [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.8   9.1     2e-41   3.4e-38       1     210 [.       1     227 [.       1     228 [] 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 128.8 bits;  conditional E-value: 2e-41
+        ccmN   1 mslppvqpisrsefyvngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstttifnas 99 
+                 mslp +q  +    +v gdv id s ++a gvil a+p  +iii +g clgmgt++ta++g + i   ailg+g l+ g+  ig +a +gs+ t++n  
+  AFZ52956.1   1 MSLPILQASTNQTTHVRGDVMIDSSVMIAVGVILNATPGNKIIIHSGVCLGMGTVITAHDGDVEIKPNAILGAGCLIFGHCIIGSQASLGSSVTVYNVN 99 
+                 9************************************************************************************************** PP
+
+        ccmN 100 vaamslvpsgsligdtsrqitiev...satrsepe....r....p..plpepqpvvsqvspvpsveevvaetvaspwd.geemvaeaspaetreqast. 183
+                 v a  ++p+gs+ gd +r+i ++    s + +e +    +          + q +  +     s  e ++e      + ++++  e  + e  e+  t 
+  AFZ52956.1 100 VDAGDVIPAGSIRGDRTRKIELNSqenSNSVAENKvqenKwsnkSakSEENKQNITNNQEERESKAESISEKPEQIKQeNQDISHE--NLEQEEEIKTd 196
+                 ********************986511133333322111111100100111223333333334444444444433322202222333..33333333331 PP
+
+        ccmN 184 ....tnrpnqasvvgkvyinqllvtlfperh 210
+                        pn   vvgkvyin+ll tlfper 
+  AFZ52956.1 197 swqeDTPPNSEQVVGKVYINKLLFTLFPERN 227
+                 111134699********************95 PP
+
+>> AFZ52957.1  Carbonate dehydratase [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   0.3   9.1e-10   1.6e-06      16     116 ..      29     140 ..      15     220 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 9.1e-10
+        ccmN  16 vngdvtidesaivapgvilraapnsqiiigagaclgmgtiltay.qg..........viaigagailgtgvlvvgrgeigenacigstttifnasvaam 103
+                 + gdv +    +vapg  +ra   +   ig g+ +  g ++    qg           + iga + +    l+ g   +g+n+ ig  +t+fna v   
+  AFZ52957.1  29 LIGDVKVGANVLVAPGTSIRADEGTPFYIGDGSNIQDGVVVHGLeQGrvqgddgkeySVWIGADSCITHLALIHGPAYVGNNCFIGFRSTVFNARVGDG 127
+                 569********************************99999865324421113333334679************************************** PP
+
+        ccmN 104 slvpsgsligdts 116
+                  +v   +li d  
+  AFZ52957.1 128 CIVMMHALIQDVE 140
+                 *********9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3431  (1113123 residues searched)
+Passed MSV filter:                       101  (0.0294375); expected 68.6 (0.02)
+Passed bias filter:                       58  (0.0169047); expected 68.6 (0.02)
+Passed Vit filter:                         5  (0.0014573); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.00058292); expected 0.0 (1e-05)
+Initial search space (Z):               3431  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.04
+# Mc/sec: 6122.18
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1819295_GCA_001623485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.4e-49  165.2   0.0    3.7e-49  165.1   0.0    1.0  1  KZL50089.1  gramicidin dehydrogenase [Nodularia spumigena CEN
+    1.4e-05   22.3   0.0    0.00059   17.0   0.0    2.3  2  KZL47815.1  non-ribosomal peptide synthetase [Nodularia spumi
+
+
+Domain annotation for each sequence (and alignments):
+>> KZL50089.1  gramicidin dehydrogenase [Nodularia spumigena CENA596]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.1   0.0   1.8e-52   3.7e-49       6     238 ..       5     237 ..       1     250 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 165.1 bits;  conditional E-value: 1.8e-52
+        anaA   6 qttspwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvsl 104
+                 +t +pwl+   +   + kl lfcfp ag g+ +fr+w   +   i++ av++pgrenr+ e    +   li+ l qei p  + pf ffghs+g ++s+
+  KZL50089.1   5 KTKNPWLIFP-QPNPQAKLRLFCFPYAGGGASIFREWYKQLNREIEICAVQLPGRENRLIETPFNHLKSLINALSQEILPNLNQPFAFFGHSMGGLISF 102
+                 68899*9854.556678********************************************************************************** PP
+
+        anaA 105 evahqlgdrfgcfpqclvvsgrkpphipcdhrd.sqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggea 202
+                 e+a+ l ++    p  l +sg + phi   +    +  + ++i+elr   gtp a+l++ e+m +  p  rad+ + e y y     l c i algg  
+  KZL50089.1 103 ELARYLQQKHDLKPLHLFISGARAPHILETKPPiHNLPQPEFIQELRRFNGTPAAILENREFMKLFSPTLRADFAVLETYIYTESAPLSCGITALGGWE 201
+                 **************************976665415567889********************************************************** PP
+
+        anaA 203 degvsleelrewekytqrgfklrsfpgghmylteek 238
+                 d  v+le+l  w+++t   f +  +pg h++l   +
+  KZL50089.1 202 DTEVTLEKLVAWKQHTIDNFSIEMLPGNHFFLHSHR 237
+                 *******************************98765 PP
+
+>> KZL47815.1  non-ribosomal peptide synthetase [Nodularia spumigena CENA596]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.0   0.0   2.8e-07   0.00059      23     111 ..    1144    1230 ..    1134    1241 .. 0.81
+   2 !    2.6   0.0    0.0067        14     213     234 ..    1371    1392 ..    1283    1409 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 17.0 bits;  conditional E-value: 2.8e-07
+        anaA   23 klslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplit.rwg.dlieplvqeiypysqspfvffghslgsvvslevahqlg 111 
+                     lfc+p a    ++f+d    +  +  ++++  pgr+   k p      g +li+ l q+     qsp+++ g+s g+ v++e+a ql 
+  KZL47815.1 1144 ANPLFCVPGANGHGFYFQDLAINLE-NHPVYSLETPGRNGIGKVPKSVeLHGsQLIDLLRQQ-Q--PQSPYILAGYSSGCAVAFEMACQLE 1230
+                  5579*******99******988775.5689*********99898865414551566666554.4..59*********************96 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.0067
+        anaA  213 ewekytqrgfklrsfpgghmyl 234 
+                   w+ ytq  +k+ s+pg h  +
+  KZL47815.1 1371 GWQAYTQNPVKVISVPGNHGRM 1392
+                  4899*************99654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4228  (1349050 residues searched)
+Passed MSV filter:                       125  (0.0295648); expected 84.6 (0.02)
+Passed bias filter:                      119  (0.0281457); expected 84.6 (0.02)
+Passed Vit filter:                        10  (0.00236518); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000473037); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8532.74
+//
+[ok]

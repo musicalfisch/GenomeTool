@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1497020_GCA_000775285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     6e-102  337.0   0.1   6.8e-102  336.9   0.1    1.0  1  KGF72752.1  SAM-dependent methyltransferase [Neosynechococcus
+  ------ inclusion threshold ------
+      0.025   11.4   0.0       0.05   10.4   0.0    1.4  1  KGF71632.1  hypothetical protein DO97_17190 [Neosynechococcus
+
+
+Domain annotation for each sequence (and alignments):
+>> KGF72752.1  SAM-dependent methyltransferase [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  336.9   0.1  4.9e-105  6.8e-102       1     219 [.       1     219 [.       1     220 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 336.9 bits;  conditional E-value: 4.9e-105
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+ qt+ l   +y y  s+ lre+ +l qlr+eta +p+a mqiapeqgqfma+lvq + a+k+le+gvftgysalvvalalpp+gk+iacd s+eyt+
+  KGF72752.1   1 MSRQTITLGDTLYDYLLSVSLREPEVLRQLREETALHPMARMQIAPEQGQFMALLVQLLQARKTLEVGVFTGYSALVVALALPPDGKIIACDRSQEYTA 99 
+                 789************************************************************************************************ PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 ia+rywq+agvadkidlr+apaletl++l+++ge+++fdf fidadk n   yyer+lql+r gg+iaidnv+w grv+  +s+d  t+ ir++n k+ 
+  KGF72752.1 100 IAQRYWQRAGVADKIDLRLAPALETLEQLLTAGEAETFDFAFIDADKENQSLYYERSLQLIRPGGLIAIDNVLWGGRVSDPQSQDHHTQAIRAFNQKLA 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                  d+rv +s++pigdgltla+k
+  KGF72752.1 199 MDQRVALSLVPIGDGLTLALK 219
+                 *******************98 PP
+
+>> KGF71632.1  hypothetical protein DO97_17190 [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   3.6e-05      0.05      72      93 ..     163     184 ..     156     188 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 3.6e-05
+        AvaC  72 gysalvvalalppegkliacdl 93 
+                  ys  v+a+a+ p+g+++ac l
+  KGF71632.1 163 VYSNRVIAVAVSPQGQILACGL 184
+                 69******************88 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2731  (698048 residues searched)
+Passed MSV filter:                       100  (0.0366166); expected 54.6 (0.02)
+Passed bias filter:                       86  (0.0314903); expected 54.6 (0.02)
+Passed Vit filter:                        10  (0.00366166); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000732332); expected 0.0 (1e-05)
+Initial search space (Z):               2731  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7678.53
+//
+[ok]

@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1260963_GCA_002142495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.014   13.3   0.1      0.078   10.9   0.0    1.9  2  BAS66421.1  Probable GTPase related to EngC (plasmid) [Leptol
+      0.063   11.2   0.1       0.11   10.4   0.1    1.4  1  BAS65440.1  ATPase involved in chromosome partitioning [Lepto
+
+
+Domain annotation for each sequence (and alignments):
+>> BAS66421.1  Probable GTPase related to EngC (plasmid) [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0     0.067   2.1e+02      44      80 ..      99     135 ..      78     166 .. 0.80
+   2 ?   10.9   0.0   2.5e-05     0.078       6      39 ..     184     217 ..     180     232 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.067
+        cysC  44 gdivrtnltkglgfskedrdenirrigfvsnlltrhg 80 
+                  +++ tn+   + +s  d d n+rri     l+   g
+  BAS66421.1  99 EQVIATNVDTVFLVSGLDGDFNLRRIERYLVLVWESG 135
+                 4678899988889999999999999986666655555 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 2.5e-05
+        cysC   6 qrgvtvwltglsgagkstitealqakliaegysi 39 
+                 q g t+ l g sg gkstit+ l+   +    s+
+  BAS66421.1 184 QLGKTIALLGSSGVGKSTITNQLKGESVQVVQSV 217
+                 7799******************998877666665 PP
+
+>> BAS65440.1  ATPase involved in chromosome partitioning [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.1   3.6e-05      0.11      14      60 ..     111     157 ..     101     185 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 3.6e-05
+        cysC  14 tglsgagkstitealqakliaegysievldgdivrtnltkglgfske 60 
+                 +g  g gkst +  l   l  +g  + +ld di   n+ + lg+ + 
+  BAS65440.1 111 SGKGGVGKSTTSVNLAIALSLQGAKVGLLDADIYGPNIPQMLGLGHS 157
+                 68899********************************9987766543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6348  (1955829 residues searched)
+Passed MSV filter:                       249  (0.039225); expected 127.0 (0.02)
+Passed bias filter:                      236  (0.0371771); expected 127.0 (0.02)
+Passed Vit filter:                        35  (0.00551355); expected 6.3 (0.001)
+Passed Fwd filter:                         2  (0.00031506); expected 0.1 (1e-05)
+Initial search space (Z):               6348  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 7197.45
+//
+[ok]

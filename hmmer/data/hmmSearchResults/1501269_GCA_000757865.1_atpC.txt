@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501269_GCA_000757865.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.1e-145  480.7   5.2   2.4e-145  480.6   5.2    1.0  1  AIQ97992.1  ATP synthase gamma chain [Prochlorococcus sp. MIT
+     0.0087   12.2   0.1      0.012   11.7   0.1    1.1  1  AIQ97638.1  Rhodanese domain protein UPF0176 [Prochlorococcus
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ97992.1  ATP synthase gamma chain [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  480.6   5.2  2.1e-148  2.4e-145       1     313 [.       1     316 []       1     316 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 480.6 bits;  conditional E-value: 2.1e-148
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 manlk irdri svknt+kiteamrlvaaa+vrraq+qv+ +rpfadrla+vl ++q+r++fe +d pll+krevk+++ll ++gdrglcggyn+n+i+
+  AIQ97992.1   1 MANLKDIRDRIVSVKNTRKITEAMRLVAAAKVRRAQDQVLRSRPFADRLARVLENIQSRMQFEAADSPLLNKREVKTITLLAVTGDRGLCGGYNANIIK 99 
+                 9************************************************************************************************** PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrre..qpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaq 196
+                 r+e+r  elk +g +  +vl+g+ka+ yf+ r+  ++i at++ leq+pt+++a++i++e+l+ flse+ dr+e+++tkfvslvs +p +qtllpld+q
+  AIQ97992.1 100 RTEKRYAELKGQGYSPDLVLIGKKAIGYFENRSslYNIRATFKELEQVPTSEDAASITSEVLAEFLSESTDRVEVIFTKFVSLVSCNPTIQTLLPLDPQ 198
+                 ******************************9985579************************************************************** PP
+
+        atpC 197 gleaaddeifrlttrggqfeverekvtsevr.alprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynk 294
+                 g+  ++deifrltt+ +q+ +e++   s+ + +lp+d++feq p q+l++llplyl+nqllralqesaasela+rmtam+nasdnakel k+lt+ ynk
+  AIQ97992.1 199 GIADSEDEIFRLTTKDSQLIIEKDAAPSNEEpKLPSDIVFEQSPDQLLNALLPLYLQNQLLRALQESAASELASRMTAMNNASDNAKELAKNLTVDYNK 297
+                 ************************998776527****************************************************************** PP
+
+        atpC 295 arqaaitqellevvggaea 313
+                 arqaaitqe+levvgga a
+  AIQ97992.1 298 ARQAAITQEILEVVGGAAA 316
+                 ****************976 PP
+
+>> AIQ97638.1  Rhodanese domain protein UPF0176 [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   1.1e-05     0.012      69     154 ..      38     123 ..      23     140 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.1e-05
+        atpC  69 llkkrevksvgllvisgdrglcggynsnvirraenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqi.ptaaeaski 154
+                 l  ++++k   ll   g  g   g ++ ++   e+ +k lk   +++k+    ++a + f+ r+++ + +  gl qi pt +  + i
+  AIQ97638.1  38 LATNQKIKGTILLASEGVNGTICGTENAIVEFIETLVKLLKVSEINVKYSWCEKQAFRRFKARKKK-EIVTIGLRQInPTKSVGKYI 123
+                 566788999999999999997666777899******************************999766.56678999995555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         2287  (554079 residues searched)
+Passed MSV filter:                        60  (0.0262352); expected 45.7 (0.02)
+Passed bias filter:                       54  (0.0236117); expected 45.7 (0.02)
+Passed Vit filter:                         5  (0.00218627); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000874508); expected 0.0 (1e-05)
+Initial search space (Z):               2287  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8726.74
+//
+[ok]

@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805101_GCA_001919235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00052   17.5   0.0      0.001   16.5   0.0    1.4  2  OLE70990.1  hypothetical protein AUI36_03110, partial [Cyanob
+     0.0029   15.0   0.1     0.0036   14.7   0.1    1.1  1  OLE68289.1  hypothetical protein AUI36_05565 [Cyanobacteria b
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE70990.1  hypothetical protein AUI36_03110, partial [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   0.0   4.7e-07     0.001      52     122 ..      27      97 ..      18     104 .. 0.89
+   2 ?   -3.4   0.0      0.62   1.3e+03      81      93 ..     131     143 ..     128     145 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 4.7e-07
+        AvaC  52 maflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapal 122
+                 m  l    + +++l++g   g  a+v  +a  p g+    d + e   +arr   qagv+ + ++ +  al
+  OLE70990.1  27 MVELAGIRSGERILDVGCGPGRLAIVAGIAARPAGETCGIDPAPEMVELARRKAAQAGVTVRFEVGVIEAL 97 
+                 5555555667899***********************************************99999887776 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.62
+        AvaC  81 alppegkliacdl 93 
+                  l p g+l+a+d+
+  OLE70990.1 131 VLKPAGRLVAVDF 143
+                 5789999999986 PP
+
+>> OLE68289.1  hypothetical protein AUI36_05565 [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.1   1.7e-06    0.0036     136     176 ..      24      67 ..       9      73 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.7e-06
+        AvaC 136 sfdfvfidadksnyd..ayyeralqlvrsggiiai.dnvfwsgr 176
+                  fd+++idad+s     +  ++a + v++ g++ + d +fws r
+  OLE68289.1  24 YFDWIYIDADHSYEGvkRDIDEAKRKVKRDGLLVLnDYIFWSHR 67 
+                 69*********975411556788888888777665388****98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         4209  (1128809 residues searched)
+Passed MSV filter:                       114  (0.0270848); expected 84.2 (0.02)
+Passed bias filter:                       96  (0.0228083); expected 84.2 (0.02)
+Passed Vit filter:                        11  (0.00261345); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000475172); expected 0.0 (1e-05)
+Initial search space (Z):               4209  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8277.93
+//
+[ok]

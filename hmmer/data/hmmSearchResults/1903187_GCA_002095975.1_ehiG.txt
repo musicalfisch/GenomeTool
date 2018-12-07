@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ehiG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1903187_GCA_002095975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ehiG  [M=277]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-05   22.0   6.3    2.8e-05   22.0   6.3    2.3  2  ARI82658.1  CysW [Microcystis aeruginosa PCC 7806SL]
+     0.0006   17.6  12.6     0.0034   15.2  12.6    2.1  1  ARI82659.1  CysT [Microcystis aeruginosa PCC 7806SL]
+
+
+Domain annotation for each sequence (and alignments):
+>> ARI82658.1  CysW [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.1      0.14   3.8e+02     192     212 ..      20      40 ..      12      45 .. 0.69
+   2 !   22.0   6.3     1e-08   2.8e-05      67     198 ..      57     202 ..      40     222 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.14
+        ehiG 192 ikpalitlaifvfigawsdfl 212
+                 i  al+ la+++fi a + f 
+  ARI82658.1  20 IIVALVYLALLLFIPAAAVFY 40 
+                 445777777777777776665 PP
+
+  == domain 2  score: 22.0 bits;  conditional E-value: 1e-08
+        ehiG  67 lpfgqylynsilvavltvalnllfcslaayplarlsfvgrntifiaivstimipfqivmiplyiltvqlgltnsylg.........lif..p..slasa 152
+                   f + +  ++++a++tv ln +f   aa+ +ar  f g+      ++s i +pf +  +   ++ v l  +n +lg         ++f  p   la+ 
+  ARI82658.1  57 SDFIEAVRLTVIIALITVPLNTIFGLCAAWVIARNQFRGKTL----LISLIDLPFAVSPVVAGLMIVLLYGRNGWLGsfleffdikILFalPgmVLATI 151
+                 556666777899***************************964....57888999999888888888888888888884322222222222222124444 PP
+
+        ehiG 153 fgi..fllrqaflgvpkei....eeaarldgsselglwwfimlpaikpalit 198
+                 f    f+  + ++ v  ei    eea r  g+ + +++w + lp i+  l+ 
+  ARI82658.1 152 FVTmpFV-AREVIPVLEEIgleqEEAGRTLGANDWQIFWRVTLPNIRWGLMY 202
+                 4332233.3344444444444449***********************98875 PP
+
+>> ARI82659.1  CysT [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2  12.6   1.3e-06    0.0034      59     216 ..      47     221 ..      19     274 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.3e-06
+        ehiG  59 nflrvwe..slpfgqylynsil.vavltvalnllfcslaayplarlsfvgrntifiaivstimipfqi...vmiplyiltvq.......lg..ltnsyl 142
+                  f++ w+  +lp++   y+ ++  ++++  ++ +f ++ a+ l r  f g++ +  ++     +p  +   v+  +y            +g  ++ + l
+  ARI82659.1  47 GFAEFWRvaTLPISLSAYQVTFfTSLIAGLIDGVFGTIIAWVLVRYRFPGKKIVDACVDLPFALPTSVaglVLATVYSDNGWlgqffapFGikISFTIL 145
+                 466677533588888888765515566666788999999999999999999877666666667776651114444443222200111112300334456 PP
+
+        ehiG 143 glifpslasa..fgifllrqaflgvpkeieeaarldgsselglwwfimlpaikpalitlaifvfigawsdflwpli 216
+                 g+    l  a  f +  l+  +  + ke+eeaa   g+s  +++w +++p+i pa++t   + f  a  ++   +i
+  ARI82659.1 146 GVFVAMLFIAlpFIVRTLQPVLQEMEKEVEEAALSLGASSWQIFWRVIFPTILPAILTGVALGFARAIGEYGSVVI 221
+                 7666665444115566677888999********************************9888888777777655444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (277 nodes)
+Target sequences:                         5364  (1399560 residues searched)
+Passed MSV filter:                       192  (0.0357942); expected 107.3 (0.02)
+Passed bias filter:                       73  (0.0136092); expected 107.3 (0.02)
+Passed Vit filter:                         8  (0.00149142); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000372856); expected 0.1 (1e-05)
+Initial search space (Z):               5364  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 7753.56
+//
+[ok]

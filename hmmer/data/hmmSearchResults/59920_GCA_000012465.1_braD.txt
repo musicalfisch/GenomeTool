@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-23   80.9  32.1    6.7e-16   55.6  15.6    3.1  4  AAZ58537.1  urea ABC transporter membrane protein [Prochloroc
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ58537.1  urea ABC transporter membrane protein [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.7   4.9   5.9e-12   1.3e-08       7      54 ..       6      53 ..       1      63 [. 0.90
+   2 !    2.6   0.7    0.0042       9.1      81     144 ..      54     119 ..      50     140 .. 0.74
+   3 !   55.6  15.6   3.1e-19   6.7e-16     114     253 ..     182     325 ..      73     330 .. 0.76
+   4 ?   -4.2   0.1      0.51   1.1e+03     270     284 ..     362     376 ..     352     377 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 31.7 bits;  conditional E-value: 5.9e-12
+        braD  7 qlivngiavgsiialaavgltltygilrlsnfahgdfltlgayltllv 54
+                + + ng+a+gs++ +aa+gl++++g++ + n+ahg+++ lgay t++ 
+  AAZ58537.1  6 ESLFNGVAIGSVLLVAALGLAIVFGLMGVINLAHGELMMLGAYSTYIT 53
+                5678***************************************99986 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.0042
+        braD  81 kllwsrmrsiratsttliiisiglalflrn..giillwggknknynlpvtqaldilglkvpqnqll 144
+                 +l++ ++  ++    +++i++ig+a+++    gi+l      + y  p+ + l  +g+ +  +q++
+  AAZ58537.1  54 QLIFKQVSFLKPFYDSYVIVAIGIAFLVSGtvGILLERTVIRRLYGSPLETLLATWGVSLILQQFV 119
+                 56777777888888899********99976225556566778899999999999999988766654 PP
+
+  == domain 3  score: 55.6 bits;  conditional E-value: 3.1e-19
+        braD 114 llwggknknynl..p..vtqaldilglkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmy 208
+                  l   + +n ++  p  +   +d++g+  p+++ll+++++v+++l++ ++l++t  g  +rav+++  ++   gi  + v + t+ i   l+ ++g   
+  AAZ58537.1 182 KLSRASARNVDVtaPswMRGGIDFVGITFPKTRLLIILITVISVLVVIFFLDKTAWGMRIRAVTQNRPMSDCLGISTETVDIITFGIGSGLAGVAGVAV 280
+                 44444444444411322345689**************************************************************************** PP
+
+        braD 209 glitavrpnmgwflilplfasvilggignpygaiaaafiigiaqe 253
+                  l+ +v pn+g   i+  f  v+lgg+gn  g+i a+f igi+ +
+  AAZ58537.1 281 SLLGSVGPNVGGNYIVGCFMVVVLGGVGNLLGTILASFSIGIMTD 325
+                 ******************************************876 PP
+
+  == domain 4  score: -4.2 bits;  conditional E-value: 0.51
+        braD 270 limilvllirpkglf 284
+                  ++++ l  rp g+f
+  AAZ58537.1 362 ALIVIFLQFRPTGMF 376
+                 233445667888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        89  (0.0411466); expected 43.3 (0.02)
+Passed bias filter:                       32  (0.0147943); expected 43.3 (0.02)
+Passed Vit filter:                         1  (0.000462321); expected 2.2 (0.001)
+Passed Fwd filter:                         1  (0.000462321); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5145.35
+//
+[ok]

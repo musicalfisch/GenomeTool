@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0013   16.4   0.1      0.002   15.8   0.1    1.2  1  OAB60225.1  mannose-1-phosphate guanyltransferase [Leptolyngb
+  ------ inclusion threshold ------
+      0.027   12.1   2.0      0.037   11.7   2.0    1.3  1  OAB61839.1  gamma carbonic anhydrase family protein [Leptolyn
+      0.057   11.0   8.6       0.13    9.9   0.9    2.1  2  OAB60330.1  serine acetyltransferase [Leptolyngbya valderiana
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB60225.1  mannose-1-phosphate guanyltransferase [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.1   1.1e-06     0.002      59     104 ..     279     324 ..     259     335 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 1.1e-06
+        ccmN  59 yqgviaigagailgtgvlvvgrgeigenacigstttifnasvaams 104
+                  qg + ig+ + +  gv +vg   ig  +cigs +t+ n+ +   s
+  OAB60225.1 279 IQGPVYIGSMTRIEDGVKIVGPSMIGPSCCIGSNATVDNSVIFEYS 324
+                 699999*******************************998776655 PP
+
+>> OAB61839.1  gamma carbonic anhydrase family protein [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   2.0     2e-05     0.037      16     112 ..      26     122 ..      13     146 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2e-05
+        ccmN  16 vngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqgv.iaigagailgtgvlvvgrgeigenacigstttifnas.vaamslvpsgsli 112
+                 v g v +++ a v  g  +r   n  i ig  + +  gt++ +  g  + +g g  +g   ++ g   +g+ + +g  +ti+n + +    ++ + +l+
+  OAB61839.1  26 VIGKVKLEKNASVWFGATIRG-DNELITIGEDSNVQDGTVMHTDMGFpLVLGKGVTVGHNAMLHG-CTVGDHSLVGIGATILNGAkIGKHCIIGAHALV 122
+                 668888888888888888885.5778888888888888888877775477888888888888777.468888888888888884314434444444333 PP
+
+>> OAB60330.1  serine acetyltransferase [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.9   7.2e-05      0.13      60      97 ..      75     114 ..      67     119 .. 0.82
+   2 ?    5.3   1.6    0.0017       3.1      64     104 ..     131     171 ..     118     189 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 7.2e-05
+        ccmN  60 qgviaigagailgtgvlv.vgrg.eigenacigstttifn 97 
+                    i i  ga lgtgv++  g g  ige a +g  t i++
+  OAB60330.1  75 LTGIEIHPGARLGTGVFIdHGMGvVIGETAIVGDYTLIYQ 114
+                 55689999********9945788358*********99986 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.0017
+        ccmN  64 aigagailgtgvlvvgrgeigenacigstttifnasvaams 104
+                 ++g   ++g+g  v+g+  +g+ a ig+ + +++   a+ +
+  OAB60330.1 131 TVGNRVVIGAGAKVLGNIHVGNYARIGAGSVVLQDVPASCT 171
+                 5788999********************99988865444333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       222  (0.0411111); expected 108.0 (0.02)
+Passed bias filter:                      152  (0.0281481); expected 108.0 (0.02)
+Passed Vit filter:                        17  (0.00314815); expected 5.4 (0.001)
+Passed Fwd filter:                         3  (0.000555556); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8386.14
+//
+[ok]

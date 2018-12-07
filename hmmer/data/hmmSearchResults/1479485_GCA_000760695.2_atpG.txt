@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1479485_GCA_000760695.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-57  191.4  14.0    2.9e-57  191.3  14.0    1.0  1  KIE08586.1  ATP synthase F0F1 subunit B' [Tolypothrix bouteil
+  ------ inclusion threshold ------
+      0.014   14.0  16.3      0.031   12.9  16.3    1.7  1  KIE08587.1  ATP synthase F0F1 subunit B [Tolypothrix bouteill
+
+
+Domain annotation for each sequence (and alignments):
+>> KIE08586.1  ATP synthase F0F1 subunit B' [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  191.3  14.0   7.5e-61   2.9e-57       1     139 [.       1     139 [.       1     141 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 191.3 bits;  conditional E-value: 7.5e-61
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlpvmalqf+lla +ln +fykpl+k ld+r +yir  +  ake+lak+e l ++ye ql+ ar+q+q ++aqaqaeaqk+++e+va aqkea
+  KIE08586.1   1 MFDFDATLPVMALQFLLLAALLNVIFYKPLTKALDDRENYIRTNNLEAKERLAKAERLTKDYEQQLADARRQAQAVVAQAQAEAQKITAEKVAEAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgp 139
+                  a++e  a ei qqk+eafrsle qv +lsrqil+kll p
+  KIE08586.1 100 QAQREKAAQEIDQQKQEAFRSLEQQVDALSRQILDKLLEP 139
+                 **************************************98 PP
+
+>> KIE08587.1  ATP synthase F0F1 subunit B [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9  16.3   7.9e-06     0.031      13     137 ..      33     160 ..      24     166 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 7.9e-06
+        atpG  13 lqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaa 108
+                  ++i la+++  +fy   + ls+ l+er   i  t   a  +   + + + e + +l+ a+ ++q i+  ++  a+      +a a k+    ke+ + 
+  KIE08587.1  33 TNIINLAILIGVLFYfgrNVLSNTLNERRSNIEATIQEAEARAKEAASALFEAQQRLTQAQAEAQRIVKASEESARASREAILAEAAKDVQRLKETASR 131
+                 567778888888888444468888888888888777776655555555566777777777777777765444444433333445666776677888888 PP
+
+        atpG 109 eiaqqkeeafrslegqvaslsrqilekll 137
+                 ++  ++e+a+  +  +v +l+ q +e  l
+  KIE08587.1 132 DLDTEREKAIAEVRARVVALALQRVESQL 160
+                 88888888888888888888888777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         7776  (2427444 residues searched)
+Passed MSV filter:                       316  (0.0406379); expected 155.5 (0.02)
+Passed bias filter:                      154  (0.0198045); expected 155.5 (0.02)
+Passed Vit filter:                        12  (0.00154321); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000257202); expected 0.1 (1e-05)
+Initial search space (Z):               7776  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 5785.41
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986679_GCA_002169615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcB  [M=161]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-45  152.0   0.0    1.1e-45  151.9   0.0    1.0  1  OUW98446.1  allophycocyanin subunit beta [Cyanobacteria bacte
+    1.5e-26   89.7   0.0    1.7e-26   89.5   0.0    1.0  1  OUW97867.1  allophycocyanin [Cyanobacteria bacterium TMED229]
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW98446.1  allophycocyanin subunit beta [Cyanobacteria bacterium TMED229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.9   0.0   1.7e-48   1.1e-45       1     138 [.       1     139 [.       1     166 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 151.9 bits;  conditional E-value: 1.7e-48
+        apcB   1 mqdaitsvinssdvqgkyldasaleklkayfatgelrvraasvisanaaaivkeavakslly.sdvtrpggnmyttrryaacirdldyylryatyamla 98 
+                 m+dait +i   d  g+yld +al+ +++y+   e+r+ a   i+ +aa+iv+ea  + +l   ++  pggn yttrr aac+rd+dy+lrya+ya++a
+  OUW98446.1   1 MRDAITGLIGRYDQLGRYLDRQALDSIETYLGEAEVRIAAVELINREAAEIVREASQRLFLDePELLLPGGNAYTTRRLAACLRDMDYFLRYASYALIA 99 
+                 89******************************************************99888625899******************************** PP
+
+        apcB  99 gdpsildervlnglketynslgvpigatvqaiqalkevta 138
+                 +d++il+ervlngl +ty+slgvp g tv++i  l ev  
+  OUW98446.1 100 ADSTILNERVLNGLDDTYKSLGVPTGPTVRSIVLLGEVVI 139
+                 ********************************99999875 PP
+
+>> OUW97867.1  allophycocyanin [Cyanobacteria bacterium TMED229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   89.5   0.0   2.5e-29   1.7e-26       9     160 ..       8     160 ..       2     161 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 89.5 bits;  conditional E-value: 2.5e-29
+        apcB   9 inssdvqgkyldasaleklkayfatgelrvraasvisanaaaivkeavaksll..ysdvtrpggnmyttrryaacirdldyylryatyamlagdpsild 105
+                 i  +d + +y  +  l  +  ++  g +rv    v++ n  +iv e+ ak l+    +   pggn y  r+ a c+rd  +ylr  ty +lag + +++
+  OUW97867.1   8 ILQADDDLRYPTSGELRTMVEFLDQGAMRVSIVRVLTENEKKIVDES-AKQLFgrKPEYVAPGGNAYGQRQRAQCLRDYSWYLRLVTYGVLAGSTEMIQ 105
+                 5667777788889999999*************************997.677762245899*************************************** PP
+
+        apcB 106 ervlnglketynslgvpigatvqaiqalkevtaslvgadagkemgvyfdyissgl 160
+                 +  l g +e ynslgvp+   v+a++++k+ + +l+  +  k  + yfd++  g+
+  OUW97867.1 106 DIGLVGAREMYNSLGVPMPGMVEAMKTMKDASLALLSEQQIKVASPYFDFLIQGM 160
+                 **************************************************99886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (161 nodes)
+Target sequences:                         1375  (402758 residues searched)
+Passed MSV filter:                        35  (0.0254545); expected 27.5 (0.02)
+Passed bias filter:                       29  (0.0210909); expected 27.5 (0.02)
+Passed Vit filter:                         4  (0.00290909); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00145455); expected 0.0 (1e-05)
+Initial search space (Z):               1375  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6484.40
+//
+[ok]

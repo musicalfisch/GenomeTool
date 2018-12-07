@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/373994_GCA_000316665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   8.6e-143  472.8   7.5   9.6e-143  472.6   7.5    1.0  1  AFY56118.1  F0F1-type ATP synthase, alpha subunit [Rivularia 
+  ------ inclusion threshold ------
+      0.071   11.2   0.0       0.11   10.5   0.0    1.2  1  AFY53361.1  hypothetical protein Riv7116_0774 [Rivularia sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY56118.1  F0F1-type ATP synthase, alpha subunit [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  472.6   7.5  2.9e-146  9.6e-143       1     251 []       5     255 .]       5     255 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 472.6 bits;  conditional E-value: 2.9e-146
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 m+++l afns++laelevg+h+ywq+gnlk+hgqvfltswfvia+lv+ s+ a+ n++rip+giqnlmeyalefirdlaknq+gekeyrpwvpf+gtlf
+  AFY56118.1   5 MVDFLSAFNSVTLAELEVGKHLYWQIGNLKLHGQVFLTSWFVIAVLVLVSVLASSNIKRIPSGIQNLMEYALEFIRDLAKNQIGEKEYRPWVPFVGTLF 103
+                 8899*********************************************************************************************** PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsgal+p+kli+lp+gel+apt dintt+alalltslayfyagfsk+glgyf +y++p   +lp  i+edftkplslsfrlfgniladelvv
+  AFY56118.1 104 LFIFVSNWSGALVPFKLIELPEGELTAPTSDINTTIALALLTSLAYFYAGFSKKGLGYFGNYVQPVSFMLPFKIIEDFTKPLSLSFRLFGNILADELVV 202
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgeeeheeh 251
+                 +vlvllvplfvplpvmalglftsaiqal+fatla+ayi eale h + e  eh
+  AFY56118.1 203 GVLVLLVPLFVPLPVMALGLFTSAIQALIFATLAAAYIGEALEDHHGAEEGEH 255
+                 *******************************************9866665555 PP
+
+>> AFY53361.1  hypothetical protein Riv7116_0774 [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   3.4e-05      0.11      44      92 ..      54     102 ..      47     109 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 3.4e-05
+        atpI  44 ailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwv 92 
+                 + lv+a l a r+vqri +  + l++   +f r+l k +l e e   w 
+  AFY53361.1  54 GALVLAELNANRQVQRIQEAGRPLVNILQNFSRQLEKFKLKEEEIDQWK 102
+                 579*****************************************99995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         6644  (2270700 residues searched)
+Passed MSV filter:                       244  (0.0367249); expected 132.9 (0.02)
+Passed bias filter:                      118  (0.0177604); expected 132.9 (0.02)
+Passed Vit filter:                         6  (0.00090307); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301023); expected 0.1 (1e-05)
+Initial search space (Z):               6644  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 11398.91
+//
+[ok]

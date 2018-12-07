@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.1e-07   26.4   0.2    7.1e-07   26.4   0.2    1.9  2  OKH18865.1  fatty acid desaturase [Limnothrix rosea IAM M-220
+  ------ inclusion threshold ------
+        2.8    4.7  15.5      0.017   12.0   2.9    2.2  2  OKH19271.1  fatty acid desaturase [Limnothrix rosea IAM M-220
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH18865.1  fatty acid desaturase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.4   0.2     4e-10   7.1e-07      68     133 ..      79     142 ..      39     146 .. 0.79
+   2 ?   -1.0   0.4     0.087   1.5e+02     244     281 ..     237     274 ..     193     344 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 26.4 bits;  conditional E-value: 4e-10
+        desD  68 clvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgy 133
+                  ++ g+ l+g  f ighd+ h  +s k+wvn l+g      +    + wr+ hn+ hh ytn +  
+  OKH18865.1  79 WFIAGTSLTGF-FVIGHDCGHRSFSRKNWVNDLVGHLAFLPLIYPFHPWRLLHNH-HHRYTNNMDE 142
+                 34567778875.89*********************7665555567889******7.999**98765 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.087
+        desD 244 chvfmlahvlepaefiqpsaanqiedew..aifqvrttvd 281
+                  h +m ++ l       p    + +dew  a+ q+  tv 
+  OKH18865.1 237 YHFWMSTFTLV--HHTVPEIPFKYNDEWneAMAQLAGTVH 274
+                 34333333332..223344444444555333445544444 PP
+
+>> OKH19271.1  fatty acid desaturase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   2.9   9.6e-06     0.017      72     129 ..      76     132 ..      32     140 .. 0.71
+   2 ?   -0.2   2.7     0.047        84     294     315 ..     282     303 ..     258     316 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 9.6e-06
+        desD  72 gaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytn 129
+                 g+ +    f +ghd+ hg +s  k +n+++g      i +  + wr+ h   h    n
+  OKH19271.1  76 GT-MFWALFVVGHDCGHGSFSKSKLLNNIIGHLSHAPILVPFHGWRISHRTHHSNTGN 132
+                 33.3334599*********************999988999999*****9875554444 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.047
+        desD 294 gglnyqvvhhlfpqichihypk 315
+                   +  +vvhh+f  i h h  +
+  OKH19271.1 282 HNIGTHVVHHIFHTIPHYHLKD 303
+                 456778***********99865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       161  (0.0454545); expected 70.8 (0.02)
+Passed bias filter:                       93  (0.0262564); expected 70.8 (0.02)
+Passed Vit filter:                        12  (0.00338792); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10191.71
+//
+[ok]

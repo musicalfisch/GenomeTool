@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/75695_GCA_001458455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-05   20.3  14.6    0.00013   18.6  14.6    1.9  1  CEJ42578.1  Fatty acid desaturase (Phosphatidylcholine desatu
+    0.00056   16.6   4.4    0.00056   16.6   4.4    1.8  2  CEJ42579.1  Fatty acid desaturase [Chrysosporum ovalisporum]
+
+
+Domain annotation for each sequence (and alignments):
+>> CEJ42578.1  Fatty acid desaturase (Phosphatidylcholine desatu rase) [Chrysosporum ovalisporum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.6  14.6   9.4e-08   0.00013      43     139 ..      70     164 ..      63     318 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 18.6 bits;  conditional E-value: 9.4e-08
+        desD  43 iltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihg 139
+                 +l+  + a  + l+    w+l  +  +  g+ l+g  f ighd+ h  ++ ++wvn l+g  +   +    + wr++hn+ hh++tn l  d   h 
+  CEJ42578.1  70 LLSVSMVALGYYLLTISPWFLLPLAWVFTGTALTGF-FVIGHDCGHRSFAKNRWVNDLVGHLFMMPLIYPFHSWRIKHNH-HHAHTNKLDEDNAWHP 164
+                 55666677778888888899999999999****997.99***********************9999999999*******7.999*****99987774 PP
+
+>> CEJ42579.1  Fatty acid desaturase [Chrysosporum ovalisporum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.6   4.4   3.9e-07   0.00056      56     129 ..      65     137 ..      41     144 .. 0.74
+   2 ?   -1.0   0.5     0.088   1.2e+02     286     315 ..     278     307 ..     207     341 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 16.6 bits;  conditional E-value: 3.9e-07
+        desD  56 fgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytn 129
+                    d w++  +   v+ + +    f ighd+ h  +s +kw+n l+g      i +  + wr+ h   h+   n
+  CEJ42579.1  65 HYLDSWYFWPVFW-VMQGTMFWALFVIGHDCGHQSFSKHKWLNDLIGHLSHTPILVPYHGWRISHRTHHKNTGN 137
+                 3346666655544.44555666679**********************9999999999999*****987766555 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.088
+        desD 286 niflnwylgglnyqvvhhlfpqichihypk 315
+                   f+n     +  +v hh+f ++ h    +
+  CEJ42579.1 278 YGFINHIHHDIGTHVAHHIFLNMPHYNLRR 307
+                 457777777778888888888888776555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         2851  (968037 residues searched)
+Passed MSV filter:                       134  (0.0470011); expected 57.0 (0.02)
+Passed bias filter:                       79  (0.0277096); expected 57.0 (0.02)
+Passed Vit filter:                         9  (0.00315679); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000701508); expected 0.0 (1e-05)
+Initial search space (Z):               2851  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8809.14
+//
+[ok]

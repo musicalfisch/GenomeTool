@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251229_GCA_000317125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysH  [M=273]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.1e-34  115.4   0.1    8.9e-34  115.2   0.1    1.0  1  AFY87379.1  phosphoadenylylsulfate reductase (thioredoxin) [C
+  ------ inclusion threshold ------
+      0.026   12.0   0.0      0.043   11.3   0.0    1.4  1  AFY88390.1  hypothetical protein Chro_2922 [Chroococcidiopsis
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY87379.1  phosphoadenylylsulfate reductase (thioredoxin) [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  115.2   0.1   3.1e-37   8.9e-34      27     258 ..       8     240 .]       1     240 [] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 115.2 bits;  conditional E-value: 3.1e-37
+        cysH  27 ssplsldlarinqrfdsanaaeivawaaatfgeglvmstsfgiqaavmlhlv.taiipdipiiwidtgylppetyqfaedlsqrlhlnlkvyqsplspa 124
+                  +   +dl+ +n+++++a  ++i+aw+   +  glv +++f ++  v+  ++   +    p++++dt +  p+t ++  ++ +   l+l+vy++p   +
+  AFY87379.1   8 IQTPNFDLDELNRKYETAHPSKILAWCVENIPTGLVQTSAFNVDDIVITDILyRELKHRTPVMFLDTLHHFPQTLELVSKVKDLYDLDLQVYKTPDVDT 106
+                 444579****************************************99987615677789***********************************8876 PP
+
+        cysH 125 r..meaihgklwsnndldslnlydkirkvepmqralkelkatawlaglrrdqtdhrktlqwvn.qqgerykilpildwnaktiydyltkydlpyhpyfd 220
+                 r  + a +g    + d   ++ + ++ k+ep+qr l el+a aw++g rrdq+  r  +   + +  +r k+ pi  w  k  + y+  +++ y p  d
+  AFY87379.1 107 RaaFAAKYGEALWDSD---IQQFHHLTKIEPLQRGLAELNAVAWITGRRRDQARTRSDMPVFElDSQQRLKVNPIASWTRKETWAYVFEHNVIYNPLHD 202
+                 6114566665444444...45688999*****************************9998766255689****************************** PP
+
+        cysH 221 lgyvsvgdwhssrpltaddsnerdtrfkgl.kqecglhl 258
+                  gy s+gd   + p+ a+  +er  r++g  k ecg+h+
+  AFY87379.1 203 QGYPSIGDEPITTPV-AEGEDERAGRWRGSdKTECGIHI 240
+                 *********999997.78889*******96489****96 PP
+
+>> AFY88390.1  hypothetical protein Chro_2922 [Chroococcidiopsis thermalis PCC 7203]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.5e-05     0.043     122     206 ..      12     100 ..       5     172 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.5e-05
+        cysH 122 sparmeaihgklwsnnd...ldslnlydkirkvepmq.ralkelkatawlaglrrdqtdhrktlqwvnqqgerykilpildwnaktiyd 206
+                   ar+eai   l   n     + ln+  k    e ++ +a +    ta l  +r+ + ++   lqw++qq +    + i d+  + i +
+  AFY88390.1  12 PTARLEAINDILVEPNMeaiANFLNVLSKYGTPEEINaKAKQAASLTALLERVRQTRPEYLTDLQWLQQQADEGAFVSIADYRQNVIGN 100
+                 569999999999887651213456677777666666514555566799999999999************************99888755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (273 nodes)
+Target sequences:                         5752  (1839647 residues searched)
+Passed MSV filter:                       150  (0.0260779); expected 115.0 (0.02)
+Passed bias filter:                      124  (0.0215577); expected 115.0 (0.02)
+Passed Vit filter:                        12  (0.00208623); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000347705); expected 0.1 (1e-05)
+Initial search space (Z):               5752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 10044.47
+//
+[ok]

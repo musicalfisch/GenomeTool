@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/568701_GCA_001942495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-74  247.7   1.8    2.3e-74  247.3   1.8    1.2  1  OLT57929.1  hypothetical protein BJP37_01595 [Moorea bouillon
+  ------ inclusion threshold ------
+       0.15   10.4   0.1       0.15   10.4   0.1    2.4  2  OLT59272.1  hypothetical protein BJP37_09685 [Moorea bouillon
+
+
+Domain annotation for each sequence (and alignments):
+>> OLT57929.1  hypothetical protein BJP37_01595 [Moorea bouillonii PNG]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  247.3   1.8   7.6e-78   2.3e-74       1     165 []       1     157 []       1     157 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 247.3 bits;  conditional E-value: 7.6e-78
+        copC   1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylqkGdnh 99 
+                 m s+ +s l+vls+++l+++as++++t+++++++s++t ++t++v+s        + +++++s+GGqviesG+yhlel+p++e++g+hldf+lq+G++h
+  OLT57929.1   1 MGSWLQSSLIVLSSVGLIFIASCGNSTKDTTQTTSSETVTKTEKVDS--------SPHDHNHSQGGQVIESGSYHLELLPIVEKQGIHLDFFLQQGEEH 91 
+                 899********************************999998877765........4567899************************************* PP
+
+        copC 100 eavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 ++vsnakv+aq+qlP+Geqk+ld++yd+a+khyaa+lpgka+Geykv+i+tdi+G+k+nGrfsfk+
+  OLT57929.1  92 KSVSNAKVKAQIQLPNGEQKNLDFSYDKAGKHYAAFLPGKATGEYKVVIQTDINGKKINGRFSFKQ 157
+                 ****************************************************************97 PP
+
+>> OLT59272.1  hypothetical protein BJP37_09685 [Moorea bouillonii PNG]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.1     5e-05      0.15       5      57 ..       9      62 ..       5      73 .. 0.67
+   2 ?   -2.3   3.9       0.4   1.2e+03      39      39 ..     108     108 ..      64     164 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 5e-05
+        copC  5 kssllvvlsigllllaassnsntatnd.eassktttaattavsstaaakakeee 57
+                 +sllvv+  +l+++  +++s+tat + e++++ t+a +t  s +++++ +eee
+  OLT59272.1  9 LLSLLVVTVCVLTFTYGCAESSTATVPpETTPAPTAAVETVESPAEPTEVAEEE 62
+                456788888889999999999998875166666666666555555555555544 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.4
+        copC  39 t 39 
+                 t
+  OLT59272.1 108 T 108
+                 1 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5984  (1949262 residues searched)
+Passed MSV filter:                       178  (0.029746); expected 119.7 (0.02)
+Passed bias filter:                      128  (0.0213904); expected 119.7 (0.02)
+Passed Vit filter:                        16  (0.0026738); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000334225); expected 0.1 (1e-05)
+Initial search space (Z):               5984  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 6432.56
+//
+[ok]

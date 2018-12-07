@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/acsA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1897008_GCA_001917115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       acsA  [M=656]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-10   37.1   1.2    2.1e-06   23.2   0.1    2.9  2  OLA78294.1  hypothetical protein BHW55_01945 [Melainabacteria
+
+
+Domain annotation for each sequence (and alignments):
+>> OLA78294.1  hypothetical protein BHW55_01945 [Melainabacteria sp. 35_41]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.8   0.1   5.8e-06     0.012     261     282 ..     165     186 ..      14     205 .. 0.68
+   2 !   23.2   0.1     1e-09   2.1e-06     507     631 ..     419     555 ..     383     557 .] 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 5.8e-06
+        acsA 261 dsedllfilytsgstgkpkgvv 282
+                  s+   fi+ytsg+tg pkgv 
+  OLA78294.1 165 SSKSTAFIIYTSGTTGMPKGVE 186
+                 567789**************95 PP
+
+  == domain 2  score: 23.2 bits;  conditional E-value: 1e-09
+        acsA 507 lyfagdgarkdedgyfwvmgrvddvlnvsg.hrlgtmeiesalvshpavaeaavvg..kpdelk.g.eevvafvtlege...aeaseelakelkqhvvk 597
+                    +gd a   + g+ ++ gr+ +++ +sg +++   e+e+ l   p  ae +v+g  ++  +k g ee+ a ++ + e   + ++eel k ++  v +
+  OLA78294.1 419 WLHTGDIAEIKNGGHIYITGRIKNMIVLSGgKKVFPEEVEAVLEKSPLFAEVCVLGisRTFGVKdGtEEIAAVIVPKKEmieKYSDEELDKVIRAEVKQ 517
+                 45789*********************99962678899*****************982244556644367777776544311134568899988877654 PP
+
+        acsA 598 ...eigaiarpgeirft.dalpktrsgkilrrllrsla 631
+                    ++ a  rp +i  t + lp+t + k+ r+ +++l 
+  OLA78294.1 518 lstHLTAYKRPVNIVVTkEPLPRTSTRKVKRKEVKQLV 555
+                 222789999*****998457***********9988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (656 nodes)
+Target sequences:                         2045  (609342 residues searched)
+Passed MSV filter:                        64  (0.0312958); expected 40.9 (0.02)
+Passed bias filter:                       35  (0.0171149); expected 40.9 (0.02)
+Passed Vit filter:                         5  (0.00244499); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000488998); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7994.57
+//
+[ok]

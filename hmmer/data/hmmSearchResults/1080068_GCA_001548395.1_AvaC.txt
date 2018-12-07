@@ -1,0 +1,117 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080068_GCA_001548395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      9e-91  301.3   0.0    9.9e-91  301.2   0.0    1.0  1  BAU40401.1  Putative O-methyltransferase/MSMEI_4947 [Leptolyn
+     0.0089   13.7   0.0        9.9    3.7   0.0    4.1  4  BAU41880.1  translocation protein TolB [Leptolyngbya sp. O-77
+     0.0089   13.6   0.0      0.012   13.2   0.0    1.1  1  BAU40734.1  hypothetical protein O77CONTIG1_00538 [Leptolyngb
+  ------ inclusion threshold ------
+      0.015   12.9   0.0      0.026   12.1   0.0    1.3  1  BAU41834.1  Ubiquinone biosynthesis O-methyltransferase [Lept
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU40401.1  Putative O-methyltransferase/MSMEI_4947 [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  301.2   0.0   8.2e-94   9.9e-91       1     219 [.       1     219 [.       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 301.2 bits;  conditional E-value: 8.2e-94
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+ ++lgl + ++ y  s+ lre+ +l  lr+eta +p  +mq +p+qgqf+a+lvq iga k+leigvftgys+l valalp  g++iacd+se+yt+
+  BAU40401.1   1 MTGKSLGLSEPLHDYLLSVSLREPEVLRSLREETARHPERIMQTTPDQGQFLALLVQLIGATKTLEIGVFTGYSSLAVALALPDAGQVIACDVSEDYTA 99 
+                 67789********************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarrywqqagv +ki l iapaletld+l+a g++ +fdf fidadk ny  yyer+lql+r gg+ia+dnv+w g v   d++   t  ir +n k+ 
+  BAU40401.1 100 IARRYWQQAGVVHKITLHIAPALETLDRLLAEGQAGTFDFAFIDADKGNYWNYYERSLQLLRPGGLIAVDNVLWGGEVINPDNQSPSTLAIREFNQKVY 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 qd rv +s+ip+ dgltla k
+  BAU40401.1 199 QDSRVSLSMIPVSDGLTLARK 219
+                 *******************88 PP
+
+>> BAU41880.1  translocation protein TolB [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.7   0.0    0.0081       9.9      65      95 ..     648     679 ..     640     697 .. 0.83
+   2 ?    0.3   0.0     0.088   1.1e+02      70      95 ..     736     761 ..     728     769 .. 0.84
+   3 ?   -1.8   0.0       0.4   4.8e+02      68      92 ..     973     997 ..     967    1009 .. 0.82
+   4 ?    3.2   0.0     0.012        14      69      92 ..    1142    1165 ..    1101    1176 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 3.7 bits;  conditional E-value: 0.0081
+        AvaC  65 leigvftgysalvvalalppegkliac.dlse 95 
+                 l   vft   + ++a+a+ p+gkl+a  d+++
+  BAU41880.1 648 LTRSVFTETFSQILAIAFSPDGKLLATgDVNH 679
+                 55689***99**************99625554 PP
+
+  == domain 2  score: 0.3 bits;  conditional E-value: 0.088
+        AvaC  70 ftgysalvvalalppegkliacdlse 95 
+                 + gys  v ++a+ p+g+ +a   ++
+  BAU41880.1 736 LQGYSDRVFSVAFSPDGQYLATGSED 761
+                 68*****************9986655 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.4
+        AvaC  68 gvftgysalvvalalppegkliacd 92 
+                   + gys  v ++a+ p+g+ +a  
+  BAU41880.1 973 RTLQGYSNGVWSVAFSPDGHTLASG 997
+                 5678***************999875 PP
+
+  == domain 4  score: 3.2 bits;  conditional E-value: 0.012
+        AvaC   69 vftgysalvvalalppegkliacd 92  
+                   +tg+++ + a+al p+g+l+a  
+  BAU41880.1 1142 TLTGHTSWIRAIALSPNGQLLASG 1165
+                  689*****************9975 PP
+
+>> BAU40734.1  hypothetical protein O77CONTIG1_00538 [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   9.9e-06     0.012      65     138 ..     103     175 ..      93     211 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 9.9e-06
+        AvaC  65 leigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfd 138
+                  +ig  tgy ++ ++  l p+gk++a+d++ e   i   + q+a  a      + p l   d+   + es  + 
+  BAU40734.1 103 ADIGAGTGYFSFRLS-GLVPQGKVLAVDIQPEMIDILEFFKQEAAAAGMPADNVVPVLGEPDNPQLAPESIDLA 175
+                 589999***999876.7899************************999988888999988888776666665554 PP
+
+>> BAU41834.1  Ubiquinone biosynthesis O-methyltransferase [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   2.1e-05     0.026      62     104 ..      55      96 ..      40     130 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 2.1e-05
+        AvaC  62 kkaleigvftgysalvvalalppegkliacdlseeytsiarry 104
+                 k +l+ g  tgy a ++a+a p    +i +dlsee   +ar+ 
+  BAU41834.1  55 KVILDAGCGTGYKAHLLAIANP-GATIIGVDLSEESVKLARQR 96 
+                 77899**************976.5789*************974 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         4865  (1484008 residues searched)
+Passed MSV filter:                       148  (0.0304214); expected 97.3 (0.02)
+Passed bias filter:                      122  (0.0250771); expected 97.3 (0.02)
+Passed Vit filter:                        17  (0.00349435); expected 4.9 (0.001)
+Passed Fwd filter:                         4  (0.000822199); expected 0.0 (1e-05)
+Initial search space (Z):               4865  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.05
+# Mc/sec: 6529.64
+//
+[ok]

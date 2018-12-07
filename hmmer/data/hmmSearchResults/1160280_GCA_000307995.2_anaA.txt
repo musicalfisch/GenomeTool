@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160280_GCA_000307995.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-53  178.8   0.0      9e-53  177.1   0.0    1.7  2  CCH92375.1  Similar to tr|Q6E7J8|Q6E7J8 [Microcystis aerugino
+    1.8e-05   22.1   0.0      4e-05   21.0   0.0    1.5  1  CCH91206.1  AnaD protein [Microcystis aeruginosa PCC 9432]
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH92375.1  Similar to tr|Q6E7J8|Q6E7J8 [Microcystis aeruginosa PCC 9432]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0      0.21     5e+02      87     107 ..     641     661 ..     633     669 .. 0.84
+   2 !  177.1   0.0   3.8e-56     9e-53      20     250 ..    1081    1314 ..    1065    1316 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 0.21
+        anaA  87 sqspfvffghslgsvvsleva 107
+                   sp  ++ghslg  v+  va
+  CCH92375.1 641 GISPHGVMGHSLGEYVAACVA 661
+                 5689999*******9998887 PP
+
+  == domain 2  score: 177.1 bits;  conditional E-value: 3.8e-56
+        anaA   20 qenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgc 116 
+                   + ++ lfcfp ag g+ +f++w    p  ++lwa+++pgre r++e  it    li+ l+  + py + p+ ffghs+gs++s+e++++l      
+  CCH92375.1 1081 PNAHIRLFCFPYAGGGASLFQNWLNYCPKQVELWAIQLPGRETRLQETAITSLKSLINRLIPILTPYLDQPYAFFGHSMGSLISFELTRELAKTRQN 1177
+                  345799******************************************************************************************* PP
+
+        anaA  117 fpqclvvsgrkpphi.pcdhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleelr 212 
+                  +pq l +sg + p+i   d    +  de+++  l    gtpe++l++p+lm+  lpi rad++l e y y   + l cpi  +gg+ d  vs ++l+
+  CCH92375.1 1178 LPQHLFMSGFRAPQIvNPDLPIHRLGDEQFLTALGHFQGTPETLLKNPDLMAAFLPILRADFKLLETYSYQQGQPLNCPITVFGGDNDAKVSADQLQ 1274
+                  *********8888772568888999************************************************************************ PP
+
+        anaA  213 ewekytqrgfklrsfpgghmylteekerfavi..kslvef 250 
+                  +w+  t++ f l+++pggh+++ +  e++  i  +sl ef
+  CCH92375.1 1275 QWQLQTNQDFVLHTLPGGHFFINQHTEKIMKIicQSLREF 1314
+                  **********************999988754312677666 PP
+
+>> CCH91206.1  AnaD protein [Microcystis aeruginosa PCC 9432]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   0.0   1.7e-08     4e-05      22     112 ..    1127    1216 ..    1113    1234 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 1.7e-08
+        anaA   22 nklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiyp.ysqspfvffghslgsvvslevahqlgd 112 
+                  +k  +fc+  +   +++frd+     d   ++ +  pgr+     pl     d    l++ +     + p++++g+s g+ v+le+a+ql +
+  CCH91206.1 1127 QKTPIFCVAGSNGHAFYFRDFAMNFADEHPVYGLETPGRDGS--HPLPISVEDHASSLIKTLQQkQPKGPYILIGYSSGCSVALEMAFQLEQ 1216
+                  67889*****9999*************************987..5666666677777776665414689********************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4760  (1306691 residues searched)
+Passed MSV filter:                       124  (0.0260504); expected 95.2 (0.02)
+Passed bias filter:                      122  (0.0256303); expected 95.2 (0.02)
+Passed Vit filter:                        15  (0.00315126); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420168); expected 0.0 (1e-05)
+Initial search space (Z):               4760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.05
+# Mc/sec: 6611.86
+//
+[ok]

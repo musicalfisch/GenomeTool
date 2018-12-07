@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574623_GCA_000817775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-09   33.7  27.4    1.3e-07   26.8  10.8    2.4  2  KIF41344.1  hypothetical protein QQ91_33955 [Lyngbya confervo
+  ------ inclusion threshold ------
+       0.57    4.8   7.2       0.65    4.6   7.2    1.0  1  KIF39805.1  hypothetical protein QQ91_23250 [Lyngbya confervo
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF41344.1  hypothetical protein QQ91_33955 [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   6.7   2.2e-07   0.00068    1604    1647 ..      14      57 ..       3      66 .. 0.51
+   2 !   26.8  10.8   4.3e-11   1.3e-07    1371    1481 ..     105     213 ..      85     240 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 2.2e-07
+        appA 1604 tgtngsdhivtrdgndtinggggndtiegglgndvisggdgnda 1647
+                   gt  +d i + dg+d + gg g+d +  g gnd + gg+gnd 
+  KIF41344.1   14 IGTAAADEIFAGDGDDIVFGGDGDDILHDGGGNDKLFGGNGNDI 57  
+                  34444444444444444444444444444444444444444443 PP
+
+  == domain 2  score: 26.8 bits;  conditional E-value: 4.3e-11
+        appA 1371 ysydkvlfysieqfqitgtngsdyig.trdgndti.nggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgld 1465
+                  +s d+    sie+f   g+  +d +   r   d +  g ggndt+ gg gnd +ngg+ +d +  g g+dv+  g g+d        d +   + +d
+  KIF41344.1  105 FSADNFAHASIEEF--IGSAFADMVNaMRVSFDVVlSGHGGNDTLVGGSGNDTLNGGQEDDLLIGGLGADVLTGGEGQDGFQFTQLADSLL--ASFD 197 
+                  55555556666665..345555555413455554315556666666666666666666666666666666666666666665554444332..3566 PP
+
+        appA 1466 tisdlnyassnsaiil 1481
+                   i+dl  a+s s+++ 
+  KIF41344.1  198 VITDLTIAASASSVVT 213 
+                  6666666666666553 PP
+
+>> KIF39805.1  hypothetical protein QQ91_23250 [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.6   7.2   0.00021      0.65    2056    2155 ..      55     159 ..      45     199 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 4.6 bits;  conditional E-value: 0.00021
+        appA 2056 dytrtgtnntvtfaansstatitvdptadttvepdetvtltlasgtgytvg.tttavtgtiknddvtlpsitlavspss....vtedgttnlvytft 2147
+                  d  +   + t t aa   +a  t++  +dtt +  + vt + +  +  tv  tt  vt + k+    +     a++p+      + d t++lv t+ 
+  KIF39805.1   55 DSLKKPQDRTTTDAASVEAAEDTLETVSDTTTKAAKNVTEAATEAAKETVKeTTEEVTKAAKEGTAEVKDSVEAIAPTEdltdAAADETSELVQTVK 151 
+                  4455555666677777777777777777777777777777776666666651344577777776666666666666653111134466677777777 PP
+
+        appA 2148 rtgsttsa 2155
+                   t  tt a
+  KIF39805.1  152 DTVQTTEA 159 
+                  77666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         6092  (1743458 residues searched)
+Passed MSV filter:                       201  (0.0329941); expected 121.8 (0.02)
+Passed bias filter:                      124  (0.0203546); expected 121.8 (0.02)
+Passed Vit filter:                        15  (0.00246225); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000328299); expected 0.1 (1e-05)
+Initial search space (Z):               6092  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.41u 0.01s 00:00:00.42 Elapsed: 00:00:00.43
+# Mc/sec: 10983.79
+//
+[ok]

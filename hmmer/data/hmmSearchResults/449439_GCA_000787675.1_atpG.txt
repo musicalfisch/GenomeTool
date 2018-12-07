@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/449439_GCA_000787675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    2.9e-93  307.3  13.7    3.2e-93  307.2  13.7    1.0  1  lcl|BBPA01000059.1_prot_GAL94613.1_1279  [locus_tag=N44_03193] [protein=A
+  ------ inclusion threshold ------
+      0.018   13.0   0.1      0.048   11.6   0.1    1.7  1  lcl|BBPA01000033.1_prot_GAL93144.1_2870  [locus_tag=N44_01831] [protein=h
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|BBPA01000059.1_prot_GAL94613.1_1279  [locus_tag=N44_03193] [protein=ATP synthase F0 sector subunit b'] [protein_i
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  307.2  13.7   1.3e-96   3.2e-93       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 307.2 bits;  conditional E-value: 1.3e-96
+                                     atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssar 70 
+                                              mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssar
+  lcl|BBPA01000059.1_prot_GAL94613.1_1279   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTEGGAKEQLAKTEALVQEYELQLSSAR 70 
+                                              9********************************************************************* PP
+
+                                     atpG  71 kqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe 140
+                                              kqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe
+  lcl|BBPA01000059.1_prot_GAL94613.1_1279  71 KQSQEIIAQAQAEAQKLASERVAAAQKEAIARKEAVAAEIAQQKEEAFRSLEGQVASLSRQILEKLLGPE 140
+                                              ********************************************************************** PP
+
+                                     atpG 141 lvr 143
+                                              lvr
+  lcl|BBPA01000059.1_prot_GAL94613.1_1279 141 LVR 143
+                                              **8 PP
+
+>> lcl|BBPA01000033.1_prot_GAL93144.1_2870  [locus_tag=N44_01831] [protein=hypothetical protein] [protein_id=GAL93144.1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.1     2e-05     0.048      84     109 ..     134     159 ..     127     180 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2e-05
+                                     atpG  84 aqklaservaaaqkeaiarkeavaae 109
+                                               +kl  e vaaa k+a ar ea+a+ 
+  lcl|BBPA01000033.1_prot_GAL93144.1_2870 134 LDKLRVEMVAAATKDARARAEAIASS 159
+                                              57999******************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4790  (1244012 residues searched)
+Passed MSV filter:                       160  (0.0334029); expected 95.8 (0.02)
+Passed bias filter:                      100  (0.0208768); expected 95.8 (0.02)
+Passed Vit filter:                        11  (0.00229645); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000417537); expected 0.0 (1e-05)
+Initial search space (Z):               4790  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5929.79
+//
+[ok]

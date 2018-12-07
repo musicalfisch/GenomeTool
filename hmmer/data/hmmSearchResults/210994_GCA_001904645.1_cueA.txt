@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/210994_GCA_001904645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-15   54.5   0.9    4.5e-13   46.6   0.1    2.5  3  OKH16539.1  copper oxidase [Fischerella major NIES-592]
+     0.0065   13.1   0.0      0.029   10.9   0.0    1.7  1  OKH13206.1  plastocyanin [Fischerella major NIES-592]
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH16539.1  copper oxidase [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0     0.079   1.8e+02     413     438 ..      42      67 ..      28      83 .. 0.84
+   2 !   46.6   0.1     2e-16   4.5e-13      50     169 ..      83     195 ..      54     207 .. 0.85
+   3 !    5.7   0.0    0.0005       1.1     425     494 ..     261     328 ..     246     330 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 0.079
+        cueA 413 welvnvdpdgmehsfhlhtnpfqvis 438
+                  +lv v p   e  f    np+qv+ 
+  OKH16539.1  42 KQLVRVPPLETEENFNSAVNPVQVLR 67 
+                 57999******************985 PP
+
+  == domain 2  score: 46.6 bits;  conditional E-value: 2e-16
+        cueA  50 letalearpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyy 147
+                  e  l a    i+l      n+   ng+ipgp l ak gd v+i f nk  ++  lh+hg+h  +    d +   v  g +  yef      p g   y
+  OKH16539.1  83 REFRLTAGTSAIKLNSAvSYNIWDLNGRIPGPTLRAKQGDRVRILFFNKAGHSHSLHFHGVHPAEM---DGV-RPVSNGSATIYEFD---AEPFGVHLY 174
+                 566677777888887651569999**************************************6654...444.57999********6...68******* PP
+
+        cueA 148 hphlhelvaeqvfgglggifvv 169
+                 h h+ e v+ ++  gl g+f++
+  OKH16539.1 175 HCHI-EPVTRHIAKGLYGMFII 195
+                 ***9.678999*********98 PP
+
+  == domain 3  score: 5.7 bits;  conditional E-value: 0.0005
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                  +fhlh+n f+v        p q   d + +   e   +   fr + gk ++h h     + g mg+  v
+  OKH16539.1 261 VTFHLHANFFDVYPTGMTLTPSQK-SDVVTMGVAERHILEFAFR-YPGKYMFHPHQDAIAENGCMGLFEV 328
+                 57***********99999999886.789999999999999***9.89********999999999998776 PP
+
+>> OKH13206.1  plastocyanin [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   1.3e-05     0.029     264     311 ..      84     131 ..      73     135 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.3e-05
+        cueA 264 ggsiakpvelrelllspgeraevlvqgkrppgryrllslpydrggamg 311
+                    +ak    ++ll+spg+  e  +  + p g+y +   p+   g +g
+  OKH13206.1  84 SADLAKSFTHKQLLMSPGQEYETTIPADAPKGEYTFYCEPHRGAGMVG 131
+                 567899999****************************99986555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         4512  (1463608 residues searched)
+Passed MSV filter:                       123  (0.0272606); expected 90.2 (0.02)
+Passed bias filter:                      107  (0.0237145); expected 90.2 (0.02)
+Passed Vit filter:                         7  (0.00155142); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443262); expected 0.0 (1e-05)
+Initial search space (Z):               4512  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 10370.71
+//
+[ok]

@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/449440_GCA_002933835.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    9.6e-62  205.2   0.3    1.1e-61  205.0   0.3    1.0  1  lcl|BFAC01000003.1_prot_GBE74097.1_1324  [gene=atpE] [locus_tag=myaer87_1
+  ------ inclusion threshold ------
+        4.2    5.5  14.1        0.6    8.3   1.0    3.6  3  lcl|BFAC01000020.1_prot_GBE76773.1_4000  [locus_tag=myaer87_40000] [prote
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|BFAC01000003.1_prot_GBE74097.1_1324  [gene=atpE] [locus_tag=myaer87_13240] [protein=ATP synthase F1 sector epsilo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  205.0   0.3     5e-65   1.1e-61       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 205.0 bits;  conditional E-value: 5e-65
+                                     atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfae 70 
+                                              m++tvrvi+pd+ vwd+ aeevilps+tgqlgilsghaplltal++gvmr+r+ k  dw+ ia+lggfae
+  lcl|BFAC01000003.1_prot_GBE74097.1_1324   1 MSITVRVITPDRIVWDNVAEEVILPSSTGQLGILSGHAPLLTALNIGVMRIRPGK--DWENIAVLGGFAE 68 
+                                              89**************************************************976..8************ PP
+
+                                     atpE  71 veedevtilvngaergdkinleearaafneaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                                              ve++e+ +lvngae g ki+ e+ara++++aqt+l++v++ +dr++ iqa+q++++arar+qaagglv
+  lcl|BFAC01000003.1_prot_GBE74097.1_1324  69 VENNEIKVLVNGAELGSKIDKEKARAEYERAQTRLDEVSKgDDRRKTIQAQQSWRKARARYQAAGGLV 136
+                                              **************************************87257999********************97 PP
+
+>> lcl|BFAC01000020.1_prot_GBE76773.1_4000  [locus_tag=myaer87_40000] [protein=ABC-transporter DevB family protein] [pro
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.3   1.0   0.00028       0.6      76     125 ..      97     145 ..      81     156 .. 0.81
+   2 ?    3.6   0.6    0.0078        17      87     126 ..     214     253 ..     200     260 .. 0.81
+   3 ?    1.1   0.5     0.046     1e+02     100     120 ..     281     301 ..     254     310 .. 0.43
+
+  Alignments for each domain:
+  == domain 1  score: 8.3 bits;  conditional E-value: 0.00028
+                                     atpE  76 vtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkr 125
+                                              +  ++++ er +  nl +a+ + + a +kl+qvka+ +  +i+a++a  r
+  lcl|BFAC01000020.1_prot_GBE76773.1_4000  97 IIAILESQERLE-DNLRQAQEQVKVAAAKLEQVKAGAKVGEIDANAANVR 145
+                                              445555666654.48999***************************98665 PP
+
+  == domain 2  score: 3.6 bits;  conditional E-value: 0.0078
+                                     atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqafkra 126
+                                              +++nle + ++ +ea+  l+++++  +q+  +a+ ++ r 
+  lcl|BFAC01000020.1_prot_GBE76773.1_4000 214 KRLNLETSNQQLTEAKVTLERIESTGKQQIQEAKTTLARI 253
+                                              5799*******************99998666666666654 PP
+
+  == domain 3  score: 1.1 bits;  conditional E-value: 0.046
+                                     atpE 100 eaqtklnqvkaedrqaqiqat 120
+                                              +a++++n      ++aq + +
+  lcl|BFAC01000020.1_prot_GBE76773.1_4000 281 AAEAEVNAALVAVKKAQTELN 301
+                                              222222222222233333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4355  (1303097 residues searched)
+Passed MSV filter:                       134  (0.0307692); expected 87.1 (0.02)
+Passed bias filter:                      106  (0.0243398); expected 87.1 (0.02)
+Passed Vit filter:                         8  (0.00183697); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000459242); expected 0.0 (1e-05)
+Initial search space (Z):               4355  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5950.81
+//
+[ok]

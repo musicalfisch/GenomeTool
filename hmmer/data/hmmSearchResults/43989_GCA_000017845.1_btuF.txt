@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/43989_GCA_000017845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0041   14.6   0.4      0.018   12.4   0.0    2.0  2  ACB54248.1  putative substrate-binding protein of ABC transpo
+  ------ inclusion threshold ------
+      0.013   12.9   1.9      0.017   12.5   1.9    1.2  1  ACB52316.1  unknown [Cyanothece sp. ATCC 51142]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACB54248.1  putative substrate-binding protein of ABC transporter [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.2     0.028        73     129     164 ..      84     122 ..       8     134 .. 0.75
+   2 !   12.4   0.0   6.9e-06     0.018     232     290 ..     217     276 ..     130     296 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 0.028
+        btuF 129 lqqlgiatlltqvn...twksleeltaklaqlidvnpqs 164
+                 lq+l  + ++tq +       +  +ta ++ql d +pq 
+  ACB54248.1  84 LQKLQPTHIVTQDQcdvCAVNFATVTAAISQLTDSKPQV 122
+                 444444444443220012345677899999999999986 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 6.9e-06
+        btuF 232 ekvleanpeavvlitppqggsktevlds.fkkesfwqklpatknnrvyvfdyyglvnpgs 290
+                 +++  anp+++v++       +t++ +  + ++s w++l+a kn +v++ d     n  s
+  ACB54248.1 217 DNLSSANPDVIVIMPCGFDLKRTQLEAQiLSNHSEWKNLKAVKNGQVFIVDGNAYFNRPS 276
+                 455679***9998887777888887654267899***************99777766554 PP
+
+>> ACB52316.1  unknown [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   1.9   6.6e-06     0.017       6     129 ..      13     129 ..       9     143 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 6.6e-06
+        btuF   6 ilstlaillsiiltacnttntqqsqaqatqsitisntpsqelaklsakrvvtlsslttdiifqldktklvgisgsslfkndprfqdiprisegqsppnl 104
+                  ls ++il+ ++l++c+ t+  q q  +  + ++++ +     + + k+v+ ++ l  +   q+ + k   i    l   +  f di    +g++    
+  ACB52316.1  13 TLSLFTILINLLLISCAETKVSQCQKIILLTQKMAEESESYRQTTDIKKVLQVADLFEETSQQMKQLK---IEDEQLQEYQMGFADIY---QGNADTTR 105
+                 57889********************9999888888888888889999********9999988887766...56777777777777764...56666555 PP
+
+        btuF 105 ekivalkpdlvigaegfsnqviqrl 129
+                 + + alk d  i ++ + +q +q+l
+  ACB52316.1 106 QFVAALK-DKDIDTAKLMQQQVQQL 129
+                 5555565.44555555666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         5304  (1574679 residues searched)
+Passed MSV filter:                       199  (0.0375189); expected 106.1 (0.02)
+Passed bias filter:                      122  (0.0230015); expected 106.1 (0.02)
+Passed Vit filter:                        11  (0.00207391); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000377074); expected 0.1 (1e-05)
+Initial search space (Z):               5304  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9668.53
+//
+[ok]

@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1164990_GCA_000613065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0019   16.3   1.0     0.0019   16.3   1.0    2.1  2  CDN16107.1  omega-3 fatty acid desaturase [Richelia intracell
+     0.0024   15.9  17.7     0.0042   15.1  17.5    1.6  1  CDN16109.1  phosphatidylcholine desaturase [Richelia intracel
+
+
+Domain annotation for each sequence (and alignments):
+>> CDN16107.1  omega-3 fatty acid desaturase [Richelia intracellularis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   1.0   4.8e-07    0.0019      80     131 ..       6      56 ..       3      83 .. 0.89
+   2 ?    1.6   0.5     0.014        56     252     317 ..     160     227 ..     118     241 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 4.8e-07
+        desD  80 fsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvl 131
+                 f +ghd+ h  +s +kw+n l+g      i +  + wr+ h   hh  t  l
+  CDN16107.1   6 FVVGHDCGHQSFSRHKWLNDLMGHICHTPILVPYHGWRISHRT-HHKNTGHL 56 
+                 899*********************99999999999*****985.66666555 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.014
+        desD 252 vlepaefiqpsaan...qiedewaifqvr.ttvdfapkniflnwylgglnyqvvhhlfpqichihypkia 317
+                  l+   f++ ++++     ++ew+ ++   +t+d      f+n     +  +v hh+f ++ h    k +
+  CDN16107.1 160 WLDLVTFLHHTESDipwYRDEEWTFLKGAlSTID--RDYGFINHIHHDIGTHVAHHIFLNMPHYNLKKAT 227
+                 4555555555444311123556776653314444..5667999999999999999999999998776654 PP
+
+>> CDN16109.1  phosphatidylcholine desaturase [Richelia intracellularis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1  17.5   1.1e-06    0.0042      40     223 ..      45     213 ..      35     317 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.1e-06
+        desD  40 titiltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleih 138
+                  +  l+  +  ++ + +    w+l  +  +  g+ l+g  f ighd+ h  ++  +wvn l+g      +    + wr+ hn+ hh +tn l  d   h
+  CDN16109.1  45 VVISLSMAVLGYFSLAIA--PWYLLPLAWIFTGTALTGF-FVIGHDCGHRSFAKTRWVNDLVGHIMFMPLVYPFHSWRIGHNH-HHKHTNKLDEDNAWH 139
+                 444444444444433343..499999999999****997.99*********************9988888889999******7.899******999888 PP
+
+        desD 139 gdgvvrmtphaehkwyhryqhlfipilyaiipiywsfsdvrsilfrhrfgeikipnpkaidlfvllsgkvvylfwfigipllvgy 223
+                       + ph    w +r q  +   l + +    s+     + f  r    k+ +    d  v ls  vv lf  i  p ++  
+  CDN16109.1 140 P-----IRPHVFEAWSKREQWSYERFLLSRLWWVGSIGHWAVVHFDWR----KFRKQDQGD--VKLSVAVVVLFAAITFPTIIAT 213
+                 5.....679999999999999988887765444444444444444433....333333333..4566777777777777777654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         7768  (1173029 residues searched)
+Passed MSV filter:                       239  (0.0307673); expected 155.4 (0.02)
+Passed bias filter:                      171  (0.0220134); expected 155.4 (0.02)
+Passed Vit filter:                        15  (0.001931); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000257467); expected 0.1 (1e-05)
+Initial search space (Z):               7768  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8539.65
+//
+[ok]

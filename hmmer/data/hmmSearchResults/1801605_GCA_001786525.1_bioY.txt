@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801605_GCA_001786525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.1e-10   35.7   5.0    7.1e-10   35.7   5.0    1.6  2  OGH96051.1  hypothetical protein A2104_08325 [Candidatus Mela
+    1.4e-06   25.0   8.4    1.4e-06   25.0   8.4    1.5  1  OGI04955.1  hypothetical protein A2104_00045 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGH96051.1  hypothetical protein A2104_08325 [Candidatus Melainabacteria bacterium GWF2_32_7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0      0.26   2.3e+02      30      50 ..      24      45 ..      21      59 .. 0.73
+   2 !   35.7   5.0     8e-13   7.1e-10      54     128 ..      71     145 ..      44     181 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 0.26
+        bioY 30 asLLlil.laqliiallflPva 50
+                +sL++i+  a lii   f+P +
+  OGH96051.1 24 GSLIIIVfCAFLIIISTFTPIP 45
+                5565554156788888888877 PP
+
+  == domain 2  score: 35.7 bits;  conditional E-value: 8e-13
+        bioY  54 qaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRl 128
+                 +  +++    q++  L ++++l+++l iL  + y+  Gl + + + Gg+G  + ++ +++y+ Gf+   ++++  
+  OGH96051.1  71 KITSIFYYIPQIPVVLMIAAILGPRLGILSIILYITAGLTGFPIFAGGGGINYYMQNGFGYILGFIAGIYTTGNI 145
+                 555555556699*******************************************************99999864 PP
+
+>> OGI04955.1  hypothetical protein A2104_00045 [Candidatus Melainabacteria bacterium GWF2_32_7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   8.4   1.6e-09   1.4e-06      59     150 ..      77     168 ..      44     190 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 1.6e-09
+        bioY  59 llvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRl.arkraasdllnlvLisllGlvv 150
+                 l +  q++a L ++++l+++        y+  Gl + +v+  g+G  +  +  ++y+ G++v  + v+   + k  +      +L+ +  + +
+  OGI04955.1  77 LYI-PQIPAVLFIAAMLGPRIGLFSIAVYIGAGLLGFPVFASGGGVQYATQIVFGYILGYFVGVYLVGNIlSAKANVASTFRATLVGVFAVHL 168
+                 444.49**************98888788*************************************9997513444444444455554444333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         1774  (534831 residues searched)
+Passed MSV filter:                        42  (0.0236753); expected 35.5 (0.02)
+Passed bias filter:                       22  (0.0124014); expected 35.5 (0.02)
+Passed Vit filter:                         4  (0.00225479); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.0011274); expected 0.0 (1e-05)
+Initial search space (Z):               1774  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 3725.99
+//
+[ok]

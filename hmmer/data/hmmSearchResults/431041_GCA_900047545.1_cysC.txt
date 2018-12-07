@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/431041_GCA_900047545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.7e-46  152.7   0.0    8.5e-46  152.3   0.0    1.0  1  CZB20934.1  Adenylylsulfate kinase (EC 2.7.1.25) [Candidatus 
+      0.005   12.9   0.0       0.02   10.9   0.0    1.8  2  SAY39206.1  Phosphonate ABC transporter ATP-binding protein (
+  ------ inclusion threshold ------
+      0.011   11.8   0.1      0.016   11.3   0.1    1.2  1  CZB18485.1  Scaffold protein for [4Fe-4S] cluster assembly,MR
+
+
+Domain annotation for each sequence (and alignments):
+>> CZB20934.1  Adenylylsulfate kinase (EC 2.7.1.25) [Candidatus Synechococcus spongiarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.3   0.0   1.5e-48   8.5e-46       9     173 ..      41     207 ..      33     214 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 152.3 bits;  conditional E-value: 1.5e-48
+        cysC   9 vtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki..gsf 105
+                   +w+tglsg+gkst+++ ++  l   g +  vldgd vr  l + lgf+  dr enirrig +++l+   gvi l + +sp++  r+  r+ +  g+f
+  CZB20934.1  41 AVLWFTGLSGSGKSTMANGVNGELHRRGIAGYVLDGDNVRHGLCNDLGFTDADRIENIRRIGELAKLFLDAGVITLTAFVSPFQADRDRARALVpsGDF 139
+                 357****************************************************************************************8765599* PP
+
+        cysC 106 vevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnklt 173
+                 +e++  a l+ ce rd kgly +arageik ftg+d pyepp  pe+  rt   +le  + +v   l 
+  CZB20934.1 140 LEIYCAADLTTCERRDPKGLYAKARAGEIKHFTGLDSPYEPPQSPELVIRTGDRSLEAGIDQVLSALE 207
+                 **********************************************************9999988776 PP
+
+>> SAY39206.1  Phosphonate ABC transporter ATP-binding protein (TC 3.A.1.9.1) [Candidatus Synechococcus spongiarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.9   0.0   3.7e-05      0.02       6      33 ..       6      33 ..       1      41 [. 0.82
+   2 ?   -0.7   0.0      0.14        77      70      93 ..     164     187 ..     158     221 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 3.7e-05
+        cysC  6 qrgvtvwltglsgagkstitealqakli 33
+                q+   v l glsgagkst+  +l+  l+
+  SAY39206.1  6 QQPQIVVLLGLSGAGKSTLMRCLNGALV 33
+                566678899************9998887 PP
+
+  == domain 2  score: -0.7 bits;  conditional E-value: 0.14
+        cysC  70 gfvsnlltrhgvivlvsaispyre 93 
+                  +v +l  r g+ vlvs   p++ 
+  SAY39206.1 164 NLVRQLQRRLGLTVLVSLHQPHQA 187
+                 567888899999999999888765 PP
+
+>> CZB18485.1  Scaffold protein for [4Fe-4S] cluster assembly,MRP-like, similar to chloroplast-targeted plant protein HC
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   2.9e-05     0.016       9      56 ..      99     146 ..      93     160 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 2.9e-05
+        cysC   9 vtvwltglsgagkstitealqakliaegysievldgdivrtnltkglg 56 
+                 v    +g  g gkst++  l + l a g  + +ld d+   n    lg
+  CZB18485.1  99 VVAVSSGKGGVGKSTVAVNLACALAATGLRVGLLDADLYGPNTPIMLG 146
+                 445567999****************************98766554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         1661  (429182 residues searched)
+Passed MSV filter:                        65  (0.0391331); expected 33.2 (0.02)
+Passed bias filter:                       65  (0.0391331); expected 33.2 (0.02)
+Passed Vit filter:                        14  (0.00842866); expected 1.7 (0.001)
+Passed Fwd filter:                         3  (0.00180614); expected 0.0 (1e-05)
+Initial search space (Z):               1661  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7896.95
+//
+[ok]

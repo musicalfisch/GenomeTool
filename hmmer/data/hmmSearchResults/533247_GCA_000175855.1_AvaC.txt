@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533247_GCA_000175855.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   9.1e-101  333.3   0.1     1e-100  333.2   0.1    1.0  1  EFA71836.1  O-methyltransferase, family 3 [Raphidiopsis brook
+    3.6e-06   24.1   0.0    4.5e-06   23.7   0.0    1.2  1  EFA74423.1  Probable methyltransferase [Raphidiopsis brookii 
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA71836.1  O-methyltransferase, family 3 [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  333.2   0.1  6.7e-104    1e-100       1     219 [.       1     219 [.       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 333.2 bits;  conditional E-value: 6.7e-104
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m++qtlgl  ++y+y     lre  il +lrqeta  p+++mqi+peqgqfma+l++ +gakk+l+igvftgys+lvval+lp +gk+iacd+seeyt+
+  EFA71836.1   1 MTKQTLGLGTDLYNYLLRNSLREVEILRELRQETAKLPMSMMQISPEQGQFMALLIKILGAKKTLDIGVFTGYSSLVVALSLPDDGKIIACDISEEYTN 99 
+                 889************************************************************************************************ PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 +ar ywq+agvadkidl++apaletldkl+a+ge+++fdf fidadk+ny+ yyer+l+l+rsgg+ia+dnv+wsgrva  + +dn+t  ir++n k++
+  EFA71836.1 100 MARIYWQRAGVADKIDLQLAPALETLDKLLAAGEAETFDFAFIDADKANYENYYERSLELIRSGGLIAVDNVLWSGRVADPEVQDNQTSKIRAFNQKLH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 +d r+ +s++pi dgltla k
+  EFA71836.1 199 RDSRITLSLVPIADGLTLARK 219
+                 ******************987 PP
+
+>> EFA74423.1  Probable methyltransferase [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7   0.0     3e-09   4.5e-06      60     145 ..      70     149 ..      37     213 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 3e-09
+        AvaC  60 gakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfdfvfidad 145
+                   +++le+g   g  +l +a  l p+ ++iacd+s    s a++y  +a v+ +id r+    e l  l ag      d+vf+   
+  EFA74423.1  70 EPNQVLELGCSQGRFTLPLAR-LFPNTQVIACDFSATAISTAKKYASEALVT-NIDYRVQSISECLKSLKAGT----CDIVFMTEV 149
+                 557899999999999999885.77899*******************999886.6**************99985....455555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3007  (904229 residues searched)
+Passed MSV filter:                        95  (0.0315929); expected 60.1 (0.02)
+Passed bias filter:                       79  (0.026272); expected 60.1 (0.02)
+Passed Vit filter:                         7  (0.0023279); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000665115); expected 0.0 (1e-05)
+Initial search space (Z):               3007  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6631.01
+//
+[ok]

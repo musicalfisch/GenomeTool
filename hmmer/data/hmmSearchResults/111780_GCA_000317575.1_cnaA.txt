@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111780_GCA_000317575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnaA  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     8e-148  490.5   0.0   9.1e-148  490.3   0.0    1.0  1  AFZ35567.1  anthranilate phosphoribosyltransferase [Stanieria
+    2.3e-09   35.1   0.2    2.1e-08   31.9   0.1    1.9  2  AFZ34800.1  Anthranilate phosphoribosyltransferase [Stanieria
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ35567.1  anthranilate phosphoribosyltransferase [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  490.3   0.0  3.8e-151  9.1e-148       1     349 [.       1     346 [.       1     350 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 490.3 bits;  conditional E-value: 3.8e-151
+        cnaA   1 msdtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrt 99 
+                 ms+ frellk +gsgthtgk+ltr ea mat mml q+atpaqigafmiahrikrpt +elagmlday +lg ++tl  +  + p+ +fgnpydgrsrt
+  AFZ35567.1   1 MSNQFRELLKKVGSGTHTGKDLTRQEAEMATLMMLQQQATPAQIGAFMIAHRIKRPTPEELAGMLDAYEKLGTKLTLAQTNTKLPV-VFGNPYDGRSRT 98 
+                 89*******************************************************************************99997.8*********** PP
+
+        cnaA 100 apvtpittlilglagvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwsp 198
+                  p+ pit+lil+  g+pv+lhggd mptkygisl eiw++lg df+ ls++   + l  tg+ f+y+p+hfp  + +v yr+qigkrpp+at el+wsp
+  AFZ35567.1  99 VPLMPITALILATVGIPVILHGGDCMPTKYGISLIEIWRNLGVDFAGLSISQTTNLLEKTGIGFIYLPQHFPEANTLVPYRDQIGKRPPFATAELIWSP 197
+                 *************************************************************************************************** PP
+
+        cnaA 199 fvgnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllage 297
+                 ++gn h +sgfvhppte+rf+ tf l+ i h+ttvkglegscdla  rt iiglg+p    sf+r+ l prdy +  +d  les   l  +l+ ++ag+
+  AFZ35567.1 198 LIGNYHLVSGFVHPPTEERFQATFKLKGINHYTTVKGLEGSCDLARSRTGIIGLGQPD--GSFERLHLHPRDYDLDGTDLSLESTPQLIEQLQAVIAGK 294
+                 ********************************************************95..69************************************* PP
+
+        cnaA 298 nneltdaaifnggfylwrcgiapdiptgfqqaqqslqsgkalakleqianyl 349
+                 n el  +ai+nggfylwr gi+ d+ t+f +a+  l  gk   kl+q++  +
+  AFZ35567.1 295 NCELMPSAILNGGFYLWRFGICSDLTTSFTEAESILTQGKVADKLNQLQSQI 346
+                 ***********************************************98655 PP
+
+>> AFZ34800.1  Anthranilate phosphoribosyltransferase [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.9   0.1   8.8e-12   2.1e-08      22     187 ..      25     185 ..      20     208 .. 0.81
+   2 ?    1.3   0.0     0.017        41     283     350 ..     280     350 ..     232     351 .] 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 31.9 bits;  conditional E-value: 8.8e-12
+        cnaA  22 ltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhp...iaifgnpydgrsrtapvtpittlilglagvpv 117
+                 l++ +aa      l +e  p+  ga++ a + k  ++delagm +   +      ++   +qh    i   g   dg s    ++   ++i ++agv v
+  AFZ34800.1  25 LSQTQAAQLMEGWLQEEIPPVISGAILAAIQAKGVSADELAGMAQVLQNQS----VQQQKIQHDspvIDTCGTGGDGASTF-NISTAVAFIAAAAGVKV 118
+                 66777777777789999999999********************87766544....44455565411256678889998855.566667899******** PP
+
+        cnaA 118 vlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrp 187
+                   hg     +k g    ++ + lg +++  s a v  +l   g+tf++ p   p ++ +   r+ +  r 
+  AFZ34800.1 119 AKHGNRSASSKVGS--ADVLEYLGVNLTA-SSAKVAAALDEVGITFLFAPGWHPAMKSVAPLRKTLQIRT 185
+                 ****9999999886..58999****9986.66899999*******************9999998776664 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.017
+        cnaA 283 lelltaklkgllagenne.ltdaaifnggfylwrcgia..pdiptgfqqaqqslqsgkalakleqianyle 350
+                 +e  ++ l+ +l g   +   da  +n  + l    ++   +   g++ a++ + sg a  kle+++++l 
+  AFZ34800.1 280 VEENATILRNVLQGRGTQaQQDALALNAALALQVGEVVgfGNHAQGIEMAKEIISSGAAWLKLEELVKFLA 350
+                 4445556777777765541457777788877776666522466789999999************9999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         4781  (1511376 residues searched)
+Passed MSV filter:                       128  (0.0267726); expected 95.6 (0.02)
+Passed bias filter:                      114  (0.0238444); expected 95.6 (0.02)
+Passed Vit filter:                        11  (0.00230077); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000418323); expected 0.0 (1e-05)
+Initial search space (Z):               4781  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10670.31
+//
+[ok]

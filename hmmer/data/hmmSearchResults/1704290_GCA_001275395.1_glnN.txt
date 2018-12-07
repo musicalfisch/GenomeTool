@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1704290_GCA_001275395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      7e-05   19.5   0.0    8.7e-05   19.2   0.0    1.1  1  KOP25384.1  glutamine synthetase [Hapalosiphon sp. MRB220]
+     0.0011   15.5   0.0     0.0015   15.1   0.0    1.1  1  KOP25708.1  glutamine synthetase [Hapalosiphon sp. MRB220]
+  ------ inclusion threshold ------
+      0.016   11.7   0.0      0.017   11.6   0.0    1.0  1  KOP27588.1  plasmid stabilization protein [Hapalosiphon sp. M
+
+
+Domain annotation for each sequence (and alignments):
+>> KOP25384.1  glutamine synthetase [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.2   0.0   4.5e-08   8.7e-05     257     357 ..     178     280 ..     112     334 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 19.2 bits;  conditional E-value: 4.5e-08
+        glnN 257 dhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsvg 353
+                 + yf   p +  q +  e+   + + g+p   +h eva  gq e+   f     a+d       ++k  a+k+g  + +  kp    ngsg h   s+ 
+  KOP25384.1 178 EGYFPVPPtDTFQDIRTEMLLTMAKCGVPIEKQHHEVATgGQCELGFRFGKLIEAADWLMTYKYVIKNVANKYGKTVTFMPKPVFQDNGSGMHTHQSIW 276
+                 556665553456677777888899*************97369****99*99999****999999******************************99987 PP
+
+        glnN 354 natq 357
+                 +  q
+  KOP25384.1 277 KDGQ 280
+                 6655 PP
+
+>> KOP25708.1  glutamine synthetase [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   7.8e-07    0.0015     271     355 ..     172     256 ..     159     298 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 7.8e-07
+        glnN 271 mqeveerlyrlgipaktrhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsvgna 355
+                 ++++ + l   gip    + e  pgq ei+  +  a  a+d q      +++ a++h + + +  k f    gsg h+  s+   
+  KOP25708.1 172 IDDIAKALISQGIPVEQYYPESGPGQQEISIRYTEALRAADWQVAYRETVQAIARRHNLKASFLPKIFPESAGSGCHIHLSLWWR 256
+                 56788889999**********************999******************************************9987654 PP
+
+>> KOP27588.1  plasmid stabilization protein [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   8.6e-06     0.017     631     704 ..      10      89 ..       1      97 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 8.6e-06
+        glnN 631 laianaaaigieldkesaqtvsnlikllmdsvsklse......aiakddfdsieehmqysaqtirplmdkvreyadtleg 704
+                  a+ ++ ai   + ++sa   ++++k ++d+ s+ls+       + +   d++ eh+ ys + i  +  ++  +a  + g
+  KOP27588.1  10 KALDDVEAIATYIARDSASYAATVVKKILDTTSNLSKepfsgrIVPEFGNDNVREHLAYSYRIIYHIQGDIVTVAAVIYG 89 
+                 588999*****************************96322222345566799***********99998888777777666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         5845  (1865779 residues searched)
+Passed MSV filter:                       157  (0.0268606); expected 116.9 (0.02)
+Passed bias filter:                      128  (0.0218991); expected 116.9 (0.02)
+Passed Vit filter:                        12  (0.00205304); expected 5.8 (0.001)
+Passed Fwd filter:                         3  (0.000513259); expected 0.1 (1e-05)
+Initial search space (Z):               5845  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.10
+# Mc/sec: 13489.58
+//
+[ok]

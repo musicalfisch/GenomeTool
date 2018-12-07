@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.3e-33  111.6   0.0    7.9e-33  111.4   0.0    1.0  1  ERT05670.1  carbon dioxide concentrating mechanism protein Cc
+  ------ inclusion threshold ------
+      0.042   12.8   0.1         22    4.1   0.0    3.5  3  ERT04122.1  hemolysin-type calcium-binding repeat family prot
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT05670.1  carbon dioxide concentrating mechanism protein CcmL [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.4   0.0   2.4e-36   7.9e-33      27     100 .]       1      74 []       1      74 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 111.4 bits;  conditional E-value: 2.4e-36
+        ccmL  27 lqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdqyr 100
+                 +q++de g++lp+yeva d vgag++ewvlv+rgsaarq+ g+e+rp daavvaiidt++  +r +yskkdq r
+  ERT05670.1   1 MQFIDEAGETLPEYEVALDFVGAGFNEWVLVTRGSAARQIPGSETRPSDAAVVAIIDTITAGNRSLYSKKDQER 74 
+                 69*********************************************************************986 PP
+
+>> ERT04122.1  hemolysin-type calcium-binding repeat family protein, partial [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.1   0.0    0.0068        22      21      47 ..      76     102 ..      54     116 .. 0.83
+   2 ?    0.8   0.0     0.071   2.3e+02      14      45 ..     178     209 ..     162     220 .. 0.79
+   3 ?    2.9   0.0     0.016        52      21      47 ..     408     434 ..     386     468 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 4.1 bits;  conditional E-value: 0.0068
+        ccmL  21 gvkllllqlvdeegkllpkyevaadsv 47 
+                 g+  + ++lvde+g ++++ e +ad v
+  ERT04122.1  76 GIGNITVNLVDENGTVVDTAETSADGV 102
+                 66778899****************987 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.071
+        ccmL  14 qkdpslrgvkllllqlvdeegkllpkyevaad 45 
+                   dp   g+  + ++lv+ +g++l +    ad
+  ERT04122.1 178 TLDPDEPGIEDITVNLVNANGNILASVSTNAD 209
+                 34788889999*************99888887 PP
+
+  == domain 3  score: 2.9 bits;  conditional E-value: 0.016
+        ccmL  21 gvkllllqlvdeegkllpkyevaadsv 47 
+                 g+  + ++lvde+g ++++ +  ad v
+  ERT04122.1 408 GIGNITVNLVDENGTVVDSVDTNADGV 434
+                 66778899**********999999966 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       110  (0.0169101); expected 130.1 (0.02)
+Passed bias filter:                       87  (0.0133743); expected 130.1 (0.02)
+Passed Vit filter:                         9  (0.00138355); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000307456); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6423.63
+//
+[ok]

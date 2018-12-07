@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1357508_GCA_001904715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     2e-107  355.5   5.5   2.2e-107  355.4   5.5    1.0  1  OKH37466.1  F0F1 ATP synthase subunit delta [Nostoc calcicola
+  ------ inclusion threshold ------
+      0.049   12.0   0.0      0.056   11.8   0.0    1.1  1  OKH33311.1  hypothetical protein FACHB389_18385 [Nostoc calci
+       0.13   10.7   1.6        6.8    5.0   0.0    3.3  3  OKH34557.1  hypothetical protein FACHB389_15405 [Nostoc calci
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH37466.1  F0F1 ATP synthase subunit delta [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  355.4   5.5  9.3e-111  2.2e-107       1     184 []       1     184 []       1     184 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 355.4 bits;  conditional E-value: 9.3e-111
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m+s++ataevaqpyaqallsiaqs+nltee+gedart+lsll+++++lqnf+ npf++pe+kk+++kq+lgeg+npylrnfll+lvd+rriafle+ilq
+  OKH37466.1   1 MTSQVATAEVAQPYAQALLSIAQSKNLTEEFGEDARTFLSLLRADQQLQNFFGNPFIQPESKKALIKQILGEGANPYLRNFLLVLVDKRRIAFLEPILQ 99 
+                 89************************************************************************************************* PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlssn 184
+                 qylallrqlnqtvlaevtsavplteaqqqa+++kvia+t+arqveletk+ds+liggviikvgsqvidas+rgqlrrlslrl+s+
+  OKH37466.1 100 QYLALLRQLNQTVLAEVTSAVPLTEAQQQAITQKVIAITNARQVELETKVDSELIGGVIIKVGSQVIDASIRGQLRRLSLRLTSG 184
+                 ***********************************************************************************95 PP
+
+>> OKH33311.1  hypothetical protein FACHB389_18385 [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   2.4e-05     0.056     138     180 ..      13      57 ..       3      60 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 2.4e-05
+        atpD 138 tkarqveletkidsdliggv..iikvgsqvidaslrgqlrrlslr 180
+                 t+a +ve+++++ds+l+  +  +    s+vi+ ++r  lr   lr
+  OKH33311.1  13 TRADKVEIAVRLDSELLEQIqhLTNDPSKVIEVAIRQWLRGEILR 57 
+                 899**************9874456778*********999976665 PP
+
+>> OKH34557.1  hypothetical protein FACHB389_15405 [Nostoc calcicola FACHB-389]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.8   0.0     0.014        33      63     107 ..     445     492 ..     393     506 .. 0.70
+   2 ?   -1.4   0.0      0.28   6.4e+02      65     108 ..     531     577 ..     526     580 .. 0.84
+   3 ?    5.0   0.0    0.0029       6.8      64     108 ..     656     703 ..     613     717 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 2.8 bits;  conditional E-value: 0.014
+        atpD  63 knvlkqllgeg...vnpylrnfllllvdrrriafleailqqylallrq 107
+                  ++ ++llge    v++ l n+ +l   + r +  e++ qq lal rq
+  OKH34557.1 445 LTLRRKLLGEEhldVAETLNNLAVLHRLQGRYSEAEPLYQQALALRRQ 492
+                 456788999953337888999999999999***************998 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.28
+        atpD  65 vlkqllgeg...vnpylrnfllllvdrrriafleailqqylallrql 108
+                 + ++llge    v++ l n+ +l   + r +  e+   q l l r+l
+  OKH34557.1 531 LRRKLLGEEhpdVAQSLHNLAFLYRSQGRYSEAEPFAIQALGLYRKL 577
+                 567899985333788999*99999*****************999987 PP
+
+  == domain 3  score: 5.0 bits;  conditional E-value: 0.0029
+        atpD  64 nvlkqllg...egvnpylrnfllllvdrrriafleailqqylallrql 108
+                 ++ ++llg   egv+++l n+ +l  d+ r +  e+++ + lal r+l
+  OKH34557.1 656 ALTRKLLGdehEGVAACLNNLAFLYRDQGRYSEAETLFIEALALRRKL 703
+                 567889984445899***************************999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6978  (2322580 residues searched)
+Passed MSV filter:                       257  (0.03683); expected 139.6 (0.02)
+Passed bias filter:                      172  (0.0246489); expected 139.6 (0.02)
+Passed Vit filter:                        11  (0.00157638); expected 7.0 (0.001)
+Passed Fwd filter:                         3  (0.000429923); expected 0.1 (1e-05)
+Initial search space (Z):               6978  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 7122.58
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173025_GCA_000317045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-50  166.4   8.4    3.3e-50  166.3   8.4    1.0  1  AFY66832.1  ATP synthase F0 subcomplex C subunit [Geitlerinem
+    3.3e-21   73.4   3.1    3.9e-21   73.2   3.1    1.0  1  AFY66325.1  ATP synthase F0 subcomplex C subunit [Geitlerinem
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY66832.1  ATP synthase F0 subcomplex C subunit [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  166.3   8.4   1.7e-53   3.3e-50       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 166.3 bits;  conditional E-value: 1.7e-53
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                m+p+vaaasv+aaala+GlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvvalvllfanpfa
+  AFY66832.1  1 MNPTVAAASVLAAALAIGLAAIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> AFY66325.1  ATP synthase F0 subcomplex C subunit [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   73.2   3.1   2.1e-24   3.9e-21       4      80 ..       6      82 ..       3      83 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 73.2 bits;  conditional E-value: 2.1e-24
+        atpH  4 lvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                l+ a s+++a+l++ +++iGp++g+G a ++a+  ia+qp+    i  tl++ la++es +iy +vv+++llf npf
+  AFY66325.1  6 LIGAVSMVTAGLTIAIGSIGPALGEGMAVARALGAIAQQPDKTNTITRTLFVGLAMVESTAIYCFVVSMILLFVNPF 82
+                799*************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         3815  (1301653 residues searched)
+Passed MSV filter:                       207  (0.0542595); expected 76.3 (0.02)
+Passed bias filter:                      109  (0.0285714); expected 76.3 (0.02)
+Passed Vit filter:                         6  (0.00157274); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000524246); expected 0.0 (1e-05)
+Initial search space (Z):               3815  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5271.69
+//
+[ok]

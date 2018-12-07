@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1705388_GCA_001276715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-25   86.2   1.5    8.6e-16   55.7   0.1    3.1  3  KOR35494.1  copper resistance protein CopA [Planktothricoides
+
+
+Domain annotation for each sequence (and alignments):
+>> KOR35494.1  copper resistance protein CopA [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.7   0.1   1.7e-19   8.6e-16       3     166 ..       1     157 [.       1     190 [. 0.79
+   2 !    9.7   0.0   1.6e-05     0.079     228     308 ..     249     327 ..     231     339 .. 0.86
+   3 !   18.6   0.2   3.1e-08   0.00016     411     494 ..     515     594 ..     476     596 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 55.7 bits;  conditional E-value: 1.7e-19
+        cueA   3 linrrqflllstgtaialltq..cshnttsvssiqpanltalttssnglletalearpglirlgqqqgnlltyngqipgprleakpgdtvkihftnkls 99 
+                 +inrr+fl+++tg  +al  +       +    iqp+ +   t     l+e  ++  p    +g++ g  +t n  +p p +  k g+t  i++tn+l 
+  KOR35494.1   1 MINRRKFLYFTTGLGMALGCKqlIPVYGQQPGDIQPSSA---THEYPDLIEVFIQETPF--TIGRKTGTAVTVNNVLPAPIIRWKEGQTATIKVTNNLK 94 
+                 69***********99887543112333444455666555...456789******99996..569*********************************** PP
+
+        cueA 100 qatnlhyhglhipqt..gnadniflsvppgetqtyeftlpknhpsgtfyyhphlhelvaeqvfgglggi 166
+                 + t +h+hg+ +p    g     f  + pg+t ty+f +     sgt++yh h    + eq +g  g i
+  KOR35494.1  95 EDTSIHWHGIILPANmdGVPGISFAGIKPGQTFTYQFPIN---QSGTYWYHSHS--GMQEQ-LGHYGAI 157
+                 ************97522555667999*********99664...59*****9985..34444.3555555 PP
+
+  == domain 2  score: 9.7 bits;  conditional E-value: 1.6e-05
+        cueA 228 tipsggllrfrivnasssrfyrlsledhpfyliatdggsiakpvelrelllspgeraevlvqgkrppgryrllslpydrgg 308
+                     g  +r+r +nas+  f+ + +    + +i  dg  + +pv + e+ +   e  +v+v+ +     y +++   dr g
+  KOR35494.1 249 LFKPGEKVRLRFINASAMTFFDIRIPGLKMTVIQGDGQNV-QPVTVDEFRIGVAETYDVIVEPQD-EQAYTIFAETMDRSG 327
+                 55668899****************************9876.8*******************9765.457888888888876 PP
+
+  == domain 3  score: 18.6 bits;  conditional E-value: 3.1e-08
+        cueA 411 edwelvnvdpdgmehsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                 e   l  v+   meh +hlh   +++    g    y+  + t+ ++  e + + + + d  gk  +hch++ h ++gm+  +av
+  KOR35494.1 515 ERLRLTFVNQTMMEHPIHLHGMWMELDNGAG---EYKPRKHTVIVKPAEKMSVEVNV-DARGKWAFHCHLMYHMEMGMFRTIAV 594
+                 556778899999********99888755554...5777889*********9999985.899*****************999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5049  (1535341 residues searched)
+Passed MSV filter:                       139  (0.0275302); expected 101.0 (0.02)
+Passed bias filter:                      121  (0.0239651); expected 101.0 (0.02)
+Passed Vit filter:                         9  (0.00178253); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000198059); expected 0.1 (1e-05)
+Initial search space (Z):               5049  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 10878.99
+//
+[ok]

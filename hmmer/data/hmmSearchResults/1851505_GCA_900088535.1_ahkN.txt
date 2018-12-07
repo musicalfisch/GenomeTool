@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1851505_GCA_900088535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkN  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.3e-68  226.9   0.0    5.2e-68  226.7   0.0    1.0  1  SBO42659.1  Peptidase M28 [Cyanobium sp. NIES-981]
+     0.0038   13.8   0.0      0.006   13.2   0.0    1.2  1  SBO42823.1  N-carbamoyl-L-amino acid hydrolase [Cyanobium sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> SBO42659.1  Peptidase M28 [Cyanobium sp. NIES-981]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  226.7   0.0   3.2e-71   5.2e-68       7     277 ..       7     277 ..       4     279 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 226.7 bits;  conditional E-value: 3.2e-71
+        ahkN   7 drlsqhleqivrernpffssqghfyvreylrqelgnwgkveshffsfqgkvyenlildlpnn.sqkppiligahydtvpgspgaddnatglavllelar 104
+                 +rl  hl q+ r r   +   g + vr y+ +el   g ve h f+    +  nlil lp + ++  p+l+gahyd    s gaddnatg+a llelar
+  SBO42659.1   7 QRLLAHLVQLARPRHARWDPLGLMSVRAYVLEELHSCGPVEQHRFQEGTDAGVNLILRLPGQhAELDPLLVGAHYDGPLQSIGADDNATGVAALLELAR 105
+                 69999*******************************************************7626779******************************** PP
+
+        ahkN 105 ffgenqanypirliafdleeygllgsiayaeklkqtkqdlrlmlslemlgycdknphsqkypa.fleyfypntgdfialignlktrkdlnflsrvlr.e 201
+                  +  +    p+ l+afd ee+g++gs a a +l++ +q l lm+slemlgy  +    q yp   +  +y + gdfial+gn      l +     r  
+  SBO42659.1 106 RWAAEPPRRPVWLVAFDQEEWGMVGSKALARELRHRRQPLELMVSLEMLGYTAE---EQDYPHpAMRLVYGDRGDFIALVGNASPAMALTLPRLAQRlG 201
+                 ***************************************************865...577775247899**************9999998655445523 PP
+
+        ahkN 202 nqtpcewlpvifggyivpdtrrsdhspfwdrgysaimvtdtanmrnpyyhssrdtiatldlnfltrvcqglcfglq 277
+                  + p + lpv  +g  +pd r sdhspfwdrgy a+mvtdt+ mrnp+yh   dti tldl fl+ v +gl   l+
+  SBO42659.1 202 RHVPTKMLPVPDAGRALPDVRLSDHSPFWDRGYDAVMVTDTSFMRNPHYHQMSDTIDTLDLPFLAAVTEGLEAALR 277
+                 579*******************************************************************987765 PP
+
+>> SBO42823.1  N-carbamoyl-L-amino acid hydrolase [Cyanobium sp. NIES-981]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   3.7e-06     0.006      69     130 ..      94     156 ..      76     163 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 3.7e-06
+        ahkN  69 sqkppiligahydtvpgspgaddnatglavllelarff.genq.anypirliafdleeygllgs 130
+                  q p +  g+h dtvp   g  d a g+   le+ r++ g+ q   +p+ +i f  ee  ++g 
+  SBO42823.1  94 PQAPVLATGSHIDTVPE-GGRYDGALGVMAGLEVVRVLaGQGQrLHHPLEVIVFADEESSMVGC 156
+                 47777889********7.588999***********987355442689***********999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (282 nodes)
+Target sequences:                         3264  (918524 residues searched)
+Passed MSV filter:                        49  (0.0150123); expected 65.3 (0.02)
+Passed bias filter:                       49  (0.0150123); expected 65.3 (0.02)
+Passed Vit filter:                         6  (0.00183824); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000612745); expected 0.0 (1e-05)
+Initial search space (Z):               3264  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8634.13
+//
+[ok]

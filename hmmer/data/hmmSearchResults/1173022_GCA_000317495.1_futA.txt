@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0042   14.2   0.0      0.085    9.9   0.0    2.1  2  AFZ14886.1  carbohydrate ABC transporter substrate-binding pr
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ14886.1  carbohydrate ABC transporter substrate-binding protein, CUT1 family [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.1   0.0    0.0043        21      55      81 ..      66      94 ..      25     113 .. 0.78
+   2 !    9.9   0.0   1.8e-05     0.085     262     323 ..     315     377 ..     286     404 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 2.1 bits;  conditional E-value: 0.0043
+        futA 55 nf.trqtgikinlveg.eadplierikse 81
+                +f  ++ gi+in+veg +a  l+e + s 
+  AFZ14886.1 66 DFqEKNPGIRINIVEGpNATNLLEDLYSS 94
+                4414678********95688899988775 PP
+
+  == domain 2  score: 9.9 bits;  conditional E-value: 1.8e-05
+        futA 262 rgahvnisgggliktapnresaikfleylssneaqnffakgnqeypvvrgvaldp.vlaklgr 323
+                  ga +   g g+ k++   e a k ++y++s+eaq+ f       p  r +  dp ++ak g+
+  AFZ14886.1 315 SGACLGGWGLGIAKSSRHPEEAWKAIQYFTSEEAQKQFILSAGYVPSRRDLFKDPeIVAKYGH 377
+                 45555666778999*************************999999**9999999956789886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                        99  (0.0208333); expected 95.0 (0.02)
+Passed bias filter:                       76  (0.0159933); expected 95.0 (0.02)
+Passed Vit filter:                         7  (0.00147306); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000210438); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10637.19
+//
+[ok]

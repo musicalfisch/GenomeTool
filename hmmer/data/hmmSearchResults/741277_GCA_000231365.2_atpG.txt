@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/741277_GCA_000231365.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-59  198.3  12.9    1.3e-59  198.1  12.9    1.0  1  EHC14110.1  ATP synthase subunit b [Fischerella sp. JSC-11]
+    1.8e-05   22.6  10.9    2.3e-05   22.3  10.9    1.1  1  EHC14109.1  ATP synthase subunit b [Fischerella sp. JSC-11]
+
+
+Domain annotation for each sequence (and alignments):
+>> EHC14110.1  ATP synthase subunit b [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  198.1  12.9   5.8e-63   1.3e-59       1     143 []       1     143 []       1     143 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 198.1 bits;  conditional E-value: 5.8e-63
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf+lla +ln +fykpl+kvld+r +yir  +  a+e+lak+e l +eye ql+ ar+qsq++iaqaq+eaqk+++e++a aqkea
+  EHC14110.1   1 MFDFDATLPLMALQFLLLAAVLNVIFYKPLTKVLDDRDNYIRTNNLEARERLAKAERLTKEYEQQLAEARRQSQNVIAQAQTEAQKITAEKIAEAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                  a++e va ei qqk+ea+ sle qv ++srqilekllgp lv+
+  EHC14110.1 100 QAQREQVAQEIEQQKQEALSSLEQQVDAFSRQILEKLLGPSLVK 143
+                 ******************************************96 PP
+
+>> EHC14109.1  ATP synthase subunit b [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.3  10.9     1e-08   2.3e-05       9     134 ..      28     156 ..      22     163 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 22.3 bits;  conditional E-value: 1e-08
+        atpG   9 pvmalqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarke 104
+                  ++  ++i la+++  +fy   k +s+ l er   i  +   a e+   + a + + + +l+ a+ ++q+i   a+ +a+ +    +a a  e    ke
+  EHC14109.1  28 NILETNIINLAILIGVLFYfgrKVISNTLSERRSNIETAIREAEERAKEAAAQLSDAQQKLTQAQAEAQQIRKAAEENARSVREAILARAAEEVERMKE 126
+                 566678899*********988889*********99999999999998888999999999************99999999999888888898888889** PP
+
+        atpG 105 avaaeiaqqkeeafrslegqvaslsrqile 134
+                 + a ++  ++e af  l  +v +++ q  e
+  EHC14109.1 127 TAARDLDTERERAFAELRQRVVAMALQKAE 156
+                 *********************999988766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4627  (1420067 residues searched)
+Passed MSV filter:                       215  (0.0464664); expected 92.5 (0.02)
+Passed bias filter:                       98  (0.02118); expected 92.5 (0.02)
+Passed Vit filter:                        10  (0.00216123); expected 4.6 (0.001)
+Passed Fwd filter:                         2  (0.000432246); expected 0.0 (1e-05)
+Initial search space (Z):               4627  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6768.99
+//
+[ok]

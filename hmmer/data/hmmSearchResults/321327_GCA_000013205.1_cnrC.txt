@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.039   10.5  38.1      0.039   10.5   9.6    3.3  3  ABC99683.1  outer membrane efflux family protein [Synechococc
+
+
+Domain annotation for each sequence (and alignments):
+>> ABC99683.1  outer membrane efflux family protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.0  16.1    0.0013       3.7     260     420 ..     137     308 ..     121     311 .. 0.62
+   2 ?    5.6   3.9   0.00042       1.2     312     414 ..     330     432 ..     327     439 .. 0.83
+   3 ?   10.5   9.6   1.4e-05     0.039     263     415 ..     351     510 ..     351     513 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 4.0 bits;  conditional E-value: 0.0013
+        cnrC 260 fsiaeagvrlaranrvpdlnvgpairrleatn....dmaavftvsipi.....pvfnngraaiaqataqrtqadaqrrvtaldieqaitdaqaqaana. 348
+                    aeagv la+a   p l    + +  e           v t+s  +       f+ng             a+   rv+ l++eq++   +   ana 
+  ABC99683.1 137 VERAEAGVALAQAAFAPTLSTRASYQYSEPPSpggrPSREVHTLSASVvrvdyTAFDNGIREQNLRL-----AQEALRVAQLQLEQTLQTVKQAVANAy 230
+                 5568888888888888888887777777654311113445555554431001144555543333333.....333456777777777666555555553 PP
+
+        cnrC 349 ....attaraa.sgpalaaaqeaariarigyregkfgqlelldaertlaetrvaaidalanyqnaraqv.erltapap 420
+                     ++ ar a s  a+a+++ + r a+   r g   ++e+l+ae  la+ r + + a    q +r ++ e l  p+p
+  ABC99683.1 231 ydlqSADARVAiSQAAVASSEATLRDAQARERAGVGTRFEILQAETELANNRQTLLVAQNTQQLSRRRLaELLNFPSP 308
+                 33223456655155666666666799**************************99999998888877665155566666 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.00042
+        cnrC 312 aiaqataqrtqadaqrrvtaldieqaitdaq.aqaanaattaraasgpalaaaqeaariarigyregkfgqlelldaertlaetrvaaid...alanyq 406
+                 +i  a aqr + + qrr    ++eqa +  + aqa+n       a+  a+   + +     igy  g    l  ld  ++ a++r a id   a+ n+ 
+  ABC99683.1 330 TIVAAFAQRQELERQRR----ELEQAQARVRlAQASNGPQIGLFATLDAVNDFKASRDSFDIGYSVGANFSLTWLDGGKAAAQARQAEIDgqvAVNNFI 424
+                 5788999****999999....5777766654399999999999999999998887777889****************************9555566777 PP
+
+        cnrC 407 naraqver 414
+                  +r ++ r
+  ABC99683.1 425 GSRNEIRR 432
+                 77777766 PP
+
+  == domain 3  score: 10.5 bits;  conditional E-value: 1.4e-05
+        cnrC 263 aeagvrlaranrvpdlnvgpairrleatndmaav.ftvsipipvfnn...graaiaqataqrtqadaqrrvtaldi...eqaitdaqaqaanaattar. 353
+                 a+a vrla+a   p++ +      l+a nd+ a   +  i   v  n         +a+aq  qa+ + +v+  +     + i  +  +a  + +++r 
+  ABC99683.1 351 AQARVRLAQASNGPQIGLF---ATLDAVNDFKASrDSFDIGYSVGANfslTWLDGGKAAAQARQAEIDGQVAVNNFigsRNEIRRSVEEAFLTLSSSRe 446
+                 5788999999999987664...45677777655422334444443331003333345666666665555554433301123333333333333333331 PP
+
+        cnrC 354 ..aasgpalaaaqeaariarigyregkfgqlelldaertlaetrvaaidalanyqnaraqverl 415
+                    ++  a+a+a+e+ r+ar+  + g   q e+++ae +l+  r    +a+  y+ a  q++r 
+  ABC99683.1 447 qiDSAKVAIASAEESLRLARLRLQAGVGTQTEVINAETALTTVRGNLSNAVIAYNRALVQLQRA 510
+                 113446799************************************************9999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                       143  (0.0518116); expected 55.2 (0.02)
+Passed bias filter:                       50  (0.0181159); expected 55.2 (0.02)
+Passed Vit filter:                         5  (0.00181159); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000362319); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8779.63
+//
+[ok]

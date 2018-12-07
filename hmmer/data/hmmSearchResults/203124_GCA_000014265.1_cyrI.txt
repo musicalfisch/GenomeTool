@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/203124_GCA_000014265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrI  [M=276]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0016   15.9   0.1     0.0016   15.9   0.1    2.2  2  ABG50491.1  hypothetical protein Tery_1129 [Trichodesmium ery
+
+
+Domain annotation for each sequence (and alignments):
+>> ABG50491.1  hypothetical protein Tery_1129 [Trichodesmium erythraeum IMS101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.1   3.7e-07    0.0016      61     136 ..      45     120 ..      20     184 .. 0.88
+   2 ?   -1.3   0.5     0.066   2.9e+02      44      95 ..     350     401 ..     333     498 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 3.7e-07
+        cyrI  61 kkyesaryirasvvrlqreliefeeekedaklledayaeikrmRrlvrntisPilrlivkldvileeicslaklle 136
+                 ++y    ++ras ++++r    + + k++ k++e++  +++   + ++  i  i    + l  +le+icsla+  +
+  ABG50491.1  45 ELYRQPPPGRASQSKIDRINNIYWKFKNEVKYQEKYVDQAQGNLEKIKGSIRSIGEDLDSLISELENICSLANNNQ 120
+                 67777889**************************************************************997654 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.066
+        cyrI  44 nyylekelmeilekikkkkyesaryirasvvrlqreliefeeekedaklled 95 
+                 n++  +el    eki+ ++  +    ++   +l+ + + + +++e   +l++
+  ABG50491.1 350 NNFRVNELPSLKEKIQNELDSYKSLQKSIFQKLGETRLSVKNTQERFEYLNK 401
+                 5555555555555555555555555555555555555555555555555443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (276 nodes)
+Target sequences:                         4451  (1543737 residues searched)
+Passed MSV filter:                       154  (0.034599); expected 89.0 (0.02)
+Passed bias filter:                      108  (0.0242642); expected 89.0 (0.02)
+Passed Vit filter:                        11  (0.00247135); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000224669); expected 0.0 (1e-05)
+Initial search space (Z):               4451  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10651.79
+//
+[ok]

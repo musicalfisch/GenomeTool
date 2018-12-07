@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-28   98.6   0.0    1.2e-28   98.4   0.0    1.0  1  AKG21733.1  phosphoadenosine phosphosulfate reductase [Caloth
+  ------ inclusion threshold ------
+       0.06   11.0   0.1      0.089   10.5   0.1    1.2  1  AKG20628.1  transporter [Calothrix sp. 336/3]
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG21733.1  phosphoadenosine phosphosulfate reductase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.4   0.0   4.8e-32   1.2e-28      11     240 ..       4     237 ..       1     238 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 98.4 bits;  conditional E-value: 4.8e-32
+        cysD  11 ttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkvyktpdvdtre 109
+                 +t++++  l+ ++   tpreil +++          s    +d+++ d+  s++ +   v  ldt    +et +++   ++ y + ++v   pd    +
+  AKG21733.1   4 ATDLNITALETEYSQKTPREILQFALGTFDNIA--ISFSGAEDVVLIDMA-SKITKDFRVFTLDTGRLHPETYQFLDEVRKHYGIKIEVM-FPDAAEVQ 98 
+                 56788889999**************98877644..455568999999975.7889999******************************97.79999999 PP
+
+        cysD 110 afaakygealwdkdiak.fhevtkieplqrglaelntvawitgrrrdqa.vtranmpifelds......knrikvnplanwtrkksweyvaehgviynp 200
+                 +++   g   + +d  k    v k+ pl+r l+ l+  awitg+r+dq+  tr  +p++e d+      ++ +k npla w+  + w y+    v yn 
+  AKG21733.1  99 TLVEEKGLFSFYTDGHKeCCGVRKVRPLRRKLNTLD--AWITGQRKDQSpSTRNHIPVIEADAafstpdHSLVKFNPLASWSSAEVWSYIRALDVPYNK 195
+                 999999988777776542789*********998887..8*********85799********973333324679************************** PP
+
+        cysD 201 lhdqgypsigdepittkvgegederagrwr..gtgktecgih 240
+                 lh++g+ sig ep t  v   + er grw    ++  ecg+h
+  AKG21733.1 196 LHERGFVSIGCEPCTKAVLPNQHEREGRWWweESTLKECGLH 237
+                 ****************************861155566***99 PP
+
+>> AKG20628.1  transporter [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.1   3.5e-05     0.089      36      67 ..       5      36 ..       2      50 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 3.5e-05
+        cysD 36 ienistglvqtsafnvddliitdilysdlkhp 67
+                i  istg+   +a n+ddlii  + +s+++h 
+  AKG20628.1  5 ITAISTGITAFTATNLDDLIILSLWFSQINHN 36
+                6789*************************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                        80  (0.0158636); expected 100.9 (0.02)
+Passed bias filter:                       69  (0.0136823); expected 100.9 (0.02)
+Passed Vit filter:                         5  (0.000991473); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 12944.65
+//
+[ok]

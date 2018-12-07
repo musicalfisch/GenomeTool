@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1903187_GCA_002095975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-93  307.5  13.6    3.2e-93  307.3  13.6    1.0  1  ARI81384.1  AtpG [Microcystis aeruginosa PCC 7806SL]
+     0.0036   15.4   7.8     0.0046   15.1   7.8    1.1  1  ARI81385.1  AtpF [Microcystis aeruginosa PCC 7806SL]
+
+
+Domain annotation for each sequence (and alignments):
+>> ARI81384.1  AtpG [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  307.3  13.6   1.2e-96   3.2e-93       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 307.3 bits;  conditional E-value: 1.2e-96
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelql+sarkqsqeiiaqaqaeaqklaservaaaqkea
+  ARI81384.1   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTEGGAKEQLAKTEALVQEYELQLTSARKQSQEIIAQAQAEAQKLASERVAAAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr
+  ARI81384.1 100 IARKEAVAAEIAQQKEEAFRSLEGQVASLSRQILEKLLGPELVR 143
+                 *******************************************8 PP
+
+>> ARI81385.1  AtpF [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   7.8   1.7e-06    0.0046      17     137 ..      34     157 ..      21     163 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.7e-06
+        atpG  17 llavilna.vfy..kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaq 112
+                  l+++l   +fy  k l ++l er   i ++ + a ++   +   + e + +l+ a++++++ii +a++ a+ ++++  a a+ +    +e+ a +++ 
+  ARI81385.1  34 NLSILLGLvIFYgrKVLGQILGERQSKIAEALAEAEDRKNIAANALAEEQKKLALAKQEAEKIINNARSRAKTVTADIAAQAELDIQRMRESAAKDLSA 132
+                 4566665415666689*************99999988776655555666789*********************99998888888877789999999*99 PP
+
+        atpG 113 qkeeafrslegqvaslsrqilekll 137
+                 +++ ++  l  ++++l+   +e  l
+  ARI81385.1 133 EQDRVLVELRQRITALALANVESQL 157
+                 9999999999999999877777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5364  (1399560 residues searched)
+Passed MSV filter:                       180  (0.033557); expected 107.3 (0.02)
+Passed bias filter:                      100  (0.0186428); expected 107.3 (0.02)
+Passed Vit filter:                        13  (0.00242356); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000372856); expected 0.1 (1e-05)
+Initial search space (Z):               5364  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10006.85
+//
+[ok]

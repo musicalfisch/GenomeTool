@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      7e-05   20.4  17.6     0.0058   14.1   2.0    2.6  3  CCQ48853.1  Outer membrane efflux protein [Crocosphaera watso
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ48853.1  Outer membrane efflux protein [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.5   8.4   1.4e-05      0.07      94     215 ..     207     332 ..     189     348 .. 0.83
+   2 ?    1.1   0.5      0.01        51     252     330 ..     308     389 ..     302     394 .. 0.77
+   3 !   14.1   2.0   1.2e-06    0.0058     108     382 ..     432     507 ..     420     547 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 1.4e-05
+        cnrC  94 saestvgfai....pielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqra 188
+                 s e+t  f++     i  gg r  r+  ++ ++   +++   ia +vr++ t+ y     ad +va a+ +   as++lr a +  +ag  + ++   a
+  CCQ48853.1 207 SREATGIFSValryDIYTGGERDGRIMRTEREIRDRQLELERIAEQVRFEATDNYYLLQNADAQVAIAQADVENASQTLRDAQLLERAGLGTRFDVLTA 305
+                 445554444311115778***********************************************************************9999888888 PP
+
+        cnrC 189 dvarinadanverqlrlaeaaranlar 215
+                 +     a+ ++ r +    +ar  la 
+  CCQ48853.1 306 EGDLAAANEQLTRAIADQRTARRRLAE 332
+                 877777777788888777778877775 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.01
+        cnrC 252 alaaanadfsiaeagvrlaranrvpdlnvgpairrleatndm.aavftvsipipvf..nngraaiaqataqrtqadaqrrvt 330
+                  laaan +++ a a  r ar      l +g  ++ + a +   + v+ +s+   +    + r+ + q   qr   + +rr++
+  CCQ48853.1 308 DLAAANEQLTRAIADQRTARRRLAETLSLGQHVQLVAADEITeSGVWGLSLEETIVqaYKNRSELEQELVQREIGEQDRRIA 389
+                 5899****************999999****9998666654322568888886554411467889999999999998888876 PP
+
+  == domain 3  score: 14.1 bits;  conditional E-value: 1.2e-06
+        cnrC 108 ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrla 206
+                 gg+  a    a+ ++ +a+i+ a +  ++r++v + y   va    + ++r++     +alr a +r qag  +                         
+  CCQ48853.1 432 GGRAFAGARAAERRIDQANIRFADLRNEIRFEVEEAYFSLVANRENIGSTRQNVETREEALRLARLRFQAGVGTQ------------------------ 506
+                 444444444566677777777777777777777777777777777777777777777777777777777775443........................ PP
+
+        cnrC 207 eaaranlarrigrpidgalddtlldrlpganvygpvapvnttgtlalaaanadfsiaeagvrlaranrvpdlnvgpairrleatndmaavftvsipipv 305
+                                                                                                                    
+  CCQ48853.1   - ---------------------------------------------------------------------------------------------------   -
+                 ................................................................................................... PP
+
+        cnrC 306 fnngraaiaqataqrtqadaqrrvtaldieqaitdaqaqaanaattaraasgpalaaaqeaariarigyregkfgql 382
+                                                                                              
+  CCQ48853.1 507 ----------------------------------------------------------------------------T 507
+                 ............................................................................3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                        92  (0.0185297); expected 99.3 (0.02)
+Passed bias filter:                       61  (0.012286); expected 99.3 (0.02)
+Passed Vit filter:                         7  (0.00140987); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.00020141); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 10103.33
+//
+[ok]

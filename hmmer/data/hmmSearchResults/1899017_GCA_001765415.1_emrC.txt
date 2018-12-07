@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1899017_GCA_001765415.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        3.8    4.8  35.5      0.096    9.9  12.1    3.2  3  AOR38466.1  hypothetical protein BHV42_04285 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> AOR38466.1  hypothetical protein BHV42_04285 [Candidatus Melainabacteria bacterium MEL.A1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9  12.1   5.4e-05     0.096      20     104 ..      60     141 ..      37     143 .. 0.78
+   2 ?    1.1   1.4      0.03        54      48     103 ..     146     201 ..     142     204 .. 0.79
+   3 ?    5.6   6.4    0.0012       2.1      42     103 ..     220     287 ..     207     290 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 5.4e-05
+        emrC  20 tcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigins 104
+                 +++k+s+  ++lip  l+ +f+ l+   l  a++ ie  +a ++   +  v++a+i  i+f+e +t + + +i+l  ig+i +  
+  AOR38466.1  60 VSLKISK--KELIPLFLLGIFFSLSSLTLFEAFHYIEAGIACTILF-IYPVMVAIIMAIFFKEKITKTVITAIILTSIGIILLYN 141
+                 3344443..469**********9998888889**********9986.567899***************************98765 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.03
+        emrC  48 ltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigin 103
+                  tl+lk i + ++ ++  +l  v + +i  +   +s+ l   + +  +++ vi +n
+  AOR38466.1 146 TTLSLKGISIVLSSALLYALYIVGVRTIKSVKNMDSARLSFYVMLFGLLVYVINLN 201
+                 68999999999999999999888888888888888888777777777777777777 PP
+
+  == domain 3  score: 5.6 bits;  conditional E-value: 0.0012
+        emrC  42 glcltfltlalkkievsv......aysvwaglgtvliavigliwfresltlvklisialiiigvigin 103
+                 gl+l    ++l++i +++        ++  +l  +     g+++f+e lt+   i ++li+ gv  i 
+  AOR38466.1 220 GLALFPTIISLETITIAIqligstNTAILGALEPLTAIFFGILFFHEQLTIRISIGVILILFGVFMII 287
+                 5555445556666555541111114456666666667778***********************98775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         1772  (542038 residues searched)
+Passed MSV filter:                        84  (0.0474041); expected 35.4 (0.02)
+Passed bias filter:                       25  (0.0141084); expected 35.4 (0.02)
+Passed Vit filter:                         2  (0.00112867); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000564334); expected 0.0 (1e-05)
+Initial search space (Z):               1772  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 2872.80
+//
+[ok]

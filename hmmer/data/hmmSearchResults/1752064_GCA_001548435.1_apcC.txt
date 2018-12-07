@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752064_GCA_001548435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-48  161.0   0.9    1.7e-48  160.9   0.9    1.0  1  BAU10042.1  phycobilisome small core linker polypeptide ApcC 
+    5.1e-05   21.6   0.1    5.5e-05   21.5   0.1    1.4  1  BAU14967.1  phycocyanin-associated 7.8kDa rod linker protein 
+  ------ inclusion threshold ------
+      0.017   13.5   0.0       0.04   12.4   0.0    1.5  1  BAU11791.1  ferredoxin-NADP+ oxidoreductase [Leptolyngbya sp.
+       0.02   13.3   0.0      0.056   11.9   0.0    1.8  1  BAU14966.1  phycobilisome rod linker polypeptide [Leptolyngby
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU10042.1  phycobilisome small core linker polypeptide ApcC [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.9   0.9     1e-51   1.7e-48       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 160.9 bits;  conditional E-value: 1e-51
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmfkitacvPsqtrirtqrelqnt+ftklvpy+nWf+eqqri+kmGGkivkvelatG+pg+ntGl
+  BAU10042.1  1 MRMFKITACVPSQTRIRTQRELQNTFFTKLVPYENWFKEQQRIQKMGGKIVKVELATGRPGANTGL 66
+                9****************************************************************9 PP
+
+>> BAU14967.1  phycocyanin-associated 7.8kDa rod linker protein [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   0.1   3.3e-08   5.5e-05      30      56 ..      49      75 ..      11      78 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 3.3e-08
+        apcC 30 lvpydnWfreqqrimkmGGkivkvela 56
+                 vpy+   +e qri ++GG+iv++e  
+  BAU14967.1 49 TVPYNRMNEEMQRITRLGGRIVNIEPL 75
+                49*********************9855 PP
+
+>> BAU11791.1  ferredoxin-NADP+ oxidoreductase [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   2.4e-05      0.04      31      54 ..      49      72 ..      39      85 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.4e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy+   +  qri ++GGkiv ++
+  BAU11791.1 49 VPYNRMNEFMQRITRLGGKIVSIQ 72
+                8999999999***********997 PP
+
+>> BAU14966.1  phycobilisome rod linker polypeptide [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   3.3e-05     0.056      30      54 ..     262     286 ..     255     288 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 3.3e-05
+        apcC  30 lvpydnWfreqqrimkmGGkivkve 54 
+                 lvpy++  +  q+i++ G kiv v 
+  BAU14966.1 262 LVPYEQLSNKMQQIQRTGAKIVSVT 286
+                 9*********************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         6635  (2004652 residues searched)
+Passed MSV filter:                       157  (0.0236624); expected 132.7 (0.02)
+Passed bias filter:                      139  (0.0209495); expected 132.7 (0.02)
+Passed Vit filter:                        19  (0.0028636); expected 6.6 (0.001)
+Passed Fwd filter:                         4  (0.000602864); expected 0.1 (1e-05)
+Initial search space (Z):               6635  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4477.06
+//
+[ok]

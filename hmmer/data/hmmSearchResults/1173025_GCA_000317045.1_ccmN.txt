@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173025_GCA_000317045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-35  119.3  12.6    6.1e-35  118.3  12.7    1.5  1  AFY64915.1  carbon dioxide concentrating mechanism protein [G
+    6.1e-07   26.8   0.1    1.3e-06   25.7   0.1    1.5  1  AFY64914.1  Carbonate dehydratase [Geitlerinema sp. PCC 7407]
+  ------ inclusion threshold ------
+       0.97    6.5  10.2       0.51    7.4   2.5    2.2  2  AFY65381.1  serine O-acetyltransferase [Geitlerinema sp. PCC 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY64915.1  carbon dioxide concentrating mechanism protein [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  118.3  12.7   4.8e-38   6.1e-35       1     137 [.       1     139 [.       1     171 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 118.3 bits;  conditional E-value: 4.8e-38
+        ccmN   1 mslppvqpisrsefyvngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstttifnas 99 
+                 m lp +qp+  +++y+ gdv i+esai+ +g il+a p  +i++ agac+gmg+++ a+qg i i +g  lg+g lvvg   ig+nac+g+ tt+fn+s
+  AFY64915.1   1 MNLPSLQPVISADIYISGDVRIHESAIIGSGAILQADPGCRIVVSAGACIGMGAVVHAHQGNIEIRTGVNLGAGALVVGDCVIGDNACVGAVTTLFNTS 99 
+                 89************************************************************************************************* PP
+
+        ccmN 100 vaamslvpsgsligdtsrqitievsatrse..perpplpe 137
+                 + a  lv  g+++g++ r +  +  a+  e   e p  p 
+  AFY64915.1 100 IPASQLVSPGTFLGNAGRSLKNQPPASSQErvVEEPASPT 139
+                 ******************9988766654431123333322 PP
+
+>> AFY64914.1  Carbonate dehydratase [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.7   0.1     1e-09   1.3e-06      16     115 ..      34     144 ..      20     169 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 25.7 bits;  conditional E-value: 1e-09
+        ccmN  16 vngdvtidesaivapgvilraapnsqiiigagaclgmgtiltay.qg..........viaigagailgtgvlvvgrgeigenacigstttifnasvaam 103
+                 + gdv +    +vapg  +ra   s   iga + +  g ++    qg           + ig+ a +    l+ g   ig+++ ig  +t+fna v   
+  AFY64914.1  34 IIGDVRVGPNVLVAPGTSIRADEGSPFFIGANTNIQDGVVVHGLeQGrvlgddqepySVWIGSNASITHKALIHGPAYIGDDCFIGFRSTVFNARVGKG 132
+                 679****************************988766665543214421111111224679************************************** PP
+
+        ccmN 104 slvpsgsligdt 115
+                  +v   +li d 
+  AFY64914.1 133 CIVMMHALIQDV 144
+                 *****9999986 PP
+
+>> AFY65381.1  serine O-acetyltransferase [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.3   1.6    0.0075       9.5      61      97 ..      64     102 ..      51     108 .. 0.75
+   2 ?    7.4   2.5    0.0004      0.51      64      97 ..     119     152 ..     103     225 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 3.3 bits;  conditional E-value: 0.0075
+        ccmN  61 gviaigagailgtgvlv.vgrg.eigenacigstttifn 97 
+                   i i  ga +g gv++  g g  ige a +g  + i++
+  AFY65381.1  64 TGIEIHPGARIGRGVFIdHGMGvVIGETAIVGNYALIYQ 102
+                 557888899999999884477734799999998887775 PP
+
+  == domain 2  score: 7.4 bits;  conditional E-value: 0.0004
+        ccmN  64 aigagailgtgvlvvgrgeigenacigstttifn 97 
+                 ++g   ++g+g  v+g+ eig+n  ig+ + ++ 
+  AFY65381.1 119 TLGENVVVGAGAKVLGNIEIGDNVRIGAGSVVLR 152
+                 5788899********************9887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3815  (1301653 residues searched)
+Passed MSV filter:                       172  (0.0450852); expected 76.3 (0.02)
+Passed bias filter:                      107  (0.0280472); expected 76.3 (0.02)
+Passed Vit filter:                        13  (0.0034076); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.00078637); expected 0.0 (1e-05)
+Initial search space (Z):               3815  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 5727.27
+//
+[ok]

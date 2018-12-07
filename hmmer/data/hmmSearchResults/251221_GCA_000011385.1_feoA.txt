@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0017   15.8   0.0      0.019   12.4   0.0    2.4  3  BAC89567.1  glr1626 [Gloeobacter violaceus PCC 7421]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC89567.1  glr1626 [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.0     0.017        73     139     156 ..      18      35 ..       5      39 .. 0.82
+   2 !   12.4   0.0   4.4e-06     0.019      54      98 ..      38      82 ..      30      93 .. 0.85
+   3 ?   -1.6   0.0     0.083   3.7e+02      72     100 ..     130     158 ..     123     178 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.017
+        feoA 139 pigkagkvvgydralrgy 156
+                 p g ag +vg++ alr  
+  BAC89567.1  18 PCGFAGWLVGWEMALRSS 35 
+                 8999***********976 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 4.4e-06
+        feoA 54 gktvwlvgfqgtgginrllgmglnpgiqlqvissqprgsvliaiq 98
+                 + vw vg+ g    +r+l +g+ pgi ++ +s ++   ++ +++
+  BAC89567.1 38 KRNVWAVGLLGVEPTDRVLEIGFGPGIAIRELSRRATHGLVCGVD 82
+                578***************************999988777776665 PP
+
+  == domain 3  score: -1.6 bits;  conditional E-value: 0.083
+        feoA  72 lgmglnpgiqlqvissqprgsvliaiqdn 100
+                 +gm  +pg +l+ + s  r    iai  +
+  BAC89567.1 130 MGMWRDPGERLKELHSLMRPGGRIAIVSQ 158
+                 67888888888888887665555554332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                       113  (0.0255079); expected 88.6 (0.02)
+Passed bias filter:                       99  (0.0223476); expected 88.6 (0.02)
+Passed Vit filter:                         6  (0.0013544); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000225734); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9736.93
+//
+[ok]

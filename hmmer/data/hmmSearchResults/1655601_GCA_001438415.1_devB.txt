@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/devB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1655601_GCA_001438415.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       devB  [M=399]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.6e-06   22.2   3.5     0.0021   13.8   0.0    2.4  3  KRO93427.1  RND transporter, partial [cyanobacterium BACL30 M
+    0.00023   16.9   3.0      0.001   14.8   1.2    2.0  2  KRO93426.1  hemolysin D [cyanobacterium BACL30 MAG-120619-bin
+
+
+Domain annotation for each sequence (and alignments):
+>> KRO93427.1  RND transporter, partial [cyanobacterium BACL30 MAG-120619-bin27]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.7   1.0   8.6e-05     0.072     166     202 ..       4      40 ..       1      45 [. 0.88
+   2 !   13.8   0.0   2.5e-06    0.0021     259     332 ..      47     121 ..      41     158 .. 0.84
+   3 ?   -3.7   0.0      0.49   4.1e+02      60      83 ..     212     234 ..     207     259 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 8.6e-05
+        devB 166 kaiiarlqaelnnaqrenqryedlyengaisasnaes 202
+                 +a +a l+a+++  + + qry++l ++ga sa + + 
+  KRO93427.1   4 RAEVASLRAQMQTNRLNYQRYQELARQGAASALQRDE 40 
+                 6889***************************987765 PP
+
+  == domain 2  score: 13.8 bits;  conditional E-value: 2.5e-06
+        devB 259 sakasvkqaqaeldlsiirspidgqvlkinawpgeiiss.qgiaelgrtqqmyvvaevyetdvkkvklgqsvdit 332
+                 +a+ +++  +a+l +  +r+pi g v  +    g++i++   i+ l r +++    +v  t   +v+ gq v + 
+  KRO93427.1  47 AAREALVAKEADLSFKDLRAPISGTVADLRVKQGDVIAAgVPITRLIRNDNLLARIDVPATYAERVRPGQRVLLL 121
+                 4566677789**************************9862579***************************99764 PP
+
+  == domain 3  score: -3.7 bits;  conditional E-value: 0.49
+        devB  60 gvaalgrlepqgeiirlsapnslg 83 
+                  +a lgrl p g +  l +p  lg
+  KRO93427.1 212 PIAELGRL-PSGTLFALQTPVQLG 234
+                 57888887.778888887777666 PP
+
+>> KRO93426.1  hemolysin D [cyanobacterium BACL30 MAG-120619-bin27]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   1.2   1.2e-06     0.001      87     176 ..      66     161 ..      23     166 .. 0.73
+   2 ?    1.4   0.0     0.014        12      93     111 ..     167     186 ..     160     212 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 1.2e-06
+        devB  87 riakllvkkgdkirqgqlialldsy..slnlaale.kakrqvevakanl...ekveagakqgdiyaqkatiarleaelrgetsaqkaiiarlqael 176
+                 r+ k+l  +g++++ gq i +ld+   s+nl a +  a++++  a+  +   e+    +k+ d y  +a+ +r +      t   k + a +  e+
+  KRO93426.1  66 RVVKILATQGQRVKAGQPILVLDNVqqSANLDASKaEARKNLVNAERYIflnEQGAVSTKDRDFYVTQAIQSRDQVRANAATLGYKFVTAPISGEI 161
+                 99*********************962267887654144444444444441223444556999***********99999999999998888777766 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.014
+        devB  93 vkkgdkirqgqlia.lldsy 111
+                 vk gd +rqgq i+ ++d+ 
+  KRO93426.1 167 VKLGDYVRQGQAITgIVDNS 186
+                 8899*******886366654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (399 nodes)
+Target sequences:                         1670  (428081 residues searched)
+Passed MSV filter:                        45  (0.0269461); expected 33.4 (0.02)
+Passed bias filter:                       35  (0.0209581); expected 33.4 (0.02)
+Passed Vit filter:                         5  (0.00299401); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.0011976); expected 0.0 (1e-05)
+Initial search space (Z):               1670  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5693.48
+//
+[ok]

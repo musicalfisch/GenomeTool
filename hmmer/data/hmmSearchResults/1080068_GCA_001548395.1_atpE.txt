@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080068_GCA_001548395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-74  246.8   1.0    1.7e-74  246.6   1.0    1.0  1  BAU44702.1  ATP synthase epsilon chain [Leptolyngbya sp. O-77
+  ------ inclusion threshold ------
+        2.5    6.4  17.0       0.25    9.7   5.6    3.0  3  BAU43137.1  Macrolide export protein MacA [Leptolyngbya sp. O
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU44702.1  ATP synthase epsilon chain [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  246.6   1.0   6.9e-78   1.7e-74       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 246.6 bits;  conditional E-value: 6.9e-78
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m ltvrvi+pdktvwd+ aeevilpsttgqlg+lsghap+ltaldtgvmrvra+  +dw+aial+ggfaev++devtilvngaergd+in eear+af+
+  BAU44702.1   1 MPLTVRVIAPDKTVWDSPAEEVILPSTTGQLGVLSGHAPMLTALDTGVMRVRAN--KDWVAIALMGGFAEVDQDEVTILVNGAERGDAINQEEARTAFS 97 
+                 89**************************************************95..68***************************************** PP
+
+        atpE 100 eaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                 eaq+klnq ++ ++rq+q++atqa+krararfqa+gg+v
+  BAU44702.1  98 EAQSKLNQAQSgGSRQEQLRATQAYKRARARFQASGGMV 136
+                 ********987368***********************98 PP
+
+>> BAU43137.1  Macrolide export protein MacA [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   5.6    0.0001      0.25      90     133 ..     112     156 ..      94     160 .. 0.83
+   2 ?    2.0   2.6     0.025        60      73     121 ..     184     228 ..     159     240 .. 0.71
+   3 ?   -1.3   0.0      0.26   6.2e+02       4      37 ..     328     362 ..     325     378 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 0.0001
+        atpE  90 nleearaafneaqtklnqvkaedrqaqiqatqa.fkrararfqaa 133
+                  + +ara+ +eaq++l++v++++r ++i   qa + rara+++ a
+  BAU43137.1 112 RMMQARAQVAEAQARLAEVRSGSRPEEIAQRQAeVERARAQVRDA 156
+                 5779**********************99877764799**998876 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.025
+        atpE  73 edevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatq 121
+                  dev    n+a    + nle+++a+  +a+++ln  ++++r ++i  ++
+  BAU43137.1 184 LDEVVREANSA----RANLEQTQASLRAAEQSLNLSRNGSRAEDIAQAE 228
+                 44444444443....5799****************99999999885433 PP
+
+  == domain 3  score: -1.3 bits;  conditional E-value: 0.26
+        atpE   4 tvrvispdktvwdaeae.evilpsttgqlgilsgh 37 
+                  vr+++p+  v ++ +  +v +   tgq  +lsg 
+  BAU43137.1 328 EVRLVAPEAVVRQNVTSfQVRIRLLTGQDRLLSGM 362
+                 58999999988876554267778888888888885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4865  (1484008 residues searched)
+Passed MSV filter:                       175  (0.0359712); expected 97.3 (0.02)
+Passed bias filter:                      119  (0.0244604); expected 97.3 (0.02)
+Passed Vit filter:                        10  (0.0020555); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.0004111); expected 0.0 (1e-05)
+Initial search space (Z):               4865  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6776.97
+//
+[ok]

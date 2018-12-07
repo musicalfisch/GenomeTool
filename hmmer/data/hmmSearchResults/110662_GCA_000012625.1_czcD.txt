@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/czcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/110662_GCA_000012625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       czcD  [M=308]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-91  303.4   2.7    3.3e-91  303.1   2.7    1.0  1  ABB34798.1  cation diffusion facilitator family transporter [
+     0.0094   12.6   0.0       0.01   12.4   0.0    1.0  1  ABB36058.1  conserved hypothetical protein [Synechococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB34798.1  cation diffusion facilitator family transporter [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  303.1   2.7   2.5e-94   3.3e-91       4     304 ..       9     303 ..       7     306 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 303.1 bits;  conditional E-value: 2.5e-94
+        czcD   4 lkdnratvqkvlwitlllnilvmaikagvglrisslslqadalhsvtdsannvlglvamrfsspypdrdhpyghlkyeaigalaiaaflgiacfeilqg 102
+                 + dnr  v++vl ++l lni +  +k  vg   +sl++ ad +hs td+   + glv+ ++s p pdrdhpygh kyea+gal ia f+  +++eil  
+  ABB34798.1   9 MVDNRQGVRRVLMVALALNISMSLLKLLVGAMSGSLAVIADGMHSATDALSSLTGLVTNKLSDPRPDRDHPYGHRKYEAVGALGIAGFILFTAIEILLR 107
+                 579************************************************************************************************ PP
+
+        czcD 103 aimriikggkpveiagpelwlliivlgvnifvtyyersvgqrvgsailiadarhtmsdvwvtitvllglvg.vwvgntanipqlqwldvilsfpvaflv 200
+                 +  r++ g  p+ ++  el ll +vlg n++++ ye   g+r+ s +l ada+h++sdvw t+ vl+g+ g vw        q+ wldv l++p+a+l+
+  ABB34798.1 108 SGERLLEGLPPIRVTSQELVLLTLVLGFNLLLAGYELRKGRRLNSNLLKADAQHAVSDVWTTVLVLVGMAGaVW-------LQVSWLDVALAIPMALLL 199
+                 *********************************************************************98456.......499*************** PP
+
+        czcD 201 fssgwkvlkenlpllvdemaiapevihqivlevpgvlnchaiasrgvvgrqvfiemhlivsaqdvetahaiteavearlsqqfspvrilihveppdyhs 299
+                 +   w+vl   lp lvd ma+ape i+   +   gv+nch iasrgv+g+qvfiemh++v a+d+  ah ite ve rl + f pvr  ih+ep dy  
+  ABB34798.1 200 IRVCWQVLSGTLPWLVDHMAVAPEAIYAEAMATAGVMNCHDIASRGVLGQQVFIEMHMVVDADDLTKAHRITEQVEERLDESFGPVRCTIHLEPKDYVE 298
+                 *************************************************************************************************** PP
+
+        czcD 300 dkitf 304
+                 d it+
+  ABB34798.1 299 DGITY 303
+                 ***98 PP
+
+>> ABB36058.1  conserved hypothetical protein [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   7.9e-06      0.01     119     203 ..       6      98 ..       1     110 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 7.9e-06
+        czcD 119 pelwlliivlgvni....fvtyyersvgqrvgsailiadarhtmsdvwvtitvllgl..vgvwvgntanipqlq..wldvilsfpvaflvfss 203
+                 p ++ll+ vlg  +     + +     gq    a +iada  t +   ++  +l+g   v +w+       +++  wl + lsf vaf   + 
+  ABB36058.1   6 PWIYLLLAVLGAILpwkaNLEFIAEGGGQAFDLARFIADANSTAASRSLSADLLVGAsaVTLWICVEGPRKKIKgwWLAIPLSFGVAFACAAP 98 
+                 667888888886542111456667778999999************99999999998633778998777666654449***********87655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (308 nodes)
+Target sequences:                         2638  (722368 residues searched)
+Passed MSV filter:                        70  (0.0265353); expected 52.8 (0.02)
+Passed bias filter:                       48  (0.0181956); expected 52.8 (0.02)
+Passed Vit filter:                         5  (0.00189538); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.00075815); expected 0.0 (1e-05)
+Initial search space (Z):               2638  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 11124.47
+//
+[ok]

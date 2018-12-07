@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65393_GCA_000021825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-31  108.6   0.1    1.3e-31  108.3   0.1    1.0  1  ACK72906.1  phosphoadenosine phosphosulfate reductase [Cyanot
+  ------ inclusion threshold ------
+      0.035   11.9   0.0      0.052   11.4   0.0    1.2  1  ACK69504.1  protein of unknown function DUF29 [Cyanothece sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK72906.1  phosphoadenosine phosphosulfate reductase [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  108.3   0.1   4.6e-35   1.3e-31      11     241 .]      49     278 ..      42     278 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 108.3 bits;  conditional E-value: 4.6e-35
+        cysD  11 ttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkvyktpdvdtre 109
+                 ++++dl+ +n+++  a  ++++ w+ +    glv +++f ++  ++ +++ +++   +pvi++dt y  +et  +  +  e   l+l+vy++    +r 
+  ACK72906.1  49 SPHLDLQAVNEQLHQASAEQVVQWANQTFGDGLVMSTSFGIQAAVMLHLV-TQVIPNIPVIWVDTGYLPPETYRFAEQLTERLHLNLHVYQSSISPAR- 145
+                 5789*******************************************976.567788**********************************9887776. PP
+
+        cysD 110 afaakygealwd.kdi...akfhevtkieplqrglaelntvawitgrrrdqavtranmpifeldsknrikvnplanwtrkksweyvaehgviynplhdq 204
+                  + a yg  lwd kd+    ++ ++ k+ep+qr l++l++ aw++g r+dq+  r  +  +    ++  k  p+  w  ++ ++y++ h + y p+ d 
+  ACK72906.1 146 -MEALYGR-LWDqKDVealNRYDKIRKVEPMQRALQDLKATAWLAGLRQDQTDHRKTLQRVT-RQNQYYKAHPILSWNSRDVYQYLTAHDLPYHPFFDL 241
+                 .6788996.777356522268999*******************************9998765.457789****************************** PP
+
+        cysD 205 gypsigdepittkv.gegederagrwrgtgktecgihi 241
+                 gy ++gd   + ++  e ++er  r+ g  k ecgih+
+  ACK72906.1 242 GYVTVGDWHSSRPLtAEDDNERDTRFHGL-KQECGIHL 278
+                 *******98888762578889******96.88*****6 PP
+
+>> ACK69504.1  protein of unknown function DUF29 [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   1.8e-05     0.052      74     116 ..      86     128 ..      70     135 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.8e-05
+        cysD  74 dtlyhfretlelvakakevynldlkvyktpdvdtreafaakyg 116
+                 d +  fr+ l+++ ++k +yn  l +y +   d+r +++ k  
+  ACK69504.1  86 DEIDIFRKQLNILVRSKTLYNYMLSIYEATYQDARRSVIRKTD 128
+                 66778******************************99988765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         5710  (1769808 residues searched)
+Passed MSV filter:                       118  (0.0206655); expected 114.2 (0.02)
+Passed bias filter:                      101  (0.0176883); expected 114.2 (0.02)
+Passed Vit filter:                         5  (0.000875657); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350263); expected 0.1 (1e-05)
+Initial search space (Z):               5710  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10663.09
+//
+[ok]

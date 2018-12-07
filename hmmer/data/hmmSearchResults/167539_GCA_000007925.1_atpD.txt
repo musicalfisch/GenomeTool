@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/167539_GCA_000007925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.4e-43  144.0   2.7    5.4e-43  143.7   2.7    1.0  1  AAQ00649.1  ATP synthase delta chain [Prochlorococcus marinus
+     0.0031   14.1   0.1     0.0055   13.2   0.1    1.4  1  AAP99288.1  Sulfate permease [Prochlorococcus marinus subsp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> AAQ00649.1  ATP synthase delta chain [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  143.7   2.7   5.7e-46   5.4e-43      10     182 ..       8     180 ..       5     182 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 143.7 bits;  conditional E-value: 5.7e-46
+        atpD  10 vaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailqqylallrql 108
+                 ++ pya+a+l +a+ +n  +ev  ++++ll+l  +s+e+++ ++ p ++ e kk+vl++++ + ++p + n+l ll dr+ri +l+a+l++ l l r+ 
+  AAQ00649.1   8 ITTPYAEAFLQVAENRNEVDEVVAQSKSLLELWGQSSEFSEAMASPVLEVETKKAVLEKIFSKEITPSFLNLLKLLADRKRIGYLDAVLERLLELYREQ 106
+                 889************************************************************************************************ PP
+
+        atpD 109 nqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrls 182
+                  +  la vtsa +l e+qq  + + v +++ + ++el+ k+d +ligg ++ vgs+vidasl  q+rrl l l+
+  AAQ00649.1 107 RNIALATVTSATSLNEDQQAEILKTVQSVAGTDNLELNLKVDPNLIGGFVVNVGSKVIDASLSSQVRRLGLALA 180
+                 **********************************************************************9986 PP
+
+>> AAP99288.1  Sulfate permease [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.1   5.9e-06    0.0055     144     183 ..     340     379 ..     323     380 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 5.9e-06
+        atpD 144 eletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                  l+ ki + l+ g++ikvg ++id  +  +  rlsl+ +s
+  AAP99288.1 340 PLAEKIPTALLAGILIKVGLDIIDWGFLLRAHRLSLKTAS 379
+                 5889**********************99999*****9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         1882  (516756 residues searched)
+Passed MSV filter:                        65  (0.0345377); expected 37.6 (0.02)
+Passed bias filter:                       50  (0.0265675); expected 37.6 (0.02)
+Passed Vit filter:                         4  (0.0021254); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.0010627); expected 0.0 (1e-05)
+Initial search space (Z):               1882  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 9508.31
+//
+[ok]

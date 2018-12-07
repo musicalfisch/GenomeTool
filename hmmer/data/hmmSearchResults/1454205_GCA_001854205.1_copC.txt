@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1454205_GCA_001854205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-84  278.9   2.9    5.1e-84  278.8   2.9    1.0  1  AOY78806.1  hypothetical protein BJP36_01745 [Moorea producen
+  ------ inclusion threshold ------
+       0.03   12.8   0.0      0.068   11.7   0.0    1.5  1  AOY81607.1  transposase [Moorea producens JHB]
+
+
+Domain annotation for each sequence (and alignments):
+>> AOY78806.1  hypothetical protein BJP36_01745 [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  278.8   2.9   1.6e-87   5.1e-84       1     165 []       1     165 []       1     165 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 278.8 bits;  conditional E-value: 1.6e-87
+        copC   1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylqkGdnh 99 
+                 m s+ +s+l+vls+ +l++ as++++t+++++++s++t+a+t++v+s+++++++++++++++s+GGqviesG+yhlel+p++e++g+hldf+lqkG++h
+  AOY78806.1   1 MGSWLQSNLIVLSSLGLIFLASCGNSTQDTNKTTSSETSAKTNQVHSSDDGHNHSHTNGDGHSQGGQVIESGPYHLELLPIVEKQGIHLDFFLQKGEEH 99 
+                 89************************************************************************************************* PP
+
+        copC 100 eavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 ++vsnakv+aq+qlP+Geqk+ld++yd+a+khyaa+lpgka+Geykv+i+tdi+GekvnGrfsfk+
+  AOY78806.1 100 KSVSNAKVKAQIQLPNGEQKNLDFSYDQAGKHYAAFLPGKATGEYKVVIQTDINGEKVNGRFSFKQ 165
+                 ****************************************************************97 PP
+
+>> AOY81607.1  transposase [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   2.1e-05     0.068     107     153 ..     141     188 ..     137     193 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2.1e-05
+        copC 107 vtaqvqlP.dGeqkaldlkydaadkhyaallpgkaaGeykvailtdid 153
+                 v+a +  P +Ge k++ ++ d+++k+ya++l +  + e kv    ++ 
+  AOY81607.1 141 VKAVIHRPlEGEIKTVTVSKDPSGKYYASILVEYESTEVKVSKEGNVI 188
+                 7888888878****************************9998777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         6559  (2174889 residues searched)
+Passed MSV filter:                       198  (0.0301875); expected 131.2 (0.02)
+Passed bias filter:                      155  (0.0236317); expected 131.2 (0.02)
+Passed Vit filter:                        23  (0.00350663); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000304925); expected 0.1 (1e-05)
+Initial search space (Z):               6559  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8971.42
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/43989_GCA_000017845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-31  107.9   0.1    1.6e-31  107.7   0.1    1.0  1  ACB54050.1  probable ferrous iron transport protein A [Cyanot
+    2.6e-25   87.4   0.0      3e-25   87.2   0.0    1.0  1  ACB51982.1  hypothetical protein cce_2634 [Cyanothece sp. ATC
+     0.0024   15.6   0.0     0.0025   15.6   0.0    1.1  1  ACB49385.1  ferrous iron transport protein A [Cyanothece sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> ACB54050.1  probable ferrous iron transport protein A [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.7   0.1   8.8e-35   1.6e-31       3     116 ..       3     117 ..       1     120 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 107.7 bits;  conditional E-value: 8.8e-35
+        feoA   3 dkirpnepekpekspnkaqfskwggkeaeldnvtptgndlaa..typlaqvemgktvwlvgfqgtgginrllgmglnpgiqlqvissqprgsvliaiqd 99 
+                  k+  n+   p ++++   f  +   + + ++   +g++l     ypl+q  +g++vw+vgf g gg  rllgmgl pg q+qvis qp gsvl+aiqd
+  ACB54050.1   3 WKVNHNS-RLPHRQRKGWSFDFFSDFDENQEENPEQGQNLKNseHYPLSQTYVGQSVWIVGFVGKGGRSRLLGMGLTPGTQVQVISVQPSGSVLVAIQD 100
+                 5555443.3455566666666666667777777788888864227****************************************************** PP
+
+        feoA 100 nrigigaemaekilvsd 116
+                 n ig+ga ma+k+lvs+
+  ACB54050.1 101 NHIGVGAGMAQKMLVSN 117
+                 ***************97 PP
+
+>> ACB51982.1  hypothetical protein cce_2634 [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.2   0.0   1.7e-28     3e-25     131     207 ..       5      81 ..       2      82 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 87.2 bits;  conditional E-value: 1.7e-28
+        feoA 131 vrtflreipigkagkvvgydralrgykgkllsmgltpgteftvirvaplgdpveirvrgfhlslrkqeadaliveei 207
+                 vrt+lre+p+g +g +vgyd+ ++gy+gkll+mgltpgt+f vir a    p+ ++vrg  + l + eadal +ee 
+  ACB51982.1   5 VRTYLRELPVGAIGYIVGYDKIFKGYQGKLLAMGLTPGTQFIVIRQASKYWPIILEVRGNLIKLTQPEADALCIEEE 81 
+                 9*************************************************************************986 PP
+
+>> ACB49385.1  ferrous iron transport protein A [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   0.0   1.4e-06    0.0025     155     202 ..      23      71 ..       6      75 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 1.4e-06
+        feoA 155 gykgkllsmgltpgteftvirvaplgdpveirvr.gfhlslrkqeadal 202
+                 g   +l +mg+t g e  ++r a l  p+ +rv    ++++r+ ea+ +
+  ACB49385.1  23 GLSRRLEAMGFTVGQEVKLLRKAWLKGPLHVRVGmTTEVAMRRHEAEGI 71 
+                 56678999*************************6256899*****9976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         5304  (1574679 residues searched)
+Passed MSV filter:                       118  (0.0222474); expected 106.1 (0.02)
+Passed bias filter:                      103  (0.0194193); expected 106.1 (0.02)
+Passed Vit filter:                         8  (0.0015083); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000565611); expected 0.1 (1e-05)
+Initial search space (Z):               5304  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8306.43
+//
+[ok]

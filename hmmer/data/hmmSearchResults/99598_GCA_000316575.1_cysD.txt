@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.6e-154  509.7   0.2     4e-154  509.5   0.2    1.0  1  AFY30831.1  phosphoadenylylsulfate reductase (thioredoxin) [C
+     0.0026   15.7   0.1     0.0038   15.2   0.1    1.2  1  AFY31846.1  cadmium resistance transporter [Calothrix sp. PCC
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY30831.1  phosphoadenylylsulfate reductase (thioredoxin) [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  509.5   0.2  1.4e-157    4e-154       1     241 []       1     241 []       1     241 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 509.5 bits;  conditional E-value: 1.4e-157
+        cysD   1 mtastatrpqttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkv 99 
+                 mt+st +r+qt +fdleqlnqkfetatp++ilawsieni+tglvqtsafnvdd+iit+ilys+lkhpvpvifldtl+hf++tlelvak+kevynldl++
+  AFY30831.1   1 MTVSTISRNQTGNFDLEQLNQKFETATPKQILAWSIENIATGLVQTSAFNVDDMIITHILYSELKHPVPVIFLDTLFHFPQTLELVAKTKEVYNLDLQT 99 
+                 9************************************************************************************************** PP
+
+        cysD 100 yktpdvdtreafaakygealwdkdiakfhevtkieplqrglaelntvawitgrrrdqavtranmpifeldsknrikvnplanwtrkksweyvaehgviy 198
+                 yktpd+++reaf+akygealwdkdi++fh+vtkiepl rgl+elnt+awitgrrrdqavtranmp+feld+k+r+kvnpla wtr++sw yvaehgviy
+  AFY30831.1 100 YKTPDINSREAFTAKYGEALWDKDITQFHHVTKIEPLMRGLDELNTIAWITGRRRDQAVTRANMPVFELDGKGRLKVNPLATWTRQESWVYVAEHGVIY 198
+                 *************************************************************************************************** PP
+
+        cysD 199 nplhdqgypsigdepittkvgegederagrwrgtgktecgihi 241
+                 nplhdqgypsigdepittk+g gederagrwrg gktecgihi
+  AFY30831.1 199 NPLHDQGYPSIGDEPITTKIGAGEDERAGRWRGMGKTECGIHI 241
+                 ******************************************8 PP
+
+>> AFY31846.1  cadmium resistance transporter [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.1   1.3e-06    0.0038      36      67 ..       5      36 ..       2      52 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.3e-06
+        cysD 36 ienistglvqtsafnvddliitdilysdlkhp 67
+                +  istg+v  sa n+dd++i  +++s+++h 
+  AFY31846.1  5 VTAISTGIVAFSATNIDDIVILLLFFSQVNHN 36
+                5689*************************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       121  (0.0203361); expected 119.0 (0.02)
+Passed bias filter:                      108  (0.0181513); expected 119.0 (0.02)
+Passed Vit filter:                        11  (0.00184874); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 11168.75
+//
+[ok]

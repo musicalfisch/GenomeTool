@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533247_GCA_000175855.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusC  [M=456]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-05   21.7   0.3    1.7e-05   21.4   0.3    1.0  1  EFA72015.1  hypothetical protein CRD_02535 [Raphidiopsis broo
+    0.00038   17.0   1.6    0.00067   16.2   1.4    1.6  1  EFA72016.1  Outer membrane efflux protein [Raphidiopsis brook
+     0.0078   12.6   0.0     0.0095   12.4   0.0    1.1  1  EFA73226.1  Rieske (2Fe-2S) region protein [Raphidiopsis broo
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA72015.1  hypothetical protein CRD_02535 [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.4   0.3   1.7e-08   1.7e-05     101     223 ..      40     162 ..       3     170 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 21.4 bits;  conditional E-value: 1.7e-08
+        cusC 101 penaytwgakleqslslggrefialnmskkkieksktdfktvnenyllnvasayynilktqktlkiaqenlnrlekhkdvtklrlkvgeitktvvlrae 199
+                  ++ y+ g +    l  gg        +k  i  + ++f    ++  ++v  ay   l     ++ a   l++ +    +++lr++ g  t+t v+ a+
+  EFA72015.1  40 INDGYSVGLRASMNLYDGGASRARAARAKTEIAIAEAEFAERRNQVRFQVEEAYSSHLANLENVQTAATALDQAKESLRLARLRFQAGVGTQTDVINAQ 138
+                 345566666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666 PP
+
+        cusC 200 aevsqaqsdviratnnlkmakanl 223
+                 +e+++++++ +ra  n ++a + l
+  EFA72015.1 139 SELTRSEANRVRAILNYNLALTRL 162
+                 666666666666666666655444 PP
+
+>> EFA72016.1  Outer membrane efflux protein [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   1.4   6.7e-07   0.00067     105     223 ..     261     379 ..     183     422 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 6.7e-07
+        cusC 105 ytwgakleqslslggrefialnmskkkieksktdfktvnenyllnvasayynilktqktlkiaqenlnrle.khkdvtklrlkvgeitktvvlraeaev 202
+                 +   a l   l   gr   a++ +  ++   + ++    e+  lnva+ yy + +++ +++ia+  ++  +   +d   l  + g  tk  vlr++ ++
+  EFA72016.1 261 FDSQAELRYDLYTSGRRTAAIKEAEEQVRLQQLEVERQSEEIRLNVATEYYSLQQSDESVRIARSAVENSQaSLRDAQAL-ERAGVGTKFDVLRSQVNL 358
+                 44467888899999*************************************************99986655155676666.4678889*********** PP
+
+        cusC 203 sqaqsdviratnnlkmakanl 223
+                 +++q ++  a  +  +a+  l
+  EFA72016.1 359 ANSQQELTDALSQQAIARRRL 379
+                 ***999999888877777655 PP
+
+>> EFA73226.1  Rieske (2Fe-2S) region protein [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   9.5e-06    0.0095      16      52 ..      26      61 ..      17      72 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 9.5e-06
+        cusC 16 fifclsidkqiyavenvcpeysladlyeaaiekseii 52
+                 i++l  d+q yaven cp   +  +  a ie+s i+
+  EFA73226.1 26 NILVLNHDNQYYAVENSCPHLKV-PMKSAKIENSTIV 61
+                588999*************9876.5889999999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (456 nodes)
+Target sequences:                         3007  (904229 residues searched)
+Passed MSV filter:                        72  (0.0239441); expected 60.1 (0.02)
+Passed bias filter:                       48  (0.0159628); expected 60.1 (0.02)
+Passed Vit filter:                         5  (0.00166279); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.000997672); expected 0.0 (1e-05)
+Initial search space (Z):               3007  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 10308.21
+//
+[ok]

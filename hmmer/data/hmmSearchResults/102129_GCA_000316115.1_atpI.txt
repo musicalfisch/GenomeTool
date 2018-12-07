@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.7e-151  501.5   6.9   1.9e-151  501.4   6.9    1.0  1  EKV01828.1  F0F1-type ATP synthase, alpha subunit [Leptolyngb
+      7e-31  106.4   8.8    1.8e-30  105.1   8.8    1.5  1  EKU96315.1  ATP synthase F0 subcomplex A subunit [Leptolyngby
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV01828.1  F0F1-type ATP synthase, alpha subunit [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  501.4   6.9  4.8e-155  1.9e-151       2     251 .]       2     250 ..       1     250 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 501.4 bits;  conditional E-value: 4.8e-155
+        atpI   2 lsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlfl 100
+                 ls+l  f+ lplaelevghhfyw+lg lk+hgqvfltswfvi++l++as+ atrn+qr+p+g+qnlmey +ef+rd+aknqlgekeyrpw+pf+gtlfl
+  EKV01828.1   2 LSLL-HFDVLPLAELEVGHHFYWHLGGLKLHGQVFLTSWFVIGLLLIASVLATRNMQRVPQGMQNLMEYVFEFVRDIAKNQLGEKEYRPWLPFVGTLFL 99 
+                 5555.599******************************************************************************************* PP
+
+        atpI 101 fifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvva 199
+                 fifvsnwsgal+pw++i++p+gelaapt dinttvalalltslayfyagf+krglgyf kyieptp+llpiailedftkplslsfrlfgniladelvva
+  EKV01828.1 100 FIFVSNWSGALLPWHVIEIPEGELAAPTGDINTTVALALLTSLAYFYAGFKKRGLGYFAKYIEPTPILLPIAILEDFTKPLSLSFRLFGNILADELVVA 198
+                 *************************************************************************************************** PP
+
+        atpI 200 vlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgeeeheeh 251
+                 vlvllvplfvplpvm lglftsaiqalvfatla+ayihealeghg+e+heeh
+  EKV01828.1 199 VLVLLVPLFVPLPVMMLGLFTSAIQALVFATLAAAYIHEALEGHGDEGHEEH 250
+                 ***************************************************9 PP
+
+>> EKU96315.1  ATP synthase F0 subcomplex A subunit [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.1   8.8   4.6e-34   1.8e-30      36     243 ..      21     220 ..      11     226 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 105.1 bits;  conditional E-value: 4.6e-34
+        atpI  36 fltswfviailvvaslaatrnvqrip..kgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlflfifvsnwsgalipwkliklpsgelaaptndin 132
+                 ++ +wf++++lv+ s   tr++      +  qnl+e  +  + +  + ++ ++  + ++pf+gtlf+fi  sn    l               pt  + 
+  EKU96315.1  21 LVFTWFIMGLLVLGSWWITRKLSASTqiSPGQNLLEVLVLGLNNQIR-DVSDQPPQTYLPFVGTLFIFIAASNLLSILPG----------YQPPTGSLS 108
+                 4568***************9876433114459999986655554443.567788889***************97655433..........457999999 PP
+
+        atpI 133 ttvalalltslayfyagfskrgl.gyfkkyieptpvllpiailedftkplslsfrlfgniladelvvavlvllvplfvplpvmalglftsaiqalvfat 230
+                 tt alal   +a    g+ +rg   y+k+y+eptp++lp  ++ d+++ +sl++rlfgn+++  ++va+l+ + plf p+ +  +gl+t  iqa +fa 
+  EKU96315.1 109 TTAALALCVFVAIPLFGIRQRGWrAYLKQYLEPTPMMLPFNLIGDVSRIISLAVRLFGNVMSGTMIVAILLSVAPLFFPVVMQMFGLLTGLIQAYIFAV 207
+                 **********************747********************************************************99**************** PP
+
+        atpI 231 lagayihealegh 243
+                 la  +i  a e +
+  EKU96315.1 208 LAMVFIAAATEVQ 220
+                 ******9998865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       248  (0.0316811); expected 156.6 (0.02)
+Passed bias filter:                      133  (0.0169903); expected 156.6 (0.02)
+Passed Vit filter:                         5  (0.000638733); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10548.43
+//
+[ok]

@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysW.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/431041_GCA_900047545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysW  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.2e-05   18.6  15.3    0.00014   18.0  15.3    1.2  1  SAY39191.1  Permease protein of sugar ABC transporter [Candid
+  ------ inclusion threshold ------
+      0.017   11.1  10.5      0.014   11.4   7.9    2.1  2  SAY38259.1  Phosphate transport system permease protein PstC 
+
+
+Domain annotation for each sequence (and alignments):
+>> SAY39191.1  Permease protein of sugar ABC transporter [Candidatus Synechococcus spongiarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.0  15.3   1.7e-07   0.00014      19     258 ..      13     273 ..       4     286 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 18.0 bits;  conditional E-value: 1.7e-07
+        cysW  19 liiialvylalllfipaaavfyyaf.rngfqaf..leaagtsdf....ieav....rltviiali.tvplntifglcaawviarnqfrgktllislidl 105
+                 +++ al+ l+l ++ipa   +  +f r g++    l   g s++     +av      t ++ l+  vp   +  l  a ++ r ++ g  ll +    
+  SAY39191.1  13 FLMPALLLLSLSVLIPAVLALLMSFtRSGLDVSepLAWVGLSNLrrlwADAVfrrvLGTTVLYLVgVVPPIVVSSLGLAILVNR-KLPGIQLLRAAYYT 110
+                 455688888888889988777666646777653225556766642222344422112344455551567777778888877766.689*********** PP
+
+        cysW 106 pfavspvvaglmivllygrngwlgsflelf..diki.lfalpgmvlatifvt.....mpfvarevipvleeigleqeeagrtlgandwqifwrvtlpni 196
+                 p+ vs vva +    ly  ng l  +l  +  +  i ++a p + l +++v      + +     +  l+ i +e  ea    g+  w++  ++tlp +
+  SAY39191.1 111 PVLVSIVVAAIAFRWLYAENGLLNGLLATWmgSEPIgFLADPRLALVSVMVVtfwkgIGYYMVIFLAGLQGIPVELYEAAALDGCRGWRVHLHITLPLL 209
+                 *********************99888875522233413355666655554431111155666666778999**************************** PP
+
+        cysW 197 rwglmygvlltnaramgefgavsvv.sgsilgrtatlpifv.eqayknyltpaafsaaailall 258
+                 r  ++   +++   a   f  v ++  g   g t tl  +v +qa+++     a +    l ll
+  SAY39191.1 210 RPYVVLVAVISAIAATKVFEEVFLMtQGGPAGSTRTLVYYVyDQAFRELDISYACTVGLALFLL 273
+                 *99888888888889999999976526999*******999867999987655544443333333 PP
+
+>> SAY38259.1  Phosphate transport system permease protein PstC (TC 3.A.1.7.1) [Candidatus Synechococcus spongiarum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0       0.1        86      27      51 ..      22      46 ..       4      52 .. 0.70
+   2 ?   11.4   7.9   1.7e-05     0.014     145     224 ..     196     278 ..     110     341 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.1
+        cysW 27 lalllfipaaavfyyafrngfqafl 51
+                 a+l  + + +vf   f  gfqa++
+  SAY38259.1 22 TAVLASVVSVTVFGIFFTVGFQAVF 46
+                3566667777888888888888865 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 1.7e-05
+        cysW 145 gmvlat.ifvtm..pfvarevipvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvlltnaramgefgavsvvsgs 224
+                  + +a+ i+v m  p+++      l+++  e  +   ++ga+ w  +++v +p    g++ g +l+  ra+ge  av+++ g 
+  SAY38259.1 196 NLAMASlILVVMllPIITAVSRDSLNQVPPELRQGAYAVGATRWTSIFQVLIPAAISGIVGGAMLALGRALGETMAVTMIIGN 278
+                 344443233433238888888889999999999********************************************998774 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (280 nodes)
+Target sequences:                         1661  (429182 residues searched)
+Passed MSV filter:                        63  (0.037929); expected 33.2 (0.02)
+Passed bias filter:                       41  (0.0246839); expected 33.2 (0.02)
+Passed Vit filter:                         5  (0.00301023); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00120409); expected 0.0 (1e-05)
+Initial search space (Z):               1661  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6008.55
+//
+[ok]

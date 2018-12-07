@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/busB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       busB  [M=678]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-07   26.8   6.9    2.1e-07   26.5   6.9    1.1  1  KGG12973.1  Oligopeptide transport system permease protein Op
+  ------ inclusion threshold ------
+       0.11    7.5   8.6       0.24    6.4   8.8    1.6  1  KGG12479.1  Phosphate transport system permease protein PstC 
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG12973.1  Oligopeptide transport system permease protein OppC [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.5   6.9   2.2e-10   2.1e-07     121     228 ..      81     190 ..      74     241 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 26.5 bits;  conditional E-value: 2.2e-10
+        busB 121 tlalvvtavvfcvligislgiacas.sdrvekflrplldamqtlpsfvylvpvvmlfgigavpgviatlvfavpplirltnlgirqvstev.veaaiaf 217
+                 +l++v  av f+vlig+ lgi         ++++  +++++ t+p ++  v + +l+g g     ia  v+ +p   r+      qv +e+ +eaa a+
+  KGG12973.1  81 ALSVVCLAVTFAVLIGVPLGILSGYlGGWFDRVIVLVMETLYTVPVLLLSVVIAFLLGRGLFNAAIALCVVYIPQYFRVVRNQTAQVKAELyIEAARAM 179
+                 6889999**************87652566788888889999999999999999999*********************************9758****** PP
+
+        busB 218 gstprqmlwev 228
+                 g+ p  ++ + 
+  KGG12973.1 180 GAGPIWIMRKY 190
+                 **996555433 PP
+
+>> KGG12479.1  Phosphate transport system permease protein PstC [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.4   8.8   0.00025      0.24     176     258 ..     168     250 ..      28     261 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.00025
+        busB 176 fgigavpgviatlvfavpplirltnlgirqvstevveaaiafgstprqmlwevqiplamptilagvnqaillalsmsvvtsmi 258
+                 +g g  p ++  +v+ +p +  ++   + qv + + eaa  +g+t    +++v +p a+  i  g+  a+  a+  ++  +mi
+  KGG12479.1 168 VGPGLAPAILILVVMLLPIITSIARDSLNQVPSRLREAAYGIGATRWSAIFNVILPAAISGITGGILLALGRAMGETMAVTMI 250
+                 57788999999999999999999***********************999**99999999999888888887777655544443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (678 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        82  (0.0429769); expected 38.2 (0.02)
+Passed bias filter:                       54  (0.0283019); expected 38.2 (0.02)
+Passed Vit filter:                         3  (0.00157233); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00104822); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8450.64
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1940762_GCA_002163975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.4e-22   77.1   7.3    4.8e-22   76.9   7.3    1.0  1  ARV58495.1  QacE family quaternary ammonium compound efflux S
+     0.0036   16.2   7.3     0.0086   15.0   7.3    1.7  1  ARV60974.1  EamA-like transporter family protein [Nostocales 
+
+
+Domain annotation for each sequence (and alignments):
+>> ARV58495.1  QacE family quaternary ammonium compound efflux SMR transporter [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.9   7.3   1.6e-25   4.8e-22       4     103 ..       2     101 ..       1     104 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 76.9 bits;  conditional E-value: 1.6e-25
+        emrC   4 swiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 +wiyll+a lfe+  ++++k ++gft+l ps+  ++    +++fl+ al+++ v  ay++w+g+g+v    +g++ f+e + + +l  i lii+gvig+
+  ARV58495.1   2 AWIYLLIAGLFEIGWAISLKYAQGFTRLGPSIATITLMIASFAFLSTALRTLPVGTAYTIWTGIGAVGTVLLGMVLFQEPIEVRRLTCIGLIIVGVIGL 100
+                 7*************************************************************************************************9 PP
+
+        emrC 103 n 103
+                  
+  ARV58495.1 101 R 101
+                 6 PP
+
+>> ARV60974.1  EamA-like transporter family protein [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   7.3   2.8e-06    0.0086      31     102 ..      47     118 ..       2     122 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 2.8e-06
+        emrC  31 lipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 ++p ++i + +ygl+     l l ++++sva     +l  v+   +   +f+es+ +++l+ ++lii gvi +
+  ARV60974.1  47 TTPELIIgLGCYGLGALAYILLLTRVNLSVAGPSV-SLVYVFSVLLDYFIFKESIPVTRLVGLSLIISGVILV 118
+                 45666663569***99999999********97654.56677778899999********************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         6177  (2043057 residues searched)
+Passed MSV filter:                       243  (0.0393395); expected 123.5 (0.02)
+Passed bias filter:                       99  (0.0160272); expected 123.5 (0.02)
+Passed Vit filter:                         7  (0.00113324); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000323782); expected 0.1 (1e-05)
+Initial search space (Z):               6177  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7218.80
+//
+[ok]

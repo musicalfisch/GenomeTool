@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/110662_GCA_000012625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.7e-53  176.3   0.0    6.7e-53  176.1   0.0    1.0  1  ABB36152.1  adenylylsulfate kinase [Synechococcus sp. CC9605]
+     0.0062   13.3   0.0       0.01   12.5   0.0    1.4  1  ABB35607.1  Phosphoribulokinase [Synechococcus sp. CC9605]
+  ------ inclusion threshold ------
+      0.021   11.5   0.0      0.035   10.8   0.0    1.2  1  ABB34178.1  MRP protein-like [Synechococcus sp. CC9605]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB36152.1  adenylylsulfate kinase [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  176.1   0.0   7.6e-56   6.7e-53       7     179 ..      38     212 ..      31     214 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 176.1 bits;  conditional E-value: 7.6e-56
+        cyrM   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki..g 103
+                 r   +w+tglsg+gkst+++a++a l   g +  vldgd +r  l k lgfs  dr+enirrig v++l+   gvivl + +sp+r  r++ rg +  g
+  ABB36152.1  38 RSAILWFTGLSGSGKSTLANAVNAALFERGLATYVLDGDNIRHGLCKDLGFSDADREENIRRIGEVAKLFLDAGVIVLTAFVSPFRADRDKARGLVedG 136
+                 45689****************************************************************************************977669 PP
+
+        cyrM 104 sfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                 +f+evf  a l+vce rd kgly +arag+ik ftgi  pye p  pe++  t  + l +sv  v + l+e g i 
+  ABB36152.1 137 DFLEVFCAADLEVCESRDPKGLYAKARAGQIKEFTGISSPYEAPETPELKIDTGKQDLADSVELVIKALQERGVIP 212
+                 9**********************************************************************99985 PP
+
+>> ABB35607.1  Phosphoribulokinase [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.0   1.2e-05      0.01       4      46 ..       1      43 [.       1      77 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.2e-05
+        cyrM  4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdi 46
+                m +r   v +tg sgag st+  a++  +  eg +  v++gd 
+  ABB35607.1  1 MSKRHPVVAVTGSSGAGTSTVKRAFEHIFAREGITPAVVEGDS 43
+                567888899********************************96 PP
+
+>> ABB34178.1  MRP protein-like [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0     4e-05     0.035       8      58 ..     105     155 ..     101     163 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 4e-05
+        cyrM   8 gvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfs 58 
+                  v    +g  g gkst++  l + l   g  + +ld di   n    lg++
+  ABB34178.1 105 QVIAVSSGKGGVGKSTVAVNLACALAQTGLRVGLLDADIYGPNAPTMLGVA 155
+                 5666678999*****************************999988888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2638  (722368 residues searched)
+Passed MSV filter:                        93  (0.035254); expected 52.8 (0.02)
+Passed bias filter:                       88  (0.0333586); expected 52.8 (0.02)
+Passed Vit filter:                        16  (0.0060652); expected 2.6 (0.001)
+Passed Fwd filter:                         3  (0.00113723); expected 0.0 (1e-05)
+Initial search space (Z):               2638  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 3322.89
+//
+[ok]

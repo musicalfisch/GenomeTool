@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/313624_GCA_000340565.3.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-83  276.3   2.5    1.4e-83  276.2   2.5    1.0  1  AHJ30042.1  ATP synthase epsilon chain [Nodularia spumigena C
+     0.0077   14.7   0.0     0.0087   14.5   0.0    1.1  1  AHJ26793.1  ATP synthase epsilon chain [Nodularia spumigena C
+  ------ inclusion threshold ------
+       0.77    8.2  10.9      0.023   13.1   2.3    2.6  2  AHJ27794.1  heterocyst specific ABC-transporter, membrane fus
+
+
+Domain annotation for each sequence (and alignments):
+>> AHJ30042.1  ATP synthase epsilon chain [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  276.2   2.5     8e-87   1.4e-83       1     137 []       1     137 []       1     137 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 276.2 bits;  conditional E-value: 8e-87
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrv+spdktvwda aeev+lpsttgqlgilsghap+ltaldtgvmrvraskn+dwqaiallggfaeveedevtilvngaergd+i+le+araafn
+  AHJ30042.1   1 MTLTVRVVSPDKTVWDAVAEEVVLPSTTGQLGILSGHAPMLTALDTGVMRVRASKNEDWQAIALLGGFAEVEEDEVTILVNGAERGDAIKLEDARAAFN 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +aqt+lnqv+++++qaqiqatqafkrararfqaagg v
+  AHJ30042.1 100 QAQTRLNQVTPGEKQAQIQATQAFKRARARFQAAGGSV 137
+                 ************************************87 PP
+
+>> AHJ26793.1  ATP synthase epsilon chain [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.0     5e-06    0.0087       5     108 ..       3     103 ..       1     127 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 5e-06
+        atpE   5 vrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafneaqt 103
+                 +rv+ p + + + +a+++   +  g + il  h  ++tal  g++   +++ ++   +a+  g+      ev +   +a rg++++    +++ ++   
+  AHJ26793.1   3 LRVLLPTQILLEETANKINAEAENGAFCILPHHIDFVTALVPGILSFDSQQGEEV-FLAVDQGILVKCGAEVLVSTRNAIRGNNLE--TLQQTVETQFK 98 
+                 79********************************************999888775.567777776666789999999999999654..33333333333 PP
+
+        atpE 104 klnqv 108
+                  ln+ 
+  AHJ26793.1  99 TLNER 103
+                 44444 PP
+
+>> AHJ27794.1  heterocyst specific ABC-transporter, membrane fusion protein DevB-like protein [Nodularia spumigena CCY94
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   2.3   1.3e-05     0.023      69     125 ..      98     153 ..      69     178 .. 0.81
+   2 ?   -0.9   1.5      0.29   5.1e+02      94     123 ..     211     239 ..     196     291 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.3e-05
+        atpE  69 aeveedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkr 125
+                  +v+  +v  ++++ +r  + nl+ea+++   a ++lnqvka+ +q +i a +a  r
+  AHJ27794.1  98 KQVNAGDVIAILDNRDRL-QANLKEAQQQVRVAISRLNQVKAGAKQGEISARAATVR 153
+                 567776666666666665.569*****************************999776 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.29
+        atpE  94 araafneaqtklnqvkaedrqaqiqatqaf 123
+                 a+ + n a+++l+  +     aqiq ++a 
+  AHJ27794.1 211 AQEELNGARASLASTQR-TLTAQIQEAKAT 239
+                 44444444444444332.234444444332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5295  (1473270 residues searched)
+Passed MSV filter:                       177  (0.0334278); expected 105.9 (0.02)
+Passed bias filter:                      131  (0.0247403); expected 105.9 (0.02)
+Passed Vit filter:                        12  (0.00226629); expected 5.3 (0.001)
+Passed Fwd filter:                         6  (0.00113314); expected 0.1 (1e-05)
+Initial search space (Z):               5295  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 4036.76
+//
+[ok]

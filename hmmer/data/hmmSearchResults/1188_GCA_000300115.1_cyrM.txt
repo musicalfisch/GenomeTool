@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188_GCA_000300115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-70  235.6   0.0    1.7e-70  235.4   0.0    1.0  1  EKE96450.1  adenylylsulfate kinase [Tolypothrix sp. PCC 7601]
+     0.0026   16.4   0.0     0.0065   15.1   0.0    1.7  1  EKF00330.1  putative lipopolysaccharide biosynthesis protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> EKE96450.1  adenylylsulfate kinase [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  235.4   0.0   3.4e-74   1.7e-70       4     179 ..       1     176 [.       1     180 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 235.4 bits;  conditional E-value: 3.4e-74
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mkq+g  +wltglsgagk+ti+  +   l    y +e+ldgdivr  l++glgfsk+drd n+rrigfv+nll+r g+i +v+aispyre+r e++   
+  EKE96450.1   1 MKQQGAILWLTGLSGAGKTTIAHGVAQELQKRNYLVELLDGDIVRIHLSQGLGFSKQDRDINVRRIGFVANLLSRNGIIAIVAAISPYREVRSELKQTT 99 
+                 9************************************************************************************************** PP
+
+        cyrM 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                  +f+e++v+apl+vce rd+kgly +arageik ftgi dpye p+n ++ c+td  t+ee v +v   l   g i+
+  EKE96450.1 100 TNFIEIYVQAPLAVCESRDIKGLYVKARAGEIKHFTGISDPYEAPINADIICQTDNFTVEECVNQVLYYLERQGLID 176
+                 ******************************************************************99999888875 PP
+
+>> EKF00330.1  putative lipopolysaccharide biosynthesis protein [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.0   1.3e-06    0.0065      14      59 ..     509     554 ..     497     569 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.3e-06
+        cyrM  14 tglsgagkstitealqakliaegysievldgdivrtnltkglgfsk 59 
+                 + + g gk+t+t  l a l   g+ + ++dgd  +++l+k +g++ 
+  EKF00330.1 509 SSIPGEGKTTVTIGLAAALAVLGFRVLIMDGDFHKAQLSKYFGYAV 554
+                 56789************************************99974 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         9972  (2716567 residues searched)
+Passed MSV filter:                       316  (0.0316887); expected 199.4 (0.02)
+Passed bias filter:                      293  (0.0293823); expected 199.4 (0.02)
+Passed Vit filter:                        37  (0.00371039); expected 10.0 (0.001)
+Passed Fwd filter:                         2  (0.000200562); expected 0.1 (1e-05)
+Initial search space (Z):               9972  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 8330.81
+//
+[ok]

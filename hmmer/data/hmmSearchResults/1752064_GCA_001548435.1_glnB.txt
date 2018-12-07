@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752064_GCA_001548435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.7e-69  228.2   6.8    5.1e-69  228.1   6.8    1.0  1  BAU10860.1  nitrogen regulatory protein P-II [Leptolyngbya sp
+  ------ inclusion threshold ------
+      0.012   14.3   0.0      0.024   13.4   0.0    1.4  1  BAU10836.1  UDP-N-acetylglucosamine--N-acetylmuramyl-(pentape
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU10860.1  nitrogen regulatory protein P-II [Leptolyngbya sp. NIES-3755]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  228.1   6.8   1.5e-72   5.1e-69       1     112 []       1     112 []       1     112 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 228.1 bits;  conditional E-value: 1.5e-72
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveai+rpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklk+eivved+qvd+vvdkii aartgeigdgkifi+pv+qv
+  BAU10860.1   1 MKKVEAIVRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKIEIVVEDDQVDMVVDKIIVAARTGEIGDGKIFITPVDQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek+ eav
+  BAU10860.1 100 VRIRTGEKNFEAV 112
+                 ***********97 PP
+
+>> BAU10836.1  UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine t
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   0.0   7.1e-06     0.024      40      76 ..     302     338 ..     296     354 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 7.1e-06
+        glnB  40 kgqteryrgseytveflqklkveivvedeqvdlvvdk 76 
+                  g +e yr se +ve lqk+ +e++ + ++++ + ++
+  BAU10836.1 302 AGAAEMYRQSELSVEQLQKVVLELLENRDRLQNMTNH 338
+                 6899********************9988887766554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         6635  (2004652 residues searched)
+Passed MSV filter:                       180  (0.0271289); expected 132.7 (0.02)
+Passed bias filter:                      160  (0.0241145); expected 132.7 (0.02)
+Passed Vit filter:                        11  (0.00165787); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301432); expected 0.1 (1e-05)
+Initial search space (Z):               6635  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7484.03
+//
+[ok]

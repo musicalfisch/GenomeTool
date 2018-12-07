@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0058   13.3   8.5      0.011   12.4   3.3    2.8  3  EDY39631.1  UDP-N-acetylglucosamine diphosphorylase/glucosami
+  ------ inclusion threshold ------
+        5.5    3.6  19.9        1.9    5.1   1.7    2.6  2  EDY39741.1  UDP-3-O-(3-hydroxymyristoyl) glucosamine N-acyltr
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY39631.1  UDP-N-acetylglucosamine diphosphorylase/glucosamine-1-phosphate N-acetyltransferase [Cyanobium sp. PCC 70
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.1      0.04        55      59      78 ..     277     296 ..     262     310 .. 0.85
+   2 ?    2.2   0.1      0.01        14      64     115 ..     315     366 ..     302     374 .. 0.87
+   3 !   12.4   3.3   7.7e-06     0.011      44     111 ..     368     432 ..     339     447 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 0.04
+        ccmN  59 yqgviaigagailgtgvlvv 78 
+                 ++g  +igag+ +g g l+ 
+  EDY39631.1 277 FRGATSIGAGCRIGPGCLIE 296
+                 78999***********9985 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.01
+        ccmN  64 aigagailgtgvlvvgrgeigenacigstttifnasvaamslvpsgsligdt 115
+                  +gag+ lg    v     + e + +g    + n+s+ a   v   s igd+
+  EDY39631.1 315 VVGAGCSLGPFAQVRPGSTLAEHCHVGNFVEVKNSSLGAGVKVNHLSYIGDA 366
+                 58999999999999999999******************************97 PP
+
+  == domain 3  score: 12.4 bits;  conditional E-value: 7.7e-06
+        ccmN  44 igagaclgmgtiltayqgv....iaigagailgtgvlvvgrgeigenacigstttifnasvaamslvpsgsl 111
+                 +g    +g gti + y+gv      igag+  g+  ++v    +gen  +g+ +t+          vpsg+l
+  EDY39631.1 368 LGERVNVGAGTITANYDGVrkhrTVIGAGSKTGANSVLVAPISLGENVTVGAGSTLTRN-------VPSGAL 432
+                 5666789***********9554457**************************98887532.......333333 PP
+
+>> EDY39741.1  UDP-3-O-(3-hydroxymyristoyl) glucosamine N-acyltransferase [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   1.7    0.0014       1.9      63      98 ..     127     162 ..     117     186 .. 0.79
+   2 ?    4.4   8.6    0.0023       3.2      34      93 ..     244     300 ..     217     320 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0014
+        ccmN  63 iaigagailgtgvlvvgrgeigenacigstttifna 98 
+                  a+g g+ lg+ v+v  +  i en+c+     +++ 
+  EDY39741.1 127 AAVGQGSHLGAHVVVGANVTIAENCCLHPGVVLYDG 162
+                 589999999999999999999999999877777664 PP
+
+  == domain 2  score: 4.4 bits;  conditional E-value: 0.0023
+        ccmN  34 lraapnsqiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstt 93 
+                   +  +  + ig g   g g  l+a  g   i  ga lg gv++ g+  + + a++g  +
+  EDY39741.1 244 AGTKIDNLVHIGHGVSTGRGCALAAQVG---IAGGARLGNGVILAGQVGLANRAVMGDGA 300
+                 44555667889*********99999765...67899999999999999999999988654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                        90  (0.0324792); expected 55.4 (0.02)
+Passed bias filter:                       67  (0.024179); expected 55.4 (0.02)
+Passed Vit filter:                         8  (0.00288704); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000721761); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6030.27
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/940191_GCA_001858125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrL  [M=299]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-41  139.5   0.5    2.1e-41  139.4   0.5    1.0  1  OHY32807.1  transposase [Cylindrospermopsis raciborskii MVCC1
+  ------ inclusion threshold ------
+       0.01   12.4   0.0      0.016   11.8   0.0    1.3  1  OHY34514.1  type III-B CRISPR module RAMP protein Cmr4 [Cylin
+
+
+Domain annotation for each sequence (and alignments):
+>> OHY32807.1  transposase [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  139.4   0.5   1.4e-44   2.1e-41       6     284 ..       5     287 ..       1     298 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 139.4 bits;  conditional E-value: 1.4e-44
+        cyrL   6 eyiekypertkqilGidyeqfqalvkeaekkhekiqkekekqkirinkkGGGrkekl.svaeqiclclfylrqlptfeilGllfgvskseahdtfhywi 103
+                 + i + ++  + + G++ + f +l+ + ++ +e++  +      r  ++GGGrk+ l +++e++  +l+y +  ptf++l +lf+  +s ahd  h  +
+  OHY32807.1   5 DRILNQDRLLRAMTGLNRQAFDELLPQFSESYERTVLNSL--ANRKRAPGGGRKPTLrTIEEKLFYILLYCKCYPTFDLLSVLFNFDRSCAHDWVHRLL 101
+                 556666666778899**********999988877655544..456679*******99568899999********************************* PP
+
+        cyrL 104 kilreilpsslleqvekkeedlaivkeilaefkllvdsleqprerpsdkeeqkkyysGkkkqhtlksqlvslpegkdivdvevGkkGptsdinlfreqq 202
+                  +l   l    +  v+k ++  +  +      +++vd +e+p++rp+++e+qk+yysGkkk+ht k+  vs    k ++ ++    G+  d  l++e +
+  OHY32807.1 102 WVLETTLGEKQVLPVRKLRSMAEFTQRFPDVKEVIVDGTERPVQRPQNRERQKEYYSGKKKRHTCKQITVSTR-KKRVIILTKTRAGKVHDKRLLQESE 199
+                 *********99999***9999999999999999*********************************8777765.56677788899**********9876 PP
+
+        cyrL 203 ..kkfdeeqkfkgdkgyqGgk....nietphkkkrkkelteeqkeenkilsskrifvehlirlvkifrvaserfrlksnvyeeiiltv 284
+                   +    e   +gd g+qG +    n+++ hkk++ kelt++qk+en++ls +r++ eh    +k ++     +r +   +++ ++ v
+  OHY32807.1 200 ivQYIPDEVAIEGDLGFQGLQkefvNVHLSHKKPKGKELTQQQKQENRELSRQRVVCEHAHAGIKRYNSVYCVYRNRVPDFDDHLMLV 287
+                 437788999**********7645558999******************************99999988888888887777776544433 PP
+
+>> OHY34514.1  type III-B CRISPR module RAMP protein Cmr4 [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   1.1e-05     0.016     175     221 ..     173     221 ..     162     244 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.1e-05
+        cyrL 175 lpegkdivdvevGkkGpt..sdinlfreqqkkfdeeqkfkgdkgyqGgk 221
+                 +p+g+++  v+vG +  +   d++l+r+ +  ++++qk ++dk++ G +
+  OHY34514.1 173 FPDGEELPAVIVGDDEISmiHDMALYRQSRVALEKNQKRNADKAFFGVE 221
+                 69***********98655227************************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (299 nodes)
+Target sequences:                         3057  (989589 residues searched)
+Passed MSV filter:                        87  (0.0284593); expected 61.1 (0.02)
+Passed bias filter:                       43  (0.0140661); expected 61.1 (0.02)
+Passed Vit filter:                         5  (0.00163559); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000654236); expected 0.0 (1e-05)
+Initial search space (Z):               3057  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9862.90
+//
+[ok]

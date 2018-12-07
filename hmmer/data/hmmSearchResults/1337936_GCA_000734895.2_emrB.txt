@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrB  [M=528]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.9e-11   39.6  17.5    2.2e-08   31.3   4.4    2.1  2  AKG23517.1  MFS transporter [Calothrix sp. 336/3]
+  ------ inclusion threshold ------
+      0.029   11.1   0.0      0.037   10.7   0.0    1.1  1  AKG20518.1  hypothetical protein IJ00_03595 [Calothrix sp. 33
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG23517.1  MFS transporter [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.3   4.4   8.8e-12   2.2e-08      51     217 ..      42     209 ..      30     236 .. 0.88
+   2 !   14.2   5.3   1.4e-06    0.0034      60     199 ..     249     388 ..     237     396 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 31.3 bits;  conditional E-value: 8.8e-12
+        emrB  51 vlgalveevglvvtgyalanvvlillaalledffgkktyvvfslvgfilssllcgfainlpllvvsrilqglgGGgllakaqailfetfPaeqqglaqa 149
+                 +lg   +evglv++ +a+  ++  +    l d+ g+k  ++  +   +l+ l  ++a+ +pll+v r+  g+    +  +  a++ ++ Pa+q+g    
+  AKG23517.1  42 SLGGNKQEVGLVMACFAVGLLLSRPWLGRLADMRGRKIVLIIGIAVAVLAPLSYLVATSIPLLMVMRVFHGISIAAFSIAFIAMVADISPANQRGEIMS 140
+                 67788899*****999999998888888899***************************************************************99988 PP
+
+        emrB 150 vfgvgviagaaigpllGglltdslgrriifiinlpvgiaavlmalflla.dddkdrkknrkkvdwlGia 217
+                  +  +   g a gp  Gg+++ ++g +++f+    v+++a l al +   + +k +k+n ++ +++ i 
+  AKG23517.1 141 YMNLVNPIGMALGPAIGGYIQALGGDKLLFLLSSEVALIALLGALQVKNtSAPKSKKSNTQNHNFWQIL 209
+                 888888888999999****************************99987615677888888888888875 PP
+
+  == domain 2  score: 14.2 bits;  conditional E-value: 1.4e-06
+        emrB  60 glvvtgyalanvvlillaalledffgkktyvvfslvgfilssllcgfainlpllvvsrilqglgGGgllakaqailfetfPaeqqglaqavfgvgv.ia 157
+                 gl  t +a+a   + l +    d  g+  +v   lv + l++ll   a      +v+ + +g+gGG ++     +l +   ++++g   a+  +g  ++
+  AKG23517.1 249 GLFYTAAAIASFSVRLFTGRASDRLGRGLFVTIGLVLYSLAMLLLWQAKSEVAFLVAAVFEGMGGGIFIPTIATMLTDRAQPQERGRVFAISLSGFdVG 347
+                 5667889999999999999999*******************9999999888888889999*********999999999888888888888877776255 PP
+
+        emrB 158 gaaigpllGglltdslgrriifiinlpvgiaavlmalfllad 199
+                   ++g++lG+l  ++ g+ ++f +    + +av++ ++l  +
+  AKG23517.1 348 IGVGGAILGYL-AQNYGYPFLFAVTTGLTFLAVIIFVTLGNK 388
+                 56777777765.566788888988888888888888777655 PP
+
+>> AKG20518.1  hypothetical protein IJ00_03595 [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   1.5e-05     0.037     241     268 ..      21      48 ..      16      64 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 1.5e-05
+        emrB 241 sqliitlaiaavvGlvlfiwrelsvksP 268
+                 s  i +l +a +vGlv++iw++ + ++P
+  AKG20518.1  21 SFSISSLILAVMVGLVIYIWQDKTNQQP 48 
+                 55689999***************99998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (528 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       224  (0.044418); expected 100.9 (0.02)
+Passed bias filter:                       79  (0.0156653); expected 100.9 (0.02)
+Passed Vit filter:                        11  (0.00218124); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 10635.02
+//
+[ok]

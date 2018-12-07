@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1781255_GCA_001746915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.014   13.5   3.4       0.12   10.4   0.8    2.3  2  OEJ77205.1  hypothetical protein BH720_00570 [Desertifilum sp
+      0.045   11.9   0.7          5    5.2   0.2    2.3  2  OEJ76539.1  hypothetical protein BH720_04110 [Desertifilum sp
+
+
+Domain annotation for each sequence (and alignments):
+>> OEJ77205.1  hypothetical protein BH720_00570 [Desertifilum sp. IPPAS B-1220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.8     5e-05      0.12      11      65 ..      15      69 ..       7      97 .. 0.60
+   2 ?    3.6   0.1    0.0064        16      86     121 ..     165     201 ..     159     214 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 5e-05
+        copC 11 vlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskG 65
+                +ls+g  +  a++n +t t++ + ++ t+++tta ++++a+ +++  ++  +++ 
+  OEJ77205.1 15 LLSVGSAVALAACNGDTTTTTTTDDTPTATTTTAPTDPTATGTQTAPGAGVGTQA 69
+                5677766666666555555555555555555555555555555554444444433 PP
+
+  == domain 2  score: 3.6 bits;  conditional E-value: 0.0064
+        copC  86 gthldfylqkGdnheavsnakv.taqvqlPdGeqkal 121
+                 g  l   +q+G n   v  a+v +a vq  +G  + +
+  OEJ77205.1 165 GAPLSVQVQQGTNEVLVNGARVvQADVQASNGIIHVI 201
+                 56677789************9538*******976665 PP
+
+>> OEJ76539.1  hypothetical protein BH720_04110 [Desertifilum sp. IPPAS B-1220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.7   0.0    0.0028         7      73     116 ..       9      51 ..       6      59 .. 0.81
+   2 ?    5.2   0.2     0.002         5       7      50 ..     123     166 ..     119     180 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 4.7 bits;  conditional E-value: 0.0028
+        copC  73 ayhlelvpekeangthldfylqkGdnheavsnakvtaqvqlPdG 116
+                 +yh+e   +  +  t l  yl++  + +a+s a+v  q ++P+ 
+  OEJ76539.1   9 SYHVEQAQRI-ELLTDLGRYLRQARQDKALSLAQVADQTRIPQR 51 
+                 5788765444.45689999*********************9985 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.002
+        copC   7 sllvvlsigllllaassnsntatndeassktttaattavsstaa 50 
+                 ++l+ +s+ +l  +   +sn+a+++++ ++ +++a+++++ t++
+  OEJ76539.1 123 VALIFVSVNGLSHVVGQSSNQAQEQNSEEQVNPTASQESPVTQQ 166
+                 67899999999887777777777766666666666666555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4964  (1712571 residues searched)
+Passed MSV filter:                       124  (0.0249799); expected 99.3 (0.02)
+Passed bias filter:                      106  (0.0213537); expected 99.3 (0.02)
+Passed Vit filter:                         9  (0.00181305); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000402901); expected 0.0 (1e-05)
+Initial search space (Z):               4964  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9419.14
+//
+[ok]

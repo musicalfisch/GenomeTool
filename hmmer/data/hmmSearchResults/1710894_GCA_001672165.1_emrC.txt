@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710894_GCA_001672165.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0018   16.5   6.9      0.002   16.4   6.7    1.3  1  OBQ26704.1  EamA-like transporter family protein [Aphanizomen
+  ------ inclusion threshold ------
+       0.03   12.6  13.4       0.14   10.5   1.8    2.6  2  OBQ27021.1  serine/threonine protein kinase [Aphanizomenon fl
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ26704.1  EamA-like transporter family protein [Aphanizomenon flos-aquae LD13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   6.7     1e-06     0.002      31     102 ..      37     108 ..       7     112 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 1e-06
+        emrC  31 lipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 +ip +l+ +++yg++     l l ++++sva     ++g ++   +g  +++e ++l++++ + li+ gvi +
+  OBQ26704.1  37 TIPELLLgLTCYGIGAVAYILLLTRVNLSVAAPA-VSVGYIFSVFLGYFILKEPISLTRVFGLGLIVTGVILV 108
+                 4566655389******999***********9765.56899******************************965 PP
+
+>> OBQ27021.1  serine/threonine protein kinase [Aphanizomenon flos-aquae LD13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   4.2   0.00095       1.8      17      71 ..     320     373 ..     315     383 .. 0.88
+   2 ?   10.5   1.8   7.3e-05      0.14      30      75 ..     459     503 ..     433     539 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.00095
+        emrC  17 sgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvl 71 
+                  g  ++ l  +f++ i    + ++ g+c  fl  +l +i v +  s+ ag+gt++
+  OBQ27021.1 320 IGKSVVVLITDFAQFIGNTTLSIIQGIC-KFLLASLVTIWVMILTSICAGIGTII 373
+                 67778889999*****************.68999*******************87 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 7.3e-05
+        emrC  30 klipsvlifvfyglcltfltlalkkievsvaysvwaglgtv.liavi 75 
+                 +l+ s++i++   l l  l l l++    +ay+v aglgt+ lia+ 
+  OBQ27021.1 459 NLTESLIIWILISLPLLTLGLGLRT--HQIAYAVVAGLGTAnLIAIF 503
+                 6788999999977776666666665..5689********97466653 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         3787  (1148327 residues searched)
+Passed MSV filter:                       143  (0.0377608); expected 75.7 (0.02)
+Passed bias filter:                       56  (0.0147874); expected 75.7 (0.02)
+Passed Vit filter:                         6  (0.00158437); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000528123); expected 0.0 (1e-05)
+Initial search space (Z):               3787  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6086.13
+//
+[ok]

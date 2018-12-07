@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102232_GCA_000332035.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0026   14.4   0.0      0.026   11.1   0.0    2.0  2  ELR96795.1  cytosine deaminase-like metal-dependent hydrolase
+  ------ inclusion threshold ------
+       0.01   12.4   0.1       0.11    9.1   0.0    2.0  2  ELS00187.1  dihydroorotase-like cyclic amidohydrolase [Gloeoc
+
+
+Domain annotation for each sequence (and alignments):
+>> ELR96795.1  cytosine deaminase-like metal-dependent hydrolase [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.0   1.3e-05     0.026      12      66 ..      33      91 ..      26     143 .. 0.86
+   2 ?    1.0   0.0     0.014        30     294     386 ..     309     397 ..     259     418 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 1.3e-05
+        cyrG 12 veddyatvdvqvvdgkiaaiapelevvgt..aidgenklllpgfvnahthss..emwqr 66
+                ++++   v ++v +gki++i+ e+  +    +i+ ++ +++p f+++hth     +w+r
+  ELR96795.1 33 TREGLCLVSLEVSNGKITSIQEEVPAIVDipVINLNKSIIFPCFIDSHTHLDkgHIWER 91
+                5678888999*************9877542368889999***********641157777 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.014
+        cyrG 294 sgiapilkyrqagvnvtfgcdgas....sndsqdlleaikigsilhnvtdldyqhwitprqavemaslggakglnladklgsltvgkkadlvlydlt 386
+                  g++ ++  +qag+ v f  d +     +    d le    g  +    d+ y  w  +       +   a  l l  +lg l vg +a+l+++   
+  ELR96795.1 309 RGVTRVIEMKQAGIPVVFASDNCRdpfyAFGDHDALEVFSQGVRIAH-LDTPYGDWCNSV------TRTAADSLRL-PHLGRLGVGLEANLIIFKAR 397
+                 47888999999999999998876511113455666676666654433.356677776432......2233444544.35666777777777666655 PP
+
+>> ELS00187.1  dihydroorotase-like cyclic amidohydrolase [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1   0.0   5.4e-05      0.11       7      62 ..       8      66 ..       2      78 .. 0.84
+   2 ?    1.0   0.0     0.015        30     324     412 ..     210     304 ..     205     316 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 5.4e-05
+        cyrG  7 nvliaveddyatvdvqvvdgkiaaiapelevvgt...aidgenklllpgfvnahthsse 62
+                +vl +v+d+ + +d+ +vdg i  iap +  + +   +i+ge  +  pg+v+ ++hs e
+  ELS00187.1  8 RVLNPVSDQEQVTDLLLVDGVIQGIAPTIANLPEnikVINGEGLIAGPGLVDLYSHSGE 66
+                47889**********************99888751115789999999**********98 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 0.015
+        cyrG 324 lleaikigsilhnvtdld...yqhwitprqavemaslggakglnladklgsltvgk.kadlvlydltnlsllp.rtdp..igllvlgrptnvvdsa 412
+                 l eai i sil  v+ +    +   i++ + ve+ ++   +gl ++     +++      l  yd+ nl l p   +p  +  l+ g  t v+d +
+  ELS00187.1 210 LAEAIAIASILELVAAIKtpvHLMRISTARGVELIAQAKDQGLPVTASTTWMHLLYdTQALSSYDV-NLRLEPpLGNPsdVDALIKGVKTGVIDAI 304
+                 679*******999887762224567889999***99999999999888877765440445677775.56665412333225667777777776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4087  (1202650 residues searched)
+Passed MSV filter:                        90  (0.022021); expected 81.7 (0.02)
+Passed bias filter:                       71  (0.0173722); expected 81.7 (0.02)
+Passed Vit filter:                        10  (0.00244678); expected 4.1 (0.001)
+Passed Fwd filter:                         2  (0.000489356); expected 0.0 (1e-05)
+Initial search space (Z):               4087  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 6213.69
+//
+[ok]

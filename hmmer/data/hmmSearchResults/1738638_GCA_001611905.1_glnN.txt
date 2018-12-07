@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1738638_GCA_001611905.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-07   25.9   0.0    9.2e-07   25.6   0.0    1.1  1  AMW28991.1  glutamine synthetase [Arthrospira platensis YZ]
+  ------ inclusion threshold ------
+      0.057    9.7   0.0      0.066    9.5   0.0    1.1  1  AMW31229.1  hypothetical protein AP285_28225 [Arthrospira pla
+
+
+Domain annotation for each sequence (and alignments):
+>> AMW28991.1  glutamine synthetase [Arthrospira platensis YZ]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.6   0.0   3.5e-10   9.2e-07     254     391 ..     177     311 ..     109     337 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 25.6 bits;  conditional E-value: 3.5e-10
+        glnN 254 qfddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnw 350
+                 ++ + yf   p + +q +  e+   + + g+p    h eva  gq e+   f +   a+d   +   ++k  akk+g  + +  kp    ngsg h   
+  AMW28991.1 177 RYKEGYFPVSPtDTMQDLRTEMLLTMAQCGVPIEKHHHEVATgGQNELGIKFGTLVEAADNLMVYKYVIKNVAKKYGKTVTFMPKPVFNDNGSGMHTHQ 275
+                 567778887773567888888888999*************97369*****************************************************9 PP
+
+        glnN 351 svgnatqgnlldpgdtphanlqfllfcgavirgvhkygall 391
+                 s+ +  q   l  gd      q+ l     i g+ k+ + l
+  AMW28991.1 276 SLWKDGQP--LFAGDGYAGLSQMALH---YIGGILKHAPAL 311
+                 99876655..4445544433343332...244444555544 PP
+
+>> AMW31229.1  hypothetical protein AP285_28225 [Arthrospira platensis YZ]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.5   0.0   2.5e-05     0.066     246     320 ..       4      87 ..       2     101 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 9.5 bits;  conditional E-value: 2.5e-05
+        glnN 246 gkpaakgqqfddhyf.gaipervqvfmqeveerly...rlg.ipaktrhnevapgqfeiapff....eaanvasdhqqlimtll 320
+                  k  a+gqq+d hyf  a+  rv  ++++ +e+l    ++  i  +   ++++      +pff    ea  v +d  +l m ll
+  AMW31229.1   4 NKYNARGQQIDGHYFpSALECRVYHLLKKYDEQLIvhpKMTlIENQKPWKNITWTPDFYSPFFnryiEAKGVLTDAFKLKMQLL 87 
+                 5789***********457788******999999852222221222222222322222234444333356666666666666666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         5273  (1550833 residues searched)
+Passed MSV filter:                       141  (0.02674); expected 105.5 (0.02)
+Passed bias filter:                      111  (0.0210506); expected 105.5 (0.02)
+Passed Vit filter:                         9  (0.00170681); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000379291); expected 0.1 (1e-05)
+Initial search space (Z):               5273  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 14015.65
+//
+[ok]

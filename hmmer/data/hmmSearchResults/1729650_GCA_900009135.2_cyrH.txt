@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1729650_GCA_900009135.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.1e-17   59.5   0.0    1.4e-16   58.5   0.0    1.5  2  SKB15851.1  guanine deaminase [Planktothrix sp. PCC 11201]
+  ------ inclusion threshold ------
+      0.012   12.6   0.0        1.9    5.3   0.0    2.3  2  SKB13319.1  Dihydroorotase, multifunctional complex type [Pla
+
+
+Domain annotation for each sequence (and alignments):
+>> SKB15851.1  guanine deaminase [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0      0.23   5.9e+02      46      60 ..      65      79 ..      59      93 .. 0.82
+   2 !   58.5   0.0   5.6e-20   1.4e-16     250     391 ..     257     395 ..     190     403 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 0.23
+        cyrH 46 nklllpgfvnahths 60
+                n l+lpg++++h h 
+  SKB15851.1 65 NLLILPGLIDTHIHF 79
+                7799********995 PP
+
+  == domain 2  score: 58.5 bits;  conditional E-value: 5.6e-20
+        cyrH 250 krigylddrtslahcvhltdkdiailaetkstvvhnplsnlrlgsgiapil..kyrqagvnvtfgcdgassndsqdlleaikigsilhnvtdldyqhwi 346
+                  + g +++r+ +ah +hlt ++ + l+e+ks++   p snl lgsg+  +   k +   +n+ +g d  +   s  ll++       ++v++l+ q+ +
+  SKB15851.1 257 DQAGLVGERSIFAHSIHLTPDEFQRLSEAKSAIAFCPTSNLFLGSGLFKLHeaKSKTHPINIGLGSDIGA-GTSFSLLQTA---NEAYKVAQLQNQN-L 350
+                 5678999****************************************988522677788*******9544.3466677654...4457788888776.7 PP
+
+        cyrH 347 tprqavemaslggakglnladklgsltvgkkadlvlydltnlsll 391
+                 +p qa+ +a+lggak l+l+dk+g +++gk+ad+++ d  +  l+
+  SKB15851.1 351 SPFQALFLATLGGAKALKLEDKIGNFNLGKEADFIVLDYNSTPLM 395
+                 9**********************************9998776665 PP
+
+>> SKB13319.1  Dihydroorotase, multifunctional complex type [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.7   0.0    0.0012         3      13      60 ..      18      71 ..       6      75 .. 0.75
+   2 ?    5.3   0.0   0.00073       1.9     350     389 ..     352     390 ..     343     399 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 4.7 bits;  conditional E-value: 0.0012
+        cyrH 13 eddyatvdvqvvdgkiaaiapele..vvg....taidgenklllpgfvnahths 60
+                + d+   dv +++gki +iape++  ++g    + id++   llpg ++ + h 
+  SKB13319.1 18 NGDFLLGDVAIIHGKIVEIAPEIDhhTLGeddwEIIDAQGLTLLPGVIDPQVHF 71
+                5678889***************98334663333479999999999999988886 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.00073
+        cyrH 350 qavemaslggakglnladklgsltvgkkadlvlydltnls 389
+                 q  +  s   ak  ++ +k g ++vg  adlvl dl+n  
+  SKB13319.1 352 QVSNWMSTAVAKAYKIPNK-GKIEVGYDADLVLVDLSNYR 390
+                 5555566677777777665.9***************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5144  (1714313 residues searched)
+Passed MSV filter:                       105  (0.0204121); expected 102.9 (0.02)
+Passed bias filter:                       90  (0.0174961); expected 102.9 (0.02)
+Passed Vit filter:                         9  (0.00174961); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000388802); expected 0.1 (1e-05)
+Initial search space (Z):               5144  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 13285.93
+//
+[ok]

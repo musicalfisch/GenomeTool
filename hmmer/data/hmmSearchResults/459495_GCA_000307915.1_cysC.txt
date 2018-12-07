@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/459495_GCA_000307915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-99  329.8   0.1    1.2e-99  329.6   0.1    1.0  1  EKD09661.1  adenylyl-sulfate kinase [Arthrospira platensis C1
+     0.0026   15.7   0.1     0.0051   14.7   0.0    1.5  1  EKD07424.1  shikimate kinase [Arthrospira platensis C1]
+  ------ inclusion threshold ------
+      0.065   11.1   0.2       0.12   10.2   0.2    1.4  1  EKD06586.1  hypothetical protein SPLC1_S531790 [Arthrospira p
+
+
+Domain annotation for each sequence (and alignments):
+>> EKD09661.1  adenylyl-sulfate kinase [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  329.6   0.1    6e-103   1.2e-99       3     178 ..       7     182 ..       5     184 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 329.6 bits;  conditional E-value: 6e-103
+        cysC   3 amkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgk 101
+                 +m qrgvtvw+tglsgagk+ti++a+  kl ++gy +e+ldgdivrtnltkglgfskedrdenirrigfvs lltr gviv+vsaispyreireevr +
+  EKD09661.1   7 SMEQRGVTVWFTGLSGAGKTTISQAVAEKLKSQGYRLEILDGDIVRTNLTKGLGFSKEDRDENIRRIGFVSHLLTRNGVIVFVSAISPYREIREEVRQR 105
+                 69************************************************************************************************* PP
+
+        cysC 102 igsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 ig+fvevfvnapl+vceerdvkgly+rarageik ftgiddpyepp+npe+ecrtdle l esv kv + l++lgy+
+  EKD09661.1 106 IGDFVEVFVNAPLNVCEERDVKGLYQRARAGEIKGFTGIDDPYEPPLNPEIECRTDLEELSESVDKVIQSLQKLGYL 182
+                 ****************************************************************************7 PP
+
+>> EKD07424.1  shikimate kinase [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   2.5e-06    0.0051       4      47 ..      14      57 ..      11      94 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.5e-06
+        cysC  4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdiv 47
+                 + +g+ ++l g+ gagkst+ + l  +l  + +  +vl  ++ 
+  EKD07424.1 14 EQIQGINIYLIGMMGAGKSTVGQILANRLSYKFFDTDVLISQVA 57
+                5568*********************9999998888888876665 PP
+
+>> EKD06586.1  hypothetical protein SPLC1_S531790 [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.2     6e-05      0.12      16      87 ..     183     254 ..     176     275 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 6e-05
+        cysC  16 lsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsa 87 
+                 +s  g++tit+ + a+   +g s+    g ++r nl +  gf     d+   +i     +  r gv++  +a
+  EKD06586.1 183 ISAEGNATITNNIFAQNDGNGISVARSGGGLIRGNLFQNTGFGISINDDSAPKIVENQIVDNRDGVMISHTA 254
+                 6889**********************************9999999999998888777777778888876655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6108  (1647000 residues searched)
+Passed MSV filter:                       214  (0.035036); expected 122.2 (0.02)
+Passed bias filter:                      198  (0.0324165); expected 122.2 (0.02)
+Passed Vit filter:                        30  (0.00491159); expected 6.1 (0.001)
+Passed Fwd filter:                         3  (0.000491159); expected 0.1 (1e-05)
+Initial search space (Z):               6108  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 6060.96
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1704290_GCA_001275395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.7e-125  414.6   0.0   1.9e-125  414.4   0.0    1.0  1  KOP26497.1  chorismate-binding protein [Hapalosiphon sp. MRB2
+    6.6e-32  109.2   0.0    7.3e-32  109.0   0.0    1.0  1  KOP22699.1  chorismate mutase [Hapalosiphon sp. MRB220]
+
+
+Domain annotation for each sequence (and alignments):
+>> KOP26497.1  chorismate-binding protein [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  414.4   0.0  6.4e-129  1.9e-125       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 414.4 bits;  conditional E-value: 6.4e-129
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mt+stdiatlarlmaadfsnqeqafenppf+ahirvcmrplp ellsgvsffveqaydy+lndpyr+rvlkl++a+++i ienytvkee++fygasr++
+  KOP26497.1   1 MTSSTDIATLARLMAADFSNQEQAFENPPFYAHIRVCMRPLPPELLSGVSFFVEQAYDYMLNDPYRMRVLKLLSADNHILIENYTVKEEQRFYGASRNI 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 e lktl +ddleklpgcnmivewtgn+fkg+vepgkaciv+rkg+ktyldsefei+eekfisldrgrdpetdehiwgsvagpf+fvrw+sfadevk+
+  KOP26497.1 100 ELLKTLGVDDLEKLPGCNMIVEWTGNGFKGRVEPGKACIVFRKGHKTYLDSEFEINEEKFISLDRGRDPETDEHIWGSVAGPFYFVRWQSFADEVKI 196
+                 ***********************************************************************************************97 PP
+
+>> KOP22699.1  chorismate mutase [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  109.0   0.0   2.5e-35   7.3e-32       1     188 [.       1     196 [.       1     198 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 109.0 bits;  conditional E-value: 2.5e-35
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklv...eaedrieienytvkeekkfygas 96 
+                 mt s ++++la+++a +f n+eqa+ +p ++ h+r+   p pl   + +++f eqa   +l++pyr r+++l    +++  ++++ y+ k+   + ga 
+  KOP22699.1   1 MTFSPELTSLAQYLAGEFDNREQALAEPAWYVHLRLWQIPTPLFSEDSMTLFAEQANIVKLDQPYRQRIMRLTlgyDQDAPLKVQYYMPKDPAALRGAG 99 
+                 8999***************************************99**************************97232456679***************** PP
+
+        cpeS  97 rdlerlktlkaddleklpgcnmive...wtgnsfkgkvep.gka.civvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                 r+ + l++l++d+l+ lpgc + v     + n++k   +p g++ c     g++  +   fe+ ++++ + d+g dp+t    wg++ gp+++ +++
+  KOP22699.1 100 RNPSLLQSLTSDKLDLLPGCVLNVSqetLAPNQYKFIANPpGNTrCCFSYAGNTIQVSLGFEVSQQELKTYDKGIDPDTGSATWGAIMGPYRYTKRE 196
+                 ********************999962224679999888753654377778888889999*********************************98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5845  (1865779 residues searched)
+Passed MSV filter:                        98  (0.0167665); expected 116.9 (0.02)
+Passed bias filter:                       86  (0.0147134); expected 116.9 (0.02)
+Passed Vit filter:                         7  (0.0011976); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000342173); expected 0.1 (1e-05)
+Initial search space (Z):               5845  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9142.32
+//
+[ok]

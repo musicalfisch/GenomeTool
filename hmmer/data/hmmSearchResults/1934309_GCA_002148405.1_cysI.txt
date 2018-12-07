@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1934309_GCA_002148405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysI  [M=645]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.7e-37  125.3   0.0    8.5e-29   98.3   0.0    2.0  2  OUC15258.1  ferredoxin--nitrite reductase [Alkalinema sp. CAC
+
+
+Domain annotation for each sequence (and alignments):
+>> OUC15258.1  ferredoxin--nitrite reductase [Alkalinema sp. CACIAM 70d]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   0.0   2.6e-10   1.3e-06      72     177 ..      65     171 ..      62     177 .. 0.87
+   2 !   98.3   0.0   1.6e-32   8.5e-29     225     515 ..     180     456 ..     176     505 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 2.6e-10
+        cysI  72 mmlrtrspggfipaqlyltldslsdrygn.gtlrvttrqgfqlhgilkknlkatlgeiirsmgstlaacg.dvnrnvtappapyknrpeygyaweyann 168
+                 +m+r r p g++ ++    l  +  ryg+ g   +ttrq +ql g+   ++   l     s+g t    g d  rn+ta p    +  e   + e  ++
+  OUC15258.1  65 FMMRMRLPSGIVSSEQMRVLADVVSRYGEdGVADITTRQNLQLRGLRLEDIPDILRR-YESVGLTSVQSGmDNVRNITASPVAGIDADELYDTRELVQQ 162
+                 79***********999999999999**9636778************99999888865.5789988777764778*********9999999999****** PP
+
+        cysI 169 iadlltpqt 177
+                 + d++t q 
+  OUC15258.1 163 VQDMITNQG 171
+                 *****9985 PP
+
+  == domain 2  score: 98.3 bits;  conditional E-value: 1.6e-32
+        cysI 225 mprkfkigvtvpgdnsidiytndlglvvitdangqlqgfnilaggglgrthnkeetfprmadaigyvdkeevydlvkaivatqrdygdrgdrrharmky 323
+                 +prkf+i ++   dns+    nd+ +v     +gql gfn+l gg +      e ++p       +v   +v dl +ai++  rd g r +r+++r+ +
+  OUC15258.1 180 LPRKFNIAIAGCRDNSVHAEINDIAFVPA-FKDGQL-GFNVLVGGFFSA-SRVEAAIPLN----VWVMPSDVVDLCRAILTVYRDNGPRANRQKSRLMW 271
+                 8***********************99864.568998.9*****987765.4567777754....489999***************************** PP
+
+        cysI 324 ileewgvekfrstvegyfgqkiapyqpl..pdwkyqdflgwneqgd.gklffglsvengrvknegsfqlktalkviierfqlpmrltanhniilyeiep 419
+                 ++++wg+ekfr  ve  +g+ +    p    +w+ +d +g  +q + g  ++gl +  gr+  +  ++l     v        +rlt ++n+i+ ++  
+  OUC15258.1 272 LIDQWGLEKFREEVEKSIGRTLLSAAPKdeIEWDKRDHIGVYQQKQaGLNYVGLCIPVGRLFAQDMYDLARLAEVYG---SGELRLTVEQNVIIPNVP- 366
+                 ********************986655541158********888776166689***************9987665543...4568*********99874. PP
+
+        cysI 420 kdqqaieailkehgiitnpaeidpltryamacpawptcglaiteserilpsvierirtllnrlglskeefvirmtgcpngcarpymaelgfvgsap 515
+                   +  ie +l+e+ +     +   l r  ++c     c +a+ e++      +   r l + + ls+  + i+ tgcpn c +p +a+lg++g+  
+  OUC15258.1 367 --DSRIEPLLQEDVLQKFSVHPGTLERSLVSCTGAQFCNFALVETKN---RALALARELDQEVELSQ-PVRIHWTGCPNSCGQPQVADLGLMGTKA 456
+                 ..3569*******99999999999*******************9874...34556789999999997.57899*******************9754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (645 nodes)
+Target sequences:                         5216  (1707448 residues searched)
+Passed MSV filter:                       144  (0.0276074); expected 104.3 (0.02)
+Passed bias filter:                      127  (0.0243482); expected 104.3 (0.02)
+Passed Vit filter:                         6  (0.00115031); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000191718); expected 0.1 (1e-05)
+Initial search space (Z):               5216  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 12236.71
+//
+[ok]

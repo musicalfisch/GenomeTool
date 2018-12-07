@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/551115_GCA_000196515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.042   11.0   0.0       0.11    9.7   0.0    1.7  2  ADI65130.1  adenylylsulfate kinase ['Nostoc azollae' 0708]
+
+
+Domain annotation for each sequence (and alignments):
+>> ADI65130.1  adenylylsulfate kinase ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.0      0.33   1.2e+03      97     119 ..     299     321 ..     292     326 .. 0.80
+   2 ?    9.7   0.0     3e-05      0.11       5     122 ..     339     463 ..     336     505 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.33
+        cyrM  97 evrgkigsfvevfvnaplsvcee 119
+                  vr+k+ sf+    n p sv ee
+  ADI65130.1 299 YVRAKVTSFLLDDPNLPASVKEE 321
+                 68999999998888888888877 PP
+
+  == domain 2  score: 9.7 bits;  conditional E-value: 3e-05
+        cyrM   5 kqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglg...fskedrdenirrigfvsnlltrhgvivlvsaispyreireevrg 100
+                  ++g  + ++glsg+gkst +  l  kl a     + +   +    l    g   ++ e  ++   r+  +   l+ +g  v++ a    + +r+ev +
+  ADI65130.1 339 PKQGQVILMSGLSGSGKSTTARYLARKLGAVHLRSDAVRKHLAGIPLLERGGdkiYTPEMTQKTYNRLLTLGISLANQGWCVILDAKYDRQHLRQEVIT 437
+                 56788999***************9999988766665555555554443322222255566666666666666667777777777777777777777665 PP
+
+        cyrM 101 kigs....fvevfvnaplsvceerdv 122
+                 +  +    +  +   ap++v +er v
+  ADI65130.1 438 QTQQnqlpLQIIHCTAPIEVLQERLV 463
+                 54331111233455666666666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3651  (943585 residues searched)
+Passed MSV filter:                       134  (0.0367023); expected 73.0 (0.02)
+Passed bias filter:                      120  (0.0328677); expected 73.0 (0.02)
+Passed Vit filter:                        13  (0.00356067); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000273898); expected 0.0 (1e-05)
+Initial search space (Z):               3651  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8680.98
+//
+[ok]

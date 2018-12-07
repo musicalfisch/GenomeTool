@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/755178_GCA_000317675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.1e-06   23.1   0.0      0.026   10.9   0.0    2.1  2  AFZ55065.1  amidohydrolase [Cyanobacterium aponinum PCC 10605
+  ------ inclusion threshold ------
+      0.025   10.9   0.2       0.32    7.3   0.0    2.1  2  AFZ52692.1  urease [Cyanobacterium aponinum PCC 10605]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ55065.1  amidohydrolase [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.2   0.0   2.4e-05     0.042      13      66 ..      32      86 ..      24      99 .. 0.83
+   2 !   10.9   0.0   1.5e-05     0.026     209     349 ..     207     362 ..     199     403 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 2.4e-05
+        cyrG 13 eddyatvdvqvvdgkiaaiapelevvgtaidgenklllpgfvnahthss..emwqr 66
+                +++    d+++ +gki++i p  e  +  id ++ ++lp fv+ hth     +w+r
+  AFZ55065.1 32 RENLCLCDIEISQGKITQIIPACEN-TIGIDLKKGIVLPCFVDIHTHLDkgHIWER 86
+                5677789**************9985.34589999*************641157776 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 1.5e-05
+        cyrG 209 fegcielsdkynlcrhshlletkaqeklaqekygctavehlkrig.ylddrtslahcv.hltdkdiailaetkstvvhnplsnlrlg...s.......g 295
+                 +e + el+++ nl+   h  e+   e ++ +k   ta++   + +   ++  sla      +d+ i+++ e++ +vv  p+ nl l    +       g
+  AFZ55065.1 207 IEKVFELAKERNLALDFHADESGEVESICLQKIAETALKTNFNQDiLCGHCCSLAVQSpEKADEIIKLVKEANIAVVSLPMCNLYLQdreAgktpfwrG 305
+                 5566778888888888888888888888888888888765444440446777887544156788899999**************985233222333336 PP
+
+        cyrG 296 iapilkyrqagvnvtfgcdgas....sndsqdlleaikigsilhnvtdldyqhwitpr 349
+                 ++ +   +qagv v+f  d +     +    dlle  +  s+     d+ y+ wi++ 
+  AFZ55065.1 306 VTRVKELKQAGVRVAFASDNCRdpffAFGDHDLLEVFRE-SVRIAHLDTPYEDWIASV 362
+                 7778889*********999875222246789****9885.5655667999****9864 PP
+
+>> AFZ52692.1  urease [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.2     0.014        24       4      59 ..      71     138 ..      68     147 .. 0.74
+   2 ?    7.3   0.0   0.00018      0.32     360     384 ..     424     448 ..     406     462 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.014
+        cyrG   4 tiqnvliaveddyatvdvqvvdgkiaai........apelevv....gtaidgenklllpgfvnahth 59 
+                 +i n+li    + +  dv + dgki +i        +p++++v    +++i ge  +l +g +++h h
+  AFZ52692.1  71 VITNALIVDWWGIVKADVAIKDGKIEKIgkagnpetQPNVDIVigavTEVIAGEGMILTAGGIDTHIH 138
+                 7899999999999999********99883333332236677642211466889999999999999988 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.00018
+        cyrG 360 akglnladklgsltvgkkadlvlyd 384
+                 a    +ad +gs++vgk adlvl+ 
+  AFZ52692.1 424 AITHGIADYVGSIEVGKLADLVLWK 448
+                 6666799****************86 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         3431  (1113123 residues searched)
+Passed MSV filter:                        91  (0.0265229); expected 68.6 (0.02)
+Passed bias filter:                       69  (0.0201108); expected 68.6 (0.02)
+Passed Vit filter:                         6  (0.00174876); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.00058292); expected 0.0 (1e-05)
+Initial search space (Z):               3431  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 12940.05
+//
+[ok]

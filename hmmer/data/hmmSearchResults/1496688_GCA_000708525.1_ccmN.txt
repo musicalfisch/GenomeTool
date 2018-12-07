@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1496688_GCA_000708525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        3.1    4.5  11.3        1.3    5.7   5.9    2.2  2  KEF43075.1  UDP-N-acetylglucosamine acyltransferase [Cyanobiu
+
+
+Domain annotation for each sequence (and alignments):
+>> KEF43075.1  UDP-N-acetylglucosamine acyltransferase [Cyanobium sp. CACIAM 14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.3    0.0088        26      48      86 ..      20      61 ..       3      73 .. 0.64
+   2 ?    5.7   5.9   0.00046       1.3      44     107 ..     106     173 ..      84     190 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.0088
+        ccmN 48 aclgmgtiltayqgv...iaigagailgtgvlvvgrgeigen 86
+                a lg g  +  y  +   + ig g+ +g  v++ gr  +g+ 
+  KEF43075.1 20 ARLGSGVEIGPYAVIgpeVEIGEGSRIGPHVVIDGRVRMGKG 61
+                445555555555433223678888888888888888777764 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.00046
+        ccmN  44 igagaclgmgtiltayqgv...iaigagailgtgvlvvgrgeigenacigstttifn.asvaamslvp 107
+                  g  ++lg g +l ay  +     +    ++  gv v g+  ig+ a+ig    i +   + ++++v 
+  KEF43075.1 106 EGEQTVLGSGNLLMAYSHIghnCQLADRIVIANGVAVAGHVVIGDRAVIGGVLGIHQfVHIGTLAMVG 173
+                 46678899999999998662224556667889999999999999999999998887523455555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2935  (883562 residues searched)
+Passed MSV filter:                        92  (0.0313458); expected 58.7 (0.02)
+Passed bias filter:                       70  (0.0238501); expected 58.7 (0.02)
+Passed Vit filter:                         9  (0.00306644); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000681431); expected 0.0 (1e-05)
+Initial search space (Z):               2935  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6479.45
+//
+[ok]

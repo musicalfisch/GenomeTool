@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/388467_GCA_000710505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-45  152.4  12.1    1.3e-45  152.2  12.1    1.0  1  KEI67365.1  hypothetical protein A19Y_2454 [Planktothrix agar
+    2.9e-09   35.3   6.8    6.2e-09   34.2   6.8    1.7  1  KEI67730.1  hypothetical protein A19Y_2869 [Planktothrix agar
+  ------ inclusion threshold ------
+        5.1    5.6  17.9       0.11   11.0   1.8    3.8  3  KEI68487.1  NdhD [Planktothrix agardhii NIVA-CYA 126/8]
+
+
+Domain annotation for each sequence (and alignments):
+>> KEI67365.1  hypothetical protein A19Y_2454 [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.2  12.1     9e-49   1.3e-45       2     106 .]       3     107 .]       2     107 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 152.2 bits;  conditional E-value: 9e-49
+        emrC   2 liswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvi 100
+                 +is iyl+  i+fev+gttcmkls+gft++ ps+ if+fygl++t lt+ lkkievs+aysvw+g gt+lia+ig+ +fres+t +k+isialiiigvi
+  KEI67365.1   3 SISGIYLILGIVFEVMGTTCMKLSQGFTRIWPSMGIFIFYGLSFTCLTIVLKKIEVSLAYSVWSGAGTTLIAIIGVSFFRESITPIKFISIALIIIGVI 101
+                 5789*********************************************************************************************** PP
+
+        emrC 101 ginsak 106
+                 g+ns+k
+  KEI67365.1 102 GLNSGK 107
+                 ***987 PP
+
+>> KEI67730.1  hypothetical protein A19Y_2869 [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.2   6.8   4.4e-12   6.2e-09      38     101 ..      54     117 ..       7     120 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 34.2 bits;  conditional E-value: 4.4e-12
+        emrC  38 fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvig 101
+                 +++yg+ l   + al  + vsvay v+a++g  l+a +g +++ e + l ++i ++lii g+i 
+  KEI67730.1  54 ILVYGINLIVFAKALDSLPVSVAYPVFAAIGFSLVALMGNLFLGERFGLNQIIGLSLIIAGIII 117
+                 568***********************************************************96 PP
+
+>> KEI68487.1  NdhD [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.4   1.0     0.036        50      35      78 ..     126     168 ..     121     190 .. 0.78
+   2 ?   11.0   1.8   7.6e-05      0.11      25      95 ..     269     340 ..     244     350 .. 0.74
+   3 ?    1.1   1.2     0.087   1.2e+02      63     100 ..     389     426 ..     363     429 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 0.036
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavigli 78 
+                 + +f +  + l fl   l+ + v ++ s+w g   +  a    i
+  KEI68487.1 126 IAVFAVQDMLLFFLVWELELVPVYLILSIWGGKKRLYAA-TKFI 168
+                 7789999999********************997654444.3444 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 7.6e-05
+        emrC  25 segftklipsvlifvfyg.lcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                  +  +   p ++i+ +   +  +f ++a ++++  +ays  + +g vli + +   +  s ++++++s  li
+  KEI68487.1 269 PDAHATFAPILVILGVVNiVYAAFTSFAQRNLKRKIAYSSISHMGFVLIGMASFTDIGMSGAMLQMVSHGLI 340
+                 4555666777666644440456899**************************999999999999999998877 PP
+
+  == domain 3  score: 1.1 bits;  conditional E-value: 0.087
+        emrC  63 vwaglgtvliavigliwfresltlvklisialiiigvi 100
+                   +g+ + l+  ig        +++k+i i l  igvi
+  KEI68487.1 389 GMSGFVAELMVFIGFATSDAYNSTFKVIVILLAAIGVI 426
+                 45677777777777777777788899999999999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         4191  (1395461 residues searched)
+Passed MSV filter:                       147  (0.0350752); expected 83.8 (0.02)
+Passed bias filter:                       54  (0.0128848); expected 83.8 (0.02)
+Passed Vit filter:                         7  (0.00167025); expected 4.2 (0.001)
+Passed Fwd filter:                         3  (0.00071582); expected 0.0 (1e-05)
+Initial search space (Z):               4191  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 3697.97
+//
+[ok]

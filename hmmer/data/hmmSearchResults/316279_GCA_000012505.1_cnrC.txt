@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.28    7.4  15.8       0.22    7.7   4.4    2.3  2  ABB25332.1  putative RND family outer membrane efflux protein
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB25332.1  putative RND family outer membrane efflux protein [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.7   4.4   9.7e-05      0.22     110     220 ..     192     302 ..     179     310 .. 0.84
+   2 ?    5.1   3.6    0.0006       1.4     136     218 ..     437     519 ..     406     528 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 7.7 bits;  conditional E-value: 9.7e-05
+        cnrC 110 krgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanv.erqlrlae 207
+                 +r  ++a a  q  +a    ai   d+rl+ +  y +   ad  v   +   r +  +lr a  r +ag  + le   a+  ++  d n+   +l   +
+  ABB25332.1 192 RRVPQIAAARDQYEQARDSYAIALRDLRLNTSTDYFNLQEADEGVRIGQASVRASLVSLRDARARFNAGVNTKLEVLEAET-QLARDRNIlTSKLGDQD 289
+                 67778999****************************************9999*9999******************999885.45556554245666666 PP
+
+        cnrC 208 aaranlarrigrp 220
+                 ++r  la ++  p
+  ABB25332.1 290 TSRRLLASKLDLP 302
+                 6666666666655 PP
+
+  == domain 2  score: 5.1 bits;  conditional E-value: 0.0006
+        cnrC 136 vrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrlaeaaranlarrig 218
+                 +rl+v q +    +a + + t+  +   a ++lr + +rvqag ++  e    +    na+      +r  +++ a+l rr g
+  ABB25332.1 437 IRLEVEQSFFGLRTAVQNIQTTGSEVLSARESLRLSQLRVQAGVSTQREVVNNQRDLTNAELRYAGAIRDYNTSLAQLRRRTG 519
+                 56666666666666666666666666666666666666666666665555555555555555555555555555555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                       117  (0.0507812); expected 46.1 (0.02)
+Passed bias filter:                       42  (0.0182292); expected 46.1 (0.02)
+Passed Vit filter:                         4  (0.00173611); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000434028); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9432.66
+//
+[ok]

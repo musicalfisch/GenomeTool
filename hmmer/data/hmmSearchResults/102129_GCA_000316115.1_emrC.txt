@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-06   26.3   7.2    3.6e-06   26.2   7.2    1.0  1  EKU96471.1  cation/cationic drug transporter [Leptolyngbya sp
+  ------ inclusion threshold ------
+        7.8    5.8  18.1       0.24   10.7   2.1    4.1  4  EKV01488.1  NADH dehydrogenase subunit M [Leptolyngbya sp. PC
+
+
+Domain annotation for each sequence (and alignments):
+>> EKU96471.1  cation/cationic drug transporter [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2   7.2   9.3e-10   3.6e-06       6     105 ..       3     103 ..       1     104 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 9.3e-10
+        emrC   6 iyllaailfevsgttcmklsegftklipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigin 103
+                 i +la++ ++ +g   +kl  g + l   ++  +v+yg++  f    l k++vs++y v  gl  +  +  g   ++e +++++ + i l++ g+  i 
+  EKU96471.1   3 ILVLASVTLNTTGQSLLKLGAGQNPLNIYLFSgLVAYGISTIFYVAILGKLNVSIVYPVVIGLTIISTTCAGAFLLKEQVSTLHWLGIGLMLSGISAIA 101
+                 66789999**************9998766654379****************************9999999************************98887 PP
+
+        emrC 104 sa 105
+                  +
+  EKU96471.1 102 LG 103
+                 65 PP
+
+>> EKV01488.1  NADH dehydrogenase subunit M [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.6   1.0     0.021        81      35      76 ..     128     168 ..     122     188 .. 0.77
+   2 ?    1.3   0.1     0.053   2.1e+02      34      65 ..     183     214 ..     173     229 .. 0.76
+   3 ?   10.7   2.1   6.1e-05      0.24       9      95 ..     250     342 ..     244     351 .. 0.76
+   4 ?   -0.4   0.4      0.17   6.6e+02      68     100 ..     396     428 ..     375     431 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.021
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavig 76 
+                 + +f +  + l fl   l+ i v +  s+w g   +  a   
+  EKV01488.1 128 IAVFAVQDMLLFFLVWELELIPVYLLLSIWGGKRRLYAA-TK 168
+                 7799999999********************997654444.34 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 0.053
+        emrC  34 svlifvfyglcltfltlalkkievsvaysvwa 65 
+                 + l + fyg ++tf   al   e  +   +w 
+  EKV01488.1 183 AALAMAFYGDTVTFDMQALMAKEFPIRLQLWL 214
+                 5577889**99999999998888888888884 PP
+
+  == domain 3  score: 10.7 bits;  conditional E-value: 6.1e-05
+        emrC   9 laailfevsgttcmk.....lsegftklipsvlifvfyglclt.fltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                 la il+++ g + ++     l +  + + p +++f +  + ++ + ++a ++++  +ays  + +g v+i + +   +  s ++++++s  li
+  EKV01488.1 250 LAGILLKMGGYALIRmnvemLPDAHAIVAPGLILFGVINIIYAaLTSFAQRNLKRKIAYSSISHMGFVIIGIASFTNLGMSGAVLQMVSHGLI 342
+                 5556666655544431111145677788999999977777765156699***********************999999999999999998877 PP
+
+  == domain 4  score: -0.4 bits;  conditional E-value: 0.17
+        emrC  68 gtvliavigliwfresltlvklisialiiigvi 100
+                  + l+  +g          +kl+ i l+ +gvi
+  EKV01488.1 396 VAELMVFVGFANSDAYSFNFKLVMILLMAVGVI 428
+                 444444444444333344578888888888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       271  (0.0346193); expected 156.6 (0.02)
+Passed bias filter:                      120  (0.0153296); expected 156.6 (0.02)
+Passed Vit filter:                        13  (0.00166071); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 5345.66
+//
+[ok]

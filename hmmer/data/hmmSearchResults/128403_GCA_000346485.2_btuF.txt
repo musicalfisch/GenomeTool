@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   9.4e-129  428.1   2.5   1.1e-128  427.9   2.5    1.0  1  KYC39739.1  iron ABC transporter substrate-binding protein [S
+  ------ inclusion threshold ------
+      0.038   12.3   0.6      0.065   11.5   0.6    1.3  1  KYC36198.1  peptide ABC transporter substrate-binding protein
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC39739.1  iron ABC transporter substrate-binding protein [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  427.9   2.5  2.1e-132  1.1e-128       1     305 [.       1     295 [.       1     297 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 427.9 bits;  conditional E-value: 2.1e-132
+        btuF   1 mlrrwilstlaillsiiltacnttntqqsqaqatqsitisntpsqelaklsakrvvtlsslttdiifqldktklvgisgsslfkndprfqdiprisegq 99 
+                 m r+ il  l i +s  ++ac+ t+ +q+++    +it +  ++q  +  s  +vvtl+sl+tdii +ld  k+vg+sgs lfkndprf+di r+segq
+  KYC39739.1   1 MKRHLILIGLLIWISFGILACSNTANEQAKT---SEITATSVSPQ--PAQSVEKVVTLTSLSTDIISRLDSKKIVGMSGSNLFKNDPRFKDISRVSEGQ 94 
+                 77999****************9888877653...44444444444..4556789********************************************* PP
+
+        btuF 100 sppnlekivalkpdlvigaegfsnqviqrlqqlgiatlltqvntwksleeltaklaqlidvnpqslleryrsfladkvgtntstlvlvssqpilapnkn 198
+                 +ppnleki+alkpdlvigaegfsnq+ ++l++lgi tllt+v++w+ +++lt+ la+++ ++p +ll++y++fl+dk+ +n stlvlvs qpilapnk+
+  KYC39739.1  95 APPNLEKILALKPDLVIGAEGFSNQTTNKLKELGIQTLLTKVDSWEGIQDLTKTLAKIVGADPTPLLKQYQTFLPDKPIQNESTLVLVSRQPILAPNKK 193
+                 *************************************************************************************************** PP
+
+        btuF 199 swagdllekfkvknlaaelqgkspiagyvtlsaekvleanpeavvlitppqggsktevldsfkkesfwqklpatknnrvyvfdyyglvnpgsidaieka 297
+                 swag+ll+kf+ knlaa+lqgk+pi gy+ lsaek+leanpe++++++p  g     +l+sfk esfw++l+atknnrvy fdyyglvnpgsidaieka
+  KYC39739.1 194 SWAGNLLDKFQAKNLAADLQGKTPIPGYINLSAEKILEANPEVIIIVSPQPG-----LLKSFKSESFWNQLKATKNNRVYEFDYYGLVNPGSIDAIEKA 287
+                 ***********************************************99766.....799*************************************** PP
+
+        btuF 298 ceqlkkdl 305
+                 c+qlk  l
+  KYC39739.1 288 CQQLKAAL 295
+                 ****9876 PP
+
+>> KYC36198.1  peptide ABC transporter substrate-binding protein [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.6   1.3e-05     0.065       1      44 [.       5      49 ..       5      58 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.3e-05
+        btuF  1 mlrrwilstlaillsiiltacnttntq.qsqaqatqsitisntps 44
+                +lr+w++  la++ +i + +cn++n + q+ aq+tq +  + +++
+  KYC36198.1  5 ILRKWLIILLALFSTIAIASCNSANFKtQAAAQVTQIVAHTGSEP 49
+                59*********************997548999****988776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       374  (0.0380584); expected 196.5 (0.02)
+Passed bias filter:                      246  (0.0250331); expected 196.5 (0.02)
+Passed Vit filter:                        26  (0.00264577); expected 9.8 (0.001)
+Passed Fwd filter:                         2  (0.000203521); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 10842.10
+//
+[ok]

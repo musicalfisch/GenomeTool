@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.2e-48  160.2   0.4    3.4e-48  160.1   0.4    1.0  1  EKV01834.1  phycobilisome-associated family protein [Leptolyn
+    9.9e-05   20.9   0.0    0.00023   19.8   0.0    1.5  1  EKV03663.1  FAD-binding protein [Leptolyngbya sp. PCC 7375]
+  ------ inclusion threshold ------
+      0.022   13.4   0.0       0.15   10.8   0.0    2.2  3  EKV01048.1  Phycobilisome Linker polypeptide,phycobilisome-as
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV01834.1  phycobilisome-associated family protein [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.1   0.4   1.3e-51   3.4e-48       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 160.1 bits;  conditional E-value: 1.3e-51
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmf+itacvPsq+rirtqrelqnt+ftklvpyd+Wfreqqri+kmGGkivkvelatGkpg+ntGl
+  EKV01834.1  1 MRMFRITACVPSQSRIRTQRELQNTFFTKLVPYDSWFREQQRIQKMGGKIVKVELATGKPGANTGL 66
+                9****************************************************************9 PP
+
+>> EKV03663.1  FAD-binding protein [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   0.0   8.8e-08   0.00023      25      59 ..      42      74 ..      32      78 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 8.8e-08
+        apcC 25 tyftklvpydnWfreqqrimkmGGkivkvelatGk 59
+                t+ t  vpy+   +e +rim+mGG+iv ++ a G 
+  EKV03663.1 42 TFVT--VPYQRMAEETRRIMRMGGEIVSIRPANGE 74
+                5555..9**********************999986 PP
+
+>> EKV01048.1  Phycobilisome Linker polypeptide,phycobilisome-associated family protein [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0      0.26   6.9e+02      21      35 ..     137     151 ..     134     162 .. 0.82
+   2 ?   -3.1   0.0       1.2   3.1e+03      48      59 ..     230     241 ..     228     245 .. 0.78
+   3 ?   10.8   0.0   5.6e-05      0.15      30      56 ..     259     285 ..     247     286 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.26
+        apcC  21 elqntyftklvpydn 35 
+                 e qn +   +vpy  
+  EKV01048.1 137 EYQNVFGQDFVPYIR 151
+                 899***99****965 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 1.2
+        apcC  48 GkivkvelatGk 59 
+                 Gki +ve+++ +
+  EKV01048.1 230 GKIYRVEVTSYR 241
+                 999999987755 PP
+
+  == domain 3  score: 10.8 bits;  conditional E-value: 5.6e-05
+        apcC  30 lvpydnWfreqqrimkmGGkivkvela 56 
+                 +vp+d+   e +ri k GG i  + l+
+  EKV01048.1 259 MVPFDKLSDEYKRIHKQGGVIASITLV 285
+                 7********************999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       143  (0.0182678); expected 156.6 (0.02)
+Passed bias filter:                      133  (0.0169903); expected 156.6 (0.02)
+Passed Vit filter:                        10  (0.00127747); expected 7.8 (0.001)
+Passed Fwd filter:                         3  (0.00038324); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5631.43
+//
+[ok]

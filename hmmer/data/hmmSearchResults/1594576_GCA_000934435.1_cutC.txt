@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cutC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1594576_GCA_000934435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cutC  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.025   12.6   0.3      0.046   11.8   0.3    1.4  1  KIY12710.1  chemotaxis protein [Mastigocladus laminosus UU774
+      0.044   11.8   0.0        2.1    6.4   0.0    2.3  2  KIY14318.1  trans-homoaconitate synthase [Mastigocladus lamin
+
+
+Domain annotation for each sequence (and alignments):
+>> KIY12710.1  chemotaxis protein [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.3   1.5e-05     0.046     134     193 ..     681     745 ..     622     767 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.5e-05
+        cutC 134 edciavgfd...riltsgqka..kafeavdliaelvkradgrisimpgsgvnesnvvelvsktgv 193
+                  d + v +d   + ltsg++a  +++ea++ i e v ++  +i  +  s  n s+vv l+s+   
+  KIY12710.1 681 ADLVQVAVDqanQTLTSGDRAmnQTVEAIQAIRETVAQTGRKIQRLSESSHNISKVVSLISNFAT 745
+                 46677776622257*****9844679**********************************97554 PP
+
+>> KIY14318.1  trans-homoaconitate synthase [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   0.0    0.0077        23     184     220 ..      30      65 ..      14      83 .. 0.80
+   2 ?    6.4   0.0   0.00069       2.1      10      45 ..     147     182 ..     143     195 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.0077
+        cutC 184 vvelvsktgvkeihfsasamkdsemqfqnkaiaglgs 220
+                 + +++   gv+ei +   am +se q    aia lg 
+  KIY14318.1  30 IAKFLDAIGVHEIEVGIPAMGESEKQAI-AAIADLGL 65 
+                 55667789****************9964.58888874 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.00069
+        cutC  10 idsafraqeggadrielcdspgdggntpsygvveal 45 
+                  d a  aqe ga r  +cd+ g      +y  v+ l
+  KIY14318.1 147 FDVAHYAQEWGASRFRFCDTVGVLDSFSTYTKVNRL 182
+                 68999****************998888888887766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (244 nodes)
+Target sequences:                         5950  (1718357 residues searched)
+Passed MSV filter:                       140  (0.0235294); expected 119.0 (0.02)
+Passed bias filter:                      123  (0.0206723); expected 119.0 (0.02)
+Passed Vit filter:                        13  (0.00218487); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10481.98
+//
+[ok]

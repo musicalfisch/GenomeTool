@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671071_GCA_900009265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-20   72.5   6.1    1.1e-20   72.3   6.1    1.0  1  CUR09135.1  Quaternary ammonium compound-resistance protein S
+      1e-07   30.6   5.5      2e-07   29.7   5.2    1.7  1  CUR15973.1  conserved membrane hypothetical protein [Planktot
+  ------ inclusion threshold ------
+        6.1    5.6  16.2       0.19   10.5   2.1    3.6  3  CUR08799.1  NAD(P)H-quinone oxidoreductase chain 4 1 [Plankto
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR09135.1  Quaternary ammonium compound-resistance protein SugE [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.3   6.1   6.4e-24   1.1e-20       4     104 ..       2     102 ..       1     104 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 72.3 bits;  conditional E-value: 6.4e-24
+        emrC   4 swiyllaailfevsgttcmklsegftklipsvlifvfyg.lcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvig 101
+                  wiyl+ a lfe+     +klseg+tkl p++l f+ +g l++ fl+ a+++i +  ay+vw+g+g++   ++g+i+f++ +++ +l+ +al+++ +ig
+  CUR09135.1   2 DWIYLILAGLFELGFSSFLKLSEGLTKL-PAILAFIGFGaLSFGFLSKAMETIPIGTAYAVWTGIGALGTIMVGIIFFKDPVSFGRLFFVALLVVSLIG 99 
+                 7*************************96.*******998689********************************************************* PP
+
+        emrC 102 ins 104
+                 + +
+  CUR09135.1 100 LKA 102
+                 987 PP
+
+>> CUR15973.1  conserved membrane hypothetical protein [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   5.2   1.1e-10     2e-07      37     102 ..      53     118 ..       8     120 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 29.7 bits;  conditional E-value: 1.1e-10
+        emrC  37 ifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                  +++yg+ l   + al  + vs ay v+a++g  l+a  g + + e + l +++ + li+ g+i +
+  CUR15973.1  53 AIIVYGINLIVFAKALDSLPVSTAYPVFAAIGFSLVALTGSLLLGERFGLNQMMGLGLIVTGIIVM 118
+                 4689***********************************************************965 PP
+
+>> CUR08799.1  NAD(P)H-quinone oxidoreductase chain 4 1 [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.6   1.2      0.03        52      35      80 ..     126     170 ..     121     197 .. 0.76
+   2 ?   10.5   2.1   0.00011      0.19      28      95 ..     272     340 ..     244     350 .. 0.71
+   3 ?    0.0   0.4       0.2   3.4e+02      64     100 ..     390     426 ..     360     429 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.03
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwf 80 
+                 + +f +  + l fl   l+ + v ++ s+w g   +  a+   i +
+  CUR08799.1 126 IAVFAVQDMLLFFLVWELELVPVYLILSIWGGKKRLYAAT-KFILY 170
+                 77899999999*******************9976555444.44444 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 0.00011
+        emrC  28 ftklipsvlif.vfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                  +   p ++i+ v+  +  +f ++a ++++  +ays  + +g vli + +   +  s ++++++s  li
+  CUR08799.1 272 HAVFAPILVILgVVNIVYAAFTSFAQRNLKRKIAYSSISHMGFVLIGMASFTDIGMSGAMLQMVSHGLI 340
+                 3444455445423344456899**************************999999999999999998877 PP
+
+  == domain 3  score: 0.0 bits;  conditional E-value: 0.2
+        emrC  64 waglgtvliavigliwfresltlvklisialiiigvi 100
+                  +g+ + l+  ig         ++k+i i l  igv+
+  CUR08799.1 390 MSGFVAELMVFIGFATSDAYNPTFKVIVILLAAIGVV 426
+                 3445555555555555555555667777777777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         5245  (1732571 residues searched)
+Passed MSV filter:                       203  (0.0387035); expected 104.9 (0.02)
+Passed bias filter:                       82  (0.0156339); expected 104.9 (0.02)
+Passed Vit filter:                        14  (0.00266921); expected 5.2 (0.001)
+Passed Fwd filter:                         3  (0.000571973); expected 0.1 (1e-05)
+Initial search space (Z):               5245  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6121.75
+//
+[ok]

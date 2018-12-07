@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysW.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801605_GCA_001786525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysW  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0013   14.9  13.4     0.0022   14.1  13.4    1.6  1  OGH96768.1  phosphate ABC transporter permease subunit PstC [
+     0.0082   12.3   7.5     0.0034   13.5   3.8    2.2  2  OGH96767.1  phosphate ABC transporter, permease protein PstA 
+
+
+Domain annotation for each sequence (and alignments):
+>> OGH96768.1  phosphate ABC transporter permease subunit PstC [Candidatus Melainabacteria bacterium GWF2_32_7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1  13.4   2.5e-06    0.0022      75     225 ..      82     228 ..      19     288 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 2.5e-06
+        cysW  75 plntifglcaawviar.nqfrgktllislidlpfavspvvaglmivllygrngwlgsflelfdi.kilfalpgmvlatifvtmpfvarevipvleeigl 171
+                  +   fg+  a  ia   +   k +l  +i+l   +  vv g++ +++         + ++f++   l al g vl ++ +++p +       +  +  
+  OGH96768.1  82 IIAIPFGVIGAVYIAElARPIEKEILKPFIELLAGIPSVVIGFFGLVVLA-----PIVKNVFHLgTGLNALTGAVLLAL-MAIPTIISISDDAIRSVPA 174
+                 33444666555555541445577788888888888877777764322221.....222233443123567777776654.3456666666666777788 PP
+
+        cysW 172 eqeeagrtlgandwqifwrvtlpnirwglmygvlltnaramgefgavsvvsgsi 225
+                   ++a  +lga+  q +w+vt+p+   g++  ++l   r +ge  av +v+g  
+  OGH96768.1 175 SYKQASMALGATKMQTIWKVTFPDALPGIVAAIMLGIGRVIGETMAVMMVTGNA 228
+                 8999**********************************************9964 PP
+
+>> OGH96767.1  phosphate ABC transporter, permease protein PstA [Candidatus Melainabacteria bacterium GWF2_32_7]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   3.8   3.9e-06    0.0034     128     217 ..     120     207 ..      18     218 .. 0.71
+   2 ?   -1.5   0.1      0.15   1.3e+02      16      41 ..     249     274 ..     238     282 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 3.9e-06
+        cysW 128 lgsflelfdikilfalpgmvlatifvtmpfvarevipvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvlltnaramgefga 217
+                 lg f+ +++    +    + la   +t+p++       l  +     e   +lga+ wq +++  lp    g++ g +l  +ra ge   
+  OGH96767.1 120 LGLFVIFLKFGASILAGSLTLAC--MTLPIIIVASEEALRAVPKHLREGSLALGATKWQTIYKNVLPYSIPGMLTGSILGISRAAGETAP 207
+                 44555544444433334455555..4566655555678999999999***************************************9765 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.15
+        cysW  16 kplliiialvylalllfipaaavfyy 41 
+                 +pl    alv ++l+l +   a+f  
+  OGH96767.1 249 RPLQYGTALVLVTLILSVNLVAIFLR 274
+                 67777788999999999988888864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (280 nodes)
+Target sequences:                         1774  (534831 residues searched)
+Passed MSV filter:                        84  (0.0473506); expected 35.5 (0.02)
+Passed bias filter:                       27  (0.0152198); expected 35.5 (0.02)
+Passed Vit filter:                         5  (0.00281849); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.0011274); expected 0.0 (1e-05)
+Initial search space (Z):               1774  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 4991.76
+//
+[ok]

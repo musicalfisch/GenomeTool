@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501269_GCA_000757865.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00012   19.3   3.6      0.017   12.4   0.4    2.4  2  AIQ96339.1  NAD(P)H-quinone oxidoreductase chain I [Prochloro
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ96339.1  NAD(P)H-quinone oxidoreductase chain I [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.4   7.5e-06     0.017       7      23 ..      62      78 ..      57      90 .. 0.83
+   2 !    7.6   0.2   0.00023      0.52       7      27 ..     102     122 ..      95     131 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 7.5e-06
+        finN  7 sqciscdlclsvcptna 23
+                 +ci+c++c+ vcp+n 
+  AIQ96339.1 62 DKCIACEVCVRVCPINL 78
+                58************984 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.00023
+        finN   7 sqciscdlclsvcptnavkvi 27 
+                   ci c  c+  cptn++ + 
+  AIQ96339.1 102 GACIFCGNCVEYCPTNCLSMT 122
+                 47**************98765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         2287  (554079 residues searched)
+Passed MSV filter:                        71  (0.031045); expected 45.7 (0.02)
+Passed bias filter:                       55  (0.024049); expected 45.7 (0.02)
+Passed Vit filter:                         5  (0.00218627); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000437254); expected 0.0 (1e-05)
+Initial search space (Z):               2287  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6482.72
+//
+[ok]

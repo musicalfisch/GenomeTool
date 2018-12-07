@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccbP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccbP  [M=126]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.041   12.8   0.1        2.7    6.9   0.0    2.3  2  ERT09243.1  hypothetical protein M595_0716 [Lyngbya aestuarii
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT09243.1  hypothetical protein M595_0716 [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.6   0.0    0.0043        28      69     122 ..     149     201 ..     128     205 .. 0.72
+   2 ?    6.9   0.0   0.00042       2.7      29      46 ..     256     273 ..     239     302 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.0043
+        ccbP  69 apddeclkdmyveva.dingkdddvysaklseieaidadeetqeaiadwlywlar 122
+                  p+dec+k  +  ++ di   ++++ s++   ++a+    et+e +  wl  ++ 
+  ERT09243.1 149 NPEDECMKASFDAIVeDIVSYEKQIESSN--ALSAMFKRFETREKLEKWLQNITG 201
+                 69******999765526888888887764..345566667777777777766655 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.00042
+        ccbP  29 amgwyyylddtlnfpfla 46 
+                  +gw+yyld +l++p + 
+  ERT09243.1 256 MVGWHYYLDPSLQIPGVN 273
+                 47************9764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (126 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       117  (0.0179862); expected 130.1 (0.02)
+Passed bias filter:                      107  (0.0164489); expected 130.1 (0.02)
+Passed Vit filter:                         7  (0.0010761); expected 6.5 (0.001)
+Passed Fwd filter:                         1  (0.000153728); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6070.33
+//
+[ok]

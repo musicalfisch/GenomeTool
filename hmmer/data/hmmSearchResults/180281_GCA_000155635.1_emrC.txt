@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        7.8    4.4  14.2       0.44    8.4   0.8    3.4  3  EDY39785.1  NADH dehydrogenase i domain protein [Cyanobium sp
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY39785.1  NADH dehydrogenase i domain protein [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.6   0.8     0.005        14      35      94 ..     129     188 ..     126     219 .. 0.86
+   2 ?    8.4   0.8   0.00016      0.44      24      95 ..     271     343 ..     246     352 .. 0.75
+   3 ?   -0.5   0.6     0.091   2.5e+02      45      73 ..     404     432 ..     384     445 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.005
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisial 94 
+                 + +f +  + l fl+  l+ i v +  ++w g      a+  +++   s  ++ ++ +a+
+  EDY39785.1 129 IAVFAVQDMLLFFLAWELELIPVYLLLAIWGGKKRQYAATKFILYTAGSSLFILIVGLAM 188
+                 6789999999**********************9988888877777777766666666665 PP
+
+  == domain 2  score: 8.4 bits;  conditional E-value: 0.00016
+        emrC  24 lsegftklipsvlifvfyglcl.tfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                 l e  ++  p ++++ +  + + ++ ++a ++++  +ays  + +g vli + +   +  s +++++is  li
+  EDY39785.1 271 LPEAHAQFAPLLVVLGVVNIIYaALTSFAQRNLKRKIAYSSISHMGFVLIGIGSFSDLGTSGAMLQMISHGLI 343
+                 456677778877776555555515667999********************99999999999999999998877 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.091
+        emrC  45 ltfltlalkkievsvaysvwaglgtvlia 73 
+                 + f t    ++   v+ ++ a++g +l  
+  EDY39785.1 404 VGFVTSEAYTLSFRVVMAILAAVGVILTP 432
+                 34555555566666667777777766654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                        61  (0.0220137); expected 55.4 (0.02)
+Passed bias filter:                       26  (0.00938289); expected 55.4 (0.02)
+Passed Vit filter:                         3  (0.00108264); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000360881); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4358.24
+//
+[ok]

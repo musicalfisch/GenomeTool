@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.6e-41  138.4   2.1    1.5e-40  137.8   2.1    1.2  1  EKV00126.1  Fe2+ transport system protein A [Leptolyngbya sp.
+      0.006   14.9   0.1     0.0063   14.8   0.1    1.1  1  EKU99034.1  Fe2+ transport system protein A [Leptolyngbya sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV00126.1  Fe2+ transport system protein A [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  137.8   2.1   3.8e-44   1.5e-40      45     209 ..      40     217 ..      13     219 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 137.8 bits;  conditional E-value: 3.8e-44
+        feoA  45 typlaqvemgktvwlvgfqgtgg.inrllgmglnpgiqlqvissqprgsvliaiqdnrigigaemaekilvsds.........qpkk.lepkkdlp.ev 131
+                   pla   +g  vw++ ++g    + rl  +g+ pg ++ ++s  + gsv++a+q  rig+ga ma +++v+ +         qp + ++ ++d++ e+
+  EKV00126.1  40 RLPLAMATVGDRVWIAQLKGGQSmVRRLTEVGIVPGKEITIVSRTGSGSVVVALQGCRIGLGAGMAHRVMVTTAnttngavsrQPTQfINGENDMTsEI 138
+                 679***************987652678999****************************************97542222222236765256778876366 PP
+
+        feoA 132 rtf.lreipigkagkvvgydralrgykgkllsmgltpgteftvirvaplgdpveirvrgfhlslrkqeadaliveeidp 209
+                  ++ l ++ +g++g+v+gy+   + y+gkllsmgltpg++f v+r ap+gdp+ei vrg+hlslrk ea  l ve i+ 
+  EKV00126.1 139 ASLtLSDLKVGQSGRVLGYQPGSQTYRGKLLSMGLTPGAQFVVVRQAPMGDPMEITVRGMHLSLRKGEAAILQVEIIEV 217
+                 654389*********************************************************************9975 PP
+
+>> EKU99034.1  Fe2+ transport system protein A [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8   0.1   1.6e-06    0.0063     155     209 ..      34      89 ..       8      91 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 1.6e-06
+        feoA 155 gykgkllsmgltpgteftvirvaplgdpveirvrg.fhlslrkqeadaliveeidp 209
+                  +  +l  +g+   +   v+r   +g p+ irv    ++++r++ea+ ++v +++ 
+  EKU99034.1  34 AFVHRLAGLGIIVDSSVRVLRKVGFGGPLHIRVGAtTEVAIRRKEAEQIVVRNVET 89 
+                 56678889999999*******************752689************99975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       179  (0.0228666); expected 156.6 (0.02)
+Passed bias filter:                      162  (0.0206949); expected 156.6 (0.02)
+Passed Vit filter:                        21  (0.00268268); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8867.40
+//
+[ok]

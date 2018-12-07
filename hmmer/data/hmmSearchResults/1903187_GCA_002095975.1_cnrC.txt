@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1903187_GCA_002095975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-06   25.0  28.5    0.00042   17.9   0.2    3.2  3  ARI84212.1  hypothetical protein BH695_4933 [Microcystis aeru
+
+
+Domain annotation for each sequence (and alignments):
+>> ARI84212.1  hypothetical protein BH695_4933 [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.0   3.0    0.0054        29     164     228 ..     104     168 ..      92     179 .. 0.82
+   2 !   14.4  12.4   8.9e-07    0.0048     101     222 ..     176     299 ..     167     311 .. 0.90
+   3 !   17.9   0.2   7.9e-08   0.00042     108     181 ..     390     463 ..     374     503 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.0054
+        cnrC 164 asdalraasvrvqagraspleqqradvarinadanverqlrlaeaaranlarrigrpidgalddt 228
+                   ++l++a v ++  ra   eqq a +   +a++ + ++       + nlar+ g p     d t
+  ARI84212.1 104 NNQTLQTARVDLEIARAQLKEQQAALLPTAQAETSLTQDQSAVAQRQNNLARQQGIPATTPEDST 168
+                 5678999**********************99999998766655556689******9987766665 PP
+
+  == domain 2  score: 14.4 bits;  conditional E-value: 8.9e-07
+        cnrC 101 faipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanv 199
+                 +   +  gg r a++  a+  + + e++   ++ + r++ t+ y e    d +va a+     as++lr a +  qag  + +   +a+v   na+ ++
+  ARI84212.1 176 IVYGVYTGGERAAQIKRAEKVIRQRELEVERVSEQTRFDATDAYYELQRGDAQVAIAQAAIEDASQSLRDAQLLEQAGLGTRFAVLQAEVDLANANQDL 274
+                 5566778******************************************************************************************** PP
+
+        cnrC 200 erqlrlaeaaranlar..rigrpid 222
+                  r +     ar  la+   +g+ i+
+  ARI84212.1 275 TRSISTQRIARRRLAQilSVGQQIE 299
+                 ************9998223566655 PP
+
+  == domain 3  score: 17.9 bits;  conditional E-value: 7.9e-08
+        cnrC 108 ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagras 181
+                 gg+  ar   a+ ++ ra+ + ++   ++rlqv + y + ++ +  + t++     a+++lr a +r qag  +
+  ARI84212.1 390 GGRAFARARQAERNIDRADTEFSLRRNEIRLQVEESYYNLISNQENIKTSQKSIESATESLRLARLRFQAGVGT 463
+                 889999999*************************************************************9754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         5364  (1399560 residues searched)
+Passed MSV filter:                       144  (0.0268456); expected 107.3 (0.02)
+Passed bias filter:                       82  (0.0152871); expected 107.3 (0.02)
+Passed Vit filter:                         9  (0.00167785); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000186428); expected 0.1 (1e-05)
+Initial search space (Z):               5364  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 9913.55
+//
+[ok]

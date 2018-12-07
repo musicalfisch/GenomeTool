@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      4e-06   23.6   0.0    5.3e-06   23.2   0.0    1.1  1  AFY35934.1  L-glutamine synthetase [Calothrix sp. PCC 7507]
+  ------ inclusion threshold ------
+      0.029   10.9   0.0      0.039   10.5   0.0    1.1  1  AFY31515.1  Glutamate--ammonia ligase [Calothrix sp. PCC 7507
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY35934.1  L-glutamine synthetase [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   0.0   1.8e-09   5.3e-06     254     358 ..     175     281 ..     154     336 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 1.8e-09
+        glnN 254 qfddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnw 350
+                 +f + yf   p +  q +  e+   +   g+p   +h eva  gq e+   f     a+d       ++k  a+k+g  + +  kp+ g ngsg h   
+  AFY35934.1 175 RFKEGYFPVPPtDSFQDIRTEMLLTMAACGVPIEKQHHEVATgGQCELGFKFGKLIEAADWLMTYKYVIKNVARKYGKTVTFMPKPIFGDNGSGMHCHQ 273
+                 5777788776634567778888889999************97369****99999999***9999999******************************99 PP
+
+        glnN 351 svgnatqg 358
+                 s+ +  q 
+  AFY35934.1 274 SIWKGGQP 281
+                 99877664 PP
+
+>> AFY31515.1  Glutamate--ammonia ligase [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   1.3e-05     0.039     274     352 ..     175     253 ..     163     299 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 1.3e-05
+        glnN 274 veerlyrlgipaktrhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsv 352
+                 + + l   gip    + e  pgq ei+  +  a  a++ q      +++ a++h + + +  k f     sg h+  s+
+  AFY31515.1 175 ITDALITQGIPIEQYYPESGPGQQEISLRYTDALNAANRQIAFRETVRAVAHRHHLTASFLPKIFPDAASSGCHIHLSL 253
+                 66778889*******************9999888899999999999****************************99886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       142  (0.0238655); expected 119.0 (0.02)
+Passed bias filter:                      123  (0.0206723); expected 119.0 (0.02)
+Passed Vit filter:                         7  (0.00117647); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 14891.66
+//
+[ok]

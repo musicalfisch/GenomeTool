@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/582515_GCA_000473895.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   11.4   8.8      0.058   10.2   8.8    1.7  1  ERN40748.1  fatty acid desaturase [Rubidibacter lacunae KORDI
+       0.45    7.3   6.8       0.43    7.3   0.2    2.1  2  ERN39797.1  Dolichol kinase [Rubidibacter lacunae KORDI 51-2]
+
+
+Domain annotation for each sequence (and alignments):
+>> ERN40748.1  fatty acid desaturase [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   8.8   3.4e-05     0.058      45     164 ..      65     186 ..      29     327 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 3.4e-05
+        desD  45 twviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnv....lgydleihg 139
+                  w++a   + l  p  + l ++  +   + l    f i hd+ h  +   k  n  lg+    +  +  + w+  h y h   +n+    +gy      
+  ERN40748.1  65 FWLLAIASLRLTFPLAYGLTLLYTIAASGCLLR-VFGIQHDCGHNSFFRSKIANETLGLVCSVLTITPYHYWKRSHAYHHAHVSNLdyreMGYITIKTV 162
+                 466666666666777777877777776666655.59**************************999999999**99*99776666652222444333334 PP
+
+        desD 140 dgvvrmtphaehkwyhryqhlfipi 164
+                     rmt  a  + y+ yq  fi  
+  ERN40748.1 163 AEYERMTTGARWR-YRLYQNPFIMF 186
+                 5566888887654.66799888754 PP
+
+>> ERN39797.1  Dolichol kinase [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   0.2   0.00025      0.43     200     231 ..      56      87 ..      22      99 .. 0.76
+   2 ?    2.8   1.9     0.006        10      46     114 ..     119     186 ..     105     205 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00025
+        desD 200 lfvllsgkvvylfwfigipllvgyspleiaig 231
+                 ++ + sg+v+ l w+ gip  +g ++  ia  
+  ERN39797.1  56 IVHVGSGNVILLAWWFGIPAWIGIAASAIAGA 87 
+                 444669*****************998877744 PP
+
+  == domain 2  score: 2.8 bits;  conditional E-value: 0.006
+        desD  46 wviaawlfvlfgpdiwwlkiigclvlgaglagi.gfsighdanhggysskkwvnsllgmtydyiigassy 114
+                  v+ aw++ l  p+   + i+ ++  g g+a i g   g+   +   s+k w  sl   t    i +s  
+  ERN39797.1 119 GVLVAWFWPLDRPQFAAIGIL-VMAWGDGMAAIvGSRFGQHQYRVLGSTKSWEGSLAMATAS-FIATSLV 186
+                 478899999988887766554.5667999988637778988888888999999987655555.5555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         3457  (1058921 residues searched)
+Passed MSV filter:                       126  (0.0364478); expected 69.1 (0.02)
+Passed bias filter:                       86  (0.0248771); expected 69.1 (0.02)
+Passed Vit filter:                        16  (0.00462829); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000578536); expected 0.0 (1e-05)
+Initial search space (Z):               3457  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9636.18
+//
+[ok]

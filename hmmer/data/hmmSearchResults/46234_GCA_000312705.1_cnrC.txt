@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/46234_GCA_000312705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00025   18.4   8.4    0.00035   17.9   8.3    1.4  1  AFW96955.1  outer membrane efflux protein [Anabaena sp. 90]
+  ------ inclusion threshold ------
+        2.3    5.4  24.7       0.78    6.9  20.7    2.1  2  AFW96400.1  outer membrane efflux protein [Anabaena sp. 90]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFW96955.1  outer membrane efflux protein [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   8.3   1.5e-07   0.00035     315     416 ..     120     220 ..      56     223 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 1.5e-07
+        cnrC 315 qataqrtqada....qrrvtaldieqaitdaqaqaanaattaraasgpalaaaqeaariarigyregkfgqlelldaertlaetrvaaidalanyqnar 409
+                 qa a+ + a+     q +   +++eqa  + +++  n  t a      al  a+ea r+ar+ ++ g   q ++++ae  l+ t    + a+ +y+ + 
+  AFW96955.1 120 QARANIAIAEVsfseQLKQVRFQVEQAFYQQKSNLDNVQT-AN----AALELAREALRLARLRFQSGVATQTDVINAENDLTTTEGNRVTAVLDYNRSL 213
+                 4444433333211115555667889998887777666554.44....479999********************************************** PP
+
+        cnrC 410 aqverlt 416
+                 aq+er +
+  AFW96955.1 214 AQLERYA 220
+                 ****974 PP
+
+>> AFW96400.1  outer membrane efflux protein [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.2     0.067   1.5e+02     161     226 ..     260     325 ..     252     332 .. 0.81
+   2 ?    6.9  20.7   0.00034      0.78     107     416 ..     341     658 ..     310     665 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.067
+        cnrC 161 ariasdalraasvrvqagraspleqqradvarinadanverqlrlaeaaranlarrigrpidgald 226
+                 a+   + l+ + +++q  ++   e q a +  ++ +anve    ++++ r +  +  g  +d a  
+  AFW96400.1 260 AKRNNNDLQVSVLQLQRSKSVLREAQAAFLPSVDLNANVENSRTVSDTLRVKGQQDAGLSVDDASS 325
+                 555667788888888999998999999999999999***999999999999988888888887765 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.00034
+        cnrC 107 lggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanverqlrl 205
+                   g+r   +  a+ ++ + e++    + ++rl+v++ y +   ad  v  ++     a  +l+ a    +ag  + ++  r++v   n++ ++   +  
+  AFW96400.1 341 TSGRRNGAIKEAQERIRKQELDVERQSEQIRLDVSKAYYDLQQADENVRISQSAVNNAQASLKDAVALERAGVGTRFDVLRSQVNLANSQQDLTSAFSQ 439
+                 468888888999999999********************************************************************************* PP
+
+        cnrC 206 aeaaranlarrigrpidgalddtlldrlpganvy..gpvapvnttgtlalaaanadfsiaeagvrlaranrvpdlnvgpairrleatndmaav...ftv 299
+                  + ar +la  +  p   ++  +   +l g           +       l  + ad  i+ea  + a a   p++ +      ++  +d ++v   ++v
+  AFW96400.1 440 QQIARRKLAPLLNLPQSVSITASDPVKLAGLWQQplEQSIVLAYQNRPELQQTLADRNISEAQRKQALASLGPQVSLLGQYNLFDQFDDGTSVvdgYSV 538
+                 **********99999876665554445544432200112223344555688899*********************999988888888887776222445 PP
+
+        cnrC 300 sipipv.fnngraaiaqataqr.......tqadaqrrvtaldieqaitdaqaqaanaattaraasgpalaaaqeaariarigyregkfgqlelldaert 390
+                  +   + + +g aa a+a+  +       tq   qr    +++eqa +    qa+n       +s  al  a+e+ r+ar+ ++ g   q ++++a   
+  AFW96400.1 539 RLQASLnLYDGGAAKARAAQSKtniaiaeTQFSEQRNQIRFQVEQAYST---QASNLEN--VQTSNVALEQAKESLRLARLRFQAGVGTQTDVINALND 632
+                 4433222335656666555444111111156667788888888888653...4444433..3457889******************************* PP
+
+        cnrC 391 laetrvaaidalanyqnaraqverlt 416
+                 l+ +    + a+ +y+ a ++++r  
+  AFW96400.1 633 LTRSEGNRVKAILDYNRALTELQRYV 658
+                 ***************99999988865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         4511  (1408436 residues searched)
+Passed MSV filter:                       108  (0.0239415); expected 90.2 (0.02)
+Passed bias filter:                       69  (0.0152959); expected 90.2 (0.02)
+Passed Vit filter:                        11  (0.00243848); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443361); expected 0.0 (1e-05)
+Initial search space (Z):               4511  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 8551.22
+//
+[ok]

@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmM  [M=652]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.4e-06   22.6   2.6    6.1e-05   18.8   1.4    1.9  2  ABI46531.1  transferase hexapaptide repeat protein [Synechoco
+     0.0017   14.0   0.0      0.002   13.8   0.0    1.0  1  ABI47556.1  ribulose bisphosphate carboxylase, small subunit 
+  ------ inclusion threshold ------
+      0.028   10.0   0.0      0.028   10.0   0.0    1.0  1  ABI46770.1  conserved hypothetical protein [Synechococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI46531.1  transferase hexapaptide repeat protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.5   0.1   0.00016      0.15      42      76 ..      35      68 ..      18      71 .. 0.71
+   2 !   18.8   1.4   6.4e-08   6.1e-05      93     167 ..      53     132 ..      52     147 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.00016
+        ccmM 42 arvviapgtsiradegtpfhigddskiqdgaiihg 76
+                +   i p +  r d  + +hig  s++q+ga++hg
+  ABI46531.1 35 SGASIWPTAVARGD-MAQIHIGARSNVQEGAVLHG 68
+                33344454444554.5689***************9 PP
+
+  == domain 2  score: 18.8 bits;  conditional E-value: 6.4e-08
+        ccmM  93 wigrgscithmalihg....payvgdrcfigfrstvfnarigadcivmmhalv.qdveipagkfvpsgsvitsqqqadrl 167
+                  ig  s +   a++hg    p ++ + + ig r+ v  a + a c++ + a+v + v +  g +v +gsv+t +  a+ l
+  ABI46531.1  53 HIGARSNVQEGAVLHGdptfPVHIAENVTIGHRAVVHGASLEAGCLIGIGAVVlNGVTVGRGALVAAGSVVTKDVPAQTL 132
+                 688899999999999976667899***********************99998835699**************98777665 PP
+
+>> ABI47556.1  ribulose bisphosphate carboxylase, small subunit [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   2.1e-06     0.002     448     517 ..      29     100 ..      18     109 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 2.1e-06
+        ccmM 448 etiaqirsllaqgykigtehadkrrfktsswqsc.apiesnresdvi.taledclrehsgeyvrllgidaka 517
+                 e   qi  ++aqg+    eh       +s w     p   +++ +v+ + le c r +   +vr++g da +
+  ABI47556.1  29 EIYDQIAYIIAQGWSPLIEHVHPSNSMASYWSYWkLPFFGEKDLNVVvSELEACHRAYPDHHVRMVGYDAYT 100
+                 566799999999999999999999999998876426888888877651679999999999999999999865 PP
+
+>> ABI46770.1  conserved hypothetical protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   2.9e-05     0.028     454     504 ..       8      58 ..       1      80 [. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 2.9e-05
+        ccmM 454 rsllaqgykigtehadkrrfktsswqscapiesnresdvitaledclrehs 504
+                 + ll +g    t  ad+ r+ t  w s   ++s   s ++  +  +lr  +
+  ABI46770.1   8 QQLLLRGLGTTTLVADRLRYVTQEWVSSGRLDSTHASALVEDVLKALRGET 58 
+                 445555555555555555555555555555555555555444444444333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (652 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        78  (0.026971); expected 57.8 (0.02)
+Passed bias filter:                       65  (0.0224758); expected 57.8 (0.02)
+Passed Vit filter:                         7  (0.00242047); expected 2.9 (0.001)
+Passed Fwd filter:                         3  (0.00103734); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9837.79
+//
+[ok]

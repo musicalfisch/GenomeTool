@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0013   16.6   0.1     0.0049   14.7   0.0    2.0  2  ONN62127.1  photosystem I reaction center subunit XII [Mastig
+      0.005   14.7   0.9     0.0083   14.0   0.0    1.8  2  ONN62870.1  ferredoxin-NADP reductase [Mastigocladus laminosu
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN62127.1  photosystem I reaction center subunit XII [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.0      0.24   5.3e+02      21      39 ..     136     154 ..     134     178 .. 0.64
+   2 !   14.7   0.0   2.3e-06    0.0049      30      54 ..     252     276 ..     226     279 .] 0.70
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.24
+        apcC  21 elqntyftklvpydnWfre 39 
+                 e  n++   +vpy   f+ 
+  ONN62127.1 136 EYDNAFGNYVVPYYRGFQS 154
+                 6677788888888776654 PP
+
+  == domain 2  score: 14.7 bits;  conditional E-value: 2.3e-06
+        apcC  30 lvpydnWfreqqrimkmGGkivkve 54 
+                  vpyd      q i k GGki+k+ 
+  ONN62127.1 252 TVPYDRLSATYQEIHKRGGKIIKIS 276
+                 49*********************96 PP
+
+>> ONN62870.1  ferredoxin-NADP reductase [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   3.8e-06    0.0083      27      62 ..      47      81 ..      27      85 .. 0.80
+   2 ?   -3.3   0.1      0.95   2.1e+03      35      47 ..     408     420 ..     407     422 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 3.8e-06
+        apcC 27 ftklvpydnWfreqqrimkmGGkivkvelatGkpgt 62
+                f k vpy    +e +ri ++GG+iv ++ ++  + t
+  ONN62870.1 47 FIK-VPYSRMNQEMRRITRLGGRIVSIQPVSVLQQT 81
+                555.9*********************9977665555 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.95
+        apcC  35 nWfreqqrimkmG 47 
+                 nW   q+ i+k G
+  ONN62870.1 408 NWSDYQKEIKKAG 420
+                 8999999999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       113  (0.0257345); expected 87.8 (0.02)
+Passed bias filter:                      102  (0.0232293); expected 87.8 (0.02)
+Passed Vit filter:                        10  (0.00227739); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455477); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4467.78
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/696747_GCA_000210375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.018   12.1   2.4      0.015   12.4   0.5    1.8  2  BAI93745.1  hypothetical protein NIES39_O04980 [Arthrospira p
+
+
+Domain annotation for each sequence (and alignments):
+>> BAI93745.1  hypothetical protein NIES39_O04980 [Arthrospira platensis NIES-39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.5   2.3e-06     0.015      76     162 ..      78     162 ..      63     237 .. 0.67
+   2 ?   -2.1   0.0     0.055   3.6e+02     205     233 ..     357     385 ..     333     511 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.3e-06
+        cusB  76 tiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyleaksqfelskadyerqqqla.dqnvnsak 162
+                 t+ v     v p + v +s    g l +  + qg rv  gq iar+e  ++   + + l+a++++e ++a+  + +q +  + + sa+
+  BAI93745.1  78 TVIVRASGVVQPVRRVNLSPKTQGRLAQLYVEQGDRVEAGQIIARMESNEL---EAQRLQAQARLERAQANLAKLRQGSrPEAIASAR 162
+                 444444445789999*******************************98653...4455667777777766665544433133444444 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.055
+        cusB 205 nlyspidgyvtevnvnrgkfvnptdvlfe 233
+                 n+ +p  g +t+     g fv p+    +
+  BAI93745.1 357 NIRAPFAGIITQRYAIEGAFVTPATSASD 385
+                 55566666666666666666666543332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         6630  (1832829 residues searched)
+Passed MSV filter:                       163  (0.0245852); expected 132.6 (0.02)
+Passed bias filter:                      124  (0.0187029); expected 132.6 (0.02)
+Passed Vit filter:                        16  (0.00241327); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.00015083); expected 0.1 (1e-05)
+Initial search space (Z):               6630  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 11075.52
+//
+[ok]

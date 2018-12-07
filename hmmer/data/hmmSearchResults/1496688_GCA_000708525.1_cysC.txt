@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1496688_GCA_000708525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      5e-52  173.4   0.0    6.7e-52  173.0   0.0    1.1  1  KEF42518.1  adenylylsulfate kinase [Cyanobium sp. CACIAM 14]
+     0.0026   14.6   0.0     0.0042   14.0   0.0    1.2  1  KEF41946.1  sodium:proton antiporter [Cyanobium sp. CACIAM 14
+  ------ inclusion threshold ------
+      0.028   11.3   0.0      0.041   10.7   0.0    1.3  1  KEF42682.1  phosphoribulokinase [Cyanobium sp. CACIAM 14]
+
+
+Domain annotation for each sequence (and alignments):
+>> KEF42518.1  adenylylsulfate kinase [Cyanobium sp. CACIAM 14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.0   0.0   6.9e-55   6.7e-52       7     178 ..      41     214 ..      35     218 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 173.0 bits;  conditional E-value: 6.9e-55
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki..g 103
+                 r   +w+tglsgagkst+++a+++ l  +g +  vldgd vr  l   lgfs  dr+enirrig v++l+   gv+vl + +sp+r  r+  r  +  g
+  KEF42518.1  41 RSAILWFTGLSGAGKSTLANAVNSALFEQGLACYVLDGDNVRHGLCSDLGFSDADREENIRRIGEVAKLFLDAGVVVLTAFVSPFRADRQRARELVepG 139
+                 66789*************************************************************************************999765559 PP
+
+        cysC 104 sfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 +f+e+   a l+vce+rd kgly rarageik ftgi  pye p npe+ + t    l+  va+v + l   g i
+  KEF42518.1 140 DFLEIHCAAELEVCEQRDTKGLYARARAGEIKDFTGISSPYEAPDNPELRVATGEVNLDGCVAQVLQELERRGII 214
+                 ********************************************************************9998877 PP
+
+>> KEF41946.1  sodium:proton antiporter [Cyanobium sp. CACIAM 14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   4.3e-06    0.0042       8      61 ..     112     163 ..     109     184 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 4.3e-06
+        cysC   8 gvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfsked 61 
+                  v    +g  g gkst++  l + l a g  + +ld di   n    lg++  d
+  KEF41946.1 112 QVIAVSSGKGGVGKSTVAVNLACALAASGLRVGLLDADIYGPNAPTMLGVA--D 163
+                 5666678999******************************99999888875..4 PP
+
+>> KEF42682.1  phosphoribulokinase [Cyanobium sp. CACIAM 14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   4.2e-05     0.041       4      46 ..       1      43 [.       1      78 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 4.2e-05
+        cysC  4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdi 46
+                m +r   v +tg sgag st+  a++  +  eg    v++gd 
+  KEF42682.1  1 MSKRHPVVAVTGSSGAGTSTVKRAFEHIFSREGILPAVVEGDS 43
+                567888899************************9999999996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2935  (883562 residues searched)
+Passed MSV filter:                       117  (0.0398637); expected 58.7 (0.02)
+Passed bias filter:                      114  (0.0388416); expected 58.7 (0.02)
+Passed Vit filter:                        18  (0.00613288); expected 2.9 (0.001)
+Passed Fwd filter:                         3  (0.00102215); expected 0.0 (1e-05)
+Initial search space (Z):               2935  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5419.18
+//
+[ok]

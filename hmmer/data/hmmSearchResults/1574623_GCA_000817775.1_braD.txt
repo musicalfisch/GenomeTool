@@ -1,0 +1,101 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574623_GCA_000817775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-19   66.8  26.6    2.8e-13   48.4   7.3    2.7  2  KIF42227.1  hypothetical protein QQ91_10990 [Lyngbya confervo
+    3.3e-06   25.2  25.4    6.2e-06   24.3  25.0    1.8  2  KIF43317.1  inner-membrane translocator [Lyngbya confervoides
+     0.0012   16.8   4.4     0.0018   16.2   4.4    1.3  1  KIF38962.1  ABC transporter permease [Lyngbya confervoides BD
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF42227.1  hypothetical protein QQ91_10990 [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   9.4   1.5e-09   3.1e-06       9      60 ..       9      60 ..       2     123 .. 0.81
+   2 !   48.4   7.3   1.4e-16   2.8e-13     136     252 ..     287     403 ..     281     415 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 1.5e-09
+        braD  9 ivngiavgsiialaavgltltygilrlsnfahgdfltlgayltllvnslgvn 60
+                + ng+++g+++ + a+gl++++g++ + n+ahg+++ lgay t++v++ +  
+  KIF42227.1  9 LFNGVSIGAVLLIVALGLAIVFGLMGVINLAHGELMMLGAYTTYVVQNGAAA 60
+                67*******************************************9865544 PP
+
+  == domain 2  score: 48.4 bits;  conditional E-value: 1.4e-16
+        braD 136 lkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglitavrpnmgwflilplfasvilgg 234
+                 l+ p ++l+++ l++++++ ++++l+ t  g  +r+v+++  ++   gi  ++v   t+ +   l+ ++g+   l+ +v pn+g   i+  f  v++gg
+  KIF42227.1 287 LQFPYSRLFIIGLTIVCLIGVYWFLNGTAWGLRIRSVTQNRKMSACLGIPTEKVDALTFALGSGLAGIAGCAVTLLGSVGPNLGGNYIVDAFMVVVVGG 385
+                 678999********************************************************************************************* PP
+
+        braD 235 ignpygaiaaafiigiaq 252
+                 +g+  g+i+aa++igi+ 
+  KIF42227.1 386 VGKLAGSIVAALVIGIVT 403
+                 ****************85 PP
+
+>> KIF43317.1  inner-membrane translocator [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.4      0.24     5e+02     196     220 ..      75     102 ..      29     127 .. 0.55
+   2 !   24.3  25.0     3e-09   6.2e-06      99     276 ..     135     327 ..      54     337 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 0.24
+        braD 196 iagsltslggsmy...glitavrpnmgw 220
+                 ++g +    gs y   gl t +    gw
+  KIF43317.1  75 VSGEIDLSVGSTYalgGLATGMFIISGW 102
+                 2333332233333222334444444444 PP
+
+  == domain 2  score: 24.3 bits;  conditional E-value: 3e-09
+        braD  99 iisiglalflrngiillwggknknynlpvtqaldilg.lk.vpqnqll...vlvlavl.ailalhy.llqntkigkamravaddldlarvsginvdrvi 190
+                 i ++g+  ++r + +ll gg+  + n    +a d+l+  + + q  l+    ++l    ++ al + ll  t  g  + av      arvsgi+v+ v 
+  KIF43317.1 135 IATLGMLSIIRGSALLLTGGQPVTVNERNGAAPDVLArFEfMGQGYLFgvvPMQLVFFaTVAALGWlLLSRTAFGFRVFAVGGSAKAARVSGIHVQSVK 233
+                 55566666677777777777666655555555554431221223332210023333331344555416789**************************** PP
+
+        braD 191 lwtwviagsltslgg..smyglitavrpnmgwflilplfasvilg......gignpygaiaaafiigiaqevstpllgsqykqgvallimilvl 276
+                 +w++vi g+l++l+g  sm  l +      g  l l ++a+v++g      gig   g++ + ++ig+ ++   ++  s + q v + ++i++ 
+  KIF43317.1 234 IWAFVIMGTLAALAGilSMAFLPSGQAGRTGLGLELDVIAAVVIGgaslagGIGTVLGTVLGVLVIGVLRNGLVLMGVSPFMQEVMIGLVIIIA 327
+                 **************977788898888889999999999999987522222279****************9987777778999988664444433 PP
+
+>> KIF38962.1  ABC transporter permease [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   4.4   8.9e-07    0.0018      89     212 ..     102     223 ..      44     304 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 8.9e-07
+        braD  89 siratsttliiisiglalflrngiillwggknknynlpvtqaldilglkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvd 187
+                 +  a   ++ii   gla+fl +  i     +  +++l   ++   +   +  + l+++ +a+  +  ++++++ t+ g  +rav d  + ar  gi + 
+  KIF38962.1 102 NDVAVGIAMIIFGSGLAFFLGKPFIQPQAPQLFTFQLGAWSSNPAVQSALKVSPLFLIGVAIAPL--MQWFFRATRWGLYIRAVGDSPEAARAMGISIF 198
+                 334677899999********999999999999999999888887777777777788888887765..57899*************************** PP
+
+        braD 188 rvilwtwviagsltslggsmyglit 212
+                 +v + + v    l+ +gg+ + l  
+  KIF38962.1 199 KVRFLSIVAGSFLAGIGGACLSLYY 223
+                 *999876655557889999887753 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         6092  (1743458 residues searched)
+Passed MSV filter:                       253  (0.0415299); expected 121.8 (0.02)
+Passed bias filter:                       95  (0.0155942); expected 121.8 (0.02)
+Passed Vit filter:                         8  (0.0013132); expected 6.1 (0.001)
+Passed Fwd filter:                         3  (0.000492449); expected 0.1 (1e-05)
+Initial search space (Z):               6092  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8368.60
+//
+[ok]

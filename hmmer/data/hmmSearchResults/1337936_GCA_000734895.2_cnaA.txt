@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnaA  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   8.5e-127  421.4   0.0   9.8e-127  421.2   0.0    1.0  1  AKG22960.1  hypothetical protein IJ00_18250 [Calothrix sp. 33
+    7.2e-08   30.2   0.0    1.3e-07   29.4   0.0    1.3  1  AKG24022.1  anthranilate phosphoribosyltransferase [Calothrix
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG22960.1  hypothetical protein IJ00_18250 [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  421.2   0.0  3.9e-130  9.8e-127       3     347 ..       5     344 ..       3     348 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 421.2 bits;  conditional E-value: 3.9e-130
+        cnaA   3 dtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrtap 101
+                 + fr+llk +gsg+ht +nltr eaa atkmml  eatpaqigaf+iahrikrpt +elagmlday elg +  l++  +  p+ ++g pydgr+rtap
+  AKG22960.1   5 NKFRDLLKKVGSGSHTSQNLTREEAATATKMMLLGEATPAQIGAFLIAHRIKRPTGEELAGMLDAYDELGVKAKLQAIDYSSPVVVLGIPYDGRTRTAP 103
+                 67************************************************************************************************* PP
+
+        cnaA 102 vtpittlilglagvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwspfv 200
+                 v+pi +l+l+  g pv++hggdr+ptkyg+ l eiw++lg d+++l+++  + ++  t++ f+y p+hfpl q +  yr+q+gkrpp+at+el+w p+ 
+  AKG22960.1 104 VSPIIALLLATVGQPVIMHGGDRLPTKYGLPLVEIWRDLGVDWTKLTISQTQAVFENTSIGFVYTPQHFPLTQSLWEYRDQLGKRPPLATMELIWCPYS 202
+                 *************************************************************************************************** PP
+
+        cnaA 201 gnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllagenn 299
+                 g+ hqi gfvhppte  f+ ++ l+ +  +ttvkglegscdl  +rtaiiglg       ++r+ l prd+g+   + ples + l++  + +l g   
+  AKG22960.1 203 GDAHQIVGFVHPPTEGMFQSALQLKGVKELTTVKGLEGSCDLPRDRTAIIGLGL-----HLERLHLTPRDFGITNKNVPLESQKQLATENQLILQGIYT 296
+                 *****************************************************7.....578************************************* PP
+
+        cnaA 300 eltdaaifnggfylwrcgiapdiptgfqqaqqslqsgkalakleqian 347
+                 el d+ ++n gfy+wr+gi pdi +g+ q+ + l+sg  l  l+ +++
+  AKG22960.1 297 ELMDTVLWNAGFYFWRAGIYPDIASGIIQSLELLNSGAVLHTLKSLQK 344
+                 ****************************************99988765 PP
+
+>> AKG24022.1  anthranilate phosphoribosyltransferase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.4   0.0   5.1e-11   1.3e-07      21     350 ..      27     353 ..      24     354 .] 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 29.4 bits;  conditional E-value: 5.1e-11
+        cnaA  21 nltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhp...iaifgnpydgrsrtapvtpittlilglagvp 116
+                  l+r +aa      l++   p   ga++ a + +  + +elagm +         +l  ++ q p   +   g   dg s    ++   +++ +++gvp
+  AKG24022.1  27 SLSRNQAAELMEGWLSEAIPPELSGAILTAIQCQGVSPEELAGMAEVLQ----SQSLGETTTQIPtplVDTCGTGGDGASTF-NISTAVAFVTAACGVP 120
+                 5778888887777887777778889*******************76543....33444444454411244568888998855.55556678999***** PP
+
+        cnaA 117 vvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwspfvgnihqisgfvhppte 215
+                 v  hg     ++ g    ++ + lg +++  s   v+ ++   g+tf++ p   p ++ +   r+ +     + tv  l  p+v  +h   g v    +
+  AKG24022.1 121 VAKHGNRSASSRVGS--ADVLEALGINLTAPSE-RVQAAVKEVGITFLFAPGWHPALKSVAGIRKTLK----VRTVFNLLGPLVNPLHPT-GQVIGVFN 211
+                 *****9998888875..5788888888876653.45556666899*************9998887765....557888889999999953.44555555 PP
+
+        cnaA 216 drfretfalrnishfttvkglegscdlacnrtaiiglgnptdpp.....sfqrfflnprdygfcpsdy.pleslel..ltaklkgllagennel.tdaa 305
+                  ++  t+a   + ++ t k +        +r    glg+ td        +q+  lnp++  + p+    l+  ++   +  l+ +l g+  +   d  
+  AKG24022.1 212 PQLLATIAT-SLQYLGTAKAIVLH---GRERLDEAGLGDITDLAvladgKVQQTTLNPQELDLTPAPLiALQGGDVseNAEILRNVLQGKGTKAqEDVV 306
+                 566666664.56677777765322...335555566666666431111157999***********8642455444411345689999998766516788 PP
+
+        cnaA 306 ifnggfylwrcgiap..diptgfqqaqqslqsgkalakleqianyle 350
+                  +n  + l     +p  d   g++ a+++lq+g a  kle+++++l+
+  AKG24022.1 307 ALNAALALQVGEAVPllDHAQGIKLARETLQTGAAWRKLEELVQFLQ 353
+                 8999999998888886677899********************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       166  (0.0329169); expected 100.9 (0.02)
+Passed bias filter:                      142  (0.0281578); expected 100.9 (0.02)
+Passed Vit filter:                        10  (0.00198295); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9480.21
+//
+[ok]

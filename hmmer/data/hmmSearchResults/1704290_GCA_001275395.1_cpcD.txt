@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1704290_GCA_001275395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-30  103.2   0.3    3.7e-30  102.2   0.3    1.4  1  KOP25894.1  ferredoxin-NADP reductase [Hapalosiphon sp. MRB22
+    2.2e-29   99.7   0.4    2.5e-29   99.5   0.4    1.0  1  KOP26641.1  phycobilisome linker polypeptide [Hapalosiphon sp
+    0.00024   19.5   0.1    0.00048   18.5   0.1    1.6  1  KOP26640.1  photosystem I reaction center subunit XII [Hapalo
+     0.0042   15.5   0.0       0.01   14.2   0.0    1.7  1  KOP26635.1  photosystem I reaction center subunit XII [Hapalo
+
+
+Domain annotation for each sequence (and alignments):
+>> KOP25894.1  ferredoxin-NADP reductase [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  102.2   0.3   2.5e-33   3.7e-30      10      69 ..      17      76 ..      10      79 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 102.2 bits;  conditional E-value: 2.5e-33
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                 r+fvyevvGl q ++td+ +y ir sGsvf+ vpysrmnqemrritrlG rivsi+p+ 
+  KOP25894.1 17 SRVFVYEVVGLRQSEETDQTNYQIRNSGSVFIKVPYSRMNQEMRRITRLGGRIVSIQPVS 76
+                69********************************************************85 PP
+
+>> KOP26641.1  phycobilisome linker polypeptide [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   99.5   0.4   1.7e-32   2.5e-29       5      73 ..      13      80 ..       9      81 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 99.5 bits;  conditional E-value: 1.7e-32
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                ssa + r+f yevvGl qn++ d  +y ir sGsvf+tvpy rmn+em+ritr+G ri+ i pl +a a
+  KOP26641.1 13 SSA-NSRMFRYEVVGLRQNEENDRNNYNIRNSGSVFMTVPYNRMNEEMQRITRMGGRIIKIEPLGTAEA 80
+                555.68**********************************************************99987 PP
+
+>> KOP26640.1  photosystem I reaction center subunit XII [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.1   3.3e-07   0.00048      32      67 ..     253     287 ..     239     288 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 3.3e-07
+        cpcD  32 sirksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 s+r+s s  + vpy r+   m +i r G +ivsi p
+  KOP26640.1 253 SVRRS-SYAIVVPYERLLDRMEQIKRQGGKIVSITP 287
+                 67776.66789***********************98 PP
+
+>> KOP26635.1  photosystem I reaction center subunit XII [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   7.1e-06      0.01      29      67 ..     240     277 ..     223     279 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 7.1e-06
+        cpcD  29 ldysirksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                    ++r+s  v+ tvpy r+    + i + G +iv i p
+  KOP26635.1 240 TKVAVRRSQQVY-TVPYERLSATYQEIHKRGGKIVKISP 277
+                 456899999997.9***********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5845  (1865779 residues searched)
+Passed MSV filter:                       116  (0.019846); expected 116.9 (0.02)
+Passed bias filter:                      105  (0.0179641); expected 116.9 (0.02)
+Passed Vit filter:                        15  (0.0025663); expected 5.8 (0.001)
+Passed Fwd filter:                         4  (0.000684346); expected 0.1 (1e-05)
+Initial search space (Z):               5845  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 6903.38
+//
+[ok]

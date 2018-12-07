@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321332_GCA_000013225.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      5e-09   33.5   0.1    6.4e-09   33.1   0.1    1.2  1  ABD01920.1  phycobilisome 8.9 kDa linker polypeptide, phycocy
+    1.3e-07   28.9   0.0      2e-07   28.3   0.0    1.4  1  ABD01171.1  CpcD/allophycocyanin linker domain protein [Synec
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD01920.1  phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod [Synechococcus sp. JA-2-3B'a(2-13)]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   0.1   4.4e-12   6.4e-09      31      73 ..      38      79 ..      10      80 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 33.1 bits;  conditional E-value: 4.4e-12
+        cpcD 31 ysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                  +r+s ++  tvpysr+  em+ri r+G +iv +  l  a a
+  ABD01920.1 38 AKVRRS-TLSTTVPYSRLSAEMQRILRMGGKIVQVTALSGANA 79
+                334554.45679*************************998876 PP
+
+>> ABD01171.1  CpcD/allophycocyanin linker domain protein [Synechococcus sp. JA-2-3B'a(2-13)]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   0.0   1.4e-10     2e-07      39      69 ..      83     113 ..      60     117 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 1.4e-10
+        cpcD  39 vfltvpysrmnqemrritrlGarivsikpln 69 
+                 v   vp+sr+ qe++rit++G +ivsi   n
+  ABD01171.1  83 VEYKVPFSRLSQEVKRITQMGGKIVSIAESN 113
+                 5678***********************7655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         2862  (863919 residues searched)
+Passed MSV filter:                        55  (0.0192173); expected 57.2 (0.02)
+Passed bias filter:                       54  (0.0188679); expected 57.2 (0.02)
+Passed Vit filter:                         5  (0.00174703); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000698812); expected 0.0 (1e-05)
+Initial search space (Z):               2862  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 3196.50
+//
+[ok]

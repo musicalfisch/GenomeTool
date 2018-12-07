@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_000412595.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+  ------ inclusion threshold ------
+      0.012   12.6   0.0      0.018   12.0   0.0    1.2  1  lcl|ASZQ01000274.1_prot_EPF17231.1_4924  [locus_tag=MAESPC_04971] [protei
+      0.028   11.4   0.0      0.068   10.1   0.0    1.5  2  lcl|ASZQ01000272.1_prot_EPF17313.1_4844  [locus_tag=MAESPC_04890] [protei
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|ASZQ01000274.1_prot_EPF17231.1_4924  [locus_tag=MAESPC_04971] [protein=8-amino-7-oxononanoate synthase] [protein_
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   6.9e-06     0.018     220     296 ..     116     196 ..     100     205 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 6.9e-06
+                                     cyrH 220 nlcrhshlletkaqeklaqekygctavehlkrigylddrts...lahcvhltdkdiailaetkst.vvhn 285
+                                               +cr   lle k +e   +e         l +ig+++  ts   +   v + ++d+  + +  +   + n
+  lcl|ASZQ01000274.1_prot_EPF17231.1_4924 116 GVCRPHILLEQKMNEIWQKEYTLTFGTGALANIGFMNAMTSsfgFDETVTIDNHDVVFVLDRDCHwSLWN 185
+                                              5899999*****9987766655555678899*****999984445789*******99887777752789* PP
+
+                                     cyrH 286 plsnlrlgsgi 296
+                                              pls l++gs +
+  lcl|ASZQ01000274.1_prot_EPF17231.1_4924 186 PLSGLKFGSQV 196
+                                              ********987 PP
+
+>> lcl|ASZQ01000272.1_prot_EPF17313.1_4844  [locus_tag=MAESPC_04890] [protein=Cytosine deaminase] [protein_id=EPF17313.1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.1   0.0   2.6e-05     0.068      12      61 ..      29      80 ..      24      91 .. 0.81
+   2 ?   -3.5   0.0      0.34   8.8e+02     301     315 ..     313     327 ..     304     360 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 10.1 bits;  conditional E-value: 2.6e-05
+                                     cyrH 12 veddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss 61
+                                             + ++ + v++++ dg+i+ i++ +  e    +id ++k+++p f++ hth  
+  lcl|ASZQ01000272.1_prot_EPF17313.1_4844 29 TAEGLTLVNLEINDGNINRITSTIppEDNIPVIDLKKKIVFPCFIDMHTHLD 80
+                                             5678899**************99944344568******************64 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 0.34
+                                     cyrH 301 kyrqagvnvtfgcdg 315
+                                                ++ag+ v+f  d 
+  lcl|ASZQ01000272.1_prot_EPF17313.1_4844 313 EMKKAGIPVAFASDN 327
+                                              444444444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5241  (1467090 residues searched)
+Passed MSV filter:                       128  (0.0244228); expected 104.8 (0.02)
+Passed bias filter:                      107  (0.020416); expected 104.8 (0.02)
+Passed Vit filter:                        14  (0.00267125); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000381607); expected 0.1 (1e-05)
+Initial search space (Z):               5241  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.09
+# Mc/sec: 7579.97
+//
+[ok]

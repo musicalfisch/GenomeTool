@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-71  237.4   0.0    2.3e-71  237.2   0.0    1.0  1  OKH18769.1  chorismate-binding protein [Limnothrix rosea IAM 
+    9.4e-56  186.3   0.0    1.1e-55  186.0   0.0    1.0  1  OKH19765.1  chorismate-binding protein [Limnothrix rosea IAM 
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH18769.1  chorismate-binding protein [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  237.2   0.0   1.3e-74   2.3e-71       1     194 [.       1     196 [.       1     197 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 237.2 bits;  conditional E-value: 1.3e-74
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkee..kkfygasr 97 
+                 mthstd  tl+ +ma +fsn +qa+ n  +fahi+vcmrp+p++++ g ++f+eqay   l +pyrlr  ++  ++d++e+  y+ kee  +kf+gasr
+  OKH18769.1   1 MTHSTDAKTLTSWMAGEFSNFDQALANSALFAHIKVCMRPMPQDFFGGYGLFLEQAYSSDLGNPYRLRAFQVKPVDDHLELVHYKPKEEikEKFFGASR 99 
+                 9**************************************************************************************975589****** PP
+
+        cpeS  98 dlerlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                 dl+ lk++++ dle +pgc+miv +   +fkg v+ g++c v+r+++++yld  fei e+++is drgrdpetde +wgs+ag fef + + f+ ev
+  OKH18769.1 100 DLSILKSVTMADLEPMPGCDMIVTFENGAFKGVVQEGRGCKVFRNNRESYLDNRFEITEKNLISIDRGRDPETDEIVWGSLAGAFEFKKIKDFSSEV 196
+                 **********************************************************************************************998 PP
+
+>> OKH19765.1  chorismate-binding protein [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  186.0   0.0   6.4e-59   1.1e-55       8     194 ..      19     204 ..      13     206 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 186.0 bits;  conditional E-value: 6.4e-59
+        cpeS   8 atlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdlerlktlk 106
+                  +lar ma  fsnq+q+f +p  +ahirv++rplp ++++g++f+ eq ydy l  pyr  + ++v  +d++ ieny++k+   + ga r+l+ l ++k
+  OKH19765.1  19 YALARTMAGGFSNQKQSFADPKNYAHIRVFFRPLPWDFFDGIGFYSEQVYDYDLWLPYRQGIHRFVPYGDEVYIENYSLKDALVYAGAGRNLDILCSIK 117
+                 589************************************************************************************************ PP
+
+        cpeS 107 addleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                  d +e+   c+mi     ++f+g+ve g+ c++ ++gkktyl s+    e  f   drg d +tde++wgs  gp++f + +s+a ev
+  OKH19765.1 118 PDVIERRCHCSMIFRPDHDGFQGRVE-GRDCVIEKRGKKTYLVSDARFTETSFTGWDRGLDIDTDEQVWGSAVGPLKFEKTDSYASEV 204
+                 *************************8.9**********************************************************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                        54  (0.0152456); expected 70.8 (0.02)
+Passed bias filter:                       51  (0.0143986); expected 70.8 (0.02)
+Passed Vit filter:                         7  (0.00197628); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10975.69
+//
+[ok]

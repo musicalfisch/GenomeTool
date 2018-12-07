@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173026_GCA_000317555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.7e-09   33.6   0.0    7.1e-09   33.6   0.0    1.0  1  AFZ33080.1  nitrogen-fixing NifU domain-containing protein [G
+    2.2e-07   28.7   0.0    2.7e-07   28.4   0.0    1.2  1  AFZ30459.1  Modular FeS cluster scaffolding protein NifU [Glo
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ33080.1  nitrogen-fixing NifU domain-containing protein [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.0   2.8e-12   7.1e-09     235     293 ..      10      68 ..       3      76 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 33.6 bits;  conditional E-value: 2.8e-12
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                  v +elr+ l++d+++v+l + d+ ++k  l++a++++ s++++l++ +e rl++ +  
+  AFZ33080.1  10 TVLDELRPYLMSDGGNVELVELDGPVVKLRLQGACGACPSSTMTLRMGIERRLREMIPE 68 
+                 566789***********************************************997743 PP
+
+>> AFZ30459.1  Modular FeS cluster scaffolding protein NifU [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.4   0.0   1.1e-10   2.7e-07      40      94 ..      40      94 ..      13     103 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 28.4 bits;  conditional E-value: 1.1e-10
+        finU 40 acGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvs 94
+                +cGd++ l ++++   d+i d +f+  Gc+ a+as++ +++ ++G+ + eal + 
+  AFZ30459.1 40 SCGDTIELTVQLNAAGDTIEDVKFEGEGCAIAMASADLMADALRGKQVTEALSMV 94
+                6***************************************************875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5011  (1616692 residues searched)
+Passed MSV filter:                       163  (0.0325284); expected 100.2 (0.02)
+Passed bias filter:                      133  (0.0265416); expected 100.2 (0.02)
+Passed Vit filter:                         8  (0.00159649); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000399122); expected 0.1 (1e-05)
+Initial search space (Z):               5011  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 9700.15
+//
+[ok]

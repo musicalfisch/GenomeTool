@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671068_GCA_900010725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysH  [M=273]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.5e-132  437.3   0.2   6.8e-132  437.0   0.2    1.0  1  CUR14857.1  Phosphoadenosine phosphosulfate reductase [Plankt
+  ------ inclusion threshold ------
+      0.033   11.7   0.0      0.043   11.3   0.0    1.1  1  CUR12467.1  conserved hypothetical protein [Planktothrix sert
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR14857.1  Phosphoadenosine phosphosulfate reductase [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  437.0   0.2  2.4e-135  6.8e-132      27     273 .]      48     294 .]      38     294 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 437.0 bits;  conditional E-value: 2.4e-135
+        cysH  27 ssplsldlarinqrfdsanaaeivawaaatfgeglvmstsfgiqaavmlhlvtaiipdipiiwidtgylppetyqfaedlsqrlhlnlkvyqsplspar 125
+                  +pl ldl+ +nq++  a+  ++v waa +fgeglvmstsfgiq+avmlhlvt ++p+ipi+w+dtgylp ety fae+l+qrl lnlkvyqsp+spar
+  CUR14857.1  48 IQPLELDLDAVNQQLADADGLNVVQWAAEAFGEGLVMSTSFGIQSAVMLHLVTRVVPNIPIVWVDTGYLPTETYIFAEELTQRLNLNLKVYQSPISPAR 146
+                 57************************************************************************************************* PP
+
+        cysH 126 meaihgklwsnndldslnlydkirkvepmqralkelkatawlaglrrdqtdhrktlqwvnqqgerykilpildwnaktiydyltkydlpyhpyfdlgyv 224
+                 mea+hg+lw +nd+++ln ydkirkvepmqral+el+atawlaglr dqt hrktl+ v +q  ryk+ pil wn++ iy+ylt +dlpyhpyfdlgy 
+  CUR14857.1 147 MEALHGRLWEKNDVEALNYYDKIRKVEPMQRALQELNATAWLAGLRADQTHHRKTLNRVIKQSGRYKVHPILSWNSRDIYQYLTAHDLPYHPYFDLGYT 245
+                 *************************************************************************************************** PP
+
+        cysH 225 svgdwhssrpltaddsnerdtrfkglkqecglhlpltpgeaqsldassl 273
+                 +vgdwhssrpl a d nerdtrf+glkqecglhlp t  ea+sld+ssl
+  CUR14857.1 246 TVGDWHSSRPLMATDENERDTRFQGLKQECGLHLPQTEEEAKSLDSSSL 294
+                 ***********************************************97 PP
+
+>> CUR12467.1  conserved hypothetical protein [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.5e-05     0.043      86     184 ..      15     116 ..      10     123 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.5e-05
+        cysH  86 piiwidtgylppetyqfaedlsqrlhlnlkvyqsplsparmeaihgklwsnnd.ldslnlydkirkvep...mqralkelkatawlaglrrdqtdhrkt 180
+                  ++  dt  +      +ae++  rl    k+y s+   a +  i  +     d    lnl + ir v p   ++  l +l++  w++g  r q d  + 
+  CUR12467.1  15 VMLGKDTFTVSRLKELMAENMKVRLFHRQKLYSSSDVTASVSQILCQQLKITDkSIELNL-NEIRLVFPpkgIDCQLLKLQSGKWISGKIRFQVDANRD 112
+                 55555666666666678*****************99999999988776665550456776.6799998734456789999***************9988 PP
+
+        cysH 181 lqwv 184
+                  q v
+  CUR12467.1 113 QQTV 116
+                 8876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (273 nodes)
+Target sequences:                         5638  (1760186 residues searched)
+Passed MSV filter:                       149  (0.0264278); expected 112.8 (0.02)
+Passed bias filter:                      129  (0.0228805); expected 112.8 (0.02)
+Passed Vit filter:                        10  (0.00177368); expected 5.6 (0.001)
+Passed Fwd filter:                         2  (0.000354736); expected 0.1 (1e-05)
+Initial search space (Z):               5638  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 12013.27
+//
+[ok]

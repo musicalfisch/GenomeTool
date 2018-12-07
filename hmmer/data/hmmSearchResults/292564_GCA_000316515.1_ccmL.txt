@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292564_GCA_000316515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-09   34.8   0.0    5.2e-09   34.1   0.0    1.3  1  AFY27230.1  carboxysome peptide B [Cyanobium gracile PCC 6307
+    1.4e-08   32.7   0.0      2e-08   32.2   0.0    1.2  1  AFY27231.1  carboxysome peptide A [Cyanobium gracile PCC 6307
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY27230.1  carboxysome peptide B [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.1   0.0   3.1e-12   5.2e-09       1      83 [.       1      77 [.       1      81 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 34.1 bits;  conditional E-value: 3.1e-12
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiid 83
+                m+i +v g++v+tq+ p l    l +l+    +g    k  va d vga   +wv+ + gsaar   gn +   d ++  iid
+  AFY27230.1  1 MEIMQVTGSLVCTQRVPGLEHWNLRVLRS--TKG----KLSVAVDPVGASPGNWVFTASGSAARFACGNPETHTDLTIGGIID 77
+                899*****************999998874..344....568**********************************99999998 PP
+
+>> AFY27231.1  carboxysome peptide A [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.2   0.0   1.2e-11     2e-08       1      84 [.       1      77 [.       1      82 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 32.2 bits;  conditional E-value: 1.2e-11
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidt 84
+                m i+kv   +vst++ p +   +l   q+v+ +g +    +va d+vg+   +wv+    saar+  gn+  p d ++v iid 
+  AFY27231.1  1 MLICKVVKPLVSTNRIPDFEHKHL---QVVQ-DGST---QKVAVDAVGCIPGDWVICVGSSAAREAAGNKSYPSDLTIVGIIDH 77
+                678999999999999999987765...5554.5554...479****************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         3280  (992729 residues searched)
+Passed MSV filter:                        60  (0.0182927); expected 65.6 (0.02)
+Passed bias filter:                       51  (0.0155488); expected 65.6 (0.02)
+Passed Vit filter:                         8  (0.00243902); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000609756); expected 0.0 (1e-05)
+Initial search space (Z):               3280  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4963.65
+//
+[ok]

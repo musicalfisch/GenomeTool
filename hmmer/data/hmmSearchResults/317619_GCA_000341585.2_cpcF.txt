@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317619_GCA_000341585.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0019   15.7   0.4       0.45    8.0   0.0    2.8  3  KKI99172.1  HEAT repeat-containing protein [Prochlorothrix ho
+  ------ inclusion threshold ------
+      0.013   13.0   0.2      0.089   10.3   0.1    2.5  2  KKJ01025.1  phycocyanobilin lyase [Prochlorothrix hollandica 
+
+
+Domain annotation for each sequence (and alignments):
+>> KKI99172.1  HEAT repeat-containing protein [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.0   0.0   0.00024      0.45      70     122 ..      39      90 ..      32      95 .. 0.88
+   2 !    3.7   0.2     0.005       9.4      77     125 ..     109     156 ..      94     188 .. 0.75
+   3 ?   -0.0   0.0     0.068   1.3e+02      98     119 ..     207     228 ..     183     234 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.00024
+        cpcF  70 llanldgynygarawatralagigdvrgldllleaavsdfsfsvrrgaarglg 122
+                 +la l+  +   r  atra++ i d r +  l+   + d    vr gaa  lg
+  KKI99172.1  39 MLALLESAESPQRMLATRAFCEIQDSRAIPQLIT-LLQDSCPMVRMGAAYALG 90 
+                 678888888899*****************99885.68899999******9998 PP
+
+  == domain 2  score: 3.7 bits;  conditional E-value: 0.005
+        cpcF  77 ynygarawatralagigdvrgldllleaavsdfsfsvrrgaarglgnii 125
+                 +n   r     a+   gd r l+ l+++  +d++ +vr  aa  lg++ 
+  KKI99172.1 109 WNGYVRKGVVWAMGNCGDQRCLEPLVNTLQTDIA-AVRLWAASALGQLA 156
+                 33334555556788999********999999986.79999999999864 PP
+
+  == domain 3  score: -0.0 bits;  conditional E-value: 0.068
+        cpcF  98 ldllleaavsdfsfsvrrgaar 119
+                 +d ll+  v d  +svr  a  
+  KKI99172.1 207 IDTLLDVLVQDEDMSVREDAKD 228
+                 7899999999999999988765 PP
+
+>> KKJ01025.1  phycocyanobilin lyase [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.1   4.8e-05     0.089     141     176 ..      64     104 ..       9     129 .. 0.82
+   2 ?   -1.2   0.0      0.16     3e+02     178     181 ..     166     169 ..     136     209 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 4.8e-05
+        cpcF 141 vfaalekllqgdpewvvryaaivgleglgtaa.....aafr 176
+                  f+al  llq dp+  vr  a+  l  +g +a     aafr
+  KKJ01025.1  64 GFSALTTLLQDDPDATVRAEAVHALSHFGQSAidhlmAAFR 104
+                 599***********************999887333334444 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.16
+        cpcF 178 aire 181
+                 a  +
+  KKJ01025.1 166 AALD 169
+                 2222 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         3737  (1137027 residues searched)
+Passed MSV filter:                       132  (0.0353225); expected 74.7 (0.02)
+Passed bias filter:                       98  (0.0262242); expected 74.7 (0.02)
+Passed Vit filter:                        20  (0.00535189); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000535189); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 5884.11
+//
+[ok]

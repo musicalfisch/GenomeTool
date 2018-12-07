@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501268_GCA_000757845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.02   10.1   2.2       0.01   11.1   0.2    1.5  2  AIQ95291.1  Molybdenum cofactor biosynthesis protein MoaA [Pr
+       0.02   10.1   2.2       0.01   11.1   0.2    1.5  2  AIQ95561.1  Molybdenum cofactor biosynthesis protein MoaA [Pr
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ95291.1  Molybdenum cofactor biosynthesis protein MoaA [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.2       0.3   3.1e+02      65      77 ..      21      33 ..      14      39 .. 0.79
+   2 ?   11.1   0.2     1e-05      0.01     148     250 ..      99     199 ..      83     209 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 0.3
+        finB 65 vapacniqcnycn 77
+                +   cn  c yc+
+  AIQ95291.1 21 LKQNCNFSCIYCK 33
+                5678********7 PP
+
+  == domain 2  score: 11.1 bits;  conditional E-value: 1e-05
+        finB 148 lclstnglmltey..vdrikqlnidhvtitlntidpeigaqiys...wvhykrkryrgvegakillekqleglqa.lkeadilckvnsvmipgindkhl 240
+                 + l+tng +l+e   ++ + +  +d +t++l++idp+i +++      +  k k +  +eg           ++a ++  +   k+n+v+   ind+++
+  AIQ95291.1  99 ISLTTNGYLLSEKkaIE-LFKNGLDRITVSLDAIDPDIFSNMIGeenKIIGKEKLFTVLEGID-------HAINAgFNPKEGKLKINAVIKKEINDNQI 189
+                 6799******9863244.445589************998776531113344455555555543.......33333123334456899999999999988 PP
+
+        finB 241 vevnkairer 250
+                  e+ +  ++r
+  AIQ95291.1 190 FELVDFAKKR 199
+                 8876665555 PP
+
+>> AIQ95561.1  Molybdenum cofactor biosynthesis protein MoaA [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.2       0.3   3.1e+02      65      77 ..      21      33 ..      14      39 .. 0.79
+   2 ?   11.1   0.2     1e-05      0.01     148     250 ..      99     199 ..      83     209 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 0.3
+        finB 65 vapacniqcnycn 77
+                +   cn  c yc+
+  AIQ95561.1 21 LKQNCNFSCIYCK 33
+                5678********7 PP
+
+  == domain 2  score: 11.1 bits;  conditional E-value: 1e-05
+        finB 148 lclstnglmltey..vdrikqlnidhvtitlntidpeigaqiys...wvhykrkryrgvegakillekqleglqa.lkeadilckvnsvmipgindkhl 240
+                 + l+tng +l+e   ++ + +  +d +t++l++idp+i +++      +  k k +  +eg           ++a ++  +   k+n+v+   ind+++
+  AIQ95561.1  99 ISLTTNGYLLSEKkaIE-LFKNGLDRITVSLDAIDPDIFSNMIGeenKIIGKEKLFTVLEGID-------HAINAgFNPKEGKLKINAVIKKEINDNQI 189
+                 6799******9863244.445589************998776531113344455555555543.......33333123334456899999999999988 PP
+
+        finB 241 vevnkairer 250
+                  e+ +  ++r
+  AIQ95561.1 190 FELVDFAKKR 199
+                 8876665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         2063  (521035 residues searched)
+Passed MSV filter:                        71  (0.0344159); expected 41.3 (0.02)
+Passed bias filter:                       46  (0.0222976); expected 41.3 (0.02)
+Passed Vit filter:                        10  (0.00484731); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000969462); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 12478.79
+//
+[ok]

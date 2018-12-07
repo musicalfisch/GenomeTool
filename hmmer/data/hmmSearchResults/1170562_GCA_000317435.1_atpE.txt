@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170562_GCA_000317435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-80  265.3   2.9    3.7e-80  265.1   2.9    1.0  1  AFZ00107.1  ATP synthase F1 subcomplex epsilon subunit [Calot
+  ------ inclusion threshold ------
+        3.9    6.0  16.0        3.4    6.2   2.4    3.5  3  AFY99333.1  efflux transporter, RND family, MFP subunit [Calo
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ00107.1  ATP synthase F1 subcomplex epsilon subunit [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  265.1   2.9   1.3e-83   3.7e-80       1     137 []       1     137 []       1     137 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 265.1 bits;  conditional E-value: 1.3e-83
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pdktvwda+aeevilpsttgqlg+l+ghap+l+aldtgvmrvra+k q+w+aial+ggfaevee+evtilvngaergd+inl+ear+a++
+  AFZ00107.1   1 MTLTVRVIAPDKTVWDAMAEEVILPSTTGQLGVLTGHAPMLSALDTGVMRVRADKGQSWTAIALMGGFAEVEENEVTILVNGAERGDNINLDEARSAYS 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 eaq++l++v+++d+qaqiqatqa+krararfqaagg v
+  AFZ00107.1 100 EAQSRLDKVATDDKQAQIQATQALKRARARFQAAGGQV 137
+                 ************************************87 PP
+
+>> AFY99333.1  efflux transporter, RND family, MFP subunit [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.2   1.0     0.005        14      90     122 ..     124     156 ..     111     164 .. 0.84
+   2 ?    6.2   2.4    0.0012       3.4      90     133 ..     150     194 ..     143     198 .. 0.80
+   3 ?    4.2   3.6    0.0051        14      69     132 ..     227     290 ..     212     295 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 4.2 bits;  conditional E-value: 0.005
+        atpE  90 nleearaafneaqtklnqvkaedrqaqiqatqa 122
+                 +l +a+a  ++a+++ln++ a++r ++i  +qa
+  AFY99333.1 124 QLTQAKAGITSAEANLNKLIAGNRAEDISQSQA 156
+                 6889**********************9988776 PP
+
+  == domain 2  score: 6.2 bits;  conditional E-value: 0.0012
+        atpE  90 nleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqaa 133
+                 ++ +++a+ +eaq++l+++ a++r ++i qa++ +kr +  ++ a
+  AFY99333.1 150 DISQSQAQLEEAQANLKKIIAGNRPQDIaQAEARLKRVKVTLNQA 194
+                 566788899**************97766489999***99877554 PP
+
+  == domain 3  score: 4.2 bits;  conditional E-value: 0.0051
+        atpE  69 aeveedevtilvn.gaergdkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqa 132
+                 a+v+e e ++ ++ +  r +  ++e+a+a+ ++ q++ n +k++ r+++i qa   +  ar  +q+
+  AFY99333.1 227 AQVQEAEQALKLQqTGSRSE--DIEQAQAKVKQLQQSYNLIKNGARKEDIdQARSQVNSARGSLQT 290
+                 66666666654430344444..678999999999999*********99996677788889988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5535  (1829740 residues searched)
+Passed MSV filter:                       195  (0.0352304); expected 110.7 (0.02)
+Passed bias filter:                      147  (0.0265583); expected 110.7 (0.02)
+Passed Vit filter:                         6  (0.00108401); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000361337); expected 0.1 (1e-05)
+Initial search space (Z):               5535  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 8355.81
+//
+[ok]

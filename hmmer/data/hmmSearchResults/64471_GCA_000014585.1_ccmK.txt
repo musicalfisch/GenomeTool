@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-26   88.5   2.7      5e-26   88.3   2.7    1.0  1  ABI46263.1  Carbon dioxide concentrating mechanism protein cc
+    3.8e-25   85.4   2.5    5.4e-25   85.0   2.5    1.2  1  ABI45066.1  possible carbon dioxide concentrating mechanism p
+     0.0024   15.4   2.0     0.0025   15.3   0.4    1.8  2  ABI46985.1  conserved hypothetical protein [Synechococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI46263.1  Carbon dioxide concentrating mechanism protein ccmK [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.3   2.7   5.2e-29     5e-26       1      87 [.       6      91 ..       6      95 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 88.3 bits;  conditional E-value: 5.2e-29
+        ccmK  1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenley 87
+                m ia+gmiet+g+   +eaadam kaa v l+g e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e 
+  ABI46263.1  6 MGIALGMIETRGLVPAIEAADAMTKAAEVRLIGREFVGGGYVTVLVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHREVEP 91
+                89***********999***************************************************8875.679*******99986 PP
+
+>> ABI45066.1  possible carbon dioxide concentrating mechanism protein CcmK [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.0   2.5   5.6e-28   5.4e-25       2      89 ..      48     134 ..      47     141 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 85.0 bits;  conditional E-value: 5.6e-28
+        ccmK   2 siavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyvl 89 
+                  ia+gmiet+g+   +eaadam kaa v l+  e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph+++e  l
+  ABI45066.1  48 GIALGMIETRGMVPAIEAADAMTKAAEVQLISREYVGGGYVTVMVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHDEVEPAL 134
+                 59**********999***************************************************8875.679*********99776 PP
+
+>> ABI46985.1  conserved hypothetical protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.4   0.1      0.43   4.1e+02      41      50 ..      89      98 ..      48     122 .. 0.63
+   2 !   15.3   0.4   2.6e-06    0.0025       7      66 ..     150     211 ..     142     215 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -1.4 bits;  conditional E-value: 0.43
+        ccmK 41 rvtvivrgdv 50
+                + tvi  gdv
+  ABI46985.1 89 QSTVIHSGDV 98
+                3455555555 PP
+
+  == domain 2  score: 15.3 bits;  conditional E-value: 2.6e-06
+        ccmK   7 mietlgfpavveaadamvkaarvtlvgyekigs.grvtvivr.gdvsevqasvaagvesanr 66 
+                 ++et+    v+ aa+   k++ +tlv  + +g+ gr+t+  r gdv e  a+    +e++nr
+  ABI46985.1 150 ILETEPAGYVLIAANEAEKSSNITLVDVKAVGAfGRLTLAGReGDVEEAAAAAMRAIETINR 211
+                 578888888999********************879***998769*********9*****998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        57  (0.0197095); expected 57.8 (0.02)
+Passed bias filter:                       46  (0.0159059); expected 57.8 (0.02)
+Passed Vit filter:                         3  (0.00103734); expected 2.9 (0.001)
+Passed Fwd filter:                         3  (0.00103734); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7770.65
+//
+[ok]

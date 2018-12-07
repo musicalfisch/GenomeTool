@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1705388_GCA_001276715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.1e-88  291.2   0.2    6.8e-88  291.1   0.2    1.0  1  KOR38313.1  adenylylsulfate kinase [Planktothricoides sp. SR0
+     0.0091   13.6   0.1      0.016   12.9   0.1    1.3  1  KOR35757.1  sodium:proton antiporter [Planktothricoides sp. S
+
+
+Domain annotation for each sequence (and alignments):
+>> KOR38313.1  adenylylsulfate kinase [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  291.1   0.2   2.7e-91   6.8e-88       4     178 ..       1     175 [.       1     176 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 291.1 bits;  conditional E-value: 2.7e-91
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mk+rgvtvw+tglsgagk+ti+  ++  l  +   ie+ldgdivr nltkglgfskedrd nirrigfv+ lltr gvivlvsaispyreir ev+ +i
+  KOR38313.1   1 MKHRGVTVWFTGLSGAGKTTISAQVEKYLRDNQCKIELLDGDIVRENLTKGLGFSKEDRDINIRRIGFVAHLLTRNGVIVLVSAISPYREIRREVKRQI 99 
+                 9************************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 g+fvevfvnapl+ ce+rdvkglyk+arageik ftgiddpye p +p++ecrtdlet++e v kv +kl++ gyi
+  KOR38313.1 100 GDFVEVFVNAPLAECEKRDVKGLYKKARAGEIKHFTGIDDPYEVPEHPDLECRTDLETVDECVNKVLQKLRDDGYI 175
+                 ***************************************************************************9 PP
+
+>> KOR35757.1  sodium:proton antiporter [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.1   6.2e-06     0.016      13      61 ..     106     154 ..      98     183 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 6.2e-06
+        cysC  13 ltglsgagkstitealqakliaegysievldgdivrtnltkglgfsked 61 
+                  +g  g gkst++  +   l a g  + +ld di   n    lg+s  +
+  KOR35757.1 106 SSGKGGVGKSTVAVNVAVSLAAAGAKVGLLDADIYGPNAPTMLGLSEAQ 154
+                 56889**********************************9999999765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5049  (1535341 residues searched)
+Passed MSV filter:                       222  (0.0439691); expected 101.0 (0.02)
+Passed bias filter:                      213  (0.0421866); expected 101.0 (0.02)
+Passed Vit filter:                        29  (0.00574371); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396118); expected 0.1 (1e-05)
+Initial search space (Z):               5049  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 5650.05
+//
+[ok]

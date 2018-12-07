@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1934309_GCA_002148405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.1e-70  231.3   6.5    4.5e-70  231.1   6.5    1.0  1  OUC11999.1  transcriptional regulator [Alkalinema sp. CACIAM 
+  ------ inclusion threshold ------
+      0.013   13.9   0.0      0.024   13.0   0.0    1.4  1  OUC13743.1  rod shape-determining protein MreC [Alkalinema sp
+
+
+Domain annotation for each sequence (and alignments):
+>> OUC11999.1  transcriptional regulator [Alkalinema sp. CACIAM 70d]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  231.1   6.5   1.7e-73   4.5e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 231.1 bits;  conditional E-value: 1.7e-73
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklk+eivved+qvd+vvdkiiaaartgeigdgkifispv+q+
+  OUC11999.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKIEIVVEDAQVDMVVDKIIAAARTGEIGDGKIFISPVDQI 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek++ea+
+  OUC11999.1 100 VRIRTGEKNVEAI 112
+                 ***********97 PP
+
+>> OUC13743.1  rod shape-determining protein MreC [Alkalinema sp. CACIAM 70d]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   9.3e-06     0.024      22      59 ..     153     190 ..     142     203 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 9.3e-06
+        glnB  22 nagivgmtvsevrgfgrqkgqteryrgseytveflqkl 59 
+                  a  vg+tvs  r  g  kgqt    g++  ++f++k+
+  OUC13743.1 153 AANQVGVTVSRSRATGYMKGQTGENAGTQVIMQFFDKV 190
+                 4678******************************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5216  (1707448 residues searched)
+Passed MSV filter:                       144  (0.0276074); expected 104.3 (0.02)
+Passed bias filter:                      124  (0.023773); expected 104.3 (0.02)
+Passed Vit filter:                        10  (0.00191718); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000383436); expected 0.1 (1e-05)
+Initial search space (Z):               5216  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 9561.71
+//
+[ok]

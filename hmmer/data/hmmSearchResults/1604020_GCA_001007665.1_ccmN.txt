@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1604020_GCA_001007665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        1.7    4.6   9.9       0.65    5.9   4.1    2.5  3  KKZ13106.1  UDP-N-acetylglucosamine acyltransferase [Candidat
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ13106.1  UDP-N-acetylglucosamine acyltransferase [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.1     0.028        48      64      89 ..      27      52 ..      15      65 .. 0.72
+   2 ?    0.7   0.2     0.015        25      46      67 ..      66      90 ..      37     115 .. 0.72
+   3 ?    5.9   4.1   0.00038      0.65      48      97 ..     110     162 ..      98     181 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.028
+        ccmN 64 aigagailgtgvlvvgrgeigenaci 89
+                 +g  a++g+gv +  +  ig  a++
+  KKZ13106.1 27 MVGPYAVIGAGVTIGPNCWIGPHAVL 52
+                46777777777777777777766665 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.015
+        ccmN 46 agaclgmgtiltayqgv...iaiga 67
+                 gaclgm      yqg    ++ig 
+  KKZ13106.1 66 PGACLGMVPQDLKYQGSdteVCIGD 90
+                699***9999999998533345555 PP
+
+  == domain 3  score: 5.9 bits;  conditional E-value: 0.00038
+        ccmN  48 aclgmgtiltayqgv...iaigagailgtgvlvvgrgeigenacigstttifn 97 
+                 + +g g +l ay  +     +g g i+   v v g+  i + a+ig +  i +
+  KKZ13106.1 110 TQMGDGNLLMAYCHIahnCILGNGIIMSNAVQVAGHVSIHDSAVIGGALGIHQ 162
+                 567889999999876222458*************************9988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         1694  (457445 residues searched)
+Passed MSV filter:                        67  (0.0395514); expected 33.9 (0.02)
+Passed bias filter:                       51  (0.0301063); expected 33.9 (0.02)
+Passed Vit filter:                         5  (0.00295159); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000590319); expected 0.0 (1e-05)
+Initial search space (Z):               1694  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5031.90
+//
+[ok]

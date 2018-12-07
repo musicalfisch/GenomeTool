@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/28072_GCA_000316645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglE  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-05   21.6   0.0    5.7e-05   20.3   0.0    1.6  2  AFY46558.1  ABC-type sugar transport system, periplasmic comp
+     0.0002   18.5   0.0    0.00028   18.1   0.0    1.2  1  AFY49275.1  ABC-type sugar transport system, periplasmic comp
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY46558.1  ABC-type sugar transport system, periplasmic component [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3   0.0   2.1e-08   5.7e-05      44     178 ..      49     184 ..       7     190 .. 0.83
+   2 ?   -2.1   0.0      0.13   3.7e+02     298     336 ..     287     326 ..     265     353 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 2.1e-08
+        aglE  44 qekieqalapft.eatgievvyegv.dtfattlpirvdsgrapdlamfpqpglmadfar.egklvplgeiltpeemteaydqawldlaavdgtvygvwy 139
+                 q+ ++q l  f  +   i+v ye + d +   +  r+    apd+  f    l a f   +  l pl + +tpe     ++   l+    +  +yg+  
+  AFY46558.1  49 QKLLKQVLQDFEaQHPHIKVKYEVIsDQYMDVMKTRLIGEAAPDV--FYLDALEAPFLMsQNVLEPLENYITPEFDLADFEPNLLNTFKYQNHIYGLPK 145
+                 566789999985145689*****8758999**************6..556678888765156688*********9999*******************99 PP
+
+        aglE 140 rasvkslvwfnpqefaangyevp.gtweemmalsqrlidk 178
+                   s  +l ++n + faa g + p  tw+e+ + s++l  k
+  AFY46558.1 146 DYSTLAL-FYNKKAFAAVGLDTPpTTWNELRSYSKQLTGK 184
+                 9998776.78**********986378********999766 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.13
+        aglE 298 plppieeeyglpilvagdifa.mfndtpearqlmaylass 336
+                  +p i+++ g  ++    +++   +  pea +l++yl+  
+  AFY46558.1 287 EVPSINNQQGTMVFTVAYVMSqQSKHKPEAWELISYLTGK 326
+                 5788888888777655555541556789999999999765 PP
+
+>> AFY49275.1  ABC-type sugar transport system, periplasmic component [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.1   0.0     1e-07   0.00028       8     175 ..      11     183 ..       1     191 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 18.1 bits;  conditional E-value: 1e-07
+        aglE   8 tliislivltscqg..pgvngdedrkqvti.lgvmigeqqekieqalapftea...tgievvyegvdtfattlpirvdsgrapdlamfpqpglmadfar 100
+                  l++ l+ +t cq    gv+  +   +vt+  gv    +++ +++ +  f ++     +e +y g +       +    g ap   ++ +p +  ++  
+  AFY49275.1  11 LLVVGLLAVTGCQTirSGVEAGKVI-HVTLwHGVNPPPNRDVLQKLVDKFNQThpdIQVESLYVGQQDQQMPKILAAVVGNAPPDLLWFNPTITGQLVE 108
+                 5778888889998722345444433.3444157776667776666666776652114577788887666655555666677766566778********* PP
+
+        aglE 101 egklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaangy.evpgtweemmalsqrl 175
+                  g l+p+ e+l+   + e  d +       +g ++ v + +  +  +++ p  f a g  + p twee+  ++++l
+  AFY49275.1 109 LGALIPIDEMLANSPVKEEIDPTLYSSMEYQGKLWSVPFAT-NNVGIFYRPSLFQAAGItQTPRTWEEFRQVAKQL 183
+                 *************************************9965.5667899*****99996379******99888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (421 nodes)
+Target sequences:                         5449  (1828442 residues searched)
+Passed MSV filter:                       153  (0.0280785); expected 109.0 (0.02)
+Passed bias filter:                      130  (0.0238576); expected 109.0 (0.02)
+Passed Vit filter:                         6  (0.00110112); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00036704); expected 0.1 (1e-05)
+Initial search space (Z):               5449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 10996.77
+//
+[ok]

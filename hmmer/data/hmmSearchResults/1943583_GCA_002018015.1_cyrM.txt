@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1943583_GCA_002018015.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-46  154.0   0.0    2.7e-46  153.7   0.0    1.0  1  OOV34741.1  adenylyl-sulfate kinase [Candidatus Synechococcus
+  ------ inclusion threshold ------
+       0.01   11.7   0.1      0.016   11.1   0.1    1.2  1  OOV34134.1  sodium:proton antiporter [Candidatus Synechococcu
+
+
+Domain annotation for each sequence (and alignments):
+>> OOV34741.1  adenylyl-sulfate kinase [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  153.7   0.0   3.8e-49   2.7e-46       8     174 ..      31     199 ..      24     205 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 153.7 bits;  conditional E-value: 3.8e-49
+        cyrM   8 gvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki..gs 104
+                  v +w+tglsg+gkst+++ ++  l   g +  vldgd vr  l + lgf+  dr enirrig v++l+   g+i l + +sp++  r+  r+ +  g+
+  OOV34741.1  31 SVILWFTGLSGSGKSTMANGVNGELHRRGVAGYVLDGDNVRHGLCRDLGFTAADRVENIRRIGEVAKLFLDAGIITLTAFVSPFQTDRDRARSLVppGD 129
+                 4889****************************************************************************************987779* PP
+
+        cyrM 105 fvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnklte 174
+                 f+e++  a l+ ce+rd kgly  arag ik ftg+d pyepp  pe+  rt   +l+e + +v n l +
+  OOV34741.1 130 FLEIYCAADLATCEQRDPKGLYANARAGRIKHFTGLDSPYEPPRSPELVIRTGDLSLQEGIDQVLNALEQ 199
+                 ****************************************************999**********99875 PP
+
+>> OOV34134.1  sodium:proton antiporter [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.1   2.2e-05     0.016       9      60 ..      97     148 ..      91     160 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.2e-05
+        cyrM   9 vtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfske 60 
+                 v    +g  g gkst++  l + l + g  + +ld d+   n    lg+s +
+  OOV34134.1  97 VVAVSSGKGGVGKSTVAVNLACALATTGLRVGLLDADLYGPNTPIMLGLSEK 148
+                 555568999******************************9999999998864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         1413  (403879 residues searched)
+Passed MSV filter:                        62  (0.0438783); expected 28.3 (0.02)
+Passed bias filter:                       62  (0.0438783); expected 28.3 (0.02)
+Passed Vit filter:                        16  (0.0113234); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00141543); expected 0.0 (1e-05)
+Initial search space (Z):               1413  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 7431.37
+//
+[ok]

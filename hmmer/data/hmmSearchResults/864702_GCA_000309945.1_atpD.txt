@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/864702_GCA_000309945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-74  247.3   6.1    2.4e-74  247.2   6.1    1.0  1  EKQ68842.1  ATP synthase, F1 delta subunit [Oscillatoriales c
+     0.0027   15.6   0.0     0.0069   14.2   0.0    1.6  1  EKQ69964.1  PAS domain S-box [Oscillatoriales cyanobacterium 
+
+
+Domain annotation for each sequence (and alignments):
+>> EKQ68842.1  ATP synthase, F1 delta subunit [Oscillatoriales cyanobacterium JSC-12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  247.2   6.1   9.9e-78   2.4e-74       5     182 ..       6     183 ..       1     185 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 247.2 bits;  conditional E-value: 9.9e-78
+        atpD   5 aataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailqqyla 103
+                 + t e+ + yaqalls+aq +n+ ++v +d  t+l+llk+s++l++fl+ p+ k+e+kk+vl ++lg++v py rnfll+lvdrrri++le i +++ a
+  EKQ68842.1   6 IVTGEILERYAQALLSVAQDNNIVDQVVQDVNTILGLLKESQDLRDFLAKPIFKAEDKKAVLARVLGDTVHPYTRNFLLVLVDRRRIVLLEGICKEFQA 104
+                 5789*********************************************************************************************** PP
+
+        atpD 104 llrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrls 182
+                 l+r+lnqtvlaevts   lte+q++a++ekvialt ar+veletk+d dliggviik+gsqvidaslrgqlrr+slrls
+  EKQ68842.1 105 LIRKLNQTVLAEVTSVTELTEDQKRALQEKVIALTGARNVELETKLDPDLIGGVIIKIGSQVIDASLRGQLRRISLRLS 183
+                 ******************************************************************************8 PP
+
+>> EKQ69964.1  PAS domain S-box [Oscillatoriales cyanobacterium JSC-12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.0   2.9e-06    0.0069      29     106 ..     131     217 ..     115     221 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 2.9e-06
+        atpD  29 eevgedartllsllkgskelqnfldnp...fvkpenk......knvlkqllgegvnpylrnfllllvdrrriafleailqqylallr 106
+                 + v    +t+++l+k+ +  +nf++n    f+++ +        ++ +qllg   ++   + +  l+  r  +  e i+qq+ +llr
+  EKQ69964.1 131 DLVQAHEQTIMALIKTKQYWKNFISNSpyfFIQTSHSgqiiysNAIAQQLLGYREEELAGRHITELIHPRHFSEFEFIFQQWRSLLR 217
+                 45667789*****************95566899987622222245669**************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4780  (1548170 residues searched)
+Passed MSV filter:                       189  (0.0395397); expected 95.6 (0.02)
+Passed bias filter:                      146  (0.0305439); expected 95.6 (0.02)
+Passed Vit filter:                         6  (0.00125523); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.00041841); expected 0.0 (1e-05)
+Initial search space (Z):               4780  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9495.44
+//
+[ok]

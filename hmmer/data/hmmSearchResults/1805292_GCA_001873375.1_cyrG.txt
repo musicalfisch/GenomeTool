@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805292_GCA_001873375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.015   11.5   0.0        1.1    5.4   0.0    2.2  2  OIP76856.1  dihydroorotase [Oscillatoriales cyanobacterium CG
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP76856.1  dihydroorotase [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.1   0.0   0.00087       2.6       3      59 ..       3      65 ..       1      70 [. 0.68
+   2 ?    5.4   0.0   0.00036       1.1     350     389 ..     368     406 ..     336     448 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 4.1 bits;  conditional E-value: 0.00087
+        cyrG  3 ftiqnvliaveddya.tvdvqvvdgkiaaiapelevvg.....taidgenklllpgfvnahth 59
+                + i++  i   d  +   dv +++gkiaaiap+l+        + i+++   ll+g ++ + h
+  OIP76856.1  3 ILIRQSTIILPDRQTlLGDVYIQHGKIAAIAPSLNSADldqplEIIEAQGLTLLAGVIDPQVH 65
+                5666666666665541459************99876542222256788888888888887777 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.00036
+        cyrG 350 qavemaslggakglnladklgsltvgkkadlvlydltnls 389
+                 q  +  s   ak  ++a+k g + vg  adlvl dl n  
+  OIP76856.1 368 QVSQWMSGNVAKAYQIANK-GEIRVGWDADLVLVDLQNYK 406
+                 5555556666888888876.9***************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         3046  (947245 residues searched)
+Passed MSV filter:                        67  (0.0219961); expected 60.9 (0.02)
+Passed bias filter:                       55  (0.0180565); expected 60.9 (0.02)
+Passed Vit filter:                         4  (0.0013132); expected 3.0 (0.001)
+Passed Fwd filter:                         1  (0.000328299); expected 0.0 (1e-05)
+Initial search space (Z):               3046  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 14682.30
+//
+[ok]

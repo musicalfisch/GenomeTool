@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1562720_GCA_001747005.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0022   13.9   6.6      0.034   10.0   0.5    2.8  3  OEJ77925.1  efflux transporter periplasmic adaptor subunit [C
+
+
+Domain annotation for each sequence (and alignments):
+>> OEJ77925.1  efflux transporter periplasmic adaptor subunit [Cyanobacterium sp. IPPAS B-1200]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.0   0.5   1.1e-05     0.034      70     127 ..      53     108 ..      40     156 .. 0.73
+   2 ?   -0.4   0.2     0.017        51     128     183 ..     163     218 ..     140     226 .. 0.80
+   3 !    6.0   0.1   0.00019      0.56     206     343 ..     282     433 ..     264     442 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 1.1e-05
+        cusB  70 krqisgtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfi 127
+                 +r ++  i+  gv  v p q v is    g+l    + qgs v+ gq ia ++n ++ 
+  OEJ77925.1  53 QRPLTLEIRASGV--VQPVQSVNISPKNPGILTRLLVEQGSIVQEGQPIAVMQNEELF 108
+                 5555555666666..789****************999***************998754 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.017
+        cusB 128 qiqqdyleaksqfelskadyerqqqladqnvnsaktlqqskatyttwqakysglae 183
+                 q + +  ea s++ l+  + +r+q l ++ v s   +++    +   qa+   + +
+  OEJ77925.1 163 QARSQLREAESRLRLAEIQAQRNQALLEEGVISQDEFDRVANEFLVAQARIQEIVQ 218
+                 55566779999999999999999999999999998888888888888887766655 PP
+
+  == domain 3  score: 6.0 bits;  conditional E-value: 0.00019
+        cusB 206 lyspidgyvtevnvnrgkfvnptdvlfeivdte..hlha.....eli..vfekdvrklkigqkvrftlanetkeri.atvyligreisterti...qih 291
+                 + +p dg vt+     g fv pt        +    + a     e+i  + e d+r++ +gq v++       e     v  i  e   e+ +   ++ 
+  OEJ77925.1 282 ITAPFDGIVTQKFASEGAFVTPTTSASATSSATssSIIAlarglEIIakIPEIDLRQIEMGQPVQIVADAYPDEVFeGIVQKIAPEAIVEQNVtsfEVT 380
+                 5689******************9876543322201111111222444225689**********999776655555423567788887777654222678 PP
+
+        cusB 292 chidqedkdllpgmylkamvetgg.aevpalpneaiidfegkkyifvvseete 343
+                   i q++  ll  m +             ++p  ai+  eg   ++v  e+ e
+  OEJ77925.1 381 IAIPQQQEKLLSRMNVEVTFLGEQlDSSLTVPTVAIVTEEGETGVMVPDENNE 433
+                 89999999999999988655443303445789999999999999888777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         2934  (912232 residues searched)
+Passed MSV filter:                        72  (0.0245399); expected 58.7 (0.02)
+Passed bias filter:                       46  (0.0156783); expected 58.7 (0.02)
+Passed Vit filter:                         3  (0.00102249); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000340832); expected 0.0 (1e-05)
+Initial search space (Z):               2934  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9646.85
+//
+[ok]

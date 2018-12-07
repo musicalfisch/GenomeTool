@@ -1,0 +1,141 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.7e-94  311.4   1.5    5.6e-94  311.2   1.5    1.0  1  AAZ58707.1  serine O-acetyltransferase [Prochlorococcus marin
+    7.4e-06   22.5   2.4    4.5e-05   19.9   1.0    2.1  2  AAZ57539.1  UDP-N-acetylglucosamine pyrophosphorylase / gluco
+    0.00051   16.5   7.0      0.047   10.0   2.2    2.9  3  AAZ58397.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosam
+  ------ inclusion threshold ------
+       0.11    8.9  21.4     0.0056   13.1   1.5    2.6  3  AAZ57687.1  UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltr
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ58707.1  serine O-acetyltransferase [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  311.2   1.5     1e-96   5.6e-94       1     208 [.       1     208 [.       1     224 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 311.2 bits;  conditional E-value: 1e-96
+        cysE   1 mlsilladfkiiferdpaarnwlevlfcypglqallchrfahwlyqigipfiprlishlarfltgieihpgaqigqgvfidhgmgvvigetaivgdyal 99 
+                 ml i+ adf ii erdpaar +le++fcypg+qal++hr++h l+++ +p++prl+s+++rfltg+eihpga+ig+ vfidhgmgvviget+ +g+ +l
+  AAZ58707.1   1 MLKIIKADFSIIKERDPAARGFLEIVFCYPGFQALVVHRISHKLWNLKLPLVPRLLSQITRFLTGVEIHPGAKIGKAVFIDHGMGVVIGETSEIGNRCL 99 
+                 899************************************************************************************************ PP
+
+        cysE 100 iyqgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrliyragtrveplehgdlldseavairalvdri 198
+                 +yqgvtlggtgke+gkrhptl  nvvvgagakvlg i +g n r+gagsvv+rd+ ad tvvg+pgr+++++g +++pl h  l+d+e   ir l++ri
+  AAZ58707.1 100 LYQGVTLGGTGKENGKRHPTLEANVVVGAGAKVLGAIIVGTNTRIGAGSVVVRDVEADSTVVGIPGRVVHQSGVKINPLAHSALPDTEGNVIRNLMERI 198
+                 *************************************************************************************************** PP
+
+        cysE 199 eqlekqvyel 208
+                 ++le+qv ++
+  AAZ58707.1 199 DELENQVINF 208
+                 *******876 PP
+
+>> AAZ57539.1  UDP-N-acetylglucosamine pyrophosphorylase / glucosamine-1-phosphate N-acetyltransferase [Prochlorococcus 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.6   0.0     0.034        18     118     155 ..     263     300 ..     245     309 .. 0.84
+   2 !   19.9   1.0   8.3e-08   4.5e-05      67     164 ..     333     437 ..     319     445 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 1.6 bits;  conditional E-value: 0.034
+        cysE 118 ptlgenvvvgagakvlgniylgnnvrvgagsvvlrdip 155
+                   +g +v++   +++ g+  +gn  ++g gsv+     
+  AAZ57539.1 263 SNFGTDVIIEPQTHLRGKCSIGNGCHLGPGSVITNSTL 300
+                 67899999999*********************987655 PP
+
+  == domain 2  score: 19.9 bits;  conditional E-value: 8.3e-08
+        cysE  67 eihpgaqigqgvfidh...gmgvvigetaivgdyaliyqgvtlgg..tgkesgk.rhptlgen.vvvgagakvlgniylgnnvrvgagsvvlrdipadc 158
+                 +i+  ++ig+ v i +   g g  i   + vgd al  +     g  t +  gk +h t+ ++    ga + ++  i +g  v +gags + +dip   
+  AAZ57539.1 333 NIRQNSKIGNFVEIKKsciGEGTKINHLSYVGDSALGKNINIGAGtiTANFDGKnKHRTIIDDySKTGANSVLVAPIKIGAHVTIGAGSTISKDIPDKS 431
+                 677778888888887544467899999999***999654333233123333454268777655167899999999*********************999 PP
+
+        cysE 159 tvvgvp 164
+                  vv   
+  AAZ57539.1 432 LVVERS 437
+                 998755 PP
+
+>> AAZ58397.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase [Prochlorococcus marinus str. NATL
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.8   0.2   0.00087      0.47      67     111 ..      23      65 ..      10      80 .. 0.78
+   2 ?    2.6   0.3     0.016       8.7     116     160 ..     110     154 ..      92     162 .. 0.78
+   3 !   10.0   2.2   8.8e-05     0.047     116     178 ..     152     216 ..     114     228 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.00087
+        cysE  67 eihpgaqigqgvfidhgmgvvigetaivgdyaliyqgvtlggtgk 111
+                 ++ p a++g+gv +  g g vig   ivg  + i   v + g  k
+  AAZ58397.1  23 DVSPKAELGRGVSV--GSGSVIGPDVIVGPNTWIGANVIIEGKVK 65 
+                 57788999999866..77888999999998888888888877665 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.016
+        cysE 116 rhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctv 160
+                 r    ge+ +vg    ++   +lg n  +g   v+   +     v
+  AAZ58397.1 110 RATFEGEKTIVGNQNLLMAYSHLGHNCDIGNSVVIANSVQIAGHV 154
+                 455569999999999999999999999999988877766655444 PP
+
+  == domain 3  score: 10.0 bits;  conditional E-value: 8.8e-05
+        cysE 116 rhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrl..iyragtrvepl 178
+                  h  + +  v+g    +   +++g    vg  + v rd+p  c v g pgr+  + + g + + l
+  AAZ58397.1 152 GHVVVEDRAVIGGCLGIHQFVHIGYLAMVGGMTRVDRDVPPFCLVEGHPGRMrgLNKVGIKRQTL 216
+                 36777788888988899999999***************************983355666666655 PP
+
+>> AAZ57687.1  UDP-3-O-[3-hydroxymyristoyl] glucosamine N-acyltransferase [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   1.5     1e-05    0.0056     115     150 ..     113     148 ..     103     153 .. 0.83
+   2 ?    0.9   0.2     0.053        29     132     150 ..     209     227 ..     147     231 .. 0.47
+   3 ?    1.5  10.5     0.036        19      69     164 ..     216     317 ..     194     336 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1e-05
+        cysE 115 krhptlgenvvvgagakvlgniylgnnvrvgagsvv 150
+                 ++   +g+nv +g g  +  n y+g+n  +gag+++
+  AAZ57687.1 113 HKSAVIGQNVKIGLGVSIGANAYIGDNTEIGAGTII 148
+                 55678999********9999***********99987 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.053
+        cysE 132 vlgniylgnnvrvgagsvv 150
+                  +g + l n+v vg+gs +
+  AAZ57687.1 209 QVGIVILKNKVEVGSGSTI 227
+                 2466677777777777766 PP
+
+  == domain 3  score: 1.5 bits;  conditional E-value: 0.036
+        cysE  69 hpgaqigqgvfidh.gmg.vvigetaivgdyaliyqgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsv......vlrdipadct 159
+                 +   ++g g  id+  +g  +ige + + +   i +gvt g     + +    +     +g g  + g++ + n v++g g +      ++ +i a   
+  AAZ57687.1 216 KNKVEVGSGSTIDRpSVGeTIIGEDTKIDNLVQIGHGVTTGKGCAMAAQV--GIAGGAQIGDGVILAGQVGISNRVKIGDGVIassktgIVSNIEAGTV 312
+                 45678999999998334536899*999***********987655554443..33444567888888888888888888887652222225666777766 PP
+
+        cysE 160 vvgvp 164
+                 v g p
+  AAZ57687.1 313 VSGFP 317
+                 66654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        70  (0.0323625); expected 43.3 (0.02)
+Passed bias filter:                       68  (0.0314378); expected 43.3 (0.02)
+Passed Vit filter:                         7  (0.00323625); expected 2.2 (0.001)
+Passed Fwd filter:                         4  (0.00184928); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 4502.18
+//
+[ok]

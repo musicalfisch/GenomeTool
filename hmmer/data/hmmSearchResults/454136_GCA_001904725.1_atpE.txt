@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454136_GCA_001904725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      9e-73  241.4   1.3      1e-72  241.2   1.3    1.0  1  OKH33484.1  F0F1 ATP synthase subunit epsilon [Phormidium amb
+  ------ inclusion threshold ------
+        1.8    7.2  15.8       0.28    9.8   5.2    3.4  3  OKH37044.1  HlyD family secretion protein [Phormidium ambiguu
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH33484.1  F0F1 ATP synthase subunit epsilon [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  241.2   1.3   3.3e-76     1e-72       1     137 []       1     136 [.       1     136 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 241.2 bits;  conditional E-value: 3.3e-76
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m+ltvrvi+pdktvwd++aee+ilpsttgq+gilsghaplltaldtgvmrvr++kn  w+aial+ggfaeve+d vtilvngaer d+i+le+ar+a++
+  OKH33484.1   1 MALTVRVIAPDKTVWDSSAEEIILPSTTGQIGILSGHAPLLTALDTGVMRVRPDKN--WVAIALMGGFAEVENDVVTILVNGAERSDSIDLEKARTAYT 97 
+                 89***************************************************985..***************************************** PP
+
+        atpE 100 eaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                 +aq ++nqv++ e+rq++iqat+a+krararfqaagg+v
+  OKH33484.1  98 QAQERFNQVQSsENRQEKIQATKALKRARARFQAAGGMV 136
+                 *********862789**********************98 PP
+
+>> OKH37044.1  HlyD family secretion protein [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   5.2   9.1e-05      0.28      88     128 ..     110     151 ..      87     158 .. 0.76
+   2 ?    3.3   0.2    0.0094        29      87     120 ..     216     249 ..     207     260 .. 0.75
+   3 ?   -1.2   0.2      0.24   7.4e+02      98     112 ..     281     295 ..     241     311 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 9.1e-05
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqiqatqaf.krara 128
+                 +  l++a+ + + aq+kl+qvka+ +  +iqa+qa   r +a
+  OKH37044.1 110 QTALQQAQEQVKVAQAKLAQVKAGAKSGEIQAQQATvERLQA 151
+                 457999***************************995134443 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.0094
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqat 120
+                 +++ +e +r++ nea+++l+++++   ++  +a+
+  OKH37044.1 216 KRLSVETTRQELNEARANLEKINTTTIKQLQEAK 249
+                 5678999**************9987655444444 PP
+
+  == domain 3  score: -1.2 bits;  conditional E-value: 0.24
+        atpE  98 fneaqtklnqvkaed 112
+                  ++aq+++++  a+ 
+  OKH37044.1 281 VQAAQSEVDNAIASV 295
+                 223333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         6149  (2062819 residues searched)
+Passed MSV filter:                       225  (0.0365913); expected 123.0 (0.02)
+Passed bias filter:                      156  (0.02537); expected 123.0 (0.02)
+Passed Vit filter:                        12  (0.00195154); expected 6.1 (0.001)
+Passed Fwd filter:                         3  (0.000487884); expected 0.1 (1e-05)
+Initial search space (Z):               6149  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 5652.12
+//
+[ok]

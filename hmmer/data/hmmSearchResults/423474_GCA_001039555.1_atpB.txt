@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpB  [M=482]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.8e-25   86.5   2.1    6.6e-25   86.0   2.1    1.1  1  CCQ51062.1  ATP synthase alpha chain [Crocosphaera watsonii W
+  ------ inclusion threshold ------
+      0.029   11.3   0.0      0.041   10.8   0.0    1.2  1  CCQ51665.1  Zinc ABC transporter, ATP-binding protein ZnuC [C
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ51062.1  ATP synthase alpha chain [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   86.0   2.1   2.7e-28   6.6e-25      58     424 ..      66     424 ..      50     436 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 86.0 bits;  conditional E-value: 2.7e-28
+        atpB  58 llgdnqvravamsstdglvrglevvdtgapisvpvgkatlgrifnvlgepvdnkgpvnaeeklpihreapklteletkpsvfetgikvvdlltpyrrgg 156
+                  l +++v av m +  g+  g  v  tg+  +vp+g+a +gr+++ lg p+d kg++ ++e+  i  +ap +   ++    ++tgi  +d + p  rg 
+  CCQ51062.1  66 NLEEDNVGAVLMGTGFGIQEGSTVKATGKIAQVPIGEAMIGRVVDSLGRPIDGKGDIATTESRLIESSAPGIIARKSVCEPMQTGITAIDAMIPIGRGQ 164
+                 577899********************************************************************************************* PP
+
+        atpB 157 kiglfggagvgktvilmelinniatqhggvsvfagvgertregndlynemiesgvinkdnlneskialvygqmneppgarmrvglsaltlaeyfrdvnk 255
+                 +  ++g    gkt i ++ i n  t+   + v+  +g+++    ++   + e g ++          +v  + n+p   +     ++ tlaeyf    k
+  CCQ51062.1 165 RELIIGDRKTGKTAIAIDTIINQKTE-DVICVYVAIGQKASTVAQVIGTLEEKGAMDY-------TIVVAANANDPATLQYLAPYTGATLAEYFMYNGK 255
+                 *****************999997665.5799*********999999888888777654.......34688999*********************97555 PP
+
+        atpB 256 qdvllfidnifrfvqagsevsallgrmpsavgyqptlgtdvgelqeritstke....gsitsiqavyvpaddltdpapattfahldgttvlsrglaskg 350
+                    l++ d++ +  qa  ++s ll r p    y   +      l er +  ++    gs+t++  +   a d++   p+  ++  dg   ls  l   g
+  CCQ51062.1 256 -ATLVIYDDLSKQAQAYRQLSLLLKRPPGREAYPGDVFYIHSRLLERAAKLSDalgaGSMTALPVIETQAGDVSAYIPTNVISITDGQIFLSSDLFNAG 353
+                 .6677889*************************9999999999999987654333339***************************************** PP
+
+        atpB 351 iypavdpldststmlqpeivgdehyetaravqstlqrykelqdiiailgldelseedrlvvararkierflsqp 424
+                   pa++   s s +  +    +   ++a  ++  l ++ el+         +l    +  +ar +++ ++l qp
+  CCQ51062.1 354 FRPAINAGISVSRVG-SAAQTKAMKQVAGKLKLELAQFAELEAFSQFA--SDLDAATQAQLARGQRLRQILKQP 424
+                 *****9988888754.44455666777777777777777776654433..334444555556666666666665 PP
+
+>> CCQ51665.1  Zinc ABC transporter, ATP-binding protein ZnuC [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   1.7e-05     0.041     157     197 ..      39      79 ..      18      85 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 1.7e-05
+        atpB 157 kiglfggagvgktvilmelinniatqhggvsvfagvgertr 197
+                 +  ++g  g gkt ++  ++  +  q g +s+f g g+r +
+  CCQ51665.1  39 HKAIIGPNGAGKTTLMKSILGLVEAQSGEISLFDGTGKRLK 79 
+                 5578899*******************************975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (482 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       120  (0.0241692); expected 99.3 (0.02)
+Passed bias filter:                       93  (0.0187311); expected 99.3 (0.02)
+Passed Vit filter:                        17  (0.00342397); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040282); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 9548.64
+//
+[ok]

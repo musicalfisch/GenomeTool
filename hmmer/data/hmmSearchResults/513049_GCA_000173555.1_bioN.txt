@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/513049_GCA_000173555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.3e-122  405.3  23.7    1.1e-80  269.3   6.8    2.0  2  EDZ91994.1  cobalt transport protein [Arthrospira maxima CS-3
+  ------ inclusion threshold ------
+        1.9    6.0   8.8       0.08   10.5   2.4    1.8  2  EDZ92740.1  protein of unknown function DUF1295 [Arthrospira 
+
+
+Domain annotation for each sequence (and alignments):
+>> EDZ91994.1  cobalt transport protein [Arthrospira maxima CS-328]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  142.0   8.9   2.5e-45     7e-42       1     109 [.       1     109 [.       1     114 [. 0.97
+   2 !  269.3   6.8     4e-84   1.1e-80     105     289 ..     133     317 ..     120     318 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 142.0 bits;  conditional E-value: 2.5e-45
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qpit lh+ld+r+k++wlm+fl ap+l+n+ wrl lv ll+++tl+a ip rvw++qmgwl+ ++ ++++++ai pdgl+vs qp
+  EDZ91994.1   1 MDLLRSLPIGLYLEQPITWLHRLDSRIKLVWLMSFLIAPILSNALWRLGLVVLLMVITLVAAIPFRVWKRQMGWLLTFCSLLLIVSAILPDGLSVSHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlp 109
+                 rlp + + l 
+  EDZ91994.1 100 RLPRDEIALE 109
+                 ***9988775 PP
+
+  == domain 2  score: 269.3 bits;  conditional E-value: 4e-84
+        bioN 105 glnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnla 203
+                    lp  + y y+l   g l +tr sl+l vristl+ftl+ystnl+lltta eei+ g+e l+ plrr+++pvtei+ltltlslrf plvlee+qnl 
+  EDZ91994.1 133 TEGLPQPTAYSYILLAAGPLTITRYSLDLGVRISTLLFTLVYSTNLYLLTTASEEIAVGIESLMKPLRRLKIPVTEIALTLTLSLRFFPLVLEEIQNLY 231
+                 445777788****************************************************************************************** PP
+
+        bioN 204 ravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 r+vrtraidw+klg +r+ ++wl v e+ll+nlllraeqia am+vrgftspnqh+v wh+l++ w d++al+ l  fw  rlvwg
+  EDZ91994.1 232 RSVRTRAIDWKKLGWRRATQIWLLVAERLLENLLLRAEQIANAMKVRGFTSPNQHRVEWHQLQINWWDWVALLALTIFWGMRLVWG 317
+                 *************************************************************************************9 PP
+
+>> EDZ92740.1  protein of unknown function DUF1295 [Arthrospira maxima CS-328]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   2.4   2.8e-05      0.08      31      87 ..      17      77 ..       2      94 .. 0.70
+   2 ?   -1.5   0.5      0.13   3.7e+02      32      59 ..     145     172 ..     138     179 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2.8e-05
+        bioN 31 wlmaflaa..pllanpwwrlalvgllllltllap.i.pprvwrqqmgwliflaiivflita 87
+                 ++ ++ a   +   pw  lal g   +l ll   i p + w qq+ w   + +  fli  
+  EDZ92740.1 17 VVLGLMVAynNFTIGPWVYLALHGTYGILWLLKSrIyPDKQWEQQIPWWQGVGVFTFLILY 77
+                333333321145678*********9988888864343889**********99999999964 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.13
+        bioN  32 lmaflaapllanpwwrlalvgllllltl 59 
+                 l+ +l+  +la+ w  + ++gl+ +  +
+  EDZ92740.1 145 LLIYLSFAMLAQHWLPFLILGLFAIAIF 172
+                 5678888888888888888888766544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         5690  (1641096 residues searched)
+Passed MSV filter:                       251  (0.0441125); expected 113.8 (0.02)
+Passed bias filter:                      152  (0.0267135); expected 113.8 (0.02)
+Passed Vit filter:                         8  (0.00140598); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000351494); expected 0.1 (1e-05)
+Initial search space (Z):               5690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9551.18
+//
+[ok]

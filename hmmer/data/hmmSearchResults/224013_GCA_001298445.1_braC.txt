@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braC  [M=471]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-12   44.9   0.0      2e-12   44.7   0.0    1.0  1  ALF53384.1  hypothetical protein ACX27_11890 [Nostoc piscinal
+      4e-11   40.5   4.0    4.8e-11   40.2   4.0    1.1  1  ALF51948.1  amino acid ABC transporter substrate-binding prot
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF53384.1  hypothetical protein ACX27_11890 [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.7   0.0   8.1e-16     2e-12     336     450 ..       3     124 ..       1     137 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 44.7 bits;  conditional E-value: 8.1e-16
+        braC 336 ngqklpivagddvyspktldvggknal.gmvvavawhla.anpnspfvnnsrqlwq....gdvnwrtataydatqaliagikaes...sregvqqalrs 425
+                 ng+ + i++g   y  +      k+ l ++++av wh    n+ s f ++s +lw+     d+n+ ta +ydat+al+ g+k      +r+ + + l  
+  ALF53384.1   3 NGKDVIILSGTTAYLENIS--KRKDILsNLIIAVHWHRNdDNKLSIFEQKSLRLWEtqdnTDINFATAMTYDATKALVEGLKRSGnnlTRKRLYEELSK 99 
+                 6666677777777755433..2355553699******87257889**********6333369*******************975422278999999*** PP
+
+        braC 426 sdfsvpgatnpvrflpsgdrnqsvq 450
+                  df v ga   vrf    dr    q
+  ALF53384.1 100 PDFVVEGAKTKVRFDKNHDRLVNAQ 124
+                 ***************9999965554 PP
+
+>> ALF51948.1  amino acid ABC transporter substrate-binding protein [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.2   4.0   1.9e-14   4.8e-11     149     361 ..      76     297 ..      38     378 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 40.2 bits;  conditional E-value: 1.9e-14
+        braC 149 qnqinqaggingiplkvliaddadnpeiaaqiaqklaadnsilgvvghtssdtslaaaaiyqkaglvmispists......vklsnfgdyifrsvpsdf 241
+                  + +n +gg+ng  + ++  dd  +p+  a    kla+ + + gvvg  +s  s aa ++     +++isp sts       k  +f  +  r+ p d 
+  ALF51948.1  76 VDTVNACGGVNGKNVSLVQVDDQTDPKAGAAGMTKLATLDKVAGVVGSFASSVSTAAVSVAVPNKVMLISPGSTSpvftekAKKGEFKGFWARTAPPDT 174
+                 5679********************************************************999999*****99985444445778899999******** PP
+
+        braC 242 vaaralaesslqki.pnvkavvffnsqsnysqslksefitalglgggqvvse.....fdlssltftpskslqqaqqeganliallgdsgtl..dkalqv 332
+                   a ala+ + +k    v +vv+   + +y   +   f+ ++   gg vv +     +d  + tf    +   a +  a +  l  ++g+l    a q 
+  ALF51948.1 175 YQALALAQLANKKGfKRVSTVVI---NNDYGVGFEKAFVETFEKLGGTVVNKnnpvrYDPKAQTFDTEAAAAFAGKPDAVVAVLYAETGSLllKAAYQQ 270
+                 99999999877775134444444...4579999999999999888888886433333888999999999999999999988888888887521445555 PP
+
+        braC 333 vqingqklpivagddvyspktldvggkna 361
+                   ++g  + ++  d v sp   +  gk +
+  ALF51948.1 271 GLMKG--VQVLLTDGVKSPTFPEQVGKGS 297
+                 55555..4456677788887665555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (471 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       173  (0.0344484); expected 100.4 (0.02)
+Passed bias filter:                      111  (0.0221027); expected 100.4 (0.02)
+Passed Vit filter:                        12  (0.00238949); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398248); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14050.43
+//
+[ok]

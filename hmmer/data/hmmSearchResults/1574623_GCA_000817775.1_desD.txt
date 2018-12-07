@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574623_GCA_000817775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.4e-06   25.4   4.4    2.4e-06   25.4   4.4    2.1  2  KIF41692.1  fatty acid desaturase [Lyngbya confervoides BDU14
+     0.0099   13.5   2.2       0.13    9.8   0.2    2.1  2  KIF42913.1  fatty acid desaturase [Lyngbya confervoides BDU14
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF41692.1  fatty acid desaturase [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.4   4.4   7.9e-10   2.4e-06      47     163 ..      44     155 ..      32     167 .. 0.78
+   2 !    2.1   0.5    0.0099        30     221     317 ..     199     298 ..     189     327 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 25.4 bits;  conditional E-value: 7.9e-10
+        desD  47 viaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrm 145
+                 +ia  +f     + wwl  i  +  g+ +    f +ghd+ hg +s  kwvn+l+g      i +  + wr+ h   hh+ t  l  d   +    v  
+  KIF41692.1  44 IIAGLFFAATAIQAWWLWPIYWFAQGTMFWA-LFVVGHDCGHGSFSKYKWVNNLVGHLSHTPILVPFHGWRISHR-THHANTGNLDTDESWY---PVSE 137
+                 6788888899999*******99998887665.59**********************99999999999******98.5888887777665443...2455 PP
+
+        desD 146 tphaehkwyhryqhlfip 163
+                 t + e  w  +  +++ p
+  KIF41692.1 138 TKYNEMTWPEKLVRFYAP 155
+                 556666666655555555 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.0099
+        desD 221 vgyspleiaigflivfmtygvlach.vfmlahvlepaefiqpsaan...qiedewaifqvrttvdfapkniflnwylgglnyqvvhhlfpqichihypk 315
+                 +g  +l +aig  i +++ g       +++   l+   +++ ++a+     +++w  ++  +   +     +ln     +  +v hh+f  i h h   
+  KIF41692.1 199 LGMLALLVAIGSQIGWLALGAYYGVpYVIFVMWLDLVTYLHHTEADipwYPDEDWFFLK-GALSTIDRDYGILNPIHHDIGTHVAHHIFLSIPHYHLQT 296
+                 45555556666666555555443220222333455555555555541112334454333.2233333455678888889999999****9999999865 PP
+
+        desD 316 ia 317
+                  +
+  KIF41692.1 297 AT 298
+                 44 PP
+
+>> KIF42913.1  fatty acid desaturase [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8   0.2   4.4e-05      0.13      81     139 ..     100     157 ..      72     162 .. 0.85
+   2 !    3.3   0.1    0.0041        12     280     320 ..     273     310 ..     261     328 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 4.4e-05
+        desD  81 sighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihg 139
+                 s  h++ h       w+n ++     +++  +  +wr+ h   hht t ++g d ei g
+  KIF42913.1 100 SRWHECGHRTAFKTVWMNDVVYQIASFMMMRNPVVWRWSHT-RHHTDTIIVGRDPEISG 157
+                 667888898888999*************************7.69************988 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.0041
+        desD 280 vdfapkniflnwylgglnyqvvhhlfpqichihypkiapil 320
+                 v + p   fl w    +ny++ hh++p + +   p++   +
+  KIF42913.1 273 VLMNPVLRFLYW---NMNYHMEHHMYPMVPYHALPRLHEAV 310
+                 445555556666...68***********9998888876655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         6092  (1743458 residues searched)
+Passed MSV filter:                       209  (0.0343073); expected 121.8 (0.02)
+Passed bias filter:                      129  (0.0211753); expected 121.8 (0.02)
+Passed Vit filter:                        14  (0.0022981); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000328299); expected 0.1 (1e-05)
+Initial search space (Z):               6092  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 10576.98
+//
+[ok]

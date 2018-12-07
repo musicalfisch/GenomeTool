@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1925591_GCA_001890975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.6e-06   23.6   0.1    8.7e-05   19.9   0.1    2.1  1  OJJ24814.1  hypothetical protein BI308_14695 [Roseofilum rept
+  ------ inclusion threshold ------
+      0.032   11.5   0.1       0.18    9.1   0.0    1.9  2  OJJ24781.1  peptidase M16 [Roseofilum reptotaenium AO1-A]
+
+
+Domain annotation for each sequence (and alignments):
+>> OJJ24814.1  hypothetical protein BI308_14695 [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   0.1   3.5e-08   8.7e-05      98     176 ..      93     171 ..      44     275 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 3.5e-08
+        fecB  98 pivgdemqpnlekivalqpdliigsrlrqgqiykslsaiaptvfsetigeswqdnlrlygqal..dreaeaeqllndwdtr 176
+                 p+   +  p leki+al+pdl+ig+   + qi   l+ +    +  ++ esw+       +a+    +a+ + lln++++ 
+  OJJ24814.1  93 PVSQGQTAPSLEKIIALKPDLVIGATGFHDQIAARLTELNIETYLVSL-ESWESL-EALTEAIasAIDADPQPLLNQYQAF 171
+                 45556789**************************99998877776554.788654.4444444003456666788887765 PP
+
+>> OJJ24781.1  peptidase M16 [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.0     0.058   1.4e+02     125     173 ..     127     175 ..     115     187 .. 0.80
+   2 ?    9.1   0.0   7.1e-05      0.18     120     186 ..     193     258 ..     176     262 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.058
+        fecB 125 rqgqiykslsaiaptvfsetigeswqdnlrlygqaldreaeaeqllndw 173
+                 r   i  s+ + a t    ++    ++ lrl+ q l + a  eq l+  
+  OJJ24781.1 127 RAASIETSIGTSAATAQFSALTPDTDEVLRLFAQVLRQPAFDEQQLQLA 175
+                 5566777888878777777788888999**********99999988755 PP
+
+  == domain 2  score: 9.1 bits;  conditional E-value: 7.1e-05
+        fecB 120 igsrlrqgqiykslsaiaptvfsetige.swqdnlrlygqaldreaeaeqllndwdtrvaqmrqklsa 186
+                 i sr  q  iy + s  a tv  et+     qd + +y q +  +     l+ d+d   aqmrqkl a
+  OJJ24781.1 193 IASREFQKLIYGAESPYARTVEYETLEAiDRQDLIDFYQQYFVPNNMMLGLVGDFDP--AQMRQKLEA 258
+                 789999*******************9762689999********************96..9******87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         4978  (1623265 residues searched)
+Passed MSV filter:                       149  (0.0299317); expected 99.6 (0.02)
+Passed bias filter:                      124  (0.0249096); expected 99.6 (0.02)
+Passed Vit filter:                         8  (0.00160707); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000401768); expected 0.0 (1e-05)
+Initial search space (Z):               4978  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8522.14
+//
+[ok]

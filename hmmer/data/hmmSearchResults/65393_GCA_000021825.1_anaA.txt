@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65393_GCA_000021825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-46  155.8   0.0    1.5e-45  153.7   0.0    2.0  2  ACK71146.1  Erythronolide synthase., Oleoyl-(acyl-carrier-pro
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK71146.1  Erythronolide synthase., Oleoyl-(acyl-carrier-protein) hydrolase [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0      0.11   6.3e+02      85     107 ..     615     637 ..     606     653 .. 0.77
+   2 !  153.7   0.0   2.6e-49   1.5e-45       8     243 ..    1079    1314 ..    1072    1325 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 0.11
+        anaA  85 pysqspfvffghslgsvvsleva 107
+                  +   p  ++ghslg  v+  va
+  ACK71146.1 615 SWGVKPTAVMGHSLGEYVAACVA 637
+                 566678999*******9998887 PP
+
+  == domain 2  score: 153.7 bits;  conditional E-value: 2.6e-49
+        anaA    8 tspwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvsl 104 
+                  ++ w+  lgk  q  +l +fcfp agag+ +fr+w   +p  i++  v++pgrenr ++p  t    li+ l   i p+ + pf ffghslg ++ +
+  ACK71146.1 1079 SNLWFPWLGKNPQ-ARLRVFCFPYAGAGASLFREWSKDVPPDIEICPVQLPGRENRFQDPPFTNLKALIQTLGTLIMPHLDIPFAFFGHSLGGLLGF 1174
+                  4558888999887.68********************************************************************************* PP
+
+        anaA  105 evahqlgdrfgcfpqclvvsgrkpphipcdhrd.sqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalgg 200 
+                  e+a++l  +    p  l vs  + p+ip          d ++ + +    gtp+ vl++ elm++ lp  r+d+ l e y y   + l cpi a+gg
+  ACK71146.1 1175 ELARELRRQKASSPVHLFVSASRAPQIPDFSSPiHTLPDPEFKQAIERFKGTPKEVLENAELMALFLPTLRSDFALLETYFYSGGQPLECPITAFGG 1271
+                  ****************************6555414567889999999999*********************************************** PP
+
+        anaA  201 eadegvsleelrewekytqrgfklrsfpgghmylteekerfav 243 
+                    d  +s e l  w k tq  f+l  +pg h++l   ++++  
+  ACK71146.1 1272 LEDSQISRELLEPWHKQTQSHFQLTLIPGDHFFLQTARQKLLS 1314
+                  **********************************887776543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5710  (1769808 residues searched)
+Passed MSV filter:                       155  (0.0271454); expected 114.2 (0.02)
+Passed bias filter:                      146  (0.0255692); expected 114.2 (0.02)
+Passed Vit filter:                         9  (0.00157618); expected 5.7 (0.001)
+Passed Fwd filter:                         1  (0.000175131); expected 0.1 (1e-05)
+Initial search space (Z):               5710  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8955.23
+//
+[ok]

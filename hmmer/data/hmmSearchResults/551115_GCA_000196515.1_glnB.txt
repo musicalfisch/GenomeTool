@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/551115_GCA_000196515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-69  228.6   6.2    2.2e-69  228.4   6.2    1.0  1  ADI62691.1  nitrogen regulatory protein P-II ['Nostoc azollae
+     0.0045   14.9   0.0      0.011   13.7   0.0    1.6  1  ADI63370.1  Mammalian cell entry related domain protein ['Nos
+
+
+Domain annotation for each sequence (and alignments):
+>> ADI62691.1  nitrogen regulatory protein P-II ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  228.4   6.2   1.2e-72   2.2e-69       1     112 []       1     112 []       1     112 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 228.4 bits;  conditional E-value: 1.2e-72
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 m+kveaiirpfkldevkialvnagivgmt+sevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vvdkii aartgeigdgkifispveqv
+  ADI62691.1   1 MRKVEAIIRPFKLDEVKIALVNAGIVGMTISEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDAQVDMVVDKIIGAARTGEIGDGKIFISPVEQV 99 
+                 99************************************************************************************************* PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgek++eav
+  ADI62691.1 100 IRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> ADI63370.1  Mammalian cell entry related domain protein ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.0   5.9e-06     0.011      36      99 ..      57     125 ..      47     132 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 5.9e-06
+        glnB  36 fgrqkgqteryrgseytv.....eflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                  g qkg   ryrg +          ++ + vei ++d ++ +  d  i+a++tg i +  i i+p+ ++
+  ADI63370.1  57 GGMQKGSPVRYRGVKVGSisnikTAVNAVAVEIEINDPNLIIPADSKIQASQTGLISESIIDITPITNL 125
+                 589*********98764211111346678899999999999999********************99765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         3651  (943585 residues searched)
+Passed MSV filter:                        99  (0.0271159); expected 73.0 (0.02)
+Passed bias filter:                       78  (0.021364); expected 73.0 (0.02)
+Passed Vit filter:                         3  (0.000821693); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000547795); expected 0.0 (1e-05)
+Initial search space (Z):               3651  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5284.08
+//
+[ok]

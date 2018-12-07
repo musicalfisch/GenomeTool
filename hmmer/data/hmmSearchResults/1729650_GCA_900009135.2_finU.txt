@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1729650_GCA_900009135.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-10   38.3   0.0      3e-10   38.1   0.0    1.0  1  SKB13961.1  Nitrogen-fixing NifU domain protein [Planktothrix
+    1.9e-07   28.9   0.0    5.1e-07   27.5   0.0    1.6  2  SKB11115.1  SUF system FeS assembly protein, NifU family [Pla
+  ------ inclusion threshold ------
+      0.016   12.7   0.6      0.023   12.2   0.6    1.1  1  SKB15779.1  putative RuBisCO transcriptional regulator [Plank
+
+
+Domain annotation for each sequence (and alignments):
+>> SKB13961.1  Nitrogen-fixing NifU domain protein [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.1   0.0   1.7e-13     3e-10     234     297 ..      12      75 ..       2      78 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 38.1 bits;  conditional E-value: 1.7e-13
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                 e v +elr+ l++d+++v+  + d+ +++  l++a++s+ s++++lk+ +e rl++++    ++
+  SKB13961.1  12 ETVLDELRPYLMSDGGNVEIVELDGPIVRLRLQGACGSCPSSTMTLKMGIERRLRERIPEIDLV 75 
+                 3455689**************************************************9644333 PP
+
+>> SKB11115.1  SUF system FeS assembly protein, NifU family [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   0.0     3e-10   5.1e-07      40      94 ..      41      95 ..      31     108 .. 0.92
+   2 ?   -1.5   0.0       0.2   3.4e+02     109     127 ..     127     145 ..     112     153 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 3e-10
+        finU 40 acGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvs 94
+                 cGd ++l + ++   d i d +f+  Gc+ ++as++ ++e+++G+t+ e+l + 
+  SKB11115.1 41 YCGDIVQLTIELDSTGDLIKDIKFEGRGCAVSMASADLMAEVLRGKTITESLLII 95
+                5*************************************************99774 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.2
+        finU 109 kmhcsvmGqealeaaiyny 127
+                 +m+c+ +   +le+a+  y
+  SKB11115.1 127 RMKCAALSWSTLETALKSY 145
+                 5777777777777776665 PP
+
+>> SKB15779.1  putative RuBisCO transcriptional regulator [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.6   1.4e-05     0.023     225     294 ..     205     276 ..     183     282 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.4e-05
+        finU 225 ivlkiklldev.vdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrl.skdlvve 294
+                 +  + k++d+v ++ e+ +   ++e++    ++ k+ +++ l++a  st++ +  l++++ +r+  +d+vv+
+  SKB15779.1 205 QSTIRKVIDQVlIRAEIDPRCLKVEMELNSIEAIKNTVQAGLGAAFVSTSAIEKELEMKVLHRMvIEDVVVK 276
+                 55678999998458999999999***9999*****************9999999999998777514666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5144  (1714313 residues searched)
+Passed MSV filter:                       153  (0.0297434); expected 102.9 (0.02)
+Passed bias filter:                      107  (0.0208009); expected 102.9 (0.02)
+Passed Vit filter:                        10  (0.00194401); expected 5.1 (0.001)
+Passed Fwd filter:                         3  (0.000583204); expected 0.1 (1e-05)
+Initial search space (Z):               5144  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 10285.88
+//
+[ok]

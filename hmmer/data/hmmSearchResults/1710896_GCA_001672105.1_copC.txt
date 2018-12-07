@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710896_GCA_001672105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   13.8   0.1      0.014   13.6   0.1    1.3  1  OBQ43241.1  hypothetical protein AN484_13420 [Aphanizomenon f
+       0.02   13.1   0.7      0.027   12.6   0.7    1.3  1  OBQ45062.1  peptidylprolyl isomerase [Aphanizomenon flos-aqua
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ43241.1  hypothetical protein AN484_13420 [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.1   5.4e-06     0.014       7      70 ..       6      73 ..       1     106 [. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 5.4e-06
+        copC  7 sllvvlsigllllaassnsntatnde.assktttaattavsstaaakak...eeekekeeskGGqvie 70
+                 +l+++si+ll l+a+++ ++a+++   +++ +++++  ++++aa++++     +k ++  k G  +e
+  OBQ43241.1  6 RMLIIASISLLTLVACNKPKQAATETiPAPAYNSTEKAPTKTSAAGNTDlltVVSKTETAVKSGNFVE 73
+                46899999999999999877766554144444444444444444444331112334444445555555 PP
+
+>> OBQ45062.1  peptidylprolyl isomerase [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.7     1e-05     0.027       5      70 ..       6      73 ..       1      92 [. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1e-05
+        copC  5 kssllvvlsiglllla.assnsntatndeass.ktttaattavsstaaakakeeekekeeskGGqvie 70
+                 s+ l+++ +g+l+++  s ++nta  +++ + + tt+ t++ +++ ++++ +e ++ + s G + +e
+  OBQ45062.1  6 LSVVLMLVCVGVLVFTqISGQKNTAISNQSPQtQPTTTVTQENNTPIKSNTMSEANAVTTSSGLKYVE 73
+                45667777777665550555556655444443044555666667777888888888888888877666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5296  (1424099 residues searched)
+Passed MSV filter:                       143  (0.0270015); expected 105.9 (0.02)
+Passed bias filter:                      109  (0.0205816); expected 105.9 (0.02)
+Passed Vit filter:                        11  (0.00207704); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000377644); expected 0.1 (1e-05)
+Initial search space (Z):               5296  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7832.54
+//
+[ok]

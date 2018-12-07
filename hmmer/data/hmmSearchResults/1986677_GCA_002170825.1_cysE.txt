@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986677_GCA_002170825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.6e-06   22.3   9.6     0.0016   14.2   5.9    2.6  2  OUW28743.1  UDP-N-acetylglucosamine diphosphorylase/glucosami
+     0.0011   14.8  10.6      0.017   10.8   5.6    2.6  3  OUW30691.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosam
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW28743.1  UDP-N-acetylglucosamine diphosphorylase/glucosamine-1-phosphate N-acetyltransferase, partial [Cyanobacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.1   0.1   8.1e-05     0.057     102     161 ..     190     250 ..     184     279 .. 0.79
+   2 !   14.2   5.9   2.3e-06    0.0016      60     162 ..     269     378 ..     263     388 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 8.1e-05
+        cysE 102 qgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrd.ipadctvv 161
+                 +gvt+   g  +     ++g +vv+   +++ g   +gnn r+g gs++    +  d+ vv
+  OUW28743.1 190 EGVTFVDPGSCTLSEDCSFGTDVVIEPQTHLRGTCRIGNNCRLGPGSLLDNAaLGDDVEVV 250
+                 688888888888889999*****************************87543144555555 PP
+
+  == domain 2  score: 14.2 bits;  conditional E-value: 2.3e-06
+        cysE  60 arfltgieihpgaqigqgvfidh...gmgvvigetaivgdyaliyqgvtlgg..tgkesg.krhpt.lgenvvvgagakvlgniylgnnvrvgagsvvl 151
+                 a++    +i  g++ig+ v + +   g g  +   + +gd +l  +     g  t +  g ++h t +g+    ga + ++  + lg +v +gags + 
+  OUW28743.1 269 AHLRPAADIADGCRIGNFVEVKKsqiGAGSKVNHLSYIGDASLGTNVNVGAGtiTANYDGvRKHRTvIGDGSKTGANSVLVAPVTLGAKVTIGAGSTIT 367
+                 5555667888999999988876433388999999999***9986543222231223333425565537999**************************** PP
+
+        cysE 152 rdipadctvvg 162
+                 +d+p  +  +g
+  OUW28743.1 368 KDVPDGALAIG 378
+                 ****9887777 PP
+
+>> OUW30691.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.6   0.5   0.00097      0.68      61     103 ..      21      55 ..       5      98 .. 0.47
+   2 !    2.5   0.3    0.0083       5.9      93     156 ..      87     142 ..      54     153 .. 0.47
+   3 !   10.8   5.6   2.4e-05     0.017      81     176 ..     105     206 ..      84     215 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.00097
+        cysE  61 rfltgieihpgaqigqgvfidhgmgvvigetaivgdyaliyqg 103
+                  + +g+ i pga +g          vvige + +g  a++   
+  OUW30691.1  21 ELASGVVIGPGAVVGPE--------VVIGENTWIGPNAVLDGR 55 
+                 22223333333333333........333333333333333322 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.0083
+        cysE  93 ivgdyaliyqgvtlggtgkesgkrhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipa 156
+                 ++gd   i + vt+  +  + g       e   +g    ++   +lg n  +g g v+   i  
+  OUW30691.1  87 VIGDGNTIRECVTINRAT-DDG-------ERTRIGDRNLLMAYCHLGHNCELGNGIVMSNSIQV 142
+                 445555555555554332.223.......33333333333334444444444444443333333 PP
+
+  == domain 3  score: 10.8 bits;  conditional E-value: 2.4e-05
+        cysE  81 dhgmgvvigetaivgdyaliyqgvtlggtgkesg....krhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvvgvpgrl..iyragt 173
+                 d g    ig+  ++  y+ + +   lg     s       h  + +  v+g    v   +++g    vg  + v rd+p  c v g pgr+  + r g 
+  OUW30691.1 105 DDGERTRIGDRNLLMAYCHLGHNCELGNGIVMSNsiqvAGHVVIEDRAVIGGCLGVHQFVHIGGMAMVGGMTRVDRDVPPYCLVEGHPGRVrgLNRVGL 203
+                 445555666666666666666666665433322211114588999999*****************************************9744567776 PP
+
+        cysE 174 rve 176
+                 r  
+  OUW30691.1 204 RRS 206
+                 655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         1406  (396538 residues searched)
+Passed MSV filter:                        39  (0.0277383); expected 28.1 (0.02)
+Passed bias filter:                       31  (0.0220484); expected 28.1 (0.02)
+Passed Vit filter:                         4  (0.00284495); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00142248); expected 0.0 (1e-05)
+Initial search space (Z):               1406  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 4996.38
+//
+[ok]

@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/696747_GCA_000210375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-15   53.2   0.0    4.1e-13   47.4   0.0    2.0  2  BAI88832.1  guanine deaminase [Arthrospira platensis NIES-39]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAI88832.1  guanine deaminase [Arthrospira platensis NIES-39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.8   0.0     0.001       6.9      23      61 ..      34      77 ..       9     101 .. 0.63
+   2 !   47.4   0.0   6.2e-17   4.1e-13     246     387 ..     250     388 ..     213     399 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 3.8 bits;  conditional E-value: 0.001
+        cyrG 23 vvdgkiaaiapelevvg.....taidgenklllpgfvnahthss 61
+                v dgki a  +  ++ +     + i+ +++l++pgfv++h h  
+  BAI88832.1 34 VDDGKIQAFGSYDNIRTdypevEIIHYSQRLIIPGFVDTHVHYP 77
+                44566666665444332111114688899************964 PP
+
+  == domain 2  score: 47.4 bits;  conditional E-value: 6.2e-17
+        cyrG 246 vehlkrigylddrtslahcvhltdkdiailaetkstvvhnplsnlrlgsgiapilkyrqag..vnvtfgcdgassndsqdlleaikigsilhnvtdldy 342
+                 +e  ++ g ++dr+ +ah ++l++++ + l+e+ s++   p sn+ +gsg+  +   +     + v +g d  +   s   +  +k  s  ++vt+l+ 
+  BAI88832.1 250 LEVYEKAGLVGDRSIFAHGIYLSNSEFKRLSEAGSAIAFCPTSNMFIGSGLFNLKEAKSPAhpIAVGLGSDVGAG-TS---FSMLKTMSAAYKVTQLQK 344
+                 5667899********************************************998666554412667777774433.34...4456778999******97 PP
+
+        cyrG 343 qhwitprqavemaslggakglnladklgsltvgkkadlvlydltn 387
+                 q  ++p qa  +a+lggak + l+  +g ++vgk++d+++ +  +
+  BAI88832.1 345 Q-TLSPLQAFYLATLGGAKAIHLDSYIGNFKVGKESDFIVLNWQA 388
+                 7.589********************************99876655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         6630  (1832829 residues searched)
+Passed MSV filter:                       129  (0.019457); expected 132.6 (0.02)
+Passed bias filter:                      100  (0.015083); expected 132.6 (0.02)
+Passed Vit filter:                         4  (0.000603318); expected 6.6 (0.001)
+Passed Fwd filter:                         1  (0.00015083); expected 0.1 (1e-05)
+Initial search space (Z):               6630  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 12175.22
+//
+[ok]

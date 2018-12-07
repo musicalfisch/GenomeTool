@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102125_GCA_000332055.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkN  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.5e-110  366.2   0.0     3e-110  365.9   0.0    1.0  1  ELS01461.1  putative aminopeptidase [Xenococcus sp. PCC 7305]
+    0.00065   17.1   0.0    0.00098   16.5   0.0    1.2  1  ELS00683.1  amidase, hydantoinase/carbamoylase family [Xenoco
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS01461.1  putative aminopeptidase [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  365.9   0.0  1.1e-113    3e-110       6     278 ..       2     277 ..       1     279 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 365.9 bits;  conditional E-value: 1.1e-113
+        ahkN   6 sdrlsqhleqivrernpffssqghfyvreylrqelgnwgkveshffsfqgkvyenlildlpnns..qkppiligahydtvpgspgaddnatglavllel 102
+                  drl +hl qivr+r+p+++s+ghf+v++y+r++l +wg+v +h f+++g+ y+nlil+lp  +  q ppiligahyd+vpg+pgaddn tg+avllel
+  ELS01461.1   2 KDRLYKHLAQIVRKRDPYLASEGHFFVQQYIREQLSQWGEVTTHEFEVRGQKYQNLILNLPAATpqQLPPILIGAHYDAVPGTPGADDNGTGVAVLLEL 100
+                 69***********************************************************8743388******************************* PP
+
+        ahkN 103 arffgenqanypirliafdleeygllgsiayaeklkqtkqdlrlmlslemlgycdknphsqkypa.fleyfypntgdfialignlktrkdlnflsrvlr 200
+                 a  f e+  +ypir++afd+eeygllgs aya  lkq kq lrlmlslemlgy   +  sq+ypa +++yfyp  gdfial+ nl t  d   l + lr
+  ELS01461.1 101 AAAFAEKPLKYPIRIVAFDMEEYGLLGSKAYAAYLKQNKQALRLMLSLEMLGYRSTQDNSQQYPAdIIKYFYPSKGDFIALVSNLITIPDTIRLHKSLR 199
+                 ****************************************************************95689****************************** PP
+
+        ahkN 201 enqtpcewlpvifggyivpdtrrsdhspfwdrgysaimvtdtanmrnpyyhssrdtiatldlnfltrvcqglcfglqs 278
+                 + +  c+wlpv   g  +  t  sdhspfw++gy a+mvtdta +rnp+yh s dti tld +flt vc+gl  g+  
+  ELS01461.1 200 QHNLDCQWLPVPNNGKWISGTGFSDHSPFWEQGYRAMMVTDTAFLRNPHYHKSSDTIETLDGEFLTDVCRGLIKGIYD 277
+                 ************************************************************************999876 PP
+
+>> ELS00683.1  amidase, hydantoinase/carbamoylase family [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   0.0   3.6e-07   0.00098      65     135 ..      78     149 ..      45     154 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 3.6e-07
+        ahkN  65 lpnnsqkppiligahydtvpgspgaddnatglavllelarffgenqan..ypirliafdleeygllgsiayae 135
+                 l +n     i  g+h dtvp   g  d a g+   le+ r++ en+      + +i f  ee  ++gs a + 
+  ELS00683.1  78 LGKNPALSAIATGSHIDTVPC-GGHYDGAYGVLAGLEVVRVLQENKIRldRSLEVIVFTDEEGTMIGSKAISG 149
+                 556677778999********7.5888999***99***********9761157899*************98765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (282 nodes)
+Target sequences:                         5373  (1697783 residues searched)
+Passed MSV filter:                       123  (0.0228922); expected 107.5 (0.02)
+Passed bias filter:                      103  (0.0191699); expected 107.5 (0.02)
+Passed Vit filter:                         7  (0.00130281); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000372232); expected 0.1 (1e-05)
+Initial search space (Z):               5373  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 9575.50
+//
+[ok]

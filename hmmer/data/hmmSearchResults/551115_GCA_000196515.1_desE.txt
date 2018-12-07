@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/551115_GCA_000196515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desE  [M=277]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   7.3e-140  462.6  23.6   8.1e-140  462.4  23.6    1.0  1  ADI65151.1  Stearoyl-CoA 9-desaturase ['Nostoc azollae' 0708]
+  ------ inclusion threshold ------
+      0.016   12.1   0.3      0.029   11.3   0.3    1.4  1  ADI62729.1  secretion protein HlyD family protein ['Nostoc az
+
+
+Domain annotation for each sequence (and alignments):
+>> ADI65151.1  Stearoyl-CoA 9-desaturase ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  462.4  23.6  4.4e-143  8.1e-140       1     269 [.       1     269 [.       1     272 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 462.4 bits;  conditional E-value: 4.4e-143
+        desE   1 mtvatseklpidwvtliymafihlvallaflpgnfswgavgvtlilywitgglgitlgfhrlvshrsfktpkwleyflvlcgtlacqggaiawiglhrl 99 
+                 mt+ats k  i+wv  +++  +h+ al+af+pgnfsw avgv+l lyw++gglgitlgfhrlv+hrsf+tpkwleyflv+cgtlacqgg i w+g hr+
+  ADI65151.1   1 MTIATSTKPQINWVNTLFFIALHIGALFAFFPGNFSWTAVGVALFLYWVSGGLGITLGFHRLVTHRSFQTPKWLEYFLVFCGTLACQGGPIEWVGTHRI 99 
+                 9*************9999999****************************************************************************** PP
+
+        desE 100 hhkysdtapdphdsnkgfwwshmgwmlheipadeeiarftqdiaddpfykfcqnyfvpiqivlglilyalggwpfviwgifvrlvlvfhstwfvnsath 198
+                 hh +sdt  dphdsnkgfwwsh+gw+++  pa  +i rft+dia dp+y+f q+yf+ iq+vlg +l  lggw fv+wg+fvr+v v+h+tw+vnsath
+  ADI65151.1 100 HHLHSDTEQDPHDSNKGFWWSHIGWLIFHSPAHSQIPRFTKDIAGDPVYQFFQKYFILIQLVLGAVLLFLGGWSFVVWGVFVRIVWVYHCTWLVNSATH 198
+                 *************************************************************************************************** PP
+
+        desE 199 kfgyvsheshdnskncwwvalltfgegwhnnhhayqysarhglqwwevdltwmtirllqilglatniklpp 269
+                 kfgy sh+s d s ncwwva+l+fgegwhnnhhayqysarhgl+wwe+d+twmti+llq++glatn+kl  
+  ADI65151.1 199 KFGYQSHDSGDRSTNCWWVAVLVFGEGWHNNHHAYQYSARHGLEWWEIDMTWMTIQLLQLFGLATNVKLAE 269
+                 ********************************************************************975 PP
+
+>> ADI62729.1  secretion protein HlyD family protein ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.3   1.6e-05     0.029      21      63 ..      22      64 ..      19     144 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.6e-05
+        desE 21 fihlvallaflpgnfswgavgvtlilywitgglgitlgfhrlv 63
+                 +hlv +  flp    w ++gv ++l   + g+g+t  +   v
+  ADI62729.1 22 HLHLVEVNEFLPQIHKWTSIGVGVMLTIFVVGVGLTTVLNYKV 64
+                58*****************999999988888888876554444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (277 nodes)
+Target sequences:                         3651  (943585 residues searched)
+Passed MSV filter:                       145  (0.0397151); expected 73.0 (0.02)
+Passed bias filter:                       76  (0.0208162); expected 73.0 (0.02)
+Passed Vit filter:                         8  (0.00219118); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000547795); expected 0.0 (1e-05)
+Initial search space (Z):               3651  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 6534.33
+//
+[ok]

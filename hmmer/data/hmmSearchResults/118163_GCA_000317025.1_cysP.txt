@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118163_GCA_000317025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysP  [M=347]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0046   14.0   0.0      0.012   12.6   0.0    1.7  2  AFY75711.1  molybdenum ABC transporter, periplasmic molybdate
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY75711.1  molybdenum ABC transporter, periplasmic molybdate-binding protein [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.0   2.9e-06     0.012       9     115 ..      12     111 ..       6     156 .. 0.77
+   2 ?   -1.5   0.0     0.055   2.3e+02     253     285 ..     223     255 ..     182     266 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 2.9e-06
+        cysP   9 slllatvlt.ggmlasctssptnsgndsqkpvtvtlvsyavtqsayekiipkfveewqqktgqkvtfeqsyggsgsqtravidgleadvvalalaldtk 106
+                 s+++a +++  g +   +++p+     +qk+vt+t+ + a  +  ++     +   w++ tg+kvtf+  +g +g  ++ +  g   d+ a a      
+  AFY75711.1  12 SIIVAVLVAsWGFF--LSQAPAFQTLLAQKSVTLTVSAAADLNYVFK----EIGALWEKETGNKVTFN--FGSTGQLAQQIERGAPVDLFAAANKSYIE 102
+                 55555433212333..3456777778899999999766655554444....44567***********7..78888888888899999999999888888 PP
+
+        cysP 107 kieqagliq 115
+                  +++ gli 
+  AFY75711.1 103 DLDKKGLII 111
+                 888888875 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.055
+        cysP 253 dnpvavvdanvdkkgtrkvaeafvqflftpaaq 285
+                  +pv  + a v k   +  a  f qf+  p+ +
+  AFY75711.1 223 HKPVDQMLAVVRKSKYQTQARQFAQFINGPQGR 255
+                 445555556666666666677777777666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (347 nodes)
+Target sequences:                         4268  (1345719 residues searched)
+Passed MSV filter:                        82  (0.0192127); expected 85.4 (0.02)
+Passed bias filter:                       71  (0.0166354); expected 85.4 (0.02)
+Passed Vit filter:                         5  (0.00117151); expected 4.3 (0.001)
+Passed Fwd filter:                         1  (0.000234302); expected 0.0 (1e-05)
+Initial search space (Z):               4268  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 11674.11
+//
+[ok]

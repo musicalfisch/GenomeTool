@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrJ  [M=236]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.039   11.6   0.0      0.077   10.7   0.0    1.4  2  AKG20334.1  hypothetical protein IJ00_02485 [Calothrix sp. 33
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG20334.1  hypothetical protein IJ00_02485 [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   0.0      0.35   1.8e+03     186     211 ..     211     236 ..     205     242 .. 0.73
+   2 ?   10.7   0.0   1.5e-05     0.077     185     223 ..     261     300 ..     245     310 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 0.35
+        cyrJ 186 iwskyqwydtvrnstgfhpykpksda 211
+                 +  +yqw+ +++    + p  p  d 
+  AKG20334.1 211 VGKNYQWFLALKLDGKLSPSTPYVDG 236
+                 55689999999888888888887765 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 1.5e-05
+        cyrJ 185 diwsky.qwydtvrnstgfhpykpksdaiperfddllsqc 223
+                 +i+ k   wyd v   + +h  +p++ ai ++++dll+ +
+  AKG20334.1 261 EIFGKNgVWYDCVATLAALHTSQPQNPAIIKQWEDLLTSV 300
+                 56665426****************************9864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (236 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       124  (0.0245885); expected 100.9 (0.02)
+Passed bias filter:                      108  (0.0214158); expected 100.9 (0.02)
+Passed Vit filter:                         8  (0.00158636); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000198295); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 12676.09
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeR.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/46234_GCA_000312705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeR  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   12.7   0.3      0.072   11.2   0.1    1.8  2  AFW94627.1  hypothetical protein ANA_C11872 [Anabaena sp. 90]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFW94627.1  hypothetical protein ANA_C11872 [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.9   0.0       0.2     9e+02      23      40 ..      37      54 ..      23      82 .. 0.66
+   2 ?   11.2   0.1   1.6e-05     0.072      53      90 ..     196     234 ..     192     242 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -1.9 bits;  conditional E-value: 0.2
+        cpeR 23 gnffifetldysaierfe 40
+                +  ++ e  ++s+ie  e
+  AFW94627.1 37 DSQIVCEIKEFSSIEIKE 54
+                334556666666666443 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 1.6e-05
+        cpeR  53 vepkkkvwlgnhr.qvilyqakaslhtphhelkqywlky 90 
+                 ++  +++w  n   + + y+ak  l tp  e+k  w k+
+  AFW94627.1 196 IKEGEQIWQTNQNgKYLAYKAKCDLRTPTSEIKLNWKKQ 234
+                 566689999876438999******************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (101 nodes)
+Target sequences:                         4511  (1408436 residues searched)
+Passed MSV filter:                        90  (0.0199512); expected 90.2 (0.02)
+Passed bias filter:                       79  (0.0175127); expected 90.2 (0.02)
+Passed Vit filter:                         5  (0.0011084); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.00022168); expected 0.0 (1e-05)
+Initial search space (Z):               4511  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7112.60
+//
+[ok]

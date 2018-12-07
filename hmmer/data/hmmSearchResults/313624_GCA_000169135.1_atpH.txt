@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/313624_GCA_000169135.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-50  168.2   8.1    1.2e-50  168.1   8.1    1.0  1  EAW45517.1  ATP synthase subunit C [Nodularia spumigena CCY94
+    1.8e-19   68.2   3.6    2.2e-19   67.9   3.6    1.0  1  EAW45277.1  ATP synthase c subunit [Nodularia spumigena CCY94
+
+
+Domain annotation for each sequence (and alignments):
+>> EAW45517.1  ATP synthase subunit C [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  168.1   8.1     5e-54   1.2e-50       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 168.1 bits;  conditional E-value: 5e-54
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdplvaaasv+aaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvvalvllfanpfa
+  EAW45517.1  1 MDPLVAAASVLAAALAVGLAAIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> EAW45277.1  ATP synthase c subunit [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.9   3.6   8.9e-23   2.2e-19       4      80 ..       8      84 ..       5      85 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 67.9 bits;  conditional E-value: 8.9e-23
+        atpH  4 lvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                l+   s+i a+l++ +++iGp+i++G a ++a+  +a+qp+    i  tl++ la +es +iy +vv+++l+fanpf
+  EAW45277.1  8 LIGMVSIIMAGLTIAIGSIGPAIAEGWAVARALGAMAQQPDQANTITRTLFVGLAIIESTAIYCFVVSMILIFANPF 84
+                67789***********************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         4860  (1442648 residues searched)
+Passed MSV filter:                       183  (0.0376543); expected 97.2 (0.02)
+Passed bias filter:                       99  (0.0203704); expected 97.2 (0.02)
+Passed Vit filter:                         5  (0.00102881); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000411523); expected 0.0 (1e-05)
+Initial search space (Z):               4860  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5842.72
+//
+[ok]

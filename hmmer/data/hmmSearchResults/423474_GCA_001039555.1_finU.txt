@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-17   60.8   0.1    3.9e-17   60.7   0.1    1.1  1  CCQ50989.1  Cysteine desulfurase, NifS subfamily [Crocosphaer
+    8.5e-10   36.6   0.0      9e-10   36.5   0.0    1.0  1  CCQ51529.1  Nitrogen-fixing NifU-like [Crocosphaera watsonii 
+  ------ inclusion threshold ------
+      0.014   12.9   0.1       0.04   11.4   0.0    1.7  2  CCQ50391.1  Nitrogen-fixing NifU, C-terminal:Rieske [2Fe-2S] 
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ50989.1  Cysteine desulfurase, NifS subfamily [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   60.7   0.1   2.4e-20   3.9e-17     211     298 ..      52     139 ..      31     141 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 60.7 bits;  conditional E-value: 2.4e-20
+        finU 211 aselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelvee 298
+                 +  + ++++ ++ k   k +l++++++ee+++ l++d++d  lyd ++dl+kv+lk+a+ ++ s++++lk+a+e+rl++++ +el + 
+  CCQ50989.1  52 TPRIEDETTSSPTKEQEKANLIQQILEEEVKPFLAQDGGDIDLYDIEGDLVKVVLKGACDACPSSTATLKLAIEARLKDRVDPELTVI 139
+                 4455666677777888888888888888888888888888888888888888888888888888888888888888888888887654 PP
+
+>> CCQ51529.1  Nitrogen-fixing NifU-like [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.0   5.4e-13     9e-10     235     291 ..      14      70 ..       2      79 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 36.5 bits;  conditional E-value: 5.4e-13
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl 291
+                  v +e+r+ l++d+++v+l d ++ ++k  l++a++s+ s++++l++ +e rl++ +
+  CCQ51529.1  14 TVLDEMRPYLMADGGNVELVDIEGPVVKLRLQGACGSCPSSTMTLRMGIERRLREMI 70 
+                 455789***********************************************9876 PP
+
+>> CCQ50391.1  Nitrogen-fixing NifU, C-terminal:Rieske [2Fe-2S] region [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.0   0.0     0.071   1.2e+02     189     277 ..      14      52 ..       8      87 .. 0.47
+   2 ?   11.4   0.0   2.4e-05      0.04     232     285 ..     100     154 ..      49     169 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: -0.0 bits;  conditional E-value: 0.071
+        finU 189 diikdvkkesaatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkv 277
+                 d+i+++                                                  +  e  v+++d++++++   lk a  s     +
+  CCQ50391.1  14 DLIAEI--------------------------------------------------GRYEQIVIQWDKNQQVVVERLKEAIESLHKEAL 52 
+                 444444..................................................444444444444444444444444443322222 PP
+
+  == domain 2  score: 11.4 bits;  conditional E-value: 2.4e-05
+        finU 232 ldevvdeelravliddeldvvly.dvdkdllkvalksassstaslkvalkialed 285
+                   e v++ l++  +d+el  ++  d++++ l +++ ++ +st ++k  ++ a++ 
+  CCQ50391.1 100 ALESVRPGLKSHHGDVELVAIKLpDTVEVQLVGTCSNCPASTLTMKQGVEQAIKT 154
+                 2255666666666666665544325555555555555555555555555555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       160  (0.0322256); expected 99.3 (0.02)
+Passed bias filter:                      115  (0.0231621); expected 99.3 (0.02)
+Passed Vit filter:                        13  (0.00261833); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.00060423); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8914.70
+//
+[ok]

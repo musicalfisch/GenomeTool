@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111780_GCA_000317575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.7e-11   39.9   0.0    7.7e-11   39.9   0.0    1.0  1  AFZ37602.1  nitrogen-fixing NifU domain-containing protein [S
+  ------ inclusion threshold ------
+      0.013   12.9   0.2      0.017   12.6   0.2    1.2  1  AFZ38369.1  hypothetical protein Sta7437_4945 (plasmid) [Stan
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ37602.1  nitrogen-fixing NifU domain-containing protein [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.9   0.0   3.2e-14   7.7e-11     232     292 ..      10      69 ..       1      78 [] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 39.9 bits;  conditional E-value: 3.2e-14
+        finU 232 ldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 ++ +v +e+r+ l++d+++v+l + ++ ++k  l++a++s+ s++++lk+ +e rl++++ 
+  AFZ37602.1  10 VE-EVLDEMRPYLMADGGNVELVEIEGPIVKLRLQGACGSCPSSTMTLKMGIERRLREKIP 69 
+                 33.4455789************************************************985 PP
+
+>> AFZ38369.1  hypothetical protein Sta7437_4945 (plasmid) [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.2     7e-06     0.017     142     180 ..      89     129 ..      65     148 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 7e-06
+        finU 142 alvctcfgisetkirrvivennlttae.qvtnyvkaG.GGc 180
+                   vc cfg s ++i++ i++   ++ae ++ ++++aG  Gc
+  AFZ38369.1  89 VPVCYCFGWSRSRIQQEIIKTGKSSAEtNIRSHIQAGrCGC 129
+                 459*****************999999945889999983345 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4781  (1511376 residues searched)
+Passed MSV filter:                       203  (0.0424597); expected 95.6 (0.02)
+Passed bias filter:                      136  (0.0284459); expected 95.6 (0.02)
+Passed Vit filter:                        12  (0.00250994); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000418323); expected 0.0 (1e-05)
+Initial search space (Z):               4781  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9068.26
+//
+[ok]

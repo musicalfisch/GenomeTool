@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ctaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1503470_GCA_002213405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ctaA  [M=306]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-20   74.1  25.5    2.8e-16   59.6   7.7    3.0  2  OWY71281.1  hypothetical protein B7486_11860 [cyanobacterium 
+    1.2e-05   24.7   0.3    1.4e-05   24.5   0.3    1.0  1  OWY59411.1  hypothetical protein B7486_74705, partial [cyanob
+
+
+Domain annotation for each sequence (and alignments):
+>> OWY71281.1  hypothetical protein B7486_11860 [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.6   7.7   3.8e-20   2.8e-16      20     160 ..      28     169 ..      20     198 .. 0.87
+   2 !   16.1  10.6   6.4e-07    0.0048      28     167 ..     196     352 ..     172     363 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 59.6 bits;  conditional E-value: 3.8e-20
+        ctaA  20 wmrrlvwkiaiatfalmvvgaatrvmnaglacpdwplcygqwi...psqqmnlqvflewfhrldasligfstialvglswwyrrhlppwllpsaiaala 115
+                 w++r    +a++t++l+  g       +gl++pdwp  ygq +   p  +    +f e  hrl as +g+ ti l    w + r    wl      al 
+  OWY71281.1  28 WLHRYAILVAVCTWCLIFAGGMVTSTGSGLSVPDWPTTYGQNMftyPPSKWVGGIFYEHGHRLIASTVGMLTIGLC--IWLWLREPRRWLGKLGFVALV 124
+                 9****************************************76444566677799****************99764..2445567789*********** PP
+
+        ctaA 116 lillqgvlggltvtqllrfdivtahlatallffatliviaigltp 160
+                  ++ qgvlggltv  ll   i   h + a  f++  + ia+  +p
+  OWY71281.1 125 TVITQGVLGGLTVKYLLPTPISVGHACLAQAFLCLTVSIAVFTSP 169
+                 ************************999999999999999988776 PP
+
+  == domain 2  score: 16.1 bits;  conditional E-value: 6.4e-07
+        ctaA  28 iaiatfalmvvgaatrvmnaglacpdwplcygqwipsqqmnlqvflewfhrld...............asligfstial...vglswwyrrhlp.pwll 107
+                 + +  f  +++ga  r  ++gla+ d+p +ygqw+p+   +     + + r++               a  +g  t+al   +   +  rrh   p l 
+  OWY71281.1 196 LFLLIFGQLMLGAIMRHTESGLAVLDFPKAYGQWVPAMSDEAVGRYNDYRRFEliipavtaqqiawhmAHRVGAITVALaaaIACGCVIRRHSAlPALR 294
+                 4556788899**************************864332222222222211111111001111113344555555521156678889985325667 PP
+
+        ctaA 108 psaiaalalillqgvlggltvtqllrfdivtahlatallffatliviaigltpyrgtgtv 167
+                   ai  l l+++q  lg  tv         t h+a     +at     ++l  yr  g v
+  OWY71281.1 295 RPAILILLLVVVQFALGAWTVLSGKLAIAATLHVAVGAATLATAWF--MTLQAYRHVGLV 352
+                 7789999999999999999997765555567777777666666544..466777777766 PP
+
+>> OWY59411.1  hypothetical protein B7486_74705, partial [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.3   1.9e-09   1.4e-05      22     105 ..      12      97 ..       8     104 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 1.9e-09
+        ctaA  22 rrlvwkiaiatfalmvvgaatrvmnaglacpdwplcygqwipsqqmnlqvflewfhrldasligfsti.alvg.lsww.yrrhlppw 105
+                 rr+     +a   ++v gaa r+  +gl c dwp c  + + +  ++ + ++e++ r  + ++ ++ i a++g l     rr l  w
+  OWY59411.1  12 RRITLAALLALCGIVVTGAAVRLTGSGLGCSDWPTCEDDRLVA-PLEYHAMVEFVNRTITGFVSVAVIlAVLGsLVRVpRRRDLTWW 97 
+                 777777778888999*********************9998865.6889999999999988888877662444422222134555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (306 nodes)
+Target sequences:                        15006  (4208708 residues searched)
+Passed MSV filter:                       831  (0.0553778); expected 300.1 (0.02)
+Passed bias filter:                      347  (0.0231241); expected 300.1 (0.02)
+Passed Vit filter:                        25  (0.001666); expected 15.0 (0.001)
+Passed Fwd filter:                         2  (0.00013328); expected 0.2 (1e-05)
+Initial search space (Z):              15006  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.12u 0.00s 00:00:00.12 Elapsed: 00:00:00.13
+# Mc/sec: 9906.65
+//
+[ok]

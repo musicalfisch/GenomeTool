@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/551115_GCA_000196515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.4e-11   41.1  14.5      4e-11   40.8  14.5    1.1  1  ADI64291.1  BioY protein ['Nostoc azollae' 0708]
+     0.0022   15.5   1.6      0.034   11.7   0.0    2.4  2  ADI63705.1  ABC transporter related protein ['Nostoc azollae'
+
+
+Domain annotation for each sequence (and alignments):
+>> ADI64291.1  BioY protein ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.8  14.5   2.2e-14     4e-11      52     203 ..      38     191 ..       3     194 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 40.8 bits;  conditional E-value: 2.2e-14
+        bioY  52 tGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisllGlvv 150
+                  G     l v+ q+ga Ll+  l +    +L  +ayl  Gl  L+v+  g+G  ++    ++yL Gf++ aW  +  a k a   + +l    l Gl  
+  ADI64291.1  38 QGIKTFSLGVSYQIGAVLLVGCLGGKNAGGLSQIAYLVMGLTLLPVFAEGGGMGYVKLSQFGYLLGFIPGAWICGYFAFK-ARPRIETLAFSCLCGLFT 135
+                 344444688999******************************************************************98.678999************ PP
+
+        bioY 151 lqvclaenllltsllavltdGvlPllmt...dlLkplLaalLLptavatlalilad 203
+                 + +c+   l ++ l        lPl+ +   ++  +l  +l++ +av  +a +l++
+  ADI64291.1 136 VHICGIAYLMISYLFPWRVGENLPLIQAilkYSWLSLPGQLVVVCAVTIVAYVLRH 191
+                 *****99998877776666668***875222777777889**********999986 PP
+
+>> ADI63705.1  ABC transporter related protein ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.9   0.8     0.018        33      60     112 ..      24      78 ..      20     112 .. 0.81
+   2 !   11.7   0.0   1.9e-05     0.034     104     159 ..     167     222 ..     163     228 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 1.9 bits;  conditional E-value: 0.018
+        bioY  60 lvtlqvgalLl..tlllllylleiLlalaylslGlsqLsvltGgtGaalLldPla 112
+                 ++t ++   L+  ++ l l  l++ la+++ ++    ++ ltG     +L+   +
+  ADI63705.1  24 PITKGFLGILGyvFATLTLINLAGKLAVPFGQGNVVVIAQLTGMCALVFLVRGFF 78 
+                 6778887777633678889999********9999999999999887777766555 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 1.9e-05
+        bioY 104 aalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisllGlvvlqvclaenl 159
+                 a  ++ P ++ L+G++ e+     l  +  +sdl++      +G+ ++q + aen 
+  ADI63705.1 167 ATVIVAPIMGILIGWFGERLRKYSLKSQNRISDLSAILTEVFTGIRLIQAFAAENY 222
+                 567899******************************999999************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         3651  (943585 residues searched)
+Passed MSV filter:                       150  (0.0410846); expected 73.0 (0.02)
+Passed bias filter:                       74  (0.0202684); expected 73.0 (0.02)
+Passed Vit filter:                         5  (0.00136949); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000547795); expected 0.0 (1e-05)
+Initial search space (Z):               3651  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6573.64
+//
+[ok]

@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292563_GCA_000317655.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desB  [M=345]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   12.0  20.6     0.0061   13.0   3.6    2.8  2  AFZ46762.1  fatty acid desaturase [Cyanobacterium stanieri PC
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ46762.1  fatty acid desaturase [Cyanobacterium stanieri PCC 7202]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   3.6   2.2e-06    0.0061      69     138 ..      52     124 ..      23     155 .. 0.77
+   2 ?    1.7  11.0     0.006        17     202     309 ..     162     261 ..     133     266 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 2.2e-06
+        desB  69 wfmqgtmfwalfv...vghdcghgsfsryrwlnnlighlshtpilvpfhgwrishrthhantgnidtdeswyp 138
+                 w+   + + al +   v hd+ h s  r r +n ++gh s   +   f  +   h  hhan+ + + d  ++ 
+  AFZ46762.1  52 WVCFCANVLALHLsgtVIHDASHNSGHRNRIINAILGHGSALMLGFAFPVFTRVHLQHHANVNDPENDPDHFV 124
+                 444444445555411267*******************************************998888876665 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.006
+        desB 202 tfmlglligvgisqgfw.flfnyyimpyivfvvwldlv.tflhhteddipwyrgqdwyflkgalstidrdygifnpihhqigthvahhifitiphyhlq 298
+                  ++l  ++ +gi +gf  +++ny+ +p +v+ + l l   +l h     p+   + w   +           i+n +      h+ hh++ +ip y+ q
+  AFZ46762.1 162 RLFLFTIVFLGIHYGFIgYVMNYWFVPALVVGIALGLFfDYLPH----RPFKETNRWKNARVY------PGKILNILILGQNYHLIHHLWPSIPWYKYQ 250
+                 3445556789*****965899******99887777763134433....477777777543322......235788888888899*************** PP
+
+        desB 299 eateairpvlg 309
+                  a  a +p+l 
+  AFZ46762.1 251 SAYYAAKPILD 261
+                 ********985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (345 nodes)
+Target sequences:                         2837  (903685 residues searched)
+Passed MSV filter:                       127  (0.0447656); expected 56.7 (0.02)
+Passed bias filter:                       63  (0.0222066); expected 56.7 (0.02)
+Passed Vit filter:                         6  (0.00211491); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000352485); expected 0.0 (1e-05)
+Initial search space (Z):               2837  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 7794.28
+//
+[ok]

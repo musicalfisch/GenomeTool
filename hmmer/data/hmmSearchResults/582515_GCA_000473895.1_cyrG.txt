@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/582515_GCA_000473895.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   12.0   0.0        1.7    4.9   0.0    2.2  2  ERN42916.1  phosphonate metabolism protein PhnM [Rubidibacter
+      0.025   10.9   0.0      0.042   10.2   0.0    1.3  1  ERN41900.1  dihydroorotase, multifunctional complex type [Rub
+
+
+Domain annotation for each sequence (and alignments):
+>> ERN42916.1  phosphonate metabolism protein PhnM [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.9   0.0   0.00099       1.7      21      63 ..      22      62 ..       5      88 .. 0.83
+   2 ?    4.8   0.0     0.001       1.8     356     382 ..     331     357 ..     317     369 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 4.9 bits;  conditional E-value: 0.00099
+        cyrG 21 vqvvdgkiaaiapelevvgtaidgenklllpgfvnahthssem 63
+                + v dg+i++i+p   vv+   dg    llpg+v+ ht   e 
+  ERN42916.1 22 LVVCDGAISDIQPG--VVSRGQDGAGDYLLPGLVELHTDNFEQ 62
+                5689*******997..7899999***************98764 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.001
+        cyrG 356 slggakglnladklgsltvgkkadlvl 382
+                 +   ak + +a + gsl++gk+ad++ 
+  ERN42916.1 331 TSNPAKAIGMAADRGSLAIGKRADFIT 357
+                 5567999*****************975 PP
+
+>> ERN41900.1  dihydroorotase, multifunctional complex type [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   2.5e-05     0.042       8      62 ..      11      68 ..       6      79 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 2.5e-05
+        cyrG  8 vliaveddyatvdvqvvdgkiaaiapel...evvgtaidgenklllpgfvnahthsse 62
+                vl +v+    + dv + dg+iaaiape+      ++ idg+  +l pg+ + ++hs e
+  ERN41900.1 11 VLDPVSGTDRAADVCITDGTIAAIAPEIcdlPADAEIIDGTGLVLAPGLSDPYSHSGE 68
+                566777777899*************986211455788******************988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         3457  (1058921 residues searched)
+Passed MSV filter:                        59  (0.0170668); expected 69.1 (0.02)
+Passed bias filter:                       50  (0.0144634); expected 69.1 (0.02)
+Passed Vit filter:                         6  (0.00173561); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000578536); expected 0.0 (1e-05)
+Initial search space (Z):               3457  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 12309.96
+//
+[ok]

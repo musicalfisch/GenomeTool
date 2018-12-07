@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1922337_GCA_001939115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0047   15.1   0.4     0.0047   15.1   0.4    1.6  2  OLP16951.1  hypothetical protein BST81_18360 [Leptolyngbya sp
+
+
+Domain annotation for each sequence (and alignments):
+>> OLP16951.1  hypothetical protein BST81_18360 [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.4   9.2e-07    0.0047       4      67 ..       3      66 ..       1      72 [. 0.84
+   2 ?    0.8   0.3     0.022   1.1e+02      32      61 ..      66      95 ..      54     104 .. 0.42
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 9.2e-07
+        copC  4 lkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGq 67
+                +k+  l ++ +  + l+a+s+s+t++ ++a++++ ++  +a++++++   k+e++++ +++ G 
+  OLP16951.1  3 WKLLGLAIGLVLTTSLGACSTSTTESAPSAAPASSSPVGDAMKKESGDAMKKESGDAMKKESGD 66
+                6777888888889999*********************999999888888888888877777776 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.022
+        copC 32 eassktttaattavsstaaakakeeekeke 61
+                +a +k++t + +a++++++   k+e++++ 
+  OLP16951.1 66 DAMKKDDTKSGDAMKKESGDAMKKESGDAM 95
+                333333333333333333333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5141  (1682713 residues searched)
+Passed MSV filter:                       125  (0.0243143); expected 102.8 (0.02)
+Passed bias filter:                      102  (0.0198405); expected 102.8 (0.02)
+Passed Vit filter:                        17  (0.00330675); expected 5.1 (0.001)
+Passed Fwd filter:                         1  (0.000194515); expected 0.1 (1e-05)
+Initial search space (Z):               5141  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6941.19
+//
+[ok]

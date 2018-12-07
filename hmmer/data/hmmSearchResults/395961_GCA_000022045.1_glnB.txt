@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395961_GCA_000022045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.1e-70  231.0   6.4    5.7e-70  230.9   6.4    1.0  1  ACL45081.1  nitrogen regulatory protein P-II [Cyanothece sp. 
+  ------ inclusion threshold ------
+      0.034   12.6   0.0      0.063   11.7   0.0    1.3  1  ACL46119.1  putative glycosyl transferase [Cyanothece sp. PCC
+
+
+Domain annotation for each sequence (and alignments):
+>> ACL45081.1  nitrogen regulatory protein P-II [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  230.9   6.4   2.1e-73   5.7e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 230.9 bits;  conditional E-value: 2.1e-73
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnag+vgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vvdkii+aartgeigdgkifispveqv
+  ACL45081.1   1 MKKVEAIIRPFKLDEVKIALVNAGVVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDDQVDMVVDKIITAARTGEIGDGKIFISPVEQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgekdleav
+  ACL45081.1 100 VRIRTGEKDLEAV 112
+                 ***********97 PP
+
+>> ACL46119.1  putative glycosyl transferase [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   2.4e-05     0.063      41     104 ..      13      75 ..       7      79 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2.4e-05
+        glnB  41 gqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqvvrirt 104
+                 g + ryr  +y + +lq+   +i v     d  ++++ +  rtg +  g+ +++ ++ ++r r+
+  ACL46119.1  13 GASSRYRSYQY-LPYLQQQGFDITVAPLLNDNYIQQLHSGRRTGRVNLGQAYLNRIHFLLRARS 75 
+                 8899***9999.689*****************************************99999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5327  (1638061 residues searched)
+Passed MSV filter:                       133  (0.0249671); expected 106.5 (0.02)
+Passed bias filter:                      116  (0.0217759); expected 106.5 (0.02)
+Passed Vit filter:                         7  (0.00131406); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000375446); expected 0.1 (1e-05)
+Initial search space (Z):               5327  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6115.43
+//
+[ok]

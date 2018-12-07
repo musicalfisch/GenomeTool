@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1940762_GCA_002163975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0029   15.5   0.1     0.0054   14.7   0.1    1.3  1  ARV57626.1  exopolysaccharide biosynthesis protein [Nostocale
+  ------ inclusion threshold ------
+      0.029   12.3   0.0      0.053   11.4   0.0    1.4  1  ARV60030.1  transposase [Nostocales cyanobacterium HT-58-2]
+
+
+Domain annotation for each sequence (and alignments):
+>> ARV57626.1  exopolysaccharide biosynthesis protein [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.1   1.7e-06    0.0054      15      62 ..     503     550 ..     497     566 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.7e-06
+        cyrM  15 glsgagkstitealqakliaegysievldgdivrtnltkglgfskedr 62 
+                  + g gk+t+t  l   l+  g+ + v+dgd+ +++l++ +g++ e +
+  ARV57626.1 503 AVKGEGKTTVTLGLALALVDLGFRVLVVDGDLRQAELSRRFGYTTESK 550
+                 5789***************************************99865 PP
+
+>> ARV60030.1  transposase [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   1.7e-05     0.053       7      39 ..     222     254 ..     219     284 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.7e-05
+        cyrM   7 rgvtvwltglsgagkstitealqakliaegysi 39 
+                 +g t wltg+s  gks i +  + k + +gy  
+  ARV60030.1 222 HGGTNWLTGVSTRGKSLIIDGRKLKSMNQGYCH 254
+                 6889**************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6177  (2043057 residues searched)
+Passed MSV filter:                       271  (0.0438724); expected 123.5 (0.02)
+Passed bias filter:                      240  (0.0388538); expected 123.5 (0.02)
+Passed Vit filter:                        38  (0.00615185); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000323782); expected 0.1 (1e-05)
+Initial search space (Z):               6177  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 6265.37
+//
+[ok]

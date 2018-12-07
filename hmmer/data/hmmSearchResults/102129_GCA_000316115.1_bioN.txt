@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.9e-113  377.4  24.1   2.7e-113  376.9  24.1    1.1  1  EKV03092.1  ABC-type cobalt transport system, permease compon
+  ------ inclusion threshold ------
+      0.088   10.8   0.0       0.14   10.2   0.0    1.2  1  EKV02303.1  putative Zn-dependent peptidase [Leptolyngbya sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV03092.1  ABC-type cobalt transport system, permease component CbiQ [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  376.9  24.1  6.8e-117  2.7e-113       1     289 [.       1     300 [.       1     301 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 376.9 bits;  conditional E-value: 6.8e-117
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qp+t lh++darvk+ wl++fl +p+la + wr+alv +l+lltl a +p rvwrqqmg l++l  +  l+  + pdg++v  qp
+  EKV03092.1   1 MDLLRSLPIGLYLEQPVTWLHRVDARVKLAWLLSFLLTPVLASTAWRIALVVILMLLTLTARVPWRVWRQQMGGLLILFTLASLLIMVMPDGIAVINQP 99 
+                 9**************************************************************************99999999999************* PP
+
+        bioN 100 rlpe....eglnlp.......pasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltl 187
+                 r p       l+ p       p ++y+y++ d   + +t++sl+la+++ tl+ftliystnlfllttapeeit  +e+l+splr f++pvtei+ltltl
+  EKV03092.1 100 RWPTpdaiATLDTPfetigslPETNYRYIIADFHWVQITQKSLKLAIKVGTLLFTLIYSTNLFLLTTAPEEITAAIEELMSPLRWFKLPVTEIALTLTL 198
+                 *87532332333333333333899*************************************************************************** PP
+
+        bioN 188 slrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarl 286
+                 slrfiplvleevqnl r+vrtrai+w+klg +++ ++wl v e+lldnlllra+qia am+vrgftsp++hqv+wh+l+lrw d++ l+ l+ fw  r+
+  EKV03092.1 199 SLRFIPLVLEEVQNLVRSVRTRAINWRKLGWRHASQIWLMVAERLLDNLLLRAQQIAAAMKVRGFTSPDHHQVQWHQLQLRWWDWVFLISLVFFWWGRF 297
+                 ***********************************************************************************************9999 PP
+
+        bioN 287 vwg 289
+                  +g
+  EKV03092.1 298 ALG 300
+                 877 PP
+
+>> EKV02303.1  putative Zn-dependent peptidase [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   3.7e-05      0.14     122     185 ..     280     346 ..     277     359 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 3.7e-05
+        bioN 122 grlfvtrr.slelavristlvftliy.stnlfllttapeeiteglenllsplrrf.nvpvteisltl 185
+                  rlfv  r    la  +s++  t +  s  +  + tape+ +  l+ l s lrr+ +vp+te  l +
+  EKV02303.1 280 SRLFVELReKQGLAYDVSAFYPTRLGpSQFVAYIGTAPENTSVALDGLQSELRRLcKVPLTEHELQV 346
+                 58898755156799999999888665166677899*******************747*****98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       346  (0.0442003); expected 156.6 (0.02)
+Passed bias filter:                      163  (0.0208227); expected 156.6 (0.02)
+Passed Vit filter:                        10  (0.00127747); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000255493); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 10482.39
+//
+[ok]

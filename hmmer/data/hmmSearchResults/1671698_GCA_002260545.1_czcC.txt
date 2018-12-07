@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/czcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1671698_GCA_002260545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       czcC  [M=436]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.013   12.7   0.1       0.27    8.4   0.1    2.1  2  OZH55619.1  NAD(P)H dehydrogenase [Hydrocoleum sp. CS-953]
+
+
+Domain annotation for each sequence (and alignments):
+>> OZH55619.1  NAD(P)H dehydrogenase [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.1   5.5e-05      0.27     283     323 ..      86     128 ..      76     138 .. 0.82
+   2 ?    2.2   0.0    0.0041        20     300     323 ..     175     198 ..     152     207 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 5.5e-05
+        czcC 283 aypd.fsvnggvfprggqfs.tmwmlsttfnlpiyyfqkqkna 323
+                 ay + f+  gg +  gg +    +mlstt+n p+  f+++ n+
+  OZH55619.1  86 AYGEfFAFSGGEYASGGLMKgKKFMLSTTWNAPLEVFNNNPNS 128
+                 666625789********9862679************9988776 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.0041
+        czcC 300 fstmwmlsttfnlpiyyfqkqkna 323
+                 +   +mlstt+n p+  f+++ n+
+  OZH55619.1 175 YIRXFMLSTTWNAPLEVFNNNPNS 198
+                 56679***********99988776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (436 nodes)
+Target sequences:                         4935  (1360323 residues searched)
+Passed MSV filter:                       127  (0.0257345); expected 98.7 (0.02)
+Passed bias filter:                       69  (0.0139818); expected 98.7 (0.02)
+Passed Vit filter:                         4  (0.000810537); expected 4.9 (0.001)
+Passed Fwd filter:                         1  (0.000202634); expected 0.0 (1e-05)
+Initial search space (Z):               4935  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 14827.52
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccbP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccbP  [M=126]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-76  253.2   6.1    1.4e-76  253.1   6.1    1.0  1  ALF53970.1  calcium binding protein from Anabaena CcbP [Nosto
+  ------ inclusion threshold ------
+      0.043   12.3   0.0      0.051   12.1   0.0    1.1  1  ALF52070.1  hypothetical protein ACX27_03115 [Nostoc piscinal
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF53970.1  calcium binding protein from Anabaena CcbP [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  253.1   6.1   5.5e-80   1.4e-76       1     126 []       1     126 []       1     126 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 253.1 bits;  conditional E-value: 5.5e-80
+        ccbP   1 masverdetrehrieteiivdaedkedramgwyyylddtlnfpflakwkkksrktstieekevevlgmapddeclkdmyvevadingkdddvysaklse 99 
+                 m+sverdetre+ri+teii+daedkedramgwyyyl+++ln+pf+akw+kksrkts+ieek+vevlgmapddeclkdmyvevad+ngk+ddvysakls+
+  ALF53970.1   1 MSSVERDETRENRIATEIIADAEDKEDRAMGWYYYLEEALNCPFMAKWAKKSRKTSAIEEKTVEVLGMAPDDECLKDMYVEVADLNGKEDDVYSAKLSD 99 
+                 89************************************************************************************************* PP
+
+        ccbP 100 ieaidadeetqeaiadwlywlargykf 126
+                 i++idad++t++aiadw+ywlargykf
+  ALF53970.1 100 IKPIDADDNTEQAIADWHYWLARGYKF 126
+                 **************************9 PP
+
+>> ALF52070.1  hypothetical protein ACX27_03115 [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0     2e-05     0.051      86     115 ..      10      39 ..       4      46 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 2e-05
+        ccbP  86 ngkdddvysaklseieaidadeetqeaiad 115
+                   k+ddvy a+  e+ ++d  e  ++aia 
+  ALF52070.1  10 LYKEDDVYIAECPEVGTVDQGETIEQAIAG 39 
+                 569*************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (126 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       122  (0.0242931); expected 100.4 (0.02)
+Passed bias filter:                      103  (0.0205098); expected 100.4 (0.02)
+Passed Vit filter:                         7  (0.00139387); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398248); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6264.52
+//
+[ok]

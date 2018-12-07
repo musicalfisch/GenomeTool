@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/376219_GCA_000973065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-49  164.4   0.7    1.3e-49  164.3   0.7    1.0  1  CDM92962.1  Phycobilisome 7.8 kDa linker polypeptide, allophy
+    1.6e-05   23.1   0.0    2.5e-05   22.5   0.0    1.4  1  CDM93883.1  Phycobilisome 8.9 kDa linker polypeptide, phycocy
+     0.0059   14.8   0.0      0.019   13.2   0.0    1.8  1  CDM96977.1  Ferredoxin--NADP reductase (FNR) [Arthrospira sp.
+  ------ inclusion threshold ------
+      0.025   12.8   0.0      0.062   11.6   0.0    1.6  1  CDM93881.1  Phycobilisome 32 kDa linker polypeptide, phycocya
+
+
+Domain annotation for each sequence (and alignments):
+>> CDM92962.1  Phycobilisome 7.8 kDa linker polypeptide, allophycocyanin-associated, core (LC 7.8) [Arthrospira sp. PCC 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.3   0.7   8.7e-53   1.3e-49       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.3 bits;  conditional E-value: 8.7e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mr fk+tacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll
+  CDM92962.1  1 MRSFKVTACVPSQTRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIVKVELATGKPGTNTGLL 67
+                9****************************************************************96 PP
+
+>> CDM93883.1  Phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod (Rod-capping linker protein) [Arthr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.5   0.0   1.7e-08   2.5e-05      30      58 ..      49      77 ..      38      84 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 22.5 bits;  conditional E-value: 1.7e-08
+        apcC 30 lvpydnWfreqqrimkmGGkivkvelatG 58
+                +vpy+   +e +ri +mGGkiv +e  t 
+  CDM93883.1 49 IVPYNRMNQEMRRINRMGGKIVSIEPMTT 77
+                79**********************97775 PP
+
+>> CDM96977.1  Ferredoxin--NADP reductase (FNR) [Arthrospira sp. PCC 8005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   1.3e-05     0.019      31      54 ..      50      73 ..      42      84 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 1.3e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy+   +e +r+ kmG kiv++ 
+  CDM96977.1 50 VPYERMNQEMRRLSKMGAKIVNIY 73
+                9********************986 PP
+
+>> CDM93881.1  Phycobilisome 32 kDa linker polypeptide, phycocyanin-associated, rod 1 [Arthrospira sp. PCC 8005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   4.2e-05     0.062      31      54 ..     246     269 ..     235     271 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 4.2e-05
+        apcC  31 vpydnWfreqqrimkmGGkivkve 54 
+                 v+y++   + qri +mGG+++ v 
+  CDM93881.1 246 VAYEQLSGQLQRINRMGGRVISVT 269
+                 8899999999***********995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         5900  (1669094 residues searched)
+Passed MSV filter:                       132  (0.0223729); expected 118.0 (0.02)
+Passed bias filter:                      119  (0.0201695); expected 118.0 (0.02)
+Passed Vit filter:                         8  (0.00135593); expected 5.9 (0.001)
+Passed Fwd filter:                         4  (0.000677966); expected 0.1 (1e-05)
+Initial search space (Z):               5900  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 3727.64
+//
+[ok]

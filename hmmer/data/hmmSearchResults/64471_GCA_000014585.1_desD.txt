@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00024   17.8   1.1      0.016   11.8   0.0    2.2  2  ABI46685.1  beta-carotene hydroxylase [Synechococcus sp. CC93
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI46685.1  beta-carotene hydroxylase [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.0   0.2   0.00064       1.8      79     129 ..      73     122 ..      36     182 .. 0.81
+   2 !   11.8   0.0   5.6e-06     0.016     289     314 ..     233     258 ..     226     291 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.00064
+        desD  79 gfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytn 129
+                   ++ hda h       wvn  +g     ++g s  ++  r    hh++ n
+  ABI46685.1  73 EGTVVHDACHKAAHPVPWVNQTMGHGSALLLGFSFPVFT-RVHLQHHSHVN 122
+                 44689***************************9987775.44566777776 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 5.6e-06
+        desD 289 lnwylgglnyqvvhhlfpqichihyp 314
+                 +nw + g ny++vhhl+p i    y 
+  ABI46685.1 233 MNWLIMGQNYHLVHHLWPSIPWFEYK 258
+                 8*******************988874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        87  (0.030083); expected 57.8 (0.02)
+Passed bias filter:                       66  (0.0228216); expected 57.8 (0.02)
+Passed Vit filter:                         5  (0.00172891); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000345781); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9153.77
+//
+[ok]

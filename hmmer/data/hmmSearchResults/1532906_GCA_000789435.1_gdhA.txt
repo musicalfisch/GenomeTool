@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1532906_GCA_000789435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-07   29.2   2.8    5.6e-07   26.7   0.6    2.5  3  KHG41467.1  malate dehydrogenase [Aphanizomenon flos-aquae 20
+    4.4e-05   20.5   1.0    5.9e-05   20.1   0.4    1.6  2  KHG39246.1  saccharopine dehydrogenase-like oxidoreductase [A
+
+
+Domain annotation for each sequence (and alignments):
+>> KHG41467.1  malate dehydrogenase [Aphanizomenon flos-aquae 2012/KM1/D3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.0     0.014        31     402     424 ..     106     128 ..      94     131 .. 0.79
+   2 ?   -2.8   0.1      0.23   5.2e+02     227     244 ..     151     168 ..     138     174 .. 0.75
+   3 !   26.7   0.6   2.5e-10   5.6e-07     209     285 ..     249     325 ..     237     343 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.014
+        gdhA 402 rqiplrlaaytlgvgrvaqalsd 424
+                 + ++    ayt gvgr+++a+++
+  KHG41467.1 106 KSVSDLAMAYTPGVGRICKAIAE 128
+                 556666789**********9875 PP
+
+  == domain 2  score: -2.8 bits;  conditional E-value: 0.23
+        gdhA 227 viqgfgnvggaaaellhk 244
+                 ++ g+gn+g aaa+ + +
+  KHG41467.1 151 AVLGLGNLGPAAALPVME 168
+                 6889*******9986655 PP
+
+  == domain 3  score: 26.7 bits;  conditional E-value: 2.5e-10
+        gdhA 209 ivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldipalk.ayaaenrksvvgfp 285
+                  + +al+   ksla++r+vi+g g  g a a ll kaga+ i +  +  g+ s++  d++a k ++a + + +++g  
+  KHG41467.1 249 ALFNALKLVQKSLADIRIVINGAGAAGVAIARLLRKAGAETILMCDS-KGIISHNRTDLTAEKlEFAVKAQGTLAGAV 325
+                 4557888899*******************************998765.578888889998877356776666666655 PP
+
+>> KHG39246.1  saccharopine dehydrogenase-like oxidoreductase [Aphanizomenon flos-aquae 2012/KM1/D3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.1   0.4   2.7e-08   5.9e-05     223     301 ..       9      90 ..       3     148 .. 0.79
+   2 ?   -1.9   0.0      0.13   2.8e+02     237     283 ..     155     202 ..     108     242 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 20.1 bits;  conditional E-value: 2.7e-08
+        gdhA 223 gvrvviqgfgnvggaaaellhkag.akiiavstgaggvfseegldipa.lkayaaenr.ksvvgfpqavpisnaelltlpcd 301
+                  +rv + gfg +g aaa+ll  +    ++av+  +g  +s egl+ ++ + +y+++ +  ++ +f    + s ++l+ ++ d
+  KHG39246.1   9 PIRVGVLGFGGLGQAAAKLLSSKReMILVAVADQNGYAYSTEGLNTQScITTYQNQGTiGHLEAFGTLSNNSIQDLIQVTGD 90 
+                 58999***************8765155689**************98752566765543134555555555555666666555 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.13
+        gdhA 237 aaaellhkagakiiavstga.ggvfseegldipalkayaaenrksvvg 283
+                  a+  l  a a + a s +    v    g+ i++  ay a  r+++  
+  KHG39246.1 155 GATPGLLTAAAALAAQSYAEiHNVVITFGVGIANWEAYRATVREDIGH 202
+                 333334444444444444331456666677777777776666665543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         4415  (1120518 residues searched)
+Passed MSV filter:                       142  (0.0321631); expected 88.3 (0.02)
+Passed bias filter:                      115  (0.0260476); expected 88.3 (0.02)
+Passed Vit filter:                        10  (0.00226501); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000453001); expected 0.0 (1e-05)
+Initial search space (Z):               4415  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9614.04
+//
+[ok]

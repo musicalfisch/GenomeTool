@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1148_GCA_000009725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.1e-57  189.4  12.0    5.6e-57  189.3  12.0    1.0  1  BAA16738.1  ATP synthase subunit b' [Synechocystis sp. PCC 68
+     0.0076   13.8   0.2      0.018   12.6   0.2    1.6  1  BAA10456.1  slr0904 [Synechocystis sp. PCC 6803]
+  ------ inclusion threshold ------
+        2.1    5.9  13.4        3.5    5.2   7.2    2.3  2  BAA16769.1  prohibitin [Synechocystis sp. PCC 6803]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAA16738.1  ATP synthase subunit b' [Synechocystis sp. PCC 6803]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.3  12.0   4.7e-60   5.6e-57       1     143 []       1     143 []       1     143 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 189.3 bits;  conditional E-value: 4.7e-60
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf++la +lna+fykp+ kvldera+yir  e  a+e+lak++a+ qeye q++ ar+qsq +ia+aqaea++la+e++a aq+e+
+  BAA16738.1   1 MFDFDATLPLMALQFVVLAFLLNAIFYKPMNKVLDERADYIRTNEEDARERLAKAKAITQEYEQQITDARRQSQAVIADAQAEARRLAAEKIAEAQRES 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                   +ke+ a ei  q++ a+ sle +va+ls qil kllgpel++
+  BAA16738.1 100 QRQKETAAQEIEAQRQSALSSLEQEVAALSNQILHKLLGPELIK 143
+                 ******************************************85 PP
+
+>> BAA10456.1  slr0904 [Synechocystis sp. PCC 6803]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.2   1.5e-05     0.018      58     106 ..     382     432 ..     376     466 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.5e-05
+        atpG  58 lvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiar..keav 106
+                 l++  +lq++  r + +e+ +q q e+     +rva a+  aiar  k+a 
+  BAA10456.1 382 LMDRIDLQVAVNRLKPEEMTSQGQGESSEPVRQRVAKARAMAIARfsKDAK 432
+                 677889**************************************9443433 PP
+
+>> BAA16769.1  prohibitin [Synechocystis sp. PCC 6803]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   0.4    0.0053       6.3      58     120 ..      72     133 ..      66     153 .. 0.70
+   2 ?    5.2   7.2     0.003       3.5      50     108 ..     190     248 ..     169     251 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.0053
+        atpG  58 lvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrs 120
+                  vq++e+   s+ k+ q++ a   a   +l    v + ++   + ++ va  ia q +e+f+ 
+  BAA16769.1  72 TVQKFEVPAQSSTKDLQDLSASF-AINFRLDPTEVVTIRRTQGTLQNIVAKIIAPQTQESFKI 133
+                 57777877778888877776654.455566666666677777777777888888888777763 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.003
+        atpG  50 eqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaa 108
+                 +q+a   a    y  q +  + q++   a+ +aeaq+l +e + a   e + +kea+ a
+  BAA16769.1 190 KQIAEQRAQRAVYVAQEAEQQAQADINRAKGKAEAQRLLAETLKAQGGELVLQKEAIEA 248
+                 56666666666677766665556655667889************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         3564  (1136958 residues searched)
+Passed MSV filter:                       116  (0.0325477); expected 71.3 (0.02)
+Passed bias filter:                       61  (0.0171156); expected 71.3 (0.02)
+Passed Vit filter:                         8  (0.00224467); expected 3.6 (0.001)
+Passed Fwd filter:                         3  (0.000841751); expected 0.0 (1e-05)
+Initial search space (Z):               3564  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.03
+# Mc/sec: 5419.50
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.9e-65  217.2   3.5    4.5e-65  217.0   3.5    1.0  1  AFY36266.1  hypothetical protein Cal7507_5956 [Calothrix sp. 
+  ------ inclusion threshold ------
+      0.011   14.1   1.1      0.018   13.4   1.1    1.3  1  AFY35338.1  peptidyl-prolyl cis-trans isomerase cyclophilin t
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY36266.1  hypothetical protein Cal7507_5956 [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  217.0   3.5   1.5e-68   4.5e-65       1     165 []       1     159 []       1     159 [] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 217.0 bits;  conditional E-value: 1.5e-68
+        copC   1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylqkGdnh 99 
+                 m+slks+l+v++s+gll+l+a+snsn+a+n+e+s++  t+  + ++   a+k   ++++++es+GGqv e+ +yhle+vpekea +th+d+y+ kGdnh
+  AFY36266.1   1 MNSLKSGLIVIGSVGLLFLGACSNSNKAANTENSPAASTSIAQTSP---ATK---KDSHHGESHGGQVAETVSYHLEFVPEKEASATHMDLYVLKGDNH 93 
+                 99*******************************9987665443333...322...334467899*********************************** PP
+
+        copC 100 eavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 ++vs+akvtaq+qlPdG+qk++ ++yda+dkhy+a l++ka+G+y+v+++ di+GekvnGrf+f++
+  AFY36266.1  94 QTVSDAKVTAQIQLPDGKQKTVAFTYDANDKHYTAKLTEKAIGQYQVKVTVDIKGEKVNGRFNFNR 159
+                 ****************************************************************97 PP
+
+>> AFY35338.1  peptidyl-prolyl cis-trans isomerase cyclophilin type [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.4   1.1     6e-06     0.018       7      57 ..       8      60 ..       1      68 [. 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 6e-06
+        copC  7 sllvvlsigllllaassnsntatndeassktt..taattavsstaaakakeee 57
+                 l+ +l +g+l+l+ +s+ + a++ ++ ++t   ta++t++++t++a++ +e+
+  AFY35338.1  8 FLVALLIVGGLMLGGCSTPQDASKASSPTSTAtsTATETSSKTTTEATSVSET 60
+                34456667778887777655555444333333003333333333333333332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       192  (0.0322689); expected 119.0 (0.02)
+Passed bias filter:                      153  (0.0257143); expected 119.0 (0.02)
+Passed Vit filter:                        12  (0.00201681); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7646.65
+//
+[ok]

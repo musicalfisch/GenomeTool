@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.9e-131  435.1  18.7   3.2e-131  435.0  18.7    1.0  1  AFZ14580.1  ABC-type transporter, integral membrane subunit [
+     0.0012   16.3   0.4     0.0072   13.7   0.1    2.0  2  AFZ11028.1  methyl-accepting chemotaxis sensory transducer [C
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ14580.1  ABC-type transporter, integral membrane subunit [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  435.0  18.7  1.4e-134  3.2e-131       1     289 [.       1     293 [.       1     295 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 435.0 bits;  conditional E-value: 1.4e-134
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslp+glyl++pit lh+ld rvk+ wlm+fl ap+lanp++r+alv ll+l+tl a ip rvw+qqmgwl++la +v+++tai+pdgl+v  qp
+  AFZ14580.1   1 MDLLRSLPLGLYLEKPITWLHHLDPRVKLAWLMSFLFAPILANPYFRVALVVLLILMTLTAAIPWRVWKQQMGWLLMLAALVLVLTAIAPDGLNVGSQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlppasdyqyvlwd....rgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfipl 194
+                 rlp   l+lp  + yqy+l        +l++tr+sl+la+ +stl+ftliystnlfllttapeeit+g+e ++ plrrfnvpvtei ltltlslrfipl
+  AFZ14580.1 100 RLPATNLELPQPTSYQYILLKlelgSMKLLITRKSLDLAINVSTLLFTLIYSTNLFLLTTAPEEITDGIESFMRPLRRFNVPVTEIILTLTLSLRFIPL 198
+                 ******************97522224589********************************************************************** PP
+
+        bioN 195 vleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 vleevqnl+r++ traidw+klgi+rs +vwl v e+ll+nlllraeqia am+vrgft+pn h+v+whel+lr  df+al +l+ +w ar+ +g
+  AFZ14580.1 199 VLEEVQNLSRSIWTRAIDWKKLGIRRSSQVWLMVAERLLENLLLRAEQIASAMNVRGFTTPNTHRVQWHELRLRAGDFVALGVLVLLWGARVFFG 293
+                 *******************************************************************************************9998 PP
+
+>> AFZ11028.1  methyl-accepting chemotaxis sensory transducer [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0     0.034        81     136     163 ..     363     390 ..     351     406 .. 0.87
+   2 !   13.7   0.1     3e-06    0.0072     129     221 ..     409     501 ..     395     511 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 0.034
+        bioN 136 ristlvftliystnlfllttapeeiteg 163
+                  istlv  l   tn++ l +a e +  g
+  AFZ11028.1 363 SISTLVSELANQTNMLALNAAVEAVRAG 390
+                 69*******************9988766 PP
+
+  == domain 2  score: 13.7 bits;  conditional E-value: 3e-06
+        bioN 129 rslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlaravrtra..idwqklgikrs 221
+                 +s + a ri  lv+ +  +tn  ++    +e  + +en++  +  + v   +islt       i  v+e ++nl++     a  i   k+g++r 
+  AFZ11028.1 409 QSKKSAERINGLVMDIQNATNSTVMV--ADEGRKTVENVVDSINTIAVNTQQISLTSKQQAVAIQQVVEAMNNLTQGASQTAsgISQTKVGVQRL 501
+                 5677899**************98775..4677899***************************************986544332388999999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                       204  (0.0429293); expected 95.0 (0.02)
+Passed bias filter:                      109  (0.0229377); expected 95.0 (0.02)
+Passed Vit filter:                        11  (0.00231481); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420875); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 8818.87
+//
+[ok]

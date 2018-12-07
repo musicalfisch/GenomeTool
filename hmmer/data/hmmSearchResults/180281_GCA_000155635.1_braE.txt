@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braE  [M=371]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-14   49.8  13.4    5.2e-10   36.6   5.5    2.2  2  EDY38020.1  urea ABC transporter, permease protein UrtC [Cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY38020.1  urea ABC transporter, permease protein UrtC [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.8   0.9   9.9e-08   0.00027      16      49 ..      39      72 ..      33      81 .. 0.87
+   2 !   36.6   5.5   1.9e-13   5.2e-10     208     345 ..     188     322 ..     173     338 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 17.8 bits;  conditional E-value: 9.9e-08
+        braE 16 aifalglnlqwgftglinfghvafatlgayatvl 49
+                 i+alg++l wgftg++ +g+  f +lg ya  +
+  EDY38020.1 39 GIVALGIDLIWGFTGMLSLGQGIFFALGGYAIGM 72
+                589***************************9743 PP
+
+  == domain 2  score: 36.6 bits;  conditional E-value: 1.9e-13
+        braE 208 mvvvlvllalvytglelllrspwgrilkairedeeipralgknvfwyklqslmlggaiaglagaflawqlttiyptnfeplltfnawiiiilggsgsna 306
+                 + v l+l+   +     l r  +g  l air+de   r  g n   yk   + + ga+ag++ga+ + q   i p  +   ++++  i + +gg g+  
+  EDY38020.1 188 FWVTLLLVVASWLLCRWLTRGRFGDALIAIRDDEPRLRFTGYNPTAYKTVVFAIAGALAGVSGALYTVQSGIISPQFMAVPFSIEMVIWVAVGGRGTLI 286
+                 5566666666777778999*********************************************************99999999*************** PP
+
+        braE 307 gtllgavifwaydsltrfilpqldifndsqlgalrimii 345
+                 g++lgav++    sl    lp+  +f +     l ++++
+  EDY38020.1 287 GAVLGAVLINYAKSLVSEQLPETWLFIQGG---LFLLVV 322
+                 ********99999***99999998887543...334444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (371 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                       146  (0.0526886); expected 55.4 (0.02)
+Passed bias filter:                       41  (0.0147961); expected 55.4 (0.02)
+Passed Vit filter:                         6  (0.00216528); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000360881); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 6101.53
+//
+[ok]

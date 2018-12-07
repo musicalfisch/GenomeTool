@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1903187_GCA_002095975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0017   15.4   0.0     0.0043   14.1   0.0    1.6  2  ARI82931.1  hypothetical protein BH695_3652 [Microcystis aeru
+
+
+Domain annotation for each sequence (and alignments):
+>> ARI82931.1  hypothetical protein BH695_3652 [Microcystis aeruginosa PCC 7806SL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.0     8e-07    0.0043      12      66 ..      29      87 ..      19      91 .. 0.82
+   2 ?   -2.6   0.0     0.095   5.1e+02     300     315 ..     312     327 ..     271     371 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 8e-07
+        cyrG 12 veddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss..emwqr 66
+                ++++ + v++++ dg+i+ i++ +  e    +id ++kl++p f++ hth      wqr
+  ARI82931.1 29 TSEGLTLVNLEINDGNINRITSTIppEDNIPVIDLKKKLVFPCFIDMHTHLDkgHSWQR 87
+                6788999**************99944344568******************641268998 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.095
+        cyrG 300 lkyrqagvnvtfgcdg 315
+                    ++ag+ v+f  d 
+  ARI82931.1 312 KEMKKAGIPVAFASDN 327
+                 4445555555554443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5364  (1399560 residues searched)
+Passed MSV filter:                       125  (0.0233035); expected 107.3 (0.02)
+Passed bias filter:                      113  (0.0210664); expected 107.3 (0.02)
+Passed Vit filter:                        17  (0.00316928); expected 5.4 (0.001)
+Passed Fwd filter:                         1  (0.000186428); expected 0.1 (1e-05)
+Initial search space (Z):               5364  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 13015.91
+//
+[ok]

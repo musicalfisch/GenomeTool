@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671072_GCA_900009145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      4e-50  167.8  14.9    4.7e-50  167.6  14.9    1.0  1  CUR35896.1  ATP synthase subunit b' [Planktothrix tepida PCC 
+      2e-05   22.9  10.9    2.7e-05   22.5  10.9    1.2  1  CUR35895.1  ATP synthase subunit b [Planktothrix tepida PCC 9
+  ------ inclusion threshold ------
+      0.012   13.9   0.1      0.014   13.6   0.1    1.1  1  CUR32129.1  hypothetical protein PL9214430101 [Planktothrix t
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR35896.1  ATP synthase subunit b' [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  167.6  14.9   2.3e-53   4.7e-50       1     143 []      18     160 .]      18     160 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 167.6 bits;  conditional E-value: 2.3e-53
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp+ma+qf++laviln vfykpl k +dera+yir+ e  ake+lak+e l ++yel+l+ +rk++q  i +aqaeaqk+a+ +va a +ea
+  CUR35896.1  18 LFDLDATLPLMAVQFVILAVILNQVFYKPLGKAIDERADYIREREVNAKERLAKAEKLAKQYELELAETRKKAQATIVNAQAEAQKIATGKVAEALQEA 116
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                    ++  a ei q+k++a+++le qv  lsrqilekllg+e+vr
+  CUR35896.1 117 QKLRDKAAQEIEQEKQQALQALEQQVEPLSRQILEKLLGAEFVR 160
+                 ******************************************98 PP
+
+>> CUR35895.1  ATP synthase subunit b [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.5  10.9   1.4e-08   2.7e-05      14     128 ..      27     144 ..      17     161 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 22.5 bits;  conditional E-value: 1.4e-08
+        atpG  14 qfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaae 109
+                 ++i la+++  + y     l k+l+er   i ++   a ++  ++ea + e + +l++a+ ++q i+a+a+  a+ +    +a a  e    k   +ae
+  CUR35895.1  27 NLINLAILIGVLVYfgrGFLGKILNERRSTIEEAIQEAEQRQKQAEASLAEQQQKLTAAQTDAQRILAEAEERAKTVRESILAKAAEEVERMKANASAE 125
+                 678888888877662323599*****************99999***************************9888777766666666666666777789* PP
+
+        atpG 110 iaqqkeeafrslegqvasl 128
+                 +  ++e ++  l   +a+ 
+  CUR35895.1 126 LDSDRERVISQLRSLIATQ 144
+                 ******9998888777764 PP
+
+>> CUR32129.1  hypothetical protein PL9214430101 [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.1   7.2e-06     0.014      46      88 ..      31      72 ..      22      82 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 7.2e-06
+        atpG 46 ggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqkla 88
+                 g+k +l k    v +  l+ ss+  +++eii+q qa+ q+l 
+  CUR32129.1 31 EGTK-KLIKDALTVTDLFLDNSSSEEKTNEIISQFQANNQRLQ 72
+                3444.5788888899999**********************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5948  (1891724 residues searched)
+Passed MSV filter:                       231  (0.0388366); expected 119.0 (0.02)
+Passed bias filter:                      124  (0.0208473); expected 119.0 (0.02)
+Passed Vit filter:                        13  (0.00218561); expected 5.9 (0.001)
+Passed Fwd filter:                         3  (0.000504371); expected 0.1 (1e-05)
+Initial search space (Z):               5948  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6762.91
+//
+[ok]

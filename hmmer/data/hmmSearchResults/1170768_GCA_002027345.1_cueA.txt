@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170768_GCA_002027345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.2e-12   41.9   0.2    8.2e-12   41.9   0.2    2.9  3  OPH10728.1  copper oxidase [Cylindrospermopsis raciborskii CE
+
+
+Domain annotation for each sequence (and alignments):
+>> OPH10728.1  copper oxidase [Cylindrospermopsis raciborskii CENA302]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   2.4     0.032        96     309     324 ..      20      35 ..      10      62 .. 0.83
+   2 !   41.9   0.2   2.7e-15   8.2e-12      67     170 ..     100     195 ..      50     211 .. 0.84
+   3 !    1.6   0.1    0.0044        13     425     491 ..     260     324 ..     246     328 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.032
+        cueA 309 amgmmgggmmggmgmm 324
+                  mg+ ggg+mgg  ++
+  OPH10728.1  20 QMGLAGGGLMGGSVIL 35 
+                 69*********97665 PP
+
+  == domain 2  score: 41.9 bits;  conditional E-value: 2.7e-15
+        cueA  67 qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlhelvaeqvfgglgg 165
+                   n+   ng+ipgp l ak g+ +++ f n+  ++  lh+hg+h  q       +l +  g++  yef      p g   yh h+ e v+ ++  gl g
+  OPH10728.1 100 SYNIWDLNGRIPGPTLRAKAGERIRVLFLNQAGHSHSLHFHGIHPAQMDG----VLPISNGKATIYEFD---AEPYGVHLYHCHV-EPVTRHIAKGLYG 190
+                 4588899*************************************988643....58999*********6...68**********8.67899999***** PP
+
+        cueA 166 ifvvr 170
+                 +++v 
+  OPH10728.1 191 MLIVD 195
+                 99984 PP
+
+  == domain 3  score: 1.6 bits;  conditional E-value: 0.0044
+        cueA 425 hsfhlhtnpfqvisrngkpdp.yqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgi 491
+                  +fhlh+n f+v        p y+   d + +   e   +   fr + gk ++h h     + g mg 
+  OPH10728.1 260 VTFHLHANFFDVYPLGMTMTPtYK--TDVVTMGVAERHILEFRFR-YPGKYMFHPHQDMIAENGCMGQ 324
+                 479*******99987666666244..4666666666666666676.7899999999877777777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         3033  (982850 residues searched)
+Passed MSV filter:                        69  (0.0227498); expected 60.7 (0.02)
+Passed bias filter:                       61  (0.0201121); expected 60.7 (0.02)
+Passed Vit filter:                         7  (0.00230795); expected 3.0 (0.001)
+Passed Fwd filter:                         1  (0.000329707); expected 0.0 (1e-05)
+Initial search space (Z):               3033  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9749.87
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/artQ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1617448_GCA_001548115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       artQ  [M=331]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-25   88.1   7.6    2.2e-25   87.6   7.6    1.3  1  BAQ66266.1  Gln/Arg/Lys/His-binding protein and permease prot
+  ------ inclusion threshold ------
+      0.034   11.3   0.1       0.04   11.1   0.1    1.1  1  BAQ65204.1  nitrate ABC transporter [Geminocystis sp. NIES-37
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ66266.1  Gln/Arg/Lys/His-binding protein and permease protein [Geminocystis sp. NIES-3709]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.6   7.6   1.1e-28   2.2e-25     130     330 ..     305     505 ..     210     506 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 87.6 bits;  conditional E-value: 1.1e-28
+        artQ 130 gliltllvaiasmilsfplgvllalgrqselpairwlsigyiellrglpllgilfmaqvmlplilpa.gt..rperviraiagftlfaaaylaenvrgg 225
+                 g ++t+ ++  s+ + +  g ++a+g  s+   ++ +   y+e++rg p+l  lf+    lp  +   g     +r+  a+  ++l  aaylae +rgg
+  BAQ66266.1 305 GAVVTITLTALSIFFGLMGGSFIAFGLISDHKILKNILRIYVEFFRGTPMLVQLFIIYFGLPAFFQGiGLqwSLQRLPAAVIALSLNVAAYLAEIIRGG 403
+                 5566666666677777777999**************9999**********************98764144114689999******************** PP
+
+        artQ 226 lqaipkgqieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivglvdllgmagsvlanpkfigdypevylflafiywifcysmsla 324
+                 +q+i kgq ea++alg++ +  l  +++pqa++ ++p +  +fi+l+kdtsl+a++g+ +l+   g ++    f     +vy+ +a++y ++    s+ 
+  BAQ66266.1 404 IQSIDKGQWEACEALGMNRLQTLKEVIMPQAFRRILPPLGNEFITLIKDTSLVAVIGFAELFRQ-GQLIVATTFQ--AFQVYIAVALVYLVLTTLSSFG 499
+                 ************************************************************9975.6666666674..468***********99999998 PP
+
+        artQ 325 srrleq 330
+                  + leq
+  BAQ66266.1 500 FKWLEQ 505
+                 888888 PP
+
+>> BAQ65204.1  nitrate ABC transporter [Geminocystis sp. NIES-3709]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.1     2e-05      0.04     158     248 ..      75     164 ..      64     197 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2e-05
+        artQ 158 selpairwlsigyi.ellrglpllgilfmaqvmlplilpagtrperviraiagftlfaaaylaenvrgglqaipkgqieaakalglkpifvl 248
+                  +l  +r l ig+i + ++ lp l    + +vmlp+i    +  e+  ra++ +t +   +  +n    l    + ++  a+a+  +p+++l
+  BAQ65204.1  75 KQLAKVRNLQIGFIfQQFHLLPQLTA--LENVMLPMIYAGLSPLEQKKRAVSALTKVGLKHRLNNKPNQLSGGQQQRVAIARAIVNNPLILL 164
+                 578999*******9334555666654..689******98777789************99999999999999999999999999999998655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (331 nodes)
+Target sequences:                         3937  (1232454 residues searched)
+Passed MSV filter:                       208  (0.0528321); expected 78.7 (0.02)
+Passed bias filter:                       71  (0.018034); expected 78.7 (0.02)
+Passed Vit filter:                         6  (0.001524); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000508001); expected 0.0 (1e-05)
+Initial search space (Z):               3937  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10198.56
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160279_GCA_000297435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaB  [M=394]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.8e-09   32.8   0.0    1.1e-08   32.3   0.0    1.2  1  CCI34118.1  Acyl-CoA dehydrogenase domain protein [Microcysti
+  ------ inclusion threshold ------
+      0.019   11.8   0.1      0.028   11.2   0.1    1.2  1  CCI33158.1  Acyl-CoA dehydrogenase [Microcystis sp. T1-4]
+
+
+Domain annotation for each sequence (and alignments):
+>> CCI34118.1  Acyl-CoA dehydrogenase domain protein [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.3   0.0   5.1e-12   1.1e-08      17     220 ..      10     212 ..       6     242 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 32.3 bits;  conditional E-value: 5.1e-12
+        anaB  17 rafvdeeivpyaneydrkeltppelikklaqkgflgailpkeyggkamdlitygllneeigrgcsslrslltvhnmvahallkwgnksqkeywlpklas 115
+                 r + ++ i p+a+++dr+ ++ +  ++ + ++  l+  +pke+gg + +  ty  ++    r   +l  l t h+  a+ l+  +n+  k+++lpk+a 
+  CCI34118.1  10 RDYFQNRIAPQAAQIDRDPIALQLALQGMGDHCLLALRVPKEWGGAGWEEGTYRQFQILGARYSGALTFLQTQHQSAANQLATSSNQDLKKFYLPKMAW 108
+                 6788999****************9******************************999888899999********************************* PP
+
+        anaB 116 geiiaafalsepnvgsdaksvettatlsgdayvlngqkkwit.ygqiadvflvfakcegkpsa.flveknspglsikpisgilgvrasmlaelqfedck 212
+                 ge +    +s+     +   +   a   +  y l+gq  w+t +g   d  +  +  +g++   +l  +  pgl+  p + +l +  + +  l ++d  
+  CCI34118.1 109 GEKLVGVGFSQLRRPGEP--M-MKAFPMTGGYQLRGQVPWVTgWGFFEDFIIGATLPDGRSLYgLLPLQALPGLQCSPPMKLLSMSGTNTVSLTIQDYF 204
+                 *****9999987665543..2.3455556789*********9567777766666667888765155567789999999999999999999999999988 PP
+
+        anaB 213 ipqenlvg 220
+                 + ++ +v+
+  CCI34118.1 205 LSRDFIVS 212
+                 88877776 PP
+
+>> CCI33158.1  Acyl-CoA dehydrogenase [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.1   1.3e-05     0.028      42     220 ..      33     215 ..       8     222 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.3e-05
+        anaB  42 ikklaqkgflgailpkeyggkamdlitygllneeigrgcsslrslltvhnmvahallkwgnksqkeywlpklasgeiiaafalsepn.vgsdaksvett 139
+                 + kl + g++g  +p++ gg++  l+        + + c +   ++    +  + l+  +n + +++ lp +  gei +a  ls+          +   
+  CCI33158.1  33 LTKLGESGWFGYAIPESLGGRGGSLLQAVEAISAVSQCCLTTGFVFWCQRVFIQYLAASNNTYLQNKILPAVLKGEIAGATGLSNAMkYLGGIEELRLQ 131
+                 5789999***************9999988888999999999999999999999*******************************975144567889999 PP
+
+        anaB 140 atlsgdayvlngqkkwitygqiadvflvfakcegkpsafl...veknspglsikpisgilgvrasmlaelqfedckipqenlvg 220
+                 a + g+   +ng   w +  +    f+v    + +++  l   +   + gl+      +lg++as ++ l+fe  ++ ++ +++
+  CCI33158.1 132 AKIEGENVTVNGFLPWASNLDSNGEFIVAVAAQTRSGQTLilaLPSFAEGLKRGEDLQLLGLQASRTSTLEFERVQLSHDWIIS 215
+                 *****************99988888877655544444333001466789999999999***************99998887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (394 nodes)
+Target sequences:                         4434  (1223634 residues searched)
+Passed MSV filter:                       112  (0.0252594); expected 88.7 (0.02)
+Passed bias filter:                       91  (0.0205232); expected 88.7 (0.02)
+Passed Vit filter:                        10  (0.0022553); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045106); expected 0.0 (1e-05)
+Initial search space (Z):               4434  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9642.24
+//
+[ok]

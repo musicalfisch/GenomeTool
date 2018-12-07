@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671068_GCA_900010725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-46  155.4  12.9      2e-46  155.2  12.9    1.0  1  CUR22878.1  Uncharacterized membrane protein YvaE [Planktothr
+    3.1e-18   64.5   7.7    3.5e-18   64.4   7.7    1.0  1  CUR23847.1  Quaternary ammonium compound-resistance protein S
+    3.2e-09   35.6   4.2    4.3e-09   35.2   4.2    1.4  1  CUR23512.1  conserved membrane hypothetical protein [Planktot
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR22878.1  Uncharacterized membrane protein YvaE [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  155.2  12.9   1.1e-49     2e-46       2     106 .]       3     107 .]       2     107 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 155.2 bits;  conditional E-value: 1.1e-49
+        emrC   2 liswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvi 100
+                 +is iyl+  i+fev+gttcmkls+gft++ ps+ if+fygl++t lt+ lkkievsvaysvw+g+gt+lia+ig+ +fres+t +k+isialiiigvi
+  CUR22878.1   3 SISGIYLILGIVFEVMGTTCMKLSQGFTRIWPSIGIFIFYGLSFTCLTIVLKKIEVSVAYSVWSGVGTTLIAMIGIGFFRESITPIKFISIALIIIGVI 101
+                 5789*********************************************************************************************** PP
+
+        emrC 101 ginsak 106
+                 g+ns+k
+  CUR22878.1 102 GLNSGK 107
+                 ***987 PP
+
+>> CUR23847.1  Quaternary ammonium compound-resistance protein SugE [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   64.4   7.7   1.8e-21   3.5e-18       4     104 ..       2     102 ..       1     104 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 64.4 bits;  conditional E-value: 1.8e-21
+        emrC   4 swiyllaailfevsgttcmklsegftklipsvlifvfyg.lcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvig 101
+                  wiyl+ a lfe+     +klseg+tk   ++l f+ +g l++ fl+ a+k+i +  ay+vw+g+g++   +ig+i+f++ l++ +l+ i+l++i +ig
+  CUR23847.1   2 GWIYLILAGLFELGFSSFLKLSEGLTKPY-AILAFIGFGaLSVWFLSQAMKTIPLGTAYAVWTGIGALGTVIIGVIIFKDPLSVGRLFFISLLVISLIG 99 
+                 6*************************975.7999999986899******************************************************** PP
+
+        emrC 102 ins 104
+                 + +
+  CUR23847.1 100 LKA 102
+                 987 PP
+
+>> CUR23512.1  conserved membrane hypothetical protein [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.2   4.2   2.3e-12   4.3e-09      37     100 ..      44     107 ..       1     111 [] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 35.2 bits;  conditional E-value: 2.3e-12
+        emrC  37 ifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvi 100
+                  +++yg+ l   + al ++ vs+ay ++a++g  l+a +g +++ e + l ++i ++li+ g++
+  CUR23512.1  44 AILVYGINLIVFAKALDHLPVSIAYPIFAAIGFSLVALMGNLFLGERFGLNQMIGLSLIVAGIM 107
+                 4578**********************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         5638  (1760186 residues searched)
+Passed MSV filter:                       192  (0.0340546); expected 112.8 (0.02)
+Passed bias filter:                       81  (0.0143668); expected 112.8 (0.02)
+Passed Vit filter:                         4  (0.000709471); expected 5.6 (0.001)
+Passed Fwd filter:                         4  (0.000709471); expected 0.1 (1e-05)
+Initial search space (Z):               5638  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6219.32
+//
+[ok]

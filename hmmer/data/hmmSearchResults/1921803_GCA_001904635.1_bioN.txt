@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1921803_GCA_001904635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-148  492.2  18.7   1.2e-148  492.0  18.7    1.0  1  OKH25970.1  hypothetical protein NIES593_02470 [Hydrococcus r
+  ------ inclusion threshold ------
+      0.077   10.2   6.1        0.1    9.8   6.1    1.2  1  OKH18397.1  hypothetical protein NIES593_22080 [Hydrococcus r
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH25970.1  hypothetical protein NIES593_02470 [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  492.0  18.7  5.6e-152  1.2e-148       1     291 []       1     291 []       1     291 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 492.0 bits;  conditional E-value: 5.6e-152
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+ p+t +h+ld rvk+ wlm+flaapllanpwwrl +vgll+llt+la ip rvwrqqmgwl+ l+i+vf+it+  pdglgv+ qp
+  OKH25970.1   1 MDLLRSLPIGLYLETPLTWMHRLDPRVKLGWLMTFLAAPLLANPWWRLGIVGLLMLLTFLAAIPRRVWRQQMGWLLTLCILVFIITCFVPDGLGVTSQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvlee 198
+                 rlp+  l+lp  +dy+yvl++rgr+++trrslelavr stl+ftliystnl+llttapeeit gle+ll p rr ++p+tei ltltlslrfiplvlee
+  OKH25970.1 100 RLPDGNLQLPQPTDYHYVLFERGRFVITRRSLELAVRTSTLIFTLIYSTNLYLLTTAPEEITAGLEELLEPARRTKLPITEIMLTLTLSLRFIPLVLEE 198
+                 *************************************************************************************************** PP
+
+        bioN 199 vqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwggl 291
+                 vqnlar++rtrai+w+klg+krsl+vwl vve+ll+nlllraeqi++amevrgftspnqh+v+wh+l+l   d+  lf lipfw arl+wgg+
+  OKH25970.1 199 VQNLARSIRTRAINWKKLGVKRSLKVWLVVVERLLENLLLRAEQISVAMEVRGFTSPNQHRVQWHQLRLGRIDWFVLFALIPFWWARLMWGGM 291
+                 *******************************************************************************************96 PP
+
+>> OKH18397.1  hypothetical protein NIES593_22080 [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   6.1   4.6e-05       0.1      23      87 ..      33     100 ..       9     139 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 4.6e-05
+        bioN  23 ldarvkfiwlmaflaapl.lanpwwrlalvgllllltllapipprvwrqqm..gwliflaiivflita 87 
+                 l+a v  i l+a+    + +  pww   l gll++l+ll  +  r  ++++   wl ++a+i+f+   
+  OKH18397.1  33 LQAFVTAITLLAIARMGVwVFPPWWTPYLYGLLFVLSLLIGVRRRKPQRKLpsHWLGWIAVIIFVALG 100
+                 56777778888876665515679*******************9998877763379999***9998654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         4392  (1417121 residues searched)
+Passed MSV filter:                       224  (0.0510018); expected 87.8 (0.02)
+Passed bias filter:                      107  (0.0243625); expected 87.8 (0.02)
+Passed Vit filter:                         5  (0.00113843); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455373); expected 0.0 (1e-05)
+Initial search space (Z):               4392  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8247.64
+//
+[ok]

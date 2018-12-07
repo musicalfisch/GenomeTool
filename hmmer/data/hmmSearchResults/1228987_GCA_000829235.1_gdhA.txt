@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1228987_GCA_000829235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.3e-06   21.9   1.7    3.4e-05   19.5   0.5    2.3  3  BAP17186.1  malic oxidoreductase [cyanobacterium endosymbiont
+
+
+Domain annotation for each sequence (and alignments):
+>> BAP17186.1  malic oxidoreductase [cyanobacterium endosymbiont of Epithemia turgida isolate EtSB Lake Yunoko]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.0     0.018        31     407     423 ..     111     127 ..      91     131 .. 0.74
+   2 !   19.5   0.5     2e-08   3.4e-05     210     283 ..     250     323 ..     237     331 .. 0.76
+   3 ?   -2.0   0.0     0.066   1.1e+02     170     187 ..     325     342 ..     320     351 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.018
+        gdhA 407 rlaaytlgvgrvaqals 423
+                    ayt gvgr+++a++
+  BAP17186.1 111 LAMAYTPGVGRICNAIA 127
+                 3469********99985 PP
+
+  == domain 2  score: 19.5 bits;  conditional E-value: 2e-08
+        gdhA 210 vrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldi.palkayaaenrksvvg 283
+                 + +al+   ksl+ v++vi+g g  g a a ll  aga  i +  + g + s++  d+ p+ +++a + + s+v 
+  BAP17186.1 250 LINALKLVQKSLETVQIVINGAGAAGIAIAALLRTAGATNIWLCDSKG-LVSNSRTDLnPQKREFAVNVNGSLVD 323
+                 446777889********************************9998776.55666666624556677766666665 PP
+
+  == domain 3  score: -2.0 bits;  conditional E-value: 0.066
+        gdhA 170 mdtysvnvghavpgvvtg 187
+                 m+   v +g +vpgvvt 
+  BAP17186.1 325 MQGADVFLGVSVPGVVTL 342
+                 66677899********95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         1720  (507178 residues searched)
+Passed MSV filter:                        50  (0.0290698); expected 34.4 (0.02)
+Passed bias filter:                       42  (0.0244186); expected 34.4 (0.02)
+Passed Vit filter:                         4  (0.00232558); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000581395); expected 0.0 (1e-05)
+Initial search space (Z):               1720  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10878.97
+//
+[ok]

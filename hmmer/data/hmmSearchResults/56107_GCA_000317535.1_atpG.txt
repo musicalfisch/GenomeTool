@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56107_GCA_000317535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-50  168.0  14.4    4.2e-50  167.8  14.4    1.0  1  AFZ22868.1  F0F1-type ATP synthase, beta subunit [Cylindrospe
+     0.0063   14.8  10.5     0.0089   14.4  10.5    1.2  1  AFZ22867.1  F0F1-type ATP synthase, beta subunit [Cylindrospe
+  ------ inclusion threshold ------
+      0.034   12.5   0.4      0.066   11.5   0.4    1.4  1  AFZ24114.1  Mg chelatase-related protein [Cylindrospermum sta
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ22868.1  F0F1-type ATP synthase, beta subunit [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  167.8  14.4     2e-53   4.2e-50       1     142 [.      19     160 ..      19     161 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 167.8 bits;  conditional E-value: 2e-53
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp+ma+qf+lla++lna +ykpl + +d r eyir+ +  a+e+l+kte l q+ye +l+ ar+q+q iia aqaeaqk+a++++aaaq+ea
+  AFZ22868.1  19 LFDLDATLPLMAIQFLLLALVLNATLYKPLGNAIDGRNEYIRKNQLDAQERLSKTEKLAQQYEQDLAGARRQAQAIIATAQAEAQKIAAQKIAAAQQEA 117
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelv 142
+                  a++e  + ei qqk++a+ sle qv +lsrq+l kllg++lv
+  AFZ22868.1 118 QAKREQASGEIEQQKQQALASLEQQVDALSRQMLVKLLGADLV 160
+                 *****************************************98 PP
+
+>> AFZ22867.1  F0F1-type ATP synthase, beta subunit [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4  10.5   4.3e-06    0.0089      12     137 ..      35     163 ..      26     168 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 4.3e-06
+        atpG  12 alqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiar.keav 106
+                   ++i la+i+  +f    k l + l  r e i  +  ga ++ + +   ++e + +l  a  +++ i   a+ +aq  a e + a     i r +ea 
+  AFZ22867.1  35 DANLINLAIIITVLFVfgrKVLGNTLKTRRETIETAIKGAEQRATDAAKRLKEAQQNLERATAEAERIRKAADENAQ-AAKEAILAQAAVDIERlQEAG 132
+                 5567889999988774344899******************9888888888999999999999888776666665555.5667666655556665489** PP
+
+        atpG 107 aaeiaqqkeeafrslegqvaslsrqilekll 137
+                 aa+++ + ++a+  l  +v +l+ q +e  l
+  AFZ22867.1 133 AADLSAELDKAIAQLRQRVVALALQKVETQL 163
+                 ***********************99998655 PP
+
+>> AFZ24114.1  Mg chelatase-related protein [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.4   3.2e-05     0.066      57     106 ..     383     432 ..     370     465 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 3.2e-05
+        atpG  57 alvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeav 106
+                  l++  +lq++  r + +ei  q   ea     erv  a+  ai+r +a 
+  AFZ24114.1 383 PLMDRIDLQVAVNRLKPEEITQQPTGEASTSVRERVQQARDRAITRFQAE 432
+                 4778899***************************************8874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         6229  (2019150 residues searched)
+Passed MSV filter:                       276  (0.0443089); expected 124.6 (0.02)
+Passed bias filter:                      148  (0.0237598); expected 124.6 (0.02)
+Passed Vit filter:                        18  (0.00288971); expected 6.2 (0.001)
+Passed Fwd filter:                         3  (0.000481618); expected 0.1 (1e-05)
+Initial search space (Z):               6229  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 5774.77
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/568701_GCA_001942495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-50  168.4   6.5    1.3e-50  168.2   6.5    1.0  1  OLT59142.1  ATP synthase F0 subunit C [Moorea bouillonii PNG]
+  ------ inclusion threshold ------
+      0.026   13.5   0.3      0.032   13.2   0.3    1.2  1  OLT58724.1  hypothetical protein BJP37_06385 [Moorea bouillon
+
+
+Domain annotation for each sequence (and alignments):
+>> OLT59142.1  ATP synthase F0 subunit C [Moorea bouillonii PNG]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  168.2   6.5   4.4e-54   1.3e-50       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 168.2 bits;  conditional E-value: 4.4e-54
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdp++aaasv+aaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlll+lafmesltiyGlv++lvllfanpf+
+  OLT59142.1  1 MDPIIAAASVVAAALAVGLAAIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLTLAFMESLTIYGLVISLVLLFANPFS 81
+                9*******************************************************************************7 PP
+
+>> OLT58724.1  hypothetical protein BJP37_06385 [Moorea bouillonii PNG]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.3   1.1e-05     0.032       2      37 ..       5      40 ..       4      55 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 1.1e-05
+        atpH  2 dplvaaasviaaalavGlaaiGpgigqGnaagqave 37
+                ++l+aaa+ +  a+a Gl a  p ig  n+a++ + 
+  OLT58724.1  5 NTLIAAATAMVFAFASGLNAQEPVIGDINTASEFIT 40
+                689************************999988665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         5984  (1949262 residues searched)
+Passed MSV filter:                       213  (0.0355949); expected 119.7 (0.02)
+Passed bias filter:                      125  (0.020889); expected 119.7 (0.02)
+Passed Vit filter:                         7  (0.00116979); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000334225); expected 0.1 (1e-05)
+Initial search space (Z):               5984  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5263.01
+//
+[ok]

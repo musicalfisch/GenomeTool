@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1137095_GCA_001904675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-31  105.0   0.1    7.4e-31  104.7   0.1    1.0  1  OKH58871.1  phycobilisome linker polypeptide [Scytonema sp. H
+    1.1e-29  100.9   0.2    2.2e-29  100.0   0.2    1.4  1  OKH60889.1  ferredoxin-NADP reductase [Scytonema sp. HK-05]
+    0.00029   19.5   0.0    0.00065   18.4   0.0    1.6  1  OKH58870.1  photosystem I reaction center subunit XII [Scyton
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH58871.1  phycobilisome linker polypeptide [Scytonema sp. HK-05]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  104.7   0.1     3e-34   7.4e-31       7      73 ..      14      80 ..      10      82 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 104.7 bits;  conditional E-value: 3e-34
+        cpcD  7 akenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                +   r+f yevvGl qn +td   y ir sGsvf+tvpysrmn+em+ritrlG riv i pl a +a
+  OKH58871.1 14 TSGSRMFRYEVVGLRQNSETDKNKYDIRNSGSVFITVPYSRMNEEMQRITRLGGRIVKIEPLTAESA 80
+                5678**********************************************************99655 PP
+
+>> OKH60889.1  ferredoxin-NADP reductase [Scytonema sp. HK-05]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.0   0.2   8.9e-33   2.2e-29      10      71 ..      17      78 ..      10      80 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 100.0 bits;  conditional E-value: 8.9e-33
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaa 71
+                 r+fvyevvGl q ++td   y ir sGsvf+ vpy rmnqemrritrlG +ivsi+pl a 
+  OKH60889.1 17 SRVFVYEVVGLRQSEETDKTSYQIRNSGSVFIRVPYNRMNQEMRRITRLGGKIVSIQPLSAV 78
+                69*********************************************************985 PP
+
+>> OKH58870.1  photosystem I reaction center subunit XII [Scytonema sp. HK-05]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   0.0   2.7e-07   0.00065      32      67 ..     251     285 ..     248     286 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 2.7e-07
+        cpcD  32 sirksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 s+r+s + f+ vpy r+  ++++i r G +ivs+ p
+  OKH58870.1 251 SVRRSSTAFF-VPYERLSDKLQQIQRQGGKIVSVTP 285
+                 8999988886.9**********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         7357  (2396029 residues searched)
+Passed MSV filter:                       151  (0.0205247); expected 147.1 (0.02)
+Passed bias filter:                      134  (0.0182139); expected 147.1 (0.02)
+Passed Vit filter:                        13  (0.00176702); expected 7.4 (0.001)
+Passed Fwd filter:                         3  (0.000407775); expected 0.1 (1e-05)
+Initial search space (Z):               7357  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5910.20
+//
+[ok]

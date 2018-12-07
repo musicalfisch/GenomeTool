@@ -1,0 +1,101 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/167539_GCA_000007925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.3e-21   71.0  14.4    6.9e-15   51.7   0.8    2.3  2  AAQ00259.1  Fatty acid desaturase [Prochlorococcus marinus su
+    1.9e-08   30.5  11.8    5.8e-07   25.6  11.8    2.4  1  AAQ00253.1  Fatty acid desaturase [Prochlorococcus marinus su
+    0.00015   17.7   8.0    0.00018   17.5   1.6    2.1  2  AAP99312.1  Beta-carotene hydroxylase [Prochlorococcus marinu
+
+
+Domain annotation for each sequence (and alignments):
+>> AAQ00259.1  Fatty acid desaturase [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   51.7   0.8   1.1e-17   6.9e-15      24     138 ..       9     128 ..       4     135 .. 0.81
+   2 !   24.0   6.5   2.9e-09   1.8e-06     209     304 ..     228     323 ..     207     342 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 51.7 bits;  conditional E-value: 1.1e-17
+        desA  24 diiksipkeyfqkdpvkawfgvitnilaviagyamlvyspwy.llplawi....ftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhc 117
+                  i k ip++ f +++ k+   +   il  +   a+ +  p+   + l wi    ++gt+  gf+viah+cgh +fsn + ++ ++g+ +   l+ p++ 
+  AAQ00259.1   9 SIAKVIPRQCFTRQTSKSLAYLFRSILIQVIVVAIGLTIPYTpSMSLVWIiyalVSGTTAMGFWVIAHECGHGAFSNNRRLETVIGYFLHTILLVPYFS 107
+                 68899*********9999877777777655555554444443245666652222589********************************9********* PP
+
+        desA 118 wrflhdrhhaktnmvtidnaw 138
+                 w+  h  hh  tn +t  ++ 
+  AAQ00259.1 108 WQRSHSVHHRFTNHITEGETH 128
+                 *************99976655 PP
+
+  == domain 2  score: 24.0 bits;  conditional E-value: 2.9e-09
+        desA 209 lifytgvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqalaqlegtvhcsyprwveilchdi.nvhiphhistaipsynlrkvhasl 304
+                   +  g+  ++ ++v p +v   w+  +t +hhtd d+     ed+      +  ++   y + ++ l h i   h+ hhi+ +ip y   +   ++
+  AAQ00259.1 228 WAWSFGIASVLTMYVGPLLVVNCWLVVYTWLHHTDSDVPHLGEEDFSFMRGAF-LSIDRPYGKILDFLHHHIgSTHVIHHIAPTIPHYHAIEATRAI 323
+                 345568889999******************************99998766554.468899***********9458*************876655555 PP
+
+>> AAQ00253.1  Fatty acid desaturase [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.6  11.8   9.2e-10   5.8e-07      62     304 ..      53     336 ..       8     349 .. 0.61
+
+  Alignments for each domain:
+  == domain 1  score: 25.6 bits;  conditional E-value: 9.2e-10
+        desA  62 spwy...llplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwr...flhdrhhak.......tnmvtidnawdpweleafn 147
+                 +p+    l+p+  i+t  + +  f + hdcgh s+   + +n + g+++      p + w     +h rh  +        +++t+++     +++ f 
+  AAQ00253.1  53 TPFRalgLIPVLAILTLLS-SRAFSLMHDCGHGSLFRSRRLNRITGFLLGTLNAIPQYPWSrdhAFHHRHNGNwevyrgpVDVITLEDYQALSKINQFL 150
+                 3444111444444444433.3468899*******999999***99988755555566666501055555554311111112344444444444444442 PP
+
+        desA 148 ...sanplvr....lfyrgirgrfwwlgsiah..wailhfnieq.........fkenerekarfs........mivvlvfaaiffptlifytgvwglvk 220
+                    s   l+     +fy  i+ r+  + +iah  w+il    ++         f    r +a +s        +i ++   +i++ + i+ +   g   
+  AAQ00253.1 151 ysiSRHWLMLfpggFFYLVIKPRLTLINAIAHfiWSILVELCNKllkrdfanlFSFSTRFQANYSgygnssgeLIDLIANNVIVIISWILMSRWLGAGL 249
+                 1112222221222258999*************7788875333221011111113344566666653333333244455555666677777777777777 PP
+
+        desA 221 fwvvpwfvyhfwmstftlvhhtdpdiqfsyp...edwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvhasl 304
+                 fw    ++     + f  +++ + + + sy    ++w   l  ++g+     pr ++ +  di  h  hh++  ip+ynlr  h   
+  AAQ00253.1 250 FWSCYSIIMTASAAIFICIFFVQHNFEGSYAngsNEWSAILGAVDGSSNLDIPRLLNWFLADISFHSMHHLCDRIPNYNLRACHIRN 336
+                 77777777777777888888888888887752226999********************************************99765 PP
+
+>> AAP99312.1  Beta-carotene hydroxylase [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   1.6   2.8e-07   0.00018      52     130 ..      44     128 ..      10     155 .. 0.85
+   2 !    4.1   0.6    0.0032         2     210     298 ..     178     264 ..     170     280 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 2.8e-07
+        desA  52 viagyamlvyspwyllplaw...iftgtaltgffv...iahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktn 130
+                  i gya+   s w      w   ++ g a+  + +   + hd+ h++    +w+n+ +gh   + l + f ++  +h +hh++ n
+  AAP99312.1  44 FIGGYAIAFLSIWQWYKGVWplpVLVGLAFLSLHMegtVIHDACHKAAHPNKWINQAMGHGAAILLGFSFPVFTRVHLQHHSHVN 128
+                 5889999999988777766654566777776665333389*********************999999**************9987 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.0032
+        desA 210 ifytgvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqalaqlegtvhcsyp.rwveilchdinvhiphhistaipsynlr 298
+                 if t v   v+f  +  ++y +w+    +v  t   i f y  +    +a+ +      yp r ++il    n h+ hh+  +ip ++ +
+  AAP99312.1 178 IFITIVLAGVHFNFMN-VIYNLWFGPALMVGVTL-GIFFDYLPHR-PFMARNKWKNSRVYPsRVMNILIMGQNYHLVHHLWPSIPWFEYK 264
+                 6677777777776554.57888887766666554.4555553332.33444444455567647789******************998876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         1882  (516756 residues searched)
+Passed MSV filter:                        71  (0.0377258); expected 37.6 (0.02)
+Passed bias filter:                       43  (0.022848); expected 37.6 (0.02)
+Passed Vit filter:                         5  (0.00265675); expected 1.9 (0.001)
+Passed Fwd filter:                         3  (0.00159405); expected 0.0 (1e-05)
+Initial search space (Z):               1882  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 4469.94
+//
+[ok]

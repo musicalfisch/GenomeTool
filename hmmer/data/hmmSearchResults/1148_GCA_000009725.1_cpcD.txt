@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1148_GCA_000009725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.5e-32  107.1   0.1    1.2e-31  106.2   0.1    1.4  1  BAA18459.1  ferredoxin-NADP oxidoreductase [Synechocystis sp.
+    1.1e-26   90.4   0.3    1.3e-26   90.2   0.3    1.1  1  BAA17228.1  phycocyanin associated linker protein [Synechocys
+    0.00022   18.9   0.2    0.00098   16.8   0.0    2.0  2  BAA17229.1  phycocyanin associated linker protein [Synechocys
+
+
+Domain annotation for each sequence (and alignments):
+>> BAA18459.1  ferredoxin-NADP oxidoreductase [Synechocystis sp. PCC 6803]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  106.2   0.1     1e-34   1.2e-31       5      69 ..      13      77 ..       9      80 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 106.2 bits;  conditional E-value: 1e-34
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                 s   nrlfvyev+Glsq   td ldy ir+sGs f+tvp  rmnqemrritr+G +ivsikpl+
+  BAA18459.1 13 QSDAGNRLFVYEVIGLSQSTMTDGLDYPIRRSGSTFITVPLKRMNQEMRRITRMGGKIVSIKPLE 77
+                56778**********************************************************97 PP
+
+>> BAA17228.1  phycocyanin associated linker protein [Synechocystis sp. PCC 6803]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.2   0.3   1.1e-29   1.3e-26       9      72 ..      16      79 ..       8      81 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 90.2 bits;  conditional E-value: 1.1e-29
+        cpcD  9 enrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaa 72
+                 nr+fvyev Gl q d  +n  + ir+sGsvf+ vpy+rmn emrri+rlG  iv i+p +a +
+  BAA17228.1 16 ANRVFVYEVSGLRQTDANENSAHDIRRSGSVFIKVPYARMNDEMRRISRLGGTIVNIRPYQADS 79
+                69*********************************************************99865 PP
+
+>> BAA17229.1  phycocyanin associated linker protein [Synechocystis sp. PCC 6803]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.0   0.0       0.6   7.1e+02      43      52 ..     148     157 ..     145     167 .. 0.78
+   2 !   16.8   0.0   8.2e-07   0.00098      41      67 ..     261     287 ..     251     290 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.0 bits;  conditional E-value: 0.6
+        cpcD  43 vpysrmnqem 52 
+                 vpy r+n+++
+  BAA17229.1 148 VPYYRFNNQV 157
+                 8999999765 PP
+
+  == domain 2  score: 16.8 bits;  conditional E-value: 8.2e-07
+        cpcD  41 ltvpysrmnqemrritrlGarivsikp 67 
+                 + vp+ ++nq +++i rlG ++ si p
+  BAA17229.1 261 VIVPFEQLNQTLQQINRLGGKVASITP 287
+                 579**********************99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         3564  (1136958 residues searched)
+Passed MSV filter:                        59  (0.0165544); expected 71.3 (0.02)
+Passed bias filter:                       56  (0.0157127); expected 71.3 (0.02)
+Passed Vit filter:                         5  (0.00140292); expected 3.6 (0.001)
+Passed Fwd filter:                         3  (0.000841751); expected 0.0 (1e-05)
+Initial search space (Z):               3564  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4206.74
+//
+[ok]

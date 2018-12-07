@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74547_GCA_000011485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.1e-26   88.5   2.7    4.9e-26   88.3   2.7    1.0  1  CAE21381.1  carboxysome shell protein CsoS1 [Prochlorococcus 
+    2.1e-24   83.0   2.4    2.1e-24   83.0   2.4    1.7  2  CAE21374.1  carboxysome structural protein CsoS1 [Prochloroco
+  ------ inclusion threshold ------
+      0.011   13.3   0.6      0.034   11.7   0.6    1.8  1  CAE21383.1  conserved hypothetical protein [Prochlorococcus m
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE21381.1  carboxysome shell protein CsoS1 [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.3   2.7   5.2e-29   4.9e-26       1      87 [.       6      91 ..       6      95 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 88.3 bits;  conditional E-value: 5.2e-29
+        ccmK  1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenley 87
+                m ia+gmiet+g+   +eaadam kaa v l+g e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e 
+  CAE21381.1  6 MGIALGMIETRGLVPAIEAADAMTKAAEVRLIGREFVGGGYVTVLVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHREVEP 91
+                89***********999***************************************************8875.679*******99986 PP
+
+>> CAE21374.1  carboxysome structural protein CsoS1 [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.0      0.56   5.3e+02      98      98 ..      39      39 ..      17      73 .. 0.59
+   2 !   83.0   2.4   2.2e-27   2.1e-24       3      89 ..     110     195 ..     108     201 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.56
+        ccmK 98 e 98
+                +
+  CAE21374.1 39 D 39
+                2 PP
+
+  == domain 2  score: 83.0 bits;  conditional E-value: 2.2e-27
+        ccmK   3 iavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyvl 89 
+                 ia+gmiet+g+   +eaadam kaa v l+  e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph+++e  l
+  CAE21374.1 110 IALGMIETRGMVPAIEAADAMTKAAEVNLISREYVGGGYVTVMVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHQEVEPAL 195
+                 9**********999***************************************************8875.679********999655 PP
+
+>> CAE21383.1  conserved hypothetical protein [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.6   3.6e-05     0.034       7      66 ..     195     256 .]     188     256 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 3.6e-05
+        ccmK   7 mietlgfpavveaadamvkaarvtlvgyekigs.grvtvivr.gdvsevqasvaagvesanr 66 
+                 ++et+    v+ aa+   ka+ +t+v  + +g+ gr+t+  + gdv e  a+    ++++nr
+  CAE21383.1 195 ILETEPAGYVLIAANEAEKASNITIVDVKGVGAfGRLTLAGKeGDVEEAAAAAMRAIDQINR 256
+                 578888888999********************879***985449****99999999999887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         2850  (689451 residues searched)
+Passed MSV filter:                        53  (0.0185965); expected 57.0 (0.02)
+Passed bias filter:                       43  (0.0150877); expected 57.0 (0.02)
+Passed Vit filter:                         3  (0.00105263); expected 2.9 (0.001)
+Passed Fwd filter:                         3  (0.00105263); expected 0.0 (1e-05)
+Initial search space (Z):               2850  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7101.35
+//
+[ok]

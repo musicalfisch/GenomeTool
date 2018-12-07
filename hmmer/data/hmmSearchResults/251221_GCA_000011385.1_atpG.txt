@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/251221_GCA_000011385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.4e-32  107.8  10.9    1.4e-31  107.2  10.9    1.3  1  BAC90849.1  ATP synthase b' chain of CF(0) [Gloeobacter viola
+  ------ inclusion threshold ------
+        3.4    5.5  20.0        3.9    5.3   8.0    2.4  2  BAC90436.1  HlyD family secretion protein [Gloeobacter violac
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC90849.1  ATP synthase b' chain of CF(0) [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.2  10.9   6.3e-35   1.4e-31       1     139 [.      31     169 ..      31     173 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 107.2 bits;  conditional E-value: 6.3e-35
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fdf  tl +  ++f+ll  il avfy p+s+v++er+eyir   g a+ ++  ++al ++ye +l ++r ++q++ia a+aeaqk+ ++++a aq+ea
+  BAC90849.1  31 LFDFGGTLVLQIVNFLLLMTILSAVFYGPISRVIEERSEYIRSNAGSAQRRFDEAKALADQYEQELRTTRLEAQQVIAAAEAEAQKIRAQQLAEAQREA 129
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgp 139
+                   r     a++ +qk+ a+ sl g+v ++sr + ekll  
+  BAC90849.1 130 QERIAQAQADLDKQKQAALASLSGEVEAISRTLSEKLLSD 169
+                 *************************************975 PP
+
+>> BAC90436.1  HlyD family secretion protein [Gloeobacter violaceus PCC 7421]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.3   8.0    0.0018       3.9      80     134 ..     152     205 ..     142     213 .. 0.79
+   2 ?    5.0   6.0    0.0022       4.9      47     115 ..     204     273 ..     198     295 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 5.3 bits;  conditional E-value: 0.0018
+        atpG  80 aqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqile 134
+                 +qaea +las rv+ +q+ a   k   +a+ a+ + + ++sl  q a  s+++l 
+  BAC90436.1 152 SQAEA-RLASARVTVSQRRAALAKAQATANEARANLQRYQSLGKQGAISSQEVLA 205
+                 57777.7**********988766666677779999999****9999999988885 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.0022
+        atpG  47 gakeqlak.tealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqke 115
+                  a+e l + ++a +++ +l ++sa   +qe  aq      +la  r+ a +   +a+++a   ei    +
+  BAC90436.1 204 LARETLGQgAQADLDQAQLAITSAEASAQENQAQIAQLRAQLAQTRILAPDDGLVAKRDARLGEIVSSGK 273
+                 566777652567788899***************96666666*******************9999987655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4430  (1384397 residues searched)
+Passed MSV filter:                       168  (0.0379233); expected 88.6 (0.02)
+Passed bias filter:                       87  (0.0196388); expected 88.6 (0.02)
+Passed Vit filter:                         9  (0.0020316); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000451467); expected 0.0 (1e-05)
+Initial search space (Z):               4430  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6598.96
+//
+[ok]

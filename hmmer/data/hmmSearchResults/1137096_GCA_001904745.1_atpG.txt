@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1137096_GCA_001904745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-48  161.3   9.8      6e-48  161.2   9.8    1.0  1  OKH44016.1  F0F1 ATP synthase subunit B' [Calothrix sp. HK-06
+     0.0025   16.5  13.2     0.0032   16.2  13.2    1.1  1  OKH44017.1  F0F1 ATP synthase subunit B [Calothrix sp. HK-06]
+  ------ inclusion threshold ------
+      0.029   13.1   1.2      0.046   12.4   0.1    1.9  2  OKH55429.1  hypothetical protein NIES2101_03300, partial [Cal
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH44016.1  F0F1 ATP synthase subunit B' [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  161.2   9.8   2.2e-51     6e-48       1     139 [.       1     139 [.       1     141 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 161.2 bits;  conditional E-value: 2.2e-51
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf+lla +ln++fykpl+k ld+r +yir  +  a+e+l k+e + ++yelql+ arkq+q  ia a+a+aq + s+ +a aq+e 
+  OKH44016.1   1 MFDFDATLPLMALQFLLLAALLNSIFYKPLTKALDDRDNYIRTNKVDARERLDKAERIAKDYELQLAEARKQAQAAIASAEADAQSIYSKSIAEAQQEV 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgp 139
+                   ++e  + ei  qke a+rsle +v sls+qil+kllg 
+  OKH44016.1 100 QKQREEASREIETQKESAMRSLEQRVDSLSQQILDKLLGQ 139
+                 **************************************96 PP
+
+>> OKH44017.1  F0F1 ATP synthase subunit B [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2  13.2   1.2e-06    0.0032       8     137 ..      28     160 ..      23     165 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 1.2e-06
+        atpG   8 lpvmalqfillavilna..vf.ykplskvlderaeyirqteggakeqlak.tealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiar 102
+                 l ++  ++i la+++    vf  k l+  l  r   i   e    eq ak + a + e + +l+ a+++++ i   a  +aqk     +a aq +    
+  OKH44017.1  28 LDILETNIINLAILVGVlvVFgRKFLTDTLSARRTSIEI-EIKEAEQRAKeAAASLAEAQKNLTQAQQEAERIRKAASENAQKAKEAILARAQVDVQRL 125
+                 555666667677655431144257899999999988865.455556666614567899999*****99998888888888999888888999*999999 PP
+
+        atpG 103 keavaaeiaqqkeeafrslegqvaslsrqilekll 137
+                 k+a aa+++ ++++a+  l  +v +l+ q  e  l
+  OKH44017.1 126 KDAAAADLTSEQDKAIAQLRSRVVALALQKAESQL 160
+                 **************************999887655 PP
+
+>> OKH55429.1  hypothetical protein NIES2101_03300, partial [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.8   0.1       1.7   4.7e+03      53      68 ..      41      56 ..      35      59 .. 0.74
+   2 ?   12.4   0.1   1.7e-05     0.046      67     121 ..     293     345 ..     266     355 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -3.8 bits;  conditional E-value: 1.7
+        atpG 53 aktealvqeyelqlss 68
+                 k   l+q+y+l l s
+  OKH55429.1 41 IKQLILLQQYKLSLLS 56
+                5666789999998876 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 1.7e-05
+        atpG  67 ssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeea.frsl 121
+                  s r++ +  + q+qae +   +er a  q+e   rk   a eia    ea frs+
+  OKH55429.1 293 VSERRKIKSTLEQTQAELESKVAERTAHLQQEIYERK---AVEIALTESEAnFRSI 345
+                 5788889999**********************99998...6688876655439997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         8148  (2613279 residues searched)
+Passed MSV filter:                       327  (0.0401325); expected 163.0 (0.02)
+Passed bias filter:                      152  (0.0186549); expected 163.0 (0.02)
+Passed Vit filter:                         8  (0.000981836); expected 8.1 (0.001)
+Passed Fwd filter:                         3  (0.000368189); expected 0.1 (1e-05)
+Initial search space (Z):               8148  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7473.98
+//
+[ok]

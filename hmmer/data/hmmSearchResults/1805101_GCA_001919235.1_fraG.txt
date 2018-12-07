@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fraG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805101_GCA_001919235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fraG  [M=329]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0078   13.0   4.2     0.0045   13.8   1.7    1.7  2  OLE32152.1  hypothetical protein AUI36_29200 [Cyanobacteria b
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE32152.1  hypothetical protein AUI36_29200 [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   1.7   1.1e-06    0.0045     244     306 ..      18      80 ..       9      92 .. 0.85
+   2 ?   -1.0   0.0     0.035   1.5e+02       6      36 ..     102     132 ..      97     155 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1.1e-06
+        fraG 244 tigsllsalftlaghvlnnwgihligasraaiigatnpaltvvlaglaiqesltniqifgvcl 306
+                 +    l  l    g+v +  g+    as a++i at p l vv+a l +++ ++  q +g+++
+  OLE32152.1  18 AAAGALGVLGVGVGQVSQTLGVLRTTASAATVISATIPLLVVVFAALRLRQPVATRQAVGLVV 80 
+                 555566777778899************************************999999999764 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.035
+        fraG   6 nvnlmgllivllaaiffcfhnvivrilysqq 36 
+                    l+g  +vll+a+ ++++ v+   l ++ 
+  OLE32152.1 102 AASLIGDALVLLSAVAVALYYVLSTELAARY 132
+                 5667888888888888887777765554333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (329 nodes)
+Target sequences:                         4209  (1128809 residues searched)
+Passed MSV filter:                       179  (0.0425279); expected 84.2 (0.02)
+Passed bias filter:                       83  (0.0197196); expected 84.2 (0.02)
+Passed Vit filter:                         7  (0.0016631); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000237586); expected 0.0 (1e-05)
+Initial search space (Z):               4209  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9284.45
+//
+[ok]

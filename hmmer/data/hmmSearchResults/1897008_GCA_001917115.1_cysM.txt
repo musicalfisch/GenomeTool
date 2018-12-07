@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1897008_GCA_001917115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysM  [M=319]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.3e-121  402.5   2.3   1.4e-121  402.3   2.3    1.0  1  OLA76055.1  cysteine synthase A [Melainabacteria sp. 35_41]
+    8.6e-12   41.6   1.3    1.6e-10   37.4   1.3    2.0  1  OLA78411.1  threonine synthase [Melainabacteria sp. 35_41]
+
+
+Domain annotation for each sequence (and alignments):
+>> OLA76055.1  cysteine synthase A [Melainabacteria sp. 35_41]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  402.3   2.3  1.4e-124  1.4e-121       1     308 [.       1     305 [.       1     306 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 402.3 bits;  conditional E-value: 1.4e-124
+        cysM   1 mriakdvtelvgrtplvqlnripqaegvvarivvklegmnpaasvkdrigisminaaekegliepgktvlveptsgntgialamvaaakgyrliltmpe 99 
+                 m+ia+++ el+g+tplv++nr+   e  +a +  k+e+ npa s+kdr  ++mi+ aek gl++ g +v++eptsgntgi lamv+a kgy++iltmpe
+  OLA76055.1   1 MHIAENMLELIGKTPLVKINRLN--ENGLAVVAAKIESRNPAGSIKDRPALNMIEDAEKRGLLTDG-AVIIEPTSGNTGIGLAMVCAIKGYKMILTMPE 96 
+                 89*******************96..6778999*******************************987.6889**************************** PP
+
+        cysM 100 tmslerramlkaygaeleltpgaegmkgairkaqeivdkipnaymlqqfrnpanpkihrettaeeiwedtdgevdivvagvgtggtitgvaeviksrkp 198
+                 tms err +lkaygael lt g++gm+ga+ ka e+ ++ip++++  qf npanp+ih  ttaeeiw+dtdg+vdiv+agvgtggti+g+ + +k++ p
+  OLA76055.1  97 TMSIERRKLLKAYGAELVLTEGSRGMQGAVDKAMELREQIPDSFIPMQFNNPANPEIHELTTAEEIWTDTDGKVDIVIAGVGTGGTISGIGKRLKEKNP 195
+                 *************************************************************************************************** PP
+
+        cysM 199 slkaiavepanspvlsggkpgphkiqgigagfipevlrvdlidevitvsdeealaygrrlakeegllsgissgaalcaaiqvaqrpenegklivviqps 297
+                 +++++avep+ s vl+g  +g+h iqgiga f+p  ++ d++d +  v d +a++ +r++a +eg+l gissgaa++aa++ ++ p+negkliv i p 
+  OLA76055.1 196 DIQIVAVEPFRSQVLAGKPAGSHAIQGIGANFVPRNFNRDVVDVIYPVGDIDAVETARKMATDEGILCGISSGAAMFAALEFSKMPDNEGKLIVTILPD 294
+                 *************************************************************************************************** PP
+
+        cysM 298 fgerylstllf 308
+                  geryls++lf
+  OLA76055.1 295 SGERYLSSVLF 305
+                 *********99 PP
+
+>> OLA78411.1  threonine synthase [Melainabacteria sp. 35_41]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.4   1.3   1.5e-13   1.6e-10      10     292 ..      26     313 ..      19     322 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 37.4 bits;  conditional E-value: 1.5e-13
+        cysM  10 lvgrtplvqlnripqaegvvarivvklegmnpaasvkdrigisminaaekegliepgktvlveptsgntgialamvaaakgyrliltmpet.mslerra 107
+                   g tpl++ +++ +  g  a+i +k+eg np+ s kdr  +  +++a+++g        ++  ++gnt  + a   a  g +  + +p+  ++l + +
+  OLA78411.1  26 NEGNTPLIKAENLAKKIGLDAEIYLKFEGCNPTGSFKDRGMTMAVSKAKEAG-----AGAIICASTGNTSASAAAYGAKAGMKTFVLIPDGyIALGKLS 119
+                 4599***********************************6666666676665.....455667788****9999999999*999999999635667777 PP
+
+        cysM 108 mlkaygaeleltpgaegmkgairkaqeivdkipnaymlqqfrnpanp.kih.rettaeeiwedtdgevdivvagvgtggtitgvaeviksrkpsl.... 200
+                     ygae+        ++g   +a e+v ki + y +    n  np +i  ++t a ei +      d     vg  g it   +  k+  ++     
+  OLA78411.1 120 QAMMYGAEII------AIQGNFDEALEMVRKISDNYPITLV-NSVNPyRIEgQKTGAFEICNALGQAPDYHFIPVGNAGNITAYWKGYKEWYQAGkipa 211
+                 7778**9875......4667777778888888887776544.44444255437899******999999*************976655555433320000 PP
+
+        cysM 201 ..kaiavepanspvlsggkp..gphki.qgig....agf.ipevlrvdlidevitvsdeealaygrrlakeegllsgissgaalcaaiqvaqrpenegk 289
+                   k++  e   ++ +  g+    p  +   i     a +   e  r +    +  v+dee ++  + +a  eg+l+  +s a++   i+  ++ ++ +k
+  OLA78411.1 212 lpKMMGFEAEGAAAIVKGERifKPETLaTAIRignpASWkQAEAARDESNGMINFVTDEEIVKAYKLIASSEGVLAEPASAASVAGLIKFKDKVKEGSK 310
+                 124455565555444444321123322122320011222123344444444455678888888888888888888888888888888887776665555 PP
+
+        cysM 290 liv 292
+                 ++ 
+  OLA78411.1 311 IVC 313
+                 444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (319 nodes)
+Target sequences:                         2045  (609342 residues searched)
+Passed MSV filter:                        55  (0.0268949); expected 40.9 (0.02)
+Passed bias filter:                       40  (0.0195599); expected 40.9 (0.02)
+Passed Vit filter:                         6  (0.00293399); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000977995); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6479.34
+//
+[ok]

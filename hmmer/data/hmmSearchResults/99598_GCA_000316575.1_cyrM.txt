@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-71  237.2   0.0    3.3e-71  236.9   0.0    1.0  1  AFY35408.1  adenylylsulfate kinase [Calothrix sp. PCC 7507]
+     0.0095   13.8   0.0      0.017   13.0   0.0    1.3  1  AFY34778.1  lipopolysaccharide biosynthesis protein [Calothri
+  ------ inclusion threshold ------
+      0.013   13.4   0.0      0.022   12.6   0.0    1.3  1  AFY35323.1  ATPase-like, ParA/MinD [Calothrix sp. PCC 7507]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY35408.1  adenylylsulfate kinase [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  236.9   0.0   1.7e-74   3.3e-71       4     173 ..       1     170 [.       1     179 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 236.9 bits;  conditional E-value: 1.7e-74
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mk+ g+ +wltglsgagk+ti++ l+ kl  + y +e+ldgd +r nl++gl f+kedrd n+rrig+v+nll+r gviv+vs ispyr +r+e+r   
+  AFY35408.1   1 MKRNGLILWLTGLSGAGKTTIAQRLENKLQEQAYLVELLDGDAIRQNLSQGLSFTKEDRDINVRRIGYVANLLSRNGVIVIVSLISPYRAVRDELRYST 99 
+                 899************************************************************************************************ PP
+
+        cyrM 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnklt 173
+                  +f e++vn+p++vce rdvkgly +ar g iksftgiddpye p+np + c t  et++esv+k+ + l 
+  AFY35408.1 100 KNFFEIYVNTPIEVCEARDVKGLYAKARNGYIKSFTGIDDPYEEPLNPHITCDTTKETVDESVTKILHWLE 170
+                 *****************************************************************987765 PP
+
+>> AFY34778.1  lipopolysaccharide biosynthesis protein [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   8.6e-06     0.017      15      58 ..     504     547 ..     496     553 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 8.6e-06
+        cyrM  15 glsgagkstitealqakliaegysievldgdivrtnltkglgfs 58 
+                  + g gk+t+t  l   l+  g+ + v+dgd  +++l+  lg+ 
+  AFY34778.1 504 AMEGEGKTTVTLGLARALVDLGFRVLVVDGDFFQAELSSKLGYI 547
+                 6789***********************************99985 PP
+
+>> AFY35323.1  ATPase-like, ParA/MinD [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.0   1.1e-05     0.022      14      61 ..      93     140 ..      79     148 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.1e-05
+        cyrM  14 tglsgagkstitealqakliaegysievldgdivrtnltkglgfsked 61 
+                 +g  g gkst +  + a l  +g  + +ld di   n+ + lg+ + d
+  AFY35323.1  93 SGKGGVGKSTTAVNIAAALRLQGAKVGILDADIYGPNVPQMLGLGQAD 140
+                 577899**********************************99998877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       257  (0.0431933); expected 119.0 (0.02)
+Passed bias filter:                      230  (0.0386555); expected 119.0 (0.02)
+Passed Vit filter:                        34  (0.00571429); expected 6.0 (0.001)
+Passed Fwd filter:                         3  (0.000504202); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 6821.74
+//
+[ok]

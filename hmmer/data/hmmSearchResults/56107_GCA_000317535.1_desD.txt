@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56107_GCA_000317535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-06   24.7  12.5    8.5e-06   23.7  12.5    1.6  1  AFZ24876.1  fatty acid desaturase [Cylindrospermum stagnale P
+  ------ inclusion threshold ------
+       0.13    9.9  11.6     0.0052   14.5   4.0    2.0  2  AFZ24875.1  fatty acid desaturase [Cylindrospermum stagnale P
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ24876.1  fatty acid desaturase [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.7  12.5   2.7e-09   8.5e-06      46     138 ..      59     147 ..      44     306 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 23.7 bits;  conditional E-value: 2.7e-09
+        desD  46 wviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleih 138
+                  v  +++f+ + p  w+l  +  +  g+ l+g  f ighd+ h  ++ ++wvn l+g  +   +    + wr++hny hh +tn l  d   h
+  AFZ24876.1  59 MVALSYFFLAIAP--WYLLPLAWIFTGTALTGF-FVIGHDCGHRSFAKRRWVNDLVGHLFMMPLIYPFHSWRIKHNY-HHKHTNKLDEDNAWH 147
+                 3444455555555..99999999*******997.99***********************9999999999*******9.889999999887666 PP
+
+>> AFZ24875.1  fatty acid desaturase [Cylindrospermum stagnale PCC 7417]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.5   4.0   1.7e-06    0.0052      59     131 ..      98     168 ..      73     175 .. 0.76
+   2 ?   -0.3   0.8     0.051   1.6e+02     229     316 ..     252     338 ..     235     362 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 1.7e-06
+        desD  59 diwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvl 131
+                 d w++  +  l+ g+ +    f +ghd+ h  +s +kw+n l+g      i +  + wr+ h   hh  t  l
+  AFZ24875.1  98 DSWYFWPVFWLMQGTMF-WALFVVGHDCGHQSFSKHKWLNDLVGHLTHTPILVPYHGWRISHRT-HHKNTGSL 168
+                 55555555555544443.45699*********************9888888899999****985.66666555 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 0.051
+        desD 229 aigflivfmtygvlachvfmlahvlepaefiqpsaanqiedewaifqvrttvdfapkniflnwylgglnyqvvhhlfpqichihypki 316
+                   gfl  +  y v     ++   ++      +p  a    +ew+ ++      +     ++n     +  +v hh+f +i h    k 
+  AFZ24875.1 252 QWGFLWFIKNYAVPYIVFIIWLDLVTFLHHTEPGIAWYRGEEWSFLKGA-ISSIDRDYGLVNHIHHDIGTHVAHHIFLNIPHYNLLKA 338
+                 4566666666666544444444555556666777777777788766543.33344556677888888899999999999999776654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         6229  (2019150 residues searched)
+Passed MSV filter:                       234  (0.0375662); expected 124.6 (0.02)
+Passed bias filter:                      133  (0.0213517); expected 124.6 (0.02)
+Passed Vit filter:                         9  (0.00144485); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000321079); expected 0.1 (1e-05)
+Initial search space (Z):               6229  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.06
+# Mc/sec: 12249.51
+//
+[ok]

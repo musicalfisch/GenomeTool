@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-14   51.4   0.8    1.3e-12   45.2   0.1    2.1  2  ALF56564.1  multicopper oxidase [Nostoc piscinale CENA21]
+  ------ inclusion threshold ------
+      0.018   11.7   0.0      0.027   11.2   0.0    1.3  1  ALF56147.1  plasmid stabilization protein [Nostoc piscinale C
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF56564.1  multicopper oxidase [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.2   0.1   5.1e-16   1.3e-12      51     169 ..      84     195 ..      73     206 .. 0.87
+   2 !    4.7   0.1     0.001       2.5     425     493 ..     261     327 ..     247     330 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 45.2 bits;  conditional E-value: 5.1e-16
+        cueA  51 etalearpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyh 148
+                 e  l a   +i+l      n+   ng+ipgp l ak g+ v+i f nk  ++  lh+hg+h     + d i   v  g +  yef      p g   yh
+  ALF56564.1  84 EFQLTAGTSVIQLNSAvSYNVWDLNGRIPGPTLRAKQGERVRILFLNKAGHSHSLHFHGVHPA---EMDGI-RPVSNGSAAIYEFD---AEPYGVHLYH 175
+                 56677778888887651569999**************************************65...45665.5899*********6...68******** PP
+
+        cueA 149 phlhelvaeqvfgglggifvv 169
+                  h+ e v+ ++  gl g+f++
+  ALF56564.1 176 CHI-EPVTRHIAKGLYGMFII 195
+                 **9.678999*********98 PP
+
+  == domain 2  score: 4.7 bits;  conditional E-value: 0.001
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgiva 493
+                  +fhlh+n f+v  r g         d + +   e   +   fr + gk ++h h     + g mg   
+  ALF56564.1 261 VTFHLHANFFDVY-RTGMTMTPAEKTDVITMGVAERHILEFAFR-YPGKYMFHPHQDAIAENGCMGQFE 327
+                 57******99986.667666666778999999999999999999.89********99989999998665 PP
+
+>> ALF56147.1  plasmid stabilization protein [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.2   0.0   1.1e-05     0.027      43     151 ..      21     127 ..       5     136 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 1.1e-05
+        cueA  43 ttssnglletalearpglirlgqqqgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhg.lhipqtgn.adni...flsvppgetqtyeftl 136
+                   ss  ++  +  a    i+lg ++g l  ++      ++  kpgdt+   + nk+    n+ +   l   ++ + a  +    l + pg+tqt   t+
+  ALF56147.1  21 VVSSFAIFAPSASAETYQIKLGSDKGMLA-FE----PSKVTVKPGDTIE-WVNNKVPP-HNVVFDAaLNPAKSADlAKSLshkSLLMSPGQTQT--TTI 110
+                 55666666666666666677777666543.32....3456677777764.23444443.44444430333333321222211134456676666..467 PP
+
+        cueA 137 pknhpsg..tfyyhphl 151
+                 p + p+g  tfy  ph 
+  ALF56147.1 111 PADAPTGdyTFYCEPHR 127
+                 77777765566767764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       132  (0.0262843); expected 100.4 (0.02)
+Passed bias filter:                      115  (0.0228992); expected 100.4 (0.02)
+Passed Vit filter:                        11  (0.00219036); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398248); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12330.17
+//
+[ok]

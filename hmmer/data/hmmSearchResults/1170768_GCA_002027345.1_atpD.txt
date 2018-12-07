@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170768_GCA_002027345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.9e-109  361.0   3.6   2.1e-109  360.8   3.6    1.0  1  OPH08494.1  F0F1 ATP synthase subunit delta [Cylindrospermops
+  ------ inclusion threshold ------
+      0.024   11.8   0.0      0.028   11.6   0.0    1.0  1  OPH09210.1  hypothetical protein CENA302_12725 [Cylindrosperm
+
+
+Domain annotation for each sequence (and alignments):
+>> OPH08494.1  F0F1 ATP synthase subunit delta [Cylindrospermopsis raciborskii CENA302]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  360.8   3.6  1.4e-112  2.1e-109       1     184 []       1     184 []       1     184 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 360.8 bits;  conditional E-value: 1.4e-112
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mks+aataevaqpyaqalls+a+++nltee+g+dartl+sl++gs elqnfldnpf++penkkn+lkqllge+vnpylrnf+lllvdrrri+fle+ilq
+  OPH08494.1   1 MKSNAATAEVAQPYAQALLSVAKANNLTEEFGTDARTLISLISGSGELQNFLDNPFIQPENKKNLLKQLLGESVNPYLRNFILLLVDRRRISFLEPILQ 99 
+                 9************************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlssn 184
+                 qy++llr+l+qtvlaev+sa+plt++q+q+v+ekvi++tkar+ve+etkid+dliggv+ikvgsqvidaslrgqlrrlslrl+s+
+  OPH08494.1 100 QYISLLRELTQTVLAEVSSAIPLTDEQIQTVREKVISITKAREVEIETKIDTDLIGGVVIKVGSQVIDASLRGQLRRLSLRLTSG 184
+                 ***********************************************************************************95 PP
+
+>> OPH09210.1  hypothetical protein CENA302_12725 [Cylindrospermopsis raciborskii CENA302]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.8e-05     0.028     138     175 ..      13      52 ..       7      57 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.8e-05
+        atpD 138 tkarqveletkidsdliggv..iikvgsqvidaslrgqlr 175
+                 t+a ++e++ ++ds+li  +  +    s+vi+ ++r  lr
+  OPH09210.1  13 TNAEKIEIALRLDSELIAQIqhLTNDPSKVIEVAIRQWLR 52 
+                 89***************99844567789******998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3033  (982850 residues searched)
+Passed MSV filter:                       119  (0.0392351); expected 60.7 (0.02)
+Passed bias filter:                       78  (0.0257171); expected 60.7 (0.02)
+Passed Vit filter:                         6  (0.00197824); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000659413); expected 0.0 (1e-05)
+Initial search space (Z):               3033  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 9042.22
+//
+[ok]

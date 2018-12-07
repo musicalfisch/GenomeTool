@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/chrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080068_GCA_001548395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       chrA  [M=385]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-78  262.6  30.9    2.2e-78  262.3  30.9    1.1  1  BAU41073.1  putative chromate transport protein [Leptolyngbya
+    1.1e-15   55.9   0.0    1.3e-15   55.7   0.0    1.0  1  BAU41074.1  Chromate transporter [Leptolyngbya sp. O-77]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU41073.1  putative chromate transport protein [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  262.3  30.9   9.2e-82   2.2e-78      85     384 ..      12     310 ..       3     311 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 262.3 bits;  conditional E-value: 9.2e-82
+        chrA  85 tgvcfitpavlitgflawiyttygtlpdvapifagikpvviavifqalwrlgkkalktrqllfiglgvigllilglneiialllggiigmfilk...k. 179
+                    +fi pa+li   la +y  y ++p+v  ++ g+k vvia+i+qalw+lgkkalk     ++ + vi l+  glnei  lllgg+  m+i +   + 
+  BAU41073.1  12 RAPAFILPAMLIVWALAAVYIRYQAIPQVEWLLYGVKAVVIAIIVQALWKLGKKALKDWPTWIVAIAVIALFATGLNEIALLLLGGVAVMLIKNlgqRe 110
+                 5668************************************************************************************99996422212 PP
+
+        chrA 180 ....fatfplivagiggatavatpsnipptltglglfflkvgsvlfgsgyvlvafleadlvqgkgwltqqqlldaiavgqftpgpvlstatfigyqilg 274
+                     +  fpl + +  +a+  a+p+n  pt  ++ l+flk+g+vl+gsgyvl+afle ++vq  gwlt qq+lda+avgq+tpgpv++tatf+gy + g
+  BAU41073.1 111 pgspLLLFPLSLLAQTSAAPAASPANS-PTWGSVFLLFLKIGAVLYGSGYVLLAFLEREFVQRTGWLTSQQILDAVAVGQVTPGPVFTTATFVGYLLAG 208
+                 222256789988888899999999995.79999****************************************************************** PP
+
+        chrA 275 vsgaivatlaiffpsfifvlllnplipklresawagafldainasavalmvavifnlalatwlqpygnlpfnllaiilslisailllrfqvnstwlila 373
+                   gai at+aif+p+f +vl++np++pklr+s+w   fld +na+++ lm+ v + la a+ +        + ++ il+++s i ++rf++ns+wl+l 
+  BAU41073.1 209 NGGAIAATIAIFLPAFALVLIINPFLPKLRQSCWVSGFLDGVNAASLGLMAVVTWTLARAAVV--------DWVTGILAVVSLIAVFRFKINSAWLVLG 299
+                 ********************************************************9999876........456789999******************* PP
+
+        chrA 374 galiglllkql 384
+                 ga+ gll k l
+  BAU41073.1 300 GAIAGLLAKGL 310
+                 *******9976 PP
+
+>> BAU41074.1  Chromate transporter [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   55.7   0.0   5.2e-19   1.3e-15       8      58 ..      29      79 ..      20      86 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 55.7 bits;  conditional E-value: 5.2e-19
+        chrA  8 nlsqlallflkigiigfggpaahialmeeevvkrrgwmtkerfldlvgatn 58
+                 l +la +flk+g i fggpaahia+m++e+v rr w+++e++ld++g t+
+  BAU41074.1 29 RLGELAGVFLKLGAIAFGGPAAHIAMMDDEIVTRRRWLSREKLLDFLGITQ 79
+                6889********************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (385 nodes)
+Target sequences:                         4865  (1484008 residues searched)
+Passed MSV filter:                       295  (0.0606372); expected 97.3 (0.02)
+Passed bias filter:                      118  (0.0242549); expected 97.3 (0.02)
+Passed Vit filter:                        12  (0.0024666); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.0004111); expected 0.0 (1e-05)
+Initial search space (Z):               4865  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 9522.38
+//
+[ok]

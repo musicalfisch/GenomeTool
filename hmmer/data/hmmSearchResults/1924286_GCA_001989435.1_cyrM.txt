@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924286_GCA_001989435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-56  187.5   0.1    1.8e-56  187.3   0.1    1.0  1  AQL32682.1  adenylyl-sulfate kinase [Prochlorococcus sp. RS01
+  ------ inclusion threshold ------
+      0.015   11.5   0.3      0.039   10.1   0.0    1.7  2  AQL32965.1  sodium:proton antiporter [Prochlorococcus sp. RS0
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL32682.1  adenylyl-sulfate kinase [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  187.3   0.1     2e-59   1.8e-56       6     179 ..      30     205 ..      26     207 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 187.3 bits;  conditional E-value: 2e-59
+        cyrM   6 qrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgkigs 104
+                 ++g+ +w+tglsg+gkst+++al+  l  +g+s  vldgd +r  l k lgfs edr+enirrig v+nl+   g+i + + +sp+   r++vr  igs
+  AQL32682.1  30 HKGMVIWFTGLSGSGKSTLANALNEVLHLDGFSTYVLDGDNIRHGLCKDLGFSDEDREENIRRIGEVANLFMNAGIITITAFVSPFISDRDKVRQIIGS 128
+                 5899**********************************************************************************************6 PP
+
+        cyrM 105 ..fvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                   f+ev+  a ++vce+rd kglyk+ar geik ftgi  pye p+npe+ + t    l++sv k+ n l++  +++
+  AQL32682.1 129 kdFIEVYCAANITVCENRDTKGLYKKARLGEIKEFTGISSPYEAPLNPEIVVDTGSLDLNDSVEKIINYLKKENFLN 205
+                 66******************************************************************999877665 PP
+
+>> AQL32965.1  sodium:proton antiporter [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.1      0.18   1.6e+02      69     106 ..      26      68 ..      17      79 .. 0.62
+   2 ?   10.1   0.0   4.4e-05     0.039      12      58 ..     107     153 ..      97     160 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.18
+        cyrM  69 igfvsnl.ltrhgvivlvs....aispyreireevrgkigsfv 106
+                 + ++ n+ +t   viv +s    a s    i eevrg + +f 
+  AQL32965.1  26 LAWIKNVrVTIPRVIVTLSlpsfANSQRDRIVEEVRGVLLDFE 68 
+                 5555554245555666655232344555678899999877765 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 4.4e-05
+        cyrM  12 wltglsgagkstitealqakliaegysievldgdivrtnltkglgfs 58 
+                   +g  g gksti+  l + l   g+   +ld di   n    +g++
+  AQL32965.1 107 VSSGKGGVGKSTIAVNLACSLAKLGFKTGLLDADIYGPNTPSMMGVA 153
+                 567899*****************************988877777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         1795  (496009 residues searched)
+Passed MSV filter:                        80  (0.0445682); expected 35.9 (0.02)
+Passed bias filter:                       62  (0.0345404); expected 35.9 (0.02)
+Passed Vit filter:                        15  (0.00835655); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111421); expected 0.0 (1e-05)
+Initial search space (Z):               1795  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4563.28
+//
+[ok]

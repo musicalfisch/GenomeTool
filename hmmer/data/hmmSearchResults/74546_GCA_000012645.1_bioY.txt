@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74546_GCA_000012645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-10   35.9   0.4    9.3e-10   35.5   0.4    1.2  1  ABB49946.1  biotin synthase [Prochlorococcus marinus str. MIT
+     0.0033   14.1   0.3     0.0078   12.9   0.0    1.7  2  ABB49905.1  ATPase [Prochlorococcus marinus str. MIT 9312]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB49946.1  biotin synthase [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.5   0.4   9.5e-13   9.3e-10      27     130 ..      12     112 ..       5     142 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 35.5 bits;  conditional E-value: 9.5e-13
+        bioY  27 vlvasLLlillaqliiallflPvaitGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvv 125
+                 v   s+++  l  + i+l+f+ +++       +++t q+++ +l  ll   ++   +   y+ lGl+ L+v++ g+   +Ll P ++yL G ++   v+
+  ABB49946.1  12 VCLQSIIISTLIPIYIPLPFTDKSSIN---LDIPITWQIPTIILLTLLFNRKVVFRAFNIYIILGLFILPVFHEGGSIGYLLTPNFGYLLGVYPLIKVI 107
+                 445555566666666666666665543...468*********999988888888778888*********************************999999 PP
+
+        bioY 126 dRlar 130
+                 d l  
+  ABB49946.1 108 DNLNT 112
+                 88765 PP
+
+>> ABB49905.1  ATPase [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   7.9e-06    0.0078      99     158 ..     158     217 ..     127     223 .. 0.82
+   2 ?   -2.6   0.3      0.43   4.2e+02     141     150 ..     270     279 ..     235     300 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 7.9e-06
+        bioY  99 tGgtGaalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisllGlvvlqvclaen 158
+                 +  t +alL++Pl+ +++  +  + v +R a++ + s+l+ l+   l G+  ++++ +en
+  ABB49905.1 158 KTLTISALLIFPLILGIVSLFGGKMVNQRKAQQESLSKLSDLIQEDLSGISAIKIYAQEN 217
+                 4557789*************************************************9999 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.43
+        bioY 141 vLisllGlvv 150
+                   is+ Glv 
+  ABB49905.1 270 GFISIGGLVA 279
+                 3344444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         1962  (514473 residues searched)
+Passed MSV filter:                        64  (0.0326198); expected 39.2 (0.02)
+Passed bias filter:                       40  (0.0203874); expected 39.2 (0.02)
+Passed Vit filter:                         6  (0.0030581); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.00101937); expected 0.0 (1e-05)
+Initial search space (Z):               1962  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 10752.49
+//
+[ok]

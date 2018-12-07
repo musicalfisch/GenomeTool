@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/388467_GCA_000710505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-15   53.8   0.0    3.7e-15   52.2   0.0    1.6  2  KEI66604.1  PetH [Planktothrix agardhii NIVA-CYA 126/8]
+
+
+Domain annotation for each sequence (and alignments):
+>> KEI66604.1  PetH [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0     0.011        48    1035    1072 ..     130     165 ..     125     172 .. 0.80
+   2 !   52.2   0.0   8.8e-19   3.7e-15    1208    1389 ..     175     367 ..     170     384 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.011
+        cysJ 1035 qellqevvpgsrstrlivfdltdtdlqyetgdhvavyp 1072
+                   el+ e   g+ + r + fdl+  dl+y  g+ + + p
+  KEI66604.1  130 YELVGE--GGAGTVRHLTFDLSGGDLRYVEGQSIGIIP 165 
+                  555555..3666789****************9999887 PP
+
+  == domain 2  score: 52.2 bits;  conditional E-value: 8.8e-19
+        cysJ 1208 qkprlysisscp...llhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s      l  + + + v  l+    ++g+   g+cs +l+ l+ g+ v i   +   +  p d  a ++m+  gtg++p+ afl +  
+  KEI66604.1  175 HKLRLYSIASTRhgdKLDDKTVSLCVRQLEYKhPETGETVYGVCSTHLCNLEMGADVTITGpVGKEMLLPDDEEATVVMMATGTGIAPFRAFLWRMF 271 
+                  688*****9975222688899999999888752689***********************8526678899************************9887 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeql.qvwrdrnvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmaddv 1389
+                    q +     g a l+fg    ++++y+e+l q+ r+      l  a+sr  ++    + y+q+ ++++ +++w+++ + + h y+cg   m   +
+  KEI66604.1  272 KEQHEDYKfKGLAWLFFGIPYTANILYKEELeQLQREFPDNFRLTYAISREEQNpeggRMYIQDRIKENADELWKLVQKDNTHTYICGLKGMEGGI 367 
+                  777766651699****************99856778888888899999997654333378****************************88876554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         4191  (1395461 residues searched)
+Passed MSV filter:                       110  (0.0262467); expected 83.8 (0.02)
+Passed bias filter:                       81  (0.0193271); expected 83.8 (0.02)
+Passed Vit filter:                         5  (0.00119303); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000238607); expected 0.0 (1e-05)
+Initial search space (Z):               4191  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.12u 0.01s 00:00:00.13 Elapsed: 00:00:00.14
+# Mc/sec: 14752.02
+//
+[ok]

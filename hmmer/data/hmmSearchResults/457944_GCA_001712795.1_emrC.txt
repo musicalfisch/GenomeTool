@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/457944_GCA_001712795.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-56  187.3  14.4    2.8e-56  187.2  14.4    1.0  1  ODH00591.1  hypothetical protein A4S05_32685 [Nostoc sp. KVJ2
+    0.00026   20.1   8.7    0.00064   18.9   8.7    1.6  1  ODG96855.1  small multidrug resistance protein [Nostoc sp. KV
+
+
+Domain annotation for each sequence (and alignments):
+>> ODH00591.1  hypothetical protein A4S05_32685 [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  187.2  14.4   7.8e-60   2.8e-56       1     105 [.       1     105 [.       1     106 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 187.2 bits;  conditional E-value: 7.8e-60
+        emrC   1 mliswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigv 99 
+                 m+iswiyl++ai+fevsgttcmkls+gftk++psvlifvfyglc+tflt+alk++evsvaysvwaglgt+l+a ig+iwfres+tl+kl+sialiiigv
+  ODH00591.1   1 MSISWIYLIIAIVFEVSGTTCMKLSQGFTKTVPSVLIFVFYGLCFTFLTFALKRLEVSVAYSVWAGLGTILVALIGIIWFRESATLMKLFSIALIIIGV 99 
+                 89************************************************************************************************* PP
+
+        emrC 100 iginsa 105
+                 igin++
+  ODH00591.1 100 IGINAS 105
+                 ****97 PP
+
+>> ODG96855.1  small multidrug resistance protein [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.9   8.7   1.8e-07   0.00064       3     100 ..      13     117 ..      11     122 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 18.9 bits;  conditional E-value: 1.8e-07
+        emrC   3 iswiyllaailfevsgttcmkls.....eg...ftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisia 93 
+                 i +  l+++ilf +sg   mk +     eg   ++ l    l +++y l++    lal+++++s+ay +  +l  v i   +  +f+e +tl+++  ++
+  ODG96855.1  13 IPYTILFISILFSISGQLLMKHTmshpnEGlltWEFLQKLALAITVYCLGVVNWILALRTVKLSIAYPLT-SLNYVGILFGSYYFFNEEITLTRIAGVI 110
+                 5677899*************96511222232111223445677889*********************985.6888888889999*************** PP
+
+        emrC  94 liiigvi 100
+                  i +gv+
+  ODG96855.1 111 TIFVGVL 117
+                 *****97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         7210  (2327490 residues searched)
+Passed MSV filter:                       253  (0.0350902); expected 144.2 (0.02)
+Passed bias filter:                      102  (0.014147); expected 144.2 (0.02)
+Passed Vit filter:                        10  (0.00138696); expected 7.2 (0.001)
+Passed Fwd filter:                         2  (0.000277393); expected 0.1 (1e-05)
+Initial search space (Z):               7210  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6167.85
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1637645_GCA_000972705.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkK  [M=298]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.4e-96  318.8  15.3    3.1e-55  185.8   8.3    2.0  2  KKD35123.1  photosystem reaction center subunit H [Limnoraphi
+    6.5e-08   30.5   0.3    7.9e-08   30.2   0.3    1.2  1  KKD35132.1  hypothetical protein WN50_27075 [Limnoraphis robu
+
+
+Domain annotation for each sequence (and alignments):
+>> KKD35123.1  photosystem reaction center subunit H [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  138.1   0.6   3.8e-44     1e-40       1     117 [.       1     120 [.       1     122 [. 0.94
+   2 !  185.8   8.3   1.1e-58   3.1e-55     145     297 ..     122     274 .]     120     274 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 138.1 bits;  conditional E-value: 3.8e-44
+        ahkK   1 msllkikefdpnyre.sfagkdikgmgvyas.vdekigtvsdilvddkghfryfvvdlglwifgkkvllpvgrsridntlervytvgmt.kqqaenlpe 96 
+                 m+l++ike+ pny +  f+g+d kg  vya   +ekig+v d lvd+ g +ryfv+d g+wifgkkvllpvgrsrid    ++y++g+t ++qae lp+
+  KKD35123.1   1 MTLVRIKEYYPNYVDeLFKGNDFKGYTVYAGtSNEKIGSVDDALVDEAGRIRYFVIDTGFWIFGKKVLLPVGRSRIDFNDRKLYALGLTsREQAEALPK 99 
+                 89***********76269***********96258******************************************************9457******* PP
+
+        ahkK  97 fsehkeidynyeeqvrgvyrs 117
+                 ++    +dy+yee+vr  yr+
+  KKD35123.1 100 YDSNMSVDYDYEERVRQSYRT 120
+                 *******************97 PP
+
+  == domain 2  score: 185.8 bits;  conditional E-value: 1.1e-58
+        ahkK 145 ppiksgngngydykqepalyglndqdhqtfklyqerliankiraktgevivgkhtetekarvsvpidkervviervtptgagesvtlgadsfgtsevth 243
+                 +p+  gng  y y+++  l+ ln++dh t+kly+erliank r k+gev++gk  eteka+ svpi+kervv+er tp++age vt g+  f   ev+ 
+  KKD35123.1 122 QPVANGNGTNYRYENDQELFDLNERDHGTLKLYEERLIANKDRHKAGEVVIGKTVETEKAQASVPIEKERVVVERTTPSNAGEVVTPGTANFKEGEVAR 220
+                 58899********************************************************************************************** PP
+
+        ahkK 244 idiyeetadihkeaflreevrvnkvvdhetieaeetlrreeldintqehpnver 297
+                 +diyeetadihkea++reev v k vd + + aeetlrreel ++ + +p v+r
+  KKD35123.1 221 MDIYEETADIHKEAYVREEVNVRKEVDRDIVTAEETLRREELRVDKDGKPVVKR 274
+                 ***********************************************9999987 PP
+
+>> KKD35132.1  hypothetical protein WN50_27075 [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.2   0.3   2.9e-11   7.9e-08     168     222 ..      47      99 ..      15     124 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 30.2 bits;  conditional E-value: 2.9e-11
+        ahkK 168 dqdhqtfklyqerliankiraktgevivgkhtetekarvsvpidkervviervtp 222
+                   dh+t++l  erl  ++ r k geviv k  ete   v vp+ +e++++e+v  
+  KKD35132.1  47 TLDHETIRLLSERLSVKHERRKIGEVIVRKTVETEI--VEVPVRREKLIVEQVGS 99 
+                 569*******************************96..889***********975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (298 nodes)
+Target sequences:                         5458  (1735477 residues searched)
+Passed MSV filter:                        99  (0.0181385); expected 109.2 (0.02)
+Passed bias filter:                       85  (0.0155735); expected 109.2 (0.02)
+Passed Vit filter:                         7  (0.00128252); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000366435); expected 0.1 (1e-05)
+Initial search space (Z):               5458  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 8619.54
+//
+[ok]

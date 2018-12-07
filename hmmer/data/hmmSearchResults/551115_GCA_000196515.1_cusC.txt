@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/551115_GCA_000196515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusC  [M=456]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-14   50.5  18.9    1.1e-13   48.6   8.6    1.8  2  ADI66173.1  outer membrane efflux protein ['Nostoc azollae' 0
+
+
+Domain annotation for each sequence (and alignments):
+>> ADI66173.1  outer membrane efflux protein ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   2.6   2.4e-07   0.00089     308     418 ..     297     407 ..     221     413 .. 0.61
+   2 !   48.6   8.6   3.1e-17   1.1e-13     106     430 ..     300     626 ..     289     634 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 2.4e-07
+        cusC 308 dviygqislkiplieggrrkaeideaksklkqsellykdlkstislevddayynlmtqqsvlgkiqdqlklakdnyekiseqfkegfansidivdannf 406
+                     gq  l   l   grr+a i ea  +++  el        i l+v   yynl   +  +   q  ++ +           + g+    d++ ++  
+  ADI66173.1 297 TSFGGQAELTYNLYTSGRRNAAITEAEEQVRFQELDVERQSEEIRLNVATDYYNLQQADENVRISQSAVQNSEASLRDAQALERAGVGTRFDMLRSQVN 395
+                 234578888888888888888888888888888888888888888888888888877666666666666666666666666666777777777777777 PP
+
+        cusC 407 lvsteqqlinaq 418
+                 l  +eq+l +a+
+  ADI66173.1 396 LANAEQELTDAR 407
+                 777777777665 PP
+
+  == domain 2  score: 48.6 bits;  conditional E-value: 3.1e-17
+        cusC 106 twgakleqslslggrefialnmskkkieksktdfktvnenyllnvasayynilktqktlkiaqenlnrlekh.kdvtklrlkvgeitktvvlraeaevs 203
+                    a l   l   gr   a+  +  ++     d+    e+  lnva+ yyn+ +++  ++i+q  ++  e   +d   l  + g  t+  +lr++ +++
+  ADI66173.1 300 GGQAELTYNLYTSGRRNAAITEAEEQVRFQELDVERQSEEIRLNVATDYYNLQQADENVRISQSAVQNSEASlRDAQAL-ERAGVGTRFDMLRSQVNLA 397
+                 4457788889999****************************************************99998762555555.5788889999********* PP
+
+        cusC 204 qaqsdviratnnlkmakanliklteiednftvretsfesididela..slkeq...avtnrtelksfdlqtqiakdqvrfvkstylpdvsleaaytgnd 297
+                 +a+ ++  a  +  +a+  l    ++ +   +  t+ + +++  l    l +    a  nr el+    q +i+ +q r   ++  p++sl a+y   d
+  ADI66173.1 398 NAEQELTDARSQQAIAQRRLATRLNLPQS--INITAADPVQLAGLWerGLEDSiilAYQNRPELQQQLAQRNISEQQRRQALASLGPQISLVASYDLLD 494
+                 *******9999999999998766666554..4445555555554431133333222778**************************************99 PP
+
+        cusC 298 tspstsfnnkdviygqislkiplieggrrkaeideaksklkqsellykdlkstislevddayynlmtqqsvlgkiqdqlklakdnyekiseqfkegfan 396
+                      s+n  d     +   + l +gg  ka   +ak+++  +e  + + +  i ++v++ay   +++   +   +  l  ak+       +f+ g+  
+  ADI66173.1 495 VF-NDSINVSDGYSVGVRATLNLYDGGAAKARAAQAKTNIAIAETNFAEQRNQIRFQVEQAYSTQIANLENVQTSNAALEQAKESLRLARLRFQAGVGT 592
+                 86.5799999*999999*********************************************9888888888888899********************* PP
+
+        cusC 397 sidivdannflvsteqqlinaqydyqigililkr 430
+                   d+++a+n l  +e + + a  +y+  +  l+r
+  ADI66173.1 593 QTDVINAENELTRSEGNRVRAILNYNRALTELQR 626
+                 *********************9999988777766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (456 nodes)
+Target sequences:                         3651  (943585 residues searched)
+Passed MSV filter:                        91  (0.0249247); expected 73.0 (0.02)
+Passed bias filter:                       57  (0.0156122); expected 73.0 (0.02)
+Passed Vit filter:                         3  (0.000821693); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000273898); expected 0.0 (1e-05)
+Initial search space (Z):               3651  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8605.50
+//
+[ok]

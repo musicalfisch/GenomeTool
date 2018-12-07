@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.1e-48  157.4   0.8    4.5e-23   78.0   0.1    2.1  2  CCH65553.1  Carbon dioxide concentrating mechanism protein Cc
+    4.3e-37  123.1   0.6    4.8e-37  122.9   0.6    1.0  1  CCH64818.1  carbon dioxide concentrating mechanism protein [R
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH65553.1  Carbon dioxide concentrating mechanism protein CcmO [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   78.0   0.1   5.5e-26   4.6e-23       5      92 ..      18     103 ..      15     110 .. 0.96
+   2 !   78.0   0.1   5.4e-26   4.5e-23       4      92 ..     121     207 ..     118     216 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 78.0 bits;  conditional E-value: 5.5e-26
+        ccmK   5 vgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyvlpir 92 
+                 +g++ t+ fpa+v +ad m+k+a v lvgyekigsg  t ivrg +++v+ +v +g  +a++ n  + +s+ ii rp  nl  vlpi 
+  CCH65553.1  18 LGLVSTISFPAIVGTADMMLKSAGVHLVGYEKIGSGHCTAIVRGGIADVRLAVESGERTAKQFN--QFVSSLIIPRPDANLSIVLPIA 103
+                 79***********************************************************998..89******************95 PP
+
+  == domain 2  score: 78.0 bits;  conditional E-value: 5.4e-26
+        ccmK   4 avgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyvlpir 92 
+                 a+g++et+gfpa+v aadam+kaa + l  yekig++  t i+rg v++v  +v +g+ +a+r+  ge+ +  +i rp ++le  lp+ 
+  CCH65553.1 121 AIGLVETKGFPAMVGAADAMLKAADIQLAAYEKIGASLCTAIIRGSVANVAVAVETGMYEAERI--GELNAVMVIPRPLDELEKTLPLA 207
+                 89*************************************************************9..899999***************85 PP
+
+>> CCH64818.1  carbon dioxide concentrating mechanism protein [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  122.9   0.6   5.7e-40   4.8e-37       1     102 [.       1     102 [.       1     103 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 122.9 bits;  conditional E-value: 5.7e-40
+        ccmK   1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyvlpiryteeveq 99 
+                 m+iavg+ietlgfpav+ aadamvk+a v++v ++k  sgr  v +rg+vsev++s+aag+++ +   ggev++ +i+  p +n+e+vlpi +te+ e+
+  CCH64818.1   1 MPIAVGVIETLGFPAVLAAADAMVKSAEVAIVHHDKAESGRFVVAIRGQVSEVKCSIAAGIKAGEETYGGEVITHYIVPNPPDNVEFVLPIHFTEKTEN 99 
+                 9************************************************************************************************** PP
+
+        ccmK 100 frs 102
+                 fr 
+  CCH64818.1 100 FRI 102
+                 *96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        44  (0.0262843); expected 33.5 (0.02)
+Passed bias filter:                       38  (0.0227001); expected 33.5 (0.02)
+Passed Vit filter:                         4  (0.00238949); expected 1.7 (0.001)
+Passed Fwd filter:                         2  (0.00119474); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 3398.73
+//
+[ok]

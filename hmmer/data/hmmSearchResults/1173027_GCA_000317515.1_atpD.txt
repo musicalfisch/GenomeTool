@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173027_GCA_000317515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-82  274.2   3.0    1.8e-82  274.0   3.0    1.0  1  AFZ18981.1  ATP synthase, F1 delta subunit [Microcoleus sp. P
+    1.7e-05   23.2   4.0      0.042   12.1   0.1    4.8  5  AFZ19069.1  HEAT repeat-containing protein [Microcoleus sp. P
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ18981.1  ATP synthase, F1 delta subunit [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  274.0   3.0   5.7e-86   1.8e-82       1     183 [.       1     183 []       1     183 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 274.0 bits;  conditional E-value: 5.7e-86
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mk  + +aev qpya+al+siaq++nlte +ged   ll+llk+s+elq+fl np+vk+e+kk+vlkq+ ge   +y  nfl +lvdrrr+ fl+ i q
+  AFZ18981.1   1 MKGGSLSAEVYQPYAEALMSIAQANNLTERIGEDIAGLLNLLKESQELQQFLGNPIVKAEDKKAVLKQIGGEQFHQYTNNFLNFLVDRRRVLFLQGICQ 99 
+                 7778889******************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qy allr+lnqtvlaevtsav lte+q+q+v+ekv ++t a+qvel+tkid dliggviikvgsq+idaslrgq+rr+ lrlss
+  AFZ18981.1 100 QYQALLRKLNQTVLAEVTSAVELTEEQKQSVREKVRSMTSAHQVELDTKIDPDLIGGVIIKVGSQLIDASLRGQIRRIGLRLSS 183
+                 **********************************************************************************98 PP
+
+>> AFZ19069.1  HEAT repeat-containing protein [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.1   0.0      0.03        97      65      89 ..     145     169 ..      92     206 .. 0.61
+   2 !    5.2   0.0    0.0017       5.5      11      89 ..     224     309 ..     218     315 .. 0.69
+   3 !   10.7   0.1   3.5e-05      0.11       8      89 ..     291     379 ..     286     385 .. 0.80
+   4 !   12.1   0.1   1.3e-05     0.042       8      88 ..     361     448 ..     353     470 .. 0.82
+   5 ?    1.5   0.0     0.023        74      12      89 ..     435     519 ..     434     575 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 1.1 bits;  conditional E-value: 0.03
+        atpD  65 vlkqllgegvnpylrnfllllvdrr 89 
+                 v    lg +++py+r++l +l d +
+  AFZ19069.1 145 VALGNLGASAQPYIRDILNFLKDEQ 169
+                 3333456666666666666666554 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.0017
+        atpD  11 aqpyaqallsiaqsqnlteev.gedartllsllkgs....kelqnfldnpfvkpenkknvlkql..lgegvnpylrnfllllvdrr 89 
+                 +qpy + +l   + +++   + g  a++l +l k++    +++ ++l++  v++e +  v + l  lge+++pyl+++l +l dr 
+  AFZ19069.1 224 TQPYLKDILDFLKDEDVDVYFrGFAAQALGNLGKTTpsylQDVADILKDEKVNAEVRAFVAQALgnLGEAAQPYLKDILNFLKDRN 309
+                 577777777777777766665233444554444332223366778888899999888777776666899*************9985 PP
+
+  == domain 3  score: 10.7 bits;  conditional E-value: 3.5e-05
+        atpD   8 aevaqpyaqallsiaqsqnlteevgedartllsllkgskel..qnfldnpfvkpenkknvlkql.......lgegvnpylrnfllllvdrr 89 
+                  e aqpy + +l   + +n+   + + a   l+ l +s++l  +++ld  f+k+e+ k+ ++++       lge+++pyl+++l +l d r
+  AFZ19069.1 291 GEAAQPYLKDILNFLKDRNVDTGIRGFAAESLGNLGASAQLylKDILD--FLKDESVKSYVRRFaasalenLGEAAQPYLQDILNFLRDER 379
+                 589*****************9999888888888888888762245554..8888888888776444444559***************9987 PP
+
+  == domain 4  score: 12.1 bits;  conditional E-value: 1.3e-05
+        atpD   8 aevaqpyaqallsiaqsqnlteevgedartllsll.kgsk....elqnfldnpfvkpenkknvlkql..lgegvnpylrnfllllvdr 88 
+                  e aqpy q +l   + + +  ++ + a   ls l ++++    ++ nfl++  vkp  + n  + +  lg +++p+l+n+l +l d 
+  AFZ19069.1 361 GEAAQPYLQDILNFLRDERVEADIRGSAAIALSNLgEAAQpyisDILNFLKDEQVKPSIRGNAAEAFnnLGASAQPCLKNILNFLKDE 448
+                 589**************9999999777666555551555533335789999999*999999988754449**************9986 PP
+
+  == domain 5  score: 1.5 bits;  conditional E-value: 0.023
+        atpD  12 qpyaqallsiaqsqnlteevgedartllsllkgs.....kelqnfldnpfvkpenkknvlkql..lgegvnpylrnfllllvdrr 89 
+                 qp  + +l   + +n+   v + a  +l+ l +      k++ +fl++  vkp  + +  + l  lg +++py++++l +l d +
+  AFZ19069.1 435 QPCLKNILNFLKDENIEPSVRGSAAPILGNLGQVtqpdfKDILDFLKDEQVKPSVRSSAAESLgnLGASAQPYIKDILNVLKDEQ 519
+                 6666666666666666666666666555544322111114566788888888888777777666688899999999998888865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6441  (2166530 residues searched)
+Passed MSV filter:                       228  (0.0353982); expected 128.8 (0.02)
+Passed bias filter:                      147  (0.0228225); expected 128.8 (0.02)
+Passed Vit filter:                         8  (0.00124204); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000310511); expected 0.1 (1e-05)
+Initial search space (Z):               6441  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 6644.03
+//
+[ok]

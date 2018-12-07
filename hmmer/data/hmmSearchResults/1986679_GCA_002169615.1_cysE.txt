@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986679_GCA_002169615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysE  [M=252]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00065   15.5   9.6      0.019   10.7   5.1    2.8  3  OUW99223.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosam
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW99223.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase [Cyanobacteria bacterium TMED229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.0   0.1   0.00076         1      66     107 ..      19      58 ..       6      64 .. 0.63
+   2 !    4.1   0.4    0.0015         2     115     156 ..     100     141 ..      62     147 .. 0.77
+   3 !   10.7   5.1   1.4e-05     0.019      71     174 ..      90     203 ..      82     228 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.00076
+        cysE  66 ieihpgaqigqgvfidhgmgvvigetaivgdyaliyqgvtlg 107
+                  e+ pg  ig g ++  g  vvige + +g   ++   +tlg
+  OUW99223.1  19 AELAPGVVIGPGAVV--GPEVVIGENSWIGPNVVLEGRLTLG 58 
+                 355666666666654..5566666666666666665555555 PP
+
+  == domain 2  score: 4.1 bits;  conditional E-value: 0.0015
+        cysE 115 krhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipa 156
+                 +r    ge   +g g  ++   +lg n  +g g v+   i  
+  OUW99223.1 100 NRATDEGESTSIGDGNLLMAYCHLGHNCALGNGIVMSNAIQV 141
+                 45666799999999999999999****999999998777765 PP
+
+  == domain 3  score: 10.7 bits;  conditional E-value: 1.4e-05
+        cysE  71 gaqigqgvfi....dhgmgvvigetaivgdyaliyqgvtlggtgkesg....krhptlgenvvvgagakvlgniylgnnvrvgagsvvlrdipadctvv 161
+                 g  i + v i    d g    ig+  ++  y+ + +  +lg     s       h  + +  v+g    +   +++g    vg  + v rd+p  c v 
+  OUW99223.1  90 GNTIRECVTInratDEGESTSIGDGNLLMAYCHLGHNCALGNGIVMSNaiqvAGHVIIEDRAVIGGCLGIHQFVHIGGMAMVGGMTRVDRDVPPYCLVE 188
+                 55555555542222667778888888888888888888887654444311114688999999****9******************************** PP
+
+        cysE 162 gvpgrl..iyragtr 174
+                 g pgr+  + + g r
+  OUW99223.1 189 GHPGRVrgLNKVGLR 203
+                 ****97334555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (252 nodes)
+Target sequences:                         1375  (402758 residues searched)
+Passed MSV filter:                        36  (0.0261818); expected 27.5 (0.02)
+Passed bias filter:                       30  (0.0218182); expected 27.5 (0.02)
+Passed Vit filter:                         7  (0.00509091); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000727273); expected 0.0 (1e-05)
+Initial search space (Z):               1375  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5074.75
+//
+[ok]

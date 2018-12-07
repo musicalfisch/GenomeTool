@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   12.5   0.0      0.012   12.5   0.0    1.0  1  CCQ49791.1  Cytosine deaminase [Crocosphaera watsonii WH 8502
+      0.054   10.4   0.0        1.7    5.4   0.0    2.1  2  CCQ52889.1  Dihydroorotase [Crocosphaera watsonii WH 8502]
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ49791.1  Cytosine deaminase [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   4.9e-06     0.012      12      67 ..      35      94 ..      23     127 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 4.9e-06
+        cyrH 12 veddyatvdvqvvdgkiaaiapelevvgt..aidgenklllpgfvnahths..semwqrg 67
+                ++++   vd+++ +gki +i ++   +++   id ++ +++p f+++hth     +w+r 
+  CCQ49791.1 35 TREKLCHVDLEINQGKIVSIISHSSELTNhpYIDLKKGIIFPCFIDSHTHLdkGHIWERS 94
+                6788899**********9988776655541269*****************6114688886 PP
+
+>> CCQ52889.1  Dihydroorotase [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.4   0.0   0.00068       1.7       8      62 ..      14      71 ..       9      80 .. 0.87
+   2 ?    2.7   0.0    0.0047        12     325     368 ..     214     260 ..     204     284 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 5.4 bits;  conditional E-value: 0.00068
+        cyrH  8 vliaveddyatvdvqvvdgkiaaiapelevv...gtaidgenklllpgfvnahthsse 62
+                vl +v ++ +t dv +    i ai+++l+ +   ++ +dg+  +l pg+++ +++s e
+  CCQ52889.1 14 VLDPVANSTMTNDVLLGSSLIQAIDSHLDNIppdTNIVDGKGLILAPGLMDLYSYSGE 71
+                788999999*********************95534578999999******99999877 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.0047
+        cyrH 325 leaikigsilhnvtdld...yqhwitprqavemaslggakglnladk 368
+                  ea  + +il  v+ ++   +   i++r+ave+ + g a+g+ ++  
+  CCQ52889.1 214 TEATAVATILEMVAAMEtpvHLMRISTRRAVELIAWGKARGIPITAS 260
+                 67888888888888776222356799***************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       105  (0.021148); expected 99.3 (0.02)
+Passed bias filter:                       88  (0.0177241); expected 99.3 (0.02)
+Passed Vit filter:                         7  (0.00140987); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040282); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 13817.79
+//
+[ok]

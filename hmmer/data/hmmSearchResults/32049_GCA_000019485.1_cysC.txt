@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/32049_GCA_000019485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-97  321.5   0.1    2.1e-97  321.4   0.1    1.0  1  ACA99485.1  adenylylsulfate kinase [Synechococcus sp. PCC 700
+  ------ inclusion threshold ------
+      0.018   12.0   0.2      0.027   11.4   0.2    1.3  1  ACA98521.1  septum site-determining protein, MinD [Synechococ
+
+
+Domain annotation for each sequence (and alignments):
+>> ACA99485.1  adenylylsulfate kinase [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  321.4   0.1  1.3e-100   2.1e-97       4     179 ..       1     176 [.       1     177 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 321.4 bits;  conditional E-value: 1.3e-100
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m +rgvtvw+tglsgagk+ti+ al  +l a g  +e+ldgdivrtnltkglgfskedrdenirrigfvs lltr gviv+vsaispyreireevr +i
+  ACA99485.1   1 MEHRGVTVWFTGLSGAGKTTISHALAERLKAAGCKLEILDGDIVRTNLTKGLGFSKEDRDENIRRIGFVSHLLTRNGVIVFVSAISPYREIREEVRQRI 99 
+                 789************************************************************************************************ PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                 g+fve+fvnapl+ ce rdvkgly+rarageik ftgiddpye p npevecrtdle lees+ kv +kltelgyi 
+  ACA99485.1 100 GDFVEIFVNAPLEECERRDVKGLYQRARAGEIKGFTGIDDPYEAPTNPEVECRTDLEELEESIEKVMKKLTELGYIT 176
+                 ***************************************************************************95 PP
+
+>> ACA98521.1  septum site-determining protein, MinD [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.2   1.7e-05     0.027       9      58 ..       4      53 ..       1      70 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.7e-05
+        cysC  9 vtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfs 58
+                v v  +g  g gkst t  l + l+  g  + ++d d    nl   lg+ 
+  ACA98521.1  4 VIVVTSGKGGVGKSTCTANLGSALVKLGKKVALVDADFGLRNLDLLLGLE 53
+                67788999******************************999998888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3186  (990621 residues searched)
+Passed MSV filter:                       124  (0.0389203); expected 63.7 (0.02)
+Passed bias filter:                      120  (0.0376648); expected 63.7 (0.02)
+Passed Vit filter:                        18  (0.00564972); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000627746); expected 0.0 (1e-05)
+Initial search space (Z):               3186  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 9113.71
+//
+[ok]

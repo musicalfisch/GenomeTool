@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1503470_GCA_002213405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   7.9e-123  409.1  20.5    1.4e-83  280.3   5.2    2.0  2  OWY64783.1  hypothetical protein B7486_45390 [cyanobacterium 
+  ------ inclusion threshold ------
+       0.14   11.1   3.4       0.12   11.3   2.9    1.2  1  OWY67583.1  branched-chain amino acid transporter [cyanobacte
+
+
+Domain annotation for each sequence (and alignments):
+>> OWY64783.1  hypothetical protein B7486_45390 [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  135.0   7.3   3.4e-43   2.5e-39       1     103 [.       1     103 [.       1     114 [. 0.98
+   2 !  280.3   5.2   1.9e-87   1.4e-83     106     289 ..     157     340 ..     138     342 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 135.0 bits;  conditional E-value: 3.4e-43
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qpi+ lh+ld rvk+ wl++flaap++an+ +r++lv ll+l+tl a ip rvwrqqmgwl+ l+  v+++ a++pdglgv  qp
+  OWY64783.1   1 MDLLRSLPIGLYLEQPIAWLHRLDPRVKLAWLLSFLAAPIMANSLYRVSLVILLILMTLTAGIPWRVWRQQMGWLLTLSFFVLILGAVSPDGLGVDPQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpe 103
+                 rlp 
+  OWY64783.1 100 RLPT 103
+                 **96 PP
+
+  == domain 2  score: 280.3 bits;  conditional E-value: 1.9e-87
+        bioN 106 lnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlar 204
+                  n   +sdyqyvl++   + vtrrs+ela+r+st +ftliystnl+llttapeeit gle l+ plrrf++pvtei+ltltlslrfiplv+eevqnl r
+  OWY64783.1 157 TNYITSSDYQYVLFQYWIITVTRRSVELALRLSTSLFTLIYSTNLYLLTTAPEEITAGLESLMLPLRRFKLPVTEIALTLTLSLRFIPLVMEEVQNLIR 255
+                 477789********************************************************************************************* PP
+
+        bioN 205 avrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 +vrtrai+w+klgik +l vw+ v e+ll+nlllraeq+a am vrgft+pn h+v+wh+l++   d+ial+ l+ fw  rl wg
+  OWY64783.1 256 SVRTRAINWKKLGIKGALRVWMVVAERLLENLLLRAEQMAKAMTVRGFTTPNTHRVQWHQLRFTVRDWIALVCLVAFWGIRLTWG 340
+                 ************************************************************************************9 PP
+
+>> OWY67583.1  branched-chain amino acid transporter [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   2.9   1.6e-05      0.12      44      89 ..       3      48 ..       1      77 [. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.6e-05
+        bioN 44 pwwrlalvgllllltllapipprvwrqqmgwliflaiivflitait 89
+                 ww + l gl  +l     i  r  r q gwl  +   v+l+ a +
+  OWY67583.1  3 VWWVILLAGLGTFLMRSVGIWVRTDRLQAGWLDKVGFAVILVMATS 48
+                6*******************************77666655555433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                        15006  (4208708 residues searched)
+Passed MSV filter:                       612  (0.0407837); expected 300.1 (0.02)
+Passed bias filter:                      334  (0.0222578); expected 300.1 (0.02)
+Passed Vit filter:                        23  (0.00153272); expected 15.0 (0.001)
+Passed Fwd filter:                         2  (0.00013328); expected 0.2 (1e-05)
+Initial search space (Z):              15006  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.11u 0.00s 00:00:00.11 Elapsed: 00:00:00.11
+# Mc/sec: 11133.95
+//
+[ok]

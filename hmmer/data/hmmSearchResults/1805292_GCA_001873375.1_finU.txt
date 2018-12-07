@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805292_GCA_001873375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-08   31.5   0.0    1.8e-08   31.5   0.0    1.0  1  OIP78355.1  hypothetical protein AUK48_01860 [Oscillatoriales
+     0.0012   15.7   0.1     0.0014   15.5   0.1    1.1  1  OIP68424.1  (2Fe-2S)-binding protein [Oscillatoriales cyanoba
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP78355.1  hypothetical protein AUK48_01860 [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.5   0.0   1.2e-11   1.8e-08     234     291 ..      11      68 ..       2      77 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 31.5 bits;  conditional E-value: 1.2e-11
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl 291
+                 e+v +elr+ l++d+++v+l + ++ +++  l++a++s+ s+ ++l++ +e +l++++
+  OIP78355.1  11 ENVLDELRPYLMSDGGNVELVEIEGPVVRLRLQGACGSCPSSAMTLRMGIERKLKEEI 68 
+                 3455689***********************************************9998 PP
+
+>> OIP68424.1  (2Fe-2S)-binding protein [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.1   9.1e-07    0.0014     134     180 ..      84     132 ..      61     151 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 9.1e-07
+        finU 134 ahddddeGalvctcfgisetkirrvivennltta.eqvtnyvkaG.GGc 180
+                   +d+de    c cfg + ++ir+ i e+  t+a   +++++ka   Gc
+  OIP68424.1  84 FQKDQDEEVPACYCFGWTRQRIRKEIEEQGQTQAiASISSHIKAKrCGC 132
+                 4578899999*******************999984579999**962455 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         3046  (947245 residues searched)
+Passed MSV filter:                       113  (0.0370978); expected 60.9 (0.02)
+Passed bias filter:                       78  (0.0256074); expected 60.9 (0.02)
+Passed Vit filter:                         5  (0.0016415); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000656599); expected 0.0 (1e-05)
+Initial search space (Z):               3046  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9472.45
+//
+[ok]

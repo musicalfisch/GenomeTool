@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-57  189.3  11.1    5.4e-57  189.2  11.1    1.0  1  ABA22686.1  Small multidrug resistance protein [Anabaena vari
+    1.6e-06   26.9   8.4    2.4e-06   26.3   8.4    1.3  1  ABA22837.1  conserved hypothetical protein [Anabaena variabil
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA22686.1  Small multidrug resistance protein [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.2  11.1   1.9e-60   5.4e-57       1     106 []       1     106 []       1     106 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 189.2 bits;  conditional E-value: 1.9e-60
+        emrC   1 mliswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigv 99 
+                 m++s++yll+ai+fevsgttcmkls+gf+kl+ps+lifvfyglc+tf+tl+lk+i++s+aysvwaglgt+lia +gliwfres+tlvk+is++lii+gv
+  ABA22686.1   1 MSTSLVYLLMAIIFEVSGTTCMKLSDGFNKLTPSILIFVFYGLCFTFQTLSLKNIDISIAYSVWAGLGTALIAGVGLIWFRESMTLVKFISMTLIIVGV 99 
+                 89************************************************************************************************* PP
+
+        emrC 100 iginsak 106
+                 +gins+k
+  ABA22686.1 100 VGINSGK 106
+                 *****87 PP
+
+>> ABA22837.1  conserved hypothetical protein [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   8.4   8.5e-10   2.4e-06       8     105 ..      11     109 ..       3     110 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 8.5e-10
+        emrC   8 llaailfevsgttcmklsegftklipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigviginsa 105
+                 +l+++ ++    t +kl  g + l   ++  + +ygl+  f  l l k+++s+ay +  gl  vl ++ g +++re + + + i i l++ g+  i  a
+  ABA22837.1  11 ILTTVGLNTLAQTLLKLGAGQNPLNLYLIGgICCYGLSTIFYVLVLGKLNLSIAYPLVIGLTIVLTTIAGAVVLREKVLVSQWIGIGLLLSGISAIALA 109
+                 4556666777778888888888776554432679**********************************************************9988766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       233  (0.0408342); expected 114.1 (0.02)
+Passed bias filter:                       84  (0.0147213); expected 114.1 (0.02)
+Passed Vit filter:                         6  (0.00105152); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350508); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6848.74
+//
+[ok]

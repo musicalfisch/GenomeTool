@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317936_GCA_000316625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-86  286.6   0.1      2e-86  286.4   0.1    1.0  1  AFY41475.1  adenylylsulfate kinase [Nostoc sp. PCC 7107]
+  ------ inclusion threshold ------
+      0.047   11.4   0.0      0.058   11.1   0.0    1.2  1  AFY41759.1  gluconate kinase, SKI family [Nostoc sp. PCC 7107
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY41475.1  adenylylsulfate kinase [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  286.4   0.1   7.6e-90     2e-86       2     178 ..      25     201 ..      24     206 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 286.4 bits;  conditional E-value: 7.6e-90
+        cysC   2 iamkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrg 100
+                 i +kq+gvtvw+tglsgagk+ti+  ++  l ++gy +e+ldgd+vr  l+kglgfsk drdenirrigf++nlltr  vivlvs ispyr++reevr 
+  AFY41475.1  25 IKLKQHGVTVWFTGLSGAGKTTISSQVELELRSQGYKVELLDGDLVRQHLSKGLGFSKADRDENIRRIGFIANLLTRNEVIVLVSVISPYRQVREEVRQ 123
+                 789************************************************************************************************ PP
+
+        cysC 101 kigsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 +igsfvevfvnapl+vce rdvkglyk+ar+ge+k ftgiddpye p+npevecrtd e l +sv+kv + l    y 
+  AFY41475.1 124 HIGSFVEVFVNAPLEVCEMRDVKGLYKKARSGELKNFTGIDDPYEQPLNPEVECRTDQENLTDSVTKVLEYLVVQNYC 201
+                 *********************************************************************999877776 PP
+
+>> AFY41759.1  gluconate kinase, SKI family [Nostoc sp. PCC 7107]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   2.2e-05     0.058      15      95 ..       2      85 ..       1     116 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2.2e-05
+        cysC 15 glsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirri..gfvsnlltrhgvivlvsai.spyreir 95
+                g++g+gk+ti +al a +  e    + +     ++++++g  ++  dr+  +  +   +   l + + vi+  sa+ + yr+i 
+  AFY41759.1  2 GVAGSGKTTIGQALAAAIKWEFDDADTFHSVAAKAKMSRGEPLTDADRQPWLESLqtAIAQWLQAEKNVILACSALkASYRQIL 85
+                899**********************************************98876621455667788999999999835799984 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5237  (1703644 residues searched)
+Passed MSV filter:                       194  (0.0370441); expected 104.7 (0.02)
+Passed bias filter:                      182  (0.0347527); expected 104.7 (0.02)
+Passed Vit filter:                        29  (0.00553752); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000381898); expected 0.1 (1e-05)
+Initial search space (Z):               5237  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7836.76
+//
+[ok]

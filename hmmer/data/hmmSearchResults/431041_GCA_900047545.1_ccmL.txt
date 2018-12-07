@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/431041_GCA_900047545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.02   12.0   0.3      0.085   10.0   0.1    2.0  2  SAY38434.1  UDP-N-acetylmuramoylalanyl-D-glutamate--2,6-diami
+
+
+Domain annotation for each sequence (and alignments):
+>> SAY38434.1  UDP-N-acetylmuramoylalanyl-D-glutamate--2,6-diaminopimelate ligase (EC 6.3.2.13) [Candidatus Synechococcu
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0      0.19   3.1e+02      50      70 ..      49      69 ..      31      75 .. 0.76
+   2 ?   10.0   0.1   5.1e-05     0.085      46      80 ..     456     491 ..     444     497 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.19
+        ccmL 50 gvdewvlvsrgsaarqvlgne 70
+                g d wv      aa  v g e
+  SAY38434.1 49 GGDHWVASLAAGAAAAVIGPE 69
+                568999877777777777766 PP
+
+  == domain 2  score: 10.0 bits;  conditional E-value: 5.1e-05
+        ccmL  46 svgagvdewvlvs.rgsaarqvlgneqrpldaavva 80 
+                  + ag  + vl++ +g  + q+ g eqrp d   va
+  SAY38434.1 456 VIQAGAGDTVLIAgKGHETVQIIGHEQRPFDDRRVA 491
+                 46678778888753899*************987776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         1661  (429182 residues searched)
+Passed MSV filter:                        30  (0.0180614); expected 33.2 (0.02)
+Passed bias filter:                       27  (0.0162553); expected 33.2 (0.02)
+Passed Vit filter:                         4  (0.00240819); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000602047); expected 0.0 (1e-05)
+Initial search space (Z):               1661  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4291.82
+//
+[ok]

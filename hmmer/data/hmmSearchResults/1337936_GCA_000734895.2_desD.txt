@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0019   15.6   4.3     0.0019   15.6   4.3    1.9  2  AKG20756.1  fatty acid desaturase [Calothrix sp. 336/3]
+     0.0032   14.9  17.9     0.0077   13.6  17.9    1.6  1  AKG20755.1  fatty acid desaturase [Calothrix sp. 336/3]
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG20756.1  fatty acid desaturase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.6   4.3   7.5e-07    0.0019      59     131 ..      67     137 ..      43     147 .. 0.73
+   2 ?   -0.2   0.4      0.05   1.3e+02     268     315 ..     260     306 ..     201     321 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 15.6 bits;  conditional E-value: 7.5e-07
+        desD  59 diwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvl 131
+                 d w++  i   v+ + +    f +ghd+ h  +s +kw+n l+g      i +  + wr+ h   hh  t  l
+  AKG20756.1  67 DSWYFFPIFW-VMQGTMFWALFVVGHDCGHQSFSKHKWLNDLIGHLSHTPILVPYHGWRISHRT-HHKNTGHL 137
+                 5555544443.44455556679**********************9999889999999****986.66666555 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.05
+        desD 268 edewaifqvr.ttvdfapkniflnwylgglnyqvvhhlfpqichihypk 315
+                 e ew+ ++   +t+d      f+n     +  +v hh+f ++ h    k
+  AKG20756.1 260 EGEWTFLKGAlSTID--RDYGFINHIHHDIGTHVAHHIFLNMPHYNLLK 306
+                 667766553213444..45678888888999999999999888876555 PP
+
+>> AKG20755.1  fatty acid desaturase [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6  17.9   3.1e-06    0.0077      54     305 ..      60     291 ..      41     308 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 3.1e-06
+        desD  54 vlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrmtphaehk 152
+                 ++f p  w+l  +  +  g+ l+g  f ighd+ h  ++ ++wvn l+g      +    + wr+ hn+ hh++tn +  d   h      + p     
+  AKG20755.1  60 LVFSP--WYLLPLAWIFTGTALTGF-FVIGHDCGHRSFAKNRWVNDLVGHIMFMPLIYPFHAWRLGHNH-HHAHTNKFDEDNAWHP-----IRPEVYES 149
+                 44444..999999999999999997.99*********************8877777788899******7.99****9999988875.....67999999 PP
+
+        desD 153 wyhryqhlfipilyaiipiywsfsdvrsilfrhrfgeikipnpkaidl.fvllsgkvvylfwfigipllvgyspleiai.gflivfmtygvlachvfml 249
+                 w + +q+ f   +     ++w  s  +  +++       +   ka d   v ls  vv +f  i  p l+  + +   +  ++i +m y       f  
+  AKG20755.1 150 WAQGWQFSFRQFIL--RKLWWVGSVGHWAVVHFT-----LDRYKAKDHgKVKLSIAVVLIFAAIAFPTLIATTGIWGFVkYWFIPWMVYHFWMST-FTY 240
+                 99999999877553..345665554444444444.....44444444324677888999999999999998877654440456777777765543.444 PP
+
+        desD 250 ahvlepaefiqpsaanqiedewaifqvrttvdfapkniflnwylgglnyqvvhhlf 305
+                  h   p   +  ++a++ ++  ai q+  tv       ++++    +n +v hh+ 
+  AKG20755.1 241 VHHTSPN--VPFAEADKWNE--AIAQLSGTVHCD-YPRWVEFLCHDINVHVPHHIS 291
+                 4433333..22233333332..566666666433.233455556666777777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       213  (0.0422368); expected 100.9 (0.02)
+Passed bias filter:                      124  (0.0245885); expected 100.9 (0.02)
+Passed Vit filter:                        13  (0.00257783); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9775.63
+//
+[ok]

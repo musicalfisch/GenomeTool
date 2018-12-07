@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/2005459_GCA_002218085.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.7e-125  413.8   0.0   4.1e-125  413.6   0.0    1.0  1  GAX43451.1  hypothetical protein NIES4075_44640 [Tolypothrix 
+      4e-31  106.9   0.0    4.8e-31  106.7   0.0    1.0  1  GAX44917.1  hypothetical protein NIES4075_59360 [Tolypothrix 
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX43451.1  hypothetical protein NIES4075_44640 [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  413.6   0.0  1.1e-128  4.1e-125       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 413.6 bits;  conditional E-value: 1.1e-128
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnqeqafenppffahirvcmrplplellsgvsffveqay+y+lndpyrlrvlkl++a++rieienyt+k+e+kfygasr+l
+  GAX43451.1   1 MTHSTDIATLARWMAADFSNQEQAFENPPFFAHIRVCMRPLPLELLSGVSFFVEQAYNYTLNDPYRLRVLKLLNAGSRIEIENYTLKQEEKFYGASRNL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 + lk+l+++dleklpgcnmivewtgnsfkgkvepgk+c+v+r++k+tyldsefeid+ekfisldrgrdpetdehiwgsvagpf+fvrw+sfadevkv
+  GAX43451.1 100 QLLKELTVNDLEKLPGCNMIVEWTGNSFKGKVEPGKGCMVFRNKKNTYLDSEFEIDTEKFISLDRGRDPETDEHIWGSVAGPFHFVRWDSFADEVKV 196
+                 ***********************************************************************************************97 PP
+
+>> GAX44917.1  hypothetical protein NIES4075_59360 [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  106.7   0.0   1.3e-34   4.8e-31       1     188 [.       1     194 [.       1     199 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 106.7 bits;  conditional E-value: 1.3e-34
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklvea..edrieienytvkeekkfygasr 97 
+                 m+ s ++++la ++a +f n++qa+ +p ++ h+r+ +rp+ l   +  ++f eqa   +l +pyr r+++l ++   d i+++ y+ k+ + +  a +
+  GAX44917.1   1 MSFSPQLTALAEYLAGEFDNRAQAIADPAWYVHLRMWLRPVALFSEDSFALFAEQANILTLSQPYRQRIMRLQQKpdADAIQVQYYMPKDPDALKCAGQ 99 
+                 6778999***********************************999999************************997225689****************** PP
+
+        cpeS  98 dlerlktlkaddleklpgcnmiv...ewtgnsfk..gkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                 +   l+tl+ ++l+ lpgc + v   e + ns+k   +  p   c  + +g++  +   fe  +++f s d+g dpe     wg++ gp+++ +++
+  GAX44917.1 100 NPALLNTLTPEQLDLLPGCILAVtqqEIAPNSYKftATAPPDTRCCFTYNGNTIQVSLGFEATKNEFYSYDKGIDPEGK-ATWGAIMGPYRYTKRS 194
+                 ********************998444567787662256778999********************************975.68*********98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         7372  (2211063 residues searched)
+Passed MSV filter:                       114  (0.0154639); expected 147.4 (0.02)
+Passed bias filter:                      102  (0.0138361); expected 147.4 (0.02)
+Passed Vit filter:                         7  (0.000949539); expected 7.4 (0.001)
+Passed Fwd filter:                         2  (0.000271297); expected 0.1 (1e-05)
+Initial search space (Z):               7372  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8667.37
+//
+[ok]

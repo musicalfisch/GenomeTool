@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801611_GCA_001784615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-23   80.3   0.9    1.8e-23   80.2   0.9    1.0  1  OGI21377.1  ATP synthase F1 subunit epsilon [Candidatus Melai
+  ------ inclusion threshold ------
+       0.62    7.2   8.0       0.67    7.1   1.2    2.4  2  OGI20553.1  hypothetical protein A2255_02905 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI21377.1  ATP synthase F1 subunit epsilon [Candidatus Melainabacteria bacterium RIFOXYA2_FULL_32_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   80.2   0.9   1.8e-26   1.8e-23       3     135 ..       6     134 ..       4     136 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 80.2 bits;  conditional E-value: 1.8e-26
+        atpE   3 ltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafnea 101
+                 l +++i+p++t+ d + + v   +  g++gil gh p++tald+g+ +   ++++  + + ++gg+ ++ e+++ti+ ++aerg++i+++ a+aa ++a
+  OGI21377.1   6 LNLKIITPERTLVDEQVDAVYSKAIDGEFGILPGHIPFMTALDIGITKYVKDNQD--ELVVVVGGIFQISENNITIFSETAERGEEIDVQRAKAAEERA 102
+                 7899******************************************987655444..457789************************************ PP
+
+        atpE 102 qtklnqvkaedrqaqiqatqafkrararfqaagg 135
+                 + +l   + +   +  +a++a+ ra +r+qaa  
+  OGI21377.1 103 EVRLRAGARDIDTD--RAQAALARALTRIQAATR 134
+                 ***98766655444..5667899********975 PP
+
+>> OGI20553.1  hypothetical protein A2255_02905 [Candidatus Melainabacteria bacterium RIFOXYA2_FULL_32_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   1.2   0.00065      0.67      90     125 ..      95     130 ..      91     139 .. 0.84
+   2 ?    3.4   0.8    0.0087       8.9      82     116 ..     153     187 ..     143     196 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.00065
+        atpE  90 nleearaafneaqtklnqvkaedrqaqiqatqafkr 125
+                 ++e+ara+fn+aq+++ + +a+ ++ q  +++ +k 
+  OGI20553.1  95 QVEQARANFNSAQSNIYNAQANLQKIQCITDNDYKT 130
+                 789**************9999999988877777764 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.0087
+        atpE  82 gaergdkinleearaafneaqtklnqvkaedrqaq 116
+                 ++ + dk ++++a+++  +a+++++q +ae r++q
+  OGI20553.1 153 TTYNTDKAQINSAKSQIGSARAQIAQAAAELRNKQ 187
+                 34445666666666666666666666666655544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         2045  (635410 residues searched)
+Passed MSV filter:                        80  (0.0391198); expected 40.9 (0.02)
+Passed bias filter:                       60  (0.0293399); expected 40.9 (0.02)
+Passed Vit filter:                         3  (0.00146699); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000977995); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4352.56
+//
+[ok]

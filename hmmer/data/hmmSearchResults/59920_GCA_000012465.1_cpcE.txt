@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcE  [M=270]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-06   24.1   2.2      0.006   13.1   0.2    2.6  3  AAZ59162.1  PBS lyase HEAT-like repeat [Prochlorococcus marin
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ59162.1  PBS lyase HEAT-like repeat [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.2   2.8e-06     0.006      71     137 ..      50     116 ..      41     142 .. 0.79
+   2 ?    1.1   0.1     0.012        27     118     163 ..     163     197 ..     106     220 .. 0.52
+   3 !    9.5   0.1   3.5e-05     0.075      68     133 ..     207     273 ..     177     283 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 2.8e-06
+        cpcE  71 lrrnaasalgklddlscvpali.acldcedyyvresaaqalemlkdrsaiaplkklleggievavlva 137
+                 +rrn a al  +   +++p li a l+ ++   r +aa++l++++d sa+  l k l    ++ v  +
+  AAZ59162.1  50 VRRNYAIALAEVGS-AALPELIkALLNSKNVIQRRAAAKTLKLVNDPSALPHLIKALTSDSDSVVQFS 116
+                 79999999999976.56888884668999999999999999999999999999999887777666554 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.012
+        cpcE 118 aiaplkklleggievavlvagkphlvqpyeaiiealgtlqateaip 163
+                 ai    k  +  +++a + a   h+ q            q +eai 
+  AAZ59162.1 163 AIKKAAKSKNTNVKSAAISALEEHIRQ-----------SQDQEAIQ 197
+                 444444444555555555555555443...........33333333 PP
+
+  == domain 3  score: 9.5 bits;  conditional E-value: 3.5e-05
+        cpcE  68 gyplrrnaasalgklddl.scvpaliacldcedyyvresaaqalemlkdrsaiaplkklleggieva 133
+                    ++ +a   +gkl  + s +p+li  l+ ++  +r+s+  +l  l+ ++ai pl+ ll+   +  
+  AAZ59162.1 207 AENVQIEAIKLVGKLYRIeSLIPTLILKLKHKNPDIRKSSILSLIQLNINEAINPLRDLLKIEQDKN 273
+                 4556667888899998874678************************************997655554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (270 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        42  (0.0194175); expected 43.3 (0.02)
+Passed bias filter:                       40  (0.0184928); expected 43.3 (0.02)
+Passed Vit filter:                         3  (0.00138696); expected 2.2 (0.001)
+Passed Fwd filter:                         1  (0.000462321); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7235.65
+//
+[ok]

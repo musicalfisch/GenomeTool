@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/artQ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       artQ  [M=331]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-07   27.9   0.1    2.1e-07   27.8   0.1    1.0  1  BAC08622.1  amino acid ABC transporter permease protein [Ther
+      0.001   15.6   0.1     0.0014   15.3   0.1    1.1  1  BAC09321.1  ABC transporter ATP-binding protein [Thermosynech
+      0.005   13.4   0.0     0.0053   13.3   0.0    1.0  1  BAC09007.1  tsl1455 [Thermosynechococcus elongatus BP-1]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC08622.1  amino acid ABC transporter permease protein [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.8   0.1   2.5e-10   2.1e-07     207     281 ..      14      88 ..       4      92 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 27.8 bits;  conditional E-value: 2.5e-10
+        artQ 207 iagftlfaaaylaenvrgglqaipkgqieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaiv 281
+                 ++ ++l   ay  e  r+glqa+  gq e a +lg+     ++ i lpqa++ +  ++  ++i ++kd ++ + +
+  BAC08622.1  14 VTSLALNYGAYEVEVSRAGLQAVDVGQQEVALSLGVGQQRGFVRITLPQAIQILSLTLANDLIDMLKDWAIGSAI 88 
+                 455667778999999************************99***************************9875444 PP
+
+>> BAC09321.1  ABC transporter ATP-binding protein [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.1   1.7e-06    0.0014     153     248 ..      75     169 ..      67     200 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 1.7e-06
+        artQ 153 algrqselpairwlsigyiellrglpllgilf.maqvmlplilpagtrperviraiagftlfaaaylaenvrgglqaipkgqieaakalglkpifvl 248
+                 a   + el  ir + ig++  ++ + llg l  + +vmlp++       er  raia +  +   +  en    l    + ++  a+a+  +p+++l
+  BAC09321.1  75 AYLSDDELAHIRNVKIGFV--FQQFYLLGQLTaLENVMLPMVYAQVPPKERRDRAIAALEQVGLGHRLENRPNQLSGGQQQRVAIARAIVNRPLVLL 169
+                 5556789**********97..678999998752789*******999999***************************99999********99998665 PP
+
+>> BAC09007.1  tsl1455 [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.3   0.0   6.5e-06    0.0053     270     331 .]       2      63 ..       1      63 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 6.5e-06
+        artQ 270 slfkdtsllaivglvdllgmagsvlanpkf.igdypevylflafiywifcysmslasrrleqr 331
+                 +l++  +ll ++g  +l  ++   +anp   +     vy++ a  y+ fc+  s  sr  eqr
+  BAC09007.1   2 TLMQGCALLVVIGAPELANLTS-TVANPMTdLQRKLFVYILGARFYFAFCFYRSRLSRFPEQR 63 
+                 5788899*******99988875.567886426677789********************99997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (331 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                       192  (0.0775758); expected 49.5 (0.02)
+Passed bias filter:                       71  (0.0286869); expected 49.5 (0.02)
+Passed Vit filter:                         7  (0.00282828); expected 2.5 (0.001)
+Passed Fwd filter:                         3  (0.00121212); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8545.23
+//
+[ok]

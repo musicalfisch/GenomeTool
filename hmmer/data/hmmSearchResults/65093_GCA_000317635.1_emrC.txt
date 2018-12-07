@@ -1,0 +1,68 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+          4    5.7  19.4       0.53    8.6   1.1    4.4  4  AFZ43896.1  NADH dehydrogenase subunit M [Halothece sp. PCC 7
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ43896.1  NADH dehydrogenase subunit M [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.4   0.8     0.011        42      35      73 ..     126     164 ..     120     181 .. 0.80
+   2 ?    4.7   0.1    0.0022       8.3      36      73 ..     183     219 ..     172     227 .. 0.83
+   3 ?    8.6   1.1   0.00014      0.53       8      95 ..     247     340 ..     242     349 .. 0.73
+   4 ?    0.2   1.1     0.055     2e+02      65     100 ..     391     426 ..     372     434 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 2.4 bits;  conditional E-value: 0.011
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvlia 73 
+                 + +f +  + l fl   l+ i v +  s+w g   +  a
+  AFZ43896.1 126 IAVFAVQDMLLFFLVWELELIPVYLLLSIWGGKKRLYAA 164
+                 7799999999********************997554443 PP
+
+  == domain 2  score: 4.7 bits;  conditional E-value: 0.0022
+        emrC  36 lifvfyglcltfltlalkkievsvaysvwaglgtvlia 73 
+                 l + fyg ++tf   al   ++++ + +w  +g+ +ia
+  AFZ43896.1 183 LTMAFYGDTVTFDMRALAAKDIALNFQLWL-YGAFFIA 219
+                 56789************************5.5666665 PP
+
+  == domain 3  score: 8.6 bits;  conditional E-value: 0.00014
+        emrC   8 llaailfevsgttcmk.....lsegftklipsvlifvfyglcl.tfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                 lla il+++ g + ++     l +  +   p+++i+ +  + + ++ ++a ++++  +ays  + +g vli + +   +  s ++++++s  li
+  AFZ43896.1 247 LLAGILLKMGGYALIRmnagmLPDAHAYFAPALVILGVVNIIYaALTSFAQRNLKRKIAYSSISHMGFVLIGIGSFTNLGLSGAVLQMVSHGLI 340
+                 555566666665554411111445567788998888666666515667999********************99988888888888888887776 PP
+
+  == domain 4  score: 0.2 bits;  conditional E-value: 0.055
+        emrC  65 aglgtvliavigliwfresltlvklisialiiigvi 100
+                 +g+ + ++  ig        t++k+i + l  +gvi
+  AFZ43896.1 391 SGFVAEVMVFIGFSTSDAYNTTFKVIVVFLAAVGVI 426
+                 455555555555555555567777777777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                       149  (0.0401834); expected 74.2 (0.02)
+Passed bias filter:                       50  (0.0134844); expected 74.2 (0.02)
+Passed Vit filter:                         4  (0.00107875); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000269687); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4173.07
+//
+[ok]

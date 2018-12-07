@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/247279_GCA_001904655.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.1e-123  406.7   0.0   3.5e-123  406.6   0.0    1.0  1  OKH28975.1  chorismate-binding protein [Chroogloeocystis side
+    1.2e-31  107.9   0.0    1.4e-31  107.7   0.0    1.0  1  OKH29239.1  chorismate mutase [Chroogloeocystis siderophila 5
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH28975.1  chorismate-binding protein [Chroogloeocystis siderophila 5.2 s.c.1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  406.6   0.0  1.6e-126  3.5e-123       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 406.6 bits;  conditional E-value: 1.6e-126
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnq+qafenppffahirvcmrplple+lsgvsf+veqaydy+ln+pyr+rvlklv+a+dri+ieny +k+e++fygasr+ 
+  OKH28975.1   1 MTHSTDIATLARWMAADFSNQAQAFENPPFFAHIRVCMRPLPLEILSGVSFYVEQAYDYMLNNPYRVRVLKLVNARDRITIENYLIKDEQQFYGASREP 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 +rl++++ ++leklpgcnm+vewtg+sfkg+vepgk+civvrk+kktyldsefeid+e+fisldrgrdpetdeh+wgsvagpf+fvrw+sfadevkv
+  OKH28975.1 100 QRLNAIALERLEKLPGCNMLVEWTGTSFKGSVEPGKGCIVVRKDKKTYLDSEFEIDQERFISLDRGRDPETDEHVWGSVAGPFHFVRWNSFADEVKV 196
+                 ***********************************************************************************************97 PP
+
+>> OKH29239.1  chorismate mutase [Chroogloeocystis siderophila 5.2 s.c.1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.7   0.0   6.5e-35   1.4e-31       1     186 [.       1     192 [.       1     196 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 107.7 bits;  conditional E-value: 6.5e-35
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedri..eienytvkeekkfygasr 97 
+                 mt s+++ +la++++ +f+nqeqa+ +p ++ h+r+  +p+ +   +  ++f eqa   +l++pyr r+++l ++ d +  +++ y+ k+ + + ga  
+  OKH29239.1   1 MTLSSQLKALAQYLTGEFTNQEQAIAEPAWYVHLRLWHQPVAVFTEDSYTLFAEQANIVKLDQPYRQRLIRLQQRPDDValQVQYYMPKNPTTLRGAGA 99 
+                 899***********************************************************************98876226789999*********** PP
+
+        cpeS  98 dlerlktlkaddleklpgcnmivewt....gnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvr 186
+                 + + lk l+ +d+e lpgc + v          fk ++ + + c     g++  +   fe   e+f+s d+g d  t +  wg++ gp++f +
+  OKH29239.1 100 NPDILKMLTPEDFELLPGCLLDVTVNrlerDYHFKATLPSDRRCCFSYAGNTVQVSIGFEASPEEFLSYDKGIDSTTGKATWGAILGPYRFRK 192
+                 *******************876655411224579********************************************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         4270  (1331195 residues searched)
+Passed MSV filter:                        76  (0.0177986); expected 85.4 (0.02)
+Passed bias filter:                       73  (0.017096); expected 85.4 (0.02)
+Passed Vit filter:                         6  (0.00140515); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000468384); expected 0.0 (1e-05)
+Initial search space (Z):               4270  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8697.14
+//
+[ok]

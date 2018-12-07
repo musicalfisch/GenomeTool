@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.8e-76  253.5   0.6    4.2e-76  253.3   0.6    1.0  1  ERT05594.1  ATP synthase F1, delta subunit [Lyngbya aestuarii
+  ------ inclusion threshold ------
+      0.058   11.7   0.0      0.061   11.6   0.0    1.1  1  ERT09480.1  hypothetical protein M595_0536 [Lyngbya aestuarii
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT05594.1  ATP synthase F1, delta subunit [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  253.3   0.6   1.3e-79   4.2e-76       6     182 ..       4     180 ..       1     181 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 253.3 bits;  conditional E-value: 1.3e-79
+        atpD   6 ataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailqqylal 104
+                    e+ +pyaqal+s+a+s+nlt+e+g++ r+ll+l+++s++l++fl+np +kp++kk+v+ q++ e +npylrnf lllvdr ri+fle+i++qylal
+  ERT05594.1   4 IVGEIVEPYAQALMSVAKSNNLTNEIGDNIRSLLELMENSEQLRKFLANPVIKPDDKKAVIGQIFREEMNPYLRNFTLLLVDRGRISFLEPIVKQYLAL 102
+                 5679*********************************************************************************************** PP
+
+        atpD 105 lrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrls 182
+                 lrq+n+tvlaevts+v l e q + + ekv  +t a +ve+ tkid  liggviikvgs+v+daslrgqlrr+ +rl 
+  ERT05594.1 103 LRQFNKTVLAEVTSTVELNEGQRNHLSEKVKGMTGADHVEITTKIDPALIGGVIIKVGSRVVDASLRGQLRRIGIRLN 180
+                 ****************************************************************************96 PP
+
+>> ERT09480.1  hypothetical protein M595_0536 [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.9e-05     0.061     141     175 ..      14      50 ..       3      61 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.9e-05
+        atpD 141 rqveletkidsdliggv..iikvgsqvidaslrgqlr 175
+                  +ve+++kids+l+  +  +    s+vi+++lr  lr
+  ERT09480.1  14 TKVEVSIKIDSELLDQIqhLTNDPSKVIETALRQWLR 50 
+                 68************9874456778*********9888 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       232  (0.0356649); expected 130.1 (0.02)
+Passed bias filter:                      149  (0.0229055); expected 130.1 (0.02)
+Passed Vit filter:                        11  (0.00169101); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000307456); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8864.60
+//
+[ok]

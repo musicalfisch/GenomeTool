@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1479485_GCA_000760695.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-19   68.9   4.7    2.1e-19   68.7   4.7    1.0  1  KIE09618.1  hypothetical protein DA73_0225045 [Tolypothrix bo
+     0.0014   17.9   7.9     0.0094   15.2   7.9    2.0  1  KIE12802.1  EamA-like transporter family protein [Tolypothrix
+
+
+Domain annotation for each sequence (and alignments):
+>> KIE09618.1  hypothetical protein DA73_0225045 [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.7   4.7   5.5e-23   2.1e-19       4     103 ..       2     101 ..       1     104 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 68.7 bits;  conditional E-value: 5.5e-23
+        emrC   4 swiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                  w+yl++a l+ev  ++ +k + gft+ +psv+   +  l++++l++al+++ v  ay+vw+g+g+v    +g+i f+e + + ++  + lii gv+g+
+  KIE09618.1   2 EWVYLFIAGLLEVGWAIGLKYTAGFTEPLPSVVTVGCMILSFALLSVALRTLPVGTAYAVWTGIGAVGTVLLGIILFQEPVEFRRMACVGLIIAGVLGL 100
+                 7*************************************************************************************************9 PP
+
+        emrC 103 n 103
+                  
+  KIE09618.1 101 R 101
+                 6 PP
+
+>> KIE12802.1  EamA-like transporter family protein [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   7.9   2.4e-06    0.0094      38     102 ..      55     118 ..       2     122 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 2.4e-06
+        emrC  38 fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 + +ygl+     l l ++++sva    a+l  v+   +g  +f+es+ lv+l+ + li+ gvi +
+  KIE12802.1  55 LACYGLGALAYILLLTRVNLSVAGP-SASLVYVFSVLLGYFIFKESIPLVRLVGLGLIVSGVILV 118
+                 679***99999999********976.58899999999*************************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         7776  (2427444 residues searched)
+Passed MSV filter:                       311  (0.0399949); expected 155.5 (0.02)
+Passed bias filter:                      114  (0.0146605); expected 155.5 (0.02)
+Passed Vit filter:                         7  (0.000900206); expected 7.8 (0.001)
+Passed Fwd filter:                         3  (0.000385802); expected 0.1 (1e-05)
+Initial search space (Z):               7776  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 5146.18
+//
+[ok]

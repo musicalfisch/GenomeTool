@@ -1,0 +1,87 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1137095_GCA_001904675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+       0.01   14.0   0.0      0.023   12.8   0.0    1.5  2  OKH60566.1  transposase [Scytonema sp. HK-05]
+  ------ inclusion threshold ------
+      0.022   12.9   0.1          1    7.5   0.0    2.2  2  OKH54842.1  ribosome small subunit-dependent GTPase A [Scyton
+      0.028   12.6   0.0      0.052   11.7   0.0    1.4  1  OKH43380.1  phosphoglycolate phosphatase [Scytonema sp. HK-05
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH60566.1  transposase [Scytonema sp. HK-05]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.0   0.0       1.4   3.5e+03     123     148 ..     182     207 ..     177     212 .. 0.75
+   2 !   12.8   0.0   9.5e-06     0.023       7      39 ..     222     254 ..     219     265 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: -4.0 bits;  conditional E-value: 1.4
+        cysC 123 kglykrarageiksftgiddpyeppf 148
+                 + +  r r ge+     idd  ep  
+  OKH60566.1 182 REVTVRPRLGEMWIDWVIDDGKEPVD 207
+                 55667888899888888999999864 PP
+
+  == domain 2  score: 12.8 bits;  conditional E-value: 9.5e-06
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysi 39 
+                 +g t wltg+s  gks i +  + k i +gy  
+  OKH60566.1 222 HGGTNWLTGVSTHGKSLIIDGRKLKNINQGYCR 254
+                 68899**************************75 PP
+
+>> OKH54842.1  ribosome small subunit-dependent GTPase A [Scytonema sp. HK-05]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.2   0.0    0.0084        21      43      71 ..     104     132 ..      79     178 .. 0.84
+   2 ?    7.5   0.0   0.00042         1       9      30 ..     195     216 ..     190     229 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.0084
+        cysC  43 dgdivrtnltkglgfskedrdenirrigf 71 
+                 + +iv tn+   + +s  drd n rri  
+  OKH54842.1 104 EEQIVATNVDTVFLVSGLDRDFNARRIER 132
+                 5689**********************975 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00042
+        cysC   9 vtvwltglsgagkstitealqa 30 
+                  tv l g sg gkstit+ ++ 
+  OKH54842.1 195 QTVALLGSSGVGKSTITNQIKG 216
+                 6999*************98875 PP
+
+>> OKH43380.1  phosphoglycolate phosphatase [Scytonema sp. HK-05]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   2.1e-05     0.052       2      44 ..     244     286 ..     243     311 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 2.1e-05
+        cysC   2 iamkqrgvtvwltglsgagkstitealqakliaegysievldg 44 
+                 + mk  g ++ l+g sg gkst++ a+  ++  + y   ++d 
+  OKH43380.1 244 VHMKAYGSSILLAGTSGGGKSTLATAVLERIAEQKYQFCIIDP 286
+                 679***********************99999888999888875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         7357  (2396029 residues searched)
+Passed MSV filter:                       306  (0.041593); expected 147.1 (0.02)
+Passed bias filter:                      274  (0.0372434); expected 147.1 (0.02)
+Passed Vit filter:                        41  (0.00557292); expected 7.4 (0.001)
+Passed Fwd filter:                         3  (0.000407775); expected 0.1 (1e-05)
+Initial search space (Z):               7357  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 6298.13
+//
+[ok]

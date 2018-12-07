@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801608_GCA_001784585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcA  [M=162]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0053   13.3   0.8      0.034   10.7   0.3    1.9  2  OGI13471.1  50S ribosomal protein L20 [Candidatus Melainabact
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI13471.1  50S ribosomal protein L20 [Candidatus Melainabacteria bacterium RIFCSPLOWO2_02_FULL_35_15]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.7   0.3   1.9e-05     0.034      31      68 ..      11      48 ..       1      59 [. 0.78
+   2 ?    1.4   0.0     0.014        24     112     148 ..      62     100 ..      56     111 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 1.9e-05
+        cpcA 31 frqaaasleaakaltekadslvdgaaqavynkfpyttq 68
+                 ++ ++ l+aak +   +++l ++a qav + + y+ +
+  OGI13471.1 11 RKRHKKILKAAKGFVGSKSKLYKSANQAVMKAWKYAYR 48
+                3566789***********************98877654 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.014
+        cpcA 112 iagldeinrtfelspswyvealk..yikanhglsgdaav 148
+                 i+ ++   r + ls s +++al+   +k n  +  d av
+  OGI13471.1  62 ITRINAACRELGLSYSRFINALNksNLKLNRKIIADLAV 100
+                 556667778899999*****9972246677766666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (162 nodes)
+Target sequences:                         1759  (571868 residues searched)
+Passed MSV filter:                        38  (0.0216032); expected 35.2 (0.02)
+Passed bias filter:                       33  (0.0187607); expected 35.2 (0.02)
+Passed Vit filter:                         4  (0.00227402); expected 1.8 (0.001)
+Passed Fwd filter:                         1  (0.000568505); expected 0.0 (1e-05)
+Initial search space (Z):               1759  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4632.13
+//
+[ok]

@@ -1,0 +1,51 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641165_GCA_002075285.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.1e-69  229.5   4.8    7.9e-69  229.3   4.8    1.0  1  ASC72342.1  ATP synthase subunit delta [Halomicronema hongdec
+
+
+Domain annotation for each sequence (and alignments):
+>> ASC72342.1  ATP synthase subunit delta [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  229.3   4.8   1.5e-72   7.9e-69       2     183 ..       2     183 ..       1     184 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 229.3 bits;  conditional E-value: 1.5e-72
+        atpD   2 ksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailqq 100
+                  +   tae+  pya+all+iaq ++l+e +geda +llsll++s+el++fl+np+v +  kk  lk+l+ e+v p + nfl+llvdr ri +l  il q
+  ASC72342.1   2 STSNVTAEIVGPYAEALLAIAQDNDLAERFGEDADALLSLLTTSDELTQFLNNPLVSSAAKKGALKELVRETVHPLMLNFLMLLVDRGRILLLTDILRQ 100
+                 556679********************************************************************************************* PP
+
+        atpD 101 ylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 y allr+l+qtvlaevt+av l+eaqq a++++vi +t a+q el + i+ dl+ggviikvgsqv+daslrgqlrr+ ++lss
+  ASC72342.1 101 YQALLRELKQTVLAEVTAAVDLSEAQQAALRQQVIEMTGAHQAELTIEINPDLLGGVIIKVGSQVVDASLRGQLRRIGMQLSS 183
+                 *********************************************************************************99 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5269  (1545500 residues searched)
+Passed MSV filter:                       174  (0.0330233); expected 105.4 (0.02)
+Passed bias filter:                      127  (0.0241032); expected 105.4 (0.02)
+Passed Vit filter:                        11  (0.00208768); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000189789); expected 0.1 (1e-05)
+Initial search space (Z):               5269  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7109.30
+//
+[ok]

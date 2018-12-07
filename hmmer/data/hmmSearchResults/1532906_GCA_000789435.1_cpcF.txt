@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1532906_GCA_000789435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-48  162.7   5.2    2.4e-48  162.6   5.2    1.0  1  KHG42117.1  phycocyanobilin lyase [Aphanizomenon flos-aquae 2
+    3.4e-05   21.7   0.7    0.00015   19.6   0.4    2.0  2  KHG42717.1  phycocyanin alpha phycocyanobilin lyase [Aphanizo
+
+
+Domain annotation for each sequence (and alignments):
+>> KHG42117.1  phycocyanobilin lyase [Aphanizomenon flos-aquae 2012/KM1/D3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  162.6   5.2   1.1e-51   2.4e-48       7     202 ..       3     196 ..       1     199 [] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 162.6 bits;  conditional E-value: 1.1e-51
+        cpcF   7 tliiavekadsanelltavenlaaakseaaiptltdvlrynnpgasvaavdgliaigkaavpyllanldgynygarawatralagigdvrgldllleaa 105
+                  li av  a++ ++++tav+nlaaak   +iptl  v+ ynnp a++ a  gl  +g  avp ll ++d ynygara++ r++a i d r ld+l+ +a
+  KHG42117.1   3 ELIRAVTVAETPEQMVTAVKNLAAAKDPLSIPTLIAVFGYNNPAAAIVAAAGLTELGEIAVPQLLDQIDDYNYGARAYSIRTIAAIADPRALDILISTA 101
+                 6999*********************************************************************************************** PP
+
+        cpcF 106 vsdfsfsvrrgaarglgniiwsdleesrvseaqkavfaalekll..qgdpewvvryaaivgleglgtaaaafrgairellaqireteaeivvrlradqa 202
+                 ++df+ svrr aa+glgni w  l     +ea+ a+  ale ll    dp+w +ryaaivgl+ l   a   +  i   +  +   ++e  vr r + a
+  KHG42117.1 102 LTDFAPSVRRAAAKGLGNIHWQKLAP---TEAEIAINRALETLLliCEDPDWSIRYAAIVGLQALAKVAIV-QLPISAKFQLMLTNDTEKAVRARVQLA 196
+                 *********************99975...6999999999999752268*****************987653.444444444444445555666665555 PP
+
+>> KHG42717.1  phycocyanin alpha phycocyanobilin lyase [Aphanizomenon flos-aquae 2012/KM1/D3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   0.4   6.8e-08   0.00015      22     125 ..      22     127 ..       3     171 .. 0.73
+   2 ?    1.2   0.0     0.029        63      81     124 ..     146     188 ..     130     221 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 6.8e-08
+        cpcF  22 ltavenlaaakseaaiptltdvlrynnpgasvaavdgliaigkaavpy..llanldg.ynygarawatralagigdvrgldllleaavsdfsfsvrrga 117
+                 ++a+  l    ++ a+p +  vl  +       a+  l  i k+   y  l+  l+   +yg ra a+ al  + d r l++l  a   d  + vr  a
+  KHG42717.1  22 MVALASLRHISADDAVPLIKKVLDDESLQLRSMAIFAL-GIKKTPECYsiLVKILETdPDYGIRADAAGALGYLEDNRALEVLSRAFYEDTDWLVRFSA 119
+                 55666666666677777777777766665555555443.344444434214445554158*************************************** PP
+
+        cpcF 118 arglgnii 125
+                 a  lgni 
+  KHG42717.1 120 AVSLGNIK 127
+                 ******94 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.029
+        cpcF  81 arawatralagigdvrgldllleaavsdfsfsvrrgaarglgni 124
+                  +  a  al  i d+  +  +l  a s+  + vr+  a  lgn+
+  KHG42717.1 146 IQQAAISALGEIRDINSVTHILRFAQSE-DWLVRQRLAEALGNL 188
+                 5556778888888888888888888876.466888888888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         4415  (1120518 residues searched)
+Passed MSV filter:                       136  (0.0308041); expected 88.3 (0.02)
+Passed bias filter:                      104  (0.0235561); expected 88.3 (0.02)
+Passed Vit filter:                         7  (0.0015855); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000453001); expected 0.0 (1e-05)
+Initial search space (Z):               4415  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7731.57
+//
+[ok]

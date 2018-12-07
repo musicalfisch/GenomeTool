@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aapM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aapM  [M=331]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00045   18.0   7.8    0.00066   17.4   7.8    1.2  1  OAB60890.1  ABC transporter substrate-binding protein [Leptol
+  ------ inclusion threshold ------
+      0.011   13.5   2.9      0.055   11.1   2.9    2.0  1  OAB60993.1  phosphate ABC transporter permease [Leptolyngbya 
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB60890.1  ABC transporter substrate-binding protein [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.4   7.8   2.5e-07   0.00066     133     283 ..     147     295 ..     135     311 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 17.4 bits;  conditional E-value: 2.5e-07
+        aapM 133 ltllvaiasmilsfplgvllalgrqselpairwlsigyiellrglpllgilfmaqvmlplilpagtrperviraiagftlfaaaylaenvrgglqaipk 231
+                 ++l++ +  + +sfp+g+++  g  s      w+    + l+  l  +  +++   +  ++ p  +  +r +  ++ ++++  a la  +rg + +i +
+  OAB60890.1 147 ISLFIGLVGIAISFPIGLIV--GGISGYF-GGWVDTALMRLVEVLMTIPGIYLLVALASVLDPGLSSAKRFLLIVTIISFIRWAGLARVIRGQVLSIKE 242
+                 578889999999****9765..4445443.3577666666666555444444444444555566666677777666677777889*********99988 PP
+
+        aapM 232 gq.ieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivgl 283
+                  + ++aa+a+g +p ++++  vlpq+    i a    +  ++   s+l+++gl
+  OAB60890.1 243 TEfVQAARAMGANPFYIIVRHVLPQTATYTIVAATLAIPGFIVAESVLSLIGL 295
+                 65389********************9988887776666666777788887776 PP
+
+>> OAB60993.1  phosphate ABC transporter permease [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   2.9     2e-05     0.055     130     313 ..      81     254 ..      57     267 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 2e-05
+        aapM 130 gliltllvaiasmil....sfplgvllalgrqselpairwlsigyiellrglp..llgilfmaqvmlplilpagtrperviraiagftlfaaaylaenv 222
+                  li t+ +++a   l    s+pl   la    +   ++   + g +++lr +p  ++gi+f+a v +      gt p  +   +  + +    ++ae  
+  OAB60993.1  81 PLIDTVAMSVAGTALavafSLPLAF-LAANNTTPNRTVYHAARGLLNVLRSVPelIMGIVFVAAVGF------GTLPGVLALGLHSVGM-VGKFFAEA- 170
+                 5666666666554441111444443.344445555678888999*******9954569999998754......6666544333333332.23445554. PP
+
+        aapM 223 rgglqaipkgqieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivglvdllgmagsvlanpkfigdypevylflafi 313
+                    ++ +    ieaa+a g   + v+   +lpq +  +    v ++   f+ ++++ +vg     g  g  l     i +y ev+ +l  i
+  OAB60993.1 171 ---IEHVDPKPIEAARAAGATGLQVIHRAILPQVMPQMSDVTVYRWEYNFRASTVMGMVGA----GGIGFELMSSLRIMNYQEVFAILLCI 254
+                 ...45566668***************************************99988877774....44566666677788899998777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (331 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       308  (0.057037); expected 108.0 (0.02)
+Passed bias filter:                      100  (0.0185185); expected 108.0 (0.02)
+Passed Vit filter:                         9  (0.00166667); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00037037); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 9012.38
+//
+[ok]

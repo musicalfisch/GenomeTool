@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglE  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0092   12.7   0.0      0.022   11.5   0.0    1.7  2  ONN61763.1  ABC transporter substrate-binding protein, partia
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN61763.1  ABC transporter substrate-binding protein, partial [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.0   4.9e-06     0.022     102     176 ..      16      90 ..       3     143 .. 0.87
+   2 ?   -2.1   0.0     0.068     3e+02     296     346 ..     199     250 ..     175     267 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 4.9e-06
+        aglE 102 gklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaangyev.pgtweemmalsqrli 176
+                   l pl   + pe     ++q+ l+    d  +yg+    s  +l ++n + f + g    p tw+e+ + s++l 
+  ONN61763.1  16 NVLEPLDTYIKPEFDLADFEQTILNSFKYDNHIYGLPKDYSTLTL-FYNKRAFVTAGLTSpPTTWDELRTYSKKLT 90 
+                 4577999999***99999******************999998776.789999999998762689********9984 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.068
+        aglE 296 ifplppieeeyglpilvagdif.amfndtpearqlmaylassrphevaatlg 346
+                  + +p i+++ g  ++    ++    +   ea +l++yl+     e  ++ g
+  ONN61763.1 199 TVEIPVINNKKGTMLFTVAYVMnKQTQHKTEAWELISYLTGKEGMEKWTATG 250
+                 4556666666665554433333034455667777777777666665555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (421 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       101  (0.0230016); expected 87.8 (0.02)
+Passed bias filter:                       84  (0.01913); expected 87.8 (0.02)
+Passed Vit filter:                        10  (0.00227739); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000227739); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 11229.46
+//
+[ok]

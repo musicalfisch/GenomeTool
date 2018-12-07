@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1666905_GCA_001314905.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.2e-27   91.4   0.0    1.1e-26   91.1   0.0    1.0  1  KPQ39028.1  nitrogenase iron sulfur center biosynthesis prote
+    0.00038   16.8   0.0     0.0019   14.5   0.0    2.0  1  KPQ33397.1  cyclic pyranopterin phosphate synthase MoaA [Phor
+
+
+Domain annotation for each sequence (and alignments):
+>> KPQ39028.1  nitrogenase iron sulfur center biosynthesis protein NifB [Phormidium sp. OSCR]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   91.1   0.0   5.5e-30   1.1e-26     365     475 ..      15     125 ..       3     127 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 91.1 bits;  conditional E-value: 5.5e-30
+        finB 365 nspkilvavatkggglvnqhfghakefqvyevdgnevrfvshrkidqycqggyseeatadnilkaiadckavlvskigncpkekleaagiktveaydvi 463
+                  +p   vava++  glv+ hfgha +f +y+v  + ++f+  r +  yc g       +  il +++dc+a+++s+ig  p+++l++agi++v+ yd+i
+  KPQ39028.1  15 PEPTARVAVASQERGLVDTHFGHASQFHIYDVTRSHAEFIEVRDVAPYCHGPEDSPGDLSAILTTLQDCQAIMISRIGVEPEDRLREAGIEPVQVYDTI 113
+                 567778********************************************************************************************* PP
+
+        finB 464 ekvalefyeqyv 475
+                 e   ++fy++y 
+  KPQ39028.1 114 ETALFHFYDRYR 125
+                 *********996 PP
+
+>> KPQ33397.1  cyclic pyranopterin phosphate synthase MoaA [Phormidium sp. OSCR]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.5   0.0   9.4e-07    0.0019     122     257 ..      64     187 ..       6     212 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 14.5 bits;  conditional E-value: 9.4e-07
+        finB 122 pgdplanpektfrtfeliadkapdiklclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalke 220
+                  g+pl  p+    + + ia       l+++tngl+l+   + + +  ++ + i+l+ +d e   +i       + r+          ++   g+q   e
+  KPQ33397.1  64 GGEPLLRPDVVAIAAD-IATLPQTEDLAMTTNGLLLPGLAQPLYDAGLQRLNISLDSLDAETFDKIIGNR--GKSRW----------QRTWAGIQEAYE 149
+                 4777777776544433.555555567999******************************99999987632..22333..........344555555555 PP
+
+        finB 221 adil.ckvnsvmipgindkhlvevnkairergaflhni 257
+                       k+n v+ipg+nd  ++e+  + r+r   +  i
+  KPQ33397.1 150 VGFNpLKLNMVVIPGVNDGEVLEMAALTRDRQWHIRFI 187
+                 54432589*********************998766544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         4158  (1357320 residues searched)
+Passed MSV filter:                        75  (0.0180375); expected 83.2 (0.02)
+Passed bias filter:                       73  (0.0175565); expected 83.2 (0.02)
+Passed Vit filter:                         7  (0.0016835); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000481); expected 0.0 (1e-05)
+Initial search space (Z):               4158  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 13003.13
+//
+[ok]

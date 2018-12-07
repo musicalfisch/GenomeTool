@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/313624_GCA_000340565.3.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.7e-116  384.4   0.0   3.1e-116  384.2   0.0    1.0  1  AHJ30939.1  CpeT-like protein [Nodularia spumigena CCY9414]
+    4.4e-30  103.0   0.0      5e-30  102.9   0.0    1.0  1  AHJ29911.1  hypothetical protein NSP_36000 [Nodularia spumige
+
+
+Domain annotation for each sequence (and alignments):
+>> AHJ30939.1  CpeT-like protein [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  384.2   0.0  1.2e-119  3.1e-116       6     194 ..       2     190 ..       1     192 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 384.2 bits;  conditional E-value: 1.2e-119
+        cpeS   6 diatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdlerlkt 104
+                 di+tlar+maadfsnq+qafenppffahirvcmrplp+e+lsg+s+fveqaydy+lndpyr+rvl+lv+a++riei nytvk+e++fygasr+lerlkt
+  AHJ30939.1   2 DITTLARWMAADFSNQAQAFENPPFFAHIRVCMRPLPVEVLSGISLFVEQAYDYMLNDPYRVRVLQLVNAGNRIEIVNYTVKQEENFYGASRNLERLKT 100
+                 9************************************************************************************************** PP
+
+        cpeS 105 lkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                 l+ d+leklpgcnm vew+gnsfkgkvepgk+civ+rkg+ktyldsefei ee+fisldrgrd+et+ehiwgsvagpf+fvr++sfadev
+  AHJ30939.1 101 LTGDRLEKLPGCNMTVEWAGNSFKGKVEPGKGCIVFRKGQKTYLDSEFEISEERFISLDRGRDLETNEHIWGSVAGPFHFVRRHSFADEV 190
+                 *****************************************************************************************9 PP
+
+>> AHJ29911.1  hypothetical protein NSP_36000 [Nodularia spumigena CCY9414]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  102.9   0.0   1.9e-33     5e-30       1     188 [.       4     199 ..       4     201 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 102.9 bits;  conditional E-value: 1.9e-33
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklve...aedrieienytvkeekkfygas 96 
+                 m+ s ++ +l  ++a  f n+eqa+ +  +f h+ +  rp+ l   + +++f eqa   +l++pyr r+++l++   a+  ++++ y++k+   + ga 
+  AHJ29911.1   4 MSFSPNLIALGEYLAGKFDNREQALADSAWFVHLHLWHRPVDLFTEDSITLFAEQANIVNLDQPYRQRIMRLMSgggADAPLQLQYYMLKDPSALRGAG 102
+                 677889999****************************************************************833345679***************** PP
+
+        cpeS  97 rdlerlktlkaddleklpgcnmivew...t..gnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                 r+   lk+l++d+l+ lpgc + v     +   ++f  +  p   c  +  ++   +   fe  + +f s d+g d +t +  wg++ gp+++ +++
+  AHJ29911.1 103 RNPALLKRLTVDQLDLLPGCILTVTQqtiAanSSKFTATQPPNTRCCFTYLNQIVQVALGFEATAAEFNSYDKGIDSDTGKATWGAILGPYRYTKRE 199
+                 ********************9998642223114557788889999*9999******************************************98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5295  (1473270 residues searched)
+Passed MSV filter:                        67  (0.0126534); expected 105.9 (0.02)
+Passed bias filter:                       61  (0.0115203); expected 105.9 (0.02)
+Passed Vit filter:                         7  (0.001322); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000377715); expected 0.1 (1e-05)
+Initial search space (Z):               5295  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 5775.22
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1973477_GCA_002218065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.7e-47  157.7   0.0    9.9e-47  157.4   0.0    1.0  1  GAX38382.1  thioesterase [Nodularia sp. NIES-3585]
+  ------ inclusion threshold ------
+      0.043   11.1   0.0      0.081   10.2   0.0    1.4  1  GAX38795.1  amino acid adenylation domain-containing protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX38382.1  thioesterase [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  157.4   0.0   3.9e-50   9.9e-47      23     237 ..      21     236 ..      14     248 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 157.4 bits;  conditional E-value: 3.9e-50
+        anaA  23 klslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgcfpqcl 121
+                  l lfcfp ag  sl+fr w  ++p +++++ + +pgr  +ik    +r   li+ l   + p  + pf ffghs+g++vs+e+ + l   +g  p  l
+  GAX38382.1  21 SLRLFCFPYAGGSSLMFRPWLKSLPTTVEIFPIELPGRGMQIKLAPFSRLEPLIKGLAPALLPNLKKPFAFFGHSMGALVSFELIRLLRREYGISPVHL 119
+                 689************************************************************************************************ PP
+
+        anaA 122 vvsgrkpphipcdhrdsqa.sdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleelrewekytq 219
+                  +sgr+ p+ip      +a  + ++ieel    gtp+avl++ elm +++p+ rad+ + e y y  e +l  pi ++gg  d  vs+++l+ w++ t+
+  GAX38382.1 120 FISGRRAPQIPDLDPPIHAlPEAEFIEELGRLNGTPKAVLENAELMELLIPMLRADFAVLETYVYTPEPTLNIPITTFGGLQDSKVSVDQLQGWQEQTH 218
+                 ***********7665555516779*************************************************************************** PP
+
+        anaA 220 rgfklrsfpgghmyltee 237
+                   f  + fpg h++l   
+  GAX38382.1 219 STFCQQMFPGDHFFLHSA 236
+                 **************9765 PP
+
+>> GAX38795.1  amino acid adenylation domain-containing protein [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   3.2e-05     0.081      25     111 ..     675     760 ..     654     777 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 3.2e-05
+        anaA  25 slfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypy.sqspfvffghslgsvvslevahqlg 111
+                  lfc+p ag   ++f +   ++  +  +++ +  g    + +  i++  d+    +q +     q p+ + ghs+g  v++e+a+ql 
+  GAX38795.1 675 PLFCVPGAGGFPFYFYNLARSLGSNQPFYSFQAQGPHGELAD--ISQVEDIAAHYIQAMQGVqPQGPYFLGGHSFGGKVAFEMAQQLL 760
+                 69*******************999999999998888887765..99999**99999999875269*********************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5048  (1559691 residues searched)
+Passed MSV filter:                       130  (0.0257528); expected 101.0 (0.02)
+Passed bias filter:                      127  (0.0251585); expected 101.0 (0.02)
+Passed Vit filter:                        15  (0.00297147); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396197); expected 0.1 (1e-05)
+Initial search space (Z):               5048  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7892.04
+//
+[ok]

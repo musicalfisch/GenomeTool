@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710888_GCA_001672075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   8.6e-144  475.5   6.7   9.5e-144  475.4   6.7    1.0  1  OBQ37146.1  ATP synthase F0F1 subunit A [Anabaena sp. CRKS33]
+  ------ inclusion threshold ------
+      0.046   11.3   0.0      0.073   10.6   0.0    1.2  1  OBQ40902.1  hypothetical protein AN487_00005, partial [Anabae
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ37146.1  ATP synthase F0F1 subunit A [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  475.4   6.7  4.1e-147  9.5e-144       1     250 [.       1     249 [.       1     251 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 475.4 bits;  conditional E-value: 4.1e-147
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 ml++ln++ slplaelevg+h+ywq+gnlk+hgqvfltswfvi++lv+as+ a+ nv+rip+g+qnlmeyalefirdlaknq+gekeyrpwvpf+gtlf
+  OBQ37146.1   1 MLNFLNVY-SLPLAELEVGKHLYWQIGNLKLHGQVFLTSWFVIGVLVLASVLASSNVKRIPSGLQNLMEYALEFIRDLAKNQIGEKEYRPWVPFVGTLF 98 
+                 88999986.89**************************************************************************************** PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsgal+p+kli+lp+gel+apt dinttvalalltslayfyagfsk+glgyf +y++p   +lp  i+edftkplslsfrlfgniladelvv
+  OBQ37146.1  99 LFIFVSNWSGALVPFKLIHLPEGELTAPTSDINTTVALALLTSLAYFYAGFSKKGLGYFGNYVQPVSFMLPFKIIEDFTKPLSLSFRLFGNILADELVV 197
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgeeehee 250
+                 +vlvllvplfvplpvmalglftsaiqal+fatla+ayi ea+e h +eehe 
+  OBQ37146.1 198 GVLVLLVPLFVPLPVMALGLFTSAIQALIFATLAAAYIGEAMEDHHGEEHEG 249
+                 **********************************************999994 PP
+
+>> OBQ40902.1  hypothetical protein AN487_00005, partial [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   3.1e-05     0.073     103     162 ..     236     295 ..     227     301 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 3.1e-05
+        atpI 103 fvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyi 162
+                 f +  + al p+kl+ +   ++   t d ++t a   + s +y+  g+     gy+kky 
+  OBQ40902.1 236 FKAPKAAALEPFKLVDINGVKIPVDTRDFQSTNANNYVVSESYILDGIEFGLEGYLKKYA 295
+                 55667889****************************************99888******6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         4638  (1261469 residues searched)
+Passed MSV filter:                       145  (0.0312635); expected 92.8 (0.02)
+Passed bias filter:                       72  (0.0155239); expected 92.8 (0.02)
+Passed Vit filter:                         5  (0.00107805); expected 4.6 (0.001)
+Passed Fwd filter:                         2  (0.00043122); expected 0.0 (1e-05)
+Initial search space (Z):               4638  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10554.29
+//
+[ok]

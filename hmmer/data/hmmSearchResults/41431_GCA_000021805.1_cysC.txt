@@ -1,0 +1,92 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/41431_GCA_000021805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.9e-107  354.7   0.1   2.1e-107  354.5   0.1    1.0  1  ACK67937.1  Adenylyl-sulfate kinase [Cyanothece sp. PCC 8801]
+  ------ inclusion threshold ------
+      0.017   12.5   0.1       0.04   11.3   0.1    1.7  2  ACK65029.1  Shikimate kinase [Cyanothece sp. PCC 8801]
+      0.022   12.2   0.0       0.26    8.7   0.0    2.1  2  ACK65679.1  cobyric acid synthase CobQ [Cyanothece sp. PCC 88
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK67937.1  Adenylyl-sulfate kinase [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  354.5   0.1  1.4e-110  2.1e-107       4     184 .]       1     181 []       1     181 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 354.5 bits;  conditional E-value: 1.4e-110
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mkq+gvt+wltglsgagk+tit al+ kl   gy++evldgdivrtnltkglgfskedrd nirrigfv+nlltr gvivlvsaispyr+ir+evrg i
+  ACK67937.1   1 MKQQGVTIWLTGLSGAGKTTITHALEQKLREAGYALEVLDGDIVRTNLTKGLGFSKEDRDTNIRRIGFVANLLTRNGVIVLVSAISPYRDIRDEVRGTI 99 
+                 9************************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqavav 184
+                 g+fvevfvnapl+vceerdvkglyk+arageiksftgiddpyepp+npe+ecrtdletleesv+k+w+kl elgy+ + va+
+  ACK67937.1 100 GNFVEVFVNAPLNVCEERDVKGLYKKARAGEIKSFTGIDDPYEPPLNPEIECRTDLETLEESVTKIWQKLEELGYLAKPVAI 181
+                 *****************************************************************************99985 PP
+
+>> ACK65029.1  Shikimate kinase [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   2.8e-05      0.04       7      41 ..       8      42 ..       1      94 [. 0.82
+   2 ?   -1.6   0.0      0.25   3.6e+02     147     174 ..     125     152 ..     115     160 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 2.8e-05
+        cysC  7 rgvtvwltglsgagkstitealqakliaegysiev 41
+                +g+ ++l g+ g+gksti + l  +l    +  ++
+  ACK65029.1  8 QGINIYLIGMMGSGKSTIGKILAQRLDYRFFDTDI 42
+                699***************99998877655554444 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.25
+        cysC 147 pfnpevecrtdletleesvakvwnklte 174
+                 p+  e +    l+tl+e   +++nk   
+  ACK65029.1 125 PLLKESDLTLKLKTLDEQRRNLYNKADL 152
+                 5556777888899999999999998654 PP
+
+>> ACK65679.1  cobyric acid synthase CobQ [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.8   0.0     0.045        66      15      45 ..       9      39 ..       2      48 .. 0.79
+   2 ?    8.7   0.0   0.00018      0.26      68     111 ..     445     488 ..     436     492 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.8 bits;  conditional E-value: 0.045
+        cysC 15 glsgagkstitealqakliaegysievldgd 45
+                  s agks it a+   l  +g+ +  + g+
+  ACK65679.1  9 TTSHAGKSFITTAICRILARQGWHVTPFKGQ 39
+                4689**********99999999988776665 PP
+
+  == domain 2  score: 8.7 bits;  conditional E-value: 0.00018
+        cysC  68 rigfvsnlltrhgvivlvsaispyreireevrgkigsfvevfvn 111
+                 r  ++  l  r g+  l + i+ yre re     i ++ve fvn
+  ACK65679.1 445 RRSWLNYLRQRRGLPSLPTGIANYREQREANLDAIADLVEEFVN 488
+                 556677788999*******************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4367  (1346913 residues searched)
+Passed MSV filter:                       195  (0.0446531); expected 87.3 (0.02)
+Passed bias filter:                      175  (0.0400733); expected 87.3 (0.02)
+Passed Vit filter:                        25  (0.00572475); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.00068697); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 6195.80
+//
+[ok]

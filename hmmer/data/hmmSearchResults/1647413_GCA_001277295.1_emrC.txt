@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1647413_GCA_001277295.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      0.003   16.1  10.9      0.013   14.0  10.9    1.9  1  ALB40174.1  EamA-like transporter family protein [Anabaena sp
+  ------ inclusion threshold ------
+      0.027   13.0   8.3       0.24   10.0   2.4    2.5  2  ALB43530.1  serine/threonine protein kinase [Anabaena sp. WA1
+
+
+Domain annotation for each sequence (and alignments):
+>> ALB40174.1  EamA-like transporter family protein [Anabaena sp. WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0  10.9   5.6e-06     0.013      31     102 ..      47     118 ..       1     122 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 5.6e-06
+        emrC  31 lipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 +ip vl+ +++yg++     l l +i++sva     ++g ++   +g  +++e ++l++++ + li+ gvi +
+  ALB40174.1  47 TIPEVLLgLTCYGIGAVTYILLLTRINLSVAAPA-VSIGYIFSVLLGYFVLKEPISLTRVFGLGLIVTGVILV 118
+                 57888774789***999999**********9765.579********************************965 PP
+
+>> ALB43530.1  serine/threonine protein kinase [Anabaena sp. WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   2.4    0.0001      0.24      13      71 ..     318     375 ..     315     383 .. 0.92
+   2 ?    5.8   0.4     0.002       4.7      43      74 ..     473     505 ..     439     520 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 0.0001
+        emrC  13 lfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvl 71 
+                 lf  +g  +++   +ft+ i    ++++ g+ + fl+ +l +i v +  s+ ag+gt++
+  ALB43530.1 318 LFSSTGKSVVQSITEFTQAISNTTLLIIQGI-YKFLSACLATIWVMILTSICAGIGTMI 375
+                 67888999999999****************8.79***********************87 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.002
+        emrC  43 lcltfltlalkkievsvaysvwaglgtv.liav 74 
+                 ++l +ltl l      +ay+v aglg++ lia+
+  ALB43530.1 473 ISLPLLTLGLGLRSHQIAYAVIAGLGSAnLIAI 505
+                 66777888888888899*********8625554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         4742  (1395220 residues searched)
+Passed MSV filter:                       169  (0.035639); expected 94.8 (0.02)
+Passed bias filter:                       71  (0.0149726); expected 94.8 (0.02)
+Passed Vit filter:                         5  (0.00105441); expected 4.7 (0.001)
+Passed Fwd filter:                         2  (0.000421763); expected 0.0 (1e-05)
+Initial search space (Z):               4742  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7394.67
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1608419_GCA_001007635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.9e-15   49.1   0.1    9.1e-15   48.9   0.1    1.0  1  KKZ09999.1  hypothetical protein TQ37_10250 [Candidatus Synec
+    1.1e-06   22.0  10.5    1.6e-06   21.5  10.5    1.1  1  KKZ14114.1  hypothetical protein TQ37_02115, partial [Candida
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ09999.1  hypothetical protein TQ37_10250 [Candidatus Synechococcus spongiarum 15L]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.9   0.1   9.7e-18   9.1e-15    2338    2456 ..     139     261 ..      72     274 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 48.9 bits;  conditional E-value: 9.7e-18
+        appA 2338 ttavtgtitnddfsqlsinnitvvegqdsnailtvtvnnpnpqpisvnyttapvnatanvdytsktgtltiaantstatisipilndnlneanetfa 2434
+                  + + t t t     ++ i+     e +d+   ++v +n    + +sv+y+ta   at+  dyt+ +gtl  a   ++ t+s+p+l+d ++e +et+ 
+  KKZ09999.1  139 ALSNTVTATVGGPVRIRIEGARAKEDKDATLDFAVMLNRATAHEVSVDYATAEDTATTRADYTATSGTLVFAVGKTAKTVSVPVLDDVVDEGKETLR 235 
+                  4445555555666778888888889999999999*************************************************************** PP
+
+        appA 2435 inlsnpvnatltn....nkgivtisd 2456
+                  + lsnp  a l n     kg++   d
+  KKZ09999.1  236 LRLSNPRGAYLRNmhrqAKGVIVNDD 261 
+                  *********99883333467666555 PP
+
+>> KKZ14114.1  hypothetical protein TQ37_02115, partial [Candidatus Synechococcus spongiarum 15L]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5  10.5   1.7e-09   1.6e-06    2299    2473 ..     427     622 ..     418     658 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 1.7e-09
+        appA 2299 aagsstatvtvdptadttvesdetviltlasgtgytvgtttavtgtitnd.....dfsqlsinn....itvvegqdsn......ailtvtvnnpnpq 2380
+                   ag ++ +  ++ + dt  e  et++l  + g    v  t   + tit +        ql + n     +v  g++sn        l+v +n p  +
+  KKZ14114.1  427 PAGKTSVSTVINIAMDTLEEGPETIVLQASGGNSSPVYRTENSSQTITLEiretsHRPQLRVGNpdggYAVPTGRESNdgseteVALAVILNRPSTE 523 
+                  5676666667788899999999*****9999999999999888888885422111456999988444446766766663333326899********* PP
+
+        appA 2381 pisvnyttapvn.........atanvdytsktgtltiaantstatisipilndnlneanetfainlsnpvnatltnnkgivtisdtltanvtttlpa 2468
+                   ++v+y ta            ata  dy   +gtlt a   +   i i il+d  +++ne f + lsnp  a +    g+  i   l  ++    p 
+  KKZ14114.1  524 TVTVEYETADGAgdwlasgslATAGEDYKPISGTLTFAPGETRKLIYITILDDSHEDSNELFRLVLSNPQGAVIVTSDGLGRI---LNHEIVIKEPD 617 
+                  *******996422233333349****************************************************999998776...44555555565 PP
+
+        appA 2469 nvenl 2473
+                  n +n 
+  KKZ14114.1  618 NNNNN 622 
+                  55443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         1878  (530212 residues searched)
+Passed MSV filter:                        64  (0.0340788); expected 37.6 (0.02)
+Passed bias filter:                       48  (0.0255591); expected 37.6 (0.02)
+Passed Vit filter:                         4  (0.00212993); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00106496); expected 0.0 (1e-05)
+Initial search space (Z):               1878  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.12u 0.02s 00:00:00.13 Elapsed: 00:00:00.15
+# Mc/sec: 9575.63
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/acsA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1943583_GCA_002018015.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       acsA  [M=656]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.3e-08   28.2   0.0     0.0015   13.2   0.0    2.5  3  OOV36054.1  hypothetical protein BV53_02250 [Candidatus Synec
+
+
+Domain annotation for each sequence (and alignments):
+>> OOV36054.1  hypothetical protein BV53_02250 [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.2   0.0      0.05        71     115     188 ..      61     134 ..      57     147 .. 0.83
+   2 !   13.2   0.0   1.1e-06    0.0015     244     281 ..     194     233 ..     189     244 .. 0.83
+   3 !   12.0   0.0   2.5e-06    0.0035     441     577 ..     445     574 ..     426     601 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -2.2 bits;  conditional E-value: 0.05
+        acsA 115 ltyaqlhrevcqlanvlkelgvkkgdrvgiylpmipeaaiamlacarigaphsvvfggfsaealrdrlndaeak 188
+                 +t+ +l   +     +l++lg+   d+v +     p   +a  a+   ga+ +v       e l+  ++d++a 
+  OOV36054.1  61 FTFVELDAAIGTTRTALQSLGLGADDTVALLADNGPRWLVADQAVMSCGAADAVRGSTAPVEELHYIVEDCNAC 134
+                 6888899999999999***************9999999999999999999999887777778888777777765 PP
+
+  == domain 2  score: 13.2 bits;  conditional E-value: 1.1e-06
+        acsA 244 whdlqkevsad..cpaepmdsedllfilytsgstgkpkgv 281
+                 w  lq+++  +   pa  +  e +  ilytsg+tg+pkgv
+  OOV36054.1 194 WSRLQQRAQGQrvRPAAVLSGEAVATILYTSGTTGRPKGV 233
+                 7777777665422589999********************9 PP
+
+  == domain 3  score: 12.0 bits;  conditional E-value: 2.5e-06
+        acsA 441 pgsatlpfpgiladvvdlegnsvedneggy...lvvkhpwpgmlrtvygdpdrfrrtywehiapkdgqylyfagdgarkdedgyfwvmgrvddvlnv.s 535
+                  gsa +p+pg    +v  e  + + +  g+    +v+   p ++    g p+          +  dg+  + +gd      dg + + gr  d + +  
+  OOV36054.1 445 RGSAGQPLPGTEIRIVATERTQGPREVMGWgqvGIVQARGPQVMGGYLGRPEATA-------EVLDGENWFDTGDLGYLLPDGSLMITGRAKDTIVLaN 536
+                 6788888888877777777665555443331114677777777777777776543.......44699999999**99999**********999776626 PP
+
+        acsA 536 ghrlgtmeiesalvshpavaeaavvgkpdelkgeevvafvtl 577
+                 g  +    +e al++hp v +  vvg+        + a+v+l
+  OOV36054.1 537 GENIEPAPLEDALLAHPLVQQVMVVGQDRR----TLAALVVL 574
+                 99************************9754....34444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (656 nodes)
+Target sequences:                         1413  (403879 residues searched)
+Passed MSV filter:                        32  (0.0226469); expected 28.3 (0.02)
+Passed bias filter:                       29  (0.0205237); expected 28.3 (0.02)
+Passed Vit filter:                         3  (0.00212314); expected 1.4 (0.001)
+Passed Fwd filter:                         1  (0.000707714); expected 0.0 (1e-05)
+Initial search space (Z):               1413  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 8831.49
+//
+[ok]

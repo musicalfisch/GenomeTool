@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1943583_GCA_002018015.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-27   91.8   1.6    2.3e-27   91.6   1.6    1.0  1  OOV35233.1  carbon dioxide-concentrating protein CcmK [Candid
+    2.8e-25   84.9   5.3    3.5e-25   84.6   5.3    1.0  1  OOV35240.1  carbon dioxide-concentrating protein CcmK, partia
+     0.0082   12.7   2.4     0.0079   12.7   1.2    1.6  2  OOV35245.1  BMC domain-containing protein [Candidatus Synecho
+
+
+Domain annotation for each sequence (and alignments):
+>> OOV35233.1  carbon dioxide-concentrating protein CcmK [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   91.6   1.6     5e-30   2.3e-27       1      89 [.       6      93 ..       6     100 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 91.6 bits;  conditional E-value: 5e-30
+        ccmK  1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyvl 89
+                m ia+gmiet+g+   +eaadam kaa v l+g e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e vl
+  OOV35233.1  6 MGIALGMIETRGLVPAIEAADAMTKAAEVRLIGREFVGGGYVTVLVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHREVEPVL 93
+                89***********999***************************************************8875.679***********998 PP
+
+>> OOV35240.1  carbon dioxide-concentrating protein CcmK, partial [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.6   5.3   7.5e-28   3.5e-25       3      90 ..      27     113 ..      25     118 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 84.6 bits;  conditional E-value: 7.5e-28
+        ccmK   3 iavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyvlp 90 
+                 ia+gmiet+g+   veaadam kaa vtl   e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e vl 
+  OOV35240.1  27 IALGMIETRGLVPAVEAADAMTKAAEVTLTVRELVGGGYVTVMVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHVEVESVLV 113
+                 9**********999***************************************************8875.679***********9985 PP
+
+>> OOV35245.1  BMC domain-containing protein [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.0       1.6   7.4e+02      15      35 ..     117     138 ..     110     143 .. 0.58
+   2 !   12.7   1.2   1.7e-05    0.0079       7      68 ..     169     232 ..     161     235 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 1.6
+        ccmK  15 avveaadamvka.arvtlvgye 35 
+                 av+ a d+ v   +r  +  ye
+  OOV35245.1 117 AVLAAIDSRVEDrTRCDVTWYE 138
+                 5666666666431455555555 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 1.7e-05
+        ccmK   7 mietlgfpavveaadamvkaarvtlvgyekigs.grvtvivr.gdvsevqasvaagvesanrvn 68 
+                 ++et+    v+ aa+   ka+ +t+v  + +g+ gr+t+  r gdv e  a+    v ++n  +
+  OOV35245.1 169 ILETEPAGYVLYAANEAEKASNITMVDVKAVGAfGRLTMAGReGDVEEAAAAAMQAVATINSRS 232
+                 57888888899*********************879***99876999999988887787777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         1413  (403879 residues searched)
+Passed MSV filter:                        39  (0.0276008); expected 28.3 (0.02)
+Passed bias filter:                       30  (0.0212314); expected 28.3 (0.02)
+Passed Vit filter:                         3  (0.00212314); expected 1.4 (0.001)
+Passed Fwd filter:                         3  (0.00212314); expected 0.0 (1e-05)
+Initial search space (Z):               1413  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4159.95
+//
+[ok]

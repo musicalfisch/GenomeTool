@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188_GCA_000300115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      8e-55  184.9   0.0    8.9e-55  184.7   0.0    1.0  1  EKE99067.1  putative gramicidin S biosynthesis protein GrsT [
+    1.7e-05   23.2   0.0    3.3e-05   22.3   0.0    1.4  1  EKE97867.1  condensation domain protein [Tolypothrix sp. PCC 
+
+
+Domain annotation for each sequence (and alignments):
+>> EKE99067.1  putative gramicidin S biosynthesis protein GrsT [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  184.7   0.0   1.8e-58   8.9e-55       7     235 ..       7     235 ..       1     249 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 184.7 bits;  conditional E-value: 1.8e-58
+        anaA   7 ttspwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvsle 105
+                   + w++    + q  +l lfcfp ag  sl+fr w  ++  +i++ av +pgr  +i+ p  ++   l++ +   iypy + pf f+ghs+g+ +s+e
+  EKE99067.1   7 NFNSWIICPQPKPQ-ANLRLFCFPYAGGSSLIFRTWSNSLSSNIEVCAVEIPGRGRQIQFPPFSKIEPLVDAIASHIYPYLDKPFAFLGHSMGAWISFE 104
+                 55566665444444.5699******************************************************************************** PP
+
+        anaA 106 vahqlgdrfgcfpqclvvsgrkpphipcdhrd.sqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggead 203
+                 +++ l  ++g +p  l +s r+ ph+p       +  + d+ieelr   gtp  vl++ elm + lpi rad+ + e y y  e  l cpi+a+gg  d
+  EKE99067.1 105 LTRLLRRKYGIIPVNLFISARRAPHLPSSEAViHNLPEADFIEELRHLNGTPSEVLENAELMELFLPILRADFAVLETYIYTPESPLECPIIAFGGLED 203
+                 ***************************987761556788************************************************************ PP
+
+        anaA 204 egvsleelrewekytqrgfklrsfpgghmylt 235
+                   vs++el+ w+++t+  f l+ fpg h+++ 
+  EKE99067.1 204 ARVSFDELQAWQEHTKADFSLHMFPGDHFFIN 235
+                 ****************************9986 PP
+
+>> EKE97867.1  condensation domain protein [Tolypothrix sp. PCC 7601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.3   0.0   6.7e-09   3.3e-05      10     112 ..     915    1014 ..     904    1025 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 22.3 bits;  conditional E-value: 6.7e-09
+        anaA   10 pwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypy.sqspfvffghslgsvvsle 105 
+                    lvpl    + nk  lfc+  ag   l++rd+   +     ++a++  g + + k p +tr   +    ++ei     q p+ + g+s+g +v  e
+  EKE97867.1  915 SSLVPLQ--PNGNKPPLFCVHGAGESVLYYRDFANYLGADQPVYALQAIGVDGK-KAP-LTRVEKMAAHYIKEIQTIqPQGPYFLGGYSFGGLVVWE 1007
+                  4566664..467999**********************************99875.666.59*************9762699**************** PP
+
+        anaA  106 vahqlgd 112 
+                  +a+ql  
+  EKE97867.1 1008 MARQLAA 1014
+                  ****975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         9972  (2716567 residues searched)
+Passed MSV filter:                       239  (0.0239671); expected 199.4 (0.02)
+Passed bias filter:                      222  (0.0222623); expected 199.4 (0.02)
+Passed Vit filter:                        18  (0.00180505); expected 10.0 (0.001)
+Passed Fwd filter:                         2  (0.000200562); expected 0.1 (1e-05)
+Initial search space (Z):               9972  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 9818.45
+//
+[ok]

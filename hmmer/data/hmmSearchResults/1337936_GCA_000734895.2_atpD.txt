@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-89  297.3   5.5    1.1e-89  297.2   5.5    1.0  1  AKG23934.1  ATP synthase F0F1 subunit delta [Calothrix sp. 33
+  ------ inclusion threshold ------
+      0.013   13.4   0.1      0.024   12.6   0.1    1.4  1  AKG22768.1  glycine cleavage system protein T [Calothrix sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG23934.1  ATP synthase F0F1 subunit delta [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  297.2   5.5   4.5e-93   1.1e-89       1     183 [.       1     183 [.       1     184 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 297.2 bits;  conditional E-value: 4.5e-93
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m+s++a ae+aqpya+al+s+aqs+nltee+g+d r llsll +s+el++f++npfvk ++kk++++q++geg n+ylrnfllllvdrrri +le i q
+  AKG23934.1   1 MQSKIALAEIAQPYAEALMSVAQSNNLTEEFGSDIRILLSLLGNSQELRSFFENPFVKLDSKKALVNQIMGEGGNTYLRNFLLLLVDRRRIQILEGICQ 99 
+                 89************************************************************************************************* PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qyl+llrqlnqtvla+v savpl+++qq++vk+kv a+t+ar+vel+t+id+++iggviikvgsqv+das+rgqlrrlslrls 
+  AKG23934.1 100 QYLSLLRQLNQTVLAQVISAVPLSDEQQETVKQKVKAMTNAREVELDTRIDREIIGGVIIKVGSQVVDASIRGQLRRLSLRLSG 183
+                 **********************************************************************************95 PP
+
+>> AKG22768.1  glycine cleavage system protein T [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.1   9.4e-06     0.024      81     134 ..      75     128 ..      64     136 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 9.4e-06
+        atpD  81 fllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekv 134
+                  ++llv  +r  fl   l++y+ +  +++ + l++ t++++l  +q +a+ ek+
+  AKG22768.1  75 AVILLVSPHRRQFLLEWLDKYIFFADKVQLSDLTQTTATISLIGSQSDAIVEKL 128
+                 5789999999999999************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       174  (0.0345033); expected 100.9 (0.02)
+Passed bias filter:                      114  (0.0226056); expected 100.9 (0.02)
+Passed Vit filter:                         9  (0.00178465); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9883.05
+//
+[ok]

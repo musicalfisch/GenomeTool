@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/864702_GCA_000309945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-07   28.8   0.1    2.4e-06   25.0   0.0    2.4  3  EKQ69028.1  ABC-type Fe3+-hydroxamate transport system, perip
+
+
+Domain annotation for each sequence (and alignments):
+>> EKQ69028.1  ABC-type Fe3+-hydroxamate transport system, periplasmic component [Oscillatoriales cyanobacterium JSC-12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   0.0     5e-10   2.4e-06      15     137 ..       8     128 ..       2     167 .. 0.70
+   2 ?    0.2   0.0     0.018        86      78     131 ..     192     249 ..     172     255 .. 0.66
+   3 ?   -0.3   0.0     0.026   1.2e+02     271     301 ..     253     283 ..     244     293 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 5e-10
+        fecB  15 fgcakqvpvefspgetiqsnltqrtiahamgvtavp.nepqrivvltneatdmvlalgvtpvgavkswsgdpyyeylakdmlgvpivgd.emqpnleki 111
+                 f c   v   f     + sn +  t    +  t  p     r++ lt  ++d+v  l  t +  +    g    +    ++  +p v +   qpnleki
+  EKQ69028.1   8 FLCFALVSGLFLTACNVTSNSSTSTTPAIVEATKAPvTTASRVIALTSLSADIVQRLDQTKLIGM---GGSRLLN-QKPEFAKIPKVSEgRTQPNLEKI 102
+                 55666666667777778888877777777777777724578999999999999999998875322...2222222.2234455777765268******* PP
+
+        fecB 112 valqpdliigsrlrqgqiykslsaia 137
+                 val+pdl+ig+   + q    l  + 
+  EKQ69028.1 103 VALKPDLVIGATGFHDQTLAKLKEMG 128
+                 **********9887777776666555 PP
+
+  == domain 2  score: 0.2 bits;  conditional E-value: 0.018
+        fecB  78 vkswsgdpyyeylak....dmlgv.pivgdemqpnlekivalqpdliigsrlrqgqiyk 131
+                  +sw+gd   ++  k    d+ g  pi g  +    ek++  +p+++i     +gq  k
+  EKQ69028.1 192 KNSWAGDLLTQFQVKnvvaDLQGQsPISG-YVTLSPEKVLQTDPEVVILVDAEEGQAAK 249
+                 46999999988877722224455425555.56667799999999999988888888766 PP
+
+  == domain 3  score: -0.3 bits;  conditional E-value: 0.026
+        fecB 271 hplwqqlevvqsgkayavsdvvwttaggiqa 301
+                  p+w+ql+  +s + y          g i+a
+  EKQ69028.1 253 APFWNQLQATKSNRVYMFEYYGLVNPGSIDA 283
+                 699************9987777777776666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         4780  (1548170 residues searched)
+Passed MSV filter:                       163  (0.0341004); expected 95.6 (0.02)
+Passed bias filter:                      129  (0.0269874); expected 95.6 (0.02)
+Passed Vit filter:                        13  (0.00271967); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000209205); expected 0.0 (1e-05)
+Initial search space (Z):               4780  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 9753.47
+//
+[ok]

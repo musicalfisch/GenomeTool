@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102232_GCA_000332035.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-52  175.9   0.3    2.5e-52  175.3   0.3    1.3  1  ELR98261.1  Fe2+ transport system protein A [Gloeocapsa sp. P
+    4.8e-09   33.9   0.1    5.2e-09   33.8   0.1    1.1  1  ELR98629.1  Fe2+ transport system protein A [Gloeocapsa sp. P
+
+
+Domain annotation for each sequence (and alignments):
+>> ELR98261.1  Fe2+ transport system protein A [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  175.3   0.3   1.2e-55   2.5e-52      21     208 ..       4     180 ..       1     182 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 175.3 bits;  conditional E-value: 1.2e-55
+        feoA  21 qfskwggkeaeldnvtptgndlaatyplaqvemgktvwlvgfqgtgginrllgmglnpgiqlqvissqprgsvliaiqdnrigigaemaekilvsdsqp 119
+                 +fs+wgg+  e ++ +   + l  +ypl+q e+g  vw++gf           mgln g   ++i  qp gsvl+ i d+ +g+gaem+ kilvsd  p
+  ELR98261.1   4 RFSYWGGNGEEFNQSEIDNSRL--SYPLSQAELGARVWVIGFS---------IMGLNSGEMAEIIHIQPSGSVLLKIGDQTVGLGAEMTSKILVSDCPP 91 
+                 79******99999887766655..7*****************6.........49********************************************* PP
+
+        feoA 120 kklepkkdlpevrtflreipigkagkvvgydralrgykgkllsmgltpgteftvirvaplgdpveirvrgfhlslrkqeadaliveeid 208
+                  +l+     ++ rt++re+ +g   ++vgyd+ l+gy+gkll+mgl pg +ftvi v p+gdpv+irv g+ ++l kqeadal+ve ++
+  ELR98261.1  92 DQLKALEMATDTRTYIREMEVGTLAQIVGYDKILQGYQGKLLAMGLKPGIKFTVISVPPFGDPVKIRVEGMIITLPKQEADALVVEVVE 180
+                 *************************************************************************************9876 PP
+
+>> ELR98629.1  Fe2+ transport system protein A [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.8   0.1   2.5e-12   5.2e-09     151     208 ..      21      79 ..      11      81 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 33.8 bits;  conditional E-value: 2.5e-12
+        feoA 151 ralrgykgkllsmgltpgteftvirvaplgdpveirvrg.fhlslrkqeadaliveeid 208
+                 r   g+k +l +mg+ pg +  v+r a lg p+ +rv    ++++r+ ead++i++  d
+  ELR98629.1  21 RGGDGFKTRLEAMGIVPGKQVKVLRSAILGGPLHVRVGStTEIAIRRHEADSVIIKLYD 79 
+                 66789********************************752689***********97655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         4087  (1202650 residues searched)
+Passed MSV filter:                        80  (0.0195743); expected 81.7 (0.02)
+Passed bias filter:                       68  (0.0166381); expected 81.7 (0.02)
+Passed Vit filter:                         5  (0.00122339); expected 4.1 (0.001)
+Passed Fwd filter:                         2  (0.000489356); expected 0.0 (1e-05)
+Initial search space (Z):               4087  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 3625.13
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160279_GCA_000297435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.8e-05   20.2  29.6    0.00064   17.0   0.5    3.2  3  CCI33132.1  Outer membrane efflux protein [Microcystis sp. T1
+
+
+Domain annotation for each sequence (and alignments):
+>> CCI33132.1  Outer membrane efflux protein [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   3.2     0.014        60     164     226 ..     104     166 ..      92     179 .. 0.81
+   2 !   12.8  11.7   2.8e-06     0.012     103     221 ..     178     298 ..     169     310 .. 0.89
+   3 !   17.0   0.5   1.4e-07   0.00064     108     182 ..     390     464 ..     377     504 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.014
+        cnrC 164 asdalraasvrvqagraspleqqradvarinadanverqlrlaeaaranlarrigrpidgald 226
+                   ++l++a v ++  ra   eqq a +   +a++ + ++   a   + +lar+ g p     d
+  CCI33132.1 104 NNQTLQTARVDLEIARAQLKEQQAALLPTAQAETSLSQDQSAAAQRQNELARQQGIPAVTPED 166
+                 567899999*****************9999999999887776666667799999998765555 PP
+
+  == domain 2  score: 12.8 bits;  conditional E-value: 2.8e-06
+        cnrC 103 ipielggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradvarinadanver 201
+                   +  gg r a++  a+  + + e++   ++ + r++ t+ y e    d +va a+     as++lr a +  qag  + +   +a+v   na+ ++ r
+  CCI33132.1 178 YGVYTGGERAAQIKRAQKVIRQQELEVERVSEQTRFDATDAYYELQRGDAQVAIAQASIEDASQSLRDAQLLEQAGLGTRFAVLQAEVDLANANQDLTR 276
+                 56778********************************************************************************************** PP
+
+        cnrC 202 qlrlaeaaranlarr..igrpi 221
+                  +     +r  la+   +g+ i
+  CCI33132.1 277 AISNQRISRRRLAQVlsVGQHI 298
+                 *999999999998751145555 PP
+
+  == domain 3  score: 17.0 bits;  conditional E-value: 1.4e-07
+        cnrC 108 ggkrgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagrasp 182
+                 gg+  ar   a+ ++ ra+ + ++   ++rlqv + y   ++ +  + t++     a+++lr a +r qag  + 
+  CCI33132.1 390 GGRAFARARQAERNIDRADTEFSLRRNEIRLQVEESYYSLISNQENIKTSQKSIESATESLRLARLRFQAGVGTQ 464
+                 888999999*************************************************************97543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         4434  (1223634 residues searched)
+Passed MSV filter:                       135  (0.0304465); expected 88.7 (0.02)
+Passed bias filter:                       72  (0.0162382); expected 88.7 (0.02)
+Passed Vit filter:                         8  (0.00180424); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.00022553); expected 0.0 (1e-05)
+Initial search space (Z):               4434  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10400.89
+//
+[ok]

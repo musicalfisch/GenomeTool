@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00076   15.0   0.1     0.0014   14.1   0.0    1.4  2  ABB27227.1  GTP cyclohydrolase subunit MoaA [Synechococcus sp
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB27227.1  GTP cyclohydrolase subunit MoaA [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.2   0.5      0.21   4.9e+02      65      76 ..      22      33 ..      18      36 .. 0.81
+   2 !   14.1   0.0   6.2e-07    0.0014     147     255 ..      94     201 ..      61     214 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -4.2 bits;  conditional E-value: 0.21
+        finB 65 vapacniqcnyc 76
+                ++  cn+ c yc
+  ABB27227.1 22 LTARCNLACPYC 33
+                6678*******9 PP
+
+  == domain 2  score: 14.1 bits;  conditional E-value: 6.2e-07
+        finB 147 klclstnglml.teyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalkeadi.....lckvnsvmipgindkh 239
+                  l+l+tng++l +e   r+k   +d +ti+l+  d    a++            g  + + ll++ l gl+a + a         k+n+v+  g nd++
+  ABB27227.1  94 ELALTTNGVLLsPERALRLKCAGLDRITISLDGADAASVARMAG-------LQGGTPAGQSLLDQVLVGLEAARSAGFnsshgALKLNAVIQKGRNDDQ 185
+                 599*****988469999**************9888766555543.......35689999*************99997622222569************* PP
+
+        finB 240 lvevnkairergaflh 255
+                 l+ + ++ r+rg  l 
+  ABB27227.1 186 LIPLARLARDRGLELR 201
+                 ************8776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                        46  (0.0199653); expected 46.1 (0.02)
+Passed bias filter:                       44  (0.0190972); expected 46.1 (0.02)
+Passed Vit filter:                         4  (0.00173611); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000434028); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10631.17
+//
+[ok]

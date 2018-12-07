@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/555881_GCA_001039615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-123  411.4   0.1   1.4e-123  411.1   0.1    1.0  1  CCQ63827.1  NADP-specific glutamate dehydrogenase, partial [C
+    2.3e-06   24.9   0.4    1.3e-05   22.4   0.3    2.2  2  CCQ60461.1  NADP-dependent malic enzyme [Crocosphaera watsoni
+  ------ inclusion threshold ------
+      0.024   11.6   0.1      0.046   10.7   0.0    1.5  1  CCQ60925.1  Glutamate dehydrogenase/leucine dehydrogenase [Cr
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ63827.1  NADP-specific glutamate dehydrogenase, partial [Crocosphaera watsonii WH 0401]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  411.1   0.1  8.2e-127  1.4e-123      22     392 ..       7     385 ..       4     388 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 411.1 bits;  conditional E-value: 8.2e-127
+        gdhA  22 qacsyleaaakelkldqglleilshprkvvtvsipvkldngeirvlaghrvqhsdilgpykggiryhpavtlrevsalamlmtwkcallgipyggakgg 120
+                 +a + le+a +  ++ ++ +e l+ p+  ++vsipv++d+g +r++ g+rv++ d  gp kgg+ryhp vt+ ev +la+ mt+kcall++p+ggakgg
+  CCQ63827.1   7 DASTRLEKALRYTRISEDAIERLKYPKTSLSVSIPVRMDDGSLRIFQGYRVRYDDTRGPGKGGVRYHPNVTMDEVQSLAFWMTFKCALLNLPFGGAKGG 105
+                 577899********************************************************************************************* PP
+
+        gdhA 121 iaidpkkysvgeleritrryiselikdigpsvdipapdmgtsaremawmmdtysvnvghavpgvvtgkplsiggsrgrematgrgvmiivrealadkgk 219
+                 i+++pk+ s +eler++r yi  +   igp++di apd+ t    m wmmd y +   +  pgvvtgkp ++ggs+gr+ atg g+  +++  l +   
+  CCQ63827.1 106 ITLNPKELSKQELERLSRGYIEAIADFIGPDIDILAPDVYTNQMIMGWMMDQYNIIQRKISPGVVTGKPQTMGGSQGRDTATGTGTYYVIQTILPKFEL 204
+                 *********************999999*********************************************************************999 PP
+
+        gdhA 220 slagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldipalkayaaenr........ksvvgfpqavpisnaelltlpcdvlipaalen 310
+                   + ++v++qgfg+ g+  aell k g k++avs + gg+++e+gldi ++++y  e +         +v +  + ++i+n+ell l++dvlipaalen
+  CCQ63827.1 205 IPEKTTVAVQGFGKAGAVVAELLGKVGYKVVAVSDSKGGIYAEQGLDIVSIRNYKEEHQgiaaiycqDTVCNIGEHQSITNEELLGLDVDVLIPAALEN 303
+                 99****************************************************987652222222156777888999********************* PP
+
+        gdhA 311 qiteenvnqvqakivaeaangpvtleankvleargvtvlpdilanaggvvvsylewvqglsylfwdeervnreleklmvqay 392
+                 qiteen+++v+ak++ e angp+  +a+ +l+ +g+ v+p+il naggv vsy+ewvq  s l+w +  vn+ + + m+   
+  CCQ63827.1 304 QITEENADNVRAKFIFEVANGPINSAADTILDEKGIYVFPNILVNAGGVTVSYFEWVQNRSGLYWTKTEVNQRMRDKMMSEA 385
+                 **************************************************************************88776544 PP
+
+>> CCQ60461.1  NADP-dependent malic enzyme [Crocosphaera watsonii WH 0401]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.9   0.0     0.096   1.6e+02     409     423 ..     113     127 ..     105     130 .. 0.86
+   2 !   22.4   0.3   7.7e-09   1.3e-05     209     278 ..     249     318 ..     236     344 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.9 bits;  conditional E-value: 0.096
+        gdhA 409 aaytlgvgrvaqals 423
+                  ayt gvgr+++a++
+  CCQ60461.1 113 MAYTPGVGRICKAIA 127
+                 59*********9985 PP
+
+  == domain 2  score: 22.4 bits;  conditional E-value: 7.7e-09
+        gdhA 209 ivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldi.palkayaaenr 278
+                  + +al+   k+l+gvr+vi+g g  g a a ll  aga  i +  + g + s++  d+ p+ +aya +  
+  CCQ60461.1 249 ALFNALKLVHKTLEGVRIVINGAGAAGVAIASLLRAAGATTIWLCDSKGLI-SHNREDLnPQKQAYAVSAS 318
+                 4556788889*********************************99887765.4554554256667877655 PP
+
+>> CCQ60925.1  Glutamate dehydrogenase/leucine dehydrogenase [Crocosphaera watsonii WH 0401]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   2.8e-05     0.046     220     278 ..       5      65 ..       1     115 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.8e-05
+        gdhA 220 slagvrvviqgfgnvggaaaellh.kagakiiavstgaggvfseegldi.palkayaaenr 278
+                 s + ++v i gfg +g aa+ +l  k+    +a +   g  ++++gl+  +a+ +y+++  
+  CCQ60925.1   5 SHQTMKVGILGFGGLGQAATRVLApKQEMTWVAAADLKGYAYCDTGLNPqTAIATYSKQGS 65 
+                 67789**************99886366778899999***********95156777776644 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         4997  (1180112 residues searched)
+Passed MSV filter:                       117  (0.023414); expected 99.9 (0.02)
+Passed bias filter:                       94  (0.0188113); expected 99.9 (0.02)
+Passed Vit filter:                        13  (0.00260156); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.00060036); expected 0.0 (1e-05)
+Initial search space (Z):               4997  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8437.80
+//
+[ok]

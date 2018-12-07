@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272129_GCA_000180455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.2e-83  276.4   2.1    3.5e-83  276.2   2.1    1.0  1  CBN57625.1  ATP synthase subunit delta [[Oscillatoria] sp. PC
+  ------ inclusion threshold ------
+      0.029   12.5   0.7      0.067   11.3   0.7    1.6  1  CBN56460.1  glucose-1-phosphate thymidyltransferase [[Oscilla
+      0.063   11.4   0.0      0.063   11.4   0.0    1.0  1  CBN58434.1  hypothetical protein OSCI_3770020 [[Oscillatoria]
+
+
+Domain annotation for each sequence (and alignments):
+>> CBN57625.1  ATP synthase subunit delta [[Oscillatoria] sp. PCC 6506]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  276.2   2.1   1.8e-86   3.5e-83       6     183 ..       4     181 ..       1     182 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 276.2 bits;  conditional E-value: 1.8e-86
+        atpD   6 ataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailqqylal 104
+                   ae+ qpya al+s+aqs+nltee+g+d r+llsll +s+el+++l np+vkp+ kk vl+q+ g+g++p++rnfl llvd+ ri fle i ++yla 
+  CBN57625.1   4 VNAEIVQPYASALMSVAQSNNLTEEFGQDVRALLSLLDSSAELRQVLGNPLVKPDVKKRVLEQVAGDGISPFVRNFLRLLVDKGRIYFLEGIGKEYLAK 102
+                 579************************************************************************************************ PP
+
+        atpD 105 lrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 lr+lnqtvlaevtsavpl+eaqqq+vkekv a+t a qvele k+ds+liggviikvgsqvidaslrgqlrrl +rls+
+  CBN57625.1 103 LRELNQTVLAEVTSAVPLSEAQQQTVKEKVQAMTGASQVELESKLDSELIGGVIIKVGSQVIDASLRGQLRRLGIRLSA 181
+                 *****************************************************************************97 PP
+
+>> CBN56460.1  glucose-1-phosphate thymidyltransferase [[Oscillatoria] sp. PCC 6506]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.7   3.5e-05     0.067     142     173 ..     243     274 ..     228     277 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 3.5e-05
+        atpD 142 qveletkidsdliggviikvgsqvidaslrgq 173
+                  ve+e+   +++ig v i  gsq+i++++rg 
+  CBN56460.1 243 AVEVEIDATTKIIGRVQIGKGSQIINSTIRGP 274
+                 5888888899********************95 PP
+
+>> CBN58434.1  hypothetical protein OSCI_3770020 [[Oscillatoria] sp. PCC 6506]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   3.3e-05     0.063      50      78 ..       2      30 ..       1      48 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 3.3e-05
+        atpD 50 nfldnpfvkpenkknvlkqllgegvnpyl 78
+                nf++np +k+ +  n l q+lg ++ p+l
+  CBN58434.1  2 NFISNPCIKNRKWYNPLGQVLGGASYPVL 30
+                9*********************9999887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5822  (1812051 residues searched)
+Passed MSV filter:                       199  (0.0341807); expected 116.4 (0.02)
+Passed bias filter:                      133  (0.0228444); expected 116.4 (0.02)
+Passed Vit filter:                        14  (0.00240467); expected 5.8 (0.001)
+Passed Fwd filter:                         3  (0.000515287); expected 0.1 (1e-05)
+Initial search space (Z):               5822  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8335.43
+//
+[ok]

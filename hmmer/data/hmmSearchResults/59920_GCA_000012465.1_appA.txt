@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-07   24.6  27.2      2e-05   18.0   9.1    2.2  2  AAZ58236.1  hypothetical protein PMN2A_0745 [Prochlorococcus 
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ58236.1  hypothetical protein PMN2A_0745 [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.0   9.1   9.4e-09     2e-05    1606    1658 ..     141     193 ..      91     195 .. 0.45
+   2 !   16.5  13.6   2.7e-08   5.8e-05    1400    1443 ..     188     231 ..     186     265 .. 0.27
+
+  Alignments for each domain:
+  == domain 1  score: 18.0 bits;  conditional E-value: 9.4e-09
+        appA 1606 tngsdhivtrdgndtinggggndtiegglgndvisggdgndaiaagggsdvii 1658
+                  +  s+      g+dt ng   +d +  glgnd+i g +gnd++    gsd+i 
+  AAZ58236.1  141 SLSSQRTYYISGDDTFNGSKKDDKLYSGLGNDIIYGNEGNDTLKGESGSDIIK 193 
+                  33333333333333333333333333333333333333333333333333332 PP
+
+  == domain 2  score: 16.5 bits;  conditional E-value: 2.7e-08
+        appA 1400 gndtinggggndtiegglgndiinggdgndaiaagggsdvinag 1443
+                  g d i+gg g d i gg gnd + g dgnd i  g g+dv n  
+  AAZ58236.1  188 GSDIIKGGDGFDNIYGGTGNDSLHGNDGNDYIDGGSGTDVANYE 231 
+                  22222222222222222222222222222222222222222211 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        76  (0.0351364); expected 43.3 (0.02)
+Passed bias filter:                       51  (0.0235784); expected 43.3 (0.02)
+Passed Vit filter:                        10  (0.00462321); expected 2.2 (0.001)
+Passed Fwd filter:                         1  (0.000462321); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.16u 0.01s 00:00:00.17 Elapsed: 00:00:00.18
+# Mc/sec: 8066.41
+//
+[ok]

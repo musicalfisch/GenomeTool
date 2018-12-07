@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501268_GCA_000757845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-26   88.5   2.7    3.6e-26   88.3   2.7    1.0  1  AIQ94618.1  carboxysome shell protein CsoS1 [Prochlorococcus 
+  ------ inclusion threshold ------
+       0.01   12.9   0.5      0.029   11.4   0.5    1.7  1  AIQ94616.1  hypothetical protein EW14_0593 [Prochlorococcus s
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ94618.1  carboxysome shell protein CsoS1 [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.3   2.7   3.5e-29   3.6e-26       1      87 [.       6      91 ..       6      95 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 88.3 bits;  conditional E-value: 3.5e-29
+        ccmK  1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenley 87
+                m ia+gmiet+g+   +eaadam kaa v l+g e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e 
+  AIQ94618.1  6 MGIALGMIETRGLVPAIEAADAMTKAAEVRLIGREFVGGGYVTVLVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHREVEP 91
+                89***********999***************************************************8875.679*******99986 PP
+
+>> AIQ94616.1  hypothetical protein EW14_0593 [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.5   2.9e-05     0.029       7      63 ..     194     252 ..     187     255 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.9e-05
+        ccmK   7 mietlgfpavveaadamvkaarvtlvgyekigs.grvtvivr.gdvsevqasvaagves 63 
+                 ++et+    v++aa+   ka+ +t+v  + +g+ gr+t+  + gdv e  a+    +++
+  AIQ94616.1 194 ILETEPAGYVLKAANEAEKASNITVVDVKAVGAfGRLTLAGKeGDVEEAAAAAIRAIDQ 252
+                 678888888***********************869999875338888877766555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         2063  (521035 residues searched)
+Passed MSV filter:                        41  (0.019874); expected 41.3 (0.02)
+Passed bias filter:                       36  (0.0174503); expected 41.3 (0.02)
+Passed Vit filter:                         2  (0.000969462); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000969462); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 2683.33
+//
+[ok]

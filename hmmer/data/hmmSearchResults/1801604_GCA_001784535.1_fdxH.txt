@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fdxH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801604_GCA_001784535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fdxH  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-05   21.1   1.2    8.5e-05   19.3   0.2    2.5  2  OGH96596.1  ferredoxin [Candidatus Melainabacteria bacterium 
+
+
+Domain annotation for each sequence (and alignments):
+>> OGH96596.1  ferredoxin [Candidatus Melainabacteria bacterium GWA2_34_9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.2   4.9e-08   8.5e-05      18      54 ..      19      61 ..       3      85 .. 0.77
+   2 ?   -1.3   0.0      0.14   2.3e+02      34      61 ..     470     499 ..     450     523 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 4.9e-08
+        fdxH 18 tievdeettildaaeengidlpfsch......sgacsscvgkv 54
+                 + v + ttil+aa+++gi++p  ch      +gac  cv  v
+  OGH96596.1 19 NVSVSKGTTILEAANQSGINIPTLCHlkkctpTGACRICVVEV 61
+                578999*******************944444445666666544 PP
+
+  == domain 2  score: -1.3 bits;  conditional E-value: 0.14
+        fdxH  34 ngidlpfschs..gacsscvgkvvegeidq 61 
+                 +g+d+ +++ s  g +   + kvv ge d 
+  OGH96596.1 470 KGLDVKIAVASslGQARKLMDKVVSGEADY 499
+                 566665554442377788899999999874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (99 nodes)
+Target sequences:                         1714  (500993 residues searched)
+Passed MSV filter:                        53  (0.0309218); expected 34.3 (0.02)
+Passed bias filter:                       41  (0.0239207); expected 34.3 (0.02)
+Passed Vit filter:                         5  (0.00291715); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000583431); expected 0.0 (1e-05)
+Initial search space (Z):               1714  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4959.83
+//
+[ok]

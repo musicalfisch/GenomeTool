@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1638788_GCA_001264245.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglG  [M=275]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00089   16.9  13.4     0.0029   15.2  13.4    1.9  1  AKV69130.1  Sulfate transport system permease protein CysW [M
+     0.0013   16.3   4.1     0.0013   16.3   4.1    2.5  2  AKV69129.1  Sulfate transport system permease protein CysT [M
+
+
+Domain annotation for each sequence (and alignments):
+>> AKV69130.1  Sulfate transport system permease protein CysW [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2  13.4   9.8e-07    0.0029      26     202 ..      20     208 ..       6     271 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 9.8e-07
+        aglG  26 vllpllvvfltsfapagatlevllknnwslanyrdawqrgkfllafanstlvaiavtafqivtsalagyalarlkfrgrqall.lvvlatlvipfqllv 123
+                 +++ l+ + +  f pa+a    + +n +  + + +a     f+ a   + ++a+    ++ +    a + +ar +frg+  l+ l+ l   v p    +
+  AKV69130.1  20 IIIALVYLAFLLFIPAAAVFYYAFRNGF--QAFLEAAGTSDFIEAVRLTVIIALITVPLNTIFGLCAAWVIARNQFRGKTLLIsLIDLPFAVSPVVAGL 116
+                 3444444444456777777777777765..5788999999**************999**********************98763455666666665444 PP
+
+        aglG 124 ipiflvlkw...ghlintygali...lptavngfgi.....fllrqy...fqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                 + ++l  +    g +++ +   i   lp  v    i     f+ r+    ++ i +e eea    ga+  qi+wr+ lp  r  l+   l+t 
+  AKV69130.1 117 MIVLLYGRNgwlGSFLEFFDIKIlfaLPGMVLA-TIfvtmpFVAREVipvLEEIGLEQEEAGRTLGASDWQIFWRITLPNIRWGLMYGVLLTN 208
+                 444444443112445555555441114544432.340111244454312246677899************************99998888775 PP
+
+>> AKV69129.1  Sulfate transport system permease protein CysT [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   4.1   4.4e-07    0.0013     153     202 ..     160     209 ..      49     221 .. 0.79
+   2 ?   -1.9   0.2      0.16   4.9e+02     110     131 ..     219     240 ..     212     264 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 4.4e-07
+        aglG 153 ifllrqyfqtipveleeaaaidganrlqilwrvllplarpalvtlflftf 202
+                 +  l+  +q +  e+eeaa   ga+  qi+wrv++p   pa++t   + f
+  AKV69129.1 160 VRTLQPVLQEMEKEVEEAALSLGASSWQIFWRVIFPTILPAILTGVALGF 209
+                 3445567888999*****************************99766655 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.16
+        aglG 110 vvlatlvipfqllvipiflvlk 131
+                 vv+ +  ipf+ l+ p+++  +
+  AKV69129.1 219 VVIISSNIPFKDLIAPVLIFQR 240
+                 5666667888888888876544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (275 nodes)
+Target sequences:                         5974  (1430872 residues searched)
+Passed MSV filter:                       205  (0.0343154); expected 119.5 (0.02)
+Passed bias filter:                      120  (0.020087); expected 119.5 (0.02)
+Passed Vit filter:                        11  (0.00184131); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000334784); expected 0.1 (1e-05)
+Initial search space (Z):               5974  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 7869.80
+//
+[ok]

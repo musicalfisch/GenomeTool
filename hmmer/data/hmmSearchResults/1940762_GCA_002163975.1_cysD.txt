@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1940762_GCA_002163975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.1e-165  546.5   0.1   2.3e-165  546.4   0.1    1.0  1  ARV58757.1  phosphoadenosine phosphosulfate reductase [Nostoc
+  ------ inclusion threshold ------
+      0.063   11.2   0.1       0.13   10.2   0.1    1.4  1  ARV57879.1  transporter [Nostocales cyanobacterium HT-58-2]
+
+
+Domain annotation for each sequence (and alignments):
+>> ARV58757.1  phosphoadenosine phosphosulfate reductase [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  546.4   0.1  7.6e-169  2.3e-165       1     241 []       1     241 []       1     241 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 546.4 bits;  conditional E-value: 7.6e-169
+        cysD   1 mtastatrpqttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkv 99 
+                 mt+sta+rpqtt+fdleqlnqkfeta+preilaws+eni+tglvqtsafnvddliitdily+dlkhpvpv+fldtl+hf++tlelvakakevynldl+v
+  ARV58757.1   1 MTSSTASRPQTTSFDLEQLNQKFETAFPREILAWSVENIPTGLVQTSAFNVDDLIITDILYRDLKHPVPVVFLDTLHHFPQTLELVAKAKEVYNLDLQV 99 
+                 9************************************************************************************************** PP
+
+        cysD 100 yktpdvdtreafaakygealwdkdiakfhevtkieplqrglaelntvawitgrrrdqavtranmpifeldsknrikvnplanwtrkksweyvaehgviy 198
+                 yktpdvdtreafaakygealwdkdi+kfh++tkieplqrglaelnt+awitgrrrdqavtranmpifelds+nrikvnplanwtr+ksweyvaehgviy
+  ARV58757.1 100 YKTPDVDTREAFAAKYGEALWDKDILKFHDLTKIEPLQRGLAELNTIAWITGRRRDQAVTRANMPIFELDSNNRIKVNPLANWTREKSWEYVAEHGVIY 198
+                 *************************************************************************************************** PP
+
+        cysD 199 nplhdqgypsigdepittkvgegederagrwrgtgktecgihi 241
+                 nplhdqgypsigdepitt+vgegederagrwrgtgktecgihi
+  ARV58757.1 199 NPLHDQGYPSIGDEPITTPVGEGEDERAGRWRGTGKTECGIHI 241
+                 ******************************************8 PP
+
+>> ARV57879.1  transporter [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.1   4.1e-05      0.13      36      65 ..       5      34 ..       2      46 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 4.1e-05
+        cysD 36 ienistglvqtsafnvddliitdilysdlk 65
+                +  istg v  sa n+dd++i  +++s+++
+  ARV57879.1  5 VTAISTGAVAFSATNIDDFVILTLFFSQVN 34
+                6789******************99998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         6177  (2043057 residues searched)
+Passed MSV filter:                       124  (0.0200745); expected 123.5 (0.02)
+Passed bias filter:                      108  (0.0174842); expected 123.5 (0.02)
+Passed Vit filter:                        10  (0.00161891); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000323782); expected 0.1 (1e-05)
+Initial search space (Z):               6177  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 12309.42
+//
+[ok]

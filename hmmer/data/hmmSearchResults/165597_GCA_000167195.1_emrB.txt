@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrB  [M=528]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00039   17.5   2.4    0.00048   17.2   2.4    1.0  1  EAM50681.1  similar to Nitrate/nitrite transporter [Crocospha
+  ------ inclusion threshold ------
+       0.67    6.8   3.7          1    6.3   3.3    1.4  1  EAM49136.1  hypothetical protein CwatDRAFT_1493 [Crocosphaera
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM50681.1  similar to Nitrate/nitrite transporter [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.2   2.4   1.6e-07   0.00048      57     161 ..      49     152 ..      26     168 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 17.2 bits;  conditional E-value: 1.6e-07
+        emrB  57 eevglvvtgyalanvvlillaalledffgkktyvvfslvgfilssllcgfainlpllvvsrilqglgGGgllakaqailfetfPaeqqglaqavfgv.g 154
+                 ++  l +   al++   i + +ll+ ++ + ty + ++   i + +++ + +  +l++  r++ g++G g++   + ++ e fP+++ gla+ ++g+ g
+  EAM50681.1  49 QIRTLAICNVALTVPARIIIGMLLDRYGPRITYTLLLMYAAIPCLIFATAQSFTQLVI-GRLMLGIVGAGFVIGIR-MVAEWFPPKEIGLAEGIYGGwG 145
+                 33344555666666667788999************99998888888777777666665.55555666666666555.5689999999999998877523 PP
+
+        emrB 155 viagaai 161
+                   ++aa 
+  EAM50681.1 146 NFGSAAA 152
+                 3333332 PP
+
+>> EAM49136.1  hypothetical protein CwatDRAFT_1493 [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   3.3   0.00034         1     450     484 ..     235     269 ..     210     275 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.3 bits;  conditional E-value: 0.00034
+        emrB 450 petqqrldalesalqsrGedaatahqqalasldql 484
+                 +et+qr+  +e+a+q++ +d   +hqqa+a l++ 
+  EAM49136.1 235 EETEQRIREIEQAYQTQIQDLQQSHQQAVADLENA 269
+                 69****************************99976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (528 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       186  (0.0312185); expected 119.2 (0.02)
+Passed bias filter:                       81  (0.0135952); expected 119.2 (0.02)
+Passed Vit filter:                         5  (0.000839208); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335683); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 14362.12
+//
+[ok]

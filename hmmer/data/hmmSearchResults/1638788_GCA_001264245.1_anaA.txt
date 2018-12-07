@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1638788_GCA_001264245.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-52  177.1   0.0    2.6e-52  175.9   0.0    1.5  2  AKV70080.1  Malonyl CoA-acyl carrier protein transacylase [Mi
+
+
+Domain annotation for each sequence (and alignments):
+>> AKV70080.1  Malonyl CoA-acyl carrier protein transacylase [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.3   0.1      0.42   2.5e+03      89     107 ..     643     661 ..     640     665 .. 0.82
+   2 !  175.9   0.0   4.4e-56   2.6e-52      20     250 ..    1081    1314 ..    1065    1316 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -4.3 bits;  conditional E-value: 0.42
+        anaA  89 spfvffghslgsvvsleva 107
+                 +p  ++ghslg  v+  va
+  AKV70080.1 643 APHGVMGHSLGEYVAACVA 661
+                 577889*****99998777 PP
+
+  == domain 2  score: 175.9 bits;  conditional E-value: 4.4e-56
+        anaA   20 qenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgc 116 
+                   + ++ lfcfp ag g+ +f++w    p  ++lwa+++pgre r++e  it    li+ l+  + py + p+ ffghs+gs++s+e++++l      
+  AKV70080.1 1081 PNAHIRLFCFPYAGGGASLFQNWLNYCPKQVELWAIQLPGRETRLQETAITSLKSLINRLIPILTPYLDQPYAFFGHSMGSLISFELTRELAKTRQN 1177
+                  345799******************************************************************************************* PP
+
+        anaA  117 fpqclvvsgrkpphi.pcdhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleelr 212 
+                  +pq l +sg + p+i   d    +  de+++  l    gtpe++l++p+lm+  lpi rad++l e y y   + l cpi  +gg  d  vs ++l+
+  AKV70080.1 1178 LPQHLFMSGFRAPQIvNPDLPIHRLGDEQFLTALGHFQGTPETLLKNPDLMAAFLPILRADFKLLETYSYQQGQPLNCPITVFGGHNDAKVSADQLQ 1274
+                  *********8888772568888999************************************************************************ PP
+
+        anaA  213 ewekytqrgfklrsfpgghmylteekerfavi..kslvef 250 
+                  +w+  t++ f l+++pggh+++ +  e++  i  +sl ef
+  AKV70080.1 1275 QWQLQTNQDFVLHTLPGGHFFINQHTEKIMKIigQSLREF 1314
+                  ***********************99998765423566665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5974  (1430872 residues searched)
+Passed MSV filter:                       129  (0.0215936); expected 119.5 (0.02)
+Passed bias filter:                      126  (0.0210914); expected 119.5 (0.02)
+Passed Vit filter:                        15  (0.00251088); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000167392); expected 0.1 (1e-05)
+Initial search space (Z):               5974  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9050.27
+//
+[ok]

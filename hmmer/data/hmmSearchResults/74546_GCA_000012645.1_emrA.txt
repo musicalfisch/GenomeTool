@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74546_GCA_000012645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrA  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-09   34.6   0.2      8e-06   22.1   0.0    2.1  2  ABB50294.1  Secretion protein HlyD [Prochlorococcus marinus s
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB50294.1  Secretion protein HlyD [Prochlorococcus marinus str. MIT 9312]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.8   0.1   1.1e-05     0.021      88     131 ..      67     110 ..      52     123 .. 0.83
+   2 !   22.1   0.0   4.1e-09     8e-06     284     425 ..     130     279 ..     111     298 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 1.1e-05
+        emrA  88 hsigsrvsgtvdqvlvddnqdvkagqplirlddrdfqiklqqaq 131
+                   ig r  g + ++ v++ + vk  q l  ldd df  k+++ +
+  ABB50294.1  67 SNIGPRKQGVIKEIKVEEGDLVKKDQVLASLDDEDFIYKIEELE 110
+                 469*********************************99998654 PP
+
+  == domain 2  score: 22.1 bits;  conditional E-value: 4.1e-09
+        emrA 284 tqvsqsdyqtaqaainqsqvalknakqqlayvtitapvsgrvgrknvqtgqqvqagtpllaivddqyw.........vtanfketqlekmhpgqkveik 373
+                   vs+ dy++ + + + s   l++ak + ++  i ap  g++  k  + g  v   t l +    + +         + a+  e+++ +++ gq   ++
+  ABB50294.1 130 GAVSKEDYESYKNSYDISSAKLNDAKAEKSFYIIKAPYGGKITAKYAEIGSYVTPSTNLSSDSKTKNFifelsegleIVAKVPESDIGRIKIGQEASVR 228
+                 579****************************************************99997654443331111222227899****************** PP
+
+        emrA 374 ldsfphheftgriesvspasgaqfallppdnatgnftkvvqripvkvvfdre 425
+                 ++++p +++t  +e ++  +  +   +   + t nf  + + i + +  d e
+  ABB50294.1 229 IEAYPSKKYTAIVEKIATRAVKDN-NVTSFEVTLNFKDISEEIKIGMTADLE 279
+                 **************9987665544.445566788888888877777776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (448 nodes)
+Target sequences:                         1962  (514473 residues searched)
+Passed MSV filter:                        23  (0.0117227); expected 39.2 (0.02)
+Passed bias filter:                       20  (0.0101937); expected 39.2 (0.02)
+Passed Vit filter:                         3  (0.00152905); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000509684); expected 0.0 (1e-05)
+Initial search space (Z):               1962  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7682.80
+//
+[ok]

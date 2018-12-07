@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_000332585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    1.7e-71  238.1   3.0    1.8e-71  238.0   3.0    1.0  1  lcl|AOCI01000094.1_prot_ELS48154.1_2077  [gene=atpH] [locus_tag=C789_2077
+  ------ inclusion threshold ------
+      0.019   13.0   0.7      0.031   12.3   0.7    1.3  1  lcl|AOCI01000131.1_prot_ELS47368.1_2844  [locus_tag=C789_2844] [protein=h
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|AOCI01000094.1_prot_ELS48154.1_2077  [gene=atpH] [locus_tag=C789_2077] [protein=ATP synthase F1, delta subunit] [
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  238.0   3.0   6.6e-75   1.8e-71       3     181 ..       3     181 ..       1     182 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 238.0 bits;  conditional E-value: 6.6e-75
+                                     atpD   3 sdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllge 72 
+                                                  ++e+a+pyaqalls+aqs    e++g++ ++ll+ll+++ +l++f+ np +k+e kk+vl q++g 
+  lcl|AOCI01000094.1_prot_ELS48154.1_2077   3 GSLISSEIAEPYAQALLSVAQSSGQLEAIGGEIKSLLELLENAPDLRAFIGNPVIKEEAKKAVLSQVMGT 72 
+                                              566789**************************************************************** PP
+
+                                     atpD  73 gvnpylrnfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekvialtkarq 142
+                                              ++npyl nf++llvd+rri fle++ qqyl+l r l++tvlaev+sa  l ++q+q v +kv +lt a  
+  lcl|AOCI01000094.1_prot_ELS48154.1_2077  73 SANPYLTNFMMLLVDKRRIQFLEPVCQQYLTLSRVLTNTVLAEVSSATELNDSQKQIVIDKVKTLTGANV 142
+                                              ********************************************************************** PP
+
+                                     atpD 143 veletkidsdliggviikvgsqvidaslrgqlrrlslrl 181
+                                              vel+tk+d  liggv+ikvgsqv das+rgql+rlsl l
+  lcl|AOCI01000094.1_prot_ELS48154.1_2077 143 VELKTKVDGSLIGGVVIKVGSQVFDASIRGQLQRLSLSL 181
+                                              ************************************987 PP
+
+>> lcl|AOCI01000131.1_prot_ELS47368.1_2844  [locus_tag=C789_2844] [protein=hypothetical protein] [protein_id=ELS47368.1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.7   1.1e-05     0.031     135     177 ..     118     161 ..      83     164 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.1e-05
+                                     atpD 135 ialtkarqveletkidsdliggviikvgs.qvidaslrgqlrrl 177
+                                              +++ ++r +   + i+ + +gg+ + vg  +++d+s+rg+++r+
+  lcl|AOCI01000131.1_prot_ELS47368.1_2844 118 VTVKRSRTIARTVNIQWEALGGMDVSVGIkDIVDTSVRGEIKRI 161
+                                              6888999999999***************62699*********97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5571  (1335648 residues searched)
+Passed MSV filter:                       182  (0.0326692); expected 111.4 (0.02)
+Passed bias filter:                      129  (0.0231556); expected 111.4 (0.02)
+Passed Vit filter:                         6  (0.00107701); expected 5.6 (0.001)
+Passed Fwd filter:                         2  (0.000359002); expected 0.1 (1e-05)
+Initial search space (Z):               5571  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 8191.97
+//
+[ok]

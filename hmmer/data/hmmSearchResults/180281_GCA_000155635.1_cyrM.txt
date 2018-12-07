@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-55  182.8   0.0    8.1e-55  182.4   0.0    1.1  1  EDY38165.1  adenylylsulfate kinase [Cyanobium sp. PCC 7001]
+  ------ inclusion threshold ------
+      0.012   12.4   0.2       0.46    7.2   0.1    2.2  2  EDY39840.1  ABC transporter, ATP binding component [Cyanobium
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY38165.1  adenylylsulfate kinase [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  182.4   0.0   5.9e-58   8.1e-55       7     180 ..      42     217 ..      36     220 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 182.4 bits;  conditional E-value: 5.9e-58
+        cyrM   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgkig.. 103
+                 r   +w+tglsg+gkst+++a+++ l  +g +  vldgd +r  l k lgfs  dr+enirrig v+ l+   gv+vl + +sp++  r+ vr+ +g  
+  EDY38165.1  42 RSAILWFTGLSGSGKSTLANAVNSALFEQGLACYVLDGDNIRHGLCKDLGFSDADREENIRRIGEVARLFLDAGVVVLTAFVSPFKADRDRVRALVGdg 140
+                 66789****************************************************************************************999633 PP
+
+        cyrM 104 sfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihq 180
+                 +fve+f +a l+vce+rd kgly +arageik ftgi  pye p +pe+ + t   tle+ v+ v   l+  g + q
+  EDY38165.1 141 DFVEIFCDAGLEVCEQRDTKGLYAKARAGEIKDFTGISSPYEAPEQPELRVDTGTRTLEDCVSEVLAELQARGILTQ 217
+                 7********************************************************************99998887 PP
+
+>> EDY39840.1  ABC transporter, ATP binding component [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.8   0.0    0.0077        11       8      28 ..      29      49 ..      25      57 .. 0.86
+   2 ?    7.2   0.1   0.00033      0.46       6      29 ..     301     324 ..     296     340 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 2.8 bits;  conditional E-value: 0.0077
+        cyrM  8 gvtvwltglsgagkstiteal 28
+                g t+ l g sg+gkst++ a+
+  EDY39840.1 29 GETLALVGPSGCGKSTVARAV 49
+                77899************9986 PP
+
+  == domain 2  score: 7.2 bits;  conditional E-value: 0.00033
+        cyrM   6 qrgvtvwltglsgagkstitealq 29 
+                 +rg tv + g sg+gkst+  al 
+  EDY39840.1 301 NRGETVGIVGASGCGKSTLCRALM 324
+                 69******************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                       106  (0.0382533); expected 55.4 (0.02)
+Passed bias filter:                      103  (0.0371707); expected 55.4 (0.02)
+Passed Vit filter:                        16  (0.00577409); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000721761); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5043.50
+//
+[ok]

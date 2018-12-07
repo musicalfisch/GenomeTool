@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805101_GCA_001919235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcD  [M=161]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   12.1   0.3       0.21    9.2   0.0    2.4  3  OLE27713.1  IS110 family transposase, partial [Cyanobacteria 
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE27713.1  IS110 family transposase, partial [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.2   0.0   4.9e-05      0.21      82     130 ..      43      96 ..      33     109 .. 0.71
+   2 ?   -2.7   0.0      0.23   9.6e+02      42      57 ..     176     191 ..     167     210 .. 0.79
+   3 ?   -0.5   0.1     0.047     2e+02      27      80 ..     309     361 ..     290     374 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 4.9e-05
+        apcD  82 lrdygwylrlitygvlagdkepieki....gligvkemy.nslgvpvpgmveai 130
+                 + d  w  +l tyg+lag   p ++i    g +  +em  ++ ++ v  m +a+
+  OLE27713.1  43 VLDCQWIQQLHTYGLLAGAYRPPDEIctlrGYMRQREMLvQAASMHVQHMQKAL 96 
+                 66999**************99998883333445567765244555666666555 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.23
+        apcD  42 tlaenekkivdeaskq 57 
+                  +ae ek iv + +kq
+  OLE27713.1 176 KIAECEKAIVAQLAKQ 191
+                 4789999999988776 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 0.047
+        apcD  27 keflktgeqrvriaetlaenekkivdeaskqlfkkrpdfiapggnaygerqral 80 
+                  +f++  + r   +++++   +ki       l  ++p ++ +g  ay er ++ 
+  OLE27713.1 309 GAFYRRVRSRSTAIQAVTATAHKIARIYYAMLTTRKP-YVEAGLHAYEERYKQR 361
+                 5566666666666777777778887666666666555.8888999999886654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (161 nodes)
+Target sequences:                         4209  (1128809 residues searched)
+Passed MSV filter:                       103  (0.0244714); expected 84.2 (0.02)
+Passed bias filter:                      100  (0.0237586); expected 84.2 (0.02)
+Passed Vit filter:                        17  (0.00403896); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.000237586); expected 0.0 (1e-05)
+Initial search space (Z):               4209  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 4543.46
+//
+[ok]

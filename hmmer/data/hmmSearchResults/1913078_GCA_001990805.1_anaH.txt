@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaH  [M=149]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-48  162.4   0.1    2.6e-48  161.7   0.1    1.3  1  ONN59166.1  hypothetical protein BLD44_25140 [Mastigocladus l
+  ------ inclusion threshold ------
+      0.012   13.5   1.0       0.16    9.9   0.1    3.1  3  ONN61185.1  hypothetical protein BLD44_13855 [Mastigocladus l
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN59166.1  hypothetical protein BLD44_25140 [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  161.7   0.1   1.2e-51   2.6e-48      10     148 ..       5     143 ..       2     144 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 161.7 bits;  conditional E-value: 1.2e-51
+        anaH  10 teievknldhlglvagiideigiveiineqvsiergeivtagqvvkaiilnglgfvsralylfpqffedkatehllgegiepkqlnddkigrvmdklyq 108
+                  eie+kn+dhlg++agiid ig+v  in  +  e ge v+ g+vvka+ilnglgfvs  ly+fp+ff+dk  e+l+g g++   lnddk+grvmdkl+ 
+  ONN59166.1   5 EEIEIKNIDHLGIIAGIIDSIGLVSTINSLIGQEPGEKVSPGHVVKAMILNGLGFVSSPLYMFPDFFQDKPCEYLIGAGVKAEYLNDDKLGRVMDKLFI 103
+                 69************************************************************************************************* PP
+
+        anaH 109 lnvsvifllislaavkkfgvatenshldstslskeikyky 148
+                   ++ if  is+   ++f  + e shlds+sl  +++yk 
+  ONN59166.1 104 KGLTEIFYTISINVFRQFKNSLETSHLDSSSLHLHGEYKT 143
+                 *************************************985 PP
+
+>> ONN61185.1  hypothetical protein BLD44_13855 [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.1      0.11   2.4e+02      52      52 ..     209     209 ..     166     294 .. 0.52
+   2 ?    9.9   0.1   7.1e-05      0.16      57     129 ..     369     444 ..     357     460 .. 0.69
+   3 ?   -1.8   0.0      0.29   6.3e+02      98     127 ..     453     482 ..     447     500 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.11
+        anaH  52 q 52 
+                  
+  ONN61185.1 209 T 209
+                 2 PP
+
+  == domain 2  score: 9.9 bits;  conditional E-value: 7.1e-05
+        anaH  57 iilnglgfvsralylfpq....ffedkatehllgegiepkqlnddkigrvmdklyqlnvsvifllislaavkkfgva 129
+                 i ln +g+v  +l  + +    f +  a  + lg+       n d+ig+v ++l q n s+ +l  +la  k++g  
+  ONN61185.1 369 ITLNNIGVVYLSLGQYGKsldyFQQALAISKQLGDRS-GEGTNLDNIGKVYQNLGQYNKSLEYLQQALAISKQLGDR 444
+                 5556555555555443321111333446666677653.4567889***************************99954 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.29
+        anaH  98 kigrvmdklyqlnvsvifllislaavkkfg 127
+                 +ig v d+l q   ++ +   +la +k++g
+  ONN61185.1 453 NIGLVYDHLGQYPKALDYYHQALAIIKQLG 482
+                 688899999999888888888888888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (149 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       107  (0.024368); expected 87.8 (0.02)
+Passed bias filter:                       81  (0.0184468); expected 87.8 (0.02)
+Passed Vit filter:                         9  (0.00204965); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455477); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6623.87
+//
+[ok]

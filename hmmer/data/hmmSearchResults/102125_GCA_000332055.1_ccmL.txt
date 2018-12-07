@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102125_GCA_000332055.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-46  154.9   0.3    2.1e-46  154.7   0.3    1.0  1  ELS04737.1  carbon dioxide concentrating mechanism/carboxysom
+  ------ inclusion threshold ------
+      0.039   12.7   0.1       0.24   10.2   0.1    2.1  2  ELS04250.1  hypothetical protein Xen7305DRAFT_00039780 [Xenoc
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS04737.1  carbon dioxide concentrating mechanism/carboxysome shell protein [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  154.7   0.3   7.8e-50   2.1e-46       1      99 [.       1      99 [.       1     100 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 154.7 bits;  conditional E-value: 7.8e-50
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdqy 99
+                mqia+vrgtvvst+k  s+ gvklll+q++de+g+llpkyevaad vgag++ewvlvsrgsaar  +  eqrplda+vv iidtv+v++r +ysk++  
+  ELS04737.1  1 MQIAQVRGTVVSTHKLQSMTGVKLLLVQFIDEQGELLPKYEVAADIVGAGINEWVLVSRGSAARIESRYEQRPLDATVVGIIDTVSVDNRSLYSKRETE 99
+                9***********************************************************************************************976 PP
+
+>> ELS04250.1  hypothetical protein Xen7305DRAFT_00039780 [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0      0.17   4.6e+02      70      86 ..      11      27 ..       2      34 .. 0.80
+   2 ?   10.2   0.1   8.9e-05      0.24      61      97 ..      61      98 ..      50     101 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.17
+        ccmL 70 eqrpldaavvaiidtvk 86
+                 +rp+++  + ++dt +
+  ELS04250.1 11 GTRPIESGEIEVVDTFE 27
+                57999999999999976 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 8.9e-05
+        ccmL 61 saarqvlgneqrpldaavvaiidtvkve.drliyskkd 97
+                 a r ++ + +rp+d + v ++dt + + +r i s k 
+  ELS04250.1 61 NANRVIKVDGKRPVDKSDVDVVDTFEEDgKRPIMSNKY 98
+                58899999****************98772456777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         5373  (1697783 residues searched)
+Passed MSV filter:                       114  (0.0212172); expected 107.5 (0.02)
+Passed bias filter:                      101  (0.0187977); expected 107.5 (0.02)
+Passed Vit filter:                        11  (0.00204727); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000372232); expected 0.1 (1e-05)
+Initial search space (Z):               5373  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5659.28
+//
+[ok]

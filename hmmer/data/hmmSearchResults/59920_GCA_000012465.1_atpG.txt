@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-29  100.2   6.6    1.1e-29  100.1   6.6    1.0  1  AAZ58474.1  ATP synthase F0 subcomplex B' subunit [Prochloroc
+    4.1e-05   20.5   2.7    5.9e-05   19.9   2.7    1.2  1  AAZ58473.1  ATP synthase F0, subunit B [Prochlorococcus marin
+     0.0027   14.5   1.1     0.0037   14.1   0.2    1.6  2  AAZ59287.1  guanylate kinase [Prochlorococcus marinus str. NA
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ58474.1  ATP synthase F0 subcomplex B' subunit [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.1   6.6   1.6e-32   1.1e-29       1     138 [.      14     151 ..      14     153 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 100.1 bits;  conditional E-value: 1.6e-32
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fdfdatlp+ma+q +ll+ ilna+f+kp+ +v++er +y+  + + ak+++a  e l  e + ql  ar ++q++i +a+ ++++l  e +a a  ea
+  AAZ58474.1  14 LFDFDATLPLMAVQVVLLTFILNALFFKPVGRVVEEREDYVNTSRAEAKKKIAEVELLETELKDQLKEARLEAQKVILEAEQDSENLYKEALALATSEA 112
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllg 138
+                  a +e    ei  q++ea+  l+ +   l   i+e+ll 
+  AAZ58474.1 113 NASREKARREIDSQRDEALNQLKNEADNLGDLIIERLLA 151
+                 *************************************96 PP
+
+>> AAZ58473.1  ATP synthase F0, subunit B [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   2.7   8.2e-08   5.9e-05       7     129 ..      14     148 ..      10     155 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 8.2e-08
+        atpG   7 tlpvmalqfillavilnavfyk..p..lskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiia..qaqaeaqklaser.....vaa 94 
+                  l ++  ++i lav++  ++ k  p  l k+l++r   i      a e+la+++  + + + +lssa++++++i    + +aea +l se+     +a 
+  AAZ58473.1  14 NLNIFETNIINLAVVVFGLY-KflPgfLGKILEKRRTTILSDLKEAEERLAQAQDSLSQAKDDLSSAKQKADKIRNdcKVRAEAIRLESEKrtveeMAR 111
+                 56677778899999987654.31234489***********************9998888999**********998622567999999998722111344 PP
+
+        atpG  95 aqkeaiarkeavaaeiaqq..keeafrslegqvasls 129
+                  ++ a +   a aa ++ q  ke a  ++e  +a l 
+  AAZ58473.1 112 IKQGAASDLSAEAARVTSQlrKEAAELAIEKALAMLP 148
+                 4455555666677777655435666666676666665 PP
+
+>> AAZ59287.1  guanylate kinase [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.8   0.0       1.7   1.2e+03      70      78 ..      58      66 ..      56      68 .. 0.81
+   2 !   14.1   0.2   5.1e-06    0.0037      83     124 ..     140     181 ..     131     184 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -3.8 bits;  conditional E-value: 1.7
+        atpG 70 rkqsqeiia 78
+                +kq qeii 
+  AAZ59287.1 58 KKQFQEIID 66
+                799999996 PP
+
+  == domain 2  score: 14.1 bits;  conditional E-value: 5.1e-06
+        atpG  83 eaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegq 124
+                 e++    +r++ a+ke ia+ke  a  i ++ e+af+ +eg 
+  AAZ59287.1 140 ETEESIRDRLSIAEKELIAQKEFDAVVINEDIEKAFKEIEGF 181
+                 566667799*******************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        56  (0.02589); expected 43.3 (0.02)
+Passed bias filter:                       35  (0.0161812); expected 43.3 (0.02)
+Passed Vit filter:                         8  (0.00369857); expected 2.2 (0.001)
+Passed Fwd filter:                         4  (0.00184928); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 2554.81
+//
+[ok]

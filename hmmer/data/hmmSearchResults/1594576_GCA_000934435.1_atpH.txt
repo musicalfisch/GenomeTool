@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1594576_GCA_000934435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.6e-51  169.0   6.2    8.4e-51  168.9   6.2    1.0  1  KIY10123.1  ATP F0F1 synthase subunit C [Mastigocladus lamino
+  ------ inclusion threshold ------
+        3.8    6.6   6.1        0.2   10.7   0.2    1.8  2  KIY15232.1  hypothetical protein SP67_00085 [Mastigocladus la
+
+
+Domain annotation for each sequence (and alignments):
+>> KIY10123.1  ATP F0F1 synthase subunit C [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  168.9   6.2   2.8e-54   8.4e-51       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 168.9 bits;  conditional E-value: 2.8e-54
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdplv+aasv+aaala+GlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlll+lafmesltiyGlv+alvllfanpf+
+  KIY10123.1  1 MDPLVSAASVLAAALAIGLAAIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLTLAFMESLTIYGLVIALVLLFANPFS 81
+                9*******************************************************************************7 PP
+
+>> KIY15232.1  hypothetical protein SP67_00085 [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   1.7       1.9   5.5e+03      19      44 ..      30      55 ..      27      61 .. 0.78
+   2 ?   10.7   0.2   6.6e-05       0.2      19      46 ..     143     167 ..     137     173 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 1.9
+        atpH 19 laaiGpgigqGnaagqaveGiarqpe 44
+                 aa   g g G    +a  G  r p 
+  KIY15232.1 30 RAAADDGCGTGGRGCKAARGRRRAPI 55
+                57777889999999999999888885 PP
+
+  == domain 2  score: 10.7 bits;  conditional E-value: 6.6e-05
+        atpH  19 laaiGpgigqGnaagqaveGiarqpeae 46 
+                 laaiGpg   G a +q v+ +arq ea 
+  KIY15232.1 143 LAAIGPG---GAAGEQNVDDVARQREAR 167
+                 8999998...88889***********96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         5950  (1718357 residues searched)
+Passed MSV filter:                       270  (0.0453782); expected 119.0 (0.02)
+Passed bias filter:                      162  (0.0272269); expected 119.0 (0.02)
+Passed Vit filter:                        14  (0.00235294); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4639.56
+//
+[ok]

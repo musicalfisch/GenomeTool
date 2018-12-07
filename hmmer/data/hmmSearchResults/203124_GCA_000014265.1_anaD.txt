@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/203124_GCA_000014265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0088   14.6   1.9       0.12   11.0   0.2    2.3  2  ABG49831.1  Dephospho-CoA kinase [Trichodesmium erythraeum IM
+
+
+Domain annotation for each sequence (and alignments):
+>> ABG49831.1  Dephospho-CoA kinase [Trichodesmium erythraeum IMS101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.2   2.6e-05      0.12       4      42 ..      94     132 ..      91     150 .. 0.89
+   2 !    3.1   0.1    0.0078        35       4      27 ..     158     182 ..     156     209 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 2.6e-05
+        anaD   4 ekveqmlkefiiqelaydqtnlvltnnlkiieqrvidsm 42 
+                 ++ eq +k fi ++  ++qtn +     ki  q v   +
+  ABG49831.1  94 DRFEQNIKYFIAKNSEFEQTNYIQVTSHKITSQDVTAVL 132
+                 789*****************************9987655 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.0078
+        anaD   4 ekveqmlk.efiiqelaydqtnlvl 27 
+                 +++e+++k + ++qe ay + n  +
+  ABG49831.1 158 QQIERLMKrDCLTQEQAYTRINNQM 182
+                 67888665389*******9877544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         4451  (1543737 residues searched)
+Passed MSV filter:                       118  (0.0265109); expected 89.0 (0.02)
+Passed bias filter:                       77  (0.0172995); expected 89.0 (0.02)
+Passed Vit filter:                         6  (0.00134801); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000224669); expected 0.0 (1e-05)
+Initial search space (Z):               4451  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6715.26
+//
+[ok]

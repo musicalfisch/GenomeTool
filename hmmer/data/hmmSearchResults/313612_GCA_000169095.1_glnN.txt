@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/313612_GCA_000169095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-07   27.8   0.0    3.4e-07   27.2   0.0    1.2  1  EAW35244.1  putative glutamine synthetase [Lyngbya sp. PCC 81
+    2.4e-06   24.4   0.0    2.9e-06   24.1   0.0    1.1  1  EAW37043.1  glutamate--ammonia ligase [Lyngbya sp. PCC 8106]
+
+
+Domain annotation for each sequence (and alignments):
+>> EAW35244.1  putative glutamine synthetase [Lyngbya sp. PCC 8106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.0   1.1e-10   3.4e-07     267     355 ..     163     251 ..     147     267 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 1.1e-10
+        glnN 267 vqvfmqeveerlyrlgipaktrhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsvgna 355
+                  q  ++e+ e l   gi     + e  pgq ei+ ++  a +a+d+q +    +k+ a+kh + + +  k f    gsg h+  s+ + 
+  EAW35244.1 163 QQQTIDEIAEALIAQGISVEQYYPESGPGQQEISILYTDAAIAADQQIIFRETVKAIARKHDLYASFLPKIFPNQAGSGAHLHLSLWQG 251
+                 56678999*************************************999999*******************************9997654 PP
+
+>> EAW37043.1  glutamate--ammonia ligase [Lyngbya sp. PCC 8106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.1   0.0   9.6e-10   2.9e-06     255     357 ..     178     282 ..     127     334 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 24.1 bits;  conditional E-value: 9.6e-10
+        glnN 255 fddhyfgaip.ervqvfmqeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnws 351
+                 + + yf   p + +q +  e+   +   g+p    h eva  gq e+   f +   a+d   +   ++k  akk+g  + +  kp+   ngsg h   s
+  EAW37043.1 178 YKEGYFPVSPtDTMQDMRTEMLLTMAECGVPIEKHHHEVATgGQNELGFRFGTLIEAADNLMIYKYVIKNVAKKYGKTVTFMPKPLFNDNGSGMHCHQS 276
+                 666777777734567777788889999************97369999999***999*****999********************************999 PP
+
+        glnN 352 vgnatq 357
+                 + +  q
+  EAW37043.1 277 IWKDGQ 282
+                 876544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         6142  (1966150 residues searched)
+Passed MSV filter:                       148  (0.0240964); expected 122.8 (0.02)
+Passed bias filter:                      126  (0.0205145); expected 122.8 (0.02)
+Passed Vit filter:                        11  (0.00179095); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000325627); expected 0.1 (1e-05)
+Initial search space (Z):               6142  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.00s 00:00:00.09 Elapsed: 00:00:00.11
+# Mc/sec: 12922.97
+//
+[ok]

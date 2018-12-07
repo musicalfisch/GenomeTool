@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.2e-15   54.6   0.0    3.4e-15   54.5   0.0    1.0  1  CCQ50870.1  hypothetical protein CWATWH8502_707 [Crocosphaera
+    4.8e-13   47.6   3.8      5e-13   47.5   3.8    1.0  1  CCQ50871.1  hypothetical protein CWATWH8502_708 [Crocosphaera
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ50870.1  hypothetical protein CWATWH8502_707 [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   54.5   0.0   1.4e-18   3.4e-15     123     165 .]       1      43 []       1      43 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 54.5 bits;  conditional E-value: 1.4e-18
+        copC 123 lkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 ++y+a+  hy+++l+++ +Geyk++il++++Gek+nG+fsf++
+  CCQ50870.1   1 MNYEAERNHYHGMLSETESGEYKLTILSELNGEKINGKFSFQR 43 
+                 79***************************************86 PP
+
+>> CCQ50871.1  hypothetical protein CWATWH8502_708 [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.5   3.8     2e-16     5e-13      39     107 ..       6      73 .]       1      73 [] 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 47.5 bits;  conditional E-value: 2e-16
+        copC  39 taattavsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylqkGdnheavsnakv 107
+                 ++ +++ +s+++++ ++++++ ++s+  qvi sG+y l lv+ ++++g+h+ fyl  G+  ++v  a+v
+  CCQ50871.1   6 ATISEENHSEHDSHDHSHDHG-KHSQSEQVIKSGEYTLKLVTVPSDKGVHIAFYLLEGEANKQVKTAQV 73 
+                 333445555666666666655.578899**************************************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       141  (0.0283988); expected 99.3 (0.02)
+Passed bias filter:                      103  (0.0207452); expected 99.3 (0.02)
+Passed Vit filter:                        18  (0.00362538); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040282); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6537.45
+//
+[ok]

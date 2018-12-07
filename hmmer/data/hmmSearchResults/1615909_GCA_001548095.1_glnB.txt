@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1615909_GCA_001548095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-68  226.0   5.4    1.3e-68  225.9   5.4    1.0  1  BAQ62336.1  nitrogen regulatory protein P-II [Geminocystis sp
+  ------ inclusion threshold ------
+      0.032   12.2   0.0      0.074   11.0   0.0    1.6  1  BAQ59886.1  transcriptional regulator [Geminocystis sp. NIES-
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ62336.1  nitrogen regulatory protein P-II [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  225.9   5.4   7.4e-72   1.3e-68       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 225.9 bits;  conditional E-value: 7.4e-72
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkk+eaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklk+eivved+qvd+vvdk+++a+rtgeigdgkifisp+e+ 
+  BAQ62336.1   1 MKKIEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKIEIVVEDSQVDMVVDKVVQASRTGEIGDGKIFISPIEET 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgek+lea+
+  BAQ62336.1 100 IRIRTGEKNLEAI 112
+                 ***********97 PP
+
+>> BAQ59886.1  transcriptional regulator [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   4.1e-05     0.074      53     108 ..     114     169 ..     102     172 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 4.1e-05
+        glnB  53 veflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqvvrirtgekd 108
+                 +++   lk+++v+ d+ v++v + +    r g+  d  ++  p+ +  ri  + kd
+  BAQ59886.1 114 IKYYPDLKINLVMADHFVNMVEQGLDVLIRIGDHQDNSLISHPIGTTYRITVATKD 169
+                 567778*******************************************9988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         3639  (1135445 residues searched)
+Passed MSV filter:                       103  (0.0283045); expected 72.8 (0.02)
+Passed bias filter:                       71  (0.0195109); expected 72.8 (0.02)
+Passed Vit filter:                         5  (0.001374); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000549602); expected 0.0 (1e-05)
+Initial search space (Z):               3639  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6358.49
+//
+[ok]

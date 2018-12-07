@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574475_GCA_000817745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.4e-30  102.2   0.1    1.1e-29  101.0   0.1    1.6  1  KIF15272.1  ferredoxin-NADP reductase [Aphanocapsa montana BD
+    7.6e-29   98.3   0.0    8.5e-29   98.1   0.0    1.0  1  KIF20481.1  hypothetical protein QP59_19225 [Aphanocapsa mont
+  ------ inclusion threshold ------
+      0.017   13.8   0.2      0.048   12.4   0.2    1.8  1  KIF20638.1  photosystem I reaction center subunit XII [Aphano
+      0.062   12.0   0.0      0.072   11.8   0.0    1.2  1  KIF13994.1  photosystem I reaction center subunit XII [Aphano
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF15272.1  ferredoxin-NADP reductase [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.0   0.1   5.8e-33   1.1e-29       4      72 ..      11      79 ..       9      81 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 101.0 bits;  conditional E-value: 5.8e-33
+        cpcD  4 lssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaa 72
+                 +s    rlf yev Gl qn +td +d  irksGsvf+tvpysrmnqem+ritr+G  ivsi p+n a 
+  KIF15272.1 11 ATSVSGSRLFRYEVKGLRQNAETDKMDNPIRKSGSVFITVPYSRMNQEMQRITRMGGEIVSITPVNEAD 79
+                5677889***********************************************************885 PP
+
+>> KIF20481.1  hypothetical protein QP59_19225 [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   98.1   0.0   4.7e-32   8.5e-29       6      69 ..      13      76 ..       9      78 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 98.1 bits;  conditional E-value: 4.7e-32
+        cpcD  6 sakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                s  + r+f+yev G+ qn++td   y ir+sGs+f+ vpysrmnqem+ritr+G  ivsikpl 
+  KIF20481.1 13 SPSKGRMFLYEVTGMRQNQETDKNGYPIRQSGSIFIKVPYSRMNQEMQRITRMGGEIVSIKPLT 76
+                66678*********************************************************96 PP
+
+>> KIF20638.1  photosystem I reaction center subunit XII [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.2   2.7e-05     0.048      33      65 ..     253     284 ..     231     288 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.7e-05
+        cpcD  33 irksGsvfltvpysrmnqemrritrlGarivsi 65 
+                 ir++ + fl vpy ++  ++++i r+G r+ s+
+  KIF20638.1 253 IRRTNTAFL-VPYEQLSSKLQQINRMGGRVSSV 284
+                 899999998.9*******************998 PP
+
+>> KIF13994.1  photosystem I reaction center subunit XII [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   3.9e-05     0.072      41      65 ..      25      51 ..      14      57 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 3.9e-05
+        cpcD 41 lt..vpysrmnqemrritrlGarivsi 65
+                +t  vpy    +e +ri ++G +iv +
+  KIF13994.1 25 FTklVPYDNWFREQQRIQKMGGKIVKV 51
+                44449********************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         7295  (2153977 residues searched)
+Passed MSV filter:                       139  (0.0190541); expected 145.9 (0.02)
+Passed bias filter:                      131  (0.0179575); expected 145.9 (0.02)
+Passed Vit filter:                        11  (0.00150788); expected 7.3 (0.001)
+Passed Fwd filter:                         4  (0.000548321); expected 0.1 (1e-05)
+Initial search space (Z):               7295  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5313.14
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/449447_GCA_000010625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-44  147.2   0.1      6e-44  147.1   0.1    1.0  1  BAG04614.1  carbon dioxide concentrating mechanism protein [M
+  ------ inclusion threshold ------
+      0.052   12.5   0.0       0.28   10.2   0.0    2.1  2  BAG02079.1  cytochrome P450 [Microcystis aeruginosa NIES-843]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAG04614.1  carbon dioxide concentrating mechanism protein [Microcystis aeruginosa NIES-843]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  147.1   0.1   1.9e-47     6e-44       1     100 []       1     100 [.       1     100 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 147.1 bits;  conditional E-value: 1.9e-47
+        ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdqy 99 
+                 mqiakv gtvvs+ k  s+ gvkllllq++d +g+llpkyeva d vgag++ewvlvsrg aar   g+++rplda+vv iidt++ve+r +ysk+d++
+  BAG04614.1   1 MQIAKVCGTVVSSLKPRSMTGVKLLLLQFIDAQGQLLPKYEVAGDIVGAGINEWVLVSRGGAARIEDGQNNRPLDAMVVGIIDTITVENRTLYSKRDEF 99 
+                 9************************************************************************************************98 PP
+
+        ccmL 100 r 100
+                 r
+  BAG04614.1 100 R 100
+                 7 PP
+
+>> BAG02079.1  cytochrome P450 [Microcystis aeruginosa NIES-843]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   8.8e-05      0.28      40      76 ..      34      70 ..       8      97 .. 0.85
+   2 ?   -1.5   0.0      0.39   1.2e+03      16      42 ..     226     252 ..     221     257 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 8.8e-05
+        ccmL 40 yevaadsvgagvdewvlvsrgsaarqvlgneqrplda 76
+                 ++ + +vg  vd++++vs  sa +q+l n+++   a
+  BAG02079.1 34 GDIFSTKVGLTVDNFIFVSSPSALQQILTNDRKQFSA 70
+                5677889***********************9987765 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.39
+        ccmL  16 dpslrgvkllllqlvdeegkllpkyev 42 
+                 +p+   +  ll+   deeg+ + + e+
+  BAG02079.1 226 NPNRTDILSLLMSAWDEEGNPMSDKEL 252
+                 666667777999999****99887775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         6311  (1578908 residues searched)
+Passed MSV filter:                        98  (0.0155284); expected 126.2 (0.02)
+Passed bias filter:                       79  (0.0125178); expected 126.2 (0.02)
+Passed Vit filter:                         7  (0.00110917); expected 6.3 (0.001)
+Passed Fwd filter:                         2  (0.000316907); expected 0.1 (1e-05)
+Initial search space (Z):               6311  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7894.54
+//
+[ok]

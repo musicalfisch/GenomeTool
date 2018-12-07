@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641165_GCA_002075285.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-29   98.3   0.1      1e-28   97.4   0.1    1.4  1  ASC72435.1  Ferredoxin--NADP reductase [Halomicronema hongdec
+    3.5e-27   92.5   0.0    3.9e-27   92.3   0.0    1.0  1  ASC70693.1  Phycobilisome 8.9 kDa linker polypeptide, phycocy
+     0.0091   14.2   0.1      0.019   13.2   0.1    1.5  1  ASC70695.1  Phycobilisome 32.1 kDa linker polypeptide, phycoc
+
+
+Domain annotation for each sequence (and alignments):
+>> ASC72435.1  Ferredoxin--NADP reductase [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.4   0.1   5.9e-32     1e-28      10      70 ..      17      77 ..       9      81 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 97.4 bits;  conditional E-value: 5.9e-32
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                 rlfvyev Gl qn +td+ +y ir+sGs ++tvpysrmnqem+ritrlG ri+si+p+++
+  ASC72435.1 17 SRLFVYEVEGLCQNSETDQANYPIRQSGSTYITVPYSRMNQEMQRITRLGGRILSIRPVES 77
+                7*********************************************************976 PP
+
+>> ASC70693.1  Phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.3   0.0   2.2e-30   3.9e-27       4      72 ..      11      79 ..       8      80 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 92.3 bits;  conditional E-value: 2.2e-30
+        cpcD  4 lssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaa 72
+                 +s    r+f+yev Gl q ++td   y ir sGsvf+ vpysrmn+em+ri r+G  iv ikpl +aa
+  ASC70693.1 11 TASPSGRRIFLYEVKGLRQSEETDKNGYPIRNSGSVFIKVPYSRMNEEMQRINRMGGEIVDIKPLSTAA 79
+                5677789***********************************************************998 PP
+
+>> ASC70695.1  Phycobilisome 32.1 kDa linker polypeptide, phycocyanin-associated, rod 2 [Halomicronema hongdechloris C22
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.1   1.1e-05     0.019      31      65 ..     237     270 ..     225     272 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 1.1e-05
+        cpcD  31 ysirksGsvfltvpysrmnqemrritrlGarivsi 65 
+                  sir+s + +l vpy ++ +++++i r+G r+  i
+  ASC70695.1 237 PSIRRSNTEYL-VPYEQLSRKLQQINRMGGRVTNI 270
+                 59*****9998.9******************9887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5269  (1545500 residues searched)
+Passed MSV filter:                       101  (0.0191687); expected 105.4 (0.02)
+Passed bias filter:                       98  (0.0185994); expected 105.4 (0.02)
+Passed Vit filter:                         8  (0.00151831); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000569368); expected 0.1 (1e-05)
+Initial search space (Z):               5269  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5718.35
+//
+[ok]

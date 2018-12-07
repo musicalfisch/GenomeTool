@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913460_GCA_001917285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0032   12.7   0.2      0.084    8.0   0.0    2.3  2  OLA94873.1  hypothetical protein BHW64_01665 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OLA94873.1  hypothetical protein BHW64_01665 [Candidatus Melainabacteria bacterium LEY3_CP_29_8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.0   0.0    0.0055       5.8     373     411 ..     175     213 ..     148     218 .. 0.85
+   2 !    8.0   0.0     8e-05     0.084      91     223 ..     339     476 ..     323     485 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.0055
+        cnrC 373 gyregkfgqlelldaertlaetrvaaidalanyqnaraq 411
+                  + eg   +++l++ae  l++++++ ++a  +++na  +
+  OLA94873.1 175 FFEEGLRSKIDLVNAEVNLSDSKISLVQARNKFKNALIK 213
+                 57899999***************************9765 PP
+
+  == domain 2  score: 8.0 bits;  conditional E-value: 8e-05
+        cnrC  91 gvrsaestvgfaipielggkrgarvavanaqlsraeiqaaiiaadvrl.......qvtqlyveavaadrrvatardqariasdalraasvrvqagrasp 182
+                 g r    t  f + i+l  +    +   + ++  a+iq+ i  +d+ l       +v + +++ +  +++v     + + + +  + a  r   g    
+  OLA94873.1 339 GFRDESNTNSFNVAINLSSNV--NILAKKYEIDNAKIQTVIAKTDIELareniffEVQNYFINMIELEKQVPLLAIKVKQTFENYKLADGRYSVGLGDF 435
+                 666666666677777766543..3344445555666666665555554211111145555566666677777666677777777777777777777777 PP
+
+        cnrC 183 leqqradvarinadanverqlrlaeaaranlarrigrpidg 223
+                 +e q a     na+      +   + a+anl + i +p dg
+  OLA94873.1 436 IELQDAINNYNNAQLSYIEAIYNYNVAKANLEKSIAKPYDG 476
+                 77777777777777666666666677777777777777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         1049  (249927 residues searched)
+Passed MSV filter:                        19  (0.0181125); expected 21.0 (0.02)
+Passed bias filter:                       13  (0.0123928); expected 21.0 (0.02)
+Passed Vit filter:                         1  (0.000953289); expected 1.0 (0.001)
+Passed Fwd filter:                         1  (0.000953289); expected 0.0 (1e-05)
+Initial search space (Z):               1049  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5310.95
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805101_GCA_001919235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpA  [M=440]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-36  122.8   0.1    2.2e-35  120.2   0.1    1.9  1  OLE43498.1  nitrate ABC transporter, permease protein [Cyanob
+  ------ inclusion threshold ------
+      0.038   10.6   0.2       0.08    9.6   0.2    1.5  1  OLE22303.1  hypothetical protein AUI36_33995 [Cyanobacteria b
+
+
+Domain annotation for each sequence (and alignments):
+>> OLE43498.1  nitrate ABC transporter, permease protein [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  120.2   0.1     1e-38   2.2e-35      78     322 ..       2     225 ..       1     243 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 120.2 bits;  conditional E-value: 1e-38
+        cmpA  78 glfakhgmpdvqvmkqaswaatrdnlelgsagngidgahilsplpylmtlgkitkqpvpmyilarlntngqaisvaneyldlkvaldsgvlkeslakak 176
+                 g++ k+g+ +v v+k +swa  rd     s+    d +h+lsp+p  +t+g +  q vp  + a  n+ngqai++ +++  +k a +            
+  OLE43498.1   2 GFYKKQGL-NVSVVKASSWAMIRDL----SINGETDATHMLSPMPLAITMG-VGSQSVPYVMPAVENINGQAITLHEKHKGIKTAAE------------ 82 
+                 66777776.79************94....4444579**************9.789**********************9999886543............ PP
+
+        cmpA 177 sagkevkaavtfpggthdlfmrywlaaggidpnkdlslivvppaqmvanmkvgtmqafcvgepwnaqlvkkklgysalitgelwkdhpekafalradwv 275
+                    k  k  v f    h++++ry la gg+dp+kd+ +  vpp++mvan++ g ++ +   +p+n + v ++ g+  +++ ++w  hp  afa + ++ 
+  OLE43498.1  83 --MKGFKFGVPFDYSMHNFLLRYVLAEGGVDPDKDVQIRAVPPPEMVANLRAGNLDGYLGPDPFNQRAVFEGAGFIWMLSKDIWPGHPCCAFAAKREFA 179
+                 ..4678999****************************************************************************************** PP
+
+        cmpA 276 dknpkaakaltmavleaqqwcndpanvkemceiisgrewlkidpadi 322
+                 +k p++ ka+  a+++a q++ d +  ke++  i+ r++l+ +p ++
+  OLE43498.1 180 EKLPNTFKAVLSAIVDATQYAHDKTHRKEIAAAIAPRNFLN-QPVEV 225
+                 **************************************997.45555 PP
+
+>> OLE22303.1  hypothetical protein AUI36_33995 [Cyanobacteria bacterium 13_1_40CM_2_61_4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   0.2   3.8e-05      0.08       2      42 ..       6      48 ..       5      62 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 3.8e-05
+        cmpA  2 sklsrrrfi.ftagatavgtai.lhgcatpnntatspspagsp 42
+                s +srr f+ ft  ++av t i l gca     at    ag  
+  OLE22303.1  6 SAMSRRDFLcFTGKTAAVSTGIlLSGCAQTATQATGDPAAGLA 48
+                789****9836666678999883589*9998888877666654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (440 nodes)
+Target sequences:                         4209  (1128809 residues searched)
+Passed MSV filter:                        84  (0.0199572); expected 84.2 (0.02)
+Passed bias filter:                       71  (0.0168686); expected 84.2 (0.02)
+Passed Vit filter:                        11  (0.00261345); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000475172); expected 0.0 (1e-05)
+Initial search space (Z):               4209  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9933.52
+//
+[ok]

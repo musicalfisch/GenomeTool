@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/582515_GCA_000473895.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnaA  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.6e-128  426.5   0.0     2e-128  426.2   0.0    1.0  1  ERN41760.1  anthranilate phosphoribosyltransferase [Rubidibac
+    1.9e-09   34.8   0.5    8.1e-09   32.8   0.5    1.7  1  ERN40103.1  anthranilate phosphoribosyltransferase [Rubidibac
+
+
+Domain annotation for each sequence (and alignments):
+>> ERN41760.1  anthranilate phosphoribosyltransferase [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  426.2   0.0  1.2e-131    2e-128       3     346 ..      10     348 ..       8     353 .. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 426.2 bits;  conditional E-value: 1.2e-131
+        cnaA   3 dtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrtap 101
+                 + frellk +gsgtht + ltr eaa a +mml qeatpaqigaf+iahri+rp+ +elagmlda ++lgp+i+  +     p+++fg pydgr+rtap
+  ERN41760.1  10 EQFRELLKKVGSGTHTSEALTRAEAAAAMRMMLKQEATPAQIGAFLIAHRIRRPAPEELAGMLDACSKLGPHIAPIA---STPVTVFGVPYDGRARTAP 105
+                 57***********************************************************************8544...46***************** PP
+
+        cnaA 102 vtpittlilglagvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwspfv 200
+                 v  +t+l+l++agvpv+lhggdrmptkyg+    iwq lg  f+ lsla v+ +l+ tg+ f y+p +fp   ++v yr++igkrpp+at+el+wsp+ 
+  ERN41760.1 106 VMAVTALLLAAAGVPVLLHGGDRMPTKYGLPQVGIWQGLGVAFATLSLAQVRKVLVETGVGFTYLPVQFPQAAQLVPYRDEIGKRPPLATLELVWSPYD 204
+                 *************************************************************************************************** PP
+
+        cnaA 201 gnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllagenn 299
+                 g    i gfvhppte  +r t+alr    +ttvkglegscdla  r  i+g+       s +r+ l p+d+g+  sd ple+ e+  a+l+ +l g+  
+  ERN41760.1 205 GATRAIVGFVHPPTEGLLRTTLALRGAPALTTVKGLEGSCDLARSRPGIVGVVRA--DGSCDRLTLHPHDHGLGGSDAPLEAPEIYCAQLRAVLEGKAS 301
+                 **************************************************99764..5799************************************** PP
+
+        cnaA 300 eltdaaifnggfylwrcgiapdiptgfqqaqqslqsgkalakleqia 346
+                  lt aai+nggfylw+cg++ d+ tgf +a+  l+ g a  k eq+a
+  ERN41760.1 302 ALTTAAIWNGGFYLWHCGVCTDLETGFAKAEAMLKDGVAAGKCEQVA 348
+                 ********************************************986 PP
+
+>> ERN40103.1  anthranilate phosphoribosyltransferase [Rubidibacter lacunae KORDI 51-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   32.8   0.5   4.7e-12   8.1e-09      20     353 .]      22     352 ..      19     352 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 32.8 bits;  conditional E-value: 4.7e-12
+        cnaA  20 knltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhp.iaifgnpydgrsrtapvtpittlilglagvpv 117
+                 + ltr +aa   +  l +   p+  ga++ a + k  ++ elagm +       q   e+ +   p i   g   dg   t  ++   +++ ++ag+ v
+  ERN40103.1  22 QSLTREQAAKLMRGWLDEAIPPVLSGAILAAIQAKGVSAFELAGMAQVLQAQSRQA--EAIAHTAPvIDTCGTGGDGAG-TFNISTAVAFVAAAAGIEV 117
+                 5799999999999999988899999********************99877666654..555555552667899999976.666777778999******* PP
+
+        cnaA 118 vlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwspfvgnihqisgfvhppted 216
+                   hg     +k g    ++ + lg +++    a  + +l + g+tf++ p   p ++ +v  r+ +  r  +  +     p+v  +h  +g v    + 
+  ERN40103.1 118 AKHGNRSASSKVGS--ADVLESLGVNLTATPDA-ARAALAAVGITFLFAPGWHPAMKAVVPLRKTLKVRTAFNLL----GPLVNPLHP-TGQVLGVFDS 208
+                 ****9999999886..599*******9987765.5889**************************99999777655....566655553.2333333334 PP
+
+        cnaA 217 rfretf..alrnishfttvkglegscdla.cnrtaiiglgnptdppsfqr.....fflnprdygfcpsdy.pl..eslelltaklkgllagenn.eltd 303
+                  + +t+  alr++        +e +  l   +r    gl + td   ++r      +l+p+  g++ +    l    +e  +a l  +l g+      d
+  ERN40103.1 209 GLVDTVaqALRELG-------MERAIVLHgRERLDEAGLADATDLAVLDRgeialSVLDPQALGLATAPTgALhgGEVEENAAILTAVLQGKGTaAQQD 300
+                 44443311345443.......333332220234444455555554444442222245667777665443212311234445566666666654414568 PP
+
+        cnaA 304 aaifnggfylwrcgiap..diptgfqqaqqslqsgkalakleqianylenqe 353
+                    +n  + l   g++       g ++a++ l+sg a  kl+ ++++l nq+
+  ERN40103.1 301 VVALNASLALQVGGVVTlgAHREGCDRARELLKSGAAWEKLQALVQFLSNQD 352
+                 88899999999999986225668999*********************99985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         3457  (1058921 residues searched)
+Passed MSV filter:                        81  (0.0234307); expected 69.1 (0.02)
+Passed bias filter:                       76  (0.0219844); expected 69.1 (0.02)
+Passed Vit filter:                         7  (0.00202488); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000578536); expected 0.0 (1e-05)
+Initial search space (Z):               3457  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.04
+# Mc/sec: 9344.98
+//
+[ok]

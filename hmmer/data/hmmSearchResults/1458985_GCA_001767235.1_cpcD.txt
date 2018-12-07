@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1458985_GCA_001767235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-26   90.3   0.1    2.5e-26   90.1   0.1    1.0  1  AOX00417.1  photosystem I reaction center subunit XII [Moorea
+    2.1e-20   71.1   0.2      6e-20   69.6   0.2    1.8  1  AOX00570.1  ferredoxin-NADP reductase [Moorea producens PAL-8
+
+
+Domain annotation for each sequence (and alignments):
+>> AOX00417.1  photosystem I reaction center subunit XII [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   90.1   0.1   7.3e-30   2.5e-26       4      71 ..      11      78 ..       8      79 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 90.1 bits;  conditional E-value: 7.3e-30
+        cpcD  4 lssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaa 71
+                  s  e r fvyev Gl qn++     y +rks s+f+ vpys+mn+em+ritr+G +ivsi+pl a+
+  AOX00417.1 11 SNSPSESRTFVYEVTGLWQNEENKKNSYPLRKSSSIFIQVPYSQMNEEMQRITRMGGKIVSIRPLMAT 78
+                56889************************************************************985 PP
+
+>> AOX00570.1  ferredoxin-NADP reductase [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   69.6   0.2   1.8e-23     6e-20       7      73 ..      15      74 ..       9      75 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 69.6 bits;  conditional E-value: 1.8e-23
+        cpcD  7 akenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                    r ++yevvGl qn         ir+sG+v+ltvpy rm qem+ri+r+G +ivsikpl ++aa
+  AOX00570.1 15 EFGSRTYLYEVVGLRQNG-------PIRQSGTVLLTVPYNRMKQEMQRIARMGGKIVSIKPLSSSAA 74
+                455799**********97.......69************************************9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         6706  (2323265 residues searched)
+Passed MSV filter:                       125  (0.01864); expected 134.1 (0.02)
+Passed bias filter:                      118  (0.0175962); expected 134.1 (0.02)
+Passed Vit filter:                        16  (0.00238592); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.00029824); expected 0.1 (1e-05)
+Initial search space (Z):               6706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5730.72
+//
+[ok]

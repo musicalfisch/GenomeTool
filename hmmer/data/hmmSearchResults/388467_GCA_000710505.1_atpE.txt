@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/388467_GCA_000710505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.6e-67  222.7   2.1      4e-67  222.5   2.1    1.0  1  KEI68358.1  AtpE [Planktothrix agardhii NIVA-CYA 126/8]
+  ------ inclusion threshold ------
+        7.7    4.6  20.8      0.036   12.2   2.5    3.6  4  KEI65843.1  DevB [Planktothrix agardhii NIVA-CYA 126/8]
+
+
+Domain annotation for each sequence (and alignments):
+>> KEI68358.1  AtpE [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  222.5   2.1   1.9e-70     4e-67       1     137 []       1     136 [.       1     136 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 222.5 bits;  conditional E-value: 1.9e-70
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pd+tvwd +a+evilpsttgq+gil+ghaplltaldtgv+rvr++  ++w+ ial+ggfaeve +evtilvngaergd+inle ar+a++
+  KEI68358.1   1 MTLTVRVIAPDRTVWDENADEVILPSTTGQVGILTGHAPLLTALDTGVLRVRSK--NKWTPIALMGGFAEVEANEVTILVNGAERGDTINLEVARTAYT 97 
+                 9***************************************************75..57***************************************** PP
+
+        atpE 100 eaqtklnqvkaed.rqaqiqatqafkrararfqaagglv 137
+                 +aq+ l+  +++d ++a+i+at+a+krarar+qaagg++
+  KEI68358.1  98 KAQADLEVAETGDsKKAKIKATKAIKRARARLQAAGGVI 136
+                 *******9988763899********************86 PP
+
+>> KEI65843.1  DevB [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.5   1.7e-05     0.036      89     122 ..     115     148 ..     101     161 .. 0.85
+   2 ?   -1.1   0.8      0.22   4.6e+02      87     107 ..     182     202 ..     151     232 .. 0.56
+   3 ?    1.9   2.7     0.026        54      87     126 ..     220     259 ..     210     270 .. 0.71
+   4 ?    0.9   0.2     0.054   1.1e+02      89     117 ..     283     311 ..     262     317 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.7e-05
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatqa 122
+                   le+a ++ + a ++l+qv+a+ +q +iqa++a
+  KEI65843.1 115 AALEQAETEVEVAVARLEQVQAGAKQGDIQAQKA 148
+                 469****************************987 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.22
+        atpE  87 dkinleearaafneaqtklnq 107
+                 +k  l+  +a+ n+a+t+ ++
+  KEI65843.1 182 QKATLDRIQAELNNAETNCQR 202
+                 444555555555555555443 PP
+
+  == domain 3  score: 1.9 bits;  conditional E-value: 0.026
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqa.fkra 126
+                 + ++ e +r   +eaq++ln+  + +r +qi+ +qa + r+
+  KEI65843.1 220 QCLQAETSRKRLQEAQANLNETIS-SRAEQIREAQAnLSRT 259
+                 45788999************9764.6777776555414554 PP
+
+  == domain 4  score: 0.9 bits;  conditional E-value: 0.054
+        atpE  89 inleearaafneaqtklnqvkaedrqaqi 117
+                 ++++ a+++ ++a+++++q +a+  qa +
+  KEI65843.1 283 VDVQLAKSELAKAESSVKQAEANLEQAYV 311
+                 55666777777777777777777666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4191  (1395461 residues searched)
+Passed MSV filter:                       128  (0.0305416); expected 83.8 (0.02)
+Passed bias filter:                       93  (0.0221904); expected 83.8 (0.02)
+Passed Vit filter:                        10  (0.00238607); expected 4.2 (0.001)
+Passed Fwd filter:                         5  (0.00119303); expected 0.0 (1e-05)
+Initial search space (Z):               4191  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 3823.56
+//
+[ok]

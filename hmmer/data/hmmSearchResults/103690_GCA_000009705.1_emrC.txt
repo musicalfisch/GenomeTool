@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      6e-57  189.1  11.6    6.6e-57  189.0  11.6    1.0  1  BAB77809.1  multidrug exporter [Nostoc sp. PCC 7120]
+      2e-06   26.7   8.3    3.3e-06   26.0   8.4    1.3  1  BAB75207.1  alr3508 [Nostoc sp. PCC 7120]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB77809.1  multidrug exporter [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.0  11.6   2.2e-60   6.6e-57       1     106 []       1     106 []       1     106 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 189.0 bits;  conditional E-value: 2.2e-60
+        emrC   1 mliswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigv 99 
+                 m++s++yll+ai+fevsgttcmkls+gf+kl+ps+lifvfyglc+tf+tl+lk+i++s+aysvwaglgt+lia +gliwfres+t+vk+is++lii+gv
+  BAB77809.1   1 MSTSLVYLLIAIIFEVSGTTCMKLSDGFNKLTPSILIFVFYGLCFTFQTLSLKNIDISIAYSVWAGLGTALIAGVGLIWFRESMTMVKFISMTLIIVGV 99 
+                 89************************************************************************************************* PP
+
+        emrC 100 iginsak 106
+                 +gins+k
+  BAB77809.1 100 VGINSGK 106
+                 *****87 PP
+
+>> BAB75207.1  alr3508 [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.0   8.4   1.1e-09   3.3e-06       8     105 ..      11     109 ..       5     110 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 26.0 bits;  conditional E-value: 1.1e-09
+        emrC   8 llaailfevsgttcmklsegftklipsvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigviginsa 105
+                 +l+++ ++    t +kl  g + l   ++  + +ygl+  f  l l k+++s+ay +  gl  vl ++ g +++re + + + i i l++ g+  i  +
+  BAB75207.1  11 ILTTVGLNTLAQTLLKLGAGQNPLNFYLVGgICCYGLSTIFYVLVLGKLNLSIAYPLVIGLTIVLTTIAGAVVLREKVLVSQWIGIGLLLSGISAIALS 109
+                 4555666667777788888877776554432679**********************************************************9988766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       232  (0.0378343); expected 122.6 (0.02)
+Passed bias filter:                       94  (0.0153294); expected 122.6 (0.02)
+Passed Vit filter:                        11  (0.00179387); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326158); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 5219.49
+//
+[ok]

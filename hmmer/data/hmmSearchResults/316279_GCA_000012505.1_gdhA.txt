@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-09   34.8   2.7    3.7e-06   23.1   0.0    2.7  2  ABB25228.1  Glutamate dehydrogenase/leucine dehydrogenase-lik
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB25228.1  Glutamate dehydrogenase/leucine dehydrogenase-like [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.2   0.9   1.4e-05     0.032      92     253 ..      52     196 ..      10     207 .. 0.69
+   2 !   23.1   0.0   1.6e-09   3.7e-06     298     365 ..     219     287 ..     198     295 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 1.4e-05
+        gdhA  92 tlrevsalamlmtwkcallgipyggakggiaidpkkysvgeleritrryiselikdigpsvdipapdmgtsaremawmmdtysvnvghavpgvvtgkpl 190
+                 ++ +   la lmt k  l g  + g+k     +      +el  +    ++ l+  +  s+ i   d+ ts  +m  +m           p v++    
+  ABB25228.1  52 CIADGQRLAGLMTHKHDLYGTGFAGGKIVARAQEPAAVKDELISV----TAGLLESLDGSM-ITGCDLNTSLEDMERLMSL--------TPHVLA---- 133
+                 455566677777777777777776666432222222222333333....455666665554.6677777777777777643........233332.... PP
+
+        gdhA 191 siggsrgrematgrgvmiivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavs 253
+                 ++g       at  g++  v   l+   k  +  r  + g g vgg+ a+ l ++g  + +v 
+  ABB25228.1 134 AVGSPVDASAATAHGTLGAVEAVLSSDLKDATPGRALVHGCGAVGGTVAKTLVEEGWTVFTVD 196
+                 35555667789*********************************************9998875 PP
+
+  == domain 2  score: 23.1 bits;  conditional E-value: 1.6e-09
+        gdhA 298 lpcdvlipaalenqiteenvnqvqakivaeaangpvtl.eankvleargvtvlpdilanaggvvvsyle 365
+                 +++d+++p+++   i +e ++ +++k v+ aan+p    +    l +rg+ vlpd l nag v+   +e
+  ABB25228.1 219 VKVDLMLPCSISGLINSEIAEGMRTKAVVPAANAPFQNpQLADELRQRGIPVLPDPLVNAGAVIADSIE 287
+                 6789*******************************875266789*******************987766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                        52  (0.0225694); expected 46.1 (0.02)
+Passed bias filter:                       43  (0.0186632); expected 46.1 (0.02)
+Passed Vit filter:                         7  (0.00303819); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000434028); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7141.08
+//
+[ok]

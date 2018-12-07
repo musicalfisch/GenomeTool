@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/75695_GCA_001458455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.3e-81  267.2   0.1    9.9e-81  266.9   0.1    1.0  1  CEJ46324.1  Adenylyl-sulfate kinase (APS kinase) (ATP adenosi
+  ------ inclusion threshold ------
+      0.015   12.2   0.0      0.023   11.5   0.0    1.4  1  CEJ44726.1  Shikimate kinase (SK) [Chrysosporum ovalisporum]
+
+
+Domain annotation for each sequence (and alignments):
+>> CEJ46324.1  Adenylyl-sulfate kinase (APS kinase) (ATP adenosine-5'-phosphosulfate 3'-phosphotransferase) (Adenosine-5
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  266.9   0.1   6.9e-84   9.9e-81       4     172 ..       1     170 [.       1     178 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 266.9 bits;  conditional E-value: 6.9e-84
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m++ g t+w+tglsg+gk+ti+  +   l   g  +e+ldgdivr nlt+ lgfs+ drdenirrigfv++lltr gvivlvsaispyr+ir+evr ki
+  CEJ46324.1   1 MQNIGATIWFTGLSGSGKTTISAEVARILRERGLKVEILDGDIVRQNLTRDLGFSRADRDENIRRIGFVAQLLTRNGVIVLVSAISPYRDIRQEVRQKI 99 
+                 67889****************99998888999******************************************************************* PP
+
+        cysC 103 g.sfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkl 172
+                 g +f+ev+vnapl+ ce rdvkglykrar geik ftgiddpyepp++pevec td e+le+svakv +++
+  CEJ46324.1 100 GnNFIEVYVNAPLATCEARDVKGLYKRARQGEIKFFTGIDDPYEPPLKPEVECLTDEESLEKSVAKVIEHF 170
+                 945****************************************************************8865 PP
+
+>> CEJ44726.1  Shikimate kinase (SK) [Chrysosporum ovalisporum]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.6e-05     0.023       6      51 ..      29      69 ..      24     100 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.6e-05
+        cysC  6 qrgvtvwltglsgagkstitealqakliaegysievldgdivrtnl 51
+                 +gv ++l g+ gagk+t+      kl+a+  s + ld d + t+ 
+  CEJ44726.1 29 LKGVNLYLIGMMGAGKTTVG-----KLLANHLSYKFLDTDDIITQS 69
+                589***************95.....788888899999987666654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2851  (968037 residues searched)
+Passed MSV filter:                       129  (0.0452473); expected 57.0 (0.02)
+Passed bias filter:                      123  (0.0431428); expected 57.0 (0.02)
+Passed Vit filter:                        19  (0.00666433); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000701508); expected 0.0 (1e-05)
+Initial search space (Z):               2851  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5937.29
+//
+[ok]

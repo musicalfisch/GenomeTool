@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/269084_GCA_000010065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.02   10.8   0.0      0.079    8.8   0.0    1.8  2  BAD79144.1  cytosine deaminase [Synechococcus elongatus PCC 6
+
+
+Domain annotation for each sequence (and alignments):
+>> BAD79144.1  cytosine deaminase [Synechococcus elongatus PCC 6301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.0   3.1e-05     0.079      18      61 ..      41      86 ..      34      95 .. 0.81
+   2 ?   -1.5   0.0     0.042   1.1e+02     369     393 ..     383     408 ..     377     420 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 3.1e-05
+        cyrG 18 tvdvqvvdgkiaaiapelevvgt..aidgenklllpgfvnahthss 61
+                 +d+++  gki+aiap     g+  ++d + + l pgfv+ hth  
+  BAD79144.1 41 LIDLEIDRGKICAIAPTQSSAGNvaSLDLQGRQLWPGFVDIHTHID 86
+                689999***********999996225788999************64 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.042
+        cyrG 369 lgsltvgkkadlvlydltnls.llpr 393
+                  g +++g +ad+v+++  +++ ll r
+  BAD79144.1 383 QGRIAIGARADFVIFNARSFTeLLAR 408
+                 5899***********97665424544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         2525  (785792 residues searched)
+Passed MSV filter:                        47  (0.0186139); expected 50.5 (0.02)
+Passed bias filter:                       39  (0.0154455); expected 50.5 (0.02)
+Passed Vit filter:                         3  (0.00118812); expected 2.5 (0.001)
+Passed Fwd filter:                         1  (0.00039604); expected 0.0 (1e-05)
+Initial search space (Z):               2525  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 12179.78
+//
+[ok]

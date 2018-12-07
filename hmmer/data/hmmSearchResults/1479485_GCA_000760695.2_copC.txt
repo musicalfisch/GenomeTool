@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1479485_GCA_000760695.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.4e-68  228.0   2.8    2.7e-68  227.9   2.8    1.0  1  KIE09313.1  hypothetical protein DA73_0233625 [Tolypothrix bo
+  ------ inclusion threshold ------
+       0.54    9.0   5.4        2.6    6.8   0.6    2.2  2  KIE11181.1  phosphate ABC transporter substrate-binding prote
+
+
+Domain annotation for each sequence (and alignments):
+>> KIE09313.1  hypothetical protein DA73_0233625 [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  227.9   2.8   6.9e-72   2.7e-68       1     165 []       1     170 []       1     170 [] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 227.9 bits;  conditional E-value: 6.9e-72
+        copC   1 mkslkssllvvlsigllllaassnsntatndeas..sktttaatt.a..vsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylq 94 
+                 mkslks l++++ ig+l+laa+snsn +t++e+s  +++t+++++ +   ++++a+ ak+ e+++++s+GG ++e+Gayhle+vp +eangthldfylq
+  KIE09313.1   1 MKSLKSKLILLGLIGMLFLAACSNSNRSTDSESStaKSQTSTTSNnQqsIPTASATAAKKTEEQHGKSHGGTIVETGAYHLEFVPLNEANGTHLDFYLQ 99 
+                 9**********************99977665443114434333330201345566777888899999******************************** PP
+
+        copC  95 kGdnheavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 kGdnhea++nakvta vqlPdG+qk+++l+yda++khy ++l++ka+G+y+v ++++i G+kv+Grf+f+k
+  KIE09313.1 100 KGDNHEAITNAKVTALVQLPDGTQKTIPLTYDASGKHYEGMLAEKATGQYQVRVTSNIGGKKVDGRFTFNK 170
+                 *********************************************************************97 PP
+
+>> KIE11181.1  phosphate ABC transporter substrate-binding protein [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.6   0.00067       2.6       6      47 ..      14      55 ..       9      65 .. 0.72
+   2 ?    4.3   0.4    0.0038        15     104     144 ..     243     282 ..     239     292 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.00067
+        copC  6 ssllvvlsigllllaassnsntatndeassktttaattavss 47
+                + ++ vl+++l l a+  ++++a+n +++s++t +at+ + +
+  KIE11181.1 14 TRTVSVLALTLSLAACGGGEQQAQNGNNTSENTGTATNTTAT 55
+                456677788888888888888888888888887777766544 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.0038
+        copC 104 nakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGey 144
+                 n  vtaqvq  +G    ++  y +++    a l +k aG++
+  KIE11181.1 243 NEGVTAQVQQTQGAIGYVEYGYAKQNDLKFASLQNK-AGQF 282
+                 778*******************98777666666655.4666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         7776  (2427444 residues searched)
+Passed MSV filter:                       257  (0.0330504); expected 155.5 (0.02)
+Passed bias filter:                      211  (0.0271348); expected 155.5 (0.02)
+Passed Vit filter:                        33  (0.00424383); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000257202); expected 0.1 (1e-05)
+Initial search space (Z):               7776  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8010.57
+//
+[ok]

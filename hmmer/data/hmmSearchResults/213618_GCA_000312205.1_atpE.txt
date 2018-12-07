@@ -1,0 +1,51 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/213618_GCA_000312205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                           Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                           -----------
+    4.5e-62  206.3   0.3      5e-62  206.1   0.3    1.0  1  lcl|HE973146.1_prot_CCI09551.1_692  [protein=ATP synthase epsilon ch
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|HE973146.1_prot_CCI09551.1_692  [protein=ATP synthase epsilon chain] [protein_id=CCI09551.1] [location=complement
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  206.1   0.3   1.1e-65     5e-62       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 206.1 bits;  conditional E-value: 1.1e-65
+                                atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveede 75 
+                                         m++tvrvi+pd+ vwd+ aeevilps+tgqlgilsghaplltal++gvmr+r+ k  dw+ ia+lggfaeve++e
+  lcl|HE973146.1_prot_CCI09551.1_692   1 MSITVRVITPDRIVWDNVAEEVILPSSTGQLGILSGHAPLLTALNIGVMRIRPGK--DWENIAVLGGFAEVENNE 73 
+                                         89**************************************************976..8***************** PP
+
+                                atpE  76 vtilvngaergdkinleearaafneaqtklnqvka.edrqaqiqatqafkrararfqaagglv 137
+                                         + +lvngae g ki+ e+ara++++aqt+l++v++ +dr++ iqa+q++++arar+qaagglv
+  lcl|HE973146.1_prot_CCI09551.1_692  74 IKVLVNGAELGSKIDKEKARAEYEQAQTRLDEVSKgDDRRKTIQAQQSWRKARARYQAAGGLV 136
+                                         *********************************87257999********************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4524  (1270395 residues searched)
+Passed MSV filter:                       155  (0.0342617); expected 90.5 (0.02)
+Passed bias filter:                      118  (0.0260831); expected 90.5 (0.02)
+Passed Vit filter:                        10  (0.00221043); expected 4.5 (0.001)
+Passed Fwd filter:                         1  (0.000221043); expected 0.0 (1e-05)
+Initial search space (Z):               4524  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5801.47
+//
+[ok]

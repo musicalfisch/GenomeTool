@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160279_GCA_000297435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.6e-127  418.9   0.2     4e-127  418.8   0.2    1.0  1  CCI32105.1  Adenylyl-sulfate kinase [Microcystis sp. T1-4]
+     0.0049   14.3   0.0     0.0077   13.7   0.0    1.3  1  CCI32816.1  Shikimate kinase [Microcystis sp. T1-4]
+
+
+Domain annotation for each sequence (and alignments):
+>> CCI32105.1  Adenylyl-sulfate kinase [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  418.8   0.2  1.8e-130    4e-127       1     184 []       1     184 []       1     184 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 418.8 bits;  conditional E-value: 1.8e-130
+        cyrM   1 miamkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevr 99 
+                 mi+mkqrgvtvwltglsgagkstiteal+akliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevr
+  CCI32105.1   1 MITMKQRGVTVWLTGLSGAGKSTITEALEAKLIAEGYSIEVLDGDIVRTNLTKGLGFSKEDRDENIRRIGFVSNLLTRHGVIVLVSAISPYREIREEVR 99 
+                 9************************************************************************************************** PP
+
+        cyrM 100 gkigsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqavav 184
+                 gkigsfvevfvnapl+vce rdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqavav
+  CCI32105.1 100 GKIGSFVEVFVNAPLNVCEARDVKGLYKRARAGEIKSFTGIDDPYEPPFNPEVECRTDLETLEESVAKVWNKLTELGYIHQAVAV 184
+                 ***********************************************************************************98 PP
+
+>> CCI32816.1  Shikimate kinase [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.0   3.5e-06    0.0077       7      41 ..      11      45 ..       8      70 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 3.5e-06
+        cyrM  7 rgvtvwltglsgagkstitealqakliaegysiev 41
+                rg++v+l g+ gagkst+ e l  +l    +  ++
+  CCI32816.1 11 RGLSVFLLGMMGAGKSTLGELLSRRLQYRFFDTDI 45
+                9*******************998888665555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4434  (1223634 residues searched)
+Passed MSV filter:                       163  (0.0367614); expected 88.7 (0.02)
+Passed bias filter:                      147  (0.0331529); expected 88.7 (0.02)
+Passed Vit filter:                        25  (0.00563825); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045106); expected 0.0 (1e-05)
+Initial search space (Z):               4434  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5628.72
+//
+[ok]

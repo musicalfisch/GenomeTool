@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986677_GCA_002170825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcE  [M=901]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.9e-12   40.4   0.0    3.3e-08   28.0   0.0    2.0  2  OUW29138.1  allophycocyanin [Cyanobacteria bacterium TMED177]
+    9.1e-10   33.2   0.0    1.1e-09   33.0   0.0    1.0  1  OUW29894.1  phycobilisome rod-core linker polypeptide CpcG, p
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW29138.1  allophycocyanin [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.8   0.0   7.8e-06    0.0055      24      77 ..       7      60 ..       2      66 .. 0.93
+   2 !   28.0   0.0   4.7e-11   3.3e-08     151     240 ..      72     161 ..      62     164 .] 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 7.8e-06
+        apcE 24 aitqaeqqdrfldkpelneliayfqsgskrldiaqtltrnsdlivsraanrift 77
+                 i qa+++ r+    el  ++ +++ g+ r+ + + lt n   iv  +a+++f+
+  OUW29138.1  7 LILQADEDLRYPTSGELRSIVDFLDQGAMRVSVVRVLTDNEKKIVDESAKQLFS 60
+                5889**********************************************9996 PP
+
+  == domain 2  score: 28.0 bits;  conditional E-value: 4.7e-11
+        apcE 151 rygpsnmqkslrdlswflryityaivagdtsil.ivntrglrevlena.csidativalqemraasieyfqrdkdaatlisdyfnillgelk 240
+                  yg  +  + lrd sw+lr ity ++ag t ++  +   g re+ +   + +   + a++ m+ as+  +  +     l s yf+ l+  ++
+  OUW29138.1  72 AYGQKQRAQCLRDYSWYLRLITYGVLAGSTEMIqEIGLVGAREMYNSLgVPMPGMVEAMKTMKEASLALLSDQ--QGKLASPYFDYLIQGMQ 161
+                 699999999*********************865257889999998764156778899**********988644..45789999999987666 PP
+
+>> OUW29894.1  phycobilisome rod-core linker polypeptide CpcG, partial [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   0.0   1.5e-12   1.1e-09     540     623 ..      48     130 ..      21     134 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 33.0 bits;  conditional E-value: 1.5e-12
+        apcE 540 esstqrvilaayrqvfgrmpyegqrlsvaeiklengditlrefiktlakseafrkiywtplyvvkaieyihrrllgrptygrqe 623
+                     + vi ++yrq+f +  ++ +r    e +l++g+it+r+fi+ l  s++f++ ++      k + ++  rllgr   g+ e
+  OUW29894.1  48 RDNLDTVIESSYRQIFFH-AFKTDRDVNLESQLKDGQITVRDFIRGLVLSDTFKRTFYGFNSNYKVVRHLCERLLGRKVNGKGE 130
+                 445567888888888875.57777877888888888888888888888888888888888888888888888888888888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (901 nodes)
+Target sequences:                         1406  (396538 residues searched)
+Passed MSV filter:                        29  (0.0206259); expected 28.1 (0.02)
+Passed bias filter:                       27  (0.0192034); expected 28.1 (0.02)
+Passed Vit filter:                         5  (0.00355619); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00142248); expected 0.0 (1e-05)
+Initial search space (Z):               1406  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 8932.02
+//
+[ok]

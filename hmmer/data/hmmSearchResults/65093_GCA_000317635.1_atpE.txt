@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-64  213.2   0.5    2.9e-64  213.1   0.5    1.0  1  AFZ44133.1  ATP synthase F1 subcomplex epsilon subunit [Halot
+  ------ inclusion threshold ------
+       0.69    7.9   6.9       0.54    8.2   4.1    1.9  2  AFZ42855.1  hypothetical protein PCC7418_0630 [Halothece sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ44133.1  ATP synthase F1 subcomplex epsilon subunit [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  213.1   0.5   1.6e-67   2.9e-64       1     136 [.       1     135 [.       1     136 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 213.1 bits;  conditional E-value: 1.6e-67
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m+ltvrvi+pd tvwd++aeevilpsttgqlgilsghapll+ald+gvmrvr++k  dw +i++ ggfaeveedevtilvn+aerg++i+ e+ar  ++
+  AFZ44133.1   1 MSLTVRVITPDNTVWDSSAEEVILPSTTGQLGILSGHAPLLSALDIGVMRVRPQK--DWLSISVAGGFAEVEEDEVTILVNSAERGENIDPEKAREIYE 97 
+                 89***************************************************87..8***************************************** PP
+
+        atpE 100 eaqtklnqvka.edrqaqiqatqafkrararfqaaggl 136
+                 +a+t+l+q ++ ++rq+ iqatqa+k+ar+r+qaa g 
+  AFZ44133.1  98 SAKTRLEQAQEaDQRQEIIQATQALKKARSRLQAATGK 135
+                 ********9862668999*****************995 PP
+
+>> AFZ42855.1  hypothetical protein PCC7418_0630 [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.2     0.071   1.3e+02      71     119 ..      45      74 ..      36      86 .. 0.62
+   2 ?    8.2   4.1   0.00029      0.54      89     135 ..     104     150 ..      65     152 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 0.071
+        atpE  71 veedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqa 119
+                 v+e+e+                    +f++a + +++++ e+r++  qa
+  AFZ42855.1  45 VDEEEIR-------------------NFANAFSVVQDIQRESREKMAQA 74 
+                 3444443...................45556666666666666555555 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.00029
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatqafkrararfqaagg 135
+                    ee r++f++a+++++++++e + a  qa      a  rfq  g 
+  AFZ42855.1 104 NVSEEKRQQFENADARIDEIEQEAQAAIEQAITDEGLAVERFQQIGM 150
+                 345899***************99999999999999999999998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                       159  (0.0428803); expected 74.2 (0.02)
+Passed bias filter:                      117  (0.0315534); expected 74.2 (0.02)
+Passed Vit filter:                        14  (0.00377562); expected 3.7 (0.001)
+Passed Fwd filter:                         4  (0.00107875); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 3236.10
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/721123_GCA_000312285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    5.5e-93  306.3  13.2    6.1e-93  306.2  13.2    1.0  1  lcl|CAIQ01000016.1_prot_CCI34879.1_4298  [gene=atpG] [locus_tag=MICAK_112
+     0.0087   13.9   0.5      0.025   12.4   0.2    2.0  2  lcl|HE974183.1_prot_CCI36851.1_2697      [protein=Genome sequencing data,
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|CAIQ01000016.1_prot_CCI34879.1_4298  [gene=atpG] [locus_tag=MICAK_1120008] [protein=ATP synthase subunit b'] [pro
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  306.2  13.2   2.7e-96   6.1e-93       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 306.2 bits;  conditional E-value: 2.7e-96
+                                     atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssar 70 
+                                              mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssar
+  lcl|CAIQ01000016.1_prot_CCI34879.1_4298   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTEGGAKEQLAKTEALVQEYELQLSSAR 70 
+                                              9********************************************************************* PP
+
+                                     atpG  71 kqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe 140
+                                              kqsqeiiaqaqaeaqklaservaaaqkeai+rkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe
+  lcl|CAIQ01000016.1_prot_CCI34879.1_4298  71 KQSQEIIAQAQAEAQKLASERVAAAQKEAISRKEAVAAEIAQQKEEAFRSLEGQVASLSRQILEKLLGPE 140
+                                              ********************************************************************** PP
+
+                                     atpG 141 lvr 143
+                                              lvr
+  lcl|CAIQ01000016.1_prot_CCI34879.1_4298 141 LVR 143
+                                              **8 PP
+
+>> lcl|HE974183.1_prot_CCI36851.1_2697  [protein=Genome sequencing data, contig C251] [protein_id=CCI36851.1] [location=
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.2   1.1e-05     0.025      97     143 .]     128     174 ..      89     174 .. 0.90
+   2 ?   -2.2   0.0      0.37   8.2e+02      42      60 ..     237     253 ..     225     259 .. 0.49
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.1e-05
+                                 atpG  97 keaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                                          + ai r++ +     qq+ee fr le  +  +   i  k++g+e +r
+  lcl|HE974183.1_prot_CCI36851.1_2697 128 RVAIERQQYILNLKHQQQEEEFRELEQLIKGVQTSITAKMFGSEAIR 174
+                                          678999999999999****************************9887 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.37
+                                 atpG  42 rqteggakeqlaktealvq 60 
+                                          rq +      lak++a v 
+  lcl|HE974183.1_prot_CCI36851.1_2697 237 RQKNQD--VTLAKAQAYVS 253
+                                          333222..23555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4489  (1239482 residues searched)
+Passed MSV filter:                       167  (0.037202); expected 89.8 (0.02)
+Passed bias filter:                       98  (0.0218311); expected 89.8 (0.02)
+Passed Vit filter:                        15  (0.0033415); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000445534); expected 0.0 (1e-05)
+Initial search space (Z):               4489  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 5908.20
+//
+[ok]

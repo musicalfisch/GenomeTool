@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/411966_GCA_002142475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusC  [M=456]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-09   35.9   7.0    0.00017   19.2   0.2    2.3  2  BAS56453.1  outer membrane efflux protein [Leptolyngbya borya
+
+
+Domain annotation for each sequence (and alignments):
+>> BAS56453.1  outer membrane efflux protein [Leptolyngbya boryana IAM M-101]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.2   0.2   2.7e-08   0.00017     317     423 ..     275     381 ..     257     391 .. 0.92
+   2 !   19.1   2.0   2.8e-08   0.00018     255     432 ..     421     599 ..     414     602 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 19.2 bits;  conditional E-value: 2.7e-08
+        cusC 317 kiplieggrrkaeideaksklkqsellykdlkstislevddayynlmtqqsvlgkiqdqlklakdnyekiseqfkegfansidivdannflvsteqqli 415
+                 +  +   g r a+i+ a  + + +el   + +  + l+v + yynl   +s +   +  ++ a  n      q   g+    d + a+  l  ++qql 
+  BAS56453.1 275 NYDIFTSGLRPAQIEAAERRSRTAELQLEQTREELRLQVSNDYYNLQNADSQVAINEAAVRNAEANLRDSRAQETAGLGTRFDTLRAEVNLANAQQQLR 373
+                 556678899*********************************************9999***************************************** PP
+
+        cusC 416 naqydyqi 423
+                 n+q   +i
+  BAS56453.1 374 NSQATQEI 381
+                 **987666 PP
+
+  == domain 2  score: 19.1 bits;  conditional E-value: 2.8e-08
+        cusC 255 avtnrtelksfdlqtqiakdqvrfvkstylpdvsleaaytgn.dtspstsfnnkdviygqislkiplieggrrkaeideaksklkqsellykdlkstis 352
+                 a  nr+el    +q +i++ q+r  ++     + + a+y      +  t  nn d     +  +  l +gg  +a+i +       +e  + + +  i 
+  BAS56453.1 421 AYKNRAELEEQLVQREISQAQIRAARAQNGVTLGFVASYDFSrSGTIDTDANNSDNYSLGLQARWNLFDGGATNAQISQRERDREIAEARFAQNRNQIR 519
+                 668*************************99999999**9865145678999****99999999************************************ PP
+
+        cusC 353 levddayynlmtqqsvlgkiqdqlklakdnyekiseqfkegfansidivdannflvsteqqlinaqydyqigililkrat 432
+                 ++v++a+ nl ++ + +   q+ +  a +       +f+ g+    d + a+  l  ++ + + a   y+  +  l+ra 
+  BAS56453.1 520 FQVEQAFANLQANFANINTTQQSVAQAEEALRLAILRFQAGVGTQTDRISAEAALTQAQGNRVSAIIGYNQALAQLRRAV 599
+                 ********************************999**********************************99999999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (456 nodes)
+Target sequences:                         6348  (1955891 residues searched)
+Passed MSV filter:                       169  (0.0266226); expected 127.0 (0.02)
+Passed bias filter:                      121  (0.0190611); expected 127.0 (0.02)
+Passed Vit filter:                         7  (0.00110271); expected 6.3 (0.001)
+Passed Fwd filter:                         1  (0.00015753); expected 0.1 (1e-05)
+Initial search space (Z):               6348  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 12741.23
+//
+[ok]

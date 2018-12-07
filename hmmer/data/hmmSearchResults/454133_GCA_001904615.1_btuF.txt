@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.8e-99  329.0   0.1    6.4e-99  328.6   0.1    1.0  1  OKH15131.1  iron ABC transporter substrate-binding protein [L
+     0.0064   13.3   0.0      0.012   12.4   0.0    1.5  2  OKH13165.1  cobalamin-binding protein [Limnothrix rosea IAM M
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH15131.1  iron ABC transporter substrate-binding protein [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  328.6   0.1  3.6e-102   6.4e-99      16     302 ..      12     293 ..       4     296 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 328.6 bits;  conditional E-value: 3.6e-102
+        btuF  16 iiltacnttntqqsqaqatqsitisntpsqelaklsakrvvtlsslttdiifqldktklvgisgsslfkndprfqdiprisegqsppnlekivalkpdl 114
+                  +l a +   +q ++a++  + ++++t++      +  +vv+l+sl++di+++ld+  lvg+sgs l+ +dp+f d+p++seg++ppnlekival+pdl
+  OKH15131.1  12 FLLFALTVGCAQAPNANIPVTNETAETTATAENPATKTKVVALTSLSADILHRLDEDSLVGVSGSRLLAQDPKFSDLPKVSEGRTPPNLEKIVALQPDL 110
+                 4566777777889999998888887777666666666779*********************************************************** PP
+
+        btuF 115 vigaegfsnqviqrlqqlgiatlltqvntwksleeltaklaqlidvnpqslleryrsfladkvgtntstlvlvssqpilapnknswagdllekfkvknl 213
+                 viga gf +q++++l+++gi t+   v +w+sleelt+ la+ i ++p++ll  y sfl+ ++  + s +vlvs qpi+apn++swagdll++f v+nl
+  OKH15131.1 111 VIGAVGFHDQILEKLDEVGIETMAVAVPDWRSLEELTRTLAEKIGADPEPLLTEYASFLPAEPQATDSAIVLVSNQPIMAPNRDSWAGDLLQQFAVNNL 209
+                 *************************************************************************************************** PP
+
+        btuF 214 aaelqgkspiagyvtlsaekvleanpeavvlitppqggsktevldsfkkesfwqklpatknnrvyvfdyyglvnpgsidaiekaceqlk 302
+                  aelqg+sp  gy+tls ek+leanpe+++l+         + l+ +k + fw  l+a kn+rvy fdyyglvnpgsi ai+ a ++l+
+  OKH15131.1 210 VAELQGNSPQQGYITLSPEKILEANPEMLLLVDVG-----DDSLEQLKSAPFWSELDAVKNDRVYTFDYYGLVNPGSIAAIQTASQKLQ 293
+                 *******************************9764.....356899999************************************9986 PP
+
+>> OKH13165.1  cobalamin-binding protein [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0      0.27   4.8e+02     145     171 ..     110     136 ..      95     160 .. 0.68
+   2 !   12.4   0.0     7e-06     0.012     234     299 ..     221     291 ..     186     299 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.27
+        btuF 145 ksleeltaklaqlidvnpqslleryrs 171
+                 k++e ++    ++i  +p++l e y  
+  OKH13165.1 110 KAVEAIADADIKIISLQPNTLAEVYAD 136
+                 556666666666666666666666654 PP
+
+  == domain 2  score: 12.4 bits;  conditional E-value: 7e-06
+        btuF 234 vleanpeavvlitppqg..gsktevldsfkkesfwqklpatknnrvyvfd...yyglvnpgsidaiekace 299
+                 + +a+p++vv++        ++ e+l+ + ++  w++l+a kn+ +y+ d   y+    p  +d++e   e
+  OKH13165.1 221 LRDADPDMVVVMPCGFDlaRTRQEMLADLAQHPQWRQLRAVKNDHLYICDgnaYFNRPGPRLVDSLEILAE 291
+                 558999999988765541156679************************98333444444556777766555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       109  (0.0307736); expected 70.8 (0.02)
+Passed bias filter:                       82  (0.0231508); expected 70.8 (0.02)
+Passed Vit filter:                        11  (0.00310559); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8595.75
+//
+[ok]

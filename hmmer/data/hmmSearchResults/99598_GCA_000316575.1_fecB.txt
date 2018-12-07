@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.4e-09   34.3   0.1    9.6e-09   33.2   0.1    1.9  1  AFY33447.1  ABC-type transporter, periplasmic subunit [Caloth
+  ------ inclusion threshold ------
+      0.037   11.5   0.0      0.071   10.6   0.0    1.5  1  AFY30576.1  serine/threonine protein kinase with WD40 repeats
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY33447.1  ABC-type transporter, periplasmic subunit [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.1   3.2e-12   9.6e-09      32     311 ..      30     303 ..       3     307 .] 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 3.2e-12
+        fecB  32 qsnltqrtiahamgvtavpne.pqrivvltneatdmvlalgvtpvgavkswsgdpyyeylakdmlgvpivgd.emqpnlekivalqpdliigsrlrqgq 128
+                 qs++++   +  +     p+e  +r+v l+  ++d++  l  t +  +   sg   ++   k +  +p v + +  pnlekival+pdl+ig+     q
+  AFY33447.1  30 QSKIANSNESSKINSQQTPKEsAKRVVALSSLSADIISQLDQTKLVGI---SGSRLFKDDPK-FKDIPRVSEgQSPPNLEKIVALKPDLVIGAEGFSNQ 124
+                 444555555555556667776257899999999999999998875333...44444433322.33466666515679*****************99999 PP
+
+        fecB 129 iykslsaiaptvfsetigeswqdnlrlygq.aldreaeaeqllndwdtrvaqmrqklsakdltislvrfmprgariylqnsfpgqilqavgler..pas 224
+                   + l  +  + f   + + w+    l  + a   +a+ + lln ++t +    +k +    t+ lv   p  a    +ns+ g++l     +      
+  AFY33447.1 125 PIQKLQQLGISTFLTQV-KKWESLEELTKKlAKLIDADPQALLNRYQTFLP---DKPTQSPSTLVLVSRQPILAP--NKNSWAGDLLTKFQAKNlvAEL 217
+                 99999999988887665.45654333332212334577788******9865...566667778889988887765..69*******9776655411345 PP
+
+        fecB 225 qanhgfaehvsfeqipqmeadalfyfiytgdsgdqtpgsitnpwlnhplwqqlevvqsgkayavsdvvwttaggiqaahlllddler 311
+                 q n  +  +v++     +ea+  + ++     g      + + + +  +wqql+  +  + ya        ag i+a     ++l++
+  AFY33447.1 218 QGNNPIGGYVTLSAEKVLEANPEVIIVVQPPQGGS-ETELLESFKKEAFWQQLQATKNNRVYAFDYYGLVNAGSIDAIEKACQNLKQ 303
+                 99999*****9999999999987777666655543.34688999*******************************998877777766 PP
+
+>> AFY30576.1  serine/threonine protein kinase with WD40 repeats [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   2.4e-05     0.071     234     295 ..     164     227 ..     135     277 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.4e-05
+        fecB 234 vsfeqipqmeadalfyfiytgdsgdqtpgsitnp..wlnhplwqqlevvqsgkayavsdvvwtt 295
+                 +  e+i +  +d  + +i  g s + t   itnp   +  p +  le +q gkay  sd+    
+  AFY30576.1 164 IKPENIIRRSTDGKLVLIDFGISKQLTMTVITNPgtTIGSPGYAPLEQIQDGKAYPASDLYSVG 227
+                 55678888899999999*****************444679*******************86554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       175  (0.0294118); expected 119.0 (0.02)
+Passed bias filter:                      145  (0.0243697); expected 119.0 (0.02)
+Passed Vit filter:                         9  (0.00151261); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9732.10
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1752063_GCA_001548455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.3e-198  656.6   8.0   1.5e-198  656.5   8.0    1.0  1  BAU07530.1  ATP synthase F1, gamma subunit [Fischerella sp. N
+  ------ inclusion threshold ------
+      0.021   12.0   0.0       0.03   11.5   0.0    1.2  1  BAU07744.1  hypothetical protein FIS3754_36790 [Fischerella s
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU07530.1  ATP synthase F1, gamma subunit [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  656.5   8.0  5.9e-202  1.5e-198       1     315 []      26     340 .]      26     340 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 656.5 bits;  conditional E-value: 5.9e-202
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 manlkairdriqsvkntkkiteamrlvaaarvrraqeqv+atrpfadrlaqvlyglq+rlrfed++lpll+krevksvg+lvisgdrglcggyn+nvi+
+  BAU07530.1  26 MANLKAIRDRIQSVKNTKKITEAMRLVAAARVRRAQEQVLATRPFADRLAQVLYGLQARLRFEDANLPLLRKREVKSVGILVISGDRGLCGGYNTNVIK 124
+                 9************************************************************************************************** PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgl 198
+                 rae+r+kelkaeg++yk+vlvgrkatqyfqrr+qpida+y+gleqiptaaeas+ia+ellslflse+vdr+el+yt+fvslvssrpvvqtllpld+qgl
+  BAU07530.1 125 RAETRIKELKAEGINYKLVLVGRKATQYFQRRNQPIDAVYTGLEQIPTAAEASNIANELLSLFLSESVDRVELIYTRFVSLVSSRPVVQTLLPLDPQGL 223
+                 *************************************************************************************************** PP
+
+        atpC 199 eaaddeifrlttrggqfeverekvtsevralprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkarq 297
+                 e+addeifrlttrggqfever+kvt+++r+lprdmifeqdp qildsll+lyl+nqllralqes+aselaarmtamsnasdna+eli++ltlsynkarq
+  BAU07530.1 224 ETADDEIFRLTTRGGQFEVERQKVTTQTRPLPRDMIFEQDPTQILDSLLSLYLTNQLLRALQESSASELAARMTAMSNASDNAGELISNLTLSYNKARQ 322
+                 *************************************************************************************************** PP
+
+        atpC 298 aaitqellevvggaealk 315
+                 aaitqe+levvggaeal+
+  BAU07530.1 323 AAITQEILEVVGGAEALT 340
+                 ****************96 PP
+
+>> BAU07744.1  hypothetical protein FIS3754_36790 [Fischerella sp. NIES-3754]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.2e-05      0.03     173     227 ..      21      74 ..      15      90 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.2e-05
+        atpC 173 vytkfvslvssrpvvqtllpldaqgleaaddeifrlttrggqfeverekvtsevr 227
+                 v   +vs++s   v   l+ +++q l++a+dei+r   r +q e +++k++ +v 
+  BAU07744.1  21 VTIFIVSILSIIVVPHWLVFIESQRLNVAQDEIYRA-MRQAQNEATKQKLSWQVS 74 
+                 33344677777777788999***************5.688999******998886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         4939  (1543483 residues searched)
+Passed MSV filter:                       142  (0.0287508); expected 98.8 (0.02)
+Passed bias filter:                       98  (0.0198421); expected 98.8 (0.02)
+Passed Vit filter:                         8  (0.00161976); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.00040494); expected 0.0 (1e-05)
+Initial search space (Z):               4939  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 9723.94
+//
+[ok]

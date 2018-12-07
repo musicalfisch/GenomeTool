@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173026_GCA_000317555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      4e-47  158.7   0.0      5e-47  158.3   0.0    1.0  1  AFZ28989.1  Oleoyl-(acyl-carrier-protein) hydrolase [Gloeocap
+     0.0036   14.6   0.0     0.0068   13.7   0.0    1.4  1  AFZ29896.1  Thioesterase [Gloeocapsa sp. PCC 7428]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ28989.1  Oleoyl-(acyl-carrier-protein) hydrolase [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  158.3   0.0     2e-50     5e-47      24     239 ..      16     231 ..       8     243 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 158.3 bits;  conditional E-value: 2e-50
+        anaA  24 lslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgcfpqclv 122
+                 + lfcfp ag g+l fr w   +pd +++ a+ +pgr   +  p  t+   l+e +  +i p+ + pf ffghs+g++vs+e+++ l   +g  p  l 
+  AFZ28989.1  16 MRLFCFPYAGGGTLSFRSWGKNLPD-LEVCAIELPGRGRLMTLPPFTQLEPLVEAIAVNILPHLNKPFAFFGHSMGAIVSFELTRILRKNYGIEPLHLF 113
+                 689*********************9.799********************************************************************** PP
+
+        anaA 123 vsgrkpphipcdhrdsqas.dedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleelrewekytqr 220
+                 vsgr+ p+i  +    ++  + +++ +lr   gtpeavl + elm ++ pi rad+ + e y y  e  l cpi a+gg  d   +l el  w++ t  
+  AFZ28989.1 114 VSGRRAPQISSEASFIHTLpEPEFLIKLRHLNGTPEAVLANAELMELLSPILRADFAVVETYVYTKESPLNCPITAFGGLQDPETNLTELEAWQQQTIA 212
+                 **********99887665414577889************************************************************************ PP
+
+        anaA 221 gfklrsfpgghmylteeke 239
+                  f +  fpg h++l   ++
+  AFZ28989.1 213 AFSVEMFPGDHFFLHSAED 231
+                 *************976544 PP
+
+>> AFZ29896.1  Thioesterase [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   0.0   2.7e-06    0.0068      22     112 ..     121     210 ..     105     221 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 2.7e-06
+        anaA  22 nklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypys.qspfvffghslgsvvslevahqlgd 112
+                  k  lfc+   ga  l f+d    +     ++ ++  g +  +  pl  r  d+    ++ei     + p+ + g+s g vv++e+a+ql  
+  AFZ29896.1 121 SKPPLFCMHGNGAHVLAFQDLAQYLGADQPFYGLQARGVD-GVTTPL-NRIEDMAAAYIEEIRAVQpEGPYYLAGFSSGGVVAFEMARQLHA 210
+                 56789**********************99***99999976.577786.79************9865279********************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5011  (1616692 residues searched)
+Passed MSV filter:                       138  (0.0275394); expected 100.2 (0.02)
+Passed bias filter:                      135  (0.0269407); expected 100.2 (0.02)
+Passed Vit filter:                        13  (0.00259429); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000399122); expected 0.1 (1e-05)
+Initial search space (Z):               5011  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8180.46
+//
+[ok]

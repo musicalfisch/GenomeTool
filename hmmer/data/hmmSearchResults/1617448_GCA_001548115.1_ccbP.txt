@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccbP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1617448_GCA_001548115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccbP  [M=126]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-38  129.0   6.6    4.1e-38  128.4   6.6    1.3  1  BAQ63927.1  hypothetical protein GM3709_692 [Geminocystis sp.
+  ------ inclusion threshold ------
+       0.42    8.8   8.0        0.5    8.5   0.1    3.3  4  BAQ66969.1  hypothetical protein GM3709_3734 (plasmid) [Gemin
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ63927.1  hypothetical protein GM3709_692 [Geminocystis sp. NIES-3709]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.4   6.6   2.1e-41   4.1e-38       1     126 []       1     115 []       1     115 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 128.4 bits;  conditional E-value: 2.1e-41
+        ccbP   1 masverdetrehrieteiivdaedkedramgwyyylddtlnfpflakwkkksrktstieekevevlgmapddeclkdmyvevadingkdddvysaklse 99 
+                 m+ + +d tre+ri+ +i+vda d e+r mgwyyyl+d lnfpf akw +        ++++v v+ ++p+d+cl +m+vev +    ddd +s +l +
+  BAQ63927.1   1 MSRIPEDSTREERIDFQIVVDAYDDEERRMGWYYYLQDNLNFPFSAKWLNG-------KDRDVTVVDLSPEDDCLDNMFVEVEY----DDDQFSVQLED 88 
+                 788999******************************************863.......578999******************87....99********* PP
+
+        ccbP 100 ieaidadeetqeaiadwlywlargykf 126
+                 ie+id+de tq ai dw+yw+ rgy f
+  BAQ63927.1  89 IEPIDVDEVTQTAIDDWKYWVERGYEF 115
+                 *************************98 PP
+
+>> BAQ66969.1  hypothetical protein GM3709_3734 (plasmid) [Geminocystis sp. NIES-3709]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   0.1   0.00025       0.5      71     117 ..      48      94 ..      33      99 .. 0.84
+   2 ?   -3.8   0.1       1.6   3.2e+03      47      62 ..     175     190 ..     173     192 .. 0.83
+   3 ?    0.4   0.2     0.085   1.7e+02      31     104 ..     211     287 ..     195     300 .. 0.64
+   4 ?    2.8   0.1     0.015        30      12      56 ..     339     387 ..     332     394 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.00025
+        ccbP  71 ddeclkdmyvevadingkdddvysaklseieaidadeetqeaiadwl 117
+                 dd+   + + +  + + k+dd+y+     + +id ++  +eai++ +
+  BAQ66969.1  48 DDNSDPNKFDNYEYFGSKNDDIYCNGAVTLDVIDQEQSKKEAISNLN 94 
+                 55555666777789999**************************9865 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 1.6
+        ccbP  47 kwkkksrktstieeke 62 
+                 +wkkk+  +  i+ek 
+  BAQ66969.1 175 NWKKKAVESFNINEKI 190
+                 5999999999999985 PP
+
+  == domain 3  score: 0.4 bits;  conditional E-value: 0.085
+        ccbP  31 gwyyylddtlnfpflakwkkks.rktstieekevevlgmapddeclk..dmyvevadingkdddvysaklseieaid 104
+                   +yy+ + l +  + k+  k   k   i++k v     + d + lk  d  + + +in kd+++  +    ie id
+  BAQ66969.1 211 NIFYYVSKYLAIYQFYKFVWKHyGKLIDIRKKLVLKSFSTNDRKDLKelDSILRLDEINTKDNQIIYSLKEFIENID 287
+                 46888888888777777665541455555555554444455556677334578889999999987554445566666 PP
+
+  == domain 4  score: 2.8 bits;  conditional E-value: 0.015
+        ccbP  12 hrieteiivdaedkedramgwyy.yldd..tln.fpflakwkkksrkts 56 
+                  ri+ +i+ +a+  e+    +y  ++ +  tl  + f++k ++k+ kt+
+  BAQ66969.1 339 YRIRNKIVHNANTEENTLSEYYSdFISQasTLTiIQFMTKRQNKNLKTT 387
+                 5899999998887776655555344554115542579999999988876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (126 nodes)
+Target sequences:                         3937  (1232454 residues searched)
+Passed MSV filter:                       125  (0.0317501); expected 78.7 (0.02)
+Passed bias filter:                      100  (0.0254001); expected 78.7 (0.02)
+Passed Vit filter:                        11  (0.00279401); expected 3.9 (0.001)
+Passed Fwd filter:                         2  (0.000508001); expected 0.0 (1e-05)
+Initial search space (Z):               3937  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 7764.46
+//
+[ok]

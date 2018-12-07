@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165094_GCA_000350105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-40  136.3  12.9    5.9e-37  124.2   7.5    2.1  2  CCH68041.1  Carboxysome protein CcmN [Richelia intracellulari
+     0.0011   15.4   1.2      0.003   14.0   1.2    1.6  1  CCH68040.1  Carboxysome protein CcmM [Richelia intracellulari
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH68041.1  Carboxysome protein CcmN [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  124.2   7.5   5.2e-40   5.9e-37       1     124 [.       1     123 [.       1     140 [. 0.94
+   2 !   15.6   0.3   8.2e-07   0.00093     145     219 ..     180     257 ..     134     259 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 124.2 bits;  conditional E-value: 5.2e-40
+        ccmN   1 mslppvqpisrsefyvngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstttifnas 99 
+                 m++pp+   s  + y+ g+v ++ sa++apgvil+a p+ +iiig g c+gmgtil   qg + i ag  lg+g l+vg g+ig+nacigs+tt+f +s
+  CCH68041.1   1 MAVPPLHLGSNFDSYISGEVIVHPSAVLAPGVILQAGPDGKIIIGLGVCVGMGTILQVDQGTLEIEAGVNLGAGFLMVGAGKIGKNACIGSATTVFHCS 99 
+                 889************************************************************************************************ PP
+
+        ccmN 100 vaamslvpsgsligdtsrqitievs 124
+                 v    +v  gs++gd sr +t   s
+  CCH68041.1 100 VEQGKIVVPGSILGDKSRVVTTS-S 123
+                 ******************99854.2 PP
+
+  == domain 2  score: 15.6 bits;  conditional E-value: 8.2e-07
+        ccmN 145 vspvpsveevvaetvaspwdgeemvaeaspaetreqasttnrpnq...asvvgkvyinqllvtlfperhrfngnnnln 219
+                 +     ve+   e  + p   e  + ++ p +   +     rp +   + + g+  i+qll+tlfp r+ +n  n  n
+  CCH68041.1 180 LKESTDVEDYNNEHNCCPTVDETEIPKSQPNKYSTNEENLSRPAEdatTHIYGQGSIQQLLITLFPHRQSLNKPNSEN 257
+                 5556677777788888888777778888877766666666666541115689*******************9988765 PP
+
+>> CCH68040.1  Carboxysome protein CcmM [Richelia intracellularis HH01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   1.2   2.6e-06     0.003      16     113 ..      33     141 ..      21     145 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 2.6e-06
+        ccmN  16 vngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqg..via.........igagailgtgvlvvgrgeigenacigstttifnasvaam 103
+                 + gdv +    i++pg  +ra   +   ig  + +  g ++   +   vi          ig    +    l+ g   +g+++ ig  +t+fna + a 
+  CCH68040.1  33 IIGDVVVSPNVIISPGTSIRADEGTPFYIGENTNIQDGVVIHGLEQdrVIGddkrdysvwIGNNVCITHMALIHGPAYVGNDCFIGFRSTVFNAKIGAG 131
+                 669*****************************999999998765431243222222222277777888888999************************9 PP
+
+        ccmN 104 slvpsgslig 113
+                  ++   +li 
+  CCH68040.1 132 CIIMMHALIE 141
+                 9999888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2278  (598795 residues searched)
+Passed MSV filter:                        64  (0.0280948); expected 45.6 (0.02)
+Passed bias filter:                       50  (0.0219491); expected 45.6 (0.02)
+Passed Vit filter:                         6  (0.00263389); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000877963); expected 0.0 (1e-05)
+Initial search space (Z):               2278  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 4391.16
+//
+[ok]

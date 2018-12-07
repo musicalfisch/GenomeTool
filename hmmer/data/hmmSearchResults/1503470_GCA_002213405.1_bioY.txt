@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1503470_GCA_002213405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-22   80.6  18.2    2.3e-22   79.5  18.2    1.4  1  OWY70554.1  hypothetical protein B7486_13110 [cyanobacterium 
+    1.1e-11   44.7  15.1    1.4e-11   44.3  15.1    1.0  1  OWY68023.1  biotin transporter BioY [cyanobacterium TDX16]
+
+
+Domain annotation for each sequence (and alignments):
+>> OWY70554.1  hypothetical protein B7486_13110 [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.5  18.2   3.1e-26   2.3e-22      17     197 ..      19     190 ..      10     198 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 79.5 bits;  conditional E-value: 3.1e-26
+        bioY  17 dalrvldsmlvlvasLLlillaqliiallflPvaitGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGg..tGaalLldPlaa 113
+                 +a   +d +lvl++sLL+++ a+++   +  Pv++t q ++vllv++ +g++ + l+++ ylle+           s+L+v+  +  +Gaa+L+ P a+
+  OWY70554.1  19 EATVLRDIVLVLAGSLLVAACAKVQA--PTWPVPMTLQPFAVLLVGAALGSRRGGLAIIAYLLEGA----------SGLPVFASApyGGAAYLMGPTAG 105
+                 67788999**************9975..567888999************99988777776666655..........5555554432389********** PP
+
+        bioY 114 yLaGflveaWvvdRlarkraasdllnlvLisllGlvvlqvclaenlll.tsllavltdGvlPllmtdlLkplLaalLLptavatl 197
+                 yL Gf+++a+vv+ la +r     ++   +  +G  ++  c+   + +  +  a ++ Gv P++++d Lk  Laa+ Lp a++ +
+  OWY70554.1 106 YLLGFVPAAYVVGLLAERRWDRRFVSTLAAMAIGQSIILACGFAWMAVsVGAKAAFATGVAPFIVGDILKIALAAVALPGAWRII 190
+                 ****************99988888777777889*9999999976655415778999**************************986 PP
+
+>> OWY68023.1  biotin transporter BioY [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.3  15.1   1.8e-15   1.4e-11      45     198 ..      28     186 ..       4     192 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 44.3 bits;  conditional E-value: 1.8e-15
+        bioY  45 lflPvai..tGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRlarkraasdllnlv 141
+                    Pv+    G     l vt q+ga Ll+  l +   + L  +ayl lGl  L+ +  g+G  +     ++y+ Gf++ aWv + la ++ a +l +l 
+  OWY68023.1  28 TSAPVSWheRGIQTISLGVTCQIGAVLLVGCLGGKSAAALSQIAYLLLGLVWLPIFAQGGGFGYWRELNFGYVLGFIPGAWVCGLLAFRQDAMKLESLA 126
+                 3334433114555557899******************************************************************************** PP
+
+        bioY 142 LisllGlvvlqvclaenllltsl...lavltdGvlPllmtdlLkplLaalLLptavatla 198
+                    l Gl ++  c+   ll++ +   ++  ++ ++  +  ++  pl  +l + +ava +a
+  OWY68023.1 127 GSCLGGLLIIHLCGLVYLLPSQIfhwASTQAQSIIQPILQYSWYPLPGQLAVVCAVAVIA 186
+                 ********************99844356677889988999****************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                        15006  (4208708 residues searched)
+Passed MSV filter:                       917  (0.0611089); expected 300.1 (0.02)
+Passed bias filter:                      276  (0.0183926); expected 300.1 (0.02)
+Passed Vit filter:                        22  (0.00146608); expected 15.0 (0.001)
+Passed Fwd filter:                         2  (0.00013328); expected 0.2 (1e-05)
+Initial search space (Z):              15006  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.11
+# Mc/sec: 7996.55
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74547_GCA_000011485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcB  [M=172]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-54  182.3   5.5    1.4e-54  182.0   5.5    1.1  1  CAE21858.1  Phycobilisome protein (phycoerythrin beta-subunit
+    1.2e-12   45.6   1.4    3.8e-12   43.9   1.4    1.7  1  CAE21857.1  Phycobilisome protein (phycoerythrin, alpha-subun
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE21858.1  Phycobilisome protein (phycoerythrin beta-subunit) [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  182.0   5.5   9.7e-58   1.4e-54       1     170 [.       1     179 [.       1     181 [] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 182.0 bits;  conditional E-value: 9.7e-58
+        cpcB   1 mldaftkvvsqadargeflsssqldalsalvadsnkrldavnritsnastivanaaralfaeqpqliapggnaytsrrmaaclrdmeiilryvtyaila 99 
+                 mldaf++ v  ada+g  l s++l +l + vad+n r+da n i+   s i a+a   +  e++ + +pggn+y +rrmaaclrd eiilryv+ya+la
+  CAE21858.1   1 MLDAFSRAVVGADAKGACLGSADLASLRQHVADANIRIDATNAIAQHISCIAADAVSGMVCENTGMTQPGGNCYPTRRMAACLRDGEIILRYVSYALLA 99 
+                 9************************************************************************************************** PP
+
+        cpcB 100 gdasvlddrclnglretylalgvpgasvaagvqkmkeaalaiandrn.......git.kg.dcsallseiasyfdraaaa 170
+                 gdasvlddrclngl+ety algvp      +v+ mk a++ai++++n       gi+ kg dc  +++e asyfdr  ++
+  CAE21858.1 100 GDASVLDDRCLNGLKETYDALGVPIKNAVRAVEIMKAATVAIITNTNsgpsafqGISgKGsDCQGIAAEAASYFDRVISS 179
+                 *****************************************998876333333345433359**************9876 PP
+
+>> CAE21857.1  Phycobilisome protein (phycoerythrin, alpha-subunit) [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   43.9   1.4   2.7e-15   3.8e-12       1     136 [.       1     127 [.       1     145 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 43.9 bits;  conditional E-value: 2.7e-15
+        cpcB   1 mldaftkvvsqadargeflsssqldalsalvadsnkrldavnritsnastivanaaralfaeqpqliapggnaytsrrmaaclrdmeiilryvtyaila 99 
+                 m  a t v++ ada g f   s+l+a++     ++ r++a ++++s   ++ a+a +a++++           y       c rd++  lr + y+++a
+  CAE21857.1   1 MKSAVTTVITAADAAGRFPDISDLKAVKVSFDRAAARMEAAEKLASGIDNVTADALKAVYSDGK---------YDLATRDKCARDINHYLRLINYCLIA 90 
+                 56799*****************************************************998744.........444445679***************** PP
+
+        cpcB 100 gdasvlddrclnglretylalgvpgasvaagvqkmke 136
+                 g +  ld+  + g+re + +lg+p ++   + + ++e
+  CAE21857.1  91 GSTGPLDEWGIAGVREVFRTLGIPTSAYIEAFSYIRE 127
+                 ************************9998777766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (172 nodes)
+Target sequences:                         2850  (689451 residues searched)
+Passed MSV filter:                        58  (0.0203509); expected 57.0 (0.02)
+Passed bias filter:                       46  (0.0161404); expected 57.0 (0.02)
+Passed Vit filter:                         4  (0.00140351); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000701754); expected 0.0 (1e-05)
+Initial search space (Z):               2850  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5929.28
+//
+[ok]

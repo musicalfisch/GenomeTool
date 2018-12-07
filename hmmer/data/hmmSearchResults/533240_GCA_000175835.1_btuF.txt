@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533240_GCA_000175835.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-11   40.7   0.7    3.3e-11   40.5   0.1    1.4  2  EFA69701.1  ABC transporter-like protein [Cylindrospermopsis 
+  ------ inclusion threshold ------
+      0.028   11.2   0.0      0.046   10.5   0.0    1.3  1  EFA70117.1  putative iron transport system substrate-binding 
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA69701.1  ABC transporter-like protein [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.1      0.39   6.8e+02     127     142 ..      45      60 ..      42      64 .. 0.77
+   2 !   40.5   0.1   1.9e-14   3.3e-11     271     305 ..      77     111 ..      72     113 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 0.39
+        btuF 127 qrlqqlgiatlltqvn 142
+                 +  qq+ ia  ltq++
+  EFA69701.1  45 EDQQQVSIALELTQLK 60 
+                 5668999999999876 PP
+
+  == domain 2  score: 40.5 bits;  conditional E-value: 1.9e-14
+        btuF 271 atknnrvyvfdyyglvnpgsidaiekaceqlkkdl 305
+                   +nnr+yv dyyg++n gsid+i+k+ce+lk+ l
+  EFA69701.1  77 RVQNNRIYVVDYYGFINAGSIDSIQKSCEKLKQIL 111
+                 578*****************************976 PP
+
+>> EFA70117.1  putative iron transport system substrate-binding protein [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   2.7e-05     0.046     232     305 ..     217     294 ..     208     296 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2.7e-05
+        btuF 232 ekvleanpeavvlitppqggsktevlds.fkkesfwqklpatknnrvyvfd...yyglvnpgsidaiekaceqlkkdl 305
+                 e ++ +np++++++       kt+  +  + ++  w kl+a k  rv+v d   y+    p  +d++e   e l+ d+
+  EFA70117.1 217 ETLVATNPDVIIFMPCGFNLEKTQREAKlLTQHPDWGKLHAVKTGRVFVTDgnaYFNRPGPRLVDSVEILAEILHPDI 294
+                 778899****9999888888999876651577889**************98333555555667899988888777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         3449  (1092535 residues searched)
+Passed MSV filter:                       116  (0.0336329); expected 69.0 (0.02)
+Passed bias filter:                       82  (0.023775); expected 69.0 (0.02)
+Passed Vit filter:                         7  (0.00202957); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000579878); expected 0.0 (1e-05)
+Initial search space (Z):               3449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 11180.27
+//
+[ok]

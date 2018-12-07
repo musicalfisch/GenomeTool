@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.4e-83  275.1   1.2    3.8e-83  275.0   1.2    1.0  1  BAB76737.1  ATP synthase epsilon subunit [Nostoc sp. PCC 7120
+  ------ inclusion threshold ------
+        2.4    6.8  16.5        2.2    6.9   3.8    3.4  3  BAB72766.1  all0809 [Nostoc sp. PCC 7120]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB76737.1  ATP synthase epsilon subunit [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  275.0   1.2   1.2e-86   3.8e-83       1     136 [.       1     136 [.       1     137 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 275.0 bits;  conditional E-value: 1.2e-86
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvispdktvwdaea+evilpsttgqlgilsghaplltaldtgv+rvr+sk+q+wqaiallggfaeveedevtilvng ergd+inleear+a++
+  BAB76737.1   1 MTLTVRVISPDKTVWDAEADEVILPSTTGQLGILSGHAPLLTALDTGVLRVRTSKSQNWQAIALLGGFAEVEEDEVTILVNGGERGDTINLEEARTAYS 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaaggl 136
+                 +aqtklnqv a+drqaqiqa+qafkrararfqaaggl
+  BAB76737.1 100 QAQTKLNQVPAGDRQAQIQANQAFKRARARFQAAGGL 136
+                 ************************************7 PP
+
+>> BAB72766.1  all0809 [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.4   0.5    0.0045        14      88     122 ..     115     149 ..      95     164 .. 0.84
+   2 ?    6.9   3.8   0.00072       2.2      83     123 ..     197     239 ..     191     246 .. 0.79
+   3 ?    3.3   0.4    0.0098        30      89     118 ..     248     277 ..     240     286 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 4.4 bits;  conditional E-value: 0.0045
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqiqatqa 122
+                 k  l+ea+ + + aq++ln+ +a+ +  +i a+ a
+  BAB72766.1 115 KAALKEAQEQVKVAQANLNRTQAGAKGGEIAAQMA 149
+                 457999*********************99999876 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.00072
+        atpE  83 aergd..kinleearaafneaqtklnqvkaedrqaqiqatqaf 123
+                 a  gd  ++nle a+ + +eaq+ l+++++ ++q+  qa++++
+  BAB72766.1 197 ASEGDrqRLNLETAQKTLQEAQADLQRIQTTSQQQLQQAKATL 239
+                 4555522689*******************99988777776654 PP
+
+  == domain 3  score: 3.3 bits;  conditional E-value: 0.0098
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiq 118
+                 +++e a+a+ n+a + +nq k + +qa ++
+  BAB72766.1 248 VDVEAAKAEVNRAIAAMNQAKVHLQQAYVR 277
+                 678888888888888888888887777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       224  (0.0365297); expected 122.6 (0.02)
+Passed bias filter:                      164  (0.0267449); expected 122.6 (0.02)
+Passed Vit filter:                        15  (0.00244618); expected 6.1 (0.001)
+Passed Fwd filter:                         5  (0.000815395); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 3854.83
+//
+[ok]

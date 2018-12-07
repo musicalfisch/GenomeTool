@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1819295_GCA_001623485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-29  100.2   0.2      2e-29   99.3   0.2    1.4  1  KZL49183.1  ferredoxin-NADP reductase [Nodularia spumigena CE
+    8.9e-28   94.1   0.4      1e-27   93.9   0.4    1.1  1  KZL48016.1  phycobilisome linker polypeptide [Nodularia spumi
+    0.00098   17.0   0.1     0.0024   15.8   0.1    1.7  1  KZL48015.1  photosystem I reaction center subunit XII [Nodula
+
+
+Domain annotation for each sequence (and alignments):
+>> KZL49183.1  ferredoxin-NADP reductase [Nodularia spumigena CENA596]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   99.3   0.2   1.4e-32     2e-29      10      68 ..      17      75 ..      10      79 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 99.3 bits;  conditional E-value: 1.4e-32
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpl 68
+                 r+fvyevvGl qn++td+ +y irksGsvf+ vpy rmnqemrritrlG +ivsi+ +
+  KZL49183.1 17 SRVFVYEVVGLRQNEETDQTNYPIRKSGSVFIRVPYNRMNQEMRRITRLGGKIVSIQAV 75
+                69******************************************************875 PP
+
+>> KZL48016.1  phycobilisome linker polypeptide [Nodularia spumigena CENA596]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.9   0.4   7.3e-31     1e-27       5      70 ..      13      77 ..       9      80 .] 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 93.9 bits;  conditional E-value: 7.3e-31
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                s +   r+f yevvGl qn +td  ++ ir+sGsvf+tvpy rmn+em+ri rlG ri+ i pl a
+  KZL48016.1 13 S-SSASRVFRYEVVGLRQNAQTDRNQFDIRRSGSVFITVPYIRMNEEMQRINRLGGRIINISPLSA 77
+                3.4568**********************************************************98 PP
+
+>> KZL48015.1  photosystem I reaction center subunit XII [Nodularia spumigena CENA596]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.1   1.7e-06    0.0024      32      66 ..     251     284 ..     247     286 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 1.7e-06
+        cpcD  32 sirksGsvfltvpysrmnqemrritrlGarivsik 66 
+                 s+r+s + f+ vpy r+  ++++i + G +ivsi 
+  KZL48015.1 251 SVRRSSTAFI-VPYERLSDKIQQIHKQGGKIVSIT 284
+                 8999988886.9*********************95 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4228  (1349050 residues searched)
+Passed MSV filter:                        87  (0.0205771); expected 84.6 (0.02)
+Passed bias filter:                       84  (0.0198675); expected 84.6 (0.02)
+Passed Vit filter:                        12  (0.00283822); expected 4.2 (0.001)
+Passed Fwd filter:                         3  (0.000709555); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4991.48
+//
+[ok]

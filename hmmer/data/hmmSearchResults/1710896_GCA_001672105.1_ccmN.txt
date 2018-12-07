@@ -1,0 +1,104 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710896_GCA_001672105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      6e-46  154.8  12.5    2.7e-41  139.6   4.6    2.0  2  OBQ45189.1  transferase [Aphanizomenon flos-aquae WA102]
+    0.00011   19.9   1.3    0.00011   19.9   1.3    2.1  2  OBQ45190.1  cytochrome C biogenesis protein CcmM [Aphanizomen
+  ------ inclusion threshold ------
+       0.89    7.1  10.5       0.26    8.8   1.9    2.1  2  OBQ43223.1  serine acetyltransferase [Aphanizomenon flos-aqua
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ45189.1  transferase [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  139.6   4.6   1.5e-44   2.7e-41      10     134 ..      10     138 ..       1     148 [. 0.90
+   2 !   20.4   1.0   4.2e-08   7.5e-05     130     220 .]     176     267 ..     157     267 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 139.6 bits;  conditional E-value: 1.5e-44
+        ccmN  10 srsefyvngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstttifnasvaamslvps 108
+                  r + ++ g+v i+ sa++apgvil+aa ns i+igag clgmg+il   +g++ + aga lg+g l+vg+g+ig nacigs+tt+fn+sva   ++p 
+  OBQ45189.1  10 DRFDAHIHGNVIIHPSAVIAPGVILQAATNSTIVIGAGVCLGMGSILQVSEGILEVEAGANLGAGFLMVGEGKIGANACIGSATTVFNCSVAPGQVIPP 108
+                 5777899******************************************************************************************** PP
+
+        ccmN 109 gsligdtsrqiti....evsatrseperpp 134
+                 g+++gdtsrq+ +    +  +t+s+pe+p 
+  OBQ45189.1 109 GAILGDTSRQMVVppavQPKSTNSQPENPA 138
+                 **********98722114457888888875 PP
+
+  == domain 2  score: 20.4 bits;  conditional E-value: 4.2e-08
+        ccmN 130 perpplpepqpvvsqvspvpsveevvaetva.spwdgeemvaeaspaetreqasttnrpnqasvvgkvyinqllvtlfperhrfngnnnlns 220
+                  +  p+ +p p     sp  s   vv ++        e + + a++ et e+   t     + + g+  in+ll tlfp r+ ++ +n  ns
+  OBQ45189.1 176 HQSTPVSQPSPTPKSQSPPESETAVVGDSTPvETSLPESTETSAGNLETSESELETHNIFGTQIYGQGSINRLLSTLFPHRQSLDNENSDNS 267
+                 4567999999999899999999999987654034446777889999*******9999999************************99999887 PP
+
+>> OBQ45190.1  cytochrome C biogenesis protein CcmM [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.9   1.3   6.2e-08   0.00011      13     115 ..      31     144 ..      23     173 .. 0.81
+   2 ?   -0.9   0.2      0.14   2.4e+02      84     119 ..     439     475 ..     414     487 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 19.9 bits;  conditional E-value: 6.2e-08
+        ccmN  13 efyvngdvtidesaivapgvilraapnsqiiigagaclgmgtiltay.qg.via.........igagailgtgvlvvgrgeigenacigstttifnasv 100
+                    + gdv i    i+apg  +ra   +   +g  + +  g ++    qg vi          +g  a +    l+ g   +g+ + ig  +t+fna v
+  OBQ45190.1  31 SCNLIGDVNIGANVIIAPGTSIRADEGTPFSVGENTNIQDGVVIHGLeQGrVIGddgkkysvwVGKRASITHMALIHGPAYVGDSCFIGFRSTVFNARV 129
+                 55677*******************99999999999999888877654255322122222222277788889999************************* PP
+
+        ccmN 101 aamslvpsgsligdt 115
+                  a  +v   +li d 
+  OBQ45190.1 130 GAGCIVMMHALIQDV 144
+                 ************996 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.14
+        ccmN  84 genacigstttifnas.vaamslvpsgsligdtsrqi 119
+                 g+ a  gst +   +s  +a + v sg l  +   q+
+  OBQ45190.1 439 GQVASSGSTKSFTTTSsATATATVSSGRLTAEVVGQL 475
+                 6778888888776654155788999999988776665 PP
+
+>> OBQ43223.1  serine acetyltransferase [Aphanizomenon flos-aquae WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.0   1.8    0.0091        16      63      97 ..      66     102 ..      57     115 .. 0.77
+   2 ?    8.8   1.9   0.00015      0.26      65     106 ..     120     161 ..     113     207 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 3.0 bits;  conditional E-value: 0.0091
+        ccmN  63 iaigagailgtgvlv.vgrg.eigenacigstttifn 97 
+                 + i  ga++g  v++  g g  ige a ig  + i++
+  OBQ43223.1  66 VEIHPGAVIGESVFIdHGMGvVIGETAIIGNYALIYQ 102
+                 5678899999999884477734899999998888875 PP
+
+  == domain 2  score: 8.8 bits;  conditional E-value: 0.00015
+        ccmN  65 igagailgtgvlvvgrgeigenacigstttifnasvaamslv 106
+                 +g   ++g+g  v+g+ eig+n  ig+ + ++    ++ ++v
+  OBQ43223.1 120 LGENVVVGAGAKVLGNIEIGDNVRIGAGSVVLRDVPSSCTVV 161
+                 688899********************9988776544443333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         5296  (1424099 residues searched)
+Passed MSV filter:                       184  (0.0347432); expected 105.9 (0.02)
+Passed bias filter:                      122  (0.0230363); expected 105.9 (0.02)
+Passed Vit filter:                        10  (0.00188822); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000566465); expected 0.1 (1e-05)
+Initial search space (Z):               5296  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 6266.04
+//
+[ok]

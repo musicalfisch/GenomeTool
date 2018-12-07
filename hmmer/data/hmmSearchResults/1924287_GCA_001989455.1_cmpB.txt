@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924287_GCA_001989455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpB  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.4e-20   68.9   7.9      6e-20   68.5   7.9    1.2  1  AQL35003.1  ABC transporter permease [Prochlorococcus sp. RS0
+    0.00012   18.3   2.4    0.00012   18.3   2.4    2.1  2  AQL33412.1  phosphate ABC transporter permease subunit PstC [
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL35003.1  ABC transporter permease [Prochlorococcus sp. RS04]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   68.5   7.9   6.7e-23     6e-20      50     266 ..      36     254 ..       9     262 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 68.5 bits;  conditional E-value: 6.7e-23
+        cmpB  50 gatlpgpiqviqdtwi....lilypfydkggidkglfwqilaslqrvaisytlaaivgialgiligvnktlskaldplfqllrtvpplawvpislaalr 144
+                   tl   ++++++ ++     ++y + +       lf +i+as  rv  ++++a+i  i lgil+g   ++    +pl+ +lr +p  a+ p+ +  l 
+  AQL35003.1  36 IWTLVCQLKLVSEMFLpsplAVFYSLLEMA-ESGILFEDIFASTGRVFAGFIIATIFSIPLGILMGSFPSFCALCEPLIAMLRYMPAAAFSPLLIIYLG 133
+                 444444555555544321112333333332.22348999************************************************************ PP
+
+        cmpB 145 qnepaalfvifitaiwpilintavgvtqipqdynnvakvlqlsrkeyflnilipaalpyiftglriaiglawlaiiaaeivmsgivgigffiwdayqnn 243
+                  +e   + +ifi +++  ++  +  v+ +p++  + +  l  + k+ ++ ++   +lp i+  lri i  +w  +i ae++ +  vg+g  i  a +  
+  AQL35003.1 134 IEEAPKIALIFIGTVYFNVLMVMDSVKFVPKELIETTLTLGGNTKDLLIRVIARYSLPSIIDTLRINIATSWNLVIVAELIAA-EVGLGKRIQLAQRFF 231
+                 ***************999999999*******************************************************9865.69************* PP
+
+        cmpB 244 nvsevilalvyigvvgllldklm 266
+                 +  ++   l+ +g++g+ ld  +
+  AQL35003.1 232 RTDQIFAELIVLGLIGFALDMSF 254
+                 *******************9755 PP
+
+>> AQL33412.1  phosphate ABC transporter permease subunit PstC [Prochlorococcus sp. RS04]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.0   0.3     0.049        44      80     133 ..      75     131 ..      69     157 .. 0.67
+   2 !   18.3   2.4   1.3e-07   0.00012     147     226 ..     171     250 ..     140     310 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 0.0 bits;  conditional E-value: 0.049
+        cmpB  80 glfwqilaslqrvaisytlaaivgialgilig...vnktlskaldplfqllrtvppl 133
+                 g f  i+ +l    +s  ++  +g++  i i    v k++ + +  +++ll ++p +
+  AQL33412.1  75 GAFTAIYGTLVTSFLSLLITIPLGVGTAIFITedfVPKVVREIIGSFVELLAAIPSV 131
+                 666677777777777777777777777777753335577777777777777777764 PP
+
+  == domain 2  score: 18.3 bits;  conditional E-value: 1.3e-07
+        cmpB 147 epaalfvifitaiwpilintav.gvtqipqdynnvakvlqlsrkeyflnilipaalpyiftglriaiglawlaiiaaeivm 226
+                    a ++i++  + pi+   a   ++q+p+   n a  +  sr + ++ +++paal  i++g+ +a+g a    +a  +++
+  AQL33412.1 171 SLLA-ILILVVMLLPIVTSIARdSLNQVPKKLRNAAYGIGASRWKTIFSVILPAALSGIMAGVLLALGRAMGETMAVTMII 250
+                 2223.345667788988887652689*******************************************998888877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (279 nodes)
+Target sequences:                         1794  (495876 residues searched)
+Passed MSV filter:                        71  (0.0395764); expected 35.9 (0.02)
+Passed bias filter:                       32  (0.0178372); expected 35.9 (0.02)
+Passed Vit filter:                         3  (0.00167224); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111483); expected 0.0 (1e-05)
+Initial search space (Z):               1794  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6917.47
+//
+[ok]

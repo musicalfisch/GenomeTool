@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1454205_GCA_001854205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desB  [M=345]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00037   18.2  19.3     0.0065   14.1   2.4    2.9  2  AOY78881.1  beta-carotene hydroxylase [Moorea producens JHB]
+  ------ inclusion threshold ------
+      0.051   11.2   0.4      0.069   10.7   0.4    1.1  1  AOY80927.1  carboxyvinyl-carboxyphosphonate phosphorylmutase 
+
+
+Domain annotation for each sequence (and alignments):
+>> AOY78881.1  beta-carotene hydroxylase [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   2.4     2e-06    0.0065      78     137 ..      62     121 ..      21     134 .. 0.79
+   2 !    8.3   9.3   0.00012       0.4     184     310 ..     146     260 ..     127     282 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 2e-06
+        desB  78 alfvvghdcghgsfsryrwlnnlighlshtpilvpfhgwrishrthhantgnidtdeswy 137
+                  +  v hd+ h    + r++n l+gh s   +   f  +   h  hhan+ + + d  ++
+  AOY78881.1  62 MVGTVIHDASHHVAHKNRYVNALMGHGSALMLGFTFPVFTRVHMQHHANVNDPENDPDHF 121
+                 233456*******************************************99887776655 PP
+
+  == domain 2  score: 8.3 bits;  conditional E-value: 0.00012
+        desB 184 plfrpserwqvltstvcctfmlglligvgisqgfw.flfnyyimpyivfvvwldlv.tflhhteddipwyrgqdwyflkgalstidrdygifnpihhqi 280
+                  l+r  e w+ + s     ++++++i +g  +gf  +++ny+ +p +v+ + l l   +l h     p+   + w   +   s       i+n +    
+  AOY78881.1 146 RLWRKYELWEWFFS----RLFIAIIIYLGCQYGFLdYIMNYWFVPALVVGIALGLFfDYLPH----RPFKERDRWKNARVYPS------PIINLLIMGQ 230
+                 55666666665555....4567889999*****975899******99877777663134443....47777777765554444......5778888888 PP
+
+        desB 281 gthvahhifitiphyhlqeateairpvlgd 310
+                   h+ hh++ tip y+ q a  a++p+l +
+  AOY78881.1 231 NYHLIHHLWPTIPWYKYQPAYRAVKPLLDQ 260
+                 899***********************9965 PP
+
+>> AOY80927.1  carboxyvinyl-carboxyphosphonate phosphorylmutase [Moorea producens JHB]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.4   2.1e-05     0.069     213     249 ..      42      77 ..      15      84 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.1e-05
+        desB 213 isqgfwflfnyyimpyivfvvwldlvtflhhteddip 249
+                 i  gf f   +y +p i f+ w d+v+f+++ +  +p
+  AOY80927.1  42 I-SGFSFAASFYGLPDIGFIAWSDIVAFVQRIKTVLP 77 
+                 3.49*************************98877666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (345 nodes)
+Target sequences:                         6559  (2174889 residues searched)
+Passed MSV filter:                       240  (0.0365909); expected 131.2 (0.02)
+Passed bias filter:                      135  (0.0205824); expected 131.2 (0.02)
+Passed Vit filter:                         7  (0.00106724); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000304925); expected 0.1 (1e-05)
+Initial search space (Z):               6559  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 10719.10
+//
+[ok]

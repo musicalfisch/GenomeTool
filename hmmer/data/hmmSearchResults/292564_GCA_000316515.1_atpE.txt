@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292564_GCA_000316515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.6e-49  164.1   1.6      4e-49  163.9   1.6    1.0  1  AFY30236.1  ATP synthase, F1 epsilon subunit [Cyanobium graci
+  ------ inclusion threshold ------
+      0.027   12.2   0.0      0.036   11.8   0.0    1.2  1  AFY27857.1  hypothetical protein Cyagr_0669 [Cyanobium gracil
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY30236.1  ATP synthase, F1 epsilon subunit [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.9   1.6   2.4e-52     4e-49       1     135 [.       1     134 [.       1     135 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 163.9 bits;  conditional E-value: 2.4e-52
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtlt+rv++pd++v+d++a+evilp ttgqlgil+gh  +ltal+ gv+rvr    ++wq+ial+ggfaev  +evt+lvngae g +in   a+++f+
+  AFY30236.1   1 MTLTLRVLAPDQSVFDGTADEVILPGTTGQLGILTGHVSMLTALESGVLRVRE--GANWQSIALMGGFAEVVANEVTVLVNGAELGSSINAAAAQSDFE 97 
+                 9**************************************************96..578***************************************** PP
+
+        atpE 100 eaqtklnqvkaed.rqaqiqatqafkrararfqaagg 135
+                 +aq+  + ++ +d   ++++a+qa+ rarar+qa+ g
+  AFY30236.1  98 AAQQAAAALEGSDpSPEKVKAQQALARARARLQASKG 134
+                 ****99999987725689****************987 PP
+
+>> AFY27857.1  hypothetical protein Cyagr_0669 [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   2.2e-05     0.036      33     117 ..      44     125 ..      33     143 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 2.2e-05
+        atpE  33 ilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqi 117
+                 i s hap l  +d  v+ v  + +q+ +  a   gf++ e+   t+++ +ae g+         ++++ ++ l+++++  + ++ 
+  AFY27857.1  44 IESNHAPELEVMD--VFSVYIEMSQNIRNYATSHGFSDAES-SATVVIAAAEAGHYAVCAGNLVEMEDGKALLKRIHELANCDKA 125
+                 6799*******99..5677778888999999*******986.5799999***998777776667777777766666655544444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         3280  (992729 residues searched)
+Passed MSV filter:                        89  (0.0271341); expected 65.6 (0.02)
+Passed bias filter:                       68  (0.0207317); expected 65.6 (0.02)
+Passed Vit filter:                         5  (0.00152439); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000609756); expected 0.0 (1e-05)
+Initial search space (Z):               3280  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 6800.19
+//
+[ok]

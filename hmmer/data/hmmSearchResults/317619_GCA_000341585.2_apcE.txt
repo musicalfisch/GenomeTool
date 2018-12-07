@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317619_GCA_000341585.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcE  [M=901]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-14   49.4   1.3    9.5e-09   31.2   0.1    2.1  2  KKI99000.1  allophycocyanin [Prochlorothrix hollandica PCC 90
+
+
+Domain annotation for each sequence (and alignments):
+>> KKI99000.1  allophycocyanin [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7   0.2   3.1e-08   0.00012      22      73 ..       5      57 ..       2      68 .. 0.85
+   2 !   31.2   0.1   2.6e-12   9.5e-09     154     220 ..      73     141 ..      55     158 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 3.1e-08
+        apcE 22 vsaitqa.eqqdrfldkpelneliayfqsgskrldiaqtltrnsdlivsraan 73
+                ++a+ qa +++ ++ld   +++l +yf sg +r+d a tl   +  iv  a  
+  KKI99000.1  5 ITAVIQAsDERGQYLDDAAISQLQCYFASGQRRMDAAATLCTHAATIVQDAVS 57
+                5666676256789*******************************999998876 PP
+
+  == domain 2  score: 31.2 bits;  conditional E-value: 2.6e-12
+        apcE 154 psnmqkslrdlswflryityaivagdtsilivnt.rglrev.lenacsidativalqemraasieyfqr 220
+                        +rdl +flry tya+vag  sil      gl+e  l   + i+ati a+q m+  +   +  
+  KKI99000.1  73 SRRYAACIRDLDYFLRYATYAMVAGSPSILDERVlDGLKETyLALGVKIEATIEAIQAMKQVTFRVLGD 141
+                 55566789**********************865427999973677899***********9987766544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (901 nodes)
+Target sequences:                         3737  (1137027 residues searched)
+Passed MSV filter:                       118  (0.0315761); expected 74.7 (0.02)
+Passed bias filter:                       84  (0.0224779); expected 74.7 (0.02)
+Passed Vit filter:                         5  (0.00133797); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000267594); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 14635.16
+//
+[ok]

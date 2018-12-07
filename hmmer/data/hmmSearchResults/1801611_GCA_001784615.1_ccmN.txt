@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801611_GCA_001784615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        8.2    2.6  12.4        4.1    3.6   0.6    2.7  2  OGI16755.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosam
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI16755.1  acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase [Candidatus Melainabacteria bacter
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.6   0.6     0.002       4.1      21      78 ..      10      65 ..       2      98 .. 0.58
+   2 ?    0.8   6.6     0.014        29      31      91 ..     101     168 ..      81     175 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.002
+        ccmN 21 tidesaivapgvilraapnsqiiigagaclgmgtil..tayqgviaigagailgtgvlvv 78
+                 id sa +a gv      n+  +ig  + l  g  +   ay     ig  +i+ tg ++ 
+  OGI16755.1 10 IIDPSAEIADGV----KINAYAVIGPNTKLESGVEIypQAYIENSEIGKNTIISTGAVIG 65
+                233333333333....34666778877777666533226777777777777777776653 PP
+
+  == domain 2  score: 0.8 bits;  conditional E-value: 0.014
+        ccmN  31 gvilraapnsqiiigag...ac.lgmgtilt...ayqgviaigagailgtgvlvvgrgeigenacigs 91 
+                 g i +   n  ++ ga     c +g  +il+   +  g + +g  a +g  v++  +  ige a ig 
+  OGI16755.1 101 GNITKVGNNCMLMTGAHiahNCqVGDNAILAnlaTLGGHVLVGDYAFIGGMVVIHQNVRIGEMAIIGG 168
+                 44555555555555543111232455555431114557777788888887777777778888888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2045  (635410 residues searched)
+Passed MSV filter:                        65  (0.0317848); expected 40.9 (0.02)
+Passed bias filter:                       42  (0.0205379); expected 40.9 (0.02)
+Passed Vit filter:                         4  (0.00195599); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000488998); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4659.67
+//
+[ok]

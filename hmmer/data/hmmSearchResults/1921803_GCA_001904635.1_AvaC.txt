@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1921803_GCA_001904635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   7.4e-115  379.9   0.1   8.3e-115  379.8   0.1    1.0  1  OKH20621.1  SAM-dependent methyltransferase [Hydrococcus rivu
+  ------ inclusion threshold ------
+      0.014   12.8   0.0      0.022   12.2   0.0    1.3  1  OKH18675.1  precorrin-6Y C5,15-methyltransferase (decarboxyla
+      0.024   12.1   0.0        2.7    5.4   0.0    3.4  2  OKH19845.1  hypothetical protein NIES593_20495 [Hydrococcus r
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH20621.1  SAM-dependent methyltransferase [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  379.8   0.1  5.6e-118  8.3e-115       1     219 [.       1     219 [.       1     220 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 379.8 bits;  conditional E-value: 5.6e-118
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 man+t+g++r++y y+qsi+lre+ il+qlrqeta +p+a mqiapeqgqfm++lvq +gakk+leigvftgys+l +alalppeg ++acd+seeyt+
+  OKH20621.1   1 MANKTFGMERNLYEYFQSIALREPEILTQLRQETAKHPMANMQIAPEQGQFMTLLVQLMGAKKTLEIGVFTGYSTLAIALALPPEGTIVACDISEEYTA 99 
+                 9************************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarryw++agv +kidlriapa+etl++lia g+ n+fdf fidadksnyd yye+alqlvr gg+iaidnvfw g+va  d+tdnrt++ir ln ki+
+  OKH20621.1 100 IARRYWEKAGVIHKIDLRIAPAIETLEQLIAQGQVNTFDFAFIDADKSNYDNYYEQALQLVRPGGLIAIDNVFWGGKVADPDATDNRTQVIRRLNQKIH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 qd+rv +s++pi dgltl  k
+  OKH20621.1 199 QDDRVTMSLVPIADGLTLVRK 219
+                 ******************877 PP
+
+>> OKH18675.1  precorrin-6Y C5,15-methyltransferase (decarboxylating) subunit CbiT [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   1.5e-05     0.022      66     112 ..      46      91 ..      27     109 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.5e-05
+        AvaC  66 eigvftgysalvvalalppegkliacdlseeytsiarrywqqagvad 112
+                 +ig  tg   +     l p+gk+ia++  ee +s+ rr  ++  va+
+  OKH18675.1  46 DIGAGTGTIPVET-GLLCPKGKIIAVERDEEVASLIRRNCDRFSVAN 91 
+                 5666666554444.4489**********************9999986 PP
+
+>> OKH19845.1  hypothetical protein NIES593_20495 [Hydrococcus rivularis NIES-593]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.3   0.0     0.016        23      63      91 ..     569     597 ..     539     615 .. 0.75
+   2 ?    5.4   0.0    0.0018       2.7      70      95 ..     828     853 ..     820     862 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.3 bits;  conditional E-value: 0.016
+        AvaC  63 kaleigvftgysalvvalalppegkliac 91 
+                  a e  +f g+   v a+a+ p+g++i  
+  OKH19845.1 569 IAKEQNIFQGHDDRVKAVAVSPDGQIIVS 597
+                 3557789*******************976 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.0018
+        AvaC  70 ftgysalvvalalppegkliacdlse 95 
+                 f g+   v+a+a+ pegklia   s+
+  OKH19845.1 828 FRGHEDYVIAIAFDPEGKLIASGSSD 853
+                 889999***************87766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         4392  (1417121 residues searched)
+Passed MSV filter:                       128  (0.0291439); expected 87.8 (0.02)
+Passed bias filter:                      110  (0.0250455); expected 87.8 (0.02)
+Passed Vit filter:                        13  (0.00295993); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.00068306); expected 0.0 (1e-05)
+Initial search space (Z):               4392  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7794.17
+//
+[ok]

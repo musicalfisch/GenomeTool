@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1608213_GCA_001007625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.16    8.2   9.2       0.45    6.7   4.6    2.2  2  KKZ15279.1  UDP-3-O-(3-hydroxymyristoyl) glucosamine N-acyltr
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ15279.1  UDP-3-O-(3-hydroxymyristoyl) glucosamine N-acyltransferase [Candidatus Synechococcus spongiarum 142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   0.1    0.0016       3.2      16      93 ..     115     185 ..     103     196 .. 0.66
+   2 ?    6.7   4.6   0.00022      0.45      41      96 ..     243     301 ..     217     318 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.0016
+        ccmN  16 vngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstt 93 
+                 v  d  + +sa +a+gv++ a       +g   +l  g +l  y+  + ig g+ l   v+v  +  +g n+++ + +
+  KKZ15279.1 115 VAPDAHVADSASLAAGVVVGAR----CHVGEEVVLHPGVVL--YDD-VWIGQGCELHGNVVVYSHSRLGPNCVVQANA 185
+                 4445555555556666555443....334555555555554..554.4689999999999999999999887776655 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.00022
+        ccmN  41 qiiigagaclgmgtiltayqgv...iaigagailgtgvlvvgrgeigenacigstttif 96 
+                  + +g g + g g  ++a  g+   + ig g il   v v  r  ig+  +  s t + 
+  KKZ15279.1 243 LVQVGHGVVTGQGCAFAAQVGIaggVVIGRGVILAGQVGVTNRVRIGDRVVASSKTGVH 301
+                 46689999999999988876653336788888888888888888888887766666554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2010  (525874 residues searched)
+Passed MSV filter:                        82  (0.040796); expected 40.2 (0.02)
+Passed bias filter:                       62  (0.0308458); expected 40.2 (0.02)
+Passed Vit filter:                         4  (0.00199005); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000497512); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5784.61
+//
+[ok]

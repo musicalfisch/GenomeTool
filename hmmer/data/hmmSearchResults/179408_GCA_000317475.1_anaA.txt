@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/179408_GCA_000317475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0011   16.7   0.0       0.19    9.3   0.0    2.9  3  AFZ04852.1  amino acid adenylation domain protein [Oscillator
+     0.0053   14.4   0.0      0.007   14.0   0.0    1.1  1  AFZ09024.1  Photosystem II 12 kDa extrinsic protein [Oscillat
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ04852.1  amino acid adenylation domain protein [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0     0.086   2.7e+02     166     208 ..       5      49 ..       2      65 .. 0.78
+   2 !    9.3   0.0   6.1e-05      0.19      60     111 ..    1243    1295 ..    1233    1311 .. 0.83
+   3 !    3.4   0.0    0.0039        13     182     235 ..    1367    1420 ..    1359    1434 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.086
+        anaA 166 msiilpiyradlqlheeyeyvsekslpc..pilalggeadegvsl 208
+                 +s+++p y +   l e  e v e+s p    i+   g +de   +
+  AFZ04852.1   5 VSVVIPSYNSAKFLPEAIESVLEQSYPHfeVIVVDDGSTDETKEI 49 
+                 799***********************9732355566777776655 PP
+
+  == domain 2  score: 9.3 bits;  conditional E-value: 6.1e-05
+        anaA   60 renrikeplitrwgdlieplvqeiypys.qspfvffghslgsvvslevahqlg 111 
+                  r++  k p+     d+    ++ei  +    p+++ g slg +v++e+ahql 
+  AFZ04852.1 1243 RKELDKPPMQVSIADMATRYLKEIQTHQpTGPYLLAGESLGGLVAFEMAHQLH 1295
+                  5556678888899999999999999876268********************95 PP
+
+  == domain 3  score: 3.4 bits;  conditional E-value: 0.0039
+        anaA  182 eyeyvsekslpcpilalggeadegvsleelrewekytqrgfklrsfpgghmylt 235 
+                  +y + s +  p p  a+   a e   +  l +w++y   g+ +  +pg h+ + 
+  AFZ04852.1 1367 NYAFNSYRLQPYPGRAILFRAMEESHFSTLENWNEYLVGGLDIYDIPGNHLSIL 1420
+                  6888888899999999999999999*************************9765 PP
+
+>> AFZ09024.1  Photosystem II 12 kDa extrinsic protein [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.0   2.2e-06     0.007      24      76 ..      13      65 ..       3      78 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 2.2e-06
+        anaA 24 lslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdli 76
+                l l cf  ag  s +       +  s  l av  p r nr  e l t +g  +
+  AFZ09024.1 13 LVLGCFAWAGDQSAMAASLSRIVLPSSSLLAVEAPARTNRADEKLATEYGKKL 65
+                7789***************99999999**********************9755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         6360  (2131415 residues searched)
+Passed MSV filter:                       162  (0.0254717); expected 127.2 (0.02)
+Passed bias filter:                      146  (0.022956); expected 127.2 (0.02)
+Passed Vit filter:                        22  (0.00345912); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000314465); expected 0.1 (1e-05)
+Initial search space (Z):               6360  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8987.47
+//
+[ok]

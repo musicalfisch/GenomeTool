@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/449447_GCA_000010625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-50  166.6   1.0      3e-50  166.4   1.0    1.0  1  BAG00846.1  phycobilisome small core linker polypeptide [Micr
+     0.0061   14.9   0.0      0.016   13.6   0.0    1.7  1  BAG01079.1  ferredoxin-NADP oxidoreductase [Microcystis aerug
+  ------ inclusion threshold ------
+      0.038   12.4   0.0      0.052   11.9   0.0    1.2  1  BAG01078.1  phycobilisome small rod linker polypeptide [Micro
+
+
+Domain annotation for each sequence (and alignments):
+>> BAG00846.1  phycobilisome small core linker polypeptide [Microcystis aeruginosa NIES-843]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  166.4   1.0   1.4e-53     3e-50       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 166.4 bits;  conditional E-value: 1.4e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfkitacvPsq+rirtqrelqntyftklvpydnWfreqqrimkmGGkivkv+latGkpgtntGll
+  BAG00846.1  1 MRMFKITACVPSQSRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIVKVQLATGKPGTNTGLL 67
+                9****************************************************************96 PP
+
+>> BAG01079.1  ferredoxin-NADP oxidoreductase [Microcystis aeruginosa NIES-843]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.6   0.0   7.5e-06     0.016      26      58 ..      40      70 ..      32      77 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 7.5e-06
+        apcC 26 yftklvpydnWfreqqrimkmGGkivkvelatG 58
+                +ft  vpy    +e +ri ++GG+iv ++   G
+  BAG01079.1 40 FFT--VPYSRMNQEMRRITRLGGRIVSIKPFNG 70
+                666..9********************9986555 PP
+
+>> BAG01078.1  phycobilisome small rod linker polypeptide [Microcystis aeruginosa NIES-843]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   2.5e-05     0.052      31      54 ..      43      66 ..      34      72 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 2.5e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy    +e +ri ++G +iv ++
+  BAG01078.1 43 VPYSRMNQEMRRITRLGARIVSIK 66
+                9********************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         6311  (1578908 residues searched)
+Passed MSV filter:                       190  (0.0301062); expected 126.2 (0.02)
+Passed bias filter:                      179  (0.0283632); expected 126.2 (0.02)
+Passed Vit filter:                        11  (0.00174299); expected 6.3 (0.001)
+Passed Fwd filter:                         3  (0.00047536); expected 0.1 (1e-05)
+Initial search space (Z):               6311  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 3526.23
+//
+[ok]

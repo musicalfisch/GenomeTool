@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-70  232.8   6.3    1.7e-70  232.6   6.3    1.0  1  ABA19763.1  nitrogen regulatory protein P-II [Anabaena variab
+     0.0079   14.7   0.0      0.018   13.5   0.0    1.6  1  ABA22287.1  conserved hypothetical protein [Anabaena variabil
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA19763.1  nitrogen regulatory protein P-II [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  232.6   6.3     6e-74   1.7e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 232.6 bits;  conditional E-value: 6e-74
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vvdkiiaaartgeigdgkifispveqv
+  ABA19763.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDNQVDMVVDKIIAAARTGEIGDGKIFISPVEQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgek++eav
+  ABA19763.1 100 IRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> ABA22287.1  conserved hypothetical protein [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.5   0.0   6.5e-06     0.018      35      96 ..      57     123 ..      41     129 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 6.5e-06
+        glnB  35 gfgrqkgqteryrgseyt.veflqk..lkveivvedeqvdlvv..dkiiaaartgeigdgkifispv 96 
+                   g q+g t ryrg +   +  +q     ve+ +e +q dl++  d +i+a +tg i +  i i+p 
+  ABA22287.1  57 AGGMQRGATVRYRGVKVGrISQIQPgpNAVEVEIEFAQSDLIIprDVVIEANQTGLISESIIDITPK 123
+                 4589**********98743677775335799999999***99966779***********99999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       170  (0.0297932); expected 114.1 (0.02)
+Passed bias filter:                      137  (0.0240098); expected 114.1 (0.02)
+Passed Vit filter:                        14  (0.00245356); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350508); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7236.40
+//
+[ok]

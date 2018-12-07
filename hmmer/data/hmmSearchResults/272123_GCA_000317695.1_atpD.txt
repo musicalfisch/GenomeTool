@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272123_GCA_000317695.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.9e-103  340.7   6.6   6.6e-103  340.5   6.6    1.0  1  AFZ57238.1  ATP synthase F1 subcomplex delta subunit [Anabaen
+  ------ inclusion threshold ------
+      0.013   13.6   0.0       0.02   13.0   0.0    1.2  1  AFZ59246.1  folate-binding protein YgfZ [Anabaena cylindrica 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ57238.1  ATP synthase F1 subcomplex delta subunit [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  340.5   6.6  2.3e-106  6.6e-103       1     184 []       1     184 []       1     184 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 340.5 bits;  conditional E-value: 2.3e-106
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m+s+aatae+aqpyaqalls+aqs+nlte++g+dart+l+ll gskel+++l+npf ++enkkn+lkq+lgegv+pylrnfllllvdrrri+ leailq
+  AFZ57238.1   1 MRSNAATAEIAQPYAQALLSLAQSKNLTEDFGTDARTFLGLLAGSKELESYLSNPFTQAENKKNLLKQVLGEGVSPYLRNFLLLLVDRRRISCLEAILQ 99 
+                 99************************************************************************************************* PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlssn 184
+                 qyl+llrqlnqtvlaevtsav+lteaqqqa++ekvia+t+arqveletkid++liggviikvgsqvidaslrgqlrrlsl l sn
+  AFZ57238.1 100 QYLVLLRQLNQTVLAEVTSAVALTEAQQQAITEKVIAITNARQVELETKIDNELIGGVIIKVGSQVIDASLRGQLRRLSLSLNSN 184
+                 **********************************************************************************997 PP
+
+>> AFZ59246.1  folate-binding protein YgfZ [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.0   6.9e-06      0.02      77     134 ..      86     143 ..      80     168 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 6.9e-06
+        atpD  77 ylrnfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekv 134
+                 +l + +lllv   r  fl   l++y+ +  ++  t ++e t+ ++l  +q +++ ek+
+  AFZ59246.1  86 VLDDAVLLLVSANRREFLMQWLDRYIFFADKVVLTDVTEETAILSLMGTQSNCIIEKL 143
+                 567789*************************************************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5838  (1879690 residues searched)
+Passed MSV filter:                       222  (0.0380267); expected 116.8 (0.02)
+Passed bias filter:                      129  (0.0220966); expected 116.8 (0.02)
+Passed Vit filter:                        10  (0.00171292); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000342583); expected 0.1 (1e-05)
+Initial search space (Z):               5838  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8646.57
+//
+[ok]

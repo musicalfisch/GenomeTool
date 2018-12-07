@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805292_GCA_001873375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-08   31.4   2.0    1.8e-08   31.4   2.0    2.0  2  OIP78576.1  fatty acid desaturase [Oscillatoriales cyanobacte
+    0.00012   18.9   5.4    0.00012   18.9   5.4    2.1  2  OIP75625.1  fatty acid desaturase [Oscillatoriales cyanobacte
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP78576.1  fatty acid desaturase [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.4   2.0   1.2e-11   1.8e-08      43     134 ..      41     130 ..      23     139 .. 0.86
+   2 ?    0.5   0.5      0.03        46     226     306 ..     206     285 ..     183     301 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 31.4 bits;  conditional E-value: 1.2e-11
+        desD  43 iltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 +++ v aa  +v +    w+l     +  g+ l+g  f ighd+ h  +s+k+w+n l+g      +    + wrf+h++ hh +tn +g d
+  OIP78576.1  41 VFSVVAAALGYVSIAFSPWYLLPFAWIFTGTALTGF-FVIGHDCGHRSFSNKNWINDLVGHIAFLPLLFPFHGWRFKHDH-HHLHTNKMGED 130
+                 445566677799999999****************97.99*********************9887778888999*****96.9999**99987 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.03
+        desD 226 leiaigflivfmtygvlachvfmlahvlepaefiqpsaanqiedewaif..qvrttvdfapkniflnwylgglnyqvvhhlfp 306
+                 l   i  +i+f+    l  h +m ++ +       p    + +d+w+    q+  tv  +   ++++w    +n ++ hh+  
+  OIP78576.1 206 LTTGITGFISFFVMPWLVYHFWMSTFTI--VHHTMPDIQFKEKDQWSAGtdQLTGTVH-CDYPAWVEWLCHDINVHIPHHIST 285
+                 4455556677878888888888876655..3455677777777778654114444554.456788899999999998888765 PP
+
+>> OIP75625.1  fatty acid desaturase [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.9   5.4   7.8e-08   0.00012      57     129 ..      69     140 ..      42     147 .. 0.77
+   2 ?   -3.5   4.3      0.51   7.7e+02     287     315 ..     284     311 ..     207     332 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 18.9 bits;  conditional E-value: 7.8e-08
+        desD  57 gpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytn 129
+                   d ww+  i  +  g+ +    f +ghd+ hg +s  kw+n+l+g      i +  + wr+ h   h+   n
+  OIP75625.1  69 YIDAWWFYPIFWFATGTMF-WAFFVVGHDCGHGSFSRLKWLNNLIGHLTHIPILVPYHGWRISHRTHHQNTGN 140
+                 3589999999888877655.55699*********************9999999999999*****987766555 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 0.51
+        desD 287 iflnwylgglnyqvvhhlfpqichihypk 315
+                 if n     +  +v hh+f  i h h   
+  OIP75625.1 284 IFNN-IHHNIGTHVAHHIFIGIPHYHLKT 311
+                 3433.334566778888888888888755 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         3046  (947245 residues searched)
+Passed MSV filter:                       114  (0.0374261); expected 60.9 (0.02)
+Passed bias filter:                       70  (0.022981); expected 60.9 (0.02)
+Passed Vit filter:                         7  (0.0022981); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000656599); expected 0.0 (1e-05)
+Initial search space (Z):               3046  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 5746.62
+//
+[ok]

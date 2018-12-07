@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1638788_GCA_001264245.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.5e-92  303.8  15.0      5e-92  303.6  15.0    1.0  1  AKV67997.1  ATP synthase F0 sector subunit b' [Microcystis pa
+     0.0053   15.0   6.2     0.0073   14.6   6.2    1.1  1  AKV67998.1  ATP synthase F0 sector subunit b [Microcystis pan
+
+
+Domain annotation for each sequence (and alignments):
+>> AKV67997.1  ATP synthase F0 sector subunit b' [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  303.6  15.0   1.7e-95     5e-92       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 303.6 bits;  conditional E-value: 1.7e-95
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea
+  AKV67997.1   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTEGGAKEQLAKTEALVQEYELQLSSARKQSQEIIAQAQAEAQKLASERVAAAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllg+elvr
+  AKV67997.1 100 IARKEAVAAEIAQQKEEAFRSLEGQVASLSRQILEKLLGAELVR 143
+                 *******************************************8 PP
+
+>> AKV67998.1  ATP synthase F0 sector subunit b [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   6.2   2.4e-06    0.0073      17     137 ..      34     157 ..      21     162 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 2.4e-06
+        atpG  17 llavilna.vfy..kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaq 112
+                  l+++l   +fy  k l ++l er   i ++ + a ++   +   + e + +l+ a++++ +ii +a+  a+ ++++  a a+ +    +e+ a +++ 
+  AKV67998.1  34 NLSILLGLvIFYgrKVLGQILGERQSKIAEALAEAEDRKNIAANALAEEQKKLALAKQEAGQIINNARDRAKTVTADIAAQAELDIQRMRESAAKDLSA 132
+                 4556665415666689*************99999988776655555666789********************999998888888877779999999*99 PP
+
+        atpG 113 qkeeafrslegqvaslsrqilekll 137
+                 +++ ++  l  ++++l+   +e  l
+  AKV67998.1 133 EQDRVLVELRQRITALALANVESQL 157
+                 9999999999999998877666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5974  (1430872 residues searched)
+Passed MSV filter:                       183  (0.0306327); expected 119.5 (0.02)
+Passed bias filter:                      110  (0.0184131); expected 119.5 (0.02)
+Passed Vit filter:                        13  (0.0021761); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000334784); expected 0.1 (1e-05)
+Initial search space (Z):               5974  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 10230.73
+//
+[ok]

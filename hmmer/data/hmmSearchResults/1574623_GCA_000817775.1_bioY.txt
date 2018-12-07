@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574623_GCA_000817775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.7e-20   71.1  15.7    4.2e-20   70.9  15.7    1.0  1  KIF39026.1  biotin biosynthesis protein BioY [Lyngbya conferv
+    8.7e-19   66.6  21.6    1.3e-18   66.0  21.6    1.2  1  KIF43995.1  biotin biosynthesis protein BioY [Lyngbya conferv
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF39026.1  biotin biosynthesis protein BioY [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.9  15.7   1.4e-23   4.2e-20      42     205 ..      31     201 ..       2     203 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 70.9 bits;  conditional E-value: 1.4e-23
+        bioY  42 iallflPvaitGqaltvllvtlqvgalLltlllllylleiLlalaylslGl.....sqLsvltGgtGaalLldPlaayLaGflveaWvvdRlarkraas 135
+                 i+  +   + tG  +  l v+ qvga Llt+ + +   + L+ +ay+ lGl     ++L+ +t g+G  ++  P ++yL Gf+++aWv + la +    
+  KIF39026.1  31 ITNAPWDWSETGIQVYSLGVSFQVGAVLLTACVGGKNAATLAQIAYITLGLllfqfFGLPIFTQGGGLGYVQEPSFGYLLGFIPAAWVCGYLAFR-DRP 128
+                 44445556789999999*********************************76666689***********************************96.567 PP
+
+        bioY 136 dllnlvLisllGlvvlqvclaenllltsllavltdGvlPl...lmtdlLkplLaalLLptavatlaliladlk 205
+                 +l +l   sl Gl v+  c+   l ++sl + l +  +P    + +++L+pl  +l++ +av   a  l++l+
+  KIF39026.1 129 KLESLAFSSLCGLGVIHGCGLAYLAIASLGGWLQQVTFPAweaILAYSLAPLPGQLIMVCAVSVAAYLLRQLL 201
+                 899************************************544499*********************9999986 PP
+
+>> KIF43995.1  biotin biosynthesis protein BioY [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.0  21.6   4.3e-22   1.3e-18      27     198 ..      27     189 ..      12     193 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 66.0 bits;  conditional E-value: 4.3e-22
+        bioY  27 vlvasLLlillaqliiallflPvaitGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflvea.Wv 124
+                 v+ +++Ll++ + + ++l   Pv++t q+l+v lv++ +g +L+ + +   l+++ ++l+ l +G  +  ++ G+t ++l ++P a+  aG+l e+ W 
+  KIF43995.1  27 VVLGTMLLAASSYVEVPLK--PVPVTMQTLAVALVGALYGWRLGAITITAWLVQGAMGLPVLAGGAAGAHHFVGPTAGYLFAFPIAGAAAGWLAERgWN 123
+                 5567788888888777665..667789********************************************************************9788 PP
+
+        bioY 125 vdRlarkraasdllnlvLisllGlvvlqvclaenllltsllavltdGvlPllmtdlLkplLaalLLptavatla 198
+                   R+      + ++n  L  +lG+ +l v         +    ++ Gv+P+l++ lLk++  a++L +a + + 
+  KIF43995.1 124 GHRVVLAFVGQLISN-LLCLVLGAAWLAVLI-------GFEPAIASGVMPFLVGALLKAVTGAAILGVATRGTL 189
+                 888888776666665.6899*******9965.......56667889********************99988664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         6092  (1743458 residues searched)
+Passed MSV filter:                       387  (0.0635259); expected 121.8 (0.02)
+Passed bias filter:                      112  (0.0183848); expected 121.8 (0.02)
+Passed Vit filter:                         3  (0.000492449); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000328299); expected 0.1 (1e-05)
+Initial search space (Z):               6092  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9109.57
+//
+[ok]

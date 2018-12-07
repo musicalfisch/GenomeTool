@@ -1,0 +1,113 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59512_GCA_900009275.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-67  224.3   2.3    1.6e-67  224.1   2.3    1.0  1  CUR26354.1  ATP synthase epsilon chain [Planktothrix rubescen
+  ------ inclusion threshold ------
+      0.024   13.0   0.2        6.4    5.2   0.0    3.5  3  CUR27442.1  putative Fucosylgalactoside 3-alpha-galactosyltra
+        1.9    6.9  21.7      0.018   13.5   2.5    3.7  4  CUR27017.1  DevB protein [Planktothrix rubescens]
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR26354.1  ATP synthase epsilon chain [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  224.1   2.3   9.2e-71   1.6e-67       1     137 []       1     136 [.       1     136 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 224.1 bits;  conditional E-value: 9.2e-71
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pd+tvwd +a+evilpsttgq+gil+ghaplltaldtgv+rvr++  ++w+ ial+ggfaeve +evtilvngaergd+inle ar+a++
+  CUR26354.1   1 MTLTVRVIAPDRTVWDENADEVILPSTTGQVGILTGHAPLLTALDTGVLRVRSK--NKWTPIALMGGFAEVEANEVTILVNGAERGDTINLEAARTAYT 97 
+                 9***************************************************75..57***************************************** PP
+
+        atpE 100 eaqtklnqvkaed.rqaqiqatqafkrararfqaagglv 137
+                 +aq+ l+  +++d ++a+i+at+a+krarar+qaagg++
+  CUR26354.1  98 KAQADLEAAETGDsKKAKIKATKAIKRARARLQAAGGVI 136
+                 *******9998764899********************86 PP
+
+>> CUR27442.1  putative Fucosylgalactoside 3-alpha-galactosyltransferase [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.0       0.2   3.4e+02      77     129 ..    1426    1476 ..    1407    1480 .. 0.83
+   2 ?    5.2   0.0    0.0038       6.4      82     128 ..    1519    1565 ..    1504    1569 .. 0.90
+   3 ?    2.7   0.0     0.023        38      76     128 ..    1603    1655 ..    1596    1660 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.2
+        atpE   77 tilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkrarar 129 
+                  tilv+     + i le+ +++ n   t  +q+  e+ q  ++a +++kra+ +
+  CUR27442.1 1426 TILVDLFTPLQDITLESIKSDQNIDPT--SQIPIEELQLSVRAYNCLKRAQIK 1476
+                  788888888888999999888776655..79999***************9865 PP
+
+  == domain 2  score: 5.2 bits;  conditional E-value: 0.0038
+        atpE   82 gaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkrara 128 
+                   a + + i le+ +++ n+    ++q+  e+ q  ++a  ++kra+ 
+  CUR27442.1 1519 RASKSEDITLESIKSDQNDDIDPMSQIPIEELQLSVRAYTCLKRAQI 1565
+                  588999**************************************985 PP
+
+  == domain 3  score: 2.7 bits;  conditional E-value: 0.023
+        atpE   76 vtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqafkrara 128 
+                  +t+  + a + + i  e+ +++ n+    ++q+  e+ q  ++a +++kra+ 
+  CUR27442.1 1603 ITLSQERASKSEDITPESIKSDQNDDIDPMSQIPIEELQLSVRAYNCLKRAQI 1655
+                  5666677999999*************************************975 PP
+
+>> CUR27017.1  DevB protein [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5   2.5     1e-05     0.018      89     122 ..     115     148 ..      96     160 .. 0.83
+   2 ?   -1.1   1.2      0.34   5.7e+02      87     108 ..     182     203 ..     151     234 .. 0.55
+   3 ?    1.8   2.8     0.041        69      87     126 ..     220     259 ..     209     269 .. 0.72
+   4 ?    2.5   0.6     0.025        42      89     120 ..     283     314 ..     260     326 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 1e-05
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatqa 122
+                   le+a+++ + a ++l+qv+a+ +q +iqa++a
+  CUR27017.1 115 SALEQAKTEVEVAVARLEQVQAGAKQGDIQAQKA 148
+                 469****************************987 PP
+
+  == domain 2  score: -1.1 bits;  conditional E-value: 0.34
+        atpE  87 dkinleearaafneaqtklnqv 108
+                 +k  l+  +a+ n+a+t+ ++ 
+  CUR27017.1 182 QKATLDRIQAELNNAETNCQRY 203
+                 4455555556666666554433 PP
+
+  == domain 3  score: 1.8 bits;  conditional E-value: 0.041
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqiqatqa.fkra 126
+                 + ++ e +r   +eaq++ln+  + +r +qi+ +qa + r+
+  CUR27017.1 220 QCLQAETSRKRLQEAQANLNETIS-SRTEQIREAQAnLSRT 259
+                 45788999************9765.6778887665515555 PP
+
+  == domain 4  score: 2.5 bits;  conditional E-value: 0.025
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqat 120
+                 ++++ a+++ ++aq++++q + +  qa +++ 
+  CUR27017.1 283 VDVKLAKSELTKAQASVKQANVNLEQAYVRSP 314
+                 44455555555555555555555555555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5076  (1601503 residues searched)
+Passed MSV filter:                       171  (0.0336879); expected 101.5 (0.02)
+Passed bias filter:                      126  (0.0248227); expected 101.5 (0.02)
+Passed Vit filter:                        14  (0.00275808); expected 5.1 (0.001)
+Passed Fwd filter:                         5  (0.000985028); expected 0.1 (1e-05)
+Initial search space (Z):               5076  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 4388.12
+//
+[ok]

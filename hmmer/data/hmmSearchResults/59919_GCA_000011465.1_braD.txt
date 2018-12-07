@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59919_GCA_000011465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-23   79.9  27.2    2.3e-16   56.9   8.1    3.0  2  CAE19430.1  putative urea ABC transporter [Prochlorococcus ma
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE19430.1  putative urea ABC transporter [Prochlorococcus marinus subsp. pastoris str. CCMP1986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5  11.3   1.1e-10   2.1e-07       7      55 ..       6      54 ..       1     193 [. 0.88
+   2 !   56.9   8.1   1.2e-19   2.3e-16     130     254 ..     201     325 ..     186     332 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 1.1e-10
+        braD  7 qlivngiavgsiialaavgltltygilrlsnfahgdfltlgayltllvn 55
+                + + ngia+gs++ +aa+gl++++g++ + n+ahg+++ lgay t++ +
+  CAE19430.1  6 DSLFNGIAIGSVLLVAALGLAIVFGLMGVINLAHGELMMLGAYTTYVTQ 54
+                5578***************************************998764 PP
+
+  == domain 2  score: 56.9 bits;  conditional E-value: 1.2e-19
+        braD 130 aldilglkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglitavrpnmgwflilplfa 228
+                  ++ilg   p+++l+++++++++++a+  +l+++  g  +rav+++ +++   gi  ++v + t+ i   l+ ++g    l+ +v pn+g   i+  f 
+  CAE19430.1 201 QVEILGTAFPKTRLMIIIITLISVIAITLFLNQSAWGMRIRAVTQNREMSDCLGISTEKVDVLTFGIGSGLAGVAGVAVSLLGSVGPNVGGNYIVGCFM 299
+                 5799*********************************************************************************************** PP
+
+        braD 229 svilggignpygaiaaafiigiaqev 254
+                  v+lgg+gn  g+i+a+f igi+ ++
+  CAE19430.1 300 VVVLGGVGNLLGTIFASFGIGIMTDL 325
+                 **********************8765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         1948  (498304 residues searched)
+Passed MSV filter:                        97  (0.0497947); expected 39.0 (0.02)
+Passed bias filter:                       41  (0.0210472); expected 39.0 (0.02)
+Passed Vit filter:                         3  (0.00154004); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000513347); expected 0.0 (1e-05)
+Initial search space (Z):               1948  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 7175.58
+//
+[ok]

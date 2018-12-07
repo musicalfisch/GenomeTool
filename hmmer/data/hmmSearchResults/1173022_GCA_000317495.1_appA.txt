@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173022_GCA_000317495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-13   45.1  22.3    3.8e-13   44.8  22.3    1.0  1  AFZ11436.1  Na-Ca exchanger/integrin-beta4 [Crinalium epipsam
+  ------ inclusion threshold ------
+       0.32    5.3   5.3       0.43    4.8   5.3    1.1  1  AFZ11093.1  hypothetical protein Cri9333_0093 [Crinalium epip
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ11436.1  Na-Ca exchanger/integrin-beta4 [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.8  22.3   1.6e-16   3.8e-13    2277    2482 ..      18     229 ..       6     236 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 44.8 bits;  conditional E-value: 1.6e-16
+        appA 2277 lggtatlntdytrtgttntvtfa..agss.tatvtvdptadttvesdetviltlasgtgytvgtttavtgtitnddfsqlsinnitvvegqdsna.. 2368
+                  +g t ++n  +t  g   t ++a   g        ++pt   +v     v lt++   g    +t a+t  +    +  ls+ ni++ eg+d n+  
+  AFZ11436.1   18 VGETVAFNGHFTDPGIKGTHAIAwdFGDGnIVKNDLNPTHIYAVYGTYNVTLTVTDSDGAV--ATDAMT--VKVFKLPTLSVSNISLSEGDDGNTsv 110 
+                  6889999999999887666655511443303445678999999999999999998887743..345554..44557899*************99633 PP
+
+        appA 2369 iltvtvnnpnpqpisvnyttapvnatanvdytsktgtltiaantstatisipilndnlneanetfainlsnpvnatltnnkgivtisdt.l..tanv 2462
+                  ++t ++ +p  + ++ ny+t+   at+  dyt   gt+t a   ++ ti ipi+ d ++e +etf i+l +  na+++n +   ti d  l  t  +
+  AFZ11436.1  111 VFTASLSEPSLRTVTANYSTTDGTATSGKDYTISNGTITFAPGETSQTIIIPIIGDRIDEDDETFLIKLRDVTNAAIANTRASATIIDNdLppTLFI 207 
+                  667788999999*******************************99**************************************99988522112222 PP
+
+        appA 2463 tttl..panvenltltgttnin 2482
+                  +  +    +    t+t t n+n
+  AFZ11436.1  208 ADKIitEEDSTTATITYTVNLN 229 
+                  2222002333344555555555 PP
+
+>> AFZ11093.1  hypothetical protein Cri9333_0093 [Crinalium epipsammum PCC 9333]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.8   5.3   0.00018      0.43     416     446 ..      31      61 ..      22      78 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.00018
+        appA 416 lnnfgasiggviggfiapgignflgsviggw 446
+                    +ga+iggv+gg i   +g ++gsv gg 
+  AFZ11093.1  31 AGAMGAAIGGVVGGPIGAVVGSVIGSVAGGL 61 
+                 5678***********************9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         4752  (1515269 residues searched)
+Passed MSV filter:                       143  (0.0300926); expected 95.0 (0.02)
+Passed bias filter:                       89  (0.018729); expected 95.0 (0.02)
+Passed Vit filter:                        15  (0.00315657); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420875); expected 0.0 (1e-05)
+Initial search space (Z):               4752  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.27u 0.01s 00:00:00.28 Elapsed: 00:00:00.28
+# Mc/sec: 14154.70
+//
+[ok]

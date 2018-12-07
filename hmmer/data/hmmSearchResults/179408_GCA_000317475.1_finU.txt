@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/179408_GCA_000317475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-09   35.7   0.0    2.1e-09   35.6   0.0    1.0  1  AFZ07179.1  nitrogen-fixing NifU domain-containing protein [O
+    1.1e-07   30.0   3.1    2.9e-07   28.6   3.1    1.7  2  AFZ06833.1  nitrite reductase (NAD(P)H), large subunit [Oscil
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ07179.1  nitrogen-fixing NifU domain-containing protein [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.6   0.0   6.7e-13   2.1e-09     233     293 ..      11      70 ..       1      77 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 35.6 bits;  conditional E-value: 6.7e-13
+        finU 233 devvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                 +  v +e+r+ li+d+++v+l + d+ +++  l++a++s+ s++++l++ +e rl++ +  
+  AFZ07179.1  11 E-TVLDEMRPYLISDGGNVELVEIDGPVVHLRLQGACGSCPSSTMTLRMGIERRLREAIPE 70 
+                 3.455679************************************************98854 PP
+
+>> AFZ06833.1  nitrite reductase (NAD(P)H), large subunit [Oscillatoria nigro-viridis PCC 7112]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.6   3.1     9e-11   2.9e-07     141     209 ..     430     498 ..     422     536 .. 0.84
+   2 ?   -0.3   0.0     0.057   1.8e+02     144     194 ..     495     545 ..     492     559 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 28.6 bits;  conditional E-value: 9e-11
+        finU 141 GalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaatvrnslkkn 209
+                  a +c+c  +++ +i   i + nlt+   v +  +aG GcG c+  + di k+  k++  +v+n+l ++
+  AFZ06833.1 430 SAQICSCNNVTKGQICEAIRDYNLTDVASVKKCTQAGTGCGGCVPLVTDIFKSEMKKAGFAVKNNLCEH 498
+                 689**************************************************9999999999887654 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 0.057
+        finU 144 vctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdv 194
+                 +c  f  s + +  ++  +++ t e++ +    G Gc  c  ++  ++++ 
+  AFZ06833.1 495 LCEHFEYSRQELYHLVRSQEIKTFEELIERHGKGKGCEICKPAVGSMLAST 545
+                 699999999*******************************99998888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         6360  (2131415 residues searched)
+Passed MSV filter:                       218  (0.0342767); expected 127.2 (0.02)
+Passed bias filter:                      171  (0.0268868); expected 127.2 (0.02)
+Passed Vit filter:                         7  (0.00110063); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000314465); expected 0.1 (1e-05)
+Initial search space (Z):               6360  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10657.08
+//
+[ok]

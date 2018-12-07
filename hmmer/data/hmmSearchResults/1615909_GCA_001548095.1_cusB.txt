@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1615909_GCA_001548095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0022   14.3   3.9     0.0033   13.7   3.9    1.5  1  BAQ60377.1  probable RND efflux membrane fusion protein [Gemi
+  ------ inclusion threshold ------
+       0.11    8.6  15.5     0.0033   13.7   1.4    2.9  3  BAQ62609.1  HlyD family secretion protein [Geminocystis sp. N
+
+
+Domain annotation for each sequence (and alignments):
+>> BAQ60377.1  probable RND efflux membrane fusion protein [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.7   3.9   1.8e-06    0.0033     147     274 ..     142     268 ..      44     366 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 1.8e-06
+        cusB 147 yerqqqladqnvnsaktlqqs.katyttwqakysglaeklkvlgistsgledgnlkssi..nlyspidgyvtevnvnrgkfvnptdvlfeivdtehlha 242
+                  +r+ +l    +  akt +qs ka+ +  + k +   e  k   is   + + + k  i  ++ +p  gyv e   ++g++++p   ++ i d  +++ 
+  BAQ60377.1 142 AKRDVEL---AMTEAKTAKQSvKASESQVKVKKAT-VETAKGRIISQKAVIQEEKKRLIftKIKAPSSGYVLERMTEQGNLIQPGGEIIRIGDFSQVKV 236
+                 2233333...3456777777647777777777655.5677777777777766666665533789*********************************** PP
+
+        cusB 243 elivfekdvrklkigqkvrftlanetkeriat 274
+                 ++ v e ++++l +g+ v + l    +++ + 
+  BAQ60377.1 237 NVAVSELELKNLTLGKTVNVNLDAFPQQKFTG 268
+                 ******************99998766666554 PP
+
+>> BAQ62609.1  HlyD family secretion protein [Geminocystis sp. NIES-3708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.7   1.4   1.8e-06    0.0033      68     161 ..      59     149 ..      38     165 .. 0.72
+   2 ?   -0.6   2.6     0.039        71     127     190 ..     170     233 ..     150     254 .. 0.81
+   3 ?    3.4   0.3    0.0023       4.2     178     333 ..     258     431 ..     250     441 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 13.7 bits;  conditional E-value: 1.8e-06
+        cusB  68 iskrqisgtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfi.q.iqqdyleaksqfelskadyerqqqladqnvnsa 161
+                 i+++ i   i+  g   v p q v is    g+l    + qg  v+kgq ia ++n ++  q iq +     +q  +  ad + q +l   +v sa
+  BAQ62609.1  59 ITRKTINLEIKASG--TVEPIQNVNISPKNPGILERLLVDQGVIVKKGQPIAVMDNKQLYaQgIQAEARLQEAQASVQEADLKLQGDL---QVLSA 149
+                 55666666666666..578************************************987541337777777777888888888877544...33333 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.039
+        cusB 127 iqiqqdyleaksqfelskadyerqqqladqnvnsaktlqqskatyttwqakysglaeklkvlgi 190
+                  q + + +ea+s+++l++ + +r+++l ++   +a  ++q        qa+   +  +l  l i
+  BAQ62609.1 170 EQTRAQLVEAQSKLKLAQVQLQRNEKLLQEGAITADQFDQLANEVIVSQANVQRIVRQLEELQI 233
+                 45566789*******************9999999999999999888999988888888877776 PP
+
+  == domain 3  score: 3.4 bits;  conditional E-value: 0.0023
+        cusB 178 ysgla..eklkv.lgistsgledgnlkssinl.yspidgyvtevnvnrgkfvnptdvlfe........ivd.tehlhaelivfekdvrklkigqkvrft 263
+                  sg a  eklk  +    + le  +++    l  +p dg +t+     g fv pt             iv  ++ l     v e d+ ++k+gq v++ 
+  BAQ62609.1 258 VSGKAeiEKLKAnIKAVQASLEIAKIQFQDTLiTAPFDGIITQRFATEGAFVTPTTSASTtasatsssIVAlAKGLEIVAKVPEIDLSQIKLGQPVQII 356
+                 55655224565423344566777777765554168*******************976543111111113321223344444667888888888888876 PP
+
+        cusB 264 lanetkeria.tvyligreisterti...qihchidqedkdllpgmylkam.vetggaevpalpneaiidfegkk 333
+                      +e     v  i  e   e+ +   +++  +   +  ll  m +    +     ++  +p  ai+  egk 
+  BAQ62609.1 357 ADSYPNEVFKgVVKSIAPEAIVEQNVtsfEVKIAVITGQDRLLSKMNVEVNfLGEKLDNILVVPTVAIVTEEGKT 431
+                 555555544313445555555554431112333333444445666655432023333445556666666666665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         3639  (1135445 residues searched)
+Passed MSV filter:                        86  (0.0236329); expected 72.8 (0.02)
+Passed bias filter:                       49  (0.0134652); expected 72.8 (0.02)
+Passed Vit filter:                         3  (0.000824402); expected 3.6 (0.001)
+Passed Fwd filter:                         2  (0.000549602); expected 0.0 (1e-05)
+Initial search space (Z):               3639  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8004.89
+//
+[ok]

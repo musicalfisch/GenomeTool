@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/373994_GCA_000316665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglE  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.1e-07   26.9   0.0      3e-06   24.8   0.0    1.8  2  AFY52764.1  carbohydrate ABC transporter substrate-binding pr
+  ------ inclusion threshold ------
+      0.013   12.8   0.1       0.02   12.2   0.1    1.2  1  AFY53996.1  carbohydrate ABC transporter substrate-binding pr
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY52764.1  carbohydrate ABC transporter substrate-binding protein, CUT1 family [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.8   0.0     9e-10     3e-06       1     176 [.       1     181 [.       1     190 [. 0.78
+   2 ?   -0.7   0.0     0.049   1.6e+02     278     325 ..     276     320 ..     264     335 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 24.8 bits;  conditional E-value: 9e-10
+        aglE   1 mkffkittliisli.vltscqgpgvngdedrkqvtil.gvmigeqqekieqalapftea...tgievvyegvdtfattlpirvdsgrapdlamfpqpgl 94 
+                 m + ki +l+i+l   +t cq      +++  ++t+  gv    +++ +++ +  f +      ++ +y g         +    g ap   ++ +p +
+  AFY52764.1   1 MSYKKILALLIALAfTVTGCQFSSTSVQDNVTHLTLWqGVNPPSNRDVLQKLVDKFNQKhpnIQVDSLYVGQPDQQMPKILAAVVGNAPPDLLWFNPTI 99 
+                 677899999999852689999999998888888887536777777777777777787642113455677776544444444555677765556668*** PP
+
+        aglE  95 madfaregklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaangy.evpgtweemmalsqrli 176
+                   ++     lvpl e+l    + +  d a +d    +g ++ v + +  +  +++ p  f a g  e+p twee+  ++++l 
+  AFY52764.1 100 AGQLVELDALVPLDEMLNKSPVKDEIDPALFDSMKYQGKIWSVPFAT-NNVGIFYRPSLFKAAGIkELPKTWEEFRQVAKKLT 181
+                 *******************************************9965.5667899*****9998549********99998874 PP
+
+  == domain 2  score: -0.7 bits;  conditional E-value: 0.049
+        aglE 278 gnfiaaflpadvdddqvdifplppieeeyglpilvagdifamfndtpe 325
+                 g +  +++  d+ d +  +fp+p  e +      + g+ + +f+  pe
+  AFY52764.1 276 GPWTLTYINNDIKDGDFGVFPIPANERQA---TSIGGENLFIFKTEPE 320
+                 6677789999************9877653...2345555555555555 PP
+
+>> AFY53996.1  carbohydrate ABC transporter substrate-binding protein, CUT1 family [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.1     6e-06      0.02      97     185 ..     116     202 ..     102     218 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 6e-06
+        aglE  97 dfaregklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaangyevpgtweemmalsqrlidkgktpwcl 185
+                  fa  g l+ l + +t +e++ a+ q  ++     g +y v  r+ v   +++  + +   g++ p ++++++ +sq l +k +  w  
+  AFY53996.1 116 KFAAAGWLLDLTDKITKQELA-AFSQKDVEGRRYKGKLYAVPMRSDVGM-LYYRKDLLKEAGFNPPESFDDLVKISQSLQEKTNVNWGY 202
+                 69999*************996.99********************99975.5788899999************************99975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (421 nodes)
+Target sequences:                         6644  (2270700 residues searched)
+Passed MSV filter:                       150  (0.0225768); expected 132.9 (0.02)
+Passed bias filter:                      138  (0.0207706); expected 132.9 (0.02)
+Passed Vit filter:                        14  (0.00210716); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301023); expected 0.1 (1e-05)
+Initial search space (Z):               6644  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 10621.83
+//
+[ok]

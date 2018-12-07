@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/741277_GCA_000231365.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0021   14.9   1.0     0.0025   14.6   1.0    1.1  1  EHC16022.1  hypothetical protein FJSC11DRAFT_1445 [Fischerell
+  ------ inclusion threshold ------
+      0.026   11.3   0.0      0.034   10.9   0.0    1.1  1  EHC15989.1  Arginase/agmatinase/formiminoglutamase [Fischerel
+      0.046   10.4   0.0       0.21    8.2   0.0    1.9  2  EHC16163.1  carbamoyl-phosphate synthase, large subunit [Fisc
+
+
+Domain annotation for each sequence (and alignments):
+>> EHC16022.1  hypothetical protein FJSC11DRAFT_1445 [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   1.0   1.6e-06    0.0025      24      51 ..      48      75 ..      38      87 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.6e-06
+        AvaB 24 srlktlatltllllalpfnltlvsiall 51
+                s lk latltllll lp+n  +v + ll
+  EHC16022.1 48 SLLKNLATLTLLLLVLPINAGIVLVLLL 75
+                779*****************99988876 PP
+
+>> EHC15989.1  Arginase/agmatinase/formiminoglutamase [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   2.2e-05     0.034     103     166 ..     187     250 ..     142     268 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.2e-05
+        AvaB 103 ltghrfsrcvdrfytipkpqssqyaqalleivqkekvtvyvpvcspvasyydaliaemlaphct 166
+                   g++fs++   f ++  pq s+  q  l  + +++v +       v +yyd +i +ml    t
+  EHC15989.1 187 YEGFKFSHASIMFNAMKLPQISKLVQVGLRDICHDEVEIINQSNGRVIAYYDPVIKQMLYSGKT 250
+                 5699***********************9999999************************976655 PP
+
+>> EHC16163.1  carbamoyl-phosphate synthase, large subunit [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.0       0.1   1.6e+02     319     345 ..     280     306 ..     267     317 .. 0.82
+   2 ?    8.2   0.0   0.00014      0.21     303     350 ..     827     877 ..     812     893 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.1
+        AvaB 319 tgqvsfdfiqaaddgqvyaiecnprth 345
+                 tg  +++f     dg+v  ie npr  
+  EHC16163.1 280 TGGSNIQFAVNPVDGEVVVIEMNPRVS 306
+                 6677788888899************75 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.00014
+        AvaB 303 seierwilafvkglnltgqvsfdfiqa...addgqvyaiecnprthsaitm 350
+                 ++i +w + + + ln+ g ++++f  a   ++  qvy +e+npr+  ++ +
+  EHC16163.1 827 NQIRQWTVQLAQALNVVGLMNIQFAVAgsqTESPQVYILEANPRASRTVPF 877
+                 57999******************99872224567**********9877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         4627  (1420067 residues searched)
+Passed MSV filter:                       123  (0.0265831); expected 92.5 (0.02)
+Passed bias filter:                      103  (0.0222606); expected 92.5 (0.02)
+Passed Vit filter:                        10  (0.00216123); expected 4.6 (0.001)
+Passed Fwd filter:                         3  (0.000648368); expected 0.0 (1e-05)
+Initial search space (Z):               4627  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10910.85
+//
+[ok]

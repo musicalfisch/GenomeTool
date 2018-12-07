@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fdxH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fdxH  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-16   56.9   0.1    2.3e-16   56.6   0.1    1.1  1  KGG12448.1  soluble (2Fe-2S) ferredoxin [Prochlorococcus sp. 
+    0.00069   16.6   0.3    0.00079   16.4   0.3    1.2  1  KGG12111.1  Ferredoxin [Prochlorococcus sp. MIT 0601]
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG12448.1  soluble (2Fe-2S) ferredoxin [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   56.6   0.1   2.4e-19   2.3e-16       5      96 ..       5      96 ..       1      99 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 56.6 bits;  conditional E-value: 2.4e-19
+        fdxH  5 qvrlinkkedldttievdeettildaaeengidlpfschsgacsscvgkvvegeidqsdqiflddeqvskgfallcvtyprsnctikthqep 96
+                ++ + n++ +   t++v +  +il   e +g +lpfsc+ g+c++c  k++ g++dqs  i l  +  + g+allc++       ++t+qe 
+  KGG12448.1  5 KITVHNRQLKKTITLDVPDGEYILRFFESQGENLPFSCRNGCCTTCAVKIISGTLDQSLGIGLSKQMQDYGYALLCIARANGPLEVETQQED 96
+                5555666666677889999*********************************************999999********99999999999986 PP
+
+>> KGG12111.1  Ferredoxin [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   0.3   8.2e-07   0.00079      22      54 ..      15      47 ..       7      65 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 8.2e-07
+        fdxH 22 deettildaaeengidlpfschsgacsscvgkv 54
+                 e t  l+ a + g d+p  c  g+c +c   v
+  KGG12111.1 15 KEGTNWLEEACKAGFDIPTGCLKGSCGACEIEV 47
+                678999***********************7554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (99 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        50  (0.0262055); expected 38.2 (0.02)
+Passed bias filter:                       43  (0.0225367); expected 38.2 (0.02)
+Passed Vit filter:                         2  (0.00104822); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00104822); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 2467.89
+//
+[ok]

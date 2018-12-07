@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56110_GCA_000317105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-67  223.2   6.4    1.6e-67  223.1   6.4    1.0  1  AFY84879.1  nitrogen regulatory protein PII [Oscillatoria acu
+     0.0012   17.3   0.9      0.033   12.7   0.1    2.6  2  AFY82078.1  alanyl-tRNA synthetase [Oscillatoria acuminata PC
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY84879.1  nitrogen regulatory protein PII [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  223.1   6.4   5.4e-71   1.6e-67       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 223.1 bits;  conditional E-value: 5.4e-71
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnag+vgmtvsevrgfgrqkgqteryrgseytveflqklkveivv+d+ vdlvvdk++aaartgeigdgkifis+v+++
+  AFY84879.1   1 MKKVEAIIRPFKLDEVKIALVNAGVVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVDDDMVDLVVDKVVAAARTGEIGDGKIFISSVDEI 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek+lea+
+  AFY84879.1 100 VRIRTGEKNLEAI 112
+                 ***********97 PP
+
+>> AFY82078.1  alanyl-tRNA synthetase [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.3   0.1      0.02        57      57     101 ..     269     313 ..     258     317 .. 0.87
+   2 !   12.7   0.1   1.1e-05     0.033      40     109 ..     457     526 ..     434     529 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.3 bits;  conditional E-value: 0.02
+        glnB  57 qklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqvvr 101
+                 +k kv + v  ++   vv+ i     + +ig g i+   + +vvr
+  AFY82078.1 269 EKTKVSLKVIGDHSRAVVQMIADGITASNIGRGYILRRLIRRVVR 313
+                 5788888888899999***9999999*********9999999998 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 1.1e-05
+        glnB  40 kgqteryrgseytveflqklkveivvedeqvdlvvdki.iaaartgeigdgkifispveqvvrirtgekdl 109
+                  g +e    se tv ++    ve     ++v++v+dk    a   g+igd + f+s  +++vri   +k+ 
+  AFY82078.1 457 LGYSEPVTTSEVTVILMGGNSVESATSGDRVQIVLDKTpFYAESGGQIGD-RGFLSGQDSLVRIEEVKKES 526
+                 578899999****************************9345667789999.579**********9888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5796  (2068426 residues searched)
+Passed MSV filter:                       153  (0.0263975); expected 115.9 (0.02)
+Passed bias filter:                      130  (0.0224293); expected 115.9 (0.02)
+Passed Vit filter:                        11  (0.00189786); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345066); expected 0.1 (1e-05)
+Initial search space (Z):               5796  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7722.12
+//
+[ok]

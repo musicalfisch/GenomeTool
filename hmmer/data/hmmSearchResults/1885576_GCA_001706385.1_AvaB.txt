@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1885576_GCA_001706385.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+     0.0076   13.1   0.0      0.012   12.5   0.0    1.2  1  lcl|MCIH01000079.1_prot_1763             [locus_tag=BEV12_04930] [protein
+  ------ inclusion threshold ------
+      0.035   10.9   0.0      0.049   10.4   0.0    1.1  1  lcl|MCIH01000069.1_prot_OCY14567.1_1564  [locus_tag=BEV12_18580] [protein
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|MCIH01000079.1_prot_1763  [locus_tag=BEV12_04930] [protein=ribonucleoside-diphosphate reductase subunit alpha] [p
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.0   4.8e-06     0.012     252     321 ..     445     512 ..     411     529 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 4.8e-06
+                          AvaB 252 lpiseanpwimqeyipgqeycthstvrqghv.qlhccckssafqvnyehvdhseierwilafvkglnltgq 321
+                                     i+ anp   + yipg + ct s          hcc     + +n   +d+ eie      v+ l+ t +
+  lcl|MCIH01000079.1_prot_1763 445 DTINRANPNKHDGYIPGVNLCTESFSNVTPDkTAHCCNL---VSLNLANIDKEEIESNCQIAVRILDNTID 512
+                                   46999*****************99877665505566654...45788999*****9988888887776655 PP
+
+>> lcl|MCIH01000069.1_prot_OCY14567.1_1564  [locus_tag=BEV12_18580] [protein=membrane protease subunit, stomatin/prohibi
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0     2e-05     0.049     382     438 ..     207     263 ..     180     269 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 2e-05
+                                     AvaB 382 wtyhevwrlltqllspkmlrqrlqilvngkdaifewddplpflmvhhwqipllllgs 438
+                                               +  e+ r   q  + k+lrq l   +  + ai +wd  +p++m     +pl+ + s
+  lcl|MCIH01000069.1_prot_OCY14567.1_1564 207 EAKAEINRAKGQAEAQKLLRQNLTAEILQQRAIEKWDGRFPVVMAGSGSLPLINIDS 263
+                                              45678999999999********************************99999997766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         4811  (1363757 residues searched)
+Passed MSV filter:                       126  (0.02619); expected 96.2 (0.02)
+Passed bias filter:                      110  (0.0228643); expected 96.2 (0.02)
+Passed Vit filter:                         9  (0.00187071); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000415714); expected 0.0 (1e-05)
+Initial search space (Z):               4811  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 12573.84
+//
+[ok]

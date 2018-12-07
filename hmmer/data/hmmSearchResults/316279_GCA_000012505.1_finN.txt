@@ -1,0 +1,94 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00021   18.6   4.0      0.018   12.4   0.4    2.3  2  ABB25254.1  NADH-plastoquinone oxidoreductase, subunit I [Syn
+     0.0012   16.1   7.0      0.056   10.7   1.4    2.1  2  ABB25146.1  photosystem I iron-sulfur center subunit VII [Syn
+  ------ inclusion threshold ------
+       0.15    9.4   9.5      0.032   11.5   1.7    2.0  2  ABB26048.1  ferredoxin [Synechococcus sp. CC9902]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB25254.1  NADH-plastoquinone oxidoreductase, subunit I [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.4   2.3e-05     0.018       7      23 ..      62      78 ..      57      90 .. 0.83
+   2 !    7.4   0.2    0.0008      0.62       8      27 ..     103     122 ..      95     131 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 2.3e-05
+        finN  7 sqciscdlclsvcptna 23
+                 +ci+c++c+ vcp+n 
+  ABB25254.1 62 DKCIACEVCVRVCPINL 78
+                58************984 PP
+
+  == domain 2  score: 7.4 bits;  conditional E-value: 0.0008
+        finN   8 qciscdlclsvcptnavkvi 27 
+                  ci c  c+  cptn++ + 
+  ABB25254.1 103 VCIFCGNCVEYCPTNCLSMT 122
+                 6**************98765 PP
+
+>> ABB25146.1  photosystem I iron-sulfur center subunit VII [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.7   1.4   7.3e-05     0.056       2      27 ..      22      47 ..      21      58 .. 0.87
+   2 !    8.9   0.4   0.00028      0.21       6      25 ..      63      82 ..      57      91 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 7.3e-05
+        finN  2 aykitsqciscdlclsvcptnavkvi 27
+                a ki   ci c  c+  cp + + ++
+  ABB25146.1 22 AVKIYDTCIGCTQCVRACPLDVLEMV 47
+                679999**************999887 PP
+
+  == domain 2  score: 8.9 bits;  conditional E-value: 0.00028
+        finN  6 tsqciscdlclsvcptnavk 25
+                t +c+ c+ c + cpt+ + 
+  ABB25146.1 63 TEDCVGCKRCETACPTDFLS 82
+                789*************8654 PP
+
+>> ABB26048.1  ferredoxin [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   1.2      0.02        16       1      25 [.       1      26 [.       1      37 [. 0.76
+   2 ?   11.5   1.7   4.1e-05     0.032       8      23 ..      45      60 ..      38      67 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.02
+        finN  1 maykitsq.ciscdlclsvcptnavk 25
+                ma+ i s+ c     c+  cp++++ 
+  ABB26048.1  1 MAHTIVSEvCEGIADCVDACPVACID 26
+                67777775377788999999998876 PP
+
+  == domain 2  score: 11.5 bits;  conditional E-value: 4.1e-05
+        finN  8 qciscdlclsvcptna 23
+                 ci c +cl vcp++ 
+  ABB26048.1 45 TCIDCGICLQVCPVEG 60
+                7************974 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                        73  (0.031684); expected 46.1 (0.02)
+Passed bias filter:                       66  (0.0286458); expected 46.1 (0.02)
+Passed Vit filter:                         8  (0.00347222); expected 2.3 (0.001)
+Passed Fwd filter:                         3  (0.00130208); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 3895.13
+//
+[ok]

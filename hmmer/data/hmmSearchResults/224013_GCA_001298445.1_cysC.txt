@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-65  217.1   0.1      4e-65  216.9   0.1    1.0  1  ALF53608.1  adenylylsulfate kinase [Nostoc piscinale CENA21]
+      0.007   14.0   0.0      0.011   13.4   0.0    1.3  1  ALF52505.1  gluconokinase [Nostoc piscinale CENA21]
+  ------ inclusion threshold ------
+      0.013   13.1   0.0      0.023   12.3   0.0    1.4  1  ALF54304.1  GTPase RsgA [Nostoc piscinale CENA21]
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF53608.1  adenylylsulfate kinase [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  216.9   0.1   2.4e-68     4e-65       4     180 ..       1     177 [.       1     181 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 216.9 bits;  conditional E-value: 2.4e-68
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mk+ g t+w+tglsgagk+ti++ +   l a g  +e+ldgd+vrt l++glgfsk+drd n+ rigfv+ ll+r  v+ +v+aisp+r+ r +vr   
+  ALF53608.1   1 MKNLGFTLWFTGLSGAGKTTISQGVALELKARGSRVEILDGDVVRTHLSQGLGFSKQDRDTNVCRIGFVASLLSRNQVVAIVAAISPFRDSRAQVRQMN 99 
+                 8999*********************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihq 180
+                  +f+ev+v+a l+ ce+rdvkgly  arag+i  ftgid pye p+npe+ c t+ e + es+ kv + l    yi+ 
+  ALF53608.1 100 DNFIEVYVKASLEACEQRDVKGLYALARAGKIPEFTGIDSPYEEPLNPEIVCNTQQENITESINKVIKYLETREYIRA 177
+                 **********************************************************************99999975 PP
+
+>> ALF52505.1  gluconokinase [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.0   6.5e-06     0.011      15      94 ..       2      84 ..       1     101 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 6.5e-06
+        cysC 15 glsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrig..fvsnlltrhgvivlvsai.spyrei 94
+                g++gagk+ti +al a    e    + +     +t++++g  ++  dr+  ++ +   +   l + + vi+  sa+ + yr++
+  ALF52505.1  2 GVAGAGKTTIGQALAAATGWEFCDADWFHSTAAKTKMSRGEALTDADRQPWLQSLQtaIAQWLAAEKNVILACSALkASYRDL 84
+                899***************99*99**************************9998764114555677889999999983468876 PP
+
+>> ALF54304.1  GTPase RsgA [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   1.4e-05     0.023       5      31 ..     191     217 ..     187     230 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.4e-05
+        cysC   5 kqrgvtvwltglsgagkstitealqak 31 
+                  q g tv l g sg gkstit+ lq  
+  ALF54304.1 191 LQPGQTVALLGSSGVGKSTITNQLQGT 217
+                 58899******************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       180  (0.0358423); expected 100.4 (0.02)
+Passed bias filter:                      168  (0.0334528); expected 100.4 (0.02)
+Passed Vit filter:                        29  (0.00577459); expected 5.0 (0.001)
+Passed Fwd filter:                         3  (0.000597372); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6861.14
+//
+[ok]

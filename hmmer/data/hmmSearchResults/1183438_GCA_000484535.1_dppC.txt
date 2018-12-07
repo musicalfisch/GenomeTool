@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1183438_GCA_000484535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppC  [M=292]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-58  196.7  15.2    2.4e-58  195.7  15.2    1.4  1  AGY57369.1  binding-protein-dependent transport systems inner
+  ------ inclusion threshold ------
+      0.039   11.2   0.0      0.062   10.5   0.0    1.3  1  AGY59474.1  phospholipid/glycerol acyltransferase [Gloeobacte
+
+
+Domain annotation for each sequence (and alignments):
+>> AGY57369.1  binding-protein-dependent transport systems inner membrane component [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  195.7  15.2   1.1e-61   2.4e-58       5     291 ..      18     297 ..      15     298 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 195.7 bits;  conditional E-value: 1.1e-61
+        dppC   5 ssaiidtwrrfyrdplavigaialiiiilavlfgpifyrvp....idtidfsqttappslkhlfgtndlgqdqlarilvggrislavgiaamivalilg 99 
+                 ss   d+wrr+ r+ lav   i + ii++avl+gp +  +      +  d + +  pp   h fgt++lg+d l r lvgg+isl v + a +v+l++g
+  AGY57369.1  18 SSLWQDAWRRLLRNKLAVASGIVFSIILIAVLLGPKIIALTwgytYELTDAAAVYQPPGPAHWFGTDQLGRDLLVRSLVGGQISLLVAVVASVVSLVIG 116
+                 566789*****************************776654111155667777778******************************************* PP
+
+        dppC 100 taigaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvlvigglnwmsvarlvrgnflklremefisaaialgatpf 198
+                  + ga++g+ gg +d  +mr+ d++ slp++ l+++++ +f             +f+l   ++g + w+++ar+vrg++l +++ ef+ aa a+g    
+  AGY57369.1 117 VTYGAVAGYLGGRVDEAMMRFVDILYSLPDIFLIIVLLAFFSK----------DLFVLFG-MLGAISWLTMARIVRGQVLSIKNREFVEAARAIGVGTG 204
+                 *****************************99887777666643..........4677765.68************************************ PP
+
+        dppC 199 rliwvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlfkakdylttaphlvifpalaivitvlsinfigdglrdvfdpn 291
+                 ++i+ h++pn lg +iv +tl++   ++te+ lsflglg+ p + +wg ++ +    ++  p  ++fp l +  t++s+nf+gdglrd +dp+
+  AGY57369.1 205 QIIFRHIVPNTLGPVIVYTTLTIPSVMLTEAFLSFLGLGVQPPLSSWGTLVQEGVGAISVYPWHLLFPGLLMTATLFSLNFLGDGLRDALDPQ 297
+                 *******************************************************************************************96 PP
+
+>> AGY59474.1  phospholipid/glycerol acyltransferase [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   2.7e-05     0.062     232     276 ..      85     129 ..      65     140 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2.7e-05
+        dppC 232 sflglgfppdvptwgqmlfkakdylttaphlvifpalaivitvls 276
+                  + g+ + p+   w q++ +a  +l +  h+ ifp  a +it  s
+  AGY59474.1  85 QLGGFHMGPQGQGWSQLFARAAGFLQAGTHVAIFPEGAQLITTAS 129
+                 55577889999***************************9999765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (292 nodes)
+Target sequences:                         4507  (1419478 residues searched)
+Passed MSV filter:                       245  (0.0543599); expected 90.1 (0.02)
+Passed bias filter:                      130  (0.028844); expected 90.1 (0.02)
+Passed Vit filter:                         9  (0.00199689); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443754); expected 0.0 (1e-05)
+Initial search space (Z):               4507  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 8289.75
+//
+[ok]

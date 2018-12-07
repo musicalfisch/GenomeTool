@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173026_GCA_000317555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.9e-16   54.6   0.0    1.3e-14   50.6   0.0    2.0  2  AFZ31324.1  Ferredoxin--NADP(+) reductase [Gloeocapsa sp. PCC
+    3.1e-08   29.5   0.1    3.8e-08   29.2   0.1    1.0  1  AFZ33164.1  globin [Gloeocapsa sp. PCC 7428]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ31324.1  Ferredoxin--NADP(+) reductase [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.0   0.0    0.0024       6.1    1032    1072 ..     157     195 ..     149     201 .. 0.85
+   2 !   50.6   0.0   5.2e-18   1.3e-14    1208    1400 ..     205     412 ..     199     431 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.0024
+        cysJ 1032 vanqellqevvpgsrstrlivfdltdtdlqyetgdhvavyp 1072
+                  ++nqel+ e   g  + r ++fd+++ dl+y  g+ + + p
+  AFZ31324.1  157 ISNQELVGEG--GIGTVRHLIFDISEGDLRYLEGQSIGIIP 195 
+                  7899999985..556789****************9999887 PP
+
+  == domain 2  score: 50.6 bits;  conditional E-value: 5.2e-18
+        cysJ 1208 qkprlysisscpl...lhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliafl.... 1295
+                  +k rlysi+s      +  + + + v  l+    ++g+   g+cs yl+ l+pg+ v+i   +   +  p+d  a i+m   gtg++p+ a+l    
+  AFZ31324.1  205 EKLRLYSIASTRHgdhVDDKTVSLCVRQLEYKhPETGETVYGVCSTYLCHLEPGADVKITGpVGKEMLLPSDPNANIIMFATGTGIAPFRAYLwrmf 301 
+                  5789****9986421144556666666665442589***********************8626678999*********************9983332 PP
+
+        cysJ 1296 qhrealqnqgi.slgeahlyfgcrnpsdfiyqeqlqvwrdrnv.ltglevafsrlgeqkq....yvqnlmeqqpekiwqilshpqchyyvcgdakma 1386
+                  +  e   n      g + l fg     +++y+e+l+  +++      l  a+sr  ++ q    y+q+ + ++ +++w+++ + + h y+cg   m 
+  AFZ31324.1  302 KDEEKAANPDYeFKGFSWLIFGIPTTPNILYKEELEELQQKYPdNFRLTYAISREQKNPQggrmYIQDRVAEHADELWKMIQQDNTHTYICGLKGME 398 
+                  34455555555156999****************9987776643144677788886654334444****************************99998 PP
+
+        cysJ 1387 ddvfavmmaiakqq 1400
+                    +   + a a ++
+  AFZ31324.1  399 GGIDEALSAAAAKD 412 
+                  87776666665555 PP
+
+>> AFZ33164.1  globin [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.2   0.1   1.5e-11   3.8e-08     349     448 ..      21     119 ..       3     131 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 29.2 bits;  conditional E-value: 1.5e-11
+        cysJ 349 qmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlq.elrflgqvhsfadvptcaypamsetlfvlferylp.nftpelrq 445
+                 ++   fy+ l+  yp + p+f ++dmd    +l+ +l ++v  lr     e+l+  l+ lg  h         yp +  +l+  fe yl  ++tpe++q
+  AFZ33164.1  21 EFAASFYNNLLTDYPQLQPLFAKTDMDQQHQKLIMSLILVVSNLRNP---ELLKiTLQNLGARHVSYGTLQQHYPMVGAALLKTFESYLGkDWTPEVKQ 116
+                 56778***************************************975...555427999*****98889999*****************6379****** PP
+
+        cysJ 446 gwq 448
+                  w 
+  AFZ33164.1 117 AWA 119
+                 **6 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         5011  (1616692 residues searched)
+Passed MSV filter:                       129  (0.0257434); expected 100.2 (0.02)
+Passed bias filter:                      105  (0.0209539); expected 100.2 (0.02)
+Passed Vit filter:                         9  (0.00179605); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000399122); expected 0.1 (1e-05)
+Initial search space (Z):               5011  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.15u 0.01s 00:00:00.16 Elapsed: 00:00:00.16
+# Mc/sec: 14954.40
+//
+[ok]

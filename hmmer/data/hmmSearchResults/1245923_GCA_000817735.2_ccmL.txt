@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245923_GCA_000817735.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-61  202.5   1.0    2.9e-61  202.3   1.0    1.0  1  ODN56156.1  carbon dioxide concentrating mechanism protein Cc
+  ------ inclusion threshold ------
+      0.019   13.6   0.0       0.24   10.0   0.0    2.3  2  ODN58830.1  oxidoreductase [Scytonema millei VB511283]
+
+
+Domain annotation for each sequence (and alignments):
+>> ODN56156.1  carbon dioxide concentrating mechanism protein CcmL [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  202.3   1.0   1.2e-64   2.9e-61       1     100 []       1     100 []       1     100 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 202.3 bits;  conditional E-value: 1.2e-64
+        ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdqy 99 
+                 m+iakvrgtvvstqkdpslrgvkllllqlvdeeg++lp+yevaad+vgagvdewvlvsrgsaarqvlgneqrp+daavvaiidtv+v+drliyskkdqy
+  ODN56156.1   1 MHIAKVRGTVVSTQKDPSLRGVKLLLLQLVDEEGRILPEYEVAADNVGAGVDEWVLVSRGSAARQVLGNEQRPVDAAVVAIIDTVNVKDRLIYSKKDQY 99 
+                 89************************************************************************************************* PP
+
+        ccmL 100 r 100
+                 r
+  ODN56156.1 100 R 100
+                 8 PP
+
+>> ODN58830.1  oxidoreductase [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.0     0.078   1.9e+02      57      97 ..       6      46 ..       4      49 .. 0.80
+   2 ?   10.0   0.0   9.8e-05      0.24      30      91 ..     277     337 ..     272     341 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.078
+        ccmL 57 vsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkd 97
+                +s g    qv+ n  rp+   v+ + +  + + r++ s kd
+  ODN58830.1  6 MSAGEQNGQVQRNHPRPIRIGVIGVGNMGQHHVRVLSSMKD 46
+                67899999***********9999987766666666666665 PP
+
+  == domain 2  score: 10.0 bits;  conditional E-value: 9.8e-05
+        ccmL  30 vdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaa.vvaiidtvkvedrl 91 
+                   ++g +   y   +d++ga ++ +v   rg     v g eq  l a  + ++i+ + vedr+
+  ODN58830.1 277 YKQDGVIERVYTSNTDKLGAELEHFVNCVRGGNQPSVGG-EQA-LKALrLASLIEQMAVEDRV 337
+                 56899999***********************99988866.554.5555156699999999996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         4957  (1458912 residues searched)
+Passed MSV filter:                        94  (0.0189631); expected 99.1 (0.02)
+Passed bias filter:                       81  (0.0163405); expected 99.1 (0.02)
+Passed Vit filter:                         6  (0.00121041); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040347); expected 0.0 (1e-05)
+Initial search space (Z):               4957  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7294.56
+//
+[ok]

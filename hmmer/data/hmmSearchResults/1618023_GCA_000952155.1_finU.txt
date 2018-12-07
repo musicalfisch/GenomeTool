@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1618023_GCA_000952155.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-10   38.0   4.2    3.6e-10   37.6   2.9    1.8  2  KJH73441.1  nitrite reductase [Aliterella atlantica CENA595]
+    7.3e-10   36.6   0.0    7.6e-10   36.5   0.0    1.0  1  KJH71483.1  nitrogen fixation protein NifU [Aliterella atlant
+    3.8e-09   34.3   0.0    4.6e-09   34.0   0.0    1.2  1  KJH71620.1  nitrogen fixation protein NifU [Aliterella atlant
+
+
+Domain annotation for each sequence (and alignments):
+>> KJH73441.1  nitrite reductase [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   37.6   2.9   2.5e-13   3.6e-10     141     232 ..     421     513 ..     415     520 .. 0.85
+   2 ?    2.1   0.0     0.016        23     144     195 ..     486     537 ..     483     562 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 37.6 bits;  conditional E-value: 2.5e-13
+        finU 141 GalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaatvrnslkknta.selaekklkrvlkivlkikll 232
+                  a +c+c  +s+ +i   ivenn+t+   v +  kaG GcG c+  + d++k+  k++ + v+n+l ++ a s +   +l r +ki+   +ll
+  KJH73441.1 421 TAQICSCNNVSKGQICSAIVENNFTDIASVKKCTKAGTGCGGCVPLVTDLLKSEMKKAGIEVKNHLCEHFAySRQEIYHLVRSQKIITFEELL 513
+                 688*********************************************************999998777651444445666777777666665 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 0.016
+        finU 144 vctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvk 195
+                 +c  f+ s + i  ++  +++ t e++      G Gc  c  ++  i+++  
+  KJH73441.1 486 LCEHFAYSRQEIYHLVRSQKIITFEELLAKHGQGKGCEICKPAVASILASTW 537
+                 7999*************************************99999998765 PP
+
+>> KJH71483.1  nitrogen fixation protein NifU [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.5   0.0   5.2e-13   7.6e-10     235     293 ..      10      68 ..       3      76 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 36.5 bits;  conditional E-value: 5.2e-13
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                  v +e+r+ li+d+++v+l + d+ ++k  l++a++s+ s++++l++ +e rl++ +  
+  KJH71483.1  10 TVLDEMRPYLISDGGNVELVELDGPIVKLRLQGACGSCPSSTMTLRMGIERRLREMIPE 68 
+                 566789***********************************************998743 PP
+
+>> KJH71620.1  nitrogen fixation protein NifU [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.0   0.0   3.2e-12   4.6e-09      40      94 ..      40      94 ..      12     103 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 34.0 bits;  conditional E-value: 3.2e-12
+        finU 40 acGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvs 94
+                +cGd++ l +++++  d+i d +f+  Gc+ a+as++ +++ ++G+ +deal++ 
+  KJH71620.1 40 SCGDTIELTVQLNETGDTIQDVKFEGEGCAIAMASADLMADALRGKPVDEALQMV 94
+                6***************************************************976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4367  (1296044 residues searched)
+Passed MSV filter:                       172  (0.0393863); expected 87.3 (0.02)
+Passed bias filter:                      132  (0.0302267); expected 87.3 (0.02)
+Passed Vit filter:                        17  (0.00389283); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.00068697); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 7776.26
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/549789_GCA_001904775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-57  191.6   0.2    2.7e-57  191.5   0.2    1.0  1  OKH50159.1  hypothetical protein NIES30_05530 [Phormidium ten
+  ------ inclusion threshold ------
+      0.018   13.2   0.1      0.021   12.9   0.1    1.3  1  OKH47762.1  hypothetical protein NIES30_12325 [Phormidium ten
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH50159.1  hypothetical protein NIES30_05530 [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  191.5   0.2   1.1e-60   2.7e-57       1     165 []       1     164 []       1     164 [] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 191.5 bits;  conditional E-value: 1.1e-60
+        copC   1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsst.aaakakeeekekeeskGGqviesGayhlelvpekeangthldfylqkGdn 98 
+                 m ++k+ ++ v+++gl l+  +++s+ +  +++++++  a+  av+++ a+ +++e +++ + s+GGqv+esG+yhlelv+ +e  g+hldf+lqkGd 
+  OKH50159.1   1 MTVKKTLTFSVMALGLALTLGACGSSGE--QSSAPAEAVAEAPAVETQvAPDTSAEGDGQMQASQGGQVVESGPYHLELVTANEPTGVHLDFFLQKGDT 97 
+                 6778888888888888776555554433..233333333333344333033445566778899************************************ PP
+
+        copC  99 heavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 hea+++akv aq+q+PdG+q++++l+yda++ hy+a+lp +aaG+y+vail+di GekvnGrf+f k
+  OKH50159.1  98 HEAIADAKVMAQIQSPDGTQESVELTYDAEGAHYTAMLPVTAAGDYNVAILSDIGGEKVNGRFTFAK 164
+                 *****************************************************************75 PP
+
+>> OKH47762.1  hypothetical protein NIES30_12325 [Phormidium tenue NIES-30]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.9   0.1   8.5e-06     0.021       8      61 ..       4      57 ..       1      93 [. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 8.5e-06
+        copC  8 llvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekeke 61
+                 + +ls++l++++++ +s++a++++++s + t a+ +  +t+ ++ +e    +e
+  OKH47762.1  4 RFFLLSLALVMVGCAWQSTAADEPSSASIESTQAQCQRFNTSLTRFNERFTSSE 57
+                56789***********************99999998877766555444433333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5000  (1597938 residues searched)
+Passed MSV filter:                       119  (0.0238); expected 100.0 (0.02)
+Passed bias filter:                       97  (0.0194); expected 100.0 (0.02)
+Passed Vit filter:                         9  (0.0018); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.0004); expected 0.1 (1e-05)
+Initial search space (Z):               5000  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 8788.66
+//
+[ok]

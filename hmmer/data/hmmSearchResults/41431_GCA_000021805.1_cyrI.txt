@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/41431_GCA_000021805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrI  [M=276]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0002   18.9   0.0    0.00037   18.0   0.0    1.4  1  ACK66198.1  conserved hypothetical protein [Cyanothece sp. PC
+     0.0005   17.6   0.0    0.00091   16.7   0.0    1.3  1  ACK66866.1  cobalt transport protein [Cyanothece sp. PCC 8801
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK66198.1  conserved hypothetical protein [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.0   0.0   1.7e-07   0.00037     220     260 ..     160     201 ..     151     207 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 18.0 bits;  conditional E-value: 1.7e-07
+        cyrI 220 skklasskllikPraGDLvLfdsgRihavkkieqG.vRvsms 260
+                  + l s k+ + P++G L++f s   hav   ++G  R+s+s
+  ACK66198.1 160 RNSLNSEKVTYAPKEGRLIIFPSKHRHAVGANQTGeLRISLS 201
+                 68899*****************************94588876 PP
+
+>> ACK66866.1  cobalt transport protein [Cyanothece sp. PCC 8801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   0.0   4.1e-07   0.00091     213     264 ..      90     143 ..      83     153 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 4.1e-07
+        cyrI 213 pdelglD.skklassklli.kPraGDLvLfdsgRihavkkieqGvRvsmsClvG 264
+                 pd l +  + +l++s+ll+ +P + + vLfd gRi   +  e GvR+s   ++ 
+  ACK66866.1  90 PDGLAIHsQPRLPDSELLLpQPSNYNYVLFDKGRIITRRSLELGVRISTLIFIL 143
+                 66666651569*****87659**************************9988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (276 nodes)
+Target sequences:                         4367  (1346913 residues searched)
+Passed MSV filter:                       153  (0.0350355); expected 87.3 (0.02)
+Passed bias filter:                      109  (0.0249599); expected 87.3 (0.02)
+Passed Vit filter:                        11  (0.00251889); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045798); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9293.70
+//
+[ok]

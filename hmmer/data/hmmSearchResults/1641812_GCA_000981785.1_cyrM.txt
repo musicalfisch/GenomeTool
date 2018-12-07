@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641812_GCA_000981785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   9.9e-128  420.7   0.2   1.1e-127  420.6   0.2    1.0  1  AKE62937.1  Adenylylsulfate kinase [Microcystis aeruginosa NI
+  ------ inclusion threshold ------
+      0.017   12.5   0.0      0.029   11.8   0.0    1.3  1  AKE64671.1  Shikimate kinase I [Microcystis aeruginosa NIES-2
+
+
+Domain annotation for each sequence (and alignments):
+>> AKE62937.1  Adenylylsulfate kinase [Microcystis aeruginosa NIES-2549]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  420.6   0.2  5.1e-131  1.1e-127       1     184 []       1     184 []       1     184 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 420.6 bits;  conditional E-value: 5.1e-131
+        cyrM   1 miamkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevr 99 
+                 miamkqrgvtvwltglsgagkstiteal+akliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevr
+  AKE62937.1   1 MIAMKQRGVTVWLTGLSGAGKSTITEALEAKLIAEGYSIEVLDGDIVRTNLTKGLGFSKEDRDENIRRIGFVSNLLTRHGVIVLVSAISPYREIREEVR 99 
+                 9************************************************************************************************** PP
+
+        cyrM 100 gkigsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqavav 184
+                 gkigsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqavav
+  AKE62937.1 100 GKIGSFVEVFVNAPLSVCEERDVKGLYKRARAGEIKSFTGIDDPYEPPFNPEVECRTDLETLEESVAKVWNKLTELGYIHQAVAV 184
+                 ***********************************************************************************98 PP
+
+>> AKE64671.1  Shikimate kinase I [Microcystis aeruginosa NIES-2549]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0   1.4e-05     0.029       7      40 ..      11      44 ..       8      63 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 1.4e-05
+        cyrM  7 rgvtvwltglsgagkstitealqakliaegysie 40
+                rg++v+l g+ g+gkst+ e l  +l    +  +
+  AKE64671.1 11 RGLSVFLLGMMGSGKSTLGELLSRRLQYRFFDTD 44
+                9*******************99988866555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         4282  (1181467 residues searched)
+Passed MSV filter:                       161  (0.0375993); expected 85.6 (0.02)
+Passed bias filter:                      145  (0.0338627); expected 85.6 (0.02)
+Passed Vit filter:                        20  (0.00467071); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000467071); expected 0.0 (1e-05)
+Initial search space (Z):               4282  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7246.33
+//
+[ok]

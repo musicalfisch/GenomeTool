@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0073   13.6   0.3      0.026   11.7   0.1    2.0  2  ABW30470.1  molybdenum cofactor biosynthesis protein A [Acary
+  ------ inclusion threshold ------
+       0.04   11.1   0.0      0.065   10.4   0.0    1.2  1  ABW33135.1  ribonucleotide-diphosphate reductase, alpha subun
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW30470.1  molybdenum cofactor biosynthesis protein A [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.1   6.3e-06     0.026     123     250 ..      64     181 ..       5     197 .. 0.73
+   2 ?   -2.4   0.0      0.12   4.9e+02     323     342 ..     300     319 ..     292     326 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 6.3e-06
+        finB 123 gdplanpektfrtfeliadkapdik.lclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalke 220
+                 g+pl  p+       +ia   p++k l+++tn ++l    + + +  +  + i+l+ + pe  a i      + kr++ v +  i +  q+ g++ l  
+  ABW30470.1  64 GEPLLRPDILDIVRGVIA--LPQVKdLAMTTNAFLLEPLAQDLFEAGLRRINISLDSLVPETFATIVGRDSQRHKRWNKVWA-GIQKAYQV-GFNPL-- 156
+                 566666655544445555..467765899************************************************98864.45444443.55555.. PP
+
+        finB 221 adilckvnsvmipgindkhlvevnkairer 250
+                      k+n v+ipg+nd+ ++++  +  +r
+  ABW30470.1 157 -----KLNVVIIPGVNDHEVLDLAALTIDR 181
+                 .....79***********999887665544 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.12
+        finB 323 kflemapeynletrqevheg 342
+                 ++le+ pe n+++rq    g
+  ABW30470.1 300 QLLELKPEINYKERQSGTVG 319
+                 689***********986655 PP
+
+>> ABW33135.1  ribonucleotide-diphosphate reductase, alpha subunit (plasmid) [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   1.6e-05     0.065     274     354 ..      85     165 ..      72     195 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 1.6e-05
+        finB 274 gqrgptgk..elkevqdncsgnmkmmrhcrqcradavgllgedrsqeftkdkflemapeynletrqevhegiekfreeikaak 354
+                 ++r ptg    + ++qd++  ++ +mr      a a  l  e rsq+ t+++ +e ap y ++  + v   +e+f++ + +a 
+  ABW33135.1  85 KRRQPTGGtfHIEDIQDQV--ELALMRSGEHDVARAYVLYREKRSQKRTQQHGIEAAPIYLMDGGDRVLLDLERFNDLVDSAC 165
+                 5688888622467888876..6899**************************************************99988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       162  (0.0193248); expected 167.7 (0.02)
+Passed bias filter:                      142  (0.016939); expected 167.7 (0.02)
+Passed Vit filter:                         8  (0.000954312); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000238578); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 12317.05
+//
+[ok]

@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.6e-17   57.2  32.2    2.8e-11   38.5  18.1    3.0  3  ONN60885.1  hemolysin-type calcium-binding protein [Mastigocl
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN60885.1  hemolysin-type calcium-binding protein [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   4.1     0.023     1e+02    1841    2242 ..      21      79 ..       2     177 .. 0.52
+   2 !   32.8   6.1   3.3e-13   1.5e-09    2568    2630 ..     205     275 ..     197     285 .. 0.83
+   3 !   38.5  18.1   6.3e-15   2.8e-11    1393    1474 ..     385     470 ..     304     489 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 0.023
+        appA 1841 nsstatitvdptadttvepdetvtltlasgtgytvgtttavtgtiknddvtlpsitlavspssvnedgttnlvytftrsgsttnaltvnytlggtat 1937
+                   ss++t t d t +                                                                                   
+  ONN60885.1   21 SSSSSTWTNDSTLNGWYA------------------------------------------------------------------------------- 38  
+                  122223333333222111............................................................................... PP
+
+        appA 1938 lntdytrtgttntvtfaagsstatvtvdptadttvesdetviltlasgtgytigtttpvtgtiknddvtlpsitlavspssvtedgttnlvytftrt 2034
+                                                                                                                   
+  ONN60885.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2035 gsttsaltanytvggtatlntdytrtgtnntvtfaansstatitvdptadttvepdetvtltlasgtgytvgtttavtgtiknddvtlpsitlavsp 2131
+                                                                                                                   
+  ONN60885.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 2132 ssvtedgttnlvytftrtgsttsaltanytvggtatlntdytrtgtnntvtfaansstatitvdptadttvepd.etvtltlasgtgytvgtttavt 2227
+                                                                                         + d  tvt   as  g+t g+  +  
+  ONN60885.1   39 ----------------------------------------------------------------------ANTDgVTVTSYRASNGGFTTGSLYS-F 64  
+                  ......................................................................1111112222233333333333222.2 PP
+
+        appA 2228 gtiknddvtlpsitl 2242
+                  g  +n d +l si  
+  ONN60885.1   65 GVNNNSDRALGSIGS 79  
+                  333333333333322 PP
+
+  == domain 2  score: 32.8 bits;  conditional E-value: 3.3e-13
+        appA 2568 tlnnvitgnsgnnilngsd.........gndtliggtgndtltggaggdqftfnnrnegidtitdflssqgd 2630
+                  t+  vitg sgn+ l+gsd         gnd +ig  gnd ltgg g d f +  r +g+dtitdf  s  d
+  ONN60885.1  205 TFSPVITGTSGNDTLEGSDffdtinglaGNDVIIGKKGNDILTGGGGQDTFVI-RRGDGVDTITDFRGSGTD 275 
+                  56778999999998888876666666668999999999999999999999987.589999***999988766 PP
+
+  == domain 3  score: 38.5 bits;  conditional E-value: 6.3e-15
+        appA 1393 dyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanv...sgddii.dggtgldtisdlnyas 1474
+                   y+g     dtin  ggndt++g  gnd+i ggdgnd +  g gsd +  g+g dt a     sg di+ d   g d i  ln  s
+  ONN60885.1  385 YYVGLSGSSDTINAQGGNDTVQGKSGNDLIRGGDGNDILDGGDGSDTLVGGSGVDTFAIAtgrSGYDIVtDFTNGEDKIGLLNGLS 470 
+                  23333333333333333333333333333333333333333333333333333333332211122333212222333333333333 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       157  (0.035755); expected 87.8 (0.02)
+Passed bias filter:                       92  (0.0209519); expected 87.8 (0.02)
+Passed Vit filter:                        14  (0.00318834); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455477); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.31u 0.01s 00:00:00.32 Elapsed: 00:00:00.33
+# Mc/sec: 10948.18
+//
+[ok]

@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.4e-140  464.6   6.3   2.8e-140  464.4   6.3    1.0  1  EAM53201.1  H+-transporting two-sector ATPase, A subunit [Cro
+  ------ inclusion threshold ------
+       0.01   13.7   0.2      0.011   13.6   0.2    1.2  1  EAM48918.1  Protein of unknown function DUF1232 [Crocosphaera
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM53201.1  H+-transporting two-sector ATPase, A subunit [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  464.4   6.3  9.3e-144  2.8e-140       1     247 [.       3     249 ..       3     252 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 464.4 bits;  conditional E-value: 9.3e-144
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 ml+ l ++++lpla levg+h+yw++gnlk+hgqvf++sw+via+l++asl atr++qr+p+g+qn+mey lef+rdla+ qlgek+yrpw+pfigtlf
+  EAM53201.1   3 MLNGLRIIDTLPLAALEVGKHWYWEIGNLKLHGQVFMASWVVIALLIIASLLATRDIQRVPSGMQNFMEYVLEFLRDLARTQLGEKHYRPWLPFIGTLF 101
+                 78889999******************************************************************************************* PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsg+l+pwkli++p+gelaaptndinttvalalltslayfyag+sk+glgyf +y++p pvllpi iledftkplslsfrlfgniladelvv
+  EAM53201.1 102 LFIFVSNWSGSLVPWKLIEIPEGELAAPTNDINTTVALALLTSLAYFYAGLSKKGLGYFANYVQPIPVLLPIKILEDFTKPLSLSFRLFGNILADELVV 200
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgeee 247
+                 avlv+lvplfvplp+malglftsaiqalvfatlagayihea+e   eee
+  EAM53201.1 201 AVLVFLVPLFVPLPLMALGLFTSAIQALVFATLAGAYIHEAIESEEEEE 249
+                 *******************************************988776 PP
+
+>> EAM48918.1  Protein of unknown function DUF1232 [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.2   3.7e-06     0.011      68     103 ..       1      35 [.       1      67 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 3.7e-06
+        atpI  68 meyalefirdlaknqlgekeyrpwvpfigtlflfif 103
+                 m++ l+fi d  +n +   +yr wv f gtl+ f+ 
+  EAM48918.1   1 MKFPLQFIYDWYRNAIRHPQYRWWVIF-GTLVYFVS 35 
+                 7899*********************87.99999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       190  (0.0318899); expected 119.2 (0.02)
+Passed bias filter:                      120  (0.020141); expected 119.2 (0.02)
+Passed Vit filter:                         4  (0.000671366); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335683); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 10241.17
+//
+[ok]

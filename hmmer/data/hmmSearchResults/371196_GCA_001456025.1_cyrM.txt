@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/371196_GCA_001456025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-97  321.7   0.3    5.7e-97  321.5   0.3    1.0  1  KST63330.1  adenylyl-sulfate kinase [Mastigocoleus testarum B
+     0.0017   16.8   0.0     0.0044   15.4   0.0    1.7  1  KST65503.1  hypothetical protein BC008_41990 [Mastigocoleus t
+  ------ inclusion threshold ------
+       0.04   12.3   0.0       0.11   10.9   0.0    1.6  2  KST63386.1  cell division ATP-binding protein FtsE [Mastigoco
+
+
+Domain annotation for each sequence (and alignments):
+>> KST63330.1  adenylyl-sulfate kinase [Mastigocoleus testarum BC008]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  321.5   0.3    2e-100   5.7e-97       4     182 ..       1     179 [.       1     181 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 321.5 bits;  conditional E-value: 2e-100
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m+qrgvtvw+tglsgagk+ti++a+  kl  +gy +e+ldgd+vr nltkglgfsk drdenirrigfvs lltr gvivlvsaispy +ireev+ ki
+  KST63330.1   1 MNQRGVTVWFTGLSGAGKTTISQAVAEKLRLQGYRLEILDGDVVRENLTKGLGFSKADRDENIRRIGFVSHLLTRNGVIVLVSAISPYSKIREEVKQKI 99 
+                 89************************************************************************************************* PP
+
+        cyrM 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyihqav 182
+                  +fvev+vnapl+vceerdvkglykrarageik ftgiddpye pf+p+vecrtdle lees+akv +kl elgy+++ +
+  KST63330.1 100 EDFVEVYVNAPLAVCEERDVKGLYKRARAGEIKNFTGIDDPYEAPFKPNVECRTDLEDLEESIAKVLKKLEELGYLNKVI 179
+                 ****************************************************************************9876 PP
+
+>> KST65503.1  hypothetical protein BC008_41990 [Mastigocoleus testarum BC008]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.0   1.5e-06    0.0044      15      71 ..     500     557 ..     491     566 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 1.5e-06
+        cyrM  15 glsgagkstitealqakliaegysievldgdivrtnltkglgfsked.rdenirrigf 71 
+                   sg gk+t+t  l   l+  g+ i ++d d  + +lt+ lg+  +   d ++r i +
+  KST65503.1 500 ANSGEGKTTVTLGLANALLELGFRILIVDADFRKCELTQSLGYYGQSiGDLQLRPINV 557
+                 569***************************************8654314566666655 PP
+
+>> KST63386.1  cell division ATP-binding protein FtsE [Mastigocoleus testarum BC008]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   3.6e-05      0.11       6      48 ..      36      78 ..      31      87 .. 0.82
+   2 ?   -2.1   0.0      0.37   1.1e+03       7      38 ..      89     120 ..      83     127 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 3.6e-05
+        cyrM  6 qrgvtvwltglsgagkstiteal.qakliaegysievldgdivr 48
+                +rg  +++tg sg+gkst+ + l +  l ++gy + v d d+v+
+  KST63386.1 36 RRGEFLFITGASGSGKSTLLKLLyREELPTKGYVV-VDDCDLVK 78
+                689999*************9988345688889865.88899886 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.37
+        cyrM   7 rgvtvwltglsgagkstitealqakliaegys 38 
+                 r v + +       + t++e ++  l a+gy+
+  KST63386.1  89 RQVGIVFQDYKLIPQRTVAENVNIVLQAQGYT 120
+                 55555555555666778888888888888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         8733  (3091675 residues searched)
+Passed MSV filter:                       385  (0.0440857); expected 174.7 (0.02)
+Passed bias filter:                      357  (0.0408794); expected 174.7 (0.02)
+Passed Vit filter:                        53  (0.00606893); expected 8.7 (0.001)
+Passed Fwd filter:                         3  (0.000343525); expected 0.1 (1e-05)
+Initial search space (Z):               8733  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 6320.76
+//
+[ok]

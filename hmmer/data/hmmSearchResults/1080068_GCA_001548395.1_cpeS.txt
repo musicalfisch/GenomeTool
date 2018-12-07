@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080068_GCA_001548395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.8e-122  403.4   0.0   4.2e-122  403.2   0.0    1.0  1  BAU42193.1  Phycocyanobilin lyase CpcT [Leptolyngbya sp. O-77
+    2.6e-33  113.4   0.0    2.2e-32  110.5   0.0    1.9  1  BAU40690.1  hypothetical protein O77CONTIG1_00494 [Leptolyngb
+
+
+Domain annotation for each sequence (and alignments):
+>> BAU42193.1  Phycocyanobilin lyase CpcT [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  403.2   0.0  1.7e-125  4.2e-122       1     195 [.       1     195 [.       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 403.2 bits;  conditional E-value: 1.7e-125
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstd+++lar+maadfsnqeqafenppffahirvcmrplp+ellsg+s+fveqaydy+lndpyrlrvlklv+a+d+ieienytvk+e++fygasr+l
+  BAU42193.1   1 MTHSTDLTALARWMAADFSNQEQAFENPPFFAHIRVCMRPLPVELLSGISLFVEQAYDYALNDPYRLRVLKLVNAGDHIEIENYTVKDETEFYGASRNL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevk 195
+                 ++l++l+ d+leklpgcnmivewtg+sf+gkvepgkac+v+r+gk+tyldsefeid++ fisldrgrdpetdehiwgsvagpf+fvrwasfade++
+  BAU42193.1 100 TQLSKLTGDRLEKLPGCNMIVEWTGHSFRGKVEPGKACMVTRRGKETYLDSEFEIDDQIFISLDRGRDPETDEHIWGSVAGPFHFVRWASFADEIR 195
+                 **********************************************************************************************97 PP
+
+>> BAU40690.1  hypothetical protein O77CONTIG1_00494 [Leptolyngbya sp. O-77]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  110.5   0.0   8.9e-36   2.2e-32       5     187 ..       5     202 ..       1     206 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 110.5 bits;  conditional E-value: 8.9e-36
+        cpeS   5 tdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed...............rieienytvke 88 
+                  d+ tla+++a +f n++q++++p +f h+r+  rplp+ +   +++f eq+    l++pyr rvl l e++d               + +++ ++ ++
+  BAU40690.1   5 LDLLTLAQWLAGEFDNRAQSLDQPTWFVHLRLWHRPLPIRIHGCLALFAEQSNALYLQNPYRQRVLVLQENDDgntdagggddgkptvQYTVQYWAFRQ 103
+                 6999***************************************************************99876533333333333332234566677799 PP
+
+        cpeS  89 ekkfygasrdlerlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrw 187
+                  ++f ga    e l++l+ ddl+ lpgc + +    ++   + + g  c    +g++  +   fe    +f s d+g dp+t + +wg++ gp+ef++ 
+  BAU40690.1 104 PDRFRGAGARPELLSNLTLDDLQLLPGCRLRLRTHKDGVAAEPKEGDRCCFQYNGETRQVVLGFEASPGRFRSYDKGVDPDTGQALWGALMGPYEFIKQ 202
+                 ************************************************************************************************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         4865  (1484008 residues searched)
+Passed MSV filter:                        60  (0.012333); expected 97.3 (0.02)
+Passed bias filter:                       59  (0.0121274); expected 97.3 (0.02)
+Passed Vit filter:                         3  (0.00061665); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.0004111); expected 0.0 (1e-05)
+Initial search space (Z):               4865  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7271.64
+//
+[ok]

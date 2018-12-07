@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880991_GCA_001698425.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-57  189.9  10.7    5.4e-57  189.8  10.7    1.0  1  OCQ95016.1  F0F1 ATP synthase subunit B' [Oscillatoriales cya
+  ------ inclusion threshold ------
+       0.01   13.8  11.2      0.013   13.5  11.2    1.1  1  OCQ95015.1  ATP synthase F0 subunit B [Oscillatoriales cyanob
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ95016.1  F0F1 ATP synthase subunit B' [Oscillatoriales cyanobacterium USR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.8  10.7   2.2e-60   5.4e-57       1     143 []       1     143 []       1     143 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 189.8 bits;  conditional E-value: 2.2e-60
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf++l+++lnavfykpl+k ld+ra+yir+te gake+lak++ + ++ye +l  +r+qsq i+a aqa+aqk+a+++va aqkea
+  OCQ95016.1   1 MFDFDATLPLMALQFLVLTLVLNAVFYKPLTKALDDRANYIRNTELGAKERLAKAKLMAEQYEQKLGESRRQSQTIVATAQADAQKIAAQQVAEAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                    +e  a ei  qk+ea+rsle +v +lsrqilekllgp lv+
+  OCQ95016.1 100 QMSREKAAKEIEYQKQEAMRSLEQEVDTLSRQILEKLLGPALVK 143
+                 ******************************************96 PP
+
+>> OCQ95015.1  ATP synthase F0 subunit B [Oscillatoriales cyanobacterium USR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.5  11.2   5.3e-06     0.013      17     137 ..      31     153 ..      17     158 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.5 bits;  conditional E-value: 5.3e-06
+        atpG  17 llavilnavfy..kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqq 113
+                 ll vi   v++    l k+l er   i ++ + a ++   + a + e + +l+ a+ +++ i a a+ +a+   +  +a a ++    k     e+  +
+  OCQ95015.1  31 LLIVIGVLVYFgrGFLGKILTERRSAIEEAINDAEKRQKDAIAALAEEQQKLTQAQAEAERIKATAEENAKAAKAAILAQAAQDVERMKADAGKELEAE 129
+                 44555555555223599**********999888877666666777777889***********999987776655555665555555555556689**** PP
+
+        atpG 114 keeafrslegqvaslsrqilekll 137
+                 +e a+  l   vas++ + +e+ l
+  OCQ95015.1 130 RERAIAQLRAIVASMALERVENQL 153
+                 **************9988777766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4908  (1600603 residues searched)
+Passed MSV filter:                       225  (0.0458435); expected 98.2 (0.02)
+Passed bias filter:                       95  (0.0193562); expected 98.2 (0.02)
+Passed Vit filter:                         5  (0.00101874); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000407498); expected 0.0 (1e-05)
+Initial search space (Z):               4908  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 5722.16
+//
+[ok]

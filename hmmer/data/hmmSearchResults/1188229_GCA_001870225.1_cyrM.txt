@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1188229_GCA_001870225.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0073   13.2   0.0      0.015   12.2   0.0    1.4  1  APB34839.1  cyclic nucleotide-binding protein [Gloeomargarita
+  ------ inclusion threshold ------
+      0.015   12.2   0.2      0.025   11.5   0.0    1.5  2  APB35205.1  shikimate kinase domain protein [Gloeomargarita l
+
+
+Domain annotation for each sequence (and alignments):
+>> APB34839.1  cyclic nucleotide-binding protein [Gloeomargarita lithophora Alchichica-D10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0     1e-05     0.015       6      51 ..     365     410 ..     362     418 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1e-05
+        cyrM   6 qrgvtvwltglsgagkstitealqakliaegysievldg.divrtnl 51 
+                 q g t+ + gl gagkst+ eal    +  g     ldg di r  l
+  APB34839.1 365 QPGETLVVVGLVGAGKSTLIEALCRL-LPIGGGQVFLDGqDITRIHL 410
+                 6789999****************755.55555555677647888776 PP
+
+>> APB35205.1  shikimate kinase domain protein [Gloeomargarita lithophora Alchichica-D10]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.6e-05     0.025       7      32 ..      16      41 ..      10      93 .. 0.82
+   2 ?   -3.6   0.0      0.72   1.1e+03       8     112 ..     110     117 ..     106     125 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.6e-05
+        cyrM  7 rgvtvwltglsgagkstitealqakl 32
+                 gvtv+l g+ g+gkst  + l ++l
+  APB35205.1 16 GGVTVFLVGMMGCGKSTTGKRLASRL 41
+                69***************998887776 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 0.72
+        cyrM   8 gvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgkigsfv 106
+                 gv vwl                                                                                             
+  APB35205.1 110 GVVVWL--------------------------------------------------------------------------------------------- 115
+                 444444............................................................................................. PP
+
+        cyrM 107 evfvna 112
+                     +a
+  APB35205.1 116 ----DA 117
+                 ....44 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3034  (879391 residues searched)
+Passed MSV filter:                       121  (0.0398813); expected 60.7 (0.02)
+Passed bias filter:                      111  (0.0365854); expected 60.7 (0.02)
+Passed Vit filter:                        18  (0.00593276); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000659196); expected 0.0 (1e-05)
+Initial search space (Z):               3034  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 8090.40
+//
+[ok]

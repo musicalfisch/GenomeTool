@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1960155_GCA_002025445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    0.00075   17.9   0.1    0.00086   17.7   0.1    1.0  1  lcl|MVGR01000005.1_prot_OPF15255.1_4409  [locus_tag=B1L04_22245] [protein
+  ------ inclusion threshold ------
+      0.011   14.1   2.4      0.011   14.1   2.4    1.7  2  lcl|MVGR01000004.1_prot_OPF17511.1_3230  [locus_tag=B1L04_16275] [protein
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|MVGR01000005.1_prot_OPF15255.1_4409  [locus_tag=B1L04_22245] [protein=neurohypophysial hormones like protein] [pr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.7   0.1     3e-07   0.00086       1      63 [.       1      62 [.       1      66 [. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 17.7 bits;  conditional E-value: 3e-07
+                                     copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekees 63
+                                             mk++ ++ l++l+++ + l+a+ + ++a+++++ ++t  + +++ +s +++++++++++++++
+  lcl|MVGR01000005.1_prot_OPF15255.1_4409  1 MKIKSLVVLILLTLTTV-LGACQGGKEAEEPKNVPTTVESPQKDEDSDKDGEKQQKDGDNDQN 62
+                                             78888888888888765.578888889999999998887777777777777666665555444 PP
+
+>> lcl|MVGR01000004.1_prot_OPF17511.1_3230  [locus_tag=B1L04_16275] [protein=transporter] [protein_id=OPF17511.1] [locat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   14.1   2.4   3.8e-06     0.011       5      58 ..       3      56 ..       1      65 [. 0.67
+   2 ?   -2.7   0.1      0.55   1.6e+03     100     114 ..     136     150 ..     131     151 .] 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 3.8e-06
+                                     copC  5 kssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeek 58
+                                             k ++l+++s+ l+ ++a+ n+++ +++  ss+++t +  ++++ ++++++ +++
+  lcl|MVGR01000004.1_prot_OPF17511.1_3230  3 KITTLILSSLLLIGTVACENNAKTSTNAPSSTEETGQVPDTKTVQKNQSDASSQ 56
+                                             667888888888888888888888888888888887665555555444444433 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.55
+                                     copC 100 eavsnakvtaqvqlP 114
+                                              + v   kv+a+v l 
+  lcl|MVGR01000004.1_prot_OPF17511.1_3230 136 KGVNSVKVKAKVALS 150
+                                              567788999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5795  (1601949 residues searched)
+Passed MSV filter:                       145  (0.0250216); expected 115.9 (0.02)
+Passed bias filter:                      114  (0.0196721); expected 115.9 (0.02)
+Passed Vit filter:                        20  (0.00345125); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345125); expected 0.1 (1e-05)
+Initial search space (Z):               5795  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6608.04
+//
+[ok]

@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/2005459_GCA_002218085.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.4e-06   25.1   9.8    1.1e-05   24.6   9.8    1.2  1  GAX42098.1  small multidrug resistance protein [Tolypothrix s
+     0.0025   17.0   8.9      0.013   14.6   8.9    1.9  1  GAX42911.1  hypothetical protein NIES4075_39160 [Tolypothrix 
+  ------ inclusion threshold ------
+      0.025   13.8   6.5       0.13   11.5   6.5    1.8  1  GAX42099.1  putative small multidrug resistance transmembrane
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX42098.1  small multidrug resistance protein [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.6   9.8   4.4e-09   1.1e-05       2     101 ..      12     118 ..      11     122 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 24.6 bits;  conditional E-value: 4.4e-09
+        emrC   2 liswiyllaailfevsgttcmk..lseg....ftk..lipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisi 92 
+                 lis++ l+ +i f ++g   mk  +s++    ft   +   vl + +y l++    +al+++++s+ay +  +l  v i   +  +f e +tl++++ +
+  GAX42098.1  12 LISYLTLFLSIAFGIVGQLLMKhtMSNKteqlFTWtfIQQLVLALSVYSLGIVNWIFALRTVKLSIAYPLT-SLNYVGILLGSYYFFDEKITLIRVVGV 109
+                 689**************999984445441222443114456777889*********************985.5888888888999************** PP
+
+        emrC  93 aliiigvig 101
+                 +li igv+ 
+  GAX42098.1 110 VLIFIGVLL 118
+                 ******985 PP
+
+>> GAX42911.1  hypothetical protein NIES4075_39160 [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   8.9   5.5e-06     0.013      33     102 ..      49     118 ..       1     122 [] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 5.5e-06
+        emrC  33 psvli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 p +l  + fygl+     l l ++ +sva    a+l  v+   +g  +f+es+  ++li ++li+ gvi +
+  GAX42911.1  49 PELLTgLAFYGLGAVAYILLLTRVSLSVAGP-SASLVYVFSVLLGYFIFKESIPSIRLIGLSLIVGGVILV 118
+                 555543679****99999**********976.58899999999*************************965 PP
+
+>> GAX42099.1  putative small multidrug resistance transmembrane protein [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   6.5   5.2e-05      0.13      20     102 ..      32     116 ..       2     119 .] 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 5.2e-05
+        emrC  20 tcmklsegftklips..vli.fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                 t+ k s+    l+ s    i f++y +   +  + l++i +s a+    gl  +l+   +  ++re + + + + ia+i+ gvi +
+  GAX42099.1  32 TTNKPSKSVRDLLFSpyFWIwFISYVVVTVLWLIVLRTIPLSQAFPA-LGLTFALVPLASHRFLRENVVFSQWLGIAVIVAGVILV 116
+                 33344444444433311333388898888888899*********986.489999*****************************965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         7372  (2211063 residues searched)
+Passed MSV filter:                       241  (0.0326913); expected 147.4 (0.02)
+Passed bias filter:                       93  (0.0126153); expected 147.4 (0.02)
+Passed Vit filter:                         7  (0.000949539); expected 7.4 (0.001)
+Passed Fwd filter:                         3  (0.000406945); expected 0.1 (1e-05)
+Initial search space (Z):               7372  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 5859.32
+//
+[ok]

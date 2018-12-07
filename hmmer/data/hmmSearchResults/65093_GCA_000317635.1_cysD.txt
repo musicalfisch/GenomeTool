@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-39  133.2   0.0    2.4e-39  133.0   0.0    1.0  1  AFZ42528.1  phosphoadenylylsulfate reductase (thioredoxin) [H
+  ------ inclusion threshold ------
+      0.015   12.6   0.0      0.048   10.9   0.0    1.7  2  AFZ45170.1  hypothetical protein PCC7418_3047 [Halothece sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ42528.1  phosphoadenylylsulfate reductase (thioredoxin) [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  133.0   0.0   1.3e-42   2.4e-39       9     241 .]       6     237 ..       1     237 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 133.0 bits;  conditional E-value: 1.3e-42
+        cysD   9 pqttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkvyktpdvdt 107
+                  + ++++l++ln++f+ a  +e++ ws +    glv +++f ++  ++ +++ + +   +p+i++dt y   et  +  k  +  nl+lkvy++p   +
+  AFZ42528.1   6 LEQPQLNLQELNNQFQNADAKEVIQWSAQTFGDGLVMSTSFGIQSALMLHLVTR-IIPDIPIIWVDTGYLHAETYRFADKLTQRLNLNLKVYQSPISPA 103
+                 4567899******************************************98766.6678************************************9888 PP
+
+        cysD 108 reafaakygealwd.kd...iakfhevtkieplqrglaelntvawitgrrrdqavtranmpifeldsknrikvnplanwtrkksweyvaehgviynplh 202
+                 r  + a yg+ lw+ kd   +  + ++ k+ep+qr l+el + aw++g rrdq+  r ++p +     +  k+ p+ +w  ++   y++e+ + y pl 
+  AFZ42528.1 104 R--MEALYGK-LWEkKDlesLNLYDQIRKVEPMQRALDELGATAWLAGLRRDQTQHRQQLPRIGE-QSGIYKILPILDWHSRDVHRYLTEYDLPYHPLF 198
+                 7..4566775.454144111456889***********************************8865.45789**************************** PP
+
+        cysD 203 dqgypsigdepittkvg.egederagrwrgtgktecgihi 241
+                 dqgy ++gd   + ++  + e er  r++g  k ecg+h+
+  AFZ42528.1 199 DQGYMTVGDWHSSRPISlNDEHERDTRFQGV-KQECGLHL 237
+                 *********9999999746799*******96.88****96 PP
+
+>> AFZ45170.1  hypothetical protein PCC7418_3047 [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.0   0.0      0.11     2e+02     114     127 ..      59      72 ..      46      74 .. 0.84
+   2 ?   10.9   0.0   2.6e-05     0.048      74     127 ..      87     138 ..      77     149 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -1.0 bits;  conditional E-value: 0.11
+        cysD 114 kygealwdkdiakf 127
+                 + g+ lwdkd a f
+  AFZ45170.1  59 RVGKYLWDKDKAGF 72 
+                 67999*****8876 PP
+
+  == domain 2  score: 10.9 bits;  conditional E-value: 2.6e-05
+        cysD  74 dtlyhfretlelvakakevynldlkvyktpdvdtreafaakygealwdkdiakf 127
+                 +   ++++ le v k  e+ n d++vy t  + + ++f++   e +  k ia f
+  AFZ45170.1  87 NYSQQWNQELEKVVKDGEIPNEDIEVYLTAKLGNSDCFVSSNRELI--KAIATF 138
+                 555678999******************************9887755..455555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                        67  (0.018069); expected 74.2 (0.02)
+Passed bias filter:                       56  (0.0151025); expected 74.2 (0.02)
+Passed Vit filter:                         3  (0.000809061); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000539374); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9487.83
+//
+[ok]

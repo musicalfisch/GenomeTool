@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1228987_GCA_000829235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braC  [M=471]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0006   15.3   0.2      0.018   10.4   0.1    2.0  2  BAP17520.1  dihydrodipicolinate synthase [cyanobacterium endo
+
+
+Domain annotation for each sequence (and alignments):
+>> BAP17520.1  dihydrodipicolinate synthase [cyanobacterium endosymbiont of Epithemia turgida isolate EtSB Lake Yunoko]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.9   0.0     0.002       3.4     405     437 ..      76     108 ..      65     117 .. 0.86
+   2 !   10.4   0.1   1.1e-05     0.018     312     376 ..     158     218 ..     151     240 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.002
+        braC 405 aliagikaessregvqqalrssdfsvpgatnpv 437
+                  +iag  ++s+regv+ + ++s++ + g+ + v
+  BAP17520.1  76 KVIAGTGSNSTREGVEATEKASKLGLDGSLQVV 108
+                 589*******************99999987766 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 1.1e-05
+        braC 312 eganliallgdsgtldkalqvvqingqklpivagddvyspktldvggknalgmvvavawhlaanp 376
+                 e  n++a+   +g l++a q+ ++  + + i agdd  +   l vgg      vv+va hl  + 
+  BAP17520.1 158 EIENIVAIKEATGNLEQACQIRRLTPDSFAIYAGDDFMTLPLLTVGGIG----VVSVASHLVGQQ 218
+                 56799*****************************************964....678888887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (471 nodes)
+Target sequences:                         1720  (507178 residues searched)
+Passed MSV filter:                        53  (0.030814); expected 34.4 (0.02)
+Passed bias filter:                       37  (0.0215116); expected 34.4 (0.02)
+Passed Vit filter:                         3  (0.00174419); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000581395); expected 0.0 (1e-05)
+Initial search space (Z):               1720  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7962.69
+//
+[ok]

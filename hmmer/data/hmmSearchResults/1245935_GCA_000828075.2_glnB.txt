@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245935_GCA_000828075.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-70  232.7   6.4    2.2e-70  232.5   6.4    1.0  1  KIJ77398.1  nitrogen regulatory protein P-II [Tolypothrix cam
+  ------ inclusion threshold ------
+      0.045   12.6   1.1       0.32    9.8   0.1    2.0  2  KIJ78010.1  toxin-antitoxin system toxin component, PIN famil
+
+
+Domain annotation for each sequence (and alignments):
+>> KIJ77398.1  nitrogen regulatory protein P-II [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  232.5   6.4   6.4e-74   2.2e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 232.5 bits;  conditional E-value: 6.4e-74
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vvdkiiaaartgeigdgkifispveqv
+  KIJ77398.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDNQVDMVVDKIIAAARTGEIGDGKIFISPVEQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek++eav
+  KIJ77398.1 100 VRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> KIJ78010.1  toxin-antitoxin system toxin component, PIN family protein [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.1   9.2e-05      0.32      40      87 ..      32      79 ..      24      85 .. 0.92
+   2 ?    1.9   0.2     0.027        92      62      89 ..      83     111 ..      77     129 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 9.2e-05
+        glnB 40 kgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeig 87
+                 gq e     e   ef qkl ++    +e  +  v++i +++r  ei 
+  KIJ78010.1 32 IGQVESVTCQEILDEFAQKLVLKFKFSQEMAQAAVEEIRSCSRFVEIS 79
+                599999999**********************************99996 PP
+
+  == domain 2  score: 1.9 bits;  conditional E-value: 0.027
+        glnB  62 eivvedeqvdlvvdkiiaaartgei.gdg 89 
+                 + v +d++ d+vv+  i    t  + gd 
+  KIJ78010.1  83 KAVPDDADDDMVVECAIVGNATHIVtGDK 111
+                 56778999999999887766665441443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         6936  (2144437 residues searched)
+Passed MSV filter:                       201  (0.0289792); expected 138.7 (0.02)
+Passed bias filter:                      165  (0.0237889); expected 138.7 (0.02)
+Passed Vit filter:                        10  (0.00144175); expected 6.9 (0.001)
+Passed Fwd filter:                         2  (0.000288351); expected 0.1 (1e-05)
+Initial search space (Z):               6936  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.08
+# Mc/sec: 3002.21
+//
+[ok]

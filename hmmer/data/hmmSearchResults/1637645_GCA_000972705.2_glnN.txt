@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1637645_GCA_000972705.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-06   25.5   0.0    1.5e-06   24.9   0.0    1.1  1  KKD39405.1  glutamine synthetase [Limnoraphis robusta CS-951]
+  ------ inclusion threshold ------
+      0.035   10.5   0.0      0.057    9.8   0.0    1.2  1  KKD39767.1  hypothetical protein WN50_01535 [Limnoraphis robu
+
+
+Domain annotation for each sequence (and alignments):
+>> KKD39405.1  glutamine synthetase [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.9   0.0   5.6e-10   1.5e-06     268     355 ..     164     251 ..     148     268 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 24.9 bits;  conditional E-value: 5.6e-10
+        glnN 268 qvfmqeveerlyrlgipaktrhnevapgqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnwsvgna 355
+                 q  ++e+ e l   gi     + e  pgq ei+ ++  a +a+d+q +    +k+ a++h + + +  k f    gsg h+  s+ + 
+  KKD39405.1 164 QRTIDEISESLIAQGISVEQYYPESGPGQQEISILYTDAAIAADQQIIFRETVKAIARQHNLNASFLPKIFPNQAGSGAHLHLSLWEG 251
+                 667899**************************************999999*******************************9998654 PP
+
+>> KKD39767.1  hypothetical protein WN50_01535 [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.8   0.0   2.1e-05     0.057     541     634 ..    1424    1522 ..    1407    1529 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 2.1e-05
+        glnN  541 yseewhkmaveerglanlrttadalpvlkadyieelfarlgvltpvelesrfdvyae.qy.llaieveaklv..vsmaktiiypaavry.lselsla 632 
+                    ++ +k+ v e g     tta  lp lk++ ie +f+ +  l + + e +f+ y+  +y ll ie + +l    s ++ ii  a v +  ++l ++
+  KKD39767.1 1424 NQPQTQKLKVLEIGAGTGGTTAYILPHLKTENIEYIFTDVSPLFTTKAEQKFKDYSCvRYqLLDIEKDPNLQgyKSESHQIIIAANVLHaTADLRQT 1520
+                  56777899999*****************************************999742343788888877752245666666666654314566665 PP
+
+        glnN  633 ia 634 
+                  +a
+  KKD39767.1 1521 LA 1522
+                  55 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         5458  (1735477 residues searched)
+Passed MSV filter:                       140  (0.0256504); expected 109.2 (0.02)
+Passed bias filter:                      121  (0.0221693); expected 109.2 (0.02)
+Passed Vit filter:                        10  (0.00183217); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000366435); expected 0.1 (1e-05)
+Initial search space (Z):               5458  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.09u 0.01s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 13941.67
+//
+[ok]

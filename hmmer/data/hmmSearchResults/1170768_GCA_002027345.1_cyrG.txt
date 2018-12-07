@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170768_GCA_002027345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0035   13.6   0.0       0.48    6.5   0.0    2.3  2  OPH08726.1  phosphonate metabolism protein PhnM [Cylindrosper
+
+
+Domain annotation for each sequence (and alignments):
+>> OPH08726.1  phosphonate metabolism protein PhnM [Cylindrospermopsis raciborskii CENA302]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.5   0.0   0.00016      0.48      22      62 ..      23      61 ..       5      81 .. 0.81
+   2 !    4.6   0.0    0.0006       1.8     350     381 ..     325     356 ..     314     368 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.00016
+        cyrG 22 qvvdgkiaaiapelevvgtaidgenklllpgfvnahthsse 62
+                 v +gkia+i+p +   g+  +ge k l+pg+++ ht   e
+  OPH08726.1 23 VVRNGKIADIQPGITKKGE--NGEGKYLIPGLIELHTDNLE 61
+                4779********9988776..8999************9876 PP
+
+  == domain 2  score: 4.6 bits;  conditional E-value: 0.0006
+        cyrG 350 qavemaslggakglnladklgsltvgkkadlv 381
+                 +++e+ +   a+ ++l ++ gsl+vgk+ad++
+  OPH08726.1 325 RSMELFTSNPAQAIDLFHDRGSLEVGKRADFI 356
+                 5678888889999*****************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         3033  (982850 residues searched)
+Passed MSV filter:                        75  (0.024728); expected 60.7 (0.02)
+Passed bias filter:                       61  (0.0201121); expected 60.7 (0.02)
+Passed Vit filter:                         7  (0.00230795); expected 3.0 (0.001)
+Passed Fwd filter:                         1  (0.000329707); expected 0.0 (1e-05)
+Initial search space (Z):               3033  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 11425.63
+//
+[ok]

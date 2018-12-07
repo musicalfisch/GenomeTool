@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160280_GCA_000307995.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.024   11.5   0.0      0.055   10.3   0.0    1.5  2  CCH93394.1  Cytosine deaminase [Microcystis aeruginosa PCC 94
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH93394.1  Cytosine deaminase [Microcystis aeruginosa PCC 9432]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   1.2e-05     0.055      12      61 ..      36      87 ..      31      98 .. 0.81
+   2 ?   -3.6   0.0      0.18   8.8e+02     151     315 ..     322     334 ..     312     365 .. 0.51
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 1.2e-05
+        cyrH 12 veddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss 61
+                + ++ + v++++ dg+i+ i++ +  e    +id ++k+++p fv+ hth  
+  CCH93394.1 36 TAEGLTLVNLEINDGNINRITSTIppEDNIPVIDLKKKIVFPCFVDMHTHLD 87
+                5678899**************99944344568******************64 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 0.18
+        cyrH 151 ltagipsgeteqthepyfrstqatleiieeavkqfhrpeegvsilvaptgiqlcsdalfegcielsdkynlcrhshlletkaqeklaqekygctavehl 249
+                   agip                                                                                             
+  CCH93394.1 322 KKAGIP--------------------------------------------------------------------------------------------- 327
+                 345555............................................................................................. PP
+
+        cyrH 250 krigylddrtslahcvhltdkdiailaetkstvvhnplsnlrlgsgiapilkyrqagvnvtfgcdg 315
+                                                                            v+f  d 
+  CCH93394.1 328 -----------------------------------------------------------VAFASDN 334
+                 ...........................................................4444432 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         4760  (1306691 residues searched)
+Passed MSV filter:                       108  (0.0226891); expected 95.2 (0.02)
+Passed bias filter:                       93  (0.0195378); expected 95.2 (0.02)
+Passed Vit filter:                        11  (0.00231092); expected 4.8 (0.001)
+Passed Fwd filter:                         1  (0.000210084); expected 0.0 (1e-05)
+Initial search space (Z):               4760  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 12152.23
+//
+[ok]

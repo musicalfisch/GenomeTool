@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1647413_GCA_001277295.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.2e-155  515.4   5.0   1.4e-155  515.2   5.0    1.0  1  ALB42297.1  nitrogen fixation protein NifU [Anabaena sp. WA10
+    2.3e-10   38.4   0.0    2.4e-10   38.3   0.0    1.0  1  ALB39653.1  nitrogen fixation protein NifU [Anabaena sp. WA10
+
+
+Domain annotation for each sequence (and alignments):
+>> ALB42297.1  nitrogen fixation protein NifU [Anabaena sp. WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  515.2   5.0  5.8e-159  1.4e-155       1     300 []       1     299 []       1     299 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 515.2 bits;  conditional E-value: 5.8e-159
+        finU   1 mwdytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdia 99 
+                 mwdytdkvlelfy+pknqG++e+++e+Gvk+a+GevGsiacGdalrlhlkve+ +dki+darfqtfGctsaiass+al+e++kGltldeal v+nk+ia
+  ALB42297.1   1 MWDYTDKVLELFYDPKNQGAIEETGEAGVKLATGEVGSIACGDALRLHLKVEEATDKILDARFQTFGCTSAIASSSALTEMVKGLTLDEALGVTNKEIA 99 
+                 9************************************************************************************************** PP
+
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkes 198
+                 dylGGlpeakmhcsvmGqealeaaiynyrGipl+ahdd +eG l+c+cfgi+++ki++ + +nnl +aeqvtnyvkaGGGcGscl+kiddii++vk+e+
+  ALB42297.1 100 DYLGGLPEAKMHCSVMGQEALEAAIYNYRGIPLEAHDD-EEGVLICSCFGITDAKIKKAVAQNNLFSAEQVTNYVKAGGGCGSCLTKIDDIIREVKQEA 197
+                 ************************************75.69********************************************************** PP
+
+        finU 199 aatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                 a  +  s k +  +e+++++ +++l++v+ki+l+++v+dee+r+vli+d++dv+lydv++d +kv+lk+a++s++s++++lkia+e+rl++++  e+++
+  ALB42297.1 198 ANKNLYSYKAKAKTEIPSSEPQKPLTTVQKIALIQKVLDEEVRPVLIADGGDVELYDVEGDKIKVILKGACGSCSSSTATLKIAIEARLRDRISKEIIV 296
+                 ************************************************************************************************999 PP
+
+        finU 298 elv 300
+                 e+v
+  ALB42297.1 297 EAV 299
+                 986 PP
+
+>> ALB39653.1  nitrogen fixation protein NifU [Anabaena sp. WA102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.3   0.0     1e-13   2.4e-10     234     292 ..       9      67 ..       2      76 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 38.3 bits;  conditional E-value: 1e-13
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 e v +e+r+ l++d+++v+l + d+ ++kv l++a++s+ s++++lk+ +e rl++ + 
+  ALB39653.1   9 ETVLDEMRPYLMSDGGNVKLVELDGPIVKVELQGACGSCPSSTMTLKMGIERRLKEMIP 67 
+                 3456789***********************************************98773 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4742  (1395220 residues searched)
+Passed MSV filter:                       167  (0.0352172); expected 94.8 (0.02)
+Passed bias filter:                      126  (0.0265711); expected 94.8 (0.02)
+Passed Vit filter:                        11  (0.0023197); expected 4.7 (0.001)
+Passed Fwd filter:                         2  (0.000421763); expected 0.0 (1e-05)
+Initial search space (Z):               4742  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10464.15
+//
+[ok]

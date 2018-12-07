@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/210994_GCA_001904645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.8e-157  519.9   7.8   5.5e-157  519.7   7.8    1.0  1  OKH13015.1  Fe-S cluster assembly protein NifU [Fischerella m
+    1.8e-09   35.4   0.0    1.9e-09   35.3   0.0    1.0  1  OKH13269.1  hypothetical protein NIES592_14440 [Fischerella m
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH13015.1  Fe-S cluster assembly protein NifU [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  519.7   7.8  2.5e-160  5.5e-157       1     300 []       1     306 []       1     306 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 519.7 bits;  conditional E-value: 2.5e-160
+        finU   1 mwdytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdia 99 
+                 mwdytdkvlelfynp+ qGv+ed++epG+kvavG+vGsiacGdalrlhlkve++++ki++arfqtfGctsaiassealvelikG+tldealkv+nk+ia
+  OKH13015.1   1 MWDYTDKVLELFYNPQHQGVIEDKGEPGIKVAVGDVGSIACGDALRLHLKVEEKTEKILEARFQTFGCTSAIASSEALVELIKGKTLDEALKVTNKEIA 99 
+                 9************************************************************************************************** PP
+
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkes 198
+                 +ylGGlpeakmhcsvmGqealeaaiynyrGipl++h+dddeGalvctcfgis++ki+rvi+ennlttae+vtnyvkaGGGcGscla+iddii++v+ke+
+  OKH13015.1 100 NYLGGLPEAKMHCSVMGQEALEAAIYNYRGIPLDTHEDDDEGALVCTCFGISDAKIKRVIIENNLTTAEEVTNYVKAGGGCGSCLASIDDIIASVQKEK 198
+                 **************************************************************************************************9 PP
+
+        finU 199 aatvrnslk.kntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdk.....dllkvalksassstaslkvalkialedrlskdl 291
+                 a+ ++ s++ ++t  + a k+l++v+ki+l++++lde+v++ l+a+++d+el +v++ ++        +kv+l++a++s++s+ ++lkia+e+rl++++
+  OKH13015.1 199 ASVTTVSNSlSQTNGKSAVKTLTPVQKIALIQRVLDEEVRPILIADGGDVELFDVEGVSEAgcesvLRVKVILQGACGSCSSSIATLKIAIESRLRDRV 297
+                 986655555144556788999******************************999887544211111246667777777777777777777777777777 PP
+
+        finU 292 vvelveelv 300
+                   ++v+e+v
+  OKH13015.1 298 SKDIVVEAV 306
+                 777777665 PP
+
+>> OKH13269.1  hypothetical protein NIES592_14440 [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   35.3   0.0   8.3e-13   1.9e-09     235     293 ..      10      68 ..       3      76 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 35.3 bits;  conditional E-value: 8.3e-13
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                  v +e+r+ l++d+++v+l + d+ ++k  l++a++s+ s++++l++ +e rl++ +  
+  OKH13269.1  10 TVLDEMRPYLMSDGGNVELVELDGPIVKLRLQGACGSCPSSTMTLRMGIERRLKEMIPE 68 
+                 566789***********************************************987743 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4512  (1463608 residues searched)
+Passed MSV filter:                       167  (0.0370124); expected 90.2 (0.02)
+Passed bias filter:                      126  (0.0279255); expected 90.2 (0.02)
+Passed Vit filter:                        11  (0.00243794); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443262); expected 0.0 (1e-05)
+Initial search space (Z):               4512  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 8781.65
+//
+[ok]

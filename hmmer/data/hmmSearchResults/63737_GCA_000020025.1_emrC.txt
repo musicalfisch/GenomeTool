@@ -1,0 +1,82 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-57  189.4  13.3    5.9e-57  189.3  13.3    1.0  1  ACC80310.1  small multidrug resistance protein [Nostoc puncti
+    4.9e-07   28.8   8.8    6.9e-07   28.3   8.8    1.4  1  ACC79976.1  small multidrug resistance protein [Nostoc puncti
+     0.0014   17.7  11.0     0.0027   16.7  11.0    1.4  1  ACC83734.1  small multidrug resistance protein [Nostoc puncti
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC80310.1  small multidrug resistance protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  189.3  13.3   2.7e-60   5.9e-57       1     106 []       1     106 []       1     106 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 189.3 bits;  conditional E-value: 2.7e-60
+        emrC   1 mliswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigv 99 
+                 m++swiyl+aailfevsgttcmklsegftkl+psvlifvfyglc++fltlalk++evsvaysvwaglgtvlia+ig+iwfres+t++k++sialii+gv
+  ACC80310.1   1 MSTSWIYLIAAILFEVSGTTCMKLSEGFTKLVPSVLIFVFYGLCFSFLTLALKRLEVSVAYSVWAGLGTVLIAIIGIIWFRESATFTKVLSIALIIMGV 99 
+                 89************************************************************************************************* PP
+
+        emrC 100 iginsak 106
+                 igin++k
+  ACC80310.1 100 IGINASK 106
+                 ****987 PP
+
+>> ACC79976.1  small multidrug resistance protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.3   8.8   3.1e-10   6.9e-07      36     102 ..      54     120 ..      10     123 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 28.3 bits;  conditional E-value: 3.1e-10
+        emrC  36 lifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigi 102
+                   +++y ++l + + al k+ +s++     g+g +l+  i+   f+eslt+ ++i+++li  g++ i
+  ACC79976.1  54 AGLIAYCIGLLLFAKALDKLPISIVVPTSQGIGFILVNFISYWLFKESLTFNQIIAVSLIFAGIVVI 120
+                 3368999999999***************************************************977 PP
+
+>> ACC83734.1  small multidrug resistance protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7  11.0   1.2e-06    0.0027       3     100 ..      13     117 ..      11     122 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 1.2e-06
+        emrC   3 iswiyllaailfevsgttcmkl..segftklipsvli......fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisia 93 
+                 i +i l+++ilf +sg   mk   s+  + l+  v++        +y l++    lal+ +++s+ay +  +l  v i   +  +f+e +t++++  ++
+  ACC83734.1  13 IPYIILFVSILFSISGQLLMKYtmSHSDEGLLDWVFLqklalaVSVYCLGIVNWILALRSVKLSIAYPLT-SLNYVGILFGSHYFFNEVITITRIAGVI 110
+                 6799****************96223333344444433111111567999999999************985.6888888888999*************** PP
+
+        emrC  94 liiigvi 100
+                  i +g++
+  ACC83734.1 111 TIFLGIL 117
+                 *****97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       265  (0.0396114); expected 133.8 (0.02)
+Passed bias filter:                      103  (0.0153961); expected 133.8 (0.02)
+Passed Vit filter:                        10  (0.00149477); expected 6.7 (0.001)
+Passed Fwd filter:                         3  (0.00044843); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6161.52
+//
+[ok]

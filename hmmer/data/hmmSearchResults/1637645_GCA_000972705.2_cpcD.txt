@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1637645_GCA_000972705.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-22   77.8   0.1    2.7e-22   76.9   0.1    1.4  1  KKD38533.1  ferredoxin-NADP reductase [Limnoraphis robusta CS
+     0.0031   15.8   0.1     0.0052   15.1   0.1    1.4  1  KKD39072.1  photosystem I reaction center subunit XII [Limnor
+  ------ inclusion threshold ------
+      0.018   13.4   0.0      0.022   13.1   0.0    1.2  1  KKD39648.1  photosystem I reaction center subunit XII [Limnor
+
+
+Domain annotation for each sequence (and alignments):
+>> KKD38533.1  ferredoxin-NADP reductase [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   76.9   0.1   1.5e-25   2.7e-22       9      67 ..      16      74 ..      10      80 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 76.9 bits;  conditional E-value: 1.5e-25
+        cpcD  9 enrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikp 67
+                + r+fv+ev G+ q  ++d+  y ir+sG v++tvpy rmnqemrri+rlG riv i+ 
+  KKD38533.1 16 NSRVFVFEVEGIRQGGNSDQQTYPIRRSGRVLITVPYERMNQEMRRISRLGGRIVNIRA 74
+                67******************************************************986 PP
+
+>> KKD39072.1  photosystem I reaction center subunit XII [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   0.1   2.8e-06    0.0052      36      67 ..     261     291 ..     235     292 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 2.8e-06
+        cpcD  36 sGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 s  v+l vp+ ++ qe +ri r G  i si p
+  KKD39072.1 261 SNKVYL-VPFNKLSQEYQRIHRQGGVIASITP 291
+                 666776.9**********************99 PP
+
+>> KKD39648.1  photosystem I reaction center subunit XII [Limnoraphis robusta CS-951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   1.2e-05     0.022      42      65 ..      30      53 ..      17      58 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.2e-05
+        cpcD 42 tvpysrmnqemrritrlGarivsi 65
+                 vpy    +e +ri ++G riv +
+  KKD39648.1 30 LVPYDNWFREQQRIMKMGGRIVKV 53
+                49********************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5458  (1735477 residues searched)
+Passed MSV filter:                       100  (0.0183217); expected 109.2 (0.02)
+Passed bias filter:                       95  (0.0174056); expected 109.2 (0.02)
+Passed Vit filter:                         7  (0.00128252); expected 5.5 (0.001)
+Passed Fwd filter:                         3  (0.000549652); expected 0.1 (1e-05)
+Initial search space (Z):               5458  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6421.26
+//
+[ok]

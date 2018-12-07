@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454136_GCA_001904725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-49  164.5   1.0    1.2e-49  164.4   1.0    1.0  1  OKH35278.1  photosystem I reaction center subunit XII [Phormi
+     0.0016   16.7   0.0     0.0026   16.0   0.0    1.4  1  OKH32160.1  phycobilisome linker polypeptide [Phormidium ambi
+     0.0024   16.2   0.0     0.0059   14.9   0.0    1.7  1  OKH32159.1  photosystem I reaction center subunit XII [Phormi
+  ------ inclusion threshold ------
+      0.021   13.1   0.0      0.046   12.0   0.0    1.5  1  OKH36717.1  ferredoxin-NADP reductase [Phormidium ambiguum IA
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH35278.1  photosystem I reaction center subunit XII [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.4   1.0   8.1e-53   1.2e-49       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.4 bits;  conditional E-value: 8.1e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGki+kvelatGk+g+ntGll
+  OKH35278.1  1 MRMFKITACVPSQTRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKILKVELATGKQGANTGLL 67
+                9****************************************************************96 PP
+
+>> OKH32160.1  phycobilisome linker polypeptide [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0   1.7e-06    0.0026      31      54 ..      50      73 ..      41      82 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 1.7e-06
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy+   +e +ri ++GGkiv ++
+  OKH32160.1 50 VPYNRMNEEMRRIARLGGKIVSIH 73
+                9********************986 PP
+
+>> OKH32159.1  photosystem I reaction center subunit XII [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.9   0.0   3.8e-06    0.0059      29      54 ..     260     285 ..     254     287 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 14.9 bits;  conditional E-value: 3.8e-06
+        apcC  29 klvpydnWfreqqrimkmGGkivkve 54 
+                  lvpy+n  +  q++++ GGki+ v 
+  OKH32159.1 260 YLVPYENLSNKMQQVLRAGGKIISVT 285
+                 69*********************996 PP
+
+>> OKH36717.1  ferredoxin-NADP reductase [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0     3e-05     0.046      31      54 ..      50      73 ..      44      86 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 3e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy+   +e +ri ++GG+iv ++
+  OKH36717.1 50 VPYNRMNEEMRRITRLGGQIVSIR 73
+                9********************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         6149  (2062819 residues searched)
+Passed MSV filter:                       142  (0.0230932); expected 123.0 (0.02)
+Passed bias filter:                      124  (0.0201659); expected 123.0 (0.02)
+Passed Vit filter:                         9  (0.00146365); expected 6.1 (0.001)
+Passed Fwd filter:                         4  (0.000650512); expected 0.1 (1e-05)
+Initial search space (Z):               6149  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 3455.22
+//
+[ok]

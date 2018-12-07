@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/399101_GCA_001637315.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-17   60.1   0.0    1.7e-17   59.7   0.0    1.1  1  OAB55391.1  ferredoxin-NADP reductase [Phormidium willei BDU 
+    2.1e-12   42.9   0.0    2.4e-12   42.7   0.0    1.0  1  OAB55602.1  hypothetical protein AY600_01970 [Phormidium will
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB55391.1  ferredoxin-NADP reductase [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.7   0.0   9.1e-21   1.7e-17    1208    1401 ..     190     394 ..     164     409 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 59.7 bits;  conditional E-value: 9.1e-21
+        cysJ 1208 qkprlysisscpll...hprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s         + + ++v  l+    ++g+   g+cs++l+ l+ g  v i   +   +  p d ha ++m+  gtg++p+ afl +  
+  OAB55391.1  190 HKLRLYSIASTRHGddgDDKTVSLSVRELEYQhPETGETVYGVCSKFLCDLKEGDDVSITGpVGKDMLLPDDEHANVIMMATGTGIAPFRAFLWRMF 286 
+                  477999999987651114577888888887652689**********************98526678899************************7654 PP
+
+        cysJ 1300 alqn.qgislgeahlyfgcrnpsdfiyqeqlqvwr.drnvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmaddvf 1390
+                    +  +    g+a l fg    ++++y+e+l+  + +      l  a+sr  ++    k y+q  ++++ +k+w+++ +p+ h y+cg   m   + 
+  OAB55391.1  287 KEEHeDYKFKGKAWLIFGIPYTANILYKEELEQLQaEYPDQFELTYAISREQKNaeggKMYLQHRIQENADKVWDLVQQPNTHTYICGLKGMEGGID 383 
+                  4443044457******************98854431444455566666664432222389*****************************99999999 PP
+
+        cysJ 1391 avmmaiakqqg 1401
+                    m + a +qg
+  OAB55391.1  384 EGMSSAASKQG 394 
+                  99988888887 PP
+
+>> OAB55602.1  hypothetical protein AY600_01970 [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.7   0.0   1.2e-15   2.4e-12     849     972 ..       3     128 ..       1     147 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 42.7 bits;  conditional E-value: 1.2e-15
+        cysJ 849 drililyasetgtaegfarkaarqlsr..yrpqvmalneyntdtlaseklllvvtstfgngempsngkrflqwlqqqprtslnglsysvlgigstvy.e 944
+                 d i il  + tgtae +a     ql    y  ++  ++  ++  +a   l+l+ tst+g+g++p n + f+  l++  +  l g++y ++ +g + y e
+  OAB55602.1   3 DAITILVGTMTGTAEMVAEAVGDQLQArgYEVKIALMDALDAGVFAQPGLFLLCTSTYGQGDVPDNAQAFFSALEE-SQPDLSGVAYGLVALGDSTYkE 100
+                 8899****************999996424788888889999*******************************9975.455799*********9655538 PP
+
+        cysJ 945 qfcaagvsvdkalakagancivpihkad 972
+                  fc  g   d  l++ ga  +    + d
+  OAB55602.1 101 TFCFGGRRFDALLSRLGARRLGAAFEHD 128
+                 9****************98776665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         3770  (1257126 residues searched)
+Passed MSV filter:                        99  (0.0262599); expected 75.4 (0.02)
+Passed bias filter:                       82  (0.0217507); expected 75.4 (0.02)
+Passed Vit filter:                         6  (0.00159151); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530504); expected 0.0 (1e-05)
+Initial search space (Z):               3770  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.12
+# Mc/sec: 15504.55
+//
+[ok]

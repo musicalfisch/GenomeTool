@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1137096_GCA_001904745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.01   15.3   0.2      0.013   15.0   0.2    1.1  1  OKH55589.1  acyl carrier protein [Calothrix sp. HK-06]
+       0.03   13.8   1.0        9.2    5.8   0.1    2.8  3  OKH40716.1  hypothetical protein NIES2101_34830, partial [Cal
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH55589.1  acyl carrier protein [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.0   0.2   3.1e-06     0.013       6      84 ..       9      83 ..       5      86 .] 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 3.1e-06
+        anaD  6 veqmlkefiiqelaydqtnlvltnnlkiieqrvidsmdifrlvrfveeevgifwepeelvlknfetidhikayilrkla 84
+                + q lk  + ++l+ d  ++ l+ n+   ++   ds+d   l+  +eee+ i   p+e   + + t+++   yi +kl 
+  OKH55589.1  9 IFQKLKTVVANQLSVDAHKITLSANFT--QDLGADSLDAVELIMALEEEFDIEI-PDEA-AERITTVQQAIDYISKKLL 83
+                6799*****************999974..56679***************99864.4443.3445566655566666554 PP
+
+>> OKH40716.1  hypothetical protein NIES2101_34830, partial [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0      0.96   3.9e+03      25      36 ..      63      74 ..      60      88 .. 0.78
+   2 ?    5.5   0.0    0.0027        11      29      59 ..     137     167 ..     117     174 .. 0.88
+   3 ?    5.8   0.1    0.0022       9.2      13      66 ..     224     276 ..     218     292 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.96
+        anaD 25 lvltnnlkiieq 36
+                ++lt++ kii +
+  OKH40716.1 63 VILTKDRKIIRE 74
+                689999999865 PP
+
+  == domain 2  score: 5.5 bits;  conditional E-value: 0.0027
+        anaD  29 nnlkiieqrvidsmdifrlvrfveeevgifw 59 
+                 n++k+i  r i  m+ f l +f+  ++ i  
+  OKH40716.1 137 NHVKLIHSRKIFDMEYFYLSKFLSPNIQICQ 167
+                 789*******************999988865 PP
+
+  == domain 3  score: 5.8 bits;  conditional E-value: 0.0022
+        anaD  13 fiiqelaydqtnlvltnnlkiieqrvidsmdifrlvrf.veeevgifwepeelvl 66 
+                 fi +  ay+q +++  n+  +i+   i  ++++ l ++ ++e++ +f++ + +v 
+  OKH40716.1 224 FISRRQAYNQRHII--NEAEVIQTLAIYGFEVYTLEKMsINEQIELFYDADAVVA 276
+                 899999****9875..9999***************98758999*****9998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         8148  (2613279 residues searched)
+Passed MSV filter:                       190  (0.0233186); expected 163.0 (0.02)
+Passed bias filter:                      132  (0.0162003); expected 163.0 (0.02)
+Passed Vit filter:                         7  (0.000859107); expected 8.1 (0.001)
+Passed Fwd filter:                         2  (0.000245459); expected 0.1 (1e-05)
+Initial search space (Z):               8148  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 5683.88
+//
+[ok]

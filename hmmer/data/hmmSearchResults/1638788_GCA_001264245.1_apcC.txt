@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1638788_GCA_001264245.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.6e-50  166.6   1.0    2.8e-50  166.4   1.0    1.0  1  AKV65698.1  Phycobilisome small core linker polypeptide [Micr
+     0.0092   14.2   0.0      0.024   12.9   0.0    1.7  1  AKV67078.1  Ferredoxin-NADP(+) reductase [Microcystis pannifo
+  ------ inclusion threshold ------
+      0.037   12.3   0.0      0.049   11.9   0.0    1.2  1  AKV67079.1  Phycobilisome small rod capping linker polypeptid
+
+
+Domain annotation for each sequence (and alignments):
+>> AKV65698.1  Phycobilisome small core linker polypeptide [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  166.4   1.0   1.4e-53   2.8e-50       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 166.4 bits;  conditional E-value: 1.4e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfkitacvPsq+rirtqrelqntyftklvpydnWfreqqrimkmGGkivkv+latGkpgtntGll
+  AKV65698.1  1 MRMFKITACVPSQSRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIVKVQLATGKPGTNTGLL 67
+                9****************************************************************96 PP
+
+>> AKV67078.1  Ferredoxin-NADP(+) reductase [Microcystis panniformis FACHB-1757]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   1.2e-05     0.024      28      58 ..       4      32 ..       1      39 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 1.2e-05
+        apcC 28 tklvpydnWfreqqrimkmGGkivkvelatG 58
+                t  vpy    +e +ri ++GG+iv ++   G
+  AKV67078.1  4 T--VPYSRMNQEMRRITRLGGRIVSIKPFNG 32
+                4..9********************9986555 PP
+
+>> AKV67079.1  Phycobilisome small rod capping linker polypeptide phycocyanin-associated [Microcystis panniformis FACHB-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.0   2.5e-05     0.049      31      54 ..      43      66 ..      34      72 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 2.5e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy    +e +ri ++G +iv ++
+  AKV67079.1 43 VPYSRMNQEMRRITRLGARIVSIK 66
+                9********************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         5974  (1430872 residues searched)
+Passed MSV filter:                       167  (0.0279545); expected 119.5 (0.02)
+Passed bias filter:                      150  (0.0251088); expected 119.5 (0.02)
+Passed Vit filter:                         9  (0.00150653); expected 6.0 (0.001)
+Passed Fwd filter:                         3  (0.000502176); expected 0.1 (1e-05)
+Initial search space (Z):               5974  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 3195.61
+//
+[ok]

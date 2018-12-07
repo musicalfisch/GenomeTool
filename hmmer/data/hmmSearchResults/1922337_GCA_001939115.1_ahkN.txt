@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1922337_GCA_001939115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkN  [M=282]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-38  128.6   0.0    1.7e-36  123.9   0.0    2.0  1  OLP16663.1  hypothetical protein BST81_19695 [Leptolyngbya sp
+    2.2e-05   21.8   0.0    4.9e-05   20.7   0.0    1.6  2  OLP20140.1  Zn-dependent hydrolase [Leptolyngbya sp. 'hensoni
+
+
+Domain annotation for each sequence (and alignments):
+>> OLP16663.1  hypothetical protein BST81_19695 [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  123.9   0.0   6.7e-40   1.7e-36      71     276 ..     129     351 ..     109     356 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 123.9 bits;  conditional E-value: 6.7e-40
+        ahkN  71 kppiligahydtvpgspgaddnatglavllelarffgenqanypirliafdleeygllgsiayaeklkqtkqdlrlmlslemlgycdknphsqkypafl 169
+                    il+gahydtv  +pgaddna+g+av le+ar+fg+  +   ++++ fd ee gl gs a++    +    l+  + ++m+ y  +    qkyp   
+  OLP16663.1 129 AGTILVGAHYDTVEQAPGADDNASGVAVALEIARLFGDLPTPRTLQIVLFDREERGLDGSRAFTASDDR-ITPLKGAIIMDMVAYTCQRRGCQKYPDNP 226
+                 5689***********************************************************987554.567999999******9999*******987 PP
+
+        ahkN 170 eyfyp.ntgdfialign.........l..ktrkdlnflsrvlrenqtpcewlp......vifggyivpdtrrsdhspfwdrgysaimvtdtanmrnpyy 250
+                     p + gdf+  + +         +  k  + +  l  +    qt  + lp      v f g +  d  rsdh+pfw rg  ai++tdtan+rnp y
+  OLP16663.1 227 PAELPsDRGDFLVAVVDqehaallepFqsKNSQPIANLPGLQGTYQTGNQDLPpllavtVPFKGALTLDLLRSDHAPFWYRGVGAILLTDTANFRNPNY 325
+                 766652689997544331111111112113333444455555556666555543333226799************************************ PP
+
+        ahkN 251 hssrdtiatldlnfltrvcqglcfgl 276
+                 h + d   t+d +flt+v+q ++ g 
+  OLP16663.1 326 HQAADRPGTIDRQFLTQVAQLVVTGT 351
+                 ********************888775 PP
+
+>> OLP20140.1  Zn-dependent hydrolase [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.7   0.0   1.9e-08   4.9e-05      71     135 ..      80     145 ..      74     193 .. 0.88
+   2 ?   -4.1   0.0      0.69   1.8e+03       3      23 ..     291     311 ..     290     317 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 20.7 bits;  conditional E-value: 1.9e-08
+        ahkN  71 kppiligahydtvpgspgaddnatglavllelarffgen..qanypirliafdleeygllgsiayae 135
+                  p +  g+h dtvp   g  d a g+   le+ar++ e+  + n+p  +i f  ee  ++gs a + 
+  OLP20140.1  80 APALATGSHIDTVPT-GGRYDGALGVLAGLEVARVLQEQnlRLNHPFEVIVFSDEESSMIGSKAISG 145
+                 577889********7.588999***999********99723479******************98765 PP
+
+  == domain 2  score: -4.1 bits;  conditional E-value: 0.69
+        ahkN   3 dllsdrlsqhleqivrernpf 23 
+                 dl +dr+ + l+q+ re   +
+  OLP20140.1 291 DLSNDRIDELLNQLQREIATI 311
+                 788899999999999997655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (282 nodes)
+Target sequences:                         5141  (1682713 residues searched)
+Passed MSV filter:                       106  (0.0206186); expected 102.8 (0.02)
+Passed bias filter:                       99  (0.019257); expected 102.8 (0.02)
+Passed Vit filter:                        10  (0.00194515); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000389029); expected 0.1 (1e-05)
+Initial search space (Z):               5141  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9490.50
+//
+[ok]

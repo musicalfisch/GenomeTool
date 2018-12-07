@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/864702_GCA_000309945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.7e-106  351.3   0.0   5.2e-106  351.1   0.0    1.0  1  EKQ71002.1  putative O-methyltransferase [Oscillatoriales cya
+     0.0026   15.4   0.0     0.0042   14.7   0.0    1.3  1  EKQ67052.1  precorrin-6Y C5,15-methyltransferase (decarboxyla
+  ------ inclusion threshold ------
+      0.024   12.2   0.0       0.04   11.5   0.0    1.2  1  EKQ67621.1  methyltransferase family protein [Oscillatoriales
+
+
+Domain annotation for each sequence (and alignments):
+>> EKQ71002.1  putative O-methyltransferase [Oscillatoriales cyanobacterium JSC-12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  351.1   0.0  3.3e-109  5.2e-106       1     220 []       1     220 [.       1     220 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 351.1 bits;  conditional E-value: 3.3e-109
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+ +tlgl  ++y y  s+ lre+ +l +lrqeta +p++ mqiapeqgqfma+lvq +gakk+leigvftgys+l valalpp+g++iacd+seeyt+
+  EKQ71002.1   1 MSTKTLGLSDHLYDYLLSVSLREPDVLRELRQETANHPMSQMQIAPEQGQFMALLVQLMGAKKTLEIGVFTGYSSLAVALALPPDGRIIACDVSEEYTA 99 
+                 7889*********************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarryw++agv++kidlriapaletl+ li++g sn+fdf fidadks y+ yyer+lql+r gg+iaidnv+wsg va    tdnrt  ir+ln k++
+  EKQ71002.1 100 IARRYWEKAGVSHKIDLRIAPALETLETLITSGHSNTFDFAFIDADKSHYNDYYERSLQLIRPGGLIAIDNVLWSGDVADLAVTDNRTEKIRALNQKLH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamkk 220
+                 qd+r+ +s++pi dgltla+k+
+  EKQ71002.1 199 QDQRITLSLVPIADGLTLAIKR 220
+                 *******************995 PP
+
+>> EKQ67052.1  precorrin-6Y C5,15-methyltransferase (decarboxylating), CbiT subunit [Oscillatoriales cyanobacterium JSC-
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   2.6e-06    0.0042      66     127 ..      60     119 ..      51     127 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.6e-06
+        AvaC  66 eigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldk 127
+                 +ig  tg  + v a  l p+g+++a +  ee +s+ rr  ++ gv++ +++    a e l++
+  EKQ67052.1  60 DIGAGTGTIS-VEAGLLCPQGQIVAIERDEEVASLIRRNCDRFGVTN-VQVIEGSAPECLQQ 119
+                 6777787665.4566799***************************86.34444445555555 PP
+
+>> EKQ67621.1  methyltransferase family protein [Oscillatoriales cyanobacterium JSC-12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   2.5e-05      0.04      61     108 ..      58     104 ..      48     118 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 2.5e-05
+        AvaC  61 akkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqa 108
+                  k +l+ g  +gy +l++a a  p  k++  dlsee   +ar   +  
+  EKQ67621.1  58 GKVILDAGCGSGYKSLILAEAN-PGAKIVGIDLSEESVKLARERLKYH 104
+                 5778999************996.578***************9876655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         4780  (1548170 residues searched)
+Passed MSV filter:                       148  (0.0309623); expected 95.6 (0.02)
+Passed bias filter:                      130  (0.0271967); expected 95.6 (0.02)
+Passed Vit filter:                        14  (0.00292887); expected 4.8 (0.001)
+Passed Fwd filter:                         3  (0.000627615); expected 0.0 (1e-05)
+Initial search space (Z):               4780  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 6811.95
+//
+[ok]

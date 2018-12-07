@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1704290_GCA_001275395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.6e-168  555.1   6.9   6.3e-168  554.9   6.9    1.0  1  KOP24745.1  ATP synthase F0F1 subunit A [Hapalosiphon sp. MRB
+  ------ inclusion threshold ------
+      0.048   11.6   1.8        1.6    6.6   0.2    3.0  3  KOP27673.1  hypothetical protein AMR41_04085, partial [Hapalo
+
+
+Domain annotation for each sequence (and alignments):
+>> KOP24745.1  ATP synthase F0F1 subunit A [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  554.9   6.9  2.2e-171  6.3e-168       1     251 []       1     251 []       1     251 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 554.9 bits;  conditional E-value: 2.2e-171
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 ml++ln+fns++laelevg+hfywqlgnlk+hgqvfltswfviailvvas+aatrn+qrip+giqn+meyalefirdl+knqlgekeyrpwvpfigtlf
+  KOP24745.1   1 MLHLLNFFNSVTLAELEVGNHFYWQLGNLKVHGQVFLTSWFVIAILVVASIAATRNAQRIPSGIQNFMEYALEFIRDLTKNQLGEKEYRPWVPFIGTLF 99 
+                 89************************************************************************************************* PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv
+  KOP24745.1 100 LFIFVSNWSGALIPWKLIKLPSGELAAPTNDINTTVALALLTSLAYFYAGFSKRGLGYFKKYIEPTPVLLPIAILEDFTKPLSLSFRLFGNILADELVV 198
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgeeeheeh 251
+                 avlvllvplfvplpvmalglftsaiqalvfatlagayihea+eghg+e+heeh
+  KOP24745.1 199 AVLVLLVPLFVPLPVMALGLFTSAIQALVFATLAGAYIHEAMEGHGDEGHEEH 251
+                 ****************************************************9 PP
+
+>> KOP27673.1  hypothetical protein AMR41_04085, partial [Hapalosiphon sp. MRB220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.0     0.014        40     126     157 ..     298     329 ..     253     343 .. 0.83
+   2 ?    6.6   0.2   0.00054       1.6      75     162 ..     353     436 ..     334     446 .. 0.80
+   3 ?    2.2   0.0     0.011        33     126     162 ..     434     470 ..     425     484 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 0.014
+        atpI 126 aptndinttvalalltslayfyagfskrglgy 157
+                     d n+++ +    slay++ gf++  lg 
+  KOP27673.1 298 GAIADYNSALKINPNYSLAYIFRGFARSNLGD 329
+                 5567888889999999***********99996 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.00054
+        atpI  75 irdlaknqlgekeyrpwvpfigtlflfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyi 162
+                 +r la+ +lg+k+      +  +l    + sn++ a i      l  ge  a   d nt + +    +lay+  g ++  lg  k  i
+  KOP27673.1 353 VRGLARSDLGDKQG-AIADYNSAL---KINSNYALAYIFRGTAYLELGEHKAAITDFNTGLKINSNYALAYYNRGAARYKLGDKKGAI 436
+                 66677777776653.233444443...3469999999999999*********************************999999877655 PP
+
+  == domain 3  score: 2.2 bits;  conditional E-value: 0.011
+        atpI 126 aptndinttvalalltslayfyagfskrglgyfkkyi 162
+                     d nt++ +    ++ay+y g ++  lg  +  i
+  KOP27673.1 434 GAITDFNTAIKIDPKDAIAYYYRGTARAELGDKQGAI 470
+                 56789*********************99999766555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         5845  (1865779 residues searched)
+Passed MSV filter:                       229  (0.0391788); expected 116.9 (0.02)
+Passed bias filter:                      120  (0.0205304); expected 116.9 (0.02)
+Passed Vit filter:                        10  (0.00171086); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000342173); expected 0.1 (1e-05)
+Initial search space (Z):               5845  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 9366.21
+//
+[ok]

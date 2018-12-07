@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/46234_GCA_000312705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.8e-117  389.8  19.0   7.2e-117  387.8  19.0    1.7  1  AFW93219.1  cobyric acid synthase [Anabaena sp. 90]
+  ------ inclusion threshold ------
+      0.016   12.5   0.2      0.017   12.4   0.2    1.1  1  AFW92831.1  hypothetical protein ANA_C10017 [Anabaena sp. 90]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFW93219.1  cobyric acid synthase [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  387.8  19.0  3.2e-120  7.2e-117       1     289 [.       1     305 [.       1     307 [. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 387.8 bits;  conditional E-value: 3.2e-120
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslp+glyl++p t lh+ld rvk+iwl++fl++ ++an++wr+ lv ll+ +t++a ip rvwrqqmgwl++l+ +v++i++i+pdglgvs q 
+  AFW93219.1   1 MDLLRSLPLGLYLEEPQTWLHKLDPRVKLIWLLSFLSSYIVANNYWRVLLVLLLITFTVFAKIPLRVWRQQMGWLLILSFMVLVIASISPDGLGVSYQS 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeg.lnlppasd...............yqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteis 182
+                 rlp +  +   p s+               y yvl+++g + v rrsl+la+ +st+vftliystnl+llttapeeit g+e l+ plrrfn+pvtei+
+  AFW93219.1 100 RLPANEqILTQPISEkktqvtpviadshkkYSYVLFNKGFVKVNRRSLDLAISLSTIVFTLIYSTNLYLLTTAPEEITSGMESLMQPLRRFNIPVTEIT 198
+                 **964313222322111111111122344499******************************************************************* PP
+
+        bioN 183 ltltlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipf 281
+                 ltltlslrfiplvlee+qnl r+v trai+w+klg+k   +vwl v e+ll+nlllraeq+a am vrgftspn+h+v+w+elkl   d++a+  l+ f
+  AFW93219.1 199 LTLTLSLRFIPLVLEEIQNLVRSVMTRAINWKKLGLKGGAKVWLIVTERLLENLLLRAEQMANAMMVRGFTSPNEHRVKWQELKLITGDWLAIATLMIF 297
+                 *************************************************************************************************** PP
+
+        bioN 282 waarlvwg 289
+                 w  r+ +g
+  AFW93219.1 298 WVIRIAFG 305
+                 *****998 PP
+
+>> AFW92831.1  hypothetical protein ANA_C10017 [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.2   7.7e-06     0.017     189     247 ..      36      96 ..      13     104 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 7.7e-06
+        bioN 189 lrfiplvleevqnlaravr..traidwqklgikrslnvwltvveklldnlllraeqiaiam 247
+                   +i l ++e+q la +        + q+l ik+s n    v  + ld+ll + +q+ i  
+  AFW92831.1  36 ELLIGLSIDELQALAESSLfpKTQTQLQELLIKNSQNQLSKVETETLDKLLAQVDQLNIIK 96 
+                 457999*********9864114567899**********9999999***********99864 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         4511  (1408436 residues searched)
+Passed MSV filter:                       193  (0.0427843); expected 90.2 (0.02)
+Passed bias filter:                      111  (0.0246065); expected 90.2 (0.02)
+Passed Vit filter:                        10  (0.0022168); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443361); expected 0.0 (1e-05)
+Initial search space (Z):               4511  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8197.10
+//
+[ok]

@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65393_GCA_000021825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrH  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00038   17.7   0.0     0.0058   13.8   0.0    2.1  2  ACK68703.1  Amidohydrolase 3 [Cyanothece sp. PCC 7424]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK68703.1  Amidohydrolase 3 [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0     1e-06    0.0058       8      66 ..      24      87 ..      19      93 .. 0.78
+   2 !    1.6   0.0    0.0051        29     294     390 ..     306     398 ..     235     415 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 1e-06
+        cyrH  8 vlia.veddyatvdvqvvdgkiaai..apelevvgtaidgenklllpgfvnahthss..emwqr 66
+                ++i+ ++++   vd+++v gki++i  a+e  v + aid ++k+++p f++ hth     +w+r
+  ACK68703.1 24 TFIPeTREGLCLVDLEIVAGKINQIklASEQLVNSPAIDLQKKIVFPLFIDLHTHLDkgHIWER 87
+                555426789999***********98324555566889******************641156776 PP
+
+  == domain 2  score: 1.6 bits;  conditional E-value: 0.0051
+        cyrH 294 sgiapilkyrqagvnvtfgcdgass....ndsqdlleaikigsilhnvtdldyqhwitprqavemaslggakglnladklgsltvgkkadlvlydltnl 388
+                  g++ + + +q gv + f  d +          d+le     s+     d+ y+ w  +      a l g         lg + vg +adl++++   +
+  ACK68703.1 306 RGVTKVHQLKQQGVAIGFASDNCRDpfygFGDHDVLEVFT-QSVRIAHLDTPYEDWCCTVTKT-PADLMG------IPSLGRIGVGLEADLIIFQARYF 396
+                 4777788888888888888777653111145677777654.4555555677788887554332.233333......24678888999999999887666 PP
+
+        cyrH 389 sl 390
+                 s 
+  ACK68703.1 397 SE 398
+                 53 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5710  (1769808 residues searched)
+Passed MSV filter:                       116  (0.0203152); expected 114.2 (0.02)
+Passed bias filter:                       95  (0.0166375); expected 114.2 (0.02)
+Passed Vit filter:                         7  (0.00122592); expected 5.7 (0.001)
+Passed Fwd filter:                         1  (0.000175131); expected 0.1 (1e-05)
+Initial search space (Z):               5710  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 13716.01
+//
+[ok]

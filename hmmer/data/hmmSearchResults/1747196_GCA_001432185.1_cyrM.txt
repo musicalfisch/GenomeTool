@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1747196_GCA_001432185.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0038   14.2   0.1      0.018   11.9   0.1    1.9  2  KRH97327.1  ATPase involved in chromosome partitioning [Cylin
+  ------ inclusion threshold ------
+      0.023   11.6   0.0      0.052   10.5   0.0    1.6  1  KRH96697.1  adenylylsulfate kinase [Cylindrospermopsis sp. CR
+
+
+Domain annotation for each sequence (and alignments):
+>> KRH97327.1  ATPase involved in chromosome partitioning [Cylindrospermopsis sp. CR12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.0     0.077   1.2e+02      64     104 ..      27      68 ..      19      72 .. 0.74
+   2 !   11.9   0.1   1.2e-05     0.018      13      58 ..      92     137 ..      79     154 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 0.077
+        cyrM  64 enirrigfvsnlltrhgvivl.vsaispyreireevrgkigs 104
+                 +n+  +g+v nl      + l +   s   +++eevr+k+ +
+  KRH97327.1  27 NNLVSLGMVRNLRIIDDYVYLrLYLGSCELDLKEEVRTKLSQ 68 
+                 677788888888766655555145557778999999999865 PP
+
+  == domain 2  score: 11.9 bits;  conditional E-value: 1.2e-05
+        cyrM  13 ltglsgagkstitealqakliaegysievldgdivrtnltkglgfs 58 
+                  +g  g gkst++  l a l   g  + +ld d+   n+ + +g+ 
+  KRH97327.1  92 SSGKGGVGKSTVAVNLAAALSLSGAKVGLLDADVYGPNIPQMMGLG 137
+                 46889******************************99997755543 PP
+
+>> KRH96697.1  adenylylsulfate kinase [Cylindrospermopsis sp. CR12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   3.4e-05     0.052       7     120 ..     345     465 ..     340     474 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 3.4e-05
+        cyrM   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltk.g..lgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 +g  + + glsg+gkst    l akl a     + +   +    l   g    ++ e  ++   r+ +    l+ +g  v++ a    r +r++v  + 
+  KRH96697.1 345 QGELILMCGLSGSGKSTTGRYLAAKLGAVHLRSDAVRKHLAGISLRErGsnEIYTPEMTQKTYNRLLVWGITLANQGWSVILDAKYDRRYLRQQVIDQA 443
+                 57778899******************9987666655555554444321211346677777777788777778888888888888888888888887665 PP
+
+        cyrM 103 gsf....vevfvnaplsvceer 120
+                  +       v+  apl+v eer
+  KRH96697.1 444 NKHqlpaKIVYCTAPLEVLEER 465
+                 5441121357788888888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3086  (1017841 residues searched)
+Passed MSV filter:                       159  (0.051523); expected 61.7 (0.02)
+Passed bias filter:                      147  (0.0476345); expected 61.7 (0.02)
+Passed Vit filter:                        21  (0.00680493); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000648088); expected 0.0 (1e-05)
+Initial search space (Z):               3086  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 4682.07
+//
+[ok]

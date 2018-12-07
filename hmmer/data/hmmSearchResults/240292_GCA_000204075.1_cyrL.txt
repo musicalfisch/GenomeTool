@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrL  [M=299]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.4e-116  387.1   6.1   1.6e-116  387.0   6.1    1.0  1  ABA25259.1  hypothetical protein Ava_C0173 (plasmid) [Anabaen
+    1.1e-51  174.1   5.1    1.2e-51  173.9   5.1    1.0  1  ABA21989.1  transposase [Anabaena variabilis ATCC 29413]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA25259.1  hypothetical protein Ava_C0173 (plasmid) [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  387.0   6.1  5.6e-120  1.6e-116       4     244 ..       2     242 ..       1     243 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 387.0 bits;  conditional E-value: 5.6e-120
+        cyrL   4 vleyiekypertkqilGidyeqfqalvkeaekkhekiqkekekqkirinkkGGGrkeklsvaeqiclclfylrqlptfeilGllfgvskseahdtfhyw 102
+                 v+ yi+kyp rtkqilGi+yeq+q l++ a+k+h++i+ ++e++kirin+ GGGrke+ls++eq+clclfylrq+ptf++lG+lfgvsk+ea+dtfh+w
+  ABA25259.1   2 VFYYIQKYPLRTKQILGISYEQLQSLLNCASKRHQEIKIQQESRKIRINAAGGGRKELLSIQEQVCLCLFYLRQMPTFQVLGMLFGVSKTEANDTFHDW 100
+                 799************************************************************************************************ PP
+
+        cyrL 103 ikilreilpsslleqvekkeedlaivkeilaefkllvdsleqprerpsdkeeqkkyysGkkkqhtlksqlvslpegkdivdvevGkkGptsdinlfreq 201
+                 i ilr ilpsslleqv ++++dl  v+e+l++f+ll dsleqp+ r sd++eq+ky+sGkk+qhtlksq++ +pegkdiv+vevG +Gpt+di+lfr+ 
+  ABA25259.1 101 IAILRDILPSSLLEQVSNNKSDLLFVQEVLTNFRLLFDSLEQPIYRHSDQKEQQKYFSGKKRQHTLKSQMIGMPEGKDIVEVEVGVPGPTADIKLFRQS 199
+                 *************************************************************************************************** PP
+
+        cyrL 202 qkkfdeeqkfkgdkgyqGgknietphkkkrkkelteeqkeenk 244
+                 q+kfd++q f+g+kg+qGg+ni+tphk+k k+elt++qk enk
+  ABA25259.1 200 QQKFDKSQPFSGNKGFQGGENITTPHKRKLKRELTQQQKDENK 242
+                 ******************************************9 PP
+
+>> ABA21989.1  transposase [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.9   5.1   4.2e-55   1.2e-51     146     265 ..       2     121 ..       1     122 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 173.9 bits;  conditional E-value: 4.2e-55
+        cyrL 146 rerpsdkeeqkkyysGkkkqhtlksqlvslpegkdivdvevGkkGptsdinlfreqqkkfdeeqkfkgdkgyqGgknietphkkkrkkelteeqkeenk 244
+                 rerp d++eq+kyysGk+ +ht+ksq+++lpegkdivdv+ G +Gp sdi+lfr+ +++fd++q+fkgdk+y+G+  i++p kk ++++lt eqk++nk
+  ABA21989.1   2 RERPGDNKEQEKYYSGKRSNHTFKSQMIILPEGKDIVDVVAGEPGPKSDITLFRKYRDNFDSKQRFKGDKAYIGEDVINVPIKKSKNQKLTPEQKAQNK 100
+                 89************************************************************************************************* PP
+
+        cyrL 245 ilsskrifvehlirlvkifrv 265
+                  +s+krifveh ir vkifrv
+  ABA21989.1 101 AFSAKRIFVEHRIRTVKIFRV 121
+                 ********************8 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (299 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       109  (0.0191027); expected 114.1 (0.02)
+Passed bias filter:                       72  (0.0126183); expected 114.1 (0.02)
+Passed Vit filter:                         8  (0.00140203); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350508); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 11591.17
+//
+[ok]

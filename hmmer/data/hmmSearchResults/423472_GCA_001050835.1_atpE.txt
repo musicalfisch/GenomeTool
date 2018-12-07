@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423472_GCA_001050835.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.6e-62  206.4   0.3    6.2e-62  206.2   0.3    1.0  1  CCQ55890.1  ATP synthase epsilon chain [Crocosphaera watsonii
+  ------ inclusion threshold ------
+      0.054   12.1   2.6       0.13   10.8   2.6    1.7  1  CCQ59510.1  similar to Multidrug resistance efflux pump [Croc
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ55890.1  ATP synthase epsilon chain [Crocosphaera watsonii WH 0005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  206.2   0.3   2.1e-65   6.2e-62       1     137 []       1     136 []       1     136 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 206.2 bits;  conditional E-value: 2.1e-65
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m ltvrvi+pdktvwd+  ee+ilpst+gqlgil ghaplltaldtgv+rvr++k  dw++ia++ggfaeve+de+ +lvn+ae gd i+ e a+a+++
+  CCQ55890.1   1 MPLTVRVITPDKTVWDGDVEEIILPSTSGQLGILGGHAPLLTALDTGVIRVRPDK--DWKSIAVMGGFAEVEQDEIKVLVNSAEAGDDIDKETAKADYS 97 
+                 89***************************************************87..8***************************************** PP
+
+        atpE 100 eaqtklnqv.kaedrqaqiqatqafkrararfqaagglv 137
+                 +aq++l++  k+++  +q++at afkrarar+qaagglv
+  CCQ55890.1  98 AAQSRLEEAnKTGEASEQMKATSAFKRARARLQAAGGLV 136
+                 ******9872568999*********************97 PP
+
+>> CCQ59510.1  similar to Multidrug resistance efflux pump [Crocosphaera watsonii WH 0005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   2.6   4.5e-05      0.13      74     132 ..      10      68 ..       4      73 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 4.5e-05
+        atpE  74 devtilvngaergdkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqa 132
+                 d +  l+n a+  ++i l++ +a+f+eaq +l++++a+ r++ i qa + +  a+a++q 
+  CCQ59510.1  10 DRLDELLNDAQIKQAI-LQQFKASFQEAQEQLSKLEAGPRKEVIaQAVAELAEAKAQYQI 68 
+                 6666788888888777.8999*******************998868899999****9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         5919  (1453910 residues searched)
+Passed MSV filter:                       169  (0.0285521); expected 118.4 (0.02)
+Passed bias filter:                      150  (0.0253421); expected 118.4 (0.02)
+Passed Vit filter:                        10  (0.00168947); expected 5.9 (0.001)
+Passed Fwd filter:                         2  (0.000337895); expected 0.1 (1e-05)
+Initial search space (Z):               5919  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6639.52
+//
+[ok]

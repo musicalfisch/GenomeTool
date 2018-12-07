@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574475_GCA_000817745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.6e-19   66.8  26.6    3.4e-13   48.4   7.3    2.7  2  KIF20559.1  hypothetical protein QP59_19775 [Aphanocapsa mont
+     0.0014   16.8   4.4     0.0022   16.2   4.4    1.3  1  KIF14026.1  ABC transporter permease [Aphanocapsa montana BDH
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF20559.1  hypothetical protein QP59_19775 [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.3   9.4     1e-09   3.7e-06       9      60 ..       9      60 ..       2     123 .. 0.81
+   2 !   48.4   7.3   9.3e-17   3.4e-13     136     252 ..     287     403 ..     281     415 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 25.3 bits;  conditional E-value: 1e-09
+        braD  9 ivngiavgsiialaavgltltygilrlsnfahgdfltlgayltllvnslgvn 60
+                + ng+++g+++ + a+gl++++g++ + n+ahg+++ lgay t++v++ +  
+  KIF20559.1  9 LFNGVSIGAVLLIVALGLAIVFGLMGVINLAHGELMMLGAYTTYVVQNGAAA 60
+                67*******************************************9865544 PP
+
+  == domain 2  score: 48.4 bits;  conditional E-value: 9.3e-17
+        braD 136 lkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmyglitavrpnmgwflilplfasvilgg 234
+                 l+ p ++l+++ l++++++ ++++l+ t  g  +r+v+++  ++   gi  ++v   t+ +   l+ ++g+   l+ +v pn+g   i+  f  v++gg
+  KIF20559.1 287 LQFPYSRLFIIGLTIVCLIGVYWFLNGTAWGLRIRSVTQNRKMSACLGIPTEKVDALTFALGSGLAGIAGCAVTLLGSVGPNLGGNYIVDAFMVVVVGG 385
+                 678999********************************************************************************************* PP
+
+        braD 235 ignpygaiaaafiigiaq 252
+                 +g+  g+i+aa++igi+ 
+  KIF20559.1 386 VGKLAGSIVAALVIGIVT 403
+                 ****************85 PP
+
+>> KIF14026.1  ABC transporter permease [Aphanocapsa montana BDHKU210001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   4.4     6e-07    0.0022      89     212 ..     102     223 ..      44     304 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 6e-07
+        braD  89 siratsttliiisiglalflrngiillwggknknynlpvtqaldilglkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvd 187
+                 +  a   ++ii   gla+fl +  i     +  +++l   ++   +   +  + l+++ +a+  +  ++++++ t+ g  +rav d  + ar  gi + 
+  KIF14026.1 102 NDVAVGIAMIIFGSGLAFFLGKPFIQPQAPQLFTFQLGAWSSNPAVQSALKVSPLFLIGVAIAPL--MQWFFRATRWGLYIRAVGDSPEAARAMGISIF 198
+                 334677899999********999999999999999999888887777777777788888887765..57899*************************** PP
+
+        braD 188 rvilwtwviagsltslggsmyglit 212
+                 +v + + v    l+ +gg+ + l  
+  KIF14026.1 199 KVRFLSIVAGSFLAGIGGACLSLYY 223
+                 *999876655557889999887753 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         7295  (2153977 residues searched)
+Passed MSV filter:                       281  (0.0385195); expected 145.9 (0.02)
+Passed bias filter:                      103  (0.0141193); expected 145.9 (0.02)
+Passed Vit filter:                         8  (0.00109664); expected 7.3 (0.001)
+Passed Fwd filter:                         2  (0.00027416); expected 0.1 (1e-05)
+Initial search space (Z):               7295  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10339.09
+//
+[ok]

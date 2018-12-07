@@ -1,0 +1,93 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/696747_GCA_000210375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.6e-27   92.8   0.1    4.3e-27   92.5   0.1    1.1  1  BAI89622.1  phycocyanin associated linker protein [Arthrospir
+    4.2e-25   86.1   0.0    1.3e-24   84.5   0.1    1.7  2  BAI92438.1  ferredoxin--NADP+ oxidoreductase [Arthrospira pla
+     0.0036   15.9   0.1     0.0069   15.0   0.1    1.5  1  BAI89624.1  phycobilisome rod linker polypeptide CpcH [Arthro
+  ------ inclusion threshold ------
+       0.02   13.5   0.1      0.046   12.3   0.1    1.6  1  BAI89623.1  phycobilisome rod linker polypeptide CpcI [Arthro
+
+
+Domain annotation for each sequence (and alignments):
+>> BAI89622.1  phycocyanin associated linker protein [Arthrospira platensis NIES-39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   92.5   0.1   2.6e-30   4.3e-27       5      69 ..      12      76 ..       9      81 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 92.5 bits;  conditional E-value: 2.6e-30
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpln 69
+                ss    r+f yevvG+ qnd+td  +y ir sGs f+ vpy rmnqem+ri r+G +ivsi p+ 
+  BAI89622.1 12 SSPSGARFFKYEVVGIRQNDETDKSEYQIRSSGSQFVIVPYNRMNQEMQRINRMGGKIVSIEPMT 76
+                677789*********************************************************96 PP
+
+>> BAI92438.1  ferredoxin--NADP+ oxidoreductase [Arthrospira platensis NIES-39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   84.5   0.1   8.1e-28   1.3e-24      10      67 ..      17      74 ..      10      78 .. 0.95
+   2 ?   -2.6   0.0       1.2   2.1e+03      30      46 ..     278     294 ..     274     303 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 84.5 bits;  conditional E-value: 8.1e-28
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikp 67
+                 r+fv+ev G+ q ++tdn++y ir+sG+v+ltvpy rmnqemrr++++Ga+iv i p
+  BAI92438.1 17 GRIFVFEVEGMRQGQNTDNFNYPIRRSGTVYLTVPYERMNQEMRRLSKMGAKIVNIYP 74
+                69******************************************************98 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 1.2
+        cpcD  30 dysirksGsvfltvpys 46 
+                 dy  +    +f+ +pys
+  BAI92438.1 278 DYKFKGLAWLFFGIPYS 294
+                 7777777788999***9 PP
+
+>> BAI89624.1  phycobilisome rod linker polypeptide CpcH [Arthrospira platensis NIES-39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.0   0.1   4.2e-06    0.0069      33      67 ..     237     270 ..     213     271 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 15.0 bits;  conditional E-value: 4.2e-06
+        cpcD  33 irksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 +rk+ +   tv y ++  +++ri r+G r++s+ p
+  BAI89624.1 237 MRKATAE-YTVAYEQLSGQLQRINRMGGRVISVTP 270
+                 6666554.59***********************98 PP
+
+>> BAI89623.1  phycobilisome rod linker polypeptide CpcI [Arthrospira platensis NIES-39]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.1   2.8e-05     0.046      36      68 ..     257     288 .]     248     288 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 2.8e-05
+        cpcD  36 sGsvfltvpysrmnqemrritrlGarivsikpl 68 
+                      + vpy ++  ++r i r G  i si p+
+  BAI89623.1 257 CSK-AFIVPYEQLSAQLREIQRQGGTIASITPI 288
+                 444.4569**********************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         6630  (1832829 residues searched)
+Passed MSV filter:                       100  (0.015083); expected 132.6 (0.02)
+Passed bias filter:                       94  (0.014178); expected 132.6 (0.02)
+Passed Vit filter:                         6  (0.000904977); expected 6.6 (0.001)
+Passed Fwd filter:                         4  (0.000603318); expected 0.1 (1e-05)
+Initial search space (Z):               6630  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4520.98
+//
+[ok]

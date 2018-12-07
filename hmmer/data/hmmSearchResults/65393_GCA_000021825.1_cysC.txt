@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65393_GCA_000021825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.6e-105  348.0   0.0   2.9e-105  347.9   0.0    1.0  1  ACK71233.1  Adenylyl-sulfate kinase [Cyanothece sp. PCC 7424]
+  ------ inclusion threshold ------
+      0.051   11.4   0.1        6.5    4.5   0.1    2.3  2  ACK70382.1  AAA ATPase central domain protein [Cyanothece sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK71233.1  Adenylyl-sulfate kinase [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  347.9   0.0    1e-108  2.9e-105       4     178 ..       1     175 [.       1     176 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 347.9 bits;  conditional E-value: 1e-108
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mkqrgvt+wltglsgagkstiteal  kl  + y +evldgd+vrtnltkglgfskedrdenirrigfv nlltrhgv vlvsaispyreireevrgki
+  ACK71233.1   1 MKQRGVTIWLTGLSGAGKSTITEALAQKLREQDYPLEVLDGDVVRTNLTKGLGFSKEDRDENIRRIGFVCNLLTRHGVFVLVSAISPYREIREEVRGKI 99 
+                 9************************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 g+fvevfvnapl+vce+rdvkglykrarageiksftgiddpyepp+npevecrtdle l+esv k+ +kl +lgy+
+  ACK71233.1 100 GDFVEVFVNAPLAVCEQRDVKGLYKRARAGEIKSFTGIDDPYEPPLNPEVECRTDLEELDESVNKILHKLDQLGYL 175
+                 ***************************************************************************7 PP
+
+>> ACK70382.1  AAA ATPase central domain protein [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.2   0.0    0.0029       8.1      11      55 ..     201     247 ..     192     251 .. 0.81
+   2 ?    4.5   0.1    0.0023       6.5       7      41 ..     438     472 ..     433     485 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 4.2 bits;  conditional E-value: 0.0029
+        cysC  11 vwltglsgagks.titealqa.kliaegysievldgdivrtnltkgl 55 
+                 + l gl g  k   i+ea q  kl     s e+l  di + nl + l
+  ACK70382.1 201 IQLCGLDGGTKRgIIAEACQHlKLNLYSLSAEILPNDINQINLIQCL 247
+                 6789999887751678998753888889999***********98865 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.0023
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysiev 41 
+                  g++v ++g sg+gk+  +e l   l  + y i++
+  ACK70382.1 438 LGISVLFAGASGTGKTLAAEVLANELRLDVYRIDL 472
+                 4899*********************9999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5710  (1769808 residues searched)
+Passed MSV filter:                       242  (0.0423818); expected 114.2 (0.02)
+Passed bias filter:                      222  (0.0388792); expected 114.2 (0.02)
+Passed Vit filter:                        36  (0.00630473); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350263); expected 0.1 (1e-05)
+Initial search space (Z):               5710  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 6512.89
+//
+[ok]

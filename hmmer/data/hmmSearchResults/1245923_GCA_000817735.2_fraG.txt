@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fraG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245923_GCA_000817735.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fraG  [M=329]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00054   17.1  21.7     0.0012   15.9  12.6    2.1  2  ODN59782.1  permease [Scytonema millei VB511283]
+
+
+Domain annotation for each sequence (and alignments):
+>> ODN59782.1  permease [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9  12.6   2.4e-07    0.0012      82     250 ..      75     245 ..      59     258 .. 0.76
+   2 !    5.9   2.7   0.00027       1.4     124     169 ..     262     308 ..     242     318 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 2.4e-07
+        fraG  82 wreinqlkqpvnrpviweamgcgflmflylvllyisisfiptgiaitlfftypiftallawrlfndvpsllrwlvigltlig.tfltipyayggeqqtl 179
+                 w +    ++p  r  +   +g+g ++   lvl+  s++     i+  l    pift+l aw lf     + r ++ig+ +     ++i           
+  ODN59782.1  75 WGDKSVQQEPYTRQDLLLLVGAGTFFAASLVLVAWSLTQTSVAISTVLHNLAPIFTSLGAWLLFSV--GFNRQFLIGMVIATaGAVAIELDQLTGATNN 171
+                 555555667888888888999999999999999999988888888899999*************74..5778888998765414567777777777788 PP
+
+        fraG 180 vlgvstgiasgivyagytvfaqrsfqrlhpvpft.wisfattlilsilcliiwqp.heg.nlpwlaitigslls 250
+                 vlg  + i s +  a y ++ ++   ++ p+ +  wi   +t++l  ++l+  +  +      wla+   sl+ 
+  ODN59782.1 172 VLGDVAAIISAVFLAAYLLVVEQLRTKFSPMTIQlWICAIATVVLFPIVLLSGDKfFPStFGGWLAVISFSLVC 245
+                 9******************9999999999998744998777777665555443330222033577777666655 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.00027
+        fraG 124 giaitlf.ftypiftallawrlfndvpsllrwlvigltligtfltip 169
+                  + ++lf +  p+f+ ++a+ +f +  s+ +w+   + lig +l + 
+  ODN59782.1 262 SVVVSLFhLLEPVFAGIFAFVIFWEKLSFSHWVGFAVVLIGLYLVVS 308
+                 45566662567********************************9875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (329 nodes)
+Target sequences:                         4957  (1458912 residues searched)
+Passed MSV filter:                       310  (0.0625378); expected 99.1 (0.02)
+Passed bias filter:                      129  (0.0260238); expected 99.1 (0.02)
+Passed Vit filter:                         5  (0.00100867); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000201735); expected 0.0 (1e-05)
+Initial search space (Z):               4957  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9599.64
+//
+[ok]

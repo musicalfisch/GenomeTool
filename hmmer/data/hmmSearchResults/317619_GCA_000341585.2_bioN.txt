@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317619_GCA_000341585.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     2e-116  386.1  16.4      3e-79  264.1   3.1    2.0  2  KKJ00370.1  hypothetical protein PROH_12020 [Prochlorothrix h
+
+
+Domain annotation for each sequence (and alignments):
+>> KKJ00370.1  hypothetical protein PROH_12020 [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  128.0   5.5   2.2e-41   8.4e-38       1     110 [.       1     110 [.       1     120 [. 0.96
+   2 !  264.1   3.1   8.1e-83     3e-79     106     290 ..     141     325 ..     128     326 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 128.0 bits;  conditional E-value: 2.2e-41
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslp+glyl++p+t lh+ld rvk++wlm fl +p+lan+ wr+ lv  l++lt    +p rvwrqqmgwl++l  +v+ +tai+pdgl    qp
+  KKJ00370.1   1 MDLLRSLPLGLYLEEPVTWLHRLDPRVKLVWLMGFLLSPILANSLWRVGLVAALVILTCGVGVPLRVWRQQMGWLLVLGTMVLALTAISPDGLPAQHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlpp 110
+                 r p + l   p
+  KKJ00370.1 100 RRPSQALTELP 110
+                 ****9997554 PP
+
+  == domain 2  score: 264.1 bits;  conditional E-value: 8.1e-83
+        bioN 106 lnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlar 204
+                   lppasdy+yv++drg + +trr+l+l +r++tlvftliystnl+lltt+peeit gle++lspl+   vpvtei+ltltl+lrfiplv+eevqnl r
+  KKJ00370.1 141 QPLPPASDYRYVVFDRGPITITRRALDLGIRVATLVFTLIYSTNLYLLTTSPEEITAGLEDVLSPLHWCRVPVTEITLTLTLALRFIPLVMEEVQNLVR 239
+                 569************************************************************************************************ PP
+
+        bioN 205 avrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwgg 290
+                 +v traidw+klg+++  +vwl + e+ll nlllraeqia a++vrgft+p  h+v+wh+l+lr  d +al+ l+ f  ar++wg 
+  KKJ00370.1 240 SVWTRAIDWKKLGLRQGAQVWLQIAERLLLNLLLRAEQIANAIQVRGFTTPGTHRVQWHDLRLRLWDRLALVGLVLFCGARVLWGQ 325
+                 ************************************************************************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         3737  (1137027 residues searched)
+Passed MSV filter:                       159  (0.0425475); expected 74.7 (0.02)
+Passed bias filter:                       85  (0.0227455); expected 74.7 (0.02)
+Passed Vit filter:                         2  (0.000535189); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000267594); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11029.16
+//
+[ok]

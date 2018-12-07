@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/497965_GCA_000147335.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.027   12.2   0.0      0.048   11.4   0.0    1.3  1  ADN13331.1  poly(R)-hydroxyalkanoic acid synthase, class III,
+      0.044   11.5   0.0       0.15    9.7   0.0    1.8  1  ADN13343.1  alpha/beta fold family hydrolase [Cyanothece sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> ADN13331.1  poly(R)-hydroxyalkanoic acid synthase, class III, PhaC subunit [Cyanothece sp. PCC 7822]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.0   1.4e-05     0.048     186     234 ..     293     344 ..     275     353 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.4e-05
+        anaA 186 vsekslpcpilalggeadegvsleelrewekytqr.gfklrsfpggh..myl 234
+                 v+ ++l  pil l  e d  v     +  eky +   + l+sfp gh  my+
+  ADN13331.1 293 VNLQNLTMPILNLYAEQDHLVDPVSSKALEKYVNSsDYTLKSFPVGHigMYV 344
+                 6667899*************************975279*********44454 PP
+
+>> ADN13343.1  alpha/beta fold family hydrolase [Cyanothece sp. PCC 7822]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.0   4.5e-05      0.15      48     112 ..      59     123 ..      48     272 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 4.5e-05
+        anaA  48 dsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgd 112
+                 ds+    + +  +e ri++    r      p  qe++p     + + g s+g  ++++va++   
+  ADN13343.1  59 DSLAYQVITLIEKELRIRQKYSKRGNATHSPTHQEVFPDVSPSVYLCGESFGGCLAIQVAQKAPW 123
+                 7888888899999********99999999*********8766666679***********987543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         6642  (2154807 residues searched)
+Passed MSV filter:                       165  (0.0248419); expected 132.8 (0.02)
+Passed bias filter:                      157  (0.0236375); expected 132.8 (0.02)
+Passed Vit filter:                        13  (0.00195724); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301114); expected 0.1 (1e-05)
+Initial search space (Z):               6642  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 7788.09
+//
+[ok]

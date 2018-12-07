@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59919_GCA_000011465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrA  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-07   28.1   0.0     0.0046   13.0   0.0    2.3  2  CAE19598.1  possible membrane fusion protein [Prochlorococcus
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE19598.1  possible membrane fusion protein [Prochlorococcus marinus subsp. pastoris str. CCMP1986]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   0.0   2.4e-06    0.0046      87     134 ..      66     113 ..      52     123 .. 0.83
+   2 !   12.7   0.0   2.8e-06    0.0055     285     389 ..     131     244 ..     127     279 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 2.4e-06
+        emrA  87 ihsigsrvsgtvdqvlvddnqdvkagqplirlddrdfqiklqqaqadl 134
+                    ig r  g ++++ v++ + v  gq l  ldd df  kl++ + +l
+  CAE19598.1  66 TSNIGPRKQGILEEIKVEEGDLVEKGQILATLDDEDFIYKLEELELNL 113
+                 3458*************************************9876555 PP
+
+  == domain 2  score: 12.7 bits;  conditional E-value: 2.8e-06
+        emrA 285 qvsqsdyqtaqaainqsqvalknakqqlayvtitapvsgrvgrknvqtgqqvqagtpllaivddqyw.........vtanfketqlekmhpgqkveikl 374
+                  vs+ dy++ +   n s+  + +ak +  + +i ap  g++  k  + g  v   + l +    + +         + a+  e+++ +++ gq   +++
+  CAE19598.1 131 AVSKEDYESYKNKYNTSEAKFSDAKAEKDFYSIRAPYPGKITAKYAEIGSYVTPSSNLSSNSKAKNFifelsegleIIAKVPESDIGRIKTGQEASVRI 229
+                 69**************************************************98888866544433311111111278999999999999999999999 PP
+
+        emrA 375 dsfphheftgriesv 389
+                 +++p  ++   ++ +
+  CAE19598.1 230 EAYPSNKYRAIVKKI 244
+                 999999887766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (448 nodes)
+Target sequences:                         1948  (498304 residues searched)
+Passed MSV filter:                        18  (0.00924025); expected 39.0 (0.02)
+Passed bias filter:                       16  (0.00821355); expected 39.0 (0.02)
+Passed Vit filter:                         1  (0.000513347); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000513347); expected 0.0 (1e-05)
+Initial search space (Z):               1948  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 7441.34
+//
+[ok]

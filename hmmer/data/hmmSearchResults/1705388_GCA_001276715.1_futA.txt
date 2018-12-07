@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1705388_GCA_001276715.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-38  131.3   0.3    1.8e-38  130.7   0.3    1.2  1  KOR34690.1  ABC transporter substrate-binding protein [Plankt
+  ------ inclusion threshold ------
+      0.038   11.2   0.0      0.043   11.0   0.0    1.1  1  KOR36091.1  AbrB family transcriptional regulator [Planktothr
+
+
+Domain annotation for each sequence (and alignments):
+>> KOR34690.1  ABC transporter substrate-binding protein [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  130.7   0.3   7.1e-42   1.8e-38       8     314 ..       5     299 ..       2     314 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 130.7 bits;  conditional E-value: 7.1e-42
+        futA   8 rvflgagtatlavavgqlgkinevsaqtkqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlwradqqgi 106
+                 r +++ g  +la ++   g  + v aq k l +ys r       l ++  ++ gi+i++  g++  l   i  eg+nspad+ +  dag l    + g 
+  KOR34690.1   5 RTYIALGVLALAASI---GVAKLVFAQPKTLTIYSGRNERLIGPLVEKAKQDLGINIEVRYGDTSELAIAILEEGNNSPADVYFGQDAGALGALAKAGR 100
+                 556666666666555...5567799************************************************************************** PP
+
+        futA 107 fapvnsriltqripanlrhpkghwfgfskrlrvimynkdrvnprei.dsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcrglvanf 204
+                    + s++l +++  ++r  +g+w+g+s r rv+ yn + v   e+  s  +lt+pkw+gkv   + +n   qsf + +    g+  + +w + + an 
+  KOR34690.1 101 TEAIPSNLL-EKVDGKFRDQNGQWVGISGRARVLDYNTNEVSSNELpRSVWELTQPKWQGKVG-WAPTNGSFQSFVTAMRLTAGNEKTLEWLKAMKANG 197
+                 ****99977.689********************************945889**********86.56677788999888888899999999********9 PP
+
+        futA 205 arspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqnffakgn 303
+                 ++    ++ a +ea+  g   l l n yyl  +  ++ p +  +       +p ++  g+ vn++g  +++t+ ++  a kf++yl  ne+qn+fa+  
+  KOR34690.1 198 TKVYP-KNTAIVEALGRGEIHLGLVNNYYLYQFNADN-P-NFPV---KHHYMPGDV--GSMVNVAGVAIVNTTDQKADAQKFVDYLLKNESQNYFAQET 288
+                 98765.55799*******************8876543.2.2222...223456654..789************************************** PP
+
+        futA 304 qeypvvrgval 314
+                 +eyp+v g+a 
+  KOR34690.1 289 KEYPLVSGIAA 299
+                 ********985 PP
+
+>> KOR36091.1  AbrB family transcriptional regulator [Planktothricoides sp. SR001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   1.7e-05     0.043     309     332 ..      58      81 ..      17      98 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.7e-05
+        futA 309 vrgvaldpvlaklgrgkedtvsva 332
+                  +gvaldp  ak grg+e t  v+
+  KOR36091.1  58 AKGVALDPEGAKDGRGREPTYRVS 81 
+                 489***************996554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         5049  (1535341 residues searched)
+Passed MSV filter:                       131  (0.0259457); expected 101.0 (0.02)
+Passed bias filter:                      109  (0.0215884); expected 101.0 (0.02)
+Passed Vit filter:                        15  (0.00297089); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396118); expected 0.1 (1e-05)
+Initial search space (Z):               5049  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10778.09
+//
+[ok]

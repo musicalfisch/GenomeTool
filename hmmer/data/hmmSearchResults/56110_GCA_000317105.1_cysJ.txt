@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56110_GCA_000317105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-19   66.0   0.0    4.7e-19   65.5   0.0    1.2  1  AFY79903.1  Oxidoreductase FAD-binding domain/Oxidoreductase 
+    1.1e-05   21.2   0.0    1.4e-05   20.9   0.0    1.1  1  AFY83425.1  flavodoxin reductase family protein [Oscillatoria
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY79903.1  Oxidoreductase FAD-binding domain/Oxidoreductase NAD-binding domain/CpcD/allophycocyanin linker domain pr
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   65.5   0.0   1.6e-22   4.7e-19    1208    1401 ..     181     385 ..     143     398 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 65.5 bits;  conditional E-value: 1.6e-22
+        cysJ 1208 qkprlysisscpl.lhp..rriqitvgvlq.vttdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s     h   + + + v  l     ++ +  +g+cs +l+ lqpg  v i   +   +  p d  + ++m+  gtg++p+ afl +  
+  AFY79903.1  181 HKLRLYSIASTRHgDHEddKTVSLCVRELVyQHPETNETVKGVCSSFLCHLQPGDDVAITGpVGKEMLLPDDEESTVIMMATGTGIAPFRAFLWRMF 277 
+                  47799999998652454114455555433303456778889*****************985266788999***********************9887 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeqlqvwrdr.nvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmaddvf 1390
+                    q +     g a l+fg    ++++y+e+l+  +        l  a+sr  e+    k y+q+ + ++ e+iw++l +p++h y+cg   m   + 
+  AFY79903.1  278 KEQHEDYKfKGLAWLFFGIPYSANILYKEELEKLQAEfPDNFRLTYAISREQENaqggKMYIQDRIAENAEEIWNLLQKPNAHTYICGLKGMEGGID 374 
+                  777766651699****************99976654314455788899998886334467************************************9 PP
+
+        cysJ 1391 avmmaiakqqg 1401
+                    m a++ +qg
+  AFY79903.1  375 EGMSAVTSKQG 385 
+                  9**99999998 PP
+
+>> AFY83425.1  flavodoxin reductase family protein [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9   0.0   4.7e-09   1.4e-05    1204    1333 ..     167     290 ..     159     354 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 4.7e-09
+        cysJ 1204 llpkqkprlysisscpllhprriqitvgvlqvttdagkvrqglcsnylag.lqpgssvrievltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +  k   r ysiss p  +p+ ++itv   +v+  + ++  gl+sn+l   +  gs ++i      f   t+ h  +l++  g+g++p++++ +   
+  AFY83425.1  167 IDGKTVRRSYSISSSPS-RPHTLEITVK--RVAPATAELPPGLVSNWLHDhITLGSEIKISQPMGQFTCGTEGHDKLLLISAGSGITPMMSMSRWIC 260 
+                  55677889********6.7999999875..677788899*********753789***********************************99865432 PP
+
+        cysJ 1300 alqnqgislgeahlyfgcrnpsdfiyqeqlqvwr 1333
+                            +  +   +r p d+i++ +l+   
+  AFY83425.1  261 D---T-ADSRDIIFIHSARSPDDLIFRRELEGMV 290 
+                  2...2.2223334455678888888877776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         5796  (2068426 residues searched)
+Passed MSV filter:                       136  (0.0234645); expected 115.9 (0.02)
+Passed bias filter:                      110  (0.0189786); expected 115.9 (0.02)
+Passed Vit filter:                         7  (0.00120773); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345066); expected 0.1 (1e-05)
+Initial search space (Z):               5796  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.18u 0.02s 00:00:00.20 Elapsed: 00:00:00.19
+# Mc/sec: 16111.95
+//
+[ok]

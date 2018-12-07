@@ -1,0 +1,114 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317619_GCA_000341585.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrA  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.6e-14   50.6  25.0    6.3e-08   30.0  26.2    2.4  2  KKJ00549.1  hypothetical protein PROH_10060 [Prochlorothrix h
+    2.2e-06   24.9  33.6     0.0025   14.8  33.5    3.1  1  KKI99583.1  RND transporter [Prochlorothrix hollandica PCC 90
+      0.001   16.1  33.5      0.082    9.8  33.1    3.0  1  KKJ01703.1  hypothetical protein PROH_04105 [Prochlorothrix h
+
+
+Domain annotation for each sequence (and alignments):
+>> KKJ00549.1  hypothetical protein PROH_10060 [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.0  26.2     5e-11   6.3e-08     129     278 ..      62     205 ..      56     207 .. 0.78
+   2 !   26.7   1.2     5e-10   6.2e-07     285     392 ..     174     282 ..     165     299 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 30.0 bits;  conditional E-value: 5e-11
+        emrA 129 qaqadlaaaqqkantaqvnvalsgqna.tasntkaqggigtaqaaiaqaqaqvaeaqagvpraqadlaqtnanlakaqadynrfnqlfssgavsrreld 226
+                 qaq  l  a q +n    +v +   +a +  +        t qa i q +aq+a aqa v + qa laq++a l  aq++ +rf+ l + ga+s +el+
+  KKJ00549.1  62 QAQDLLPIAAQASNLQIQEVRVDEGDAiSPGQVLVVLDSTTIQAQIQQGKAQLASAQARVRQQQASLAQAQATLKEAQSNLQRFQALAADGAISAQELE 160
+                 566666666666665555555543333034445555667899********************************************************* PP
+
+        emrA 227 tarqayevaraqrdsasegvrqaqakvaqaeqgvataqaglessqgelqqaq 278
+                 t   +  v      +a e vr aqa+++ a+  v + qa l+     l+++q
+  KKJ00549.1 161 TRSTT--VL-----TAQESVRLAQANITSAQAEVQSQQAQLNQLTITLNRTQ 205
+                 96543..44.....45689999999999999999999998887666666555 PP
+
+  == domain 2  score: 26.7 bits;  conditional E-value: 5e-10
+        emrA 285 qvsqsdyqtaqaainqsqvalknakqqlayvtitapvsgrvgrknvqtgqqvqagtpllaivddqy.wvtanfketqlekmhpgqkveikldsfphhef 382
+                 +++q++  +aqa ++  q  l++    l    + ap +g v  +  + g+      pl++++ d    +   + etql +++ g +v+i+ ds p  ++
+  KKJ00549.1 174 RLAQANITSAQAEVQSQQAQLNQLTITLNRTQVKAPTAGIVAERFARVGNLASDRDPLFSVIRDGLlELEISLPETQLPQVKVGARVNIRSDSDPSLQL 272
+                 5678888888888888888888888888888899*************************9998875158899*************************** PP
+
+        emrA 383 tgriesvspa 392
+                  g + s++p 
+  KKJ00549.1 273 QGSVASIAPL 282
+                 ******9985 PP
+
+>> KKI99583.1  RND transporter [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8  33.5     2e-06    0.0025     178     392 ..     133     331 ..      47     339 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 2e-06
+        emrA 178 aqvaeaqagvpraqadlaqtnanlakaqadynrfnqlfssgavsrreldtarqayevaraqrdsasegvrqaqakvaqaeqgvataqaglessqgelqq 276
+                  +v  aqa   +aqa+++++++ la aq   +r + lf+ ga+s+ +l+++ ++ e a++    a  g   +  +v q e+g       +  +  ++q 
+  KKI99583.1 133 EDVDRAQAQAAQAQAQITEAQSRLALAQQRLQRNQALFAEGAISQDDLEASINSQEQAQSLVTQAQAGFAATVQQVRQLENGARPEA--IAQAAAQVQA 229
+                 46888999999999999999999999*************************999999998888888888888888888888864433..3334455677 PP
+
+        emrA 277 aqaqnvqtqvsqsdyqtaqaainqsqval..knakqqlayvtitapvsgrvgrknvqtgqqvqagtpllaivddqywvtanfketqlekmhpgqkveik 373
+                 aq q +  qv ++d       i      l  +   +  a+vt t+  s               + t ++a+  +   v an  e ++ +++ gq ve+ 
+  KKI99583.1 230 AQGQRLALQVQKADT-----IIRTPFAGLitQRYADPGAFVTPTTSASTSAS----------ATSTSIVALA-QGLEVLANVPEGDIRQLYGGQLVEVL 312
+                 777777777766663.....33333333300233345688888877765432..........3456666665.457899******************** PP
+
+        emrA 374 ldsfphheftgriesvspa 392
+                  dsfp   f+g+i  ++p 
+  KKI99583.1 313 ADSFPGETFAGKIRLIAPE 331
+                 **************99996 PP
+
+>> KKJ01703.1  hypothetical protein PROH_04105 [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.8  33.1   6.6e-05     0.082      99     378 ..      87     336 ..      75     346 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 9.8 bits;  conditional E-value: 6.6e-05
+        emrA  99 dqvlvddnqdvkagqplirlddrdfqiklqqaqadlaaaqqkantaqvnvalsgqnatasntkaqggigtaqaaiaqaqa................qva 181
+                 +q+ v + + v agq l  ld  + +                                a+  +a+  +  a+a +aq +a                  a
+  KKJ01703.1  87 EQLKVAQGDSVEAGQVLAVLDSYEVR-------------------------------RAAAVRAEQDLRVAEAQLAQVEAgakngaiiaqqaeiqrLNA 154
+                 55555555555555555555544332...............................233333333333333333333320000000000000000223 PP
+
+        emrA 182 eaqagvpraqadlaqtnanlakaqadynrfnqlfssgavsrreldtarqayevaraqrdsa.segvrqaqakvaqaeqgvataqaglessqgelqqaqa 279
+                 + qa +   +a + +  a+  +a  +  r+ +l+  ga+s  e d+ + + e a+ +r+ a +e vr                q+  es q  l  aqa
+  KKJ01703.1 155 DQQARIASQEALVNRLVAEENNAAVELGRYSKLYDEGAISALERDSRQLTLEAAQQNRQQAaAELVRL---------------QS-TESPQ--LLAAQA 235
+                 34444444444444444444455566666666666666666666666666666665554330333332...............22.23322..333444 PP
+
+        emrA 280 qnvq.tqvsqsdyqtaqaainqsqvalknakqqlayvtitapvsgrvgrknvqtgqqvqagtpllaivd.dqywvtanfketqlekmhpgqkveiklds 376
+                    q ++v   d   aqa+++++q  l++a  +l    + +p sg v     q+g++v+ag  ll + +  q  v ++  e++l+++  gq v++   +
+  KKJ01703.1 236 TLAQiAEVRPVDVALAQATVDRAQAGLQQALVDLNQTVVRSPRSGVVLDILAQAGERVDAGGNLLELGQlTQMAVRTEVYESDLQRVAVGQPVQVSSAA 334
+                 43331456778888999999999999999999999999****************************98747999*******************998877 PP
+
+        emrA 377 fp 378
+                 +p
+  KKJ01703.1 335 LP 336
+                 77 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (448 nodes)
+Target sequences:                         3737  (1137027 residues searched)
+Passed MSV filter:                       167  (0.0446883); expected 74.7 (0.02)
+Passed bias filter:                       79  (0.02114); expected 74.7 (0.02)
+Passed Vit filter:                        17  (0.0045491); expected 3.7 (0.001)
+Passed Fwd filter:                         3  (0.000802783); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 6367.35
+//
+[ok]

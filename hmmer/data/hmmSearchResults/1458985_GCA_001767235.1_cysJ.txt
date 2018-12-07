@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1458985_GCA_001767235.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-18   64.4   0.0    2.4e-18   63.4   0.0    1.4  2  AOX00570.1  ferredoxin-NADP reductase [Moorea producens PAL-8
+    5.8e-08   29.0   0.0    5.8e-08   29.0   0.0    1.0  1  AOX00936.1  flavohemoprotein [Moorea producens PAL-8-15-08-1]
+
+
+Domain annotation for each sequence (and alignments):
+>> AOX00570.1  ferredoxin-NADP reductase [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0     0.064   2.2e+02    1034    1073 ..     123     160 ..     119     165 .. 0.78
+   2 !   63.4   0.0   7.1e-22   2.4e-18    1208    1399 ..     169     372 ..     162     392 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.064
+        cysJ 1034 nqellqevvpgsrstrlivfdltdtdlqyetgdhvavypa 1073
+                  n++l++e   g    r i fdl+ ++l+y  g+ + + p 
+  AOX00570.1  123 NEQLVREG--GIGNCRHIKFDLSGSELRYLEGQSIGIIPD 160 
+                  55566653..5557899***************99998885 PP
+
+  == domain 2  score: 63.4 bits;  conditional E-value: 7.1e-22
+        cysJ 1208 qkprlysisscpl...lhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s      l  + + + v  lq    ++g+  +g+cs +l+ ++pg  v+i   +   +  p+d  a i+m+  gtg++p+ afl +  
+  AOX00570.1  169 HKLRLYSIASTRHgddLDDKTVSLCVRQLQYKhPETGETVNGVCSTFLCTMNPGDDVKITGpVGKEMLLPSDPNANIIMMATGTGIAPFRAFLWRMF 265 
+                  4789*****98643339999*********9862589***********************8626678999************************9887 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeqlqvwrdrnvl.tglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmaddvf 1390
+                    q +     g a l fg     +++y+++l+  ++ n     l  a+sr  ++    k y+q  + ++ +++w+++  p+ h y+cg   m   + 
+  AOX00570.1  266 KEQHEDYKfKGLAWLIFGISTTPNILYKDDLEAMQQNNPDnFRLTYAISREQKNseggKMYIQHRVAEHADELWKLMQEPNTHTYICGLKGMEGGID 362 
+                  777766651699********************9998886415688888886543233488****************************999988776 PP
+
+        cysJ 1391 avmma.iakq 1399
+                    + a  ak+
+  AOX00570.1  363 EALTAaAAKE 372 
+                  5544404444 PP
+
+>> AOX00936.1  flavohemoprotein [Moorea producens PAL-8-15-08-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.0   0.0   1.7e-11   5.8e-08     351     449 ..      23     120 ..       6     177 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 29.0 bits;  conditional E-value: 1.7e-11
+        cysJ 351 gmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhsfadvptcaypamsetlfvlferyl.pnftpelrqgwq 448
+                    fy+ lf  yp   p+f  +dm     +l+ +l ++v  lr    d +   l+ lg  h         yp + ++l+  fe+yl  ++tpe++q w 
+  AOX00936.1  23 VASFYENLFTDYPAAQPLFDTTDMGAQQKKLLASLVLVVENLRK--PDTLGAALKGLGARHVKYGALPEHYPLVGNSLLKTFEQYLgADWTPEVKQAWV 119
+                 568****************************************7..689999*********866666678****************447*********7 PP
+
+        cysJ 449 i 449
+                  
+  AOX00936.1 120 D 120
+                 5 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         6706  (2323265 residues searched)
+Passed MSV filter:                       164  (0.0244557); expected 134.1 (0.02)
+Passed bias filter:                      121  (0.0180435); expected 134.1 (0.02)
+Passed Vit filter:                        12  (0.00178944); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.00029824); expected 0.1 (1e-05)
+Initial search space (Z):               6706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.21u 0.01s 00:00:00.22 Elapsed: 00:00:00.22
+# Mc/sec: 15629.24
+//
+[ok]

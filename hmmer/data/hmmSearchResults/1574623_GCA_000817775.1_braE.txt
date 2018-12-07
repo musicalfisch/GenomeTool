@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574623_GCA_000817775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braE  [M=371]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-15   55.0  19.4      1e-09   36.8   9.6    2.6  2  KIF42226.1  urea ABC transporter permease [Lyngbya confervoid
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF42226.1  urea ABC transporter permease [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.2   2.1   2.3e-09   1.4e-05      15      49 ..      57      91 ..      29     102 .. 0.90
+   2 !   36.8   9.6   1.6e-13     1e-09     207     333 ..     206     332 ..     107     355 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 23.2 bits;  conditional E-value: 2.3e-09
+        braE 15 yaifalglnlqwgftglinfghvafatlgayatvl 49
+                 ai+alg++l wgftgl+ +gh  f +lg ya  +
+  KIF42226.1 57 LAIVALGIDLIWGFTGLLSLGHGIFFALGGYAFAM 91
+                59*****************************9654 PP
+
+  == domain 2  score: 36.8 bits;  conditional E-value: 1.6e-13
+        braE 207 lmvvvlvllalvytglelllrspwgrilkairedeeipralgknvfwyklqslmlggaiaglagaflawqlttiyptnfeplltfnawiiiilggsgsn 305
+                 + ++ +v+l l+y     l    +gr+l air+de+  r  g +   +k+  + + gaiag+aga+ + q   + p  ++  ++++  i + +gg  + 
+  KIF42226.1 206 FYLITVVMLVLMYLLCRWLTSGRFGRLLVAIRDDENRVRFSGYDPTGFKVLVFAVSGAIAGIAGALYTVQSGIVSPQFMDIAFSIEMVIWVAVGGRATL 304
+                 55677889999999999999******************************************************************************* PP
+
+        braE 306 agtllgavif.waydsltrfilpqldifn 333
+                  g++lga+++ wa   l+   +p++ +f 
+  KIF42226.1 305 VGAILGALLVnWARALLS-ESFPEVWLFF 332
+                 *******86527765444.4456666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (371 nodes)
+Target sequences:                         6092  (1743458 residues searched)
+Passed MSV filter:                       370  (0.0607354); expected 121.8 (0.02)
+Passed bias filter:                      125  (0.0205187); expected 121.8 (0.02)
+Passed Vit filter:                         5  (0.000820749); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.00016415); expected 0.1 (1e-05)
+Initial search space (Z):               6092  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10780.38
+//
+[ok]

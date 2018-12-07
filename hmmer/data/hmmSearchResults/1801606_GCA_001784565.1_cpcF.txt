@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801606_GCA_001784565.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00013   18.9   0.1     0.0035   14.2   0.1    2.6  2  OGI02557.1  hypothetical protein A2Y25_09620 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI02557.1  hypothetical protein A2Y25_09620 [Candidatus Melainabacteria bacterium GWF2_37_15]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.2   0.1   1.5e-06    0.0035      53     132 ..      99     181 ..      57     209 .. 0.75
+   2 !    2.2   0.0    0.0074        17      30      71 ..     211     252 ..     186     272 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 14.2 bits;  conditional E-value: 1.5e-06
+        cpcF  53 vaavdgliaigkaavpyl.lanldgynygarawatralagigdvrgldllleaavsd..fsfsvrrgaarglgniiwsdlees 132
+                  a+  g++    a vp + + n  g  y  r wa+ al  ig+ + +  l++    +   s  ++  aa+ lg i      +s
+  OGI02557.1  99 TATTLGILKDESAIVPLMyVMNDKGESYRVRLWAADALGKIGNSQAVVPLIKIVSDEeeKSVYLKESAAKALGMIGDERAVDS 181
+                 5566677777789999762467889*******************999888876443322567778999999998865555554 PP
+
+  == domain 2  score: 2.2 bits;  conditional E-value: 0.0074
+        cpcF  30 aakseaaiptltdvlrynnpgasvaavdgliaigkaavpyll 71 
+                 + k e+ i +l +vl  + p    +a++ l  i   ++  l+
+  OGI02557.1 211 TPKKETRIQALKNVLHDESPHVRSSAIEALSEIDDGSITGLI 252
+                 4689999***************99999999999887776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         2319  (664370 residues searched)
+Passed MSV filter:                        54  (0.0232859); expected 46.4 (0.02)
+Passed bias filter:                       37  (0.0159552); expected 46.4 (0.02)
+Passed Vit filter:                         2  (0.000862441); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.00043122); expected 0.0 (1e-05)
+Initial search space (Z):               2319  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6876.23
+//
+[ok]

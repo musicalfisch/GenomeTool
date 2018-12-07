@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/13035_GCA_000317615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        2.9    5.4  10.1      0.061   10.9   0.7    2.3  2  AFZ49262.1  hypothetical protein Dacsa_0475 [Dactylococcopsis
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ49262.1  hypothetical protein Dacsa_0475 [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.7   1.8e-05     0.061       4      59 ..       6      61 ..       1      82 [. 0.43
+   2 ?   -3.1   5.3      0.37   1.2e+03      49      49 ..     108     108 ..      64     153 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 1.8e-05
+        copC  4 lkssllv.vlsigllllaassnsntatndeassktttaattavsstaaakakeeeke 59
+                l+++l+v +++i l +++a+ +++++++++  + ++ +++  +++t+++ +++ e+e
+  AFZ49262.1  6 LRQILIVfIAGIFLFVTTACGSEASDQTQSDEDVQQIPTE-LTQETEDTATSDAEEE 61
+                3444444133444444455544444333333333333332.2333333333222222 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.37
+        copC  49 a 49 
+                 +
+  AFZ49262.1 108 T 108
+                 1 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         3337  (1011999 residues searched)
+Passed MSV filter:                       136  (0.0407552); expected 66.7 (0.02)
+Passed bias filter:                      102  (0.0305664); expected 66.7 (0.02)
+Passed Vit filter:                        14  (0.00419539); expected 3.3 (0.001)
+Passed Fwd filter:                         1  (0.00029967); expected 0.0 (1e-05)
+Initial search space (Z):               3337  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5565.99
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fdxH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/927668_GCA_000332215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fdxH  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-44  146.7   0.5    4.9e-44  146.6   0.5    1.0  1  ELS33419.1  ferredoxin (2Fe-2S) [Pseudanabaena biceps PCC 742
+    5.5e-21   72.7   0.3    6.2e-21   72.5   0.3    1.1  1  ELS31372.1  ferredoxin (2Fe-2S) [Pseudanabaena biceps PCC 742
+    1.9e-19   67.7   0.2    2.3e-19   67.5   0.2    1.0  1  ELS31901.1  ferredoxin [Pseudanabaena biceps PCC 7429]
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS33419.1  ferredoxin (2Fe-2S) [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  146.6   0.5   3.1e-47   4.9e-44       2      98 ..       3      99 ..       1     100 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 146.6 bits;  conditional E-value: 3.1e-47
+        fdxH  2 atyqvrlinkkedldttievdeettildaaeengidlpfschsgacsscvgkvvegeidqsdqiflddeqvskgfallcvtyprsnctikthqepyl 98
+                a y+vrlin  + ld tiev  + +ild ae +gidlp+sc++gacssc gk+++g+idq dq+flddeq++ g+allcvty +s+c i thqe  l
+  ELS33419.1  3 AIYKVRLINEADGLDKTIEVPADEYILDVAEAQGIDLPYSCRAGACSSCAGKIIKGDIDQGDQSFLDDEQIEAGYALLCVTYAQSDCEILTHQEEAL 99
+                67*******************************************************************************************9765 PP
+
+>> ELS31372.1  ferredoxin (2Fe-2S) [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   72.5   0.3   3.9e-24   6.2e-21      17      96 ..      16      98 ..       4     103 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 72.5 bits;  conditional E-value: 3.9e-24
+        fdxH 17 ttievdeettildaaeengidlpfschsgacsscvgkvvegeidqsdqif...lddeqvskgfallcvtyprsnctikthqep 96
+                 t+ v e+  ildaa  +g+dlp sc +g c++c  ++v+ge+dqs+ +    + de  skg++llcv++p+s++ i t++e 
+  ELS31372.1 16 FTVPVPENESILDAAIAHGLDLPCSCYAGVCTTCAAQIVKGEVDQSQGMGiggMGDELDSKGYILLCVSHPKSDVEIYTDKEQ 98
+                589999****************************************987522268***********************99875 PP
+
+>> ELS31901.1  ferredoxin [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   67.5   0.2   1.5e-22   2.3e-19       3      96 ..       2      95 ..       1      98 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 67.5 bits;  conditional E-value: 1.5e-22
+        fdxH  3 tyqvrlinkkedldttievdeettildaaeengidlpfschsgacsscvgkvvegeidqsdqiflddeqvskgfallcvtyprsnctikthqep 96
+                +y++r+ ++++d     +++ + +il++ e +gi+lpfsc  gac++c  +v  g+idq + i l     ++g+al+c  y +s+  ++t++e 
+  ELS31901.1  2 SYHIRIHDRQNDKFYEADIEGDRYILESLESQGIELPFSCLNGACTACAMRVKSGKIDQHEVIGLSKTLQDEGYALICSGYAQSDLELETQDED 95
+                6999*9999999999999**********************************************************************999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (99 nodes)
+Target sequences:                         4757  (1493366 residues searched)
+Passed MSV filter:                        87  (0.0182888); expected 95.1 (0.02)
+Passed bias filter:                       83  (0.017448); expected 95.1 (0.02)
+Passed Vit filter:                         9  (0.00189195); expected 4.8 (0.001)
+Passed Fwd filter:                         3  (0.00063065); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4928.11
+//
+[ok]

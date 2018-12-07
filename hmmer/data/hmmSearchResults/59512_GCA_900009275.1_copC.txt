@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59512_GCA_900009275.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-60  201.7   0.0    2.2e-60  201.5   0.0    1.0  1  CUR28805.1  conserved exported hypothetical protein [Planktot
+  ------ inclusion threshold ------
+       0.71    8.0   4.4        1.1    7.3   4.4    1.5  1  CUR29041.1  conserved exported hypothetical protein [Planktot
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR28805.1  conserved exported hypothetical protein [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  201.5   0.0   8.8e-64   2.2e-60       8     165 .]       9     169 .]       2     169 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 201.5 bits;  conditional E-value: 8.8e-64
+        copC   8 llvvlsigllllaassnsntatndeasskttt.aattavsstaaakake..eekekeeskGGqviesGayhlelvpekeangthldfylqkGdnheavs 103
+                   v+ ++glll++a+s+ +t + +e + +tt+ +  t + +ta++ a e   ++++  +kGGqv+e G+yhlelv+ +ea gthldfyl  Gdnh+av+
+  CUR28805.1   9 FYVLIGLGLLLIVACSQTSTTNPPEPTAQTTSsPMPTTSATTAEKPALEtaTKDHSAPNKGGQVVEVGKYHLELVALPEATGTHLDFYLLTGDNHQAVA 107
+                 568999*****9999999888887766665551454555555544443300344455789*************************************** PP
+
+        copC 104 nakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 +akvtaq+ +P+Geq++ldl yda++ hya llpg++aGeykva+ltdi+GekvnGrf+fk+
+  CUR28805.1 108 DAKVTAQIEVPNGEQQTLDLIYDAQGGHYAVLLPGETAGEYKVAVLTDIQGEKVNGRFDFKR 169
+                 ************************************************************97 PP
+
+>> CUR29041.1  conserved exported hypothetical protein [Planktothrix rubescens]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   4.4   0.00045       1.1      24      67 ..      34      77 ..       1      81 [] 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00045
+        copC 24 nsntatndeassktttaattavsstaaakakeeekekeeskGGq 67
+                +++ta ++  +s+ tta t  ++s+ ++++++++k++++++GG 
+  CUR29041.1 34 EETTAPTPAVTSSPTTAPTPTTTSSPSSSSDDDKKKDKDNEGGE 77
+                45556566555555554444444444444444444444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5076  (1601503 residues searched)
+Passed MSV filter:                       153  (0.0301418); expected 101.5 (0.02)
+Passed bias filter:                      124  (0.0244287); expected 101.5 (0.02)
+Passed Vit filter:                        10  (0.00197006); expected 5.1 (0.001)
+Passed Fwd filter:                         3  (0.000591017); expected 0.1 (1e-05)
+Initial search space (Z):               5076  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6606.20
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0015   15.5   0.1     0.0028   14.7   0.1    1.3  1  ONN59608.1  tRNA uridine-5-carboxymethylaminomethyl(34) synth
+  ------ inclusion threshold ------
+      0.015   12.3   0.0      0.026   11.5   0.0    1.3  1  ONN59844.1  ABC transporter substrate-binding protein [Mastig
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN59608.1  tRNA uridine-5-carboxymethylaminomethyl(34) synthesis GTPase MnmE [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.1   1.3e-06    0.0028      75     117 ..     290     336 ..     267     346 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 1.3e-06
+        futA  75 ieriksegrns...pad.illtvdagrlwradqqgifapvnsriltq 117
+                 +e+i  e + s    ad +llt+da   w ad+q i+a v+ r l+ 
+  ONN59608.1 290 VEKIGVERSRSaaqAADlVLLTIDASAGWTADDQEIYAQVKYRPLIL 336
+                 556655555441114554689*******************9987654 PP
+
+>> ONN59844.1  ABC transporter substrate-binding protein [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.2e-05     0.026     272     308 ..     324     361 ..     304     403 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.2e-05
+        futA 272 gliktapnres.aikfleylssneaqnffakgnqeypv 308
+                  ++kt+p+re  a kfley+ s+e q  ++ g    pv
+  ONN59844.1 324 FVMKTTPEREQaAFKFLEYVLSEEFQTEWCIGTGFLPV 361
+                 368******96268************998888877776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       102  (0.0232293); expected 87.8 (0.02)
+Passed bias filter:                       84  (0.01913); expected 87.8 (0.02)
+Passed Vit filter:                         7  (0.00159417); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000455477); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 11702.91
+//
+[ok]

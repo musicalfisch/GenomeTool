@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1905009_GCA_001942475.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desB  [M=345]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00029   18.5  19.0     0.0065   14.0   2.2    2.8  2  OLT63941.1  beta-carotene hydroxylase [Moorea producens PAL]
+
+
+Domain annotation for each sequence (and alignments):
+>> OLT63941.1  beta-carotene hydroxylase [Moorea producens PAL]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   2.2   1.1e-06    0.0065      78     136 ..      62     120 ..      21     126 .. 0.80
+   2 !    8.5   9.1   5.1e-05      0.31     184     310 ..     146     260 ..     127     283 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 1.1e-06
+        desB  78 alfvvghdcghgsfsryrwlnnlighlshtpilvpfhgwrishrthhantgnidtdesw 136
+                  +  v hd+ h    + r++n l+gh s   +   f  +   h  hhan+ + + d  +
+  OLT63941.1  62 MVGTVIHDASHHVAHKNRYVNALMGHGSALMLGFTFPVFTRVHMQHHANVNDPENDPDH 120
+                 233456*******************************************9987777655 PP
+
+  == domain 2  score: 8.5 bits;  conditional E-value: 5.1e-05
+        desB 184 plfrpserwqvltstvcctfmlglligvgisqgfw.flfnyyimpyivfvvwldlv.tflhhteddipwyrgqdwyflkgalstidrdygifnpihhqi 280
+                  l+r  e w+ + s     ++++++i +g  +gf  +++ny+ +p +v+ + l l   +l h     p+   + w   +           i+n +    
+  OLT63941.1 146 RLWRKYELWEWFFS----RLFIAIIIYLGCQYGFLdYIMNYWFVPALVVGIALGLFfDYLPH----RPFKERDRWKNARIYP------SPIINLLIMGQ 230
+                 55666666665555....4567889999*****975899******99877777663134433....4777777775544333......35788888888 PP
+
+        desB 281 gthvahhifitiphyhlqeateairpvlgd 310
+                   h+ hh++ tip y+ q a  a++p+l +
+  OLT63941.1 231 NYHLIHHLWPTIPWYKYQPAYRAVKPLLDE 260
+                 99************************9975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (345 nodes)
+Target sequences:                         6114  (1950617 residues searched)
+Passed MSV filter:                       216  (0.0353288); expected 122.3 (0.02)
+Passed bias filter:                      121  (0.0197906); expected 122.3 (0.02)
+Passed Vit filter:                         5  (0.000817795); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.000163559); expected 0.1 (1e-05)
+Initial search space (Z):               6114  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11216.05
+//
+[ok]

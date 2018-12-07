@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/240292_GCA_000204075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-52  174.5  15.9    3.8e-52  174.3  15.9    1.0  1  ABA22229.1  ATP synthase F0 subcomplex B' subunit [Anabaena v
+     0.0045   15.2  11.4     0.0059   14.8  11.4    1.2  1  ABA22228.1  H+-transporting two-sector ATPase, B/B' subunit [
+
+
+Domain annotation for each sequence (and alignments):
+>> ABA22229.1  ATP synthase F0 subcomplex B' subunit [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  174.3  15.9   1.3e-55   3.8e-52       1     143 []      19     161 ..      19     161 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 174.3 bits;  conditional E-value: 1.3e-55
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp+ma+qf+lla++lna +ykpl k +d r ey+r+ +  a+e+l+k+e l + ye +l+ ar+q+q iia+aqaeaqk+a+e+vaaaqkea
+  ABA22229.1  19 LFDLDATLPLMAIQFLLLALVLNATLYKPLGKAIDGRNEYVRNNQLEAQERLSKAEKLAEAYEQELAGARRQAQTIIADAQAEAQKIAAEKVAAAQKEA 117
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                  a++e  a ei qqk++a+ sle qv +lsrqilekllg++lv+
+  ABA22229.1 118 QAQREQAAGEIEQQKQQALASLEQQVDALSRQILEKLLGADLVK 161
+                 ******************************************96 PP
+
+>> ABA22228.1  H+-transporting two-sector ATPase, B/B' subunit [Anabaena variabilis ATCC 29413]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.8  11.4   2.1e-06    0.0059      10     136 ..      33     162 ..      26     168 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 14.8 bits;  conditional E-value: 2.1e-06
+        atpG  10 vmalqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkea 105
+                 ++  ++i la+i+  +f    k l + l  r e i  +   a ++ a +   ++e + +l  a+ +++ i   aq +aq      +a a  +    +ea
+  ABA22228.1  33 ILDTNLINLAIIITVLFVfgrKVLGNTLKTRRENIETAIKNAEQRAADAAKQLKEAQQKLEQAQAEAERIKKSAQDNAQTAGQAILAQAAVDIERLQEA 131
+                 556678999999998774444899************9999999999999999***************************988888888888877789** PP
+
+        atpG 106 vaaeiaqqkeeafrslegqvaslsrqilekl 136
+                  aa++  + + a+  l  +v +l+ q +e  
+  ABA22228.1 132 GAADLNAELDRAIAQLRQRVVALALQKVESE 162
+                 ************************9988865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5706  (1938322 residues searched)
+Passed MSV filter:                       226  (0.0396074); expected 114.1 (0.02)
+Passed bias filter:                      109  (0.0191027); expected 114.1 (0.02)
+Passed Vit filter:                         8  (0.00140203); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350508); expected 0.1 (1e-05)
+Initial search space (Z):               5706  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6929.50
+//
+[ok]

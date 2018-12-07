@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/devB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913460_GCA_001917285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       devB  [M=399]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.7e-06   20.9  10.6     0.0023   13.0   1.5    2.5  2  OLA94329.1  hypothetical protein BHW64_04325 [Candidatus Mela
+    2.3e-05   19.6   3.9    2.3e-05   19.6   3.9    2.7  3  OLA94874.1  hypothetical protein BHW64_01670 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OLA94329.1  hypothetical protein BHW64_04325 [Candidatus Melainabacteria bacterium LEY3_CP_29_8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0   1.5   4.3e-06    0.0023      87     138 ..      72     129 ..      22     178 .. 0.82
+   2 !   10.8   4.0     2e-05      0.01     254     349 ..     207     303 ..     132     340 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 4.3e-06
+        devB  87 riakllvkkgdkirqgqliallds......yslnlaalekakrqvevakanlekveag 138
+                  + kl+++  d +++g+l+  +d+      y+  la lekak +++v++++++k  a 
+  OLA94329.1  72 EVIKLFIDDNDEVKKGDLLLKIDEepykiaYENALAKLEKAKADLKVSNTDIDKTSAV 129
+                 4679***************999954444448999*******************98875 PP
+
+  == domain 2  score: 10.8 bits;  conditional E-value: 2e-05
+        devB 254 kadlasakasvkqaqaeldlsiirspidgqvlkinawpgeiis.sqgiaelgrtqqmyvvaevyetdvkkvklgqsvditadafsg.kiqgtvtdigl 349
+                 +++++   + vk+a+ +l +++i +   g +       g+ i+ +q +  +  +++++vva+  et++k +k  q v+i  d+f   k  g +  i  
+  OLA94329.1 207 ESEIKRLESEVKKAKLNLSYTTIYASQSGTISSRTVEEGNYINiGQPLFSI-VSKNIWVVANFKETQIKNMKKDQKVEIKIDTFGNrKFIGKIDSIQR 303
+                 556666677788888888888888888888888888888877524555555.46889**************************964266677666654 PP
+
+>> OLA94874.1  hypothetical protein BHW64_01670 [Candidatus Melainabacteria bacterium LEY3_CP_29_8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.5   3.3   2.4e-05     0.013     139     219 ..      78     160 ..      67     160 .. 0.79
+   2 !   19.6   3.9   4.3e-08   2.3e-05     248     331 ..     153     241 ..     142     282 .. 0.73
+   3 ?   -1.7   0.6      0.13        66     311     385 ..     275     356 ..     266     363 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 2.4e-05
+        devB 139 akqgdiyaqkatiarleaelr...getsaqkaiiarlqaelnnaqrenqryedlyengaisasnaeskrlrrdtlqqqineaka 219
+                  k+g+i aq    a +ea ++         ka + +lqa  + +++  +ry++ly+   is  + +  +   ++   qi++aka
+  OLA94874.1  78 VKKGQILAQID-PAIFEATVKqqhAAILNAKANLVKLQASAEYSRKTYNRYQNLYKRNFISKNDLDQAKSTYQADMAQIEAAKA 160
+                 68888888843.2344555440004455689*********************************99998888888889999987 PP
+
+  == domain 2  score: 19.6 bits;  conditional E-value: 4.3e-08
+        devB 248 tdlqlakadlasakasvkqaqaeldlsiirspidgqvlkinawpgeiissq.giaelgrt....qqmyvvaevyetdvkkvklgqsvdi 331
+                 +++++aka++  a+a  k a ++l ++ i +p+dg ++  +   g+ +++     el       ++m +  +v e+d+ kv  gqsv  
+  OLA94874.1 153 AQIEAAKAQIVQAQAQYKTALTNLGYTKITAPVDGMIISREIDVGQPVAASfQAPELFTIaqdlKKMQIEVNVSEADIGKVENGQSVIY 241
+                 445666666666666666666778999***********999999987765514446643211126899******************965 PP
+
+  == domain 3  score: -1.7 bits;  conditional E-value: 0.13
+        devB 311 vvaevyetdvk.kvklgqsvditadafsgkiqgtvtdiglqvnkqn..ifnnkpgadt.dnki...vdvkirinnpkdnqrv 385
+                 v+ ev + d+k k  +   v+i +         + + + +++n++n  i  ++pg  t dnk    v+v + i + +  q v
+  OLA94874.1 275 VIVEVENEDLKlKPGMTANVQIITKKVEDVYCVANSALKVNINQKNeiIKYENPGVWTlDNKTpkrVEVELGISDDEKTQIV 356
+                 5566666666523333344444444444433333344445556766545567899866577643337777777776666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (399 nodes)
+Target sequences:                         1049  (249927 residues searched)
+Passed MSV filter:                        52  (0.049571); expected 21.0 (0.02)
+Passed bias filter:                       16  (0.0152526); expected 21.0 (0.02)
+Passed Vit filter:                         2  (0.00190658); expected 1.0 (0.001)
+Passed Fwd filter:                         2  (0.00190658); expected 0.0 (1e-05)
+Initial search space (Z):               1049  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 2493.02
+//
+[ok]

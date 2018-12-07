@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/28072_GCA_000316645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      0.003   15.4   0.0     0.0034   15.2   0.0    1.0  1  AFY49615.1  Fe2+ transport system protein A [Nostoc sp. PCC 7
+     0.0068   14.2   0.0          2    6.2   0.0    2.3  2  AFY47966.1  WD40 repeat-containing protein [Nostoc sp. PCC 75
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY49615.1  Fe2+ transport system protein A [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.2   0.0   1.2e-06    0.0034     148     204 ..      18      75 ..       4      78 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 15.2 bits;  conditional E-value: 1.2e-06
+        feoA 148 gydralrgykgkllsmgltpgteftvirvaplgdpveirvr.gfhlslrkqeadaliv 204
+                   +    g + +l +mg+  g +  v+r a l  p+ +rv    ++++r++ea+ ++v
+  AFY49615.1  18 AINTQESGLQRRLEAMGFKVGQQVKVLRKAWLKGPLHLRVGlTTEVAMRRNEAEGILV 75 
+                 555566788999****************************636789*******99987 PP
+
+>> AFY47966.1  WD40 repeat-containing protein [Nostoc sp. PCC 7524]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.2   0.0   0.00072         2     142     177 ..     160     193 ..     155     204 .. 0.83
+   2 !    5.6   0.1    0.0011         3      40     113 ..     307     388 ..     279     394 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00072
+        feoA 142 kagkvvgydralrgykgkllsmgltpgteftvirva 177
+                 ++g+++gy++ + gy+ ++ s+ +t   +  vi  a
+  AFY47966.1 160 RIGRIIGYEQKFSGYNQRISSLAFTQDGQQLVI--A 193
+                 689*********************987766665..3 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.0011
+        feoA  40 ndlaatyplaqvemgktvwlvgfqgtggi.....n...rllgmglnpgiqlqvissqprgsvliaiqdnrigigaemaekil 113
+                 + l + yp+     gkt+ ++    +  i     n   rl  +g n g ++  +   p g  li+ q+n + i    ++ki+
+  AFY47966.1 307 ETLGSGYPVDITSDGKTLVIANSSYSNQIeirdiNtgkRLQSFGDNQGKRISTLVITPDGKNLITAQNNNLQIWDMNTKKIV 388
+                 45677788888888888777654433322111113333999******************************99765555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         5449  (1828442 residues searched)
+Passed MSV filter:                       134  (0.0245917); expected 109.0 (0.02)
+Passed bias filter:                      112  (0.0205542); expected 109.0 (0.02)
+Passed Vit filter:                         8  (0.00146816); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00036704); expected 0.1 (1e-05)
+Initial search space (Z):               5449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9645.03
+//
+[ok]

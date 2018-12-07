@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysZ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1503470_GCA_002213405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysZ  [M=268]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.15   11.3   0.3       0.26   10.5   0.2    1.5  2  OWY65326.1  hypothetical protein B7486_42510 [cyanobacterium 
+
+
+Domain annotation for each sequence (and alignments):
+>> OWY65326.1  hypothetical protein B7486_42510 [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.2   1.8e-05      0.26      95     139 ..      35      79 ..       5     100 .. 0.88
+   2 ?   -2.2   0.0      0.13     2e+03     121     142 ..      91     113 ..      83     119 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 1.8e-05
+        cysZ  95 liriilsvllliltgfilvqfgvllaapwygslsekiekiktdni 139
+                 ++r i s l+ +l  +i  q+   l+ +w  s+s+ i +ik  n+
+  OWY65326.1  35 ILRNIESFLVRLLVHLIKNQIEQRLTNSWIASISDSIRQIKKLNL 79 
+                 689999**********************************98776 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.13
+        cysZ 121 apwygslsekiek.iktdnieii 142
+                   wy  l e ie  i+   +e++
+  OWY65326.1  91 DEWYPYLEEAIEAaIRPASVEVL 113
+                 57999999999953788888876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (268 nodes)
+Target sequences:                        15006  (4208708 residues searched)
+Passed MSV filter:                       715  (0.0476476); expected 300.1 (0.02)
+Passed bias filter:                      307  (0.0204585); expected 300.1 (0.02)
+Passed Vit filter:                        25  (0.001666); expected 15.0 (0.001)
+Passed Fwd filter:                         1  (6.664e-05); expected 0.2 (1e-05)
+Initial search space (Z):              15006  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.11
+# Mc/sec: 10253.94
+//
+[ok]

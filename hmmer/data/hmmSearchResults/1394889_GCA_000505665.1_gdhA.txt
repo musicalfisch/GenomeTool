@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1394889_GCA_000505665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-08   31.0   0.6    9.6e-07   25.0   0.4    2.4  2  AHB87887.1  decarboxylating NADP-dependent malic enzyme MaeB 
+
+
+Domain annotation for each sequence (and alignments):
+>> AHB87887.1  decarboxylating NADP-dependent malic enzyme MaeB [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.6   0.0    0.0013         3     409     424 ..     113     128 ..      97     131 .. 0.88
+   2 !   25.0   0.4   4.3e-10   9.6e-07     206     272 ..     246     311 ..     236     374 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.0013
+        gdhA 409 aaytlgvgrvaqalsd 424
+                  ayt gvgrv+qa++d
+  AHB87887.1 113 MAYTPGVGRVSQAIAD 128
+                 59***********998 PP
+
+  == domain 2  score: 25.0 bits;  conditional E-value: 4.3e-10
+        gdhA 206 vmiivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldipalka 272
+                 ++  +++al+  gksl+ vr+vi+g g  g a a ll kagak + + +  g +  ++ l  pa ++
+  AHB87887.1 246 TLAALKNALQLVGKSLETVRIVINGAGAAGIAVARLLRKAGAKDLILCNRRGILSVQADL-TPAQQE 311
+                 45567899999********************************99887766544433333.455555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         2233  (713131 residues searched)
+Passed MSV filter:                        81  (0.0362741); expected 44.7 (0.02)
+Passed bias filter:                       66  (0.0295567); expected 44.7 (0.02)
+Passed Vit filter:                         5  (0.00223914); expected 2.2 (0.001)
+Passed Fwd filter:                         1  (0.000447828); expected 0.0 (1e-05)
+Initial search space (Z):               2233  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10197.77
+//
+[ok]

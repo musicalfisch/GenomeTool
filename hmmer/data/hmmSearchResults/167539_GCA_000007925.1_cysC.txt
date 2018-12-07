@@ -1,0 +1,84 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/167539_GCA_000007925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-53  177.8   0.1    1.7e-53  177.6   0.1    1.0  1  AAP99236.1  Adenylylsulfate kinase [Prochlorococcus marinus s
+    0.00016   18.0   0.0    0.00029   17.1   0.0    1.4  1  AAQ00780.1  ATPase [Prochlorococcus marinus subsp. marinus st
+     0.0027   14.0   0.0      0.069    9.4   0.0    2.5  2  AAP99651.1  Superfamily I DNA/RNA helicase [Prochlorococcus m
+
+
+Domain annotation for each sequence (and alignments):
+>> AAP99236.1  Adenylylsulfate kinase [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  177.6   0.1   2.7e-56   1.7e-53       7     178 ..      27     200 ..      21     201 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 177.6 bits;  conditional E-value: 2.7e-56
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevr..gkig 103
+                 + v +w+tglsg+gkst+++al+  l  +g +  vldgd +r  l + lgfs  dr+enirrig v++l+   gvivl + +sp+r  re+ r  +k  
+  AAP99236.1  27 KSVIIWFTGLSGSGKSTLANALNVALFKKGLATYVLDGDNIRHGLCNDLGFSDSDREENIRRIGEVAKLFLDAGVIVLTAFVSPFRSDREKARklVKEN 125
+                 5799****************************************************************************************9334668 PP
+
+        cysC 104 sfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 +f+e++  a l++ce rd kgly +arageik ftgi  pye p np+++  t l+ +++ v  v  kl el  +
+  AAP99236.1 126 DFLEIYCAANLDICETRDTKGLYAKARAGEIKDFTGISSPYEEPENPDLKIDTGLKDIDQCVEEVISKLIELNLV 200
+                 9**********************************************************************9865 PP
+
+>> AAQ00780.1  ATPase [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0   4.6e-07   0.00029      10      59 ..     107     156 ..      97     163 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 4.6e-07
+        cysC  10 tvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfsk 59 
+                     +g  g gkst++  l + l  +gys+ +ld di   n    lg+s 
+  AAQ00780.1 107 IAVSSGKGGVGKSTVAVNLACGLSQKGYSVGLLDADIYGPNTPIMLGVSD 156
+                 45567999******************************999988888875 PP
+
+>> AAP99651.1  Superfamily I DNA/RNA helicase [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.4   0.0   0.00011     0.069       7      42 ..     795     830 ..     791     851 .. 0.86
+   2 ?    1.4   0.0      0.03        19     106     143 ..    1076    1113 ..    1033    1118 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 0.00011
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysievl 42 
+                 +g+++ l g  g+gk+t+t  l a+l+ eg  i v 
+  AAP99651.1 795 KGIALSLQGPPGTGKTTVTGELIARLVKEGKRIAVS 830
+                 799999*************************99885 PP
+
+  == domain 2  score: 1.4 bits;  conditional E-value: 0.03
+        cysC  106 vevfvnaplsvceerdvkglykrarageiksftgiddp 143 
+                   e+++ ap ++  +r  + l  +ar g +  f g + p
+  AAP99651.1 1076 DEILITAPYNLQVNRLERRLSSKARIGTVDRFQGQQAP 1113
+                  5899*****************************98877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         1882  (516756 residues searched)
+Passed MSV filter:                        91  (0.0483528); expected 37.6 (0.02)
+Passed bias filter:                       78  (0.0414453); expected 37.6 (0.02)
+Passed Vit filter:                        12  (0.0063762); expected 1.9 (0.001)
+Passed Fwd filter:                         3  (0.00159405); expected 0.0 (1e-05)
+Initial search space (Z):               1882  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4754.16
+//
+[ok]

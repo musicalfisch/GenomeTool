@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1496688_GCA_000708525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnrC  [M=425]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.9e-08   29.0  13.4    0.00028   17.7   3.0    2.5  2  KEF40697.1  RND transporter [Cyanobium sp. CACIAM 14]
+
+
+Domain annotation for each sequence (and alignments):
+>> KEF40697.1  RND transporter [Cyanobium sp. CACIAM 14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   2.8   2.5e-07   0.00072     111     190 ..     200     279 ..     193     325 .. 0.85
+   2 !   17.7   3.0   9.4e-08   0.00028     321     416 ..     453     544 ..     421     548 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 2.5e-07
+        cnrC 111 rgarvavanaqlsraeiqaaiiaadvrlqvtqlyveavaadrrvatardqariasdalraasvrvqagraspleqqradv 190
+                 r  ++a a   + +a+ q  i   d+rlq ++ + +  aad  v   ++  r +  +lr a  r qag a+ le   a+ 
+  KEF40697.1 200 RTPQIAAARDAFEKAKNQYLIGLRDLRLQAAEAFFDLQAADESVRIGQESVRSSLVSLRDAKARFQAGVATRLEVLEAET 279
+                 677899999999*************************************************************9877754 PP
+
+  == domain 2  score: 17.7 bits;  conditional E-value: 9.4e-08
+        cnrC 321 tqadaqrrvt.aldieqaitdaqaqaanaattaraasgpalaaaqeaariarigyregkfgqlelldaertlaetrvaaidalanyqnaraqverlt 416
+                 t   a+rr +   ++eq+    + +  n att+r      + +++e+ r+ar+ ++ g   q e++d++r l+++ v   +a+a+y++a a++ r t
+  KEF40697.1 453 TFRFADRRDSiRNEVEQSFFLLEQNNRNIATTSRE-----VISTRESLRLARLRFQAGVTTQREVVDTQRDLTQAEVRWSQAIADYNKALARLRRRT 544
+                 33345555441567999999999999999999996.....56789**********************************************999977 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (425 nodes)
+Target sequences:                         2935  (883562 residues searched)
+Passed MSV filter:                       218  (0.074276); expected 58.7 (0.02)
+Passed bias filter:                       59  (0.0201022); expected 58.7 (0.02)
+Passed Vit filter:                         2  (0.000681431); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000340716); expected 0.0 (1e-05)
+Initial search space (Z):               2935  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 9387.85
+//
+[ok]

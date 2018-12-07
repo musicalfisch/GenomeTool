@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-05   23.0   1.4    3.1e-05   21.7   1.4    1.6  1  EAM50065.1  Fatty acid desaturase [Crocosphaera watsonii WH 8
+    5.2e-05   21.0   3.5    5.2e-05   21.0   3.5    2.1  2  EAM50714.1  Delta(12)-fatty acid dehydrogenase [Crocosphaera 
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM50065.1  Fatty acid desaturase [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.7   1.4     1e-08   3.1e-05      39     134 ..      44     135 ..      31     159 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 21.7 bits;  conditional E-value: 1e-08
+        desD  39 ktitiltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 k i  ++ v   w  + +    w+l  i     g+ ++g+ f ighd+ h  +s+++ vn ++g +    +    + wr+ hny hh +tn l  d
+  EAM50065.1  44 KVILTVSMVALGWAALAV--SPWYLLPILWAFTGTAMTGL-FVIGHDCGHRSFSNNNKVNDFVGHAIFLPLFYPFHGWRILHNY-HHKHTNKLDVD 135
+                 555445555555555544..55999888888899999997.99***********************9999999999*******9.88899988766 PP
+
+>> EAM50714.1  Delta(12)-fatty acid dehydrogenase [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.0   3.5   1.8e-08   5.2e-05      45     132 ..      54     133 ..      24     173 .. 0.72
+   2 ?   -1.0   2.7     0.083   2.5e+02     279     324 ..     267     310 ..     191     329 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 21.0 bits;  conditional E-value: 1.8e-08
+        desD  45 twviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlg 132
+                  +via +       d w++  i   v+ + +    f +ghd+ hg +s  kw+n+l+g      i +  + wr+ h   hh  t  l 
+  EAM50714.1  54 LYVIADY------LDSWFFWPIFW-VMQGTMFWALFVVGHDCGHGSFSRYKWLNNLMGHLSHTPILVPFHGWRISHRT-HHKNTGNLD 133
+                 2333333......45555555544.44455566679**********************999999999999******86.555555554 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 0.083
+        desD 279 tvdfapkniflnwylgglnyqvvhhlfpqichihypkiapilaevc 324
+                 tvd      f+n     +  +v hh+f  + h h    +  +  v 
+  EAM50714.1 267 TVDH--DYGFINNIHHNIGTHVAHHIFLTMPHYHLKTATEAIKPVL 310
+                 4443..3457888888888999999999999999876554444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       210  (0.0352467); expected 119.2 (0.02)
+Passed bias filter:                      123  (0.0206445); expected 119.2 (0.02)
+Passed Vit filter:                        12  (0.0020141); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000335683); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 9901.16
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/43989_GCA_000017845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.9e-139  462.4   2.7   2.1e-139  462.2   2.7    1.0  1  ACB49909.1  iron-sulfur cluster assembly protein [Cyanothece 
+    3.3e-10   38.0   0.0    3.4e-10   38.0   0.0    1.0  1  ACB50368.1  NifU-like protein [Cyanothece sp. ATCC 51142]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACB49909.1  iron-sulfur cluster assembly protein [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  462.2   2.7  7.8e-143  2.1e-139       1     298 [.       1     291 [.       1     293 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 462.2 bits;  conditional E-value: 7.8e-143
+        finU   1 mwdytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdia 99 
+                 mw+ytdkv++lfynp+nqG + +++e G ++++GevGsiacGdalrlhlkv+++++ i+darfqtfGc+saiass+al+el+ G+tldeal ++nk+ia
+  ACB49909.1   1 MWEYTDKVMDLFYNPRNQGTITEKGE-GQAITTGEVGSIACGDALRLHLKVDEKTEIILDARFQTFGCASAIASSSALTELLVGKTLDEALSLTNKEIA 98 
+                 9***********************98.889********************************************************************* PP
+
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkes 198
+                 d+lGGlpe kmhcsvmGqealeaai+nyrGipl+ h+d deGal+c cfg+++++irr+++ennlttaeqvtnyvkaGGGcGscla idd+i+d+ +e+
+  ACB49909.1  99 DFLGGLPEEKMHCSVMGQEALEAAIFNYRGIPLDNHED-DEGALICRCFGVTDSRIRRIVLENNLTTAEQVTNYVKAGGGCGSCLADIDDMIADILQEK 196
+                 ************************************85.89********************************************************** PP
+
+        finU 199 aatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                 a++v   +++ +a     k+ +++l++ +ki l+++v++ee+r+ l++d++d +l d ++dl+kv+l++a++s+as++++lk  +e+rl++++ +el +
+  ACB49909.1 197 ATAVAVATEVVKA-----KSETKPLTNLQKITLIQQVLEEEIRPFLAKDGGDLELIDIEGDLVKVTLQGACGSCASSTATLKGGIEARLKERVSPELTV 290
+                 *999877666544.....567899***********************************************************************9977 PP
+
+        finU 298 e 298
+                  
+  ACB49909.1 291 I 291
+                 5 PP
+
+>> ACB50368.1  NifU-like protein [Cyanothece sp. ATCC 51142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   38.0   0.0   1.3e-13   3.4e-10     232     292 ..      12      71 ..       1      79 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 38.0 bits;  conditional E-value: 1.3e-13
+        finU 232 ldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 +++v+ +e+r+ l++d+++v+l + ++ ++k  l++a++s+ s++++lk+ +e rl++ + 
+  ACB50368.1  12 VEQVL-DEMRPYLMADGGNVELVEIEGPIVKLRLQGACGSCPSSTMTLKMGIERRLREMIP 71 
+                 44444.578***********************************************98764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5304  (1574679 residues searched)
+Passed MSV filter:                       188  (0.0354449); expected 106.1 (0.02)
+Passed bias filter:                      134  (0.025264); expected 106.1 (0.02)
+Passed Vit filter:                        16  (0.00301659); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000377074); expected 0.1 (1e-05)
+Initial search space (Z):               5304  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9448.07
+//
+[ok]

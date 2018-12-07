@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533240_GCA_000175835.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-35  119.4   0.0    3.4e-35  119.0   0.0    1.0  1  EFA70556.1  Thioesterase [Cylindrospermopsis raciborskii CS-5
+     0.0031   14.3   0.1      0.051   10.3   0.0    2.2  2  EFA70023.1  hypothetical protein CRC_01382 [Cylindrospermopsi
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA70556.1  Thioesterase [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  119.0   0.0     2e-38   3.4e-35      18     239 ..      16     240 ..      10     250 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 119.0 bits;  conditional E-value: 2e-38
+        anaA  18 hhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgc 116
+                  h e +l lfc+p aga + +f +w   +p ++++  v +pgr  r+k p       l+  + + i p  + pf +fghs+g +v +e+a+ l   +g 
+  EFA70556.1  16 PHSEPQLRLFCLPYAGARASVFYQWSKNLPSTVEVRGVELPGR-GRVKYPPCRNMELLVRSIAEHILPLLDRPFAIFGHSMGGLVGFELARLLRSEYGL 113
+                 6999**************************************9.59****************************************************7 PP
+
+        anaA 117 ...fpqclvvsgrkpphi.pcdhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleel 211
+                     p  l +s r+ p+    d    +  d +++e++    gtp+ +l++pe+  + lpi rad+++ + y y  e  +  pi  +gg  d  v+ ++l
+  EFA70556.1 114 eykTPLHLFISARNAPQNhSGDEGIYHLPDGEFLEKIAKYNGTPDEILKNPEMRELFLPILRADFEVLDTYIYKVEPPFDFPITVFGGSEDPMVNHDDL 212
+                 43368899*****9887515688888999********************************************************************** PP
+
+        anaA 212 rewekytqrgfklrsfpgghmylteeke 239
+                  +w+++t++ f   ++pg h+++   +e
+  EFA70556.1 213 VDWKEHTNKEFSCYTLPGNHFFIRSHQE 240
+                 **********************988777 PP
+
+>> EFA70023.1  hypothetical protein CRC_01382 [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.5   0.0    0.0035       6.1      82     132 ..     156     209 ..     136     215 .. 0.80
+   2 !   10.3   0.0     3e-05     0.051      67     112 ..     205     251 ..     202     265 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0035
+        anaA  82 eiypysqspfvffghslgs..vvslevahqlgdrfgcfp.qclvvsgrkpphip 132
+                  i p    p +f+ hslg   +    +a +lg+   ++  qc  + g kpp + 
+  EFA70023.1 156 AIQPLGSQPPLFLIHSLGGelLCYRHLAIRLGNEQPVYGlQCQGLDGEKPPLLR 209
+                 57888888999******972234567999999999888559*********9876 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 3e-05
+        anaA  67 plitrwgdlieplvqeiypy.sqspfvffghslgsvvslevahqlgd 112
+                 p + r  d+    +qei     q p+ + g+s+g vv+ e+a+ql  
+  EFA70023.1 205 PPLLRVEDMATHYLQEIRTIqPQGPYFIGGYSFGGVVAYEMARQLEK 251
+                 5566899999999****8762699********************964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         3449  (1092535 residues searched)
+Passed MSV filter:                        83  (0.0240649); expected 69.0 (0.02)
+Passed bias filter:                       81  (0.0234851); expected 69.0 (0.02)
+Passed Vit filter:                         8  (0.00231951); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000579878); expected 0.0 (1e-05)
+Initial search space (Z):               3449  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6910.28
+//
+[ok]

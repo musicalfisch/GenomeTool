@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1897008_GCA_001917115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0011   15.6   9.3     0.0013   15.5   4.2    2.3  2  OLA78035.1  hypothetical protein BHW55_03125 [Melainabacteria
+
+
+Domain annotation for each sequence (and alignments):
+>> OLA78035.1  hypothetical protein BHW55_03125 [Melainabacteria sp. 35_41]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.4   0.2    0.0016       3.3     138     190 ..      31      82 ..      21      90 .. 0.83
+   2 !   15.5   4.2   6.3e-07    0.0013      65     155 ..      77     168 ..      74     175 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 4.4 bits;  conditional E-value: 0.0016
+        bioY 138 lnlvLisllGlvvlqvclaenllltsllavltdGvlPllmtdlLkplLaalLL 190
+                 l+ +   +  ++++q+  +  + +++l +     v+ ++ t+ L p ++ ++ 
+  OLA78035.1  31 LCCTFLLI-LATFIQINVTHFIIPSGLFSGEQLNVVDFIHTYKLIPQIPVVMF 82 
+                 55555544.4899*******************************999998776 PP
+
+  == domain 2  score: 15.5 bits;  conditional E-value: 6.3e-07
+        bioY  65 vgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvvdRlark.raasdllnlvLisllGlvvlqvcl 155
+                 ++  + + + l+ +   +  l y+ lGl+ ++v+  g+G  ++    ++y+  ++++ +  +   +   +  ++l  vL+ +l + +++v  
+  OLA78035.1  77 IPVVMFIGAFLGRKFGTMSILLYILLGLFIIPVFALGGGPKYIFEYSFGYILAYIPAIFFAGSILKSgFTNRNMLHAVLVGVLTIHLIGVLY 168
+                 6666677788888888899999************************************9999765541445578889999999999999965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         2045  (609342 residues searched)
+Passed MSV filter:                        43  (0.0210269); expected 40.9 (0.02)
+Passed bias filter:                       23  (0.0112469); expected 40.9 (0.02)
+Passed Vit filter:                         5  (0.00244499); expected 2.0 (0.001)
+Passed Fwd filter:                         1  (0.000488998); expected 0.0 (1e-05)
+Initial search space (Z):               2045  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6367.62
+//
+[ok]

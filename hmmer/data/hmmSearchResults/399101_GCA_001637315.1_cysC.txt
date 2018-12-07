@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/399101_GCA_001637315.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-91  302.1   0.1    2.4e-91  301.9   0.1    1.0  1  OAB57435.1  adenylyl-sulfate kinase [Phormidium willei BDU 13
+     0.0032   14.7   0.0     0.0061   13.8   0.0    1.4  1  OAB56268.1  ArgK protein [Phormidium willei BDU 130791]
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB57435.1  adenylyl-sulfate kinase [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  301.9   0.1   1.3e-94   2.4e-91       4     178 ..       1     175 [.       1     176 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 301.9 bits;  conditional E-value: 1.3e-94
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m+qrgvtvw+tglsgagk+ti++a+  +l +    +e+ldgdivr nltkglgfskedrdenirrigfvs lltr gvivlvsaispyr +reev+++i
+  OAB57435.1   1 MQQRGVTVWFTGLSGAGKTTISQAVAEQLRSLDCKLEILDGDIVRQNLTKGLGFSKEDRDENIRRIGFVSHLLTRNGVIVLVSAISPYRAVREEVKARI 99 
+                 89************************************************************************************************* PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 g+fvevfvnapl+vce+rdvkglyk+ar+gei  ftg+ dpyepp +p +ecrtdle+ eesv kv n l+e+gy+
+  OAB57435.1 100 GDFVEVFVNAPLAVCEDRDVKGLYKKARSGEIANFTGVSDPYEPPTDPTIECRTDLESHEESVNKVLNTLKEMGYL 175
+                 ***************************************************************************7 PP
+
+>> OAB56268.1  ArgK protein [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.8   0.0   3.2e-06    0.0061       7      45 ..      46      84 ..      41      90 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 13.8 bits;  conditional E-value: 3.2e-06
+        cysC  7 rgvtvwltglsgagkstitealqakliaegysievldgd 45
+                rg t+ ltg  g gkst+t al a   a g ++ v+  d
+  OAB56268.1 46 RGQTIGLTGPPGVGKSTLTGALIAAYRAAGRTVGVIAVD 84
+                99****************************999998655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3770  (1257126 residues searched)
+Passed MSV filter:                       170  (0.0450928); expected 75.4 (0.02)
+Passed bias filter:                      159  (0.0421751); expected 75.4 (0.02)
+Passed Vit filter:                        25  (0.0066313); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530504); expected 0.0 (1e-05)
+Initial search space (Z):               3770  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 5782.78
+//
+[ok]

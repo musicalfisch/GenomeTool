@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccbP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1503470_GCA_002213405.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccbP  [M=126]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-38  131.3   8.8    2.2e-38  131.1   8.8    1.0  1  OWY65959.1  calcium-binding protein [cyanobacterium TDX16]
+  ------ inclusion threshold ------
+      0.097   12.7   0.0       0.12   12.4   0.0    1.1  1  OWY69246.1  hypothetical protein B7486_22125 [cyanobacterium 
+
+
+Domain annotation for each sequence (and alignments):
+>> OWY65959.1  calcium-binding protein [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  131.1   8.8     3e-42   2.2e-38       1     125 [.       1     130 [.       1     131 [] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 131.1 bits;  conditional E-value: 3e-42
+        ccbP   1 masverdetrehrieteiivdaedkedramgwyyylddtlnfpflakwkkksrktstiee.....kevevlgmapddeclkdmyvevadingkdddvys 94 
+                 m+ +e d +re+rie e++vda d e+r +gwyyyld+ ++fpf a w    r   + +e      evev+gma ++ec  dmyve+++ +   +d ++
+  OWY65959.1   1 MSELEIDASREERIEMEVVVDAYDEEERRLGWYYYLDNKVKFPFNAIWISEERPIDSEDEveiegEEVEVIGMASEEECQDDMYVEIVYQEEGTEDTFA 99 
+                 8899*********************************************9998766554422222789******************************* PP
+
+        ccbP  95 aklseieaidadeetqeaiadwlywlargyk 125
+                   l +++++++d++t eai dw yw+ rgy 
+  OWY65959.1 100 VPLYDVVPMEVDDDTLEAIEDWYYWVERGYE 130
+                 ******************************7 PP
+
+>> OWY69246.1  hypothetical protein B7486_22125 [cyanobacterium TDX16]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   1.6e-05      0.12      85     116 ..       9      40 ..       3      46 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.6e-05
+        ccbP  85 ingkdddvysaklseieaidadeetqeaiadw 116
+                 i  ++dd+y ak  e+ ++d  e  ++a+a+ 
+  OWY69246.1   9 IVYREDDMYVAKCPEVGTVDQGETIEQAVANL 40 
+                 66799************************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (126 nodes)
+Target sequences:                        15006  (4208708 residues searched)
+Passed MSV filter:                       249  (0.0165934); expected 300.1 (0.02)
+Passed bias filter:                      217  (0.0144609); expected 300.1 (0.02)
+Passed Vit filter:                        11  (0.00073304); expected 15.0 (0.001)
+Passed Fwd filter:                         2  (0.00013328); expected 0.2 (1e-05)
+Initial search space (Z):              15006  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8838.29
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/167539_GCA_000007925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      0.005   12.3   0.3       0.02   10.3   0.0    2.0  3  AAP99941.1  Carbamoylphosphate synthase large subunit [Prochl
+
+
+Domain annotation for each sequence (and alignments):
+>> AAP99941.1  Carbamoylphosphate synthase large subunit [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.5   0.0     0.042        80     319     345 ..     280     306 ..     271     315 .. 0.81
+   2 ?   -4.2   0.2      0.27   5.1e+02     282     297 ..     592     606 ..     586     609 .. 0.63
+   3 !   10.3   0.0   1.1e-05      0.02     303     349 ..     832     881 ..     813     892 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -1.5 bits;  conditional E-value: 0.042
+        AvaB 319 tgqvsfdfiqaaddgqvyaiecnprth 345
+                 tg  +++f     dg+v  ie npr  
+  AAP99941.1 280 TGGSNVQFAVNPVDGEVVVIEMNPRVS 306
+                 5666778888889************75 PP
+
+  == domain 2  score: -4.2 bits;  conditional E-value: 0.27
+        AvaB 282 vqlhccckssafqvny 297
+                    +ccc+ss fq++ 
+  AAP99941.1 592 EFDYCCCHSS-FQLQK 606
+                 4456888765.77765 PP
+
+  == domain 3  score: 10.3 bits;  conditional E-value: 1.1e-05
+        AvaB 303 seierwilafvkglnltgqvsfdf.iqaaddg..qvyaiecnprthsait 349
+                   i+ w  ++ k ln+ g ++++f +q  d+g  +v+ ie+npr+  +i 
+  AAP99941.1 832 KTIKEWTNSLAKSLNVIGLINLQFaVQRDDNGeeKVFIIEANPRASRTIP 881
+                 56899******************945666666447*********988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         1882  (516756 residues searched)
+Passed MSV filter:                        43  (0.022848); expected 37.6 (0.02)
+Passed bias filter:                       37  (0.0196599); expected 37.6 (0.02)
+Passed Vit filter:                         1  (0.00053135); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.00053135); expected 0.0 (1e-05)
+Initial search space (Z):               1882  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7940.82
+//
+[ok]

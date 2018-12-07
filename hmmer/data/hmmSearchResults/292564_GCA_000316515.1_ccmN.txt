@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292564_GCA_000316515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.029   11.3   5.7      0.023   11.6   1.8    2.1  2  AFY30194.1  acyl-(acyl-carrier-protein)--UDP-N-acetylglucosam
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY30194.1  acyl-(acyl-carrier-protein)--UDP-N-acetylglucosamine O-acyltransferase [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.2   0.1     0.011        35      51      86 ..      18      56 ..       8      71 .. 0.62
+   2 ?   11.6   1.8   6.9e-06     0.023      44     108 ..     101     169 ..      78     186 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 1.2 bits;  conditional E-value: 0.011
+        ccmN 51 gmgtiltayqgv...iaigagailgtgvlvvgrgeigen 86
+                g g  +  y  +   + ig g+ +g  v++ gr  +g+ 
+  AFY30194.1 18 GSGVEIGPYAVIgpeVEIGEGSRIGPHVVIDGRVRMGKG 56
+                444444444332222678888888888888887777754 PP
+
+  == domain 2  score: 11.6 bits;  conditional E-value: 6.9e-06
+        ccmN  44 igagaclgmgtiltayqgv...iaigagailgtgvlvvgrgeigenacigstttifn.asvaamslvps 108
+                  g  ++lg g +l ay  +     +    ++  gv v g+  ige a+ig    i +   + ++++v  
+  AFY30194.1 101 EGESTVLGNGNLLMAYSHIghnCQLADRIVIANGVAVAGHVVIGERAVIGGVLGIHQfVHIGSLAMVGG 169
+                 4778899*********8763224566677899******************9998876234555555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3280  (992729 residues searched)
+Passed MSV filter:                       123  (0.0375); expected 65.6 (0.02)
+Passed bias filter:                       92  (0.0280488); expected 65.6 (0.02)
+Passed Vit filter:                        10  (0.00304878); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000609756); expected 0.0 (1e-05)
+Initial search space (Z):               3280  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 7280.01
+//
+[ok]

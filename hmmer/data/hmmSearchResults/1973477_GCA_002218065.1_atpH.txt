@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1973477_GCA_002218065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-50  168.4   7.5    1.1e-50  168.3   7.5    1.0  1  GAX36051.1  F0F1 ATP synthase subunit C [Nodularia sp. NIES-3
+     0.0077   14.9   0.6      0.029   13.1   0.1    2.1  2  GAX37153.1  hypothetical protein NIES3585_31950 [Nodularia sp
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX36051.1  F0F1 ATP synthase subunit C [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  168.3   7.5   4.4e-54   1.1e-50       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 168.3 bits;  conditional E-value: 4.4e-54
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdplv+aasv+aaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvvalvllfanpfa
+  GAX36051.1  1 MDPLVSAASVLAAALAVGLAAIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> GAX37153.1  hypothetical protein NIES3585_31950 [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.1   1.1e-05     0.029       8      30 ..       6      28 ..       2      35 .. 0.87
+   2 ?   -1.6   0.0      0.44   1.1e+03      30      44 ..     194     208 ..     180     210 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.1e-05
+        atpH  8 asviaaalavGlaaiGpgigqGn 30
+                 sv++aalavG++ iG + +q +
+  GAX37153.1  6 KSVVSAALAVGMGVIGTSSAQAS 28
+                69**************9988865 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 0.44
+        atpH  30 naagqaveGiarqpe 44 
+                   a  a+ Gi r+ e
+  GAX37153.1 194 IGALGAIAGIKRKQE 208
+                 445567888888766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         5048  (1559691 residues searched)
+Passed MSV filter:                       202  (0.0400158); expected 101.0 (0.02)
+Passed bias filter:                      112  (0.022187); expected 101.0 (0.02)
+Passed Vit filter:                        12  (0.00237718); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396197); expected 0.1 (1e-05)
+Initial search space (Z):               5048  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6316.75
+//
+[ok]

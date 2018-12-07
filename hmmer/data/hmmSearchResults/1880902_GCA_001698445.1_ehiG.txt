@@ -1,0 +1,108 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ehiG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880902_GCA_001698445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ehiG  [M=277]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.1e-141  467.1  16.6   4.6e-141  466.9  16.6    1.0  1  OCQ96221.1  sugar ABC transporter permease [Limnothrix sp. P1
+    7.9e-09   33.1   6.1    7.9e-09   33.1   6.1    2.0  2  OCQ98640.1  sulfate ABC transporter permease subunit CysW [Li
+     0.0056   13.9  14.5      0.025   11.8   2.5    3.4  3  OCQ96763.1  hypothetical protein BCR12_08050 [Limnothrix sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ96221.1  sugar ABC transporter permease [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  466.9  16.6  3.8e-144  4.6e-141       4     277 .]      14     287 .]      11     287 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 466.9 bits;  conditional E-value: 3.8e-144
+        ehiG   4 kksriqillvyalllaialltlfpllwlistalksptenllesppkllpsqptldnflrvweslpfgqylynsilvavltvalnllfcslaayplarls 102
+                 k s+ ++l  y ll+aial++l+pllwl+ t+lkspte+++  pp+l+p+ ptl+nf++ w s pf+qyl ns+lva ltvalnll+cslaayplarls
+  OCQ96221.1  14 KASPWKTLAQYVLLGAIALVMLLPLLWLMGTSLKSPTEDIFSFPPRLIPAAPTLENFVKAWTSAPFAQYLLNSTLVAGLTVALNLLICSLAAYPLARLS 112
+                 678999********************************************************************************************* PP
+
+        ehiG 103 fvgrntifiaivstimipfqivmiplyiltvqlgltnsylglifpslasafgifllrqaflgvpkeieeaarldgsselglwwfimlpaikpalitlai 201
+                 f gr++if aiv+ti ipfqivmiplyil+v+lgl+ns++glifp++asafgifl+rqaf+gvpk++eeaar+dg selg+ww++mlp+++palitlai
+  OCQ96221.1 113 FKGREWIFSAIVATIAIPFQIVMIPLYILAVNLGLRNSFIGLIFPAIASAFGIFLMRQAFMGVPKDLEEAARIDGCSELGIWWHVMLPSVRPALITLAI 211
+                 *************************************************************************************************** PP
+
+        ehiG 202 fvfigawsdflwpliviqdeslytlplgvaklagtfsldwrlvaagsiisvapvlllflflqkfivptdtgsgvkg 277
+                 fvfigawsdflwpl++++d + ytlplgva+l+gtfsldwrl+aags+is++p+l +fl++q++ivp++tgsgvkg
+  OCQ96221.1 212 FVFIGAWSDFLWPLLILDDPNYYTLPLGVARLSGTFSLDWRLIAAGSVISITPILAFFLVMQNYIVPSETGSGVKG 287
+                 ***************************************************************************8 PP
+
+>> OCQ98640.1  sulfate ABC transporter permease subunit CysW [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.7     0.089   1.1e+02       6      37 ..      23      54 ..      16      63 .. 0.71
+   2 !   33.1   6.1   6.4e-12   7.9e-09      65     216 ..      65     230 ..      54     286 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.089
+        ehiG  6 sriqillvyalllaialltlfpllwlistalk 37
+                  +++ l+ ++ + + l++++pll +i  al 
+  OCQ98640.1 23 DWVKLTLILGVAAYLLLVLVIPLLNVIYQALA 54
+                44566667777777777888888888887775 PP
+
+  == domain 2  score: 33.1 bits;  conditional E-value: 6.4e-12
+        ehiG  65 eslpfgqylynsilvavltvalnllfcslaayplarlsfvgrntifiaivstimipfqivmiplyiltvqlg.....ltnsylglifp....slasafg 154
+                 +   f + +  ++l+av+ v ln +f   aa+ l+r  f gr  ++  i     +p  +  + l +l  + g     l++  + +if      lasaf 
+  OCQ98640.1  65 QESDFQKAVLLTLLIAVIVVPLNTVFGLCAAWALTRRNFPGRAFLLSVIDLPFSVPSVVAGLMLVLLYGREGwfgplLQEWNVKIIFAvpgmVLASAFV 163
+                 4456888888999*****************************9766555444445544433333333333222224456666778985333359****7 PP
+
+        ehiG 155 i..fllrqaf...lgvpkeieeaarldgsselglwwfimlpaikpalitlaifvfigawsdflwpli 216
+                    f++r+ +     + k+ eeaar  g+ e +++w + lp+i+ +++   i+    +  +f    +
+  OCQ98640.1 164 TmpFVVREVLpvlEDLGKDQEEAARTLGANEWQIFWRVTLPSIRWSVMYGVILTNARTMGEFGAVAV 230
+                 54589998752215678***************************99988877776666666655444 PP
+
+>> OCQ96763.1  hypothetical protein BCR12_08050 [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.2     0.095   1.2e+02      48     108 ..      32      95 ..      14     110 .. 0.74
+   2 !    8.9   0.6   0.00015      0.19     155     211 ..     164     220 ..     151     264 .. 0.92
+   3 !   11.8   2.5     2e-05     0.025     167     254 ..     454     537 ..     331     552 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.095
+        ehiG  48 pkllpsqptldnflrvweslp...fgqylynsilvavltvalnllfcslaayplarlsfvgrnt 108
+                 p l     +l    + w+ l    +g+y+  s+ +av t +l + +   +a+ +    f gr +
+  OCQ96763.1  32 PLLASIAAALSASGQTWNHLTrtvLGEYVSASVGLAVGTAGLAIGLGVATAWLVVATQFPGRRW 95 
+                 4555555666666777777743337899999999999999999999888888888888888865 PP
+
+  == domain 2  score: 8.9 bits;  conditional E-value: 0.00015
+        ehiG 155 ifllrqaflgvpkeieeaarldgsselglwwfimlpaikpalitlaifvfigawsdf 211
+                  +l r afl     + ea r  g    + +w + lp  +pa+   a +v++ a  d+
+  OCQ96763.1 164 YMLARVAFLEGAASLLEAGRTLGLNPWQGFWRVALPMARPAIAGGAALVMMEALGDY 220
+                 567899********************************************9999887 PP
+
+  == domain 3  score: 11.8 bits;  conditional E-value: 2e-05
+        ehiG 167 keieeaarldgsselglwwfimlpaikpalitlaifvfigawsdflwpliviqdeslytlplgvaklagtfsldwrlv.aagsiisvap 254
+                  +++ aar+ g s  ++ w + +p ++  l+t  ++vf+ +  ++   liv +  ++ tl++   +la     d r+v aag  +++  
+  OCQ96763.1 454 PNLDGAARIAGLSPGAVLWRVHVPMLRGGLLTALLLVFVDTVKELPATLIV-RPFNFDTLAVRAYQLAS----DERIVdAAGPALAIVA 537
+                 47899************************************9998877776.56677777777666654....4555434554444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (277 nodes)
+Target sequences:                         3672  (1209182 residues searched)
+Passed MSV filter:                       132  (0.0359477); expected 73.4 (0.02)
+Passed bias filter:                       52  (0.0141612); expected 73.4 (0.02)
+Passed Vit filter:                         8  (0.00217865); expected 3.7 (0.001)
+Passed Fwd filter:                         3  (0.000816993); expected 0.0 (1e-05)
+Initial search space (Z):               3672  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8373.59
+//
+[ok]

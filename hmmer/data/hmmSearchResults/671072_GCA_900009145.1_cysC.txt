@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671072_GCA_900009145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-93  307.6   0.2    8.4e-93  307.3   0.2    1.0  1  CUR34757.1  adenosine 5'-phosphosulfate kinase [Planktothrix 
+     0.0085   14.0   0.1       0.02   12.8   0.1    1.6  1  CUR31240.1  Cobyrinic acid a,c-diamide synthase [Planktothrix
+  ------ inclusion threshold ------
+      0.059   11.2   0.0      0.092   10.6   0.0    1.3  1  CUR31033.1  conserved hypothetical protein [Planktothrix tepi
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR34757.1  adenosine 5'-phosphosulfate kinase [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  307.3   0.2   4.3e-96   8.4e-93       4     179 ..       1     176 [.       1     178 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 307.3 bits;  conditional E-value: 4.3e-96
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m++rgvtvw+tglsgagk+ti+ a+   l  +   +e+ldgdivr nltkglgfsk drdenirrigfv+ lltr gvivlvsaispyreireevr ki
+  CUR34757.1   1 MQHRGVTVWFTGLSGAGKTTISRAVAEILQQKQCKLEILDGDIVRENLTKGLGFSKADRDENIRRIGFVAHLLTRNGVIVLVSAISPYREIREEVREKI 99 
+                 889************************************************************************************************ PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                 g+fvev+vnapl+vce+rdvkglyk+arageik ftgiddpye p npe+ec+td e l es+akv +kl+elgyi 
+  CUR34757.1 100 GDFVEVYVNAPLTVCEDRDVKGLYKKARAGEIKGFTGIDDPYEAPTNPEIECHTDQEDLSESIAKVLQKLAELGYIS 176
+                 ***************************************************************************97 PP
+
+>> CUR31240.1  Cobyrinic acid a,c-diamide synthase [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.1     1e-05      0.02      14      61 ..     225     271 ..     214     286 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 1e-05
+        cysC  14 tglsgagkstitealqakliaegysievldgdivrtnltkglgfsked 61 
+                     g gk+t+t  l a l   gy + ++d d  ++nlt glg+   +
+  CUR31240.1 225 NNKGGVGKTTMTINLGAALNHLGYNVLLIDIDA-QANLTTGLGIDPLE 271
+                 45679************************9995.89*******97543 PP
+
+>> CUR31033.1  conserved hypothetical protein [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   4.6e-05     0.092       6     100 ..     343     440 ..     339     514 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 4.6e-05
+        cysC   6 qrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglg...fskedrdenirrigfvsnlltrhgvivlvsaispyreireevrg 100
+                   g  v ++glsg+gkst +  l  +l a     + +   +    l    g   ++ e  ++  +r+  +  ll+++g  v++ a    +e r ev  
+  CUR31033.1 343 SSGGMVMMSGLSGSGKSTTARKLSKRLNAIHIRSDAVRKHLANVPLYEKGGeeiYTPEMTEKTYKRLLELGLLLAKQGFWVILDAKYDQQERRGEVIE 440
+                 5678899*******************999888777777777777765433323367777888888888888899999999998888888888888754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5948  (1891724 residues searched)
+Passed MSV filter:                       229  (0.0385003); expected 119.0 (0.02)
+Passed bias filter:                      207  (0.0348016); expected 119.0 (0.02)
+Passed Vit filter:                        35  (0.00588433); expected 5.9 (0.001)
+Passed Fwd filter:                         3  (0.000504371); expected 0.1 (1e-05)
+Initial search space (Z):               5948  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 6961.54
+//
+[ok]

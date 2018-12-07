@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272123_GCA_000317695.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.4e-117  387.4   0.0   3.9e-117  387.3   0.0    1.0  1  AFZ58555.1  protein of unknown function DUF1001 [Anabaena cyl
+    1.3e-32  111.5   0.0    1.5e-32  111.2   0.0    1.0  1  AFZ59138.1  protein of unknown function DUF1001 [Anabaena cyl
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ58555.1  protein of unknown function DUF1001 [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  387.3   0.0  1.3e-120  3.9e-117       1     196 []      13     208 ..      13     208 .. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 387.3 bits;  conditional E-value: 1.3e-120
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnq+q fenp ffahirvcmrplp +llsgvs+fveqaydy+lndpyrlrvlkl++aed+i ienytvk+ek+f+gasrdl
+  AFZ58555.1  13 MTHSTDIATLARWMAADFSNQAQVFENPAFFAHIRVCMRPLPYSLLSGVSLFVEQAYDYMLNDPYRLRVLKLMTAEDKIYIENYTVKNEKDFFGASRDL 111
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                  rl+tl++d+lekl+gcnmivew+gn fkg+vepgk+c+vvr+g++tylds+feid ekfis+drgr+petdeh+wgsvagpf+fvrw  fadevk+
+  AFZ58555.1 112 ARLQTLTSDRLEKLSGCNMIVEWAGNHFKGTVEPGKGCMVVRNGQTTYLDSDFEIDGEKFISRDRGRNPETDEHVWGSVAGPFYFVRWGNFADEVKI 208
+                 ***********************************************************************************************97 PP
+
+>> AFZ59138.1  protein of unknown function DUF1001 [Anabaena cylindrica PCC 7122]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  111.2   0.0   5.3e-36   1.5e-32       3     189 ..       3     194 ..       1     196 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 111.2 bits;  conditional E-value: 5.3e-36
+        cpeS   3 hstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdler 101
+                  s  + +l  ++a +f nqeqa+ +  ++ h+r+  rp+ l   + +++f eqa   +l++pyr r+++l + ++ ++++ y+ k+   f ga  + + 
+  AFZ59138.1   3 LSPPLIALGNYLAGEFNNQEQAMAESVWYVHLRLWQRPVNLFPKDSITLFAEQANIVNLDQPYRQRIMRLQQGSESLQVQYYMPKNPAAFKGAGNNPTL 101
+                 566678999****************************************************************************************** PP
+
+        cpeS 102 lktlkaddleklpgcnmivewtg...n..sfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwas 189
+                 l++l++d+le lpgc + +       +   f+ +  p + c  +  g+k  +   fe  e  f+s d+g d et +  wg+v gp+ + + ++
+  AFZ59138.1 102 LNSLTSDQLELLPGCILSITQETlapHlyRFRTSPSPENICSFTYLGNKIQVSLGFEATETAFLSYDKGIDSETGKATWGAVVGPYCYAKVEA 194
+                 ***************9877543312232268888899999**********************************************9998776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5838  (1879690 residues searched)
+Passed MSV filter:                       104  (0.0178143); expected 116.8 (0.02)
+Passed bias filter:                       92  (0.0157588); expected 116.8 (0.02)
+Passed Vit filter:                         8  (0.00137033); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000342583); expected 0.1 (1e-05)
+Initial search space (Z):               5838  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 4093.55
+//
+[ok]

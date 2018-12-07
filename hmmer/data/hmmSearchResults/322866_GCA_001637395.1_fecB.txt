@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fecB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fecB  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-07   27.9   0.1    4.6e-07   27.5   0.1    1.1  1  OAB63605.1  hypothetical protein AY599_08620 [Leptolyngbya va
+  ------ inclusion threshold ------
+      0.015   12.7   0.1      0.024   12.0   0.1    1.2  1  OAB60987.1  hypothetical protein AY599_17970 [Leptolyngbya va
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB63605.1  hypothetical protein AY599_08620 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.5   0.1   1.7e-10   4.6e-07      47     305 ..      51     305 ..      14     314 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 27.5 bits;  conditional E-value: 1.7e-10
+        fecB  47 tavpnepqrivvltneatdmvlalgvtpvgavkswsgdpyyeylakdmlgvpivgdemqpnlekivalqpdliigsrlrq...gqiykslsaiaptvfs 142
+                 ta   e  r+  l   a+d ++algv pv       g+p     a + +    +   + pn+e+++a + d+ii s +      qi  s  a   t+ +
+  OAB63605.1  51 TA-TSETPRVAALLPFAADQLIALGVQPVLVPSLPGGQPE----AWQGIEAGALDHSVGPNIEQLIAADADVIIMSAVYSqfvPQIEDSTEAQVITMDA 144
+                 44.4566689999999*************76666666774....55566677888999****************998864233699************* PP
+
+        fecB 143 etigeswqdnlrlygqaldreaeaeqllndwdtrvaqmrqklsakdltislvrf.mprgariylqnsfpgqilqavg.....lerpasqanhgfaehvs 235
+                 +t+ +      r  g+ + +  +a+  + d+++++a      sa d    l  f  p+    +l +s+ g+++++ g      + pa +   g+a  +s
+  OAB63605.1 145 DTLED-VSAHTRTIGELVGKTDQADAWIADFNAHLAATEPIDSAGDPISVLAVFgTPQSFYAFLPDSYLGDLVETAGgrlitSDLPAHRFYRGLA-PLS 241
+                 *9955.67789*****************************99**9966555555379999*************9887222113456666666666.489 PP
+
+        fecB 236 feqipqmeadalfyfiytgdsgdqtpgsitnpwlnhplwqqlevvqsgkayavsdvvwttaggiqaahll 305
+                 +e + q + d ++ + +  +            +   plw ql  ++  +   + + +++   g qa   l
+  OAB63605.1 242 MEAVVQKDPDVILVVFHGPERA------ARALFARDPLWGQLTAIKDDHIAFLGEDLFAMRSGSQAVTAL 305
+                 *********9987654433322......234567889999999998888777777777777777876654 PP
+
+>> OAB60987.1  hypothetical protein AY599_17970 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.1   8.9e-06     0.024      45     120 ..      14      87 ..       6     105 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 8.9e-06
+        fecB  45 gvtavp...nepqrivvltneatdmvlalgvt.pvgavkswsgdpyyeylakdmlgvpivgdemqpnlekivalqpdlii 120
+                  v+avp   + pqr+v +    t++v alg    + av s s  p     a d   +p vg   q   e i+al pdl++
+  OAB60987.1  14 AVAAVPaaaEPPQRVVSVGGSLTEIVYALGSErRLVAVDSTSSYPP----AADA--LPDVGYMRQLAAEPILALAPDLLL 87 
+                 566666221569******************8625889999998774....5565..599******************986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       150  (0.0277778); expected 108.0 (0.02)
+Passed bias filter:                      134  (0.0248148); expected 108.0 (0.02)
+Passed Vit filter:                        16  (0.00296296); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00037037); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 12007.43
+//
+[ok]

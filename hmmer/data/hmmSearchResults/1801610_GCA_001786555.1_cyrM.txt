@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801610_GCA_001786555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0089   12.4   0.0      0.021   11.2   0.0    1.6  1  OGI29905.1  hypothetical protein A2287_10575 [Candidatus Mela
+  ------ inclusion threshold ------
+      0.012   12.0   0.0      0.027   10.9   0.0    1.5  1  OGI30546.1  peptidase C39 [Candidatus Melainabacteria bacteri
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI29905.1  hypothetical protein A2287_10575 [Candidatus Melainabacteria bacterium RIFOXYA12_FULL_32_12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.2   0.0     2e-05     0.021      10      64 ..      29      83 ..      23     102 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.2 bits;  conditional E-value: 2e-05
+        cyrM 10 tvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrde 64
+                 v l+g  g gkst++  l   l   g+   +ld di    +   lg+ ++  +e
+  OGI29905.1 29 IVVLSGKGGVGKSTVAANLAMSLALSGFKTGLLDIDIHGPSIPTILGLENKKLQE 83
+                5889*********************************998888888877665555 PP
+
+>> OGI30546.1  peptidase C39 [Candidatus Melainabacteria bacterium RIFOXYA12_FULL_32_12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   2.6e-05     0.027       6      44 ..     487     524 ..     483     534 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.6e-05
+        cyrM   6 qrgvtvwltglsgagkstitealqakliaegysievldg 44 
+                 q g++v l g sg+gkstit+ +q   i +  +i  ldg
+  OGI30546.1 487 QPGMSVGLVGRSGSGKSTITKLIQRLYIPNEGAIY-LDG 524
+                 7799******************9998887666664.444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2087  (650313 residues searched)
+Passed MSV filter:                        95  (0.0455199); expected 41.7 (0.02)
+Passed bias filter:                       71  (0.0340201); expected 41.7 (0.02)
+Passed Vit filter:                        13  (0.00622904); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000958313); expected 0.0 (1e-05)
+Initial search space (Z):               2087  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5982.88
+//
+[ok]

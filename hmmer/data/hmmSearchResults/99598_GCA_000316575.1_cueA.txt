@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-13   46.7   1.3      2e-11   41.6   0.1    2.1  2  AFY33452.1  multicopper oxidase type 3 [Calothrix sp. PCC 750
+      0.004   14.2   0.0      0.031   11.3   0.0    1.8  2  AFY36066.1  Plastocyanin [Calothrix sp. PCC 7507]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY33452.1  multicopper oxidase type 3 [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.6   0.1   6.6e-15     2e-11      55     169 ..      87     194 ..      71     205 .. 0.84
+   2 !    4.2   0.1    0.0014       4.2     425     491 ..     260     324 ..     246     329 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 41.6 bits;  conditional E-value: 6.6e-15
+        cueA  55 earpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlh 152
+                  a    i+l      n+   ng+ipgp l ak gd +++ f n+  ++  lh+hg+h  +          +  g++  yef      p g   yh h+ 
+  AFY33452.1  87 IAGTSTIQLNSAvSYNIWDLNGRIPGPTLRAKQGDRIRVLFLNQAGHSHSLHFHGVHPAEMDGV----RPISNGKATIYEFD---AEPYGVHLYHCHI- 177
+                 55556666654414689999*************************************7665443....46789********6...68**********9. PP
+
+        cueA 153 elvaeqvfgglggifvv 169
+                 e v+ ++  gl g+f++
+  AFY33452.1 178 EPVTRHIAKGLYGMFII 194
+                 678999*********98 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.0014
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgi 491
+                  +fhlh+n f+v  r g         d + +   e   +   fr + gk ++h h     + g mg 
+  AFY33452.1 260 VTFHLHANFFDVY-RYGMTMTPSEKTDVITMGIAERHILEFAFR-YPGKYMFHPHQDAMAENGCMGQ 324
+                 57******99986.667666666778999999999999999999.89********999999999986 PP
+
+>> AFY36066.1  Plastocyanin [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.0   0.0     0.013        39      34      91 ..      11      64 ..       5      85 .. 0.72
+   2 !   11.3   0.0     1e-05     0.031     266     311 ..      88     133 ..      81     137 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 1.0 bits;  conditional E-value: 0.013
+        cueA 34 iqpanltal.ttssnglletalearpglirlgqqqgnlltyngqipgprleakpgdtvk 91
+                i  a ltal   ss  ++  +  a    ++lg ++g ll+++       l  kpgdt++
+  AFY36066.1 11 IGLAVLTALlVVSSFAVFTPSAAAETYQVKLGSDKG-LLAFQP----KTLTIKPGDTIQ 64
+                556777876245677777778888888999999988.566653....468999999986 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 1e-05
+        cueA 266 siakpvelrelllspgeraevlvqgkrppgryrllslpydrggamg 311
+                  +ak +   +lll pg++ e     + ppg+y +   p+   g +g
+  AFY36066.1  88 ELAKSLSHTKLLLNPGQKLETTFPVDAPPGEYTFYCQPHRGAGMVG 133
+                 68999999****************************9985555444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       165  (0.0277311); expected 119.0 (0.02)
+Passed bias filter:                      147  (0.0247059); expected 119.0 (0.02)
+Passed Vit filter:                        11  (0.00184874); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 13135.03
+//
+[ok]

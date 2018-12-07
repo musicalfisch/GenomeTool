@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1973477_GCA_002218065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.1e-115  380.5   0.0   4.6e-115  380.3   0.0    1.0  1  GAX36819.1  hypothetical protein NIES3585_28570 [Nodularia sp
+      9e-31  105.2   0.0    9.9e-31  105.1   0.0    1.0  1  GAX34727.1  hypothetical protein NIES3585_07290 [Nodularia sp
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX36819.1  hypothetical protein NIES3585_28570 [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  380.3   0.0  1.8e-118  4.6e-115       6     194 ..       2     190 ..       1     192 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 380.3 bits;  conditional E-value: 1.8e-118
+        cpeS   6 diatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdlerlkt 104
+                 di+tlar+maadfsnq+qafenppffahirvcmrplple+lsg+s+fveqaydy+lndpyr+rvlkl++a+d i+ienytvkee+ fygasrdl+rlkt
+  GAX36819.1   2 DITTLARWMAADFSNQAQAFENPPFFAHIRVCMRPLPLEVLSGISLFVEQAYDYMLNDPYRVRVLKLLNAGDCIAIENYTVKEEESFYGASRDLQRLKT 100
+                 9************************************************************************************************** PP
+
+        cpeS 105 lkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                 l++d+leklpgcnm vew gn fkgkvepgk+civ+rkg++tyldsefei ee+fisldrgrd+et+ehiwgsvagpf+f+r++sfadev
+  GAX36819.1 101 LTSDRLEKLPGCNMSVEWVGNCFKGKVEPGKSCIVFRKGQNTYLDSEFEISEERFISLDRGRDLETNEHIWGSVAGPFHFLRRNSFADEV 190
+                 *****************************************************************************************9 PP
+
+>> GAX34727.1  hypothetical protein NIES3585_07290 [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.1   0.0   3.9e-34   9.9e-31       1     188 [.       1     196 [.       1     198 [] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 105.1 bits;  conditional E-value: 3.9e-34
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklve...aedrieienytvkeekkfygas 96 
+                 m+ s ++ +l +++a  f n+eqa+ +  +f h+ +  rp+ l   + +++f eqa   +l++pyr r+++l++   ++  ++++ y+ k+   f ga 
+  GAX34727.1   1 MSFSPNLIALGQYLAGKFDNREQALADSAWFVHLHLWQRPVDLFTEDSITLFAEQANIVKLDHPYRQRIMRLMSgssSDAPLQLQYYMFKDPSAFSGAG 99 
+                 677889999***************************************************************9722245579***************** PP
+
+        cpeS  97 rdlerlktlkaddleklpgcnmive...wtgnsfk..gkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                  +   lk+l++d+l+ lpgc + v     + ns+k   +  p   c  +  +++  +   fe  + +f s d+g d +t +  wg++ gp+++ +++
+  GAX34727.1 100 DNPALLKALTVDQLDLLPGCILTVTqqtLAANSYKftATQPPNTRCCFTYLNQTVQVSLGFEATAAEFNSYDKGIDSDTGKATWGAILGPYRYTKRE 196
+                 *********************99962224678877214455788899999999999************************************98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         5048  (1559691 residues searched)
+Passed MSV filter:                        82  (0.0162441); expected 101.0 (0.02)
+Passed bias filter:                       75  (0.0148574); expected 101.0 (0.02)
+Passed Vit filter:                         8  (0.00158479); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396197); expected 0.1 (1e-05)
+Initial search space (Z):               5048  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10189.98
+//
+[ok]

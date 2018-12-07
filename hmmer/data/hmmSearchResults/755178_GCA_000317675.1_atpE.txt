@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/755178_GCA_000317675.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-58  194.3   2.4    1.9e-58  194.2   2.4    1.0  1  AFZ55371.1  ATP synthase F1 subcomplex epsilon subunit [Cyano
+  ------ inclusion threshold ------
+        0.9    7.4  17.4       0.11   10.3   3.1    3.5  4  AFZ52986.1  efflux transporter, RND family, MFP subunit [Cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ55371.1  ATP synthase F1 subcomplex epsilon subunit [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  194.2   2.4   1.1e-61   1.9e-58       1     133 [.       1     133 [.       1     134 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 194.2 bits;  conditional E-value: 1.1e-61
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pdk vwd +a+evilps+tgqlgil+ hapllt+ld+gvmrvr++ n++w++ia++ggfaeve++e+ +lvnga+ g++i+ e+a+ a n
+  AFZ55371.1   1 MTLTVRVITPDKIVWDQTAQEVILPSSTGQLGILTDHAPLLTSLDVGVMRVRPD-NKEWKSIAVMGGFAEVENNEIKVLVNGAQLGETIDKEQAQIAVN 98 
+                 9***************************************************97.789***************************************** PP
+
+        atpE 100 eaqtklnqvk.aedrqaqiqatqafkrararfqaa 133
+                 eaqt l+q + ++dr++q++atq +k+a+ar+qaa
+  AFZ55371.1  99 EAQTALDQATaKGDRREQMKATQQLKKAKARLQAA 133
+                 *******976268*********************9 PP
+
+>> AFZ52986.1  efflux transporter, RND family, MFP subunit [Cyanobacterium aponinum PCC 10605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.8   2.2     0.013        23      88     129 ..     153     195 ..     131     201 .. 0.79
+   2 ?    3.1   0.5     0.011        20      90     127 ..     188     226 ..     184     233 .. 0.85
+   3 ?   10.3   3.1   6.7e-05      0.11      88     131 ..     238     282 ..     229     287 .. 0.87
+   4 ?   -3.9   0.0       1.6   2.8e+03      73      92 ..     448     466 ..     444     477 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 2.8 bits;  conditional E-value: 0.013
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqi.qatqafkrarar 129
+                 k +l +a+a  +++q++l+++ka+ r++++ +a++ +  a+a 
+  AFZ52986.1 153 KAELAQAQAGVSQSQARLAELKAGTRKEELaRAKENVTFAQAE 195
+                 5689999******************998872466666666665 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.011
+        atpE  90 nleearaafneaqtkln.qvkaedrqaqiqatqafkrar 127
+                 n+  a+a+ n+aq+ l+  v+  +r++q++a+ a+ r r
+  AFZ52986.1 188 NVTFAQAEVNQAQSDLQlAVTRLERNKQLEAEGAIPRDR 226
+                 56678999*******98468899*********9999877 PP
+
+  == domain 3  score: 10.3 bits;  conditional E-value: 6.7e-05
+        atpE  88 kinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfq 131
+                 + nl +ara  +ea+++l++++a++r++ i qa++ ++ a+ar++
+  AFZ52986.1 238 ESNLIQARARLAEAKQRLQELEAGEREEVItQAEANLREAKARVK 282
+                 568999********************9988688899999***975 PP
+
+  == domain 4  score: -3.9 bits;  conditional E-value: 1.6
+        atpE  73 edevtilvngaergdkinle 92 
+                 +d v il  g e gd+i l+
+  AFZ52986.1 448 NDRVEIL-SGLEVGDTIALQ 466
+                 5566665.688899999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         3431  (1113123 residues searched)
+Passed MSV filter:                       118  (0.0343923); expected 68.6 (0.02)
+Passed bias filter:                       94  (0.0273973); expected 68.6 (0.02)
+Passed Vit filter:                        13  (0.00378898); expected 3.4 (0.001)
+Passed Fwd filter:                         4  (0.00116584); expected 0.0 (1e-05)
+Initial search space (Z):               3431  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 3049.96
+//
+[ok]

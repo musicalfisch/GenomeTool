@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65093_GCA_000317635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysP  [M=347]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00015   18.7   0.3      0.017   11.9   0.3    2.1  1  AFZ43969.1  molybdenum ABC transporter, periplasmic molybdate
+    0.00064   16.6   0.0    0.00095   16.0   0.0    1.3  1  AFZ44144.1  protease HtpX-like protein [Halothece sp. PCC 741
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ43969.1  molybdenum ABC transporter, periplasmic molybdate-binding protein [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.9   0.3   9.3e-06     0.017      14     296 ..      13     273 ..       4     276 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 9.3e-06
+        cysP  14 tvltggmlascts....sptnsgndsqkpvtvtlvsyavt.qsayekiipkfveewqqktgqkvtfeqsyggsgsqtravidgleadvvalalaldtkk 107
+                 +vl+  +l+ c +     p +s  ++   vt   vs a + q   + i p +      ++     +   +  sgs  r + +g   dv   a       
+  AFZ43969.1  13 AVLSSLLLIGCQQpetfQPEESTSETPAGVTELTVSAAASlQDVMKAIKPIYE-----QAYPDREIVYNFASSGSLQRQIEQGAPVDVFISAAVDKMDT 106
+                 56666677777551111444444444445554444444331333333334333.....33333334456888999999999999999988777666788 PP
+
+        cysP 108 ieqagliqpgwekeapndsivhksvvafvprdanikinkwsdlakdnikvita.npktsggarwnflalwgsvtqaggseqeaqtfvekvfknapvlpr 205
+                 +e+  li     ++  ++ +v   +v+     an++i ++ dl  +++++i+  +p +    r+    l  s        + a+ + e       v  +
+  AFZ43969.1 107 LEEKDLILTETRRDLLKNQMV---LVTQEGTKANLNISDFQDLNTNKVNLIALgEPESVPAGRYAQEVLV-SF-------NIADKVNE-----KAVYGK 189
+                 999999998877777776666...5677788999999999999999999887525666666666544443.22.......22222222.....235566 PP
+
+        cysP 206 daressdvffkqgqgnvlinyenemilanqkgeklaytvptdynisidnpvavvdanvdkkgtrkvaeafvqflftpaaqrefaqvgfrpv 296
+                 d r+  + ++  g+ +  i y  +  ++++   ++  t p +    +  pva+++       t  + + +++fl t +aq  f + gf pv
+  AFZ43969.1 190 DVRQVLN-YVATGNVEAGIVYRTDAQVSDN--VEIIATAPEETHSPVIYPVAIIE----DSDTPEIGKELIEFLTTEEAQAVFEDYGFVPV 273
+                 6665443.3444555555666665544432..23444566666666666666654....44566777777777777777777777777777 PP
+
+>> AFZ44144.1  protease HtpX-like protein [Halothece sp. PCC 7418]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.0   5.1e-07   0.00095     236     296 ..     260     320 ..     169     326 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 5.1e-07
+        cysP 236 kgeklaytv.ptdynisidnpvavvdanvdkkgtrkvaeafvqflftpaaqrefaqvgfrpv 296
+                    + +y +   d  i       +v  nvd++ t   a++f++fl  p+ q  f q gfrp 
+  AFZ44144.1 260 TTRNQTYQIyYLDPTIETVSTAGIVRRNVDRR-TADAAKTFIDFLRKPEQQAIFIQYGFRPA 320
+                 344444443134555666667789999***87.6789***********************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (347 nodes)
+Target sequences:                         3708  (1181058 residues searched)
+Passed MSV filter:                        91  (0.0245415); expected 74.2 (0.02)
+Passed bias filter:                       71  (0.0191478); expected 74.2 (0.02)
+Passed Vit filter:                         6  (0.00161812); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000539374); expected 0.0 (1e-05)
+Initial search space (Z):               3708  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 10245.68
+//
+[ok]

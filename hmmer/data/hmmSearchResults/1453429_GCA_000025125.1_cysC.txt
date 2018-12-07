@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1453429_GCA_000025125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-97  318.5   0.4    6.9e-97  318.4   0.4    1.0  1  ADB95462.1  adenylylsulfate kinase [Candidatus Atelocyanobact
+     0.0078   11.8   0.2      0.014   11.0   0.2    1.4  1  ADB95089.1  septum site-determining protein MinD [Candidatus 
+
+
+Domain annotation for each sequence (and alignments):
+>> ADB95462.1  adenylylsulfate kinase [Candidatus Atelocyanobacterium thalassa isolate ALOHA]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  318.4   0.4   1.1e-99   6.9e-97       4     178 ..       1     175 [.       1     176 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 318.4 bits;  conditional E-value: 1.1e-99
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 mkq gvt+wltglsgagksti++al  k+   gys+evldgd+vrtnltkglgfskedrd nirrigfv +lltr  vivlv+aispyr+ir+evr ki
+  ADB95462.1   1 MKQNGVTIWLTGLSGAGKSTISDALGKKIKNFGYSLEVLDGDVVRTNLTKGLGFSKEDRDTNIRRIGFVCQLLTRNNVIVLVAAISPYRDIRNEVREKI 99 
+                 9************************************************************************************************** PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 g+f+ev++napl++ce rdvkglyk+ar+geiksftgiddpye p+npevecrtd+etleesv k+  kl+e+ yi
+  ADB95462.1 100 GNFMEVYINAPLTICETRDVKGLYKKARSGEIKSFTGIDDPYEAPINPEVECRTDIETLEESVDKILRKLKEMNYI 175
+                 ***************************************************************************9 PP
+
+>> ADB95089.1  septum site-determining protein MinD [Candidatus Atelocyanobacterium thalassa isolate ALOHA]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.0   0.2   2.4e-05     0.014       9      57 ..       4      52 ..       1      61 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 2.4e-05
+        cysC  9 vtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgf 57
+                v v  +g  g gk+tit  l + +   g+ i ++d d    nl   lg+
+  ADB95089.1  4 VIVITSGKGGVGKTTITANLGSAIAYLGFKIVLVDADFGLRNLDLLLGL 52
+                67888999*****************************999999887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         1200  (386913 residues searched)
+Passed MSV filter:                        62  (0.0516667); expected 24.0 (0.02)
+Passed bias filter:                       53  (0.0441667); expected 24.0 (0.02)
+Passed Vit filter:                         7  (0.00583333); expected 1.2 (0.001)
+Passed Fwd filter:                         2  (0.00166667); expected 0.0 (1e-05)
+Initial search space (Z):               1200  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7119.20
+//
+[ok]

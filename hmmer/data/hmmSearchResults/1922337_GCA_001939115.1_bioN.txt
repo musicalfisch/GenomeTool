@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1922337_GCA_001939115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   3.1e-131  435.2  18.3   6.4e-131  434.1  18.3    1.4  1  OLP19667.1  hypothetical protein BST81_03750 [Leptolyngbya sp
+     0.0013   16.3   0.3     0.0016   16.0   0.3    1.2  1  OLP16533.1  hypothetical protein BST81_20240 [Leptolyngbya sp
+
+
+Domain annotation for each sequence (and alignments):
+>> OLP19667.1  hypothetical protein BST81_03750 [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  434.1  18.3  2.5e-134  6.4e-131       1     290 [.       1     303 [.       1     304 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 434.1 bits;  conditional E-value: 2.5e-134
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qp+t lh+ld rvk+ wlm+fla plla p +r+ lvg+l+lltl a ip rvwrqqmgwl+fl++ vfl+ta++pdgl    qp
+  OLP19667.1   1 MDLLRSLPIGLYLEQPVTWLHHLDPRVKLAWLMSFLAVPLLASPPYRVFLVGFLILLTLAALIPLRVWRQQMGWLLFLSVFVFLLTAVAPDGLQTNHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlppas.............dyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltl 185
+                 rlp + l + pas              y+yvl  +g + vtrrsl+l++r+stl+ftliystnl+llttapeeit gle+l+ plrrf++pvtei+ltl
+  OLP19667.1 100 RLPIDDLAVVPASgtttappaayspaTYNYVLVKQGPITVTRRSLDLSIRVSTLLFTLIYSTNLYLLTTAPEEITAGLEDLMQPLRRFKLPVTEIALTL 198
+                 ***9999887765333333333334469*********************************************************************** PP
+
+        bioN 186 tlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaa 284
+                 tlslrfiplvlee+qnlar+v+trai+w+klg++rs +vwl v+e+ll+nlllraeqia amevrgftsp++h+v wh+l+l+ ad++al  li +w +
+  OLP19667.1 199 TLSLRFIPLVLEEIQNLARSVQTRAINWKKLGLRRSAQVWLVVIERLLENLLLRAEQIASAMEVRGFTSPDRHKVEWHQLQLQRADWLALTGLILLWGS 297
+                 *************************************************************************************************** PP
+
+        bioN 285 rlvwgg 290
+                 r+ wgg
+  OLP19667.1 298 RFAWGG 303
+                 *****8 PP
+
+>> OLP16533.1  hypothetical protein BST81_20240 [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.0   0.3   6.3e-07    0.0016      39      86 ..      19      67 ..       4      80 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 16.0 bits;  conditional E-value: 6.3e-07
+        bioN 39 pllanpwwrlalvglllllt.llapipprvwrqqmgwliflaiivflit 86
+                 +l npw rla++gl ll+  +l    p    q   w i++a+i+++  
+  OLP16533.1 19 QILQNPWRRLAVLGLNLLFGfFLGSAIPTSTGQAARWDIVVALILVVGV 67
+                6899**********9766652677777888999*********9987654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         5141  (1682713 residues searched)
+Passed MSV filter:                       257  (0.0499903); expected 102.8 (0.02)
+Passed bias filter:                      126  (0.0245089); expected 102.8 (0.02)
+Passed Vit filter:                         8  (0.00155612); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000389029); expected 0.1 (1e-05)
+Initial search space (Z):               5141  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8161.16
+//
+[ok]

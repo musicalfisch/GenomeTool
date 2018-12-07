@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880902_GCA_001698445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.4e-102  338.3   0.0   2.7e-102  338.2   0.0    1.0  1  OCQ89511.1  chorismate-binding protein [Limnothrix sp. P13C2]
+    7.2e-24   82.3   0.0    7.8e-24   82.1   0.0    1.0  1  OCQ89512.1  hypothetical protein BCR12_12195 [Limnothrix sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ89511.1  chorismate-binding protein [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  338.2   0.0  1.5e-105  2.7e-102       4     194 ..      11     201 ..       8     203 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 338.2 bits;  conditional E-value: 1.5e-105
+        cpeS   4 stdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdlerl 102
+                 ++d+ tl r+maadfsnq+qafenppffahirvcmrplp+ ll g+sf+veqaydy+ln+pyr+rvlkl+e++ +i+ieny+v +e++f+gasr+ +rl
+  OCQ89511.1  11 AADLVTLGRWMAADFSNQAQAFENPPFFAHIRVCMRPLPIALLGGISFYVEQAYDYALNQPYRVRVLKLIEVDGQIQIENYAVAHEQEFFGASRQPDRL 109
+                 689************************************************************************************************ PP
+
+        cpeS 103 ktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                 ++l+ad+le+l  cn++v  tg++f g+vepgkac+v+rkgk+tylds+fei +++f+s drgrdpetdeh+wg+vagpf+fv+ asfadev
+  OCQ89511.1 110 QALTADRLERLCHCNFLVSRTGQTFTGQVEPGKACMVTRKGKETYLDSQFEITADRFVSWDRGRDPETDEHVWGAVAGPFDFVKVASFADEV 201
+                 *******************************************************************************************9 PP
+
+>> OCQ89512.1  hypothetical protein BCR12_12195 [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.1   0.0   4.2e-27   7.8e-24       4     186 ..       6     193 ..       1     196 [] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 82.1 bits;  conditional E-value: 4.2e-27
+        cpeS   4 stdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed...rieienytvkeekkfygasrdl 99 
+                 s+ +  la ++   f n+eqa+ +p ++  +r+  r + +     ++++ eqa   ++ + yr rv ++  ++d    +++  +++++ +++ g   d 
+  OCQ89512.1   6 SAWLDRLALWLPGTFENREQALADPTWYVGVRLWHRSIGVFGPGHLGIYAEQASAPTFAKIYRPRVFQISPTSDpdfPLAVAYFALRQPERWRGGGLDP 104
+                 4557789********************************999999***********************988776333589999**************** PP
+
+        cpeS 100 erlktlkaddleklpgc..nmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvr 186
+                   l+ l+  dle lpgc   m v     +f+ ++ p + c     g+   +   fe+ + +f+s d+g dp+t + iwg++ gpf++ r
+  OCQ89512.1 105 AILEPLTLADLEPLPGCllPMAVLAEDAGFRAQLPPDRRCCFQADGQLRQVSLGFEVRSGEFLSYDKGIDPDTGKPIWGAIMGPFRYRR 193
+                 *****************444788888999********************************************************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         3672  (1209182 residues searched)
+Passed MSV filter:                        46  (0.0125272); expected 73.4 (0.02)
+Passed bias filter:                       45  (0.0122549); expected 73.4 (0.02)
+Passed Vit filter:                         8  (0.00217865); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000544662); expected 0.0 (1e-05)
+Initial search space (Z):               3672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7899.99
+//
+[ok]

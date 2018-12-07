@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/489825_GCA_000211815.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-64  214.9   0.6    1.7e-64  214.8   0.6    1.0  1  EGJ33068.1  ATP synthase F1 subcomplex epsilon subunit [Moore
+  ------ inclusion threshold ------
+      0.079   11.9   0.1       0.12   11.3   0.1    1.2  1  EGJ35647.1  peptidase family M48 [Moorea producens 3L]
+
+
+Domain annotation for each sequence (and alignments):
+>> EGJ33068.1  ATP synthase F1 subcomplex epsilon subunit [Moorea producens 3L]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  214.8   0.6   4.7e-68   1.7e-64       1     137 []       1     136 []       1     136 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 214.8 bits;  conditional E-value: 4.7e-68
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m+ltvr+i+pdktvwd +a+e+ilpsttgqlgils hapll+aldtgvmr+r++k  +w  ial+ggf+eve++evtilvngae  d+i+ + a  +fn
+  EGJ33068.1   1 MALTVRIIAPDKTVWDDQAQEIILPSTTGQLGILSDHAPLLSALDTGVMRIRSEK--EWIPIALMGGFVEVEDNEVTILVNGAESADEIDKDAAGVDFN 97 
+                 89**************************************************986..7***************************************** PP
+
+        atpE 100 eaqtklnqvkae.drqaqiqatqafkrararfqaagglv 137
+                 ea+++l++++++ + q++iqatqa+k+ararfqaagg+v
+  EGJ33068.1  98 EAKARLEELQSDeNTQEKIQATQAYKKARARFQAAGGMV 136
+                 ********997615799********************98 PP
+
+>> EGJ35647.1  peptidase family M48 [Moorea producens 3L]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   3.3e-05      0.12      55     112 ..      46     103 ..      41     115 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 3.3e-05
+        atpE  55 knqdwqaiallggfaeveedevtilvngaergdkinleearaafneaqtklnqvkaed 112
+                 +n+d +a al+ggf+ v+   +  + n ae    i  e a  + +++  +l q+ +++
+  EGJ35647.1  46 RNNDINAFALVGGFVYVHTGLLKGVENEAELAAVIAHEIAHITSKHSIERLRQIIKDK 103
+                 79999*************************************9999999**9998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         7445  (2130115 residues searched)
+Passed MSV filter:                       223  (0.029953); expected 148.9 (0.02)
+Passed bias filter:                      178  (0.0239087); expected 148.9 (0.02)
+Passed Vit filter:                        16  (0.00214909); expected 7.4 (0.001)
+Passed Fwd filter:                         2  (0.000268637); expected 0.1 (1e-05)
+Initial search space (Z):               7445  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7295.64
+//
+[ok]

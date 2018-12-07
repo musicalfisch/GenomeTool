@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.6e-111  366.6  18.5   6.2e-111  366.5  18.5    1.0  1  ABD00349.1  BioY family protein [Synechococcus sp. JA-3-3Ab]
+    1.1e-13   48.8  11.8    1.1e-13   48.8  11.8    2.3  2  ABD00871.1  BioY family protein [Synechococcus sp. JA-3-3Ab]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD00349.1  BioY family protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  366.5  18.5  4.5e-114  6.2e-111       1     209 []       1     209 []       1     209 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 366.5 bits;  conditional E-value: 4.5e-114
+        bioY   1 maatdvgaalaaelltdalrvldsmlvlvasLLlillaqliiallflPvaitGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvlt 99 
+                 m+at+v+++la++ll+++++v+dsmlvl++sLL+++laq++i+l+f+Pv+itGq+++v+lv++++g++L++l+lllylle+Ll+l+++++G+s+Ls+lt
+  ABD00349.1   1 MTATFVHTPLAQTLLPRPSWVRDSMLVLGGSLLVAALAQVRIPLPFTPVPITGQTFGVMLVGAGFGSRLGFLALLLYLLEGLLGLPFFNGGGSGLSHLT 99 
+                 9************************************************************************************************** PP
+
+        bioY 100 GgtGaalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisllGlvvlqvclaenllltsllavltdGvlPllmtdlLkplLaalLLptavatla 198
+                 G+tG++lL++Plaa+L+G++ve+W+vdR+++k+aas+l+++vLi++lG+++l+v+l+en+++ts+lavlt+Gv+P++++dlLk++Laa+LLpt++++l+
+  ABD00349.1 100 GPTGGYLLAFPLAAGLMGWFVERWGVDRSPWKMAASMLSCSVLIYVLGATWLGVWLNENVGPTSVLAVLTKGVFPFIPGDLLKCVLAAALLPTTWRWLG 198
+                 *************************************************************************************************** PP
+
+        bioY 199 liladlklvss 209
+                 +++ad+k++ss
+  ABD00349.1 199 RETADPKSSSS 209
+                 *********98 PP
+
+>> ABD00871.1  BioY family protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   48.8  11.8   7.9e-17   1.1e-13      25     132 ..      12     115 ..       5     121 .. 0.87
+   2 ?    0.5   3.2      0.05        69     133     174 ..     147     188 ..     141     210 .] 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 48.8 bits;  conditional E-value: 7.9e-17
+        bioY  25 mlvlvasLLlillaqliia.llflPvaitGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflvea 122
+                 +l ++ +++l +l+ l +  l++    ++G+++     +lq+g  Llt+ l ++  ++ + + yl lGl +L v+  g+G  +L +P ++yL Gfl++a
+  ABD00871.1  12 WLWIAIGVILTILGTLTQVsLPPQWPGVGGYSF-----SLQIGGVLLTACLAGPVAAVCAQIVYLGLGLAGLQVFAQGGGWQYLYQPAFGYLLGFLPAA 105
+                 677777888889999987614555556788877.....58*********************************************************** PP
+
+        bioY 123 WvvdRlarkr 132
+                 W+ + +a ++
+  ABD00871.1 106 WACGTMAFRQ 115
+                 ***9998765 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.05
+        bioY 133 aasdllnlvLisllGlvvlqvclaenllltsllavltdGvlP 174
+                 aa  l++l+L+ l+G+++l      n  l  ll  ++   lP
+  ABD00871.1 147 AAAGLVALTLVHLTGITYLLATQPWNGELLQLLRLYSGYTLP 188
+                 677788889999999988866555555544444444444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                       176  (0.0637681); expected 55.2 (0.02)
+Passed bias filter:                       39  (0.0141304); expected 55.2 (0.02)
+Passed Vit filter:                         6  (0.00217391); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000724638); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 8635.02
+//
+[ok]

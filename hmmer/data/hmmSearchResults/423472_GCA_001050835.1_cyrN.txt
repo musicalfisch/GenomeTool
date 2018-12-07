@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423472_GCA_001050835.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrN  [M=518]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0018   15.0   0.2     0.0036   14.1   0.2    1.4  1  CCQ57499.1  hypothetical protein CWATWH0005_2212 [Crocosphaer
+  ------ inclusion threshold ------
+      0.021   11.5   0.0      0.062   10.0   0.0    1.7  2  CCQ57116.1  hypothetical protein CWATWH0005_5388 [Crocosphaer
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ57499.1  hypothetical protein CWATWH0005_2212 [Crocosphaera watsonii WH 0005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.2   1.2e-06    0.0036     124     268 ..      80     217 ..      61     243 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 1.2e-06
+        cyrN 124 flsdwakalnrplvlfideidslqdqtlisv.lrqlrdgfpn..rpenfpssvgliglrdvrdykvasggsdrlntsspfnikvasltlrnfnlaevge 219
+                 f ++  + ++r+l+l+++e+d + d  li+  +  l  g+ +  + +++   + l+ +     y  as   d   t sp+n    ++++ +f  +ev++
+  CCQ57499.1  80 FSQSLLTQIDRQLILVLEEMDLVFDYPLIATdFCGLLRGWHEesKRDKLWQKLSLVIVHSTDKY--ASL--D--ITNSPLNNIGETISIEEFTRSEVDQ 172
+                 5677788999999999999999999999976344555565441245677788888888776666..442..2..4889***999*************** PP
+
+        cyrN 220 lyqqhtaatgqiftpeaietafdltqgqpwlvnalakeivekmvkdrsi 268
+                 + q +  +    +++e +e    l +g p+lvn   k++  + +k  +i
+  CCQ57499.1 173 IIQSYDLS----LSNEQVENLIALVKGHPFLVNHALKKMAFQSMKLEEI 217
+                 **998765....689******************7666655444443333 PP
+
+>> CCQ57116.1  hypothetical protein CWATWH0005_5388 [Crocosphaera watsonii WH 0005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.0   2.1e-05     0.062     231     262 ..     579     610 ..     559     636 .. 0.81
+   2 ?   -2.5   0.0      0.13   3.9e+02     305     334 ..     689     719 ..     680     724 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 2.1e-05
+        cyrN 231 iftpeaietafdltqgqpwlvnalakeivekm 262
+                  +t+ea+e +++l++gqp+lvn +   ++ ++
+  CCQ57116.1 579 QYTKEALEEIYYLSNGQPYLVNLIGFYLIRRF 610
+                 589*******************9877666655 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.13
+        cyrN 305 iiepilaglelgdil.addrqylidlgllkr 334
+                  iepi+  l+  d++ + d +y+i + l ++
+  CCQ57116.1 689 EIEPIIESLKRHDVIeEKDNKYVITVELFRQ 719
+                 589999999999976156999***9999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (518 nodes)
+Target sequences:                         5919  (1453910 residues searched)
+Passed MSV filter:                       197  (0.0332826); expected 118.4 (0.02)
+Passed bias filter:                      145  (0.0244974); expected 118.4 (0.02)
+Passed Vit filter:                         9  (0.00152053); expected 5.9 (0.001)
+Passed Fwd filter:                         2  (0.000337895); expected 0.1 (1e-05)
+Initial search space (Z):               5919  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 10758.93
+//
+[ok]

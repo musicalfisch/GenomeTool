@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1260963_GCA_002142495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-14   49.9   0.0      6e-14   48.7   0.0    1.5  2  BAS64479.1  Ferredoxin--NADP(+) reductase [Leptolyngbya borya
+    3.2e-07   26.4   0.0    3.6e-07   26.3   0.0    1.0  1  BAS61556.1  hemoglobin-like flavoprotein [Leptolyngbya boryan
+
+
+Domain annotation for each sequence (and alignments):
+>> BAS64479.1  Ferredoxin--NADP(+) reductase [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.7   0.0     0.031        99    1032    1072 ..      73     111 ..      68     118 .. 0.82
+   2 !   48.7   0.0   1.9e-17     6e-14    1208    1401 ..     121     329 ..     102     348 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -1.7 bits;  conditional E-value: 0.031
+        cysJ 1032 vanqellqevvpgsrstrlivfdltdtdlqyetgdhvavyp 1072
+                  ++n+el+ e   g  + r i fd++  dl y  g+ + + p
+  BAS64479.1   73 ISNDELVGEG--GIGTVRHIKFDISAGDLTYVEGQSIGIIP 111 
+                  5677777774..556789****************9998877 PP
+
+  == domain 2  score: 48.7 bits;  conditional E-value: 1.9e-17
+        cysJ 1208 qkprlysisscpl...lhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvrievlts.tfrpptdshapilmvgpgtgvspliafl..qh 1297
+                  +k rlysi+s      +  + + + v  l+    ++g+   g+cs yl+ l+pg+ v+i   t   +  p ++ + ++m+  gtg++p+ a+l  q 
+  BAS64479.1  121 EKLRLYSIASTRHgddVDDKTVSLCVRQLEYKhPETGETVYGVCSTYLCNLEPGADVKITGPTGkEMLLPEETDTNVIMMATGTGIAPMRAYLwrQF 217 
+                  5889****9986522266777888887777652689***********************998862578899********************994433 PP
+
+        cysJ 1298 r..ealqnqgi.slgeahlyfgcrnpsdfiyqeqlqvwrdrn.vltglevafsrlgeqkq....yvqnlmeqqpekiwqilshpqchyyvcgdakma 1386
+                  +  e   n      g + l fg    ++++y+ +l+   ++      l  a+sr  ++k+    y+q+ + ++  ++++++   + h y+cg   m 
+  BAS64479.1  218 KdnERAANPNYqFNGFSWLIFGIPTSANILYKGELEEMAQKYpNNFRLTTAISREQQNKDggrmYIQDRVAENAAELYKLMKDEKTHTYICGLKGME 314 
+                  31133444444145899***************99987766541455789999998877644444********************************* PP
+
+        cysJ 1387 ddvfavmmaiakqqg 1401
+                  d + a + a a ++g
+  BAS64479.1  315 DGIDAALGAEAAKEG 329 
+                  ***999998887766 PP
+
+>> BAS61556.1  hemoglobin-like flavoprotein [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.0   1.1e-10   3.6e-07     349     448 ..      21     119 ..       4     141 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 1.1e-10
+        cysJ 349 qmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhsfadvptcaypamsetlfvlferylp.nftpelrqg 446
+                 ++   fy  lf  yp v p+f  + m+  + +lfq+l ++v  lr    d + + l+ lg  h    v    yp +  tl+  +   l   +tp+  q 
+  BAS61556.1  21 EFTNHFYTNLFADYPEVKPLFANTHMEDQAKKLFQSLVLVVESLRH--PDRLAHPLQGLGTRHIQYGVLPEHYPLVGSTLLKALALCLGeAWTPNAEQA 117
+                 35678****************************************6..699*************9999999********99888887752689*99999 PP
+
+        cysJ 447 wq 448
+                 w 
+  BAS61556.1 118 WS 119
+                 97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         6348  (1955829 residues searched)
+Passed MSV filter:                       144  (0.0226843); expected 127.0 (0.02)
+Passed bias filter:                      113  (0.0178009); expected 127.0 (0.02)
+Passed Vit filter:                        11  (0.00173283); expected 6.3 (0.001)
+Passed Fwd filter:                         2  (0.00031506); expected 0.1 (1e-05)
+Initial search space (Z):               6348  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.17u 0.02s 00:00:00.19 Elapsed: 00:00:00.19
+# Mc/sec: 15234.88
+//
+[ok]

@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+        1.5    7.1  14.6       0.15   10.2   1.0    3.4  3  OKH16846.1  NAD(P)H-quinone oxidoreductase subunit 4 [Limnoth
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH16846.1  NAD(P)H-quinone oxidoreductase subunit 4 [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.8    0.0017         6      35      81 ..     128     174 ..     123     211 .. 0.80
+   2 ?   10.2   1.0   4.3e-05      0.15      31      95 ..     277     342 ..     246     351 .. 0.71
+   3 ?   -1.6   0.6       0.2   7.1e+02      75     100 ..     403     428 ..     375     432 .. 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.0017
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfr 81 
+                 + +f +  + l f t  l+ + v ++ s+w g   +  a+  +i+  
+  OKH16846.1 128 IAVFAVQDMLLFFFTWELELVPVYLILSIWGGKKRLYAATKFIIYTA 174
+                 7799999999*********************9877666665555543 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 4.3e-05
+        emrC  31 lipsvlifvfyglcl.tfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                   p ++i+ +  + + ++ ++a ++++  +ays  + +g vli + +   +  s +++++is  li
+  OKH16846.1 277 FGPVLVILGVVNIVYaALTSFAQRNLKRKIAYSSISHMGFVLIGMASFTDLGTSGAMLQMISHGLI 342
+                 34555555455555514566899*************************************998887 PP
+
+  == domain 3  score: -1.6 bits;  conditional E-value: 0.2
+        emrC  75 igliwfresltlvklisialiiigvi 100
+                 +g         ++++i ++l  igvi
+  OKH16846.1 403 VGFATSDAYSPTFRVIVVILAAIGVI 428
+                 33333333333444555555555554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       145  (0.0409373); expected 70.8 (0.02)
+Passed bias filter:                       49  (0.013834); expected 70.8 (0.02)
+Passed Vit filter:                         3  (0.000846979); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000846979); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 3957.22
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641165_GCA_002075285.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-49  164.2   4.7    2.4e-49  164.0   4.7    1.0  1  ASC72345.1  ATP synthase AtpH [Halomicronema hongdechloris C2
+  ------ inclusion threshold ------
+       0.01   14.6   0.0       0.03   13.1   0.0    1.7  1  ASC72055.1  Glycosyltransferase Type 1 [Halomicronema hongdec
+
+
+Domain annotation for each sequence (and alignments):
+>> ASC72345.1  ATP synthase AtpH [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.0   4.7     9e-53   2.4e-49       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.0 bits;  conditional E-value: 9e-53
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdp+va++sv+aaa+avGla+iGpgigqGnaagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvv+lvllfanpf+
+  ASC72345.1  1 MDPIVASTSVLAAAFAVGLASIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVSLVLLFANPFS 81
+                9*******************************************************************************7 PP
+
+>> ASC72055.1  Glycosyltransferase Type 1 [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   1.1e-05      0.03      32      72 ..     376     415 ..     361     417 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 1.1e-05
+        atpH  32 agqaveGiarqpeaeGkirgtlllslafmesltiyGlvval 72 
+                  ++av+ +  q +a  ++rg l ++  f e ltiy  v+al
+  ASC72055.1 376 DSEAVSAV-HQDQALARLRGRLHIAQIFEEHLTIYKSVMAL 415
+                 56677765.6899*************************998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         5269  (1545500 residues searched)
+Passed MSV filter:                       225  (0.0427026); expected 105.4 (0.02)
+Passed bias filter:                      130  (0.0246726); expected 105.4 (0.02)
+Passed Vit filter:                        13  (0.00246726); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000569368); expected 0.1 (1e-05)
+Initial search space (Z):               5269  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4172.85
+//
+[ok]

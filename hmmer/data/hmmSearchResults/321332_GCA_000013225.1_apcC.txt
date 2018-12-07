@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321332_GCA_000013225.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.6e-47  154.6   0.4    7.1e-47  154.5   0.4    1.0  1  ABD02407.1  phycobilisome 7.8 kDa linker polypeptide, allophy
+    7.8e-07   26.3   0.0    1.2e-06   25.7   0.0    1.3  1  ABD01920.1  phycobilisome 8.9 kDa linker polypeptide, phycocy
+     0.0028   14.9   0.0     0.0044   14.3   0.0    1.3  1  ABD01171.1  CpcD/allophycocyanin linker domain protein [Synec
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD02407.1  phycobilisome 7.8 kDa linker polypeptide, allophycocyanin-associated, core [Synechococcus sp. JA-2-3B'a(2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  154.5   0.4   7.5e-50   7.1e-47       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 154.5 bits;  conditional E-value: 7.5e-50
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfkitacvPsqtrirtqrelqntyftklvpy+nWfreqqri+k GG+i+kvelatGkpg+++Gll
+  ABD02407.1  1 MRMFKITACVPSQTRIRTQRELQNTYFTKLVPYENWFREQQRIQKSGGRILKVELATGKPGMDVGLL 67
+                9****************************************************************96 PP
+
+>> ABD01920.1  phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod [Synechococcus sp. JA-2-3B'a(2-13)]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.7   0.0   1.2e-09   1.2e-06      28      60 ..      46      78 ..      31      84 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 25.7 bits;  conditional E-value: 1.2e-09
+        apcC 28 tklvpydnWfreqqrimkmGGkivkvelatGkp 60
+                   vpy     e qri++mGGkiv+v   +G +
+  ABD01920.1 46 STTVPYSRLSAEMQRILRMGGKIVQVTALSGAN 78
+                5679**********************9888765 PP
+
+>> ABD01171.1  CpcD/allophycocyanin linker domain protein [Synechococcus sp. JA-2-3B'a(2-13)]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.0   4.6e-06    0.0044      31      53 ..      87     109 ..      81     114 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 4.6e-06
+        apcC  31 vpydnWfreqqrimkmGGkivkv 53 
+                 vp+    +e +ri +mGGkiv +
+  ABD01171.1  87 VPFSRLSQEVKRITQMGGKIVSI 109
+                 8999999**************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         2862  (863919 residues searched)
+Passed MSV filter:                        76  (0.0265549); expected 57.2 (0.02)
+Passed bias filter:                       72  (0.0251572); expected 57.2 (0.02)
+Passed Vit filter:                         8  (0.00279525); expected 2.9 (0.001)
+Passed Fwd filter:                         3  (0.00104822); expected 0.0 (1e-05)
+Initial search space (Z):               2862  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 5788.26
+//
+[ok]

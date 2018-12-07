@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cutC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/741277_GCA_000231365.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cutC  [M=244]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.023   12.4   0.0        2.5    5.7   0.0    2.3  2  EHC14077.1  homocitrate synthase [Fischerella sp. JSC-11]
+
+
+Domain annotation for each sequence (and alignments):
+>> EHC14077.1  homocitrate synthase [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.3   0.0    0.0014       6.7     184     239 ..      30      80 ..      13      85 .. 0.74
+   2 ?    5.7   0.0   0.00055       2.5      10      45 ..     147     182 ..     143     195 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.0014
+        cutC 184 vvelvsktgvkeihfsasamkdsemqfqnkaiaglgsepgaeyklrtvnvqmikni 239
+                 + +++   gv+ei +   am +sem+    aia + se g   kl   n  +i +i
+  EHC14077.1  30 IAKFLDAIGVHEIEVGIPAMGESEMR----AIAAI-SELGLSAKLLGWNRAVISDI 80 
+                 55677889*****************6....55554.56666666666666666655 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.00055
+        cutC  10 idsafraqeggadrielcdspgdggntpsygvveal 45 
+                  d a  aqe ga r  +cd+ g      +y  v+ l
+  EHC14077.1 147 FDVAHYAQEWGASRFRFCDTVGVLDPFSTYTKVNRL 182
+                 68999***************9988777777777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (244 nodes)
+Target sequences:                         4627  (1420067 residues searched)
+Passed MSV filter:                       101  (0.0218284); expected 92.5 (0.02)
+Passed bias filter:                       90  (0.019451); expected 92.5 (0.02)
+Passed Vit filter:                        12  (0.00259347); expected 4.6 (0.001)
+Passed Fwd filter:                         1  (0.000216123); expected 0.0 (1e-05)
+Initial search space (Z):               4627  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 8662.41
+//
+[ok]

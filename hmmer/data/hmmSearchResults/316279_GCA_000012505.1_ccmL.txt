@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-08   32.6   0.3    1.8e-08   31.8   0.3    1.4  1  ABB26568.1  putative carboxysome peptide A [Synechococcus sp.
+      3e-06   24.7   0.0    3.4e-06   24.5   0.0    1.1  1  ABB26567.1  putative carboxysome peptide B [Synechococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB26568.1  putative carboxysome peptide A [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.8   0.3   1.6e-11   1.8e-08       1      84 [.       1      77 [.       1      81 [. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 31.8 bits;  conditional E-value: 1.6e-11
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidt 84
+                m i kv   +vst++ p +   +l   q+v  +g    + +va d+vga   +wv+    saar+  g++  p d ++v iid 
+  ABB26568.1  1 MLIVKVVKPLVSTNRIPDFEHKHL---QVVL-DGS---TKKVAVDAVGAKPGDWVICVSSSAAREAAGSKSYPSDLTIVGIIDH 77
+                567788888888888888876543...4443.344...3479****************************************96 PP
+
+>> ABB26567.1  putative carboxysome peptide B [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.0     3e-09   3.4e-06       1      83 [.       1      77 [.       1      82 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 3e-09
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiid 83
+                m+i +v  t+++t +   l  ++l +  lv+++gk l    va d vga   +wv+ + gsaar+   +++   d ++  iid
+  ABB26567.1  1 MEIMQVSDTLICTFRVAGLDHMHLRI--LVNNKGKKL----VAVDPVGARKGNWVFTASGSAARHACPDNTVLTDLTIGGIID 77
+                78889999999999988888766655..699999876....9***********************999999999999989988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                        57  (0.0247396); expected 46.1 (0.02)
+Passed bias filter:                       49  (0.0212674); expected 46.1 (0.02)
+Passed Vit filter:                         5  (0.00217014); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000868056); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6658.35
+//
+[ok]

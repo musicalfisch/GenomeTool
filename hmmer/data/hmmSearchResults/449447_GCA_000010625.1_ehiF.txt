@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ehiF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/449447_GCA_000010625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ehiF  [M=298]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-05   22.2   8.7    2.9e-05   21.9   8.2    1.3  1  BAG02975.1  sulfate transport system permease protein [Microc
+    0.00015   19.5  13.1    0.00058   17.6  13.1    1.8  1  BAG02974.1  sulfate transport system permease protein [Microc
+
+
+Domain annotation for each sequence (and alignments):
+>> BAG02975.1  sulfate transport system permease protein [Microcystis aeruginosa NIES-843]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   8.2   9.3e-09   2.9e-05      99     288 ..      89     269 ..      45     277 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 9.3e-09
+        ehiF  99 lvnqklrgitwfrmayytpvitsivvagiawkalyasngilnqilallgfsdgipwltspnlalwsvmvvtvwkglgyymviylaglqaipqelyeaga 197
+                 lv  ++ g   +  +   p      vag+   ++y+ ng l q +a +g+           +++  v+v  ++  l + +      lq + +e+ ea  
+  BAG02975.1  89 LVRYRFPGKKIVDACVDLPFALPTSVAGLVLATVYSDNGWLGQFFAPFGIKI--------SFTILGVFVAMLFIALPFIVRTLQPVLQEMEKEVEEAAL 179
+                 55555556666666666677777889******************99887653........456778999999999*9999999999************* PP
+
+        ehiF 198 idgadgwrqhwditiplmrpycflvgvlssisalkvfeevyimtqggplnasktvvyyvyerafqdlemnyasaiglvlflv.ififsvinl 288
+                   ga  w+ +w +  p + p  +    l    a+  +  v i++   p++   + v  +++r +++ +   a+ ig+vl+lv +f++ vin+
+  BAG02975.1 180 SLGASSWQIFWRVIFPTILPAILTGVALGFARAIGEYGSVVIISSNIPFKDLIAPVL-IFQR-LEEYDYTGATVIGMVLLLVsLFMLVVINF 269
+                 ********************876666688899****************987665553.4554.67778888999*****9985799999996 PP
+
+>> BAG02974.1  sulfate transport system permease protein [Microcystis aeruginosa NIES-843]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.6  13.1   1.8e-07   0.00058      74     266 ..      62     245 ..      13     274 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 17.6 bits;  conditional E-value: 1.8e-07
+        ehiF  74 tfrhtllylvgvvpllimlplglailv.nqklrgitwfrmayytpvitsivvagiawkalyasngilnqilallgfsdgipwltspnlalwsvmvvtvw 171
+                 +++ t++  +  vpl  ++ l  a ++  +++rg t +      p   s vvag+    ly  ng l   l    f d    ++ p + l      t++
+  BAG02974.1  62 AVKLTVIIALITVPLNTIFGLCAAWVIaRNQFRGKTLLISLIDLPFAVSPVVAGLMIVLLYGRNGWLGSFL---EFFDIKILFALPGMVL-----ATIF 152
+                 55667777777899999999998865515789**********************************99765...5666555555566555.....5555 PP
+
+        ehiF 172 kglgyymviylaglqaipqelyeagaidgadgwrqhwditiplmrpycflvgvlssisalkvfeevyimtqggplnasktvvyyvyerafqdlem 266
+                   + +     +  l+ i  e  eag   ga  w+ +w it+p +r   +   +l++  a+  f  v ++  g  l  + t+  +v e+a+++   
+  BAG02974.1 153 VTMPFVAREVIPVLEEIGLEQEEAGRTLGASDWQIFWRITLPNIRWGLMYGVLLTNARAMGEFGAVSVV-SGSILGRTATLPIFV-EQAYKNYLT 245
+                 5566666666777899999999**********************9665555556788899999999876.477777777776665.566665433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (298 nodes)
+Target sequences:                         6311  (1578908 residues searched)
+Passed MSV filter:                       175  (0.0277294); expected 126.2 (0.02)
+Passed bias filter:                       88  (0.0139439); expected 126.2 (0.02)
+Passed Vit filter:                        14  (0.00221835); expected 6.3 (0.001)
+Passed Fwd filter:                         2  (0.000316907); expected 0.1 (1e-05)
+Initial search space (Z):               6311  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 7841.91
+//
+[ok]

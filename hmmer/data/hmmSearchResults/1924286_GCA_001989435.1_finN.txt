@@ -1,0 +1,100 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924286_GCA_001989435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-05   19.7   2.9      0.012   12.5   0.3    2.2  2  AQL32689.1  NAD(P)H-quinone oxidoreductase subunit I [Prochlo
+    0.00048   17.1   7.0      0.028   11.3   1.4    2.1  2  AQL32942.1  photosystem I subunit VII [Prochlorococcus sp. RS
+     0.0019   15.1   3.4      0.059   10.3   0.5    3.0  3  AQL32834.1  tRNA epoxyqueuosine(34) reductase QueG [Prochloro
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL32689.1  NAD(P)H-quinone oxidoreductase subunit I [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   0.3     2e-05     0.012       7      23 ..      62      78 ..      57      91 .. 0.83
+   2 !    7.6   0.1   0.00071      0.42       8      27 ..     103     122 ..      95     134 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 2e-05
+        finN  7 sqciscdlclsvcptna 23
+                 +ci+c++c+ vcp+n 
+  AQL32689.1 62 DKCIACEVCVRVCPINL 78
+                58************984 PP
+
+  == domain 2  score: 7.6 bits;  conditional E-value: 0.00071
+        finN   8 qciscdlclsvcptnavkvi 27 
+                  ci c  c+  cptn++ + 
+  AQL32689.1 103 VCIFCGNCVEYCPTNCLSMT 122
+                 6**************98765 PP
+
+>> AQL32942.1  photosystem I subunit VII [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.3   1.4   4.7e-05     0.028       2      27 ..       4      29 ..       3      41 .. 0.87
+   2 !    9.4   0.4   0.00019      0.11       6      25 ..      45      64 ..      39      73 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 4.7e-05
+        finN  2 aykitsqciscdlclsvcptnavkvi 27
+                a ki   ci c  c+  cp + + ++
+  AQL32942.1  4 AVKIYDTCIGCTQCVRACPLDVLEMV 29
+                679999**************999887 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 0.00019
+        finN  6 tsqciscdlclsvcptnavk 25
+                t +c+ c+ c + cpt+ + 
+  AQL32942.1 45 TEDCVGCKRCETACPTDFLS 64
+                789*************8654 PP
+
+>> AQL32834.1  tRNA epoxyqueuosine(34) reductase QueG [Prochlorococcus sp. RS01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.1   0.0      0.69   4.1e+02      62      79 ..      38      56 ..      27      81 .. 0.62
+   2 !   10.3   0.5   9.9e-05     0.059       7      25 ..     188     206 ..     185     231 .. 0.79
+   3 !    4.2   0.1    0.0079       4.7      10      25 ..     242     257 ..     233     279 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -2.1 bits;  conditional E-value: 0.69
+        finN 62 vkqpndyweswfan.ynrv 79
+                vk  ++  e w+an y   
+  AQL32834.1 38 VKLRTNALERWLANnYHGE 56
+                4555666677776414333 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 9.9e-05
+        finN   7 sqciscdlclsvcptnavk 25 
+                 s c  cdlc+  cpt+a+ 
+  AQL32834.1 188 SLCGKCDLCIEHCPTKAIV 206
+                 7799***********9973 PP
+
+  == domain 3  score: 4.2 bits;  conditional E-value: 0.0079
+        finN  10 iscdlclsvcptnavk 25 
+                   cd+c  vcp n   
+  AQL32834.1 242 AGCDICQDVCPWNKSV 257
+                 57*********98654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         1795  (496009 residues searched)
+Passed MSV filter:                        91  (0.0506964); expected 35.9 (0.02)
+Passed bias filter:                       75  (0.0417827); expected 35.9 (0.02)
+Passed Vit filter:                         7  (0.00389972); expected 1.8 (0.001)
+Passed Fwd filter:                         3  (0.00167131); expected 0.0 (1e-05)
+Initial search space (Z):               1795  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 5803.31
+//
+[ok]

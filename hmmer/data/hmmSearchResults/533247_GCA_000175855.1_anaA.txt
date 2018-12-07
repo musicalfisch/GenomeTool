@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533247_GCA_000175855.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.9e-36  121.9   0.0      5e-36  121.6   0.0    1.0  1  EFA73500.1  Thioesterase [Raphidiopsis brookii D9]
+     0.0072   12.9   0.0      0.024   11.2   0.0    1.7  2  EFA73135.1  Non-ribosomal peptide synthase [Raphidiopsis broo
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA73500.1  Thioesterase [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  121.6   0.0   3.3e-39     5e-36      18     239 ..      16     240 ..      10     248 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 121.6 bits;  conditional E-value: 3.3e-39
+        anaA  18 hhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgc 116
+                  h e +l lfc+p aga + +f +w   +p ++++ +v +pgr  r+k p   +   l+  + + i p  + pf +fghs+g +v +e+a+ l   +g 
+  EFA73500.1  16 PHSEPQLRLFCLPYAGARASVFYQWSKNLPSTVEIRSVELPGR-GRVKYPPFRKMELLVRAIAEHILPLLDRPFAIFGHSMGGLVGFELARLLRSEYGL 113
+                 6999**************************************9.59****************************************************7 PP
+
+        anaA 117 ...fpqclvvsgrkpph.ipcdhrdsqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleel 211
+                     p  l +s r+ p+    d r  +  d +++e++    gtp+ v+++pe+  + lpi rad+++ + y y  e  +  pi  +gg  d  v+ ++l
+  EFA73500.1 114 eykTPLHLFISARNAPQnHSRDERIYHLPDGEFLEKIAKYNGTPDEVFKNPEMRELFLPILRADFEVLDTYIYKVEPPFDFPITVFGGSEDTTVNHDDL 212
+                 43368899*****988615679999************************************************************************** PP
+
+        anaA 212 rewekytqrgfklrsfpgghmylteeke 239
+                   w+++t+  f   ++pg h+++   +e
+  EFA73500.1 213 VGWKEHTNGEFSCYTLPGNHFFIRSHQE 240
+                 **********************988776 PP
+
+>> EFA73135.1  Non-ribosomal peptide synthase [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.7   0.0     0.026        39      71     132 ..     623     687 ..     609     691 .. 0.75
+   2 !   11.2   0.0   1.6e-05     0.024      65     112 ..     681     729 ..     644     743 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 0.7 bits;  conditional E-value: 0.026
+        anaA  71 rwgdlieplvqeiypysqspfvffghslgs..vvslevahqlgdrfgcfp.qclvvsgrkpphip 132
+                 +   l+   +  i p    p +f+ hslg   +    +a +lg    ++  qc  + g +pp + 
+  EFA73135.1 623 QNQGLVHSSLVAIQPQGSQPPLFLIHSLGGelLCYRHLAIHLGTEQPVYGlQCQGLDGEEPPLVR 687
+                 4555777777789999999999******9722334578889998888774499999999999775 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 1.6e-05
+        anaA  65 keplitrwgdlieplvqeiypy.sqspfvffghslgsvvslevahqlgd 112
+                 +ep + r  d+    +qei     q p+ + g+s+g vv+ e+a+ql  
+  EFA73135.1 681 EEPPLVRVEDMAAHYLQEIRTVqPQGPYFLGGYSFGGVVAYEMARQLEK 729
+                 588899*************875269*********************964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         3007  (904229 residues searched)
+Passed MSV filter:                        71  (0.0236116); expected 60.1 (0.02)
+Passed bias filter:                       68  (0.0226139); expected 60.1 (0.02)
+Passed Vit filter:                         8  (0.00266046); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000665115); expected 0.0 (1e-05)
+Initial search space (Z):               3007  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7625.66
+//
+[ok]

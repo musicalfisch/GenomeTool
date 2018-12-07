@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165095_GCA_000350125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-11   41.1   5.0    4.1e-11   39.8   5.0    1.7  1  CCH65338.1  Ferredoxin [Richelia intracellularis HM01]
+    2.8e-05   21.0   6.2    0.00023   18.0   6.2    2.3  1  CCH65211.1  Iron-sulfur cluster-binding protein [Richelia int
+    0.00015   18.6   6.9      0.011   12.5   1.4    2.1  2  CCH65511.1  photosystem I iron-sulfur center subunit VII (Psa
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH65338.1  Ferredoxin [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.8   5.0   7.3e-14   4.1e-11       1      58 [.       1      58 [.       1      67 [. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 39.8 bits;  conditional E-value: 7.3e-14
+        finN  1 maykitsq.ciscdlclsvcptnavkvidgnrwidpelctncvgsvysvpqckagcptc 58
+                m y i  q c+ cd c   cp++a+k+ + + widp lc +c g  y  pqc + cp  
+  CCH65338.1  1 MPYTIRNQsCLGCDNCRLQCPMGAIKIENNKYWIDPSLCNDCKG-YYPKPQCATVCPNN 58
+                678887766*********************************87.69**********75 PP
+
+>> CCH65211.1  Iron-sulfur cluster-binding protein [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.0   6.2     4e-07   0.00023       6      76 ..     130     203 ..     127     251 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 18.0 bits;  conditional E-value: 4e-07
+        finN   6 tsqciscdlclsvcptnavk...vidgnrwidpelctncvgsv..ysvpqckagcptcdgcvkqpndyweswfany 76 
+                 t  c sc+lcl  cptna+    ++d nr i  +   n  + +    +p  +  +  cd c       w++ fa+ 
+  CCH65211.1 130 TQHCGSCNLCLQACPTNAITqpfIVDANRCIAYHTIENQDEQLpeMIIPHLHGWVAGCDICQ--DVCPWNQRFAQE 203
+                 778****************76669*******9999999887763345677765555555553..233455555544 PP
+
+>> CCH65511.1  photosystem I iron-sulfur center subunit VII (PsaC) [Richelia intracellularis HM01]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.5   1.4     2e-05     0.011       3      27 ..       5      29 ..       3      40 .. 0.86
+   2 !    9.6   0.4   0.00016     0.091       6      25 ..      45      64 ..      39      73 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 2e-05
+        finN  3 ykitsqciscdlclsvcptnavkvi 27
+                 ki   ci c  c+  cpt+ + ++
+  CCH65511.1  5 VKIYDTCIGCTQCVRACPTDVLEMV 29
+                589999**************99987 PP
+
+  == domain 2  score: 9.6 bits;  conditional E-value: 0.00016
+        finN  6 tsqciscdlclsvcptnavk 25
+                t +c+ c+ c + cpt+ + 
+  CCH65511.1 45 TEDCVGCKRCETACPTDFLS 64
+                789*************8654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         1674  (329974 residues searched)
+Passed MSV filter:                        48  (0.0286738); expected 33.5 (0.02)
+Passed bias filter:                       39  (0.0232975); expected 33.5 (0.02)
+Passed Vit filter:                         6  (0.00358423); expected 1.7 (0.001)
+Passed Fwd filter:                         3  (0.00179211); expected 0.0 (1e-05)
+Initial search space (Z):               1674  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 3860.70
+//
+[ok]

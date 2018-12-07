@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aglE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aglE  [M=421]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      8e-07   26.7   0.0    3.1e-06   24.8   0.0    1.7  2  ACC81330.1  extracellular solute-binding protein, family 1 [N
+     0.0032   14.8   0.0     0.0047   14.3   0.0    1.2  1  ACC83954.1  extracellular solute-binding protein, family 1 [N
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC81330.1  extracellular solute-binding protein, family 1 [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.8   0.0   9.4e-10   3.1e-06      44     178 ..      39     174 ..       5     181 .. 0.85
+   2 ?   -0.8   0.0     0.053   1.8e+02     279     359 ..     258     339 ..     245     347 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 24.8 bits;  conditional E-value: 9.4e-10
+        aglE  44 qekieqalapft.eatgievvyegv.dtfattlpirvdsgrapdlamfpqpglmadfar.egklvplgeiltpeemteaydqawldlaavdgtvygvwy 139
+                 q+ + q l  f  +   i+v ye + d +   +  r+    apd+  f    l a f   +  l pl   +tpe     ++++ ld    +  +yg+  
+  ACC81330.1  39 QKLLRQVLREFEvQHPTIKVKYEVIsDQYMDVIKTRLVGEAAPDV--FYLDALEAPFLMsQNVLEPLESYITPEFDLTDFEDTLLDSFKYQNHIYGLPK 135
+                 555677787775255689*****8758999**************6..556678888765156688*********98889999***************99 PP
+
+        aglE 140 rasvkslvwfnpqefaangyev.pgtweemmalsqrlidk 178
+                   s  +l ++n + faa g    p tw+e+   s++li k
+  ACC81330.1 136 DYSTLAL-FYNKKAFAAAGLSNpPATWDELRNYSKQLIGK 174
+                 9998776.789********865279*************87 PP
+
+  == domain 2  score: -0.8 bits;  conditional E-value: 0.053
+        aglE 279 nfiaaflpadvdddqvdifplppieeeyglpilvagdif.amfndtpearqlmaylassrphevaatlgayisphknidlnl 359
+                 n+   +l     + +    p+p i+ + g  ++    ++    +   ea +l++yl+     +  +  g  +  +k +  nl
+  ACC81330.1 258 NWAIPYLTETFPQVEFATAPVPTINGKKGTMVFTVAYVMnKQAQHKAEAWKLISYLTGKEGMQKWTGTGFALPTRKSVAKNL 339
+                 5555555555555555667888888888877665544440455667888888888887766666555565555555555555 PP
+
+>> ACC83954.1  extracellular solute-binding protein, family 1 [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.0   1.4e-06    0.0047      58     176 ..      83     201 ..      25     208 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 1.4e-06
+        aglE  58 tgievvyegvdtfattlpirvdsgrapdlamfpqpglmadfaregklvplgeiltpeemteaydqawldlaavdgtvygvwyrasvkslvwfnpqefaa 156
+                   +e +y g +   t   +    g ap   ++ +p +  ++     l+pl e+l    +    d a       +g ++ v + +  +  +++ p  f a
+  ACC83954.1  83 IQVESLYVGQQDQQTPKILAAVVGNAPPDLLWYNPTIAGQLVELNALLPLDELLDKSPIKAEIDPALYGSMKYNGKIWSVPFAT-NNVGIFYRPSLFKA 180
+                 4577888888888888778888899988788999**********************************************9965.5667899*****99 PP
+
+        aglE 157 ngy.evpgtweemmalsqrli 176
+                  g  e+p tw+e+  ++++l 
+  ACC83954.1 181 AGItELPRTWQEFAQVAKKLT 201
+                 88549********99999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (421 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       168  (0.0251121); expected 133.8 (0.02)
+Passed bias filter:                      141  (0.0210762); expected 133.8 (0.02)
+Passed Vit filter:                         9  (0.00134529); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 10876.30
+//
+[ok]

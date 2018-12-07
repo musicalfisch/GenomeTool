@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccbP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1337936_GCA_000734895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccbP  [M=126]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.3e-65  215.7   5.1    5.9e-65  215.5   5.1    1.0  1  AKG23842.1  calcium binding protein from Anabaena CcbP [Calot
+  ------ inclusion threshold ------
+      0.033   12.7   0.0      0.038   12.5   0.0    1.1  1  AKG23453.1  hypothetical protein IJ00_21175 [Calothrix sp. 33
+
+
+Domain annotation for each sequence (and alignments):
+>> AKG23842.1  calcium binding protein from Anabaena CcbP [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  215.5   5.1   2.3e-68   5.9e-65       1     126 []       1     127 []       1     127 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 215.5 bits;  conditional E-value: 2.3e-68
+        ccbP   1 masverdetrehrieteiivdae.dkedramgwyyylddtlnfpflakwkkksrktstieekevevlgmapddeclkdmyvevadingkdddvysakls 98 
+                 masve de re+rie e++vd++ dke+ramgwyyyldd ln+pf a w kksrk+ t +e evevlgmap+d+cl+dm+veva++ngk+ddvysakls
+  AKG23842.1   1 MASVEYDEVREKRIEEEVLVDTDnDKEERAMGWYYYLDDCLNVPFNAIWIKKSRKSPTPQEIEVEVLGMAPEDDCLRDMFVEVAYLNGKEDDVYSAKLS 99 
+                 99*******************8549************************************************************************** PP
+
+        ccbP  99 eieaidadeetqeaiadwlywlargykf 126
+                 e++++dade+tqeaiadw+yw+ rgykf
+  AKG23842.1 100 ELKVLDADEDTQEAIADWMYWINRGYKF 127
+                 ***************************9 PP
+
+>> AKG23453.1  hypothetical protein IJ00_21175 [Calothrix sp. 336/3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   1.5e-05     0.038      85     115 ..       9      39 ..       4      47 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 1.5e-05
+        ccbP  85 ingkdddvysaklseieaidadeetqeaiad 115
+                 i  k+dd+y a+  e+ +id  +  +eaia 
+  AKG23453.1   9 ILHKEDDMYIAECPEVGTIDQGKTIEEAIAG 39 
+                 5679*************************96 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (126 nodes)
+Target sequences:                         5043  (1611367 residues searched)
+Passed MSV filter:                       109  (0.0216141); expected 100.9 (0.02)
+Passed bias filter:                       96  (0.0190363); expected 100.9 (0.02)
+Passed Vit filter:                         5  (0.000991473); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396589); expected 0.1 (1e-05)
+Initial search space (Z):               5043  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 10151.61
+//
+[ok]

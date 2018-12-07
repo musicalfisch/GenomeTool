@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-13   47.4   0.9    2.6e-11   41.2   0.1    2.1  2  BAB75641.1  all3942 [Nostoc sp. PCC 7120]
+     0.0095   13.0   0.0       0.14    9.1   0.0    1.9  2  BAB77782.1  plastocyanin precursor [Nostoc sp. PCC 7120]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB75641.1  all3942 [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.2   0.1   8.5e-15   2.6e-11      50     169 ..      83     195 ..      68     216 .. 0.85
+   2 !    4.8   0.1   0.00091       2.8     425     494 ..     261     328 ..     246     330 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 41.2 bits;  conditional E-value: 8.5e-15
+        cueA  50 letalearpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyy 147
+                  e  l a   +i+l      n+   ng+ipgp l ak gd +++ f n+  ++  lh+hg+h  +    d +   v    +  yef      p g   y
+  BAB75641.1  83 REFQLTAGTSVIQLNSAvSYNIWDLNGRIPGPTLRAKQGDRIRVLFHNQAGHSHSLHFHGVHPAEM---DGV-RPVSNNSATIYEFD---AEPYGVHLY 174
+                 56778888888998765156999***************************************6654...444.4677888899**96...68******* PP
+
+        cueA 148 hphlhelvaeqvfgglggifvv 169
+                 h h+ e v+ ++  gl g+f++
+  BAB75641.1 175 HCHI-EPVTRHIAKGLYGMFII 195
+                 ***9.678999*********98 PP
+
+  == domain 2  score: 4.8 bits;  conditional E-value: 0.00091
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                  +fhlh+n f+v  r g         d + +   e   +   fr + gk ++h h     + g mg   v
+  BAB75641.1 261 VTFHLHANFFDV-YRYGMSMKASEKTDVITMGVAERHILEFAFR-YPGKYMFHPHQDAIAENGCMGQFEV 328
+                 57******9998.5899988888888999999999999999998.89********999899999986655 PP
+
+>> BAB77782.1  plastocyanin precursor [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.3   0.0    0.0052        16      37      92 ..      14      65 ..       4      86 .. 0.72
+   2 !    9.1   0.0   4.5e-05      0.14     264     311 ..      86     133 ..      77     139 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.3 bits;  conditional E-value: 0.0052
+        cueA 37 anlta.lttssnglletalearpglirlgqqqgnlltyngqipgprleakpgdtvki 92
+                a lt  l  ss  ++  +  a    ++lg ++g l+ ++      +l  kpgdtv  
+  BAB77782.1 14 AVLTVlLVVSSFAVFTPSASAETYTVKLGSDKGLLV-FE----PAKLTIKPGDTVEF 65
+                555551456777788888888888999999988554.43....46899******974 PP
+
+  == domain 2  score: 9.1 bits;  conditional E-value: 4.5e-05
+        cueA 264 ggsiakpvelrelllspgeraevlvqgkrppgryrllslpydrggamg 311
+                    +ak +  ++ll+spg+ +      + p g+y +   p+   g +g
+  BAB77782.1  86 SADLAKSLSHKQLLMSPGQSTSTTFPADAPAGEYTFYCEPHRGAGMVG 133
+                 56789********************************99986555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       163  (0.0265819); expected 122.6 (0.02)
+Passed bias filter:                      138  (0.0225049); expected 122.6 (0.02)
+Passed Vit filter:                        10  (0.00163079); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326158); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 13956.16
+//
+[ok]

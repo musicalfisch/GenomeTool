@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395962_GCA_000024045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.4e-07   27.1   3.4    5.4e-07   27.1   3.4    2.3  2  ACV02130.1  fatty acid desaturase [Cyanothece sp. PCC 8802]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACV02130.1  fatty acid desaturase [Cyanothece sp. PCC 8802]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.1   3.4   1.2e-10   5.4e-07      48     134 ..      51     135 ..      36     140 .. 0.86
+   2 ?   -0.2   1.8     0.024   1.1e+02     228     249 ..     202     223 ..     190     292 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 27.1 bits;  conditional E-value: 1.2e-10
+        desD  48 iaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgyd 134
+                 + +  +vl+    w+l     +  g+gl+g  f +ghd+ h  +s++ wvn+l+g      i    + wr+ h+y hh +tn l  d
+  ACV02130.1  51 MVSLGYVLLAVVPWYLLPFVWIFTGTGLTGF-FVLGHDCGHRSFSNRTWVNNLVGHLLFLPIIYPFHSWRILHDY-HHKHTNKLEVD 135
+                 4555688888889999999999*******97.99*********************9888888888999******9.78899988766 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.024
+        desD 228 iaigflivfmtygvlachvfml 249
+                   igf i fmt gv     f l
+  ACV02130.1 202 AVIGFPILFMTLGVWGFVKFWL 223
+                 4578888888888876544433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         4444  (1355257 residues searched)
+Passed MSV filter:                       191  (0.0429793); expected 88.9 (0.02)
+Passed bias filter:                      108  (0.0243024); expected 88.9 (0.02)
+Passed Vit filter:                         9  (0.0020252); expected 4.4 (0.001)
+Passed Fwd filter:                         1  (0.000225023); expected 0.0 (1e-05)
+Initial search space (Z):               4444  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 12332.84
+//
+[ok]

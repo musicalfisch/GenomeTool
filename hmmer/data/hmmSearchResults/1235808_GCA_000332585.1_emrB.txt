@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1235808_GCA_000332585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrB  [M=528]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    9.2e-09   32.7   9.3    6.1e-05   20.1   0.6    2.4  3  lcl|AOCI01000136.1_prot_ELS47269.1_2944  [locus_tag=C789_2944] [protein=m
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|AOCI01000136.1_prot_ELS47269.1_2944  [locus_tag=C789_2944] [protein=major Facilitator Superfamily protein] [prote
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.1   0.6   1.1e-08   6.1e-05      51     203 ..      45     197 ..      24     207 .. 0.76
+   2 ?   -2.2   0.0     0.062   3.5e+02      84     114 ..     217     247 ..     211     259 .. 0.73
+   3 !   17.8   0.8   5.2e-08   0.00029      65     171 ..     262     369 ..     250     399 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 20.1 bits;  conditional E-value: 1.1e-08
+                                     emrB  51 vlgalveevglvvtgyalanvvlillaalledffgkktyvvfslvgfilss...llcgfainlpllvvsr 117
+                                              +lg   + +g+v++ +a+    lil   +l+++ +++   + +l g+i+++   l  +f   l+ l + r
+  lcl|AOCI01000136.1_prot_ELS47269.1_2944  45 SLGGSKQDIGFVMGAFAIG---LILSRSWLGNLVDRRSRKLVVLFGTIVAAtapLGYLFFRDLSSLFAVR 111
+                                              4566677889999988876...566777888887777666666666665541115567777888899999 PP
+
+                                     emrB 118 ilqglgGGgllakaqailfetfPaeqqglaqavfgvgvia..gaaigpllGglltdslgrriifiinlpv 185
+                                                 gl    +    + ++ ++ P  q+g   +++  +++a  g  igp lG +l +s g+  +f++    
+  lcl|AOCI01000136.1_prot_ELS47269.1_2944 112 AYHGLSIAAFTTGYSTLVVDFSPVRQRGE--IIGYMSLTApiGMGIGPALGSYLYESIGYNGLFLVSAAS 179
+                                              99************************996..5555555551157899*********************** PP
+
+                                     emrB 186 giaavlmalflladddkd 203
+                                              g++a l+ + +  +d k+
+  lcl|AOCI01000136.1_prot_ELS47269.1_2944 180 GAIAFLLGFSIQEPDFKK 197
+                                              999998877776666544 PP
+
+  == domain 2  score: -2.2 bits;  conditional E-value: 0.062
+                                     emrB  84 fgkktyvvfslvgfilssllcgfainlpllv 114
+                                               + + ++v +lv++++ +l++g    lpl +
+  lcl|AOCI01000136.1_prot_ELS47269.1_2944 217 CQERAFLVPTLVFLLVGTLFGGLVAFLPLFL 247
+                                              5778888888888888888877766666654 PP
+
+  == domain 3  score: 17.8 bits;  conditional E-value: 5.2e-08
+                                     emrB  65 gyalanvvlillaalledffgkktyvvfslvgfilssllcgfainlpllvvsrilqglgGGgllakaqai 134
+                                               +a++ v+   l+    d +g+  ++  s+  + ls+l+  +a  ++ l+++ il+g gGG l     a+
+  lcl|AOCI01000136.1_prot_ELS47269.1_2944 262 CAAVSGVIGRILSGGASDRYGRGLFITISVFCYGLSMLVLSSARSPSDLILAAILEGTGGGILFPMLLAL 331
+                                              56777788888888899999************************************************** PP
+
+                                     emrB 135 lfetfPaeqqglaqavfgvgv.iagaaigpllGglltd 171
+                                              + +   ++++g a  + ++g  +++a  gp+lG l   
+  lcl|AOCI01000136.1_prot_ELS47269.1_2944 332 ISDRSGPQERGRAYSICVGGFdVGTALAGPILGVLAIS 369
+                                              ***99999999999998888746778899999987643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (528 nodes)
+Target sequences:                         5571  (1335648 residues searched)
+Passed MSV filter:                       191  (0.0342847); expected 111.4 (0.02)
+Passed bias filter:                       77  (0.0138216); expected 111.4 (0.02)
+Passed Vit filter:                        10  (0.00179501); expected 5.6 (0.001)
+Passed Fwd filter:                         1  (0.000179501); expected 0.1 (1e-05)
+Initial search space (Z):               5571  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 11753.70
+//
+[ok]

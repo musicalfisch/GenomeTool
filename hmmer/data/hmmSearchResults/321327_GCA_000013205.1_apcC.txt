@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-46  151.5   0.2    6.4e-46  151.4   0.2    1.0  1  ABD00363.1  phycobilisome 7.8 kDa linker polypeptide, allophy
+    1.1e-06   25.7   0.0    1.6e-06   25.3   0.0    1.5  2  ABC98442.1  phycobilisome 8.9 kDa linker polypeptide, phycocy
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD00363.1  phycobilisome 7.8 kDa linker polypeptide, allophycocyanin-associated, core [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.4   0.2   4.6e-49   6.4e-46       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 151.4 bits;  conditional E-value: 4.6e-49
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqri+k GG+i+kvel++Gkpg+++Gll
+  ABD00363.1  1 MRMFKITACVPSQTRIRTQRELQNTYFTKLVPYDNWFREQQRIQKSGGRILKVELVAGKPGIDVGLL 67
+                9****************************************************************96 PP
+
+>> ABC98442.1  phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0      0.54   7.5e+02      46      55 ..      15      24 ..      12      29 .. 0.71
+   2 !   25.3   0.0   1.1e-09   1.6e-06      29      64 ..      47      82 ..      17      85 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.54
+        apcC 46 mGGkivkvel 55
+                 G ++ kve 
+  ABC98442.1 15 AGSRVYKVEY 24
+                5777778775 PP
+
+  == domain 2  score: 25.3 bits;  conditional E-value: 1.1e-09
+        apcC 29 klvpydnWfreqqrimkmGGkivkvelatGkpgtnt 64
+                  vpy     e qri++mGGkiv+v   +  p++  
+  ABC98442.1 47 ITVPYSRLSTEMQRILRMGGKIVQVTALSAAPAQSN 82
+                569**********************87776666555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                        64  (0.0231884); expected 55.2 (0.02)
+Passed bias filter:                       64  (0.0231884); expected 55.2 (0.02)
+Passed Vit filter:                         6  (0.00217391); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000724638); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 2768.17
+//
+[ok]

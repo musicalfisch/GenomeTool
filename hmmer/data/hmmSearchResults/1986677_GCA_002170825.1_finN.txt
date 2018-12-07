@@ -1,0 +1,94 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986677_GCA_002170825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00013   18.5   4.0      0.011   12.3   0.4    2.3  2  OUW27861.1  NAD(P)H-quinone oxidoreductase subunit I [Cyanoba
+       0.01   12.5   1.6       0.24    8.0   0.2    2.3  2  OUW29200.1  tRNA epoxyqueuosine(34) reductase QueG [Cyanobact
+  ------ inclusion threshold ------
+       0.11    9.1  10.5      0.018   11.7   2.1    2.1  2  OUW30060.1  ferredoxin [Cyanobacteria bacterium TMED177]
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW27861.1  NAD(P)H-quinone oxidoreductase subunit I [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.4   2.4e-05     0.011       7      23 ..      62      78 ..      57      90 .. 0.83
+   2 !    7.3   0.2   0.00083      0.39       8      27 ..     103     122 ..      95     131 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 2.4e-05
+        finN  7 sqciscdlclsvcptna 23
+                 +ci+c++c+ vcp+n 
+  OUW27861.1 62 DKCIACEVCVRVCPINL 78
+                58************984 PP
+
+  == domain 2  score: 7.3 bits;  conditional E-value: 0.00083
+        finN   8 qciscdlclsvcptnavkvi 27 
+                  ci c  c+  cptn++ + 
+  OUW27861.1 103 VCIFCGNCVEYCPTNCLSMT 122
+                 6**************98765 PP
+
+>> OUW29200.1  tRNA epoxyqueuosine(34) reductase QueG [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    8.0   0.2   0.00051      0.24       7      34 ..     189     219 ..     186     230 .. 0.81
+   2 ?    3.3   0.1     0.014       6.8      10      22 ..     243     255 ..     234     262 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.00051
+        finN   7 sqciscdlclsvcptnavk...vidgnrwid 34 
+                 s c  c  cl  cpt+a+    v+d  r i 
+  OUW29200.1 189 SLCGRCTACLDACPTKAITepfVVDSRRCIA 219
+                 77999************96555788777765 PP
+
+  == domain 2  score: 3.3 bits;  conditional E-value: 0.014
+        finN  10 iscdlclsvcptn 22 
+                   cd+c  vcp n
+  OUW29200.1 243 AGCDICQDVCPWN 255
+                 57*********87 PP
+
+>> OUW30060.1  ferredoxin [Cyanobacteria bacterium TMED177]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.7   1.4     0.023        11       5      25 ..       6      26 ..       1      38 [. 0.72
+   2 ?   11.7   2.1   3.8e-05     0.018       8      24 ..      45      61 ..      38      69 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 2.7 bits;  conditional E-value: 0.023
+        finN  5 itsqciscdlclsvcptnavk 25
+                +t  c     c+  cp++++ 
+  OUW30060.1  6 VTDVCEGIADCVDACPVACID 26
+                466788888899999998876 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 3.8e-05
+        finN  8 qciscdlclsvcptnav 24
+                 ci c +cl vcp++  
+  OUW30060.1 45 TCIDCGICLQVCPVEGA 61
+                7************9764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         1406  (396538 residues searched)
+Passed MSV filter:                        36  (0.0256046); expected 28.1 (0.02)
+Passed bias filter:                       32  (0.0227596); expected 28.1 (0.02)
+Passed Vit filter:                         4  (0.00284495); expected 1.4 (0.001)
+Passed Fwd filter:                         3  (0.00213371); expected 0.0 (1e-05)
+Initial search space (Z):               1406  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4639.49
+//
+[ok]

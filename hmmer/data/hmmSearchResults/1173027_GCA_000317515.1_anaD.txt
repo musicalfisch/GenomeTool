@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173027_GCA_000317515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-06   25.2   0.6      7e-06   25.1   0.6    1.1  1  AFZ17611.1  phosphopantetheine-containing protein [Microcoleu
+  ------ inclusion threshold ------
+      0.023   13.8   0.4      0.034   13.2   0.4    1.4  1  AFZ18177.1  phosphopantetheine-containing protein [Microcoleu
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ17611.1  phosphopantetheine-containing protein [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.1   0.6   2.2e-09     7e-06      23      82 ..      17      76 ..       2      81 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 25.1 bits;  conditional E-value: 2.2e-09
+        anaD 23 tnlvltnnlkiieqrvidsmdifrlvrfveeevgifwepeelvlknfetidhikayilrk 82
+                 n  l ++  i     ++sm  ++lv f+e+e+ +  e e+l + nf ti+ ++  i  k
+  AFZ17611.1 17 GNHQLQDDEDIFALGFVNSMFAMQLVLFLEKEFNVTIENEDLDFDNFRTIEAMNRLIQSK 76
+                4556788889999999***********************************998877665 PP
+
+>> AFZ18177.1  phosphopantetheine-containing protein [Microcoleus sp. PCC 7113]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.4   1.1e-05     0.034      39      82 ..      39      82 ..       3      86 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 1.1e-05
+        anaD 39 idsmdifrlvrfveeevgifwepeelvlknfetidhikayilrk 82
+                +ds+  + lv  ++e + + +e  e+ + nf t+ +i   i +k
+  AFZ18177.1 39 LDSITAMSLVLTLQETFEVAFETSEISFDNFRTLGNIVELIEKK 82
+                6999999*****************************98877665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         6441  (2166530 residues searched)
+Passed MSV filter:                       144  (0.0223568); expected 128.8 (0.02)
+Passed bias filter:                      114  (0.0176991); expected 128.8 (0.02)
+Passed Vit filter:                         6  (0.000931532); expected 6.4 (0.001)
+Passed Fwd filter:                         2  (0.000310511); expected 0.1 (1e-05)
+Initial search space (Z):               6441  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 4712.20
+//
+[ok]

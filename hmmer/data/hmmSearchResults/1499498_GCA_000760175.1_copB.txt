@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copB  [M=406]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-13   44.9   1.8    4.1e-09   32.5   0.8    2.6  3  KGG12135.1  putative membrane fusion protein [Prochlorococcus
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG12135.1  putative membrane fusion protein [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.7   0.0   1.8e-05     0.035      34      98 ..      52     116 ..      47     123 .. 0.88
+   2 ?   -1.4   0.0     0.044        83     133     161 ..     123     151 ..     119     174 .. 0.82
+   3 !   32.5   0.8   2.2e-12   4.1e-09     211     386 ..     173     359 ..     160     363 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 1.8e-05
+        copB  34 rtttvnvttaklatigrnldytgttrplkvvslrsqatgqllnlvvdvgdevqlgqilarvddrl 98 
+                 r  t    ta+       ++ +g    +k + +  +  g + ++ ++ gd v++gq++a++ d+ 
+  KGG12135.1  52 RDITSYTMTAEQGMLSSVINASGELGAIKRININPDRQGLIEEIYIEEGDSVKMGQVIAKIVDKG 116
+                 6667777888888888999999999999********************************99975 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.044
+        copB 133 rlqlqyqqakndgerlqklalegaiplqq 161
+                  l+ ++++ k   +r +kl  egai  ++
+  KGG12135.1 123 ELNAEFENKKSAYDRRKKLFTEGAISAEK 151
+                 5777889999999***********98765 PP
+
+  == domain 3  score: 32.5 bits;  conditional E-value: 2.2e-12
+        copB 211 qayailkspatgivieklkepgdlvsigdevl......k..igdf.qqvkvvvllseldlktinlgqtvnvsldafgernfsgritrifpls..qgtar 298
+                 +   ++k+p +g++  +  epg  vs   +        k  + ++   ++v+  + e d+  i  gq+  + ++af +  f   +++i p +  +    
+  KGG12135.1 173 KEQLLIKAPFSGVITARYAEPGSYVSPNSQAStnqsssKrsVVEIsYGLQVIAKVPESDIGRISKGQQATIRVEAFPDEIFDSVVENISPRAikDNNVT 271
+                 55567899999999999999999998665443110001111112212356788899*********************************9761145566 PP
+
+        copB 299 ripveitlpngdglikggllarvrfnn.nsapqvivpetaivsqgessaifvlsesnsqvekrpvrlgqaldgqveiitglepgerfvv 386
+                    v+++l +    +  g+ a v f+  +s  + +vp  aiv++   + ++++ e++ q   + v lg +   +  ii g+ pge+f +
+  KGG12135.1 272 SFEVKLSLVEPPQKLLIGMTADVEFQAgKSEIKTLVPTVAIVTRQGEPGLLLVGEKQ-QPLFQKVELGYSSGSKTAIIKGILPGEQFFI 359
+                 677777888888888889*******86368899*********865556666666654.5555679**********************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (406 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        53  (0.0277778); expected 38.2 (0.02)
+Passed bias filter:                       44  (0.0230608); expected 38.2 (0.02)
+Passed Vit filter:                         5  (0.00262055); expected 1.9 (0.001)
+Passed Fwd filter:                         1  (0.000524109); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6747.22
+//
+[ok]

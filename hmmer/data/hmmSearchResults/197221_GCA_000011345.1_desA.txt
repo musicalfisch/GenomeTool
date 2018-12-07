@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-06   22.6  12.1      5e-05   19.6  12.1    2.0  1  BAC08806.1  tlr1254 [Thermosynechococcus elongatus BP-1]
+  ------ inclusion threshold ------
+      0.041   10.1  13.4      0.022   11.0   5.6    2.3  2  BAC09452.1  beta-carotene hydroxylase [Thermosynechococcus el
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC08806.1  tlr1254 [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6  12.1   4.1e-08     5e-05      62     310 ..      52     285 ..      32     298 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 4.1e-08
+        desA  62 spwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktnmvtidnawdpweleafnsanplvrlfyrgi 160
+                   w  +p a  + gt+l+ +f   h+c hr+    +w+nd v  +  l   y    +r  h  hh  t++       dp el   + +n   r +   +
+  BAC08806.1  52 HGWLAMP-ALFLCGTSLATMFATLHECSHRTAFASQWLNDAVAWLAGLLCFYNSDFYRRYHRWHHRYTQIPGK----DP-ELADGKPTN--WREYLWEL 142
+                 4566666.56779*****************************************************9998655....45.555444444..57788899 PP
+
+        desA 161 rgrfwwlgsia.hwailhfnieqfkenerekarfsmivvlvfaaiffptlifytgvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqal 258
+                  g  ww g +  +w ++   +e +      +ar ++i            l+ y g   l      pw+v   w+    l+   +p ++f+   +  ++ 
+  BAC08806.1 143 SGLPWWWGKLKtFWHLFLGRLEGYPYIT-PEARPAVIRSA---R---LQLLTYGGAIALAVALGYPWLVLA-WIG---LLAVGQPVLRFILLAEHTHCS 230
+                 9999999998526777777788887655.45787766443...2...257889999999999999**9974.665...566678999998888888887 PP
+
+        desA 259 aqlegtvh..csyprw.veilchdinvhiphhistaipsynlrkvhaslkenwgs 310
+                  + +g +    +   w + ++  ++  h  hh+  +ip + l k h+ lk   g 
+  BAC08806.1 231 HDANGLMNtrTTLTLWpIRLFMWNMPYHTEHHLYPSIPFHSLGKAHTLLKSHLGH 285
+                 77777665114566675788899999********************999988775 PP
+
+>> BAC09452.1  beta-carotene hydroxylase [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   5.6   1.8e-05     0.022      49     130 ..      26     113 ..       7     157 .. 0.82
+   2 ?    4.2   0.3     0.002       2.5     269     305 ..     219     256 ..     214     268 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.8e-05
+        desA  49 ilaviagyamlvyspwyll....p..lawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktn 130
+                 ++   a +a+ + s w  +    p  l+++    al  +  + hd+ h     +p +n ++gh   l l + f ++  +h +hha+ n
+  BAC09452.1  26 LVMFFAAFAIAILSTWGYVqghwPggLSFVANMLALHLMGTVIHDASHNVAHRHPIMNAIMGHGSALMLGFVFPVFTRVHMQHHAHVN 113
+                 5566788999999999665122222245555666777778899**************************9***************988 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.002
+        desA 269 yp.rwveilchdinvhiphhistaipsynlrkvhaslk 305
+                 yp r ++il +  n h+ hh+   ip y+++  + ++k
+  BAC09452.1 219 YPsRLLNILIFGQNYHLIHHLWPNIPWYKVQPAYYAVK 256
+                 4438899*********************9987766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                        83  (0.0335354); expected 49.5 (0.02)
+Passed bias filter:                       56  (0.0226263); expected 49.5 (0.02)
+Passed Vit filter:                         5  (0.0020202); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808081); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 6699.36
+//
+[ok]

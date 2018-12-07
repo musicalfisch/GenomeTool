@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/399101_GCA_001637315.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     2e-124  412.6   0.1   2.3e-124  412.4   0.1    1.0  1  OAB57241.1  iron-sulfur cluster assembly scaffold protein Nif
+    8.5e-11   39.5   0.0    9.1e-11   39.4   0.0    1.0  1  OAB55718.1  hypothetical protein AY600_12990 [Phormidium will
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB57241.1  iron-sulfur cluster assembly scaffold protein NifU [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  412.4   0.1  1.2e-127  2.3e-124       1     298 [.       1     303 [.       1     305 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 412.4 bits;  conditional E-value: 1.2e-127
+        finU   1 mwdytdkvlelfynpknqGvle.dnsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdi 98 
+                 mwdytdkv+ lf++p n G++  ++   G ++avGevGsiacGdalrlhl++ +  d i+darfqtfGc+saiass+al++likG+tldeal++ n+ i
+  OAB57241.1   1 MWDYTDKVMTLFHEPHNMGAIAlEDCRDGDAIAVGEVGSIACGDALRLHLRIRKANDLILDARFQTFGCASAIASSSALTDLIKGKTLDEALRIDNRTI 99 
+                 9******************9863566889********************************************************************** PP
+
+        finU  99 adylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkke 197
+                 a++lGGlp  kmhcsvmGqealeaai ny G++ a+ +ddde  l+c cfg++et+i+rvi +n+lt+ae+vtny+kaGGGcGscla++dd++++v + 
+  OAB57241.1 100 AEFLGGLPPEKMHCSVMGQEALEAAIANYHGVSPAIDEDDDESPLICQCFGVTETRIKRVIRDNHLTSAEEVTNYIKAGGGCGSCLAELDDLVAEVYET 198
+                 ************************************************************************************************886 PP
+
+        finU 198 ....saatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                     +aat  + ++  ++++ a +   + l++  ki+l++ v++ e+r+vli+d++dv lydvd++l+ v l++a++ +as++++lk  +e  l++++ 
+  OAB57241.1 199 ptttHAATHPTPTHPAMSNQEAVSANIPKLTNLEKIALIQSVLNLEIRPVLIEDGGDVDLYDVDGNLVYVSLQGACGQCASSRLTLKGFIERTLRDRVA 297
+                 22214566666677778888888999999********************************************************************** PP
+
+        finU 293 velvee 298
+                 ++l+ e
+  OAB57241.1 298 PDLILE 303
+                 *99876 PP
+
+>> OAB55718.1  hypothetical protein AY600_12990 [Phormidium willei BDU 130791]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.4   0.0   4.8e-14   9.1e-11     227     292 ..       6      70 ..       1      78 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 39.4 bits;  conditional E-value: 4.8e-14
+        finU 227 lkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 l ++ +++v+ +elr+ l++d+++v+l+d ++ +++  l++a++s+ s+ ++lk+ +e rl++ + 
+  OAB55718.1   6 LTKENVEKVL-DELRPYLMADGGNVELMDIEGPIVQLRLQGACGSCPSSAMTLKMGIERRLREYIP 70 
+                 4455556655.579************************************************9874 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         3770  (1257126 residues searched)
+Passed MSV filter:                        98  (0.0259947); expected 75.4 (0.02)
+Passed bias filter:                       84  (0.0222812); expected 75.4 (0.02)
+Passed Vit filter:                         9  (0.00238727); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000530504); expected 0.0 (1e-05)
+Initial search space (Z):               3770  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9428.44
+//
+[ok]

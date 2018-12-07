@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/99598_GCA_000316575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-49  165.0   7.3    1.3e-49  165.0   7.3    2.0  2  AFY31004.1  ATP synthase F0 subcomplex C subunit [Calothrix s
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY31004.1  ATP synthase F0 subcomplex C subunit [Calothrix sp. PCC 7507]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.0   0.2    0.0041        24       1      17 [.       1      17 [.       1      18 [. 0.89
+   2 !  165.0   7.3   2.2e-53   1.3e-49       1      81 []      17      97 .]      17      97 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 4.0 bits;  conditional E-value: 0.0041
+        atpH  1 mdplvaaasviaaalav 17
+                m pl++a+ v+aaa  +
+  AFY31004.1  1 MAPLISASYVLAAATGI 17
+                89***********9765 PP
+
+  == domain 2  score: 165.0 bits;  conditional E-value: 2.2e-53
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                +dplv+aasv+aaala+GlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlll+lafmesltiyGlv+alvllfanpfa
+  AFY31004.1 17 IDPLVSAASVLAAALAIGLAAIGPGIGQGNAAGQAVEGIARQPEAEGKIRGTLLLTLAFMESLTIYGLVIALVLLFANPFA 97
+                59******************************************************************************7 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         5950  (1853734 residues searched)
+Passed MSV filter:                       234  (0.0393277); expected 119.0 (0.02)
+Passed bias filter:                      138  (0.0231933); expected 119.0 (0.02)
+Passed Vit filter:                        13  (0.00218487); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000168067); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 3753.81
+//
+[ok]

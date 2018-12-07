@@ -1,0 +1,97 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118163_GCA_000317025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     8e-115  379.8   0.1   8.9e-115  379.6   0.1    1.0  1  AFY75785.1  putative O-methyltransferase [Pleurocapsa sp. PCC
+  ------ inclusion threshold ------
+      0.013   12.9   0.0       0.02   12.3   0.0    1.2  1  AFY77528.1  precorrin-6Y C5,15-methyltransferase (decarboxyla
+      0.022   12.2   0.0        2.3    5.6   0.0    3.4  3  AFY78581.1  WD40 repeat-containing protein [Pleurocapsa sp. P
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY75785.1  putative O-methyltransferase [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  379.6   0.1  6.3e-118  8.9e-115       1     220 []       1     220 [.       1     220 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 379.6 bits;  conditional E-value: 6.3e-118
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 man+tlg++r++y y++si+lre+ il+qlrqeta +p+a mqiapeqgqfma+lvq + akk+le+gvftgys+l valalppeg ++acd+seeyt+
+  AFY75785.1   1 MANKTLGIERNLYEYFRSIALREPEILTQLRQETAKHPMANMQIAPEQGQFMALLVQLMEAKKTLEVGVFTGYSTLAVALALPPEGTIVACDISEEYTA 99 
+                 9************************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarryw++agv +kidlriapa+etl++lia g+ n+fdf fidadksnyd yye+alqlvr gg+iaidnvfw g+va  ++tdnrt++ir ln ki+
+  AFY75785.1 100 IARRYWEKAGVIHKIDLRIAPAIETLEQLIAQGQVNTFDFAFIDADKSNYDNYYEQALQLVRPGGLIAIDNVFWGGKVADPNATDNRTQVIRRLNQKIH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamkk 220
+                 qd+rv +s++pi dgltla+k+
+  AFY75785.1 199 QDDRVTMSLVPIADGLTLALKR 220
+                 *******************995 PP
+
+>> AFY77528.1  precorrin-6Y C5,15-methyltransferase (decarboxylating), CbiT subunit [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.0   1.4e-05      0.02      66     112 ..      46      91 ..      26     109 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 1.4e-05
+        AvaC  66 eigvftgysalvvalalppegkliacdlseeytsiarrywqqagvad 112
+                 +ig  tg   +     l p+gk+ia++  ee +s+ rr  ++  va+
+  AFY77528.1  46 DIGAGTGTIPVETG-LLCPKGKIIAVERDEEVASLIRRNCDRFSVAN 91 
+                 56666665554444.489**********************9999986 PP
+
+>> AFY78581.1  WD40 repeat-containing protein [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.0     0.017        24      63      91 ..     569     597 ..     539     615 .. 0.76
+   2 ?   -3.6   0.0         1   1.5e+03      70      91 ..     744     765 ..     742     770 .. 0.88
+   3 ?    5.6   0.0    0.0016       2.3      70      95 ..     786     811 ..     777     821 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 0.017
+        AvaC  63 kaleigvftgysalvvalalppegkliac 91 
+                  a e  +f g+   v a+a+ p+g++i  
+  AFY78581.1 569 IAREQNIFQGHDDRVKAVAVSPDGQIIVS 597
+                 3557789*******************975 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 1
+        AvaC  70 ftgysalvvalalppegkliac 91 
+                 f g+   v a+a+ p+g+ ia 
+  AFY78581.1 744 FRGHEDKVAAVAFSPDGEKIAS 765
+                 77888999*********99986 PP
+
+  == domain 3  score: 5.6 bits;  conditional E-value: 0.0016
+        AvaC  70 ftgysalvvalalppegkliacdlse 95 
+                 f g+   v+a+a+ pegklia   s+
+  AFY78581.1 786 FRGHEDYVIAIAFDPEGKLIASGSSD 811
+                 889999***************87766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         4268  (1345719 residues searched)
+Passed MSV filter:                       127  (0.0297563); expected 85.4 (0.02)
+Passed bias filter:                      106  (0.024836); expected 85.4 (0.02)
+Passed Vit filter:                        11  (0.00257732); expected 4.3 (0.001)
+Passed Fwd filter:                         3  (0.000702905); expected 0.0 (1e-05)
+Initial search space (Z):               4268  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 7401.45
+//
+[ok]

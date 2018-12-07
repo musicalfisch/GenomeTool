@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/459495_GCA_000307915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.015   12.3   4.2     0.0077   13.2   0.7    2.0  2  EKD07151.1  efflux transporter RND family MFP subunit [Arthro
+
+
+Domain annotation for each sequence (and alignments):
+>> EKD07151.1  efflux transporter RND family MFP subunit [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   0.7   1.3e-06    0.0077      71     162 ..      76     163 ..      64     234 .. 0.74
+   2 ?   -0.3   0.1     0.016        95     204     331 ..     357     498 ..     269     512 .. 0.58
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 1.3e-06
+        cusB  71 rqisgtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyleaksqfelskadyerqqqla.dqnvnsak 162
+                 ++++ t++  gv  v p + v +s    g l +  + qg rv  gq iar+e  +   ++ + l+a++++e ++a+  + +q +  + + sa+
+  EKD07151.1  76 KDLTVTVRASGV--VQPVRRVNLSPKTQGRLAQLYVEQGDRVEAGQIIARMESNE---LEAQRLQAQARLERTQANLAKLRQGSrPEAIASAR 163
+                 455566666666..78999********************************9865...45566888888888888877655543134555555 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 0.016
+        cusB 204 inlyspidgyvtevnvnrgkfvnptdvlfeivdte.....hlhaelivf....ekdvrklkigqkvrftlane.tkeriatvyligreistertiqi.h 291
+                  n+ +p  g +t+     g fv p+    +   +       l  +l v+    e d+ ++   qkv +       +    +v+li  e   er + + +
+  EKD07151.1 357 TNIRAPFAGIITQRYAVEGAFVTPATSASDASSATstsivALAKDLEVLakipETDIVQIEPLQKVEIVADAYpDQVFEGAVHLIAPEAIKERDVTLfQ 455
+                 566677777777777777777777654433222110001122223333211115566666666666654322202223356777777777777665413 PP
+
+        cusB 292 chidqe.dkdll.pgmylka.mvetggaevpalpneaiidfeg 331
+                 + id    +d+l  gm ++  +v     +   +p  aii   g
+  EKD07151.1 456 ARIDIRtGQDVLqSGMNVNLrFVGRQLNQAVVVPTVAIITNRG 498
+                 4455321334331566554313444444455556666665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         6108  (1647000 residues searched)
+Passed MSV filter:                       105  (0.0171906); expected 122.2 (0.02)
+Passed bias filter:                       80  (0.0130976); expected 122.2 (0.02)
+Passed Vit filter:                         8  (0.00130976); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.00016372); expected 0.1 (1e-05)
+Initial search space (Z):               6108  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11611.35
+//
+[ok]

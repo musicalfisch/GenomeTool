@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1140_GCA_000012525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnaA  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.4e-83  277.6   0.0    2.9e-83  277.3   0.0    1.0  1  ABB56964.1  conserved hypothetical protein [Synechococcus elo
+    3.4e-08   30.4   0.0    4.4e-08   30.0   0.0    1.1  1  ABB58153.1  anthranilate phosphoribosyltransferase [Synechoco
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB56964.1  conserved hypothetical protein [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  277.3   0.0   2.2e-86   2.9e-83       1     346 [.       1     341 [.       1     347 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 277.3 bits;  conditional E-value: 2.2e-86
+        cnaA   1 msdtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrt 99 
+                 ms+ fr+l++ +gsg ht + lt+ eaa a ++ml+  atpaqigaf+iahri+rpt  elag+l++ya+  p +     s   p  ++g pydgr rt
+  ABB56964.1   1 MSERFRDLIRKVGSGRHTSQVLTQAEAAEALQLMLSATATPAQIGAFLIAHRIRRPTGTELAGFLETYADWLPAVLAP--STTRPPLVLGYPYDGRDRT 97 
+                 89***********************************************************************98655..45678889*********** PP
+
+        cnaA 100 apvtpittlilglagvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwsp 198
+                 ap+ p+ +l+l++ g pvvlhg dr+ tkyg+ l e+w+ +g ++   s+a ++ cl  +g++ ++ p   p  + +  yr ++gkrpp+at el+  p
+  ABB56964.1  98 APLGPLLALLLAAVGQPVVLHGSDRVATKYGVPLVELWDAIGVNWRSRSVADLNRCLEQAGVAQLHQPSLCPAAEVLNGYRSELGKRPPLATAELMLVP 196
+                 *************************************************************************************************** PP
+
+        cnaA 199 fvgnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllage 297
+                 + g    + gfvhppte  + e+++lr i+ f t+kglegs +l  +r+ai+g  +       +r++l  rd+ +  ++ p    +      + ll g+
+  ABB56964.1 197 VQGAALPVCGFVHPPTELMIEEALSLRGITTFFTIKGLEGSPELPRDRAAIVGRWQN---GHCDRLILHARDWDLGEAELPWMGEDAWVEAAQALLEGQ 292
+                 ****************************************************98654...5679*********************************** PP
+
+        cnaA 298 nneltdaaifnggfylwrcgiapdiptgfqqaqqslqsgkalakleqia 346
+                    l     +ng  ylw  g+a  + +g+ q ++ lq+   l + ++++
+  ABB56964.1 293 PSVLEPLLRWNGAAYLWFLGMASSMTAGLVQVDHLLQTKALLQQRDRLQ 341
+                 ************************************9876666555544 PP
+
+>> ABB58153.1  anthranilate phosphoribosyltransferase [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.0   0.0   3.3e-11   4.4e-08      42     350 ..      44     347 ..      24     348 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 30.0 bits;  conditional E-value: 3.3e-11
+        cnaA  42 aqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpia.ifgnpydgrsrtapvtpittlilglagvpvvlhggdrmptkygislreiwqq 139
+                 a  ga++ a + k  +++ela m +   e    +++e++  + p+    g   dg   t  ++   +++ ++agv v  hg      + g    ++ + 
+  ABB58153.1  44 ALSGALLAALQSKGVSAQELAAMAQVLQEQ--AVAVEASDRREPLVdTCGTGGDGA-ETFNISTAVAFVTAAAGVKVAKHGNRSASGRVGS--ADVLEA 137
+                 56699999999************9998885..578899888888652678888886.677777788899***********99988888775..578888 PP
+
+        cnaA 140 lgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwspfvgnihqisgfvhpptedrfretfalrnishfttv...kg 235
+                 lg +++  s   ++ ++   g+tf++ p   p ++ +   r+ +g r  +  +  l  p+     q+ g+  p     +  ++a   +     +    g
+  ABB58153.1 138 LGLNLTAPSD-RIHAAVDEVGITFLFAPGWHPAMKAVAPLRKILGVRTVFNLLGPLVNPLRP-TGQVIGVYNPGLLPTISGALAELGVRRAIVLhgrEG 234
+                 8888776653.4555566789*************************9888888777777654.468888888866666665555555555555500055 PP
+
+        cnaA 236 legscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsd.ypl..eslelltaklkgllagenne.ltdaaifnggfylwrcgiapdiptgfqqaq 330
+                 l+      c   ai+  g+        + +++prd g+  +    l   s+e  +  lk +l g+      da ++n  + l     +  +  g+  a+
+  ABB58153.1 235 LDEGGLADCTDLAIVREGQL------SQQVVDPRDLGLTQAPtVALkgGSVEENADILKAVLQGKGTRaQQDAVLLNAALALEVGEQVDRLDQGISLAR 327
+                 55555566999999988864......44579******9865413442269999999********976516799999****9999999999********* PP
+
+        cnaA 331 qslqsgkalakleqianyle 350
+                   l sg a  kl q+a +l+
+  ABB58153.1 328 SVLASGAAWQKLTQLAAFLQ 347
+                 ****************9997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         2661  (809802 residues searched)
+Passed MSV filter:                        65  (0.0244269); expected 53.2 (0.02)
+Passed bias filter:                       62  (0.0232995); expected 53.2 (0.02)
+Passed Vit filter:                         8  (0.00300639); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000751597); expected 0.0 (1e-05)
+Initial search space (Z):               2661  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 7146.50
+//
+[ok]

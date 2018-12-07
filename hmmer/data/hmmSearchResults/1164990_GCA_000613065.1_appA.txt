@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/appA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1164990_GCA_000613065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       appA  [M=2709]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0041   12.2  56.3       0.03    9.4   6.2    3.0  3  CDN13504.1  Type I secretion target repeat protein [Richelia 
+
+
+Domain annotation for each sequence (and alignments):
+>> CDN13504.1  Type I secretion target repeat protein [Richelia intracellularis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.4  13.0   3.1e-05      0.24    1394    1465 ..      10      81 ..       2      91 .. 0.30
+   2 !    9.4   6.2   3.8e-06      0.03    1408    1451 ..      96     139 ..      84     150 .. 0.27
+   3 !    8.0  21.9     1e-05      0.08     950    1256 ..     169     262 ..     144     290 .. 0.32
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 3.1e-05
+        appA 1394 yigtrdgndtinggggndti.egglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgld 1465
+                   i +    + i  g  +dti   g  n+++  g gnd + a g s+ i a  g+d v  +   +ii gg+g d
+  CDN13504.1   10 LIFSAGKANYILSGSDDDTIiSAGQMNNVL-AGSGNDIVLAMGISNNILAQEGNDIVIGLGQSNIISGGAGED 81  
+                  222222222222222222220122222222.122333333333333333333333333333333333333322 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 3.8e-06
+        appA 1408 ggndtiegglgndiinggdgndaiaagggsdvinagtgddtvan 1451
+                    ndt  g   n+ + gg gnd + agg s+      g+dtv  
+  CDN13504.1   96 ESNDTTFGIGMNNTVFGGSGNDWMLAGGTSNYFIDTEGEDTVVS 139 
+                  11111111111111111111111111111111111111111111 PP
+
+  == domain 3  score: 8.0 bits;  conditional E-value: 1e-05
+        appA  950 itgtngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddiidggtgldtisdlnydssnsaiiln 1046
+                  i   +g d +   d   ti+ g g+d+i+ g   +  + g+gnd+i aggg d    g  + t                                  
+  CDN13504.1  169 IYTGDGNDILTITDIRTTIDAGDGDDSIDAGGFFNNFDAGNGNDSIDAGGGDDTYILGNEEFTA--------------------------------- 232 
+                  1112222222222333333333333333222222222222333333333333222222222111................................. PP
+
+        appA 1047 elggaatllgtniknierfgsvilgsgndkiefssrfnnqeinsgqgndtingglgidiinggdgndlliidyssnqyagsnvhpagisyydgfsqs 1143
+                                                                                                                   
+  CDN13504.1    - -------------------------------------------------------------------------------------------------    -
+                  ................................................................................................. PP
+
+        appA 1144 ytcyyddkdysydkvlfysieqfqitgtngsdyigtrdgndtinggggndtiegglgndiinggdgndaiaagggsdvinagtgddtvanvsgddii 1240
+                                                                                                       d   + s +d++
+  CDN13504.1  233 -----------------------------------------------------------------------------------YIDNQGDNSTEDVL 246 
+                  ...................................................................................00111122222223 PP
+
+        appA 1241 dggtgldtisdlnyds 1256
+                  + gt +dt      +s
+  CDN13504.1  247 EFGTTFDTSNITFTQS 262 
+                  3333332221111122 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (2709 nodes)
+Target sequences:                         7768  (1173029 residues searched)
+Passed MSV filter:                       159  (0.0204686); expected 155.4 (0.02)
+Passed bias filter:                      113  (0.0145469); expected 155.4 (0.02)
+Passed Vit filter:                         7  (0.000901133); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000128733); expected 0.1 (1e-05)
+Initial search space (Z):               7768  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.23u 0.01s 00:00:00.24 Elapsed: 00:00:00.25
+# Mc/sec: 12710.94
+//
+[ok]

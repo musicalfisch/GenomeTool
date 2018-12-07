@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160279_GCA_000297435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnaA  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.4e-252  833.3   0.0   4.9e-252  833.1   0.0    1.0  1  CCI31760.1  Similar to Q4C864_CROWT Anthranilate phosphoribos
+    0.00013   19.3   0.1     0.0059   13.9   0.0    2.2  2  CCI30569.1  Anthranilate phosphoribosyltransferase [Microcyst
+
+
+Domain annotation for each sequence (and alignments):
+>> CCI31760.1  Similar to Q4C864_CROWT Anthranilate phosphoribosyltransferase [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  833.1   0.0  2.2e-255  4.9e-252       1     353 []       1     353 []       1     353 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 833.1 bits;  conditional E-value: 2.2e-255
+        cnaA   1 msdtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrt 99 
+                 msdtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgp+itlesasfqhpiaifgnpydgrsrt
+  CCI31760.1   1 MSDTFRELLKAIGSGTHTGKNLTRPEAAMATKMMLTQEATPAQIGAFMIAHRIKRPTSDELAGMLDAYAELGPEITLESASFQHPIAIFGNPYDGRSRT 99 
+                 9************************************************************************************************** PP
+
+        cnaA 100 apvtpittlilglagvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwsp 198
+                 +pvtpittlil++agvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplv+nfvtyreqigkrppmatvel+wsp
+  CCI31760.1 100 TPVTPITTLILAAAGVPVVLHGGDRMPTKYGISLREIWQQLGADFSQLSLAAVKDCLITTGLTFFYIPRHFPLVENFVTYREQIGKRPPMATVELIWSP 198
+                 *************************************************************************************************** PP
+
+        cnaA 199 fvgnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllage 297
+                 fvgnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllage
+  CCI31760.1 199 FVGNIHQISGFVHPPTEDRFRETFALRNISHFTTVKGLEGSCDLACNRTAIIGLGNPTDPPSFQRFFLNPRDYGFCPSDYPLESLELLTAKLKGLLAGE 297
+                 *************************************************************************************************** PP
+
+        cnaA 298 nneltdaaifnggfylwrcgiapdiptgfqqaqqslqsgkalakleqianylenqe 353
+                 nneltdaaifnggfylwrcgiapdiptgfqqa+qslqsgkalakleqi+nylenqe
+  CCI31760.1 298 NNELTDAAIFNGGFYLWRCGIAPDIPTGFQQAEQSLQSGKALAKLEQISNYLENQE 353
+                 ******************************************************97 PP
+
+>> CCI30569.1  Anthranilate phosphoribosyltransferase [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.0   2.7e-06    0.0059      44     187 ..      41     179 ..      21     203 .. 0.80
+   2 !    3.4   0.0    0.0042       9.3     300     349 ..     292     343 ..     268     344 .] 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 2.7e-06
+        cnaA  44 igafmiahrikrptsdelagmldayaelgpqitlesas.fqhp.iaifgnpydgrsrtapvtpittlilglagvpvvlhggdrmptkygislreiwqql 140
+                  ga++ a + k  ++ elagm      l  q  le       p i   g   dg s    ++   +++ ++ gv v  hg     +k g    ++ + l
+  CCI30569.1  41 SGAILAALQAKGVSAAELAGMAGV---LRQQSRLEDPKpHTTPvIDTCGTGGDGASTFN-ISTAVAFVAAAGGVKVAKHGNRSASSKVGS--ADVLEYL 133
+                 588999999999999999999764...66778888765133332667899999988655.555667899999********9999999886..5899*** PP
+
+        cnaA 141 gadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrp 187
+                 g ++s  s   v  +l   g+tf++ p   p ++ +   r+ +  r 
+  CCI30569.1 134 GVNLSAPSE-KVAAALDGVGVTFLFAPGWHPALKSVANLRKTLKVRT 179
+                 *****9885.577889999**************99999998876665 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.0042
+        cnaA 300 eltdaaifnggfylwrcgia..pdiptgfqqaqqslqsgkalakleqianyl 349
+                    da  +n  + l  +  +   d  +gf  a++ l sg a  kle+++++l
+  CCI30569.1 292 AQRDAVAINASLALQVAEKVtfGDHAAGFALARDILASGLAWQKLEELVKFL 343
+                 455677777776666554331269999********************99887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         4434  (1223634 residues searched)
+Passed MSV filter:                       102  (0.0230041); expected 88.7 (0.02)
+Passed bias filter:                       87  (0.0196211); expected 88.7 (0.02)
+Passed Vit filter:                         6  (0.00135318); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045106); expected 0.0 (1e-05)
+Initial search space (Z):               4434  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10798.57
+//
+[ok]

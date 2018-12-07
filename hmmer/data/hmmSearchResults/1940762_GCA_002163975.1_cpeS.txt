@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1940762_GCA_002163975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     2e-124  411.1   0.0   2.3e-124  411.0   0.0    1.0  1  ARV57944.1  chorismate-binding protein [Nostocales cyanobacte
+    1.6e-31  108.0   0.0    1.7e-31  107.9   0.0    1.0  1  ARV63139.1  chorismate mutase [Nostocales cyanobacterium HT-5
+
+
+Domain annotation for each sequence (and alignments):
+>> ARV57944.1  chorismate-binding protein [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  411.0   0.0  7.3e-128  2.3e-124       1     196 []       1     196 [.       1     196 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 411.0 bits;  conditional E-value: 7.3e-128
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mthstdiatlar+maadfsnqeqafenppffahirvcmrplple+lsgvsffveqaydy+l+dpyr+rvlklv+++++ieieny+vkeekkfygasr+ 
+  ARV57944.1   1 MTHSTDIATLARWMAADFSNQEQAFENPPFFAHIRVCMRPLPLEILSGVSFFVEQAYDYMLDDPYRVRVLKLVNTGKHIEIENYSVKEEKKFYGASRNP 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 erlk+l+++dleklpgcnmivewtg++fkg+vepgk+civvrkg+ktylds+feide+kfis+drgrd+etdehiwgsvagpf+fvr asfadevkv
+  ARV57944.1 100 ERLKALTIEDLEKLPGCNMIVEWTGHNFKGTVEPGKGCIVVRKGQKTYLDSDFEIDEHKFISRDRGRDLETDEHIWGSVAGPFYFVRKASFADEVKV 196
+                 ***********************************************************************************************97 PP
+
+>> ARV63139.1  chorismate mutase [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  107.9   0.0   5.6e-35   1.7e-31       1     188 [.       1     196 [.       1     198 [] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 107.9 bits;  conditional E-value: 5.6e-35
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklve...aedrieienytvkeekkfygas 96 
+                 mt s ++ +la ++a +f n+eqa  +p ++ h+r+  rp+pl   + +++f eqa   +l+ pyr r+++l++   ++  ++++ y+ k+   + ga 
+  ARV63139.1   1 MTFSPQLLALANYLAGEFDNREQAVAEPIWYVHLRLWHRPVPLFQEDSLTIFAEQANILKLDRPYRQRIIRLMQgsgSDASLKVQYYKPKNPSTLVGAG 99 
+                 8999999******************************************************************933345689***************** PP
+
+        cpeS  97 rdlerlktlkaddleklpgcnmive...wtgns..fkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                  +   lktl+ ddle lpgc + +     + ns  f  +  p   c  +  +    +   fe+ + kf+s d+g d  t +  wg++ gp+ + +++
+  ARV63139.1 100 CNPGLLKTLTPDDLEFLPGCVLNITnqvLAPNSyqFTATPPPDTHCSFTVGSDVVQVSLGFEVSDGKFLSYDKGIDSTTGKATWGAILGPYCYTKRE 196
+                 ********************876541223456611555566788999988888999999********************************998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         6177  (2043057 residues searched)
+Passed MSV filter:                        98  (0.0158653); expected 123.5 (0.02)
+Passed bias filter:                       85  (0.0137607); expected 123.5 (0.02)
+Passed Vit filter:                         7  (0.00113324); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000323782); expected 0.1 (1e-05)
+Initial search space (Z):               6177  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8008.78
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcF  [M=207]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.01   12.6   0.0       0.94    6.2   0.0    2.1  2  AAZ58500.1  PBS lyase HEAT-like repeat [Prochlorococcus marin
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ58500.1  PBS lyase HEAT-like repeat [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.0   0.00044      0.94      66     125 ..      84     143 ..      79     162 .. 0.90
+   2 ?    4.6   0.0    0.0013       2.8      79     169 ..     160     251 ..     144     259 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00044
+        cpcF  66 avpyllanldgynygarawatralagigdvrgldllleaavsdfsfsvrrgaarglgnii 125
+                 a+p+ll  ld      r  a  al      + +dlll+    d    vr+ +a  lgn  
+  AAZ58500.1  84 ALPFLLPLLDEPSPVVRMSAVYALGRNPCPQAIDLLLHLLRFDSNAYVRKATAWSLGNYS 143
+                 89************************99*****************************965 PP
+
+  == domain 2  score: 4.6 bits;  conditional E-value: 0.0013
+        cpcF  79 ygarawatralagigdvrgldllleaavsdfsfsvrrgaarglgniiws..dleesrvseaqkavfaalekllqgdpewvvryaaivgleglg 169
+                    r wa+ +la +g +  l+  l aa   +      g      n iws   l      e +  +  a+  +l  d e  vry a   le l 
+  AAZ58500.1 160 AAVRLWASSSLAEVG-LNSLESSLPAANQLLESLQIDGEPIVRSNCIWSlgRLYIHLSEEIKIHIVEAFISVLLNDREPSVRYEARTALEQLD 251
+                 567889999999998.678888888887777665667888888899998323444444556667889999999999999****9999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (207 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        38  (0.0175682); expected 43.3 (0.02)
+Passed bias filter:                       33  (0.0152566); expected 43.3 (0.02)
+Passed Vit filter:                         3  (0.00138696); expected 2.2 (0.001)
+Passed Fwd filter:                         1  (0.000462321); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 5547.33
+//
+[ok]

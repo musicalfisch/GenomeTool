@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cmpB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/316279_GCA_000012505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cmpB  [M=279]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.029   10.8  11.0      0.003   14.0   3.9    2.3  2  ABB26055.1  Phosphate ABC transporter, permease protein PstC 
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB26055.1  Phosphate ABC transporter, permease protein PstC [Synechococcus sp. CC9902]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   1.6     0.026        60      77     131 ..      86     143 ..      11     158 .. 0.57
+   2 ?   14.0   3.9   1.3e-06     0.003     152     226 ..     189     264 ..     138     276 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 0.026
+        cmpB  77 idkglfwqilaslqrvaisytlaaivgialgiligvnkt...lskaldplfqllrtvp 131
+                  + g    i+ +l    +s  +a  +gi+  i i  n +   l + +  +++ll ++p
+  ABB26055.1  86 DEYGAGAAIYGTLVTSILSLFIAVPLGIGTAIFITENIIpekLRNFIGLMVELLAAIP 143
+                 3444445566666666777777878888888887765431113333444555555555 PP
+
+  == domain 2  score: 14.0 bits;  conditional E-value: 1.3e-06
+        cmpB 152 fvifitaiwpilin.tavgvtqipqdynnvakvlqlsrkeyflnilipaalpyiftglriaiglawlaiiaaeivm 226
+                  +i++  i pi+   t   ++q+pq+  + a  +  +r   ++n+ +paa+  i  g+ +a+g a    +a  +++
+  ABB26055.1 189 VLILVVMILPIITAiTRDSLQQVPQQLTQAAYGIGTTRWGAIINVTLPAAISGIVGGVMLALGRAMGETMAVTMII 264
+                 34677788998865267789********************************************998888887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (279 nodes)
+Target sequences:                         2304  (665835 residues searched)
+Passed MSV filter:                       100  (0.0434028); expected 46.1 (0.02)
+Passed bias filter:                       51  (0.0221354); expected 46.1 (0.02)
+Passed Vit filter:                         7  (0.00303819); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000434028); expected 0.0 (1e-05)
+Initial search space (Z):               2304  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6192.27
+//
+[ok]

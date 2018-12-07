@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1671698_GCA_002260545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-46  153.5   1.1    2.7e-46  153.4   1.1    1.0  1  OZH51723.1  photosystem I reaction center subunit XII [Hydroc
+     0.0083   14.1   0.1      0.039   12.0   0.0    2.1  2  OZH51924.1  photosystem I reaction center subunit XII [Hydroc
+
+
+Domain annotation for each sequence (and alignments):
+>> OZH51723.1  photosystem I reaction center subunit XII [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  153.4   1.1   1.1e-49   2.7e-46       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 153.4 bits;  conditional E-value: 1.1e-49
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mr fkitacvPs tr rtqrelqnt+ftklvpyd+WfreqqrimkmGGkivkvelatGk+g+ntGll
+  OZH51723.1  1 MRQFKITACVPSLTRTRTQRELQNTFFTKLVPYDSWFREQQRIMKMGGKIVKVELATGKQGVNTGLL 67
+                9****************************************************************96 PP
+
+>> OZH51924.1  photosystem I reaction center subunit XII [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0      0.28     7e+02      25      48 ..     141     163 ..     136     177 .. 0.67
+   2 !   12.0   0.0   1.6e-05     0.039      30      52 ..     262     284 ..     249     287 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 0.28
+        apcC  25 tyftklvpydnWfreqqrimkmGG 48 
+                 +y   +vpy   ++ q   +km G
+  OZH51924.1 141 AYGENIVPYYRGYKTQT-GKKMVG 163
+                 56677889888888764.345554 PP
+
+  == domain 2  score: 12.0 bits;  conditional E-value: 1.6e-05
+        apcC  30 lvpydnWfreqqrimkmGGkivk 52 
+                 lvp+d+  +e qri + GG i  
+  OZH51924.1 262 LVPFDQLSKEYQRIHQQGGVIAS 284
+                 9******************9965 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         4935  (1360323 residues searched)
+Passed MSV filter:                       138  (0.0279635); expected 98.7 (0.02)
+Passed bias filter:                      129  (0.0261398); expected 98.7 (0.02)
+Passed Vit filter:                        13  (0.00263425); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000405268); expected 0.0 (1e-05)
+Initial search space (Z):               4935  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4557.08
+//
+[ok]

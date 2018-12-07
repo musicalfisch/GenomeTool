@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/376219_GCA_000176895.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     3e-138  459.1  21.8   3.9e-138  458.7  21.8    1.0  1  CCE19545.1  Delta(12)-fatty acid desaturase [Arthrospira sp. 
+  ------ inclusion threshold ------
+        8.4    3.7  18.2    1.7e+02   -0.6  18.2    2.3  1  CCE17392.1  putative Beta-carotene ketolase [Arthrospira sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> CCE19545.1  Delta(12)-fatty acid desaturase [Arthrospira sp. PCC 8005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  458.7  21.8  1.3e-141  3.9e-138      16     342 ..      18     345 ..      10     349 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 458.7 bits;  conditional E-value: 1.3e-141
+        desA  16 iepdfklkdiiksipkeyfqkdpvkawfgvitnilaviagyamlvyspwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliyp 114
+                 +  d++l+dii+++p + f +d  kaw+ vi+n++ v  g+  +  +pw+llp+ w+ftgtaltgffvi hdcghrsfs   wvnd vghi++lp+iyp
+  CCE19545.1  18 VPSDLRLRDIINTLPSDVFVQDRYKAWMTVIINVVMVGLGWLGIAIAPWFLLPVLWVFTGTALTGFFVIGHDCGHRSFSRNVWVNDWVGHILFLPIIYP 116
+                 6679*********************************************************************************************** PP
+
+        desA 115 fhcwrflhdrhhaktnmvtidnawdpweleafnsanplvrlfyrgirgrfwwlgsiahwailhfnieqfkenerekarfsmivvlvfaaiffptlifyt 213
+                 fh wr+ h++hh  tn + +dnaw+pw  e +++a  ++++ y   rgr ww+gsi hwa +hf+  +f+ ++r++ +fs ++v+  aai fpt+i+  
+  CCE19545.1 117 FHSWRIGHNQHHKYTNRMELDNAWQPWRKEEYQNAGKFMQVTYDLFRGRAWWIGSILHWASIHFDWTKFEGKQRQQVKFSSLLVIGAAAIAFPTMILTI 215
+                 *************************************************************************************************** PP
+
+        desA 214 gvwglvkfwvvpwfvyhfwmstftlvhhtdpdiqfsypedwnqalaqlegtvhcsyprwveilchdinvhiphhistaipsynlrkvhaslkenwgshl 312
+                 gvwg+vkfwv+pw+v+hfwmstftl+hht  di f  pe+w +a +ql gtvhc+yprwve lchdinvhiphh++taip ynlr  +asl+enwg +l
+  CCE19545.1 216 GVWGFVKFWVIPWLVFHFWMSTFTLLHHTIADIPFREPEQWHEAESQLSGTVHCNYPRWVEFLCHDINVHIPHHVTTAIPWYNLRTAYASLQENWGEYL 314
+                 *************************************************************************************************99 PP
+
+        desA 313 k.etefswalmkrivdychifdsetayktfk 342
+                   e +fsw lmk++vd+ch++d +  y+++ 
+  CCE19545.1 315 YpECDFSWGLMKQVVDHCHLYDENNNYQSIS 345
+                 549***********************99875 PP
+
+>> CCE17392.1  putative Beta-carotene ketolase [Arthrospira sp. PCC 8005]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6  18.2     0.057   1.7e+02      42     136 ..      28     116 ..       7     263 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 0.057
+        desA  42 wfgvitnilaviagyamlvyspwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktnmvtidn 136
+                 ++g i+ +++   gy    +  w+ +         al     + hd+ h s    + +n ++gh   l l + f ++  +h +hha+ n    dn
+  CCE17392.1  28 FLGAIAIVISSTLGYWCWHWPNWFCFL----CNVLALHLAGTVIHDASHNSAHRDRTLNAILGHGSALMLGFAFPVFTRVHIQHHAHVNDP--DN 116
+                 566666666666666666666665432....2333444444678********999*******************************99843..44 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         5951  (1636729 residues searched)
+Passed MSV filter:                       219  (0.0368005); expected 119.0 (0.02)
+Passed bias filter:                      153  (0.02571); expected 119.0 (0.02)
+Passed Vit filter:                         9  (0.00151235); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336078); expected 0.1 (1e-05)
+Initial search space (Z):               5951  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9438.47
+//
+[ok]

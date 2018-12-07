@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801607_GCA_001784555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-07   27.4   0.0      4e-07   26.4   0.0    1.5  2  OGI19015.1  hypothetical protein A3B68_07365 [Candidatus Mela
+    0.00011   18.4   0.0    0.00014   18.1   0.0    1.1  1  OGI20938.1  SUF system NifU family Fe-S cluster assembly prot
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI19015.1  hypothetical protein A3B68_07365 [Candidatus Melainabacteria bacterium RIFCSPHIGHO2_02_FULL_34_12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0      0.28   2.7e+02     104     128 ..      11      35 ..       2      41 .. 0.74
+   2 !   26.4   0.0   4.2e-10     4e-07     223     291 ..     106     174 ..      76     181 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.28
+        finU 104 GlpeakmhcsvmGqealeaaiynyr 128
+                 G p+      v+ ++ lea  yn++
+  OGI19015.1  11 GTPNPNALKFVLDKNILEAGSYNFQ 35 
+                 6666666667888999999999986 PP
+
+  == domain 2  score: 26.4 bits;  conditional E-value: 4.2e-10
+        finU 223 lkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl 291
+                 +    + k ++ ++d ++r+ + +d++d +    ++ +lk  l++a+ss+ s+ ++lk+ +e+ l++++
+  OGI19015.1 106 KGESEIEKKIHYILDSQVRPAVNSDGGDIIFDSYEDGILKLHLQGACSSCPSSIMTLKAGVEAMLKREI 174
+                 4456677888999999999999999999999999999*************************9999876 PP
+
+>> OGI20938.1  SUF system NifU family Fe-S cluster assembly protein [Candidatus Melainabacteria bacterium RIFCSPHIGHO2_0
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.1   0.0   1.5e-07   0.00014      41      95 ..      43      95 ..      34     109 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 18.1 bits;  conditional E-value: 1.5e-07
+        finU 41 cGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsn 95
+                cGd ++l l+++    ki +   +  Gc+ ++as + l++++kG+ +++a ++s+
+  OGI20938.1 43 CGDEVKLGLQLK--DGKIEKVHIEGHGCSISVASGSMLAQILKGKDIQNAKQISQ 95
+                9**999998876..57999999****************************99986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         1898  (603193 residues searched)
+Passed MSV filter:                        92  (0.0484721); expected 38.0 (0.02)
+Passed bias filter:                       56  (0.0295047); expected 38.0 (0.02)
+Passed Vit filter:                         5  (0.00263435); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00105374); expected 0.0 (1e-05)
+Initial search space (Z):               1898  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 9047.90
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-70  232.8   6.3    1.9e-70  232.6   6.3    1.0  1  BAB74018.1  nitrogen regulatory protein P-II [Nostoc sp. PCC 
+  ------ inclusion threshold ------
+      0.023   13.3   0.0      0.051   12.2   0.0    1.5  1  BAB77705.1  alr0181 [Nostoc sp. PCC 7120]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB74018.1  nitrogen regulatory protein P-II [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  232.6   6.3     6e-74   1.9e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 232.6 bits;  conditional E-value: 6e-74
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vvdkiiaaartgeigdgkifispveqv
+  BAB74018.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDNQVDMVVDKIIAAARTGEIGDGKIFISPVEQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgek++eav
+  BAB74018.1 100 IRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> BAB77705.1  alr0181 [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.0   1.7e-05     0.051      35      96 ..      57     123 ..      41     131 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.7e-05
+        glnB  35 gfgrqkgqteryrgseyt.veflqk..lkveivvedeqvdlvv..dkiiaaartgeigdgkifispv 96 
+                   g q+g t ryrg +   +  +q     ve+ +e +q +l++  d +i+a +tg i +  i i+p 
+  BAB77705.1  57 AGGMQRGATVRYRGVKVGrISQIQPgpNAVEVEIEFAQSNLIIprDVVIEANQTGLISESIIDITPK 123
+                 4589**********9874367777533578999999999998855789***********99999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       168  (0.0273973); expected 122.6 (0.02)
+Passed bias filter:                      140  (0.0228311); expected 122.6 (0.02)
+Passed Vit filter:                         8  (0.00130463); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326158); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 4411.95
+//
+[ok]

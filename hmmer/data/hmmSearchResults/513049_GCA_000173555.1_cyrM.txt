@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/513049_GCA_000173555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-99  329.6   0.1    1.3e-99  329.4   0.1    1.0  1  EDZ91871.1  Adenylyl-sulfate kinase [Arthrospira maxima CS-32
+     0.0025   15.7   0.1     0.0048   14.7   0.0    1.5  1  EDZ92627.1  Shikimate kinase [Arthrospira maxima CS-328]
+  ------ inclusion threshold ------
+      0.026   12.3   0.1      0.049   11.4   0.1    1.4  1  EDZ91910.1  septum site-determining protein MinD [Arthrospira
+
+
+Domain annotation for each sequence (and alignments):
+>> EDZ91871.1  Adenylyl-sulfate kinase [Arthrospira maxima CS-328]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  329.4   0.1  6.9e-103   1.3e-99       3     178 ..      19     194 ..      17     196 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 329.4 bits;  conditional E-value: 6.9e-103
+        cyrM   3 amkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgk 101
+                 +m qrgvtvw+tglsgagk+ti++a+  kl ++gy +e+ldgdivrtnltkglgfskedrdenirrigfvs lltr gviv+vsaispyreireevr +
+  EDZ91871.1  19 SMEQRGVTVWFTGLSGAGKTTISQAVAEKLKSQGYRLEILDGDIVRTNLTKGLGFSKEDRDENIRRIGFVSHLLTRNGVIVFVSAISPYREIREEVRQR 117
+                 69************************************************************************************************* PP
+
+        cyrM 102 igsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 ig+fvevfvnapl+vceerdvkgly+rarageik ftgiddpyepp+npe+ecrtdle l esv kv + l++lgy+
+  EDZ91871.1 118 IGDFVEVFVNAPLNVCEERDVKGLYQRARAGEIKGFTGIDDPYEPPLNPEIECRTDLEELSESVDKVIQSLQKLGYL 194
+                 ****************************************************************************7 PP
+
+>> EDZ92627.1  Shikimate kinase [Arthrospira maxima CS-328]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.0   2.5e-06    0.0048       4      47 ..      14      57 ..      11      94 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.5e-06
+        cyrM  4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdiv 47
+                 + +g+ ++l g+ gagkst+ + l  +l  + +  +vl  ++ 
+  EDZ92627.1 14 EQIQGINIYLIGMMGAGKSTVGQILANRLSYKFFDTDVLISQVA 57
+                5568*********************9999998888888876665 PP
+
+>> EDZ91910.1  septum site-determining protein MinD [Arthrospira maxima CS-328]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.1   2.6e-05     0.049      10      57 ..       5      52 ..       2      58 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 2.6e-05
+        cyrM 10 tvwltglsgagkstitealqakliaegysievldgdivrtnltkglgf 57
+                 v  +g  g gk+t t  l   l   g+s+ v+d d    nl   lg+
+  EDZ91910.1  5 IVVTSGKGGVGKTTSTANLGMALAQRGHSVVVIDADFGLRNLDLLLGL 52
+                56778999****************************999999877776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5690  (1641096 residues searched)
+Passed MSV filter:                       217  (0.0381371); expected 113.8 (0.02)
+Passed bias filter:                      202  (0.0355009); expected 113.8 (0.02)
+Passed Vit filter:                        28  (0.00492091); expected 5.7 (0.001)
+Passed Fwd filter:                         3  (0.000527241); expected 0.1 (1e-05)
+Initial search space (Z):               5690  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 6039.23
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/459495_GCA_000307915.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.3e-39  131.8  18.9    1.7e-37  127.4  17.3    2.5  2  EKD08559.1  putative carbon dioxide concentrating mechanism p
+    0.00014   19.8   0.6    0.00041   18.2   0.6    1.9  1  EKD08560.1  carbonate dehydratase [Arthrospira platensis C1]
+
+
+Domain annotation for each sequence (and alignments):
+>> EKD08559.1  putative carbon dioxide concentrating mechanism protein [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  127.4  17.3   5.5e-41   1.7e-37      13     140 ..      12     143 ..       3     165 .. 0.86
+   2 !    3.1   0.0    0.0056        17     191     210 ..     166     185 ..     160     188 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 127.4 bits;  conditional E-value: 5.5e-41
+        ccmN  13 efyvngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayqgviaigagailgtgvlvvgrgeigenacigstttifnasvaamslvpsgsl 111
+                  +yv gdvtid s  +apgv++ aap+sqi i ag c+gmgti+ a qg++ i  g  +gt vl+vg g+ig  acigs +t++n+ + +  +v sgsl
+  EKD08559.1  12 AYYVSGDVTIDPSVAIAPGVVITAAPDSQIAIAAGVCIGMGTIIHADQGILEIDKGVCIGTTVLIVGAGKIGALACIGSESTLINSDIPSQHVVASGSL 110
+                 69************************************************************************************************* PP
+
+        ccmN 112 igdtsrqiti...evsat.rseperpplpepqp 140
+                 igd srq+     ev    + epe  p pepqp
+  EKD08559.1 111 IGDQSRQVNFsatEVDFIpQPEPEPQPEPEPQP 143
+                 *******96511134333134555555555555 PP
+
+  == domain 2  score: 3.1 bits;  conditional E-value: 0.0056
+        ccmN 191 svvgkvyinqllvtlfperh 210
+                  v g+  in+ll tl+p r+
+  EKD08559.1 166 QVYGQTQINELLKTLLPHRK 185
+                 58899************996 PP
+
+>> EKD08560.1  carbonate dehydratase [Arthrospira platensis C1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   0.6   1.4e-07   0.00041      14     115 ..      32     144 ..      17     218 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 1.4e-07
+        ccmN  14 fyvngdvtidesaivapgvilraapnsqiiigagaclgmgtiltayq.g..........viaigagailgtgvlvvgrgeigenacigstttifnasva 101
+                   + gdv i    +vapg  +ra       ig  + +  g ++   + g           + ig  + +    l+ g   +g+n+ ig  +t+fna v 
+  EKD08560.1  32 SNIIGDVRIGAHVLVAPGTSIRADEGFPFYIGDESNIQDGVVIHGLDeGkvkgddgqsySVWIGKNSSITHLSLIHGPAYVGDNCFIGFRSTVFNARVG 130
+                 3467*********************999999999999988887654212111112222246688888888999************************** PP
+
+        ccmN 102 amslvpsgsligdt 115
+                    +v   +li d 
+  EKD08560.1 131 NGCIVMMHALIQDV 144
+                 **********9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         6108  (1647000 residues searched)
+Passed MSV filter:                       210  (0.0343811); expected 122.2 (0.02)
+Passed bias filter:                      148  (0.0242305); expected 122.2 (0.02)
+Passed Vit filter:                        13  (0.00212836); expected 6.1 (0.001)
+Passed Fwd filter:                         3  (0.000491159); expected 0.1 (1e-05)
+Initial search space (Z):               6108  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 6039.00
+//
+[ok]

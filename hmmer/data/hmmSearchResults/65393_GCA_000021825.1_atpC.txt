@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65393_GCA_000021825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.5e-179  594.2   7.0   1.7e-179  594.0   7.0    1.0  1  ACK71032.1  ATP synthase F1, gamma subunit [Cyanothece sp. PC
+  ------ inclusion threshold ------
+      0.054   10.9   0.0      0.068   10.6   0.0    1.2  1  ACK72023.1  conserved hypothetical protein [Cyanothece sp. PC
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK71032.1  ATP synthase F1, gamma subunit [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  594.0   7.0  5.9e-183  1.7e-179       1     314 [.       1     314 []       1     314 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 594.0 bits;  conditional E-value: 5.9e-183
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 m+nlk irdriqsvkntkkiteamrlvaaa+vrraqeqviatrpfad laqvly+lq+rl+f +v lpll +re+k+v++lv++gdrglcggyn+nvi+
+  ACK71032.1   1 MPNLKFIRDRIQSVKNTKKITEAMRLVAAAKVRRAQEQVIATRPFADALAQVLYNLQNRLQFGEVSLPLLTQREIKTVAVLVVTGDRGLCGGYNANVIK 99 
+                 99************************************************************************************************* PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgl 198
+                 r+e+r+kelk++g++yk+vl+grka+qyf+rr+ pi+++y+ l qip+a+eas+i+dellslflse+vdr+el+yt+f+sl+ss+pvvqtllpl ++gl
+  ACK71032.1 100 RTEQRIKELKSQGINYKLVLIGRKAVQYFERRNAPIQTKYTELSQIPSASEASTISDELLSLFLSETVDRVELIYTRFLSLISSKPVVQTLLPLTTKGL 198
+                 *************************************************************************************************** PP
+
+        atpC 199 eaaddeifrlttrggqfeverekvtsevralprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkarq 297
+                 ++ ddeifrl t+gg+f+verekv+++v ++p+dmifeqdpvqildsllplyl+nqllralqesaaselaarmtams+asdna+elik+l+lsynkarq
+  ACK71032.1 199 DTPDDEIFRLVTKGGKFQVEREKVSASVSSFPQDMIFEQDPVQILDSLLPLYLNNQLLRALQESAASELAARMTAMSSASDNAGELIKTLSLSYNKARQ 297
+                 *************************************************************************************************** PP
+
+        atpC 298 aaitqellevvggaeal 314
+                 aaitqe+levv+ga+al
+  ACK71032.1 298 AAITQEILEVVAGANAL 314
+                 ***************97 PP
+
+>> ACK72023.1  conserved hypothetical protein [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   2.4e-05     0.068      66      99 ..      32      65 ..       7      84 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.4e-05
+        atpC 66 dlpllkkrevksvgllvisgdrglcggynsnvir 99
+                +l l+k    +sv ll isg++g+  gy ++ i 
+  ACK72023.1 32 HLILFKTMAAQSVPLLFISGQKGIESGYTKKKIS 65
+                678999**********************998775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         5710  (1769808 residues searched)
+Passed MSV filter:                       138  (0.0241681); expected 114.2 (0.02)
+Passed bias filter:                       87  (0.0152364); expected 114.2 (0.02)
+Passed Vit filter:                         7  (0.00122592); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350263); expected 0.1 (1e-05)
+Initial search space (Z):               5710  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 13937.24
+//
+[ok]

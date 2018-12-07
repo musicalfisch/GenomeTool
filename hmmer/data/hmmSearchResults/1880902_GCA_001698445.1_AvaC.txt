@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880902_GCA_001698445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-92  304.8   0.0    6.5e-92  304.7   0.0    1.0  1  OCQ92285.1  SAM-dependent methyltransferase [Limnothrix sp. P
+  ------ inclusion threshold ------
+      0.016   12.4   0.0      0.026   11.7   0.0    1.2  1  OCQ98699.1  hypothetical protein BCR12_03310 [Limnothrix sp. 
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ92285.1  SAM-dependent methyltransferase [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  304.7   0.0   3.5e-95   6.5e-92       1     219 [.       1     219 [.       1     220 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 304.7 bits;  conditional E-value: 3.5e-95
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+ +tl l  ++y y  ++ lre+pil +lrq ta +p a mqiapeqgqfma+lvq iga++a+e+g ftgys+l vala+p +g+++acd+s + t+
+  OCQ92285.1   1 MSPRTLDLSDRLYDYLLAVSLREAPILQELRQVTARHPAAQMQIAPEQGQFMALLVQLIGAERAIEVGTFTGYSTLSVALAMPDRGRIVACDVSANDTA 99 
+                 67789********************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 ia+ +wq+agva+kidlriapaletld+l+a g+++ fdf fidadk ny  y +r+l lvr gg+iaidnv+w+grv   ++++n t  ir +na+++
+  OCQ92285.1 100 IAQEFWQRAGVAHKIDLRIAPALETLDQLLADGQADCFDFAFIDADKKNYPNYLDRCLALVRPGGLIAIDNVLWAGRVVDPNNQENNTEAIREFNARLH 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 qd rv++s++pigdg+tla +
+  OCQ92285.1 199 QDPRVDLSLVPIGDGMTLARR 219
+                 ******************965 PP
+
+>> OCQ98699.1  hypothetical protein BCR12_03310 [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   1.4e-05     0.026      62     128 ..      70     134 ..      62     153 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.4e-05
+        AvaC  62 kkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkl 128
+                 +  l++g  +gy  l +ala p   +++ +dls     +a++  ++ g+ d++++  a a+e l +l
+  OCQ98699.1  70 RLMLDVGCGSGYGVLSMALANP-GARIVGVDLSPASVDLAQKRLEHHGLGDRVEFH-ALAMEELPQL 134
+                 56799**************975.689***************************986.6788888777 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3672  (1209182 residues searched)
+Passed MSV filter:                       104  (0.0283224); expected 73.4 (0.02)
+Passed bias filter:                       89  (0.0242375); expected 73.4 (0.02)
+Passed Vit filter:                        11  (0.00299564); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000544662); expected 0.0 (1e-05)
+Initial search space (Z):               3672  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8867.33
+//
+[ok]

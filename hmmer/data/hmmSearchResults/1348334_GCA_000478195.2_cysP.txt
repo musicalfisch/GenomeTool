@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysP  [M=347]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0048   14.5   2.4      0.048   11.3   0.2    2.0  2  ERT08447.1  molybdate ABC transporter, periplasmic molybdate-
+     0.0082   13.8   0.0      0.013   13.1   0.0    1.3  1  ERT06969.1  peptidase M48 family protein [Lyngbya aestuarii B
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT08447.1  molybdate ABC transporter, periplasmic molybdate-binding protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.8   0.1    0.0028         9      22     159 ..      23     150 ..       8     170 .. 0.70
+   2 !   11.3   0.2   1.5e-05     0.048     224     298 ..     202     270 .]     157     270 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 3.8 bits;  conditional E-value: 0.0028
+        cysP  22 asctssptnsgndsqkp.vtvtlvsyavtqsayekiipkfveewqqktgqkvtfeqsyggsgsqtravidgleadvvalalaldtkkieqagliqpgwe 119
+                 +s t+  tn+   s      +t+ + a    a + i p +    q++   k+t++     sgs  + + +g   dv   a   + + +e+  l+  g  
+  ERT08447.1  23 CSQTNQQTNTTPVSSTEqTELTISAAASLTDAMNAIQPIYE---QENPEVKLTYNL--ASSGSLQQQIEQGAPVDVFISAAPKQMNALEEKNLLLSGTR 116
+                 34566667766555444044566666667778888888774...445566777765..567788888999******99999999999999999999966 PP
+
+        cysP 120 keapndsivhksvvafvprdanikinkwsdlakdnikvit 159
+                 +      ++++ +v +vp++ n +++++ dl+ + +  i+
+  ERT08447.1 117 Q-----DLLKNEMVLIVPKEEN-QVKNFEDLTTELVEKIA 150
+                 5.....4666777888999888.57778888887775554 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 1.5e-05
+        cysP 224 inyenemilanqkgeklaytvptdynisidnpvavvdanvdkkgtrkvaeafvqflftpaaqrefaqvgfrpvep 298
+                 i y  +  ++++   k+  t p++    i  pvav+++         va+ f+qfl   +a+  f q gf  vep
+  ERT08447.1 202 IVYSSDAKISDK--VKIVATAPAESHSPIIYPVAVIQSSK----NPEVAKDFIQFLDREQAKAVFEQYGFGIVEP 270
+                 555555554433..46778899999999999999998753....468**************************98 PP
+
+>> ERT06969.1  peptidase M48 family protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.0     4e-06     0.013     267     303 ..     578     614 ..     482     626 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 4e-06
+        cysP 267 gtrkvaeafvqflftpaaqrefaqvgfrpveptvvke 303
+                  t + a  fv+fl  p+ q+ f q gfrp+   v  e
+  ERT06969.1 578 RTAHAASKFVDFLSEPEQQKVFVQYGFRPIYSNVNLE 614
+                 36678999**********************9888766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (347 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       144  (0.0221368); expected 130.1 (0.02)
+Passed bias filter:                      116  (0.0178324); expected 130.1 (0.02)
+Passed Vit filter:                        12  (0.00184473); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000307456); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11144.99
+//
+[ok]

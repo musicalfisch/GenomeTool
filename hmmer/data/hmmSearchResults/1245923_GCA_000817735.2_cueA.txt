@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245923_GCA_000817735.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      6e-14   49.6   0.8    6.9e-12   42.8   0.1    2.1  2  ODN56948.1  copper oxidase [Scytonema millei VB511283]
+  ------ inclusion threshold ------
+      0.026   11.2   0.0      0.051   10.3   0.0    1.4  1  ODN56390.1  plastocyanin [Scytonema millei VB511283]
+
+
+Domain annotation for each sequence (and alignments):
+>> ODN56948.1  copper oxidase [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.8   0.1   2.8e-15   6.9e-12      67     169 ..     100     194 ..      72     209 .. 0.85
+   2 !    5.4   0.0   0.00061       1.5     425     493 ..     260     326 ..     246     329 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 42.8 bits;  conditional E-value: 2.8e-15
+        cueA  67 qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlhelvaeqvfgglgg 165
+                   n+   ng+ipgp l ak gd v++ f n+  ++  lh+hg+h  +    d +   v  g +  yef      p g   yh h+ e v+ +v  gl g
+  ODN56948.1 100 SYNIWDLNGRIPGPTLRAKQGDRVRVLFFNQAGHSHSLHFHGVHPSEM---DGV-RPVRHGTATIYEFD---AEPYGVHLYHCHI-EPVTRHVAKGLYG 190
+                 4588899*************************************6654...443.57999********6...68**********9.67999******** PP
+
+        cueA 166 ifvv 169
+                 +f++
+  ODN56948.1 191 MFII 194
+                 **98 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.00061
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgiva 493
+                  +fhlh+n f+v        p  a  d + +   e   +   fr + gk ++h h     + g mg   
+  ODN56948.1 260 VTFHLHANFFDVYPTGMTTKP-TAKSDVITMGIAERHILEFAFR-YPGKYMFHPHQDAIAENGCMGQFE 326
+                 57*********9876555555.7899*********9999****9.89********99999999998655 PP
+
+>> ODN56390.1  plastocyanin [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   2.1e-05     0.051     263     311 ..      85     133 ..      80     138 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.1e-05
+        cueA 263 dggsiakpvelrelllspgeraevlvqgkrppgryrllslpydrggamg 311
+                      ak +  ++ll+spg++++     +  pg+y +   p+   g +g
+  ODN56390.1  85 KSTDFAKSLSHKQLLMSPGQKTKTTFPADAAPGEYSFYCEPHRGAGMIG 133
+                 5667899*******************************99985555545 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         4957  (1458912 residues searched)
+Passed MSV filter:                       114  (0.0229978); expected 99.1 (0.02)
+Passed bias filter:                      101  (0.0203752); expected 99.1 (0.02)
+Passed Vit filter:                         5  (0.00100867); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040347); expected 0.0 (1e-05)
+Initial search space (Z):               4957  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14472.41
+//
+[ok]

@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/2005459_GCA_002218085.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-28   97.5   1.1    1.9e-28   97.0   0.1    1.7  2  GAX43071.1  oxidoreductase FAD/NAD(P)-binding subunit [Tolypo
+    3.2e-26   89.9   0.2    4.1e-26   89.5   0.2    1.1  1  GAX45089.1  CpcD phycobilisome linker domain protein [Tolypot
+      0.001   17.8   0.1     0.0021   16.8   0.1    1.5  1  GAX45090.1  phycocyanin-associated rod linker protein CpcC [T
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX43071.1  oxidoreductase FAD/NAD(P)-binding subunit [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   97.0   0.1   7.7e-32   1.9e-28      10      70 ..      17      77 ..       9      80 .. 0.94
+   2 ?   -3.8   0.1       2.2   5.5e+03      14      29 ..     101     116 ..     100     117 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 97.0 bits;  conditional E-value: 7.7e-32
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                 r+f+yevvGl q ++td+ +y irksGsvf+ vpy rmnqemrr+trlG +ivsi+p+ a
+  GAX43071.1 17 SRIFLYEVVGLRQSEETDQTNYPIRKSGSVFIRVPYNRMNQEMRRLTRLGGKIVSIQPVSA 77
+                69********************************************************987 PP
+
+  == domain 2  score: -3.8 bits;  conditional E-value: 2.2
+        cpcD  14 vyevvGlsqndktdnl 29 
+                 v evv  +  d+t n+
+  GAX43071.1 101 VDEVVNNATTDETANI 116
+                 6699999999999886 PP
+
+>> GAX45089.1  CpcD phycobilisome linker domain protein [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   89.5   0.2   1.7e-29   4.1e-26       5      73 ..      25      92 ..      22      93 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 89.5 bits;  conditional E-value: 1.7e-29
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                ssa   r+f yev Gl qn + d  +y ir sGsv++tvpy rmn+em+ritr+G  iv i pl a +a
+  GAX45089.1 25 SSA-SSRMFRYEVTGLRQNSENDKNNYEIRNSGSVYVTVPYNRMNEEMQRITRMGGTIVKIEPLTAESA 92
+                454.58**********************************************************99766 PP
+
+>> GAX45090.1  phycocyanin-associated rod linker protein CpcC [Tolypothrix sp. NIES-4075]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.8   0.1   8.6e-07    0.0021      36      67 ..     255     285 ..     248     286 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 16.8 bits;  conditional E-value: 8.6e-07
+        cpcD  36 sGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 s s  + vpy r+ ++m++i + G +ivs+ p
+  GAX45090.1 255 S-SYAIVVPYERLSEKMQQIQKQGGKIVSVSP 285
+                 3.66789***********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         7372  (2211063 residues searched)
+Passed MSV filter:                       154  (0.0208899); expected 147.4 (0.02)
+Passed bias filter:                      139  (0.0188551); expected 147.4 (0.02)
+Passed Vit filter:                        16  (0.00217037); expected 7.4 (0.001)
+Passed Fwd filter:                         3  (0.000406945); expected 0.1 (1e-05)
+Initial search space (Z):               7372  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5453.96
+//
+[ok]

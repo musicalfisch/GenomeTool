@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/272129_GCA_000180455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-19   66.8   0.0    3.5e-19   66.0   0.0    1.3  1  CBN58072.1  Ferredoxin--NADP reductase [[Oscillatoria] sp. PC
+    1.9e-09   33.7   0.0    2.1e-09   33.6   0.0    1.0  1  CBN54766.1  Globin domain protein (fragment) [[Oscillatoria] 
+
+
+Domain annotation for each sequence (and alignments):
+>> CBN58072.1  Ferredoxin--NADP reductase [[Oscillatoria] sp. PCC 6506]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   66.0   0.0   1.2e-22   3.5e-19    1208    1395 ..     176     374 ..     161     382 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 66.0 bits;  conditional E-value: 1.2e-22
+        cysJ 1208 qkprlysisscp...llhprriqitvgvlqvt.tdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s      l  + i + v  l+    ++g+   g+cs yl+gl+pg+ v+i   +   +  p d  + i+m+  gtg++p+ afl +  
+  CBN58072.1  176 HKLRLYSIASTRhgdNLDDKTISLCVRRLEYKhPETGEKVFGVCSTYLTGLEPGAEVKITGpVGKEMLLPEDPESTIIMMATGTGIAPFRAFLWRMF 272 
+                  578*****998522269999******99987626899999*******************8626678899************************9877 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeqlqvwrdr.nvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmaddvf 1390
+                    +n      g a l+fg+    +++y+e+l+  +        l  a+sr  +     k y+qn ++++ +++w+++ +p+ h y+cg   m   + 
+  CBN58072.1  273 KENNPDYKfKGLAWLFFGVAYTPNILYKEELEKLQAEfPDNFRLTYAISREQKSaqggKMYIQNRIQENADQLWELVQKPNTHTYICGLKGMEGGID 369 
+                  777766651699****************99876554313334566666665432113378****************************988877666 PP
+
+        cysJ 1391 avmma 1395
+                    m a
+  CBN58072.1  370 EGMSA 374 
+                  55555 PP
+
+>> CBN54766.1  Globin domain protein (fragment) [[Oscillatoria] sp. PCC 6506]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.6   0.0   7.2e-13   2.1e-09     345     458 ..      17     129 ..       2     142 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 33.6 bits;  conditional E-value: 7.2e-13
+        cysJ 345 qnkqqmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhsfadvptcaypamsetlfvlferyl.pnftpe 442
+                  n  ++   fy+ lf  yp v p+f  a+m     +l+ +l ++++ lr    d +   l+ +g  h         yp +  +++  fe yl p++tpe
+  CBN54766.1  17 PNAPEFATSFYDNLFADYPHVKPLFANANMAEQKKKLIASLVLVIQNLRK--PDALTGALKGMGARHVQYGTLPEHYPLVGASILKTFESYLgPDWTPE 113
+                 566677889***************************************97..68999**********876666679***************989***** PP
+
+        cysJ 443 lrqgwqilldriinvv 458
+                 ++q w      i n++
+  CBN54766.1 114 VKQAWVDAYGAIANLM 129
+                 *****88877777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         5822  (1812051 residues searched)
+Passed MSV filter:                       151  (0.0259361); expected 116.4 (0.02)
+Passed bias filter:                      117  (0.0200962); expected 116.4 (0.02)
+Passed Vit filter:                         9  (0.00154586); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000343525); expected 0.1 (1e-05)
+Initial search space (Z):               5822  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.16u 0.02s 00:00:00.18 Elapsed: 00:00:00.18
+# Mc/sec: 14899.09
+//
+[ok]

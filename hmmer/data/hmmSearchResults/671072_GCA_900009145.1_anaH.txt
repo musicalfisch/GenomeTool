@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671072_GCA_900009145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaH  [M=149]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-49  165.7   0.4    2.8e-49  165.2   0.4    1.2  1  CUR34898.1  conserved hypothetical protein [Planktothrix tepi
+  ------ inclusion threshold ------
+      0.033   12.5   0.8       0.06   11.6   0.1    1.8  2  CUR32915.1  conserved hypothetical protein [Planktothrix tepi
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR34898.1  conserved hypothetical protein [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  165.2   0.4   9.6e-53   2.8e-49      11     148 ..       7     144 ..       1     145 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 165.2 bits;  conditional E-value: 9.6e-53
+        anaH  11 eievknldhlglvagiideigiveiineqvsiergeivtagqvvkaiilnglgfvsralylfpqffedkatehllgegiepkqlnddkigrvmdklyql 109
+                  +e+ nldhlg+vagiide+ +ve +n++v +   e v+ gqv+ka+ilnglgf+s  lylf +ff  katehl+geg+   qlndd+igr +dk y++
+  CUR34898.1   7 AMEIVNLDHLGIVAGIIDEMELVEEVNKKVGLRAKEAVSPGQVMKAMILNGLGFLSAPLYLFENFFIGKATEHLIGEGVTAEQLNDDRIGRALDKYYEV 105
+                 6899*********************************************************************************************** PP
+
+        anaH 110 nvsvifllislaavkkfgvatenshldstslskeikyky 148
+                   + +f  i+l a +kf v  en hlds+s+s+e++yk 
+  CUR34898.1 106 GTTKLFTAIALKAAQKFQVERENVHLDSSSISVEGEYKS 144
+                 *************************************86 PP
+
+>> CUR32915.1  conserved hypothetical protein [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.1     2e-05      0.06      11      29 ..       7      25 ..       1      41 [. 0.83
+   2 ?   -3.3   0.0      0.84   2.5e+03      37      53 ..     263     279 ..     239     287 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2e-05
+        anaH 11 eievknldhlglvagiide 29
+                 +e+ nldhlg+vagi +e
+  CUR32915.1  7 AMEIVNLDHLGIVAGIKEE 25
+                6899***********9877 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 0.84
+        anaH  37 neqvsiergeivtagqv 53 
+                 + + s+  ge + ag+ 
+  CUR32915.1 263 EARESVIEGERIKAGRF 279
+                 23334444555555544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (149 nodes)
+Target sequences:                         5948  (1891724 residues searched)
+Passed MSV filter:                       154  (0.0258911); expected 119.0 (0.02)
+Passed bias filter:                      124  (0.0208473); expected 119.0 (0.02)
+Passed Vit filter:                         8  (0.00134499); expected 5.9 (0.001)
+Passed Fwd filter:                         2  (0.000336247); expected 0.1 (1e-05)
+Initial search space (Z):               5948  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 4026.67
+//
+[ok]

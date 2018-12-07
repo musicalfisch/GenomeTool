@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1973477_GCA_002218065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-05   21.1   0.0    2.7e-05   21.1   0.0    1.0  1  GAX34181.1  multicopper oxidase type 2 [Nodularia sp. NIES-35
+  ------ inclusion threshold ------
+      0.013   12.3   0.0      0.019   11.7   0.0    1.5  1  GAX35449.1  plastocyanin [Nodularia sp. NIES-3585]
+
+
+Domain annotation for each sequence (and alignments):
+>> GAX34181.1  multicopper oxidase type 2 [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.1   0.0   1.1e-08   2.7e-05     447     490 ..      26      68 ..       6      74 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 21.1 bits;  conditional E-value: 1.1e-08
+        cueA 447 qawedtlriranetvriripfrdftgktvyhchvldhedlgmmg 490
+                 q  +d++ +  ne vr+ i   d  gk  +hchvl hed  mm 
+  GAX34181.1  26 QGRKDSIIVYPNEVVRV-IAKYDGPGKYTWHCHVLIHEDHDMMR 68 
+                 778899999*******9.566799******************96 PP
+
+>> GAX35449.1  plastocyanin [Nodularia sp. NIES-3585]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.0   7.7e-06     0.019     264     305 ..      86     127 ..      12     139 .] 0.55
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 7.7e-06
+        cueA 264 ggsiakpvelrelllspgeraevlvqgkrppgryrllslpyd 305
+                    +ak +  ++ll+spg+     +  + p g+y +   p+ 
+  GAX35449.1  86 SADLAKSLSHKQLLMSPGQTQTTTIPADAPAGEYTFYCEPHR 127
+                 233444555555555555555555555555555555544442 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5048  (1559691 residues searched)
+Passed MSV filter:                       136  (0.0269414); expected 101.0 (0.02)
+Passed bias filter:                      119  (0.0235737); expected 101.0 (0.02)
+Passed Vit filter:                         7  (0.00138669); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000396197); expected 0.1 (1e-05)
+Initial search space (Z):               5048  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12893.45
+//
+[ok]

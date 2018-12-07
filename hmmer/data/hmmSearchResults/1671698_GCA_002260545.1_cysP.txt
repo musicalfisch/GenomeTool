@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1671698_GCA_002260545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysP  [M=347]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.6e-06   23.0   4.0    0.00061   17.1   0.2    2.1  2  OZH53138.1  molybdate ABC transporter substrate-binding prote
+    0.00013   19.3   0.0    0.00019   18.8   0.0    1.3  1  OZH54676.1  ABC transporter substrate-binding protein [Hydroc
+
+
+Domain annotation for each sequence (and alignments):
+>> OZH53138.1  molybdate ABC transporter substrate-binding protein [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.2   2.5e-07   0.00061      14     161 ..       8     145 ..       1     172 [. 0.76
+   2 !    7.5   0.6   0.00021      0.51     232     296 ..     195     261 ..     165     262 .] 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 2.5e-07
+        cysP  14 tvltggmlasctssptnsgndsqkpvtvtlvsyavtqsayekiipkfveewqqktgqkvtfeqsyggsgsqtravidgleadvvalalaldtkkieqag 112
+                 t l    + +c    + s n  + ++ +t+ + a  +     i p +    qqkt   +t++     sgs  + + +g   d+   a a   + +e+ g
+  OZH53138.1   8 TFLKFIAILACFFIISCSPNTNNSSINLTVSAAASLKDVMAEIKPIY---EQQKTNVSLTLN--LASSGSLRQQIEQGAPVDLFISASASHINMLEEKG 101
+                 44444444445444455555555667788788888888999998876...389998777776..567888888999*********************** PP
+
+        cysP 113 liqpgwekeapndsivhksvvafvprdanikinkwsdlakdnikvitan 161
+                 li            ++++ +v +vp++    +n + dl+k+ i  i+  
+  OZH53138.1 102 LIIDENR-----RDLLKNQMVLIVPQENTALVNTFEDLTKEAISTISIG 145
+                 **86443.....3467788899*********************999753 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00021
+        cysP 232 lanqkgeklaytvptdynisidnpvavvdanvdkkgtrkv..aeafvqflftpaaqrefaqvgfrpv 296
+                 +  q   +++ tv    n        vv   v  k ++++  a+ + +flftp+a+  f + gf p+
+  OZH53138.1 195 IVYQTDTNVSDTVKIVANAPEKSHTPVVYPIVIIKDSKNIeaAQKLEEFLFTPEAKAVFEKYGFIPI 261
+                 455666666666666666666666666666666565555422667889****************996 PP
+
+>> OZH54676.1  ABC transporter substrate-binding protein [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.8   0.0   7.6e-08   0.00019     254     300 ..     277     322 ..     175     336 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 18.8 bits;  conditional E-value: 7.6e-08
+        cysP 254 npvavvdanvdkkgtrkvaeafvqflftpaaqrefaqvgfrpveptv 300
+                    a+v  nv+  +t + a+ fv+fl+ p+ q+ f q gfrp +  +
+  OZH54676.1 277 ATAAIVRQNVNG-ATANAADKFVEFLIQPEQQKVFVQYGFRPTQGNI 322
+                 356788899975.68899************************98665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (347 nodes)
+Target sequences:                         4935  (1360323 residues searched)
+Passed MSV filter:                       102  (0.0206687); expected 98.7 (0.02)
+Passed bias filter:                       75  (0.0151976); expected 98.7 (0.02)
+Passed Vit filter:                         5  (0.00101317); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000405268); expected 0.0 (1e-05)
+Initial search space (Z):               4935  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9440.64
+//
+[ok]

@@ -1,0 +1,99 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805292_GCA_001873375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppC  [M=292]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-54  182.3  11.7    1.2e-53  179.7   8.8    2.0  2  OIP75947.1  ABC transporter substrate-binding protein [Oscill
+    3.8e-30  102.5  11.0      2e-29  100.2  11.0    1.8  1  OIP77523.1  peptide ABC transporter permease [Oscillatoriales
+    0.00012   18.8   1.8    0.00061   16.5   1.8    2.1  1  OIP77960.1  ABC transporter substrate-binding protein [Oscill
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP75947.1  ABC transporter substrate-binding protein [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.7   0.0    0.0048       4.9      11      39 ..       3      31 ..       1      54 [. 0.84
+   2 !  179.7   8.8   1.2e-56   1.2e-53      62     291 ..     112     338 ..     102     339 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 3.7 bits;  conditional E-value: 0.0048
+        dppC 11 twrrfyrdplavigaialiiiilavlfgp 39
+                 w+r+  +pla ig + l i   + l+  
+  OIP75947.1  3 WWKRLRANPLAWIGIVILTIFYTSALLAD 31
+                599*************9999887776655 PP
+
+  == domain 2  score: 179.7 bits;  conditional E-value: 1.2e-56
+        dppC  62 hlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvl 160
+                 +l+gt++ g+dql+r+l ggrisl +gi    ++  +g  +g isg+ gg +d +lmr+ ++++s+p + ll+ +  ++   i      +t  f l++ 
+  OIP75947.1 112 NLLGTDEQGRDQLTRLLHGGRISLLIGIIGTSISYTIGCLVGGISGYVGGWLDLVLMRFVEVLMSVPSIYLLIALAAILPPQIS-----NTQRFALIIA 205
+                 799*******************************************************************99999988887774.....6899****** PP
+
+        dppC 161 vigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlfka..kdylt 257
+                 +i  + w  +ar++rg++l ++e  f+ +a a ga+p+r+i  h+lp+ + +ii++atl +   i+te+ ls++glg+ p  p+wg+ml  +     l 
+  OIP75947.1 206 IISFVSWAGLARIIRGQVLSIKEQPFVMSARASGASPLRIITHHILPQTVTFIIISATLDIPRFIVTEAVLSLVGLGIQPPDPSWGNMLSLStnASILI 304
+                 ******************************************************************************9999******97551156899 PP
+
+        dppC 258 taphlvifpalaivitvlsinfigdglrdvfdpn 291
+                   p lv fpalaiv+tvls n++gd lrd +dp+
+  OIP75947.1 305 LQPWLVWFPALAIVLTVLSFNLLGDSLRDALDPK 338
+                 9*******************************96 PP
+
+>> OIP77523.1  peptide ABC transporter permease [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.2  11.0     2e-32     2e-29      19     289 ..      11     277 ..       4     279 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 100.2 bits;  conditional E-value: 2e-32
+        dppC  19 plavigaialiiiilavlfgpifyrvpi..dtidf.sq.ttappslkhlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggai 113
+                  l  ig +  ++ +l  +  pi+  + +  d  +f s+    pps kh fgt+  g+d ++r + g  ++  v ia+ i+++ +g  +g +sg+ gg++
+  OIP77523.1  11 RLMSIGIVISVVFLLMAIAAPILQAIGLltDPSEFlSNaIHEPPSPKHWFGTDLQGHDVFTRTIAGASVAWQVTIASTIISIAIGVPLGMLSGYKGGSL 109
+                 5788999999999999999****9987633667773331457********************************************************* PP
+
+        dppC 114 dgllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgm 212
+                 d  l+ l d + +lp l l l i +++   + +        + l v  i         r++r + +  +   +i aa a+ga    ++  +l pnv+  
+  OIP77523.1 110 DRGLVFLMDAIYTLPSLLLSLTIAFVVGAGVWNA------AIALSVAYIP-----QYFRVIRNQTVSTKTEVYIEAAQAIGADTKTILIKYLAPNVIQS 197
+                 *******************999999987655443......3445555554.....3469999999****99************9999999********* PP
+
+        dppC 213 iivaatlavgnaiitestlsflglgfppdvptwgqmlfkakdylttaphl...vifpalaivitvlsinfigdglrdvfd 289
+                 +    tl   +ai+t + l flglg+p  +p wg+ l +a d l+t   +    +fp +ai    + + ++g+gl + f 
+  OIP77523.1 198 LPAIFTLNAADAILTLAGLGFLGLGIPESIPEWGHDLKQALDALSTGENIwwtTVFPGMAITFMAIGLSLVGEGLTQRFS 277
+                 **********************************************987533379********************98775 PP
+
+>> OIP77960.1  ABC transporter substrate-binding protein [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   1.8     6e-07   0.00061     155     237 ..     206     292 ..     195     336 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 6e-07
+        dppC 155 filvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatla....vgnaiitestlsflglg 237
+                 +il +l +  + +  + r++rg +l +   ++i +a a g    ++i++h l n +  +i    +     +g a ite  +s+ glg
+  OIP77960.1 206 MILPILTLTLVSFAGLQRIMRGSLLDVLRQDYIKTARAKGLPENQVIYIHALRNAINPLITLLGFEfgglLGGAFITEFFFSWPGLG 292
+                 3555666666667777899***********************************999888766554112267899999999999988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (292 nodes)
+Target sequences:                         3046  (947245 residues searched)
+Passed MSV filter:                       173  (0.0567958); expected 60.9 (0.02)
+Passed bias filter:                       72  (0.0236376); expected 60.9 (0.02)
+Passed Vit filter:                         9  (0.00295469); expected 3.0 (0.001)
+Passed Fwd filter:                         3  (0.000984898); expected 0.0 (1e-05)
+Initial search space (Z):               3046  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 5531.91
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1819295_GCA_001623485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrL  [M=299]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-65  218.9   2.3    1.9e-65  218.8   2.3    1.0  1  KZL48533.1  DDE endonuclease [Nodularia spumigena CENA596]
+    1.1e-45  154.0   0.1    1.2e-45  153.9   0.1    1.0  1  KZL48532.1  transposase [Nodularia spumigena CENA596]
+
+
+Domain annotation for each sequence (and alignments):
+>> KZL48533.1  DDE endonuclease [Nodularia spumigena CENA596]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  218.8   2.3   9.2e-69   1.9e-65     166     297 ..       2     133 .]       1     133 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 218.8 bits;  conditional E-value: 9.2e-69
+        cyrL 166 htlksqlvslpegkdivdvevGkkGptsdinlfreqqkkfdeeqkfkgdkgyqGgknietphkkkrkkelteeqkeenkilsskrifvehlirlvkifr 264
+                 ht ksql+ lp+g+divdv+ G +G+ sdinlfre+++ f+e+qkf+gdk+yqG+k i+tp+kk+rkkel++eqk +nk+l+s+rifvehlirlvkifr
+  KZL48533.1   2 HTRKSQLIVLPNGRDIVDVVAGEPGRKSDINLFRENKNGFEEKQKFSGDKAYQGEKSIKTPEKKPRKKELSSEQKIQNKELASERIFVEHLIRLVKIFR 100
+                 9************************************************************************************************** PP
+
+        cyrL 265 vaserfrlksnvyeeiiltvcGlvrlrigtlvl 297
+                 va+erfrl+s +ye+ii+t+cGlvrlrigt++l
+  KZL48533.1 101 VAQERFRLNSSKYEQIIMTICGLVRLRIGTFIL 133
+                 ******************************997 PP
+
+>> KZL48532.1  transposase [Nodularia spumigena CENA596]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  153.9   0.1   5.4e-49   1.2e-45       1     125 [.       1     125 [.       1     131 [] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 153.9 bits;  conditional E-value: 5.4e-49
+        cyrL   1 msivleyiekypertkqilGidyeqfqalvkeaekkhekiqkekekqkirinkkGGGrkeklsvaeqiclclfylrqlptfeilGllfgvskseahdtf 99 
+                 ms++++yi+++p+++++++G++yeq+q+l+++a k+h+++++  e++k+ri+  GGGr++kls +eqi+l+l ylr+l tf++lG++fgvs+++a+dtf
+  KZL48532.1   1 MSSIFDYIQNNPQEAQRLVGLKYEQLQELLDKAIKRHNHKRELLEDRKVRIILGGGGRRPKLSPSEQIILTLTYLRHLTTFQLLGIQFGVSETTANDTF 99 
+                 899************************************************************************************************ PP
+
+        cyrL 100 hywikilreilpsslleqvekkeedl 125
+                 +yw+ +l+e+lp+sl+eqv+k    +
+  KZL48532.1 100 NYWLPLLGELLPPSLVEQVKKTPVTM 125
+                 ********************976555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (299 nodes)
+Target sequences:                         4228  (1349050 residues searched)
+Passed MSV filter:                        96  (0.0227058); expected 84.6 (0.02)
+Passed bias filter:                       64  (0.0151372); expected 84.6 (0.02)
+Passed Vit filter:                         6  (0.00141911); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000473037); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10084.15
+//
+[ok]

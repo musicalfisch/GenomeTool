@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desA  [M=346]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0022   14.4   0.8     0.0022   14.4   0.8    1.5  2  EDY37751.1  fatty acid desaturase [Cyanobium sp. PCC 7001]
+     0.0071   12.7   1.3      0.018   11.4   0.0    2.0  2  EDY37734.1  beta-carotene ketolase [Cyanobium sp. PCC 7001]
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY37751.1  fatty acid desaturase [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.8   1.6e-06    0.0022      63     130 ..      49     116 ..      25     158 .. 0.88
+   2 ?   -2.3   0.1      0.19   2.6e+02     264     264 ..     239     239 ..     173     276 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 1.6e-06
+        desA  63 pwyllplawiftgtaltgffviahdcghrsfsnrpwvndlvghifllpliypfhcwrflhdrhhaktn 130
+                 pw       +++g al+  f   h+c hr+    + +nd v  +  l   y    +r  h+ hh  t 
+  EDY37751.1  49 PWAARLTGLLISGIALATCFAPLHECCHRTAFRSKALNDAVAWLAGLLSFYNATFYRRYHQWHHRFTH 116
+                 676666678899******************99999**********9999***************8775 PP
+
+  == domain 2  score: -2.3 bits;  conditional E-value: 0.19
+        desA 264 t 264
+                 t
+  EDY37751.1 239 T 239
+                 1 PP
+
+>> EDY37734.1  beta-carotene ketolase [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.4   0.0   1.3e-05     0.018      62     128 ..      35     102 ..       8     115 .. 0.76
+   2 ?   -0.3   0.1     0.048        66     269     303 ..     202     237 ..     192     242 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 1.3e-05
+        desA  62 spwyllplawiftgtaltgffviahdcghrsfsnr.pwvndlvghifl.lpliypfhcwrflhdrhhak 128
+                 sp +l+ la ++     tg+f++ hd+ h  +  r + +nd +g + l l    p++  r  h  hh  
+  EDY37734.1  35 SP-HLIVLAVLVRTFLQTGLFIVGHDAMHGVLLPRqRGLNDSIGTLALgLYAALPYRQCRRNHRIHHQA 102
+                 44.57789999888899************9987662579*****9987567788999888888888854 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 0.048
+        desA 269 yprwveil.chdinvhiphhistaipsynlrkvhas 303
+                  p w+ +l c+    h  hh +  +  y+l ++ as
+  EDY37734.1 202 LPPWLSLLaCYHFGYHQEHHRAPQLAWYDLPRMVAS 237
+                 577888765999999999999999999999887776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (346 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                        78  (0.0281487); expected 55.4 (0.02)
+Passed bias filter:                       63  (0.0227355); expected 55.4 (0.02)
+Passed Vit filter:                         9  (0.00324792); expected 2.8 (0.001)
+Passed Fwd filter:                         3  (0.00108264); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 7112.97
+//
+[ok]

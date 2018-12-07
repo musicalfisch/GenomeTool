@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1140_GCA_000012525.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-49  163.6   7.6    1.8e-49  163.4   7.6    1.0  1  ABB56364.1  ATP synthase F0, C subunit [Synechococcus elongat
+     0.0082   14.0   2.2      0.017   13.0   0.2    2.4  2  ABB57718.1  Sulfate ABC transporter, permease protein CysW [S
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB56364.1  ATP synthase F0, C subunit [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.4   7.6   1.4e-52   1.8e-49       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 163.4 bits;  conditional E-value: 1.4e-52
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                md+l++aasv+aaalavGlaaiGpgigqG+aagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvvalvllfanpfa
+  ABB56364.1  1 MDSLTSAASVLAAALAVGLAAIGPGIGQGSAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> ABB57718.1  Sulfate ABC transporter, permease protein CysW [Synechococcus elongatus PCC 7942]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.2      0.33   4.4e+02      55      71 ..      25      41 ..      17      46 .. 0.79
+   2 !   13.0   0.2   1.3e-05     0.017      39      75 ..      57      92 ..      47      96 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.33
+        atpH 55 lslafmesltiyGlvva 71
+                + laf+ ++ +  lvv 
+  ABB57718.1 25 IGLAFLTAIVLLPLVVV 41
+                46899999999988885 PP
+
+  == domain 2  score: 13.0 bits;  conditional E-value: 1.3e-05
+        atpH 39 iarqpeaeGkirgtlllslafmesltiyGlvvalvll 75
+                i +qpea   ir tll++   +   t++G+ +a vl+
+  ABB57718.1 57 I-QQPEALHAIRLTLLITAVAIPLNTLFGVAIAWVLV 92
+                4.79***************99*************996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         2661  (809802 residues searched)
+Passed MSV filter:                       144  (0.054115); expected 53.2 (0.02)
+Passed bias filter:                       65  (0.0244269); expected 53.2 (0.02)
+Passed Vit filter:                         5  (0.00187899); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000751597); expected 0.0 (1e-05)
+Initial search space (Z):               2661  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 3279.70
+//
+[ok]

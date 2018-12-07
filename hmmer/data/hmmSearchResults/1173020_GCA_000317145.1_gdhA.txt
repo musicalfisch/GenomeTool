@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173020_GCA_000317145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00017   19.0   2.2    0.00041   17.7   0.2    2.4  3  AFY95806.1  malic enzyme [Chamaesiphon minutus PCC 6605]
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY95806.1  malic enzyme [Chamaesiphon minutus PCC 6605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0      0.02   1.2e+02     408     423 ..     131     146 ..     108     151 .. 0.79
+   2 ?   -3.5   0.1      0.19   1.1e+03     227     242 ..     170     185 ..     160     192 .. 0.76
+   3 !   17.7   0.2     7e-08   0.00041     210     268 ..     269     326 ..     256     364 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.02
+        gdhA 408 laaytlgvgrvaqals 423
+                   ayt gvgrv+ a++
+  AFY95806.1 131 AMAYTPGVGRVCMAIA 146
+                 358********99976 PP
+
+  == domain 2  score: -3.5 bits;  conditional E-value: 0.19
+        gdhA 227 viqgfgnvggaaaell 242
+                 ++ g+gn+g+aa++ +
+  AFY95806.1 170 AVLGLGNLGAAASMPV 185
+                 67899****9998755 PP
+
+  == domain 3  score: 17.7 bits;  conditional E-value: 7e-08
+        gdhA 210 vrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldip 268
+                 + ++l+   ksl  v+++i+g g  g a a+l+  ag k i++  +  g+ s +  d++
+  AFY95806.1 269 LLNSLKLVKKSLDTVKITINGAGAAGIAIAKLFMTAGVKHICICDSK-GILSTSRTDLN 326
+                 3455666789********************************99876.56666666654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         5945  (1793467 residues searched)
+Passed MSV filter:                       173  (0.0291001); expected 118.9 (0.02)
+Passed bias filter:                      134  (0.0225399); expected 118.9 (0.02)
+Passed Vit filter:                         8  (0.00134567); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000168209); expected 0.1 (1e-05)
+Initial search space (Z):               5945  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12823.29
+//
+[ok]

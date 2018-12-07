@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173026_GCA_000317555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finB  [M=479]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-09   33.3   0.0      5e-09   33.2   0.0    1.0  1  AFZ30353.1  nitrogen fixation protein NifX [Gloeocapsa sp. PC
+    0.00019   18.1   0.1    0.00064   16.3   0.1    1.9  1  AFZ29333.1  cyclic pyranopterin monophosphate synthase subuni
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ30353.1  nitrogen fixation protein NifX [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.2   0.0     2e-12     5e-09     371     463 ..       3      94 ..       1     109 [. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 33.2 bits;  conditional E-value: 2e-12
+        finB 371 vavatkggglvnqhfghakefqvyevdgnevrfvshrkidqycqggyseeatadnilkaiadckavlvskigncpkekleaagiktveaydvi 463
+                 +a +t+    +n hfg a++++vyev   e +f+   + d   +   +e+  + + ++a+adc  v vs ig     +l +  i +++a    
+  AFZ30353.1   3 IAFTTNDQIHINAHFGWARKIDVYEVSPDEYKFIKTLRFDGNLKEDGNEDKLVPK-IEALADCTIVYVSAIGGSAAARLIKKRITPIKARSED 94 
+                 7788888889******************************988887777766655.69*******************9999999998886544 PP
+
+>> AFZ29333.1  cyclic pyranopterin monophosphate synthase subunit MoaA [Gloeocapsa sp. PCC 7428]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3   0.1   2.6e-07   0.00064     123     249 ..      64     178 ..       5     200 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 2.6e-07
+        finB 123 gdplanpektfrtfeliadkapdiklclstnglmlteyvdrikqlnidhvtitlntidpeigaqiyswvhykrkryrgvegakillekqleglqalkea 221
+                 g+pl  p   +     ia       l+++tng++l+   + + ++ +  + i+l+ +dp+   qi    +  r r++ v           +g+q+  + 
+  AFZ29333.1  64 GEPLLRPG-VIEIVRAIAAFPQTQDLAMTTNGFLLAGMAQALYDVGLRRINISLDSLDPDTFNQIIG--NRSRSRWQQVW----------QGIQSAYQV 149
+                 66776665.34556667776667789**************************************986..45677777663..........344433333 PP
+
+        finB 222 di.lckvnsvmipgindkhlvevnkaire 249
+                      k+n v+ipg+nd+ ++++  +  +
+  AFZ29333.1 150 GFdPLKLNVVVIPGVNDHEVLDLAALTID 178
+                 2213489***********99988765544 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (479 nodes)
+Target sequences:                         5011  (1616692 residues searched)
+Passed MSV filter:                       137  (0.0273399); expected 100.2 (0.02)
+Passed bias filter:                      114  (0.02275); expected 100.2 (0.02)
+Passed Vit filter:                         8  (0.00159649); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000399122); expected 0.1 (1e-05)
+Initial search space (Z):               5011  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12906.59
+//
+[ok]

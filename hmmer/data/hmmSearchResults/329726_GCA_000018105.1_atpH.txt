@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      4e-47  157.5   5.9    4.4e-47  157.4   5.9    1.0  1  ABW25934.1  ATP synthase F0, C subunit [Acaryochloris marina 
+    7.7e-20   70.1   2.8    8.7e-20   70.0   2.8    1.0  1  ABW32658.1  ATP synthase C chain (plasmid) [Acaryochloris mar
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW25934.1  ATP synthase F0, C subunit [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  157.4   5.9     1e-50   4.4e-47       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 157.4 bits;  conditional E-value: 1e-50
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdplvaaasv+aaal +G+++iGp+++qGnaag+aveGiarqpeaeGkirgtlll+lafmesltiyGlv+alvllfanpfa
+  ABW25934.1  1 MDPLVAAASVLAAALGIGISTIGPALAQGNAAGKAVEGIARQPEAEGKIRGTLLLCLAFMESLTIYGLVIALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> ABW32658.1  ATP synthase C chain (plasmid) [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.0   2.8   2.1e-23   8.7e-20       3      80 ..       5      82 ..       1      83 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 70.0 bits;  conditional E-value: 2.1e-23
+        atpH  3 plvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                +lv  as++ ++l++ +++iGp++g+G a +qa++ +a+qp+    i   l++ +a++es +iy +v++l+l+fanpf
+  ABW32658.1  5 ALVGMASIVISGLTIAIGSIGPALGEGRALSQALSALAQQPDEANTITRVLFVGMALVESTAIYCFVITLILIFANPF 82
+                47899************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       260  (0.0310151); expected 167.7 (0.02)
+Passed bias filter:                      162  (0.0193248); expected 167.7 (0.02)
+Passed Vit filter:                        11  (0.00131218); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000238578); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 4686.39
+//
+[ok]

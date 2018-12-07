@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/373994_GCA_000316665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-81  270.5   3.2    2.6e-81  270.3   3.2    1.0  1  AFY56122.1  ATP synthase F1 subcomplex delta subunit [Rivular
+  ------ inclusion threshold ------
+      0.072   11.4   0.0       0.17   10.2   0.0    1.6  2  AFY57068.1  folate-binding protein YgfZ [Rivularia sp. PCC 71
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY56122.1  ATP synthase F1 subcomplex delta subunit [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  270.3   3.2   7.7e-85   2.6e-81       1     183 [.       1     183 []       1     183 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 270.3 bits;  conditional E-value: 7.7e-85
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m  ++ata v++pya+al+siaqs+n+++++ +d r+ll+l+k+s+ lqnf++npf+  e+kk v+ ++l + +np++rnfl+llvdrrri+++e i +
+  AFY56122.1   1 MAKNTATAAVSRPYAEALMSIAQSNNVADKFDSDVRSLLNLIKESQPLQNFFANPFISGEDKKGVISKILSDDTNPIFRNFLMLLVDRRRITLVEDIAE 99 
+                 77899********************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 +yla lr+lnqtvlaev savplt++qqq++kekv ++t+ar+vel+  idsd+iggviikvgsqv+d+slrgqlrrlsl l s
+  AFY56122.1 100 EYLAKLRELNQTVLAEVISAVPLTDEQQQTIKEKVKSMTDAREVELNSTIDSDIIGGVIIKVGSQVVDSSLRGQLRRLSLNLKS 183
+                 ********************************************************************************9976 PP
+
+>> AFY57068.1  folate-binding protein YgfZ [Rivularia sp. PCC 7116]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0   5.1e-05      0.17      80     134 ..     105     159 ..      95     191 .. 0.90
+   2 ?   -3.6   0.0      0.86   2.9e+03      59      75 ..     203     219 ..     200     224 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 5.1e-05
+        atpD  80 nfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekv 134
+                 + +lllv   r  +l   l++y+ +  +++ t l++ t + +l  +q +a+ ek+
+  AFY57068.1 105 DAVLLLVSPNRREYLMQWLDKYIFFADKVQLTDLTDETVTFSLLGSQSNAIIEKL 159
+                 46899************************************************96 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 0.86
+        atpD  59 penkknvlkqllgegvn 75 
+                 +++k ++  q++g g+ 
+  AFY57068.1 203 ANHKEKIWSQIIGSGAV 219
+                 56788888899998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         6644  (2270700 residues searched)
+Passed MSV filter:                       242  (0.0364238); expected 132.9 (0.02)
+Passed bias filter:                      153  (0.0230283); expected 132.9 (0.02)
+Passed Vit filter:                        15  (0.00225768); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301023); expected 0.1 (1e-05)
+Initial search space (Z):               6644  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 8356.18
+//
+[ok]

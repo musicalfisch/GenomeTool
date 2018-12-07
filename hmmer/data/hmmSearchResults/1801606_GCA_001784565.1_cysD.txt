@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801606_GCA_001784565.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00011   18.8   0.1        0.2    8.2   0.0    2.6  2  OGI03493.1  sulfate adenylyltransferase [Candidatus Melainaba
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI03493.1  sulfate adenylyltransferase [Candidatus Melainabacteria bacterium GWF2_37_15]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.8   0.0   0.00012      0.27      66     164 ..      50     140 ..      43     153 .. 0.70
+   2 !    8.2   0.0   8.7e-05       0.2     170     219 ..     170     223 ..     162     240 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.00012
+        cysD  66 hpvpvifldtlyhfretlelvakakevynldlkvyktpdvdtreafaakygealwdkdiakfhevtkieplqrglaelntvawitgrrrdqavtranmp 164
+                  p p+i +dt y+++e +e+  k  +  nl+l v++  +    + +  k g  +         e  k +plq  ++++     i g rrd+  +r++  
+  OGI03493.1  50 CPFPLIHVDTSYKIPEMIEFRDKLIKELNLNLIVHQNKEAL-EQGMNPKKGRLV-------CCEHLKTKPLQEVVKKFGFEGLILGVRRDEEGSRSKER 140
+                 599*****************999888889999988765543.334444544433.......23344566777777777777777777777766666555 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 8.7e-05
+        cysD 170 sknrikvnplanwtrkksweyvaehgv....iynplhdqgypsigdepittkvg 219
+                   n i++ pl +w   + w+y+    +    +y     + y s+g  p t ++ 
+  OGI03493.1 170 KGNHIRIHPLLQWREIDIWKYIQRENIpvvdLYFAKNGKRYRSLGCYPCTFPID 223
+                 5689******************98765333457777778899999999887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         2319  (664370 residues searched)
+Passed MSV filter:                        61  (0.0263044); expected 46.4 (0.02)
+Passed bias filter:                       47  (0.0202674); expected 46.4 (0.02)
+Passed Vit filter:                         5  (0.0021561); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.00043122); expected 0.0 (1e-05)
+Initial search space (Z):               2319  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 8005.66
+//
+[ok]

@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppC  [M=292]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-51  173.2  14.1    2.1e-49  166.4   9.4    2.1  2  ALF52114.1  ABC transporter substrate-binding protein [Nostoc
+    1.7e-30  104.4  12.1    6.8e-30  102.4  12.1    1.7  1  ALF52009.1  peptide ABC transporter permease [Nostoc piscinal
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF52114.1  ABC transporter substrate-binding protein [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.3   0.1   6.6e-05      0.17      11      37 ..       3      29 ..       1      38 [. 0.89
+   2 !  166.4   9.4   8.4e-53   2.1e-49      62     291 ..     142     368 ..     123     369 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 9.3 bits;  conditional E-value: 6.6e-05
+        dppC 11 twrrfyrdplavigaialiiiilavlf 37
+                 w+r+ ++pla  gai l+i  +av+ 
+  ALF52114.1  3 WWQRLKKNPLARFGAILLLIFYVAVIA 29
+                6********************999985 PP
+
+  == domain 2  score: 166.4 bits;  conditional E-value: 8.4e-53
+        dppC  62 hlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvl 160
+                 ++fgt+d g+dq++r+l ggrisl +gi  +i ++ lg  +g +sg++gg +d ++mrl+++++++p + ll+ +  ++   +       t  f+l+v+
+  ALF52114.1 142 NIFGTDDQGRDQFSRLLHGGRISLFIGIIGVIFTFPLGLLLGGMSGYFGGWLDSVIMRLAEVLMTFPSIYLLVTLGAVLPPGL-----SSTQRFLLIVI 235
+                 79******************************************************************999988877776655.....57899****** PP
+
+        dppC 161 vigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlfkakd..ylt 257
+                 +   + w  +ar++rg++l ++e ef+ aa a+g  p+ +i  h+lp+    ii++atlav   i +e+ ls++glg+    p+wg+ml  a +   l 
+  ALF52114.1 236 ITSVISWAGLARVIRGQVLSIKEREFVQAARAMGGNPLYIIVRHVLPQTATYIIISATLAVPSFIGAEAVLSLIGLGIQQPDPSWGNMLSLASNasILV 334
+                 ******************************************************************************9999******98876522799 PP
+
+        dppC 258 taphlvifpalaivitvlsinfigdglrdvfdpn 291
+                   p l+  pa+ i++tvl+ n++gdglrd +dp+
+  ALF52114.1 335 LQPWLIWPPAVLIILTVLAFNLLGDGLRDALDPR 368
+                 9*******************************96 PP
+
+>> ALF52009.1  peptide ABC transporter permease [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  102.4  12.1   2.7e-33   6.8e-30      14     291 ..      13     289 ..       3     290 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 102.4 bits;  conditional E-value: 2.7e-33
+        dppC  14 rfyrdp.....lavig.aialiiiilavlfgpifyrvp..idtidfsq..ttappslkhlfgtndlgqdqlarilvggrislavgiaamivalilgtai 102
+                 rf ++p     l +ig ai+l+  i+  +f p++       +  df        ps k+ fgt  lg+d ++r l g + +l v i a  +++++g  +
+  ALF52009.1  13 RFAKNPnlsqkLMIIGlAITLF-FIFLAFFAPVLQAWGwlQNPKDFLAnpIQEAPSAKYWFGTSRLGHDVFSRTLFGAQAALQVVILATALSMVIGVPL 110
+                 5555543333367888445555.555567899875432113444554311456789******************************************* PP
+
+        dppC 103 gaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpetgifilvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrli 201
+                 g +sg+ gg +d +l+ l d + +lp l l + + +++   i + a     i i +             r+vr   + ++   fi aa a+ga+ + ++
+  ALF52009.1 111 GMVSGYLGGRLDKILLFLMDSIYTLPGLLLSVTLAFVVGRGILNAA-----IAISIA------YIPQYYRVVRNHTVSVKTEVFIEAAQAMGASTWIVL 198
+                 ********************99888887666666665554443322.....222222......22356799**************************** PP
+
+        dppC 202 wvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlfkakdylttap.hlvifpalaivitvlsinfigdglrdvfdpn 291
+                   +l+ nv+  + v  tl   +ai+    l flglg+p +vp wg+ l +a + l t      +fp la+ + v+ + ++g+gl + ++p+
+  ALF52009.1 199 SRYLFFNVIQSVPVLFTLNAADAILVLGGLGFLGLGLPEEVPEWGHDLKQALEALPTGVwWTTLFPGLAMTLMVVGLSLLGEGLNEFVNPR 289
+                 *****************************************************99876516789*********************999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (292 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       289  (0.0575468); expected 100.4 (0.02)
+Passed bias filter:                      130  (0.0258861); expected 100.4 (0.02)
+Passed Vit filter:                        14  (0.00278773); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398248); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8710.67
+//
+[ok]

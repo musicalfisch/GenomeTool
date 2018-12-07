@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1618023_GCA_000952155.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.021   11.9   0.8      0.025   11.7   0.8    1.1  1  KJH72464.1  peptidylprolyl isomerase [Aliterella atlantica CE
+      0.028   11.5   0.1        0.1    9.7   0.0    1.8  2  KJH70158.1  peptide ABC transporter substrate-binding protein
+
+
+Domain annotation for each sequence (and alignments):
+>> KJH72464.1  peptidylprolyl isomerase [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.7   0.8   1.2e-05     0.025       4      63 ..       2      63 ..       1      73 [. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 1.2e-05
+        btuF  4 rwilstlaillsiiltacnttntqqsqaqatqsitisntpsqelak..lsakrvvtlssltt 63
+                r il +l++++  ++t   t  t q+q+ +++s + +nt +q  ++  + +k +    ++tt
+  KJH72464.1  2 REILISLGVIVVCVVTILVTQFTGQPQSAIAESLSQPNTVAQVSPNnlIASKTMSDENAVTT 63
+                579999*********************************99976542234444444455555 PP
+
+>> KJH70158.1  peptide ABC transporter substrate-binding protein [Aliterella atlantica CENA595]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.0   4.6e-05       0.1       3      46 ..       8      51 ..       6      71 .. 0.85
+   2 ?   -1.4   0.0      0.11   2.4e+02     281     304 ..     556     579 ..     537     582 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 4.6e-05
+        btuF  3 rrwilstlaillsiiltacnttntqqsqaqatqsitisntpsqe 46
+                r+wi++ l+ l++i + acn  n + + aq +q +    +++q 
+  KJH70158.1  8 RKWIAFILTFLVAIAFSACNPNNFKSQAAQTSQLVVSVVSDPQT 51
+                89**********************99999999877666666665 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.11
+        btuF 281 dyyglvnpgsidaiekaceqlkkd 304
+                  y  lvnp s+ ai+   +++k +
+  KJH70158.1 556 PYIYLVNPLSMAAIRDRIHNVKFS 579
+                 5888**********9998888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         4367  (1296044 residues searched)
+Passed MSV filter:                       188  (0.0430501); expected 87.3 (0.02)
+Passed bias filter:                      126  (0.0288528); expected 87.3 (0.02)
+Passed Vit filter:                        13  (0.00297687); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045798); expected 0.0 (1e-05)
+Initial search space (Z):               4367  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 9947.14
+//
+[ok]

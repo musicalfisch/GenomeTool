@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671071_GCA_900009265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.3e-141  468.2   1.4   4.8e-141  468.1   1.4    1.0  1  CUR19181.1  Iron deficiency-induced protein A [Planktothrix p
+     0.0021   15.4   0.0     0.0035   14.6   0.0    1.3  1  CUR19376.1  Carbohydrate ABC transporter substrate-binding pr
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR19181.1  Iron deficiency-induced protein A [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  468.1   1.4  1.8e-144  4.8e-141       3     351 .]       2     350 .]       1     350 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 468.1 bits;  conditional E-value: 1.8e-144
+        futA   3 dkitrrvflgagtatlavavgqlgkinevsaqtkqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlwra 101
+                 +kitrr fl+ gta   va g l  ++   a+ + ln+ys+rhy++d ++y+ ft++tgik+nlveg+a+ ++erikseg nspadil+tvdag lwra
+  CUR19181.1   2 NKITRRAFLTLGTALAVVAAGGLTPMKRSQANPQVLNIYSARHYDSDNQIYQSFTQKTGIKVNLVEGKAEEMVERIKSEGANSPADILITVDAGNLWRA 100
+                 69************************************************************************************************* PP
+
+        futA 102 dqqgifapvnsriltqripanlrhpkghwfgfskrlrvimynkdrvnpreidsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcrgl 200
+                 +qqgif p+ s il q ipanl+ p+ghwfgfskr rvi+ynk +vnp ++ +y dl+npkwkgk+v rss niy qs+ a +i   g + +e+w++g+
+  CUR19181.1 101 QQQGIFQPISSGILNQAIPANLKEPNGHWFGFSKRARVIVYNKAKVNPAQLSTYEDLANPKWKGKIVIRSSNNIYNQSLVASMIGDSGTTPTENWVKGF 199
+                 *************************************************************************************************** PP
+
+        futA 201 vanfarspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqnff 299
+                 vanfar+p+gnd +qi+avaag+  l+lantyyl      k p  +ai  +vg+ fp+q  +g+h nisg g+ikt+pn+  aikfle+l+s eaq++f
+  CUR19181.1 200 VANFARPPEGNDVSQIKAVAAGVGHLTLANTYYLGRLVASKKPEDQAIASKVGLFFPNQRAKGTHTNISGAGVIKTSPNKAGAIKFLEHLASPEAQKIF 298
+                 *************************************************************************************************** PP
+
+        futA 300 akgnqeypvvrgvaldpvlaklgrgkedtvsvanygpnlakavqvmnragwk 351
+                 a+   eyp v gv + pvl+ +g  k + + va yg    +a+q+m+ragwk
+  CUR19181.1 299 AQSAFEYPAVAGVPVSPVLSGFGTFKSNPINVAAYGKFNPQAIQIMDRAGWK 350
+                 ***************************************************8 PP
+
+>> CUR19376.1  Carbohydrate ABC transporter substrate-binding protein, CUT1 family [Planktothrix paucivesiculata PCC 963
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6   0.0   1.3e-06    0.0035     255     308 ..     295     351 ..     285     368 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 1.3e-06
+        futA 255 ifpdqagrgahvnisgggl..iktapnre.saikfleylssneaqnffakgnqeypv 308
+                 ifp  a       i gg l  +kt p+re +a+kfle++ s+e q  +a g    pv
+  CUR19376.1 295 IFPMPANVEKATVIGGGNLyvMKTQPEREqAALKFLEFVISEEFQTEWAIGTGFLPV 351
+                 6777777666777888876448******93579***************999888877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         5245  (1732571 residues searched)
+Passed MSV filter:                       128  (0.0244042); expected 104.9 (0.02)
+Passed bias filter:                      113  (0.0215443); expected 104.9 (0.02)
+Passed Vit filter:                        12  (0.00228789); expected 5.2 (0.001)
+Passed Fwd filter:                         2  (0.000381316); expected 0.1 (1e-05)
+Initial search space (Z):               5245  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10135.54
+//
+[ok]

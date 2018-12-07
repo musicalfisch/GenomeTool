@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/65393_GCA_000021825.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.3e-05   19.4   0.6    9.3e-05   19.4   0.6    3.0  3  ACK68484.1  ABC exporter membrane fusion protein, DevB family
+     0.0078   13.1  12.6      0.015   12.1   2.9    2.6  2  ACK69382.1  efflux transporter, RND family, MFP subunit [Cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> ACK68484.1  ABC exporter membrane fusion protein, DevB family [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.4   1.7   0.00029      0.83      97     148 ..      83     140 ..      65     177 .. 0.65
+   2 ?   -0.0   1.3     0.026        73     129     177 ..     182     231 ..     158     263 .. 0.74
+   3 !   19.4   0.6   3.3e-08   9.3e-05     206     285 ..     312     393 ..     233     407 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.00029
+        cusB  97 mggflkdtell..qgsrvrkgqsiarienldfiqi.....qqdyleaksqfelskadye 148
+                 mgg  k  +ll  +g rv+kgq +a ++nl   q      qq+   a++++++ ka  +
+  ACK68484.1  83 MGG-AKVVQLLieEGDRVQKGQVVAILDNLKQEQTavnlaQQELKVAQANLDIVKAGAK 140
+                 555.45555553479***************86653222225555566777777776543 PP
+
+  == domain 2  score: -0.0 bits;  conditional E-value: 0.026
+        cusB 129 iqqdyleaksqfelska..dyerqqqladqnvnsaktlqqskatyttwqak 177
+                  qq  +e + q el  a  d++r q+la + v s   l+q     +t + +
+  ACK68484.1 182 EQQATIE-RLQAELNDAekDFQRYQKLALDGVISESDLDQRSLNLATARER 231
+                 3444444.4566665543389999999999999999998887776666555 PP
+
+  == domain 3  score: 19.4 bits;  conditional E-value: 3.3e-08
+        cusB 206 lyspidgyvtevnvnrgkfvnptdvlfeivdtehlhaelivfekdvrklkigqkvrftlanet..keriatvyligreiste 285
+                 + +p+dg + ++    g  v+    + ei +t+++     v+e d+ k+k+gqk  +t  n+t   +   tv  ig +i  +
+  ACK68484.1 312 VKAPVDGQILKIHSRPGAKVDDDKGIAEIGNTDQMMVIAEVYESDISKVKLGQKALITSENNTftDKLTGTVTQIGLQIGKK 393
+                 468********************************************************99973134457899999888765 PP
+
+>> ACK69382.1  efflux transporter, RND family, MFP subunit [Cyanothece sp. PCC 7424]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.1   2.9   5.3e-06     0.015      74     177 ..      57     156 ..      43     164 .. 0.78
+   2 !    5.9   2.2   0.00041       1.2     107     229 ..     184     319 ..     175     448 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 5.3e-06
+        cusB  74 sgtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyleaksqfelskadyerqqqladqnvnsakt.lqqskaty 171
+                 s  ++++    v p + v is    g l    + qg rv++gq +a +en +   iq +  +a++++  + a+++  q     ++  ak+ l q++a +
+  ACK69382.1  57 S--VKIESSGTVEPIESVNISPKNQGRLVKLLVDQGMRVKRGQVLAVMENAE---IQAQGYQAQARLVEAEANFKAAQVRIPGEIAQAKArLAQAQARF 150
+                 3..4445555688999************99999*****************76...56666688888888999999888888888888875488888888 PP
+
+        cusB 172 ttwqak 177
+                    qa 
+  ACK69382.1 151 GQAQAS 156
+                 877775 PP
+
+  == domain 2  score: 5.9 bits;  conditional E-value: 0.00041
+        cusB 107 lqgsrvrkgqsiar...ienldfiqiqqdyleaksqf.....elskadyerqqqlad..qnvnsaktlqqskatyttwqakysglae...klkvlgist 192
+                 l  +rv++ qs+a    i + df  + +dyl+ak+ +      l +  y  + ++a+  q+v  a++     a  +  q   +  ae       +  + 
+  ACK69382.1 184 LAEARVKRNQSLAEqgaITEDDFDAVVNDYLNAKASLleavqRLEQFKYTANPEIAQlqQDVVEAQAAV-GEAQIALEQREKTAEAEiaqLGAAVQAAK 281
+                 66789******9964448888************987522111344455555544443214444443322.23333333333333333000333344455 PP
+
+        cusB 193 sgledgnlkss.inlyspidgyvtevnvnrgkfvnptd 229
+                   le+ +++     + +p +g +t+     g fv pt 
+  ACK69382.1 282 GALEEVKIQFNdTVIRAPFEGIITQRYASEGAFVTPTT 319
+                 66787777644145678999999999999999999986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         5710  (1769808 residues searched)
+Passed MSV filter:                       146  (0.0255692); expected 114.2 (0.02)
+Passed bias filter:                       99  (0.017338); expected 114.2 (0.02)
+Passed Vit filter:                         2  (0.000350263); expected 5.7 (0.001)
+Passed Fwd filter:                         2  (0.000350263); expected 0.1 (1e-05)
+Initial search space (Z):               5710  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.00s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 9357.86
+//
+[ok]

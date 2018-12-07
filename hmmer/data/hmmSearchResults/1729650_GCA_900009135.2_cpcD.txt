@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1729650_GCA_900009135.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-30  103.8   0.1    1.1e-30  103.6   0.1    1.0  1  SKB14819.1  Phycobilisome 8.9 kDa linker polypeptide, phycocy
+    1.7e-24   83.8   0.0    4.6e-24   82.4   0.0    1.7  1  SKB14984.1  Ferredoxin--NADP reductase [Planktothrix sp. PCC 
+  ------ inclusion threshold ------
+      0.037   12.3   0.1      0.089   11.0   0.1    1.6  1  SKB14821.1  Phycobilisome 32.1 kDa linker polypeptide, phycoc
+
+
+Domain annotation for each sequence (and alignments):
+>> SKB14819.1  Phycobilisome 8.9 kDa linker polypeptide, phycocyanin-associated, rod [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  103.6   0.1   6.6e-34   1.1e-30       2      73 ..       9      80 ..       8      81 .] 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 103.6 bits;  conditional E-value: 6.6e-34
+        cpcD  2 qslssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                qs +s    r+f yevvGl q d+td  dysir s s f+ vpy rmnqem+r+trlGa+ivsi+pl + a 
+  SKB14819.1  9 QSSASPSGSRFFRYEVVGLRQSDETDKTDYSIRSSASQFIIVPYNRMNQEMQRLTRLGAKIVSIQPLTSDAE 80
+                777888999**********************************************************98775 PP
+
+>> SKB14984.1  Ferredoxin--NADP reductase [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.4   0.0   2.7e-27   4.6e-24       9      67 ..      16      74 ..      11      78 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 82.4 bits;  conditional E-value: 2.7e-27
+        cpcD  9 enrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikp 67
+                + r+f++ev Gl q ++td l++ ir+sG v++tvpy rmnqemrri+r G +ivsi+p
+  SKB14984.1 16 NGRVFIFEVEGLRQGENTDKLNFPIRRSGVVYVTVPYERMNQEMRRIARSGGKIVSIRP 74
+                569*******************************************************9 PP
+
+>> SKB14821.1  Phycobilisome 32.1 kDa linker polypeptide, phycocyanin-associated, rod 2 [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.1   5.2e-05     0.089      41      65 ..     244     268 ..     230     270 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 5.2e-05
+        cpcD  41 ltvpysrmnqemrritrlGarivsi 65 
+                  tvpy ++  +++ri r G r++ i
+  SKB14821.1 244 YTVPYDQLSTQLQRIHRAGGRVMRI 268
+                 59*******************9877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         5144  (1714313 residues searched)
+Passed MSV filter:                       105  (0.0204121); expected 102.9 (0.02)
+Passed bias filter:                       97  (0.0188569); expected 102.9 (0.02)
+Passed Vit filter:                        10  (0.00194401); expected 5.1 (0.001)
+Passed Fwd filter:                         3  (0.000583204); expected 0.1 (1e-05)
+Initial search space (Z):               5144  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4228.64
+//
+[ok]

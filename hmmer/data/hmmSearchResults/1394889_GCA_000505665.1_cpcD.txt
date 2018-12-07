@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1394889_GCA_000505665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.2e-29   96.9   0.0    6.8e-29   96.8   0.0    1.1  1  AHB88603.1  phycocyanin-associated rod-terminating linker pro
+    1.8e-24   82.6   0.0    4.7e-24   81.3   0.0    1.8  2  AHB88104.1  ferredoxin--NADP+ reductase PetH [Thermosynechoco
+    6.1e-06   23.2   0.1    1.3e-05   22.2   0.1    1.6  1  AHB88602.1  phycocyanin-associated rod linker protein CpcC [T
+
+
+Domain annotation for each sequence (and alignments):
+>> AHB88603.1  phycocyanin-associated rod-terminating linker protein CpcD [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   96.8   0.0   9.1e-32   6.8e-29       8      70 ..      15      77 ..       7      78 .] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 96.8 bits;  conditional E-value: 9.1e-32
+        cpcD  8 kenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplna 70
+                   r+f yevvGl qn++td + + ir+sGs f+tvpysrmn+em+ritr+G +ivsi p+ a
+  AHB88603.1 15 SGARVFRYEVVGLRQNEETDKMGFPIRRSGSTFITVPYSRMNEEMQRITRMGGKIVSITPVVA 77
+                4579********************************************************976 PP
+
+>> AHB88104.1  ferredoxin--NADP+ reductase PetH [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.3   0.0   6.3e-27   4.7e-24      12      73 ..       1      62 [.       1      63 [. 0.98
+   2 ?   -3.3   0.0       1.6   1.2e+03      28      50 ..     177     199 ..     163     200 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 81.3 bits;  conditional E-value: 6.3e-27
+        cpcD 12 lfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                +f yevvGl qn +t+  +y+ir sGs f+ vpy rmnq m++itr G +ivsi+pln +aa
+  AHB88104.1  1 MFRYEVVGLRQNAETEKTNYAIRNSGSQFFNVPYDRMNQFMQQITRWGGKIVSIQPLNGTAA 62
+                599*******************************************************9998 PP
+
+  == domain 2  score: -3.3 bits;  conditional E-value: 1.6
+        cpcD  28 nldysirksGsvfltvpysrmnq 50 
+                  l+y  + +G  +  v  s +nq
+  AHB88104.1 177 RLEYKDKETGETIYGVCSSYLNQ 199
+                 46777777888888887777777 PP
+
+>> AHB88602.1  phycocyanin-associated rod linker protein CpcC [Thermosynechococcus sp. NK55a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.2   0.1   1.7e-08   1.3e-05      33      67 ..     253     286 ..     231     287 .] 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 22.2 bits;  conditional E-value: 1.7e-08
+        cpcD  33 irksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 +r+s + fl vpy ++  +m+++ r Garivs+ p
+  AHB88602.1 253 VRRSSTAFL-VPYEQLSAKMQQLQRTGARIVSVNP 286
+                 899999998.9**********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         2233  (713131 residues searched)
+Passed MSV filter:                        40  (0.0179131); expected 44.7 (0.02)
+Passed bias filter:                       40  (0.0179131); expected 44.7 (0.02)
+Passed Vit filter:                         5  (0.00223914); expected 2.2 (0.001)
+Passed Fwd filter:                         3  (0.00134348); expected 0.0 (1e-05)
+Initial search space (Z):               2233  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 5277.17
+//
+[ok]

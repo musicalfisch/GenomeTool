@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292563_GCA_000317655.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.2e-98  322.4   0.2      1e-97  322.3   0.2    1.0  1  AFZ47260.1  adenylylsulfate kinase [Cyanobacterium stanieri P
+     0.0062   13.4   0.0     0.0093   12.8   0.0    1.4  1  AFZ47306.1  shikimate kinase [Cyanobacterium stanieri PCC 720
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ47260.1  adenylylsulfate kinase [Cyanobacterium stanieri PCC 7202]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  322.3   0.2  7.2e-101     1e-97       4     178 ..       1     175 [.       1     177 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 322.3 bits;  conditional E-value: 7.2e-101
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m ++gvtvw+tglsgagk+ti++ +  kl   gy +evldgdivrtnltkglgfskedrdenirrigfvsnlltr gviv+vsaispyreir+evrgki
+  AFZ47260.1   1 MEHKGVTVWFTGLSGAGKTTISQVVAQKLKDAGYKLEVLDGDIVRTNLTKGLGFSKEDRDENIRRIGFVSNLLTRNGVIVIVSAISPYREIRDEVRGKI 99 
+                 7899*********************************************************************************************** PP
+
+        cyrM 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 g+fvevfvnapl+ ceerdvkglyk+ar+geik ftgi dpyepp+npe+ecrtdle l+esv kv + l++lgy+
+  AFZ47260.1 100 GNFVEVFVNAPLATCEERDVKGLYKKARSGEIKMFTGISDPYEPPLNPEIECRTDLEELDESVNKVLQGLKDLGYL 175
+                 ***************************************************************************8 PP
+
+>> AFZ47306.1  shikimate kinase [Cyanobacterium stanieri PCC 7202]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   6.5e-06    0.0093       7      46 ..       6      40 ..       2     116 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 6.5e-06
+        cyrM  7 rgvtvwltglsgagkstitealqakliaegysievldgdi 46
+                rg+ v+l g+ g+gkst+ + l  kl         ld d 
+  AFZ47306.1  6 RGLNVYLIGMMGSGKSTVGKFLAHKLA-----YRFLDTDN 40
+                9*****************988888774.....33445444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2837  (903685 residues searched)
+Passed MSV filter:                       152  (0.0535777); expected 56.7 (0.02)
+Passed bias filter:                      142  (0.0500529); expected 56.7 (0.02)
+Passed Vit filter:                        19  (0.00669722); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.00070497); expected 0.0 (1e-05)
+Initial search space (Z):               2837  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5542.60
+//
+[ok]

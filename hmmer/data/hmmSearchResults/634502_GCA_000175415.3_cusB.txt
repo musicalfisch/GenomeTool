@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/634502_GCA_000175415.3.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0034   14.2   1.3     0.0076   13.0   0.2    2.0  2  KDR56904.1  hemolysin D [Arthrospira platensis str. Paraca]
+  ------ inclusion threshold ------
+      0.015   12.1   2.4      0.012   12.4   0.5    1.8  2  KDR56908.1  RND transporter [Arthrospira platensis str. Parac
+
+
+Domain annotation for each sequence (and alignments):
+>> KDR56904.1  hemolysin D [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0     0.045   1.2e+02      86     145 ..      70     130 ..      53     148 .. 0.64
+   2 !   13.0   0.2   2.8e-06    0.0076     205     288 ..     347     429 ..     246     444 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.045
+        cusB  86 ppqqlvsisap..mggflkdtellq.gsrvrkgqsiarienldfiqiqqdyleaksqfelska 145
+                 p  +++sisa   m   l +  l+q g  v+ g++ia ++  d +       +a+ q+ l+ a
+  KDR56904.1  70 PEGEVISISAAggMENNLIQQLLVQeGDWVQEGDAIAILDSRDRLLA--AIEKAQEQVGLATA 130
+                 45578899986224444555555554889999999999988875433..23345555555555 PP
+
+  == domain 2  score: 13.0 bits;  conditional E-value: 2.8e-06
+        cusB 205 nlyspidgyvtevnvnrgkfvnptdvlfeivdtehlhaelivfekdvrklkigqkvrftlanetkeriatvyligreisterti 288
+                 ++ +p +g v ++    g  ++   + +e+ +t ++ a   v+e d+ ++kigq  r+t a    e    v  +g +i  +  i
+  KDR56904.1 347 EIIAPRNGQVLKIHAHPGEKIDNLGI-LELGETRQMVAIAEVYESDIHRVKIGQSARITSAALEGELSGIVDRVGLQIQRQDVI 429
+                 56789999999999999999988776.59*******************************998888888888888888766665 PP
+
+>> KDR56908.1  RND transporter [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.5   4.5e-06     0.012      76     162 ..      78     162 ..      63     237 .. 0.67
+   2 ?   -2.1   0.0      0.11     3e+02     205     233 ..     357     385 ..     333     511 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 4.5e-06
+        cusB  76 tiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyleaksqfelskadyerqqqla.dqnvnsak 162
+                 t+ v     v p + v +s    g l +  + qg rv  gq iar+e  ++   + + l+a++++e ++a+  + +q +  + + sa+
+  KDR56908.1  78 TVIVRASGVVQPVRRVNLSPKTQGRLAQLYVEQGDRVEAGQIIARMESNEL---EAQRLQAQARLERAQANLAKLRQGSrPEAIASAR 162
+                 444444445789999*******************************98653...4455667777777766665544433133444444 PP
+
+  == domain 2  score: -2.1 bits;  conditional E-value: 0.11
+        cusB 205 nlyspidgyvtevnvnrgkfvnptdvlfe 233
+                 n+ +p  g +t+     g fv p+    +
+  KDR56908.1 357 NIRAPFAGIITQRYAIEGAFVTPATSASD 385
+                 55566666666666666666666543332 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         5439  (1620411 residues searched)
+Passed MSV filter:                       147  (0.027027); expected 108.8 (0.02)
+Passed bias filter:                      114  (0.0209597); expected 108.8 (0.02)
+Passed Vit filter:                        17  (0.00312557); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000367715); expected 0.1 (1e-05)
+Initial search space (Z):               5439  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 9791.91
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671071_GCA_900009265.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.2e-13   47.2  14.6    2.6e-09   34.3   0.5    3.3  3  CUR17072.1  conserved exported hypothetical protein [Planktot
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR17072.1  conserved exported hypothetical protein [Planktothrix paucivesiculata PCC 9631]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7   2.7   1.4e-08   7.1e-05      57     163 ..      62     179 ..      42     203 .. 0.74
+   2 !   34.3   0.5   4.9e-13   2.6e-09     135     339 ..     299     500 ..     286     522 .. 0.77
+   3 ?   -1.1   0.0     0.028   1.5e+02     367     410 ..     500     541 ..     498     553 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 1.4e-08
+        cusB  57 qfrnagvelatiskrqisgtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyl...........eaksqfelsk 144
+                  ++  g+ +  + k+ + g i+  g ++  p++ v i++p  g + +  +  g rv+kg++ia +   +++ ++ + l           +a ++f l++
+  CUR17072.1  62 TVQRMGIRVEPVKKQFMDGGIKATGQIESLPDKKVEITSPTAGKIVQLFVEPGDRVQKGEAIAVLSSPELVSLRVESLqnsattesevkQAEANFILAQ 160
+                 4567899999999**************************************************888777766655444111111111114566677777 PP
+
+        cusB 145 adyerqqqladqnvnsakt 163
+                  +y+rq ++a+ +++ a+ 
+  CUR17072.1 161 ENYQRQVNIANSEIEQAQN 179
+                 7777777777777766653 PP
+
+  == domain 2  score: 34.3 bits;  conditional E-value: 4.9e-13
+        cusB 135 eaksqfelskadyerqqqladqnvnsakt.lqqskatyttwqakysglaeklkvlgistsgledgnlkssinlyspidgyvtevnvnrgkfvnptdv.l 231
+                  a +  el ka   r+   a+ +++ +k+ l+ +k+ +   q+ y     +l+ lg  t   +dg     + + spi g v+  ++  g+ v+ + + +
+  CUR17072.1 299 LATATAELVKAKQRREVLEAEAELKRSKAeLEATKSRFNLSQTAYE---TRLRQLG--TGADQDGT----VTITSPISGIVSHRDITLGQSVDDAGLaI 388
+                 5666677777777777777777766555425556666666555554...4566666..55566775....6789******************9887527 PP
+
+        cusB 232 feivdtehlhaelivfekdvrklkigqkvrftlan.etkeriatvyligreiste.rtiqihchidqedkdllpgmylkamvetggae..vpalpneai 326
+                 + i d   + a   ++ekd++ +k+gq+v++ ++  e +     +  i      e r i + + +d+ +  l pgm+    + t  +   v ++p +a+
+  CUR17072.1 389 MTIQDNTTVLATANIYEKDLKDIKVGQQVQVKVSGlENQVFSGKITKISPTFEGEsRVIPVWAELDNSEGKLKPGMFAELELITSQTVnpVLSIPSNAV 487
+                 8999**************************9987624444455677888887765499*******************88766666555116678***** PP
+
+        cusB 327 idfegkkyifvvs 339
+                 ++++ k+ ++v  
+  CUR17072.1 488 VNMNSKNLVYVQN 500
+                 ********99965 PP
+
+  == domain 3  score: -1.1 bits;  conditional E-value: 0.028
+        cusB 367 egshfsmievqignselgytevtvpegikadsqvvvkgayslls 410
+                 +g  f+ +ev +g+      ++ + +g+    q+v++ga  l +
+  CUR17072.1 500 NGDSFAAVEVTLGEKF--NQKIEIKKGLFEGDQIVIQGALQLYA 541
+                 6888999999999654..56677899*************98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         5245  (1732571 residues searched)
+Passed MSV filter:                       125  (0.0238322); expected 104.9 (0.02)
+Passed bias filter:                       83  (0.0158246); expected 104.9 (0.02)
+Passed Vit filter:                         5  (0.000953289); expected 5.2 (0.001)
+Passed Fwd filter:                         1  (0.000190658); expected 0.1 (1e-05)
+Initial search space (Z):               5245  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 10469.68
+//
+[ok]

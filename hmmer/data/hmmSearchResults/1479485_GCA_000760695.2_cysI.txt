@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1479485_GCA_000760695.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysI  [M=645]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.7e-35  120.4   0.0    2.3e-25   87.6   0.0    3.0  3  KIE11676.1  ferredoxin--nitrite reductase [Tolypothrix boutei
+
+
+Domain annotation for each sequence (and alignments):
+>> KIE11676.1  ferredoxin--nitrite reductase [Tolypothrix bouteillei VB521301]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.7   0.0   3.1e-10   2.4e-06      71     176 ..      65     171 ..      46     178 .. 0.89
+   2 !    4.4   0.0   0.00043       3.4     225     251 ..     181     207 ..     174     212 .. 0.92
+   3 !   87.6   0.0   2.9e-29   2.3e-25     260     515 ..     238     481 ..     230     533 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 24.7 bits;  conditional E-value: 3.1e-10
+        cysI  71 qmmlrtrspggfipaqlyltldslsdrygn.gtlrvttrqgfqlhgilkknlkatlgeiirsmgstlaacg.dvnrnvtappapyknrpeygyaweyan 167
+                 ++m+r r p g+i ++    l  + +ryg+ g+  +ttrq +ql gi   +l   + e  +++g t    g d  rn+t  p    +  e   + e  +
+  KIE11676.1  65 KFMMRLRMPNGIITTDQMRVLAEVIQRYGDdGSADITTRQNIQLRGIRIEDLPDIF-EKFHAVGLTSIQSGmDNVRNITGDPVAGLDAEELFDTRELVQ 162
+                 579**************************647899****************98765.777889988766663788*******99999999999999999 PP
+
+        cysI 168 niadlltpq 176
+                 +i d++t +
+  KIE11676.1 163 QIQDMVTNK 171
+                 999999875 PP
+
+  == domain 2  score: 4.4 bits;  conditional E-value: 0.00043
+        cysI 225 mprkfkigvtvpgdnsidiytndlglv 251
+                 +prkf+i +t   dns+    ndl +v
+  KIE11676.1 181 LPRKFNIAITGGRDNSVHAEINDLAFV 207
+                 8**********************9987 PP
+
+  == domain 3  score: 87.6 bits;  conditional E-value: 2.9e-29
+        cysI 260 lqgfnilaggglgrthnkeetfprmadaigyvdkeevydlvkaivatqrdygdrgdrrharmkyileewgvekfrstvegyfgqki..apyqplpdwky 356
+                   gfnil gg +  ++  e ++p  a    +v  e+v  + +a++   rd g r +r ++r+ ++++ewg+ekfr  ve+ +g+ +  a  +   dw+ 
+  KIE11676.1 238 QFGFNILVGGFFS-AKRCEAAIPLNA----WVPPEDVVAVCRAVLEVFRDNGSRANRLKSRLMWLIDEWGIEKFRNEVESKLGKPLlgAAAKDEIDWEK 331
+                 569***9987665.566788888765....89****************************************************87446778889**** PP
+
+        cysI 357 qdflgwneqgd.gklffglsvengrvknegsfqlktalkviierfqlpmrltanhniilyeiepkdqqaieailkehgiitnpaeidpltryamacpaw 454
+                 +d +g  +q + g  ++gl+v  gr+  e  f++     v        +rlt + n i+ ++       +e++l e  +     +  pltr  ++c   
+  KIE11676.1 332 RDHIGVYKQKQpGLNYVGLHVPVGRLYAEDLFEMARLAEVYG---SGEIRLTVEENFIIPDVSD---SRLETLLTEPLLEKFSVNPAPLTRALVSCTGA 424
+                 *****888766277799***************9977665543...4579*********999864...45788888887777777778************ PP
+
+        cysI 455 ptcglaiteserilpsvierirtllnrlglskeefvirmtgcpngcarpymaelgfvgsap 515
+                   c +a+ e++      +  i+ l + l ++   + i+ tgcpn c +p +a++g++g+  
+  KIE11676.1 425 QFCNFALIETKNRA---LAMIKELEKELEVT-HPVRIHWTGCPNSCGQPQVADIGLMGTKA 481
+                 *******9987543...44456666677665.467899******************99743 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (645 nodes)
+Target sequences:                         7776  (2427444 residues searched)
+Passed MSV filter:                       225  (0.0289352); expected 155.5 (0.02)
+Passed bias filter:                      192  (0.0246914); expected 155.5 (0.02)
+Passed Vit filter:                        11  (0.00141461); expected 7.8 (0.001)
+Passed Fwd filter:                         1  (0.000128601); expected 0.1 (1e-05)
+Initial search space (Z):               7776  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.12
+# Mc/sec: 13047.51
+//
+[ok]

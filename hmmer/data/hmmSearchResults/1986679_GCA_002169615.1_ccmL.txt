@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1986679_GCA_002169615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.9e-09   33.7   0.0    4.5e-09   33.0   0.0    1.3  1  OUW99078.1  carboxysome peptide A [Cyanobacteria bacterium TM
+      1e-06   25.5   0.0    1.4e-06   25.0   0.0    1.2  1  OUW99079.1  carboxysome peptide B [Cyanobacteria bacterium TM
+
+
+Domain annotation for each sequence (and alignments):
+>> OUW99078.1  carboxysome peptide A [Cyanobacteria bacterium TMED229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.0   0.0   6.6e-12   4.5e-09       1      84 [.       1      77 [.       1      84 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 33.0 bits;  conditional E-value: 6.6e-12
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidt 84
+                m i kv   +vst++ p ++  +l   q+v+ +g    + +va d+vga   +wv+    saar+  g++  p d ++v iid 
+  OUW99078.1  1 MLIVKVIKPLVSTNRIPDFQHKHL---QVVQ-DGS---SKKVAVDAVGAKPGDWVICVGSSAAREAAGSKSYPSDLTIVGIIDH 77
+                678999999999999999998765...5554.454...457*****************************************96 PP
+
+>> OUW99079.1  carboxysome peptide B [Cyanobacteria bacterium TMED229]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.0   0.0   2.1e-09   1.4e-06       1      83 [.       1      77 [.       1      81 [. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 25.0 bits;  conditional E-value: 2.1e-09
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiid 83
+                m+i +v gt+v+t +   l  ++l +  l +++gk l    va d vga   +wv+ + gsaar    + +   d ++  iid
+  OUW99079.1  1 MEIMQVMGTLVCTYRVAGLDHMHLRI--LCNNKGKKL----VAVDPVGAREGNWVFTASGSAARFACPDPTVQTDLTIGGIID 77
+                8999**********999998877766..568888766....9**********************9988888888888888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         1375  (402758 residues searched)
+Passed MSV filter:                        34  (0.0247273); expected 27.5 (0.02)
+Passed bias filter:                       33  (0.024); expected 27.5 (0.02)
+Passed Vit filter:                         3  (0.00218182); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00145455); expected 0.0 (1e-05)
+Initial search space (Z):               1375  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 4027.58
+//
+[ok]

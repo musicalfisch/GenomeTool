@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805292_GCA_001873375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.1e-48  158.6   0.9    4.4e-48  158.5   0.9    1.0  1  OIP68584.1  photosystem I reaction center subunit XII [Oscill
+  ------ inclusion threshold ------
+      0.015   12.6   0.1      0.048   11.0   0.0    1.8  2  OIP77827.1  photosystem I reaction center subunit XII [Oscill
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP68584.1  photosystem I reaction center subunit XII [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  158.5   0.9   2.9e-51   4.4e-48       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 158.5 bits;  conditional E-value: 2.9e-51
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mr fkitacvPsqtrirtqrelqntyftklvpydnWf eqqrimkmGG+i+kvelatG++g+ntGll
+  OIP68584.1  1 MRTFKITACVPSQTRIRTQRELQNTYFTKLVPYDNWFAEQQRIMKMGGRIIKVELATGRQGANTGLL 67
+                9****************************************************************96 PP
+
+>> OIP77827.1  photosystem I reaction center subunit XII [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.3   0.0      0.46     7e+02      21      34 ..     137     150 ..     135     157 .. 0.79
+   2 ?   11.0   0.0   3.1e-05     0.048      30      53 ..     260     283 ..     253     286 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -2.3 bits;  conditional E-value: 0.46
+        apcC  21 elqntyftklvpyd 34 
+                 e  nt+   +vpy 
+  OIP77827.1 137 EYLNTFGENFVPYI 150
+                 66799999999995 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 3.1e-05
+        apcC  30 lvpydnWfreqqrimkmGGkivkv 53 
+                 lvp d+   e qri k GG i  +
+  OIP77827.1 260 LVPLDQLSTEYQRIHKQGGVIASI 283
+                 9******************99765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         3046  (947245 residues searched)
+Passed MSV filter:                        58  (0.0190414); expected 60.9 (0.02)
+Passed bias filter:                       54  (0.0177282); expected 60.9 (0.02)
+Passed Vit filter:                         9  (0.00295469); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000656599); expected 0.0 (1e-05)
+Initial search space (Z):               3046  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6346.54
+//
+[ok]

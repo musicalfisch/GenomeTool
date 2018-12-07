@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1671698_GCA_002260545.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00095   17.3   0.1     0.0018   16.4   0.1    1.4  1  OZH51924.1  photosystem I reaction center subunit XII [Hydroc
+  ------ inclusion threshold ------
+      0.029   12.6   0.0      0.043   12.0   0.0    1.2  1  OZH51928.1  CpeR family transcriptional regulator [Hydrocoleu
+
+
+Domain annotation for each sequence (and alignments):
+>> OZH51924.1  photosystem I reaction center subunit XII [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   0.1   7.1e-07    0.0018      31      69 ..     252     289 .]     234     289 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 7.1e-07
+        cpcD  31 ysirksGsvfltvpysrmnqemrritrlGarivsikpln 69 
+                    r+s  vfl vp+ ++ +e +ri + G  i si p+n
+  OZH51924.1 252 SKFRRSNKVFL-VPFDQLSKEYQRIHQQGGVIASITPIN 289
+                 5679******9.9************************98 PP
+
+>> OZH51928.1  CpeR family transcriptional regulator [Hydrocoleum sp. CS-953]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.0   0.0   1.7e-05     0.043      35      69 ..      21      57 ..      16      59 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 12.0 bits;  conditional E-value: 1.7e-05
+        cpcD 35 ksGsvfl..tvpysrmnqemrritrlGarivsikpln 69
+                 sG  fl  tv ys +++    +  lG  ++s+kp+ 
+  OZH51928.1 21 CSGNFFLfeTVEYSTIDRFTECVQTLGGSLISVKPIK 57
+                5777766669*************************85 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4935  (1360323 residues searched)
+Passed MSV filter:                        83  (0.0168186); expected 98.7 (0.02)
+Passed bias filter:                       76  (0.0154002); expected 98.7 (0.02)
+Passed Vit filter:                         5  (0.00101317); expected 4.9 (0.001)
+Passed Fwd filter:                         2  (0.000405268); expected 0.0 (1e-05)
+Initial search space (Z):               4935  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5033.20
+//
+[ok]

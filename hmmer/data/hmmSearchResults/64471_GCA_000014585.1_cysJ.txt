@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.1e-16   54.0   0.0    8.9e-16   53.7   0.0    1.0  1  ABI47319.1  ferredoxin--NADP reductase [Synechococcus sp. CC9
+  ------ inclusion threshold ------
+      0.023    9.2   0.0      0.026    9.0   0.0    1.0  1  ABI46416.1  flavodoxin [Synechococcus sp. CC9311]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI47319.1  ferredoxin--NADP reductase [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   53.7   0.0   6.2e-19   8.9e-16    1208    1401 ..     158     363 ..     136     369 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 53.7 bits;  conditional E-value: 6.2e-19
+        cysJ 1208 qkprlysisscp...llhprriqitvgvlqvttdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqh... 1297
+                  +k rlysi+s      l    + + v  lq   d g+  +g+cs yl+ ++pgs v+i   +   +  p d  a ++m+  gtg++p+ ++l++   
+  ABI47319.1  158 HKLRLYSIASTRhgdNLEGNTVSLCVRQLQYEKD-GETINGVCSTYLCDVEPGSKVKITGpVGKEMLLPEDEEANVIMLATGTGIAPMRTYLRRmfe 253 
+                  5779*****9852226888999999999999888.67779******************8626678899**********************9986333 PP
+
+        cysJ 1298 .realqnqgislgeahlyfgcrnpsdfiyqeqlqvw.rdrnvltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmadd 1388
+                   +e  +n     g+a l++g+ + ++++y+ ++  + ++         a+sr  ++    + y+q+ + ++ e+i+ ++  p+ h y+cg   m   
+  ABI47319.1  254 pKEREENGWNFRGKAWLFMGAPKTANLLYDADFLHYeKEYPDNFRYTKAISREQQNpkggRMYIQDRVSEHAEEIFAMIEDPKTHVYMCGLRGMEPG 350 
+                  256666666678*****************987655514444555667788886554323368*****************************999999 PP
+
+        cysJ 1389 vfavmmaiakqqg 1401
+                  +   m a a+ +g
+  ABI47319.1  351 IDEAMSAAAEAKG 363 
+                  9999988887766 PP
+
+>> ABI46416.1  flavodoxin [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.0   0.0   1.8e-05     0.026     853     966 ..       5     120 ..       2     138 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 9.0 bits;  conditional E-value: 1.8e-05
+        cysJ 853 ilyasetgtaegfarkaarqlsryrpqvmalneyntdtlaseklllvvtstfgng.empsngkrflqwlqqqprtslnglsysvlgig.stvy.eqfca 948
+                 i++a+ tg +e +a k    l     + +      ++   +e l+     t+  g +    g  +  + ++ p   + g s +++g+g s+ y + fc 
+  ABI46416.1   5 IFFATSTGKTEDVADKLKDLLPGTESKDVDSIGSAAELAEAEALI-CCVPTWNTGaDEGRSGTAWDTYAEEIPSMDFSGKSVAIVGLGdSSSYsDYFCD 102
+                 678888888888888887777766655544444444444445554.44455544414566799999999******************9544552679** PP
+
+        cysJ 949 agvsvdkalakaganciv 966
+                 a   +  a+ +agan i 
+  ABI46416.1 103 AMEELYTAFVQAGANLIG 120
+                 ***************985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        62  (0.0214385); expected 57.8 (0.02)
+Passed bias filter:                       59  (0.0204011); expected 57.8 (0.02)
+Passed Vit filter:                         7  (0.00242047); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000691563); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.02s 00:00:00.10 Elapsed: 00:00:00.09
+# Mc/sec: 12406.22
+//
+[ok]

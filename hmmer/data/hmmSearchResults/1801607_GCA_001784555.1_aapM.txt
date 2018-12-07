@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/aapM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801607_GCA_001784555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       aapM  [M=331]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00012   18.4   6.9    0.00017   17.9   6.9    1.2  1  OGI18948.1  ABC transporter substrate-binding protein [Candid
+  ------ inclusion threshold ------
+      0.019   11.1   0.0      0.062    9.4   0.0    1.7  2  OGI19929.1  hypothetical protein A3B68_00040 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI18948.1  ABC transporter substrate-binding protein [Candidatus Melainabacteria bacterium RIFCSPHIGHO2_02_FULL_34_1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   6.9   1.8e-07   0.00017     136     283 ..     134     279 ..     122     331 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 1.8e-07
+        aapM 136 lvaiasmilsfplgvllalgrqselpairwlsigyiellrglpllgilfmaqvmlplilpagtrp.erviraiagftlfaaaylaenvrgglqaipk.g 232
+                  +    +++ fplg+l          ai  + +   e l  lp l +++    +l  ilpa     +r +     +++++ a l+  +rg + +i +  
+  OGI18948.1 134 TIGFIGLLIVFPLGLLYGGIAGYLGGAIDNFMMRIAEALMSLPYLYLIV----VLASILPANISNsQRFLLITVILSFVSWAGLSRVIRGQVLSIKEeE 228
+                 5666778999****988755555557999999999********997764....5666666665431444444444455566789*******99997615 PP
+
+        aapM 233 qieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivgl 283
+                  ++aaka+g+  + +++  +lpq+   vi a    +  ++   s l+ +gl
+  OGI18948.1 229 YVQAAKAIGISDLNIIIRHILPQTTSYVIIAATLSIPGFIIGESALSFLGL 279
+                 79***********************99998876666666666666666555 PP
+
+>> OGI19929.1  hypothetical protein A3B68_00040 [Candidatus Melainabacteria bacterium RIFCSPHIGHO2_02_FULL_34_12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.4   0.0   6.6e-05     0.062     113     172 ..      38      99 ..      35     116 .. 0.89
+   2 ?   -1.9   0.0      0.18   1.7e+02     195     212 ..     328     345 ..     309     359 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 9.4 bits;  conditional E-value: 6.6e-05
+        aapM 113 lllgglflkaiplddlsgliltllvaiasmilsfplgvllalgrqs..elpairwlsigyie 172
+                 l l gl+ k+i  +d+ g i + lv  as ++s    +++ lg +   +l air  s g i 
+  OGI19929.1  38 LALDGLIKKVIKEEDFKGKIGSTLVIRASGLISAKKIIVVGLGEKEkfDLNAIRKASAGAIR 99 
+                 6799**************************************986522799******99986 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.18
+        aapM 195 pagtrperviraiagftl 212
+                  a+ rp  vira+ g t+
+  OGI19929.1 328 GAAYRPGDVIRAMNGKTI 345
+                 46679********99987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (331 nodes)
+Target sequences:                         1898  (603193 residues searched)
+Passed MSV filter:                        91  (0.0479452); expected 38.0 (0.02)
+Passed bias filter:                       43  (0.0226554); expected 38.0 (0.02)
+Passed Vit filter:                         8  (0.00421496); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00105374); expected 0.0 (1e-05)
+Initial search space (Z):               1898  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6655.23
+//
+[ok]

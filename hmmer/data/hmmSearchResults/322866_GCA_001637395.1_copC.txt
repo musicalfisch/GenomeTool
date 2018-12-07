@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/322866_GCA_001637395.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.033   12.4   0.7      0.059   11.6   0.4    1.5  2  OAB62894.1  hypothetical protein AY599_15235 [Leptolyngbya va
+      0.055   11.7   0.2       0.22    9.7   0.1    1.9  2  OAB63651.1  hypothetical protein AY599_09540 [Leptolyngbya va
+
+
+Domain annotation for each sequence (and alignments):
+>> OAB62894.1  hypothetical protein AY599_15235 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.4   2.2e-05     0.059      15      52 ..      11      48 ..       2      63 .. 0.70
+   2 ?   -2.7   0.0      0.54   1.5e+03     137     148 ..     111     122 ..     106     129 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.2e-05
+        copC 15 gllllaassnsntatndeassktttaattavsstaaak 52
+                + +l+aa+sn++ a+ d a+++  t+++ta+++ a++ 
+  OAB62894.1 11 VAVLTAACSNNAPADSDTAADTAATTTDTAANTDASTA 48
+                45778888888888877777766666666655544433 PP
+
+  == domain 2  score: -2.7 bits;  conditional E-value: 0.54
+        copC 137 pgkaaGeykvai 148
+                 pg   G+ykv  
+  OAB62894.1 111 PGDRPGQYKVRT 122
+                 777889999975 PP
+
+>> OAB63651.1  hypothetical protein AY599_09540 [Leptolyngbya valderiana BDU 20041]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.7   0.1   8.1e-05      0.22       6      44 ..       8      47 ..       3      68 .. 0.71
+   2 ?   -1.2   0.0      0.18   4.9e+02      81      97 ..     167     183 ..     158     185 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.7 bits;  conditional E-value: 8.1e-05
+        copC  6 ssllvvlsigllllaassnsntatndeasskt.ttaatta 44
+                s+ l vl+ +ll+ +++sn  t+ ++e+s ++ tt++tt 
+  OAB63651.1  8 STSLAVLTATLLIGGCASNAPTSPETESSATSeTTPETTG 47
+                6789999999***999999888776665554404444443 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.18
+        copC  81 ekeangthldfylqkGd 97 
+                   e++g  +df l+ G+
+  OAB63651.1 167 TAEKDGETIDFMLKFGE 183
+                 67999********9887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5400  (1905942 residues searched)
+Passed MSV filter:                       111  (0.0205556); expected 108.0 (0.02)
+Passed bias filter:                       94  (0.0174074); expected 108.0 (0.02)
+Passed Vit filter:                        11  (0.00203704); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.00037037); expected 0.1 (1e-05)
+Initial search space (Z):               5400  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 10482.68
+//
+[ok]

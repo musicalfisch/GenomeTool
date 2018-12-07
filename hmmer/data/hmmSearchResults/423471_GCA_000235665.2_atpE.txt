@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423471_GCA_000235665.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-62  206.4   0.3    6.4e-62  206.2   0.3    1.0  1  EHJ13087.1  ATP synthase epsilon chain [Crocosphaera watsonii
+  ------ inclusion threshold ------
+        1.6    7.3  14.5       0.18   10.5   2.1    2.6  2  EHJ09785.1  putative RND efflux membrane fusion protein [Croc
+
+
+Domain annotation for each sequence (and alignments):
+>> EHJ13087.1  ATP synthase epsilon chain [Crocosphaera watsonii WH 0003]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  206.2   0.3   2.1e-65   6.4e-62       1     137 []       1     136 []       1     136 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 206.2 bits;  conditional E-value: 2.1e-65
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m ltvrvi+pdktvwd+  ee+ilpst+gqlgil ghaplltaldtgv+rvr++k  dw++ia++ggfaeve+de+ +lvn+ae gd i+ e a+a+++
+  EHJ13087.1   1 MPLTVRVITPDKTVWDGDVEEIILPSTSGQLGILGGHAPLLTALDTGVIRVRPDK--DWKSIAVMGGFAEVEQDEIKVLVNSAEAGDDIDKETAKADYS 97 
+                 89***************************************************87..8***************************************** PP
+
+        atpE 100 eaqtklnqv.kaedrqaqiqatqafkrararfqaagglv 137
+                 +aq++l++  k+++  +q++at afkrarar+qaagglv
+  EHJ13087.1  98 AAQSRLEEAnKTGEASEQMKATSAFKRARARLQAAGGLV 136
+                 ******9872568999*********************97 PP
+
+>> EHJ09785.1  putative RND efflux membrane fusion protein [Crocosphaera watsonii WH 0003]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.8   4.9     0.028        85      87     131 ..      89     134 ..      78     149 .. 0.81
+   2 ?   10.5   2.1   5.9e-05      0.18      73     132 ..     161     220 ..     152     225 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 1.8 bits;  conditional E-value: 0.028
+        atpE  87 dkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfq 131
+                 ++ +l++a+a+ ++ +++l++++a++r ++i qa +++++ +a++ 
+  EHJ09785.1  89 ESAQLQQAQATIAQREARLAELRAGNRVEEIaQARASVQQIQAQIT 134
+                 5678999999999999999999999999888567777777777664 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 5.9e-05
+        atpE  73 edevtilvngaergdkinleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqa 132
+                 +d +  l+n a+  ++i l++ +a+f+eaq +l++++a+ r++ i qa + +  a+a++q 
+  EHJ09785.1 161 RDRLDELLNDAQIKQAI-LQQFKASFQEAQEQLSKLEAGPRKEVIaQAVAELAEAKAQYQI 220
+                 56666788999888877.8999*******************9988688999999***9996 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         6124  (1573874 residues searched)
+Passed MSV filter:                       174  (0.0284128); expected 122.5 (0.02)
+Passed bias filter:                      151  (0.0246571); expected 122.5 (0.02)
+Passed Vit filter:                        13  (0.0021228); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326584); expected 0.1 (1e-05)
+Initial search space (Z):               6124  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7187.36
+//
+[ok]

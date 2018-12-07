@@ -1,0 +1,63 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671072_GCA_900009145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.8e-123  409.2  23.5    4.1e-79  264.3   5.9    2.0  2  CUR35121.1  Ycf92-like protein [Planktothrix tepida PCC 9214]
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR35121.1  Ycf92-like protein [Planktothrix tepida PCC 9214]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  151.3   9.6   1.8e-48   1.1e-44       1     107 [.       1     107 [.       1     119 [. 0.97
+   2 !  264.3   5.9     7e-83   4.1e-79     102     290 ..     124     312 ..     115     313 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 151.3 bits;  conditional E-value: 1.8e-48
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qpit lh+ldarvk++wlm+fl aplla p wrl lvgll+l+tlla ip rvw++qmgwl++++ ++f++++i pdgl+v  qp
+  CUR35121.1   1 MDLLRSLPIGLYLEQPITWLHRLDARVKLVWLMSFLVAPLLAHPVWRLVLVGLLILITLLARIPLRVWKRQMGWLLMFCGLLFVVSCIMPDGLAVDHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeegln 107
+                 rlpe+ l 
+  CUR35121.1 100 RLPEQELT 107
+                 ****9886 PP
+
+  == domain 2  score: 264.3 bits;  conditional E-value: 7e-83
+        bioN 102 peeglnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevq 200
+                  +  l lp  + y+yvl+d+  l +tr s++l +r stl+ftl+ystnl+lltta eei+  le l+ plr +++pvtei+ltltlslrf plvlee+q
+  CUR35121.1 124 SNSSLTLPQPTSYRYVLFDQWPLEITRYSVDLGIRTSTLLFTLVYSTNLYLLTTASEEIAMALESLMEPLRGLKLPVTEIALTLTLSLRFFPLVLEEIQ 222
+                 567899********************************************************************************************* PP
+
+        bioN 201 nlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwgg 290
+                 nl r+vrtrai+w+klg+kr+++vwlt+ e+ll+nlllraeqi+ am+vrgftspnqh+v wh+l+++  d ial+ l  fw +rl+wgg
+  CUR35121.1 223 NLIRSVRTRAINWKKLGLKRTIQVWLTIAERLLQNLLLRAEQISSAMQVRGFTSPNQHRVEWHQLRFKRRDSIALVGLTLFWGVRLIWGG 312
+                 *****************************************************************************************9 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         5948  (1891724 residues searched)
+Passed MSV filter:                       273  (0.0458978); expected 119.0 (0.02)
+Passed bias filter:                      135  (0.0226967); expected 119.0 (0.02)
+Passed Vit filter:                         5  (0.000840619); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000168124); expected 0.1 (1e-05)
+Initial search space (Z):               5948  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9174.86
+//
+[ok]

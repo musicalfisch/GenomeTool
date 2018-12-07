@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/dppC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/167539_GCA_000007925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       dppC  [M=292]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-23   80.6  13.3    2.6e-23   79.4  13.3    1.5  1  AAP99466.1  ABC-type peptide transporter permease component [
+    0.00036   16.6   7.9    0.00036   16.6   2.2    2.3  2  AAQ00198.1  ABC-type oligopeptide transport system permease [
+
+
+Domain annotation for each sequence (and alignments):
+>> AAP99466.1  ABC-type peptide transporter permease component [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   79.4  13.3   2.8e-26   2.6e-23      53     288 ..      56     281 ..      12     285 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 79.4 bits;  conditional E-value: 2.8e-26
+        dppC  53 qttappslkhlfgtndlgqdqlarilvggrislavgiaamivalilgtaigaisgfyggaidgllmrltdlflslpqlpllllivylfrdsikkiagpe 151
+                    + ps  h  gt+ lg+d   r l g  ++l v + a+  a+++g  ig +s + gg +d +++ + + + ++p l l ++i +l+   i + a   
+  AAP99466.1  56 PMYSSPSWGHWCGTDRLGRDVCVRTLQGTNVALQVVLLAVGFAVLIGVPIGILSAYMGGFVDRIMVLIMETLYTVPVLLLSVVIAFLLGRGILNAA--- 151
+                 456789*********************************************************************************998887654... PP
+
+        dppC 152 tgifilvvlvigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatlavgnaiitestlsflglgfppdvptwgqmlf 250
+                   i + vv  i         r+vr + ++++   +i aa ++ga p+ ++  +l+ nv+  + v  tl   +a++    l flglg+p  +p wg  l 
+  AAP99466.1 152 --IALCVVY-IP-----QYFRVVRNQTMQVKTELYIEAARSMGAGPLWIMRRYLFKNVITSVPVLLTLNAADAVLVLGGLGFLGLGLPETIPEWGSDLN 242
+                 ..4444444.33.....35699***************************************************************************** PP
+
+        dppC 251 kakdyltta.phlvifpalaivitvlsinfigdglrdvf 288
+                  a d +        +fp +a+   vls+ ++g+ l d +
+  AAP99466.1 243 MALDAVPIGiWWTALFPGIAMFGLVLSLSLLGEALEDFI 281
+                 ****99765156789********************9976 PP
+
+>> AAQ00198.1  ABC-type oligopeptide transport system permease [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.2   0.3    0.0047       4.4      69     112 ..      83     128 ..      70     166 .. 0.65
+   2 !   16.6   2.2   3.8e-07   0.00036     161     239 ..     213     295 ..     184     335 .. 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.0047
+        dppC  69 lgqdqlarilvggris..lavgiaamivalilgtaigaisgfygga 112
+                 lgq    +  v   i+  l   i   i+al++ + ig i gf g a
+  AAQ00198.1  83 LGQSLNNQESVRETIAntLPASIELGIIALLIASIIGLIVGFTGIA 128
+                 5555544444444443114455666677777778888888888765 PP
+
+  == domain 2  score: 16.6 bits;  conditional E-value: 3.8e-07
+        dppC 161 vigglnwmsvarlvrgnflklremefisaaialgatpfrliwvhllpnvlgmiivaatla....vgnaiitestlsflglgfp 239
+                  +g l     +r +r n+ k+   ++i aa + g    ++i+ h lpn l  ++  a l+    +g a++ e t+s+ g+ + 
+  AAQ00198.1 213 TLGILLSGIFSRSLRINLEKVLSTNYIQAASSRGIKKSQIIFSHALPNALLPVLTIAGLTisslIGGALLIEVTFSWPGIALG 295
+                 44555555578999**********************************99877777766522336889999999999776554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (292 nodes)
+Target sequences:                         1882  (516756 residues searched)
+Passed MSV filter:                       106  (0.0563231); expected 37.6 (0.02)
+Passed bias filter:                       39  (0.0207226); expected 37.6 (0.02)
+Passed Vit filter:                         8  (0.0042508); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.0010627); expected 0.0 (1e-05)
+Initial search space (Z):               1882  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 5029.76
+//
+[ok]

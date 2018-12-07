@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805292_GCA_001873375.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-46  152.5   0.1    6.4e-46  152.4   0.1    1.0  1  OIP76536.1  carbon dioxide concentrating mechanism protein Cc
+     0.0051   14.7   0.1     0.0088   14.0   0.1    1.4  1  OIP77805.1  hypothetical protein AUK48_03265 [Oscillatoriales
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP76536.1  carbon dioxide concentrating mechanism protein CcmL [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.4   0.1   4.2e-49   6.4e-46       1      98 [.       1      98 [.       1     100 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 152.4 bits;  conditional E-value: 4.2e-49
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdq 98
+                mqia+v gtvvst k+ +l g+k+lllqlvd +g++l +yevaad+vgagvdewvl+srgs ar+v+ +e+rp+daav+aiidtv++ dr +yskk  
+  OIP76536.1  1 MQIARVCGTVVSTYKEANLSGTKFLLLQLVDLQGQMLSDYEVAADNVGAGVDEWVLFSRGSGARRVTNSENRPIDAAVIAIIDTVSLSDRTLYSKKYS 98
+                9**********************************************************************************************965 PP
+
+>> OIP77805.1  hypothetical protein AUK48_03265 [Oscillatoriales cyanobacterium CG2_30_44_21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.0   0.1   5.8e-06    0.0088      48      96 ..     161     210 ..     130     212 .] 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 14.0 bits;  conditional E-value: 5.8e-06
+        ccmL  48 gagvdewvlvsrgsaarqvlgneqrpldaavvaiidtv.kvedrliyskk 96 
+                  a ++   +v+ gs  r  lg e+r + aa  a++ t+ +v  r i+s +
+  OIP77805.1 161 AASINILEIVAVGSYGRLYLGGEERNIMAAAAAVLHTIaNVRGRDIWSDR 210
+                 5677778899***************************9569999999976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         3046  (947245 residues searched)
+Passed MSV filter:                        73  (0.0239659); expected 60.9 (0.02)
+Passed bias filter:                       63  (0.0206829); expected 60.9 (0.02)
+Passed Vit filter:                         6  (0.0019698); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000656599); expected 0.0 (1e-05)
+Initial search space (Z):               3046  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4736.23
+//
+[ok]

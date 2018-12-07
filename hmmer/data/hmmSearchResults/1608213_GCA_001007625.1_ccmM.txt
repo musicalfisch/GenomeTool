@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1608213_GCA_001007625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmM  [M=652]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-05   20.1   0.9    2.7e-05   19.5   0.8    1.4  1  KKZ15321.1  bifunctional N-acetylglucosamine-1-phosphate urid
+     0.0035   12.5   0.0     0.0038   12.3   0.0    1.0  1  KKZ14993.1  ribulose 1,5-bisphosphate carboxylase small subun
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ15321.1  bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase,
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.5   0.8   2.7e-08   2.7e-05      34     168 ..       4     135 ..       1     184 [. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 19.5 bits;  conditional E-value: 2.7e-08
+        ccmM  34 lsgaieigarvviapgtsirade..gtpfhigddskiqdgaiihgleksrvvgddgreysvwigrgscithmalihgpayvgdrcfigfrstvfnarig 130
+                 ls     g  vv+ap t  r  +  g    ig  + i+d  +   +e +  v  +       + rgs +  +a +   a +g+ c +g    v n+r+g
+  KKZ15321.1   4 LSPGTRFGRDVVVAPQTHFRGANsiGEGCRIGPSALIEDSQLEADVEVTFSVVRQA-----RLARGSTVGPFAHLRPGAVLGEHCKVGNFVEVKNSRLG 97 
+                 6677788999*********9765124444555555555555555555444444333.....489*********************************** PP
+
+        ccmM 131 adcivmmhalvqdveipagkfvpsgsvitsqqqadrlp 168
+                 +d+     + + d ++  g  v +g++ +  + + + p
+  KKZ15321.1  98 SDVKASHLSYLGDAQLGRGVNVGAGTITANFDGTGKHP 135
+                 ***99999999*****9999999999877666665555 PP
+
+>> KKZ14993.1  ribulose 1,5-bisphosphate carboxylase small subunit [Candidatus Synechococcus spongiarum 142]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.3   0.0   3.8e-06    0.0038     448     518 ..      28     100 ..       9     110 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 3.8e-06
+        ccmM 448 etiaqirsllaqgykigtehadkrrfktsswqs.capiesnresd.vitaledclrehsgeyvrllgidakak 518
+                 e   qi  ++aqg+    eh +        w     p   + e   +++ le c r +   +vrl g da ++
+  KKZ14993.1  28 EIYEQIAYVIAQGWTPCIEHVQPSASMRNYWSLwKLPFFGEAELGaIVAELEACHRAYPDHHVRLTGYDAYTQ 100
+                 4446777777777777777766554444444331235555555431445577777777777777777777654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (652 nodes)
+Target sequences:                         2010  (525874 residues searched)
+Passed MSV filter:                        68  (0.0338308); expected 40.2 (0.02)
+Passed bias filter:                       50  (0.0248756); expected 40.2 (0.02)
+Passed Vit filter:                         8  (0.0039801); expected 2.0 (0.001)
+Passed Fwd filter:                         2  (0.000995025); expected 0.0 (1e-05)
+Initial search space (Z):               2010  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8571.75
+//
+[ok]

@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1943583_GCA_002018015.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrA  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00017   17.3   3.7     0.0077   11.8   1.0    2.1  2  OOV31334.1  hypothetical protein BV53_07070 [Candidatus Synec
+     0.0021   13.7   1.7      0.039    9.5   0.0    2.2  2  OOV34048.1  hypothetical protein BV53_06540 [Candidatus Synec
+
+
+Domain annotation for each sequence (and alignments):
+>> OOV31334.1  hypothetical protein BV53_07070 [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    9.6   0.1   5.1e-05     0.036      95     139 ..      83     127 ..      56     141 .. 0.87
+   2 !   11.8   1.0   1.1e-05    0.0077     246     396 ..     115     276 ..     111     291 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 5.1e-05
+        emrA  95 sgtvdqvlvddnqdvkagqplirlddrdfqiklqqaqadlaaaqq 139
+                  g v  + v++ ++v+agq l  +d  d+ i++++ qa l+ a++
+  OOV31334.1  83 PGIVAAINVEEGEQVRAGQVLAVMDGGDLSIRIKERQALLTQAEE 127
+                 588999999****************************99988765 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 1.1e-05
+        emrA 246 vrqaqakvaqaeqgvataqaglessqgelqqaqaqnvqtqvsqsdyqtaqaainqsqvalknakqqlayvtitapvsgrvgrknvq...........tg 333
+                 +++ qa ++qae+ +a  +  l   qg ++      +     +s +++ q+ +  s+  l++  q+   +++ ap  g v  +  +           +g
+  OOV31334.1 115 IKERQALLTQAEEELALRNEELVRHQGLVEAGALSPLALSQLESRHRAQQSQVMASRQRLQEVLQEQKELAVQAPFDGLVVERFAEprsyvtpagsaAG 213
+                 677899999999999999999999999887777777777677788999999999999999999999999999999999876543321111111111123 PP
+
+        emrA 334 qqvqag.tpllaivddqywvtanfketqlekmhpgqkveikldsfphheftgriesvspasgaq 396
+                     a  t ll+ +   y + a + + ++ +++  q  e+ ld++p h ++ +++ ++p s  +
+  OOV31334.1 214 ATNGASkTSLLT-IGTGYQLVAALPDNEVGRLQFNQEAEVVLDALPNHPLAAQVKIIAPRSQVN 276
+                 333333245555.5678999999************************************99766 PP
+
+>> OOV34048.1  hypothetical protein BV53_06540 [Candidatus Synechococcus spongiarum LMB bulk15N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.6   1.0    0.0067       4.7     191     233 ..     122     164 ..      98     181 .. 0.75
+   2 !    9.5   0.0   5.5e-05     0.039     315     386 ..     187     255 ..     168     291 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 2.6 bits;  conditional E-value: 0.0067
+        emrA 191 qadlaqtnanlakaqadynrfnqlfssgavsrreldtarqaye 233
+                 qa +     +l   +++ +r+  l ++gavs   ld  r++ e
+  OOV34048.1 122 QAKMDSLARQLEVVRSEEKRYAALVATGAVSYDSLDQRRRSTE 164
+                 4444444556666789999*****************9998766 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 5.5e-05
+        emrA 315 vtitapvsgrvgrknvqtgqqvqagtpllaivddqywvtanfketqlekmhpgqkveikldsfphheftgri 386
+                   + ap++g v +   + g+q      l     d   v a+  et++ ++ pgq+v i  +   h  ftg +
+  OOV34048.1 187 GVLRAPMAGTVLKILTREGEQPSNSVVLELGQTDFMEVVAEVYETDISRIRPGQRVRITSE---HGGFTGEL 255
+                 5678999999999999999999988888778889999********************9865...44444433 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (448 nodes)
+Target sequences:                         1413  (403879 residues searched)
+Passed MSV filter:                        55  (0.0389243); expected 28.3 (0.02)
+Passed bias filter:                       33  (0.0233546); expected 28.3 (0.02)
+Passed Vit filter:                         2  (0.00141543); expected 1.4 (0.001)
+Passed Fwd filter:                         2  (0.00141543); expected 0.0 (1e-05)
+Initial search space (Z):               1413  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6031.26
+//
+[ok]

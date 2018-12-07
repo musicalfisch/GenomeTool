@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/59920_GCA_000012465.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-26   88.5   2.7    3.7e-26   88.3   2.7    1.0  1  AAZ59366.1  carboxysome shell protein CsoS1 [Prochlorococcus 
+    1.1e-24   83.6   2.6    1.9e-24   82.8   2.6    1.3  1  AAZ59373.1  carboxysome shell peptide, CsoS1 [Prochlorococcus
+     0.0053   13.9   0.4      0.012   12.7   0.4    1.6  1  AAZ59364.1  conserved hypothetical protein [Prochlorococcus m
+
+
+Domain annotation for each sequence (and alignments):
+>> AAZ59366.1  carboxysome shell protein CsoS1 [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   88.3   2.7   5.2e-29   3.7e-26       1      87 [.       6      91 ..       6      95 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 88.3 bits;  conditional E-value: 5.2e-29
+        ccmK  1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenley 87
+                m ia+gmiet+g+   +eaadam kaa v l+g e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e 
+  AAZ59366.1  6 MGIALGMIETRGLVPAIEAADAMTKAAEVRLIGREFVGGGYVTVLVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHREVEP 91
+                89***********999***************************************************8875.679*******99986 PP
+
+>> AAZ59373.1  carboxysome shell peptide, CsoS1 [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   82.8   2.6   2.7e-27   1.9e-24       2      87 ..      87     171 ..      86     176 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 82.8 bits;  conditional E-value: 2.7e-27
+        ccmK   2 siavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenley 87 
+                  ia+gmiet+g+   +eaadam kaa v l+  e +g g vtv+vrg+   v+asv ag ++ +rv  g  +++hiiarph ++e 
+  AAZ59373.1  87 GIALGMIETRGLVPAIEAADAMTKAAEVNLIVKELVGGGYVTVMVRGETGAVNASVRAGADACERVGDGL-VAAHIIARPHGEIEP 171
+                 59**********999***************************************************8875.679*******99986 PP
+
+>> AAZ59364.1  conserved hypothetical protein [Prochlorococcus marinus str. NATL2A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.4   1.7e-05     0.012       7      66 ..     196     257 ..     190     258 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.7e-05
+        ccmK   7 mietlgfpavveaadamvkaarvtlvgyekigs.grvtvivr.gdvsevqasvaagvesanr 66 
+                 ++et+    v+ aa+   ka+ +t+v  + +g+ gr+t+  + gdv e  a+    ++++nr
+  AAZ59364.1 196 ILETEPAGYVLMAANEAEKASNITIVDVKGVGAfGRLTLAGKeGDVEEAAAAAMRSIDQINR 257
+                 67888888899*********************879***985449****99999999999987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         2163  (535974 residues searched)
+Passed MSV filter:                        43  (0.0198798); expected 43.3 (0.02)
+Passed bias filter:                       40  (0.0184928); expected 43.3 (0.02)
+Passed Vit filter:                         6  (0.00277393); expected 2.2 (0.001)
+Passed Fwd filter:                         3  (0.00138696); expected 0.0 (1e-05)
+Initial search space (Z):               2163  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 5520.53
+//
+[ok]

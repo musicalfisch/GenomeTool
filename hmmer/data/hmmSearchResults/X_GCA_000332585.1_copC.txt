@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_000332585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                               Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                               -----------
+    0.00037   18.8   0.1    0.00045   18.5   0.1    1.1  1  lcl|AOCI01000024.1_prot_ELS49503.1_715  [locus_tag=C789_715] [protein=Ne
+  ------ inclusion threshold ------
+      0.037   12.3   0.9       0.11   10.7   0.9    1.8  1  lcl|AOCI01000004.1_prot_ELS50163.1_88   [locus_tag=C789_88] [protein=hyp
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|AOCI01000024.1_prot_ELS49503.1_715  [locus_tag=C789_715] [protein=Neurohypophysial hormones like protein] [protei
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.5   0.1   1.6e-07   0.00045       1      62 [.      17      77 ..      17      83 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 18.5 bits;  conditional E-value: 1.6e-07
+                                    copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekee 62
+                                            mk++ ++ll++l+++  +l+a+ + ++a+++++ ++t  + +t++++ ++++++++++++++
+  lcl|AOCI01000024.1_prot_ELS49503.1_715 17 MKIKSLVLLILLTLTT-VLGACQGAKQAEEPKNVPTTVESPQTDADDDEDGEKQQKDDDNQR 77
+                                            7888888888888765.568999999******999987766666666666555554444433 PP
+
+>> lcl|AOCI01000004.1_prot_ELS50163.1_88  [locus_tag=C789_88] [protein=hypothetical protein] [protein_id=ELS50163.1] [lo
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.9     4e-05      0.11       8      76 ..      43     111 ..      37     122 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 4e-05
+                                   copC   8 llvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekeeskGGqviesGayhl 76 
+                                             l v +++l++ aas+n +t++ +e+ +  +t +t ++ s+ + + +++ ++k+es     +  G+yh 
+  lcl|AOCI01000004.1_prot_ELS50163.1_88  43 ILDVKGVSLTIAAASANRETQSRQETIQVAETEKTVSSASAGSLNLSDQASAKDESDLFEFLTRGQYHR 111
+                                            567899***************************999999999999999999999999999999999995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5571  (1335648 residues searched)
+Passed MSV filter:                       118  (0.0211811); expected 111.4 (0.02)
+Passed bias filter:                      101  (0.0181296); expected 111.4 (0.02)
+Passed Vit filter:                        16  (0.00287202); expected 5.6 (0.001)
+Passed Fwd filter:                         2  (0.000359002); expected 0.1 (1e-05)
+Initial search space (Z):               5571  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 7346.06
+//
+[ok]

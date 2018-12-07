@@ -1,0 +1,96 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/423474_GCA_001039555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-06   25.7   0.2      0.019   11.6   0.6    2.4  2  CCQ49044.1  Probable RND efflux membrane fusion protein [Croc
+  ------ inclusion threshold ------
+      0.043   10.4   6.8       0.37    7.3   0.4    3.0  3  CCQ50151.1  HlyD family secretion protein [Crocosphaera watso
+
+
+Domain annotation for each sequence (and alignments):
+>> CCQ49044.1  Probable RND efflux membrane fusion protein [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.6   7.8e-06     0.019      61     171 ..      74     181 ..      56     201 .. 0.78
+   2 !   11.2   0.0     1e-05     0.026     206     339 ..     315     449 ..     305     469 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 7.8e-06
+        cusB  61 agvelatiskrqisgtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfiqiqqdyleaksqfelskady.erqqqladqnv 158
+                 + v+lati+   +    +v g l+      v +   + g ++   + +g r+ kgq i  ++n d+   q + lea++q+  ++a   er+     +++
+  CCQ49044.1  74 TSVKLATITTGVVKSVSDVVGTLEAD--SAVILKPEITGRINRILVQEGDRISKGQLIMELDNSDW---QTELLEAQAQLANAQARLaEREAGNRIEDI 167
+                 6799*******999999999999875..5677788899*999999999*********999999886...99********99988864366655555666 PP
+
+        cusB 159 nsakt.lqqskaty 171
+                 + ak+ l+++ka  
+  CCQ49044.1 168 EEAKArLREAKARL 181
+                 66664366666655 PP
+
+  == domain 2  score: 11.2 bits;  conditional E-value: 1e-05
+        cusB 206 lyspidgyvtevnvnrgkfvnptdvlfeivdtehlhaelivfekdvrklkigqkvrftlanetkeriatvyligreistertiqi.hchidqedkdllp 303
+                 + +pi g v ++ v+ g fv+  d l  +   + l  +l v   d  +l++g  v +   + +      + +i  +++++  + + ++  + +++ ll 
+  CCQ49044.1 315 IVAPISGVVGDIPVDAGDFVDQGDTLTSLTANNLLELNLSVPLEDAPRLRLGLPVEIMDKQGATLARGNISFISPDVTADSQLVLaKADFQGDNRTLLN 413
+                 679**************************************************9998877766666677788888888776654416667777788999 PP
+
+        cusB 304 gmylkamvetggaevpalpneaiidfegkkyifvvs 339
+                   + +a +         +p  ai  + g+ ++fv  
+  CCQ49044.1 414 RQFTQARIIWRQQPGLLIPTTAISRLGGQTFVFVAK 449
+                 999999888877777788899999999999998864 PP
+
+>> CCQ50151.1  HlyD family secretion protein [Crocosphaera watsonii WH 8502]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   0.4   0.00015      0.37      56     125 ..      37     106 ..      29     158 .. 0.73
+   2 ?   -0.4   0.7     0.034        85     119     176 ..     162     218 ..     136     249 .. 0.69
+   3 ?    5.1   0.1   0.00072       1.8     205     337 ..     295     441 ..     278     454 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.00015
+        cusB  56 aqfrnagvelatiskrq..isgtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienld 125
+                 a + ++ +e  t+   +  +s  i+  gv  v p + v is    g l +  + qg rv++gq +a +e  +
+  CCQ50151.1  37 APISESKLEQMTVLAEResLSVDIEASGV--VEPIESVNISPKNPGRLVQLRVEQGMRVKQGQILALMEHSE 106
+                 55555666666665444014555555555..7899*******************************998754 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.034
+        cusB 119 arienldfiqiqqdyleaksqfelskadyerqqqladqnvnsaktlqqskatyttwqa 176
+                  ri   d+ qi+ + + a+s ++l+ +  +r+q+l ++   +   +++    y   qa
+  CCQ50151.1 162 ERIP-RDIDQIKAQIVSARSGLQLAASRVKRNQELLEEGAITQDRFDELLNNYNNAQA 218
+                 3432.36667777788888888888888888888777666555555555555555555 PP
+
+  == domain 3  score: 5.1 bits;  conditional E-value: 0.00072
+        cusB 205 nlyspidgyvtevnvnrgkfvnptdvlfeivd.........tehlhaelivfekdvrklkigqkvrftlanetke.riatvyligreisterti...qi 290
+                  + +p dg vt+   n g fv pt                 +  l+    v e d+  +k gq v +t     ++     v li  e   e  +   ++
+  CCQ50151.1 295 AIRAPFDGIVTQKYANPGAFVTPTTSASSTASatsssiialARGLKIVAKVPEVDIAMIKQGQPVMITADAFPNQvFEGQVVLIAPEAVVEANVtsfEV 393
+                 5678*******************9765443220000000012334444445677777777777777775433322023456666666666554311133 PP
+
+        cusB 291 hchidqedkdllpgmylka.mvetggaevpalpneaiidfegkkyifv 337
+                    +   +  ll  m +   ++    ++   +p  ai+  +g   ++v
+  CCQ50151.1 394 TIALRTGEDKLLSRMNVDVnFLGQEISDALVVPTVAIVTKNGETGVMV 441
+                 444444444466666554312222223333456666666666665555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         4965  (1188627 residues searched)
+Passed MSV filter:                       121  (0.0243706); expected 99.3 (0.02)
+Passed bias filter:                       84  (0.0169184); expected 99.3 (0.02)
+Passed Vit filter:                         8  (0.00161128); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.00040282); expected 0.0 (1e-05)
+Initial search space (Z):               4965  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 7182.70
+//
+[ok]

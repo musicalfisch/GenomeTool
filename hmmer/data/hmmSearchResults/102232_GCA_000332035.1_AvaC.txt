@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102232_GCA_000332035.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.2e-106  352.9   0.2   1.4e-106  352.8   0.2    1.0  1  ELR97080.1  putative O-methyltransferase [Gloeocapsa sp. PCC 
+    5.5e-34  115.4   0.0    9.6e-34  114.6   0.0    1.4  1  ELR99436.1  putative O-methyltransferase [Gloeocapsa sp. PCC 
+
+
+Domain annotation for each sequence (and alignments):
+>> ELR97080.1  putative O-methyltransferase [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  352.8   0.2  6.7e-110  1.4e-106       1     220 []       1     220 []       1     220 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 352.8 bits;  conditional E-value: 6.7e-110
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+nqt+gld q+y y   + lre+ il qlrqeta++pl  mqiapeqgqfma+lvq igakkaleigvftgys+l valalp +gkliacd+s eyt+
+  ELR97080.1   1 MTNQTIGLDSQLYEYLCRVSLREPEILQQLRQETATHPLVRMQIAPEQGQFMALLVQLIGAKKALEIGVFTGYSSLAVALALPSDGKLIACDVSVEYTA 99 
+                 89************************************************************************************************* PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 iarrywqqagv +ki+l +apaletl++l+a+ge+n+fdfvfidadk ny +yye++l l+rsgg+ia+dnv+w grva  d++dn t ++r +n  + 
+  ELR97080.1 100 IARRYWQQAGVEAKIQLHLAPALETLEQLLAAGEANTFDFVFIDADKNNYISYYEKSLTLIRSGGLIAVDNVLWGGRVADEDNQDNLTVVLRQFNDYLL 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamkk 220
+                 +derv +s++pi dgltla+k+
+  ELR97080.1 199 HDERVSLSLVPIADGLTLALKR 220
+                 *******************995 PP
+
+>> ELR99436.1  putative O-methyltransferase [Gloeocapsa sp. PCC 73106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  114.6   0.0   4.7e-37   9.6e-34      42     219 ..      90     268 ..      37     269 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 114.6 bits;  conditional E-value: 4.7e-37
+        AvaC  42 mqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliaggesnsfdfv 140
+                 m     +gq + ++v+   ak++leig+ftgysal +a alp +g ++ac++    +  ar  +q++   +ki + +apalet+ kl+ + e  sfd+v
+  ELR99436.1  90 MLSGHIEGQTLKLFVHMTKAKRILEIGMFTGYSALAMAEALPEDGYMVACEVDSYVADFARACFQESPHGSKIKVEVAPALETMKKLVDTQE--SFDLV 186
+                 33334479**********************************************99********************************9876..7**** PP
+
+        AvaC 141 fidadksnydayyeral..qlvrsggiiaidnvfwsgrvaaad.stdnrtkiirslnakiqqdervnisiipigdgltlamk 219
+                 fidadk +y  y++  l  +l+  gg i +dn +  g+              i  +n+ +  d rv+  ++p+ dglt+  +
+  ELR99436.1 187 FIDADKKEYVDYFKLILdgNLLIPGGFILVDNTLLQGQAYLPPgQRTPNGEAIAQFNSIVASDARVEQVLLPLRDGLTIIRR 268
+                 **************999445999************99976543134445678999***********************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         4087  (1202650 residues searched)
+Passed MSV filter:                       131  (0.0320529); expected 81.7 (0.02)
+Passed bias filter:                      109  (0.0266699); expected 81.7 (0.02)
+Passed Vit filter:                        12  (0.00293614); expected 4.1 (0.001)
+Passed Fwd filter:                         2  (0.000489356); expected 0.0 (1e-05)
+Initial search space (Z):               4087  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 6614.57
+//
+[ok]

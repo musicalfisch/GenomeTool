@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.2e-169  559.0   6.3   4.7e-169  558.8   6.3    1.0  1  ACC83205.1  ATP synthase F0, A subunit [Nostoc punctiforme PC
+  ------ inclusion threshold ------
+      0.027   12.6   0.0      0.058   11.5   0.0    1.5  1  ACC79662.1  PBS lyase HEAT domain protein repeat-containing p
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC83205.1  ATP synthase F0, A subunit [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  558.8   6.3  1.4e-172  4.7e-169       1     251 []       3     253 .]       3     253 .] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 558.8 bits;  conditional E-value: 1.4e-172
+        atpI   1 mlsvlnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf 99 
+                 mlsvlnafns+plaelevghhfywqlgnlkihgqvfltswfvi+ilvvas+aatrn+qripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlf
+  ACC83205.1   3 MLSVLNAFNSFPLAELEVGHHFYWQLGNLKIHGQVFLTSWFVISILVVASIAATRNAQRIPKGIQNLMEYALEFIRDLAKNQLGEKEYRPWVPFIGTLF 101
+                 99************************************************************************************************* PP
+
+        atpI 100 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv 198
+                 lfifvsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvv
+  ACC83205.1 102 LFIFVSNWSGALIPWKLIKLPSGELAAPTNDINTTVALALLTSLAYFYAGFSKRGLGYFKKYIEPTPVLLPIAILEDFTKPLSLSFRLFGNILADELVV 200
+                 *************************************************************************************************** PP
+
+        atpI 199 avlvllvplfvplpvmalglftsaiqalvfatlagayihealeghgeeeheeh 251
+                 avlvllvplfvplpvmalglftsaiqalvfatlagayihea+eghg+eeheeh
+  ACC83205.1 201 AVLVLLVPLFVPLPVMALGLFTSAIQALVFATLAGAYIHEAMEGHGGEEHEEH 253
+                 ****************************************************9 PP
+
+>> ACC79662.1  PBS lyase HEAT domain protein repeat-containing protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.7e-05     0.058      45      86 ..     621     663 ..     599     672 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.7e-05
+        atpI  45 ilvvaslaatrnvqripkgiqnlm.eyalefirdlaknqlgek 86 
+                   ++as   t n+  +p+ i nlm  y  e+ rd++ nq+ ++
+  ACC79662.1 621 EQLIASKDVTSNISALPENIPNLMlGYINELNRDVTDNQFDDR 663
+                 45799*****************98569************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       238  (0.0355755); expected 133.8 (0.02)
+Passed bias filter:                      129  (0.0192825); expected 133.8 (0.02)
+Passed Vit filter:                        11  (0.00164425); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9726.67
+//
+[ok]

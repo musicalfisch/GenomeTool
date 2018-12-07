@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/74547_GCA_000011485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.022   10.8   0.0        1.3    5.0   0.0    2.1  2  CAE20997.1  carbamoyl-phosphate synthase, large subunit [Proc
+
+
+Domain annotation for each sequence (and alignments):
+>> CAE20997.1  carbamoyl-phosphate synthase, large subunit [Prochlorococcus marinus str. MIT 9313]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.3   0.0    0.0014         4     318     346 ..     279     307 ..     260     321 .. 0.80
+   2 ?    5.0   0.0   0.00044       1.3     305     349 ..     834     881 ..     817     898 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 3.3 bits;  conditional E-value: 0.0014
+        AvaB 318 ltgqvsfdfiqaaddgqvyaiecnprths 346
+                  tg  +++f    ddg+v  ie npr   
+  CAE20997.1 279 ATGGSNIQFAINPDDGEVVVIEMNPRVSR 307
+                 478888999999**************754 PP
+
+  == domain 2  score: 5.0 bits;  conditional E-value: 0.00044
+        AvaB 305 ierwilafvkglnltgqvsfdfi.q..aaddgqvyaiecnprthsait 349
+                 i  w  a+   l++ g ++++f  q   a d qv+ ie+npr+  ++ 
+  CAE20997.1 834 IRLWSEALALALKVQGLINLQFAvQrdEAGDEQVFIIEANPRASRTVP 881
+                 67788899999999999999996232246789**********987765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         2850  (689451 residues searched)
+Passed MSV filter:                        66  (0.0231579); expected 57.0 (0.02)
+Passed bias filter:                       54  (0.0189474); expected 57.0 (0.02)
+Passed Vit filter:                         4  (0.00140351); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000350877); expected 0.0 (1e-05)
+Initial search space (Z):               2850  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 10594.56
+//
+[ok]

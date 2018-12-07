@@ -1,0 +1,104 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173025_GCA_000317045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-69  230.3   0.8    1.6e-69  230.2   0.8    1.0  1  AFY66773.1  ATP synthase F1 subcomplex epsilon subunit [Geitl
+  ------ inclusion threshold ------
+        3.3    5.7  19.8          2    6.4   8.0    3.0  3  AFY65951.1  efflux transporter, RND family, MFP subunit [Geit
+        6.2    4.8  13.7       0.27    9.2   3.8    2.6  2  AFY68113.1  ABC exporter membrane fusion protein, DevB family
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY66773.1  ATP synthase F1 subcomplex epsilon subunit [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  230.2   0.8   1.3e-72   1.6e-69       1     137 []       1     135 [.       1     135 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 230.2 bits;  conditional E-value: 1.3e-72
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 m ltvrvispd+tvwd++aeevilpsttgqlgil ghapll+ald+gvmrvra  n+dw +ial+ggfaeve++evtilvngaerg++i+ + a+aa++
+  AFY66773.1   1 MPLTVRVISPDRTVWDGQAEEVILPSTTGQLGILPGHAPLLSALDIGVMRVRA--NRDWATIALMGGFAEVESNEVTILVNGAERGESIDRDAAKAAYD 97 
+                 89**************************************************8..579***************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 ea +k nq ++ +rq+qiq+tqa+krararfqaagg+v
+  AFY66773.1  98 EALSKANQGQSASRQEQIQSTQALKRARARFQAAGGMV 135
+                 ************************************98 PP
+
+>> AFY65951.1  efflux transporter, RND family, MFP subunit [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.6   0.0      0.95   1.2e+03       3      32 ..      56      83 ..      47      95 .. 0.64
+   2 ?    6.4   8.0    0.0015         2      89     133 ..     109     154 ..      87     158 .. 0.81
+   3 ?    4.5   3.0     0.006       7.7      79     133 ..     185     239 ..     160     242 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -2.6 bits;  conditional E-value: 0.95
+        atpE  3 ltvrvispdktvwdaeaeevilpsttgqlg 32
+                ltvr+ s   tv   +    + p ttg+l 
+  AFY65951.1 56 LTVRI-SASGTVVA-KRSVNLSPKTTGRLA 83
+                56664.33444432.333345688888875 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.0015
+        atpE  89 inleearaafneaqtklnqvkaedrqaqi.qatqafkrararfqaa 133
+                  ++ +araa ++aq++l++++++ r + i qa++a+++a+a++  a
+  AFY65951.1 109 AQMMQARAAVAQAQANLERLRNGTRSEAIaQAEAAVRQAQAQVAEA 154
+                 46789*******************987765999999*999987655 PP
+
+  == domain 3  score: 4.5 bits;  conditional E-value: 0.006
+        atpE  79 lvngaergdkinleearaafneaqtklnqvkaedrqaqiq.atqafkrararfqaa 133
+                 ++n a r  +  + +a a  +ea+ +l+++++++r ++i  a++ +  ar r+qa 
+  AFY65951.1 185 VLNEA-RSARAGVAQAEARVTEARGRLQELRNGSRPEEIAeAEARVAEARGRLQAV 239
+                 45554.445566788889999**************9999626667899******96 PP
+
+>> AFY68113.1  ABC exporter membrane fusion protein, DevB family [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.2   3.8   0.00021      0.27      89     131 ..     115     158 ..      90     163 .. 0.83
+   2 ?   -0.2   3.3      0.17   2.2e+02      41     132 ..     168     266 ..     157     276 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 0.00021
+        atpE  89 inleearaafneaqtklnqvkaedrqaqiqatqa.fkrararfq 131
+                   l ea a+ + aq++l+ v+a+ +q +i a+qa + r ra  q
+  AFY68113.1 115 AALVEAEAQVKVAQARLEVVQAGAKQGEISAQQAeMERLRAERQ 158
+                 467899999***********************985688888766 PP
+
+  == domain 2  score: -0.2 bits;  conditional E-value: 0.17
+        atpE  41 ltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngae...rgdkinleeara....afneaqtklnqvkaedrqaqiqatqafkrar.arfq 131
+                 ++ l+  v     ++ + + ++a  g +a+ + d   + +++ +   r  ++ l+  r+    + ++aq+ l+q+++    +   a++ + ra  ar q
+  AFY68113.1 168 VARLESEVRNA-QTEFDRYASLATEGAIADSDLDSKRLALETRQqslREAQVTLDRIRSttppELERAQATLEQIAEVRPVDVRSAQAEIDRAIaARDQ 265
+                 55555544333.333456777888888887777766666555441225677888888873333468899999988764333333333335555313444 PP
+
+        atpE 132 a 132
+                 a
+  AFY68113.1 266 A 266
+                 3 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         3815  (1301653 residues searched)
+Passed MSV filter:                       143  (0.0374836); expected 76.3 (0.02)
+Passed bias filter:                       94  (0.0246396); expected 76.3 (0.02)
+Passed Vit filter:                        16  (0.00419397); expected 3.8 (0.001)
+Passed Fwd filter:                         3  (0.00078637); expected 0.0 (1e-05)
+Initial search space (Z):               3815  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 4458.16
+//
+[ok]

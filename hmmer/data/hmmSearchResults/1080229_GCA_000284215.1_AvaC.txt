@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1080229_GCA_000284215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-80  266.9   0.0    2.2e-80  266.8   0.0    1.0  1  BAL33520.1  O-methyltransferase [Synechocystis sp. PCC 6803 s
+  ------ inclusion threshold ------
+      0.017   12.1   0.0      0.024   11.6   0.0    1.2  1  BAL31929.1  precorrin-6B methylase [Synechocystis sp. PCC 680
+
+
+Domain annotation for each sequence (and alignments):
+>> BAL33520.1  O-methyltransferase [Synechocystis sp. PCC 6803 substr. PCC-N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  266.8   0.0   1.4e-83   2.2e-80       5     220 .]       5     220 .]       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 266.8 bits;  conditional E-value: 1.4e-83
+        AvaC   5 tlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeytsiarr 103
+                   g+d  +ysy qsi   +s  laqlr+eta  p a mqi+peq qf+ +l+   gak++leigvf gysal +al lpp+g++iacd   + t+ia++
+  BAL33520.1   5 ITGFDPSLYSYLQSISADDSFYLAQLRRETAHLPGAPMQISPEQAQFLGLLISLTGAKQVLEIGVFRGYSALAMALQLPPDGQIIACDQDPNATAIAKK 103
+                 5799*********************************************************************************************** PP
+
+        AvaC 104 ywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiqqder 202
+                 ywq+agva+ki lr+ pal tl++l  g     fd++fidadk ny +yye  l+l+r+gg++ idnv+w g+v+  d ++ +t++++ +n  + qder
+  BAL33520.1 104 YWQKAGVAEKISLRLGPALATLEQLTQGKPLPEFDLIFIDADKRNYPRYYEIGLNLLRRGGLMVIDNVLWHGKVTEVDPQEAQTQVLQQFNRDLAQDER 202
+                 *************************************************************************************************** PP
+
+        AvaC 203 vnisiipigdgltlamkk 220
+                 v is+ip+gdg+tla+kk
+  BAL33520.1 203 VRISVIPLGDGMTLALKK 220
+                 ****************98 PP
+
+>> BAL31929.1  precorrin-6B methylase [Synechocystis sp. PCC 6803 substr. PCC-N]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.5e-05     0.024      66     131 ..      46     109 ..      27     116 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.5e-05
+        AvaC  66 eigvftgysalvvala.lppegkliacdlseeytsiarrywqqagvadkidlriapaletldkliag 131
+                 +ig  tg   + v la l p+ +++a++  ee + + rr  ++ gv++ + +    a + l +lia 
+  BAL31929.1  46 DIGAGTGT--IPVELAlLCPRSRIVAVERDEEVAGLIRRNCERFGVTN-VTVHEGSAPDCLPQLIAH 109
+                 56666665..5555552689**************************86.677788888999999985 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3169  (1030668 residues searched)
+Passed MSV filter:                       117  (0.0369202); expected 63.4 (0.02)
+Passed bias filter:                       96  (0.0302935); expected 63.4 (0.02)
+Passed Vit filter:                        11  (0.00347113); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000631114); expected 0.0 (1e-05)
+Initial search space (Z):               3169  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 7558.23
+//
+[ok]

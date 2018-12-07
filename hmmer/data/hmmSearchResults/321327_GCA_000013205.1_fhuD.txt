@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fhuD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fhuD  [M=330]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-06   24.5   0.2    0.00073   15.8   0.1    2.2  2  ABD00169.1  iron chelate ABC transporter (FeCT) family, subst
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD00169.1  iron chelate ABC transporter (FeCT) family, substrate-binding protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.8   0.1   2.6e-07   0.00073      58     137 ..      37     117 ..      26     144 .. 0.81
+   2 !    6.7   0.0   0.00015      0.41     278     303 ..     242     266 ..     227     279 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 15.8 bits;  conditional E-value: 2.6e-07
+        fhuD  58 eprrvvaldgatvgnllalgm.mpagvasnllpeitrlipnvprlgqssqinletlavlqpdliigavwemkgiynklsai 137
+                   rrv +l   t   l  l      g+ s  l e       + rlg   q nle +  lqpd ++ga      + ++l a+
+  ABD00169.1  37 PVRRVASLTTLTADILYRLAPdKLVGIPSGRLLEADPRFQGITRLGLGNQPNLEQIVALQPDWVVGASGFHTALAERLQAL 117
+                 4478888888888888777641457999999999999999***************************98878888877776 PP
+
+  == domain 2  score: 6.7 bits;  conditional E-value: 0.00015
+        fhuD 278 ldtdplwqslgavqknrvysvghywg 303
+                 + + p+w+ l avq +rvy   +y g
+  ABD00169.1 242 FRSRPFWNQLQAVQTQRVYGFDYY-G 266
+                 5678***************98755.4 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (330 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                        98  (0.0355072); expected 55.2 (0.02)
+Passed bias filter:                       80  (0.0289855); expected 55.2 (0.02)
+Passed Vit filter:                         7  (0.00253623); expected 2.8 (0.001)
+Passed Fwd filter:                         1  (0.000362319); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 9089.50
+//
+[ok]

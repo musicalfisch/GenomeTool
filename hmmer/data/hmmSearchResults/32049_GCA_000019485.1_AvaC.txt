@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/32049_GCA_000019485.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      3e-86  285.9   0.0    3.3e-86  285.8   0.0    1.0  1  ACA98770.1  O-methyltransferase [Synechococcus sp. PCC 7002]
+     0.0055   13.7   0.0     0.0088   13.1   0.0    1.2  1  ACA99455.1  SAM-dependent methyltransferase [Synechococcus sp
+
+
+Domain annotation for each sequence (and alignments):
+>> ACA98770.1  O-methyltransferase [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  285.8   0.0   2.1e-89   3.3e-86       1     219 [.       1     219 [.       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 285.8 bits;  conditional E-value: 2.1e-89
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+  +l ld  +y y   i l+e p+l +lr+ ta +p a mqiapeqgq+ma+lvq +ga+k+l+igvftgysalvvalalp +gk+iacd     t+
+  ACA98770.1   1 MTRSSLSLDAPLYDYLLRISLKEHPVLKELREITAQHPAARMQIAPEQGQLMAWLVQLLGAQKTLDIGVFTGYSALVVALALPKNGKVIACDRDPRPTA 99 
+                 667889********************************************************************************************* PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 ia+ yw++agva+ki+l +apaletld l+a g++ +fdf fidadk ny  y+er+l+l+r gg+ia+dnv+wsgrva    +d+rt  ir++n  + 
+  ACA98770.1 100 IAQTYWEKAGVAEKIELHLAPALETLDSLLADGQAGTFDFAFIDADKGNYLNYFERSLKLLRVGGVIAVDNVLWSGRVADPADQDKRTVKIRAFNEALY 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 +d r+ ++++p+ dgltla k
+  ACA98770.1 199 NDPRISLTVLPVADGLTLARK 219
+                 ******************976 PP
+
+>> ACA99455.1  SAM-dependent methyltransferase [Synechococcus sp. PCC 7002]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.1   0.0   5.6e-06    0.0088      58     115 ..      64     119 ..      61     128 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 5.6e-06
+        AvaC  58 aigakkaleigvftgysalvvalalppegkliacdlseeytsiarrywqqagvadkid 115
+                 ai    +l++g  +g  + +va  + p gk+i +d+++   ++ar+y  q  +a ki 
+  ACA99455.1  64 AIPGDTVLDLGCGAGKNCYMVAQKVGPTGKVIGVDFNDVMLNLARKY--QGAIATKIG 119
+                 67777899**************************************9..556777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         3186  (990621 residues searched)
+Passed MSV filter:                        83  (0.0260515); expected 63.7 (0.02)
+Passed bias filter:                       74  (0.0232266); expected 63.7 (0.02)
+Passed Vit filter:                         9  (0.00282486); expected 3.2 (0.001)
+Passed Fwd filter:                         2  (0.000627746); expected 0.0 (1e-05)
+Initial search space (Z):               3186  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 10896.83
+//
+[ok]

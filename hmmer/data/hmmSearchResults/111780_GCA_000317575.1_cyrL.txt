@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111780_GCA_000317575.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrL  [M=299]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-11   42.1   0.0    1.8e-11   41.8   0.0    1.1  1  AFZ35916.1  transposase, IS4 family protein [Stanieria cyanos
+  ------ inclusion threshold ------
+      0.012   12.8   0.1      0.014   12.6   0.1    1.1  1  AFZ37064.1  hypothetical protein Sta7437_3566 [Stanieria cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ35916.1  transposase, IS4 family protein [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   41.8   0.0   7.5e-15   1.8e-11     212     287 ..      49     129 ..      41     136 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 41.8 bits;  conditional E-value: 7.5e-15
+        cyrL 212 kgdkgyqGgk....nietphkkkrkkelteeqkeenkilsskrifvehlirlvkifrvaserfrlksnvyee.iiltvcGl 287
+                 + d g+qG +    ni++ph+k++  el+e+qkeen+ilss r++ e     vk +++ s+ +r +   +++ ++lt  Gl
+  AFZ35916.1  49 EVDLGFQGLQkqydNIRLPHRKPKGGELNESQKEENRILSSSRVVCENAFAGVKRYNAVSQVYRNRIVDFDDrLMLTCAGL 129
+                 567777775433339*************************************************99988876155555576 PP
+
+>> AFZ37064.1  hypothetical protein Sta7437_3566 [Stanieria cyanosphaera PCC 7437]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.1   5.9e-06     0.014     182     227 ..      35      81 ..      28     102 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 5.9e-06
+        cyrL 182 vdvevGkkGptsdinlfreqqkkfd.eeqkfkgdkgyqGgknietph 227
+                   v+ G   pt+   +f e +++f+ eeqkfk + g+  ++ +++p+
+  AFZ37064.1  35 TLVTNGLFTPTAAQRFFEEGKQQFEqEEQKFKNNSGFSTEQILQLPD 81 
+                 557788899***************7257************9999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (299 nodes)
+Target sequences:                         4781  (1511376 residues searched)
+Passed MSV filter:                       146  (0.0305375); expected 95.6 (0.02)
+Passed bias filter:                       72  (0.0150596); expected 95.6 (0.02)
+Passed Vit filter:                         5  (0.00104581); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000418323); expected 0.0 (1e-05)
+Initial search space (Z):               4781  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 15063.38
+//
+[ok]

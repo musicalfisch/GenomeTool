@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245923_GCA_000817735.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00023   19.3   1.1    0.00041   18.5   0.3    1.9  2  ODN58070.1  photosystem I reaction center subunit XII [Scyton
+
+
+Domain annotation for each sequence (and alignments):
+>> ODN58070.1  photosystem I reaction center subunit XII [Scytonema millei VB511283]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0      0.35   1.7e+03      23      31 ..     173     181 ..     158     187 .. 0.63
+   2 !   18.5   0.3   8.2e-08   0.00041       8      66 ..     222     274 ..     214     276 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.35
+        cpcD  23 ndktdnldy 31 
+                 n ++dn +y
+  ODN58070.1 173 NGNSDNAQY 181
+                 566666666 PP
+
+  == domain 2  score: 18.5 bits;  conditional E-value: 8.2e-08
+        cpcD   8 kenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsik 66 
+                  +nr+fv e v       t n   ++r+s  v+ tvpy r+    + i + G +iv i 
+  ODN58070.1 222 GDNRMFVIEAVVG-----TANTKVAVRRSRQVY-TVPYERLSATYQEIHKRGGKIVNIS 274
+                 48*****997643.....6677789******97.9*********************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4957  (1458912 residues searched)
+Passed MSV filter:                       108  (0.0217874); expected 99.1 (0.02)
+Passed bias filter:                      104  (0.0209804); expected 99.1 (0.02)
+Passed Vit filter:                        10  (0.00201735); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000201735); expected 0.0 (1e-05)
+Initial search space (Z):               4957  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5397.97
+//
+[ok]

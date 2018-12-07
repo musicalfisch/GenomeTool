@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395961_GCA_000022045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrI  [M=276]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   12.2   0.0        1.6    6.4   0.0    2.9  3  ACL45449.1  MCP methyltransferase, CheR-type with PAS/PAC sen
+
+
+Domain annotation for each sequence (and alignments):
+>> ACL45449.1  MCP methyltransferase, CheR-type with PAS/PAC sensor [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.6   0.0     0.083   4.4e+02     200     218 ..      47      65 ..       4      70 .. 0.84
+   2 ?    6.4   0.0   0.00031       1.6      78     123 ..     276     320 ..     258     344 .. 0.84
+   3 ?    2.2   0.0    0.0058        31     221     253 ..     368     400 ..     363     422 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: -1.6 bits;  conditional E-value: 0.083
+        cyrI 200 gtkseYieykeldpdelgl 218
+                 +t s+Y +y+e  p+e+ l
+  ACL45449.1  47 ATYSDYLDYLEVHPEEFRL 65 
+                 67899******99999987 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.00031
+        cyrI  78 reliefeeekedaklledayaeikrmRrlvrntisPilrlivkldv 123
+                 r li  ++e e++   e+++++ +r+R++    +sP+ +l+ +++ 
+  ACL45449.1 276 RLLILSQSEHEEPEHEENYPTNQERLRETAF-DCSPLASLVLDMQG 320
+                 56778899********************976.599*9999887765 PP
+
+  == domain 3  score: 2.2 bits;  conditional E-value: 0.0058
+        cyrI 221 kklasskllikPraGDLvLfdsgRihavkkieq 253
+                 ++l+ s+++++  +G+L+  +   i  v + ++
+  ACL45449.1 368 RRLTISDVEYQTAQGELIYLEVQIIPLVDPLNT 400
+                 67899**************99998888887764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (276 nodes)
+Target sequences:                         5327  (1638061 residues searched)
+Passed MSV filter:                       113  (0.0212127); expected 106.5 (0.02)
+Passed bias filter:                      103  (0.0193355); expected 106.5 (0.02)
+Passed Vit filter:                         8  (0.00150178); expected 5.3 (0.001)
+Passed Fwd filter:                         1  (0.000187723); expected 0.1 (1e-05)
+Initial search space (Z):               5327  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 11302.62
+//
+[ok]

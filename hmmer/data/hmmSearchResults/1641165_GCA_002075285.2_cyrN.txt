@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641165_GCA_002075285.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrN  [M=518]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.1e-43  144.7   0.0    8.9e-43  144.6   0.0    1.0  1  ASC73487.1  hypothetical protein XM38_044540 [Halomicronema h
+     0.0062   13.1   0.0       0.01   12.4   0.0    1.3  1  ASC71423.1  WD-40 repeat protein [Halomicronema hongdechloris
+
+
+Domain annotation for each sequence (and alignments):
+>> ASC73487.1  hypothetical protein XM38_044540 [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  144.6   0.0   3.4e-46   8.9e-43     413     517 ..       1     105 [.       1     106 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 144.6 bits;  conditional E-value: 3.4e-46
+        cyrN 413 maflhrvvngggvlereyaigsdrmdlclqykdvilgielkvwrdkkrdpqadgieqlesylgrlgldfgwlfifdrrknalpmeerlstevvvtenqy 511
+                 maflhrvvnggg+lereya+g+ rmdlcl+y +v+lgielkvwr+ + dp   g+ ql+syl+rlg + gwl ifdrr    p+eer +te v t + +
+  ASC73487.1   1 MAFLHRVVNGGGTLEREYALGTGRMDLCLRYGQVVLGIELKVWRQGRPDPLQAGLAQLDSYLARLGEETGWLVIFDRRSGIPPIEERTTTERVTTPDGR 99 
+                 9************************************************************************************************** PP
+
+        cyrN 512 ritvir 517
+                 r+tv+r
+  ASC73487.1 100 RVTVVR 105
+                 *****9 PP
+
+>> ASC71423.1  WD-40 repeat protein [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.4   0.0   3.9e-06      0.01      30     251 ..     130     345 ..     114     364 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 3.9e-06
+        cyrN  30 elieqesyfvlhaprqtgkttamlalakqltdtgnyaavlvsvevgsafnhdpaaaelailgawyntieirlpkelqpavkqwqqeepgsri..kafls 126
+                  +++  s + l+aprq gkt+    l + l++++++    vs+    a       ++l  +  w+   +i+    l+  +  + + + gs++   a+l+
+  ASC71423.1 130 AVLKPGSLIRLKAPRQMGKTSL---LRRILAHAQQHQLRCVSLSFHRADR--AIYTDLDRFLRWFC-ANISYQLGLEADLDSYWNTDIGSKVscTAYLE 222
+                 56677788899********975...4556677777777777776555432..33467887788884.466666678888888888999999733599*9 PP
+
+        cyrN 127 dwaka.lnrplvlfideidsl.qdqtlisvlrqlrdgfpnrpenfpssvgliglrdvrdykvasggsdrlntsspfnikvasltlrnfnlaevgelyqq 223
+                 d   + ++  lv+ +de++ l q   l s +  l   + +   ++p+      lr v  y        +ln  spfn+ +a + l  f l++v+el q+
+  ASC71423.1 223 DHVLSqISDGLVIALDELNDLfQYPELASEFLPLLRSWYEDGRELPAW---QKLRWVLAYATDVYVPLQLNQ-SPFNVGLA-IKLPSFSLDQVQELAQR 316
+                 9875538999*******9776377788886555555555667778975...5689999**999999999996.7****987.899************** PP
+
+        cyrN 224 h..taatgqiftpeaietafdltqgqpwlv 251
+                 h  t a gq   +e + t  ++   +p lv
+  ASC71423.1 317 HglTWADGQG-GQEQLLTLLHMVSCRPGLV 345
+                 *555677774.5566667777777777666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (518 nodes)
+Target sequences:                         5269  (1545500 residues searched)
+Passed MSV filter:                       151  (0.0286582); expected 105.4 (0.02)
+Passed bias filter:                      127  (0.0241032); expected 105.4 (0.02)
+Passed Vit filter:                        12  (0.00227747); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000379579); expected 0.1 (1e-05)
+Initial search space (Z):               5269  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 11436.70
+//
+[ok]

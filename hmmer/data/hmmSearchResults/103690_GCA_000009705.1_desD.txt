@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      5e-05   21.1  15.1    0.00013   19.7  15.1    1.7  1  BAB77964.1  phosphatidylcholine desaturase [Nostoc sp. PCC 71
+     0.0011   16.7   6.1     0.0011   16.7   6.1    1.9  2  BAB77963.1  omega-3 fatty acid desaturase [Nostoc sp. PCC 712
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB77964.1  phosphatidylcholine desaturase [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.7  15.1   4.3e-08   0.00013      53     224 ..      56     214 ..      38     294 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 19.7 bits;  conditional E-value: 4.3e-08
+        desD  53 fvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrmtphaeh 151
+                 +  +    w+l  i  +  g+ l+g  f ighd+ h  ++ ++wvn l+g  +   +    + wr++hn+ hh +tn l  d   h      + p    
+  BAB77964.1  56 YWSLAIAPWFLLPIAWIFTGTALTGF-FVIGHDCGHRSFAKRRWVNDLVGHIFMMPLIYPFHSWRIKHNH-HHKHTNKLDEDNAWHP-----IRPEVFA 147
+                 44444455788888888899999986.89************************999999999*******7.8999****99988774.....4566666 PP
+
+        desD 152 kwyhryqhlfipilyaiipiywsfsdvrsilfrhrfgeikipnpkaidlfvllsgkvvylfwfigipllvgys 224
+                  w +  q  f    +    ++w  s  +  +++  + + k+ +       v ls  vv lf  +  p l+  +
+  BAB77964.1 148 SWGKTRQSAFKL--FMRQRLWWVGSVGHWAVVHFDWRKFKVKDQAD----VKLSVAVVVLFAAVAFPTLIATT 214
+                 677777776653..33444555555544445555555555555443....34555667777777777666655 PP
+
+>> BAB77963.1  omega-3 fatty acid desaturase [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.7   6.1   3.7e-07    0.0011      56     129 ..      65     137 ..      45     144 .. 0.78
+   2 ?   -0.9   0.1      0.08   2.4e+02     289     323 ..     281     315 ..     257     328 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 16.7 bits;  conditional E-value: 3.7e-07
+        desD  56 fgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytn 129
+                    d w++  i  l+ g+ +    f +ghd+ h  +s +kw+n l+g      i +  + wr+ h   h+   n
+  BAB77963.1  65 HYLDSWYFWPIFWLIQGTMFWA-LFVVGHDCGHQSFSKHKWLNDLIGHLTHTFILVPYHGWRISHRTHHKNTGN 137
+                 4457788887877777766554.599*********************8777777788899*****987766555 PP
+
+  == domain 2  score: -0.9 bits;  conditional E-value: 0.08
+        desD 289 lnwylgglnyqvvhhlfpqichihypkiapilaev 323
+                 +n     +  +v hh+f +i h    k +  +  v
+  BAB77963.1 281 VNHIHHDIGTHVAHHIFLNIPHYNLLKATEAIKPV 315
+                 55556667778999999999998877766555555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       254  (0.041422); expected 122.6 (0.02)
+Passed bias filter:                      141  (0.0229941); expected 122.6 (0.02)
+Passed Vit filter:                        10  (0.00163079); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326158); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 10242.02
+//
+[ok]

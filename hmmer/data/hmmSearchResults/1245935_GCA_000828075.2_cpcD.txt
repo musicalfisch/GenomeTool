@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245935_GCA_000828075.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.5e-31  105.1   0.1    6.6e-31  104.8   0.1    1.0  1  KIJ78221.1  phycobilisome linker polypeptide [Tolypothrix cam
+    9.1e-30  101.1   0.3    1.9e-29  100.1   0.3    1.5  1  KIJ74268.1  ferredoxin-NADP reductase [Tolypothrix campylonem
+    0.00024   19.7   0.0     0.0005   18.7   0.0    1.6  1  KIJ78222.1  photosystem I reaction center subunit XII [Tolypo
+
+
+Domain annotation for each sequence (and alignments):
+>> KIJ78221.1  phycobilisome linker polypeptide [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  104.8   0.1   2.8e-34   6.6e-31       7      73 ..      14      80 ..      10      82 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 104.8 bits;  conditional E-value: 2.8e-34
+        cpcD  7 akenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaaa 73
+                +   r+f yevvGl qn +td   y ir sGsvf+tvpysrmn+em+ritrlG riv i pl a +a
+  KIJ78221.1 14 TSASRIFRYEVVGLRQNSETDKNKYDIRNSGSVFITVPYSRMNEEMQRITRLGGRIVKIEPLTAESA 80
+                5678**********************************************************99655 PP
+
+>> KIJ74268.1  ferredoxin-NADP reductase [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  100.1   0.3   8.1e-33   1.9e-29      10      71 ..      17      78 ..      10      81 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 100.1 bits;  conditional E-value: 8.1e-33
+        cpcD 10 nrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaa 71
+                 r+fvyevvGl q ++td   y ir sGsvf+ vpy rmnqemrritrlG +ivsi+pl a 
+  KIJ74268.1 17 SRVFVYEVVGLRQSEETDKTSYQIRNSGSVFIRVPYNRMNQEMRRITRLGGKIVSIQPLSAV 78
+                69*********************************************************986 PP
+
+>> KIJ78222.1  photosystem I reaction center subunit XII [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0   2.2e-07    0.0005      32      67 ..     251     285 ..     234     286 .] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 2.2e-07
+        cpcD  32 sirksGsvfltvpysrmnqemrritrlGarivsikp 67 
+                 s+r+s + f+ vpy r+  ++++i r G +ivs+ p
+  KIJ78222.1 251 SVRRSSTAFF-VPYERLSDKLQQIQRQGGKIVSVTP 285
+                 8999988886.9**********************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         6936  (2144437 residues searched)
+Passed MSV filter:                       132  (0.0190311); expected 138.7 (0.02)
+Passed bias filter:                      123  (0.0177336); expected 138.7 (0.02)
+Passed Vit filter:                        14  (0.00201845); expected 6.9 (0.001)
+Passed Fwd filter:                         3  (0.000432526); expected 0.1 (1e-05)
+Initial search space (Z):               6936  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5289.61
+//
+[ok]

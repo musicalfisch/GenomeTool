@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysP.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysP  [M=347]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00025   19.1   0.0    0.00034   18.7   0.0    1.2  1  ABW27054.1  conserved hypothetical protein [Acaryochloris mar
+     0.0006   17.9   0.2       0.03   12.3   0.1    2.5  3  ABW25817.1  molybdate ABC transporter, periplasmic molybdate-
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW27054.1  conserved hypothetical protein [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.7   0.0   8.2e-08   0.00034     173     303 ..     185     327 ..     148     336 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 18.7 bits;  conditional E-value: 8.2e-08
+        cysP 173 lalwgsvtqaggseqeaqtfvekvfknapvlprda...ressdvffk....qg..qgnvlinyenemilanqkgeklaytvptd.yni..sidn.p.va 257
+                 l+lw s      s q+a+         +  l r       ssd++++    +g  + +++ nye    l      k++   p + y+i  +++n p  a
+  ABW27054.1 185 LSLWLSHKLQTSSLQAADLNSPIAQSAVSTLKRSIyqpARSSDILMQefvvRGanDADIITNYESV-ALNRWEESKVTQGQPYQiYEInpTVENkPtAA 282
+                 566666666666666665555555555555555431113466664431111441134566777753.34444455566555543243322576643257 PP
+
+        cysP 258 vvdanvdkkgtrkvaeafvqflftpaaqrefaqvgfrpveptvvke 303
+                 +v  +vd  +++k a+ f+++l  pa q+ + + gfrpv p v  e
+  ABW27054.1 283 IVRRQVDEPTAQK-AQDFIDYLSQPAQQKILIEYGFRPVHPDVKLE 327
+                 8999999876665.899************************99765 PP
+
+>> ABW25817.1  molybdate ABC transporter, periplasmic molybdate-binding protein [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.1   0.0    0.0045        19     279     321 ..      23      65 ..      18      87 .. 0.79
+   2 ?   -2.6   0.0      0.24     1e+03     124     164 ..     102     142 ..      89     148 .. 0.73
+   3 !   12.3   0.1   7.2e-06      0.03     251     296 ..     214     255 ..     183     257 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.0045
+        cysP 279 lftpaaqrefaqvgfrpveptvvkefeskfpqiknlftvqdlg 321
+                 l  +   r  a   +r v  t+  efe  +pq+   f     g
+  ABW25817.1  23 LPQTRQLRISAASSLRTVLQTLEPEFEKAYPQVDLTFNFAASG 65 
+                 555566677788999******************9888766555 PP
+
+  == domain 2  score: -2.6 bits;  conditional E-value: 0.24
+        cysP 124 ndsivhksvvafvprdanikinkwsdlakdnikvitanpkt 164
+                   s+v + +  +vp ++++ +  + +l+  ++k i    ++
+  ABW25817.1 102 HRSVVTNQLALIVPEQSQMSLTGFQQLTSPQVKKIMVGERA 142
+                 45677777777888888888888888888888877666555 PP
+
+  == domain 3  score: 12.3 bits;  conditional E-value: 7.2e-06
+        cysP 251 sidnpvavvdanvdkkgtrkvaeafvqflftpaaqrefaqvgfrpv 296
+                  i  p+a+v a     +  + a++f++fl tp+aq  f+q gf  v
+  ABW25817.1 214 PIVYPIAIVAAS----SQPQTAQSFIDFLSTPEAQDRFTQAGFGLV 255
+                 555666666665....4557799*******************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (347 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       152  (0.0181319); expected 167.7 (0.02)
+Passed bias filter:                      120  (0.0143147); expected 167.7 (0.02)
+Passed Vit filter:                         7  (0.000835023); expected 8.4 (0.001)
+Passed Fwd filter:                         2  (0.000238578); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 13384.19
+//
+[ok]

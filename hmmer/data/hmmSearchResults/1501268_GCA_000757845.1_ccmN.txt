@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501268_GCA_000757845.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmN  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.026   10.8   6.8      0.023   10.9   0.4    2.2  2  AIQ95647.1  Acyl-(acyl-carrier-protein)--UDP-N- acetylglucosa
+      0.048    9.9   3.9      0.085    9.1   3.4    1.5  1  AIQ95517.1  acetyltransferase [Prochlorococcus sp. MIT 0604]
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ95647.1  Acyl-(acyl-carrier-protein)--UDP-N- acetylglucosamine O-acyltransferase [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.4   2.2e-05     0.023      61      96 ..      32      66 ..      26      77 .. 0.81
+   2 ?    3.0   1.2    0.0062       6.4      48      95 ..     117     167 ..      91     183 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 2.2e-05
+        ccmN 61 gviaigagailgtgvlvvgrgeigenacigstttif 96
+                gvi i  gai+g  v++    eig na+i   t i 
+  AIQ95647.1 32 GVI-ISQGAIVGPNVIIGKGTEIGPNAVISGRTQIG 66
+                555.899******99887777********9988874 PP
+
+  == domain 2  score: 3.0 bits;  conditional E-value: 0.0062
+        ccmN  48 aclgmgtiltayqgv...iaigagailgtgvlvvgrgeigenacigsttti 95 
+                 + +g   +l ay  +     +g   +l   v v g+ +i ++a ig    i
+  AIQ95647.1 117 TIIGNNNLLMAYTHIghnCELGNRIVLSNSVQVAGHVKIEDKAIIGGCLGI 167
+                 455666667777654222567888888888888888888888888877665 PP
+
+>> AIQ95517.1  acetyltransferase [Prochlorococcus sp. MIT 0604]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1   3.4   8.2e-05     0.085      65     112 ..     150     198 ..     146     202 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 8.2e-05
+        ccmN  65 igagailgtgvlvvgrgeigenacigstttifnasva.amslvpsgsli 112
+                 ig  +ilg  v + g  +i + + igs+ ti+n  +    s++ +g+ i
+  AIQ95517.1 150 IGKFSILGGSVTINGGCKIEDFCLIGSAVTIINNKIIgKGSVIQAGTCI 198
+                 89999*************************9998765156788888776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         2063  (521035 residues searched)
+Passed MSV filter:                        40  (0.0193892); expected 41.3 (0.02)
+Passed bias filter:                       33  (0.0159961); expected 41.3 (0.02)
+Passed Vit filter:                         5  (0.00242365); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000969462); expected 0.0 (1e-05)
+Initial search space (Z):               2063  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 11462.77
+//
+[ok]

@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/210994_GCA_001904645.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpC  [M=315]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   8.9e-199  657.1   8.0   9.9e-199  656.9   8.0    1.0  1  OKH14564.1  F0F1 ATP synthase subunit gamma [Fischerella majo
+  ------ inclusion threshold ------
+      0.019   12.0   0.0      0.028   11.5   0.0    1.2  1  OKH14314.1  prepilin-type N-terminal cleavage/methylation dom
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH14564.1  F0F1 ATP synthase subunit gamma [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  656.9   8.0  4.4e-202  9.9e-199       1     315 []       1     315 []       1     315 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 656.9 bits;  conditional E-value: 4.4e-202
+        atpC   1 manlkairdriqsvkntkkiteamrlvaaarvrraqeqviatrpfadrlaqvlyglqtrlrfedvdlpllkkrevksvgllvisgdrglcggynsnvir 99 
+                 manlkairdriqsvkntkkiteamrlvaaarvrraqeqv+atrpfadrlaqvlyglq+rlrfed++lpll+krevksvg+lvisgdrglcggyn+nvi+
+  OKH14564.1   1 MANLKAIRDRIQSVKNTKKITEAMRLVAAARVRRAQEQVLATRPFADRLAQVLYGLQARLRFEDANLPLLRKREVKSVGILVISGDRGLCGGYNTNVIK 99 
+                 9************************************************************************************************** PP
+
+        atpC 100 raenrakelkaegldykfvlvgrkatqyfqrreqpidatysgleqiptaaeaskiadellslflsekvdrielvytkfvslvssrpvvqtllpldaqgl 198
+                 rae+r+kelkaeg++yk+vlvgrkatqyfqrr+qpida+y+gleqiptaaeas+ia+ellslflse+vdr+el+yt+fvslvssrpvvqtllpld+qgl
+  OKH14564.1 100 RAETRIKELKAEGINYKLVLVGRKATQYFQRRNQPIDAVYTGLEQIPTAAEASNIANELLSLFLSESVDRVELIYTRFVSLVSSRPVVQTLLPLDPQGL 198
+                 *************************************************************************************************** PP
+
+        atpC 199 eaaddeifrlttrggqfeverekvtsevralprdmifeqdpvqildsllplylsnqllralqesaaselaarmtamsnasdnakeliksltlsynkarq 297
+                 e+addeifrlttrggqfever+kvt+++r+lprdmifeqdp qildsll+lyl+nqllralqes+aselaarmtamsnasdna+eli++ltlsynkarq
+  OKH14564.1 199 ETADDEIFRLTTRGGQFEVERQKVTTQTRPLPRDMIFEQDPTQILDSLLSLYLTNQLLRALQESSASELAARMTAMSNASDNAGELISNLTLSYNKARQ 297
+                 *************************************************************************************************** PP
+
+        atpC 298 aaitqellevvggaealk 315
+                 aaitqe+levvggaeal+
+  OKH14564.1 298 AAITQEILEVVGGAEALT 315
+                 ****************96 PP
+
+>> OKH14314.1  prepilin-type N-terminal cleavage/methylation domain-containing protein [Fischerella major NIES-592]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.2e-05     0.028     173     227 ..      21      74 ..      15      90 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.2e-05
+        atpC 173 vytkfvslvssrpvvqtllpldaqgleaaddeifrlttrggqfeverekvtsevr 227
+                 v   +vs++s   v   l+ +++q l++a+dei+r   r +q e +++k++ +v 
+  OKH14314.1  21 VTIFIVSILSIIVVPHWLVFIESQRLNVAQDEIYRA-MRQAQNEATKQKLSWQVS 74 
+                 33344677777777788999***************5.688999******998886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (315 nodes)
+Target sequences:                         4512  (1463608 residues searched)
+Passed MSV filter:                       129  (0.0285904); expected 90.2 (0.02)
+Passed bias filter:                       88  (0.0195035); expected 90.2 (0.02)
+Passed Vit filter:                         7  (0.00155142); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443262); expected 0.0 (1e-05)
+Initial search space (Z):               4512  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 11525.91
+//
+[ok]

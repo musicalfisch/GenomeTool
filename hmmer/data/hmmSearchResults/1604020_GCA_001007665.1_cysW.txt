@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysW.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1604020_GCA_001007665.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysW  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0067   12.5  12.1     0.0048   13.0   9.3    2.2  2  KKZ11707.1  phosphate ABC transporter permease [Candidatus Sy
+
+
+Domain annotation for each sequence (and alignments):
+>> KKZ11707.1  phosphate ABC transporter permease [Candidatus Synechococcus spongiarum SP3]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0     0.056        95      27      51 ..      25      49 ..       4      55 .. 0.67
+   2 !   13.0   9.3   2.8e-06    0.0048     146     224 ..     200     281 ..     113     344 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.056
+        cysW 27 lalllfipaaavfyyafrngfqafl 51
+                 a+l  + + +vf   f  gfqa++
+  KKZ11707.1 25 TAILASVVSLTVFGIFFTVGFQAVF 49
+                4566667777888888888888865 PP
+
+  == domain 2  score: 13.0 bits;  conditional E-value: 2.8e-06
+        cysW 146 mvlat.ifvtm..pfvarevipvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvlltnaramgefgavsvvsgs 224
+                 + +a+ i+v m  p+++      l+++ +e  +   ++ga+ w  +++v +p    g++ g +l+  ra+ge  av+++ g 
+  KKZ11707.1 200 LAMASlILVVMllPIITAVSRDSLNQVPMELRQGAYAVGATRWTSIFQVQIPAAISGIVGGTMLALGRALGETMAVTMIIGN 281
+                 34443133333228888888899*****************************************************998774 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (280 nodes)
+Target sequences:                         1694  (457445 residues searched)
+Passed MSV filter:                        58  (0.0342385); expected 33.9 (0.02)
+Passed bias filter:                       32  (0.0188902); expected 33.9 (0.02)
+Passed Vit filter:                         1  (0.000590319); expected 1.7 (0.001)
+Passed Fwd filter:                         1  (0.000590319); expected 0.0 (1e-05)
+Initial search space (Z):               1694  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6404.23
+//
+[ok]

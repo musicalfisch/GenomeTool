@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1805291_GCA_001873365.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.8e-30  101.3   0.1    5.3e-30  101.1   0.1    1.0  1  OIP70524.1  hypothetical protein AUK43_09190 [Oscillatoriales
+    4.9e-26   88.4   0.0    1.3e-25   87.1   0.0    1.7  1  OIP70482.1  ferredoxin-NADP reductase [Oscillatoriales cyanob
+  ------ inclusion threshold ------
+      0.023   12.6   0.1       0.06   11.3   0.1    1.6  1  OIP70522.1  photosystem I reaction center subunit XII [Oscill
+
+
+Domain annotation for each sequence (and alignments):
+>> OIP70524.1  hypothetical protein AUK43_09190 [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  101.1   0.1     4e-33   5.3e-30       2      72 ..       9      79 ..       8      80 .] 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 101.1 bits;  conditional E-value: 4e-33
+        cpcD  2 qslssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaa 72
+                qs +s    r f yevvGl q d+td  dysir s s f+ vpy rmnqem+r+trlGa+ivsi pl + a
+  OIP70524.1  9 QSATSPSGSRNFRYEVVGLRQSDETDKTDYSIRSSASQFIIVPYNRMNQEMQRLTRLGAKIVSIEPLTSQA 79
+                788899999**********************************************************8765 PP
+
+>> OIP70482.1  ferredoxin-NADP reductase [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   87.1   0.0   9.8e-29   1.3e-25       9      68 ..      16      75 ..      10      83 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 87.1 bits;  conditional E-value: 9.8e-29
+        cpcD  9 enrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikpl 68
+                + r+f++ev Gl q ++td l++ ir+sGsv++tvpy rmnqemrri rlG +iv i+p 
+  OIP70482.1 16 NSRVFIFEVEGLRQGENTDKLNFPIRRSGSVYITVPYERMNQEMRRIGRLGGKIVNIRPA 75
+                679*******************************************************96 PP
+
+>> OIP70522.1  photosystem I reaction center subunit XII [Oscillatoriales cyanobacterium CG2_30_40_61]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.1   4.4e-05      0.06      41      65 ..     244     268 ..     233     270 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 4.4e-05
+        cpcD  41 ltvpysrmnqemrritrlGarivsi 65 
+                  tvpy ++  +++ri r G r++ i
+  OIP70522.1 244 YTVPYDQLSTQLQRINRAGGRVMRI 268
+                 59*******************9877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         4018  (1322032 residues searched)
+Passed MSV filter:                        82  (0.0204082); expected 80.4 (0.02)
+Passed bias filter:                       80  (0.0199104); expected 80.4 (0.02)
+Passed Vit filter:                         9  (0.00223992); expected 4.0 (0.001)
+Passed Fwd filter:                         3  (0.00074664); expected 0.0 (1e-05)
+Initial search space (Z):               4018  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4891.52
+//
+[ok]

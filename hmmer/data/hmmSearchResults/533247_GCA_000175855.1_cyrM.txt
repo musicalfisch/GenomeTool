@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533247_GCA_000175855.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.3e-41  138.7   0.0    2.5e-41  138.6   0.0    1.0  1  EFA72764.1  Adenylyl-sulfate kinase [Raphidiopsis brookii D9]
+      0.003   14.5   0.0     0.0078   13.1   0.0    1.6  2  EFA73312.1  hypothetical protein CRD_01415 [Raphidiopsis broo
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA72764.1  Adenylyl-sulfate kinase [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  138.6   0.0   1.7e-44   2.5e-41      28     169 ..       5     147 ..       1     158 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 138.6 bits;  conditional E-value: 1.7e-44
+        cyrM  28 lqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgkigs.fvevfvnaplsvceerdvkgl 125
+                 l+  l  +g+s  vldgd vr  l   lgfs  dr enirr+g v++l++  g +v+ + ispyr+ re+vr   g+ f ev++ +pl++ce+rd kgl
+  EFA72764.1   5 LEQTLFEKGWSTFVLDGDSVRHGLCSDLGFSASDRSENIRRLGEVAKLFAESGCLVITAFISPYRNDREQVRRLAGDlFHEVYIATPLELCEQRDPKGL 103
+                 6778999******************************************************************9998588******************* PP
+
+        cyrM 126 ykrarageiksftgiddpyeppfnpevecrtdletleesvakvw 169
+                 y +ar+gei  ftgi  pyepp  p++ + t   t+ees+ ++ 
+  EFA72764.1 104 YLKARSGEIDGFTGISAPYEPPNSPDLWVETSELTVEESLEQLL 147
+                 ********************************99***9987754 PP
+
+>> EFA73312.1  hypothetical protein CRD_01415 [Raphidiopsis brookii D9]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -4.1   0.0      0.99   1.5e+03      36      72 ..      33      68 ..      28      73 .. 0.70
+   2 !   13.1   0.0   5.2e-06    0.0078       6     123 ..     344     468 ..     340     496 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: -4.1 bits;  conditional E-value: 0.99
+        cyrM 36 gysievldgdivrtnltkglgfskedrdenirrigfv 72
+                  s  vl gd v  +l k + f   d     rr+ f 
+  EFA73312.1 33 HVSWVVLTGDYVY-KLKKSVNFGFLDYSTLDRRLHFC 68
+                5677788999885.57888888777777777777665 PP
+
+  == domain 2  score: 13.1 bits;  conditional E-value: 5.2e-06
+        cyrM   6 qrgvtvwltglsgagkstitealqakliaegysievld...gdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgk 101
+                 ++g  + ++glsg+gkst    l akl a     + +    g i   +      ++ e  ++   r+ ++   l+ +g  v++ a    + +r++v  +
+  EFA73312.1 344 RQGQLILMSGLSGSGKSTTGRYLAAKLGAVHLRSDAVRkhlGGISLRERGSNEIYTPEMTQKTYNRLLVLGITLANQGWSVILDAKYDRKHLRQQVIDQ 442
+                 56888999*******************997765544431114444444445556888999999999999999999999999999999999999999877 PP
+
+        cyrM 102 igsf....vevfvnaplsvceerdvk 123
+                   +       v+  apl+v eer v+
+  EFA73312.1 443 ANKHqlpgKIVYCTAPLEVLEERIVH 468
+                 76552222358999999999999886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3007  (904229 residues searched)
+Passed MSV filter:                       137  (0.0455604); expected 60.1 (0.02)
+Passed bias filter:                      127  (0.0422348); expected 60.1 (0.02)
+Passed Vit filter:                        18  (0.00598603); expected 3.0 (0.001)
+Passed Fwd filter:                         2  (0.000665115); expected 0.0 (1e-05)
+Initial search space (Z):               3007  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 8318.91
+//
+[ok]

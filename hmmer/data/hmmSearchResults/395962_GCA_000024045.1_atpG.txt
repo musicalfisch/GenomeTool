@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395962_GCA_000024045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-62  207.3  14.9    2.1e-62  207.2  14.9    1.0  1  ACV02214.1  H+transporting two-sector ATPase B/B' subunit [Cy
+     0.0042   14.9  13.2     0.0053   14.6  13.2    1.1  1  ACV02213.1  ATP synthase F0, B subunit [Cyanothece sp. PCC 88
+  ------ inclusion threshold ------
+      0.029   12.2   5.8      0.064   11.1   5.8    1.5  1  ACV01105.1  histidine kinase [Cyanothece sp. PCC 8802]
+
+
+Domain annotation for each sequence (and alignments):
+>> ACV02214.1  H+transporting two-sector ATPase B/B' subunit [Cyanothece sp. PCC 8802]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  207.2  14.9   1.4e-65   2.1e-62       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 207.2 bits;  conditional E-value: 1.4e-65
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlpvmalqfillaviln +fy pl k ldera+yirq e+  ke+lak++ l qeye ql+ arkqsqe+ia aqa+aqk+a+e +a aqkea
+  ACV02214.1   1 MFDFDATLPVMALQFILLAVILNGIFYTPLNKALDERADYIRQKETDEKERLAKAKELAQEYEKQLADARKQSQEVIAAAQADAQKIAAEALAKAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                  a+ke  a eiaqq++ a+  le qv  lsrqilekllgpelv+
+  ACV02214.1 100 QAKKEEAAVEIAQQRQAALGVLEQQVDVLSRQILEKLLGPELVK 143
+                 ******************************************96 PP
+
+>> ACV02213.1  ATP synthase F0, B subunit [Cyanothece sp. PCC 8802]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.6  13.2   3.6e-06    0.0053       8     133 ..      24     152 ..      19     160 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 14.6 bits;  conditional E-value: 3.6e-06
+        atpG   8 lpvmalqfillaviln.avfy..kplskvlderaeyirqteggakeqlak.tealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiar 102
+                 l ++  ++i la+++   vfy  k l ++l er   i ++   a e+  k +eal  e e +l+ a+ +++ i   a+  a  l++e    ++++    
+  ACV02213.1  24 LNLLETNLINLAILVGlLVFYggKVLGNILTERRSQIAEAIQEAEERQRKaAEALATEQE-KLTQAQAEAERIRQAAKERAATLSAEIAEKSRQDVERL 121
+                 5566677888998876258998889*************9999999876662799999988.79999999888777777778888777666666666666 PP
+
+        atpG 103 keavaaeiaqqkeeafrslegqvaslsrqil 133
+                 +e+ a++++ ++e ++  l+ q+a ++ +  
+  ACV02213.1 122 RETAASDLSSEQERVIAQLKKQIAQMAVEKA 152
+                 9999********************9876655 PP
+
+>> ACV01105.1  histidine kinase [Cyanothece sp. PCC 8802]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   5.8   4.3e-05     0.064      64     133 ..     305     375 ..     287     383 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 4.3e-05
+        atpG  64 lqlssarkqsqeiiaqaqaeaqkl.aservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqil 133
+                 l + ++ k+ qe+ia+ q +  kl  s    aa+++a+a+++ v  e  q  e a r+    +a +s +i 
+  ACV01105.1 305 LVILATMKEKQEVIARLQKQEAKLrKSSAQLAANQKALAQQNLVLQEAKQAAEAANRAKSEFLANMSHEIR 375
+                 556678899*******998777773344555666679*********************9999999999885 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4444  (1355257 residues searched)
+Passed MSV filter:                       187  (0.0420792); expected 88.9 (0.02)
+Passed bias filter:                      101  (0.0227273); expected 88.9 (0.02)
+Passed Vit filter:                         9  (0.0020252); expected 4.4 (0.001)
+Passed Fwd filter:                         4  (0.00090009); expected 0.0 (1e-05)
+Initial search space (Z):               4444  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6460.06
+//
+[ok]

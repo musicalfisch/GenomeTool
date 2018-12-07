@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533240_GCA_000175835.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.6e-12   42.3   3.0    5.7e-11   39.3   0.1    2.3  2  EFA68080.1  Multicopper oxidase, types 2 and 3 [Cylindrosperm
+
+
+Domain annotation for each sequence (and alignments):
+>> EFA68080.1  Multicopper oxidase, types 2 and 3 [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.3   0.1   1.6e-14   5.7e-11      67     184 ..     100     204 ..      50     218 .. 0.80
+   2 !    3.4   0.1    0.0012       4.2     425     491 ..     260     324 ..     245     328 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 39.3 bits;  conditional E-value: 1.6e-14
+        cueA  67 qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlhelvaeqvfgglgg 165
+                   n+   ng+ipgp l ak g+ +++ f n+  ++  lh+hg+h  +    d i   +  g++  yef      p g   yh h+ e v+ ++  gl g
+  EFA68080.1 100 SYNIWDLNGRIPGPTLRAKAGERIRVLFLNQAGHSHSLHFHGIHPAE---MDGI-RPIGNGKATIYEFD---ADPYGVHLYHCHV-EPVTRHIAKGLYG 190
+                 4588899*************************************654...5555.568999*******6...68**********8.678999******* PP
+
+        cueA 166 ifvvrgelddipeiraare 184
+                 +++v     d p+ ra  +
+  EFA68080.1 191 MLIV-----DPPNSRANAD 204
+                 **99.....3444554444 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.0012
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgi 491
+                  +fhlh+n f+v        p     d l +   e   +   fr ++gk ++h h     + g mg 
+  EFA68080.1 260 VTFHLHANFFDVYPLGMTMTPT-YKTDVLTMGVAERHILEFRFR-YSGKYMFHPHQDIIAENGCMGQ 324
+                 479********99877666664.346888888888888888888.8999999999877777777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         3449  (1092535 residues searched)
+Passed MSV filter:                        80  (0.0231951); expected 69.0 (0.02)
+Passed bias filter:                       70  (0.0202957); expected 69.0 (0.02)
+Passed Vit filter:                         6  (0.00173963); expected 3.4 (0.001)
+Passed Fwd filter:                         1  (0.000289939); expected 0.0 (1e-05)
+Initial search space (Z):               3449  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 13547.43
+//
+[ok]

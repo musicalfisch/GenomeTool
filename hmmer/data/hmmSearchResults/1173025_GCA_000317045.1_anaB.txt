@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173025_GCA_000317045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaB  [M=394]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-05   22.0   0.0    0.00011   19.0   0.0    2.3  3  AFY67521.1  acyl-CoA dehydrogenase domain-containing protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY67521.1  acyl-CoA dehydrogenase domain-containing protein [Geitlerinema sp. PCC 7407]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.0   0.0   2.8e-08   0.00011      14     119 ..       3     108 ..       1     138 [. 0.93
+   2 ?   -0.6   0.0     0.024        91     287     316 ..     205     235 ..     190     254 .. 0.73
+   3 ?   -1.8   0.0     0.058   2.2e+02     318     369 ..     295     346 ..     289     350 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 19.0 bits;  conditional E-value: 2.8e-08
+        anaB  14 aefrafvdeeivpyaneydrkeltppelikklaqkgflgailpkeyggkamdlitygllneeigrgcsslrslltvhnmvahallkwgnksqkeywlpk 112
+                 ae  ++++ +i p+    d++  +    ++ l ++g+l+  +p   gg ++d   y  ++  i r   +l  l t h+  a  l++  n   ke +lp 
+  AFY67521.1   3 AEVESYLKTAIAPQGIVLDQDPSALWRALRGLGDRGWLALRVPVAAGGGGLDGWQYWQFQAAIARYSGALAFLQTQHQSAAALLAQSPNDRLKETYLPL 101
+                 6788999999***********999999************************************************************************ PP
+
+        anaB 113 lasgeii 119
+                 + sg+ +
+  AFY67521.1 102 IPSGQRL 108
+                 ***9865 PP
+
+  == domain 2  score: -0.6 bits;  conditional E-value: 0.024
+        anaB 287 vkaarllcyqag.ylkdindpnsiietsiak 316
+                 v aar++c+q g ++++ +  n++  ts+a 
+  AFY67521.1 205 VPAARVVCHQPGdWIHENDRRNALKGTSLAL 235
+                 6799999999983455655567777788775 PP
+
+  == domain 3  score: -1.8 bits;  conditional E-value: 0.058
+        anaB 318 fastvatkiandavqihggngcsseysverylrdakimeiiegstqiqeiti 369
+                 +a+ +a + a+  v   gg      +  +r+ r+a ++ +   ++ i+e t+
+  AFY67521.1 295 WATELAFRCAQAGVVAAGGAANHRSHDAQRIYREAIVFSVSGQTAAIREATL 346
+                 5778888999999999999999999999999999999988877778888775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (394 nodes)
+Target sequences:                         3815  (1301653 residues searched)
+Passed MSV filter:                        83  (0.0217562); expected 76.3 (0.02)
+Passed bias filter:                       78  (0.0204456); expected 76.3 (0.02)
+Passed Vit filter:                         4  (0.00104849); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000262123); expected 0.0 (1e-05)
+Initial search space (Z):               3815  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.05
+# Mc/sec: 10257.03
+//
+[ok]

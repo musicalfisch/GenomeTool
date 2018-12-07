@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/btuF.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710894_GCA_001672165.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       btuF  [M=307]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.025   11.5   0.0      0.087    9.7   0.0    1.7  2  OBQ27147.1  ABC transporter substrate-binding protein [Aphani
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ27147.1  ABC transporter substrate-binding protein [Aphanizomenon flos-aquae LD13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0     0.037   1.4e+02     128     164 ..      84     123 ..       8     133 .. 0.70
+   2 ?    9.7   0.0   2.3e-05     0.087     231     304 ..     219     296 ..     200     299 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.037
+        btuF 128 rlqqlgiatlltq..vnt.wksleeltaklaqlidvnpqs 164
+                  l++l  + ++tq   n    sl ++ + +aql    pq 
+  OBQ27147.1  84 VLERLHPTHIITQdqCNIcSVSLLDVEKAVAQLTHSSPQI 123
+                 3444443444443114431357788888888888888875 PP
+
+  == domain 2  score: 9.7 bits;  conditional E-value: 2.3e-05
+        btuF 231 aekvleanpeavvlitppqggsktevl.dsfkkesfwqklpatknnrvyvfd...yyglvnpgsidaiekaceqlkkd 304
+                  e ++ +np++++++       +t++  d + +   w+kl+a++  rv++ d   y+    p  +d++e   e l+ d
+  OBQ27147.1 219 WEALIASNPDVIIFMPCGFDLKRTQLEaDILTQRPEWRKLHAAQTGRVFITDgnaYFNRPGPRLVDSLEILAEILHPD 296
+                 5788999****9999888888888875156788999**************9833344444566788888777777766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (307 nodes)
+Target sequences:                         3787  (1148327 residues searched)
+Passed MSV filter:                       174  (0.0459467); expected 75.7 (0.02)
+Passed bias filter:                      101  (0.0266702); expected 75.7 (0.02)
+Passed Vit filter:                         9  (0.00237655); expected 3.8 (0.001)
+Passed Fwd filter:                         1  (0.000264061); expected 0.0 (1e-05)
+Initial search space (Z):               3787  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 11751.21
+//
+[ok]

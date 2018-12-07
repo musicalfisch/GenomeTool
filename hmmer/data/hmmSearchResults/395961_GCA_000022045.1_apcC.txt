@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395961_GCA_000022045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-49  163.4   1.0    2.4e-49  163.3   1.0    1.0  1  ACL47293.1  CpcD phycobilisome linker domain protein [Cyanoth
+    4.5e-06   24.7   0.0    8.2e-06   23.9   0.0    1.5  2  ACL44062.1  CpcD phycobilisome linker domain protein [Cyanoth
+  ------ inclusion threshold ------
+      0.038   12.1   0.0        0.1   10.7   0.0    1.7  1  ACL47344.1  oxidoreductase FAD/NAD(P)-binding domain protein 
+
+
+Domain annotation for each sequence (and alignments):
+>> ACL47293.1  CpcD phycobilisome linker domain protein [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  163.3   1.0   1.3e-52   2.4e-49       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 163.3 bits;  conditional E-value: 1.3e-52
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mrmfk+tacvPsqtrirtqrelqnt+ftklvpy+nWfreqqrimkmGGki+kvelatGkpgtntGll
+  ACL47293.1  1 MRMFKVTACVPSQTRIRTQRELQNTFFTKLVPYENWFREQQRIMKMGGKILKVELATGKPGTNTGLL 67
+                9****************************************************************96 PP
+
+>> ACL44062.1  CpcD phycobilisome linker domain protein [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.7   0.0       0.9   1.6e+03      17      28 ..       6      17 ..       5      21 .. 0.67
+   2 !   23.9   0.0   4.6e-09   8.2e-06      31      56 ..      46      71 ..      38      76 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -2.7 bits;  conditional E-value: 0.9
+        apcC 17 rtqrelqntyft 28
+                rt   + n yf 
+  ACL44062.1  6 RTGNSFANRYFR 17
+                566667777774 PP
+
+  == domain 2  score: 23.9 bits;  conditional E-value: 4.6e-09
+        apcC 31 vpydnWfreqqrimkmGGkivkvela 56
+                vpy+   +e qri +mGGkiv ++  
+  ACL44062.1 46 VPYNRMNEEMQRITRMGGKIVSIQPL 71
+                9*********************9844 PP
+
+>> ACL47344.1  oxidoreductase FAD/NAD(P)-binding domain protein [Cyanothece sp. PCC 7425]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   0.0   5.9e-05       0.1      31      54 ..      50      73 ..      46      83 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 5.9e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy    +  q+i ++GGki+k+e
+  ACL47344.1 50 VPYSRMNQIMQQIARLGGKIIKIE 73
+                8999999999************98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         5327  (1638061 residues searched)
+Passed MSV filter:                       121  (0.0227145); expected 106.5 (0.02)
+Passed bias filter:                      109  (0.0204618); expected 106.5 (0.02)
+Passed Vit filter:                        11  (0.00206495); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000563169); expected 0.1 (1e-05)
+Initial search space (Z):               5327  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 3658.34
+//
+[ok]

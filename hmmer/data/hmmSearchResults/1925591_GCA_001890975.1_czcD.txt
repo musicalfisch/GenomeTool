@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/czcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1925591_GCA_001890975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       czcD  [M=308]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   8.9e-137  453.7   5.2     1e-136  453.5   5.2    1.0  1  OJJ26183.1  cation-efflux pump [Roseofilum reptotaenium AO1-A
+    3.4e-07   28.0   0.7    3.4e-07   28.0   0.7    1.7  1  OJJ25367.1  cation transporter [Roseofilum reptotaenium AO1-A
+
+
+Domain annotation for each sequence (and alignments):
+>> OJJ26183.1  cation-efflux pump [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  453.5   5.2  4.1e-140    1e-136       5     305 ..       3     296 ..       1     297 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 453.5 bits;  conditional E-value: 4.1e-140
+        czcD   5 kdnratvqkvlwitlllnilvmaikagvglrisslslqadalhsvtdsannvlglvamrfsspypdrdhpyghlkyeaigalaiaaflgiacfeilqga 103
+                  d r+ v++vl+itl ln+l + ik  vg + +slsl adalhsvtdsann+lglva +f+sp pdr+hpygh k++aigal iaaflg acfei+  +
+  OJJ26183.1   3 TDIRSKVRQVLFITLGLNVLALLIKVLVGWKTGSLSLLADALHSVTDSANNILGLVANHFASPKPDREHPYGHQKFDAIGALGIAAFLGFACFEIVSSS 101
+                 689************************************************************************************************ PP
+
+        czcD 104 imriikggkpveiagpelwlliivlgvnifvtyyersvgqrvgsailiadarhtmsdvwvtitvllglvgvwvgntanipqlqwldvilsfpvaflvfs 202
+                 + r+   g p+ i   +lw+l+ivlg+nifv++yer+vgqr+gs il+ada+htmsdvwvti vl gl+gv +g          ldv+l+fpva+lvf 
+  OJJ26183.1 102 LERLTSQGDPLTIEFEDLWILLIVLGINIFVAFYERAVGQRIGSGILVADAKHTMSDVWVTIMVLGGLLGVVLGY-------PLLDVLLAFPVALLVFY 193
+                 ***********************************************************************9996.......479************** PP
+
+        czcD 203 sgwkvlkenlpllvdemaiapevihqivlevpgvlnchaiasrgvvgrqvfiemhlivsaqdvetahaiteavearlsqqfspvrilihveppdyhsdk 301
+                 sgw vlk+nlp lvdemaiape ih+ v+evpgvlnch iasrg+vgrqvfiemhliv a dv t+h iteavea+l +++ pvr+lihveppdyhs++
+  OJJ26183.1 194 SGWEVLKDNLPWLVDEMAIAPEAIHDTVMEVPGVLNCHDIASRGIVGRQVFIEMHLIVDAIDVATSHEITEAVEAHLQEKYHPVRVLIHVEPPDYHSNQ 292
+                 *************************************************************************************************** PP
+
+        czcD 302 itfd 305
+                 itf+
+  OJJ26183.1 293 ITFQ 296
+                 **96 PP
+
+>> OJJ25367.1  cation transporter [Roseofilum reptotaenium AO1-A]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.0   0.7   1.4e-10   3.4e-07      12      53 ..      21      62 ..      13     109 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 28.0 bits;  conditional E-value: 1.4e-10
+        czcD 12 qkvlwitlllnilvmaikagvglrisslslqadalhsvtdsa 53
+                 kvlwi ll+n +++ai  gvg+r  slsl  d+l  + d+ 
+  OJJ25367.1 21 AKVLWIVLLINAVMFAIEFGVGIRADSLSLTGDSLDMLGDAL 62
+                69*********************************9998875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (308 nodes)
+Target sequences:                         4978  (1623265 residues searched)
+Passed MSV filter:                       151  (0.0303335); expected 99.6 (0.02)
+Passed bias filter:                      101  (0.0202893); expected 99.6 (0.02)
+Passed Vit filter:                         8  (0.00160707); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000401768); expected 0.0 (1e-05)
+Initial search space (Z):               4978  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9999.31
+//
+[ok]

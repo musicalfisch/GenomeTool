@@ -1,0 +1,85 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1729650_GCA_900009135.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.9e-93  307.4   0.1    7.6e-93  307.3   0.1    1.0  1  SKB14675.1  Adenylyl-sulfate kinase [Planktothrix sp. PCC 112
+  ------ inclusion threshold ------
+      0.016   12.8   0.1      0.062   10.9   0.0    2.0  2  SKB14350.1  conserved hypothetical protein [Planktothrix sp. 
+      0.025   12.2   0.2       0.04   11.6   0.2    1.3  1  SKB13557.1  Septum site-determining protein minD (Cell divisi
+
+
+Domain annotation for each sequence (and alignments):
+>> SKB14675.1  Adenylyl-sulfate kinase [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  307.3   0.1   4.4e-96   7.6e-93       4     179 ..       1     176 [.       1     178 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 307.3 bits;  conditional E-value: 4.4e-96
+        cyrM   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m++rgvtvw+tglsgagk+ti++a+   +  +g  +e+ldgdivr nltkglgfsk drdenirrigfv+ lltr gvivlvsaispyreireevr ki
+  SKB14675.1   1 MQHRGVTVWFTGLSGAGKTTISQAVAQIFQEKGCNLEILDGDIVRENLTKGLGFSKPDRDENIRRIGFVAHLLTRNGVIVLVSAISPYREIREEVREKI 99 
+                 889**********************9999999******************************************************************* PP
+
+        cyrM 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyih 179
+                 g+fvev+vnapl+vce rdvkglykrarageik ftgiddpye p np+vec td e l esvakv +kl++lgyi 
+  SKB14675.1 100 GDFVEVYVNAPLTVCEGRDVKGLYKRARAGEIKGFTGIDDPYEAPTNPDVECNTDHEDLSESVAKVLKKLADLGYIS 176
+                 ***************************************************************************97 PP
+
+>> SKB14350.1  conserved hypothetical protein [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.9   0.0   3.6e-05     0.062      13      46 ..      29      63 ..      23      87 .. 0.82
+   2 ?   -2.4   0.0      0.45   7.8e+02     126     164 ..     213     251 ..     206     268 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 10.9 bits;  conditional E-value: 3.6e-05
+        cyrM 13 ltglsgagkstitealq.akliaegysievldgdi 46
+                l g+sgagk+ i +a++  k+ia+g s++ +  d+
+  SKB14350.1 29 LVGVSGAGKTQILKAINrLKMIANGISLNGVCWDV 63
+                89*************9636********98776665 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.45
+        cyrM 126 ykrarageiksftgiddpyeppfnpevecrtdletlees 164
+                 ++r ++  i  f  ++d    pfn +    +  + l+e+
+  SKB14350.1 213 FNRIKSVFIEIFKKVEDIKVEPFNQDELPLALADILKEA 251
+                 667777778888888888888888765444444555554 PP
+
+>> SKB13557.1  Septum site-determining protein minD (Cell division inhibitor minD) [Planktothrix sp. PCC 11201]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.2   2.4e-05      0.04       9      57 ..       4      52 ..       1      57 [. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 2.4e-05
+        cyrM  9 vtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgf 57
+                v v  +g  g gk+t t  +   l   g+s+ v+d d    nl   lg+
+  SKB13557.1  4 VIVITSGKGGVGKTTCTANVGMSLAKRGHSVVVIDADFGLRNLDLLLGL 52
+                67888999*****************************999999877775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5144  (1714313 residues searched)
+Passed MSV filter:                       216  (0.0419907); expected 102.9 (0.02)
+Passed bias filter:                      207  (0.0402411); expected 102.9 (0.02)
+Passed Vit filter:                        31  (0.00602644); expected 5.1 (0.001)
+Passed Fwd filter:                         3  (0.000583204); expected 0.1 (1e-05)
+Initial search space (Z):               5144  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.07
+# Mc/sec: 4506.19
+//
+[ok]

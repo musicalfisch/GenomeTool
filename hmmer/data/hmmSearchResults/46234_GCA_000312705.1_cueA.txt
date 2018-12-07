@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/46234_GCA_000312705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-13   47.7   0.6    2.8e-11   40.6   0.1    2.2  2  AFW95418.1  multicopper oxidase, types 2 and 3 [Anabaena sp. 
+  ------ inclusion threshold ------
+      0.024   11.2   0.0      0.029   11.0   0.0    1.2  1  AFW95151.1  cyclophilin type peptidyl-prolyl cis-trans isomer
+
+
+Domain annotation for each sequence (and alignments):
+>> AFW95418.1  multicopper oxidase, types 2 and 3 [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.6   0.1   1.3e-14   2.8e-11      51     169 ..      84     195 ..      48     210 .. 0.86
+   2 !    5.6   0.1   0.00054       1.2     425     492 ..     261     326 ..     245     330 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 40.6 bits;  conditional E-value: 1.3e-14
+        cueA  51 etalearpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyh 148
+                 e  l a    i+l      n+   ng+ipgp l ak g+ ++i f n+  ++  lh+hg+h  +    d i   v  g++  yef      p g   yh
+  AFW95418.1  84 EFQLTAGTSTIQLNSAvSYNIWDLNGRIPGPTLRAKEGERIRILFLNNAGHSHSLHFHGVHPAE---MDGI-KPVGNGKATIYEFD---AEPYGVHLYH 175
+                 66677777777776551569999**************************************654...5665.57999********6...68******** PP
+
+        cueA 149 phlhelvaeqvfgglggifvv 169
+                  h+   v+ ++  gl g+f++
+  AFW95418.1 176 CHIAP-VTRHIAKGLYGMFII 195
+                 **976.788999*******98 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.00054
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgiv 492
+                  +fhlh+n f+v  r g         d l +   e   +   fr + gk ++h h     + g mg  
+  AFW95418.1 261 VTFHLHANFFNVY-RSGMTITPSEKTDVLTMGVAERHILEFAFR-YPGKYMFHPHQDAIAESGCMGQF 326
+                 57******99986.777777667789**********99*****9.89********9988999999865 PP
+
+>> AFW95151.1  cyclophilin type peptidyl-prolyl cis-trans isomerase [Anabaena sp. 90]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0   1.3e-05     0.029      19      69 ..      18      68 ..       3     150 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 1.3e-05
+        cueA 19 alltqcshnttsvssiqpanltalttssnglletalearpglirlgqqqgn 69
+                  l  c+  tts +s   a  t+ tts++ + et  e+ pg   l + +g+
+  AFW95151.1 18 LTLGGCTGSTTSSNSSPTATTTSATTSAQTVSETVSESIPGTKGLPRLEGK 68
+                45778*********************************9986655554443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         4511  (1408436 residues searched)
+Passed MSV filter:                       118  (0.0261583); expected 90.2 (0.02)
+Passed bias filter:                      107  (0.0237198); expected 90.2 (0.02)
+Passed Vit filter:                        15  (0.00332521); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443361); expected 0.0 (1e-05)
+Initial search space (Z):               4511  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 11643.07
+//
+[ok]

@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.7e-96  317.2   0.4    5.2e-96  317.0   0.4    1.0  1  OKH14644.1  adenylyl-sulfate kinase [Limnothrix rosea IAM M-2
+  ------ inclusion threshold ------
+      0.012   12.8   0.1      0.021   11.9   0.1    1.3  1  OKH16027.1  shikimate kinase [Limnothrix rosea IAM M-220]
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH14644.1  adenylyl-sulfate kinase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  317.0   0.4   2.9e-99   5.2e-96       4     178 ..       1     175 [.       1     177 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 317.0 bits;  conditional E-value: 2.9e-99
+        cysC   4 mkqrgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 m +rgvtvw+tglsgagk+ti++a+  +l  e    e+ldgdivrtnltkglgfskedrdenirrigfvs lltr gvivlvsaispyr+ireevr ++
+  OKH14644.1   1 MEHRGVTVWFTGLSGAGKTTISQAIAKRLKKEECKFEILDGDIVRTNLTKGLGFSKEDRDENIRRIGFVSHLLTRNGVIVLVSAISPYRNIREEVRDRV 99 
+                 789************************************************************************************************ PP
+
+        cysC 103 gsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvakvwnkltelgyi 178
+                 g+fvev+vnapl+ ce+rdvkglykrarageik ftgiddpye p npe+ecrtdle leesv kv  kltelgy+
+  OKH14644.1 100 GNFVEVYVNAPLAECEKRDVKGLYKRARAGEIKGFTGIDDPYEAPTNPEIECRTDLEELEESVEKVLAKLTELGYL 175
+                 ***************************************************************************8 PP
+
+>> OKH16027.1  shikimate kinase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.1   1.2e-05     0.021       7      49 ..       6      43 ..       3      55 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 1.2e-05
+        cysC  7 rgvtvwltglsgagkstitealqakliaegysievldgdivrt 49
+                +g+ ++l g+ g+gkst+     ak+iae     vld d +  
+  OKH16027.1  6 KGLNIYLVGMMGTGKSTL-----AKIIAEIMNYRVLDSDDIIE 43
+                6999*************8.....799***********986554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                       150  (0.042349); expected 70.8 (0.02)
+Passed bias filter:                      132  (0.0372671); expected 70.8 (0.02)
+Passed Vit filter:                        16  (0.00451722); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6869.14
+//
+[ok]

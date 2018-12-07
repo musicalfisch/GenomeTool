@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.5e-07   26.4   3.7    1.1e-05   21.8   2.3    2.6  2  ABC98875.1  malate dehydrogenase (oxaloacetate-decarboxylatin
+  ------ inclusion threshold ------
+      0.019   11.2   0.0      0.027   10.6   0.0    1.1  1  ABC99510.1  oxidoreductase, zinc-binding dehydrogenase family
+
+
+Domain annotation for each sequence (and alignments):
+>> ABC98875.1  malate dehydrogenase (oxaloacetate-decarboxylating) [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.0   0.0    0.0042       5.8     390     420 ..      94     124 ..      75     131 .. 0.79
+   2 !   21.8   2.3   7.8e-09   1.1e-05     206     320 ..     246     348 ..     236     385 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 3.0 bits;  conditional E-value: 0.0042
+        gdhA 390 qayrkviqqskarqiplrlaaytlgvgrvaq 420
+                     +v+ +s+    +    ayt gvgrva 
+  ABC98875.1  94 GGKLQVVAKSRLESAADLAMAYTPGVGRVAL 124
+                 55569999999999999999*********96 PP
+
+  == domain 2  score: 21.8 bits;  conditional E-value: 7.8e-09
+        gdhA 206 vmiivrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfseegldipalkayaaenrksvvgfpqavpisnaelltlpcdvli 304
+                 v+  + +al+   ksl++vr+v++g g  g a ++ll +aga+ i v   + g+ s +  d++  ka +a         +++ ++++a  l + +dv+i
+  ABC98875.1 246 VLAALLNALKVVKKSLEEVRIVLNGAGAAGIAVTQLLRRAGARHILVCDRQ-GILSRSRADLTPEKAAVAV--------EESGSLAEA--L-VGADVFI 332
+                 33334566777899*******************************998865.6888888888766654332........222222222..1.2345555 PP
+
+        gdhA 305 paalenqiteenvnqv 320
+                   ++ n +t e v+++
+  ABC98875.1 333 GVSVANALTPEMVEKM 348
+                 5555555555555555 PP
+
+>> ABC99510.1  oxidoreductase, zinc-binding dehydrogenase family [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0     2e-05     0.027     199     254 ..     122     179 ..     114     197 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2e-05
+        gdhA 199 ematgrgvmiivrealadkgkslagvrvviq.gfgnvggaaaellhkagakii.avst 254
+                 e a+   v+i+  eal d+g+  ag +v i  g g vg  a +l    g+++  +vst
+  ABC99510.1 122 EAAAAPLVLITAWEALYDRGRLQAGQKVLIHaGAGGVGHVAVQLARLRGCQVAtTVST 179
+                 56677779999*****************996599**************9998624665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                        83  (0.0300725); expected 55.2 (0.02)
+Passed bias filter:                       65  (0.0235507); expected 55.2 (0.02)
+Passed Vit filter:                         8  (0.00289855); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000724638); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8862.26
+//
+[ok]

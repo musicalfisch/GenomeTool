@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454136_GCA_001904725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.5e-56  185.7   0.2      6e-56  185.6   0.2    1.0  1  OKH40917.1  carbon dioxide concentrating mechanism protein Cc
+  ------ inclusion threshold ------
+       0.02   13.8   0.4       0.26   10.2   0.0    2.1  2  OKH33054.1  peptide-binding protein [Phormidium ambiguum IAM 
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH40917.1  carbon dioxide concentrating mechanism protein CcmL [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  185.6   0.2     2e-59     6e-56       1     100 []       1     100 []       1     100 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 185.6 bits;  conditional E-value: 2e-59
+        ccmL   1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsvgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdqy 99 
+                 mqiakvrgtvvstqkdpslrg+kllllq+vdeegkllp yevaad vgag+dewvlvsrgsaar  +gne+rplda vvaiidtv++++rl+yskkdq+
+  OKH40917.1   1 MQIAKVRGTVVSTQKDPSLRGAKLLLLQFVDEEGKLLPGYEVAADIVGAGLDEWVLVSRGSAARIASGNENRPLDALVVAIIDTVNMDNRLVYSKKDQD 99 
+                 9*************************************************************************************************8 PP
+
+        ccmL 100 r 100
+                 r
+  OKH40917.1 100 R 100
+                 7 PP
+
+>> OKH33054.1  peptide-binding protein [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.5   0.1     0.045   1.4e+02      39      58 ..      33      52 ..      23      72 .. 0.75
+   2 ?   10.2   0.0   8.3e-05      0.26       9      42 ..      83     117 ..      75     130 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 1.5 bits;  conditional E-value: 0.045
+        ccmL 39 kyevaadsvgagvdewvlvs 58
+                + ev+ + v ag  +wv + 
+  OKH33054.1 33 EVEVTGELVVAGRRNWVSIG 52
+                57888999999999998754 PP
+
+  == domain 2  score: 10.2 bits;  conditional E-value: 8.3e-05
+        ccmL   9 tvvstqkdpslr.gvkllllqlvdeegkllpkyev 42 
+                  +v+tq d  +  g k+   ql+de+gk++++   
+  OKH33054.1  83 KIVATQTDEIIAgGLKVYRTQLIDEKGKIINTVRA 117
+                 5899**999987369*************9987655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         6149  (2062819 residues searched)
+Passed MSV filter:                       123  (0.0200033); expected 123.0 (0.02)
+Passed bias filter:                      104  (0.0169133); expected 123.0 (0.02)
+Passed Vit filter:                         5  (0.00081314); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000325256); expected 0.1 (1e-05)
+Initial search space (Z):               6149  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6876.06
+//
+[ok]

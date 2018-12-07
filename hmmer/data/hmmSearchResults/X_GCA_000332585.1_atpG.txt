@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/X_GCA_000332585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+      3e-93  307.5  13.6    3.3e-93  307.3  13.6    1.0  1  lcl|AOCI01000094.1_prot_ELS48152.1_2075  [locus_tag=C789_2075] [protein=A
+     0.0037   15.4   7.8     0.0048   15.1   7.8    1.1  1  lcl|AOCI01000094.1_prot_ELS48153.1_2076  [gene=atpF] [locus_tag=C789_2076
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|AOCI01000094.1_prot_ELS48152.1_2075  [locus_tag=C789_2075] [protein=ATP synthase B/B' CF family protein] [protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  307.3  13.6   1.2e-96   3.3e-93       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 307.3 bits;  conditional E-value: 1.2e-96
+                                     atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssar 70 
+                                              mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelql+sar
+  lcl|AOCI01000094.1_prot_ELS48152.1_2075   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTEGGAKEQLAKTEALVQEYELQLTSAR 70 
+                                              9********************************************************************* PP
+
+                                     atpG  71 kqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe 140
+                                              kqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpe
+  lcl|AOCI01000094.1_prot_ELS48152.1_2075  71 KQSQEIIAQAQAEAQKLASERVAAAQKEAIARKEAVAAEIAQQKEEAFRSLEGQVASLSRQILEKLLGPE 140
+                                              ********************************************************************** PP
+
+                                     atpG 141 lvr 143
+                                              lvr
+  lcl|AOCI01000094.1_prot_ELS48152.1_2075 141 LVR 143
+                                              **8 PP
+
+>> lcl|AOCI01000094.1_prot_ELS48153.1_2076  [gene=atpF] [locus_tag=C789_2076] [protein=ATP synthase F0, B subunit] [prot
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.1   7.8   1.7e-06    0.0048      17     137 ..      34     157 ..      21     163 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 15.1 bits;  conditional E-value: 1.7e-06
+                                     atpG  17 llavilna.vfy..kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqae 83 
+                                               l+++l   +fy  k l ++l er   i ++ + a ++   +   + e + +l+ a++++++ii +a++ 
+  lcl|AOCI01000094.1_prot_ELS48153.1_2076  34 NLSILLGLvIFYgrKVLGQILGERQSKIAEALAEAEDRKNIAANALAEEQKKLALAKQEAEKIINNARSR 103
+                                              4566665415666689*************99999988776655555666789****************** PP
+
+                                     atpG  84 aqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvaslsrqilekll 137
+                                              a+ ++++  a a+ +    +e+ a +++ +++ ++  l  ++++l+   +e  l
+  lcl|AOCI01000094.1_prot_ELS48153.1_2076 104 AKTVTADIAAQAELDIQRMRESAAKDLSAEQDRVLVELRQRITALALANVESQL 157
+                                              ***99998888888877789999999*999999999999999999877777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         5571  (1335648 residues searched)
+Passed MSV filter:                       179  (0.0321307); expected 111.4 (0.02)
+Passed bias filter:                      104  (0.0186681); expected 111.4 (0.02)
+Passed Vit filter:                        12  (0.00215401); expected 5.6 (0.001)
+Passed Fwd filter:                         2  (0.000359002); expected 0.1 (1e-05)
+Initial search space (Z):               5571  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6366.59
+//
+[ok]

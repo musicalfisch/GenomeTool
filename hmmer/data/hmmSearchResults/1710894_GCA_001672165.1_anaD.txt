@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710894_GCA_001672165.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0018   16.6   1.6     0.0021   16.4   1.6    1.2  1  OBQ26332.1  acyl carrier protein [Aphanizomenon flos-aquae LD
+     0.0028   16.0   0.3      0.003   15.9   0.3    1.1  1  OBQ25533.1  acyl carrier protein [Aphanizomenon flos-aquae LD
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ26332.1  acyl carrier protein [Aphanizomenon flos-aquae LD13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.4   1.6   1.1e-06    0.0021       3      57 ..      10      62 ..       8      87 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 16.4 bits;  conditional E-value: 1.1e-06
+        anaD  3 eekveqmlkefiiqelaydqtnlvltnnlkiieqrvidsmdifrlvrfveeevgi 57
+                +ekv + lk +i ++l  d++++ l  n   +e+   ds+d   lv  +eee+ i
+  OBQ26332.1 10 NEKVFRKLKRIICEQLNVDENKIDLNTN--FVEDLGADSLDAVELVMAIEEEFDI 62
+                69999****************9998665..69********************998 PP
+
+>> OBQ25533.1  acyl carrier protein [Aphanizomenon flos-aquae LD13]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.3   1.6e-06     0.003       7      83 ..       6      83 ..       1      85 [] 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 1.6e-06
+        anaD  7 eqmlkefiiqelaydqtnlvltnnlkiieqrv.idsmdifrlvrfveeevgifwepeelvlknfetidhikayilrkl 83
+                 + lk++i +el  +     + +nl + e+ +  ds+    l+ ++e+ + i +   el l  f +++ +  +i +k+
+  OBQ25533.1  6 VDKLKKIIAEELDVNLQAEEIDENLPLFEDGLgFDSIATVELISLMENHFSISFSDSELNLASFSSLQVLAEFIAKKM 83
+                567999******9999999999*******98768*********************************99999998886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         3787  (1148327 residues searched)
+Passed MSV filter:                        99  (0.0261421); expected 75.7 (0.02)
+Passed bias filter:                       63  (0.0166359); expected 75.7 (0.02)
+Passed Vit filter:                         5  (0.00132031); expected 3.8 (0.001)
+Passed Fwd filter:                         2  (0.000528123); expected 0.0 (1e-05)
+Initial search space (Z):               3787  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 4995.22
+//
+[ok]

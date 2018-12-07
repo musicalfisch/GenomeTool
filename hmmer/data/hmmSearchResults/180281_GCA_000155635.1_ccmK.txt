@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmK  [M=103]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-25   85.3   3.3      5e-25   85.0   3.3    1.0  1  EDY37838.1  carbon dioxide concentrating mechanism protein Cc
+    1.3e-24   83.6   4.0    2.1e-24   83.0   4.0    1.3  1  EDY38470.1  carboxysome structural protein CsoS1 [Cyanobium s
+  ------ inclusion threshold ------
+      0.019   12.4   0.9      0.041   11.4   0.9    1.6  1  EDY37169.1  microcompartments protein [Cyanobium sp. PCC 7001
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY37838.1  carbon dioxide concentrating mechanism protein CcmK [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   85.0   3.3   5.4e-28     5e-25       1      88 [.       6      92 ..       6      96 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 85.0 bits;  conditional E-value: 5.4e-28
+        ccmK  1 msiavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyv 88
+                m ia+gmiet+g+   +eaadam kaa v l+  e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e  
+  EDY37838.1  6 MGIALGMIETRGLVPAIEAADAMTKAAEVRLIAREFVGGGYVTVMVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHREVEPA 92
+                89***********999***************************************************8875.679********99865 PP
+
+>> EDY38470.1  carboxysome structural protein CsoS1 [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   83.0   4.0   2.3e-27   2.1e-24       3      88 ..      94     178 ..      92     185 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 83.0 bits;  conditional E-value: 2.3e-27
+        ccmK   3 iavgmietlgfpavveaadamvkaarvtlvgyekigsgrvtvivrgdvsevqasvaagvesanrvnggevlsthiiarphenleyv 88 
+                 ia+gmiet+g+   +eaadam kaa vt+v  e +g g vtv+vrg+   v+a+v ag ++ +rv  g  +++hiiarph ++e  
+  EDY38470.1  94 IALGMIETRGLVPAIEAADAMTKAAEVTMVAREFVGGGYVTVMVRGETGAVNAAVRAGADACERVGDGL-VAAHIIARPHTEVEPA 178
+                 9**********999***************************************************8875.679*******999865 PP
+
+>> EDY37169.1  microcompartments protein [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.4   0.9   4.4e-05     0.041       7      66 ..     177     238 ..     169     242 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.4 bits;  conditional E-value: 4.4e-05
+        ccmK   7 mietlgfpavveaadamvkaarvtlvgyekigs.grvtvivr.gdvsevqasvaagvesanr 66 
+                 ++et+    v+ aa+   ka+ +t+v  + +g+ gr+t+  r gdv e  a+    ++ +n 
+  EDY37169.1 177 ILETEPAGYVLIAANEAEKASNITVVDVKAVGAfGRLTLAGReGDVEEAAAAAMRAIHHINA 238
+                 578888888999********************879***998769999998887777777665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (103 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                        69  (0.0249008); expected 55.4 (0.02)
+Passed bias filter:                       57  (0.0205702); expected 55.4 (0.02)
+Passed Vit filter:                         5  (0.0018044); expected 2.8 (0.001)
+Passed Fwd filter:                         3  (0.00108264); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4234.89
+//
+[ok]

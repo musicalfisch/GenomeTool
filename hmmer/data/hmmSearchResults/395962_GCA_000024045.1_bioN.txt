@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/395962_GCA_000024045.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.6e-143  473.5  19.1   6.3e-143  473.3  19.1    1.0  1  ACV02067.1  cobalt transport protein [Cyanothece sp. PCC 8802
+    1.4e-08   32.3  13.0    2.2e-08   31.7  13.0    1.4  1  ACV00687.1  cobalt transport protein [Cyanothece sp. PCC 8802
+
+
+Domain annotation for each sequence (and alignments):
+>> ACV02067.1  cobalt transport protein [Cyanothece sp. PCC 8802]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  473.3  19.1  2.8e-146  6.3e-143       1     291 []       1     290 []       1     290 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 473.3 bits;  conditional E-value: 2.8e-146
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl++p+t lh+ld rvk+ wlm+flaapllanp wrl + g+l+llt+ a ip rvwrqqmgwl+ l+i+vf+itai+pdgl++  qp
+  ACV02067.1   1 MDLLRSLPIGLYLEKPVTWLHKLDPRVKLAWLMTFLAAPLLANPGWRLGVAGMLILLTIAARIPLRVWRQQMGWLLTLSILVFIITAIAPDGLAIHSQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvlee 198
+                 rlp+  l lp  s+y+yvl+d+gr+ +trrslel vristl+f liystnl+llttapeeit gle+l  plrrfn+p+tei ltltlslrfiplvlee
+  ACV02067.1 100 RLPDSELLLPQPSNYNYVLFDKGRI-ITRRSLELGVRISTLIFILIYSTNLYLLTTAPEEITAGLEELSEPLRRFNLPITEIMLTLTLSLRFIPLVLEE 197
+                 ************************7.7************************************************************************ PP
+
+        bioN 199 vqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwggl 291
+                 +qnlar++rtrai+w+klgi+rsl++wl vvekll+nll+rae+iaiamevrgftspn+h+v+wh+l+l   d+i+l +lipfw ar++wgg+
+  ACV02067.1 198 IQNLARSIRTRAINWKKLGIRRSLQLWLIVVEKLLENLLMRAEEIAIAMEVRGFTSPNEHRVQWHQLRLIRWDWITLGVLIPFWWARFMWGGM 290
+                 *********************************************************************999*******************96 PP
+
+>> ACV00687.1  cobalt transport protein [Cyanothece sp. PCC 8802]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.7  13.0   9.9e-12   2.2e-08     120     281 ..     112     274 ..       9     282 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 31.7 bits;  conditional E-value: 9.9e-12
+        bioN 120 drgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlaravrtraidwqklgi 218
+                  +  l+v   s+     +  l   +i  t  ++l       t  +++++  + r+++p  +i + ++ +lrf pl+l+e++ + +a + r ++ +k+g+
+  ACV00687.1 112 PKNWLWVGGASMSQEGILYGL--NIILKTLTMILVIPLAIFTTDINQMIVGMVRLKIPY-KIVFIFSSTLRFFPLLLDEIEAIIQAQKLRGLNLEKMGL 207
+                 455555555555444333333..33444444445444455688899999999******7.68889999******************************* PP
+
+        bioN 219 krslnvwltvveklldnlllraeqiaiamevrgft.spnq...hqvrwhelklrwadfialfllipf 281
+                  r  +v+ tv   l+ n + +++++ i ++ + f+ s n+   hq    +l+  +  f  lflli +
+  ACV00687.1 208 IRQAKVYSTVAVPLILNAMTKSQKLEIVLQSKAFSgSSNRtylHQSILTQLDYVMIGFFVLFLLITM 274
+                 **********************************734453444888888999999999999999865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         4444  (1355257 residues searched)
+Passed MSV filter:                       191  (0.0429793); expected 88.9 (0.02)
+Passed bias filter:                       94  (0.0211521); expected 88.9 (0.02)
+Passed Vit filter:                         3  (0.000675068); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.000450045); expected 0.0 (1e-05)
+Initial search space (Z):               4444  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9859.49
+//
+[ok]

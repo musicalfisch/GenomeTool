@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170562_GCA_000317435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.8e-157  521.6   4.5     2e-157  521.5   4.5    1.0  1  AFY99474.1  Fe-S cluster assembly protein NifU [Calothrix sp.
+      1e-08   33.2   0.0      1e-08   33.1   0.0    1.0  1  AFZ03823.1  nitrogen-fixing NifU domain-containing protein [C
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY99474.1  Fe-S cluster assembly protein NifU [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  521.5   4.5  7.2e-161    2e-157       1     299 [.       1     295 [.       1     300 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 521.5 bits;  conditional E-value: 7.2e-161
+        finU   1 mwdytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdia 99 
+                 mwdytdkvlelfynpknqG +e+++e G+kv++Ge+GsiacGdalrlhlk+++ sdki+darfqtfGctsaiassealvel+kGltldealkv+n++ia
+  AFY99474.1   1 MWDYTDKVLELFYNPKNQGTIEESNEVGIKVSTGEIGSIACGDALRLHLKIDIASDKILDARFQTFGCTSAIASSEALVELVKGLTLDEALKVTNREIA 99 
+                 9************************************************************************************************** PP
+
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkes 198
+                 d+lGGlpeakmhcsvmGqealeaai+nyrGi +++hddddeGal+ctcfgis+tki+rvivennl tae+vtnyvkaGGGcGscla+iddii++v +e+
+  AFY99474.1 100 DFLGGLPEAKMHCSVMGQEALEAAIFNYRGIERDTHDDDDEGALICTCFGISDTKIKRVIVENNLKTAEEVTNYVKAGGGCGSCLATIDDIIQSVINEK 198
+                 *************************************************************************************************** PP
+
+        finU 199 aatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                  ++ + +  + +++e++ +    +l++v+ki+l+++v+dee+r+vli+d++dv+lydvd+d+++v l++a++s++s++++lkia+e+rl++++ +++v+
+  AFY99474.1 199 PVSITANIPSINTTEVTPR----PLTNVQKIALIQKVLDEEVRPVLIADGGDVELYDVDGDIVQVLLQGACGSCSSSTATLKIAIEARLRDRISPNIVV 293
+                 9998887777777766655....5555556666666666666666666666666666666666666666666666666666666666666666666665 PP
+
+        finU 298 el 299
+                 + 
+  AFY99474.1 294 QS 295
+                 54 PP
+
+>> AFZ03823.1  nitrogen-fixing NifU domain-containing protein [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   33.1   0.0   3.8e-12     1e-08     230     293 ..      15      77 ..       3      85 .] 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 33.1 bits;  conditional E-value: 3.8e-12
+        finU 230 klldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                   +++v+ +e+r+ l++d+++v+l + d+ ++k  l++a++++ s+ ++l++ +e rl++ +  
+  AFZ03823.1  15 DNVEQVL-DEMRPYLMSDGGNVELVELDGPIVKLRLQGACGTCPSSAMTLRMGIERRLREMIPE 77 
+                 4444444.578***********************************************997743 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         5535  (1829740 residues searched)
+Passed MSV filter:                       207  (0.0373984); expected 110.7 (0.02)
+Passed bias filter:                      138  (0.0249322); expected 110.7 (0.02)
+Passed Vit filter:                         7  (0.00126468); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000361337); expected 0.1 (1e-05)
+Initial search space (Z):               5535  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9148.70
+//
+[ok]

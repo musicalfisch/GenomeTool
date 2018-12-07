@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.8e-70  232.7   6.4    3.1e-70  232.5   6.4    1.0  1  KYC38081.1  transcriptional regulator [Scytonema hofmannii PC
+  ------ inclusion threshold ------
+      0.065   12.5   0.0      0.074   12.4   0.0    1.1  1  KYC36531.1  transcriptional regulator [Scytonema hofmannii PC
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC38081.1  transcriptional regulator [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  232.5   6.4   6.4e-74   3.1e-70       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 232.5 bits;  conditional E-value: 6.4e-74
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivved+qvd+vvdkiiaaartgeigdgkifispveqv
+  KYC38081.1   1 MKKVEAIIRPFKLDEVKIALVNAGIVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKVEIVVEDNQVDMVVDKIIAAARTGEIGDGKIFISPVEQV 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 vrirtgek++eav
+  KYC38081.1 100 VRIRTGEKNTEAV 112
+                 ***********97 PP
+
+>> KYC36531.1  transcriptional regulator [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.4   0.0   1.5e-05     0.074      36      96 ..      12      76 ..       4      86 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.4 bits;  conditional E-value: 1.5e-05
+        glnB 36 fgrqkgqteryrgseytveflqklkvei.vvedeqvdlvvdkiiaaartgeig...dgkifispv 96
+                f + k qt +y  +e  +ef  +l  e    +d+ ++ v +ki aa    e     dgk f++++
+  KYC36531.1 12 FIQAKLQTGKYHNAEELLEFAFRLLDEYeQADDDLINSVREKIDAAIAVSEQTppiDGKTFVNKI 76
+                677899**************9999888625678889999999988877777543449****9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       288  (0.029307); expected 196.5 (0.02)
+Passed bias filter:                      245  (0.0249313); expected 196.5 (0.02)
+Passed Vit filter:                        13  (0.00132289); expected 9.8 (0.001)
+Passed Fwd filter:                         2  (0.000203521); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.09
+# Mc/sec: 3955.43
+//
+[ok]

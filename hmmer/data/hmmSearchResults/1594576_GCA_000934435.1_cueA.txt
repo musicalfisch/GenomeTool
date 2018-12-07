@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1594576_GCA_000934435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-15   55.4   0.3    2.6e-13   47.7   0.0    2.2  2  KIY10672.1  multicopper oxidase [Mastigocladus laminosus UU77
+  ------ inclusion threshold ------
+      0.036   11.0   0.0      0.049   10.6   0.0    1.3  1  KIY13469.1  plasmid stabilization protein [Mastigocladus lami
+
+
+Domain annotation for each sequence (and alignments):
+>> KIY10672.1  multicopper oxidase [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   47.7   0.0   8.9e-17   2.6e-13      51     170 ..      84     196 ..      41     219 .. 0.82
+   2 !    5.8   0.0   0.00047       1.4     425     494 ..     261     328 ..     246     330 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 47.7 bits;  conditional E-value: 8.9e-17
+        cueA  51 etalearpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyh 148
+                 e  l a    i+l      n+   ng+ipgp l ak gd v+i f nk  ++  lh+hg+h  +    d +   v  g++  yef      p g   yh
+  KIY10672.1  84 EFRLTAGTSEIQLNSAvSYNIWDLNGRIPGPTLRAKQGDRVRILFLNKAGHSHSLHFHGIHPAEM---DGV-RPVSNGKATIYEFD---AEPFGVHLYH 175
+                 555666666677665415689999*************************************6654...444.5799*********6...68******** PP
+
+        cueA 149 phlhelvaeqvfgglggifvvr 170
+                  h+ e v+ ++  gl g+f++ 
+  KIY10672.1 176 CHI-EPVTRHIAKGLYGMFIID 196
+                 **9.678999*********983 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.00047
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                  +fhlh+n f+v        p q   d + +   e   +   fr + gk ++h h     + g mg+  v
+  KIY10672.1 261 VTFHLHANFFNVYPTGMTLTPSQK-SDVVTMGVAERHILEFAFR-YPGKYMFHPHQDAIAENGCMGLFEV 328
+                 57***********99999999886.789999999999999***9.89********999999999998776 PP
+
+>> KIY13469.1  plasmid stabilization protein [Mastigocladus laminosus UU774]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.0   1.7e-05     0.049      80     151 ..      53     125 ..      14     134 .. 0.59
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 1.7e-05
+        cueA  80 prleakpgdtvkihftnklsqatnlhyhglh.....ipqtgnadniflsvppgetqtyeftlpknhpsg..tfyyhphl 151
+                  +l  kpgdt+k  + nk+    n+ +   +     + ++    ++f+   pg  q ye t+p + p g  tfy  ph 
+  KIY13469.1  53 AKLTVKPGDTIKW-VNNKVP-PHNVVFDPAQsksadLAKAWTHKQLFM--SPG--QEYETTIPADAPKGdyTFYCDPHR 125
+                 4677788888773.345544.344444433300000233333333333..354..678888888888775567777775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5950  (1718357 residues searched)
+Passed MSV filter:                       158  (0.0265546); expected 119.0 (0.02)
+Passed bias filter:                      133  (0.0223529); expected 119.0 (0.02)
+Passed Vit filter:                         9  (0.00151261); expected 6.0 (0.001)
+Passed Fwd filter:                         2  (0.000336134); expected 0.1 (1e-05)
+Initial search space (Z):               5950  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 12175.79
+//
+[ok]

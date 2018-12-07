@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/13035_GCA_000317615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.5e-08   30.0   0.2    3.9e-08   29.9   0.2    1.0  1  AFZ51998.1  putative multicopper oxidase [Dactylococcopsis sa
+  ------ inclusion threshold ------
+        1.2    5.2   9.4        1.1    5.2   9.4    1.0  1  AFZ50482.1  hypothetical protein Dacsa_1825 [Dactylococcopsis
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ51998.1  putative multicopper oxidase [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.2   2.3e-11   3.9e-08      72     152 ..      24      97 ..      10     103 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 2.3e-11
+        cueA  72 tyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlh 152
+                 +yn ++p p l ak gd v++ f n+  +   +h+hg+h      +++ + sv   +   yef     +p g   yh h++
+  AFZ51998.1  24 SYNDRVPSPTLRAKSGDRVRVIFNNQGGRFHTVHFHGIHPA----SEDGVRSVRHDQQVIYEFD---AKPYGVHLYHCHIK 97 
+                 7**************************************54....34456899999999***96...6899*******986 PP
+
+>> AFZ50482.1  hypothetical protein Dacsa_1825 [Dactylococcopsis salina PCC 8305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.2   9.4   0.00069       1.1     307     327 ..       7      28 ..       2      31 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.00069
+        cueA 307 ggamgmmgg.gmmggmgmmgss 327
+                  gamg+mg  g+mg mg mg s
+  AFZ50482.1   7 KGAMGVMGAmGVMGVMGAMGES 28 
+                 489****9659999***99988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         3337  (1011999 residues searched)
+Passed MSV filter:                        81  (0.0242733); expected 66.7 (0.02)
+Passed bias filter:                       70  (0.0209769); expected 66.7 (0.02)
+Passed Vit filter:                        10  (0.0029967); expected 3.3 (0.001)
+Passed Fwd filter:                         3  (0.000899011); expected 0.0 (1e-05)
+Initial search space (Z):               3337  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 12548.79
+//
+[ok]

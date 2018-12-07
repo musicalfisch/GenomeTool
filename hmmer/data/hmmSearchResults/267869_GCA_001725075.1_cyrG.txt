@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/267869_GCA_001725075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                                Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                                -----------
+    0.00019   18.5   0.0      0.056   10.4   0.0    2.2  2  lcl|MDZH01000130.1_prot_ODV39090.1_2312  [locus_tag=BFG60_1306] [db_xref=
+  ------ inclusion threshold ------
+      0.024   11.6   0.0      0.058   10.3   0.0    1.5  2  lcl|MDZH01000115.1_prot_ODV39367.1_3323  [locus_tag=BFG60_1129] [db_xref=
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|MDZH01000130.1_prot_ODV39090.1_2312  [locus_tag=BFG60_1306] [db_xref=SEED:fig|1126.39.peg.2837] [protein=Xaa-Pro 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.4   0.0   2.2e-05     0.056      18      88 ..      29     102 ..      21     112 .. 0.78
+   2 !    5.8   0.0   0.00052       1.3     343     381 ..     350     387 ..     343     394 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 2.2e-05
+                                     cyrG  18 tvdvqvvdgkiaaiapelevvg.taidgenklllpgfvnahthssemwqrgilsllp..lelwlaelydf 84 
+                                              +++++v +g+i+aia+ ++    + i+ + + + pgf+++h h +       ++  p  + + l  ly +
+  lcl|MDZH01000130.1_prot_ODV39090.1_2312  29 ATEIRVENGNITAIATTVDHSNaQIIELKGHTVTPGFIDCHVHITFCEGDPTIPENPymVTVPLMTLYSL 98 
+                                              67899*************9876156789999************987777777765551145567777777 PP
+
+                                     cyrG  85 apld 88 
+                                               pl+
+  lcl|MDZH01000130.1_prot_ODV39090.1_2312  99 NPLK 102
+                                              7775 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.00052
+                                     cyrG 343 qhwitprqavemaslggakglnladklgsltvgkkadlv 381
+                                              q+ itp +a++ a+   a  l ++ ++g+l+vgk ad++
+  lcl|MDZH01000130.1_prot_ODV39090.1_2312 350 QNGITPLRALKAATTV-AAELLMQPNIGALAVGKFADII 387
+                                              7889******977765.667889**************97 PP
+
+>> lcl|MDZH01000115.1_prot_ODV39367.1_3323  [locus_tag=BFG60_1129] [db_xref=GO:0004131,SEED:fig|1126.39.peg.3153] [prote
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.3   0.0   2.3e-05     0.058      12      61 ..      29      80 ..      24      91 .. 0.81
+   2 ?   -3.4   0.0      0.33   8.4e+02     301     315 ..     313     327 ..     303     360 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 10.3 bits;  conditional E-value: 2.3e-05
+                                     cyrG 12 veddyatvdvqvvdgkiaaiapel..evvgtaidgenklllpgfvnahthss 61
+                                             + ++ + v++++ dg+i+ i++ +  e    +id ++k+++p fv+ hth  
+  lcl|MDZH01000115.1_prot_ODV39367.1_3323 29 TAEGLTLVNLEINDGNINRITSTIppEDNIPVIDLKKKIVFPCFVDMHTHLD 80
+                                             5678899**************99944344568******************64 PP
+
+  == domain 2  score: -3.4 bits;  conditional E-value: 0.33
+                                     cyrG 301 kyrqagvnvtfgcdg 315
+                                                ++ag+ v+f  d 
+  lcl|MDZH01000115.1_prot_ODV39367.1_3323 313 EMKKAGIPVAFASDN 327
+                                              444444444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5140  (1309376 residues searched)
+Passed MSV filter:                       103  (0.0200389); expected 102.8 (0.02)
+Passed bias filter:                       86  (0.0167315); expected 102.8 (0.02)
+Passed Vit filter:                        12  (0.00233463); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.000389105); expected 0.1 (1e-05)
+Initial search space (Z):               5140  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 12177.20
+//
+[ok]

@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/388467_GCA_000710505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.2e-11   39.5   0.0      1e-10   39.3   0.0    1.0  1  KEI67540.1  NifU [Planktothrix agardhii NIVA-CYA 126/8]
+  ------ inclusion threshold ------
+      0.013   12.7   0.8      0.019   12.2   0.8    1.2  1  KEI67281.1  hypothetical protein A19Y_2355 [Planktothrix agar
+
+
+Domain annotation for each sequence (and alignments):
+>> KEI67540.1  NifU [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   39.3   0.0   4.9e-14     1e-10     234     292 ..      12      70 ..       2      78 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 39.3 bits;  conditional E-value: 4.9e-14
+        finU 234 evvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlv 292
+                 e+v +elr+ l++d+++v+  + d+ +++v l++a++s+ s++++lk+ +e rl++++ 
+  KEI67540.1  12 EIVLDELRPYLMSDGGNVEIVELDGPIVRVRLQGACGSCPSSTMTLKMGIERRLRERIP 70 
+                 3456789*************************************************984 PP
+
+>> KEI67281.1  hypothetical protein A19Y_2355 [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   0.8     9e-06     0.019     224     294 ..     217     289 ..     196     295 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 9e-06
+        finU 224 kivlkiklldevv.deelravliddeldvvlydvdkdllkvalksassstaslkvalkialedr.lskdlvve 294
+                  +  + k++d+v+ + e+ +   ++e++    ++ k+ +++ l++a  st++ +  l++++ +r + +d+vv+
+  KEI67281.1 217 SQSTIRKVIDQVLtRAEIDPRCLKVEMELNSIEAIKNTVQAGLGAAFVSTSAIEKELEMKVLHRmVIEDIVVK 289
+                 56678999*9998457899***********************************9999998887245777776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4191  (1395461 residues searched)
+Passed MSV filter:                       130  (0.0310188); expected 83.8 (0.02)
+Passed bias filter:                      104  (0.0248151); expected 83.8 (0.02)
+Passed Vit filter:                        10  (0.00238607); expected 4.2 (0.001)
+Passed Fwd filter:                         3  (0.00071582); expected 0.0 (1e-05)
+Initial search space (Z):               4191  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10465.96
+//
+[ok]

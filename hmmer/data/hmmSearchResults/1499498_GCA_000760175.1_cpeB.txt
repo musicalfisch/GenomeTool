@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeB  [M=172]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      1e-55  185.1   3.7    1.3e-55  184.8   3.7    1.1  1  KGG13058.1  Phycoerythrin beta chain [Prochlorococcus sp. MIT
+    6.6e-08   29.5   0.1    3.2e-07   27.2   0.1    1.9  1  KGG13057.1  Phycoerythrin alpha chain [Prochlorococcus sp. MI
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG13058.1  Phycoerythrin beta chain [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  184.8   3.7   1.4e-58   1.3e-55       1     171 [.       1     181 [.       1     182 [] 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 184.8 bits;  conditional E-value: 1.4e-58
+        cpeB   1 mldaftkvvsqadargeflsseqldalsalvadsnkrldavnritsnastivanaaralfaeqpqliapggnaytsrrmaaclrdmeiilryvtyavla 99 
+                 mldaf++ v  ad++g  + s++l +l + vad+nkr+da   it n s i a+a   +  e++ l +pggn y +rrmaaclrd eiilryv+ya+la
+  KGG13058.1   1 MLDAFSRAVVSADSKGSPIGSAELASLRKYVADANKRIDATLAITQNVSCIAADAVSGIVCENTGLTQPGGNCYPTRRMAACLRDGEIILRYVSYALLA 99 
+                 9************************************************************************************************** PP
+
+        cpeB 100 gdasvlddrclnglretylalgvpgasvaagvqkmkeaalaiandpn.......gitkg...dcsallseiasyfdraaaav 171
+                 gd s+lddrc+ngl+ety+algvp as   +++ mk a++ai++++n       gi  g   +c  ++se asyfdr  +a+
+  KGG13058.1 100 GDPSILDDRCINGLKETYIALGVPIASAIRAIEIMKIATVAIMTETNtgrkmfdGINSGtgaQCQDIASEAASYFDRVISAL 181
+                 ******************************************998764444444676553347**************99986 PP
+
+>> KGG13057.1  Phycoerythrin alpha chain [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.2   0.1   3.4e-10   3.2e-07       2     135 ..       2     126 ..       1     146 [. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 27.2 bits;  conditional E-value: 3.4e-10
+        cpeB   2 ldaftkvvsqadargeflsseqldalsalvadsnkrldavnritsnastivanaaralfaeqpqliapggnaytsrrmaaclrdmeiilryvtyavlag 100
+                   a t v+s ada g f + ++l++++     +  rl+a ++++    +  + a  ++          g   y +     c rd++  lr + y++++g
+  KGG13057.1   2 KSAVTTVLSSADAAGRFPTISDLESVKGSFDRAPARLEAAEKLSIYIDKYTSAALDQV---------YGVGIYDQANKDKCARDINHYLRLINYCLVTG 91 
+                 578999*********************************9999877766655544333.........366789999999******************** PP
+
+        cpeB 101 dasvlddrclnglretylalgvpgasvaagvqkmk 135
+                  +  ld+  + g+re   a   p a+   +++ ++
+  KGG13057.1  92 GTGPLDEWGIAGMREVIRAQMLPTAAYVEALSFVR 126
+                 **********************9998877766555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (172 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        43  (0.0225367); expected 38.2 (0.02)
+Passed bias filter:                       39  (0.0204403); expected 38.2 (0.02)
+Passed Vit filter:                         3  (0.00157233); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00104822); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4287.64
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710888_GCA_001672075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-83  274.8   2.3    3.6e-83  274.6   2.3    1.0  1  OBQ38061.1  ATP synthase F0F1 subunit epsilon [Anabaena sp. C
+  ------ inclusion threshold ------
+        2.7    6.2   9.3        2.8    6.2   0.2    2.5  2  OBQ40487.1  ABC transporter permease [Anabaena sp. CRKS33]
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ38061.1  ATP synthase F0F1 subunit epsilon [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  274.6   2.3   1.6e-86   3.6e-83       1     137 []       1     137 []       1     137 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 274.6 bits;  conditional E-value: 1.6e-86
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvispdktvwdaea+ev+lpsttgqlg+lsghap+ltald+gvmrvra+kn++wqaiallggfaev+edevtilvngaergdkinleear+afn
+  OBQ38061.1   1 MTLTVRVISPDKTVWDAEADEVVLPSTTGQLGVLSGHAPMLTALDIGVMRVRANKNANWQAIALLGGFAEVDEDEVTILVNGAERGDKINLEEARTAFN 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 +aqt+l+qvk+edrqaqiqat+a+krararfqaagglv
+  OBQ38061.1 100 KAQTSLSQVKSEDRQAQIQATKALKRARARFQAAGGLV 137
+                 ************************************97 PP
+
+>> OBQ40487.1  ABC transporter permease [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.2    0.0012       2.8      90     122 ..     120     152 ..      84     164 .. 0.86
+   2 ?    2.6   4.0     0.016        36      72     133 ..     209     270 ..     181     274 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.0012
+        atpE  90 nleearaafneaqtklnqvkaedrqaqiqatqa 122
+                  le+a+ + + +q++l+qvka+ +  +i a++a
+  OBQ40487.1 120 ALEKAKRQVEVSQANLQQVKAGAKLGDIFAQKA 152
+                 6999************************99876 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.016
+        atpE  72 eedevtilvngaergdkinleearaafneaqtklnqvkaedrqaqiqatqa.fkrararfqaa 133
+                  +d v   +n a+   k  +e  + + +e+q++ln +++  r +++q +qa ++ a+a +q a
+  OBQ40487.1 209 RRDTVQQQLNEANASLKRTIETLQKQLTESQARLNSIAE-IRPTDVQVAQAnLQSAKASVQQA 270
+                 5677778889999999999999*************9976.56677776655388999999877 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         4638  (1261469 residues searched)
+Passed MSV filter:                       152  (0.0327727); expected 92.8 (0.02)
+Passed bias filter:                      113  (0.0243639); expected 92.8 (0.02)
+Passed Vit filter:                        11  (0.00237171); expected 4.6 (0.001)
+Passed Fwd filter:                         3  (0.000646831); expected 0.0 (1e-05)
+Initial search space (Z):               4638  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 5760.71
+//
+[ok]

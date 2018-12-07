@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.1e-124  411.8   0.0   2.3e-124  411.6   0.0    1.0  1  KYC42119.1  chorismate-binding protein [Scytonema hofmannii P
+    1.6e-30  105.3   0.0    1.8e-30  105.2   0.0    1.0  1  KYC39670.1  chorismate mutase [Scytonema hofmannii PCC 7110]
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC42119.1  chorismate-binding protein [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  411.6   0.0  4.7e-128  2.3e-124       1     196 []       1     196 []       1     196 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 411.6 bits;  conditional E-value: 4.7e-128
+        cpeS   1 mthstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaedrieienytvkeekkfygasrdl 99 
+                 mt+stdiatlarlmaadfsnqeqafenppffahirvcmrplpl+llsgv+ffveqaydyll+dpyrlrvlkl++++d+ieienytvkeek+fygasr+l
+  KYC42119.1   1 MTNSTDIATLARLMAADFSNQEQAFENPPFFAHIRVCMRPLPLSLLSGVGFFVEQAYDYLLDDPYRLRVLKLIQVGDHIEIENYTVKEEKNFYGASRNL 99 
+                 9************************************************************************************************** PP
+
+        cpeS 100 erlktlkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadevkv 196
+                 erlktl+addleklpgcnmivewtgnsf+gkvepgk+civ+rkg+ktylds+feide++fis+drgrdpetdehiwgsvagpf+fvrwasfadev++
+  KYC42119.1 100 ERLKTLTADDLEKLPGCNMIVEWTGNSFQGKVEPGKNCIVYRKGQKTYLDSDFEIDEHQFISRDRGRDPETDEHIWGSVAGPFYFVRWASFADEVTI 196
+                 ***********************************************************************************************86 PP
+
+>> KYC39670.1  chorismate mutase [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  105.2   0.0   3.7e-34   1.8e-30       2     188 ..       2     196 ..       1     198 [] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 105.2 bits;  conditional E-value: 3.7e-34
+        cpeS   2 thstdiatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed.r..ieienytvkeekkfygasr 97 
+                   s ++ tlar++  +f n+eqa+ +p ++ h+r+  r +pl   + v++f eqa   +l++pyr r+l+l e ++ +  ++ + y+ k+   + ga  
+  KYC39670.1   2 ILSQQLLTLARYLVGEFDNREQALADPAWYVHLRLWHRRVPLFEEDSVTIFAEQANIVQLDKPYRQRILRLTEGQNaHapLKAQYYMPKNPSALLGAGC 100
+                 5688899****************************************************************98665233367889999*********** PP
+
+        cpeS  98 dlerlktlkaddleklpgcnmive...wtgnsfkgkvepgka..civvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwa 188
+                 + + l+tl+ d+le lp c + v       +s+k    p  +  c  +  g +  +   fe  ++kf+s d+g dp t +  wg++ gp+++ +++
+  KYC39670.1 101 NPDLLNTLTPDQLELLPSCVLDVSqetLVSDSYKFAATPPINtlCSFTYGGSNIQVSLGFESTQDKFMSFDKGIDPITGKATWGAILGPYRYTKRE 196
+                 ********************9986222468999998887644238888999999*************************************98876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       192  (0.019538); expected 196.5 (0.02)
+Passed bias filter:                      162  (0.0164852); expected 196.5 (0.02)
+Passed Vit filter:                        16  (0.00162817); expected 9.8 (0.001)
+Passed Fwd filter:                         2  (0.000203521); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.08
+# Mc/sec: 7787.24
+//
+[ok]

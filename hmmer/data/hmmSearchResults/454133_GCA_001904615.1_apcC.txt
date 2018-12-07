@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.1e-50  166.1   0.7    2.2e-50  166.0   0.7    1.0  1  OKH12738.1  photosystem I reaction center subunit XII [Limnot
+      5e-05   20.8   0.0    0.00012   19.6   0.0    1.6  1  OKH17335.1  ferredoxin-NADP reductase [Limnothrix rosea IAM M
+     0.0088   13.6   0.2      0.057   11.0   0.1    2.1  2  OKH19767.1  photosystem I reaction center subunit XII [Limnot
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH12738.1  photosystem I reaction center subunit XII [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  166.0   0.7   1.9e-53   2.2e-50       1      66 [.       1      66 [.       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 166.0 bits;  conditional E-value: 1.9e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGl 66
+                mrmfk+tacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpg+ntGl
+  OKH12738.1  1 MRMFKVTACVPSQTRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIVKVELATGKPGANTGL 66
+                9****************************************************************9 PP
+
+>> OKH17335.1  ferredoxin-NADP reductase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.6   0.0     1e-07   0.00012      26      58 ..      46      75 ..      39      84 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 19.6 bits;  conditional E-value: 1e-07
+        apcC 26 yftklvpydnWfreqqrimkmGGkivkvelatG 58
+                +ft  vpy    +e  ri kmGGkiv ++ a G
+  OKH17335.1 46 FFT--VPYSRMSQEMNRIIKMGGKIVSIRPA-G 75
+                666..9********************99865.4 PP
+
+>> OKH19767.1  photosystem I reaction center subunit XII [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0      0.16   1.8e+02      10      31 ..     140     161 ..     133     169 .. 0.84
+   2 !   11.0   0.1   4.8e-05     0.057      31      53 ..     229     251 ..     221     255 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 0.16
+        apcC  10 vPsqtrirtqrelqntyftklv 31 
+                 vP    i tq  ++n  f + v
+  OKH19767.1 140 VPYPRTISTQTGFKNNTFNQTV 161
+                 8888899999999998887766 PP
+
+  == domain 2  score: 11.0 bits;  conditional E-value: 4.8e-05
+        apcC  31 vpydnWfreqqrimkmGGkivkv 53 
+                 v y++  r+ q i+kmGG i+ v
+  OKH19767.1 229 VNYKQLSRNIQSIQKMGGTILGV 251
+                 7899999*************988 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                        91  (0.0256917); expected 70.8 (0.02)
+Passed bias filter:                       84  (0.0237154); expected 70.8 (0.02)
+Passed Vit filter:                        11  (0.00310559); expected 3.5 (0.001)
+Passed Fwd filter:                         3  (0.000846979); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 7503.79
+//
+[ok]

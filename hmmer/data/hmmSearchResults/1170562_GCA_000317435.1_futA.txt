@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1170562_GCA_000317435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00038   17.9   0.0     0.0044   14.4   0.0    2.1  2  AFZ04502.1  extracellular solute-binding protein family 1 [Ca
+     0.0034   14.8   0.6       0.34    8.2   0.1    2.2  2  AFY99734.1  molybdenum ABC transporter, periplasmic molybdate
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ04502.1  extracellular solute-binding protein family 1 [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.4   0.0   1.6e-06    0.0044      18      82 ..      23      90 ..       1     119 [. 0.70
+   2 ?    1.1   0.0     0.018        49     273     296 ..     279     302 ..     267     317 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 14.4 bits;  conditional E-value: 1.6e-06
+        futA 18 lavavgqlgkinevsaqt..kqlnlyssrhyntdrrlydnftrqtgikinl.vegeadplierikseg 82
+                la +  +lg+i   s     + l lys  +y  d+ l   f rqtgi +   +    + ++ +ik+ g
+  AFZ04502.1 23 LAGCGWKLGNIRAASNTIsrDVLRLYSWTQYTDDKELIKTFIRQTGISLFAdLYDSNEIMLAKIKAGG 90
+                33344578999888876411569************************975313334455667777766 PP
+
+  == domain 2  score: 1.1 bits;  conditional E-value: 0.018
+        futA 273 liktapnresaikfleylssneaq 296
+                 ++ktapn + a  +++yl   e  
+  AFZ04502.1 279 IMKTAPNPDGAYAWINYLLQPEVS 302
+                 78***************9877654 PP
+
+>> AFY99734.1  molybdenum ABC transporter, periplasmic molybdate-binding protein [Calothrix sp. PCC 6303]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.2   0.1     0.001       2.8      10     116 ..       9     117 ..       1     129 [. 0.69
+   2 !    8.2   0.1   0.00012      0.34     272     301 ..     230     259 ..     180     262 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.001
+        futA  10 flgagtatlava.vgqlgki.nevsaqtkqlnlyssrhyntd..rrlydnftrqt.gikinlvegeadplieriksegrnspadilltvdagrlwradq 103
+                 f++a  a++ +a v ql      v+aq +   l s+     d    + +n+ ++t gi in   g +  l+++i+  g  + +di+++    ++   +q
+  AFY99734.1   9 FVSATMASFLLAiVFQLRVPsPIVTAQPNATLLVSTAASLKDamEEIRENYQQRTpGISINYNFGASGALMQQIQQ-G--ATSDIFISAAKKQVDTLEQ 104
+                 455555555555244554431357888888777776655444115788999876669*****************85.3..4579999999999999999 PP
+
+        futA 104 qgifapvnsrilt 116
+                  gi+      il+
+  AFY99734.1 105 SGIIVVDTRSILA 117
+                 9998765555654 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.00012
+        futA 272 gliktapnresaikfleylssneaqnffak 301
+                  ++k + n  +a +f++ylss+ea+ +f k
+  AFY99734.1 230 AVLKQSKNITAARQFIKYLSSEEAKAIFDK 259
+                 6789999*******************9987 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         5535  (1829740 residues searched)
+Passed MSV filter:                       113  (0.0204155); expected 110.7 (0.02)
+Passed bias filter:                       92  (0.0166215); expected 110.7 (0.02)
+Passed Vit filter:                        10  (0.00180668); expected 5.5 (0.001)
+Passed Fwd filter:                         2  (0.000361337); expected 0.1 (1e-05)
+Initial search space (Z):               5535  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 10703.98
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/197221_GCA_000011345.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desB  [M=345]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00047   16.5   1.0    0.00047   16.5   1.0    2.1  2  BAC08806.1  tlr1254 [Thermosynechococcus elongatus BP-1]
+  ------ inclusion threshold ------
+      0.012   11.8  10.4      0.029   10.6   0.8    2.6  2  BAC09452.1  beta-carotene hydroxylase [Thermosynechococcus el
+
+
+Domain annotation for each sequence (and alignments):
+>> BAC08806.1  tlr1254 [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.5   1.0   3.8e-07   0.00047      56     128 ..      47     119 ..      16     142 .. 0.81
+   2 ?    0.9   0.2     0.021        26     280     310 ..     255     285 ..     243     302 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 16.5 bits;  conditional E-value: 3.8e-07
+        desB  56 tyqinqawffplfwfmqgtmfwalfvvghdcghgsfsryrwlnnlighlshtpilvpfhgwrishrthhantg 128
+                 t   ++ w+     f+ gt + ++f   h+c h +    +wln+ ++ l+    +     +r  hr hh  t 
+  BAC08806.1  47 TQFGKHGWLAMPALFLCGTSLATMFATLHECSHRTAFASQWLNDAVAWLAGLLCFYNSDFYRRYHRWHHRYTQ 119
+                 444566788877899*******************9999************9999999999*********8875 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 0.021
+        desB 280 igthvahhifitiphyhlqeateairpvlgd 310
+                 +  h  hh++ +ip++ l +a   ++  lg 
+  BAC08806.1 255 MPYHTEHHLYPSIPFHSLGKAHTLLKSHLGH 285
+                 567999************9999999988885 PP
+
+>> BAC09452.1  beta-carotene hydroxylase [Thermosynechococcus elongatus BP-1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.6   0.8   2.4e-05     0.029      40     137 ..      27     122 ..       9     129 .. 0.78
+   2 ?    5.3   2.9   0.00094       1.2     280     309 ..     231     260 ..     137     272 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 10.6 bits;  conditional E-value: 2.4e-05
+        desB  40 ayfffdigiitllywityqinqawffplfwfmqgtmfwalfvvghdcghgsfsryrwlnnlighlshtpilvpfhgwrishrthhantgnidtdeswy 137
+                   ff   +i  l  w    ++  w   l ++ +   ++ +  v hd+ h    r+  +n ++gh s   +   f  +   h  hha + + + d  +y
+  BAC09452.1  27 VMFFAAFAIAILSTWGY--VQGHWPGGLSFVANMLALHLMGTVIHDASHNVAHRHPIMNAIMGHGSALMLGFVFPVFTRVHMQHHAHVNDPENDPDHY 122
+                 45555555555555543..3445666666655555566667899************************99999999*99*******998887777666 PP
+
+  == domain 2  score: 5.3 bits;  conditional E-value: 0.00094
+        desB 280 igthvahhifitiphyhlqeateairpvlg 309
+                    h+ hh++  ip y++q a  a++p+l 
+  BAC09452.1 231 QNYHLIHHLWPNIPWYKVQPAYYAVKPLLD 260
+                 456888999999999999999999988875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (345 nodes)
+Target sequences:                         2475  (774492 residues searched)
+Passed MSV filter:                        93  (0.0375758); expected 49.5 (0.02)
+Passed bias filter:                       57  (0.0230303); expected 49.5 (0.02)
+Passed Vit filter:                         7  (0.00282828); expected 2.5 (0.001)
+Passed Fwd filter:                         2  (0.000808081); expected 0.0 (1e-05)
+Initial search space (Z):               2475  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8906.66
+//
+[ok]

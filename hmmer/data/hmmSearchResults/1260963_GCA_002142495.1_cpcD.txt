@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1260963_GCA_002142495.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-23   81.3   0.2    1.5e-23   81.1   0.2    1.0  1  BAS63106.1  PYS1, Phycobilisome 9.7 kDa linker polypeptide, p
+      0.006   15.1   0.1      0.012   14.1   0.1    1.5  1  BAS64774.1  phycobilisome linker polypeptide [Leptolyngbya bo
+  ------ inclusion threshold ------
+      0.052   12.1   0.0      0.063   11.8   0.0    1.2  1  BAS64823.1  phycobilisome-associated family protein [Leptolyn
+
+
+Domain annotation for each sequence (and alignments):
+>> BAS63106.1  PYS1, Phycobilisome 9.7 kDa linker polypeptide, phycocyanin-associated, rod [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.1   0.2   7.3e-27   1.5e-23       5      72 ..       8      75 ..       4      77 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 81.1 bits;  conditional E-value: 7.3e-27
+        cpcD  5 ssakenrlfvyevvGlsqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsikplnaaa 72
+                s++ +nr+f+yev Gl qnd+t+n  y +r s +v  +vpy +mn +m++itr+G riv i+p   aa
+  BAS63106.1  8 SATADNRVFLYEVEGLRQNDQTENNSYPVRNSSTVTYAVPYRQMNAQMQKITRMGGRIVNIRPAGQAA 75
+                67789**********************************************************98776 PP
+
+>> BAS64774.1  phycobilisome linker polypeptide [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.1   0.1   5.7e-06     0.012      41      68 ..     259     286 .]     250     286 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 14.1 bits;  conditional E-value: 5.7e-06
+        cpcD  41 ltvpysrmnqemrritrlGarivsikpl 68 
+                 + +py  +   m+r+ r G +i si pl
+  BAS64774.1 259 VVIPYEELSAHMQRVQRQGGKIASITPL 286
+                 579***********************98 PP
+
+>> BAS64823.1  phycobilisome-associated family protein [Leptolyngbya boryana dg5]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.0     3e-05     0.063      41      65 ..      27      53 ..      16      58 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 3e-05
+        cpcD 41 lt..vpysrmnqemrritrlGarivsi 65
+                +t  vpy    +e +ri ++G +iv +
+  BAS64823.1 27 FTklVPYENWFKEQQRIQKMGGKIVKV 53
+                44449********************87 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         6348  (1955829 residues searched)
+Passed MSV filter:                       132  (0.020794); expected 127.0 (0.02)
+Passed bias filter:                      126  (0.0198488); expected 127.0 (0.02)
+Passed Vit filter:                        15  (0.00236295); expected 6.3 (0.001)
+Passed Fwd filter:                         3  (0.00047259); expected 0.1 (1e-05)
+Initial search space (Z):               6348  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4824.38
+//
+[ok]

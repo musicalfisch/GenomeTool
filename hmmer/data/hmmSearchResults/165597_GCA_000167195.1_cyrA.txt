@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/165597_GCA_000167195.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrA  [M=372]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.052   11.0   0.0       0.25    8.7   0.0    2.0  2  EAM48189.1  Conserved hypothetical protein 300 [Crocosphaera 
+
+
+Domain annotation for each sequence (and alignments):
+>> EAM48189.1  Conserved hypothetical protein 300 [Crocosphaera watsonii WH 8501]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.7   0.0   4.3e-05      0.25     249     362 ..     168     269 ..     161     273 .. 0.68
+   2 ?   -4.2   0.0      0.35   2.1e+03       7      44 ..     322     361 ..     319     365 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 4.3e-05
+        cyrA 249 hidssfmplapgkllvnpdyidvakipdifkswdiliapkpdivtggffnanasmcslwismnvlmldekrviiekhqetmirflkdhgfepipcpfmn 347
+                 h+d++f pla g ll  p   d        +  ++ ia +  iv       + +  ++ i+        + +i+++  e++ + l++ gfe +  p+ +
+  EAM48189.1 168 HLDTCFCPLAGGYLLYYPPAFDSYSN----RLIELRIAEEKRIVVEEPDAVKFACNAVNIN--------QNIIMNQISESLQQRLNNAGFEVVQTPLSE 254
+                 67777777777777777666665432....2334555555555554433322222223333........456777888999999*************** PP
+
+        cyrA 348 yapfggsfhcatldi 362
+                 +   gg+ +c tl +
+  EAM48189.1 255 FLKAGGAAKCLTLRV 269
+                 ************976 PP
+
+  == domain 2  score: -4.2 bits;  conditional E-value: 0.35
+        cyrA   7 qaekcstlnatvn.synewdpleevivgsld.navfppnh 44 
+                   e+ st  a v  s  + d +ee++   +d  av pp+ 
+  EAM48189.1 322 GIERQSTSAAQVRvSAPDHDVMEEIMTQLIDlGAVAPPQE 361
+                 5678888888886367799999999999998447777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (372 nodes)
+Target sequences:                         5958  (1632059 residues searched)
+Passed MSV filter:                       122  (0.0204767); expected 119.2 (0.02)
+Passed bias filter:                      103  (0.0172877); expected 119.2 (0.02)
+Passed Vit filter:                         4  (0.000671366); expected 6.0 (0.001)
+Passed Fwd filter:                         1  (0.000167842); expected 0.1 (1e-05)
+Initial search space (Z):               5958  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 10118.77
+//
+[ok]

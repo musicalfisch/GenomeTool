@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/103690_GCA_000009705.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaC  [M=220]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.2e-106  353.5   0.1   1.3e-106  353.4   0.1    1.0  1  BAB76878.1  O-methyltransferase [Nostoc sp. PCC 7120]
+     0.0034   15.3   0.0     0.0071   14.3   0.0    1.5  2  BAB74715.1  all3016 [Nostoc sp. PCC 7120]
+
+
+Domain annotation for each sequence (and alignments):
+>> BAB76878.1  O-methyltransferase [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  353.4   0.1  4.4e-110  1.3e-106       1     219 [.       1     219 [.       1     220 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 353.4 bits;  conditional E-value: 4.4e-110
+        AvaC   1 manqtlgldrqfysyyqsiclrespilaqlrqetasqplavmqiapeqgqfmaflvqaigakkaleigvftgysalvvalalppegkliacdlseeyts 99 
+                 m+ +tlg+  ++y y  s+ lre+ ilaqlrqeta qp+  mqiapeqgqfma+lvq +gakk+le+gvftgys+l+valalp egkl+acd++ee+t+
+  BAB76878.1   1 MTTRTLGITPNLYDYLLSVSLREPEILAQLRQETALQPMGRMQIAPEQGQFMALLVQLLGAKKTLEVGVFTGYSSLIVALALPAEGKLVACDINEEFTA 99 
+                 7889*********************************************************************************************** PP
+
+        AvaC 100 iarrywqqagvadkidlriapaletldkliaggesnsfdfvfidadksnydayyeralqlvrsggiiaidnvfwsgrvaaadstdnrtkiirslnakiq 198
+                 ia+rywq+agv +kidl +apaletldkl+ +ge+++fdf fidadksnyd yyer+lql+rsgg+iaidnv+wsg+va  + +dnrt+ ir++n k+ 
+  BAB76878.1 100 IAQRYWQKAGVDHKIDLYLAPALETLDKLLVAGEAETFDFAFIDADKSNYDNYYERSLQLIRSGGVIAIDNVLWSGKVADPEIQDNRTQKIRAFNHKLL 198
+                 *************************************************************************************************** PP
+
+        AvaC 199 qdervnisiipigdgltlamk 219
+                 qd+r+ +s+ipigdgltl  k
+  BAB76878.1 199 QDQRITLSLIPIGDGLTLVRK 219
+                 ******************876 PP
+
+>> BAB74715.1  all3016 [Nostoc sp. PCC 7120]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   0.0   2.3e-06    0.0071      71     121 ..      51     102 ..      22     121 .. 0.81
+   2 ?   -2.5   0.0      0.31   9.6e+02     184     201 ..     171     189 ..     149     204 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 2.3e-06
+        AvaC  71 tgysalvv.alalppegkliacdlseeytsiarrywqqagvadkidlriapa 121
+                 tg + + v      p+ +l+a d++e+   ia ++ qq+g+ ++i l +  a
+  BAB74715.1  51 TGTARIPVlICQKRPQWQLVAIDMAENMLQIATQHVQQSGLQEHIRLELVDA 102
+                 555544330345679******************************9988765 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.31
+        AvaC 184 dnrtkiir.slnakiqqde 201
+                 d + k+ r sl a +  de
+  BAB74715.1 171 DYQKKLFRdSLHAALTLDE 189
+                 3333444333444444443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (220 nodes)
+Target sequences:                         6132  (1969619 residues searched)
+Passed MSV filter:                       218  (0.0355512); expected 122.6 (0.02)
+Passed bias filter:                      174  (0.0283757); expected 122.6 (0.02)
+Passed Vit filter:                        17  (0.00277234); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000326158); expected 0.1 (1e-05)
+Initial search space (Z):               6132  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8666.32
+//
+[ok]

@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1980935_GCA_002251945.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnB  [M=112]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-69  228.4   6.3    3.4e-69  228.2   6.3    1.0  1  OYQ64710.1  transcriptional regulator [Pseudanabaena sp. SR41
+  ------ inclusion threshold ------
+      0.039   12.3   0.4       0.96    7.8   0.1    2.0  2  OYQ62225.1  putative toxin-antitoxin system toxin component, 
+
+
+Domain annotation for each sequence (and alignments):
+>> OYQ64710.1  transcriptional regulator [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  228.2   6.3   1.4e-72   3.4e-69       1     112 []       1     112 []       1     112 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 228.2 bits;  conditional E-value: 1.4e-72
+        glnB   1 mkkveaiirpfkldevkialvnagivgmtvsevrgfgrqkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgeigdgkifispveqv 99 
+                 mkkveaiirpfkldevkialvnag+vgmtvsevrgfgrqkgqteryrgseytveflqklk+eiv+ed+qvd+vvdk+i+aartgeigdgkif+spve++
+  OYQ64710.1   1 MKKVEAIIRPFKLDEVKIALVNAGVVGMTVSEVRGFGRQKGQTERYRGSEYTVEFLQKLKIEIVIEDDQVDMVVDKVITAARTGEIGDGKIFVSPVERI 99 
+                 9************************************************************************************************** PP
+
+        glnB 100 vrirtgekdleav 112
+                 +rirtgekdleav
+  OYQ64710.1 100 IRIRTGEKDLEAV 112
+                 ***********97 PP
+
+>> OYQ62225.1  putative toxin-antitoxin system toxin component, PIN family [Pseudanabaena sp. SR411]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.8   0.1   0.00038      0.96      39      86 ..      31      78 ..       8      85 .. 0.84
+   2 ?    3.4   0.1    0.0092        23      61      98 ..      82     120 ..      76     130 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.00038
+        glnB 39 qkgqteryrgseytveflqklkveivvedeqvdlvvdkiiaaartgei 86
+                + gq e     e   ef +kl ++    +e+ +l vd+i + +r   i
+  OYQ62225.1 31 KIGQIESVTCQEILDEFAEKLLLKFKFSEEKTQLAVDEIQKFSRIVTI 78
+                349999999******************************999998766 PP
+
+  == domain 2  score: 3.4 bits;  conditional E-value: 0.0092
+        glnB  61 veivvedeqvdlvvdkiiaaartgei.gdgkifispveq 98 
+                 +++v +d + d+v++  +a   t  i gd +i+  + +q
+  OYQ62225.1  82 LKVVPNDPDDDMVIECAVAGYATHIItGDKHILSLSQHQ 120
+                 5688899999******99998888773555555444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (112 nodes)
+Target sequences:                         5037  (1609668 residues searched)
+Passed MSV filter:                       150  (0.0297796); expected 100.7 (0.02)
+Passed bias filter:                      123  (0.0244193); expected 100.7 (0.02)
+Passed Vit filter:                         7  (0.00138972); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000397062); expected 0.1 (1e-05)
+Initial search space (Z):               5037  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6009.43
+//
+[ok]

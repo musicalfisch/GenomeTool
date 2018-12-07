@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1137096_GCA_001904745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysD  [M=241]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.4e-34  117.3   0.0    3.8e-34  117.1   0.0    1.0  1  OKH42796.1  phosphoadenosine phosphosulfate reductase [Caloth
+  ------ inclusion threshold ------
+      0.068   11.5   0.1      0.098   11.0   0.1    1.1  1  OKH53374.1  protein-(glutamine-N5) methyltransferase, release
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH42796.1  phosphoadenosine phosphosulfate reductase [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  117.1   0.0   9.4e-38   3.8e-34      11     240 ..       5     238 ..       1     239 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 117.1 bits;  conditional E-value: 9.4e-38
+        cysD  11 ttefdleqlnqkfetatpreilawsienistglvqtsafnvddliitdilysdlkhpvpvifldtlyhfretlelvakakevynldlkvyktpdvdtre 109
+                  t+fd+  l+ ++    preil +++e         s    +d+++ di  s++ +   v  ldt    +et +++   ++ y + ++v   pd    +
+  OKH42796.1   5 QTKFDVAALEAEYSQKSPREILKFALESFDNIA--ISFSGAEDVVLIDIA-SKITKDFRVFTLDTARLHPETYQFLEEVRKHYGIKIEVM-FPDAAEVQ 99 
+                 689************************988755..5555789******96.6788899******************************96.79**99** PP
+
+        cysD 110 afaakygealwdkdi.akfhevtkieplqrglaelntvawitgrrrdqa.vtranmpifelds......knrikvnplanwtrkksweyvaehgviynp 200
+                 a++   g   + +d   +   + k+ pl+r l+ l+  awitg+r+dq+  tr  +p++e d+      ++ ik nplanw+  + wey+   gv yn 
+  OKH42796.1 100 AMVEEKGMFSFYQDGhKECCGIRKVRPLRRKLNTLD--AWITGQRKDQSpGTRNGIPVIEKDGafstpdHELIKFNPLANWSSAQVWEYIRALGVPYNK 196
+                 ***999987766665156889*********998887..8*********846999*******97333333478*************************** PP
+
+        cysD 201 lhdqgypsigdepittkvgegederagrw..rgtgktecgih 240
+                 lh++g+ sig ep t  v   + er grw    +++ ecg+h
+  OKH42796.1 197 LHERGFISIGCEPCTRAVLPNQHEREGRWwwEEATQKECGLH 238
+                 ****************************8224567789**99 PP
+
+>> OKH53374.1  protein-(glutamine-N5) methyltransferase, release factor-specific [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.1   2.4e-05     0.098     127     175 ..      28      78 ..      12      96 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 2.4e-05
+        cysD 127 fhevtkieplqrglaelntvawitgrrrdqavtranmpifelds..knrik 175
+                   ev+ ++ l rg++ l+ +a   g  +dqa    ++ i eld+  ++r+k
+  OKH53374.1  28 DVEVAEVDWLLRGITALDGLALRLGSYKDQAQINIKLNIEELDAlwQKRLK 78 
+                 34789999***********************************84445555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (241 nodes)
+Target sequences:                         8148  (2613279 residues searched)
+Passed MSV filter:                       182  (0.0223368); expected 163.0 (0.02)
+Passed bias filter:                      147  (0.0180412); expected 163.0 (0.02)
+Passed Vit filter:                        11  (0.00135002); expected 8.1 (0.001)
+Passed Fwd filter:                         2  (0.000245459); expected 0.1 (1e-05)
+Initial search space (Z):               8148  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 10496.67
+//
+[ok]

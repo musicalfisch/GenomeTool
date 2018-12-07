@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1245935_GCA_000828075.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-39  134.9   0.0    1.6e-39  134.6   0.0    1.1  1  KIJ75602.1  ABC transporter substrate-binding protein [Tolypo
+  ------ inclusion threshold ------
+      0.025   12.2   0.0      0.041   11.5   0.0    1.4  1  KIJ74017.1  tRNA modification GTPase TrmE [Tolypothrix campyl
+
+
+Domain annotation for each sequence (and alignments):
+>> KIJ75602.1  ABC transporter substrate-binding protein [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  134.6   0.0   4.6e-43   1.6e-39      20     315 ..       5     293 ..       1     306 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 134.6 bits;  conditional E-value: 4.6e-43
+        futA  20 vavgqlgkinevsaqt..kqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlwradqqgifapvnsrilt 116
+                 +a   lg   e+saq+  k l +ys r  +  r l ++  ++ g+ i++  g++  l   +  eg+ns ad++ + dag l     +g    + +++l 
+  KIJ75602.1   5 IAAVLLGWGVEISAQAapKTLTIYSGREEKIMRPLIEKAEKDLGMDIEVRYGDSTELAIALLEEGKNSRADVFYAQDAGSLGAVATEGRTLALPTQLL- 102
+                 66677888899999975589********************************************************************9999888866. PP
+
+        futA 117 qripanlrhpkghwfgfskrlrvimynkdrvnprei.dsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcrglvanfarspqgndka 214
+                 +++  ++r p g+w+g+s r rvi yn   v+  e+  s  +lt+pkw+gkv   s +n   qsf + +  +qg+  + +w +g+ an a++  gn  a
+  KIJ75602.1 103 NKVDGQFRSPTGQWVGISGRARVIDYNTKLVKASELpTSVMQLTDPKWRGKV-GWSPTNGSFQSFVTAMRLMQGDQKTLEWLKGMKANDAKAYSGNS-A 199
+                 689********************************945889**********7.678999999*********************************95.8 PP
+
+        futA 215 qieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqnffakgnqeypvvrgva 313
+                  +ea+  g   l l n yyl  ++++      ai+         +   ga +n++g  +++t+ ++  a kf+ y+ s e qn++++   eyp+v+g++
+  KIJ75602.1 200 IVEALGRGEIALGLVNNYYLYRFTKNDPNFPVAIHH-------TRGDAGALINVAGLAVLNTTDQKSDAEKFVAYMLSPEVQNYLTQEFYEYPLVKGIS 291
+                 9*******************9998765444555554.......455789************************************************98 PP
+
+        futA 314 ld 315
+                 + 
+  KIJ75602.1 292 VS 293
+                 75 PP
+
+>> KIJ74017.1  tRNA modification GTPase TrmE [Tolypothrix campylonemoides VB511288]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.5   0.0   1.2e-05     0.041      74     130 ..     289     350 ..     259     389 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.2e-05
+        futA  74 lieri...ksegrnspad.illtvdagrlwradqqgifapvnsriltqrip.anlrhpkghw 130
+                  +e+i   +s  + s ad +llt+da   w a +q i+  v+ r l+  i   +l  p g  
+  KIJ74017.1 289 QVEKIgveRSRRTASAADlVLLTIDAQTGWTAADQEIYEQVQHRPLILVINkIDLASPEGVQ 350
+                 5566622234556788994589********************99888777525677777765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         6936  (2144437 residues searched)
+Passed MSV filter:                       173  (0.0249423); expected 138.7 (0.02)
+Passed bias filter:                      135  (0.0194637); expected 138.7 (0.02)
+Passed Vit filter:                        15  (0.00216263); expected 6.9 (0.001)
+Passed Fwd filter:                         2  (0.000288351); expected 0.1 (1e-05)
+Initial search space (Z):               6936  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.10u 0.01s 00:00:00.11 Elapsed: 00:00:00.11
+# Mc/sec: 6842.70
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrM.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1922337_GCA_001939115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrM  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.017   12.8   0.2      0.032   11.9   0.1    1.5  2  OLP17606.1  sodium:proton antiporter [Leptolyngbya sp. 'henso
+
+
+Domain annotation for each sequence (and alignments):
+>> OLP17606.1  sodium:proton antiporter [Leptolyngbya sp. 'hensonii']
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.6   0.0      0.35   1.8e+03      95     161 ..      60      70 ..      38      82 .. 0.54
+   2 ?   11.9   0.1   6.2e-06     0.032      12      61 ..     105     154 ..      96     179 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -3.6 bits;  conditional E-value: 0.35
+        cyrM  95 reevrgkigsfvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletl 161
+                  e+                                                        cr  +etl
+  OLP17606.1  60 VED--------------------------------------------------------CRKAIETL 70 
+                 233........................................................55555555 PP
+
+  == domain 2  score: 11.9 bits;  conditional E-value: 6.2e-06
+        cyrM  12 wltglsgagkstitealqakliaegysievldgdivrtnltkglgfsked 61 
+                   +g  g gkst+t  +   l   g  + ++d di   n    lg++k +
+  OLP17606.1 105 ITSGKGGVGKSTVTVNVAVALAQRGAKVGLIDADIYGPNTPTMLGLTKTQ 154
+                 456899*********************************99999999875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         5141  (1682713 residues searched)
+Passed MSV filter:                       191  (0.0371523); expected 102.8 (0.02)
+Passed bias filter:                      182  (0.0354017); expected 102.8 (0.02)
+Passed Vit filter:                        28  (0.00544641); expected 5.1 (0.001)
+Passed Fwd filter:                         1  (0.000194515); expected 0.1 (1e-05)
+Initial search space (Z):               5141  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 7740.48
+//
+[ok]

@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fraG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1851505_GCA_900088535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fraG  [M=329]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-05   21.4   1.1      0.005   13.3   0.7    2.8  2  SBO44738.1  Integral membrane protein, DUF6 [Cyanobium sp. NI
+     0.0095   12.4  14.8      0.017   11.6  14.8    1.4  1  SBO42396.1  Integral membrane protein, DUF6 [Cyanobium sp. NI
+
+
+Domain annotation for each sequence (and alignments):
+>> SBO44738.1  Integral membrane protein, DUF6 [Cyanobium sp. NIES-981]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    5.5   0.0   0.00072       1.2     257     317 ..      81     141 ..      58     151 .. 0.82
+   2 !   13.3   0.7     3e-06     0.005     112     168 ..     242     297 ..     179     298 .] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 5.5 bits;  conditional E-value: 0.00072
+        fraG 257 ghvlnnwgihligasraaiigatnpaltvvlaglaiqesltniqifgvclvtfsiallnye 317
+                 g  l    ++ +g+ r+    a  p lt   agl + e  +  q +g++l+++++ l+  +
+  SBO44738.1  81 GDSLFFAALRRLGTRRTLTFEAGGPGLTGAAAGLVLGEMPAPGQWLGIALISLALLLVARQ 141
+                 66666777888999************************************99988877655 PP
+
+  == domain 2  score: 13.3 bits;  conditional E-value: 3e-06
+        fraG 112 vllyisisfiptgiaitlfftypiftallawrlfndvpsllrwlvigltligtflti 168
+                  l  +++s +p+g+a++l+ t p+++ lla r+  d p    wl    +l+g +l +
+  SBO44738.1 242 ALQQLALSRLPAGLAVALLATAPVMAVLLA-RFEGDRPRAAGWLAAVSALVGVVLVV 297
+                 56678999****************999988.8999*****************99875 PP
+
+>> SBO42396.1  Integral membrane protein, DUF6 [Cyanobium sp. NIES-981]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6  14.8     1e-05     0.017     108     310 ..      78     278 ..      68     288 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1e-05
+        fraG 108 flylvllyisisfiptgiaitlfftypiftallawrlfndvpsllrwlvigltligtflti.pya.yggeqqtlvlgvstgiasgivyagytvfaqrsf 204
+                  l l  +y+++  +p   a  l + yp ftallaw  + +       l + +   g +l   p    gg      l v   +a  +  a   v  ++  
+  SBO42396.1  78 TLALFCVYVALMALPLASATVLQYLYPTFTALLAWLALGEPIGRRVVLAMVVGWAGVLLVAqPAPlSGGATPLEPLPVLVAVAGALATALAYVSVRKLG 176
+                 5778899****************************9888755444444455556677765414442455555557888888888777776666666666 PP
+
+        fraG 205 qrlhpvp..ftwisfattlilsilcliiwqphegnlpwlaitigsllsalftlaghvlnnwgihligasraaiigatnpaltvvlaglaiqesltniqi 301
+                 +  hp+   f +  +a  l l +++l    p   +l wla         lft  g+v    g+  + a+ra+ i   +  ++ +   l   e+l    i
+  SBO42396.1 177 RTEHPLVivFYFPLVAVPLSLPLVALDPVLPTPTELLWLAG------VGLFTQMGQVCLTRGLTALPAARATAISYVQVLFAGLWGWLLFAEALDGWTI 269
+                 6679865114555678888899999999999999*****94......369************************99998888888889999***99999 PP
+
+        fraG 302 fgvclvtfs 310
+                 +g  lv ++
+  SBO42396.1 270 LGALLVLLA 278
+                 999998764 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (329 nodes)
+Target sequences:                         3264  (918524 residues searched)
+Passed MSV filter:                       167  (0.0511642); expected 65.3 (0.02)
+Passed bias filter:                       77  (0.0235907); expected 65.3 (0.02)
+Passed Vit filter:                         9  (0.00275735); expected 3.3 (0.001)
+Passed Fwd filter:                         2  (0.000612745); expected 0.0 (1e-05)
+Initial search space (Z):               3264  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 7554.86
+//
+[ok]

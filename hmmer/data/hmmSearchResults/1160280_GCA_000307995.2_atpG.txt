@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160280_GCA_000307995.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.1e-93  306.0  13.4    7.9e-93  305.9  13.4    1.0  1  CCH95336.1  ATP synthase subunit b' [Microcystis aeruginosa P
+     0.0019   16.1   7.0     0.0026   15.7   7.0    1.1  1  CCH95337.1  ATP synthase subunit b [Microcystis aeruginosa PC
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH95336.1  ATP synthase subunit b' [Microcystis aeruginosa PCC 9432]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  305.9  13.4   3.3e-96   7.9e-93       1     143 []       1     143 []       1     143 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 305.9 bits;  conditional E-value: 3.3e-96
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelql+sarkqsqeiiaqaqaeaqklaservaaaqkea
+  CCH95336.1   1 MFDFDATLPVMALQFILLAVILNAVFYKPLSKVLDERAEYIRQTEGGAKEQLAKTEALVQEYELQLTSARKQSQEIIAQAQAEAQKLASERVAAAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                 iarkeavaaeiaqqkee+frslegqvaslsrqilekllgpelvr
+  CCH95336.1 100 IARKEAVAAEIAQQKEEVFRSLEGQVASLSRQILEKLLGPELVR 143
+                 *******************************************8 PP
+
+>> CCH95337.1  ATP synthase subunit b [Microcystis aeruginosa PCC 9432]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.7   7.0   1.1e-06    0.0026      17     137 ..      34     157 ..      21     162 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 15.7 bits;  conditional E-value: 1.1e-06
+        atpG  17 llavilna.vfy..kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaq 112
+                  l+++l   +fy  k l ++l er   i ++ + a ++   +   + e + +l+ a++++++ii +a++ a+ ++++  a a+ +    +e+ a +++ 
+  CCH95337.1  34 NLSILLGLvIFYgrKVLGQILGERQSKIAEALAEAEDRKNIAANALAEEQKKLALAKQEAEKIINNARSRAKTVTADIAAQAELDIQRMRESAAKDLSA 132
+                 4566665415666689*************99999988776655555666789*********************99998888888877789999999*99 PP
+
+        atpG 113 qkeeafrslegqvaslsrqilekll 137
+                 +++ ++  l  ++++l+   +e  l
+  CCH95337.1 133 EQDRVLVELRQRITALALANVESQL 157
+                 9999999999999998877666655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4760  (1306691 residues searched)
+Passed MSV filter:                       196  (0.0411765); expected 95.2 (0.02)
+Passed bias filter:                      108  (0.0226891); expected 95.2 (0.02)
+Passed Vit filter:                        13  (0.00273109); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420168); expected 0.0 (1e-05)
+Initial search space (Z):               4760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.02
+# Mc/sec: 9342.84
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1304833_GCA_000817785.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.028   12.6   0.0       0.17   10.1   0.0    1.9  2  KIF36066.1  sugar ABC transporter substrate-binding protein [
+       0.11   10.7   0.0        1.5    7.0   0.0    2.0  2  KIF28993.1  ABC transporter substrate-binding protein [Hassal
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF36066.1  sugar ABC transporter substrate-binding protein [Hassallia byssoidea VB512170]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0     0.044   2.3e+02      91     110 ..     178     197 ..     172     206 .. 0.87
+   2 ?   10.1   0.0   3.3e-05      0.17     255     308 ..     294     350 ..     287     365 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 0.044
+        futA  91 ltvdagrlwradqqgifapv 110
+                 ltvd     r dq+gif p+
+  KIF36066.1 178 LTVDKNGDGRIDQHGIFLPL 197
+                 899999999********997 PP
+
+  == domain 2  score: 10.1 bits;  conditional E-value: 3.3e-05
+        futA 255 ifpdqagrgahvnisgggl..iktapnre.saikfleylssneaqnffakgnqeypv 308
+                 +fp  +g      i g  l   kt+p++e +a kf+ey+ s+e q  +a g    pv
+  KIF36066.1 294 VFPIPVGERPATGIGGENLfvFKTTPEHEkAAFKFIEYVLSEEFQTEWAIGTGYLPV 350
+                 56777777777778777763369***9983579*************99999887776 PP
+
+>> KIF28993.1  ABC transporter substrate-binding protein [Hassallia byssoidea VB512170]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.4   0.0     0.014        71      23      81 ..      27      90 ..       9     109 .. 0.61
+   2 ?    7.0   0.0   0.00029       1.5     268     320 ..     317     370 ..     279     397 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 1.4 bits;  conditional E-value: 0.014
+        futA 23 gqlgkinev.saqtkqlnlyssrhynt..drr.lydnftrqtgikinlveg.eadplierikse 81
+                g +  i++v s q+  lnl  +           + d  +++ gi+in++eg +a  l+e + + 
+  KIF28993.1 27 GIILSIQQVlSQQAVVLNLLMTAPDAQpwKTGiVKDFEAKNPGIRINVIEGpNATNLLEDLYTS 90
+                555555554244555666654433222012221345557889********95678888877554 PP
+
+  == domain 2  score: 7.0 bits;  conditional E-value: 0.00029
+        futA 268 isgggliktapnresaikfleylssneaqnffakgnqeypvvrgvaldp.vlak 320
+                   g g+ k++   e a k ++y++s+eaq  f       p  r +  dp +lak
+  KIF28993.1 317 GWGLGIAKSSKHPEEAWKAIKYFTSEEAQRRFILNAGFVPSRRALFTDPeILAK 370
+                 4577899************************99988889999999888855676 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                        10181  (3132640 residues searched)
+Passed MSV filter:                       234  (0.022984); expected 203.6 (0.02)
+Passed bias filter:                      193  (0.0189569); expected 203.6 (0.02)
+Passed Vit filter:                        17  (0.00166978); expected 10.2 (0.001)
+Passed Fwd filter:                         2  (0.000196444); expected 0.1 (1e-05)
+Initial search space (Z):              10181  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.11u 0.01s 00:00:00.12 Elapsed: 00:00:00.12
+# Mc/sec: 9162.97
+//
+[ok]

@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/321327_GCA_000013205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-36  123.2  15.7    1.2e-36  123.0  15.7    1.0  1  ABD00256.1  ATP synthase F0, B' subunit [Synechococcus sp. JA
+     0.0094   13.1   8.3      0.014   12.6   8.3    1.4  1  ABC99898.1  conserved hypothetical protein [Synechococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABD00256.1  ATP synthase F0, B' subunit [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  123.0  15.7   8.9e-40   1.2e-36       1     139 [.      17     155 ..      17     157 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 123.0 bits;  conditional E-value: 8.9e-40
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp++a+qf+ll  +ln++fy p+++v+d r +yir t++ a+e+l k+ al ++ye ++  ar q+q++ia+a+a a ++ se++aaaq e 
+  ABD00256.1  17 LFDLDATLPIIAVQFLLLVAVLNSLFYEPVTRVIDSRNDYIRTTQAEAQERLDKAMALTRQYEAEIGQARLQAQQVIAEAEAAAARIRSEKLAAAQAEI 115
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgp 139
+                  a+ ea   +i q+k+ a+  l+ qv +++ qi ekllg+
+  ABD00256.1 116 QAKLEAARRQIEQEKQTALEQLQQQVDAIAAQITEKLLGS 155
+                 **************************************96 PP
+
+>> ABC99898.1  conserved hypothetical protein [Synechococcus sp. JA-3-3Ab]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   8.3     1e-05     0.014      52     120 ..      47     113 ..      25     142 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1e-05
+        atpG  52 laktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrs 120
+                 l  +e ++++ +  l+ a + +qei+a aq  a++l se     q  a a+ e +  +  qq ee+ r 
+  ABC99898.1  47 LEEAEEVLRQRDQILAEAHRYAQEIVAVAQRRAEQLVSESTILRQ--AQAQAEQLLRQTYQQSEEVRRQ 113
+                 4456667777788899***********************766554..4555677777778888887665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         2760  (826318 residues searched)
+Passed MSV filter:                       126  (0.0456522); expected 55.2 (0.02)
+Passed bias filter:                       69  (0.025); expected 55.2 (0.02)
+Passed Vit filter:                        10  (0.00362319); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000724638); expected 0.0 (1e-05)
+Initial search space (Z):               2760  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 5908.17
+//
+[ok]

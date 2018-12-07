@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.9e-71  236.3   2.2      1e-70  236.1   2.2    1.0  1  KYC35757.1  hypothetical protein WA1_08120 [Scytonema hofmann
+    1.6e-69  232.2  13.0    7.5e-68  226.8  13.0    2.0  1  KYC34870.1  hypothetical protein WA1_50035 [Scytonema hofmann
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC35757.1  hypothetical protein WA1_08120 [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  236.1   2.2     2e-74     1e-70       1     165 []       1     170 []       1     170 [] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 236.1 bits;  conditional E-value: 2e-74
+        copC   1 mkslkssllvvlsigllllaassnsntatndeas..skttt...aattavsstaaakakeeekekeeskGGqviesGayhlelvpekeangthldfylq 94 
+                 mkslks l++v++ig  +l+a+snsn+a+n+e+s  +++t+   +++ +v+++++a ak+ e++++es+GG ++e+Gayhle+vp kean thldfylq
+  KYC35757.1   1 MKSLKSKLIIVGTIGTFFLGACSNSNQAANSESStaQSQTSttsTSQPSVPTASPAAAKKTEHQHGESHGGTIVETGAYHLEFVPLKEANRTHLDFYLQ 99 
+                 9**************************998775511333330003333455667778888999999********************************* PP
+
+        copC  95 kGdnheavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 kG+nhea++nakvta vqlPdG+qk+++l+yda +khy+++l++ka+G+y+v +++di+G+kv+Grf+f+k
+  KYC35757.1 100 KGENHEAIPNAKVTALVQLPDGTQKTIPLTYDAGGKHYKGMLAEKATGQYQVRVTSDINGKKVDGRFTFNK 170
+                 *********************************************************************97 PP
+
+>> KYC34870.1  hypothetical protein WA1_50035 [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  226.8  13.0   1.5e-71   7.5e-68       1     165 []       1     181 []       1     181 [] 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 226.8 bits;  conditional E-value: 1.5e-71
+        copC   1 mkslkssllvvlsigllllaassnsntatndeass..........ktttaattavsstaaakakeeekekee......skGGqviesGayhlelvpeke 83 
+                 mk lk++ +v++s+gll+l+a+s+sn+atn+e ss          ++tta++ +++s+++++a++e++++++      s+GGqviesG+yhlelv++ke
+  KYC34870.1   1 MKFLKTGFIVLGSMGLLFLGACSGSNQATNSEGSStnsntqtaanTETTAKDGQAHSKNDGHAHNEKDGHSHdskngdSHGGQVIESGQYHLELVAQKE 99 
+                 8999**********************999876544111111111145666677788888888777666554322222389******************* PP
+
+        copC  84 angthldfylqkGdnheavsnakvtaqvqlPdGeqkaldlkydaadkhyaallpgkaaGeykvailtdidGekvnGrfsfkk 165
+                 a+gth+dfyl+kG+ he v+na+vtaq+qlPdG qk+l+l+yda++khy+a++p+kaaGeykvail+di+GekvnGrf+fk+
+  KYC34870.1 100 ADGTHMDFYLEKGEGHEGVTNANVTAQIQLPDGSQKSLPLTYDAKEKHYHAVFPEKAAGEYKVAILSDINGEKVNGRFTFKR 181
+                 ********************************************************************************97 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       350  (0.0356162); expected 196.5 (0.02)
+Passed bias filter:                      259  (0.026356); expected 196.5 (0.02)
+Passed Vit filter:                        43  (0.0043757); expected 9.8 (0.001)
+Passed Fwd filter:                         2  (0.000203521); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.01s 00:00:00.08 Elapsed: 00:00:00.07
+# Mc/sec: 7492.10
+//
+[ok]

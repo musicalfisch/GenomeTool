@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/glnN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1747196_GCA_001432185.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       glnN  [M=723]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-06   24.0   0.0    2.1e-06   23.6   0.0    1.1  1  KRH96005.1  glutamine synthetase [Cylindrospermopsis sp. CR12
+  ------ inclusion threshold ------
+      0.019   10.6   0.0      0.037    9.6   0.0    1.5  2  KRH95944.1  tRNA threonylcarbamoyladenosine biosynthesis prot
+
+
+Domain annotation for each sequence (and alignments):
+>> KRH96005.1  glutamine synthetase [Cylindrospermopsis sp. CR12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.6   0.0   1.4e-09   2.1e-06     255     396 ..     182     320 ..     168     343 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 23.6 bits;  conditional E-value: 1.4e-09
+        glnN 255 fddhyfgaipervqvfm.qeveerlyrlgipaktrhnevap.gqfeiapffeaanvasdhqqlimtllkstakkhgfvcllhekpfagingsgkhvnws 351
+                 f + yf   p      m  e+   + + g+p   +h eva  gq e+   f     a+d       ++k  a+k+g  + +  kp+ g ngsg h   s
+  KRH96005.1 182 FKEGYFPVPPTDTFHDMrTEMLLTMAKCGVPIEKQHHEVATgGQCELGFRFGKLIEAADWLMTYKYVIKNVARKYGKTVTFMPKPIFGDNGSGMHCHQS 280
+                 66667766665444333156777899*************97369****99*99999****999999******************************999 PP
+
+        glnN 352 vgnatqgnlldpgdtphanlqfllfcgavirgvhkygallravva 396
+                 + +  +g+ l  gd      ++ l+    i g+ k+ + l a+  
+  KRH96005.1 281 IWK--DGKPLFAGDKYAGMSDMGLY---YIGGILKHAPALLAITN 320
+                 975..56667777764433333333...35555566665555554 PP
+
+>> KRH95944.1  tRNA threonylcarbamoyladenosine biosynthesis protein TsaB [Cylindrospermopsis sp. CR12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.6   0.0   2.4e-05     0.037     396     455 ..      99     158 ..      79     175 .. 0.84
+   2 ?    2.3   0.0    0.0037       5.7      27      83 ..     142     200 ..     141     204 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 9.6 bits;  conditional E-value: 2.4e-05
+        glnN 396 atasndhrlganeappaiisvylgsqlekvfdqisqgriegsdapglmdlgvdtlpvfpk 455
+                  +a   h    n   pa i+v + +q  kvf  i q ++e+s+   l+   v tl  +  
+  KRH95944.1  99 LAAVAWHEKNQNSHLPATIAVEMPAQQGKVFGAIYQIDVEKSEIKALLADQVFTLEAWKE 158
+                 45667788899999*********************************9999999877665 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 0.0037
+        glnN  27 lealwatdvftlskmqaslpk..dvfksvkntiltggkldvsiasavaaamkdwatskg 83 
+                 ++al a +vftl   + +l    + +   ++ i++  +l v+++s++  a  dw   k 
+  KRH95944.1 142 IKALLADQVFTLEAWKETLNDypNNYPIEHELIRATSNLAVTVTSILHLAYLDWQQGKN 200
+                 57999********99999975335677788999*********************98875 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (723 nodes)
+Target sequences:                         3086  (1017841 residues searched)
+Passed MSV filter:                        75  (0.0243033); expected 61.7 (0.02)
+Passed bias filter:                       63  (0.0204148); expected 61.7 (0.02)
+Passed Vit filter:                         6  (0.00194426); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000648088); expected 0.0 (1e-05)
+Initial search space (Z):               3086  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 14717.98
+//
+[ok]

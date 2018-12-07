@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/56110_GCA_000317105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      7e-48  161.3   0.0    8.1e-48  161.1   0.0    1.0  1  AFY82803.1  putative thioesterase involved in non-ribosomal p
+  ------ inclusion threshold ------
+      0.026   12.0   0.0        2.8    5.4   0.0    2.2  2  AFY79836.1  putative hydrolase or acyltransferase of alpha/be
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY82803.1  putative thioesterase involved in non-ribosomal peptide biosynthesis [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  161.1   0.0   2.8e-51   8.1e-48       8     236 ..       6     234 ..       1     247 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 161.1 bits;  conditional E-value: 2.8e-51
+        anaA   8 tspwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslev 106
+                 ++pw +p  k  +  ++ lfcfp agag+ +f  w a +   i++  v++pgrenr+ ep  t    li+ l  ++ py++ pf +fghs+g++v++e+
+  AFY82803.1   6 ANPW-IPYSKPNNHANFRLFCFPYAGAGASIFCPWTAQLAPDIEVCPVQLPGRENRLSEPPFTDISSLIKALSTNLLPYCDRPFALFGHSVGALVAFEL 103
+                 5678.699******************************************************************************************* PP
+
+        anaA 107 ahqlgdrfgcfpqclvvsgrkpphipcdhrd.sqasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeade 204
+                 a+ l  +    p  l vsgr+ ph+ +      q  + ++i el    g p+++lq  elm + lpi radl + e y+y se  +  pi a+gg  d 
+  AFY82803.1 104 ARYLRRHDYPQPIYLFVSGREAPHLGVSSSPiHQLPEPEFIAELCRYNGMPDTLLQSSELMELFLPILRADLAINEIYDYSSETPFDYPISAFGGLDDA 202
+                 ****9888888999***********9987652788999************************************************************* PP
+
+        anaA 205 gvsleelrewekytqrgfklrsfpgghmylte 236
+                   + e l  w + t + f l  +pg h+++  
+  AFY82803.1 203 EATQESLEGWSQETLQEFTLMMVPGDHFFIKS 234
+                 ***************************99864 PP
+
+>> AFY79836.1  putative hydrolase or acyltransferase of alpha/beta superfamily [Oscillatoria acuminata PCC 6304]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.8   0.0    0.0015       4.3      89     133 ..      87     131 ..      26     145 .. 0.82
+   2 ?    5.4   0.0   0.00096       2.8     179     216 ..     203     241 ..     187     260 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.0015
+        anaA  89 spfvffghslgsvvslevahqlgdrfgcfpqclvvsgrkpphipc 133
+                   f+++g slg ++++e+a +  dr+  +  +   +  +  h p 
+  AFY79836.1  87 DRFLLLGWSLGGILAMELALRHPDRVTGLMLVATAARPRSSHPPI 131
+                 6799*********************98765544444444455555 PP
+
+  == domain 2  score: 5.4 bits;  conditional E-value: 0.00096
+        anaA 179 lheeyeyvse.kslpcpilalggeadegvsleelrewek 216
+                 l+  y+ +s+ + + cp l + gead  ++ +  re   
+  AFY79836.1 203 LRGGYNRLSDlEQITCPSLVMAGEADRHITADSSRETAD 241
+                 556677777635799**************9999998765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         5796  (2068426 residues searched)
+Passed MSV filter:                       140  (0.0241546); expected 115.9 (0.02)
+Passed bias filter:                      131  (0.0226018); expected 115.9 (0.02)
+Passed Vit filter:                        10  (0.00172533); expected 5.8 (0.001)
+Passed Fwd filter:                         2  (0.000345066); expected 0.1 (1e-05)
+Initial search space (Z):               5796  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 8721.86
+//
+[ok]

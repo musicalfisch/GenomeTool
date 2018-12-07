@@ -1,0 +1,64 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1164990_GCA_000613065.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    6.1e-07   27.8   0.0    6.1e-07   27.8   0.0    1.0  1  CDN12943.1  Nitrogen-fixing NifU-like [Richelia intracellular
+     0.0027   15.9   0.1     0.0038   15.4   0.1    1.2  1  CDN14307.1  Nitrogen-fixing NifU, C-terminal:Rieske [2Fe-2S] 
+
+
+Domain annotation for each sequence (and alignments):
+>> CDN12943.1  Nitrogen-fixing NifU-like [Richelia intracellularis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.8   0.0   1.6e-10   6.1e-07     246     293 ..       2      49 ..       1      57 [] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 27.8 bits;  conditional E-value: 1.6e-10
+        finU 246 ddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                 +d+++v+l + d+ ++k  l++a++s+ s+ ++l++ +e rl++ +  
+  CDN12943.1   2 SDGGNVELVELDGPIVKLRLQGACGSCPSSAMTLRMGIERRLREMIPE 49 
+                 58999*************************************998743 PP
+
+>> CDN14307.1  Nitrogen-fixing NifU, C-terminal:Rieske [2Fe-2S] region [Richelia intracellularis]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.4   0.1   9.8e-07    0.0038     187     295 ..      44     156 ..      40     160 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 15.4 bits;  conditional E-value: 9.8e-07
+        finU 187 iddiikdvkkesaatvrnslkkntase..laekklkrvlk.ivlkiklldevvdeelravliddeldvvl.ydvdkdllkvalksassstaslkvalki 281
+                 i  +ik+vk+es ++ r+  k +++    l ++  k+++    ++i+   ++v++ l++  +d+el  ++  d++++ l + + ++ +st +l   ++ 
+  CDN14307.1  44 ITRLIKSVKQESMTSLRHAVKDEVVYAvlLYHELIKPPKPpLEQRIQTALDEVRPGLKSHNGDVELVAIKpPDTVEVRLMGSCSNCPASTLTLYQGVEQ 142
+                 778999999999999998888777655113444555544312344445556789999999999999877635889999999999999999999999999 PP
+
+        finU 282 aledrlskdlvvel 295
+                 a++   ++   v +
+  CDN14307.1 143 AIKTHCREITRVIA 156
+                 99888777655555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         7768  (1173029 residues searched)
+Passed MSV filter:                       223  (0.0287075); expected 155.4 (0.02)
+Passed bias filter:                      192  (0.0247168); expected 155.4 (0.02)
+Passed Vit filter:                        24  (0.0030896); expected 7.8 (0.001)
+Passed Fwd filter:                         2  (0.000257467); expected 0.1 (1e-05)
+Initial search space (Z):               7768  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8797.72
+//
+[ok]

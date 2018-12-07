@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924287_GCA_001989455.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.5e-05   20.4   1.0    2.3e-05   19.8   1.0    1.2  1  AQL34667.1  hypothetical protein BS621_07795 [Prochlorococcus
+    0.00024   16.4   0.3     0.0086   11.3   0.0    2.1  2  AQL33384.1  lipid ABC transporter permease [Prochlorococcus s
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL34667.1  hypothetical protein BS621_07795 [Prochlorococcus sp. RS04]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.8   1.0   2.6e-08   2.3e-05      93     254 ..      75     232 ..      39     245 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 19.8 bits;  conditional E-value: 2.6e-08
+        cusB  93 isapmggflkdtellqgsrvrkgqsiarien.ldfiqiqqdyleaksqfelskadyerqqqladqnvnsaktlqqskatyttwqakysglaeklkvlgi 190
+                 i +p+gg +k+ ++ +g +v++g+ + +++  +   qiq   l+    +e  k      q++ d      k    sk  y     k +    klk+   
+  AQL34667.1  75 IKSPIGGTIKNIKVNEGQKVKNGEILIKLDSsIYQAQIQGLRLNVENLYESLKI----SQNILDIYETLFKEGAISKVDYLEK--KIAVQDIKLKLNQA 167
+                 889************************998625568999999999999997775....5788888888899999999999765..55555667876555 PP
+
+        cusB 191 stsgled.gnlkssinlyspidgyvte.vnvnrgkfvnptdvlfeivdtehlhaelivfekdvrkl 254
+                   s +e+   + +   l sp+dg v + +   +g  v   +vl++iv    l a++ + +kdv  l
+  AQL34667.1 168 -NSKIEEiKAMDARTRLSSPVDGVVFNlIPSSKGYAVTEGEVLLKIVPDGDLEAKVFLTNKDVGFL 232
+                 .55555516789999**********87357899*****************************9766 PP
+
+>> AQL33384.1  lipid ABC transporter permease [Prochlorococcus sp. RS04]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.2   0.1    0.0027       2.4     214     249 ..      79     114 ..      62     139 .. 0.78
+   2 !   11.3   0.0   9.6e-06    0.0086     205     266 ..     179     239 ..     155     290 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 3.2 bits;  conditional E-value: 0.0027
+        cusB 214 vtevnvnrgkfvnptdvlfeivdtehlhaelivfek 249
+                 + e+ vn g fv+  d+l    + e+l a+l   e+
+  AQL33384.1  79 IVEILVNEGDFVKKGDILAIFENGEKLIADLERNEN 114
+                 68999*************999999999999865554 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 9.6e-06
+        cusB 205 nlyspidgyvtevnvnrgkfvnptdvlfeivdtehlhaelivfekdvrklkigqkvrftlan 266
+                 +l spidg++  +n   g   +  + +++i  ++++ a + v+e d+ ++ i q+v ++  n
+  AQL33384.1 179 KLRSPIDGFILGINARVGERPQN-EGILDIGSSQKMEALIEVYESDIDRVFISQNVELSSEN 239
+                 689************99997654.56779**************************9987655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         1794  (495876 residues searched)
+Passed MSV filter:                        43  (0.0239688); expected 35.9 (0.02)
+Passed bias filter:                       26  (0.0144928); expected 35.9 (0.02)
+Passed Vit filter:                         4  (0.00222965); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111483); expected 0.0 (1e-05)
+Initial search space (Z):               1794  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6991.85
+//
+[ok]

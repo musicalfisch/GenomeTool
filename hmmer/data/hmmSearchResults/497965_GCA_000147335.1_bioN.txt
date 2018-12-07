@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/497965_GCA_000147335.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.1e-138  460.0  17.8   1.2e-138  459.8  17.8    1.0  1  ADN14749.1  cobalt transport protein [Cyanothece sp. PCC 7822
+    1.9e-07   29.2  11.6    6.8e-07   27.4  11.6    1.9  1  ADN14239.1  cobalt transport protein [Cyanothece sp. PCC 7822
+
+
+Domain annotation for each sequence (and alignments):
+>> ADN14749.1  cobalt transport protein [Cyanothece sp. PCC 7822]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  459.8  17.8  3.7e-142  1.2e-138       1     289 [.       1     294 [.       1     296 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 459.8 bits;  conditional E-value: 3.7e-142
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl++p+t lh+ld rvk+ wlm+flaapllanp wrl lvg+llllt +a ip rvwrqqmgwl+ l+i+vf+it++tpdgl+ s qp
+  ADN14749.1   1 MDLLRSLPIGLYLEKPVTWLHKLDPRVKLAWLMSFLAAPLLANPEWRLVLVGILLLLTAFAAIPTRVWRQQMGWLLALSILVFIITTLTPDGLATSSQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeeglnlppasdyq.....yvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfip 193
+                 r+p   lnlp  + y+     yvl d+  + +trrslel +r+stl+ftliystnl+llttapeeit gl++l+splrrf++pvtei ltltlslrfip
+  ADN14749.1 100 RFPSADLNLPQPTSYHyvvahYVLLDKFTFTITRRSLELGIRVSTLIFTLIYSTNLYLLTTAPEEITAGLDELMSPLRRFKIPVTEIVLTLTLSLRFIP 198
+                 **********988886222225789************************************************************************** PP
+
+        bioN 194 lvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 lvleevqnlar++rtrai+wqklgikrsl+vwl vve+lldnll+raeqi+iam++rgfts n+h+v wh l+l   d+ia+ +l+ fw  rl wg
+  ADN14749.1 199 LVLEEVQNLARSIRTRAINWQKLGIKRSLQVWLMVVERLLDNLLMRAEQISIAMDIRGFTSANEHRVEWHLLRLGRGDWIAMGILMLFWWGRLTWG 294
+                 ***********************************************************************************************9 PP
+
+>> ADN14239.1  cobalt transport protein [Cyanothece sp. PCC 7822]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   27.4  11.6   2.1e-10   6.8e-07     145     278 ..     129     260 ..       7     276 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 27.4 bits;  conditional E-value: 2.1e-10
+        bioN 145 iystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqi 243
+                 ++ t  +ll       t  +++++  l +  +p  +i + ++ +lrf pl+++e+q + +a r r + ++k+g+ + + v+ tv   l+ n + +++ +
+  ADN14239.1 129 MFKTLTMLLVIPLTIFTTDVNQMIVSLVKARIPY-KIVFIFSSTLRFFPLLFDEIQAIIQAQRLRGLAFEKMGLLKRIRVYATVAVPLILNAMTKSQTL 226
+                 4444444454444555788899999999999997.68889999******************************************************** PP
+
+        bioN 244 aiamevrgftspnqhqvrwhelklrwadfialfll 278
+                  + ++ + f+   q+    he  l  +d++ +   
+  ADN14239.1 227 EVVLQSKAFSGSSQRT-YLHESILSRTDYLIIGSC 260
+                 *********9988865.577777877887655444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         6642  (2154807 residues searched)
+Passed MSV filter:                       290  (0.0436615); expected 132.8 (0.02)
+Passed bias filter:                      146  (0.0219813); expected 132.8 (0.02)
+Passed Vit filter:                         8  (0.00120446); expected 6.6 (0.001)
+Passed Fwd filter:                         2  (0.000301114); expected 0.1 (1e-05)
+Initial search space (Z):               6642  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10450.81
+//
+[ok]

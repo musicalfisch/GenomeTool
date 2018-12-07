@@ -1,0 +1,73 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1641165_GCA_002075285.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.5e-09   33.6   0.4    6.9e-08   29.7   0.2    2.1  2  ASC70565.1  Copper-containing nitrite reductase [Halomicronem
+     0.0093   12.8   0.1      0.021   11.6   0.2    1.4  2  ASC71435.1  Methyltransferase domain protein [Halomicronema h
+
+
+Domain annotation for each sequence (and alignments):
+>> ASC70565.1  Copper-containing nitrite reductase [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.7   0.2   2.6e-11   6.9e-08      73     170 ..     110     199 ..     104     222 .. 0.87
+   2 !    1.9   0.0    0.0069        18     425     447 ..     264     286 ..     251     328 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 29.7 bits;  conditional E-value: 2.6e-11
+        cueA  73 yngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlhelvaeqvfgglggifvvr 170
+                  n ++pgp l a+ g+ v+i f n+  ++  lh+hg h       d     v  g+t  yef      p g   yh h+ e v+ ++  gl g+++v 
+  ASC70565.1 110 LNRRVPGPTLRAQAGERVRIIFHNQDGHSHSLHFHGTHPAAMDGID----PVRHGKTFIYEFD---AEPFGVHPYHCHI-EPVTRHIGKGLYGLLIVD 199
+                 5889**********************************76655555....6899********6...68**********9.678999999****99984 PP
+
+  == domain 2  score: 1.9 bits;  conditional E-value: 0.0069
+        cueA 425 hsfhlhtnpfqvisrngkpdpyq 447
+                  sfh+h+n fqv       +p q
+  ASC70565.1 264 ASFHIHANLFQVYPTGRTLEPSQ 286
+                 59*********987766666666 PP
+
+>> ASC71435.1  Methyltransferase domain protein [Halomicronema hongdechloris C2206]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.6   0.2   7.9e-06     0.021     426     483 ..       6      68 ..       2      74 .. 0.83
+   2 ?   -3.1   0.0      0.23     6e+02     392     422 ..     249     280 ..     244     286 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 7.9e-06
+        cueA 426 sfhlhtnpfqvisrngkpdpyqawedtlriranetv.....riripfrdftgktvyhchvldh 483
+                 sfh + n ++ +        ++aw++   i +n+ v     r  ipfrd   + vyh h+l+h
+  ASC71435.1   6 SFHTQRNQLEYLNIGCGHRFHHAWQNIDFISSNDKVspcdlRDGIPFRDSFFQVVYHSHLLEH 68 
+                 7999999999888888888899***********99844422445******************9 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.23
+        cueA 392 nnktfdmnrvdaavklgtiedwelvnvd..pdg 422
+                 nn  f +  v+ + k   i +we  n+d  pdg
+  ASC71435.1 249 NNCGF-IGIVQRTAKESYIPNWESFNLDtePDG 280
+                 55555.566888999999999999998744666 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         5269  (1545500 residues searched)
+Passed MSV filter:                       125  (0.0237237); expected 105.4 (0.02)
+Passed bias filter:                      113  (0.0214462); expected 105.4 (0.02)
+Passed Vit filter:                        10  (0.00189789); expected 5.3 (0.001)
+Passed Fwd filter:                         2  (0.000379579); expected 0.1 (1e-05)
+Initial search space (Z):               5269  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 12776.13
+//
+[ok]

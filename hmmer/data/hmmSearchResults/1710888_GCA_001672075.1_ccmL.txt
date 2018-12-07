@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmL.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710888_GCA_001672075.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmL  [M=100]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-56  187.0   0.6    1.7e-56  186.9   0.6    1.0  1  OBQ37638.1  carbon dioxide concentrating mechanism protein Cc
+     0.0072   14.8   0.0      0.043   12.3   0.0    2.1  2  OBQ35652.1  hypothetical protein AN487_15095 [Anabaena sp. CR
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ37638.1  carbon dioxide concentrating mechanism protein CcmL [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  186.9   0.6   7.5e-60   1.7e-56       1      98 [.       1      99 [.       1     100 [] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 186.9 bits;  conditional E-value: 7.5e-60
+        ccmL  1 mqiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaad.svgagvdewvlvsrgsaarqvlgneqrpldaavvaiidtvkvedrliyskkdq 98
+                mqia+vrgtv stqkdpslrgvkll+lqlvde+g+llp yevaad svgagv+ewvlvsrgsaarqvlgneqrpldaavvaiidt++vedr+iyskkdq
+  OBQ37638.1  1 MQIARVRGTVTSTQKDPSLRGVKLLMLQLVDENGNLLPVYEVAADnSVGAGVNEWVLVSRGSAARQVLGNEQRPLDAAVVAIIDTIYVEDRVIYSKKDQ 99
+                9*******************************************945***************************************************9 PP
+
+>> OBQ35652.1  hypothetical protein AN487_15095 [Anabaena sp. CRKS33]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0      0.24   5.5e+02      58      75 ..     302     319 ..     294     322 .. 0.76
+   2 !   12.3   0.0   1.9e-05     0.043       2      47 ..     361     406 ..     360     426 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.24
+        ccmL  58 srgsaarqvlgneqrpld 75 
+                  +g+a   + gn ++pld
+  OBQ35652.1 302 GQGTAIVSLDGNSNKPLD 319
+                 3567888899*******9 PP
+
+  == domain 2  score: 12.3 bits;  conditional E-value: 1.9e-05
+        ccmL   2 qiakvrgtvvstqkdpslrgvkllllqlvdeegkllpkyevaadsv 47 
+                 q+ k +g++ s q dp+      ll ql+ +e  + + y va d  
+  OBQ35652.1 361 QLLKTKGSILSCQFDPASPTLYCLLTQLISQEQYVEQPYLVAIDLK 406
+                 77899*************************************9964 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (100 nodes)
+Target sequences:                         4638  (1261469 residues searched)
+Passed MSV filter:                        96  (0.0206986); expected 92.8 (0.02)
+Passed bias filter:                       86  (0.0185425); expected 92.8 (0.02)
+Passed Vit filter:                         6  (0.00129366); expected 4.6 (0.001)
+Passed Fwd filter:                         2  (0.00043122); expected 0.0 (1e-05)
+Initial search space (Z):               4638  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 6307.35
+//
+[ok]

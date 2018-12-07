@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/feoA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/741277_GCA_000231365.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       feoA  [M=211]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00042   17.9   0.0    0.00042   17.9   0.0    1.1  1  EHC08892.1  FeoA family protein [Fischerella sp. JSC-11]
+     0.0016   16.0   0.3      0.004   14.7   0.3    1.8  1  EHC09716.1  FeoA family protein [Fischerella sp. JSC-11]
+     0.0048   14.4   0.3       0.01   13.4   0.2    1.5  2  EHC12072.1  histidine kinase [Fischerella sp. JSC-11]
+
+
+Domain annotation for each sequence (and alignments):
+>> EHC08892.1  FeoA family protein [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.9   0.0   2.7e-07   0.00042     151     205 ..      21      76 ..       3      79 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 17.9 bits;  conditional E-value: 2.7e-07
+        feoA 151 ralrgykgkllsmgltpgteftvirvaplgdpveirvr.gfhlslrkqeadalive 205
+                     g   +l +mg+  g +  v+r a l  p+ +rv    ++++r+ ead ++v+
+  EHC08892.1  21 VDEPGLLRRLEAMGFKIGQQVKVLRKAWLNGPLHVRVGlTTEVAMRRHEADGIVVN 76 
+                 55556777899**************************636789*********9996 PP
+
+>> EHC09716.1  FeoA family protein [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.7   0.3   2.6e-06     0.004      63     114 ..      29      78 ..       6      82 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 14.7 bits;  conditional E-value: 2.6e-06
+        feoA  63 qgtgginrllgmglnpgiqlqvissqprgsvliaiqdnrigigaemaekilv 114
+                 q    +n+++ +gl pg  + v   q    v+i +++ ri i  e+a +i v
+  EHC09716.1  29 QDEKILNQVISLGLTPGTYFTV--EQQFPNVVINLRQGRIKISKEIARNIYV 78 
+                 5555678888899999988877..4566678889999999999999988877 PP
+
+>> EHC12072.1  histidine kinase [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.4   0.2   6.5e-06      0.01      81     113 ..     150     182 ..     143     193 .. 0.86
+   2 ?   -2.4   0.0      0.44   6.7e+02      73      94 ..     194     215 ..     183     227 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 13.4 bits;  conditional E-value: 6.5e-06
+        feoA  81 qlqvissqprgsvliaiqdnrigigaemaekil 113
+                  +    sq++ svli iqdn +g+  ++ +ki+
+  EHC12072.1 150 TVSTSMSQNKNSVLIRIQDNGVGMSEQVRQKIF 182
+                 5566679******************99999986 PP
+
+  == domain 2  score: -2.4 bits;  conditional E-value: 0.44
+        feoA  73 gmglnpgiqlqvissqprgsvl 94 
+                 g gl   i  q++  + rg++ 
+  EHC12072.1 194 GTGLGLSIARQIVVEKHRGTLE 215
+                 4556666777777777777654 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (211 nodes)
+Target sequences:                         4627  (1420067 residues searched)
+Passed MSV filter:                       113  (0.0244219); expected 92.5 (0.02)
+Passed bias filter:                       96  (0.0207478); expected 92.5 (0.02)
+Passed Vit filter:                        10  (0.00216123); expected 4.6 (0.001)
+Passed Fwd filter:                         3  (0.000648368); expected 0.0 (1e-05)
+Initial search space (Z):               4627  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 7490.85
+//
+[ok]

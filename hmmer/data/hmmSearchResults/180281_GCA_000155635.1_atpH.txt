@@ -1,0 +1,67 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-48  160.9   7.7    1.3e-48  160.8   7.7    1.0  1  EDY39653.1  ATP synthase C chain [Cyanobium sp. PCC 7001]
+  ------ inclusion threshold ------
+      0.089   10.7  14.7       0.41    8.6   4.9    2.4  2  EDY38799.1  ATP synthase, subunit K [Cyanobium sp. PCC 7001]
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY39653.1  ATP synthase C chain [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.8   7.7   9.5e-52   1.3e-48       1      81 []       1      81 [.       1      81 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 160.8 bits;  conditional E-value: 9.5e-52
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                m  l++aasv+aaalavGlaaiGpgigqG+aagqaveGiarqpeaeGkirgtlllslafme+ltiyGlvvalvllfanpfa
+  EDY39653.1  1 MSDLTSAASVLAAALAVGLAAIGPGIGQGTAAGQAVEGIARQPEAEGKIRGTLLLSLAFMEALTIYGLVVALVLLFANPFA 81
+                78899***************************************************************************7 PP
+
+>> EDY38799.1  ATP synthase, subunit K [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   4.9   0.00029      0.41      17      74 ..      19      72 ..      12      76 .. 0.82
+   2 ?    7.5   2.2   0.00064      0.88      12      73 ..      86     143 ..      75     149 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.00029
+        atpH 17 vGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvl 74
+                v l+aiG +ig   a + a+  +       G+  g      a+  s++iyG+vv ++l
+  EDY38799.1 19 VALGAIGAAIGCTIAGQAAIGAMMEVNSGYGRFVGL----SALPSSMSIYGIVVMFIL 72
+                8899*******9988888888888877888887774....366789********9987 PP
+
+  == domain 2  score: 7.5 bits;  conditional E-value: 0.00064
+        atpH  12 aaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalv 73 
+                   ++  Gl+ +  +i qG  ++ a++G   +pe    i g  l   a +e ++++ +v alv
+  EDY38799.1  86 GLGVLSGLTFLLAAIYQGLCCASAISGSKSKPE----IFGLALAPAAIVEGFAVFAFVFALV 143
+                 55556688888999***************9999....67778889999**********9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                       198  (0.0714543); expected 55.4 (0.02)
+Passed bias filter:                       83  (0.0299531); expected 55.4 (0.02)
+Passed Vit filter:                         6  (0.00216528); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000721761); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 3330.35
+//
+[ok]

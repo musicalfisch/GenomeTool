@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/741277_GCA_000231365.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.3e-46  155.5   0.0    4.2e-46  155.2   0.0    1.0  1  EHC08489.1  Oleoyl-(acyl-carrier-protein) hydrolase [Fischere
+  ------ inclusion threshold ------
+      0.024   11.8   0.0       0.21    8.7   0.0    2.0  2  EHC10566.1  alpha/beta hydrolase fold protein [Fischerella sp
+
+
+Domain annotation for each sequence (and alignments):
+>> EHC08489.1  Oleoyl-(acyl-carrier-protein) hydrolase [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  155.2   0.0   1.8e-49   4.2e-46      10     235 ..      18     243 ..      11     254 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 155.2 bits;  conditional E-value: 1.8e-49
+        anaA  10 pwlvplgkhhqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevah 108
+                  wl+   k   + ++ lfcfp ag  + +fr w   +p++i++ a+ +pgr  rik p  t+   li  l   + p  + pf ffghs+g +vs+e+a 
+  EHC08489.1  18 SWLI-YPKPNPDAQIRLFCFPYAGGSANIFRHWSNHLPNTIEVCAIELPGRGMRIKLPPFTQLEPLITELASVLKPKLDKPFAFFGHSMGGLVSFELAL 115
+                 5665.3566778899************************************************************************************ PP
+
+        anaA 109 qlgdrfgcfpqclvvsgrkpphipcdhrdsqa.sdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegv 206
+                  l  ++g  p+ l vs ++ p++ + +   +   + ++i elr   gtp+a+l++ elm + +p+ rad+ + e y y  +  l  pi a+gg  d+ v
+  EHC08489.1 116 LLRKKYGINPNHLFVSAHRAPQLVAPKPPIHGlPEAEFIAELRRLNGTPQALLENDELMQLFIPLLRADFAVLETYVYTQQAPLNIPITAFGGLQDQEV 214
+                 *****************99999988777665516779************************************************************** PP
+
+        anaA 207 sleelrewekytqrgfklrsfpgghmylt 235
+                 s ++++ w++ t   f l+ fpg h++l 
+  EHC08489.1 215 SRDQIQAWQEQTSASFALHMFPGDHFFLH 243
+                 **************************996 PP
+
+>> EHC10566.1  alpha/beta hydrolase fold protein [Fischerella sp. JSC-11]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.7   0.0   9.1e-05      0.21      27     114 ..      40     127 ..      22     137 .. 0.77
+   2 ?    0.5   0.0     0.029        67     189     211 ..     247     269 ..     238     298 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 9.1e-05
+        anaA  27 fcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdli.eplvqeiypysqspfvffghslgsvvslevahqlgdrf 114
+                 + +   ga +  +r   a +    ++wa+ + g      +p +   gd+  + l + i        v++g slg   sl va q  d +
+  EHC10566.1  40 LLVHGFGASTDHWRKNIAQLRHDFEVWAIDLLGFGR-SAKPKLEYGGDVWrDQLYDFITEVIGQKAVLVGNSLGGYASLCVAAQRSDAV 127
+                 555567888999999999999**********99764.455666677776513455556666677889*****************99875 PP
+
+  == domain 2  score: 0.5 bits;  conditional E-value: 0.029
+        anaA 189 kslpcpilalggeadegvsleel 211
+                 k l c +l l gead  ++  e 
+  EHC10566.1 247 KQLTCHLLLLWGEADPWINARER 269
+                 889************98876553 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4627  (1420067 residues searched)
+Passed MSV filter:                       115  (0.0248541); expected 92.5 (0.02)
+Passed bias filter:                      112  (0.0242057); expected 92.5 (0.02)
+Passed Vit filter:                        12  (0.00259347); expected 4.6 (0.001)
+Passed Fwd filter:                         2  (0.000432246); expected 0.0 (1e-05)
+Initial search space (Z):               4627  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 8981.92
+//
+[ok]

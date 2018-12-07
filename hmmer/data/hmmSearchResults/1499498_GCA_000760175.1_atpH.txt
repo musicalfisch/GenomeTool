@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1499498_GCA_000760175.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-47  157.0   6.3    1.5e-47  156.9   6.3    1.0  1  KGG13482.1  ATP synthase C chain [Prochlorococcus sp. MIT 060
+     0.0064   13.8   0.0      0.015   12.7   0.0    1.6  1  KGG13488.1  Cytochrome c-type bioproteinsis protein Ccs1/ResB
+
+
+Domain annotation for each sequence (and alignments):
+>> KGG13482.1  ATP synthase C chain [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  156.9   6.3   1.6e-50   1.5e-47       1      81 []       1      81 [.       1      81 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 156.9 bits;  conditional E-value: 1.6e-50
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                md++++aasv+aa+lavGl+aiGpgigqG+aa+ aveGiarqpeaeGkirgtllls+afmesltiyGlvvalvllfanpfa
+  KGG13482.1  1 MDSITTAASVVAAGLAVGLGAIGPGIGQGSAAQGAVEGIARQPEAEGKIRGTLLLSFAFMESLTIYGLVVALVLLFANPFA 81
+                9*******************************************************************************7 PP
+
+>> KGG13488.1  Cytochrome c-type bioproteinsis protein Ccs1/ResB [Prochlorococcus sp. MIT 0601]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   1.6e-05     0.015      15      72 ..      22      79 ..      10      85 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.6e-05
+        atpH 15 lavGl.aaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvval 72
+                +a+ l ++iG +i qG++++  +e   + p   G i+g lllsl +    + y ++v l
+  KGG13488.1 22 FAIALtSTIGTAIPQGESTQSYIENYNKTPW-LGLIKGELLLSLQLNHVYSSYWFLVLL 79
+                45555257*********************97.6***********998888777766655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         1908  (498563 residues searched)
+Passed MSV filter:                        64  (0.033543); expected 38.2 (0.02)
+Passed bias filter:                       38  (0.0199161); expected 38.2 (0.02)
+Passed Vit filter:                         5  (0.00262055); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.00104822); expected 0.0 (1e-05)
+Initial search space (Z):               1908  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 4038.36
+//
+[ok]

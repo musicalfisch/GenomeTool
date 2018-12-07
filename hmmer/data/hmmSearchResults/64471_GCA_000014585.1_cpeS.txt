@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeS.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeS  [M=196]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-45  152.9   0.0    1.6e-45  152.6   0.0    1.0  1  ABI46022.1  Protein of unknown function (DUF1001) superfamily
+    7.1e-42  140.7   0.0    8.8e-42  140.4   0.0    1.0  1  ABI47049.1  conserved hypothetical protein [Synechococcus sp.
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI46022.1  Protein of unknown function (DUF1001) superfamily protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.6   0.0   1.1e-48   1.6e-45       7     194 ..       5     191 ..       1     192 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 152.6 bits;  conditional E-value: 1.1e-48
+        cpeS   7 iatlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveaed.rieienytvkeekkfygasrdlerlkt 104
+                 i  + + ++ ++snq+qaf+npp+fahi  ++r  p+e l+  s+++eq+y    ++pyrlrv++  e+ +  i++ n+t k  ++f  a+ d e+ kt
+  ABI46022.1   5 IGNFLKNLCGEYSNQKQAFDNPPLFAHI--FLRYKPIEHLQPGSILLEQTYAVDPKHPYRLRVIRAEEVTSgIIKLWNHTFKAPENFSSATFDDEQRKT 101
+                 5556677889*****************8..578888999*************************998866516899*********************** PP
+
+        cpeS 105 lkaddleklpgcnmivewtgnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwasfadev 194
+                 +k +dl  l  c   v    n+f g++epg  civ+r+gk+tyl s f ++ +++ +ldrg+dp+t e+ wgs+ag f+f r + +a+++
+  ABI46022.1 102 IKEEDLILLDHCHYQVRQLDNGFFGELEPGCRCIVHRNGKETYLVSSFHLEGDELTTLDRGHDPQTHERCWGSIAGEFHFQRISNWAENI 191
+                 *************************************************************************************99986 PP
+
+>> ABI47049.1  conserved hypothetical protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  140.4   0.0   6.1e-45   8.8e-42       9     189 ..       6     190 ..       2     196 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 140.4 bits;  conditional E-value: 6.1e-45
+        cpeS   9 tlarlmaadfsnqeqafenppffahirvcmrplplellsgvsffveqaydyllndpyrlrvlklveae...drieienytvkeekkfygasrdlerlkt 104
+                  +a+ ++  + n +q+ enp  fa i +++rplp ++++g +f+ eq ydy+  +pyr  + +l++++   +   +en+   +  ++ ga r  e l++
+  ABI47049.1   6 KFAQTISGIYDNFAQSQENPKDFARINIIFRPLPWKIFNGPGFYSEQHYDYAPWSPYRQGIHRLINHRelsNTFIMENFGCANPMRIAGAGRTPELLDS 104
+                 57888888999******************************************************98622267899*********************** PP
+
+        cpeS 105 lkaddleklpgcnmivewt.gnsfkgkvepgkacivvrkgkktyldsefeideekfisldrgrdpetdehiwgsvagpfefvrwas 189
+                 lk ++l+k  gc m  e    +++ g+vepgk c++ r g+ tyl se e+ ++ + s+drg dp+t+++iwgs  g + f + + 
+  ABI47049.1 105 LKKENLKKRCGCAMHFETKaDRKYIGSVEPGKKCMIPRDGQLTYLVSEVEVTQDSWTSRDRGYDPDTNKQIWGSEHGQLIFKKVED 190
+                 ***************997515789*****************************************************999987665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (196 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        39  (0.0134855); expected 57.8 (0.02)
+Passed bias filter:                       39  (0.0134855); expected 57.8 (0.02)
+Passed Vit filter:                         2  (0.000691563); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000691563); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.02
+# Mc/sec: 7393.43
+//
+[ok]

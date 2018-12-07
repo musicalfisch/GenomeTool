@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118163_GCA_000317025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrN  [M=518]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.4e-05   21.6   0.1     0.0062   12.8   0.0    3.6  4  AFY76974.1  tetratricopeptide repeat protein [Pleurocapsa sp.
+  ------ inclusion threshold ------
+      0.016   11.5   0.0      0.021   11.1   0.0    1.1  1  AFY77310.1  protein of unknown function (DUF1821) [Pleurocaps
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY76974.1  tetratricopeptide repeat protein [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.8   0.0   2.9e-06    0.0062     312     364 ..     190     241 ..     159     250 .. 0.73
+   2 ?   -0.4   0.0      0.03        65     326     360 ..     364     397 ..     340     405 .. 0.82
+   3 ?   -0.4   0.0     0.029        62     325     360 ..     522     556 ..     497     564 .. 0.82
+   4 !    2.7   0.0    0.0035       7.4     324     361 ..     680     716 ..     579     731 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 2.9e-06
+        cyrN 312 glelgdiladdrqylidlgllkrdplgglvianpiyrevlprvlvvgtqdslp 364
+                   e++   + ++  l+dlgl+  + +g l ++npiy +v+ r  v     sl 
+  AFY76974.1 190 FGEVPANNTPEQAELLDLGLVV-KYQGALQVSNPIYEKVIDRSWVEQELTSLQ 241
+                 444555555566789*****96.569******************999999885 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.03
+        cyrN 326 lidlgllkrdplgglvianpiyrevlprvlvvgtq 360
+                 l++lgl+  d +g l  an iy  v+ r  v    
+  AFY76974.1 364 LLNLGLITND-RGSLKAANRIYEAVFNRSWVEREL 397
+                 7899*99866.8**************999887655 PP
+
+  == domain 3  score: -0.4 bits;  conditional E-value: 0.029
+        cyrN 325 ylidlgllkrdplgglvianpiyrevlprvlvvgtq 360
+                  l++lgl+  d +g l  an iy  v+ r  v    
+  AFY76974.1 522 ELLNLGLITND-RGSLKAANRIYEAVFNRSWVEREL 556
+                 47899*99866.8**************999887655 PP
+
+  == domain 4  score: 2.7 bits;  conditional E-value: 0.0035
+        cyrN 324 qylidlgllkrdplgglvianpiyrevlprvlvvgtqd 361
+                   l++lgl+  d +g l +an iy  v+ r  v +  +
+  AFY76974.1 680 VELLNLGLITND-RGSLKVANRIYEAVFSRSWVESELA 716
+                 457899*99866.8****************99887665 PP
+
+>> AFY77310.1  protein of unknown function (DUF1821) [Pleurocapsa sp. PCC 7327]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.1   0.0   9.7e-06     0.021     229     325 ..      59     153 ..      50     173 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 9.7e-06
+        cyrN 229 gqiftpeaietafdltqgqpwlvnalakeivekmvkdrsiaitkehiltakeiliarqdthldslaeklrekrvkaiiep.ilaglelgdiladdrqy 325
+                  q f ++ +e+ fdltq       al ++++  + ++   ++t e    a   l++ ++  l+   + l ekr+++ii+   l g++l  +l++ +++
+  AFY77310.1  59 VQSFLEQLLEANFDLTQEVR---YALYQDVLWGVFQHSCPTLTTEDFKGAIVKLVSLKEKGLEECFNLLIEKRIRQIIKAaKLQGQSLEATLQNLKRM 153
+                 588999999********866...5999***************************************************862699****9998775543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (518 nodes)
+Target sequences:                         4268  (1345719 residues searched)
+Passed MSV filter:                       136  (0.031865); expected 85.4 (0.02)
+Passed bias filter:                      105  (0.0246017); expected 85.4 (0.02)
+Passed Vit filter:                         7  (0.00164011); expected 4.3 (0.001)
+Passed Fwd filter:                         2  (0.000468604); expected 0.0 (1e-05)
+Initial search space (Z):               4268  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.06
+# Mc/sec: 11618.04
+//
+[ok]

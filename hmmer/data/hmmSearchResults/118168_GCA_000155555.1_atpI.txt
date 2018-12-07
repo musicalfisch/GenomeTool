@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpI.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/118168_GCA_000155555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpI  [M=251]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   4.5e-143  474.0   8.9   5.2e-143  473.8   8.9    1.0  1  EDX74706.1  ATP synthase F0, A subunit [Coleofasciculus chtho
+     0.0021   16.5   0.7     0.0043   15.5   0.7    1.5  1  EDX77053.1  conserved hypothetical protein [Coleofasciculus c
+
+
+Domain annotation for each sequence (and alignments):
+>> EDX74706.1  ATP synthase F0, A subunit [Coleofasciculus chthonoplastes PCC 7420]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  473.8   8.9  1.3e-146  5.2e-143       5     243 ..       7     245 ..       3     246 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 473.8 bits;  conditional E-value: 1.3e-146
+        atpI   5 lnafnslplaelevghhfywqlgnlkihgqvfltswfviailvvaslaatrnvqripkgiqnlmeyalefirdlaknqlgekeyrpwvpfigtlflfif 103
+                 l ++n++plaelevg+h+yw++gnlk+hgqvf+tsw+viail++as+aatrn+qrip+g+qn+meyalef+rdlaknq+gekeyrpwvpf+gtlflfif
+  EDX74706.1   7 LAFYNAFPLAELEVGQHLYWHIGNLKVHGQVFITSWVVIAILIIASIAATRNIQRIPSGLQNFMEYALEFLRDLAKNQIGEKEYRPWVPFVGTLFLFIF 105
+                 7899*********************************************************************************************** PP
+
+        atpI 104 vsnwsgalipwkliklpsgelaaptndinttvalalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladelvvavlv 202
+                 v+nwsgal+pwkli+lp+gelaapt dinttva+alltslayfyag+sk+glgyf  y +ptp+llp  +ledftkplslsfrlfgniladelvvavlv
+  EDX74706.1 106 VANWSGALVPWKLIELPEGELAAPTSDINTTVAFALLTSLAYFYAGLSKKGLGYFAGYAQPTPILLPFKVLEDFTKPLSLSFRLFGNILADELVVAVLV 204
+                 *************************************************************************************************** PP
+
+        atpI 203 llvplfvplpvmalglftsaiqalvfatlagayihealegh 243
+                 llvplfvplpvmalglftsaiqal+fatla+ayi ea+e h
+  EDX74706.1 205 LLVPLFVPLPVMALGLFTSAIQALIFATLAAAYIGEAMEDH 245
+                 ***************************************98 PP
+
+>> EDX77053.1  conserved hypothetical protein [Coleofasciculus chthonoplastes PCC 7420]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.7     1e-06    0.0043     137     225 ..     138     228 ..     124     245 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 1e-06
+        atpI 137 lalltslayfyagfskrglgyfkkyieptpvllpiailedftkplslsfrlfgniladel.vvavlvllvplfvpl.pvmalglftsaiqa 225
+                  all +lay  agf      y  ++  p  +l  +a++  f +    +   fg  +ad + +v+ + ll  lf+ l pv+  gl +s+ + 
+  EDX77053.1 138 GALLFTLAYSTAGFFLLDRQYNVNFSLPGAILQTLAMFFTFDNAGMQANTRFGRFFADSIyLVGAVTLLTALFMLLrPVLLRGLPASSQER 228
+                 489****************************************99999999*******973688889999999987699999998887554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (251 nodes)
+Target sequences:                         8294  (2339939 residues searched)
+Passed MSV filter:                       244  (0.0294189); expected 165.9 (0.02)
+Passed bias filter:                      145  (0.0174825); expected 165.9 (0.02)
+Passed Vit filter:                        11  (0.00132626); expected 8.3 (0.001)
+Passed Fwd filter:                         2  (0.000241138); expected 0.1 (1e-05)
+Initial search space (Z):               8294  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 9788.74
+//
+[ok]

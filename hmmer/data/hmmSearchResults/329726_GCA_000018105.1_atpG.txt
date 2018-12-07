@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/329726_GCA_000018105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-42  143.6  10.0    1.8e-42  143.5  10.0    1.0  1  ABW25935.1  ATP synthase B' chain [Acaryochloris marina MBIC1
+  ------ inclusion threshold ------
+      0.013   14.2   0.4      0.026   13.3   0.4    1.4  1  ABW26392.1  Mg chelatase-like protein [Acaryochloris marina M
+       0.83    8.4  18.2       0.94    8.2  17.5    1.5  1  ABW25936.1  ATP synthase B chain, putative [Acaryochloris mar
+
+
+Domain annotation for each sequence (and alignments):
+>> ABW25935.1  ATP synthase B' chain [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  143.5  10.0   6.3e-46   1.8e-42       1     141 [.       1     141 [.       1     142 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 143.5 bits;  conditional E-value: 6.3e-46
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdf+ tlp+m +qf ll  +lnavf+kpl++ +der  +ir  ++ a+e+lak+++l ++ye +l+ +rkqsq+++a+aqaeaqk+a  +++ aqk+ 
+  ABW25935.1   1 MFDFNGTLPLMMFQFFLLVAVLNAVFFKPLTQAIDERDGFIRTNNTEARERLAKAKSLTEQYEQELAGTRKQSQQVLADAQAEAQKIAQTQITEAQKQV 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpel 141
+                  a      ae+  qk+ af  le qv +ls+qil+kllg+ l
+  ABW25935.1 100 QAEVMKAQAELESQKQSAFSELEKQVDTLSQQILNKLLGSTL 141
+                 ***************************************976 PP
+
+>> ABW26392.1  Mg chelatase-like protein [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.3   0.4   9.1e-06     0.026      58     135 ..     381     459 ..     370     464 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 13.3 bits;  conditional E-value: 9.1e-06
+        atpG  58 lvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaa..eiaqqkeeafrslegqvaslsrqilek 135
+                 l++  +lq++  r + +ei  q+q e      erv aa++ a  r ea +     aq + + +r    q+   +rq+le 
+  ABW26392.1 381 LMDRIDLQVAVNRLKPEEITRQSQGEESAPIRERVRAARHLATHRFEAESNlhSNAQMNSQQLRQW-CQLNDATRQLLET 459
+                 677889***************************************999765214566666677764.6888888998886 PP
+
+>> ABW25936.1  ATP synthase B chain, putative [Acaryochloris marina MBIC11017]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.2  17.5   0.00033      0.94      29     134 ..      52     157 ..      26     167 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.00033
+        atpG  29 plskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrslegqvas 127
+                  l   l +r e i  + + a  +  k+ a + e + +l+ a+ ++++i+a+aq++a k   + +a a+ e    k+a + + +  +e a+  +  +v++
+  ABW25936.1  52 FLGESLVKRREAIETAISEAEANQEKAAATLAEEQEKLAQAQAEAKKILANAQTNASKAKEQILAEAKTEIQRIKDAGSQDTSASQERAIAEIRQRVTA 150
+                 4778899999***99999999999999999999999*********************9766666666666666699**************999999998 PP
+
+        atpG 128 lsrqile 134
+                 ++ + +e
+  ABW25936.1 151 MALEKVE 157
+                 8766665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         8383  (2314269 residues searched)
+Passed MSV filter:                       268  (0.0319695); expected 167.7 (0.02)
+Passed bias filter:                      145  (0.0172969); expected 167.7 (0.02)
+Passed Vit filter:                        20  (0.00238578); expected 8.4 (0.001)
+Passed Fwd filter:                         3  (0.000357867); expected 0.1 (1e-05)
+Initial search space (Z):               8383  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 6618.81
+//
+[ok]

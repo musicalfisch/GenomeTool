@@ -1,0 +1,61 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1173020_GCA_000317145.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+       0.85    8.6   8.6       0.23   10.4   3.9    2.3  3  AFY92114.1  putative permease, DMT superfamily [Chamaesiphon 
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY92114.1  putative permease, DMT superfamily [Chamaesiphon minutus PCC 6605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.4   0.1     0.087   5.2e+02      63      73 ..     157     167 ..     104     201 .. 0.66
+   2 ?   -0.7   0.4      0.11   6.3e+02      41      41 ..     181     181 ..     146     229 .. 0.54
+   3 ?   10.4   3.9   3.8e-05      0.23      41     100 ..     220     278 ..     202     284 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: -0.4 bits;  conditional E-value: 0.087
+        emrC  63 vwaglgtvlia 73 
+                    glgtvli 
+  AFY92114.1 157 ATMGLGTVLIK 167
+                 33445555543 PP
+
+  == domain 2  score: -0.7 bits;  conditional E-value: 0.11
+        emrC  41 y 41 
+                 +
+  AFY92114.1 181 W 181
+                 2 PP
+
+  == domain 3  score: 10.4 bits;  conditional E-value: 3.8e-05
+        emrC  41 yglcltfltlalkkievsvaysvwaglgt.vliavigliwfresltlvklisialiiigvi 100
+                  g+++++    + k++ s + s + gl + v+ + ig +++++s+t ++li +a+++i ++
+  AFY92114.1 220 TGIAYALWFRGIDKLNASAV-S-YLGLMSpVVATLIGFVFLNQSFTPIQLIGMAIVLISIV 278
+                 34444444444555555532.3.3455550555579*********************9986 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         5945  (1793467 residues searched)
+Passed MSV filter:                       216  (0.0363331); expected 118.9 (0.02)
+Passed bias filter:                       85  (0.0142977); expected 118.9 (0.02)
+Passed Vit filter:                         5  (0.000841043); expected 5.9 (0.001)
+Passed Fwd filter:                         1  (0.000168209); expected 0.1 (1e-05)
+Initial search space (Z):               5945  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 4752.69
+//
+[ok]

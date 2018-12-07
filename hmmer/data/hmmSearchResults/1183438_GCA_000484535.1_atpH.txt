@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1183438_GCA_000484535.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    8.9e-43  142.8   6.9    9.5e-43  142.7   6.9    1.0  1  AGY58481.1  F0F1 ATP synthase subunit C [Gloeobacter kilaueen
+  ------ inclusion threshold ------
+        8.4    5.1  10.7      0.036   12.6   0.8    2.2  3  AGY60730.1  anhydro-N-acetylmuramic acid kinase [Gloeobacter 
+
+
+Domain annotation for each sequence (and alignments):
+>> AGY58481.1  F0F1 ATP synthase subunit C [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  142.7   6.9   4.2e-46   9.5e-43       3      80 ..       5      82 ..       1      83 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 142.7 bits;  conditional E-value: 4.2e-46
+        atpH  3 plvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                +++aaasvi a+lavGlaaiGpgigqG aa++a eGiarqpe eG+irgtlllslafmesltiyGl++a+vl+fanpf
+  AGY58481.1  5 SIIAAASVIGAGLAVGLAAIGPGIGQGIAASKAAEGIARQPEVEGRIRGTLLLSLAFMESLTIYGLLIAIVLIFANPF 82
+                69***************************************************************************9 PP
+
+>> AGY60730.1  anhydro-N-acetylmuramic acid kinase [Gloeobacter kilaueensis JS1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.6   0.8   1.6e-05     0.036      11      47 ..       1      36 [.       1      42 [. 0.92
+   2 ?   -3.1   0.6       1.3     3e+03      34      34 ..      83      83 ..      59     103 .. 0.55
+   3 ?   -3.5   0.1       1.7   3.8e+03       9      25 ..     362     378 ..     361     378 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.6e-05
+        atpH 11 iaaalavGlaaiGpgigqGnaagqaveGiarqpeaeG 47
+                +aaala+Gl + G ++   +aa  a+eG a qpe e 
+  AGY60730.1  1 MAAALAIGLMS-GTSLDGIDAALIAIEGSAEQPEVET 36
+                69*******87.9999999***************985 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 1.3
+        atpH 34 q 34
+                q
+  AGY60730.1 83 Q 83
+                1 PP
+
+  == domain 3  score: -3.5 bits;  conditional E-value: 1.7
+        atpH   9 sviaaalavGlaaiGpg 25 
+                 sv  aa av l+ + pg
+  AGY60730.1 362 SVSGAARAVLLGDVHPG 378
+                 67788889988888886 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         4507  (1419478 residues searched)
+Passed MSV filter:                       282  (0.0625693); expected 90.1 (0.02)
+Passed bias filter:                      137  (0.0303972); expected 90.1 (0.02)
+Passed Vit filter:                        12  (0.00266252); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000443754); expected 0.0 (1e-05)
+Initial search space (Z):               4507  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 3832.59
+//
+[ok]

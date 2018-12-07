@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/111781_GCA_000316605.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-08   32.0   0.0    1.9e-08   31.9   0.0    1.0  1  AFY39481.1  nitrogen-fixing NifU domain-containing protein [L
+      2e-06   25.2   0.4    3.7e-06   24.4   0.4    1.4  1  AFY37438.1  assimilatory nitrite reductase (NAD(P)H) large su
+    0.00023   18.5   1.4    0.00024   18.4   1.4    1.0  1  AFY38755.1  BFD domain protein (2Fe-2S)-binding domain protei
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY39481.1  nitrogen-fixing NifU domain-containing protein [Leptolyngbya sp. PCC 7376]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   31.9   0.0   1.3e-11   1.9e-08     238     291 ..      15      68 ..       2      77 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 31.9 bits;  conditional E-value: 1.3e-11
+        finU 238 eelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdl 291
+                 +elr+ l++d+++v+l + d+ ++k  l++a++s+ s+ ++l++ +e +l++ +
+  AFY39481.1  15 DELRPYLMADGGNVELVEIDGPIVKLRLQGACGSCPSSAMTLRMGIERKLREVI 68 
+                 579**********************************************99765 PP
+
+>> AFY37438.1  assimilatory nitrite reductase (NAD(P)H) large subunit precursor [Leptolyngbya sp. PCC 7376]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.4   0.4   2.7e-09   3.7e-06     141     210 ..     423     492 ..     416     537 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 24.4 bits;  conditional E-value: 2.7e-09
+        finU 141 GalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesaatvrnslkknt 210
+                  a +c+c  +s+  +   i +++lt+   v +   aG GcG c+  +  i+k+  k+   tv+n+l ++ 
+  AFY37438.1 423 TAQICSCNNVSKGDLISAIHDQELTDIGSVKKCTSAGTGCGGCVPLVTTIMKSEMKKMGLTVKNDLCEHF 492
+                 688**********************************************************999876654 PP
+
+>> AFY38755.1  BFD domain protein (2Fe-2S)-binding domain protein [Leptolyngbya sp. PCC 7376]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.4   1.4   1.7e-07   0.00024     143     199 ..       2      57 ..       1      63 [. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 18.4 bits;  conditional E-value: 1.7e-07
+        finU 143 lvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkesa 199
+                  vc c gi+e++ir  + e+  ++ +++++ +  G  cG+c     ++++++k+++ 
+  AFY38755.1   2 YVCICRGITEKQIREAVEEET-CSMQELSSVMGVGMDCGTCTEYACQLLEKMKQRNG 57 
+                 59************9876655.66778999***********9999999999888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         4228  (1410186 residues searched)
+Passed MSV filter:                       131  (0.0309839); expected 84.6 (0.02)
+Passed bias filter:                       96  (0.0227058); expected 84.6 (0.02)
+Passed Vit filter:                        13  (0.00307474); expected 4.2 (0.001)
+Passed Fwd filter:                         3  (0.000709555); expected 0.0 (1e-05)
+Initial search space (Z):               4228  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 10576.40
+//
+[ok]

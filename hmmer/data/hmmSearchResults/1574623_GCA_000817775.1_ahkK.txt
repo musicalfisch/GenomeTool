@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ahkK.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1574623_GCA_000817775.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ahkK  [M=298]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0039   14.9   0.3      0.084   10.5   0.1    2.1  2  KIF43658.1  hypothetical protein QQ91_04615, partial [Lyngbya
+
+
+Domain annotation for each sequence (and alignments):
+>> KIF43658.1  hypothetical protein QQ91_04615, partial [Lyngbya confervoides BDU141951]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    2.3   0.0    0.0043        26      34      60 ..       6      32 ..       2      38 .. 0.90
+   2 !   10.5   0.1   1.4e-05     0.084      17      60 ..     172     215 ..     162     236 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 2.3 bits;  conditional E-value: 0.0043
+        ahkK 34 kigtvsdilvddkghfryfvvdlglwi 60
+                 ig v d+l+  +g++  +vvd g  i
+  KIF43658.1  6 TIGEVGDVLITPEGQISAVVVDAGAVI 32
+                69********************99766 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 1.4e-05
+        ahkK  17 fagkdikgmgvyasvdekigtvsdilvddkghfryfvvdlglwi 60 
+                 ++  d+ g+ v+ + ++ ig v ++++ ++g + + +vd+g ++
+  KIF43658.1 172 LTAEDLEGVRVFGANNDWIGDVGELVISEDGRISHAIVDVGGFL 215
+                 6789************************************9664 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (298 nodes)
+Target sequences:                         6092  (1743458 residues searched)
+Passed MSV filter:                       125  (0.0205187); expected 121.8 (0.02)
+Passed bias filter:                      112  (0.0183848); expected 121.8 (0.02)
+Passed Vit filter:                         5  (0.000820749); expected 6.1 (0.001)
+Passed Fwd filter:                         1  (0.00016415); expected 0.1 (1e-05)
+Initial search space (Z):               6092  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 10391.01
+//
+[ok]

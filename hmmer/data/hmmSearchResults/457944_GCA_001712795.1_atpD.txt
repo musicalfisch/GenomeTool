@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/457944_GCA_001712795.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   5.9e-103  341.0   6.0   6.5e-103  340.9   6.0    1.0  1  ODH01352.1  F0F1 ATP synthase subunit delta [Nostoc sp. KVJ20
+  ------ inclusion threshold ------
+      0.041   12.3   0.0      0.046   12.1   0.0    1.1  1  ODG97902.1  hypothetical protein A4S05_11495 [Nostoc sp. KVJ2
+
+
+Domain annotation for each sequence (and alignments):
+>> ODH01352.1  F0F1 ATP synthase subunit delta [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  340.9   6.0  1.8e-106  6.5e-103       1     183 [.       1     183 [.       1     184 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 340.9 bits;  conditional E-value: 1.8e-106
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 m+s++a+aevaqpyaqallsiaqs+nltee+gedart+l+ll+++k+l+nf++npf+++enkk+++kq+lgeg+npylrnfll+lvd+rriafle+i+q
+  ODH01352.1   1 MTSQVAAAEVAQPYAQALLSIAQSKNLTEEFGEDARTFLGLLRADKQLHNFFSNPFIQSENKKALIKQILGEGSNPYLRNFLLVLVDKRRIAFLESIFQ 99 
+                 89************************************************************************************************* PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qylallrqlnqtvlaev savplteaqqqa++ekvia+t+arqvelet +ds+liggviikvgsqvidas+rgqlrrlslrl+ 
+  ODH01352.1 100 QYLALLRQLNQTVLAEVISAVPLTEAQQQAITEKVIAITNARQVELETNVDSELIGGVIIKVGSQVIDASIRGQLRRLSLRLTN 183
+                 **********************************************************************************96 PP
+
+>> ODG97902.1  hypothetical protein A4S05_11495 [Nostoc sp. KVJ20]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   0.0   1.3e-05     0.046     138     180 ..      13      57 ..       2      60 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 1.3e-05
+        atpD 138 tkarqveletkidsdliggv..iikvgsqvidaslrgqlrrlslr 180
+                 t+a +ve+++++ds+l+  +  +    s+vi+ ++r  lr   lr
+  ODG97902.1  13 TRADKVEIAVRLDSELLEQIqhLTNDPSKVIEVAIRQWLRGEILR 57 
+                 8999*************9874456778*********999976665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         7210  (2327490 residues searched)
+Passed MSV filter:                       266  (0.0368932); expected 144.2 (0.02)
+Passed bias filter:                      163  (0.0226075); expected 144.2 (0.02)
+Passed Vit filter:                         7  (0.000970874); expected 7.2 (0.001)
+Passed Fwd filter:                         2  (0.000277393); expected 0.1 (1e-05)
+Initial search space (Z):               7210  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 8565.16
+//
+[ok]

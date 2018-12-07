@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1880902_GCA_001698445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0004   18.6   4.4     0.0004   18.6   4.4    1.4  2  OCQ91771.1  EamA-like transporter family protein [Limnothrix 
+
+
+Domain annotation for each sequence (and alignments):
+>> OCQ91771.1  EamA-like transporter family protein [Limnothrix sp. P13C2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.5   0.0      0.78   2.9e+03      11      18 ..      12      19 ..       6      28 .. 0.53
+   2 !   18.6   4.4   1.1e-07    0.0004      38     104 ..      55     120 ..      30     122 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -3.5 bits;  conditional E-value: 0.78
+        emrC 11 ailfevsg 18
+                +i+  v+g
+  OCQ91771.1 12 SIVASVVG 19
+                33333333 PP
+
+  == domain 2  score: 18.6 bits;  conditional E-value: 1.1e-07
+        emrC  38 fvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigvigins 104
+                 +++ygl+     l l ++++s+a     +l  v+   ig++ f esl + +l+ + li+ gv+ + s
+  OCQ91771.1  55 LTAYGLGAIAYILLLTRVKLSIAAPSV-SLIYVFTVLIGVVAFGESLPIARLVGVGLIMTGVVLVAS 120
+                 5789**9999999*********97654.566788889*************************98765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         3672  (1209182 residues searched)
+Passed MSV filter:                       109  (0.0296841); expected 73.4 (0.02)
+Passed bias filter:                       55  (0.0149782); expected 73.4 (0.02)
+Passed Vit filter:                         8  (0.00217865); expected 3.7 (0.001)
+Passed Fwd filter:                         1  (0.000272331); expected 0.0 (1e-05)
+Initial search space (Z):               3672  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 6408.66
+//
+[ok]

@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/388467_GCA_000710505.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.1e-52  173.7  14.2    4.7e-52  173.5  14.2    1.0  1  KEI66111.1  ATP synthase chain b [Planktothrix agardhii NIVA-
+    4.6e-05   21.2  10.2    5.9e-05   20.9  10.2    1.1  1  KEI66112.1  AtpF [Planktothrix agardhii NIVA-CYA 126/8]
+
+
+Domain annotation for each sequence (and alignments):
+>> KEI66111.1  ATP synthase chain b [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  173.5  14.2   2.2e-55   4.7e-52       1     143 []      18     160 .]      18     160 .] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 173.5 bits;  conditional E-value: 2.2e-55
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 +fd+datlp+ma+qf++laviln vfykpl k +dera+yir+ e  ake+lak+e l  +yel+l+ +rk++q ii +aqaeaqk+as +v  a +ea
+  KEI66111.1  18 LFDLDATLPLMAVQFLVLAVILNQVFYKPLGKAIDERADYIRENEVNAKERLAKAEKLAHQYELELAETRKKAQAIIVKAQAEAQKIASGKVGEALQEA 116
+                 69************************************************************************************************* PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                    +e  a ei q+k++a+++le qv  lsrqilekllg+elvr
+  KEI66111.1 117 QKLREIAAQEIEQEKQQALQALEQQVEPLSRQILEKLLGAELVR 160
+                 *******************************************8 PP
+
+>> KEI66112.1  AtpF [Planktothrix agardhii NIVA-CYA 126/8]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.9  10.2   2.8e-08   5.9e-05      17     137 ..      32     152 ..      19     157 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 20.9 bits;  conditional E-value: 2.8e-08
+        atpG  17 llavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqke 115
+                 +l v+l       l k+l+er   i ++   a ++  +++a + e + +l+ a+ ++q i+++a+  a+ +    +a a  +    k + +ae+  ++e
+  KEI66112.1  32 ILIVVLVYFGRGFLGKILNERRSTIEEAIKEAEQRQQQAQASLAEQQQKLTVAQTDAQRILTEAEERAKTVRDSILAKATEDVERMKATASAELDSDRE 130
+                 33334433333569**************99999999999*************************9998877776666666555555666779******* PP
+
+        atpG 116 eafrslegqvaslsrqilekll 137
+                  ++  l  q+a+ + ++ e  l
+  KEI66112.1 131 RVISQLRSQIATQAIELAESQL 152
+                 ***********98877777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4191  (1395461 residues searched)
+Passed MSV filter:                       143  (0.0341207); expected 83.8 (0.02)
+Passed bias filter:                       84  (0.0200429); expected 83.8 (0.02)
+Passed Vit filter:                         7  (0.00167025); expected 4.2 (0.001)
+Passed Fwd filter:                         2  (0.000477213); expected 0.0 (1e-05)
+Initial search space (Z):               4191  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6651.70
+//
+[ok]

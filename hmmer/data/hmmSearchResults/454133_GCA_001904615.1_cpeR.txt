@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpeR.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454133_GCA_001904615.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpeR  [M=101]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-61  202.1   0.1      2e-61  202.0   0.1    1.0  1  OKH19764.1  CpeR family transcriptional regulator [Limnothrix
+      0.008   13.9   0.1      0.062   11.1   0.0    2.1  2  OKH11241.1  23S rRNA (adenine(2503)-C(2))-methyltransferase [
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH19764.1  CpeR family transcriptional regulator [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  202.0   0.1   1.1e-64     2e-61       1     100 [.       1     100 [.       1     101 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 202.0 bits;  conditional E-value: 1.1e-64
+        cpeR   1 mlppvaekklqawirsrhlicsgnffifetldysaierfeecvkslggtlisvepkkkvwlgnhrqvilyqakaslhtphhelkqywlkygsfktrfde 99 
+                 mlppva+kk++awirsrhlicsgnff+fetldys+ierfeecv+slggtlisv+p+k+vw+g+hr+++lyqakaslhtphhelkqyw+k+gsfk+rfde
+  OKH19764.1   1 MLPPVASKKMKAWIRSRHLICSGNFFVFETLDYSTIERFEECVESLGGTLISVDPLKRVWIGTHRRILLYQAKASLHTPHHELKQYWYKKGSFKSRFDE 99 
+                 9*************************************************************************************************9 PP
+
+        cpeR 100 r 100
+                 +
+  OKH19764.1 100 S 100
+                 6 PP
+
+>> OKH11241.1  23S rRNA (adenine(2503)-C(2))-methyltransferase [Limnothrix rosea IAM M-220]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.1   0.0   3.5e-05     0.062      18      85 ..      85     152 ..      74     160 .. 0.87
+   2 ?    0.1   0.0     0.095   1.7e+02      56      86 ..     200     227 ..     172     238 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 11.1 bits;  conditional E-value: 3.5e-05
+        cpeR  18 hlicsgnffifetldysaierfeecvkslggtlisvepkkkvwlgnhrqvilyqakaslhtphhelkq 85 
+                 +l+   + +i+et+   + +r++ cv+s  g+ ++ e      +g  r++  y++  ++ t + +++q
+  OKH11241.1  85 YLLKLHDGLIIETVGIPTEKRLTVCVSSQVGCAMACEFCATGKMGFTRHLQAYEILDQVLTVQEDFRQ 152
+                 566667789******************************99999999999999988888887777777 PP
+
+  == domain 2  score: 0.1 bits;  conditional E-value: 0.095
+        cpeR  56 kkkvwlgnhrqvilyqakaslhtphhelkqy 86 
+                 k +    +h qv +     slh+p+ +l++ 
+  OKH11241.1 200 KIRALAEEHLQVTF---AVSLHAPNQDLRET 227
+                 55555555666543...579******99976 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (101 nodes)
+Target sequences:                         3542  (1119968 residues searched)
+Passed MSV filter:                        79  (0.0223038); expected 70.8 (0.02)
+Passed bias filter:                       70  (0.0197628); expected 70.8 (0.02)
+Passed Vit filter:                         8  (0.00225861); expected 3.5 (0.001)
+Passed Fwd filter:                         2  (0.000564653); expected 0.0 (1e-05)
+Initial search space (Z):               3542  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5655.84
+//
+[ok]

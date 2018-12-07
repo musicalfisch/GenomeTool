@@ -1,0 +1,65 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/940191_GCA_001858125.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.9e-109  361.0   3.6   2.1e-109  360.8   3.6    1.0  1  OHY33633.1  F0F1 ATP synthase subunit delta [Cylindrospermops
+  ------ inclusion threshold ------
+      0.024   11.8   0.0      0.028   11.6   0.0    1.0  1  OHY31725.1  hypothetical protein BCV64_14535 [Cylindrospermop
+
+
+Domain annotation for each sequence (and alignments):
+>> OHY33633.1  F0F1 ATP synthase subunit delta [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  360.8   3.6  1.4e-112  2.1e-109       1     184 []       1     184 []       1     184 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 360.8 bits;  conditional E-value: 1.4e-112
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mks+aataevaqpyaqalls+a+++nltee+g+dartl+sl++gs elqnfldnpf++penkkn+lkqllge+vnpylrnf+lllvdrrri+fle+ilq
+  OHY33633.1   1 MKSNAATAEVAQPYAQALLSVAKANNLTEEFGTDARTLISLISGSGELQNFLDNPFIQPENKKNLLKQLLGESVNPYLRNFILLLVDRRRISFLEPILQ 99 
+                 9************************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlssn 184
+                 qy++llr+l+qtvlaev+sa+plt++q+q+v+ekvi++tkar+ve+etkid+dliggv+ikvgsqvidaslrgqlrrlslrl+s+
+  OHY33633.1 100 QYISLLRELTQTVLAEVSSAIPLTDEQIQTVREKVISITKAREVEIETKIDTDLIGGVVIKVGSQVIDASLRGQLRRLSLRLTSG 184
+                 ***********************************************************************************95 PP
+
+>> OHY31725.1  hypothetical protein BCV64_14535 [Cylindrospermopsis raciborskii MVCC14]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   1.8e-05     0.028     138     175 ..      13      52 ..       7      57 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 1.8e-05
+        atpD 138 tkarqveletkidsdliggv..iikvgsqvidaslrgqlr 175
+                 t+a ++e++ ++ds+li  +  +    s+vi+ ++r  lr
+  OHY31725.1  13 TNAEKIEIALRLDSELIAQIqhLTNDPSKVIEVAIRQWLR 52 
+                 89***************99844567789******998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3057  (989589 residues searched)
+Passed MSV filter:                       126  (0.0412169); expected 61.1 (0.02)
+Passed bias filter:                       80  (0.0261694); expected 61.1 (0.02)
+Passed Vit filter:                         8  (0.00261694); expected 3.1 (0.001)
+Passed Fwd filter:                         2  (0.000654236); expected 0.0 (1e-05)
+Initial search space (Z):               3057  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6069.48
+//
+[ok]

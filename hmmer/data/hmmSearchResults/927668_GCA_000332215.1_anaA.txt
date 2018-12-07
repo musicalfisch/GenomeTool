@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/927668_GCA_000332215.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaA  [M=253]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      6e-48  161.3   0.0    7.5e-48  161.0   0.0    1.0  1  ELS31792.1  Oleoyl-(acyl-carrier-protein) hydrolase [Pseudana
+     0.0018   15.6   0.0       0.12    9.6   0.0    2.2  2  ELS31179.1  alpha/beta hydrolase fold protein [Pseudanabaena 
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS31792.1  Oleoyl-(acyl-carrier-protein) hydrolase [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  161.0   0.0   3.1e-51   7.5e-48      19     236 ..      17     235 ..       2     245 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 161.0 bits;  conditional E-value: 3.1e-51
+        anaA  19 hqenklslfcfppagagslffrdwpatipdsinlwavrfpgrenrikeplitrwgdlieplvqeiypysqspfvffghslgsvvslevahqlgdrfgcf 117
+                   +  l lfcfp ag gsl fr+w   +p +i++  + +pgr  r++ep  tr   l++ + + + py + pf ffghs+g+++s+e+a+ l      +
+  ELS31792.1  17 NTKAALRLFCFPYAGGGSLSFRNWAKDLPSTIEICPIELPGRGFRLHEPAFTRLEPLVQVIAEALTPYLDRPFSFFGHSMGALLSFELARFLRRNNQLL 115
+                 5567899******************************************************************************************** PP
+
+        anaA 118 pqclvvsgrkpphipcdhrds.qasdedlieelradggtpeavlqepelmsiilpiyradlqlheeyeyvsekslpcpilalggeadegvsleelrewe 215
+                 p  l vsgr+ p+ip     + +  + d++ elr   gtp  vl++ elm ++lp  radl + e   y  e  l cpi a+gg  d   s++ l  w 
+  ELS31792.1 116 PAHLFVSGRRSPQIPSSNPPTyDLPEPDFLLELRRLNGTPAEVLDNAELMQLLLPTLRADLAVVETSIYQKEIPLDCPITAFGGYEDSEASIDMLLAWR 214
+                 ***************998766156778************************************************************************ PP
+
+        anaA 216 kytqrgfklrsfpgghmylte 236
+                 + t+  f l+ + g h++l  
+  ELS31792.1 215 EQTNAAFALHMLQGDHFFLHS 235
+                 *****************9976 PP
+
+>> ELS31179.1  alpha/beta hydrolase fold protein [Pseudanabaena biceps PCC 7429]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    4.3   0.0    0.0021       4.9      81     117 ..     170     204 ..     153     219 .. 0.79
+   2 !    9.6   0.0   4.9e-05      0.12     169     214 ..     218     267 ..     200     304 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 4.3 bits;  conditional E-value: 0.0021
+        anaA  81 qeiypysqspfvffghslgsvvslevahqlgdrfgcf 117
+                 q+   y  + ++++ghslg  +++++a +  + +g++
+  ELS31179.1 170 QKG--YKSNQILIYGHSLGGAIAIDLAIKHPEALGAI 204
+                 444..55566899************998887777765 PP
+
+  == domain 2  score: 9.6 bits;  conditional E-value: 4.9e-05
+        anaA 169 ilpiyr...adlqlheeyeyvse.kslpcpilalggeadegvsleelrew 214
+                 + p yr    dl +h+ ++ +++ +sl  p+l + g ade + l   +  
+  ELS31179.1 218 LDPKYRifpIDLLIHQRFDSIAKvRSLAIPVLYIHGTADEVIPLSMAQSL 267
+                 5555552227*********997648***************9988766554 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (253 nodes)
+Target sequences:                         4757  (1493366 residues searched)
+Passed MSV filter:                       124  (0.0260668); expected 95.1 (0.02)
+Passed bias filter:                      118  (0.0248055); expected 95.1 (0.02)
+Passed Vit filter:                         8  (0.00168173); expected 4.8 (0.001)
+Passed Fwd filter:                         2  (0.000420433); expected 0.0 (1e-05)
+Initial search space (Z):               4757  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 9445.54
+//
+[ok]

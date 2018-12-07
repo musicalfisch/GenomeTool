@@ -1,0 +1,75 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/futA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/313612_GCA_000169095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       futA  [M=351]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.6e-148  492.9   2.6   1.8e-148  492.7   2.6    1.0  1  EAW35250.1  iron binding protein component of ABC iron transp
+  ------ inclusion threshold ------
+      0.012   13.1   0.0      0.018   12.5   0.0    1.2  1  EAW39187.1  extracellular solute-binding protein, family 1 [L
+
+
+Domain annotation for each sequence (and alignments):
+>> EAW35250.1  iron binding protein component of ABC iron transporter [Lyngbya sp. PCC 8106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  492.7   2.6  5.7e-152  1.8e-148       3     351 .]       2     350 .]       1     350 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 492.7 bits;  conditional E-value: 5.7e-152
+        futA   3 dkitrrvflgagtatlavavgqlgkinevsaqtkqlnlyssrhyntdrrlydnftrqtgikinlvegeadplieriksegrnspadilltvdagrlwra 101
+                  kitrr+fl++gta  +v++g+l +     a+   +nlyssrhy+td +ly+ ft++tgik+nlveg+a  lierikseg nspad+l+tvdag lwra
+  EAW35250.1   2 SKITRRIFLASGTAFATVTLGELLNKRGSFADPGTINLYSSRHYDTDNQLYNGFTQKTGIKVNLVEGDAAQLIERIKSEGANSPADVLITVDAGNLWRA 100
+                 59*********************9999999********************************************************************* PP
+
+        futA 102 dqqgifapvnsriltqripanlrhpkghwfgfskrlrvimynkdrvnpreidsyadltnpkwkgkvvtrsssniysqsftawlidiqgeaaaekwcrgl 200
+                 +q+gif pv s +l + ipanlr p   wfg+skr rvimynk+ vnp ++ sy dl++pkwkgkvv rss niy qs+ a l++++g a +ekw++g+
+  EAW35250.1 101 QQEGIFQPVSSSVLNNAIPANLRDPENRWFGLSKRARVIMYNKNNVNPAQLSSYEDLADPKWKGKVVIRSSNNIYNQSLVASLLEVHGAADTEKWAKGF 199
+                 *************************************************************************************************** PP
+
+        futA 201 vanfarspqgndkaqieavaagiadlalantyylagyaeekdpakraiydqvgvifpdqagrgahvnisgggliktapnresaikfleylssneaqnff 299
+                 v+nfar+p+gnd aqi+avaag+ d+ +an+yyla  a  +dp  +a+ ++vg+ fp+q  rg+hvnisg g++k+apn+  a+kfleyl s eaq++f
+  EAW35250.1 200 VSNFARPPEGNDTAQIKAVAAGVGDVGIANSYYLARLASSNDPEDKAVVQKVGMFFPNQRERGTHVNISGAGVVKSAPNKAGAVKFLEYLVSPEAQKIF 298
+                 *************************************************************************************************** PP
+
+        futA 300 akgnqeypvvrgvaldpvlaklgrgkedtvsvanygpnlakavqvmnragwk 351
+                 a+gn eypvv gv + p la+ g  k+d++ va yg n a+a+++m+ragwk
+  EAW35250.1 299 AQGNYEYPVVSGVPVSPALAQYGTFKNDSMNVAAYGQNNAEAIRLMDRAGWK 350
+                 ***************************************************8 PP
+
+>> EAW39187.1  extracellular solute-binding protein, family 1 [Lyngbya sp. PCC 8106]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.0   5.8e-06     0.018       5      84 ..       6      93 ..       2     107 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 5.8e-06
+        futA  5 itrrvflgagtatlava.vgqlg.kinev......saqtkqlnlyssrhyntdrrlydnftrqtgikin.lvegeadplieriksegrn 84
+                +trr fl +   t a + +   g  + ev        +++ l +y+   y tdr l d ft++tg+k+   v    + ++ ri++ g  
+  EAW39187.1  6 LTRRQFLQTTLVTAAAStLSSCGwTLAEVkttpntRVDSDTLYIYTWTGY-TDRDLLDRFTQETGLKVVaDVFDSNESMLARIQAGGAG 93
+                57777776654444332122333123333110100334556777777766.9***************8515777788999999988865 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (351 nodes)
+Target sequences:                         6142  (1966150 residues searched)
+Passed MSV filter:                       145  (0.0236079); expected 122.8 (0.02)
+Passed bias filter:                      123  (0.0200261); expected 122.8 (0.02)
+Passed Vit filter:                        12  (0.00195376); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000325627); expected 0.1 (1e-05)
+Initial search space (Z):               6142  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 11501.98
+//
+[ok]

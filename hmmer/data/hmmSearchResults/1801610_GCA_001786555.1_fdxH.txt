@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fdxH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801610_GCA_001786555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fdxH  [M=99]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     0.0037   14.3   0.1      0.013   12.6   0.1    1.9  1  OGI27694.1  ferredoxin [Candidatus Melainabacteria bacterium 
+     0.0086   13.2   0.0      0.023   11.8   0.0    1.7  1  OGI24493.1  diaminopimelate epimerase [Candidatus Melainabact
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI27694.1  ferredoxin [Candidatus Melainabacteria bacterium RIFOXYA12_FULL_32_12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.6   0.1   1.2e-05     0.013      19      54 ..      13      54 ..       3      59 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 12.6 bits;  conditional E-value: 1.2e-05
+        fdxH 19 ievdeettildaaeengidlpfsch......sgacsscvgkv 54
+                ie  + +til+aa+  gi++p  c       sgac  cv  v
+  OGI27694.1 13 IEALKGSTILEAAKSAGINIPTLCYlanvsvSGACRMCVVEV 54
+                6777889**************999644444489999998765 PP
+
+>> OGI24493.1  diaminopimelate epimerase [Candidatus Melainabacteria bacterium RIFOXYA12_FULL_32_12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.8   0.0   2.2e-05     0.023      32      62 ..     216     246 ..     193     253 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 2.2e-05
+        fdxH  32 eengidlpfschsgacsscvgkvvegeidqs 62 
+                  e+g  + ++c +gac+s+v  +v+  +d++
+  OGI24493.1 216 WERGCGITLACGTGACASVVAAIVNNLVDNT 246
+                 5889999******************999975 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (99 nodes)
+Target sequences:                         2087  (650313 residues searched)
+Passed MSV filter:                        66  (0.0316243); expected 41.7 (0.02)
+Passed bias filter:                       50  (0.0239578); expected 41.7 (0.02)
+Passed Vit filter:                         4  (0.00191663); expected 2.1 (0.001)
+Passed Fwd filter:                         2  (0.000958313); expected 0.0 (1e-05)
+Initial search space (Z):               2087  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.01
+# Mc/sec: 6438.10
+//
+[ok]

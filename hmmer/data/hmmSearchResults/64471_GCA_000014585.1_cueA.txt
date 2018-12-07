@@ -1,0 +1,53 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-10   37.9   0.6    3.1e-06   23.4   0.1    2.3  2  ABI45074.1  multicopper oxidase [Synechococcus sp. CC9311]
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI45074.1  multicopper oxidase [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.7   0.0   1.9e-06    0.0055      87     152 ..      88     152 ..      69     196 .. 0.75
+   2 !   23.4   0.1   1.1e-09   3.1e-06     413     494 ..     433     512 ..     427     514 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 1.9e-06
+        cueA  87 gdtvkihftnklsqatnlhyhglhipqtgnadnifl..svppgetqtyeftlpknhpsgtfyyhphlh 152
+                    v++ + n+l   t +h+hgl +p++ +    +    +ppg+ q   + l +n   gtf+ h h  
+  ABI45074.1  88 DKGVNLELINQLPVPTTVHWHGLILPNSMDGVPFVTqpPIPPGQRQRIHYPLVQN---GTFWMHSHYG 152
+                 3469999*******************987765544322589*********99987...9*****9964 PP
+
+  == domain 2  score: 23.4 bits;  conditional E-value: 1.1e-09
+        cueA 413 welvnvdpdgmehsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                  e+v  +p  m h +hlh   fq++  +g p    a  dt+ +    t ri     +  g   +hch+  h   gm+ +va 
+  ABI45074.1 433 VEMVFSNPTPMGHPMHLHGHEFQIVEIDGEPLA-GAMRDTVYVPKGGTCRIAFDA-NNPGIWAFHCHISYHHVRGMFNVVAY 512
+                 589999************************975.799******999998877654.457999*****************995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                        75  (0.0259336); expected 57.8 (0.02)
+Passed bias filter:                       65  (0.0224758); expected 57.8 (0.02)
+Passed Vit filter:                         8  (0.00276625); expected 2.9 (0.001)
+Passed Fwd filter:                         1  (0.000345781); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 9354.96
+//
+[ok]

@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braD  [M=288]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   2.6e-175  579.9  31.9   2.9e-175  579.8  31.9    1.0  1  ALF53120.1  branched-chain amino acid ABC transporter permeas
+    0.00068   17.3  31.1      0.014   13.0  31.1    2.4  1  ALF55714.1  ribose ABC transporter permease [Nostoc piscinale
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF53120.1  branched-chain amino acid ABC transporter permease [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  579.8  31.9  1.1e-178  2.9e-175       1     288 []       1     288 []       1     288 [] 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 579.8 bits;  conditional E-value: 1.1e-178
+        braD   1 mdaqlvqlivngiavgsiialaavgltltygilrlsnfahgdfltlgayltllvnslgvniwlsmvlaavgtvaamllsekllwsrmrsiratsttlii 99 
+                 md+q++qlivngia+gsiialaavgltltygilrlsnfahgdfltlgayltllvn++gvniwlsm+laavgtvaamllsekllws+mr iratsttlii
+  ALF53120.1   1 MDTQVIQLIVNGIALGSIIALAAVGLTLTYGILRLSNFAHGDFLTLGAYLTLLVNAAGVNIWLSMILAAVGTVAAMLLSEKLLWSKMRLIRATSTTLII 99 
+                 9************************************************************************************************** PP
+
+        braD 100 isiglalflrngiillwggknknynlpvtqaldilglkvpqnqllvlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviag 198
+                 isiglalflrngiil+wggkn+nyn+pvt+a+d++g+k+pqnqllvl lavlai+ lhyllqntkigkamravaddldlarvsginv++vilwtw+iag
+  ALF53120.1 100 ISIGLALFLRNGIILVWGGKNQNYNVPVTSAWDFFGVKIPQNQLLVLGLAVLAIVGLHYLLQNTKIGKAMRAVADDLDLARVSGINVEQVILWTWLIAG 198
+                 *************************************************************************************************** PP
+
+        braD 199 sltslggsmyglitavrpnmgwflilplfasvilggignpygaiaaafiigiaqevstpllgsqykqgvallimilvllirpkglfkgti 288
+                 +ltslggsmyglitavrpnmgwflilplfasvilggignpygaiaaafiigiaqevst++lgsqykqg+allimilvllirpkglfkgti
+  ALF53120.1 199 TLTSLGGSMYGLITAVRPNMGWFLILPLFASVILGGIGNPYGAIAAAFIIGIAQEVSTIWLGSQYKQGIALLIMILVLLIRPKGLFKGTI 288
+                 *****************************************************************************************8 PP
+
+>> ALF55714.1  ribose ABC transporter permease [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.0  31.1   5.8e-06     0.014     145     277 ..     182     322 ..      51     328 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 5.8e-06
+        braD 145 vlvlavlailalhyllqntkigkamravaddldlarvsginvdrvilwtwviagsltslggsmygl.itavrpnmgwflilplfasvilg......gig 236
+                 +++la+l++ +  ++l++t +g  + av  +   ar++gi+v+rv+l+ + ++g l+ l+g m    + +    +g    l  +a+vilg      gig
+  ALF55714.1 182 LVILALLTVAVSWFVLRQTVLGVQIYAVGGNERAARLTGIKVNRVLLFVYGVSGLLAGLAGVMSASrLYSATGMLGQGYELDAIAAVILGgtsftgGIG 280
+                 467999999999***************************************************86414566677899999********96333333699 PP
+
+        braD 237 npygaiaaafiigiaqevstpllgsqykqgva.llimilvll 277
+                    g++ +a+ii + ++  t+l  s + q v   l++i  ++
+  ALF55714.1 281 TIGGTLLGALIIAVLNNGLTLLNMSYFWQLVVkGLVIIAAVM 322
+                 999**************9999999999887651344444444 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (288 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       220  (0.0438072); expected 100.4 (0.02)
+Passed bias filter:                       69  (0.0137395); expected 100.4 (0.02)
+Passed Vit filter:                         6  (0.00119474); expected 5.0 (0.001)
+Passed Fwd filter:                         2  (0.000398248); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.00s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 7159.45
+//
+[ok]

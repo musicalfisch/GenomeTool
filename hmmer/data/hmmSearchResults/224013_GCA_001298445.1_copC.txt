@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/224013_GCA_001298445.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.038   12.1   1.9      0.049   11.8   0.3    2.0  2  ALF55537.1  DNA uptake protein [Nostoc piscinale CENA21]
+
+
+Domain annotation for each sequence (and alignments):
+>> ALF55537.1  DNA uptake protein [Nostoc piscinale CENA21]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.8   0.3   9.7e-06     0.049       1      51 [.       1      50 [.       1      63 [. 0.74
+   2 ?   -1.8   0.1      0.15   7.4e+02     104     122 ..     201     223 ..     195     237 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 11.8 bits;  conditional E-value: 9.7e-06
+        copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaa 51
+                mk  k   l++++ + + l a++n  ta+n++a  + t+++t +v++++++
+  ALF55537.1  1 MKKFKYFCLTIATAAIVSLSACNNTPTAENPSAPAA-TSPSTAQVTEATTH 50
+                88899999****************999999987655.55555555444333 PP
+
+  == domain 2  score: -1.8 bits;  conditional E-value: 0.15
+        copC 104 nakv....taqvqlPdGeqkald 122
+                 nakv    ta vq+ dG   al+
+  ALF55537.1 201 NAKVktdfTASVQSVDGAIAALP 223
+                 66663333688999999877765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         5022  (1491553 residues searched)
+Passed MSV filter:                       191  (0.0380327); expected 100.4 (0.02)
+Passed bias filter:                      144  (0.0286738); expected 100.4 (0.02)
+Passed Vit filter:                        17  (0.00338511); expected 5.0 (0.001)
+Passed Fwd filter:                         1  (0.000199124); expected 0.1 (1e-05)
+Initial search space (Z):               5022  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6152.66
+//
+[ok]

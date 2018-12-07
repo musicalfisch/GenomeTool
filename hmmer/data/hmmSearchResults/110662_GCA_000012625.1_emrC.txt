@@ -1,0 +1,72 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/110662_GCA_000012625.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrC  [M=106]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.8e-24   81.9   4.5    6.6e-24   81.7   4.5    1.0  1  ABB34566.1  putative SMR family multidrug efflux transporter 
+  ------ inclusion threshold ------
+       0.16    9.8   7.3       0.25    9.1   1.0    2.8  2  ABB36133.1  proton-translocating NADH-quinone oxidoreductase,
+
+
+Domain annotation for each sequence (and alignments):
+>> ABB34566.1  putative SMR family multidrug efflux transporter [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   81.7   4.5     5e-27   6.6e-24       1     105 [.       3     107 ..       3     108 .] 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 81.7 bits;  conditional E-value: 5e-27
+        emrC   1 mliswiyllaailfevsgttcmklsegftklipsvlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisialiiigv 99 
+                 m++ w  ll ai  ev gt c++lseg+t+ +p++l+f +y l++++l+  +  i + ++y++w+g+gtv+i  +g i + + l   +li iali  gv
+  ABB34566.1   3 MSNPWTLLLLAISAEVIGTSCLRLSEGMTRPLPTLLVFSAYALAMALLSKVVLSIPLGITYALWSGIGTVVIVLVGRIAYSQMLQPAQLIGIALITAGV 101
+                 7889*********************************************************************************************** PP
+
+        emrC 100 iginsa 105
+                 + +n +
+  ABB34566.1 102 VLVNLG 107
+                 **9986 PP
+
+>> ABB36133.1  proton-translocating NADH-quinone oxidoreductase, chain M [Synechococcus sp. CC9605]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.7     0.014        18      35      90 ..     128     183 ..     125     192 .. 0.78
+   2 ?    9.1   1.0   0.00019      0.25      24      95 ..     271     343 ..     246     353 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.014
+        emrC  35 vlifvfyglcltfltlalkkievsvaysvwaglgtvliavigliwfresltlvkli 90 
+                 + +f +  + l fl+  l+ i v +  ++w g      a+  +++   s  ++ l 
+  ABB36133.1 128 IAVFAVQDMLLFFLAWELELIPVYLLLAIWGGKKRQYAATKFILYTAGSSLFILLA 183
+                 7789999999*********************9888877776666655555555444 PP
+
+  == domain 2  score: 9.1 bits;  conditional E-value: 0.00019
+        emrC  24 lsegftklipsvlifvfyglcl.tfltlalkkievsvaysvwaglgtvliavigliwfresltlvklisiali 95 
+                 l    ++  p ++++ +  + + ++ ++a ++++  +ays  + +g vli v +   +  s +++++is  li
+  ABB36133.1 271 LPAAHSQFAPLLIVLGVVNIIYaALTSFAQRNLKRKIAYSSISHMGFVLIGVGSFSALGTSGAMLQMISHGLI 343
+                 555566777777766555555415667999**********************999999999999999998887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (106 nodes)
+Target sequences:                         2638  (722368 residues searched)
+Passed MSV filter:                        61  (0.0231236); expected 52.8 (0.02)
+Passed bias filter:                       30  (0.0113723); expected 52.8 (0.02)
+Passed Vit filter:                         2  (0.00075815); expected 2.6 (0.001)
+Passed Fwd filter:                         2  (0.00075815); expected 0.0 (1e-05)
+Initial search space (Z):               2638  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 7657.10
+//
+[ok]

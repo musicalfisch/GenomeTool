@@ -1,0 +1,94 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/317619_GCA_000341585.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finN  [M=117]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00064   17.7   7.6      0.047   11.7   0.6    2.2  2  KKI98158.1  ferredoxin [Prochlorothrix hollandica PCC 9006 = 
+  ------ inclusion threshold ------
+       0.18    9.8  10.5      0.063   11.3   2.2    2.1  2  KKJ01126.1  ferredoxin [Prochlorothrix hollandica PCC 9006 = 
+       0.26    9.3   7.8       0.49    8.4   5.4    2.3  2  KKI99615.1  epoxyqueuosine reductase [Prochlorothrix hollandi
+
+
+Domain annotation for each sequence (and alignments):
+>> KKI98158.1  ferredoxin [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.7   0.6   3.8e-05     0.047       8      25 ..      83     100 ..      77     104 .. 0.88
+   2 !    9.6   1.2   0.00017      0.21       7      25 ..     113     131 ..     108     133 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 11.7 bits;  conditional E-value: 3.8e-05
+        finN   8 qciscdlclsvcptnavk 25 
+                  c+ c lc  vcpt+a+ 
+  KKI98158.1  83 ICVHCGLCTGVCPTQALT 100
+                 5**************985 PP
+
+  == domain 2  score: 9.6 bits;  conditional E-value: 0.00017
+        finN   7 sqciscdlclsvcptnavk 25 
+                 s+c+ c+ c+  cp++a+ 
+  KKI98158.1 113 SRCVVCEQCIPTCPVQAIS 131
+                 89**************985 PP
+
+>> KKJ01126.1  ferredoxin [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.9   1.6    0.0093        12       5      25 ..       6      26 ..       1      44 [. 0.69
+   2 ?   11.3   2.2     5e-05     0.063       7      23 ..      44      60 ..      38      67 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 3.9 bits;  conditional E-value: 0.0093
+        finN  5 itsqciscdlclsvcptnavk 25
+                +t  c  +  c+  cp+++++
+  KKJ01126.1  6 VTNTCQGVADCVDACPVACIH 26
+                467788888888888887774 PP
+
+  == domain 2  score: 11.3 bits;  conditional E-value: 5e-05
+        finN  7 sqciscdlclsvcptna 23
+                + ci c +cl vcp++ 
+  KKJ01126.1 44 ATCIDCGICLQVCPVEG 60
+                57************975 PP
+
+>> KKI99615.1  epoxyqueuosine reductase [Prochlorothrix hollandica PCC 9006 = CALU 1027]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -2.9   0.0       1.2   1.5e+03      71      90 ..     106     125 ..      96     129 .. 0.78
+   2 ?    8.4   5.4    0.0004      0.49       8      62 ..     197     256 ..     194     271 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: -2.9 bits;  conditional E-value: 1.2
+        finN  71 swfanynrvlakltkkqdyw 90 
+                 +w  +y r+l k  k  + w
+  KKI99615.1 106 GWGRDYHRILHKKLKALNLW 125
+                 68889999998877766666 PP
+
+  == domain 2  score: 8.4 bits;  conditional E-value: 0.0004
+        finN   8 qciscdlclsvcptnav...kvidgnrwidpelctncvgsv..ysvpqckagcptcdgcv 62 
+                  c +c  cl  cpt+a+    v+d nr +  +   n    +    vp  +  +  cd c 
+  KKI99615.1 197 HCGTCSRCLEACPTGAIvapAVVDANRCLAYHTIENRSPQLpaAIVPHLQGWVAGCDICQ 256
+                 799*************955559*****999998888776652245777765555555553 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (117 nodes)
+Target sequences:                         3737  (1137027 residues searched)
+Passed MSV filter:                       101  (0.027027); expected 74.7 (0.02)
+Passed bias filter:                       93  (0.0248863); expected 74.7 (0.02)
+Passed Vit filter:                        10  (0.00267594); expected 3.7 (0.001)
+Passed Fwd filter:                         3  (0.000802783); expected 0.0 (1e-05)
+Initial search space (Z):               3737  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 4434.41
+//
+[ok]

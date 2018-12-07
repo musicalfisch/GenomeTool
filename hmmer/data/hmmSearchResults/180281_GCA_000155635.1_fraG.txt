@@ -1,0 +1,77 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fraG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fraG  [M=329]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00048   16.4   0.9      0.095    8.9   0.2    2.3  2  EDY39763.1  integral membrane protein, DUF6 [Cyanobium sp. PC
+  ------ inclusion threshold ------
+        0.4    6.8  17.4          4    3.5  16.4    2.3  1  EDY37583.1  integral membrane protein, DUF6 [Cyanobium sp. PC
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY39763.1  integral membrane protein, DUF6 [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    6.2   0.0   0.00044      0.61     257     317 ..      82     142 ..      64     152 .. 0.82
+   2 !    8.9   0.2   6.9e-05     0.095     113     167 ..     244     297 ..     182     299 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.00044
+        fraG 257 ghvlnnwgihligasraaiigatnpaltvvlaglaiqesltniqifgvclvtfsiallnye 317
+                 g  l    ++ +g+ r+    a  p lt   agl + e+ +  q +g++l+++++ l+  +
+  EDY39763.1  82 GDSLFFAALRRLGTRRTLTFEAGGPGLTGAAAGLVLGETPAPGQWLGIALISLALLLVARQ 142
+                 666666778889999***********************************99988877655 PP
+
+  == domain 2  score: 8.9 bits;  conditional E-value: 6.9e-05
+        fraG 113 llyisisfiptgiaitlfftypiftallawrlfndvpsllrwlvigltligtflt 167
+                 l  +++s +p+g+a++l+ t p+++ +la  l  d p +  wl    +l g +l 
+  EDY39763.1 244 LQQLALSRLPAGLAVALLATAPVMAVVLA-PLEGDRPRVGGWLAAISALAGVVLV 297
+                 66788999***************999998.5889999999999988888888776 PP
+
+>> EDY37583.1  integral membrane protein, DUF6 [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.5  16.4    0.0029         4     105     308 ..      96     297 ..      89     302 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 3.5 bits;  conditional E-value: 0.0029
+        fraG 105 flmflylvllyisisfiptgiaitlfftypiftallawrlfndvpsllrwlvigltligtfltipya..yggeqqtlvlgvstgiasgivyagytvfaq 201
+                 ++  l l  +y ++  +p   a  l + yp ftallaw  + +       l + +   g +l    a  + g      l v   +a  +  a  + ++ 
+  EDY37583.1  96 VIGTLALFCVYAALMALPLASATVLQYLYPTFTALLAWLALGEPIGRRVLLAMAVGWAGVLLVAQPAplFDGATPLQPLPVLIAVAGALATA-LAYVSV 193
+                 5556788899****************************999886666667778888899988775552356665555666666666555444.455566 PP
+
+        fraG 202 rsfqrl.hpvp..ftwisfattlilsilcliiwqphegnlpwlaitigsllsalftlaghvlnnwgihligasraaiigatnpaltvvlaglaiqeslt 297
+                 rs+ r  hp+   f +  +a  l l +++l    p   ++ wla  +      +ft  g+v    g+  + a+ra+ +   +  ++ +   l   e l 
+  EDY37583.1 194 RSLGRTeHPLVivFYFPLVAVPLSLPLVVLNPVLPTPTDVVWLAG-V-----GVFTQLGQVSLTRGLTALPAARATALSYVQVLFAGLWGWLLFAEGLD 286
+                 787775388651144445667777777777777888899999984.3.....57999999999999999999999999888777777777778888888 PP
+
+        fraG 298 niqifgvclvt 308
+                    i+g  lv 
+  EDY37583.1 287 GWTILGALLVL 297
+                 88888887775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (329 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                       136  (0.0490798); expected 55.4 (0.02)
+Passed bias filter:                       54  (0.0194875); expected 55.4 (0.02)
+Passed Vit filter:                         7  (0.00252616); expected 2.8 (0.001)
+Passed Fwd filter:                         2  (0.000721761); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 6763.49
+//
+[ok]

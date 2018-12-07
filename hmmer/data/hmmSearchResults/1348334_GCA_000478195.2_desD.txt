@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/desD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1348334_GCA_000478195.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       desD  [M=364]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    9.2e-05   20.3  12.8    9.6e-05   20.3  11.5    1.6  2  ERT09779.1  fatty acid desaturase family protein [Lyngbya aes
+    0.00021   19.2  16.9     0.0015   16.3  16.9    2.1  1  ERT06018.1  fatty acid desaturase family protein [Lyngbya aes
+
+
+Domain annotation for each sequence (and alignments):
+>> ERT09779.1  fatty acid desaturase family protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   20.3  11.5     3e-08   9.6e-05      41     138 ..      46     139 ..      32     239 .. 0.81
+   2 ?   -1.5   0.1      0.12   3.8e+02     296     311 ..     234     249 ..     212     273 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 20.3 bits;  conditional E-value: 3e-08
+        desD  41 itiltwviaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleih 138
+                 i  ++ vi  ++ + f p  w+l  i  +  g+ l+g  f ighd+ h  +++++wvn l+g      +    + wr+ hn+ hh +tn +  d   h
+  ERT09779.1  46 IINVSLVILGYIAIAFSP--WYLLPIAWIFTGTALTGF-FVIGHDCGHRSFANRRWVNDLVGHLVMLPLIYPFHGWRIGHNH-HHKHTNKMSEDNAWH 139
+                 445677888999999988..****************97.99*********************9988888888999******7.889999998887666 PP
+
+  == domain 2  score: -1.5 bits;  conditional E-value: 0.12
+        desD 296 lnyqvvhhlfpqichi 311
+                   + +vhh fp+i + 
+  ERT09779.1 234 STFTLVHHTFPDIPFS 249
+                 4577899999988665 PP
+
+>> ERT06018.1  fatty acid desaturase family protein [Lyngbya aestuarii BL J]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.3  16.9   4.7e-07    0.0015      47     173 ..      54     173 ..      40     318 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 16.3 bits;  conditional E-value: 4.7e-07
+        desD  47 viaawlfvlfgpdiwwlkiigclvlgaglagigfsighdanhggysskkwvnsllgmtydyiigassylwrfrhnylhhtytnvlgydleihgdgvvrm 145
+                 +ia   +v +  d w++  i  l+ g+ +    f +ghd+ hg +s +kw+n+l+g      i +  + wr+ h   hh+ t  +  d   +    v  
+  ERT06018.1  54 IIAGLYVVAYTLDSWFFFPIFWLMQGTMFWA-LFVVGHDCGHGSFSKQKWLNNLIGHLSHTPILVPFHAWRISHRT-HHANTGNIDKDESWY---PVPE 147
+                 566667778999****999999988876655.69**********************9999999999********85.777777777775554...3666 PP
+
+        desD 146 tphaehkwyhryqhlfipilyaiipiyw 173
+                 + + +  wy +  + +ip+l    piy 
+  ERT06018.1 148 SQYDQMPWYEKLLRYYIPLLAY--PIYL 173
+                 7788889999999999999853..4443 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (364 nodes)
+Target sequences:                         6505  (1927088 residues searched)
+Passed MSV filter:                       266  (0.0408916); expected 130.1 (0.02)
+Passed bias filter:                      171  (0.0262875); expected 130.1 (0.02)
+Passed Vit filter:                        16  (0.00245965); expected 6.5 (0.001)
+Passed Fwd filter:                         2  (0.000307456); expected 0.1 (1e-05)
+Initial search space (Z):               6505  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.08u 0.01s 00:00:00.09 Elapsed: 00:00:00.08
+# Mc/sec: 8768.25
+//
+[ok]

@@ -1,0 +1,95 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioN.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1738638_GCA_001611905.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioN  [M=291]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   6.3e-122  404.7  24.0    9.1e-81  269.5   7.2    2.0  2  AMW29583.1  hypothetical protein AP285_18295 [Arthrospira pla
+    2.6e-05   21.9   1.8    3.5e-05   21.5   1.8    1.2  1  AMW28110.1  hypothetical protein AP285_09135 [Arthrospira pla
+  ------ inclusion threshold ------
+      0.038   11.5   0.0      0.053   11.0   0.0    1.1  1  AMW30758.1  hypothetical protein AP285_25350 [Arthrospira pla
+
+
+Domain annotation for each sequence (and alignments):
+>> AMW29583.1  hypothetical protein AP285_18295 [Arthrospira platensis YZ]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  141.1   8.7   6.8e-45   1.2e-41       1     107 [.       1     107 [.       1     113 [. 0.97
+   2 !  269.5   7.2   5.2e-84   9.1e-81     107     289 ..     135     317 ..     123     318 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 141.1 bits;  conditional E-value: 6.8e-45
+        bioN   1 mdllrslpiglyldqpitrlhqldarvkfiwlmaflaapllanpwwrlalvgllllltllapipprvwrqqmgwliflaiivflitaitpdglgvsiqp 99 
+                 mdllrslpiglyl+qpit lh+ld+r+k++wlm+fl ap+l+n+ wrl lv ll+++tl+a ip rvw++qmgwl+ ++ ++++++ai pdgl+vs qp
+  AMW29583.1   1 MDLLRSLPIGLYLEQPITWLHRLDSRIKLVWLMSFLIAPILSNAVWRLGLVVLLMVITLVAAIPFRVWKRQMGWLLTFCSLLLIVSAILPDGLSVSHQP 99 
+                 9************************************************************************************************** PP
+
+        bioN 100 rlpeegln 107
+                 rlp + + 
+  AMW29583.1 100 RLPTDEIA 107
+                 ***98765 PP
+
+  == domain 2  score: 269.5 bits;  conditional E-value: 5.2e-84
+        bioN 107 nlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrfnvpvteisltltlslrfiplvleevqnlara 205
+                  lp  + y+y+l   g l +tr sl+l vristl+ftl+ystnl+lltta eei+ g+e ++ plrr+++pvtei+ltltlslrf plvlee+qnl r+
+  AMW29583.1 135 GLPQPTAYRYILLSAGPLTITRYSLDLGVRISTLLFTLVYSTNLYLLTTASEEIAVGIESVMKPLRRLKIPVTEIALTLTLSLRFFPLVLEEIQNLYRS 233
+                 5788899******************************************************************************************** PP
+
+        bioN 206 vrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhelklrwadfialfllipfwaarlvwg 289
+                 vrtrai+w+klg +r+ ++wl v e+ll+nlllraeqia am+vrgftspnqh+v wh+lk+ w d+ialf l  fw  rlvwg
+  AMW29583.1 234 VRTRAINWKKLGWRRATQIWLLVAERLLENLLLRAEQIANAMKVRGFTSPNQHRVEWHQLKINWWDWIALFALTIFWGMRLVWG 317
+                 ***********************************************************************************9 PP
+
+>> AMW28110.1  hypothetical protein AP285_09135 [Arthrospira platensis YZ]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.5   1.8     2e-08   3.5e-05      78     265 ..      49     229 ..      16     251 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 21.5 bits;  conditional E-value: 2e-08
+        bioN  78 laiivflitaitpdglgvsiq.prlpeegl.nlppasdyqyvlwdrgrlfvtrrslelavristlvftliystnlfllttapeeiteglenllsplrrf 174
+                 +++i++ i+ +    lg  +q p l   gl  l p      vlw  g ++  r+   lav + +  f  i++t ++ll t+p         l+  +r +
+  AMW28110.1  49 VTLILYTISKLPLSFLGDRLQyPGLFIFGLvGLLPFISGPTVLWSWGPVI-IRQEGSLAVLLIASRFLAIFTTGVVLLGTCPF------ITLIKAMRSL 140
+                 445555555555555555555455555555235566666789*****976.578889****9999****************95......3478888887 PP
+
+        bioN 175 nvpvteisltltlslrfiplvleevqnlaravrtraidwqklgikrslnvwltvveklldnlllraeqiaiamevrgftspnqhqvrwhel 265
+                  +    ++  l +s r+i  +  ++q + ra   r  + +++  +r l+++ ++   ll     ++eq+  am++rg+  p++ +  w  l
+  AMW28110.1 141 GLSPI-LADMLLISYRYIFELSHQLQMMKRATILRGFQPHQFS-RRNLQIYAALAGSLLIRSYQQSEQVYKAMQLRGYGIPDKTHKPWEFL 229
+                 76433.4566889***********************9988875.899***********************************999889765 PP
+
+>> AMW30758.1  hypothetical protein AP285_25350 [Arthrospira platensis YZ]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.0     3e-05     0.053      58     127 ..      18      86 ..      10      98 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 3e-05
+        bioN  58 tllapipprvwrqqmgwliflaiivflitaitpdglgvsiqprlpeeglnlppasdyqyvlwdrgrlfvt 127
+                 tll  i pr+  +  g   f  i+v+l  a+     +v+i+  + +  +n   a+d q  l   gr++v 
+  AMW30758.1  18 TLLGKIFPRLRLKGTGRAKFALILVLLFQAMMVGCTTVAINSSMVDGAINS-IATDEQPALSGNGRFLVF 86 
+                 99*******************************************999995.79999*****99997653 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (291 nodes)
+Target sequences:                         5273  (1550833 residues searched)
+Passed MSV filter:                       204  (0.0386877); expected 105.5 (0.02)
+Passed bias filter:                      130  (0.0246539); expected 105.5 (0.02)
+Passed Vit filter:                         8  (0.00151716); expected 5.3 (0.001)
+Passed Fwd filter:                         3  (0.000568936); expected 0.1 (1e-05)
+Initial search space (Z):               5273  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9025.85
+//
+[ok]

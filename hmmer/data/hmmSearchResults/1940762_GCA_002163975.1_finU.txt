@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/finU.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1940762_GCA_002163975.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       finU  [M=300]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+     3e-169  560.5   6.2   3.3e-169  560.3   6.2    1.0  1  ARV60632.1  Fe-S cluster assembly protein NifU [Nostocales cy
+    1.3e-09   36.3   0.0    1.4e-09   36.2   0.0    1.0  1  ARV61582.1  hypothetical protein BZZ01_25780 [Nostocales cyan
+
+
+Domain annotation for each sequence (and alignments):
+>> ARV60632.1  Fe-S cluster assembly protein NifU [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  560.3   6.2  1.1e-172  3.3e-169       1     300 []       1     300 [.       1     300 [. 1.00
+
+  Alignments for each domain:
+  == domain 1  score: 560.3 bits;  conditional E-value: 1.1e-172
+        finU   1 mwdytdkvlelfynpknqGvlednsepGvkvavGevGsiacGdalrlhlkvevesdkivdarfqtfGctsaiassealvelikGltldealkvsnkdia 99 
+                 mw+ytdkv++lfynpknqG led+sepG+k++vGevGsiacGdalrlhlk+e+e++ki++ar+qtfGctsaiassealv+li+Gltldealkv+nkdia
+  ARV60632.1   1 MWEYTDKVMDLFYNPKNQGELEDKSEPGIKITVGEVGSIACGDALRLHLKIEEETEKILEARYQTFGCTSAIASSEALVDLIQGLTLDEALKVTNKDIA 99 
+                 9************************************************************************************************** PP
+
+        finU 100 dylGGlpeakmhcsvmGqealeaaiynyrGiplaahddddeGalvctcfgisetkirrvivennlttaeqvtnyvkaGGGcGsclakiddiikdvkkes 198
+                 ++lGGlp+akmhcsvmGqealeaaiynyrGi++++h+dddeGal+c+cfgis++kirrvi+ennlttae+vtnyvkaGGGcGscla+iddii++v+kes
+  ARV60632.1 100 NFLGGLPQAKMHCSVMGQEALEAAIYNYRGIAHEVHEDDDEGALICSCFGISDAKIRRVIIENNLTTAEEVTNYVKAGGGCGSCLATIDDIIASVRKES 198
+                 *************************************************************************************************** PP
+
+        finU 199 aatvrnslkkntaselaekklkrvlkivlkiklldevvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvvelve 297
+                 aa+v nslk+nta ++a k+l++v+ki+l++k+lde+v+++l+a+++d+el++v++d +k+ll++a++s+s+sta+lk+a++ +l+dr+s++lvve+ve
+  ARV60632.1 199 AASVSNSLKQNTAGQQAAKQLTPVQKIALIQKVLDEEVRPVLIADGGDVELYDVEGDHVKVLLQGACGSCSASTATLKIAIESRLRDRVSQNLVVEAVE 297
+                 *************************************************************************************************** PP
+
+        finU 298 elv 300
+                 +lv
+  ARV60632.1 298 PLV 300
+                 987 PP
+
+>> ARV61582.1  hypothetical protein BZZ01_25780 [Nostocales cyanobacterium HT-58-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   36.2   0.0   4.4e-13   1.4e-09     235     293 ..      10      68 ..       2      76 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 36.2 bits;  conditional E-value: 4.4e-13
+        finU 235 vvdeelravliddeldvvlydvdkdllkvalksassstaslkvalkialedrlskdlvv 293
+                  v +elr+ l++d+++v+l + d+ ++k  l++a++s+ s++++l++ +e rl++ +  
+  ARV61582.1  10 SVLDELRPYLMSDGGNVELVELDGPIVKLRLQGACGSCPSSTMTLRMGIERRLKDMIPE 68 
+                 456789***********************************************987643 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (300 nodes)
+Target sequences:                         6177  (2043057 residues searched)
+Passed MSV filter:                       249  (0.0403108); expected 123.5 (0.02)
+Passed bias filter:                      185  (0.0299498); expected 123.5 (0.02)
+Passed Vit filter:                        10  (0.00161891); expected 6.2 (0.001)
+Passed Fwd filter:                         2  (0.000323782); expected 0.1 (1e-05)
+Initial search space (Z):               6177  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 10215.28
+//
+[ok]

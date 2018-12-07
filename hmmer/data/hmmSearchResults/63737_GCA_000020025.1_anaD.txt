@@ -1,0 +1,59 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/anaD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/63737_GCA_000020025.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       anaD  [M=87]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-06   26.7   0.2      3e-06   26.3   0.2    1.2  1  ACC81852.1  putative D-alanyl carrier protein [Nostoc punctif
+     0.0022   17.1   0.9     0.0025   16.9   0.9    1.1  1  ACC82920.1  acyl carrier protein [Nostoc punctiforme PCC 7310
+
+
+Domain annotation for each sequence (and alignments):
+>> ACC81852.1  putative D-alanyl carrier protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.3   0.2     9e-10     3e-06      34      84 ..      28      78 ..      19      81 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 26.3 bits;  conditional E-value: 9e-10
+        anaD 34 ieqrvidsmdifrlvrfveeevgifwepeelvlknfetidhikayilrkla 84
+                     ++sm  ++lv f+e+e+ i  e e+l + nf+ti+ +   + rk a
+  ACC81852.1 28 FTLGFVNSMFAMQLVLFLEQEFQITIENEDLEFDNFKTINAMTNLVQRKTA 78
+                5556799***********************************999999876 PP
+
+>> ACC82920.1  acyl carrier protein [Nostoc punctiforme PCC 73102]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.9   0.9   7.5e-07    0.0025       5      77 ..       5      78 ..       1      83 [. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 16.9 bits;  conditional E-value: 7.5e-07
+        anaD  5 kveqmlkefiiqelaydqtnlvltnnlkiieqrvidsmdifrlvrfveeevgifw..epeelvlknfetidhika 77
+                ++ + +k+++i++l+ +++   +t + k +e+   ds+d   lv  +eee+ i    e  e ++   +++d i+ 
+  ACC82920.1  5 ELFEKVKKIVIEQLSVEDASK-ITPQAKFMEDLGADSLDTVELVMALEEEFDIEIpdEAAEQIVSVQDAVDYINN 78
+                555668899999999988775.6999************************9875422566677777777777655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (87 nodes)
+Target sequences:                         6690  (2325100 residues searched)
+Passed MSV filter:                       145  (0.0216741); expected 133.8 (0.02)
+Passed bias filter:                      105  (0.0156951); expected 133.8 (0.02)
+Passed Vit filter:                         5  (0.000747384); expected 6.7 (0.001)
+Passed Fwd filter:                         2  (0.000298954); expected 0.1 (1e-05)
+Initial search space (Z):               6690  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 5057.09
+//
+[ok]

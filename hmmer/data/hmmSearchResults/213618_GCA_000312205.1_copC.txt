@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/copC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/213618_GCA_000312205.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       copC  [M=165]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence                            Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------                            -----------
+    0.00066   17.7   0.0    0.00076   17.5   0.0    1.0  1  lcl|HE973172.1_prot_CCI09136.1_4417  [protein=conserved exported hypo
+     0.0073   14.3   2.2     0.0073   14.3   2.2    1.8  2  lcl|HE973165.1_prot_CCI07502.1_2975  [protein=conserved exported hypo
+
+
+Domain annotation for each sequence (and alignments):
+>> lcl|HE973172.1_prot_CCI09136.1_4417  [protein=conserved exported hypothetical protein] [protein_id=CCI09136.1] [locat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.5   0.0   3.4e-07   0.00076       1      63 [.       1      62 [.       1      66 [. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 17.5 bits;  conditional E-value: 3.4e-07
+                                 copC  1 mkslkssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeekekees 63
+                                         mk++ ++ll++l+++ + l+a+ + ++a+++++ ++t  + +++ +s +++++++++++++++
+  lcl|HE973172.1_prot_CCI09136.1_4417  1 MKIKSLVLLILLTLTTV-LGACQGGKEAEEPKNVPTTVESPQKDDDSDKDGENRQKDDDNDQN 62
+                                         78888888888888765.678888899999999999888888877777777776666555544 PP
+
+>> lcl|HE973165.1_prot_CCI07502.1_2975  [protein=conserved exported hypothetical protein] [protein_id=CCI07502.1] [locat
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   14.3   2.2   3.2e-06    0.0073       5      58 ..       3      56 ..       1      71 [. 0.66
+   2 ?   -0.4   0.2      0.11   2.4e+02     100     111 ..     136     147 ..      53     151 .] 0.67
+
+  Alignments for each domain:
+  == domain 1  score: 14.3 bits;  conditional E-value: 3.2e-06
+                                 copC  5 kssllvvlsigllllaassnsntatndeassktttaattavsstaaakakeeek 58
+                                         k ++l+++s+ l+ ++a+ n+++ +++  ss+++t +  ++++ ++++++ +++
+  lcl|HE973165.1_prot_CCI07502.1_2975  3 KITTLILSSLLLIGTVACGNNAKTSTNAPSSTEETGQVPDTKTVQKNQSDASSQ 56
+                                         566788888888778888888777777778887776655555554444444333 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 0.11
+                                 copC 100 eavsnakvtaqv 111
+                                          + v   kvta+v
+  lcl|HE973165.1_prot_CCI07502.1_2975 136 KGVNSVKVTAKV 147
+                                          345555566655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (165 nodes)
+Target sequences:                         4524  (1270395 residues searched)
+Passed MSV filter:                       131  (0.0289567); expected 90.5 (0.02)
+Passed bias filter:                      109  (0.0240937); expected 90.5 (0.02)
+Passed Vit filter:                        11  (0.00243148); expected 4.5 (0.001)
+Passed Fwd filter:                         2  (0.000442087); expected 0.0 (1e-05)
+Initial search space (Z):               4524  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.00s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 6987.17
+//
+[ok]

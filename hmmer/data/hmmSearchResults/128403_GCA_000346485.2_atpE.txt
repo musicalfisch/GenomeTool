@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/128403_GCA_000346485.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.9e-83  275.3   1.4    5.4e-83  275.1   1.4    1.0  1  KYC35553.1  ATP synthase F0F1 subunit epsilon [Scytonema hofm
+  ------ inclusion threshold ------
+       0.16   11.3  14.0       0.25   10.7   2.0    3.2  3  KYC43528.1  ABC transporter permease [Scytonema hofmannii PCC
+
+
+Domain annotation for each sequence (and alignments):
+>> KYC35553.1  ATP synthase F0F1 subunit epsilon [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  275.1   1.4   1.1e-86   5.4e-83       1     137 []       1     137 []       1     137 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 275.1 bits;  conditional E-value: 1.1e-86
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvispdktvwda+aeev+lpsttgqlgilsghaplltaldtgvmrvr+++nq w+aiallggfaeve++evtilvngaergd+inleear+af 
+  KYC35553.1   1 MTLTVRVISPDKTVWDAAAEEVVLPSTTGQLGILSGHAPLLTALDTGVMRVRPDRNQGWVAIALLGGFAEVEQNEVTILVNGAERGDSINLEEARSAFG 99 
+                 9************************************************************************************************** PP
+
+        atpE 100 eaqtklnqvkaedrqaqiqatqafkrararfqaagglv 137
+                 ea+t+lnqv+++drqaqiqatqa+krararfqaaggl+
+  KYC35553.1 100 EAETRLNQVQQGDRQAQIQATQAYKRARARFQAAGGLI 137
+                 ************************************86 PP
+
+>> KYC43528.1  ABC transporter permease [Scytonema hofmannii PCC 7110]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.7   2.0   5.1e-05      0.25      90     131 ..     109     151 ..      84     156 .. 0.78
+   2 ?    6.5   1.3   0.00098       4.8      82     122 ..     185     225 ..     168     235 .. 0.66
+   3 ?    0.6   0.2     0.066   3.3e+02      98     125 ..     242     269 ..     224     273 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 5.1e-05
+        atpE  90 nleearaafneaqtklnqvkaedrqaqiqatqa.fkrararfq 131
+                  l++a+ + + aq+kl+qvka+ +  +i a++a + r +a++q
+  KYC43528.1 109 ALKKAQEQVKMAQAKLAQVKAGAKTGEIAAQKAtIERLKAQLQ 151
+                 48899999**********************9873688898887 PP
+
+  == domain 2  score: 6.5 bits;  conditional E-value: 0.00098
+        atpE  82 gaergdkinleearaafneaqtklnqvkae.drqa.qiqatqa 122
+                 gae   ++n+++ r af++aqtkl + ka+ +r a  +qa+ a
+  KYC43528.1 185 GAE--SALNFDNKRLAFETAQTKLIEAKANrNRTAdTLQAEIA 225
+                 333..5799**************98877651444324666655 PP
+
+  == domain 3  score: 0.6 bits;  conditional E-value: 0.066
+        atpE  98 fneaqtklnqvkaedrqaqiqatqafkr 125
+                   +aq+++++  a+ +qaq + ++a+ r
+  KYC43528.1 242 VGTAQAEVDDAIASVKQAQTDLEKAYIR 269
+                 4567777777777777777777777766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         9827  (3178467 residues searched)
+Passed MSV filter:                       357  (0.0363285); expected 196.5 (0.02)
+Passed bias filter:                      267  (0.02717); expected 196.5 (0.02)
+Passed Vit filter:                        25  (0.00254401); expected 9.8 (0.001)
+Passed Fwd filter:                         5  (0.000508802); expected 0.1 (1e-05)
+Initial search space (Z):               9827  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.07u 0.00s 00:00:00.07 Elapsed: 00:00:00.08
+# Mc/sec: 5443.12
+//
+[ok]

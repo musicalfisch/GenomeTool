@@ -1,0 +1,81 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/756067_GCA_000214075.2.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-08   32.4   0.1     0.0011   15.9   0.0    2.2  2  EGK88675.1  Cytosine deaminase [Microcoleus vaginatus FGP-2]
+  ------ inclusion threshold ------
+      0.015   12.3   0.0       0.39    7.6   0.0    2.5  3  EGK87633.1  dihydroorotase, multifunctional complex type [Mic
+
+
+Domain annotation for each sequence (and alignments):
+>> EGK88675.1  Cytosine deaminase [Microcoleus vaginatus FGP-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.9   0.0   4.4e-07    0.0011       9      60 ..      15      67 ..       8      75 .. 0.87
+   2 !   14.2   0.0   1.4e-06    0.0037     294     385 ..     296     386 ..     258     404 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 15.9 bits;  conditional E-value: 4.4e-07
+        cyrG  9 liaveddyatvdvqvvdgkiaaiapelevvgt.aidgenklllpgfvnahths 60
+                l+   dd  tvd+ + d++i a++p +  +g+  id + kl+ p fv++h h 
+  EGK88675.1 15 LLGAIDDRPTVDIAIEDDQIVAVSPRISELGErEIDIQGKLVSPPFVESHIHL 67
+                667789999******************9999636*****************96 PP
+
+  == domain 2  score: 14.2 bits;  conditional E-value: 1.4e-06
+        cyrG 294 sgiapilkyrqagvnvtfgcdgassndsqdlleaikigsilhnvtdldyqhwit.prqavemaslggakglnladklgsltvgkkadlvlydl 385
+                  g++ +    q g+nv+fg d     d    l + ++  + h   ++     ++  + + +m ++ gak lnl d+   ++ gk a+l++ d 
+  EGK88675.1 296 RGVTRVKELWQQGLNVSFGHDCVQ--DPWYSLGTGNMLDVAHMAVHVCQMTGMAeIEACFNMVTVNGAKTLNLGDDNYGIEAGKPANLIVLDA 386
+                 4788888899*********99864..44444555555555555444444444440455689****************************9986 PP
+
+>> EGK87633.1  dihydroorotase, multifunctional complex type [Microcoleus vaginatus FGP-2]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.0   0.00015      0.39      13      61 ..      18      67 ..       6      71 .. 0.79
+   2 ?   -1.4   0.0     0.082   2.1e+02     190     240 ..     194     247 ..     174     260 .. 0.67
+   3 ?    1.1   0.0     0.014        36     356     392 ..     353     388 ..     340     396 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.00015
+        cyrG 13 eddyatvdvqvvdgkiaaiapelevvg.taidgenklllpgfvnahthss 61
+                + ++   dvq+ d +i ++a+e+   g   id++   llpg ++ + h  
+  EGK87633.1 18 NGEFLVGDVQICDRQIVKVAAEIVESGdREIDAKGLTLLPGVIDPQVHFR 67
+                4567788*************9986655268*************9998865 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 0.082
+        cyrG 190 egvsilvaptgiqlcsdalfeg..cielsdkynlcrhs.hlletkaqeklaqek 240
+                  g+s +   + iq    al+      +ls+ky+   h  hl      e l qek
+  EGK87633.1 194 AGISDVTVHSQIQDNQAALLATqlALKLSNKYQRRLHIlHLSTGDEAELLRQEK 247
+                 566666667777777777775522567889998777762444445556677777 PP
+
+  == domain 3  score: 1.1 bits;  conditional E-value: 0.014
+        cyrG 356 slggakglnladklgsltvgkkadlvlydltnlsllp 392
+                 s   ak  ++ +k g+++ g  adlvl dl n   + 
+  EGK87633.1 353 SAAVAKAYKIPNK-GAISPGFDADLVLVDLENYRPVV 388
+                 5556677776654.99**************9976555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5134  (1775860 residues searched)
+Passed MSV filter:                       105  (0.0204519); expected 102.7 (0.02)
+Passed bias filter:                       81  (0.0157772); expected 102.7 (0.02)
+Passed Vit filter:                        11  (0.00214258); expected 5.1 (0.001)
+Passed Fwd filter:                         2  (0.00038956); expected 0.1 (1e-05)
+Initial search space (Z):               5134  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 13762.92
+//
+[ok]

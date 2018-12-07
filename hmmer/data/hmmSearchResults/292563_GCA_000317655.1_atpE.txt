@@ -1,0 +1,78 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292563_GCA_000317655.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpE  [M=137]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      2e-56  187.3   0.7    2.2e-56  187.2   0.7    1.0  1  AFZ46646.1  ATP synthase F1 subcomplex epsilon subunit [Cyano
+      0.004   14.7   2.2      0.004   14.7   2.2    2.8  3  AFZ47442.1  outer membrane efflux protein [Cyanobacterium sta
+
+
+Domain annotation for each sequence (and alignments):
+>> AFZ46646.1  ATP synthase F1 subcomplex epsilon subunit [Cyanobacterium stanieri PCC 7202]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  187.2   0.7   1.6e-59   2.2e-56       1     133 [.       1     132 [.       1     134 [] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 187.2 bits;  conditional E-value: 1.6e-59
+        atpE   1 mtltvrvispdktvwdaeaeevilpsttgqlgilsghaplltaldtgvmrvrasknqdwqaiallggfaeveedevtilvngaergdkinleearaafn 99 
+                 mtltvrvi+pdktvwd  a+evilps +gqlgil+ hapllt ld+gv+rvr++k  dw++ia++ggfaeve++ev +lvngae g++i+ e a+a+ +
+  AFZ46646.1   1 MTLTVRVITPDKTVWDQDAQEVILPSGSGQLGILTDHAPLLTNLDIGVLRVRTEK--DWKSIAVMGGFAEVENNEVKVLVNGAELGESIDKETAKADLE 97 
+                 9***************************************************986..8***************************************** PP
+
+        atpE 100 eaqtklnqvk.aedrqaqiqatqafkrararfqaa 133
+                 +aq++l+  + ++dr aqi+a+  +k+arar+qa+
+  AFZ46646.1  98 TAQNELQSANaSGDRLAQIKANSNYKKARARLQAT 132
+                 ******9875268********************96 PP
+
+>> AFZ47442.1  outer membrane efflux protein [Cyanobacterium stanieri PCC 7202]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.7   0.2       1.4     2e+03     118     132 ..      89     103 ..      70     110 .. 0.43
+   2 ?   -1.9   0.7      0.37   5.3e+02     117     117 ..     215     215 ..     172     251 .. 0.55
+   3 !   14.7   2.2   2.8e-06     0.004      68     135 ..     366     434 ..     353     436 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: -3.7 bits;  conditional E-value: 1.4
+        atpE 118 qatqafkrararfqa 132
+                 +a+  ++r+r  ++a
+  AFZ47442.1  89 RAKLELQRSRESLRA 103
+                 222233333333333 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.37
+        atpE 117 i 117
+                 +
+  AFZ47442.1 215 L 215
+                 2 PP
+
+  == domain 3  score: 14.7 bits;  conditional E-value: 2.8e-06
+        atpE  68 faeveedevtilvngae...rgdkinleearaafneaqtklnqvkaedrqaqiqatqafkrararfqaagg 135
+                  a  e++e++i ++  +   +  +i le   +a+n+  ++ +++++   qa + at++++ ar rfqa  g
+  AFZ47442.1 366 AARAEQEEISIAIDENNfddQKSEIRLE-VETAYNDLIANRDNIATT-EQAAVTATESLRLARLRFQAGVG 434
+                 5788999999999776511144567775.7899****9999999876.5899***************9876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (137 nodes)
+Target sequences:                         2837  (903685 residues searched)
+Passed MSV filter:                        87  (0.0306662); expected 56.7 (0.02)
+Passed bias filter:                       70  (0.024674); expected 56.7 (0.02)
+Passed Vit filter:                         8  (0.00281988); expected 2.8 (0.001)
+Passed Fwd filter:                         3  (0.00105746); expected 0.0 (1e-05)
+Initial search space (Z):               2837  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 4126.83
+//
+[ok]

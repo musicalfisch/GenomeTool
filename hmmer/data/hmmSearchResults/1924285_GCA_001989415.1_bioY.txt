@@ -1,0 +1,71 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/bioY.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1924285_GCA_001989415.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       bioY  [M=209]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.2e-08   30.9   0.8    2.9e-08   30.5   0.8    1.2  1  AQL31065.1  biotin biosynthesis protein BioY [Prochlorococcus
+     0.0039   13.7   0.5      0.011   12.2   0.0    1.9  2  AQL31026.1  hypothetical protein BSR22_07485 [Prochlorococcus
+
+
+Domain annotation for each sequence (and alignments):
+>> AQL31065.1  biotin biosynthesis protein BioY [Prochlorococcus sp. RS50]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.5   0.8   3.3e-11   2.9e-08      27     131 ..      12     113 ..       5     138 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 30.5 bits;  conditional E-value: 3.3e-11
+        bioY  27 vlvasLLlillaqliiallflPvaitGqaltvllvtlqvgalLltlllllylleiLlalaylslGlsqLsvltGgtGaalLldPlaayLaGflveaWvv 125
+                 v   s+++  +  + i+l+f+ +++  +    l++t q+++ +l  l+   ++   +   y+ lGl+ L+ ++ g+   +Ll P ++yL G ++    +
+  AQL31065.1  12 VSLQSIVITSMLPVYIPLPFIYKSSNNF---DLPITWQIPTIILLTLIFHKKVVFRAFSIYIILGLFILPIFQQGGSLGYLLTPNFGYLLGLYPLIKII 107
+                 4555666666666777777777776654...58***********9999999999999999********************************9988887 PP
+
+        bioY 126 dRlark 131
+                 d l  +
+  AQL31065.1 108 DNLNNR 113
+                 777655 PP
+
+>> AQL31026.1  hypothetical protein BSR22_07485 [Prochlorococcus sp. RS50]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.2   0.0   1.2e-05     0.011     102     159 ..     161     218 ..     128     224 .. 0.87
+   2 ?   -1.9   0.4      0.26   2.4e+02      88      96 ..     260     268 ..     233     303 .. 0.56
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 1.2e-05
+        bioY 102 tGaalLldPlaayLaGflveaWvvdRlarkraasdllnlvLisllGlvvlqvclaenl 159
+                 t +al+++Pl+ +++  +  + v +R a++ + s+l+ l+   l G+  ++++ +en 
+  AQL31026.1 161 TISALMIFPLILGIVSLFGGRMVNQRKAQQESLSKLSDLIQEDLSGISAIKIYAQENA 218
+                 56799*************************************************9995 PP
+
+  == domain 2  score: -1.9 bits;  conditional E-value: 0.26
+        bioY  88 lslGlsqLs 96 
+                 lslG +qL 
+  AQL31026.1 260 LSLGTFQLE 268
+                 344444442 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (209 nodes)
+Target sequences:                         1790  (495199 residues searched)
+Passed MSV filter:                        61  (0.0340782); expected 35.8 (0.02)
+Passed bias filter:                       34  (0.0189944); expected 35.8 (0.02)
+Passed Vit filter:                         7  (0.00391061); expected 1.8 (0.001)
+Passed Fwd filter:                         2  (0.00111732); expected 0.0 (1e-05)
+Initial search space (Z):               1790  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.02
+# Mc/sec: 5174.83
+//
+[ok]

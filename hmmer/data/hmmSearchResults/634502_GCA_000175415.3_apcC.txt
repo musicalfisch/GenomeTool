@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/apcC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/634502_GCA_000175415.3.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       apcC  [M=67]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.1e-49  164.4   0.7    1.2e-49  164.3   0.7    1.0  1  KDR58997.1  photosystem I reaction center subunit XII [Arthro
+    1.6e-06   26.1   0.0    2.6e-06   25.5   0.0    1.4  1  KDR54420.1  photosystem I reaction center subunit XII [Arthro
+     0.0056   14.8   0.0      0.018   13.2   0.0    1.8  1  KDR54313.1  ferredoxin-NADP reductase [Arthrospira platensis 
+  ------ inclusion threshold ------
+      0.024   12.8   0.0      0.057   11.6   0.0    1.6  1  KDR54422.1  photosystem I reaction center subunit XII [Arthro
+
+
+Domain annotation for each sequence (and alignments):
+>> KDR58997.1  photosystem I reaction center subunit XII [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.3   0.7   8.7e-53   1.2e-49       1      67 []       1      67 []       1      67 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.3 bits;  conditional E-value: 8.7e-53
+        apcC  1 mrmfkitacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll 67
+                mr fk+tacvPsqtrirtqrelqntyftklvpydnWfreqqrimkmGGkivkvelatGkpgtntGll
+  KDR58997.1  1 MRSFKVTACVPSQTRIRTQRELQNTYFTKLVPYDNWFREQQRIMKMGGKIVKVELATGKPGTNTGLL 67
+                9****************************************************************96 PP
+
+>> KDR54420.1  photosystem I reaction center subunit XII [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.5   0.0   1.9e-09   2.6e-06      30      58 ..      49      77 ..      40      84 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 25.5 bits;  conditional E-value: 1.9e-09
+        apcC 30 lvpydnWfreqqrimkmGGkivkvelatG 58
+                +vpy+   +e qri +mGGkiv +e  t 
+  KDR54420.1 49 IVPYNRMNQEMQRINRMGGKIVSIEPMTT 77
+                79**********************97775 PP
+
+>> KDR54313.1  ferredoxin-NADP reductase [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.2   0.0   1.3e-05     0.018      31      54 ..      50      73 ..      42      84 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 1.3e-05
+        apcC 31 vpydnWfreqqrimkmGGkivkve 54
+                vpy+   +e +r+ kmG kiv++ 
+  KDR54313.1 50 VPYERMNQEMRRLSKMGAKIVNIY 73
+                9********************986 PP
+
+>> KDR54422.1  photosystem I reaction center subunit XII [Arthrospira platensis str. Paraca]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0   4.2e-05     0.057      31      54 ..     246     269 ..     235     271 .] 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 4.2e-05
+        apcC  31 vpydnWfreqqrimkmGGkivkve 54 
+                 v+y++   + qri +mGG+++ v 
+  KDR54422.1 246 VAYEQLSGQLQRINRMGGRVISVT 269
+                 8899999999***********995 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (67 nodes)
+Target sequences:                         5439  (1620411 residues searched)
+Passed MSV filter:                       195  (0.0358522); expected 108.8 (0.02)
+Passed bias filter:                      110  (0.0202243); expected 108.8 (0.02)
+Passed Vit filter:                         7  (0.001287); expected 5.4 (0.001)
+Passed Fwd filter:                         4  (0.000735429); expected 0.1 (1e-05)
+Initial search space (Z):               5439  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 3618.92
+//
+[ok]

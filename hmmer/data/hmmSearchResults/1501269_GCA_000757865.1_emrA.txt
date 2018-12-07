@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/emrA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501269_GCA_000757865.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       emrA  [M=448]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    0.00041   16.7   0.3      0.056    9.7   0.0    2.6  3  AIQ97739.1  putative membrane fusion protein [Prochlorococcus
+     0.0014   15.0   0.0      0.063    9.5   0.0    2.1  2  AIQ98263.1  putative transporter component [Prochlorococcus s
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ97739.1  putative membrane fusion protein [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.6   0.1    0.0034       3.9      92     134 ..      71     113 ..      55     123 .. 0.81
+   2 ?    1.2   0.0     0.019        21     198     232 ..     110     144 ..     104     155 .. 0.83
+   3 !    9.7   0.0   4.9e-05     0.056     352     393 ..     210     251 ..     188     259 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 3.6 bits;  conditional E-value: 0.0034
+        emrA  92 srvsgtvdqvlvddnqdvkagqplirlddrdfqiklqqaqadl 134
+                  +  g +d+++v++ ++vk g+ + ++d  d++ ++++ +a+ 
+  AIQ97739.1  71 PKRQGILDEIFVEEGDQVKKGDLIAKMDFGDLEFRIDELKANY 113
+                 466799**********************998888888777765 PP
+
+  == domain 2  score: 1.2 bits;  conditional E-value: 0.019
+        emrA 198 nanlakaqadynrfnqlfssgavsrreldtarqay 232
+                 +an    +a ++r + lf  ga+s  e +  ++ +
+  AIQ97739.1 110 KANYETQKASFKRREMLFKEGAISAEEYEEYKNRF 144
+                 68999999*****************9988766655 PP
+
+  == domain 3  score: 9.7 bits;  conditional E-value: 4.9e-05
+        emrA 352 vtanfketqlekmhpgqkveikldsfphheftgriesvspas 393
+                 + a+  e+++ +++ gq   i++d+fp + f   +  +sp++
+  AIQ97739.1 210 IVAKVPESDIGRIKTGQEARIRVDAFPDKRFKAVVSKISPSA 251
+                 678889999******************************975 PP
+
+>> AIQ98263.1  putative transporter component [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    3.4   0.0    0.0038       4.4      62     120 ..     104     165 ..      87     182 .. 0.75
+   2 !    9.5   0.0   5.5e-05     0.063     302     384 ..     214     298 ..     186     323 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 3.4 bits;  conditional E-value: 0.0038
+        emrA  62 sgfgynwwqyasthqstdnatvtgn...ihsigsrvsgtvdqvlvddnqdvkagqplirldd 120
+                 + fg  w  +a t +             +  +     g + ++lv++ + v  gq l++ld 
+  AIQ98263.1 104 TVFGLSWLAFAKTEEIVIAQGKLEPingVVDVQMPFEGIIGEILVEEGEKVEKGQILLKLDT 165
+                 568888888888877654443333300033455567899*********************96 PP
+
+  == domain 2  score: 9.5 bits;  conditional E-value: 5.5e-05
+        emrA 302 qvalknakqqlayvtitapvsgrvgr.knvqtgqqvqagtpllaivd.dqywvtanfketqlekmhpgqkveikldsfphheftg 384
+                 +  + +++  l y +i ap  g v   k   +g   ++  p++ iv  ++   t ++   ++  +  g+ v+i +dsfp  +f  
+  AIQ98263.1 214 ESRIAESNVTLKYQSIIAPSNGIVFDlKPKASGFVGRTTEPVMKIVPiEKLKATVEIASKDIGFVSVGKSVDISIDSFPATDFGV 298
+                 444555667899**********997526666777778888*****974778899**************************99953 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (448 nodes)
+Target sequences:                         2287  (554079 residues searched)
+Passed MSV filter:                        33  (0.0144294); expected 45.7 (0.02)
+Passed bias filter:                       25  (0.0109314); expected 45.7 (0.02)
+Passed Vit filter:                         6  (0.00262352); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000874508); expected 0.0 (1e-05)
+Initial search space (Z):               2287  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.03
+# Mc/sec: 8274.25
+//
+[ok]

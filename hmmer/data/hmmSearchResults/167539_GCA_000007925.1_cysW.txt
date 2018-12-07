@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysW.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/167539_GCA_000007925.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysW  [M=280]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+      6e-05   19.4  10.0    0.00013   18.2   2.4    3.4  2  AAP99533.1  ABC-type Fe3+ transport system permease component
+    0.00021   17.6  16.0    0.00054   16.2  16.0    1.9  1  AAP99643.1  ABC-type phosphate transport system permease comp
+
+
+Domain annotation for each sequence (and alignments):
+>> AAP99533.1  ABC-type Fe3+ transport system permease component [Prochlorococcus marinus subsp. marinus str. CCMP1375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   18.2   2.4   1.4e-07   0.00013      79     223 ..      70     203 ..      43     254 .. 0.70
+   2 ?    1.7   2.9     0.015        14     164     212 ..     400     448 ..     221     457 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 18.2 bits;  conditional E-value: 1.4e-07
+        cysW  79 ifglcaawviarnqfrgktllislidlpfavspvvaglmivllygrngwlgsflelfdikilfalpgmvlatifvtmpfvarevipvleeigleqeeag 177
+                  +g +  w++a  +f+g+  l     lp+a       l+  +l      +gs   +  i+i   + g+++   + t p+v       + + g  q ea 
+  AAP99533.1  70 TLGTVNGWLLANCRFKGRKYLRLAQLLPLATPAY---LLSAILID----IGS---IHGIRIHGMFWGILI-MSLTTYPYVFLLSAESFAKCGQRQLEAC 157
+                 5566666777777777766665555566664332...22222222....333...345666666666544.4568999999999999************ PP
+
+        cysW 178 rtlgandwqifwrvtlpnirwglmygvlltnaramgefgavsvvsg 223
+                 r+lg   w+ f r++lp     +  g+ l     + e+gav ++  
+  AAP99533.1 158 RSLGIGPWNSFRRIALPMATPAIGAGIALMGMEVINELGAVQLLNI 203
+                 *****************************************98754 PP
+
+  == domain 2  score: 1.7 bits;  conditional E-value: 0.015
+        cysW 164 pvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvlltnaram 212
+                   +e i  + +ea  +lgan   ++  + lp ++  l+ g ll    ++
+  AAP99533.1 400 SAFERINPNIDEAAMSLGANWTGVLKTIHLPLLKGPLVVGSLLVFVDTI 448
+                 4578888899999999999999999999999999999999999876665 PP
+
+>> AAP99643.1  ABC-type phosphate transport system permease component [Prochlorococcus marinus subsp. marinus str. CCMP1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2  16.0   5.7e-07   0.00054      72     224 ..      94     253 ..      25     315 .. 0.65
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 5.7e-07
+        cysW  72 itvplntifglcaawviarnqfrgktllislidlpfavspvvaglmivllyg..rngwlgsflelfd.ikilfal...pgm...vlatifvtmpfvare 161
+                 i+vpl     +  +  i  +++rg  l+  +++l  a+  vv gl  +++       +l  + ++f  i  l +    pg+   +l  +++ +p+++  
+  AAP99643.1  94 IAVPLGVGTAIFITEDIIPKKIRG--LIGLMVELLAAIPSVVLGLWAIFVMEpfIRPFLNLLYKMFGwIPFLSTQpigPGIapaILILVVMILPIITSI 190
+                 345554444444444444444444..3333467777777788887655443211223333333334323333332112454111455556677999999 PP
+
+        cysW 162 vipvleeigleqeeagrtlgandwqifwrvtlpnirwglmygvlltnaramgefgavsvvsgs 224
+                     l+++  +  ea   +ga+ w  ++ v lp    g+  gvll   ramge  av+++ g 
+  AAP99643.1 191 SRDSLKQVPAKLREAAYGIGATRWTAMFNVILPAAISGITGGVLLGLGRAMGETMAVTMIIGN 253
+                 9999****************************************************9988663 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (280 nodes)
+Target sequences:                         1882  (516756 residues searched)
+Passed MSV filter:                        82  (0.0435707); expected 37.6 (0.02)
+Passed bias filter:                       42  (0.0223167); expected 37.6 (0.02)
+Passed Vit filter:                         3  (0.00159405); expected 1.9 (0.001)
+Passed Fwd filter:                         2  (0.0010627); expected 0.0 (1e-05)
+Initial search space (Z):               1882  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 3617.29
+//
+[ok]

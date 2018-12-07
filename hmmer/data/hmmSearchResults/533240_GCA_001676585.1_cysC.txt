@@ -1,0 +1,70 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/533240_GCA_001676585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.8e-45  152.3   0.0    2.3e-45  152.0   0.0    1.0  1  OBU75952.1  adenylyl-sulfate kinase [Cylindrospermopsis racib
+  ------ inclusion threshold ------
+      0.026   11.6   0.0      0.056   10.5   0.0    1.6  1  OBU76323.1  adenylyl-sulfate kinase [Cylindrospermopsis racib
+
+
+Domain annotation for each sequence (and alignments):
+>> OBU75952.1  adenylyl-sulfate kinase [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  152.0   0.0   1.3e-48   2.3e-45       7     167 ..      45     206 ..      40     216 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 152.0 bits;  conditional E-value: 1.3e-48
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltkglgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgkigs. 104
+                 r   +w+tglsg+gk+t++  l+  l  +g+   vldgd +r  l   lgfs  dr enirrig v++l++  g +v+ + ispyr+ re++r   g+ 
+  OBU75952.1  45 RNGILWFTGLSGSGKTTLALELERILFQKGWYTFVLDGDNIRHGLCADLGFSAADRAENIRRIGEVAKLFADSGCLVITAFISPYRKDREQIRILSGDl 143
+                 55679*****************************************************************************************99985 PP
+
+        cysC 105 fvevfvnaplsvceerdvkglykrarageiksftgiddpyeppfnpevecrtdletleesvak 167
+                 f ev++ +p+++ce+rd kgly +ar gei sftgi  pyepp  p++ + t   ++e s+ +
+  OBU75952.1 144 FHEVYIATPMEICEQRDPKGLYAKARRGEIESFTGISAPYEPPRTPDLLVETSELSIEASLQQ 206
+                 88*********************************************9998887778877665 PP
+
+>> OBU76323.1  adenylyl-sulfate kinase [Cylindrospermopsis raciborskii CS-505]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.0   3.3e-05     0.056       7     120 ..     345     465 ..     340     476 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 3.3e-05
+        cysC   7 rgvtvwltglsgagkstitealqakliaegysievldgdivrtnltk.g..lgfskedrdenirrigfvsnlltrhgvivlvsaispyreireevrgki 102
+                 +g  + + glsg+gkst    l akl a     + +   +    l   g    ++ e  ++   r+ +    l+ +g  v++ a    r +r++v  + 
+  OBU76323.1 345 QGELILMCGLSGSGKSTTGRYLAAKLGAVHLRSDAVRKHLAGISLRErGsnEIYTPEMTQKTYNRLLVWGITLANQGWSVILDAKYDRRYLRQQVIDQA 443
+                 57778899******************9987666655555554444321211346677777777888777788888888888888888888888887665 PP
+
+        cysC 103 gsf....vevfvnaplsvceer 120
+                  +       v+  apl+v eer
+  OBU76323.1 444 NKHqlpaKIVYCTAPLEVLEER 465
+                 5441121357888888888887 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         3446  (1137699 residues searched)
+Passed MSV filter:                       170  (0.0493326); expected 68.9 (0.02)
+Passed bias filter:                      155  (0.0449797); expected 68.9 (0.02)
+Passed Vit filter:                        23  (0.00667441); expected 3.4 (0.001)
+Passed Fwd filter:                         2  (0.000580383); expected 0.0 (1e-05)
+Initial search space (Z):               3446  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.04
+# Mc/sec: 5233.42
+//
+[ok]

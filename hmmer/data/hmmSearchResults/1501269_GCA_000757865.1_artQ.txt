@@ -1,0 +1,74 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/artQ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1501269_GCA_000757865.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       artQ  [M=331]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    7.2e-68  226.4  14.1      8e-68  226.3  14.1    1.0  1  AIQ97969.1  ABC-type amino acid transport system permease com
+    3.2e-19   66.5  10.4    3.4e-17   59.9  10.4    2.3  1  AIQ97967.1  ABC transporter for amino acid [Prochlorococcus s
+
+
+Domain annotation for each sequence (and alignments):
+>> AIQ97969.1  ABC-type amino acid transport system permease component [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  226.3  14.1     7e-71     8e-68     112     331 .]       4     223 ..       1     223 [. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 226.3 bits;  conditional E-value: 7e-71
+        artQ 112 wlllgglflkaiplddlsgliltllvaiasmilsfplgvllalgrqselpairwlsigyiellrglpllgilfmaqvmlplilpagtrperviraiagf 210
+                 +ll ggl l  i   +  gl lt+l++++s +ls+p+g++lal r+s lp ++ ls  +i+++r +pl+ +lf+ q+++pl lp     +rv rai  f
+  AIQ97969.1   4 YLLYGGLGLSPIMSRQWGGLTLTILLTVCSSLLSLPIGIVLALCRHSSLPMVQKLSSIFIDVMRAIPLIAVLFFGQLLIPLFLPVEIEIDRVWRAIFAF 102
+                 799************************************************************************************************ PP
+
+        artQ 211 tlfaaaylaenvrgglqaipkgqieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivglvdllgmagsvlanpkfigdypevylf 309
+                 tlf +ay+ae++rgglq+ip+ qieaa++lgl+   ++ +i++pqal+  +pa+  q i lf++tsl+ai+glv+llg+  s+lanp+fig+y evy++
+  AIQ97969.1 103 TLFVSAYIAEDIRGGLQSIPNTQIEAANSLGLNQYQIIQFILIPQALRIALPALTNQSIGLFQNTSLMAILGLVELLGIGRSILANPEFIGQYIEVYVW 201
+                 *************************************************************************************************** PP
+
+        artQ 310 lafiywifcysmslasrrleqr 331
+                 la +ywi+c  m++ +r+leqr
+  AIQ97969.1 202 LACVYWIVCTIMAVLARHLEQR 223
+                 *********************8 PP
+
+>> AIQ97967.1  ABC transporter for amino acid [Prochlorococcus sp. MIT 0801]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   59.9  10.4     3e-20   3.4e-17     130     296 ..      72     259 ..      66     293 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 59.9 bits;  conditional E-value: 3e-20
+        artQ 130 gliltllvaiasmilsfplgvllalgrqselpairwlsigyiellrglpll.........gilfmaqvmlpli...lp...ag......trpervirai 207
+                 g + +l v ++s+il+  lg l+ + r      +  +s gyi ++r  pll         g l + + m+  i   +     g      t     +  +
+  AIQ97967.1  72 GWLNSLKVIVSSLILATFLGTLIGFARTGSNSLLGLISAGYITIIRQTPLLlqlmfwyfvGFLGLKDNMFIQIkniFNisnKGiefsglTFSSEFLALL 170
+                 56678999*****************************************86322222222222233344433311122111221111124455667778 PP
+
+        artQ 208 agftlfaaaylaenvrgglqaipkgqieaakalglkpifvlllivlpqalkavipaivgqfislfkdtsllaivglvdllgmagsvlan 296
+                  g+++f++a++ae +rgg+ ++p+gq ea ++lg+     l+ i+lpqal a+ip +  q+++l k+++l   vg  d+  +  +++ +
+  AIQ97967.1 171 FGLSIFTSAFIAEVIRGGILSVPRGQWEAFRSLGISERKGLIRIILPQALPAIIPGLTSQYLNLAKNSTLAIAVGYSDIYAINDTIINQ 259
+                 9*********************************************************************999*******999888765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (331 nodes)
+Target sequences:                         2287  (554079 residues searched)
+Passed MSV filter:                       108  (0.0472234); expected 45.7 (0.02)
+Passed bias filter:                       38  (0.0166157); expected 45.7 (0.02)
+Passed Vit filter:                         5  (0.00218627); expected 2.3 (0.001)
+Passed Fwd filter:                         2  (0.000874508); expected 0.0 (1e-05)
+Initial search space (Z):               2287  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 6113.34
+//
+[ok]

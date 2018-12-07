@@ -1,0 +1,79 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1137096_GCA_001904745.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpD  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.7e-90  300.6   2.8    1.9e-90  300.4   2.8    1.0  1  OKH44018.1  F0F1 ATP synthase subunit delta [Calothrix sp. HK
+  ------ inclusion threshold ------
+      0.058   12.0   5.2      0.038   12.6   0.8    2.7  3  OKH48852.1  dynamin family protein [Calothrix sp. HK-06]
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH44018.1  F0F1 ATP synthase subunit delta [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  300.4   2.8   4.6e-94   1.9e-90       1     183 [.       1     183 []       1     183 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 300.4 bits;  conditional E-value: 4.6e-94
+        atpD   1 mksdaataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqnfldnpfvkpenkknvlkqllgegvnpylrnfllllvdrrriafleailq 99 
+                 mks +at e+a pyaqal+s+aqs+nlte++g+dar++++ll+gs++l+nf+dnpf++ + kk+++++ll + +n+++rnfl+llvdr+ri+fle+i+ 
+  OKH44018.1   1 MKSTVATEEIAAPYAQALMSVAQSNNLTEAFGDDARSIVGLLSGSEDLRNFFDNPFIQIDTKKSLVNRLLSDDTNAFFRNFLMLLVDRKRISFLEPIMR 99 
+                 9************************************************************************************************** PP
+
+        atpD 100 qylallrqlnqtvlaevtsavplteaqqqavkekvialtkarqveletkidsdliggviikvgsqvidaslrgqlrrlslrlss 183
+                 qyl+llr+lnqtvlaevtsa+pl+eaq qav ekv+a+t+ar vele k++sdliggviikvgsqvidaslrgqlrrlsl l s
+  OKH44018.1 100 QYLSLLRELNQTVLAEVTSAIPLSEAQEQAVIEKVVAMTNARSVELEKKVNSDLIGGVIIKVGSQVIDASLRGQLRRLSLSLGS 183
+                 ********************************************************************************9976 PP
+
+>> OKH48852.1  dynamin family protein [Calothrix sp. HK-06]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.2   0.1      0.16   6.4e+02       4      44 ..     125     167 ..      99     190 .. 0.70
+   2 ?   -1.2   0.0      0.16   6.4e+02       4      50 ..     242     287 ..     240     364 .. 0.63
+   3 ?   12.6   0.8   9.3e-06     0.038      64     141 ..     696     769 ..     655     777 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -1.2 bits;  conditional E-value: 0.16
+        atpD   4 daataevaqpyaqallsiaqsq..nlteevgedartllsllkg 44 
+                 ++++aev +   q   +i + +  +   e++++a++l+ ll+g
+  OKH48852.1 125 NINKAEVVDLLQQGCKAIIEKEggETKSELAKQAKALILLLEG 167
+                 5566666666666666655443114556788888888888876 PP
+
+  == domain 2  score: -1.2 bits;  conditional E-value: 0.16
+        atpD   4 daataevaqpyaqallsiaqsqnlteevgedartllsllkgskelqn 50 
+                   a a++  p + a++ + +s    e   e    l++ + ++  +++
+  OKH48852.1 242 ALAYAKIQHPDTSAVVCVLKSAAAGEMTKE-ETQLIETIANNPGIRD 287
+                 567788888888999988888776665444.4456666666555544 PP
+
+  == domain 3  score: 12.6 bits;  conditional E-value: 9.3e-06
+        atpD  64 nvlkqllgegvnpylrnfllllvdrrriafleailqqylallrqlnqtvlaevtsavplteaqqqavkekvialtkar 141
+                 + +++ + ++ n+ l+n ll l d++     +ailqqy +    l++t+  e t  ++  +  ++ v++k++a  +a 
+  OKH48852.1 696 STIRKTFRQTFNQTLKNQLLPLADKQ----ADAILQQYASARSYLEKTLEQEATEKIAQNQRLLDVVEQKIMAYNQAT 769
+                 56778888999*************98....599***************************************988775 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         8148  (2613279 residues searched)
+Passed MSV filter:                       291  (0.0357143); expected 163.0 (0.02)
+Passed bias filter:                      178  (0.0218459); expected 163.0 (0.02)
+Passed Vit filter:                        17  (0.0020864); expected 8.1 (0.001)
+Passed Fwd filter:                         2  (0.000245459); expected 0.1 (1e-05)
+Initial search space (Z):               8148  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.00s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 9616.87
+//
+[ok]

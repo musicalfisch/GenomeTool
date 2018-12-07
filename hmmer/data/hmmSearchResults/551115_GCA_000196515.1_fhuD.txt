@@ -1,0 +1,69 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/fhuD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/551115_GCA_000196515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       fhuD  [M=330]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.6e-08   30.0   0.0    4.9e-08   29.9   0.0    1.0  1  ADI65773.1  iron(III) dicitrate-binding periplasmic protein o
+    1.2e-06   25.4   0.0    3.2e-06   23.9   0.0    1.7  1  ADI63913.1  periplasmic binding protein ['Nostoc azollae' 070
+
+
+Domain annotation for each sequence (and alignments):
+>> ADI65773.1  iron(III) dicitrate-binding periplasmic protein of ABC transporter ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.0   2.7e-11   4.9e-08       9      62 ..      10      66 ..       4      67 .] 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 2.7e-11
+        fhuD  9 rlftltiltivffsacvgstsqnldqstells...vdcrivehslgktcvpleprrv 62
+                ++  lt +++++++ac gs  qn  +    ls    +cr+v+h lg +cvp+ p+ v
+  ADI65773.1 10 KVCILTTISLLIVTACHGSFYQNTGEIKPKLSalpAECRLVKHELGESCVPIHPKWV 66
+                567789999999***********98766555422279*****************976 PP
+
+>> ADI63913.1  periplasmic binding protein ['Nostoc azollae' 0708]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.9   0.0   1.7e-09   3.2e-06     107     305 ..      14     193 ..       5     210 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 23.9 bits;  conditional E-value: 1.7e-09
+        fhuD 107 inletlavlqpdliigavwemkgiynklsai.aptvafemqtpadwqrpfrfdgqvlgletqaekvleqyqmrvnklraqvsdsplqislvriraesgq 204
+                  nle +  l+pdl+iga    +   +kl  +  pt++ +++    wq   ++       +t a+k+  + q+ +n  +  ++    q     i      
+  ADI63913.1  14 PNLEKIVSLKPDLVIGATGFSNVPLQKLQQLeIPTLSTKVN---SWQSLEQL------TKTLANKIDIDPQLLLNSYKNFLTANQNQNISTLILVSRQP 103
+                 499**************998888899998773588876664...58765443......36788999999999999999888777666555556677778 PP
+
+        fhuD 205 mslylkncfggailadlgfarppsqdqgtpdqppfaksisresmteadgdviflftfghtpqiaaaaeaqlerldtdplwqslgavqknrvysvghywg 303
+                 +s   kn + g +++ +g     s+ qg      +  ++s e + ea+ dv++++          a    l+ l  +p+wq l a ++nrvy    y+g
+  ADI63913.1 104 ISTPNKNSWAGDLMSKFGAKNIASELQGNSPIGGYV-TLSAEKVLEANPDVLIIV---------NAEPNLLNSLKKEPFWQKLKASKNNRVYVFD-YYG 191
+                 9***************************98888776.79************8753.........455567899*******************765.555 PP
+
+        fhuD 304 ag 305
+                   
+  ADI63913.1 192 LV 193
+                 54 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (330 nodes)
+Target sequences:                         3651  (943585 residues searched)
+Passed MSV filter:                        98  (0.026842); expected 73.0 (0.02)
+Passed bias filter:                       72  (0.0197206); expected 73.0 (0.02)
+Passed Vit filter:                         9  (0.00246508); expected 3.7 (0.001)
+Passed Fwd filter:                         2  (0.000547795); expected 0.0 (1e-05)
+Initial search space (Z):               3651  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.03
+# Mc/sec: 10379.43
+//
+[ok]

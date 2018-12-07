@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cueA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1710895_GCA_001672095.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cueA  [M=496]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.2e-13   46.5   0.5    3.1e-11   40.3   0.1    2.2  2  OBQ28448.1  copper oxidase [Aphanizomenon flos-aquae MDT14a]
+      0.004   13.6   0.0     0.0064   12.9   0.0    1.2  1  OBQ29303.1  plastocyanin [Aphanizomenon flos-aquae MDT14a]
+  ------ inclusion threshold ------
+      0.012   12.0   0.2      0.013   11.9   0.2    1.0  1  OBQ28573.1  hypothetical protein AN483_14840 [Aphanizomenon f
+
+
+Domain annotation for each sequence (and alignments):
+>> OBQ28448.1  copper oxidase [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.3   0.1   2.4e-14   3.1e-11      55     169 ..      88     195 ..      38     210 .. 0.85
+   2 !    4.6   0.0    0.0017       2.2     425     494 ..     261     328 ..     246     330 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 40.3 bits;  conditional E-value: 2.4e-14
+        cueA  55 earpglirlgqq.qgnlltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlh 152
+                  a    i+l      n+   ng+ipgp l ak g+ ++i f n+  ++  lh+hg+h  +    d i   +  g++  yef      p g   yh h+ 
+  OBQ28448.1  88 IAGTSTIQLNSAvSYNIWDLNGRIPGPTLRAKEGEKIRILFLNNAGHSHSLHFHGVHPAE---MDGI-KPIGNGKATIYEFD---AEPYGVHLYHCHVA 179
+                 55556666655414689999*************************************665...4555.467899*******6...68**********97 PP
+
+        cueA 153 elvaeqvfgglggifvv 169
+                   v+ +v  gl g+f++
+  OBQ28448.1 180 P-VTRHVAKGLYGMFII 195
+                 6.7899*********98 PP
+
+  == domain 2  score: 4.6 bits;  conditional E-value: 0.0017
+        cueA 425 hsfhlhtnpfqvisrngkpdpyqawedtlriranetvriripfrdftgktvyhchvldhedlgmmgivav 494
+                  +fhlh+n f+v        p     d l +   e   +   f+ + gk ++h h     + g mg  av
+  OBQ28448.1 261 VTFHLHANFFDVYPSGMTMTP-SVKTDVLTMGVAERHILEFAFK-YPGKYMFHPHQDAIAESGCMGQFAV 328
+                 57*********9876555555.67899********999999996.89********999999999999887 PP
+
+>> OBQ29303.1  plastocyanin [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   12.9   0.0   4.9e-06    0.0064     262     311 ..      84     133 ..      79     139 .] 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 12.9 bits;  conditional E-value: 4.9e-06
+        cueA 262 tdggsiakpvelrelllspgeraevlvqgkrppgryrllslpydrggamg 311
+                 t   ++ak +  ++ll+spg++   ++  +  pg y +   p+   g +g
+  OBQ29303.1  84 TKNAALAKSLSHKKLLMSPGQKVTTVIPADATPGSYTFYCEPHRGAGMVG 133
+                 567789*********************************99975444444 PP
+
+>> OBQ28573.1  hypothetical protein AN483_14840 [Aphanizomenon flos-aquae MDT14a]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.9   0.2   9.9e-06     0.013      70     170 ..      10     102 ..       6     108 .] 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 11.9 bits;  conditional E-value: 9.9e-06
+        cueA  70 lltyngqipgprleakpgdtvkihftnklsqatnlhyhglhipqtgnadniflsvppgetqtyeftlpknhpsgtfyyhphlhelvaeqvfgglggifv 168
+                 +lt+n   p   +  k   tv ++ftn+       hyhg+h    g + n+  +v  g  +   +t  +n     + y p   + +  qv+   g i++
+  OBQ28573.1  10 ILTFNTSDPNNTFSDKE-WTVILKFTNN-----SYHYHGMHT--KGSSINLSGAVASGTHERQVYTWNNNGTKYQVTYRPNDPNYIRVQVIDNKGKIIL 100
+                 57777777777776664.5788888885.....68*****96..6899999999****9999999999**99999****************99999987 PP
+
+        cueA 169 vr 170
+                  r
+  OBQ28573.1 101 NR 102
+                 66 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (496 nodes)
+Target sequences:                         3936  (1184914 residues searched)
+Passed MSV filter:                        91  (0.0231199); expected 78.7 (0.02)
+Passed bias filter:                       74  (0.0188008); expected 78.7 (0.02)
+Passed Vit filter:                        10  (0.00254065); expected 3.9 (0.001)
+Passed Fwd filter:                         3  (0.000762195); expected 0.0 (1e-05)
+Initial search space (Z):               3936  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 11754.35
+//
+[ok]

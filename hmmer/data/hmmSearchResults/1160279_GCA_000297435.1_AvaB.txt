@@ -1,0 +1,60 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/AvaB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1160279_GCA_000297435.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       AvaB  [M=461]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.016   11.9   0.0      0.024   11.3   0.0    1.2  1  CCI34197.1  Ribonucleoside-diphosphate reductase subunit alph
+      0.033   10.9   0.0      0.046   10.4   0.0    1.1  1  CCI34459.1  Band 7 protein like [Microcystis sp. T1-4]
+
+
+Domain annotation for each sequence (and alignments):
+>> CCI34197.1  Ribonucleoside-diphosphate reductase subunit alpha [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.3   0.0   1.1e-05     0.024     252     321 ..     445     512 ..     412     529 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 11.3 bits;  conditional E-value: 1.1e-05
+        AvaB 252 lpiseanpwimqeyipgqeycthstvrqghv.qlhccckssafqvnyehvdhseierwilafvkglnltgq 321
+                   i+ anp   + yipg + ct s          hcc     + +n   +d  eie      v+ l+ t +
+  CCI34197.1 445 DTINRANPNKHDGYIPGVNLCTESFSNVTPDkTAHCCNL---VSLNLANIDGEEIESNCQIAVRILDNTID 512
+                 46999*****************99877665505566654...45788899999999988877877776655 PP
+
+>> CCI34459.1  Band 7 protein like [Microcystis sp. T1-4]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.4   0.0   2.1e-05     0.046     383     438 ..     208     263 ..     181     269 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.4 bits;  conditional E-value: 2.1e-05
+        AvaB 383 tyhevwrlltqllspkmlrqrlqilvngkdaifewddplpflmvhhwqipllllgs 438
+                 +  e+ r   q  + k+lrq l   +  + ai +wd  +p++m     +pl+ + s
+  CCI34459.1 208 AKAEINRAKGQAEAQKLLRQNLTAEILQQRAIEKWDGRFPIVMAGSGSLPLINIDS 263
+                 5568899999999********************************99999997766 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (461 nodes)
+Target sequences:                         4434  (1223634 residues searched)
+Passed MSV filter:                       133  (0.0299955); expected 88.7 (0.02)
+Passed bias filter:                      112  (0.0252594); expected 88.7 (0.02)
+Passed Vit filter:                         7  (0.00157871); expected 4.4 (0.001)
+Passed Fwd filter:                         2  (0.00045106); expected 0.0 (1e-05)
+Initial search space (Z):               4434  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.05
+# Mc/sec: 11281.91
+//
+[ok]

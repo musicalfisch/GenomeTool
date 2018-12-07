@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/292564_GCA_000316515.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.9e-48  160.5   5.0    2.1e-48  160.4   5.0    1.0  1  AFY30161.1  ATP synthase, F0 subunit c [Cyanobium gracile PCC
+  ------ inclusion threshold ------
+      0.022   12.9   1.4      0.025   12.7   0.3    1.7  2  AFY28455.1  hypothetical protein Cyagr_1279 [Cyanobium gracil
+       0.37    8.9   5.6       0.72    8.0   5.6    1.4  1  AFY28878.1  Rhodanese-related sulfurtransferase [Cyanobium gr
+
+
+Domain annotation for each sequence (and alignments):
+>> AFY30161.1  ATP synthase, F0 subunit c [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  160.4   5.0   1.9e-51   2.1e-48       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 160.4 bits;  conditional E-value: 1.9e-51
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                md+l++aasv+aa+lavGl++iGpgigqG+a+g aveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf+
+  AFY30161.1  1 MDSLTSAASVVAAGLAVGLGSIGPGIGQGTASGGAVEGIARQPEAEGKIRGTLLLSLAFMESLTIYGLVVALVLLFANPFS 81
+                9*******************************************************************************7 PP
+
+>> AFY28455.1  hypothetical protein Cyagr_1279 [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.7   0.3   2.3e-05     0.025      10      46 ..      12      52 ..       5      65 .. 0.81
+   2 ?   -3.6   0.0       2.9   3.2e+03      16      31 ..      94     109 ..      88     114 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: 12.7 bits;  conditional E-value: 2.3e-05
+        atpH 10 viaaalavGlaaiGpgig.qGnaa...gqaveGiarqpeae 46
+                 + a+lavG+aa  pg g q +a+   + a++ +ar  ea+
+  AFY28455.1 12 TLLACLAVGIAAACPGAGaQPQASpdqTAALNAVARMMEAQ 52
+                57799***********9856677633245899999999986 PP
+
+  == domain 2  score: -3.6 bits;  conditional E-value: 2.9
+        atpH  16 avGlaaiGpgigqGna 31 
+                 +  + a  p  gq na
+  AFY28455.1  94 SYVIPAQSPKTGQLNA 109
+                 5555666777777776 PP
+
+>> AFY28878.1  Rhodanese-related sulfurtransferase [Cyanobium gracile PCC 6307]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0   5.6   0.00066      0.72       4      37 ..      13      47 ..      11      55 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.00066
+        atpH  4 lvaaasvia.aalavGlaaiGpgigqGnaagqave 37
+                ++aa+sv a aa+ vGla  G g+g+G  a+ a +
+  AFY28878.1 13 VLAATSVAAmAAVGVGLALHGIGVGRGGPAQGASD 47
+                567888876578999***********998887765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         3280  (992729 residues searched)
+Passed MSV filter:                       257  (0.0783537); expected 65.6 (0.02)
+Passed bias filter:                      109  (0.0332317); expected 65.6 (0.02)
+Passed Vit filter:                        13  (0.00396341); expected 3.3 (0.001)
+Passed Fwd filter:                         3  (0.000914634); expected 0.0 (1e-05)
+Initial search space (Z):               3280  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 4020.55
+//
+[ok]

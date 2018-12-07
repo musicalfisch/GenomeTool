@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/ccmO.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1801610_GCA_001786555.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       ccmO  [M=266]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.012   11.9   0.0      0.026   10.8   0.0    1.5  2  OGI30451.1  hypothetical protein A2287_08655 [Candidatus Mela
+
+
+Domain annotation for each sequence (and alignments):
+>> OGI30451.1  hypothetical protein A2287_08655 [Candidatus Melainabacteria bacterium RIFOXYA12_FULL_32_12]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.8   0.0   1.2e-05     0.026     177     218 ..      35      77 ..      19      95 .. 0.89
+   2 ?   -3.1   0.0      0.22   4.5e+02     180     200 ..     208     228 ..     199     232 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 10.8 bits;  conditional E-value: 1.2e-05
+        ccmO 177 aekigelhavmiiprll.edlehtlpvasywletpeplpmllp 218
+                  ek+ +l  +++i ++   dl+ +lp    w +t +p+p+++ 
+  OGI30451.1  35 KEKVSDLNLIIVIDKMTaSDLKTALPAMKKWSKTKNPIPVFMD 77 
+                 59***********998637********************9875 PP
+
+  == domain 2  score: -3.1 bits;  conditional E-value: 0.22
+        ccmO 180 igelhavmiiprlledlehtl 200
+                 + +   v++i rl++ l+  l
+  OGI30451.1 208 LSQNDYVIVIQRLINSLKEVL 228
+                 455667899999999998776 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (266 nodes)
+Target sequences:                         2087  (650313 residues searched)
+Passed MSV filter:                        64  (0.030666); expected 41.7 (0.02)
+Passed bias filter:                       48  (0.0229995); expected 41.7 (0.02)
+Passed Vit filter:                         2  (0.000958313); expected 2.1 (0.001)
+Passed Fwd filter:                         1  (0.000479157); expected 0.0 (1e-05)
+Initial search space (Z):               2087  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.01s 00:00:00.03 Elapsed: 00:00:00.01
+# Mc/sec: 17298.33
+//
+[ok]

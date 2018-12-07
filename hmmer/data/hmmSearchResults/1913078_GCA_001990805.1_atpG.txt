@@ -1,0 +1,90 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1913078_GCA_001990805.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpG  [M=143]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.2e-60  201.4  13.0    1.4e-60  201.3  13.0    1.0  1  ONN61399.1  F0F1 ATP synthase subunit B' [Mastigocladus lamin
+    1.3e-05   23.0  10.3    1.7e-05   22.7  10.3    1.1  1  ONN61400.1  ATP synthase F0 subunit B [Mastigocladus laminosu
+  ------ inclusion threshold ------
+        2.4    6.0  15.9       0.26    9.1   1.7    2.3  2  ONN59178.1  primosomal protein [Mastigocladus laminosus 74]
+
+
+Domain annotation for each sequence (and alignments):
+>> ONN61399.1  F0F1 ATP synthase subunit B' [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  201.3  13.0   9.3e-64   1.4e-60       1     143 []       1     143 []       1     143 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 201.3 bits;  conditional E-value: 9.3e-64
+        atpG   1 mfdfdatlpvmalqfillavilnavfykplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkea 99 
+                 mfdfdatlp+malqf+lla +ln +fykpl+kvld+r +yir  +  a+e+lak+e l +eye ql+ ar+qsq++iaqaq+eaqk+++e++a aqkea
+  ONN61399.1   1 MFDFDATLPLMALQFLLLAAVLNVIFYKPLTKVLDDRDNYIRTNNLEARERLAKAERLTKEYEQQLAEARRQSQNVIAQAQTEAQKITAEKIAEAQKEA 99 
+                 9************************************************************************************************** PP
+
+        atpG 100 iarkeavaaeiaqqkeeafrslegqvaslsrqilekllgpelvr 143
+                  a++e va ei qqk+ea+rsle qv ++srqilekllgp lv+
+  ONN61399.1 100 QAQREQVAQEIEQQKQEALRSLEQQVDAFSRQILEKLLGPSLVK 143
+                 ******************************************96 PP
+
+>> ONN61400.1  ATP synthase F0 subunit B [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.7  10.3   1.2e-08   1.7e-05      10     134 ..      30     157 ..      23     164 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 22.7 bits;  conditional E-value: 1.2e-08
+        atpG  10 vmalqfillavilnavfy...kplskvlderaeyirqteggakeqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaa.aqkeaiarke 104
+                 ++  ++i la+++  +fy   k +s+ l er   i  +   a e+   + a + + + +l+ a+ ++q+i   a+ +a + a e + a a  e    ke
+  ONN61400.1  30 ILETNIINLAILVGVLFYfgrKVISNTLSERRSNIETAIREAEERAKEAAAQLSDVQQNLTQAQAEAQQIRKAAEENA-RSAREAILArAAEEVERMKE 127
+                 566778999*99999999888899*******9999988888888888888888899999*********9877666555.56666665515555556699 PP
+
+        atpG 105 avaaeiaqqkeeafrslegqvaslsrqile 134
+                 + a ++  ++e af  l  +v +++ q  e
+  ONN61400.1 128 TAARDLDTERERAFAELRQRVVAMALQKAE 157
+                 9999*****************999988766 PP
+
+>> ONN59178.1  primosomal protein [Mastigocladus laminosus 74]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1   1.7   0.00018      0.26      57     120 ..      70     132 ..      63     147 .. 0.86
+   2 ?    2.0   6.7     0.028        41      50     108 ..     189     247 ..     177     254 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 0.00018
+        atpG  57 alvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaaeiaqqkeeafrs 120
+                   vq+ye+   sa k+ qe+ a+  a   ++  ++v   +++  +  + va  ia q +e+f+ 
+  ONN59178.1  70 VTVQKYEIPAQSATKDLQELTAKF-AINFRIDPQQVVEIRRKQGSLENIVAKIIAPQTQESFKI 132
+                 679*****************9986.556788889999999999999999***********9974 PP
+
+  == domain 2  score: 2.0 bits;  conditional E-value: 0.028
+        atpG  50 eqlaktealvqeyelqlssarkqsqeiiaqaqaeaqklaservaaaqkeaiarkeavaa 108
+                 +q+a   a    y  q +    q++   a+ ++eaqkl +e + a   + + +kea+ a
+  ONN59178.1 189 KQIAEQRAQRAVYIAQEAEQEAQAEINRAKGKSEAQKLLAETLKAPGGQLVLQKEAIEA 247
+                 56777777777777777777777766678899*************99999999999876 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (143 nodes)
+Target sequences:                         4391  (1333665 residues searched)
+Passed MSV filter:                       176  (0.040082); expected 87.8 (0.02)
+Passed bias filter:                       84  (0.01913); expected 87.8 (0.02)
+Passed Vit filter:                         5  (0.00113869); expected 4.4 (0.001)
+Passed Fwd filter:                         3  (0.000683216); expected 0.0 (1e-05)
+Initial search space (Z):               4391  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.03
+# Mc/sec: 6357.14
+//
+[ok]

@@ -1,0 +1,54 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysC.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1165094_GCA_000350105.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysC  [M=184]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.017   11.7   0.1      0.046   10.2   0.0    1.7  2  CCH67186.1  YgjD/Kae1/Qri7 family, required for threonylcarba
+
+
+Domain annotation for each sequence (and alignments):
+>> CCH67186.1  YgjD/Kae1/Qri7 family, required for threonylcarbamoyladenosine (t(6)A) formation in tRNA [Richelia intrac
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.2   0.0     2e-05     0.046     116     170 ..      10      64 ..       4      75 .. 0.82
+   2 ?   -2.5   0.0      0.16   3.6e+02      12      40 ..     238     268 ..     229     292 .. 0.64
+
+  Alignments for each domain:
+  == domain 1  score: 10.2 bits;  conditional E-value: 2e-05
+        cysC 116 vceerdvkglykrarag.eiksftgiddpyeppfnpevecrtdletleesvakvwn 170
+                  c+e  v  + +r  +   + s t i +py   + pev  r  let++ ++a+ + 
+  CCH67186.1  10 SCDETAVAVIKNRQVCSsVVSSQTSIHQPYGG-VVPEVASRKHLETINPAIAQAFS 64 
+                 68888888888876655157889*******86.67***************999875 PP
+
+  == domain 2  score: -2.5 bits;  conditional E-value: 0.16
+        cysC  12 wltglsgagkstitealqakli..aegysie 40 
+                  ++ ++ + + ti++al  ++i  a  y +e
+  CCH67186.1 238 PIADIAASFQGTIAQALTKRVIscALDYGLE 268
+                 5566666777788888888877222345555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (184 nodes)
+Target sequences:                         2278  (598795 residues searched)
+Passed MSV filter:                       101  (0.0443371); expected 45.6 (0.02)
+Passed bias filter:                       90  (0.0395083); expected 45.6 (0.02)
+Passed Vit filter:                        15  (0.00658472); expected 2.3 (0.001)
+Passed Fwd filter:                         1  (0.000438982); expected 0.0 (1e-05)
+Initial search space (Z):               2278  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.02u 0.00s 00:00:00.02 Elapsed: 00:00:00.02
+# Mc/sec: 5508.91
+//
+[ok]

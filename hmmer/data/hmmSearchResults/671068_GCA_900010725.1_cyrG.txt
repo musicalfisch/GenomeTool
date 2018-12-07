@@ -1,0 +1,58 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cyrG.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/671068_GCA_900010725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cyrG  [M=465]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    4.7e-18   63.5   0.0    1.8e-17   61.6   0.0    1.8  2  CUR22061.1  guanine deaminase [Planktothrix serta PCC 8927]
+
+
+Domain annotation for each sequence (and alignments):
+>> CUR22061.1  guanine deaminase [Planktothrix serta PCC 8927]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.8   0.0     0.025   1.4e+02      45      60 ..      64      79 ..      39      99 .. 0.85
+   2 !   61.6   0.0   3.2e-21   1.8e-17     250     390 ..     257     394 ..     177     402 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: -0.8 bits;  conditional E-value: 0.025
+        cyrG 45 enklllpgfvnahths 60
+                 n l++pgf+++h h 
+  CUR22061.1 64 PNLLIMPGFIDTHIHF 79
+                477999*******995 PP
+
+  == domain 2  score: 61.6 bits;  conditional E-value: 3.2e-21
+        cyrG 250 krigylddrtslahcvhltdkdiailaetkstvvhnplsnlrlgsgiapil..kyrqagvnvtfgcdgassndsqdlleaikigsilhnvtdldyqhwi 346
+                  + g +++r+ +ah +hltd++ + l+e+ks++   p snl lgsg+  +   k +   ++v +g d  +   s  ll++       ++v++l+ q  +
+  CUR22061.1 257 DQAGLVGERSIFAHSIHLTDDEFKRLSEAKSAIAFCPTSNLFLGSGLFKLHqaKSKTHPIQVGLGSDIGA-GTSFSLLQTA---NEAYKVAQLQSQT-L 350
+                 5678999****************************************98862256667899999999543.3466676654...4457788887765.8 PP
+
+        cyrG 347 tprqavemaslggakglnladklgsltvgkkadlvlydltnlsl 390
+                 +p qa+ +a+lggak l+l+dk+gs+++gk+ad+++ d  +  l
+  CUR22061.1 351 SPFQALFLATLGGAKALKLEDKIGSFDIGKEADFIVLDYNATPL 394
+                 9**********************************999876555 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (465 nodes)
+Target sequences:                         5638  (1760186 residues searched)
+Passed MSV filter:                       104  (0.0184463); expected 112.8 (0.02)
+Passed bias filter:                       85  (0.0150763); expected 112.8 (0.02)
+Passed Vit filter:                         8  (0.00141894); expected 5.6 (0.001)
+Passed Fwd filter:                         1  (0.000177368); expected 0.1 (1e-05)
+Initial search space (Z):               5638  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.05u 0.01s 00:00:00.06 Elapsed: 00:00:00.06
+# Mc/sec: 13641.44
+//
+[ok]

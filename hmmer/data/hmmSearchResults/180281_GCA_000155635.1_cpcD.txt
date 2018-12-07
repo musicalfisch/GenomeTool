@@ -1,0 +1,86 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cpcD.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/180281_GCA_000155635.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cpcD  [M=74]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.6e-06   25.4   0.5    3.6e-06   24.2   0.5    1.6  1  EDY38292.1  CpcD/allophycocyanin linker domain protein [Cyano
+    6.4e-05   20.3   0.1    0.00013   19.3   0.1    1.5  1  EDY37523.1  hypothetical protein CPCC7001_402 [Cyanobium sp. 
+     0.0032   14.8   0.0     0.0061   13.9   0.0    1.6  1  EDY38806.1  hypothetical protein CPCC7001_1685 [Cyanobium sp.
+  ------ inclusion threshold ------
+      0.024   12.0   0.1      0.049   11.0   0.1    1.4  1  EDY38180.1  ferredoxin--NADP reductase [Cyanobium sp. PCC 700
+
+
+Domain annotation for each sequence (and alignments):
+>> EDY38292.1  CpcD/allophycocyanin linker domain protein [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.2   0.5   5.3e-09   3.6e-06      21      65 ..      26      62 ..      10      66 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 24.2 bits;  conditional E-value: 5.3e-09
+        cpcD 21 sqndktdnldysirksGsvfltvpysrmnqemrritrlGarivsi 65
+                +      n dys  ++  + + vpy+rmn+ mr + r+G +i  +
+  EDY38292.1 26 A------NNDYS--RTADMVMNVPYTRMNETMRLVQRMGGKITGV 62
+                4......44676..45667899*******************9765 PP
+
+>> EDY37523.1  hypothetical protein CPCC7001_402 [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   19.3   0.1   1.9e-07   0.00013      38      65 ..     277     304 ..     259     306 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 19.3 bits;  conditional E-value: 1.9e-07
+        cpcD  38 svfltvpysrmnqemrritrlGarivsi 65 
+                    + vp++rmn+ ++r+ rlG r+v +
+  EDY37523.1 277 ETVIRVPFTRMNEALQRVNRLGGRVVEV 304
+                 45678********************976 PP
+
+>> EDY38806.1  hypothetical protein CPCC7001_1685 [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   13.9   0.0   8.8e-06    0.0061      31      69 ..     243     281 .]     222     281 .] 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 13.9 bits;  conditional E-value: 8.8e-06
+        cpcD  31 ysirksGsvfltvpysrmnqemrritrlGarivsikpln 69 
+                 y + k       +p+s++ q  ++i r G ri si p+n
+  EDY38806.1 243 YRLHKRSNRVRFIPFSKLLQYQQQIHREGGRIASITPVN 281
+                 6666666667789************************98 PP
+
+>> EDY38180.1  ferredoxin--NADP reductase [Cyanobium sp. PCC 7001]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.0   0.1     7e-05     0.049      41      65 ..      47      71 ..      40      76 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 11.0 bits;  conditional E-value: 7e-05
+        cpcD 41 ltvpysrmnqemrritrlGarivsi 65
+                +tvp+++++  mr i+r G ri ++
+  EDY38180.1 47 FTVPFAQLQSTMRTIARQGGRIKAV 71
+                69*******************9765 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (74 nodes)
+Target sequences:                         2771  (822309 residues searched)
+Passed MSV filter:                        50  (0.018044); expected 55.4 (0.02)
+Passed bias filter:                       49  (0.0176831); expected 55.4 (0.02)
+Passed Vit filter:                         5  (0.0018044); expected 2.8 (0.001)
+Passed Fwd filter:                         4  (0.00144352); expected 0.0 (1e-05)
+Initial search space (Z):               2771  [actual number of targets]
+Domain search space  (domZ):               4  [number of targets reported over threshold]
+# CPU time: 0.01u 0.01s 00:00:00.02 Elapsed: 00:00:00.01
+# Mc/sec: 6085.09
+//
+[ok]

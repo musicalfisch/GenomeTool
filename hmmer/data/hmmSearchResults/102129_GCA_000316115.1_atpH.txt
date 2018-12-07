@@ -1,0 +1,80 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/atpH.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102129_GCA_000316115.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       atpH  [M=81]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    2.5e-49  164.5   5.1    2.8e-49  164.4   5.1    1.0  1  EKV01827.1  ATP synthase F0 subcomplex C subunit [Leptolyngby
+    5.4e-20   70.5   3.7    5.9e-20   70.4   3.7    1.0  1  EKU96314.1  ATP synthase F0 subcomplex C subunit [Leptolyngby
+  ------ inclusion threshold ------
+       0.41   10.0  17.5       0.32   10.4   5.6    2.4  2  EKV00547.1  ATP synthase subunit C [Leptolyngbya sp. PCC 7375
+
+
+Domain annotation for each sequence (and alignments):
+>> EKV01827.1  ATP synthase F0 subcomplex C subunit [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  164.4   5.1   1.1e-52   2.8e-49       1      81 []       1      81 []       1      81 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 164.4 bits;  conditional E-value: 1.1e-52
+        atpH  1 mdplvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpfa 81
+                mdplva+asviaa+lavGlaaiGpgigqGna+g+aveGiarqpeaeGkirgtlll+lafmesltiyGlv++lvllfanp+a
+  EKV01827.1  1 MDPLVASASVIAASLAVGLAAIGPGIGQGNASGKAVEGIARQPEAEGKIRGTLLLTLAFMESLTIYGLVISLVLLFANPLA 81
+                9******************************************************************************86 PP
+
+>> EKU96314.1  ATP synthase F0 subcomplex C subunit [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   70.4   3.7   2.3e-23   5.9e-20       4      80 ..       6      82 ..       1      83 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 70.4 bits;  conditional E-value: 2.3e-23
+        atpH  4 lvaaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalvllfanpf 80
+                l+  as++ a+l++ +++i p++g+G a +qa++ +a+qp+    i  tl++ +a++es +iy +v++l+l+fanpf
+  EKU96314.1  6 LIGMASIVIAGLTIAIGSIAPALGEGRALAQALNALAQQPDEANTITRTLFVGMALVESTAIYCFVITLILIFANPF 82
+                7899************************************************************************9 PP
+
+>> EKV00547.1  ATP synthase subunit C [Leptolyngbya sp. PCC 7375]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.2   4.2    0.0049        13      16      72 ..      16      68 ..       1      73 [. 0.72
+   2 ?   10.4   5.6   0.00012      0.32       6      73 ..      78     141 ..      70     146 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.0049
+        atpH 16 avGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvval 72
+                 v l+aiG ++g   a + a+  +       G+  g   l  a+  s++iyG+vv +
+  EKV00547.1 16 PVSLGAIGSALGCKIAGQAAIGAMLEVKGGYGRFVG---L-SALPSSMSIYGIVVLF 68
+                5899********887776666666555555555554...3.3677899****99865 PP
+
+  == domain 2  score: 10.4 bits;  conditional E-value: 0.00012
+        atpH   6 aaasviaaalavGlaaiGpgigqGnaagqaveGiarqpeaeGkirgtlllslafmesltiyGlvvalv 73 
+                 +aa +++ ++  G+a +  +i qG+a++ a+ G   +pe    i g  l   a +e ++++ +v alv
+  EKV00547.1  78 NAAGLFSIGVGSGVAFLLSAIYQGQACASAIAGAKAKPE----IFGLSLAPAAIIEGFAVFAFVFALV 141
+                 5778888899999999*****************999998....67788889999**********9998 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (81 nodes)
+Target sequences:                         7828  (2521536 residues searched)
+Passed MSV filter:                       297  (0.0379407); expected 156.6 (0.02)
+Passed bias filter:                      168  (0.0214614); expected 156.6 (0.02)
+Passed Vit filter:                        13  (0.00166071); expected 7.8 (0.001)
+Passed Fwd filter:                         3  (0.00038324); expected 0.1 (1e-05)
+Initial search space (Z):               7828  [actual number of targets]
+Domain search space  (domZ):               3  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.05
+# Mc/sec: 4084.89
+//
+[ok]

@@ -1,0 +1,83 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/braE.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/64471_GCA_000014585.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       braE  [M=371]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    5.6e-15   53.0  15.7    1.2e-09   35.5   8.4    2.3  2  ABI45349.1  ABC transporter permease protein [Synechococcus s
+    9.1e-05   19.4  20.5     0.0017   15.2   6.2    2.6  2  ABI45989.1  high-affinity branched-chain amino acid transport
+
+
+Domain annotation for each sequence (and alignments):
+>> ABI45349.1  ABC transporter permease protein [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.9   0.7   1.1e-08   1.6e-05      15      49 ..      68     102 ..      59     114 .. 0.88
+   2 !   35.5   8.4   8.4e-13   1.2e-09     196     337 ..     209     350 ..     138     368 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 21.9 bits;  conditional E-value: 1.1e-08
+        braE  15 yaifalglnlqwgftglinfghvafatlgayatvl 49 
+                  ai+alg++l wgftgl+ +g+  f +lg ya+ +
+  ABI45349.1  68 LAIVALGIDLIWGFTGLLSLGQGIFFALGGYAAAM 102
+                 59*****************************9765 PP
+
+  == domain 2  score: 35.5 bits;  conditional E-value: 8.4e-13
+        braE 196 ialndynykaglmvvvlvllalvytglelllrspwgrilkairedeeipralgknvfwyklqslmlggaiaglagaflawqlttiyptnfeplltfnaw 294
+                 + l   + + g++ +  v++ lv+  l  ++r  +g +l air+de   r  g n   +k   + + g +ag+ ga+ + q   + p  +   ++++  
+  ABI45349.1 209 LELGSPEMQRGFFWLTAVIVILVWIFLRWVVRGRFGNVLIAIRDDEPRLRFTGYNPTLFKTIVFAIAGGLAGIGGALYTVQSGIVSPQFMTVPFSIEMV 307
+                 55666677788888999999*******************************************************************999999999999 PP
+
+        braE 295 iiiilggsgsnagtllgavifwaydsltrfilpqldifndsql 337
+                 i + +gg g+  g++lg+v +    sl    lp+  +f +  l
+  ABI45349.1 308 IWVAVGGRGTLVGAILGSVSIMYAKSLVSEALPETWLFIQGGL 350
+                 *******************988889999999999988876544 PP
+
+>> ABI45989.1  high-affinity branched-chain amino acid transport protein LivH [Synechococcus sp. CC9311]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   10.7   4.9   2.8e-05      0.04      14      53 ..      17      56 ..       7      83 .. 0.78
+   2 !   15.2   6.2   1.2e-06    0.0017     207     315 ..     214     319 ..     197     382 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 10.7 bits;  conditional E-value: 2.8e-05
+        braE 14 iyaifalglnlqwgftglinfghvafatlgayatvlltlq 53
+                +  + algl + +g+ g+in+ h  +  lgay+t ++ l 
+  ABI45989.1 17 VLLMAALGLAIVFGLMGVINLAHGELIMLGAYTTYVVQLI 56
+                455779****************************887764 PP
+
+  == domain 2  score: 15.2 bits;  conditional E-value: 1.2e-06
+        braE 207 lmvvvlvllalvytglelllrspwgrilkairedeeipralgknvfwyklqslmlggaiaglagaflawqlttiyptnfeplltfnawiiiilggsgsn 305
+                 l+++v+ ++a v   + +l rs wg  ++a+ ++  +  +lg       + ++ +g  +ag+ag  +   l      n+     + ++++++lgg g+ 
+  ABI45989.1 214 LVIIVMTFIA-VVGVIWFLNRSVWGVRIRAVTQNRSMSDCLGIPTDTVDVLTFGIGSGLAGVAGVAV--SLLGSVGPNVGTSYIVGCFMVVVLGGVGNL 309
+                 3444444444.556678999*******************************************9755..4555555688888999************** PP
+
+        braE 306 agtllgavif 315
+                  gt+l +  +
+  ABI45989.1 310 LGTVLASFAI 319
+                 ***9987543 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (371 nodes)
+Target sequences:                         2892  (754432 residues searched)
+Passed MSV filter:                       154  (0.0532503); expected 57.8 (0.02)
+Passed bias filter:                       59  (0.0204011); expected 57.8 (0.02)
+Passed Vit filter:                         7  (0.00242047); expected 2.9 (0.001)
+Passed Fwd filter:                         2  (0.000691563); expected 0.0 (1e-05)
+Initial search space (Z):               2892  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.01s 00:00:00.04 Elapsed: 00:00:00.04
+# Mc/sec: 6997.36
+//
+[ok]

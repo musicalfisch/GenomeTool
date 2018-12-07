@@ -1,0 +1,76 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cysJ.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/454136_GCA_001904725.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cysJ  [M=1480]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    3.1e-17   59.6   0.0    1.1e-16   57.8   0.0    1.6  2  OKH36717.1  ferredoxin-NADP reductase [Phormidium ambiguum IA
+    2.4e-06   23.5   0.4    2.7e-06   23.3   0.4    1.0  1  OKH40941.1  hypothetical protein NIES2119_01125 [Phormidium a
+
+
+Domain annotation for each sequence (and alignments):
+>> OKH36717.1  ferredoxin-NADP reductase [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.1   0.0      0.02        63    1032    1073 ..     130     169 ..     124     174 .. 0.83
+   2 !   57.8   0.0   3.5e-20   1.1e-16    1208    1387 ..     178     368 ..     173     396 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -1.1 bits;  conditional E-value: 0.02
+        cysJ 1032 vanqellqevvpgsrstrlivfdltdtdlqyetgdhvavypa 1073
+                  ++n+el++e   g  + r + fdl  +dl+y  g+ + + p 
+  OKH36717.1  130 MSNEELVREG--GEGTVRHLKFDLRGSDLRYLEGQSIGIIPD 169 
+                  5688888885..5567899***************99998885 PP
+
+  == domain 2  score: 57.8 bits;  conditional E-value: 3.5e-20
+        cysJ 1208 qkprlysisscpl...lhprriqitvgvlqv.ttdagkvrqglcsnylaglqpgssvriev.ltstfrpptdshapilmvgpgtgvspliaflqhre 1299
+                  +k rlysi+s      l  + + + v  l     ++g+  +g+cs +l+ l+ g  v+i   +   +  p d  a i+m+  gtg++p+ afl +  
+  OKH36717.1  178 HKLRLYSIASTRHgddLDDKTVSLCVRQLVYkHPETGEEVKGVCSTFLTQLNVGDDVKITGpVGKEMLLPEDPEANIIMMATGTGIAPFRAFLWRML 274 
+                  5789****9986422378888888887665415689***********************8626678899************************9887 PP
+
+        cysJ 1300 alqnqgis.lgeahlyfgcrnpsdfiyqeqlqvwrdrn.vltglevafsrlgeq....kqyvqnlmeqqpekiwqilshpqchyyvcgdakmad 1387
+                    q +     g a l+fgc    +++y+e+l+  + +      l  a+sr  ++    k y+q+ + ++ + +w+++ +p+ h y+cg   m  
+  OKH36717.1  275 KEQHEDYKfKGLAWLFFGCAYTPNILYKEELEELQAKFpENFRLTYAISREQKNpkggKMYIQDRIAEHADALWDLVQKPNTHTYICGLKGMEG 368 
+                  777766651699****************99987776641344677788876543333389****************************887765 PP
+
+>> OKH40941.1  hypothetical protein NIES2119_01125 [Phormidium ambiguum IAM M-71]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   23.3   0.4   8.8e-10   2.7e-06     332     452 ..       7     123 ..       1     131 [. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 23.3 bits;  conditional E-value: 8.8e-10
+        cysJ 332 llqemaacweifsqnkqqmgmefyqilfekypfvlpifgradmdylslhlfqaleflvrclrtgssdemlqelrflgqvhsfadvptcaypamsetlfv 430
+                 +lqe    ++ + +  +++ + fy+ lf  yp    +f r++m     hl++al + +  +r    + + + l  lg  h         yp +  tl+ 
+  OKH40941.1   7 VLQET---FQQIKEHTDEFAVSFYENLFHDYPHFQSLFARTNMTEQHKHLVRALMLTIENIRDQ--ETVHDALEQLGARHVRYGALQEYYPDFCATLLK 100
+                 44442...3334445567899*************************************999965..567788999*****99999999*********** PP
+
+        cysJ 431 lferylp.nftpelrqgwqilld 452
+                  f   l  ++t e+ q w   ++
+  OKH40941.1 101 TFASSLGeKWTTEVEQAWIEAFE 123
+                 **99996269********76655 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (1480 nodes)
+Target sequences:                         6149  (2062819 residues searched)
+Passed MSV filter:                       176  (0.0286225); expected 123.0 (0.02)
+Passed bias filter:                      135  (0.0219548); expected 123.0 (0.02)
+Passed Vit filter:                        13  (0.00211416); expected 6.1 (0.001)
+Passed Fwd filter:                         2  (0.000325256); expected 0.1 (1e-05)
+Initial search space (Z):               6149  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.18u 0.02s 00:00:00.20 Elapsed: 00:00:00.21
+# Mc/sec: 14537.96
+//
+[ok]

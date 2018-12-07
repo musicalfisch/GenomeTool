@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/gdhA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1497020_GCA_000775285.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       gdhA  [M=429]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+    1.3e-05   21.5   0.8    3.7e-05   20.1   0.6    1.9  2  KGF72394.1  malate dehydrogenase [Neosynechococcus sphagnicol
+     0.0099   12.1   0.1      0.015   11.5   0.1    1.2  1  KGF72916.1  alcohol dehydrogenase [Neosynechococcus sphagnico
+
+
+Domain annotation for each sequence (and alignments):
+>> KGF72394.1  malate dehydrogenase [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -3.2   0.0      0.32   4.4e+02     409     420 ..     113     124 ..     101     128 .. 0.74
+   2 !   20.1   0.6   2.7e-08   3.7e-05     210     263 ..     250     302 ..     237     330 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: -3.2 bits;  conditional E-value: 0.32
+        gdhA 409 aaytlgvgrvaq 420
+                  ayt gvgr++ 
+  KGF72394.1 113 MAYTPGVGRICT 124
+                 48*******976 PP
+
+  == domain 2  score: 20.1 bits;  conditional E-value: 2.7e-08
+        gdhA 210 vrealadkgkslagvrvviqgfgnvggaaaellhkagakiiavstgaggvfsee 263
+                 + +al+  +ksl+ v++vi+g g  g a a ll kaga  i++  + g + s +
+  KGF72394.1 250 LINALKLVNKSLEMVKIVINGAGAAGVAIARLLRKAGATQICLCDSKG-ILSLS 302
+                 456778889********************************9988765.55444 PP
+
+>> KGF72916.1  alcohol dehydrogenase [Neosynechococcus sphagnicola sy1]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   11.5   0.1   1.1e-05     0.015     202     251 ..     125     175 ..     109     197 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 11.5 bits;  conditional E-value: 1.1e-05
+        gdhA 202 tgrgvmiivrealadkgkslagvrvviq.gfgnvggaaaellhkagakiia 251
+                 +   v+i+  eal d+g+  ag rv i  g g vg  a +l + +ga + +
+  KGF72916.1 125 AAPLVLITAWEALYDRGRLQAGQRVLIHaGAGGVGHVAIQLAKLQGAAVCT 175
+                 4556899999***************996599***************98754 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (429 nodes)
+Target sequences:                         2731  (698048 residues searched)
+Passed MSV filter:                        90  (0.032955); expected 54.6 (0.02)
+Passed bias filter:                       71  (0.0259978); expected 54.6 (0.02)
+Passed Vit filter:                         5  (0.00183083); expected 2.7 (0.001)
+Passed Fwd filter:                         2  (0.000732332); expected 0.0 (1e-05)
+Initial search space (Z):               2731  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.03u 0.00s 00:00:00.03 Elapsed: 00:00:00.03
+# Mc/sec: 9982.09
+//
+[ok]

@@ -1,0 +1,66 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cusB.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/1666905_GCA_001314905.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cusB  [M=423]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+  ------ inclusion threshold ------
+      0.052    9.9   2.8       0.99    5.7   0.1    2.9  3  KPQ32135.1  type 1 secretion system HlyD family membrane fusi
+
+
+Domain annotation for each sequence (and alignments):
+>> KPQ32135.1  type 1 secretion system HlyD family membrane fusion component [Phormidium sp. OSCR]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.1   0.00024      0.99      75     127 ..      56     108 ..      27     150 .. 0.82
+   2 ?    0.7   0.3    0.0077        32     132     168 ..     183     219 ..     154     270 .. 0.81
+   3 ?    2.2   0.0    0.0028        12     208     341 ..     316     463 ..     294     478 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.00024
+        cusB  75 gtiqvngvldvppqqlvsisapmggflkdtellqgsrvrkgqsiarienldfi 127
+                   ++++   +v p q v +s    g l +  + qg  v +g+ +a +en ++ 
+  KPQ32135.1  56 VRVRIEATGEVQPIQRVNLSPKTQGRLEQLYVEQGDEVSQGEVVAVMENDELA 108
+                 4567778889**************************************97653 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 0.0077
+        cusB 132 dyleaksqfelskadyerqqqladqnvnsaktlqqsk 168
+                    ea s++ l++ad  r++ql  +   s + l++++
+  KPQ32135.1 183 SIREAESRMTLAQADVRRNEQLYRDGAISRQELDRAQ 219
+                 5679999999*******99999887777777776554 PP
+
+  == domain 3  score: 2.2 bits;  conditional E-value: 0.0028
+        cusB 208 spidgyvtevnvnrgkfvnptdvlfeivd...te......hlhaelivfekdvrklkigqkvrftlanetke.riatvyligreisterti...qihch 293
+                 +p  g +t+   + g fv p+     +     t        l     v e d+ ++k gq v +       e  +  v li  e   er +   q+   
+  KPQ32135.1 316 APFSGIITQRYADEGAFVTPATSASAVSSatsTSvvalarGLEVLAKVPEADISQIKPGQSVEIVADAFPDEvFMGEVDLIAPEAVVERDVtlfQVRLR 414
+                 677777777777777777776544433221002111000022333346789***********9876665555156789*******99997634478889 PP
+
+        cusB 294 idqedkdllpgmylk.amvetggaevpalpneaiidfegkkyifvvsee 341
+                 i     +l  gm +  +++    a+   lp  ai+  +g   ++v  e+
+  KPQ32135.1 415 IVTGLDQLRSGMNVDlTFLGDRLANALVLPTVAIVSRQGETGVLVPDED 463
+                 9999999999999872345666788888999999999998888776665 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (423 nodes)
+Target sequences:                         4158  (1357320 residues searched)
+Passed MSV filter:                        93  (0.0223665); expected 83.2 (0.02)
+Passed bias filter:                       73  (0.0175565); expected 83.2 (0.02)
+Passed Vit filter:                         5  (0.0012025); expected 4.2 (0.001)
+Passed Fwd filter:                         1  (0.0002405); expected 0.0 (1e-05)
+Initial search space (Z):               4158  [actual number of targets]
+Domain search space  (domZ):               1  [number of targets reported over threshold]
+# CPU time: 0.04u 0.01s 00:00:00.05 Elapsed: 00:00:00.04
+# Mc/sec: 14353.66
+//
+[ok]

@@ -1,0 +1,89 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.1b2 (February 2015); http://hmmer.org/
+# Copyright (C) 2015 Howard Hughes Medical Institute.
+# Freely distributed under the GNU General Public License (GPLv3).
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /home/jwass/Research/Hmm_models/cnaA.hmm
+# target sequence database:        /home/jwass/Research/Project/fasta/data/needed/faaFiles/102125_GCA_000332055.1.faa
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       cnaA  [M=353]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence   Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------   -----------
+   1.4e-136  453.7   0.0   1.5e-136  453.5   0.0    1.0  1  ELS04018.1  anthranilate phosphoribosyltransferase [Xenococcu
+    1.1e-09   36.3   0.1    3.6e-09   34.6   0.1    1.7  1  ELS01554.1  anthranilate phosphoribosyltransferase [Xenococcu
+
+
+Domain annotation for each sequence (and alignments):
+>> ELS04018.1  anthranilate phosphoribosyltransferase [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  453.5   0.0  5.6e-140  1.5e-136       1     347 [.       1     345 [.       1     346 [] 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 453.5 bits;  conditional E-value: 5.6e-140
+        cnaA   1 msdtfrellkaigsgthtgknltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhpiaifgnpydgrsrt 99 
+                 msd frellk +gsgtht k ltr ea  at m+l + atpaqigafmiahrikrpt +elagmlday el  ++t++   f hp  +fgnpydgrsrt
+  ELS04018.1   1 MSDEFRELLKKVGSGTHTSKGLTRQEAYQATIMLLQEIATPAQIGAFMIAHRIKRPTPEELAGMLDAYDELAARLTIQNLKFPHPPVVFGNPYDGRSRT 99 
+                 9************************************************************************************************** PP
+
+        cnaA 100 apvtpittlilglagvpvvlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwsp 198
+                  p+t it++il++agvpv+lhggdr+ptkygi l +iwq lg df+ +sl+  +  l  tg+ f+y+p+hfp  +n++tyreqigkrpp+at el+wsp
+  ELS04018.1 100 VPLTVITAIILAAAGVPVILHGGDRIPTKYGIPLVKIWQALGVDFTSFSLSETQSFLAKTGIGFVYLPQHFPQAHNLITYREQIGKRPPFATAELIWSP 198
+                 *************************************************************************************************** PP
+
+        cnaA 199 fvgnihqisgfvhpptedrfretfalrnishfttvkglegscdlacnrtaiiglgnptdppsfqrfflnprdygfcpsdypleslelltaklkgllage 297
+                 ++ ++  +sgfvhppt +rf++tf lr +  +ttvkglegscdl+ nrt iig+ +  ++  +++f++ p+d+g+   d  +es   +  +++g +ag+
+  ELS04018.1 199 VLEDVAIVSGFVHPPTAERFQKTFELRGVKNYTTVKGLEGSCDLSRNRTGIIGICD--EATGWRQFMFHPQDFGLQGHDVTFESEAQVIEQIQGAIAGN 295
+                 *****************************************************987..567899*********************************** PP
+
+        cnaA 298 nneltdaaifnggfylwrcgiapdiptgfqqaqqslqsgkalakleqian 347
+                 n+el  + i+nggfylw+ g++p + +gf+ a++ l  g    kl+q++n
+  ELS04018.1 296 NQELMPSVILNGGFYLWHFGVCPSLQAGFDLAEKMLINGEIKDKLHQLVN 345
+                 ***********************************************988 PP
+
+>> ELS01554.1  anthranilate phosphoribosyltransferase [Xenococcus sp. PCC 7305]
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   34.6   0.1   1.3e-12   3.6e-09      22     350 ..      25     350 ..      20     351 .] 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 34.6 bits;  conditional E-value: 1.3e-12
+        cnaA  22 ltrpeaamatkmmltqeatpaqigafmiahrikrptsdelagmldayaelgpqitlesasfqhp...iaifgnpydgrsrtapvtpittlilglagvpv 117
+                 l++ +aa      l +e  p+  ga++ a + k+ ++ elagm +         +l+   + h    +   g   dg s    ++   +++ ++agv v
+  ELS01554.1  25 LSQAQAAQLMTGWLKEEIPPVLSGAILAAIQAKQVSASELAGMAQVLKAQ----SLQQKEITHHvpvVDTCGTGGDGASTF-NISTAVAFVTAAAGVKV 118
+                 5666666666667999***************************8765443....344444444400145568888888755.5566667899******* PP
+
+        cnaA 118 vlhggdrmptkygislreiwqqlgadfsqlslaavkdclittgltffyiprhfplvqnfvtyreqigkrppmatvellwspfvgnihqisgfvhppted 216
+                   hg     +k g    ++ + lg  ++  s   v+ +l   g+tf++ p   p ++ +   r+ +  r     v  l  p+v  +   +g v    + 
+  ELS01554.1 119 AKHGNRSASSKVGS--ADVLEYLGVKLTA-SSEKVRSALEEVGITFLFAPGWHPAMKGVAPLRKTLKVRT----VFNLLGPLVNPLC-PTGQVIGVYDG 209
+                 ****9999999886..58999****9986.55789****************************9988775....5555666665544.34555556666 PP
+
+        cnaA 217 rfretfal.rnishfttvkglegscdlacnrtaiiglgnptdppsfq.....rfflnprdygfcpsd.ypleslell..taklkgllagenne.ltdaa 305
+                  f  t+a   ni    +   l g   l        glg+ td   ++        ++p++ gf  +    l+  e++  ++ l+ +l g+      da 
+  ELS01554.1 210 AFVATMAEaLNILGTPSAIALHGREKLD-----EAGLGDVTDIAMLKdgkvtLSSVDPQELGFTSASlEALKGGEVIenASILQNVLQGKGTRaQQDAV 303
+                 7777776413666656666666665543.....4578888877766522111345789*****8765156777788732456999**999765157899 PP
+
+        cnaA 306 ifnggfylwrcgia..pdiptgfqqaqqslqsgkalakleqianyle 350
+                  +n  f l     +   d   g+ +a++ + sg a +kle+++++l+
+  ELS01554.1 304 ALNASFALQVGEAVkfGDHGQGVAKAREIIASGAAWTKLEELVKFLD 350
+                 999999987654432269999*********************99997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                              1  (353 nodes)
+Target sequences:                         5373  (1697783 residues searched)
+Passed MSV filter:                       141  (0.0262423); expected 107.5 (0.02)
+Passed bias filter:                      128  (0.0238228); expected 107.5 (0.02)
+Passed Vit filter:                        14  (0.00260562); expected 5.4 (0.001)
+Passed Fwd filter:                         2  (0.000372232); expected 0.1 (1e-05)
+Initial search space (Z):               5373  [actual number of targets]
+Domain search space  (domZ):               2  [number of targets reported over threshold]
+# CPU time: 0.06u 0.01s 00:00:00.06 Elapsed: 00:00:00.07
+# Mc/sec: 8561.68
+//
+[ok]
